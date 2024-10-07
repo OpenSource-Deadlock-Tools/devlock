@@ -12,10 +12,10 @@ pub enum ProcessError {
 
 #[derive(Deserialize, Debug, Clone)]
 pub struct Salts {
-    pub cluster_id: u16,
+    pub cluster_id: u32,
     pub match_id: u64,
-    pub meta_salt: String,
-    pub demo_salt: String,
+    pub meta_salt: u32,
+    pub demo_salt: u32,
 }
 
 #[derive(Debug, Copy, Clone)]
