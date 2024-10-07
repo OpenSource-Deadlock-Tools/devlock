@@ -10,8 +10,7 @@ class Program
     private static string steam_user, steam_pass;
     private static DeadlockClient? client;
 
-    private static readonly System.Threading.EventWaitHandle client_status
-        = new System.Threading.AutoResetEvent(false);
+    private static readonly EventWaitHandle client_status = new AutoResetEvent(false);
 
     // Rate limit, interval for polling GC in milliseconds
     private static readonly TimeSpan gc_rate_limit = TimeSpan.FromMilliseconds(2500);
@@ -23,6 +22,7 @@ class Program
     private static int rmq_port;
     private static readonly string rmq_queue_name = "spectate_queue";
     private static IModel rmq_channel;
+    private static IConnection rmq_connection;
 
     private static void Main(string[] args)
     {
@@ -30,7 +30,7 @@ class Program
         steam_user = Environment.GetEnvironmentVariable("STEAM_USERNAME") ?? "steamuser";
         steam_pass = Environment.GetEnvironmentVariable("STEAM_PASSWORD") ?? "steampass";
 
-        rmq_host = Environment.GetEnvironmentVariable("RABBITMQ_HOST") ?? "localhost";
+        rmq_host = Environment.GetEnvironmentVariable("RABBITMQ_HOST") ?? "rabbitmq";
         rmq_port = int.Parse(Environment.GetEnvironmentVariable("RABBITMQ_PORT") ?? "5672");
         rmq_user = Environment.GetEnvironmentVariable("RABBITMQ_USER") ?? "rmquser";
         rmq_pass = Environment.GetEnvironmentVariable("RABBITMQ_PASS") ?? "rmqpass";
@@ -52,8 +52,20 @@ class Program
             Password = rmq_pass
         };
 
-        using var connection = factory.CreateConnection();
-        rmq_channel = connection.CreateModel();
+        while (rmq_connection == null)
+        {
+            try
+            {
+                rmq_connection = factory.CreateConnection();
+            }
+            catch (RabbitMQ.Client.Exceptions.BrokerUnreachableException)
+            {
+                Console.Error.WriteLine($"[{DateTime.Now:HH:mm:ss.fff}] Could not connect to RabbitMQ. Retrying in 10s...");
+                Thread.Sleep(TimeSpan.FromSeconds(10));
+            }
+        }
+
+        rmq_channel = rmq_connection.CreateModel();
 
         rmq_channel.QueueDeclare(
             queue: rmq_queue_name,
@@ -62,10 +74,8 @@ class Program
             autoDelete: false,
             arguments: new Dictionary<string, object>
             {
-                { "x-message-ttl", (int)TimeSpan.FromSeconds(20).TotalMilliseconds }
+                { "x-message-ttl", (int)TimeSpan.FromSeconds(15).TotalMilliseconds }
             });
-
-        Console.WriteLine($"[{DateTime.Now:HH:mm:ss.fff}] Ready for messages.");
 
         // Create an event-based consumer
         var consumer = new EventingBasicConsumer(rmq_channel);
@@ -102,6 +112,7 @@ class Program
                     // We did an oopsie...
                     rmq_channel.BasicNack(deliveryTag: ea.DeliveryTag, multiple: false, requeue: true);
                     Console.Error.WriteLine($"[{DateTime.Now:HH:mm:ss.fff}] Failed {id} [{status}]");
+                    Thread.Sleep(TimeSpan.FromSeconds(90));
                     break;
                 case CMsgClientToGCSpectateUserResponse.EResponse.k_eInvalidClientVersion:
                     // Trigger program restart if invalid client version. Client version is automatically
@@ -123,10 +134,12 @@ class Program
         };
 
         // Start consuming messages
-        rmq_channel.BasicQos(prefetchCount: 3, prefetchSize: default, global: default);
+        rmq_channel.BasicQos(prefetchCount: 1, prefetchSize: default, global: default);
         rmq_channel.BasicConsume(queue: rmq_queue_name,
             autoAck: false, // Enable manual message acknowledgment
             consumer: consumer);
+
+        Console.WriteLine($"[{DateTime.Now:HH:mm:ss.fff}] Ready for messages.");
 
         Thread.Sleep(Timeout.Infinite); // Prevent program from exiting
     }

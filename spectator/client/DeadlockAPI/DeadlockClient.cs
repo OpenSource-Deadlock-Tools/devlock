@@ -47,7 +47,7 @@ namespace DeadlockAPI {
         public bool IsConnected { get => client.IsConnected; }
 
         public void Connect() {
-            Console.WriteLine("[*] Connecting to Steam");
+            Console.WriteLine($"[{DateTime.Now:HH:mm:ss.fff}] Connecting to Steam");
             disconnecting = false;
             client.Connect();
         }
@@ -76,7 +76,7 @@ namespace DeadlockAPI {
         }
 
         async void OnConnected(SteamClient.ConnectedCallback callback) {
-            Console.WriteLine("[*] Connected. Logging into Steam as {0}", userName);
+            Console.WriteLine($"[{DateTime.Now:HH:mm:ss.fff}] Connected. Logging into Steam as {userName}");
 
             var authSession = await client.Authentication.BeginAuthSessionViaCredentialsAsync(new AuthSessionDetails {
                 Username = userName,
@@ -99,7 +99,7 @@ namespace DeadlockAPI {
 
         void OnDisconnected(SteamClient.DisconnectedCallback callback) {
             if (!disconnecting) {
-                Console.WriteLine("[*] Could not connect.. Retrying..");
+                Console.WriteLine($"[{DateTime.Now:HH:mm:ss.fff}] Could not connect.. Retrying..");
                 Thread.Sleep(5000);
                 Connect();
             }
@@ -107,11 +107,11 @@ namespace DeadlockAPI {
 
         void OnLoggedOn(SteamUser.LoggedOnCallback callback) {
             if (callback.Result != EResult.OK) {
-                Console.Error.WriteLine("[*] Unable to log on to Steam: {0}", callback.Result);
+                Console.Error.WriteLine($"[{DateTime.Now:HH:mm:ss.fff}] Unable to log on to Steam: {callback.Result}");
                 return;
             }
 
-            Console.WriteLine("[*] Logged in. Launching Deadlock");
+            Console.WriteLine($"[{DateTime.Now:HH:mm:ss.fff}] Logged in. Launching Deadlock");
 
             var playGame = new ClientMsgProtobuf<CMsgClientGamesPlayed>(EMsg.ClientGamesPlayed);
             playGame.Body.games_played.Add(new CMsgClientGamesPlayed.GamePlayed {
@@ -152,9 +152,9 @@ namespace DeadlockAPI {
                 var response = new ClientGCMsgProtobuf<U>(cb.Message);
 
                 return response.Body;
-            } catch (Exception e) {
-                Console.Write(e.ToString());
-                return default;
+            } catch (TaskCanceledException e)
+            {
+                throw new Exception($"[{DateTime.Now:HH:mm:ss.fff}] Lost internet connection.. Restarting..");
             }
         }
 
@@ -206,7 +206,7 @@ namespace DeadlockAPI {
         void OnClientWelcome(IPacketGCMsg packetMsg) {
             var msg = new ClientGCMsgProtobuf<CMsgClientWelcome>(packetMsg);
             clientVersion = msg.Body.version;
-            Console.WriteLine($"[*] Deadlock Client v{clientVersion}");
+            Console.WriteLine($"[{DateTime.Now:HH:mm:ss.fff}] Deadlock Client v{clientVersion}");
             ClientWelcomeEvent?.Invoke(this, new ClientWelcomeEventArgs() { Data = msg.Body });
         }
 
