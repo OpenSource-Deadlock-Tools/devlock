@@ -1,5 +1,5 @@
 services:
-  deadlock-spectator-server:
+  spectator-server:
     image: ghcr.io/opensource-deadlock-tools/spectator/server:latest
     build: .
     restart: always
