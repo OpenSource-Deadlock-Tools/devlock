@@ -1,4 +1,13 @@
 {
+  "permissions": [
+    {
+      "configure": ".*",
+      "read": ".*",
+      "user": "admin",
+      "vhost": "/",
+      "write": ".*"
+    }
+  ],
   "queues": [
     {
       "arguments": {
