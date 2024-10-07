@@ -12,3 +12,6 @@ scrape_configs:
 - job_name: RabbitMQ
   static_configs:
   - targets: ['rabbitmq:15692']
+- job_name: Authentik
+  static_configs:
+  - targets: ['authentik:9300']
