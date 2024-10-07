@@ -14,8 +14,8 @@ pub enum ProcessError {
 pub struct Salts {
     pub cluster_id: u32,
     pub match_id: u64,
-    pub meta_salt: u32,
-    pub demo_salt: u32,
+    pub metadata_salt: u32,
+    pub replay_salt: u32,
 }
 
 #[derive(Debug, Copy, Clone)]

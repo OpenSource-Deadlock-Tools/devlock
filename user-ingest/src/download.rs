@@ -64,8 +64,8 @@ fn get_file_name(salts: &&Salts, data_type: DataType) -> String {
         match_id = salts.match_id,
         cluster_id = salts.cluster_id,
         salt = match data_type {
-            DataType::Meta => &salts.meta_salt,
-            DataType::Demo => &salts.demo_salt,
+            DataType::Meta => &salts.metadata_salt,
+            DataType::Demo => &salts.replay_salt,
         },
         data_type = data_type
     )
@@ -82,8 +82,8 @@ async fn download_to_file(
         APP_ID,
         salts.match_id,
         match data_type {
-            DataType::Meta => &salts.meta_salt,
-            DataType::Demo => &salts.demo_salt,
+            DataType::Meta => &salts.metadata_salt,
+            DataType::Demo => &salts.replay_salt,
         },
         data_type
     );
@@ -118,13 +118,13 @@ pub(crate) async fn check_salts(salts: Salts) -> reqwest::Result<()> {
 
     let demo_url = format!(
         "https://replay{}.valve.net/{}/{}_{}.dem.bz2",
-        salts.cluster_id, APP_ID, salts.match_id, salts.demo_salt
+        salts.cluster_id, APP_ID, salts.match_id, salts.replay_salt
     );
     client.head(&demo_url).send().await?.error_for_status()?;
 
     let meta_url = format!(
         "https://replay{}.valve.net/{}/{}_{}.meta.bz2",
-        salts.cluster_id, APP_ID, salts.match_id, salts.meta_salt
+        salts.cluster_id, APP_ID, salts.match_id, salts.metadata_salt
     );
     client.head(&meta_url).send().await?.error_for_status()?;
 
