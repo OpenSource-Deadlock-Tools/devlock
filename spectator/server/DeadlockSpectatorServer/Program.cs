@@ -12,6 +12,7 @@ class Program
 
     // RabbitMQ variables
     private static string rmq_host, rmq_user, rmq_pass;
+    private static int rmq_port;
     private static readonly string rmq_queue_name = "spectate_queue";
     private static IModel rmq_channel;
 
@@ -33,6 +34,7 @@ class Program
             : 250;
 
         rmq_host = Environment.GetEnvironmentVariable("RABBITMQ_HOST") ?? "localhost";
+        rmq_port = int.Parse(Environment.GetEnvironmentVariable("RABBITMQ_PORT") ?? "5672");
         rmq_user = Environment.GetEnvironmentVariable("RABBITMQ_USER") ?? "guest";
         rmq_pass = Environment.GetEnvironmentVariable("RABBITMQ_PASS") ?? "guest";
 
