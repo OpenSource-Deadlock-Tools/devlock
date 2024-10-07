@@ -20,3 +20,6 @@ indent_style = tab
 
 [Makefile]
 indent_style = tab
+
+[.secrets.baseline]
+indent_size = unset
