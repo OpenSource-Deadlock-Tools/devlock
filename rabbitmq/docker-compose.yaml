@@ -10,6 +10,10 @@ services:
     - ./init/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf:ro
     - ./init/definitions.json:/etc/rabbitmq/definitions.json:ro
     env_file: ../.env
+#    environment:
+#      VIRTUAL_HOST: rabbitmq.DOMAIN.de
+#      VIRTUAL_PORT: 15672
+#      LETSENCRYPT_HOST: rabbitmq.DOMAIN.de
     healthcheck:
       test: ["CMD", "rabbitmqctl", "status"]
       interval: 30s
@@ -18,9 +22,12 @@ services:
     networks:
     - rabbitmq
     - monitoring
+#    - webserver
 
 networks:
   rabbitmq:
     name: rabbitmq
   monitoring:
     external: true
+#  webserver:
+#    external: true

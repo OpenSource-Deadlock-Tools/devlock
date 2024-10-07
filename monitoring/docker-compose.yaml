@@ -11,6 +11,10 @@ services:
     - ./grafana/datasource.yaml:/etc/grafana/provisioning/datasources/prometheus.yaml
     ports:
     - "3000:3000"
+#    environment:
+#      VIRTUAL_HOST: grafana.DOMAIN.de
+#      VIRTUAL_PORT: 3000
+#      LETSENCRYPT_HOST: grafana.DOMAIN.de
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
       interval: 10s
@@ -21,6 +25,7 @@ services:
         condition: service_healthy
     networks:
     - monitoring
+#    - webserver
 
   node-exporter:
     image: prom/node-exporter
@@ -77,3 +82,5 @@ volumes:
 networks:
   monitoring:
     name: monitoring
+#  webserver:
+#    external: true
