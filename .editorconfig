@@ -21,5 +21,5 @@ indent_style = tab
 [Makefile]
 indent_style = tab
 
-[.secrets.baseline]
+[{.secrets.baseline,Cargo.lock}]
 indent_size = unset

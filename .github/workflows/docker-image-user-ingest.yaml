@@ -1,4 +1,4 @@
-name: docker-image-spectator
+name: docker-image-user-ingest
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
     branches:
     - 'main'
     paths:
-    - 'spectator/**'
+    - 'user-ingest/**'
 
 env:
   IMAGE_TAG_OWNER: opensource-deadlock-tools
@@ -22,9 +22,6 @@ concurrency:
 
 jobs:
   docker:
-    strategy:
-      matrix:
-        PATH: [spectator/server, spectator/client]
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -43,5 +40,5 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         push: true
-        tags: ghcr.io/${{ env.IMAGE_TAG_OWNER }}/${{ env.IMAGE_TAG_NAME }}/${{ matrix.PATH }}:latest
-        context: ${{ matrix.PATH }}
+        tags: ghcr.io/${{ env.IMAGE_TAG_OWNER }}/${{ env.IMAGE_TAG_NAME }}/user-ingest:latest
+        context: user-ingest

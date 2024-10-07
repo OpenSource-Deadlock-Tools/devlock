@@ -1,0 +1,15 @@
+[package]
+name = "user-ingest"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7.7"
+env_logger = "0.11.5"
+serde = { version = "1.0.210", features = ["derive"] }
+tokio = { version = "1.40.0", features = ["fs", "macros", "rt-multi-thread", "signal"] }
+log = "0.4.22"
+rust-s3 = "0.35.1"
+reqwest = "0.12.8"
+tempfile = "3.13.0"
+futures = "0.3.31"
