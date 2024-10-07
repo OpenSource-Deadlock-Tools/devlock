@@ -65,18 +65,8 @@ class Program
                 Thread.Sleep(TimeSpan.FromSeconds(10));
             }
         }
-
         rmq_channel = rmq_connection.CreateModel();
 
-        rmq_channel.QueueDeclare(
-            queue: rmq_queue_name,
-            durable: true, // Messages will survive a RabbitMQ restart
-            exclusive: false,
-            autoDelete: false,
-            arguments: new Dictionary<string, object>
-            {
-                { "x-message-ttl", (int)TimeSpan.FromSeconds(15).TotalMilliseconds }
-            });
         // Set up the timer to run the job every 20 seconds
         queue_timer.Elapsed += UpdateQueue;
         queue_timer.AutoReset = true; // Make sure the timer runs continuously

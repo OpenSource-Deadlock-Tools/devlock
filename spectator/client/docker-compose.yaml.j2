@@ -1,7 +1,7 @@
 services:
   {% for acct in accounts %}
   spectator-client-{{ loop.index }}:
-    image: ghcr.io/opensource-deadlock-tools/spectator/client:latest
+    image: ghcr.io/opensource-deadlock-tools/devlock/spectator/client:latest
     build: .
     restart: always
     environment:

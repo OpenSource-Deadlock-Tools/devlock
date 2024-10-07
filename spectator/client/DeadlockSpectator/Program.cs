@@ -32,8 +32,8 @@ class Program
 
         rmq_host = Environment.GetEnvironmentVariable("RABBITMQ_HOST") ?? "rabbitmq";
         rmq_port = int.Parse(Environment.GetEnvironmentVariable("RABBITMQ_PORT") ?? "5672");
-        rmq_user = Environment.GetEnvironmentVariable("RABBITMQ_DEFAULT_USER") ?? "rmquser";
-        rmq_pass = Environment.GetEnvironmentVariable("RABBITMQ_DEFAULT_PASS") ?? "rmqpass";
+        rmq_user = Environment.GetEnvironmentVariable("RABBITMQ_ADMIN_USER") ?? "rmquser";
+        rmq_pass = Environment.GetEnvironmentVariable("RABBITMQ_ADMIN_PASS") ?? "rmqpass";
 
         // Login to Steam
         client = new DeadlockClient(steam_user, steam_pass);

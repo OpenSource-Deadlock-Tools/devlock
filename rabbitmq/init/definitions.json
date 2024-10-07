@@ -11,7 +11,7 @@
   "queues": [
     {
       "arguments": {
-        "x-message-ttl": 20000,
+        "x-message-ttl": 15000,
         "x-queue-type": "quorum"
       },
       "auto_delete": false,

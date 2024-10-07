@@ -1,6 +1,6 @@
 services:
   spectator-server:
-    image: ghcr.io/opensource-deadlock-tools/spectator/server:latest
+    image: ghcr.io/opensource-deadlock-tools/devlock/spectator/server:latest
     build: .
     restart: always
     env_file: ../../.env
