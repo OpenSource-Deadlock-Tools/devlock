@@ -1,0 +1,12 @@
+services:
+  deadlock-spectator-server:
+    image: ghcr.io/opensource-deadlock-tools/spectator/server:latest
+    build: .
+    restart: always
+    env_file: ../../.env
+    networks:
+    - rabbitmq
+
+networks:
+  rabbitmq:
+    external: true

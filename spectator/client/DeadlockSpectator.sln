@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+#
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadlockSpectator", "DeadlockSpectator\DeadlockSpectator.csproj", "{9229FEC8-9DBE-4689-9CAD-060A7CE6358D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadlockAPI", "DeadlockAPI\DeadlockAPI.csproj", "{03BF0223-CFF0-492B-A308-2250FD68F7CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9229FEC8-9DBE-4689-9CAD-060A7CE6358D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9229FEC8-9DBE-4689-9CAD-060A7CE6358D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9229FEC8-9DBE-4689-9CAD-060A7CE6358D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9229FEC8-9DBE-4689-9CAD-060A7CE6358D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03BF0223-CFF0-492B-A308-2250FD68F7CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03BF0223-CFF0-492B-A308-2250FD68F7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03BF0223-CFF0-492B-A308-2250FD68F7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03BF0223-CFF0-492B-A308-2250FD68F7CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

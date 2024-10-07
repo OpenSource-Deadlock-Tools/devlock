@@ -1,0 +1,14 @@
+services:
+  {% for acct in accounts %}
+  spectator-client-{{ loop.index }}:
+    image: ghcr.io/opensource-deadlock-tools/spectator/client:latest
+    build: .
+    restart: always
+    environment:
+      RABBITMQ_HOST:
+      RABBITMQ_PORT:
+      RABBITMQ_USER:
+      RABBITMQ_PASS:
+      STEAM_USERNAME: {{ acct.username }}
+      STEAM_PASSWORD: {{ acct.password }}
+  {% endfor %}
