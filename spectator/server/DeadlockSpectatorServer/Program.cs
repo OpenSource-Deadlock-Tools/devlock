@@ -35,8 +35,8 @@ class Program
 
         rmq_host = Environment.GetEnvironmentVariable("RABBITMQ_HOST") ?? "rabbitmq";
         rmq_port = int.Parse(Environment.GetEnvironmentVariable("RABBITMQ_PORT") ?? "5672");
-        rmq_user = Environment.GetEnvironmentVariable("RABBITMQ_DEFAULT_USER") ?? "guest";
-        rmq_pass = Environment.GetEnvironmentVariable("RABBITMQ_DEFAULT_PASS") ?? "guest";
+        rmq_user = Environment.GetEnvironmentVariable("RABBITMQ_ADMIN_USER") ?? "guest";
+        rmq_pass = Environment.GetEnvironmentVariable("RABBITMQ_ADMIN_PASS") ?? "guest";
 
         // Login to Steam
         client = new DeadlockClient(steam_user, steam_pass);
@@ -92,7 +92,6 @@ class Program
         // Use LINQ to filter, calculate and sort matches by priority
         var sortedMatches = matches?
             .Where(match => match.spectators == 0) // Only take matches with no current spectators
-            .Where(match => match.match_score > 500) // No low elo matches allowed
             .Select(match => new
             {
                 Match = match,

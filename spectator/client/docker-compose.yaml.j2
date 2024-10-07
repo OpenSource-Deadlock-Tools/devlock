@@ -4,11 +4,8 @@ services:
     image: ghcr.io/opensource-deadlock-tools/devlock/spectator/client:latest
     build: .
     restart: always
+    env_file: ../../.env
     environment:
-      RABBITMQ_HOST:
-      RABBITMQ_PORT:
-      RABBITMQ_USER:
-      RABBITMQ_PASS:
       STEAM_USERNAME: {{ acct.username }}
       STEAM_PASSWORD: {{ acct.password }}
   {% endfor %}
