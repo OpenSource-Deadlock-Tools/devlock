@@ -19,9 +19,9 @@ services:
       timeout: 1s
       retries: 30
     environment:
-    - ENABLE_HTTP2=true
-    - ENABLE_IPV6=true
-    - ENABLE_HTTP3=false
+      ENABLE_HTTP2: true
+      ENABLE_IPV6: true
+      ENABLE_HTTP3: false
     networks:
     - webserver
 
