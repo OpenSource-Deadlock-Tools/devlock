@@ -1,0 +1,79 @@
+services:
+  grafana:
+    image: grafana/grafana-enterprise
+    restart: always
+    env_file: ../.env
+    user: "1000"
+    volumes:
+    - grafana-data:/var/lib/grafana
+    - ./grafana/dashboards:/dashboards
+    - ./grafana/dashboard.yaml:/etc/grafana/provisioning/dashboards/main.yaml
+    - ./grafana/datasource.yaml:/etc/grafana/provisioning/datasources/prometheus.yaml
+    ports:
+    - "3000:3000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    depends_on:
+      prometheus:
+        condition: service_healthy
+    networks:
+    - monitoring
+
+  node-exporter:
+    image: prom/node-exporter
+    restart: always
+    volumes:
+    - /:/host:ro,rslave
+    expose:
+    - 9100
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:9100/metrics"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+    depends_on:
+      prometheus:
+        condition: service_healthy
+    networks:
+    - monitoring
+
+  prometheus:
+    image: prom/prometheus
+    restart: always
+    volumes:
+    - ./prometheus.yaml:/etc/prometheus/prometheus.yml:ro
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:9090/-/healthy"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    networks:
+    - monitoring
+
+  watchtower:
+    image: containrrr/watchtower
+    restart: always
+    environment:
+      DOCKER_CONFIG: /config
+      WATCHTOWER_WARN_ON_HEAD_FAILURE: never
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 60 --cleanup --rolling-restart
+
+  autoheal:
+    image: willfarrell/autoheal
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    restart: always
+    environment:
+      AUTOHEAL_CONTAINER_LABEL: all
+
+volumes:
+  grafana-data:
+
+networks:
+  monitoring:
+    name: monitoring
