@@ -15,9 +15,10 @@ class Program
     private static int rmq_port;
     private static readonly string rmq_queue_name = "spectate_queue";
     private static IModel rmq_channel;
+    private static IConnection rmq_connection;
 
     // How often to update the queue
-    private static System.Timers.Timer queue_timer = new(TimeSpan.FromSeconds(30));
+    private static System.Timers.Timer queue_timer = new(TimeSpan.FromSeconds(20));
 
     // Our connection to Deadlock GC (Game Coordinator)
     private static string steam_user, steam_pass;
@@ -30,10 +31,9 @@ class Program
         steam_user = Environment.GetEnvironmentVariable("STEAM_USERNAME") ?? "steamuser";
         steam_pass = Environment.GetEnvironmentVariable("STEAM_PASSWORD") ?? "steampass";
         threshold = int.TryParse(Environment.GetEnvironmentVariable("SPECTATOR_THRESHOLD"), out int thresh)
-            ? thresh
-            : 250;
+            ? thresh : 250;
 
-        rmq_host = Environment.GetEnvironmentVariable("RABBITMQ_HOST") ?? "localhost";
+        rmq_host = Environment.GetEnvironmentVariable("RABBITMQ_HOST") ?? "rabbitmq";
         rmq_port = int.Parse(Environment.GetEnvironmentVariable("RABBITMQ_PORT") ?? "5672");
         rmq_user = Environment.GetEnvironmentVariable("RABBITMQ_USER") ?? "guest";
         rmq_pass = Environment.GetEnvironmentVariable("RABBITMQ_PASS") ?? "guest";
@@ -52,9 +52,32 @@ class Program
             UserName = rmq_user,
             Password = rmq_pass
         };
-        using var connection = factory.CreateConnection();
-        rmq_channel = connection.CreateModel();
-        // Set up the timer to run the job every 30 seconds
+
+        while (rmq_connection == null)
+        {
+            try
+            {
+                rmq_connection = factory.CreateConnection();
+            }
+            catch (RabbitMQ.Client.Exceptions.BrokerUnreachableException)
+            {
+                Console.Error.WriteLine($"[{DateTime.Now:HH:mm:ss.fff}] Could not connect to RabbitMQ. Retrying in 10s...");
+                Thread.Sleep(TimeSpan.FromSeconds(10));
+            }
+        }
+
+        rmq_channel = rmq_connection.CreateModel();
+
+        rmq_channel.QueueDeclare(
+            queue: rmq_queue_name,
+            durable: true, // Messages will survive a RabbitMQ restart
+            exclusive: false,
+            autoDelete: false,
+            arguments: new Dictionary<string, object>
+            {
+                { "x-message-ttl", (int)TimeSpan.FromSeconds(15).TotalMilliseconds }
+            });
+        // Set up the timer to run the job every 20 seconds
         queue_timer.Elapsed += UpdateQueue;
         queue_timer.AutoReset = true; // Make sure the timer runs continuously
         queue_timer.Enabled = true;
@@ -79,6 +102,7 @@ class Program
         // Use LINQ to filter, calculate and sort matches by priority
         var sortedMatches = matches?
             .Where(match => match.spectators == 0) // Only take matches with no current spectators
+            .Where(match => match.match_score > 500) // No low elo matches allowed
             .Select(match => new
             {
                 Match = match,

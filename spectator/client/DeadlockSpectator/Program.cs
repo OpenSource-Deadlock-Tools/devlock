@@ -67,16 +67,6 @@ class Program
 
         rmq_channel = rmq_connection.CreateModel();
 
-        rmq_channel.QueueDeclare(
-            queue: rmq_queue_name,
-            durable: true, // Messages will survive a RabbitMQ restart
-            exclusive: false,
-            autoDelete: false,
-            arguments: new Dictionary<string, object>
-            {
-                { "x-message-ttl", (int)TimeSpan.FromSeconds(15).TotalMilliseconds }
-            });
-
         // Create an event-based consumer
         var consumer = new EventingBasicConsumer(rmq_channel);
 
