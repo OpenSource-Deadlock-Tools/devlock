@@ -1,6 +1,6 @@
 use crate::models::Salts;
 use crate::models::{DataType, ProcessError};
-use crate::s3;
+use crate::{rmq, s3};
 
 use log::{debug, info};
 use reqwest::ClientBuilder;
@@ -25,6 +25,9 @@ pub async fn process_salts(salts: Salts) {
             ProcessError::Io(e) => {
                 eprintln!("Io error: {}", e);
             }
+            ProcessError::RmqError(e) => {
+                eprintln!("Rmq error: {}", e);
+            }
         }
     }
 }
@@ -32,20 +35,21 @@ pub async fn process_salts(salts: Salts) {
 pub async fn process_data(salts: &Salts, data_type: DataType) -> Result<(), ProcessError> {
     let local_file = NamedTempFile::new().map_err(ProcessError::Io)?;
     let local_path = local_file.path().to_path_buf();
-    let remote_path = format!(
+    let s3_path = format!(
         "/ingest/user-ingest/{}/{}",
         data_type,
         get_file_name(&salts, data_type)
     );
 
-    if s3::has_file(&remote_path).await.is_ok_and(|m| m) {
-        info!("File already exists: {}", remote_path);
+    if s3::has_file(&s3_path).await.is_ok_and(|m| m) {
+        info!("File already exists: {}", s3_path);
         return Ok(());
     }
 
     download_to_file(salts, data_type, &local_path).await?;
-    s3::upload_to_s3(&local_path, &remote_path).await?;
-    info!("Uploaded {}", remote_path);
+    s3::upload_to_s3(&local_path, &s3_path).await?;
+    rmq::add_to_queue(&s3_path).await?;
+    info!("Uploaded {}", s3_path);
 
     local_file.close().map_err(ProcessError::Io)
 }

@@ -7,6 +7,7 @@ pub enum ProcessError {
     Reqwest(reqwest::Error),
     S3(s3::error::S3Error),
     Io(io::Error),
+    RmqError(lapin::Error),
 }
 
 #[derive(Deserialize, Debug, Clone)]

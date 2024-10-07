@@ -18,6 +18,15 @@
       "durable": true,
       "name": "spectate_queue",
       "vhost": "/"
+    },
+    {
+      "arguments": {
+        "x-queue-type": "quorum"
+      },
+      "auto_delete": false,
+      "durable": true,
+      "name": "validate_queue",
+      "vhost": "/"
     }
   ],
   "users": [

@@ -16,6 +16,7 @@ use tokio::sync::mpsc;
 
 mod download;
 mod models;
+mod rmq;
 mod s3;
 mod utils;
 
