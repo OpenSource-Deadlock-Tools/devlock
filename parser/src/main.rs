@@ -82,14 +82,18 @@ async fn process_file(file_data: &FileData) -> Result<(), ParseError> {
         .await?;
     let parser = file_data.file_type.get_parser();
     let parse_results = parser.parse(file_data, &file_content)?;
-    for parse_result in parse_results {
-        let parsed_compressed = file_data.compression.compress(&parse_result.data).await?;
-        let parsed_path = get_parsed_path(
-            &file_data.file_name,
-            parse_result.file_type,
-            parse_result.compression,
-        );
-        s3::upload_to_s3(&parsed_compressed, &parsed_path).await?;
+    for result in parse_results {
+        let compressed =
+            if file_data.compression == result.compression && file_content == result.data {
+                debug!("No changes detected, moving file to parsed");
+                &file_content
+            } else {
+                &result.compression.compress(&result.data).await?
+            };
+
+        let parsed_path =
+            get_parsed_path(&file_data.file_name, result.file_type, result.compression);
+        s3::upload_to_s3(compressed, &parsed_path).await?;
         rmq::add_to_queue("ingest_queue", &parsed_path).await?;
         s3::delete_from_s3(s3_path).await?;
     }
