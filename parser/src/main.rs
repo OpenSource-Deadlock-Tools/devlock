@@ -1,4 +1,5 @@
 use crate::models::{Compression, FileData, FileType, ParseError};
+use ::s3::request::ResponseData;
 use futures_lite::StreamExt;
 use lapin::message::Delivery;
 use lapin::options::{BasicAckOptions, BasicRejectOptions};
@@ -67,15 +68,30 @@ async fn try_process_message(message: &Delivery) -> Result<(), ParseError> {
     info!("Processing file: {:?}", s3_path);
     let file_data = FileData::try_from(&s3_path.to_path_buf())?;
     debug!("File Data: {:#?}", file_data);
-    process_file(&file_data).await
-}
-
-async fn process_file(file_data: &FileData) -> Result<(), ParseError> {
     let s3_path = file_data
         .file_path
         .to_str()
         .ok_or(ParseError::FilenameParse)?;
     let file_content = s3::download_from_s3(s3_path).await?;
+    match process_file(&file_data, &file_content).await {
+        Ok(_) => Ok(()),
+        Err(e) => {
+            let failed_path = get_failed_path(
+                &file_data.file_name,
+                file_data.file_type,
+                file_data.compression,
+            );
+            s3::delete_from_s3(s3_path).await?;
+            if !s3::has_file(&failed_path).await.unwrap_or_default() {
+                s3::upload_to_s3(file_content.bytes(), &failed_path).await?;
+                rmq::add_to_queue("parse_error_queue", &failed_path).await?;
+            }
+            Err(e)
+        }
+    }
+}
+
+async fn process_file(file_data: &FileData, file_content: &ResponseData) -> Result<(), ParseError> {
     let file_content = file_data
         .compression
         .decompress(&file_content.bytes().to_vec())
@@ -95,6 +111,10 @@ async fn process_file(file_data: &FileData) -> Result<(), ParseError> {
             get_parsed_path(&file_data.file_name, result.file_type, result.compression);
         s3::upload_to_s3(compressed, &parsed_path).await?;
         rmq::add_to_queue("ingest_queue", &parsed_path).await?;
+        let s3_path = file_data
+            .file_path
+            .to_str()
+            .ok_or(ParseError::FilenameParse)?;
         s3::delete_from_s3(s3_path).await?;
     }
     Ok(())
@@ -105,6 +125,16 @@ fn get_parsed_path(file_name: &str, file_type: FileType, compression: Compressio
         Compression::Uncompressed => format!("/parsed/{}/{}.{}", file_type, file_name, file_type),
         _ => format!(
             "/parsed/{}/{}.{}.{}",
+            file_type, file_name, file_type, compression
+        ),
+    }
+}
+
+fn get_failed_path(file_name: &str, file_type: FileType, compression: Compression) -> String {
+    match compression {
+        Compression::Uncompressed => format!("/failed/{}/{}.{}", file_type, file_name, file_type),
+        _ => format!(
+            "/failed/{}/{}.{}.{}",
             file_type, file_name, file_type, compression
         ),
     }

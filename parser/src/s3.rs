@@ -55,3 +55,10 @@ pub async fn delete_from_s3(s3_path: &str) -> Result<ResponseData, ParseError> {
                 .ok_or(ParseError::S3(S3Error::HttpFail))
         })
 }
+
+pub async fn has_file(s3_path: &str) -> Result<bool, S3Error> {
+    S3_BUCKET
+        .head_object(s3_path)
+        .await
+        .map(|(_, code)| code == 200)
+}
