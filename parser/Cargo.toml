@@ -12,5 +12,5 @@ log = "0.4.22"
 futures-lite = "2.3.0"
 async-compression = { version = "0.4.13", features = ["bzip2", "tokio"] }
 bytes = "1.7.2"
-valveprotos = { git = "https://github.com/OpenSource-Deadlock-Tools/valveprotos-rs", version = "0.0.0", features = ["deadlock"] }
+valveprotos = { git = "https://github.com/OpenSource-Deadlock-Tools/valveprotos-rs", rev = "71ab6d7de2cd43f567397f65821efd80f5aa0b71", features = ["deadlock"] }
 prost = "0.13.3"
