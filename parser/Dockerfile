@@ -2,6 +2,11 @@ FROM rust:bookworm as builder
 
 WORKDIR /app
 
+RUN apt-get update && \
+    apt-get install -y protobuf-compiler && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
 COPY . .
 
 RUN cargo build --release
