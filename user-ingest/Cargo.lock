@@ -2761,7 +2761,6 @@ dependencies = [
  "reqwest",
  "rust-s3",
  "serde",
- "serde_json",
  "tempfile",
  "tokio",
 ]

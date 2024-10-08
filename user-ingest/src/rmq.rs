@@ -3,7 +3,6 @@ use crate::models::ProcessError;
 use lapin::options::BasicPublishOptions;
 use lapin::{BasicProperties, Channel, Connection, ConnectionProperties};
 use log::info;
-use serde_json::json;
 use std::sync::LazyLock;
 use tokio::sync::OnceCell;
 
@@ -17,20 +16,15 @@ const RABBITMQ_QUEUE: &str = "validate_queue";
 static RABBITMQ_CONNECTION: OnceCell<Connection> = OnceCell::const_new();
 static RABBITMQ_CHANNEL: OnceCell<Channel> = OnceCell::const_new();
 
-pub async fn add_to_queue(s3_path: &str) -> Result<(), ProcessError> {
+pub async fn add_to_queue(body: &str) -> Result<(), ProcessError> {
     let rmq_channel = get_rmq_channel().await?;
-    let message = json!(
-        {
-            "s3_path": s3_path,
-        }
-    );
-    info!("Sending message {} to queue: {}", message, RABBITMQ_QUEUE);
+    info!("Sending message {} to queue: {}", body, RABBITMQ_QUEUE);
     rmq_channel
         .basic_publish(
             "",
             RABBITMQ_QUEUE,
             BasicPublishOptions::default(),
-            message.to_string().as_bytes(),
+            body.as_bytes(),
             BasicProperties::default(),
         )
         .await
