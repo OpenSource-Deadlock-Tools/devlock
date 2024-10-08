@@ -153,7 +153,6 @@ impl FromStr for Keyword {
 #[derive(Debug, Clone)]
 pub struct FileData {
     pub file_name: String,
-    pub file_name_with_ext: String,
     pub file_path: PathBuf,
     pub file_type: FileType,
     pub compression: Compression,
@@ -185,17 +184,9 @@ impl TryFrom<&PathBuf> for FileData {
             })
             .collect();
 
-        let file_name_with_ext = file_path
-            .to_str()
-            .ok_or(ParseError::FilenameParse)?
-            .split('/')
-            .last()
-            .ok_or(ParseError::FilenameParse)?
-            .to_string();
         Ok(Self {
             file_path: file_path.clone(),
             file_name: filename.to_string(),
-            file_name_with_ext,
             file_type,
             compression,
             kwargs: file_name_data,
