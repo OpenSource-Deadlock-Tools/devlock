@@ -1,0 +1,107 @@
+use crate::models::{Compression, FileData, FileType, ParseError};
+use futures_lite::StreamExt;
+use lapin::message::Delivery;
+use lapin::options::{BasicAckOptions, BasicRejectOptions};
+use log::{debug, error, info};
+use std::path::Path;
+use std::sync::Arc;
+use tokio::sync::Semaphore;
+
+mod models;
+mod parsers;
+mod rmq;
+mod s3;
+
+#[tokio::main]
+async fn main() {
+    env_logger::init();
+
+    let mut validate_queue_consumer = match rmq::get_queue_consumer("validate_queue").await {
+        Ok(c) => c,
+        Err(e) => panic!("Error getting queue consumer: {:?}", e),
+    };
+
+    let semaphore = Arc::new(Semaphore::new(10));
+    while let Some(delivery) = validate_queue_consumer.next().await {
+        let semaphore = semaphore.clone();
+        match delivery {
+            Ok(delivery) => {
+                let permit = semaphore.clone().acquire_owned().await.unwrap();
+                tokio::spawn(async move {
+                    process_message(delivery).await;
+                    drop(permit);
+                });
+            }
+            Err(e) => {
+                println!("Error receiving message: {:?}", e);
+                continue;
+            }
+        }
+    }
+}
+
+async fn process_message(message: Delivery) {
+    match try_process_message(&message).await {
+        Ok(_) => {
+            debug!(
+                "Message processed successfully: {:?}",
+                String::from_utf8_lossy(&message.data)
+            );
+            message.ack(BasicAckOptions::default()).await.unwrap();
+        }
+        Err(e) => {
+            error!(
+                "Error processing message {:?} -> {:?}",
+                String::from_utf8_lossy(&message.data),
+                e
+            );
+            message.reject(BasicRejectOptions::default()).await.unwrap();
+        }
+    }
+}
+
+async fn try_process_message(message: &Delivery) -> Result<(), ParseError> {
+    let s3_path = String::from_utf8_lossy(&message.data);
+    let s3_path = s3_path.trim();
+    let s3_path = Path::new(s3_path);
+    info!("Processing file: {:?}", s3_path);
+    let file_data = FileData::try_from(&s3_path.to_path_buf())?;
+    debug!("File Data: {:#?}", file_data);
+    process_file(&file_data).await
+}
+
+async fn process_file(file_data: &FileData) -> Result<(), ParseError> {
+    let s3_path = file_data
+        .file_path
+        .to_str()
+        .ok_or(ParseError::FilenameParse)?;
+    let file_content = s3::download_from_s3(s3_path).await?;
+    let file_content = file_data
+        .compression
+        .decompress(&file_content.bytes().to_vec())
+        .await?;
+    let parser = file_data.file_type.get_parser();
+    let parse_results = parser.parse(file_data, &file_content)?;
+    for parse_result in parse_results {
+        let parsed_compressed = file_data.compression.compress(&parse_result.data).await?;
+        let parsed_path = get_parsed_path(
+            &file_data.file_name,
+            parse_result.file_type,
+            parse_result.compression,
+        );
+        s3::upload_to_s3(&parsed_compressed, &parsed_path).await?;
+        rmq::add_to_queue("ingest_queue", &parsed_path).await?;
+        s3::delete_from_s3(s3_path).await?;
+    }
+    Ok(())
+}
+
+fn get_parsed_path(file_name: &str, file_type: FileType, compression: Compression) -> String {
+    match compression {
+        Compression::Uncompressed => format!("/parsed/{}/{}.{}", file_type, file_name, file_type),
+        _ => format!(
+            "/parsed/{}/{}.{}.{}",
+            file_type, file_name, file_type, compression
+        ),
+    }
+}

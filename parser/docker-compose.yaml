@@ -1,0 +1,13 @@
+services:
+  parser:
+    image: ghcr.io/opensource-deadlock-tools/parser:latest
+    build: .
+    restart: always
+    env_file: ../.env
+    stop_grace_period: 2m # Allow all in-flight processes to complete
+    networks:
+    - rabbitmq
+
+networks:
+  rabbitmq:
+    external: true

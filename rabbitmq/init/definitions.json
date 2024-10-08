@@ -27,6 +27,15 @@
       "durable": true,
       "name": "validate_queue",
       "vhost": "/"
+    },
+    {
+      "arguments": {
+        "x-queue-type": "quorum"
+      },
+      "auto_delete": false,
+      "durable": true,
+      "name": "ingest_queue",
+      "vhost": "/"
     }
   ],
   "users": [

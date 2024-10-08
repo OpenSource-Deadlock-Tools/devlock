@@ -1,0 +1,16 @@
+[package]
+name = "parser"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+env_logger = "0.11.5"
+lapin = "2.5.0"
+rust-s3 = "0.35.1"
+tokio = { version = "1.40.0", features = ["rt-multi-thread", "macros"] }
+log = "0.4.22"
+futures-lite = "2.3.0"
+async-compression = { version = "0.4.13", features = ["bzip2", "tokio"] }
+bytes = "1.7.2"
+valveprotos = { git = "https://github.com/OpenSource-Deadlock-Tools/valveprotos-rs", version = "0.0.0", features = ["deadlock"] }
+prost = "0.13.3"
