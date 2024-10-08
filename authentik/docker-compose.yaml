@@ -45,7 +45,7 @@ services:
     - ./custom-templates:/templates
     env_file: .env
     ports:
-    - "9000:9000"
+    - "9001:9000"
     networks:
     - default
     - monitoring

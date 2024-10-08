@@ -14,6 +14,11 @@ repos:
   - id: mixed-line-ending
   - id: pretty-format-json
     args: [--autofix]
+- repo: https://github.com/sqlfluff/sqlfluff
+  rev: 3.2.2
+  hooks:
+  - id: sqlfluff-fix
+    args: ["--dialect", "clickhouse", "-e", "CP03,CP05"]
 
 # Hooks for validation
 - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -28,3 +33,8 @@ repos:
   rev: 3.0.3
   hooks:
   - id: editorconfig-checker
+- repo: https://github.com/sqlfluff/sqlfluff
+  rev: 3.2.2
+  hooks:
+  - id: sqlfluff-lint
+    args: ["--dialect", "clickhouse", "-e", "CP03,CP05"]

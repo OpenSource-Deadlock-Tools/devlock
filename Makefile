@@ -1,5 +1,5 @@
 # Define the list of all directories containing the compose files
-ALL_DIRS=webserver monitoring authentik rabbitmq parser user-ingest spectator/server
+ALL_DIRS=clickhouse webserver monitoring authentik rabbitmq parser user-ingest spectator/server
 
 # If specific directories are passed as arguments, use them; otherwise, use ALL_DIRS
 DIRS=$(if $(filter $(ALL_DIRS), $(MAKECMDGOALS)), $(filter $(ALL_DIRS), $(MAKECMDGOALS)), $(ALL_DIRS))
