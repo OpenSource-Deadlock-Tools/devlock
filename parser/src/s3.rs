@@ -1,5 +1,4 @@
-use crate::models::ParseError;
-
+use crate::models::error::ParseError;
 use s3::creds::Credentials;
 use s3::error::S3Error;
 use s3::request::ResponseData;

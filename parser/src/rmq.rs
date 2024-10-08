@@ -1,5 +1,4 @@
-use crate::models::ParseError;
-
+use crate::models::error::ParseError;
 use lapin::options::BasicPublishOptions;
 use lapin::{BasicProperties, Channel, Connection, ConnectionProperties, Consumer};
 use log::info;

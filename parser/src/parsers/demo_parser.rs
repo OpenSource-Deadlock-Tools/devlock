@@ -1,4 +1,6 @@
-use crate::models::{FileData, ParseError, ParseResults};
+use crate::models::error::ParseError;
+use crate::models::file_data::FileData;
+use crate::models::result::ParseResults;
 use crate::parsers::parser::Parser;
 
 #[derive(Default, Debug)]

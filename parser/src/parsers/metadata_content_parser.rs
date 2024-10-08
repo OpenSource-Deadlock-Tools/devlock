@@ -1,4 +1,7 @@
-use crate::models::{FileData, FileType, ParseError, ParseResult, ParseResults};
+use crate::models::error::ParseError;
+use crate::models::file_data::FileData;
+use crate::models::file_type::FileType;
+use crate::models::result::{ParseResult, ParseResults};
 use crate::parsers::parser::Parser;
 use prost::Message;
 use valveprotos::deadlock::CMsgMatchMetaDataContents;

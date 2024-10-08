@@ -1,4 +1,7 @@
-use crate::models::{Compression, FileData, FileType, ParseError};
+use crate::models::compression::Compression;
+use crate::models::error::ParseError;
+use crate::models::file_data::FileData;
+use crate::models::file_type::FileType;
 use ::s3::request::ResponseData;
 use futures_lite::StreamExt;
 use lapin::message::Delivery;
