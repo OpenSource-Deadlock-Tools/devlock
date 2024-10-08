@@ -6,8 +6,10 @@ use log::info;
 use std::sync::LazyLock;
 use tokio::sync::OnceCell;
 
-static RABBITMQ_USER: LazyLock<String> = LazyLock::new(|| std::env::var("RABBITMQ_USER").unwrap());
-static RABBITMQ_PASS: LazyLock<String> = LazyLock::new(|| std::env::var("RABBITMQ_PASS").unwrap());
+static RABBITMQ_USER: LazyLock<String> =
+    LazyLock::new(|| std::env::var("RABBITMQ_ADMIN_USER").unwrap());
+static RABBITMQ_PASS: LazyLock<String> =
+    LazyLock::new(|| std::env::var("RABBITMQ_ADMIN_PASS").unwrap());
 static RABBITMQ_HOST: LazyLock<String> = LazyLock::new(|| std::env::var("RABBITMQ_HOST").unwrap());
 static RABBITMQ_PORT: LazyLock<String> = LazyLock::new(|| std::env::var("RABBITMQ_PORT").unwrap());
 
