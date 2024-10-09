@@ -1,5 +1,5 @@
 [package]
-name = "parser"
+name = "db-ingest"
 version = "0.1.0"
 edition = "2021"
 
@@ -14,3 +14,6 @@ async-compression = { version = "0.4.13", features = ["bzip2", "tokio"] }
 bytes = "1.7.2"
 valveprotos = { git = "https://github.com/OpenSource-Deadlock-Tools/valveprotos-rs", rev = "71ab6d7de2cd43f567397f65821efd80f5aa0b71", features = ["deadlock"] }
 prost = "0.13.3"
+serde_repr = "0.1.19"
+serde = { version = "1.0.210", features = ["derive"] }
+clickhouse = { version = "0.13.0", features = ["time"] }

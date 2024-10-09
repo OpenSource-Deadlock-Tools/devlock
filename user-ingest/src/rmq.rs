@@ -13,7 +13,7 @@ static RABBITMQ_PASS: LazyLock<String> =
 static RABBITMQ_HOST: LazyLock<String> = LazyLock::new(|| std::env::var("RABBITMQ_HOST").unwrap());
 static RABBITMQ_PORT: LazyLock<String> = LazyLock::new(|| std::env::var("RABBITMQ_PORT").unwrap());
 
-const RABBITMQ_QUEUE: &str = "validate_queue";
+const RABBITMQ_QUEUE: &str = "db_ingest_queue";
 
 static RABBITMQ_CONNECTION: OnceCell<Connection> = OnceCell::const_new();
 static RABBITMQ_CHANNEL: OnceCell<Channel> = OnceCell::const_new();

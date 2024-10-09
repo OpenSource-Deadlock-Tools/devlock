@@ -1,13 +1,16 @@
 services:
-  parser:
-    image: ghcr.io/opensource-deadlock-tools/parser:latest
+  db-ingest:
+    image: ghcr.io/opensource-deadlock-tools/db-ingest:latest
     build: .
     restart: always
     env_file: ../.env
     stop_grace_period: 2m # Allow all in-flight processes to complete
     networks:
     - rabbitmq
+    - clickhouse
 
 networks:
   rabbitmq:
+    external: true
+  clickhouse:
     external: true

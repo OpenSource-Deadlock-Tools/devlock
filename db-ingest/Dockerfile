@@ -18,8 +18,8 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-COPY --from=builder /app/target/release/parser /usr/local/bin/parser
+COPY --from=builder /app/target/release/db-ingest /usr/local/bin/db-ingest
 
 EXPOSE 8080
 
-CMD ["parser"]
+CMD ["db-ingest"]

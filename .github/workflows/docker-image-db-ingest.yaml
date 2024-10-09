@@ -1,4 +1,4 @@
-name: docker-image-parser
+name: docker-image-db-ingest
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
     branches:
     - 'main'
     paths:
-    - 'parser/**'
+    - 'db-ingest/**'
 
 env:
   IMAGE_TAG_OWNER: opensource-deadlock-tools
@@ -40,5 +40,5 @@ jobs:
       uses: docker/build-push-action@v6
       with:
         push: true
-        tags: ghcr.io/${{ env.IMAGE_TAG_OWNER }}/${{ env.IMAGE_TAG_NAME }}/parser:latest
-        context: parser
+        tags: ghcr.io/${{ env.IMAGE_TAG_OWNER }}/${{ env.IMAGE_TAG_NAME }}/db-ingest:latest
+        context: db-ingest

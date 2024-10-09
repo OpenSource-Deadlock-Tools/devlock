@@ -14,7 +14,7 @@ static RABBITMQ_PORT: LazyLock<String> = LazyLock::new(|| std::env::var("RABBITM
 static RABBITMQ_CONNECTION: OnceCell<Connection> = OnceCell::const_new();
 static RABBITMQ_CHANNEL: OnceCell<Channel> = OnceCell::const_new();
 
-const CONSUMER_TAG: &str = "parser";
+const CONSUMER_TAG: &str = "db-ingest";
 
 pub async fn add_to_queue(queue: &str, body: &str) -> Result<(), ParseError> {
     let rmq_channel = get_rmq_channel().await?;

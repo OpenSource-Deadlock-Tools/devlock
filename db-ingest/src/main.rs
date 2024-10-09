@@ -1,3 +1,5 @@
+use crate::ingestors::clickhouse_ingestor::ClickhouseIngestor;
+use crate::ingestors::ingestor::Ingestor;
 use crate::models::compression::Compression;
 use crate::models::error::ParseError;
 use crate::models::file_data::FileData;
@@ -11,6 +13,7 @@ use std::path::Path;
 use std::sync::Arc;
 use tokio::sync::Semaphore;
 
+mod ingestors;
 mod models;
 mod parsers;
 mod rmq;
@@ -20,13 +23,13 @@ mod s3;
 async fn main() {
     env_logger::init();
 
-    let mut validate_queue_consumer = match rmq::get_queue_consumer("validate_queue").await {
+    let mut db_ingest_queue_consumer = match rmq::get_queue_consumer("db_ingest_queue").await {
         Ok(c) => c,
         Err(e) => panic!("Error getting queue consumer: {:?}", e),
     };
 
     let semaphore = Arc::new(Semaphore::new(10));
-    while let Some(delivery) = validate_queue_consumer.next().await {
+    while let Some(delivery) = db_ingest_queue_consumer.next().await {
         let semaphore = semaphore.clone();
         match delivery {
             Ok(delivery) => {
@@ -100,26 +103,27 @@ async fn process_file(file_data: &FileData, file_content: &ResponseData) -> Resu
         .decompress(&file_content.bytes().to_vec())
         .await?;
     let parser = file_data.file_type.get_parser();
-    let parse_results = parser.parse(file_data, &file_content)?;
-    for result in parse_results {
-        let compressed =
-            if file_data.compression == result.compression && file_content == result.data {
-                debug!("No changes detected, moving file to parsed");
-                &file_content
-            } else {
-                &result.compression.compress(&result.data).await?
-            };
+    let result = parser.parse(file_data, &file_content)?;
+    let clickhouse_ingestor = ClickhouseIngestor::new();
+    let compressed = if file_data.compression == result.compression && file_content == result.data {
+        debug!("No changes detected, moving file to parsed");
+        &file_content
+    } else {
+        &result.compression.compress(&result.data).await?
+    };
 
-        let parsed_path =
-            get_parsed_path(&file_data.file_name, result.file_type, result.compression);
-        s3::upload_to_s3(compressed, &parsed_path).await?;
-        rmq::add_to_queue("ingest_queue", &parsed_path).await?;
-        let s3_path = file_data
-            .file_path
-            .to_str()
-            .ok_or(ParseError::FilenameParse)?;
-        s3::delete_from_s3(s3_path).await?;
+    match result.file_type {
+        FileType::Metadata => clickhouse_ingestor.ingest(&result.parsed_data).await?,
+        FileType::MetadataContent => clickhouse_ingestor.ingest(&result.parsed_data).await?,
     }
+
+    let parsed_path = get_parsed_path(&file_data.file_name, result.file_type, result.compression);
+    s3::upload_to_s3(compressed, &parsed_path).await?;
+    let s3_path = file_data
+        .file_path
+        .to_str()
+        .ok_or(ParseError::FilenameParse)?;
+    s3::delete_from_s3(s3_path).await?;
     Ok(())
 }
 
