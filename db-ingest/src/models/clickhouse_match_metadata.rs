@@ -142,7 +142,7 @@ pub struct ClickhouseMatchPlayer {
     pub assigned_lane: u32,
     pub player_level: u32,
     pub abandon_match_time_s: u32,
-    pub ability_stats: Vec<(u32, u32)>,
+    pub ability_stats: Vec<(i64, i64)>,
     pub stats_type_stat: Vec<f32>,
     #[serde(rename = "book_reward.book_id")]
     pub book_reward_book_id: Vec<u32>,
@@ -381,7 +381,7 @@ impl From<(u64, Players)> for ClickhouseMatchPlayer {
             ability_stats: value
                 .ability_stats
                 .iter()
-                .map(|v| (v.ability_id(), v.ability_value()))
+                .map(|v| (v.ability_id() as i64, v.ability_value() as i64))
                 .collect(),
             stats_type_stat: value.stats_type_stat.clone(),
             book_reward_starting_xp: value.book_rewards.iter().map(|v| v.starting_xp()).collect(),

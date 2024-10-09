@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS match_player
     assigned_lane UInt32,
     player_level UInt32,
     abandon_match_time_s UInt32,
-    ability_stats Map (UInt32, UInt32),
+    ability_stats Map (Int64, Int64),
     stats_type_stat Array (Float32),
     book_reward Nested (
         book_id UInt32,
