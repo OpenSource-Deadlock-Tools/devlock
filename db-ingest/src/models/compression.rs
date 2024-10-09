@@ -45,6 +45,7 @@ impl Compression {
                     .write_all(data)
                     .await
                     .map_err(ParseError::Decompress)?;
+                encoder.shutdown().await.map_err(ParseError::Decompress)?;
                 Ok(encoder.into_inner())
             }
             Self::Zstd => {
@@ -53,6 +54,7 @@ impl Compression {
                     .write_all(data)
                     .await
                     .map_err(ParseError::Decompress)?;
+                encoder.shutdown().await.map_err(ParseError::Decompress)?;
                 Ok(encoder.into_inner())
             }
         }
