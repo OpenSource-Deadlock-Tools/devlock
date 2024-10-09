@@ -4,12 +4,10 @@ services:
     build: .
     restart: always
     env_file: ../.env
-#    environment:
-#      VIRTUAL_HOST: ingest.DOMAIN.de
-#      VIRTUAL_PORT: 8080
-#      LETSENCRYPT_HOST: ingest.DOMAIN.de
-    ports:
-    - "8080:8080"
+    environment:
+      VIRTUAL_HOST: ingest.devlock.net
+      VIRTUAL_PORT: 8080
+      LETSENCRYPT_HOST: ingest.devlock.net
     stop_grace_period: 2m # Allow all in-flight uploads to complete
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
@@ -18,10 +16,10 @@ services:
       retries: 3
     networks:
     - rabbitmq
-#    - webserver
+    - webserver
 
 networks:
   rabbitmq:
     external: true
-#  webserver:
-#    external: true
+  webserver:
+    external: true

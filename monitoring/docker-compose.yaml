@@ -11,12 +11,12 @@ services:
     - ./grafana/datasource.yaml:/etc/grafana/provisioning/datasources/prometheus.yaml
     ports:
     - "3000:3000"
-#    environment:
-#      VIRTUAL_HOST: grafana.DOMAIN.de
-#      VIRTUAL_PORT: 3000
-#      LETSENCRYPT_HOST: grafana.DOMAIN.de
-#      GF_SERVER_DOMAIN: grafana.DOMAIN.de
-#      GF_SERVER_ROOT_URL: https://grafana.DOMAIN.de
+    environment:
+      VIRTUAL_HOST: grafana.devlock.net
+      VIRTUAL_PORT: 3000
+      LETSENCRYPT_HOST: grafana.devlock.net
+      GF_SERVER_DOMAIN: grafana.devlock.net
+      GF_SERVER_ROOT_URL: https://grafana.devlock.net
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
       interval: 10s
@@ -27,7 +27,7 @@ services:
         condition: service_healthy
     networks:
     - monitoring
-#    - webserver
+    - webserver
 
   node-exporter:
     image: prom/node-exporter
@@ -84,5 +84,5 @@ volumes:
 networks:
   monitoring:
     name: monitoring
-#  webserver:
-#    external: true
+  webserver:
+    external: true

@@ -37,19 +37,17 @@ services:
       AUTHENTIK_POSTGRESQL__USER: ${PG_USER:-authentik}
       AUTHENTIK_POSTGRESQL__NAME: ${PG_DB:-authentik}
       AUTHENTIK_POSTGRESQL__PASSWORD: ${PG_PASS}
-#      VIRTUAL_HOST: auth.DOMAIN.de
-#      VIRTUAL_PORT: 9000
-#      LETSENCRYPT_HOST: auth.DOMAIN.de
+      VIRTUAL_HOST: auth.devlock.net
+      VIRTUAL_PORT: 9000
+      LETSENCRYPT_HOST: auth.devlock.net
     volumes:
     - ./media:/media
     - ./custom-templates:/templates
     env_file: .env
-    ports:
-    - "9001:9000"
     networks:
     - default
     - monitoring
-#      - webserver
+    - webserver
     depends_on:
       postgresql:
         condition: service_healthy
@@ -81,5 +79,5 @@ services:
 networks:
   monitoring:
     external: true
-#  webserver:
-#    external: true
+  webserver:
+    external: true
