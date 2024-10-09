@@ -76,10 +76,10 @@ services:
     restart: always
     env_file: ../.env
     environment:
-      DOCKER_CONFIG: /config
       WATCHTOWER_WARN_ON_HEAD_FAILURE: never
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
+    - /config.json:/config.json:ro
     command: --interval 60 --cleanup --rolling-restart
 
   autoheal:
