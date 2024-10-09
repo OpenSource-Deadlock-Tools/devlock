@@ -1,6 +1,6 @@
 services:
   db-ingest:
-    image: ghcr.io/opensource-deadlock-tools/db-ingest:latest
+    image: ghcr.io/opensource-deadlock-tools/devlock/db-ingest
     build: .
     restart: always
     env_file: ../.env

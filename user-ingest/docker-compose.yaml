@@ -1,6 +1,6 @@
 services:
   user-ingest:
-    image: ghcr.io/opensource-deadlock-tools/user-ingest:latest
+    image: ghcr.io/opensource-deadlock-tools/devlock/user-ingest
     build: .
     restart: always
     env_file: ../.env
