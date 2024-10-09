@@ -13,6 +13,7 @@ services:
     volumes:
     - ./data:/var/lib/clickhouse
     - ./log:/var/log/clickhouse-server
+    - ./config.xml:/etc/clickhouse-server/config.xml
     env_file: ../.env
     environment:
       CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: 1
