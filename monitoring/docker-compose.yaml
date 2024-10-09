@@ -17,6 +17,17 @@ services:
       LETSENCRYPT_HOST: grafana.devlock.net
       GF_SERVER_DOMAIN: grafana.devlock.net
       GF_SERVER_ROOT_URL: https://grafana.devlock.net
+      GF_AUTH_GENERIC_OAUTH_ENABLED: "true"
+      GF_AUTH_GENERIC_OAUTH_NAME: "authentik"
+      GF_AUTH_GENERIC_OAUTH_SCOPES: "openid profile email offline_access"
+      GF_AUTH_GENERIC_OAUTH_AUTH_URL: "https://auth.devlock.net/application/o/authorize/"
+      GF_AUTH_GENERIC_OAUTH_TOKEN_URL: "https://auth.devlock.net/application/o/token/"
+      GF_AUTH_GENERIC_OAUTH_API_URL: "https://auth.devlock.net/application/o/userinfo/"
+      GF_AUTH_SIGNOUT_REDIRECT_URL: "https://auth.devlock.net/application/o/grafana/end-session/"
+      GF_AUTH_OAUTH_AUTO_LOGIN: "true"
+      GF_AUTH_GENERIC_OAUTH_ROLE_ATTRIBUTE_PATH: "contains(groups, 'Grafana Admins') && 'Admin'\
+        \ || contains(groups, 'Grafana Editors') && 'Editor' || contains(groups, 'Grafana Viewers')\
+        \ && 'Viewer' || 'None'"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
       interval: 10s
