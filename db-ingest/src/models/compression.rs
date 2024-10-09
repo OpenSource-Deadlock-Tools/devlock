@@ -64,7 +64,7 @@ impl Display for Compression {
         match self {
             Self::Uncompressed => write!(f, ""),
             Self::Bzip2 => write!(f, "bz2"),
-            Self::Zstd => write!(f, "zstd"),
+            Self::Zstd => write!(f, "zst"),
         }
     }
 }
@@ -75,6 +75,7 @@ impl FromStr for Compression {
     fn from_str(s: &str) -> Result<Self, Self::Err> {
         match s {
             "bz2" => Ok(Self::Bzip2),
+            "zst" => Ok(Self::Zstd),
             _ => Err(ParseError::UnknownVariant),
         }
     }
