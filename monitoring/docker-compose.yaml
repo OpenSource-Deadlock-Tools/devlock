@@ -74,6 +74,7 @@ services:
   watchtower:
     image: containrrr/watchtower
     restart: always
+    env_file: ../.env
     environment:
       DOCKER_CONFIG: /config
       WATCHTOWER_WARN_ON_HEAD_FAILURE: never
@@ -83,9 +84,10 @@ services:
 
   autoheal:
     image: willfarrell/autoheal
+    restart: always
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
-    restart: always
+    env_file: ../.env
     environment:
       AUTOHEAL_CONTAINER_LABEL: all
 
