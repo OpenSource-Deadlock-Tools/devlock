@@ -77,10 +77,14 @@ services:
     env_file: ../.env
     environment:
       WATCHTOWER_WARN_ON_HEAD_FAILURE: never
+      WATCHTOWER_HTTP_API_METRICS: "true"
+      WATCHTOWER_HTTP_API_TOKEN: watchtower-api-token
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
     - /config.json:/config.json:ro
     command: --interval 60 --cleanup --rolling-restart
+    networks:
+    - monitoring
 
   autoheal:
     image: willfarrell/autoheal
