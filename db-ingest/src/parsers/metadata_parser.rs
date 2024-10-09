@@ -1,6 +1,7 @@
 use crate::parsers::parser::Parser;
 use prost::Message;
 
+use crate::models::compression::Compression;
 use crate::models::error::ParseError;
 use crate::models::file_data::FileData;
 use crate::models::file_type::FileType;
@@ -28,7 +29,7 @@ impl Parser<MatchInfo> for MetaDataParser {
         Ok(ParseResult {
             file_type: FileType::MetadataContent,
             data: match_details.to_vec(),
-            compression: file_data.compression,
+            compression: Compression::Zstd,
             parsed_data,
         })
     }

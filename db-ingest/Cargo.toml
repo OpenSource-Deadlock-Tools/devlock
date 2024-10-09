@@ -10,7 +10,7 @@ rust-s3 = "0.35.1"
 tokio = { version = "1.40.0", features = ["rt-multi-thread", "macros"] }
 log = "0.4.22"
 futures-lite = "2.3.0"
-async-compression = { version = "0.4.13", features = ["bzip2", "tokio"] }
+async-compression = { version = "0.4.13", features = ["bzip2", "tokio", "zstd"] }
 bytes = "1.7.2"
 valveprotos = { git = "https://github.com/OpenSource-Deadlock-Tools/valveprotos-rs", rev = "71ab6d7de2cd43f567397f65821efd80f5aa0b71", features = ["deadlock"] }
 prost = "0.13.3"

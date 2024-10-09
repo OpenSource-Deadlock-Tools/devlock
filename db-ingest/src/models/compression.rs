@@ -1,6 +1,6 @@
 use crate::models::error::ParseError;
-use async_compression::tokio::bufread::BzDecoder;
-use async_compression::tokio::write::BzEncoder;
+use async_compression::tokio::bufread::{BzDecoder, ZstdDecoder};
+use async_compression::tokio::write::{BzEncoder, ZstdEncoder};
 use std::fmt::Display;
 use std::str::FromStr;
 use std::{vec, write};
@@ -11,6 +11,7 @@ pub enum Compression {
     #[default]
     Uncompressed,
     Bzip2,
+    Zstd,
 }
 
 impl Compression {
@@ -20,6 +21,14 @@ impl Compression {
             Self::Bzip2 => {
                 let mut decompressed = vec![];
                 BzDecoder::new(data.as_ref())
+                    .read_to_end(&mut decompressed)
+                    .await
+                    .map_err(ParseError::Decompress)?;
+                Ok(decompressed)
+            }
+            Self::Zstd => {
+                let mut decompressed = vec![];
+                ZstdDecoder::new(data.as_ref())
                     .read_to_end(&mut decompressed)
                     .await
                     .map_err(ParseError::Decompress)?;
@@ -38,6 +47,14 @@ impl Compression {
                     .map_err(ParseError::Decompress)?;
                 Ok(encoder.into_inner())
             }
+            Self::Zstd => {
+                let mut encoder = ZstdEncoder::new(Vec::new());
+                encoder
+                    .write_all(data)
+                    .await
+                    .map_err(ParseError::Decompress)?;
+                Ok(encoder.into_inner())
+            }
         }
     }
 }
@@ -47,6 +64,7 @@ impl Display for Compression {
         match self {
             Self::Uncompressed => write!(f, ""),
             Self::Bzip2 => write!(f, "bz2"),
+            Self::Zstd => write!(f, "zstd"),
         }
     }
 }
