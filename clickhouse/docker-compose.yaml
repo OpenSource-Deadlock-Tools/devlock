@@ -24,7 +24,10 @@ services:
       retries: 3
     networks:
     - clickhouse
+    - monitoring
 
 networks:
   clickhouse:
     name: clickhouse
+  monitoring:
+    external: true
