@@ -3,7 +3,7 @@ use serde::{Deserialize, Serialize};
 #[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct ActiveMatch {
     pub match_id: u32,
-    pub scraped_at: i64,
+    pub scraped_at: u32,
     pub winning_team: u8,
     pub start_time: u32,
     pub players: Vec<ActiveMatchPlayer>,

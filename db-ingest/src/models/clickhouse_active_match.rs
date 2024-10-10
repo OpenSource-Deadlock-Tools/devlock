@@ -6,7 +6,7 @@ use serde::Serialize;
 #[derive(Row, Serialize, Debug)]
 pub struct ClickHouseActiveMatch {
     pub match_id: u32,
-    pub scraped_at: i64,
+    pub scraped_at: u32,
     pub start_time: u32,
     pub winning_team: u8,
     #[serde(rename = "players.account_id")]

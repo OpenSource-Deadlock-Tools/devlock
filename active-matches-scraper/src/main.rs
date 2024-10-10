@@ -145,7 +145,7 @@ async fn compress_temp_file() -> Result<Vec<u8>, io::Error> {
 struct ActiveMatch {
     match_id: u32,
     #[serde(default = "scraped_at")]
-    scraped_at: i32,
+    scraped_at: u32,
     winning_team: u8,
     start_time: u32,
     players: Vec<ActiveMatchPlayer>,
@@ -171,11 +171,11 @@ struct ActiveMatchPlayer {
     hero_id: u32,
 }
 
-fn scraped_at() -> i32 {
+fn scraped_at() -> u32 {
     SystemTime::now()
         .duration_since(std::time::UNIX_EPOCH)
         .unwrap()
-        .as_secs() as i32
+        .as_secs() as u32
 }
 
 async fn fetch_active_matches() -> reqwest::Result<Vec<ActiveMatch>> {

@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS active_matches
 (
     match_id UInt32,
-    scraped_at DateTime64,
+    scraped_at DATETIME,
     start_time DATETIME,
     winning_team UInt8,
     players Nested (
