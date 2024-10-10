@@ -97,7 +97,9 @@ async fn main() {
 
             info!("Currently having {} finished matches", match_count);
 
-            sleep(interval - start.elapsed()).await;
+            if start.elapsed() < interval - Duration::from_secs(2) {
+                sleep(interval - start.elapsed()).await;
+            }
         }
 
         info!("Uploading active matches to S3");
