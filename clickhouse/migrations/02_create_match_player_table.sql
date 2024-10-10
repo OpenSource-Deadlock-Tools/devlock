@@ -85,4 +85,4 @@ CREATE TABLE IF NOT EXISTS match_player
         damage_mitigated UInt32,
         level UInt32
     )
-) ENGINE = MergeTree ORDER BY match_id;
+) ENGINE = ReplacingMergeTree ORDER BY (match_id, account_id);

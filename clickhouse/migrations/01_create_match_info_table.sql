@@ -73,5 +73,5 @@ CREATE TABLE IF NOT EXISTS match_info
         ),
         destroyed_time_s UInt32
     )
-) ENGINE = MergeTree ORDER BY match_id
+) ENGINE = ReplacingMergeTree ORDER BY match_id
 PRIMARY KEY match_id;
