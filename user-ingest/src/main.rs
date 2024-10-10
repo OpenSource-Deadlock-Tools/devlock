@@ -93,9 +93,13 @@ pub async fn post_salts(
     Json(salts): Json<Salts>,
 ) -> (StatusCode, &'static str) {
     debug!("Received Salts: {:?}", salts);
-    if download::check_salts(salts.clone()).await.is_err() {
-        return (StatusCode::INTERNAL_SERVER_ERROR, "Checking salts failed");
-    }
+    let salts = match download::check_salts(salts.clone()).await {
+        Ok(salts) => salts,
+        Err(e) => {
+            error!("Failed to validate salts: {:?}", e);
+            return (StatusCode::INTERNAL_SERVER_ERROR, "Checking salts failed");
+        }
+    };
     if state.salts_channel.send(salts).await.is_err() {
         return (StatusCode::INTERNAL_SERVER_ERROR, "Failed to send salts");
     }
