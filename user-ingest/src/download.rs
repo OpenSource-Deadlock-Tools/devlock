@@ -48,7 +48,7 @@ pub async fn process_data(salts: &Salts, data_type: DataType) -> Result<(), Proc
 
     download_to_file(salts, data_type, &local_path).await?;
     s3::upload_to_s3(&local_path, &s3_path).await?;
-    rmq::add_to_queue(&s3_path).await?;
+    rmq::add_to_queue("db_ingest_queue", &s3_path).await?;
     info!("Uploaded {}", s3_path);
 
     local_file.close().map_err(ProcessError::Io)

@@ -13,18 +13,16 @@ static RABBITMQ_PASS: LazyLock<String> =
 static RABBITMQ_HOST: LazyLock<String> = LazyLock::new(|| std::env::var("RABBITMQ_HOST").unwrap());
 static RABBITMQ_PORT: LazyLock<String> = LazyLock::new(|| std::env::var("RABBITMQ_PORT").unwrap());
 
-const RABBITMQ_QUEUE: &str = "db_ingest_queue";
-
 static RABBITMQ_CONNECTION: OnceCell<Connection> = OnceCell::const_new();
 static RABBITMQ_CHANNEL: OnceCell<Channel> = OnceCell::const_new();
 
-pub async fn add_to_queue(body: &str) -> Result<(), ProcessError> {
+pub async fn add_to_queue(routing_key: &str, body: &str) -> Result<(), ProcessError> {
     let rmq_channel = get_rmq_channel().await?;
-    info!("Sending message {} to queue: {}", body, RABBITMQ_QUEUE);
+    info!("Sending message {} to queue: {}", body, routing_key);
     rmq_channel
         .basic_publish(
             "",
-            RABBITMQ_QUEUE,
+            routing_key,
             BasicPublishOptions::default(),
             body.as_bytes(),
             BasicProperties::default(),

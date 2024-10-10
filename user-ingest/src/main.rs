@@ -48,6 +48,13 @@ async fn main() -> Result<(), io::Error> {
         let semaphore = Arc::new(semaphore);
         let mut tasks = FuturesUnordered::new();
         while let Some(salts) = salts_channel_receiver.recv().await {
+            let serialized_salts = serde_json::to_string(&salts);
+            if let Ok(serialized_salts) = serialized_salts {
+                match rmq::add_to_queue("matchdata_salts", &serialized_salts).await {
+                    Ok(_) => debug!("Sent salts to queue"),
+                    Err(e) => error!("Failed to send salts to queue: {:?}", e),
+                }
+            }
             let permit = semaphore.clone().acquire_owned().await.unwrap();
 
             debug!("Received metadata download task: {:?}", salts);
