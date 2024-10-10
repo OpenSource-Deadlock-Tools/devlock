@@ -6,6 +6,7 @@ services:
     env_file: ../.env
     environment:
       CACHE_FOLDER: /tmp
+      MATCHES_PER_FILE: 10000
     volumes:
     - tmp:/tmp
     networks:

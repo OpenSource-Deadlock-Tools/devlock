@@ -12,7 +12,8 @@ use tokio::time::sleep;
 mod rmq;
 mod s3;
 
-const MATCHES_PER_FILE: usize = 10_000;
+static MATCHES_PER_FILE: LazyLock<usize> =
+    LazyLock::new(|| std::env::var("MATCHES_PER_FILE").unwrap().parse().unwrap());
 
 static CACHE_FOLDER: LazyLock<String> =
     LazyLock::new(|| std::env::var("CACHE_FOLDER").unwrap_or("./tmp".to_string()));
@@ -35,7 +36,7 @@ async fn main() {
 
     let mut file_writer;
     loop {
-        while match_count < MATCHES_PER_FILE {
+        while match_count < *MATCHES_PER_FILE {
             let start = std::time::Instant::now();
             file_writer = match OpenOptions::new()
                 .write(true)
