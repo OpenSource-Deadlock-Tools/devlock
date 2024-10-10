@@ -4,11 +4,35 @@
       "configure": ".*",
       "read": ".*",
       "user": "admin",
+      "vhost": "/public",
+      "write": ".*"
+    },
+    {
+      "configure": ".*",
+      "read": ".*",
+      "user": "admin",
       "vhost": "/",
       "write": ".*"
+    },
+    {
+      "configure": "",
+      "read": ".*",
+      "user": "tracklock",
+      "vhost": "/public",
+      "write": ""
     }
   ],
   "queues": [
+    {
+      "arguments": {
+        "x-max-age": "7D",
+        "x-queue-type": "stream"
+      },
+      "auto_delete": false,
+      "durable": true,
+      "name": "matchdata",
+      "vhost": "/public"
+    },
     {
       "arguments": {
         "x-message-ttl": 15000,
@@ -35,11 +59,23 @@
       "name": "admin",
       "password_hash": "I9XcfvqFYegCjD23CWkfWzFwyRVLZE/rZ+ZaaGZY8SD05ltC",
       "tags": "administrator"
+    },
+    {
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "limits": {},
+      "name": "tracklock",
+      "password_hash": "R8dN469hxrCo9d0quQNVn4bkkjRlVdmVxFF1jalIsbDtbbKB",
+      "tags": [
+        "public-user"
+      ]
     }
   ],
   "vhosts": [
     {
       "name": "/"
+    },
+    {
+      "name": "/public"
     }
   ]
 }
