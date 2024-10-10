@@ -24,6 +24,18 @@ impl From<ECitadelGameMode> for GameMode {
     }
 }
 
+impl From<u8> for GameMode {
+    fn from(value: u8) -> Self {
+        match value {
+            0 => GameMode::Invalid,
+            1 => GameMode::Normal,
+            2 => GameMode::OnevOneTest,
+            3 => GameMode::Sandbox,
+            _ => GameMode::Invalid,
+        }
+    }
+}
+
 #[derive(Serialize_repr, Deserialize_repr, PartialEq, Debug, Clone)]
 #[repr(u8)]
 pub enum MatchMode {
@@ -46,6 +58,21 @@ impl From<ECitadelMatchMode> for MatchMode {
             ECitadelMatchMode::KECitadelMatchModeRanked => Self::Ranked,
             ECitadelMatchMode::KECitadelMatchModeServerTest => Self::ServerTest,
             ECitadelMatchMode::KECitadelMatchModeTutorial => Self::Tutorial,
+        }
+    }
+}
+
+impl From<u8> for MatchMode {
+    fn from(value: u8) -> Self {
+        match value {
+            0 => MatchMode::Invalid,
+            1 => MatchMode::Unranked,
+            2 => MatchMode::PrivateLobby,
+            3 => MatchMode::CoopBot,
+            4 => MatchMode::Ranked,
+            5 => MatchMode::ServerTest,
+            6 => MatchMode::Tutorial,
+            _ => MatchMode::Invalid,
         }
     }
 }
@@ -80,6 +107,17 @@ impl From<ECitadelLobbyTeam> for Team {
             ECitadelLobbyTeam::KECitadelLobbyTeamTeam0 => Self::Team0,
             ECitadelLobbyTeam::KECitadelLobbyTeamTeam1 => Self::Team1,
             ECitadelLobbyTeam::KECitadelLobbyTeamSpectator => Self::Spectator,
+        }
+    }
+}
+
+impl From<u8> for Team {
+    fn from(value: u8) -> Self {
+        match value {
+            0 => Team::Team0,
+            1 => Team::Team1,
+            16 => Team::Spectator,
+            _ => Team::Spectator,
         }
     }
 }

@@ -703,6 +703,7 @@ dependencies = [
  "prost",
  "rust-s3",
  "serde",
+ "serde_json",
  "serde_repr",
  "tokio",
  "valveprotos",

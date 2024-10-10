@@ -10,14 +10,10 @@ use valveprotos::deadlock::c_msg_match_meta_data_contents::MatchInfo;
 use valveprotos::deadlock::{CMsgMatchMetaData, CMsgMatchMetaDataContents};
 
 #[derive(Default, Debug)]
-pub struct MetaDataParser {}
+pub struct MetaDataParser;
 
 impl Parser<MatchInfo> for MetaDataParser {
-    fn parse(
-        &self,
-        file_data: &FileData,
-        data: &[u8],
-    ) -> Result<ParseResult<MatchInfo>, ParseError> {
+    fn parse(&self, _: &FileData, data: &[u8]) -> Result<ParseResult<MatchInfo>, ParseError> {
         // Check if match metadata is parseable
         let match_metadata = CMsgMatchMetaData::decode(data).map_err(ParseError::ProtobufDecode)?;
         let match_details = match_metadata.match_details();

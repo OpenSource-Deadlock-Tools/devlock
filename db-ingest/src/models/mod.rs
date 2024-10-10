@@ -1,3 +1,5 @@
+pub mod active_match;
+pub mod clickhouse_active_match;
 pub mod clickhouse_match_metadata;
 pub mod compression;
 pub mod enums;

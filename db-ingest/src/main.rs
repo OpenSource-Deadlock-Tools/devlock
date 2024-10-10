@@ -4,6 +4,10 @@ use crate::models::compression::Compression;
 use crate::models::error::ParseError;
 use crate::models::file_data::FileData;
 use crate::models::file_type::FileType;
+use crate::parsers::active_matches_json_lines_parser::ActiveMatchesJsonLinesParser;
+use crate::parsers::metadata_content_parser::MetaDataContentParser;
+use crate::parsers::metadata_parser::MetaDataParser;
+use crate::parsers::parser::Parser;
 use ::s3::request::ResponseData;
 use futures_lite::StreamExt;
 use lapin::message::Delivery;
@@ -98,33 +102,23 @@ async fn try_process_message(message: &Delivery) -> Result<(), ParseError> {
 }
 
 async fn process_file(file_data: &FileData, file_content: &ResponseData) -> Result<(), ParseError> {
-    let file_content = file_data
+    let decompressed = file_data
         .compression
         .decompress(&file_content.bytes().to_vec())
         .await?;
-    let parser = file_data.file_type.get_parser();
-    let result = parser.parse(file_data, &file_content)?;
-    let clickhouse_ingestor = ClickhouseIngestor::new();
-    let compressed = if file_data.compression == result.compression && file_content == result.data {
-        debug!("No changes detected, moving file to parsed");
-        &file_content
-    } else {
-        &result.compression.compress(&result.data).await?
-    };
-
-    match result.file_type {
-        FileType::Metadata => clickhouse_ingestor.ingest(&result.parsed_data).await?,
-        FileType::MetadataContent => clickhouse_ingestor.ingest(&result.parsed_data).await?,
+    match file_data.file_type {
+        FileType::Metadata => {
+            process_metadata(file_data, decompressed.as_slice(), file_content.as_slice()).await
+        }
+        FileType::MetadataContent => {
+            process_metadata_content(file_data, decompressed.as_slice(), file_content.as_slice())
+                .await
+        }
+        FileType::ActiveMatchesJsonLines => {
+            process_active_matches(file_data, decompressed.as_slice(), file_content.as_slice())
+                .await
+        }
     }
-
-    let parsed_path = get_parsed_path(&file_data.file_name, result.file_type, result.compression);
-    s3::upload_to_s3(compressed, &parsed_path).await?;
-    let s3_path = file_data
-        .file_path
-        .to_str()
-        .ok_or(ParseError::FilenameParse)?;
-    s3::delete_from_s3(s3_path).await?;
-    Ok(())
 }
 
 fn get_parsed_path(file_name: &str, file_type: FileType, compression: Compression) -> String {
@@ -132,7 +126,10 @@ fn get_parsed_path(file_name: &str, file_type: FileType, compression: Compressio
         Compression::Uncompressed => format!("/parsed/{}/{}.{}", file_type, file_name, file_type),
         _ => format!(
             "/parsed/{}/{}.{}.{}",
-            file_type, file_name, file_type, compression
+            file_type,
+            file_name,
+            file_type.extension(),
+            compression
         ),
     }
 }
@@ -145,4 +142,90 @@ fn get_failed_path(file_name: &str, file_type: FileType, compression: Compressio
             file_type, file_name, file_type, compression
         ),
     }
+}
+
+async fn process_metadata(
+    file_data: &FileData,
+    decompressed: &[u8],
+    file_content: &[u8],
+) -> Result<(), ParseError> {
+    let result = MetaDataParser::default().parse(file_data, decompressed)?;
+    let compressed = if file_data.compression == result.compression && file_content == result.data {
+        debug!("No changes detected, moving file to parsed");
+        file_content
+    } else {
+        &result.compression.compress(&result.data).await?
+    };
+    ClickhouseIngestor::new()
+        .ingest(&result.parsed_data)
+        .await?;
+
+    s3::upload_to_s3(
+        compressed,
+        &get_parsed_path(&file_data.file_name, result.file_type, result.compression),
+    )
+    .await?;
+    let s3_path = file_data
+        .file_path
+        .to_str()
+        .ok_or(ParseError::FilenameParse)?;
+    s3::delete_from_s3(s3_path).await?;
+    Ok(())
+}
+
+async fn process_metadata_content(
+    file_data: &FileData,
+    decompressed: &[u8],
+    file_content: &[u8],
+) -> Result<(), ParseError> {
+    let result = MetaDataContentParser::default().parse(file_data, decompressed)?;
+    let compressed = if file_data.compression == result.compression && file_content == result.data {
+        debug!("No changes detected, moving file to parsed");
+        file_content
+    } else {
+        &result.compression.compress(&result.data).await?
+    };
+    ClickhouseIngestor::new()
+        .ingest(&result.parsed_data)
+        .await?;
+
+    s3::upload_to_s3(
+        compressed,
+        &get_parsed_path(&file_data.file_name, result.file_type, result.compression),
+    )
+    .await?;
+    let s3_path = file_data
+        .file_path
+        .to_str()
+        .ok_or(ParseError::FilenameParse)?;
+    s3::delete_from_s3(s3_path).await?;
+    Ok(())
+}
+
+async fn process_active_matches(
+    file_data: &FileData,
+    decompressed: &[u8],
+    file_content: &[u8],
+) -> Result<(), ParseError> {
+    let result = ActiveMatchesJsonLinesParser::default().parse(file_data, decompressed)?;
+    let compressed = if file_data.compression == result.compression && file_content == result.data {
+        debug!("No changes detected, moving file to parsed");
+        file_content
+    } else {
+        &result.compression.compress(&result.data).await?
+    };
+    let active_matches = result.parsed_data.into_iter().flatten().collect::<Vec<_>>();
+    ClickhouseIngestor::new().ingest(&active_matches).await?;
+
+    s3::upload_to_s3(
+        compressed,
+        &get_parsed_path(&file_data.file_name, result.file_type, result.compression),
+    )
+    .await?;
+    let s3_path = file_data
+        .file_path
+        .to_str()
+        .ok_or(ParseError::FilenameParse)?;
+    s3::delete_from_s3(s3_path).await?;
+    Ok(())
 }

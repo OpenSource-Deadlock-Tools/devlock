@@ -1,7 +1,10 @@
 use crate::ingestors::ingestor::Ingestor;
+use crate::models::active_match::ActiveMatch;
+use crate::models::clickhouse_active_match::ClickHouseActiveMatch;
 use crate::models::clickhouse_match_metadata::{ClickhouseMatchInfo, ClickhouseMatchPlayer};
 use crate::models::error::ParseError;
 use clickhouse::{Client, Compression};
+use log::debug;
 use std::sync::LazyLock;
 use valveprotos::deadlock::c_msg_match_meta_data_contents::MatchInfo;
 
@@ -62,6 +65,32 @@ impl Ingestor<MatchInfo> for ClickhouseIngestor {
             .await
             .map_err(ParseError::ClickhouseError)?;
         match_player_insert
+            .end()
+            .await
+            .map_err(ParseError::ClickhouseError)?;
+        Ok(())
+    }
+}
+
+impl Ingestor<Vec<ActiveMatch>> for ClickhouseIngestor {
+    async fn ingest(&self, active_matches: &Vec<ActiveMatch>) -> Result<(), ParseError> {
+        debug!("Ingesting {} active matches", active_matches.len());
+        let mut active_match_insert = self
+            .client
+            .insert("active_matches")
+            .map_err(ParseError::ClickhouseError)?;
+        let ch_active_matches: Vec<ClickHouseActiveMatch> = active_matches
+            .iter()
+            .cloned()
+            .map(ClickHouseActiveMatch::from)
+            .collect();
+        for active_match in ch_active_matches {
+            active_match_insert
+                .write(&active_match)
+                .await
+                .map_err(ParseError::ClickhouseError)?;
+        }
+        active_match_insert
             .end()
             .await
             .map_err(ParseError::ClickhouseError)?;
