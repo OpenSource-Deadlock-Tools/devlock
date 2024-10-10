@@ -12,8 +12,11 @@ use tokio::time::sleep;
 mod rmq;
 mod s3;
 
+static REQUEST_INTERVAL: LazyLock<u64> =
+    LazyLock::new(|| std::env::var("REQUEST_INTERVAL").ok().and_then(|s| s.parse().ok()).unwrap_or(21));
+
 static MATCHES_PER_FILE: LazyLock<usize> =
-    LazyLock::new(|| std::env::var("MATCHES_PER_FILE").unwrap().parse().unwrap());
+    LazyLock::new(|| std::env::var("MATCHES_PER_FILE").ok().and_then(|s| s.parse().ok()).unwrap_or(1000));
 
 static CACHE_FOLDER: LazyLock<String> =
     LazyLock::new(|| std::env::var("CACHE_FOLDER").unwrap_or("./tmp".to_string()));
@@ -22,7 +25,7 @@ static CACHE_FOLDER: LazyLock<String> =
 async fn main() {
     env_logger::init();
 
-    let interval = Duration::from_secs(20);
+    let interval = Duration::from_secs(*REQUEST_INTERVAL);
     let mut active_matches: HashMap<u32, Vec<ActiveMatch>> = HashMap::new();
 
     let parent_dir = std::path::Path::new(&*CACHE_FOLDER);
