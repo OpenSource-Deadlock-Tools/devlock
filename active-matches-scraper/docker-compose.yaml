@@ -1,0 +1,19 @@
+services:
+  active-matches-scraper:
+    image: ghcr.io/opensource-deadlock-tools/devlock/active-matches-scraper
+    build: .
+    restart: always
+    env_file: ../.env
+    environment:
+      CACHE_FOLDER: /tmp
+    volumes:
+    - tmp:/tmp
+    networks:
+    - rabbitmq
+
+volumes:
+  tmp:
+
+networks:
+  rabbitmq:
+    external: true
