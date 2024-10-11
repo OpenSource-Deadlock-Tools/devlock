@@ -1,4 +1,5 @@
 use crate::models::error::ParseError;
+use log::debug;
 use s3::creds::Credentials;
 use s3::error::S3Error;
 use s3::request::ResponseData;
@@ -23,6 +24,7 @@ static S3_BUCKET: LazyLock<Box<s3::Bucket>> = LazyLock::new(|| {
 });
 
 pub async fn upload_to_s3(data: &[u8], s3_path: &str) -> Result<u16, ParseError> {
+    debug!("Uploading to S3: {}", s3_path);
     let mut stream = io::BufReader::new(data);
     let response = S3_BUCKET
         .put_object_stream(&mut stream, s3_path)
@@ -32,6 +34,7 @@ pub async fn upload_to_s3(data: &[u8], s3_path: &str) -> Result<u16, ParseError>
 }
 
 pub async fn download_from_s3(s3_path: &str) -> Result<ResponseData, ParseError> {
+    debug!("Downloading from S3: {}", s3_path);
     S3_BUCKET
         .get_object(s3_path)
         .await
@@ -44,6 +47,7 @@ pub async fn download_from_s3(s3_path: &str) -> Result<ResponseData, ParseError>
 }
 
 pub async fn delete_from_s3(s3_path: &str) -> Result<ResponseData, ParseError> {
+    debug!("Deleting from S3: {}", s3_path);
     S3_BUCKET
         .delete_object(s3_path)
         .await
@@ -56,6 +60,7 @@ pub async fn delete_from_s3(s3_path: &str) -> Result<ResponseData, ParseError> {
 }
 
 pub async fn has_file(s3_path: &str) -> Result<bool, S3Error> {
+    debug!("Checking if file exists in S3: {}", s3_path);
     S3_BUCKET
         .head_object(s3_path)
         .await

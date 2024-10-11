@@ -149,6 +149,7 @@ async fn process_metadata(
     decompressed: &[u8],
     file_content: &[u8],
 ) -> Result<(), ParseError> {
+    info!("Processing metadata file");
     let result = MetaDataParser.parse(file_data, decompressed)?;
     let compressed = if file_data.compression == result.compression && file_content == result.data {
         debug!("No changes detected, moving file to parsed");
@@ -178,6 +179,7 @@ async fn process_metadata_content(
     decompressed: &[u8],
     file_content: &[u8],
 ) -> Result<(), ParseError> {
+    info!("Processing metadata content file");
     let result = MetaDataContentParser.parse(file_data, decompressed)?;
     let compressed = if file_data.compression == result.compression && file_content == result.data {
         debug!("No changes detected, moving file to parsed");
@@ -207,6 +209,7 @@ async fn process_active_matches(
     decompressed: &[u8],
     file_content: &[u8],
 ) -> Result<(), ParseError> {
+    info!("Processing active matches file");
     let result = ActiveMatchesJsonLinesParser.parse(file_data, decompressed)?;
     let compressed = if file_data.compression == result.compression && file_content == result.data {
         debug!("No changes detected, moving file to parsed");
@@ -215,6 +218,7 @@ async fn process_active_matches(
         &result.compression.compress(&result.data).await?
     };
     let active_matches = result.parsed_data.into_iter().flatten().collect::<Vec<_>>();
+    debug!("Active Matches: {:#?}", active_matches.len());
     ClickhouseIngestor::new().ingest(&active_matches).await?;
 
     s3::upload_to_s3(

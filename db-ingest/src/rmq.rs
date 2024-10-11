@@ -1,7 +1,7 @@
 use crate::models::error::ParseError;
 use lapin::options::BasicPublishOptions;
 use lapin::{BasicProperties, Channel, Connection, ConnectionProperties, Consumer};
-use log::info;
+use log::debug;
 use std::sync::LazyLock;
 use tokio::sync::OnceCell;
 
@@ -18,7 +18,7 @@ const CONSUMER_TAG: &str = "db-ingest";
 
 pub async fn add_to_queue(queue: &str, body: &str) -> Result<(), ParseError> {
     let rmq_channel = get_rmq_channel().await?;
-    info!("Sending message {} to queue: {}", body, queue);
+    debug!("Sending message {} to queue: {}", body, queue);
     rmq_channel
         .basic_publish(
             "",
