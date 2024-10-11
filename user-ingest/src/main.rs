@@ -7,6 +7,7 @@ use futures::stream::FuturesUnordered;
 use futures::{FutureExt, StreamExt};
 use log::{debug, error};
 use models::Salts;
+use serde::Serialize;
 use std::future::IntoFuture;
 use std::net::Ipv4Addr;
 use std::sync::Arc;
@@ -90,20 +91,29 @@ pub async fn health() -> StatusCode {
     StatusCode::OK
 }
 
+#[derive(Debug, Clone, Serialize)]
+pub struct SaltsResponse {
+    pub meta: bool,
+    pub replay: bool,
+}
+
 pub async fn post_salts(
     State(state): State<AppState>,
     Json(salts): Json<Salts>,
-) -> (StatusCode, &'static str) {
+) -> Result<Json<SaltsResponse>, StatusCode> {
     debug!("Received Salts: {:?}", salts);
     let salts = match download::check_salts(salts.clone()).await {
         Ok(salts) => salts,
         Err(e) => {
             error!("Failed to validate salts: {:?}", e);
-            return (StatusCode::INTERNAL_SERVER_ERROR, "Checking salts failed");
+            return Err(StatusCode::INTERNAL_SERVER_ERROR);
         }
     };
-    if state.salts_channel.send(salts).await.is_err() {
-        return (StatusCode::INTERNAL_SERVER_ERROR, "Failed to send salts");
+    if state.salts_channel.send(salts.clone()).await.is_err() {
+        return Err(StatusCode::INTERNAL_SERVER_ERROR);
     }
-    (StatusCode::CREATED, "ok")
+    Ok(Json(SaltsResponse {
+        meta: salts.metadata_salt.is_some(),
+        replay: salts.replay_salt.is_some(),
+    }))
 }
