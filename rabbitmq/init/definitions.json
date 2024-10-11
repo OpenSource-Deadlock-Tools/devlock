@@ -4,7 +4,7 @@
       "configure": ".*",
       "read": ".*",
       "user": "admin",
-      "vhost": "/public",
+      "vhost": "public",
       "write": ".*"
     },
     {
@@ -18,7 +18,7 @@
       "configure": "",
       "read": ".*",
       "user": "tracklock",
-      "vhost": "/public",
+      "vhost": "public",
       "write": ""
     }
   ],
@@ -31,7 +31,7 @@
       "auto_delete": false,
       "durable": true,
       "name": "matchdata_salts",
-      "vhost": "/public"
+      "vhost": "public"
     },
     {
       "arguments": {
@@ -75,7 +75,7 @@
       "name": "/"
     },
     {
-      "name": "/public"
+      "name": "public"
     }
   ]
 }
