@@ -8,11 +8,11 @@ use crate::parsers::active_matches_json_lines_parser::ActiveMatchesJsonLinesPars
 use crate::parsers::metadata_content_parser::MetaDataContentParser;
 use crate::parsers::metadata_parser::MetaDataParser;
 use crate::parsers::parser::Parser;
+use ::s3::request::ResponseData;
 use futures_lite::StreamExt;
 use lapin::message::Delivery;
 use lapin::options::{BasicAckOptions, BasicRejectOptions};
 use log::{debug, error, info};
-use ::s3::request::ResponseData;
 use std::path::Path;
 use std::sync::Arc;
 use tokio::sync::Semaphore;
@@ -86,7 +86,6 @@ async fn try_process_message(message: &Delivery) -> Result<(), ParseError> {
     match process_file(&file_data, &file_content).await {
         Ok(_) => Ok(()),
         Err(e) => {
-            error!("Error processing file: {:?}", e);
             let failed_path = get_failed_path(
                 &file_data.file_name,
                 file_data.file_type,
@@ -165,7 +164,7 @@ async fn process_metadata(
         compressed,
         &get_parsed_path(&file_data.file_name, result.file_type, result.compression),
     )
-        .await?;
+    .await?;
     let s3_path = file_data
         .file_path
         .to_str()
@@ -194,7 +193,7 @@ async fn process_metadata_content(
         compressed,
         &get_parsed_path(&file_data.file_name, result.file_type, result.compression),
     )
-        .await?;
+    .await?;
     let s3_path = file_data
         .file_path
         .to_str()
@@ -222,7 +221,7 @@ async fn process_active_matches(
         compressed,
         &get_parsed_path(&file_data.file_name, result.file_type, result.compression),
     )
-        .await?;
+    .await?;
     let s3_path = file_data
         .file_path
         .to_str()
