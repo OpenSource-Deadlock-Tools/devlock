@@ -44,7 +44,7 @@ async fn main() {
                 });
             }
             Err(e) => {
-                println!("Error receiving message: {:?}", e);
+                error!("Error receiving message: {:?}", e);
                 continue;
             }
         }
@@ -54,18 +54,11 @@ async fn main() {
 async fn process_message(message: Delivery) {
     match try_process_message(&message).await {
         Ok(_) => {
-            debug!(
-                "Message processed successfully: {:?}",
-                String::from_utf8_lossy(&message.data)
-            );
+            debug!("Message processed successfully");
             message.ack(BasicAckOptions::default()).await.unwrap();
         }
         Err(e) => {
-            error!(
-                "Error processing message {:?} -> {:?}",
-                String::from_utf8_lossy(&message.data),
-                e
-            );
+            error!("Error processing message: {:?}", e);
             message.reject(BasicRejectOptions::default()).await.unwrap();
         }
     }
