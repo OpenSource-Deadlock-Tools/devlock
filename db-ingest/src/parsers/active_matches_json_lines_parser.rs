@@ -19,7 +19,6 @@ impl Parser<Vec<Vec<ActiveMatch>>> for ActiveMatchesJsonLinesParser {
         let data_str = String::from_utf8_lossy(data);
         debug!("Data: {}", data_str);
         for line in data_str.lines() {
-            debug!("Line: {}", line);
             match serde_json::from_str::<Vec<ActiveMatch>>(line) {
                 Ok(_) => {}
                 Err(e) => {
