@@ -149,7 +149,7 @@ async fn process_metadata(
     decompressed: &[u8],
     file_content: &[u8],
 ) -> Result<(), ParseError> {
-    let result = MetaDataParser::default().parse(file_data, decompressed)?;
+    let result = MetaDataParser.parse(file_data, decompressed)?;
     let compressed = if file_data.compression == result.compression && file_content == result.data {
         debug!("No changes detected, moving file to parsed");
         file_content
@@ -178,7 +178,7 @@ async fn process_metadata_content(
     decompressed: &[u8],
     file_content: &[u8],
 ) -> Result<(), ParseError> {
-    let result = MetaDataContentParser::default().parse(file_data, decompressed)?;
+    let result = MetaDataContentParser.parse(file_data, decompressed)?;
     let compressed = if file_data.compression == result.compression && file_content == result.data {
         debug!("No changes detected, moving file to parsed");
         file_content
@@ -207,7 +207,7 @@ async fn process_active_matches(
     decompressed: &[u8],
     file_content: &[u8],
 ) -> Result<(), ParseError> {
-    let result = ActiveMatchesJsonLinesParser::default().parse(file_data, decompressed)?;
+    let result = ActiveMatchesJsonLinesParser.parse(file_data, decompressed)?;
     let compressed = if file_data.compression == result.compression && file_content == result.data {
         debug!("No changes detected, moving file to parsed");
         file_content
