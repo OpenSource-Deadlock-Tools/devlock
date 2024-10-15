@@ -45,8 +45,6 @@ async fn main() -> Result<(), io::Error> {
     let listener = TcpListener::bind((Ipv4Addr::UNSPECIFIED, 8080)).await?;
 
     let downloader = tokio::spawn(async move {
-        let semaphore = tokio::sync::Semaphore::new(MAX_PARALLEL_DOWNLOADS);
-        let semaphore = Arc::new(semaphore);
         while let Some(salts) = salts_channel_receiver.recv().await {
             let serialized_salts = serde_json::to_string(&salts);
             if let Ok(serialized_salts) = serialized_salts {
@@ -57,13 +55,10 @@ async fn main() -> Result<(), io::Error> {
             } else {
                 error!("Failed to serialize salts: {:?}", serialized_salts);
             }
-            let permit = semaphore.clone().acquire_owned().await.unwrap();
-
             debug!("Received metadata download task: {:?}", salts);
             tokio::spawn(async move {
                 debug!("Received metadata download task: {:?}", salts);
                 download::process_salts(salts).await;
-                drop(permit); // Release the permit after processing
             });
         }
     });
