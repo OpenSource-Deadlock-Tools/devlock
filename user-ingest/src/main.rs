@@ -21,7 +21,7 @@ mod rmq;
 mod s3;
 mod utils;
 
-const MAX_PARALLEL_DOWNLOADS: usize = 10;
+const MAX_PARALLEL_DOWNLOADS: usize = 20;
 
 #[derive(Debug, Clone)]
 pub struct AppState {
@@ -47,7 +47,6 @@ async fn main() -> Result<(), io::Error> {
     let downloader = tokio::spawn(async move {
         let semaphore = tokio::sync::Semaphore::new(MAX_PARALLEL_DOWNLOADS);
         let semaphore = Arc::new(semaphore);
-        let mut tasks = FuturesUnordered::new();
         while let Some(salts) = salts_channel_receiver.recv().await {
             let serialized_salts = serde_json::to_string(&salts);
             if let Ok(serialized_salts) = serialized_salts {
@@ -61,21 +60,12 @@ async fn main() -> Result<(), io::Error> {
             let permit = semaphore.clone().acquire_owned().await.unwrap();
 
             debug!("Received metadata download task: {:?}", salts);
-            let task = tokio::spawn(async move {
+            tokio::spawn(async move {
                 debug!("Received metadata download task: {:?}", salts);
                 download::process_salts(salts).await;
                 drop(permit); // Release the permit after processing
             });
-            tasks.push(task);
-
-            // Optionally, remove finished tasks
-            while let Some(result) = tasks.next().await {
-                if let Err(e) = result {
-                    error!("Task failed: {:?}", e);
-                }
-            }
         }
-        join_all(tasks).await;
     });
 
     let webserver = axum::serve(listener, app)
