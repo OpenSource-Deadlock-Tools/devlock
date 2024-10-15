@@ -14,6 +14,7 @@ static RABBITMQ_HOST: LazyLock<String> = LazyLock::new(|| std::env::var("RABBITM
 static RABBITMQ_PORT: LazyLock<String> = LazyLock::new(|| std::env::var("RABBITMQ_PORT").unwrap());
 
 static RABBITMQ_CONNECTION: OnceCell<Connection> = OnceCell::const_new();
+static RABBITMQ_PUBLIC_CONNECTION: OnceCell<Connection> = OnceCell::const_new();
 static RABBITMQ_CHANNEL: OnceCell<Channel> = OnceCell::const_new();
 static RABBITMQ_PUBLIC_CHANNEL: OnceCell<Channel> = OnceCell::const_new();
 
@@ -73,7 +74,7 @@ async fn get_rmq_channel() -> Result<&'static Channel, ProcessError> {
 }
 
 async fn get_rmq_public_channel() -> Result<&'static Channel, ProcessError> {
-    let connection = RABBITMQ_CONNECTION
+    let connection = RABBITMQ_PUBLIC_CONNECTION
         .get_or_try_init(|| async {
             Connection::connect(
                 &format!(
