@@ -9,29 +9,6 @@ use tempfile::NamedTempFile;
 
 const APP_ID: &str = "1422450";
 
-pub async fn process_salts(salts: Salts) {
-    let handle = futures::try_join!(
-        process_data(&salts, DataType::Demo),
-        process_data(&salts, DataType::Meta)
-    );
-    if let Err(e) = handle {
-        match e {
-            ProcessError::Reqwest(e) => {
-                eprintln!("Reqwest error: {}", e);
-            }
-            ProcessError::S3(e) => {
-                eprintln!("S3 error: {}", e);
-            }
-            ProcessError::Io(e) => {
-                eprintln!("Io error: {}", e);
-            }
-            ProcessError::RmqError(e) => {
-                eprintln!("Rmq error: {}", e);
-            }
-        }
-    }
-}
-
 pub async fn process_data(salts: &Salts, data_type: DataType) -> Result<(), ProcessError> {
     let local_file = NamedTempFile::new().map_err(ProcessError::Io)?;
     let local_path = local_file.path().to_path_buf();
@@ -75,7 +52,7 @@ fn get_file_name(salts: &&Salts, data_type: DataType) -> Option<String> {
         salt = salt,
         data_type = data_type
     )
-    .into()
+        .into()
 }
 
 async fn download_to_file(

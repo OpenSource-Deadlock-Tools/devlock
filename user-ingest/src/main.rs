@@ -1,16 +1,16 @@
+use crate::download::process_data;
+use crate::models::DataType;
 use axum::extract::State;
 use axum::http::StatusCode;
 use axum::routing::{get, head, post};
 use axum::{Json, Router};
 use futures::future::join_all;
-use futures::stream::FuturesUnordered;
-use futures::{FutureExt, StreamExt};
+use futures::FutureExt;
 use log::{debug, error};
 use models::Salts;
 use serde::Serialize;
 use std::future::IntoFuture;
 use std::net::Ipv4Addr;
-use std::sync::Arc;
 use tokio::io;
 use tokio::net::TcpListener;
 use tokio::sync::mpsc;
@@ -20,8 +20,6 @@ mod models;
 mod rmq;
 mod s3;
 mod utils;
-
-const MAX_PARALLEL_DOWNLOADS: usize = 20;
 
 #[derive(Debug, Clone)]
 pub struct AppState {
@@ -58,7 +56,13 @@ async fn main() -> Result<(), io::Error> {
             debug!("Received metadata download task: {:?}", salts);
             tokio::spawn(async move {
                 debug!("Received metadata download task: {:?}", salts);
-                download::process_salts(salts).await;
+                let demo_result = process_data(&salts, DataType::Demo).await;
+                let meta_result = process_data(&salts, DataType::Meta).await;
+                let result = demo_result.and(meta_result);
+                match result {
+                    Ok(_) => debug!("Downloaded Match Data"),
+                    Err(e) => error!("Failed to download Match Data: {:?}", e),
+                };
             });
         }
     });
