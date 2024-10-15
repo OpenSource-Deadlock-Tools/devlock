@@ -29,7 +29,9 @@ pub async fn add_to_queue(routing_key: &str, body: &str) -> Result<(), ProcessEr
             BasicProperties::default(),
         )
         .await
-        .map(|_| ())
+        .map(|s| {
+            info!("Sent message to queue: {:?}", s);
+        })
         .map_err(ProcessError::RmqError)
 }
 
@@ -59,7 +61,7 @@ async fn get_rmq_channel() -> Result<&'static Channel, ProcessError> {
                 ),
                 ConnectionProperties::default(),
             )
-            .await
+                .await
         })
         .await
         .map_err(ProcessError::RmqError)?;
@@ -80,7 +82,7 @@ async fn get_rmq_public_channel() -> Result<&'static Channel, ProcessError> {
                 ),
                 ConnectionProperties::default(),
             )
-            .await
+                .await
         })
         .await
         .map_err(ProcessError::RmqError)?;
