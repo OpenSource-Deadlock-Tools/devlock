@@ -21,6 +21,8 @@ mod rmq;
 mod s3;
 mod utils;
 
+const PROCESS_DEMO: bool = false;
+
 #[derive(Debug, Clone)]
 pub struct AppState {
     salts_channel: mpsc::Sender<Salts>,
@@ -56,7 +58,11 @@ async fn main() -> Result<(), io::Error> {
             debug!("Received metadata download task: {:?}", salts);
             tokio::spawn(async move {
                 debug!("Received metadata download task: {:?}", salts);
-                let demo_result = process_data(&salts, DataType::Demo).await;
+                let demo_result = if PROCESS_DEMO {
+                    process_data(&salts, DataType::Demo).await
+                } else {
+                    Ok(())
+                };
                 let meta_result = process_data(&salts, DataType::Meta).await;
                 let result = demo_result.and(meta_result);
                 match result {
