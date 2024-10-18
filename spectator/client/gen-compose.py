@@ -1,6 +1,7 @@
-import jinja2
 import json
 import os
+
+import jinja2
 from dotenv import load_dotenv
 
 load_dotenv()
