@@ -1,0 +1,29 @@
+services:
+  api:
+    image: ghcr.io/opensource-deadlock-tools/devlock/api
+    build: .
+    restart: always
+    env_file: ../.env
+    environment:
+      VIRTUAL_HOST: api.devlock.net
+      VIRTUAL_PORT: 8080
+      LETSENCRYPT_HOST: api.devlock.net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    ports:
+    - "8080:8080"
+    networks:
+    - webserver
+    - clickhouse
+    - monitoring
+
+networks:
+  clickhouse:
+    external: true
+  webserver:
+    external: true
+  monitoring:
+    external: true

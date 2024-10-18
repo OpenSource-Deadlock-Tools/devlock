@@ -1,0 +1,7 @@
+fastapi[standard]>=0.115.1
+clickhouse-connect>=0.8.3
+prometheus-client>=0.21.0
+slowapi>=0.1.9
+prometheus_fastapi_instrumentator>=7.0.0
+starlette>=0.40.0
+uvicorn>=0.32.0
