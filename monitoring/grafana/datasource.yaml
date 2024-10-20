@@ -7,4 +7,9 @@ datasources:
   uid: main-prometheus
   isDefault: true
   access: proxy
-  editable: true
+  editable: false
+- name: Loki
+  type: loki
+  url: http://loki:3100
+  uid: main-loki
+  editable: false

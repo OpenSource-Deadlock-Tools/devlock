@@ -37,7 +37,7 @@ services:
       prometheus:
         condition: service_healthy
     networks:
-    - monitoring
+    - default
     - webserver
 
   node-exporter:
@@ -55,8 +55,6 @@ services:
     depends_on:
       prometheus:
         condition: service_healthy
-    networks:
-    - monitoring
 
   prometheus:
     image: prom/prometheus
@@ -68,8 +66,6 @@ services:
       interval: 10s
       timeout: 3s
       retries: 3
-    networks:
-    - monitoring
 
   watchtower:
     image: containrrr/watchtower
@@ -83,8 +79,6 @@ services:
     - /var/run/docker.sock:/var/run/docker.sock
     - /config.json:/config.json:ro
     command: --interval 60 --cleanup --rolling-restart
-    networks:
-    - monitoring
 
   autoheal:
     image: willfarrell/autoheal
@@ -95,11 +89,29 @@ services:
     environment:
       AUTOHEAL_CONTAINER_LABEL: all
 
+  loki:
+    image: grafana/loki
+    restart: always
+    command: -config.file=/etc/loki/loki.yaml
+    volumes:
+    - ./loki.yaml:/etc/loki/loki.yaml
+
+  promtail:
+    image: grafana/promtail
+    restart: always
+    volumes:
+    - ./promtail.yaml:/etc/promtail/docker-config.yaml
+    - /var/lib/docker/containers:/var/lib/docker/containers:ro
+    - /var/run/docker.sock:/var/run/docker.sock
+    command: -config.file=/etc/promtail/docker-config.yaml
+    depends_on:
+    - loki
+
 volumes:
   grafana-data:
 
 networks:
-  monitoring:
+  default:
     name: monitoring
   webserver:
     external: true
