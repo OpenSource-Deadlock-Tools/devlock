@@ -184,12 +184,17 @@ function getEnv(): EnvConfig {
 	assert(typeof process.env.TOKENS_CACHE_DIR === "string", "TOKENS_CACHE_PATH env must be defined");
 	assert(typeof process.env.CONFIG_STORE_DIR === "string", "CONFIG_STORE_DIR env must be defined");
 
-	return {
+	const env: EnvConfig = {
 		nodeEnv: process.env.NODE_ENV,
 		adminKey: process.env.ADMIN_KEY,
 		tokensCacheDir: process.env.TOKENS_CACHE_DIR,
 		configStoreDir: process.env.CONFIG_STORE_DIR,
 	};
+
+	assert(env.adminKey.length >= 5, "ADMIN_KEY must not be empty (> 5 chars)");
+	assert(env.nodeEnv !== "", "NODE_ENV must not be empty");
+
+	return env;
 }
 
 async function synchronizeConfigWithManager(botManager: BotManager, config: Config) {
