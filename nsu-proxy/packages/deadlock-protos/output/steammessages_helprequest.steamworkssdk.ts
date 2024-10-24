@@ -15,208 +15,208 @@ import { MessageType } from "@protobuf-ts/runtime";
  * @generated from protobuf message CHelpRequestLogs_UploadUserApplicationLog_Request
  */
 export interface CHelpRequestLogs_UploadUserApplicationLog_Request {
-	/**
-	 * @generated from protobuf field: optional uint32 appid = 1;
-	 */
-	appid?: number;
-	/**
-	 * @generated from protobuf field: optional string log_type = 2;
-	 */
-	log_type?: string;
-	/**
-	 * @generated from protobuf field: optional string version_string = 3;
-	 */
-	version_string?: string;
-	/**
-	 * @generated from protobuf field: optional string log_contents = 4;
-	 */
-	log_contents?: string;
+  /**
+   * @generated from protobuf field: optional uint32 appid = 1;
+   */
+  appid?: number;
+  /**
+   * @generated from protobuf field: optional string log_type = 2;
+   */
+  log_type?: string;
+  /**
+   * @generated from protobuf field: optional string version_string = 3;
+   */
+  version_string?: string;
+  /**
+   * @generated from protobuf field: optional string log_contents = 4;
+   */
+  log_contents?: string;
 }
 /**
  * @generated from protobuf message CHelpRequestLogs_UploadUserApplicationLog_Response
  */
 export interface CHelpRequestLogs_UploadUserApplicationLog_Response {
-	/**
-	 * @generated from protobuf field: optional uint64 id = 1;
-	 */
-	id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 id = 1;
+   */
+  id?: bigint;
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CHelpRequestLogs_UploadUserApplicationLog_Request$Type extends MessageType<CHelpRequestLogs_UploadUserApplicationLog_Request> {
-	constructor() {
-		super("CHelpRequestLogs_UploadUserApplicationLog_Request", [
-			{
-				no: 1,
-				name: "appid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "log_type",
-				kind: "scalar",
-				localName: "log_type",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "version_string",
-				kind: "scalar",
-				localName: "version_string",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 4,
-				name: "log_contents",
-				kind: "scalar",
-				localName: "log_contents",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CHelpRequestLogs_UploadUserApplicationLog_Request>,
-	): CHelpRequestLogs_UploadUserApplicationLog_Request {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CHelpRequestLogs_UploadUserApplicationLog_Request>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CHelpRequestLogs_UploadUserApplicationLog_Request,
-	): CHelpRequestLogs_UploadUserApplicationLog_Request {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 appid */ 1:
-					message.appid = reader.uint32();
-					break;
-				case /* optional string log_type */ 2:
-					message.log_type = reader.string();
-					break;
-				case /* optional string version_string */ 3:
-					message.version_string = reader.string();
-					break;
-				case /* optional string log_contents */ 4:
-					message.log_contents = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CHelpRequestLogs_UploadUserApplicationLog_Request,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 appid = 1; */
-		if (message.appid !== undefined) writer.tag(1, WireType.Varint).uint32(message.appid);
-		/* optional string log_type = 2; */
-		if (message.log_type !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.log_type);
-		/* optional string version_string = 3; */
-		if (message.version_string !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.version_string);
-		/* optional string log_contents = 4; */
-		if (message.log_contents !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.log_contents);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CHelpRequestLogs_UploadUserApplicationLog_Request", [
+      {
+        no: 1,
+        name: "appid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "log_type",
+        kind: "scalar",
+        localName: "log_type",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "version_string",
+        kind: "scalar",
+        localName: "version_string",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 4,
+        name: "log_contents",
+        kind: "scalar",
+        localName: "log_contents",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CHelpRequestLogs_UploadUserApplicationLog_Request>,
+  ): CHelpRequestLogs_UploadUserApplicationLog_Request {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CHelpRequestLogs_UploadUserApplicationLog_Request>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CHelpRequestLogs_UploadUserApplicationLog_Request,
+  ): CHelpRequestLogs_UploadUserApplicationLog_Request {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 appid */ 1:
+          message.appid = reader.uint32();
+          break;
+        case /* optional string log_type */ 2:
+          message.log_type = reader.string();
+          break;
+        case /* optional string version_string */ 3:
+          message.version_string = reader.string();
+          break;
+        case /* optional string log_contents */ 4:
+          message.log_contents = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CHelpRequestLogs_UploadUserApplicationLog_Request,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 appid = 1; */
+    if (message.appid !== undefined) writer.tag(1, WireType.Varint).uint32(message.appid);
+    /* optional string log_type = 2; */
+    if (message.log_type !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.log_type);
+    /* optional string version_string = 3; */
+    if (message.version_string !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.version_string);
+    /* optional string log_contents = 4; */
+    if (message.log_contents !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.log_contents);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CHelpRequestLogs_UploadUserApplicationLog_Request
  */
 export const CHelpRequestLogs_UploadUserApplicationLog_Request =
-	new CHelpRequestLogs_UploadUserApplicationLog_Request$Type();
+  new CHelpRequestLogs_UploadUserApplicationLog_Request$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CHelpRequestLogs_UploadUserApplicationLog_Response$Type extends MessageType<CHelpRequestLogs_UploadUserApplicationLog_Response> {
-	constructor() {
-		super("CHelpRequestLogs_UploadUserApplicationLog_Response", [
-			{
-				no: 1,
-				name: "id",
-				kind: "scalar",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CHelpRequestLogs_UploadUserApplicationLog_Response>,
-	): CHelpRequestLogs_UploadUserApplicationLog_Response {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CHelpRequestLogs_UploadUserApplicationLog_Response>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CHelpRequestLogs_UploadUserApplicationLog_Response,
-	): CHelpRequestLogs_UploadUserApplicationLog_Response {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint64 id */ 1:
-					message.id = reader.uint64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CHelpRequestLogs_UploadUserApplicationLog_Response,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint64 id = 1; */
-		if (message.id !== undefined) writer.tag(1, WireType.Varint).uint64(message.id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CHelpRequestLogs_UploadUserApplicationLog_Response", [
+      {
+        no: 1,
+        name: "id",
+        kind: "scalar",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CHelpRequestLogs_UploadUserApplicationLog_Response>,
+  ): CHelpRequestLogs_UploadUserApplicationLog_Response {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CHelpRequestLogs_UploadUserApplicationLog_Response>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CHelpRequestLogs_UploadUserApplicationLog_Response,
+  ): CHelpRequestLogs_UploadUserApplicationLog_Response {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint64 id */ 1:
+          message.id = reader.uint64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CHelpRequestLogs_UploadUserApplicationLog_Response,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint64 id = 1; */
+    if (message.id !== undefined) writer.tag(1, WireType.Varint).uint64(message.id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CHelpRequestLogs_UploadUserApplicationLog_Response
  */
 export const CHelpRequestLogs_UploadUserApplicationLog_Response =
-	new CHelpRequestLogs_UploadUserApplicationLog_Response$Type();
+  new CHelpRequestLogs_UploadUserApplicationLog_Response$Type();
 /**
  * @generated ServiceType for protobuf service HelpRequestLogs
  */
 export const HelpRequestLogs = new ServiceType(
-	"HelpRequestLogs",
-	[
-		{
-			name: "UploadUserApplicationLog",
-			options: { method_description: "User uploading application logs" },
-			I: CHelpRequestLogs_UploadUserApplicationLog_Request,
-			O: CHelpRequestLogs_UploadUserApplicationLog_Response,
-		},
-	],
-	{ service_description: "Service for dealing with user-submitted logs" },
+  "HelpRequestLogs",
+  [
+    {
+      name: "UploadUserApplicationLog",
+      options: { method_description: "User uploading application logs" },
+      I: CHelpRequestLogs_UploadUserApplicationLog_Request,
+      O: CHelpRequestLogs_UploadUserApplicationLog_Response,
+    },
+  ],
+  { service_description: "Service for dealing with user-submitted logs" },
 );

@@ -14,192 +14,192 @@ import { MessageType } from "@protobuf-ts/runtime";
  * @generated from protobuf message CMsgGenericResult
  */
 export interface CMsgGenericResult {
-	/**
-	 * @generated from protobuf field: optional uint32 eresult = 1;
-	 */
-	eresult?: number;
-	/**
-	 * @generated from protobuf field: optional string debug_message = 2;
-	 */
-	debug_message?: string;
+  /**
+   * @generated from protobuf field: optional uint32 eresult = 1;
+   */
+  eresult?: number;
+  /**
+   * @generated from protobuf field: optional string debug_message = 2;
+   */
+  debug_message?: string;
 }
 /**
  * @generated from protobuf enum EGCEconBaseMsg
  */
 export enum EGCEconBaseMsg {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCGenericResult = 2579;
-	 */
-	k_EMsgGCGenericResult = 2579,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCGenericResult = 2579;
+   */
+  k_EMsgGCGenericResult = 2579,
 }
 /**
  * @generated from protobuf enum EGCMsgResponse
  */
 export enum EGCMsgResponse {
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgResponseOK = 0;
-	 */
-	k_EGCMsgResponseOK = 0,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgResponseDenied = 1;
-	 */
-	k_EGCMsgResponseDenied = 1,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgResponseServerError = 2;
-	 */
-	k_EGCMsgResponseServerError = 2,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgResponseTimeout = 3;
-	 */
-	k_EGCMsgResponseTimeout = 3,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgResponseInvalid = 4;
-	 */
-	k_EGCMsgResponseInvalid = 4,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgResponseNoMatch = 5;
-	 */
-	k_EGCMsgResponseNoMatch = 5,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgResponseUnknownError = 6;
-	 */
-	k_EGCMsgResponseUnknownError = 6,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgResponseNotLoggedOn = 7;
-	 */
-	k_EGCMsgResponseNotLoggedOn = 7,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgFailedToCreate = 8;
-	 */
-	k_EGCMsgFailedToCreate = 8,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgResponseOK = 0;
+   */
+  k_EGCMsgResponseOK = 0,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgResponseDenied = 1;
+   */
+  k_EGCMsgResponseDenied = 1,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgResponseServerError = 2;
+   */
+  k_EGCMsgResponseServerError = 2,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgResponseTimeout = 3;
+   */
+  k_EGCMsgResponseTimeout = 3,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgResponseInvalid = 4;
+   */
+  k_EGCMsgResponseInvalid = 4,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgResponseNoMatch = 5;
+   */
+  k_EGCMsgResponseNoMatch = 5,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgResponseUnknownError = 6;
+   */
+  k_EGCMsgResponseUnknownError = 6,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgResponseNotLoggedOn = 7;
+   */
+  k_EGCMsgResponseNotLoggedOn = 7,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgFailedToCreate = 8;
+   */
+  k_EGCMsgFailedToCreate = 8,
 }
 /**
  * @generated from protobuf enum EGCMsgUseItemResponse
  */
 export enum EGCMsgUseItemResponse {
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgUseItemResponse_ItemUsed = 0;
-	 */
-	k_EGCMsgUseItemResponse_ItemUsed = 0,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgUseItemResponse_GiftNoOtherPlayers = 1;
-	 */
-	k_EGCMsgUseItemResponse_GiftNoOtherPlayers = 1,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgUseItemResponse_ServerError = 2;
-	 */
-	k_EGCMsgUseItemResponse_ServerError = 2,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgUseItemResponse_MiniGameAlreadyStarted = 3;
-	 */
-	k_EGCMsgUseItemResponse_MiniGameAlreadyStarted = 3,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgUseItemResponse_ItemUsed_ItemsGranted = 4;
-	 */
-	k_EGCMsgUseItemResponse_ItemUsed_ItemsGranted = 4,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgUseItemResponse_DropRateBonusAlreadyGranted = 5;
-	 */
-	k_EGCMsgUseItemResponse_DropRateBonusAlreadyGranted = 5,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgUseItemResponse_NotInLowPriorityPool = 6;
-	 */
-	k_EGCMsgUseItemResponse_NotInLowPriorityPool = 6,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgUseItemResponse_NotHighEnoughLevel = 7;
-	 */
-	k_EGCMsgUseItemResponse_NotHighEnoughLevel = 7,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgUseItemResponse_EventNotActive = 8;
-	 */
-	k_EGCMsgUseItemResponse_EventNotActive = 8,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgUseItemResponse_ItemUsed_EventPointsGranted = 9;
-	 */
-	k_EGCMsgUseItemResponse_ItemUsed_EventPointsGranted = 9,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgUseItemResponse_MissingRequirement = 10;
-	 */
-	k_EGCMsgUseItemResponse_MissingRequirement = 10,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgUseItemResponse_EmoticonUnlock_NoNew = 11;
-	 */
-	k_EGCMsgUseItemResponse_EmoticonUnlock_NoNew = 11,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgUseItemResponse_EmoticonUnlock_Complete = 12;
-	 */
-	k_EGCMsgUseItemResponse_EmoticonUnlock_Complete = 12,
-	/**
-	 * @generated from protobuf enum value: k_EGCMsgUseItemResponse_ItemUsed_Compendium = 13;
-	 */
-	k_EGCMsgUseItemResponse_ItemUsed_Compendium = 13,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgUseItemResponse_ItemUsed = 0;
+   */
+  k_EGCMsgUseItemResponse_ItemUsed = 0,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgUseItemResponse_GiftNoOtherPlayers = 1;
+   */
+  k_EGCMsgUseItemResponse_GiftNoOtherPlayers = 1,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgUseItemResponse_ServerError = 2;
+   */
+  k_EGCMsgUseItemResponse_ServerError = 2,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgUseItemResponse_MiniGameAlreadyStarted = 3;
+   */
+  k_EGCMsgUseItemResponse_MiniGameAlreadyStarted = 3,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgUseItemResponse_ItemUsed_ItemsGranted = 4;
+   */
+  k_EGCMsgUseItemResponse_ItemUsed_ItemsGranted = 4,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgUseItemResponse_DropRateBonusAlreadyGranted = 5;
+   */
+  k_EGCMsgUseItemResponse_DropRateBonusAlreadyGranted = 5,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgUseItemResponse_NotInLowPriorityPool = 6;
+   */
+  k_EGCMsgUseItemResponse_NotInLowPriorityPool = 6,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgUseItemResponse_NotHighEnoughLevel = 7;
+   */
+  k_EGCMsgUseItemResponse_NotHighEnoughLevel = 7,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgUseItemResponse_EventNotActive = 8;
+   */
+  k_EGCMsgUseItemResponse_EventNotActive = 8,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgUseItemResponse_ItemUsed_EventPointsGranted = 9;
+   */
+  k_EGCMsgUseItemResponse_ItemUsed_EventPointsGranted = 9,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgUseItemResponse_MissingRequirement = 10;
+   */
+  k_EGCMsgUseItemResponse_MissingRequirement = 10,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgUseItemResponse_EmoticonUnlock_NoNew = 11;
+   */
+  k_EGCMsgUseItemResponse_EmoticonUnlock_NoNew = 11,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgUseItemResponse_EmoticonUnlock_Complete = 12;
+   */
+  k_EGCMsgUseItemResponse_EmoticonUnlock_Complete = 12,
+  /**
+   * @generated from protobuf enum value: k_EGCMsgUseItemResponse_ItemUsed_Compendium = 13;
+   */
+  k_EGCMsgUseItemResponse_ItemUsed_Compendium = 13,
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgGenericResult$Type extends MessageType<CMsgGenericResult> {
-	constructor() {
-		super("CMsgGenericResult", [
-			{
-				no: 1,
-				name: "eresult",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "debug_message",
-				kind: "scalar",
-				localName: "debug_message",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgGenericResult>): CMsgGenericResult {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgGenericResult>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgGenericResult,
-	): CMsgGenericResult {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 eresult */ 1:
-					message.eresult = reader.uint32();
-					break;
-				case /* optional string debug_message */ 2:
-					message.debug_message = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgGenericResult, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional uint32 eresult = 1; */
-		if (message.eresult !== undefined) writer.tag(1, WireType.Varint).uint32(message.eresult);
-		/* optional string debug_message = 2; */
-		if (message.debug_message !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.debug_message);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgGenericResult", [
+      {
+        no: 1,
+        name: "eresult",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "debug_message",
+        kind: "scalar",
+        localName: "debug_message",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgGenericResult>): CMsgGenericResult {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgGenericResult>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgGenericResult,
+  ): CMsgGenericResult {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 eresult */ 1:
+          message.eresult = reader.uint32();
+          break;
+        case /* optional string debug_message */ 2:
+          message.debug_message = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgGenericResult, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional uint32 eresult = 1; */
+    if (message.eresult !== undefined) writer.tag(1, WireType.Varint).uint32(message.eresult);
+    /* optional string debug_message = 2; */
+    if (message.debug_message !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.debug_message);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgGenericResult

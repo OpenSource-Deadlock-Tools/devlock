@@ -14,28 +14,28 @@ import { MessageType } from "@protobuf-ts/runtime";
  * @generated from protobuf message NetMessageSplitscreenUserChanged
  */
 export interface NetMessageSplitscreenUserChanged {
-	/**
-	 * @generated from protobuf field: optional uint32 slot = 1;
-	 */
-	slot?: number;
+  /**
+   * @generated from protobuf field: optional uint32 slot = 1;
+   */
+  slot?: number;
 }
 /**
  * @generated from protobuf message NetMessageConnectionClosed
  */
 export interface NetMessageConnectionClosed {
-	/**
-	 * @generated from protobuf field: optional uint32 reason = 1;
-	 */
-	reason?: number;
+  /**
+   * @generated from protobuf field: optional uint32 reason = 1;
+   */
+  reason?: number;
 }
 /**
  * @generated from protobuf message NetMessageConnectionCrashed
  */
 export interface NetMessageConnectionCrashed {
-	/**
-	 * @generated from protobuf field: optional uint32 reason = 1;
-	 */
-	reason?: number;
+  /**
+   * @generated from protobuf field: optional uint32 reason = 1;
+   */
+  reason?: number;
 }
 /**
  * @generated from protobuf message NetMessagePacketStart
@@ -47,57 +47,57 @@ export interface NetMessagePacketStart {}
 export interface NetMessagePacketEnd {}
 // @generated message type with reflection information, may provide speed optimized methods
 class NetMessageSplitscreenUserChanged$Type extends MessageType<NetMessageSplitscreenUserChanged> {
-	constructor() {
-		super("NetMessageSplitscreenUserChanged", [
-			{
-				no: 1,
-				name: "slot",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<NetMessageSplitscreenUserChanged>): NetMessageSplitscreenUserChanged {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<NetMessageSplitscreenUserChanged>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: NetMessageSplitscreenUserChanged,
-	): NetMessageSplitscreenUserChanged {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 slot */ 1:
-					message.slot = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: NetMessageSplitscreenUserChanged,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 slot = 1; */
-		if (message.slot !== undefined) writer.tag(1, WireType.Varint).uint32(message.slot);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("NetMessageSplitscreenUserChanged", [
+      {
+        no: 1,
+        name: "slot",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<NetMessageSplitscreenUserChanged>): NetMessageSplitscreenUserChanged {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<NetMessageSplitscreenUserChanged>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: NetMessageSplitscreenUserChanged,
+  ): NetMessageSplitscreenUserChanged {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 slot */ 1:
+          message.slot = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: NetMessageSplitscreenUserChanged,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 slot = 1; */
+    if (message.slot !== undefined) writer.tag(1, WireType.Varint).uint32(message.slot);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message NetMessageSplitscreenUserChanged
@@ -105,57 +105,57 @@ class NetMessageSplitscreenUserChanged$Type extends MessageType<NetMessageSplits
 export const NetMessageSplitscreenUserChanged = new NetMessageSplitscreenUserChanged$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class NetMessageConnectionClosed$Type extends MessageType<NetMessageConnectionClosed> {
-	constructor() {
-		super("NetMessageConnectionClosed", [
-			{
-				no: 1,
-				name: "reason",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<NetMessageConnectionClosed>): NetMessageConnectionClosed {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<NetMessageConnectionClosed>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: NetMessageConnectionClosed,
-	): NetMessageConnectionClosed {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 reason */ 1:
-					message.reason = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: NetMessageConnectionClosed,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 reason = 1; */
-		if (message.reason !== undefined) writer.tag(1, WireType.Varint).uint32(message.reason);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("NetMessageConnectionClosed", [
+      {
+        no: 1,
+        name: "reason",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<NetMessageConnectionClosed>): NetMessageConnectionClosed {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<NetMessageConnectionClosed>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: NetMessageConnectionClosed,
+  ): NetMessageConnectionClosed {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 reason */ 1:
+          message.reason = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: NetMessageConnectionClosed,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 reason = 1; */
+    if (message.reason !== undefined) writer.tag(1, WireType.Varint).uint32(message.reason);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message NetMessageConnectionClosed
@@ -163,57 +163,57 @@ class NetMessageConnectionClosed$Type extends MessageType<NetMessageConnectionCl
 export const NetMessageConnectionClosed = new NetMessageConnectionClosed$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class NetMessageConnectionCrashed$Type extends MessageType<NetMessageConnectionCrashed> {
-	constructor() {
-		super("NetMessageConnectionCrashed", [
-			{
-				no: 1,
-				name: "reason",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<NetMessageConnectionCrashed>): NetMessageConnectionCrashed {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<NetMessageConnectionCrashed>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: NetMessageConnectionCrashed,
-	): NetMessageConnectionCrashed {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 reason */ 1:
-					message.reason = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: NetMessageConnectionCrashed,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 reason = 1; */
-		if (message.reason !== undefined) writer.tag(1, WireType.Varint).uint32(message.reason);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("NetMessageConnectionCrashed", [
+      {
+        no: 1,
+        name: "reason",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<NetMessageConnectionCrashed>): NetMessageConnectionCrashed {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<NetMessageConnectionCrashed>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: NetMessageConnectionCrashed,
+  ): NetMessageConnectionCrashed {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 reason */ 1:
+          message.reason = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: NetMessageConnectionCrashed,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 reason = 1; */
+    if (message.reason !== undefined) writer.tag(1, WireType.Varint).uint32(message.reason);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message NetMessageConnectionCrashed
@@ -221,31 +221,31 @@ class NetMessageConnectionCrashed$Type extends MessageType<NetMessageConnectionC
 export const NetMessageConnectionCrashed = new NetMessageConnectionCrashed$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class NetMessagePacketStart$Type extends MessageType<NetMessagePacketStart> {
-	constructor() {
-		super("NetMessagePacketStart", []);
-	}
-	create(value?: PartialMessage<NetMessagePacketStart>): NetMessagePacketStart {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<NetMessagePacketStart>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: NetMessagePacketStart,
-	): NetMessagePacketStart {
-		return target ?? this.create();
-	}
-	internalBinaryWrite(
-		message: NetMessagePacketStart,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("NetMessagePacketStart", []);
+  }
+  create(value?: PartialMessage<NetMessagePacketStart>): NetMessagePacketStart {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<NetMessagePacketStart>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: NetMessagePacketStart,
+  ): NetMessagePacketStart {
+    return target ?? this.create();
+  }
+  internalBinaryWrite(
+    message: NetMessagePacketStart,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message NetMessagePacketStart
@@ -253,27 +253,27 @@ class NetMessagePacketStart$Type extends MessageType<NetMessagePacketStart> {
 export const NetMessagePacketStart = new NetMessagePacketStart$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class NetMessagePacketEnd$Type extends MessageType<NetMessagePacketEnd> {
-	constructor() {
-		super("NetMessagePacketEnd", []);
-	}
-	create(value?: PartialMessage<NetMessagePacketEnd>): NetMessagePacketEnd {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<NetMessagePacketEnd>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: NetMessagePacketEnd,
-	): NetMessagePacketEnd {
-		return target ?? this.create();
-	}
-	internalBinaryWrite(message: NetMessagePacketEnd, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("NetMessagePacketEnd", []);
+  }
+  create(value?: PartialMessage<NetMessagePacketEnd>): NetMessagePacketEnd {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<NetMessagePacketEnd>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: NetMessagePacketEnd,
+  ): NetMessagePacketEnd {
+    return target ?? this.create();
+  }
+  internalBinaryWrite(message: NetMessagePacketEnd, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message NetMessagePacketEnd

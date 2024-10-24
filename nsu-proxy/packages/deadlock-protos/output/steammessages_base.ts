@@ -14,1061 +14,1061 @@ import { MessageType } from "@protobuf-ts/runtime";
  * @generated from protobuf message CMsgIPAddress
  */
 export interface CMsgIPAddress {
-	/**
-	 * @generated from protobuf oneof: ip
-	 */
-	ip:
-		| {
-				oneofKind: "v4";
-				/**
-				 * @generated from protobuf field: fixed32 v4 = 1;
-				 */
-				v4: number;
-		  }
-		| {
-				oneofKind: "v6";
-				/**
-				 * @generated from protobuf field: bytes v6 = 2;
-				 */
-				v6: Uint8Array;
-		  }
-		| {
-				oneofKind: undefined;
-		  };
+  /**
+   * @generated from protobuf oneof: ip
+   */
+  ip:
+    | {
+        oneofKind: "v4";
+        /**
+         * @generated from protobuf field: fixed32 v4 = 1;
+         */
+        v4: number;
+      }
+    | {
+        oneofKind: "v6";
+        /**
+         * @generated from protobuf field: bytes v6 = 2;
+         */
+        v6: Uint8Array;
+      }
+    | {
+        oneofKind: undefined;
+      };
 }
 /**
  * @generated from protobuf message CMsgIPAddressBucket
  */
 export interface CMsgIPAddressBucket {
-	/**
-	 * @generated from protobuf field: optional CMsgIPAddress original_ip_address = 1;
-	 */
-	original_ip_address?: CMsgIPAddress;
-	/**
-	 * @generated from protobuf field: optional fixed64 bucket = 2;
-	 */
-	bucket?: bigint;
+  /**
+   * @generated from protobuf field: optional CMsgIPAddress original_ip_address = 1;
+   */
+  original_ip_address?: CMsgIPAddress;
+  /**
+   * @generated from protobuf field: optional fixed64 bucket = 2;
+   */
+  bucket?: bigint;
 }
 /**
  * @generated from protobuf message CMsgProtoBufHeader
  */
 export interface CMsgProtoBufHeader {
-	/**
-	 * @generated from protobuf field: optional fixed64 steamid = 1;
-	 */
-	steamid?: bigint;
-	/**
-	 * @generated from protobuf field: optional int32 client_sessionid = 2;
-	 */
-	client_sessionid?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 routing_appid = 3;
-	 */
-	routing_appid?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 jobid_source = 10;
-	 */
-	jobid_source?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed64 jobid_target = 11;
-	 */
-	jobid_target?: bigint;
-	/**
-	 * @generated from protobuf field: optional string target_job_name = 12;
-	 */
-	target_job_name?: string;
-	/**
-	 * @generated from protobuf field: optional int32 seq_num = 24;
-	 */
-	seq_num?: number;
-	/**
-	 * @generated from protobuf field: optional int32 eresult = 13;
-	 */
-	eresult?: number;
-	/**
-	 * @generated from protobuf field: optional string error_message = 14;
-	 */
-	error_message?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 auth_account_flags = 16;
-	 */
-	auth_account_flags?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 token_source = 22;
-	 */
-	token_source?: number;
-	/**
-	 * @generated from protobuf field: optional bool admin_spoofing_user = 23;
-	 */
-	admin_spoofing_user?: boolean;
-	/**
-	 * @generated from protobuf field: optional int32 transport_error = 17;
-	 */
-	transport_error?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 messageid = 18;
-	 */
-	messageid?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 publisher_group_id = 19;
-	 */
-	publisher_group_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 sysid = 20;
-	 */
-	sysid?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 trace_tag = 21;
-	 */
-	trace_tag?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 webapi_key_id = 25;
-	 */
-	webapi_key_id?: number;
-	/**
-	 * @generated from protobuf field: optional bool is_from_external_source = 26;
-	 */
-	is_from_external_source?: boolean;
-	/**
-	 * @generated from protobuf field: repeated uint32 forward_to_sysid = 27;
-	 */
-	forward_to_sysid: number[];
-	/**
-	 * @generated from protobuf field: optional uint32 cm_sysid = 28;
-	 */
-	cm_sysid?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 launcher_type = 31;
-	 */
-	launcher_type?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 realm = 32;
-	 */
-	realm?: number;
-	/**
-	 * @generated from protobuf field: optional int32 timeout_ms = 33;
-	 */
-	timeout_ms?: number;
-	/**
-	 * @generated from protobuf field: optional string debug_source = 34;
-	 */
-	debug_source?: string;
-	/**
-	 * @generated from protobuf oneof: ip_addr
-	 */
-	ip_addr:
-		| {
-				oneofKind: "ip";
-				/**
-				 * @generated from protobuf field: uint32 ip = 15;
-				 */
-				ip: number;
-		  }
-		| {
-				oneofKind: "ip_v6";
-				/**
-				 * @generated from protobuf field: bytes ip_v6 = 29;
-				 */
-				ip_v6: Uint8Array;
-		  }
-		| {
-				oneofKind: undefined;
-		  };
+  /**
+   * @generated from protobuf field: optional fixed64 steamid = 1;
+   */
+  steamid?: bigint;
+  /**
+   * @generated from protobuf field: optional int32 client_sessionid = 2;
+   */
+  client_sessionid?: number;
+  /**
+   * @generated from protobuf field: optional uint32 routing_appid = 3;
+   */
+  routing_appid?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 jobid_source = 10;
+   */
+  jobid_source?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed64 jobid_target = 11;
+   */
+  jobid_target?: bigint;
+  /**
+   * @generated from protobuf field: optional string target_job_name = 12;
+   */
+  target_job_name?: string;
+  /**
+   * @generated from protobuf field: optional int32 seq_num = 24;
+   */
+  seq_num?: number;
+  /**
+   * @generated from protobuf field: optional int32 eresult = 13;
+   */
+  eresult?: number;
+  /**
+   * @generated from protobuf field: optional string error_message = 14;
+   */
+  error_message?: string;
+  /**
+   * @generated from protobuf field: optional uint32 auth_account_flags = 16;
+   */
+  auth_account_flags?: number;
+  /**
+   * @generated from protobuf field: optional uint32 token_source = 22;
+   */
+  token_source?: number;
+  /**
+   * @generated from protobuf field: optional bool admin_spoofing_user = 23;
+   */
+  admin_spoofing_user?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 transport_error = 17;
+   */
+  transport_error?: number;
+  /**
+   * @generated from protobuf field: optional uint64 messageid = 18;
+   */
+  messageid?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 publisher_group_id = 19;
+   */
+  publisher_group_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 sysid = 20;
+   */
+  sysid?: number;
+  /**
+   * @generated from protobuf field: optional uint64 trace_tag = 21;
+   */
+  trace_tag?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 webapi_key_id = 25;
+   */
+  webapi_key_id?: number;
+  /**
+   * @generated from protobuf field: optional bool is_from_external_source = 26;
+   */
+  is_from_external_source?: boolean;
+  /**
+   * @generated from protobuf field: repeated uint32 forward_to_sysid = 27;
+   */
+  forward_to_sysid: number[];
+  /**
+   * @generated from protobuf field: optional uint32 cm_sysid = 28;
+   */
+  cm_sysid?: number;
+  /**
+   * @generated from protobuf field: optional uint32 launcher_type = 31;
+   */
+  launcher_type?: number;
+  /**
+   * @generated from protobuf field: optional uint32 realm = 32;
+   */
+  realm?: number;
+  /**
+   * @generated from protobuf field: optional int32 timeout_ms = 33;
+   */
+  timeout_ms?: number;
+  /**
+   * @generated from protobuf field: optional string debug_source = 34;
+   */
+  debug_source?: string;
+  /**
+   * @generated from protobuf oneof: ip_addr
+   */
+  ip_addr:
+    | {
+        oneofKind: "ip";
+        /**
+         * @generated from protobuf field: uint32 ip = 15;
+         */
+        ip: number;
+      }
+    | {
+        oneofKind: "ip_v6";
+        /**
+         * @generated from protobuf field: bytes ip_v6 = 29;
+         */
+        ip_v6: Uint8Array;
+      }
+    | {
+        oneofKind: undefined;
+      };
 }
 /**
  * @generated from protobuf message CMsgMulti
  */
 export interface CMsgMulti {
-	/**
-	 * @generated from protobuf field: optional uint32 size_unzipped = 1;
-	 */
-	size_unzipped?: number;
-	/**
-	 * @generated from protobuf field: optional bytes message_body = 2;
-	 */
-	message_body?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional uint32 size_unzipped = 1;
+   */
+  size_unzipped?: number;
+  /**
+   * @generated from protobuf field: optional bytes message_body = 2;
+   */
+  message_body?: Uint8Array;
 }
 /**
  * @generated from protobuf message CMsgProtobufWrapped
  */
 export interface CMsgProtobufWrapped {
-	/**
-	 * @generated from protobuf field: optional bytes message_body = 1;
-	 */
-	message_body?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bytes message_body = 1;
+   */
+  message_body?: Uint8Array;
 }
 /**
  * @generated from protobuf message CMsgAuthTicket
  */
 export interface CMsgAuthTicket {
-	/**
-	 * @generated from protobuf field: optional uint32 estate = 1;
-	 */
-	estate?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 eresult = 2;
-	 */
-	eresult?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 steamid = 3;
-	 */
-	steamid?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed64 gameid = 4;
-	 */
-	gameid?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 h_steam_pipe = 5;
-	 */
-	h_steam_pipe?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 ticket_crc = 6;
-	 */
-	ticket_crc?: number;
-	/**
-	 * @generated from protobuf field: optional bytes ticket = 7;
-	 */
-	ticket?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional uint32 estate = 1;
+   */
+  estate?: number;
+  /**
+   * @generated from protobuf field: optional uint32 eresult = 2;
+   */
+  eresult?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 steamid = 3;
+   */
+  steamid?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed64 gameid = 4;
+   */
+  gameid?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 h_steam_pipe = 5;
+   */
+  h_steam_pipe?: number;
+  /**
+   * @generated from protobuf field: optional uint32 ticket_crc = 6;
+   */
+  ticket_crc?: number;
+  /**
+   * @generated from protobuf field: optional bytes ticket = 7;
+   */
+  ticket?: Uint8Array;
 }
 /**
  * @generated from protobuf message CCDDBAppDetailCommon
  */
 export interface CCDDBAppDetailCommon {
-	/**
-	 * @generated from protobuf field: optional uint32 appid = 1;
-	 */
-	appid?: number;
-	/**
-	 * @generated from protobuf field: optional string name = 2;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: optional string icon = 3;
-	 */
-	icon?: string;
-	/**
-	 * @generated from protobuf field: optional bool tool = 6;
-	 */
-	tool?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool demo = 7;
-	 */
-	demo?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool media = 8;
-	 */
-	media?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool community_visible_stats = 9;
-	 */
-	community_visible_stats?: boolean;
-	/**
-	 * @generated from protobuf field: optional string friendly_name = 10;
-	 */
-	friendly_name?: string;
-	/**
-	 * @generated from protobuf field: optional string propagation = 11;
-	 */
-	propagation?: string;
-	/**
-	 * @generated from protobuf field: optional bool has_adult_content = 12;
-	 */
-	has_adult_content?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_visible_in_steam_china = 13;
-	 */
-	is_visible_in_steam_china?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 app_type = 14;
-	 */
-	app_type?: number;
+  /**
+   * @generated from protobuf field: optional uint32 appid = 1;
+   */
+  appid?: number;
+  /**
+   * @generated from protobuf field: optional string name = 2;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: optional string icon = 3;
+   */
+  icon?: string;
+  /**
+   * @generated from protobuf field: optional bool tool = 6;
+   */
+  tool?: boolean;
+  /**
+   * @generated from protobuf field: optional bool demo = 7;
+   */
+  demo?: boolean;
+  /**
+   * @generated from protobuf field: optional bool media = 8;
+   */
+  media?: boolean;
+  /**
+   * @generated from protobuf field: optional bool community_visible_stats = 9;
+   */
+  community_visible_stats?: boolean;
+  /**
+   * @generated from protobuf field: optional string friendly_name = 10;
+   */
+  friendly_name?: string;
+  /**
+   * @generated from protobuf field: optional string propagation = 11;
+   */
+  propagation?: string;
+  /**
+   * @generated from protobuf field: optional bool has_adult_content = 12;
+   */
+  has_adult_content?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_visible_in_steam_china = 13;
+   */
+  is_visible_in_steam_china?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 app_type = 14;
+   */
+  app_type?: number;
 }
 /**
  * @generated from protobuf message CMsgAppRights
  */
 export interface CMsgAppRights {
-	/**
-	 * @generated from protobuf field: optional bool edit_info = 1;
-	 */
-	edit_info?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool publish = 2;
-	 */
-	publish?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool view_error_data = 3;
-	 */
-	view_error_data?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool download = 4;
-	 */
-	download?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool upload_cdkeys = 5;
-	 */
-	upload_cdkeys?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool generate_cdkeys = 6;
-	 */
-	generate_cdkeys?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool view_financials = 7;
-	 */
-	view_financials?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool manage_ceg = 8;
-	 */
-	manage_ceg?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool manage_signing = 9;
-	 */
-	manage_signing?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool manage_cdkeys = 10;
-	 */
-	manage_cdkeys?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool edit_marketing = 11;
-	 */
-	edit_marketing?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool economy_support = 12;
-	 */
-	economy_support?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool economy_support_supervisor = 13;
-	 */
-	economy_support_supervisor?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool manage_pricing = 14;
-	 */
-	manage_pricing?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool broadcast_live = 15;
-	 */
-	broadcast_live?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool view_marketing_traffic = 16;
-	 */
-	view_marketing_traffic?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool edit_store_display_content = 17;
-	 */
-	edit_store_display_content?: boolean;
+  /**
+   * @generated from protobuf field: optional bool edit_info = 1;
+   */
+  edit_info?: boolean;
+  /**
+   * @generated from protobuf field: optional bool publish = 2;
+   */
+  publish?: boolean;
+  /**
+   * @generated from protobuf field: optional bool view_error_data = 3;
+   */
+  view_error_data?: boolean;
+  /**
+   * @generated from protobuf field: optional bool download = 4;
+   */
+  download?: boolean;
+  /**
+   * @generated from protobuf field: optional bool upload_cdkeys = 5;
+   */
+  upload_cdkeys?: boolean;
+  /**
+   * @generated from protobuf field: optional bool generate_cdkeys = 6;
+   */
+  generate_cdkeys?: boolean;
+  /**
+   * @generated from protobuf field: optional bool view_financials = 7;
+   */
+  view_financials?: boolean;
+  /**
+   * @generated from protobuf field: optional bool manage_ceg = 8;
+   */
+  manage_ceg?: boolean;
+  /**
+   * @generated from protobuf field: optional bool manage_signing = 9;
+   */
+  manage_signing?: boolean;
+  /**
+   * @generated from protobuf field: optional bool manage_cdkeys = 10;
+   */
+  manage_cdkeys?: boolean;
+  /**
+   * @generated from protobuf field: optional bool edit_marketing = 11;
+   */
+  edit_marketing?: boolean;
+  /**
+   * @generated from protobuf field: optional bool economy_support = 12;
+   */
+  economy_support?: boolean;
+  /**
+   * @generated from protobuf field: optional bool economy_support_supervisor = 13;
+   */
+  economy_support_supervisor?: boolean;
+  /**
+   * @generated from protobuf field: optional bool manage_pricing = 14;
+   */
+  manage_pricing?: boolean;
+  /**
+   * @generated from protobuf field: optional bool broadcast_live = 15;
+   */
+  broadcast_live?: boolean;
+  /**
+   * @generated from protobuf field: optional bool view_marketing_traffic = 16;
+   */
+  view_marketing_traffic?: boolean;
+  /**
+   * @generated from protobuf field: optional bool edit_store_display_content = 17;
+   */
+  edit_store_display_content?: boolean;
 }
 /**
  * @generated from protobuf message CCuratorPreferences
  */
 export interface CCuratorPreferences {
-	/**
-	 * @generated from protobuf field: optional uint32 supported_languages = 1;
-	 */
-	supported_languages?: number;
-	/**
-	 * @generated from protobuf field: optional bool platform_windows = 2;
-	 */
-	platform_windows?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool platform_mac = 3;
-	 */
-	platform_mac?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool platform_linux = 4;
-	 */
-	platform_linux?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool vr_content = 5;
-	 */
-	vr_content?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool adult_content_violence = 6;
-	 */
-	adult_content_violence?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool adult_content_sex = 7;
-	 */
-	adult_content_sex?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 timestamp_updated = 8;
-	 */
-	timestamp_updated?: number;
-	/**
-	 * @generated from protobuf field: repeated uint32 tagids_curated = 9;
-	 */
-	tagids_curated: number[];
-	/**
-	 * @generated from protobuf field: repeated uint32 tagids_filtered = 10;
-	 */
-	tagids_filtered: number[];
-	/**
-	 * @generated from protobuf field: optional string website_title = 11;
-	 */
-	website_title?: string;
-	/**
-	 * @generated from protobuf field: optional string website_url = 12;
-	 */
-	website_url?: string;
-	/**
-	 * @generated from protobuf field: optional string discussion_url = 13;
-	 */
-	discussion_url?: string;
-	/**
-	 * @generated from protobuf field: optional bool show_broadcast = 14;
-	 */
-	show_broadcast?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 supported_languages = 1;
+   */
+  supported_languages?: number;
+  /**
+   * @generated from protobuf field: optional bool platform_windows = 2;
+   */
+  platform_windows?: boolean;
+  /**
+   * @generated from protobuf field: optional bool platform_mac = 3;
+   */
+  platform_mac?: boolean;
+  /**
+   * @generated from protobuf field: optional bool platform_linux = 4;
+   */
+  platform_linux?: boolean;
+  /**
+   * @generated from protobuf field: optional bool vr_content = 5;
+   */
+  vr_content?: boolean;
+  /**
+   * @generated from protobuf field: optional bool adult_content_violence = 6;
+   */
+  adult_content_violence?: boolean;
+  /**
+   * @generated from protobuf field: optional bool adult_content_sex = 7;
+   */
+  adult_content_sex?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 timestamp_updated = 8;
+   */
+  timestamp_updated?: number;
+  /**
+   * @generated from protobuf field: repeated uint32 tagids_curated = 9;
+   */
+  tagids_curated: number[];
+  /**
+   * @generated from protobuf field: repeated uint32 tagids_filtered = 10;
+   */
+  tagids_filtered: number[];
+  /**
+   * @generated from protobuf field: optional string website_title = 11;
+   */
+  website_title?: string;
+  /**
+   * @generated from protobuf field: optional string website_url = 12;
+   */
+  website_url?: string;
+  /**
+   * @generated from protobuf field: optional string discussion_url = 13;
+   */
+  discussion_url?: string;
+  /**
+   * @generated from protobuf field: optional bool show_broadcast = 14;
+   */
+  show_broadcast?: boolean;
 }
 /**
  * @generated from protobuf message CLocalizationToken
  */
 export interface CLocalizationToken {
-	/**
-	 * @generated from protobuf field: optional uint32 language = 1;
-	 */
-	language?: number;
-	/**
-	 * @generated from protobuf field: optional string localized_string = 2;
-	 */
-	localized_string?: string;
+  /**
+   * @generated from protobuf field: optional uint32 language = 1;
+   */
+  language?: number;
+  /**
+   * @generated from protobuf field: optional string localized_string = 2;
+   */
+  localized_string?: string;
 }
 /**
  * @generated from protobuf message CClanEventUserNewsTuple
  */
 export interface CClanEventUserNewsTuple {
-	/**
-	 * @generated from protobuf field: optional uint32 clanid = 1;
-	 */
-	clanid?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 event_gid = 2;
-	 */
-	event_gid?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed64 announcement_gid = 3;
-	 */
-	announcement_gid?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 rtime_start = 4;
-	 */
-	rtime_start?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 rtime_end = 5;
-	 */
-	rtime_end?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 priority_score = 6;
-	 */
-	priority_score?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 type = 7;
-	 */
-	type?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 clamp_range_slot = 8;
-	 */
-	clamp_range_slot?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 appid = 9;
-	 */
-	appid?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 rtime32_last_modified = 10;
-	 */
-	rtime32_last_modified?: number;
+  /**
+   * @generated from protobuf field: optional uint32 clanid = 1;
+   */
+  clanid?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 event_gid = 2;
+   */
+  event_gid?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed64 announcement_gid = 3;
+   */
+  announcement_gid?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 rtime_start = 4;
+   */
+  rtime_start?: number;
+  /**
+   * @generated from protobuf field: optional uint32 rtime_end = 5;
+   */
+  rtime_end?: number;
+  /**
+   * @generated from protobuf field: optional uint32 priority_score = 6;
+   */
+  priority_score?: number;
+  /**
+   * @generated from protobuf field: optional uint32 type = 7;
+   */
+  type?: number;
+  /**
+   * @generated from protobuf field: optional uint32 clamp_range_slot = 8;
+   */
+  clamp_range_slot?: number;
+  /**
+   * @generated from protobuf field: optional uint32 appid = 9;
+   */
+  appid?: number;
+  /**
+   * @generated from protobuf field: optional uint32 rtime32_last_modified = 10;
+   */
+  rtime32_last_modified?: number;
 }
 /**
  * @generated from protobuf message CClanMatchEventByRange
  */
 export interface CClanMatchEventByRange {
-	/**
-	 * @generated from protobuf field: optional uint32 rtime_before = 1;
-	 */
-	rtime_before?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 rtime_after = 2;
-	 */
-	rtime_after?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 qualified = 3;
-	 */
-	qualified?: number;
-	/**
-	 * @generated from protobuf field: repeated CClanEventUserNewsTuple events = 4;
-	 */
-	events: CClanEventUserNewsTuple[];
+  /**
+   * @generated from protobuf field: optional uint32 rtime_before = 1;
+   */
+  rtime_before?: number;
+  /**
+   * @generated from protobuf field: optional uint32 rtime_after = 2;
+   */
+  rtime_after?: number;
+  /**
+   * @generated from protobuf field: optional uint32 qualified = 3;
+   */
+  qualified?: number;
+  /**
+   * @generated from protobuf field: repeated CClanEventUserNewsTuple events = 4;
+   */
+  events: CClanEventUserNewsTuple[];
 }
 /**
  * @generated from protobuf message CCommunity_ClanAnnouncementInfo
  */
 export interface CCommunity_ClanAnnouncementInfo {
-	/**
-	 * @generated from protobuf field: optional uint64 gid = 1;
-	 */
-	gid?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 clanid = 2;
-	 */
-	clanid?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 posterid = 3;
-	 */
-	posterid?: bigint;
-	/**
-	 * @generated from protobuf field: optional string headline = 4;
-	 */
-	headline?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 posttime = 5;
-	 */
-	posttime?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 updatetime = 6;
-	 */
-	updatetime?: number;
-	/**
-	 * @generated from protobuf field: optional string body = 7;
-	 */
-	body?: string;
-	/**
-	 * @generated from protobuf field: optional int32 commentcount = 8;
-	 */
-	commentcount?: number;
-	/**
-	 * @generated from protobuf field: repeated string tags = 9;
-	 */
-	tags: string[];
-	/**
-	 * @generated from protobuf field: optional int32 language = 10;
-	 */
-	language?: number;
-	/**
-	 * @generated from protobuf field: optional bool hidden = 11;
-	 */
-	hidden?: boolean;
-	/**
-	 * @generated from protobuf field: optional fixed64 forum_topic_id = 12;
-	 */
-	forum_topic_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed64 event_gid = 13;
-	 */
-	event_gid?: bigint;
-	/**
-	 * @generated from protobuf field: optional int32 voteupcount = 14;
-	 */
-	voteupcount?: number;
-	/**
-	 * @generated from protobuf field: optional int32 votedowncount = 15;
-	 */
-	votedowncount?: number;
-	/**
-	 * @generated from protobuf field: optional EBanContentCheckResult ban_check_result = 16;
-	 */
-	ban_check_result?: EBanContentCheckResult;
+  /**
+   * @generated from protobuf field: optional uint64 gid = 1;
+   */
+  gid?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 clanid = 2;
+   */
+  clanid?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 posterid = 3;
+   */
+  posterid?: bigint;
+  /**
+   * @generated from protobuf field: optional string headline = 4;
+   */
+  headline?: string;
+  /**
+   * @generated from protobuf field: optional uint32 posttime = 5;
+   */
+  posttime?: number;
+  /**
+   * @generated from protobuf field: optional uint32 updatetime = 6;
+   */
+  updatetime?: number;
+  /**
+   * @generated from protobuf field: optional string body = 7;
+   */
+  body?: string;
+  /**
+   * @generated from protobuf field: optional int32 commentcount = 8;
+   */
+  commentcount?: number;
+  /**
+   * @generated from protobuf field: repeated string tags = 9;
+   */
+  tags: string[];
+  /**
+   * @generated from protobuf field: optional int32 language = 10;
+   */
+  language?: number;
+  /**
+   * @generated from protobuf field: optional bool hidden = 11;
+   */
+  hidden?: boolean;
+  /**
+   * @generated from protobuf field: optional fixed64 forum_topic_id = 12;
+   */
+  forum_topic_id?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed64 event_gid = 13;
+   */
+  event_gid?: bigint;
+  /**
+   * @generated from protobuf field: optional int32 voteupcount = 14;
+   */
+  voteupcount?: number;
+  /**
+   * @generated from protobuf field: optional int32 votedowncount = 15;
+   */
+  votedowncount?: number;
+  /**
+   * @generated from protobuf field: optional EBanContentCheckResult ban_check_result = 16;
+   */
+  ban_check_result?: EBanContentCheckResult;
 }
 /**
  * @generated from protobuf message CClanEventData
  */
 export interface CClanEventData {
-	/**
-	 * @generated from protobuf field: optional fixed64 gid = 1;
-	 */
-	gid?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed64 clan_steamid = 2;
-	 */
-	clan_steamid?: bigint;
-	/**
-	 * @generated from protobuf field: optional string event_name = 3;
-	 */
-	event_name?: string;
-	/**
-	 * @generated from protobuf field: optional EProtoClanEventType event_type = 4;
-	 */
-	event_type?: EProtoClanEventType;
-	/**
-	 * @generated from protobuf field: optional uint32 appid = 5;
-	 */
-	appid?: number;
-	/**
-	 * @generated from protobuf field: optional string server_address = 6;
-	 */
-	server_address?: string;
-	/**
-	 * @generated from protobuf field: optional string server_password = 7;
-	 */
-	server_password?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 rtime32_start_time = 8;
-	 */
-	rtime32_start_time?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 rtime32_end_time = 9;
-	 */
-	rtime32_end_time?: number;
-	/**
-	 * @generated from protobuf field: optional int32 comment_count = 10;
-	 */
-	comment_count?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 creator_steamid = 11;
-	 */
-	creator_steamid?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed64 last_update_steamid = 12;
-	 */
-	last_update_steamid?: bigint;
-	/**
-	 * @generated from protobuf field: optional string event_notes = 13;
-	 */
-	event_notes?: string;
-	/**
-	 * @generated from protobuf field: optional string jsondata = 14;
-	 */
-	jsondata?: string;
-	/**
-	 * @generated from protobuf field: optional CCommunity_ClanAnnouncementInfo announcement_body = 15;
-	 */
-	announcement_body?: CCommunity_ClanAnnouncementInfo;
-	/**
-	 * @generated from protobuf field: optional bool published = 16;
-	 */
-	published?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool hidden = 17;
-	 */
-	hidden?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 rtime32_visibility_start = 18;
-	 */
-	rtime32_visibility_start?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 rtime32_visibility_end = 19;
-	 */
-	rtime32_visibility_end?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 broadcaster_accountid = 20;
-	 */
-	broadcaster_accountid?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 follower_count = 21;
-	 */
-	follower_count?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 ignore_count = 22;
-	 */
-	ignore_count?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 forum_topic_id = 23;
-	 */
-	forum_topic_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 rtime32_last_modified = 24;
-	 */
-	rtime32_last_modified?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 news_post_gid = 25;
-	 */
-	news_post_gid?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 rtime_mod_reviewed = 26;
-	 */
-	rtime_mod_reviewed?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 featured_app_tagid = 27;
-	 */
-	featured_app_tagid?: number;
-	/**
-	 * @generated from protobuf field: repeated uint32 referenced_appids = 28;
-	 */
-	referenced_appids: number[];
-	/**
-	 * @generated from protobuf field: optional uint32 build_id = 29;
-	 */
-	build_id?: number;
-	/**
-	 * @generated from protobuf field: optional string build_branch = 30;
-	 */
-	build_branch?: string;
+  /**
+   * @generated from protobuf field: optional fixed64 gid = 1;
+   */
+  gid?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed64 clan_steamid = 2;
+   */
+  clan_steamid?: bigint;
+  /**
+   * @generated from protobuf field: optional string event_name = 3;
+   */
+  event_name?: string;
+  /**
+   * @generated from protobuf field: optional EProtoClanEventType event_type = 4;
+   */
+  event_type?: EProtoClanEventType;
+  /**
+   * @generated from protobuf field: optional uint32 appid = 5;
+   */
+  appid?: number;
+  /**
+   * @generated from protobuf field: optional string server_address = 6;
+   */
+  server_address?: string;
+  /**
+   * @generated from protobuf field: optional string server_password = 7;
+   */
+  server_password?: string;
+  /**
+   * @generated from protobuf field: optional uint32 rtime32_start_time = 8;
+   */
+  rtime32_start_time?: number;
+  /**
+   * @generated from protobuf field: optional uint32 rtime32_end_time = 9;
+   */
+  rtime32_end_time?: number;
+  /**
+   * @generated from protobuf field: optional int32 comment_count = 10;
+   */
+  comment_count?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 creator_steamid = 11;
+   */
+  creator_steamid?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed64 last_update_steamid = 12;
+   */
+  last_update_steamid?: bigint;
+  /**
+   * @generated from protobuf field: optional string event_notes = 13;
+   */
+  event_notes?: string;
+  /**
+   * @generated from protobuf field: optional string jsondata = 14;
+   */
+  jsondata?: string;
+  /**
+   * @generated from protobuf field: optional CCommunity_ClanAnnouncementInfo announcement_body = 15;
+   */
+  announcement_body?: CCommunity_ClanAnnouncementInfo;
+  /**
+   * @generated from protobuf field: optional bool published = 16;
+   */
+  published?: boolean;
+  /**
+   * @generated from protobuf field: optional bool hidden = 17;
+   */
+  hidden?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 rtime32_visibility_start = 18;
+   */
+  rtime32_visibility_start?: number;
+  /**
+   * @generated from protobuf field: optional uint32 rtime32_visibility_end = 19;
+   */
+  rtime32_visibility_end?: number;
+  /**
+   * @generated from protobuf field: optional uint32 broadcaster_accountid = 20;
+   */
+  broadcaster_accountid?: number;
+  /**
+   * @generated from protobuf field: optional uint32 follower_count = 21;
+   */
+  follower_count?: number;
+  /**
+   * @generated from protobuf field: optional uint32 ignore_count = 22;
+   */
+  ignore_count?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 forum_topic_id = 23;
+   */
+  forum_topic_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 rtime32_last_modified = 24;
+   */
+  rtime32_last_modified?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 news_post_gid = 25;
+   */
+  news_post_gid?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 rtime_mod_reviewed = 26;
+   */
+  rtime_mod_reviewed?: number;
+  /**
+   * @generated from protobuf field: optional uint32 featured_app_tagid = 27;
+   */
+  featured_app_tagid?: number;
+  /**
+   * @generated from protobuf field: repeated uint32 referenced_appids = 28;
+   */
+  referenced_appids: number[];
+  /**
+   * @generated from protobuf field: optional uint32 build_id = 29;
+   */
+  build_id?: number;
+  /**
+   * @generated from protobuf field: optional string build_branch = 30;
+   */
+  build_branch?: string;
 }
 /**
  * @generated from protobuf message CBilling_Address
  */
 export interface CBilling_Address {
-	/**
-	 * @generated from protobuf field: optional string first_name = 1;
-	 */
-	first_name?: string;
-	/**
-	 * @generated from protobuf field: optional string last_name = 2;
-	 */
-	last_name?: string;
-	/**
-	 * @generated from protobuf field: optional string address1 = 3;
-	 */
-	address1?: string;
-	/**
-	 * @generated from protobuf field: optional string address2 = 4;
-	 */
-	address2?: string;
-	/**
-	 * @generated from protobuf field: optional string city = 5;
-	 */
-	city?: string;
-	/**
-	 * @generated from protobuf field: optional string us_state = 6;
-	 */
-	us_state?: string;
-	/**
-	 * @generated from protobuf field: optional string country_code = 7;
-	 */
-	country_code?: string;
-	/**
-	 * @generated from protobuf field: optional string postcode = 8;
-	 */
-	postcode?: string;
-	/**
-	 * @generated from protobuf field: optional int32 zip_plus4 = 9;
-	 */
-	zip_plus4?: number;
-	/**
-	 * @generated from protobuf field: optional string phone = 10;
-	 */
-	phone?: string;
+  /**
+   * @generated from protobuf field: optional string first_name = 1;
+   */
+  first_name?: string;
+  /**
+   * @generated from protobuf field: optional string last_name = 2;
+   */
+  last_name?: string;
+  /**
+   * @generated from protobuf field: optional string address1 = 3;
+   */
+  address1?: string;
+  /**
+   * @generated from protobuf field: optional string address2 = 4;
+   */
+  address2?: string;
+  /**
+   * @generated from protobuf field: optional string city = 5;
+   */
+  city?: string;
+  /**
+   * @generated from protobuf field: optional string us_state = 6;
+   */
+  us_state?: string;
+  /**
+   * @generated from protobuf field: optional string country_code = 7;
+   */
+  country_code?: string;
+  /**
+   * @generated from protobuf field: optional string postcode = 8;
+   */
+  postcode?: string;
+  /**
+   * @generated from protobuf field: optional int32 zip_plus4 = 9;
+   */
+  zip_plus4?: number;
+  /**
+   * @generated from protobuf field: optional string phone = 10;
+   */
+  phone?: string;
 }
 /**
  * @generated from protobuf message CPackageReservationStatus
  */
 export interface CPackageReservationStatus {
-	/**
-	 * @generated from protobuf field: optional uint32 packageid = 1;
-	 */
-	packageid?: number;
-	/**
-	 * @generated from protobuf field: optional int32 reservation_state = 2;
-	 */
-	reservation_state?: number;
-	/**
-	 * @generated from protobuf field: optional int32 queue_position = 3;
-	 */
-	queue_position?: number;
-	/**
-	 * @generated from protobuf field: optional int32 total_queue_size = 4;
-	 */
-	total_queue_size?: number;
-	/**
-	 * @generated from protobuf field: optional string reservation_country_code = 5;
-	 */
-	reservation_country_code?: string;
-	/**
-	 * @generated from protobuf field: optional bool expired = 6;
-	 */
-	expired?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 time_expires = 7;
-	 */
-	time_expires?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 time_reserved = 8;
-	 */
-	time_reserved?: number;
+  /**
+   * @generated from protobuf field: optional uint32 packageid = 1;
+   */
+  packageid?: number;
+  /**
+   * @generated from protobuf field: optional int32 reservation_state = 2;
+   */
+  reservation_state?: number;
+  /**
+   * @generated from protobuf field: optional int32 queue_position = 3;
+   */
+  queue_position?: number;
+  /**
+   * @generated from protobuf field: optional int32 total_queue_size = 4;
+   */
+  total_queue_size?: number;
+  /**
+   * @generated from protobuf field: optional string reservation_country_code = 5;
+   */
+  reservation_country_code?: string;
+  /**
+   * @generated from protobuf field: optional bool expired = 6;
+   */
+  expired?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 time_expires = 7;
+   */
+  time_expires?: number;
+  /**
+   * @generated from protobuf field: optional uint32 time_reserved = 8;
+   */
+  time_reserved?: number;
 }
 /**
  * @generated from protobuf message CMsgKeyValuePair
  */
 export interface CMsgKeyValuePair {
-	/**
-	 * @generated from protobuf field: optional string name = 1;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: optional string value = 2;
-	 */
-	value?: string;
+  /**
+   * @generated from protobuf field: optional string name = 1;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: optional string value = 2;
+   */
+  value?: string;
 }
 /**
  * @generated from protobuf message CMsgKeyValueSet
  */
 export interface CMsgKeyValueSet {
-	/**
-	 * @generated from protobuf field: repeated CMsgKeyValuePair pairs = 1;
-	 */
-	pairs: CMsgKeyValuePair[];
+  /**
+   * @generated from protobuf field: repeated CMsgKeyValuePair pairs = 1;
+   */
+  pairs: CMsgKeyValuePair[];
 }
 /**
  * @generated from protobuf enum EBanContentCheckResult
  */
 export enum EBanContentCheckResult {
-	/**
-	 * @generated from protobuf enum value: k_EBanContentCheckResult_NotScanned = 0;
-	 */
-	k_EBanContentCheckResult_NotScanned = 0,
-	/**
-	 * @generated from protobuf enum value: k_EBanContentCheckResult_Reset = 1;
-	 */
-	k_EBanContentCheckResult_Reset = 1,
-	/**
-	 * @generated from protobuf enum value: k_EBanContentCheckResult_NeedsChecking = 2;
-	 */
-	k_EBanContentCheckResult_NeedsChecking = 2,
-	/**
-	 * @generated from protobuf enum value: k_EBanContentCheckResult_VeryUnlikely = 5;
-	 */
-	k_EBanContentCheckResult_VeryUnlikely = 5,
-	/**
-	 * @generated from protobuf enum value: k_EBanContentCheckResult_Unlikely = 30;
-	 */
-	k_EBanContentCheckResult_Unlikely = 30,
-	/**
-	 * @generated from protobuf enum value: k_EBanContentCheckResult_Possible = 50;
-	 */
-	k_EBanContentCheckResult_Possible = 50,
-	/**
-	 * @generated from protobuf enum value: k_EBanContentCheckResult_Likely = 75;
-	 */
-	k_EBanContentCheckResult_Likely = 75,
-	/**
-	 * @generated from protobuf enum value: k_EBanContentCheckResult_VeryLikely = 100;
-	 */
-	k_EBanContentCheckResult_VeryLikely = 100,
+  /**
+   * @generated from protobuf enum value: k_EBanContentCheckResult_NotScanned = 0;
+   */
+  k_EBanContentCheckResult_NotScanned = 0,
+  /**
+   * @generated from protobuf enum value: k_EBanContentCheckResult_Reset = 1;
+   */
+  k_EBanContentCheckResult_Reset = 1,
+  /**
+   * @generated from protobuf enum value: k_EBanContentCheckResult_NeedsChecking = 2;
+   */
+  k_EBanContentCheckResult_NeedsChecking = 2,
+  /**
+   * @generated from protobuf enum value: k_EBanContentCheckResult_VeryUnlikely = 5;
+   */
+  k_EBanContentCheckResult_VeryUnlikely = 5,
+  /**
+   * @generated from protobuf enum value: k_EBanContentCheckResult_Unlikely = 30;
+   */
+  k_EBanContentCheckResult_Unlikely = 30,
+  /**
+   * @generated from protobuf enum value: k_EBanContentCheckResult_Possible = 50;
+   */
+  k_EBanContentCheckResult_Possible = 50,
+  /**
+   * @generated from protobuf enum value: k_EBanContentCheckResult_Likely = 75;
+   */
+  k_EBanContentCheckResult_Likely = 75,
+  /**
+   * @generated from protobuf enum value: k_EBanContentCheckResult_VeryLikely = 100;
+   */
+  k_EBanContentCheckResult_VeryLikely = 100,
 }
 /**
  * @generated from protobuf enum EProtoClanEventType
  */
 export enum EProtoClanEventType {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: k_EClanOtherEvent = 1;
-	 */
-	k_EClanOtherEvent = 1,
-	/**
-	 * @generated from protobuf enum value: k_EClanGameEvent = 2;
-	 */
-	k_EClanGameEvent = 2,
-	/**
-	 * @generated from protobuf enum value: k_EClanPartyEvent = 3;
-	 */
-	k_EClanPartyEvent = 3,
-	/**
-	 * @generated from protobuf enum value: k_EClanMeetingEvent = 4;
-	 */
-	k_EClanMeetingEvent = 4,
-	/**
-	 * @generated from protobuf enum value: k_EClanSpecialCauseEvent = 5;
-	 */
-	k_EClanSpecialCauseEvent = 5,
-	/**
-	 * @generated from protobuf enum value: k_EClanMusicAndArtsEvent = 6;
-	 */
-	k_EClanMusicAndArtsEvent = 6,
-	/**
-	 * @generated from protobuf enum value: k_EClanSportsEvent = 7;
-	 */
-	k_EClanSportsEvent = 7,
-	/**
-	 * @generated from protobuf enum value: k_EClanTripEvent = 8;
-	 */
-	k_EClanTripEvent = 8,
-	/**
-	 * @generated from protobuf enum value: k_EClanChatEvent = 9;
-	 */
-	k_EClanChatEvent = 9,
-	/**
-	 * @generated from protobuf enum value: k_EClanGameReleaseEvent = 10;
-	 */
-	k_EClanGameReleaseEvent = 10,
-	/**
-	 * @generated from protobuf enum value: k_EClanBroadcastEvent = 11;
-	 */
-	k_EClanBroadcastEvent = 11,
-	/**
-	 * @generated from protobuf enum value: k_EClanSmallUpdateEvent = 12;
-	 */
-	k_EClanSmallUpdateEvent = 12,
-	/**
-	 * @generated from protobuf enum value: k_EClanPreAnnounceMajorUpdateEvent = 13;
-	 */
-	k_EClanPreAnnounceMajorUpdateEvent = 13,
-	/**
-	 * @generated from protobuf enum value: k_EClanMajorUpdateEvent = 14;
-	 */
-	k_EClanMajorUpdateEvent = 14,
-	/**
-	 * @generated from protobuf enum value: k_EClanDLCReleaseEvent = 15;
-	 */
-	k_EClanDLCReleaseEvent = 15,
-	/**
-	 * @generated from protobuf enum value: k_EClanFutureReleaseEvent = 16;
-	 */
-	k_EClanFutureReleaseEvent = 16,
-	/**
-	 * @generated from protobuf enum value: k_EClanESportTournamentStreamEvent = 17;
-	 */
-	k_EClanESportTournamentStreamEvent = 17,
-	/**
-	 * @generated from protobuf enum value: k_EClanDevStreamEvent = 18;
-	 */
-	k_EClanDevStreamEvent = 18,
-	/**
-	 * @generated from protobuf enum value: k_EClanFamousStreamEvent = 19;
-	 */
-	k_EClanFamousStreamEvent = 19,
-	/**
-	 * @generated from protobuf enum value: k_EClanGameSalesEvent = 20;
-	 */
-	k_EClanGameSalesEvent = 20,
-	/**
-	 * @generated from protobuf enum value: k_EClanGameItemSalesEvent = 21;
-	 */
-	k_EClanGameItemSalesEvent = 21,
-	/**
-	 * @generated from protobuf enum value: k_EClanInGameBonusXPEvent = 22;
-	 */
-	k_EClanInGameBonusXPEvent = 22,
-	/**
-	 * @generated from protobuf enum value: k_EClanInGameLootEvent = 23;
-	 */
-	k_EClanInGameLootEvent = 23,
-	/**
-	 * @generated from protobuf enum value: k_EClanInGamePerksEvent = 24;
-	 */
-	k_EClanInGamePerksEvent = 24,
-	/**
-	 * @generated from protobuf enum value: k_EClanInGameChallengeEvent = 25;
-	 */
-	k_EClanInGameChallengeEvent = 25,
-	/**
-	 * @generated from protobuf enum value: k_EClanInGameContestEvent = 26;
-	 */
-	k_EClanInGameContestEvent = 26,
-	/**
-	 * @generated from protobuf enum value: k_EClanIRLEvent = 27;
-	 */
-	k_EClanIRLEvent = 27,
-	/**
-	 * @generated from protobuf enum value: k_EClanNewsEvent = 28;
-	 */
-	k_EClanNewsEvent = 28,
-	/**
-	 * @generated from protobuf enum value: k_EClanBetaReleaseEvent = 29;
-	 */
-	k_EClanBetaReleaseEvent = 29,
-	/**
-	 * @generated from protobuf enum value: k_EClanInGameContentReleaseEvent = 30;
-	 */
-	k_EClanInGameContentReleaseEvent = 30,
-	/**
-	 * @generated from protobuf enum value: k_EClanFreeTrial = 31;
-	 */
-	k_EClanFreeTrial = 31,
-	/**
-	 * @generated from protobuf enum value: k_EClanSeasonRelease = 32;
-	 */
-	k_EClanSeasonRelease = 32,
-	/**
-	 * @generated from protobuf enum value: k_EClanSeasonUpdate = 33;
-	 */
-	k_EClanSeasonUpdate = 33,
-	/**
-	 * @generated from protobuf enum value: k_EClanCrosspostEvent = 34;
-	 */
-	k_EClanCrosspostEvent = 34,
-	/**
-	 * @generated from protobuf enum value: k_EClanInGameEventGeneral = 35;
-	 */
-	k_EClanInGameEventGeneral = 35,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: k_EClanOtherEvent = 1;
+   */
+  k_EClanOtherEvent = 1,
+  /**
+   * @generated from protobuf enum value: k_EClanGameEvent = 2;
+   */
+  k_EClanGameEvent = 2,
+  /**
+   * @generated from protobuf enum value: k_EClanPartyEvent = 3;
+   */
+  k_EClanPartyEvent = 3,
+  /**
+   * @generated from protobuf enum value: k_EClanMeetingEvent = 4;
+   */
+  k_EClanMeetingEvent = 4,
+  /**
+   * @generated from protobuf enum value: k_EClanSpecialCauseEvent = 5;
+   */
+  k_EClanSpecialCauseEvent = 5,
+  /**
+   * @generated from protobuf enum value: k_EClanMusicAndArtsEvent = 6;
+   */
+  k_EClanMusicAndArtsEvent = 6,
+  /**
+   * @generated from protobuf enum value: k_EClanSportsEvent = 7;
+   */
+  k_EClanSportsEvent = 7,
+  /**
+   * @generated from protobuf enum value: k_EClanTripEvent = 8;
+   */
+  k_EClanTripEvent = 8,
+  /**
+   * @generated from protobuf enum value: k_EClanChatEvent = 9;
+   */
+  k_EClanChatEvent = 9,
+  /**
+   * @generated from protobuf enum value: k_EClanGameReleaseEvent = 10;
+   */
+  k_EClanGameReleaseEvent = 10,
+  /**
+   * @generated from protobuf enum value: k_EClanBroadcastEvent = 11;
+   */
+  k_EClanBroadcastEvent = 11,
+  /**
+   * @generated from protobuf enum value: k_EClanSmallUpdateEvent = 12;
+   */
+  k_EClanSmallUpdateEvent = 12,
+  /**
+   * @generated from protobuf enum value: k_EClanPreAnnounceMajorUpdateEvent = 13;
+   */
+  k_EClanPreAnnounceMajorUpdateEvent = 13,
+  /**
+   * @generated from protobuf enum value: k_EClanMajorUpdateEvent = 14;
+   */
+  k_EClanMajorUpdateEvent = 14,
+  /**
+   * @generated from protobuf enum value: k_EClanDLCReleaseEvent = 15;
+   */
+  k_EClanDLCReleaseEvent = 15,
+  /**
+   * @generated from protobuf enum value: k_EClanFutureReleaseEvent = 16;
+   */
+  k_EClanFutureReleaseEvent = 16,
+  /**
+   * @generated from protobuf enum value: k_EClanESportTournamentStreamEvent = 17;
+   */
+  k_EClanESportTournamentStreamEvent = 17,
+  /**
+   * @generated from protobuf enum value: k_EClanDevStreamEvent = 18;
+   */
+  k_EClanDevStreamEvent = 18,
+  /**
+   * @generated from protobuf enum value: k_EClanFamousStreamEvent = 19;
+   */
+  k_EClanFamousStreamEvent = 19,
+  /**
+   * @generated from protobuf enum value: k_EClanGameSalesEvent = 20;
+   */
+  k_EClanGameSalesEvent = 20,
+  /**
+   * @generated from protobuf enum value: k_EClanGameItemSalesEvent = 21;
+   */
+  k_EClanGameItemSalesEvent = 21,
+  /**
+   * @generated from protobuf enum value: k_EClanInGameBonusXPEvent = 22;
+   */
+  k_EClanInGameBonusXPEvent = 22,
+  /**
+   * @generated from protobuf enum value: k_EClanInGameLootEvent = 23;
+   */
+  k_EClanInGameLootEvent = 23,
+  /**
+   * @generated from protobuf enum value: k_EClanInGamePerksEvent = 24;
+   */
+  k_EClanInGamePerksEvent = 24,
+  /**
+   * @generated from protobuf enum value: k_EClanInGameChallengeEvent = 25;
+   */
+  k_EClanInGameChallengeEvent = 25,
+  /**
+   * @generated from protobuf enum value: k_EClanInGameContestEvent = 26;
+   */
+  k_EClanInGameContestEvent = 26,
+  /**
+   * @generated from protobuf enum value: k_EClanIRLEvent = 27;
+   */
+  k_EClanIRLEvent = 27,
+  /**
+   * @generated from protobuf enum value: k_EClanNewsEvent = 28;
+   */
+  k_EClanNewsEvent = 28,
+  /**
+   * @generated from protobuf enum value: k_EClanBetaReleaseEvent = 29;
+   */
+  k_EClanBetaReleaseEvent = 29,
+  /**
+   * @generated from protobuf enum value: k_EClanInGameContentReleaseEvent = 30;
+   */
+  k_EClanInGameContentReleaseEvent = 30,
+  /**
+   * @generated from protobuf enum value: k_EClanFreeTrial = 31;
+   */
+  k_EClanFreeTrial = 31,
+  /**
+   * @generated from protobuf enum value: k_EClanSeasonRelease = 32;
+   */
+  k_EClanSeasonRelease = 32,
+  /**
+   * @generated from protobuf enum value: k_EClanSeasonUpdate = 33;
+   */
+  k_EClanSeasonUpdate = 33,
+  /**
+   * @generated from protobuf enum value: k_EClanCrosspostEvent = 34;
+   */
+  k_EClanCrosspostEvent = 34,
+  /**
+   * @generated from protobuf enum value: k_EClanInGameEventGeneral = 35;
+   */
+  k_EClanInGameEventGeneral = 35,
 }
 /**
  * @generated from protobuf enum PartnerEventNotificationType
  */
 export enum PartnerEventNotificationType {
-	/**
-	 * @generated from protobuf enum value: k_EEventStart = 0;
-	 */
-	k_EEventStart = 0,
-	/**
-	 * @generated from protobuf enum value: k_EEventBroadcastStart = 1;
-	 */
-	k_EEventBroadcastStart = 1,
-	/**
-	 * @generated from protobuf enum value: k_EEventMatchStart = 2;
-	 */
-	k_EEventMatchStart = 2,
-	/**
-	 * @generated from protobuf enum value: k_EEventPartnerMaxType = 3;
-	 */
-	k_EEventPartnerMaxType = 3,
+  /**
+   * @generated from protobuf enum value: k_EEventStart = 0;
+   */
+  k_EEventStart = 0,
+  /**
+   * @generated from protobuf enum value: k_EEventBroadcastStart = 1;
+   */
+  k_EEventBroadcastStart = 1,
+  /**
+   * @generated from protobuf enum value: k_EEventMatchStart = 2;
+   */
+  k_EEventMatchStart = 2,
+  /**
+   * @generated from protobuf enum value: k_EEventPartnerMaxType = 3;
+   */
+  k_EEventPartnerMaxType = 3,
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgIPAddress$Type extends MessageType<CMsgIPAddress> {
-	constructor() {
-		super("CMsgIPAddress", [
-			{
-				no: 1,
-				name: "v4",
-				kind: "scalar",
-				oneof: "ip",
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "v6",
-				kind: "scalar",
-				oneof: "ip",
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgIPAddress>): CMsgIPAddress {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.ip = { oneofKind: undefined };
-		if (value !== undefined) reflectionMergePartial<CMsgIPAddress>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgIPAddress,
-	): CMsgIPAddress {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* fixed32 v4 */ 1:
-					message.ip = {
-						oneofKind: "v4",
-						v4: reader.fixed32(),
-					};
-					break;
-				case /* bytes v6 */ 2:
-					message.ip = {
-						oneofKind: "v6",
-						v6: reader.bytes(),
-					};
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgIPAddress, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* fixed32 v4 = 1; */
-		if (message.ip.oneofKind === "v4") writer.tag(1, WireType.Bit32).fixed32(message.ip.v4);
-		/* bytes v6 = 2; */
-		if (message.ip.oneofKind === "v6") writer.tag(2, WireType.LengthDelimited).bytes(message.ip.v6);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgIPAddress", [
+      {
+        no: 1,
+        name: "v4",
+        kind: "scalar",
+        oneof: "ip",
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "v6",
+        kind: "scalar",
+        oneof: "ip",
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgIPAddress>): CMsgIPAddress {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.ip = { oneofKind: undefined };
+    if (value !== undefined) reflectionMergePartial<CMsgIPAddress>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgIPAddress,
+  ): CMsgIPAddress {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* fixed32 v4 */ 1:
+          message.ip = {
+            oneofKind: "v4",
+            v4: reader.fixed32(),
+          };
+          break;
+        case /* bytes v6 */ 2:
+          message.ip = {
+            oneofKind: "v6",
+            v6: reader.bytes(),
+          };
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgIPAddress, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* fixed32 v4 = 1; */
+    if (message.ip.oneofKind === "v4") writer.tag(1, WireType.Bit32).fixed32(message.ip.v4);
+    /* bytes v6 = 2; */
+    if (message.ip.oneofKind === "v6") writer.tag(2, WireType.LengthDelimited).bytes(message.ip.v6);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgIPAddress
@@ -1076,76 +1076,76 @@ class CMsgIPAddress$Type extends MessageType<CMsgIPAddress> {
 export const CMsgIPAddress = new CMsgIPAddress$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgIPAddressBucket$Type extends MessageType<CMsgIPAddressBucket> {
-	constructor() {
-		super("CMsgIPAddressBucket", [
-			{
-				no: 1,
-				name: "original_ip_address",
-				kind: "message",
-				localName: "original_ip_address",
-				T: () => CMsgIPAddress,
-			},
-			{
-				no: 2,
-				name: "bucket",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgIPAddressBucket>): CMsgIPAddressBucket {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgIPAddressBucket>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgIPAddressBucket,
-	): CMsgIPAddressBucket {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgIPAddress original_ip_address */ 1:
-					message.original_ip_address = CMsgIPAddress.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.original_ip_address,
-					);
-					break;
-				case /* optional fixed64 bucket */ 2:
-					message.bucket = reader.fixed64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgIPAddressBucket, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgIPAddress original_ip_address = 1; */
-		if (message.original_ip_address)
-			CMsgIPAddress.internalBinaryWrite(
-				message.original_ip_address,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional fixed64 bucket = 2; */
-		if (message.bucket !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.bucket);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgIPAddressBucket", [
+      {
+        no: 1,
+        name: "original_ip_address",
+        kind: "message",
+        localName: "original_ip_address",
+        T: () => CMsgIPAddress,
+      },
+      {
+        no: 2,
+        name: "bucket",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgIPAddressBucket>): CMsgIPAddressBucket {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgIPAddressBucket>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgIPAddressBucket,
+  ): CMsgIPAddressBucket {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgIPAddress original_ip_address */ 1:
+          message.original_ip_address = CMsgIPAddress.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.original_ip_address,
+          );
+          break;
+        case /* optional fixed64 bucket */ 2:
+          message.bucket = reader.fixed64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgIPAddressBucket, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgIPAddress original_ip_address = 1; */
+    if (message.original_ip_address)
+      CMsgIPAddress.internalBinaryWrite(
+        message.original_ip_address,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional fixed64 bucket = 2; */
+    if (message.bucket !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.bucket);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgIPAddressBucket
@@ -1153,403 +1153,403 @@ class CMsgIPAddressBucket$Type extends MessageType<CMsgIPAddressBucket> {
 export const CMsgIPAddressBucket = new CMsgIPAddressBucket$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgProtoBufHeader$Type extends MessageType<CMsgProtoBufHeader> {
-	constructor() {
-		super("CMsgProtoBufHeader", [
-			{
-				no: 1,
-				name: "steamid",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "client_sessionid",
-				kind: "scalar",
-				localName: "client_sessionid",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "routing_appid",
-				kind: "scalar",
-				localName: "routing_appid",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "jobid_source",
-				kind: "scalar",
-				localName: "jobid_source",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 11,
-				name: "jobid_target",
-				kind: "scalar",
-				localName: "jobid_target",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 12,
-				name: "target_job_name",
-				kind: "scalar",
-				localName: "target_job_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 24,
-				name: "seq_num",
-				kind: "scalar",
-				localName: "seq_num",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 13,
-				name: "eresult",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 14,
-				name: "error_message",
-				kind: "scalar",
-				localName: "error_message",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 16,
-				name: "auth_account_flags",
-				kind: "scalar",
-				localName: "auth_account_flags",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 22,
-				name: "token_source",
-				kind: "scalar",
-				localName: "token_source",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 23,
-				name: "admin_spoofing_user",
-				kind: "scalar",
-				localName: "admin_spoofing_user",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 17,
-				name: "transport_error",
-				kind: "scalar",
-				localName: "transport_error",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 18,
-				name: "messageid",
-				kind: "scalar",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 19,
-				name: "publisher_group_id",
-				kind: "scalar",
-				localName: "publisher_group_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 20,
-				name: "sysid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 21,
-				name: "trace_tag",
-				kind: "scalar",
-				localName: "trace_tag",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 25,
-				name: "webapi_key_id",
-				kind: "scalar",
-				localName: "webapi_key_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 26,
-				name: "is_from_external_source",
-				kind: "scalar",
-				localName: "is_from_external_source",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 27,
-				name: "forward_to_sysid",
-				kind: "scalar",
-				localName: "forward_to_sysid",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 28,
-				name: "cm_sysid",
-				kind: "scalar",
-				localName: "cm_sysid",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 31,
-				name: "launcher_type",
-				kind: "scalar",
-				localName: "launcher_type",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 32,
-				name: "realm",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 33,
-				name: "timeout_ms",
-				kind: "scalar",
-				localName: "timeout_ms",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 34,
-				name: "debug_source",
-				kind: "scalar",
-				localName: "debug_source",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 15,
-				name: "ip",
-				kind: "scalar",
-				oneof: "ip_addr",
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 29,
-				name: "ip_v6",
-				kind: "scalar",
-				localName: "ip_v6",
-				oneof: "ip_addr",
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgProtoBufHeader>): CMsgProtoBufHeader {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.forward_to_sysid = [];
-		message.ip_addr = { oneofKind: undefined };
-		if (value !== undefined) reflectionMergePartial<CMsgProtoBufHeader>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgProtoBufHeader,
-	): CMsgProtoBufHeader {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed64 steamid */ 1:
-					message.steamid = reader.fixed64().toBigInt();
-					break;
-				case /* optional int32 client_sessionid */ 2:
-					message.client_sessionid = reader.int32();
-					break;
-				case /* optional uint32 routing_appid */ 3:
-					message.routing_appid = reader.uint32();
-					break;
-				case /* optional fixed64 jobid_source */ 10:
-					message.jobid_source = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed64 jobid_target */ 11:
-					message.jobid_target = reader.fixed64().toBigInt();
-					break;
-				case /* optional string target_job_name */ 12:
-					message.target_job_name = reader.string();
-					break;
-				case /* optional int32 seq_num */ 24:
-					message.seq_num = reader.int32();
-					break;
-				case /* optional int32 eresult */ 13:
-					message.eresult = reader.int32();
-					break;
-				case /* optional string error_message */ 14:
-					message.error_message = reader.string();
-					break;
-				case /* optional uint32 auth_account_flags */ 16:
-					message.auth_account_flags = reader.uint32();
-					break;
-				case /* optional uint32 token_source */ 22:
-					message.token_source = reader.uint32();
-					break;
-				case /* optional bool admin_spoofing_user */ 23:
-					message.admin_spoofing_user = reader.bool();
-					break;
-				case /* optional int32 transport_error */ 17:
-					message.transport_error = reader.int32();
-					break;
-				case /* optional uint64 messageid */ 18:
-					message.messageid = reader.uint64().toBigInt();
-					break;
-				case /* optional uint32 publisher_group_id */ 19:
-					message.publisher_group_id = reader.uint32();
-					break;
-				case /* optional uint32 sysid */ 20:
-					message.sysid = reader.uint32();
-					break;
-				case /* optional uint64 trace_tag */ 21:
-					message.trace_tag = reader.uint64().toBigInt();
-					break;
-				case /* optional uint32 webapi_key_id */ 25:
-					message.webapi_key_id = reader.uint32();
-					break;
-				case /* optional bool is_from_external_source */ 26:
-					message.is_from_external_source = reader.bool();
-					break;
-				case /* repeated uint32 forward_to_sysid */ 27:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.forward_to_sysid.push(reader.uint32());
-					else message.forward_to_sysid.push(reader.uint32());
-					break;
-				case /* optional uint32 cm_sysid */ 28:
-					message.cm_sysid = reader.uint32();
-					break;
-				case /* optional uint32 launcher_type */ 31:
-					message.launcher_type = reader.uint32();
-					break;
-				case /* optional uint32 realm */ 32:
-					message.realm = reader.uint32();
-					break;
-				case /* optional int32 timeout_ms */ 33:
-					message.timeout_ms = reader.int32();
-					break;
-				case /* optional string debug_source */ 34:
-					message.debug_source = reader.string();
-					break;
-				case /* uint32 ip */ 15:
-					message.ip_addr = {
-						oneofKind: "ip",
-						ip: reader.uint32(),
-					};
-					break;
-				case /* bytes ip_v6 */ 29:
-					message.ip_addr = {
-						oneofKind: "ip_v6",
-						ip_v6: reader.bytes(),
-					};
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgProtoBufHeader, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional fixed64 steamid = 1; */
-		if (message.steamid !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.steamid);
-		/* optional int32 client_sessionid = 2; */
-		if (message.client_sessionid !== undefined) writer.tag(2, WireType.Varint).int32(message.client_sessionid);
-		/* optional uint32 routing_appid = 3; */
-		if (message.routing_appid !== undefined) writer.tag(3, WireType.Varint).uint32(message.routing_appid);
-		/* optional fixed64 jobid_source = 10; */
-		if (message.jobid_source !== undefined) writer.tag(10, WireType.Bit64).fixed64(message.jobid_source);
-		/* optional fixed64 jobid_target = 11; */
-		if (message.jobid_target !== undefined) writer.tag(11, WireType.Bit64).fixed64(message.jobid_target);
-		/* optional string target_job_name = 12; */
-		if (message.target_job_name !== undefined) writer.tag(12, WireType.LengthDelimited).string(message.target_job_name);
-		/* optional int32 seq_num = 24; */
-		if (message.seq_num !== undefined) writer.tag(24, WireType.Varint).int32(message.seq_num);
-		/* optional int32 eresult = 13; */
-		if (message.eresult !== undefined) writer.tag(13, WireType.Varint).int32(message.eresult);
-		/* optional string error_message = 14; */
-		if (message.error_message !== undefined) writer.tag(14, WireType.LengthDelimited).string(message.error_message);
-		/* optional uint32 auth_account_flags = 16; */
-		if (message.auth_account_flags !== undefined) writer.tag(16, WireType.Varint).uint32(message.auth_account_flags);
-		/* optional uint32 token_source = 22; */
-		if (message.token_source !== undefined) writer.tag(22, WireType.Varint).uint32(message.token_source);
-		/* optional bool admin_spoofing_user = 23; */
-		if (message.admin_spoofing_user !== undefined) writer.tag(23, WireType.Varint).bool(message.admin_spoofing_user);
-		/* optional int32 transport_error = 17; */
-		if (message.transport_error !== undefined) writer.tag(17, WireType.Varint).int32(message.transport_error);
-		/* optional uint64 messageid = 18; */
-		if (message.messageid !== undefined) writer.tag(18, WireType.Varint).uint64(message.messageid);
-		/* optional uint32 publisher_group_id = 19; */
-		if (message.publisher_group_id !== undefined) writer.tag(19, WireType.Varint).uint32(message.publisher_group_id);
-		/* optional uint32 sysid = 20; */
-		if (message.sysid !== undefined) writer.tag(20, WireType.Varint).uint32(message.sysid);
-		/* optional uint64 trace_tag = 21; */
-		if (message.trace_tag !== undefined) writer.tag(21, WireType.Varint).uint64(message.trace_tag);
-		/* optional uint32 webapi_key_id = 25; */
-		if (message.webapi_key_id !== undefined) writer.tag(25, WireType.Varint).uint32(message.webapi_key_id);
-		/* optional bool is_from_external_source = 26; */
-		if (message.is_from_external_source !== undefined)
-			writer.tag(26, WireType.Varint).bool(message.is_from_external_source);
-		/* repeated uint32 forward_to_sysid = 27; */
-		for (let i = 0; i < message.forward_to_sysid.length; i++)
-			writer.tag(27, WireType.Varint).uint32(message.forward_to_sysid[i]);
-		/* optional uint32 cm_sysid = 28; */
-		if (message.cm_sysid !== undefined) writer.tag(28, WireType.Varint).uint32(message.cm_sysid);
-		/* optional uint32 launcher_type = 31; */
-		if (message.launcher_type !== undefined) writer.tag(31, WireType.Varint).uint32(message.launcher_type);
-		/* optional uint32 realm = 32; */
-		if (message.realm !== undefined) writer.tag(32, WireType.Varint).uint32(message.realm);
-		/* optional int32 timeout_ms = 33; */
-		if (message.timeout_ms !== undefined) writer.tag(33, WireType.Varint).int32(message.timeout_ms);
-		/* optional string debug_source = 34; */
-		if (message.debug_source !== undefined) writer.tag(34, WireType.LengthDelimited).string(message.debug_source);
-		/* uint32 ip = 15; */
-		if (message.ip_addr.oneofKind === "ip") writer.tag(15, WireType.Varint).uint32(message.ip_addr.ip);
-		/* bytes ip_v6 = 29; */
-		if (message.ip_addr.oneofKind === "ip_v6") writer.tag(29, WireType.LengthDelimited).bytes(message.ip_addr.ip_v6);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgProtoBufHeader", [
+      {
+        no: 1,
+        name: "steamid",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "client_sessionid",
+        kind: "scalar",
+        localName: "client_sessionid",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "routing_appid",
+        kind: "scalar",
+        localName: "routing_appid",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "jobid_source",
+        kind: "scalar",
+        localName: "jobid_source",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 11,
+        name: "jobid_target",
+        kind: "scalar",
+        localName: "jobid_target",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 12,
+        name: "target_job_name",
+        kind: "scalar",
+        localName: "target_job_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 24,
+        name: "seq_num",
+        kind: "scalar",
+        localName: "seq_num",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 13,
+        name: "eresult",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 14,
+        name: "error_message",
+        kind: "scalar",
+        localName: "error_message",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 16,
+        name: "auth_account_flags",
+        kind: "scalar",
+        localName: "auth_account_flags",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 22,
+        name: "token_source",
+        kind: "scalar",
+        localName: "token_source",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 23,
+        name: "admin_spoofing_user",
+        kind: "scalar",
+        localName: "admin_spoofing_user",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 17,
+        name: "transport_error",
+        kind: "scalar",
+        localName: "transport_error",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 18,
+        name: "messageid",
+        kind: "scalar",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 19,
+        name: "publisher_group_id",
+        kind: "scalar",
+        localName: "publisher_group_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 20,
+        name: "sysid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 21,
+        name: "trace_tag",
+        kind: "scalar",
+        localName: "trace_tag",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 25,
+        name: "webapi_key_id",
+        kind: "scalar",
+        localName: "webapi_key_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 26,
+        name: "is_from_external_source",
+        kind: "scalar",
+        localName: "is_from_external_source",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 27,
+        name: "forward_to_sysid",
+        kind: "scalar",
+        localName: "forward_to_sysid",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 28,
+        name: "cm_sysid",
+        kind: "scalar",
+        localName: "cm_sysid",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 31,
+        name: "launcher_type",
+        kind: "scalar",
+        localName: "launcher_type",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 32,
+        name: "realm",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 33,
+        name: "timeout_ms",
+        kind: "scalar",
+        localName: "timeout_ms",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 34,
+        name: "debug_source",
+        kind: "scalar",
+        localName: "debug_source",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 15,
+        name: "ip",
+        kind: "scalar",
+        oneof: "ip_addr",
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 29,
+        name: "ip_v6",
+        kind: "scalar",
+        localName: "ip_v6",
+        oneof: "ip_addr",
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgProtoBufHeader>): CMsgProtoBufHeader {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.forward_to_sysid = [];
+    message.ip_addr = { oneofKind: undefined };
+    if (value !== undefined) reflectionMergePartial<CMsgProtoBufHeader>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgProtoBufHeader,
+  ): CMsgProtoBufHeader {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed64 steamid */ 1:
+          message.steamid = reader.fixed64().toBigInt();
+          break;
+        case /* optional int32 client_sessionid */ 2:
+          message.client_sessionid = reader.int32();
+          break;
+        case /* optional uint32 routing_appid */ 3:
+          message.routing_appid = reader.uint32();
+          break;
+        case /* optional fixed64 jobid_source */ 10:
+          message.jobid_source = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed64 jobid_target */ 11:
+          message.jobid_target = reader.fixed64().toBigInt();
+          break;
+        case /* optional string target_job_name */ 12:
+          message.target_job_name = reader.string();
+          break;
+        case /* optional int32 seq_num */ 24:
+          message.seq_num = reader.int32();
+          break;
+        case /* optional int32 eresult */ 13:
+          message.eresult = reader.int32();
+          break;
+        case /* optional string error_message */ 14:
+          message.error_message = reader.string();
+          break;
+        case /* optional uint32 auth_account_flags */ 16:
+          message.auth_account_flags = reader.uint32();
+          break;
+        case /* optional uint32 token_source */ 22:
+          message.token_source = reader.uint32();
+          break;
+        case /* optional bool admin_spoofing_user */ 23:
+          message.admin_spoofing_user = reader.bool();
+          break;
+        case /* optional int32 transport_error */ 17:
+          message.transport_error = reader.int32();
+          break;
+        case /* optional uint64 messageid */ 18:
+          message.messageid = reader.uint64().toBigInt();
+          break;
+        case /* optional uint32 publisher_group_id */ 19:
+          message.publisher_group_id = reader.uint32();
+          break;
+        case /* optional uint32 sysid */ 20:
+          message.sysid = reader.uint32();
+          break;
+        case /* optional uint64 trace_tag */ 21:
+          message.trace_tag = reader.uint64().toBigInt();
+          break;
+        case /* optional uint32 webapi_key_id */ 25:
+          message.webapi_key_id = reader.uint32();
+          break;
+        case /* optional bool is_from_external_source */ 26:
+          message.is_from_external_source = reader.bool();
+          break;
+        case /* repeated uint32 forward_to_sysid */ 27:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.forward_to_sysid.push(reader.uint32());
+          else message.forward_to_sysid.push(reader.uint32());
+          break;
+        case /* optional uint32 cm_sysid */ 28:
+          message.cm_sysid = reader.uint32();
+          break;
+        case /* optional uint32 launcher_type */ 31:
+          message.launcher_type = reader.uint32();
+          break;
+        case /* optional uint32 realm */ 32:
+          message.realm = reader.uint32();
+          break;
+        case /* optional int32 timeout_ms */ 33:
+          message.timeout_ms = reader.int32();
+          break;
+        case /* optional string debug_source */ 34:
+          message.debug_source = reader.string();
+          break;
+        case /* uint32 ip */ 15:
+          message.ip_addr = {
+            oneofKind: "ip",
+            ip: reader.uint32(),
+          };
+          break;
+        case /* bytes ip_v6 */ 29:
+          message.ip_addr = {
+            oneofKind: "ip_v6",
+            ip_v6: reader.bytes(),
+          };
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgProtoBufHeader, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional fixed64 steamid = 1; */
+    if (message.steamid !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.steamid);
+    /* optional int32 client_sessionid = 2; */
+    if (message.client_sessionid !== undefined) writer.tag(2, WireType.Varint).int32(message.client_sessionid);
+    /* optional uint32 routing_appid = 3; */
+    if (message.routing_appid !== undefined) writer.tag(3, WireType.Varint).uint32(message.routing_appid);
+    /* optional fixed64 jobid_source = 10; */
+    if (message.jobid_source !== undefined) writer.tag(10, WireType.Bit64).fixed64(message.jobid_source);
+    /* optional fixed64 jobid_target = 11; */
+    if (message.jobid_target !== undefined) writer.tag(11, WireType.Bit64).fixed64(message.jobid_target);
+    /* optional string target_job_name = 12; */
+    if (message.target_job_name !== undefined) writer.tag(12, WireType.LengthDelimited).string(message.target_job_name);
+    /* optional int32 seq_num = 24; */
+    if (message.seq_num !== undefined) writer.tag(24, WireType.Varint).int32(message.seq_num);
+    /* optional int32 eresult = 13; */
+    if (message.eresult !== undefined) writer.tag(13, WireType.Varint).int32(message.eresult);
+    /* optional string error_message = 14; */
+    if (message.error_message !== undefined) writer.tag(14, WireType.LengthDelimited).string(message.error_message);
+    /* optional uint32 auth_account_flags = 16; */
+    if (message.auth_account_flags !== undefined) writer.tag(16, WireType.Varint).uint32(message.auth_account_flags);
+    /* optional uint32 token_source = 22; */
+    if (message.token_source !== undefined) writer.tag(22, WireType.Varint).uint32(message.token_source);
+    /* optional bool admin_spoofing_user = 23; */
+    if (message.admin_spoofing_user !== undefined) writer.tag(23, WireType.Varint).bool(message.admin_spoofing_user);
+    /* optional int32 transport_error = 17; */
+    if (message.transport_error !== undefined) writer.tag(17, WireType.Varint).int32(message.transport_error);
+    /* optional uint64 messageid = 18; */
+    if (message.messageid !== undefined) writer.tag(18, WireType.Varint).uint64(message.messageid);
+    /* optional uint32 publisher_group_id = 19; */
+    if (message.publisher_group_id !== undefined) writer.tag(19, WireType.Varint).uint32(message.publisher_group_id);
+    /* optional uint32 sysid = 20; */
+    if (message.sysid !== undefined) writer.tag(20, WireType.Varint).uint32(message.sysid);
+    /* optional uint64 trace_tag = 21; */
+    if (message.trace_tag !== undefined) writer.tag(21, WireType.Varint).uint64(message.trace_tag);
+    /* optional uint32 webapi_key_id = 25; */
+    if (message.webapi_key_id !== undefined) writer.tag(25, WireType.Varint).uint32(message.webapi_key_id);
+    /* optional bool is_from_external_source = 26; */
+    if (message.is_from_external_source !== undefined)
+      writer.tag(26, WireType.Varint).bool(message.is_from_external_source);
+    /* repeated uint32 forward_to_sysid = 27; */
+    for (let i = 0; i < message.forward_to_sysid.length; i++)
+      writer.tag(27, WireType.Varint).uint32(message.forward_to_sysid[i]);
+    /* optional uint32 cm_sysid = 28; */
+    if (message.cm_sysid !== undefined) writer.tag(28, WireType.Varint).uint32(message.cm_sysid);
+    /* optional uint32 launcher_type = 31; */
+    if (message.launcher_type !== undefined) writer.tag(31, WireType.Varint).uint32(message.launcher_type);
+    /* optional uint32 realm = 32; */
+    if (message.realm !== undefined) writer.tag(32, WireType.Varint).uint32(message.realm);
+    /* optional int32 timeout_ms = 33; */
+    if (message.timeout_ms !== undefined) writer.tag(33, WireType.Varint).int32(message.timeout_ms);
+    /* optional string debug_source = 34; */
+    if (message.debug_source !== undefined) writer.tag(34, WireType.LengthDelimited).string(message.debug_source);
+    /* uint32 ip = 15; */
+    if (message.ip_addr.oneofKind === "ip") writer.tag(15, WireType.Varint).uint32(message.ip_addr.ip);
+    /* bytes ip_v6 = 29; */
+    if (message.ip_addr.oneofKind === "ip_v6") writer.tag(29, WireType.LengthDelimited).bytes(message.ip_addr.ip_v6);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgProtoBufHeader
@@ -1557,62 +1557,62 @@ class CMsgProtoBufHeader$Type extends MessageType<CMsgProtoBufHeader> {
 export const CMsgProtoBufHeader = new CMsgProtoBufHeader$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgMulti$Type extends MessageType<CMsgMulti> {
-	constructor() {
-		super("CMsgMulti", [
-			{
-				no: 1,
-				name: "size_unzipped",
-				kind: "scalar",
-				localName: "size_unzipped",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "message_body",
-				kind: "scalar",
-				localName: "message_body",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgMulti>): CMsgMulti {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgMulti>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(reader: IBinaryReader, length: number, options: BinaryReadOptions, target?: CMsgMulti): CMsgMulti {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 size_unzipped */ 1:
-					message.size_unzipped = reader.uint32();
-					break;
-				case /* optional bytes message_body */ 2:
-					message.message_body = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgMulti, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional uint32 size_unzipped = 1; */
-		if (message.size_unzipped !== undefined) writer.tag(1, WireType.Varint).uint32(message.size_unzipped);
-		/* optional bytes message_body = 2; */
-		if (message.message_body !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.message_body);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgMulti", [
+      {
+        no: 1,
+        name: "size_unzipped",
+        kind: "scalar",
+        localName: "size_unzipped",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "message_body",
+        kind: "scalar",
+        localName: "message_body",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgMulti>): CMsgMulti {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgMulti>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(reader: IBinaryReader, length: number, options: BinaryReadOptions, target?: CMsgMulti): CMsgMulti {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 size_unzipped */ 1:
+          message.size_unzipped = reader.uint32();
+          break;
+        case /* optional bytes message_body */ 2:
+          message.message_body = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgMulti, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional uint32 size_unzipped = 1; */
+    if (message.size_unzipped !== undefined) writer.tag(1, WireType.Varint).uint32(message.size_unzipped);
+    /* optional bytes message_body = 2; */
+    if (message.message_body !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.message_body);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgMulti
@@ -1620,54 +1620,54 @@ class CMsgMulti$Type extends MessageType<CMsgMulti> {
 export const CMsgMulti = new CMsgMulti$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgProtobufWrapped$Type extends MessageType<CMsgProtobufWrapped> {
-	constructor() {
-		super("CMsgProtobufWrapped", [
-			{
-				no: 1,
-				name: "message_body",
-				kind: "scalar",
-				localName: "message_body",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgProtobufWrapped>): CMsgProtobufWrapped {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgProtobufWrapped>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgProtobufWrapped,
-	): CMsgProtobufWrapped {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bytes message_body */ 1:
-					message.message_body = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgProtobufWrapped, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional bytes message_body = 1; */
-		if (message.message_body !== undefined) writer.tag(1, WireType.LengthDelimited).bytes(message.message_body);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgProtobufWrapped", [
+      {
+        no: 1,
+        name: "message_body",
+        kind: "scalar",
+        localName: "message_body",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgProtobufWrapped>): CMsgProtobufWrapped {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgProtobufWrapped>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgProtobufWrapped,
+  ): CMsgProtobufWrapped {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bytes message_body */ 1:
+          message.message_body = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgProtobufWrapped, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional bytes message_body = 1; */
+    if (message.message_body !== undefined) writer.tag(1, WireType.LengthDelimited).bytes(message.message_body);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgProtobufWrapped
@@ -1675,129 +1675,129 @@ class CMsgProtobufWrapped$Type extends MessageType<CMsgProtobufWrapped> {
 export const CMsgProtobufWrapped = new CMsgProtobufWrapped$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgAuthTicket$Type extends MessageType<CMsgAuthTicket> {
-	constructor() {
-		super("CMsgAuthTicket", [
-			{
-				no: 1,
-				name: "estate",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "eresult",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "steamid",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 4,
-				name: "gameid",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 5,
-				name: "h_steam_pipe",
-				kind: "scalar",
-				localName: "h_steam_pipe",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "ticket_crc",
-				kind: "scalar",
-				localName: "ticket_crc",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "ticket",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgAuthTicket>): CMsgAuthTicket {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgAuthTicket>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgAuthTicket,
-	): CMsgAuthTicket {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 estate */ 1:
-					message.estate = reader.uint32();
-					break;
-				case /* optional uint32 eresult */ 2:
-					message.eresult = reader.uint32();
-					break;
-				case /* optional fixed64 steamid */ 3:
-					message.steamid = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed64 gameid */ 4:
-					message.gameid = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 h_steam_pipe */ 5:
-					message.h_steam_pipe = reader.uint32();
-					break;
-				case /* optional uint32 ticket_crc */ 6:
-					message.ticket_crc = reader.uint32();
-					break;
-				case /* optional bytes ticket */ 7:
-					message.ticket = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgAuthTicket, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional uint32 estate = 1; */
-		if (message.estate !== undefined) writer.tag(1, WireType.Varint).uint32(message.estate);
-		/* optional uint32 eresult = 2; */
-		if (message.eresult !== undefined) writer.tag(2, WireType.Varint).uint32(message.eresult);
-		/* optional fixed64 steamid = 3; */
-		if (message.steamid !== undefined) writer.tag(3, WireType.Bit64).fixed64(message.steamid);
-		/* optional fixed64 gameid = 4; */
-		if (message.gameid !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.gameid);
-		/* optional uint32 h_steam_pipe = 5; */
-		if (message.h_steam_pipe !== undefined) writer.tag(5, WireType.Varint).uint32(message.h_steam_pipe);
-		/* optional uint32 ticket_crc = 6; */
-		if (message.ticket_crc !== undefined) writer.tag(6, WireType.Varint).uint32(message.ticket_crc);
-		/* optional bytes ticket = 7; */
-		if (message.ticket !== undefined) writer.tag(7, WireType.LengthDelimited).bytes(message.ticket);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgAuthTicket", [
+      {
+        no: 1,
+        name: "estate",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "eresult",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "steamid",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 4,
+        name: "gameid",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 5,
+        name: "h_steam_pipe",
+        kind: "scalar",
+        localName: "h_steam_pipe",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "ticket_crc",
+        kind: "scalar",
+        localName: "ticket_crc",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "ticket",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgAuthTicket>): CMsgAuthTicket {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgAuthTicket>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgAuthTicket,
+  ): CMsgAuthTicket {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 estate */ 1:
+          message.estate = reader.uint32();
+          break;
+        case /* optional uint32 eresult */ 2:
+          message.eresult = reader.uint32();
+          break;
+        case /* optional fixed64 steamid */ 3:
+          message.steamid = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed64 gameid */ 4:
+          message.gameid = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 h_steam_pipe */ 5:
+          message.h_steam_pipe = reader.uint32();
+          break;
+        case /* optional uint32 ticket_crc */ 6:
+          message.ticket_crc = reader.uint32();
+          break;
+        case /* optional bytes ticket */ 7:
+          message.ticket = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgAuthTicket, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional uint32 estate = 1; */
+    if (message.estate !== undefined) writer.tag(1, WireType.Varint).uint32(message.estate);
+    /* optional uint32 eresult = 2; */
+    if (message.eresult !== undefined) writer.tag(2, WireType.Varint).uint32(message.eresult);
+    /* optional fixed64 steamid = 3; */
+    if (message.steamid !== undefined) writer.tag(3, WireType.Bit64).fixed64(message.steamid);
+    /* optional fixed64 gameid = 4; */
+    if (message.gameid !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.gameid);
+    /* optional uint32 h_steam_pipe = 5; */
+    if (message.h_steam_pipe !== undefined) writer.tag(5, WireType.Varint).uint32(message.h_steam_pipe);
+    /* optional uint32 ticket_crc = 6; */
+    if (message.ticket_crc !== undefined) writer.tag(6, WireType.Varint).uint32(message.ticket_crc);
+    /* optional bytes ticket = 7; */
+    if (message.ticket !== undefined) writer.tag(7, WireType.LengthDelimited).bytes(message.ticket);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgAuthTicket
@@ -1805,196 +1805,196 @@ class CMsgAuthTicket$Type extends MessageType<CMsgAuthTicket> {
 export const CMsgAuthTicket = new CMsgAuthTicket$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCDDBAppDetailCommon$Type extends MessageType<CCDDBAppDetailCommon> {
-	constructor() {
-		super("CCDDBAppDetailCommon", [
-			{
-				no: 1,
-				name: "appid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "icon",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 6,
-				name: "tool",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 7,
-				name: "demo",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 8,
-				name: "media",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 9,
-				name: "community_visible_stats",
-				kind: "scalar",
-				localName: "community_visible_stats",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 10,
-				name: "friendly_name",
-				kind: "scalar",
-				localName: "friendly_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 11,
-				name: "propagation",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 12,
-				name: "has_adult_content",
-				kind: "scalar",
-				localName: "has_adult_content",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 13,
-				name: "is_visible_in_steam_china",
-				kind: "scalar",
-				localName: "is_visible_in_steam_china",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 14,
-				name: "app_type",
-				kind: "scalar",
-				localName: "app_type",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCDDBAppDetailCommon>): CCDDBAppDetailCommon {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCDDBAppDetailCommon>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCDDBAppDetailCommon,
-	): CCDDBAppDetailCommon {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 appid */ 1:
-					message.appid = reader.uint32();
-					break;
-				case /* optional string name */ 2:
-					message.name = reader.string();
-					break;
-				case /* optional string icon */ 3:
-					message.icon = reader.string();
-					break;
-				case /* optional bool tool */ 6:
-					message.tool = reader.bool();
-					break;
-				case /* optional bool demo */ 7:
-					message.demo = reader.bool();
-					break;
-				case /* optional bool media */ 8:
-					message.media = reader.bool();
-					break;
-				case /* optional bool community_visible_stats */ 9:
-					message.community_visible_stats = reader.bool();
-					break;
-				case /* optional string friendly_name */ 10:
-					message.friendly_name = reader.string();
-					break;
-				case /* optional string propagation */ 11:
-					message.propagation = reader.string();
-					break;
-				case /* optional bool has_adult_content */ 12:
-					message.has_adult_content = reader.bool();
-					break;
-				case /* optional bool is_visible_in_steam_china */ 13:
-					message.is_visible_in_steam_china = reader.bool();
-					break;
-				case /* optional uint32 app_type */ 14:
-					message.app_type = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCDDBAppDetailCommon,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 appid = 1; */
-		if (message.appid !== undefined) writer.tag(1, WireType.Varint).uint32(message.appid);
-		/* optional string name = 2; */
-		if (message.name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.name);
-		/* optional string icon = 3; */
-		if (message.icon !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.icon);
-		/* optional bool tool = 6; */
-		if (message.tool !== undefined) writer.tag(6, WireType.Varint).bool(message.tool);
-		/* optional bool demo = 7; */
-		if (message.demo !== undefined) writer.tag(7, WireType.Varint).bool(message.demo);
-		/* optional bool media = 8; */
-		if (message.media !== undefined) writer.tag(8, WireType.Varint).bool(message.media);
-		/* optional bool community_visible_stats = 9; */
-		if (message.community_visible_stats !== undefined)
-			writer.tag(9, WireType.Varint).bool(message.community_visible_stats);
-		/* optional string friendly_name = 10; */
-		if (message.friendly_name !== undefined) writer.tag(10, WireType.LengthDelimited).string(message.friendly_name);
-		/* optional string propagation = 11; */
-		if (message.propagation !== undefined) writer.tag(11, WireType.LengthDelimited).string(message.propagation);
-		/* optional bool has_adult_content = 12; */
-		if (message.has_adult_content !== undefined) writer.tag(12, WireType.Varint).bool(message.has_adult_content);
-		/* optional bool is_visible_in_steam_china = 13; */
-		if (message.is_visible_in_steam_china !== undefined)
-			writer.tag(13, WireType.Varint).bool(message.is_visible_in_steam_china);
-		/* optional uint32 app_type = 14; */
-		if (message.app_type !== undefined) writer.tag(14, WireType.Varint).uint32(message.app_type);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCDDBAppDetailCommon", [
+      {
+        no: 1,
+        name: "appid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "icon",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 6,
+        name: "tool",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 7,
+        name: "demo",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 8,
+        name: "media",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 9,
+        name: "community_visible_stats",
+        kind: "scalar",
+        localName: "community_visible_stats",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 10,
+        name: "friendly_name",
+        kind: "scalar",
+        localName: "friendly_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 11,
+        name: "propagation",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 12,
+        name: "has_adult_content",
+        kind: "scalar",
+        localName: "has_adult_content",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 13,
+        name: "is_visible_in_steam_china",
+        kind: "scalar",
+        localName: "is_visible_in_steam_china",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 14,
+        name: "app_type",
+        kind: "scalar",
+        localName: "app_type",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCDDBAppDetailCommon>): CCDDBAppDetailCommon {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCDDBAppDetailCommon>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCDDBAppDetailCommon,
+  ): CCDDBAppDetailCommon {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 appid */ 1:
+          message.appid = reader.uint32();
+          break;
+        case /* optional string name */ 2:
+          message.name = reader.string();
+          break;
+        case /* optional string icon */ 3:
+          message.icon = reader.string();
+          break;
+        case /* optional bool tool */ 6:
+          message.tool = reader.bool();
+          break;
+        case /* optional bool demo */ 7:
+          message.demo = reader.bool();
+          break;
+        case /* optional bool media */ 8:
+          message.media = reader.bool();
+          break;
+        case /* optional bool community_visible_stats */ 9:
+          message.community_visible_stats = reader.bool();
+          break;
+        case /* optional string friendly_name */ 10:
+          message.friendly_name = reader.string();
+          break;
+        case /* optional string propagation */ 11:
+          message.propagation = reader.string();
+          break;
+        case /* optional bool has_adult_content */ 12:
+          message.has_adult_content = reader.bool();
+          break;
+        case /* optional bool is_visible_in_steam_china */ 13:
+          message.is_visible_in_steam_china = reader.bool();
+          break;
+        case /* optional uint32 app_type */ 14:
+          message.app_type = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCDDBAppDetailCommon,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 appid = 1; */
+    if (message.appid !== undefined) writer.tag(1, WireType.Varint).uint32(message.appid);
+    /* optional string name = 2; */
+    if (message.name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.name);
+    /* optional string icon = 3; */
+    if (message.icon !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.icon);
+    /* optional bool tool = 6; */
+    if (message.tool !== undefined) writer.tag(6, WireType.Varint).bool(message.tool);
+    /* optional bool demo = 7; */
+    if (message.demo !== undefined) writer.tag(7, WireType.Varint).bool(message.demo);
+    /* optional bool media = 8; */
+    if (message.media !== undefined) writer.tag(8, WireType.Varint).bool(message.media);
+    /* optional bool community_visible_stats = 9; */
+    if (message.community_visible_stats !== undefined)
+      writer.tag(9, WireType.Varint).bool(message.community_visible_stats);
+    /* optional string friendly_name = 10; */
+    if (message.friendly_name !== undefined) writer.tag(10, WireType.LengthDelimited).string(message.friendly_name);
+    /* optional string propagation = 11; */
+    if (message.propagation !== undefined) writer.tag(11, WireType.LengthDelimited).string(message.propagation);
+    /* optional bool has_adult_content = 12; */
+    if (message.has_adult_content !== undefined) writer.tag(12, WireType.Varint).bool(message.has_adult_content);
+    /* optional bool is_visible_in_steam_china = 13; */
+    if (message.is_visible_in_steam_china !== undefined)
+      writer.tag(13, WireType.Varint).bool(message.is_visible_in_steam_china);
+    /* optional uint32 app_type = 14; */
+    if (message.app_type !== undefined) writer.tag(14, WireType.Varint).uint32(message.app_type);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCDDBAppDetailCommon
@@ -2002,263 +2002,263 @@ class CCDDBAppDetailCommon$Type extends MessageType<CCDDBAppDetailCommon> {
 export const CCDDBAppDetailCommon = new CCDDBAppDetailCommon$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgAppRights$Type extends MessageType<CMsgAppRights> {
-	constructor() {
-		super("CMsgAppRights", [
-			{
-				no: 1,
-				name: "edit_info",
-				kind: "scalar",
-				localName: "edit_info",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 2,
-				name: "publish",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 3,
-				name: "view_error_data",
-				kind: "scalar",
-				localName: "view_error_data",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "download",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 5,
-				name: "upload_cdkeys",
-				kind: "scalar",
-				localName: "upload_cdkeys",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 6,
-				name: "generate_cdkeys",
-				kind: "scalar",
-				localName: "generate_cdkeys",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 7,
-				name: "view_financials",
-				kind: "scalar",
-				localName: "view_financials",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 8,
-				name: "manage_ceg",
-				kind: "scalar",
-				localName: "manage_ceg",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 9,
-				name: "manage_signing",
-				kind: "scalar",
-				localName: "manage_signing",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 10,
-				name: "manage_cdkeys",
-				kind: "scalar",
-				localName: "manage_cdkeys",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 11,
-				name: "edit_marketing",
-				kind: "scalar",
-				localName: "edit_marketing",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 12,
-				name: "economy_support",
-				kind: "scalar",
-				localName: "economy_support",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 13,
-				name: "economy_support_supervisor",
-				kind: "scalar",
-				localName: "economy_support_supervisor",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 14,
-				name: "manage_pricing",
-				kind: "scalar",
-				localName: "manage_pricing",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 15,
-				name: "broadcast_live",
-				kind: "scalar",
-				localName: "broadcast_live",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 16,
-				name: "view_marketing_traffic",
-				kind: "scalar",
-				localName: "view_marketing_traffic",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 17,
-				name: "edit_store_display_content",
-				kind: "scalar",
-				localName: "edit_store_display_content",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgAppRights>): CMsgAppRights {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgAppRights>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgAppRights,
-	): CMsgAppRights {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool edit_info */ 1:
-					message.edit_info = reader.bool();
-					break;
-				case /* optional bool publish */ 2:
-					message.publish = reader.bool();
-					break;
-				case /* optional bool view_error_data */ 3:
-					message.view_error_data = reader.bool();
-					break;
-				case /* optional bool download */ 4:
-					message.download = reader.bool();
-					break;
-				case /* optional bool upload_cdkeys */ 5:
-					message.upload_cdkeys = reader.bool();
-					break;
-				case /* optional bool generate_cdkeys */ 6:
-					message.generate_cdkeys = reader.bool();
-					break;
-				case /* optional bool view_financials */ 7:
-					message.view_financials = reader.bool();
-					break;
-				case /* optional bool manage_ceg */ 8:
-					message.manage_ceg = reader.bool();
-					break;
-				case /* optional bool manage_signing */ 9:
-					message.manage_signing = reader.bool();
-					break;
-				case /* optional bool manage_cdkeys */ 10:
-					message.manage_cdkeys = reader.bool();
-					break;
-				case /* optional bool edit_marketing */ 11:
-					message.edit_marketing = reader.bool();
-					break;
-				case /* optional bool economy_support */ 12:
-					message.economy_support = reader.bool();
-					break;
-				case /* optional bool economy_support_supervisor */ 13:
-					message.economy_support_supervisor = reader.bool();
-					break;
-				case /* optional bool manage_pricing */ 14:
-					message.manage_pricing = reader.bool();
-					break;
-				case /* optional bool broadcast_live */ 15:
-					message.broadcast_live = reader.bool();
-					break;
-				case /* optional bool view_marketing_traffic */ 16:
-					message.view_marketing_traffic = reader.bool();
-					break;
-				case /* optional bool edit_store_display_content */ 17:
-					message.edit_store_display_content = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgAppRights, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional bool edit_info = 1; */
-		if (message.edit_info !== undefined) writer.tag(1, WireType.Varint).bool(message.edit_info);
-		/* optional bool publish = 2; */
-		if (message.publish !== undefined) writer.tag(2, WireType.Varint).bool(message.publish);
-		/* optional bool view_error_data = 3; */
-		if (message.view_error_data !== undefined) writer.tag(3, WireType.Varint).bool(message.view_error_data);
-		/* optional bool download = 4; */
-		if (message.download !== undefined) writer.tag(4, WireType.Varint).bool(message.download);
-		/* optional bool upload_cdkeys = 5; */
-		if (message.upload_cdkeys !== undefined) writer.tag(5, WireType.Varint).bool(message.upload_cdkeys);
-		/* optional bool generate_cdkeys = 6; */
-		if (message.generate_cdkeys !== undefined) writer.tag(6, WireType.Varint).bool(message.generate_cdkeys);
-		/* optional bool view_financials = 7; */
-		if (message.view_financials !== undefined) writer.tag(7, WireType.Varint).bool(message.view_financials);
-		/* optional bool manage_ceg = 8; */
-		if (message.manage_ceg !== undefined) writer.tag(8, WireType.Varint).bool(message.manage_ceg);
-		/* optional bool manage_signing = 9; */
-		if (message.manage_signing !== undefined) writer.tag(9, WireType.Varint).bool(message.manage_signing);
-		/* optional bool manage_cdkeys = 10; */
-		if (message.manage_cdkeys !== undefined) writer.tag(10, WireType.Varint).bool(message.manage_cdkeys);
-		/* optional bool edit_marketing = 11; */
-		if (message.edit_marketing !== undefined) writer.tag(11, WireType.Varint).bool(message.edit_marketing);
-		/* optional bool economy_support = 12; */
-		if (message.economy_support !== undefined) writer.tag(12, WireType.Varint).bool(message.economy_support);
-		/* optional bool economy_support_supervisor = 13; */
-		if (message.economy_support_supervisor !== undefined)
-			writer.tag(13, WireType.Varint).bool(message.economy_support_supervisor);
-		/* optional bool manage_pricing = 14; */
-		if (message.manage_pricing !== undefined) writer.tag(14, WireType.Varint).bool(message.manage_pricing);
-		/* optional bool broadcast_live = 15; */
-		if (message.broadcast_live !== undefined) writer.tag(15, WireType.Varint).bool(message.broadcast_live);
-		/* optional bool view_marketing_traffic = 16; */
-		if (message.view_marketing_traffic !== undefined)
-			writer.tag(16, WireType.Varint).bool(message.view_marketing_traffic);
-		/* optional bool edit_store_display_content = 17; */
-		if (message.edit_store_display_content !== undefined)
-			writer.tag(17, WireType.Varint).bool(message.edit_store_display_content);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgAppRights", [
+      {
+        no: 1,
+        name: "edit_info",
+        kind: "scalar",
+        localName: "edit_info",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 2,
+        name: "publish",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 3,
+        name: "view_error_data",
+        kind: "scalar",
+        localName: "view_error_data",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "download",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 5,
+        name: "upload_cdkeys",
+        kind: "scalar",
+        localName: "upload_cdkeys",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 6,
+        name: "generate_cdkeys",
+        kind: "scalar",
+        localName: "generate_cdkeys",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 7,
+        name: "view_financials",
+        kind: "scalar",
+        localName: "view_financials",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 8,
+        name: "manage_ceg",
+        kind: "scalar",
+        localName: "manage_ceg",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 9,
+        name: "manage_signing",
+        kind: "scalar",
+        localName: "manage_signing",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 10,
+        name: "manage_cdkeys",
+        kind: "scalar",
+        localName: "manage_cdkeys",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 11,
+        name: "edit_marketing",
+        kind: "scalar",
+        localName: "edit_marketing",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 12,
+        name: "economy_support",
+        kind: "scalar",
+        localName: "economy_support",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 13,
+        name: "economy_support_supervisor",
+        kind: "scalar",
+        localName: "economy_support_supervisor",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 14,
+        name: "manage_pricing",
+        kind: "scalar",
+        localName: "manage_pricing",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 15,
+        name: "broadcast_live",
+        kind: "scalar",
+        localName: "broadcast_live",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 16,
+        name: "view_marketing_traffic",
+        kind: "scalar",
+        localName: "view_marketing_traffic",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 17,
+        name: "edit_store_display_content",
+        kind: "scalar",
+        localName: "edit_store_display_content",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgAppRights>): CMsgAppRights {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgAppRights>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgAppRights,
+  ): CMsgAppRights {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool edit_info */ 1:
+          message.edit_info = reader.bool();
+          break;
+        case /* optional bool publish */ 2:
+          message.publish = reader.bool();
+          break;
+        case /* optional bool view_error_data */ 3:
+          message.view_error_data = reader.bool();
+          break;
+        case /* optional bool download */ 4:
+          message.download = reader.bool();
+          break;
+        case /* optional bool upload_cdkeys */ 5:
+          message.upload_cdkeys = reader.bool();
+          break;
+        case /* optional bool generate_cdkeys */ 6:
+          message.generate_cdkeys = reader.bool();
+          break;
+        case /* optional bool view_financials */ 7:
+          message.view_financials = reader.bool();
+          break;
+        case /* optional bool manage_ceg */ 8:
+          message.manage_ceg = reader.bool();
+          break;
+        case /* optional bool manage_signing */ 9:
+          message.manage_signing = reader.bool();
+          break;
+        case /* optional bool manage_cdkeys */ 10:
+          message.manage_cdkeys = reader.bool();
+          break;
+        case /* optional bool edit_marketing */ 11:
+          message.edit_marketing = reader.bool();
+          break;
+        case /* optional bool economy_support */ 12:
+          message.economy_support = reader.bool();
+          break;
+        case /* optional bool economy_support_supervisor */ 13:
+          message.economy_support_supervisor = reader.bool();
+          break;
+        case /* optional bool manage_pricing */ 14:
+          message.manage_pricing = reader.bool();
+          break;
+        case /* optional bool broadcast_live */ 15:
+          message.broadcast_live = reader.bool();
+          break;
+        case /* optional bool view_marketing_traffic */ 16:
+          message.view_marketing_traffic = reader.bool();
+          break;
+        case /* optional bool edit_store_display_content */ 17:
+          message.edit_store_display_content = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgAppRights, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional bool edit_info = 1; */
+    if (message.edit_info !== undefined) writer.tag(1, WireType.Varint).bool(message.edit_info);
+    /* optional bool publish = 2; */
+    if (message.publish !== undefined) writer.tag(2, WireType.Varint).bool(message.publish);
+    /* optional bool view_error_data = 3; */
+    if (message.view_error_data !== undefined) writer.tag(3, WireType.Varint).bool(message.view_error_data);
+    /* optional bool download = 4; */
+    if (message.download !== undefined) writer.tag(4, WireType.Varint).bool(message.download);
+    /* optional bool upload_cdkeys = 5; */
+    if (message.upload_cdkeys !== undefined) writer.tag(5, WireType.Varint).bool(message.upload_cdkeys);
+    /* optional bool generate_cdkeys = 6; */
+    if (message.generate_cdkeys !== undefined) writer.tag(6, WireType.Varint).bool(message.generate_cdkeys);
+    /* optional bool view_financials = 7; */
+    if (message.view_financials !== undefined) writer.tag(7, WireType.Varint).bool(message.view_financials);
+    /* optional bool manage_ceg = 8; */
+    if (message.manage_ceg !== undefined) writer.tag(8, WireType.Varint).bool(message.manage_ceg);
+    /* optional bool manage_signing = 9; */
+    if (message.manage_signing !== undefined) writer.tag(9, WireType.Varint).bool(message.manage_signing);
+    /* optional bool manage_cdkeys = 10; */
+    if (message.manage_cdkeys !== undefined) writer.tag(10, WireType.Varint).bool(message.manage_cdkeys);
+    /* optional bool edit_marketing = 11; */
+    if (message.edit_marketing !== undefined) writer.tag(11, WireType.Varint).bool(message.edit_marketing);
+    /* optional bool economy_support = 12; */
+    if (message.economy_support !== undefined) writer.tag(12, WireType.Varint).bool(message.economy_support);
+    /* optional bool economy_support_supervisor = 13; */
+    if (message.economy_support_supervisor !== undefined)
+      writer.tag(13, WireType.Varint).bool(message.economy_support_supervisor);
+    /* optional bool manage_pricing = 14; */
+    if (message.manage_pricing !== undefined) writer.tag(14, WireType.Varint).bool(message.manage_pricing);
+    /* optional bool broadcast_live = 15; */
+    if (message.broadcast_live !== undefined) writer.tag(15, WireType.Varint).bool(message.broadcast_live);
+    /* optional bool view_marketing_traffic = 16; */
+    if (message.view_marketing_traffic !== undefined)
+      writer.tag(16, WireType.Varint).bool(message.view_marketing_traffic);
+    /* optional bool edit_store_display_content = 17; */
+    if (message.edit_store_display_content !== undefined)
+      writer.tag(17, WireType.Varint).bool(message.edit_store_display_content);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgAppRights
@@ -2266,232 +2266,232 @@ class CMsgAppRights$Type extends MessageType<CMsgAppRights> {
 export const CMsgAppRights = new CMsgAppRights$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCuratorPreferences$Type extends MessageType<CCuratorPreferences> {
-	constructor() {
-		super("CCuratorPreferences", [
-			{
-				no: 1,
-				name: "supported_languages",
-				kind: "scalar",
-				localName: "supported_languages",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "platform_windows",
-				kind: "scalar",
-				localName: "platform_windows",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 3,
-				name: "platform_mac",
-				kind: "scalar",
-				localName: "platform_mac",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "platform_linux",
-				kind: "scalar",
-				localName: "platform_linux",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 5,
-				name: "vr_content",
-				kind: "scalar",
-				localName: "vr_content",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 6,
-				name: "adult_content_violence",
-				kind: "scalar",
-				localName: "adult_content_violence",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 7,
-				name: "adult_content_sex",
-				kind: "scalar",
-				localName: "adult_content_sex",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 8,
-				name: "timestamp_updated",
-				kind: "scalar",
-				localName: "timestamp_updated",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "tagids_curated",
-				kind: "scalar",
-				localName: "tagids_curated",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "tagids_filtered",
-				kind: "scalar",
-				localName: "tagids_filtered",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 11,
-				name: "website_title",
-				kind: "scalar",
-				localName: "website_title",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 12,
-				name: "website_url",
-				kind: "scalar",
-				localName: "website_url",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 13,
-				name: "discussion_url",
-				kind: "scalar",
-				localName: "discussion_url",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 14,
-				name: "show_broadcast",
-				kind: "scalar",
-				localName: "show_broadcast",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCuratorPreferences>): CCuratorPreferences {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.tagids_curated = [];
-		message.tagids_filtered = [];
-		if (value !== undefined) reflectionMergePartial<CCuratorPreferences>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCuratorPreferences,
-	): CCuratorPreferences {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 supported_languages */ 1:
-					message.supported_languages = reader.uint32();
-					break;
-				case /* optional bool platform_windows */ 2:
-					message.platform_windows = reader.bool();
-					break;
-				case /* optional bool platform_mac */ 3:
-					message.platform_mac = reader.bool();
-					break;
-				case /* optional bool platform_linux */ 4:
-					message.platform_linux = reader.bool();
-					break;
-				case /* optional bool vr_content */ 5:
-					message.vr_content = reader.bool();
-					break;
-				case /* optional bool adult_content_violence */ 6:
-					message.adult_content_violence = reader.bool();
-					break;
-				case /* optional bool adult_content_sex */ 7:
-					message.adult_content_sex = reader.bool();
-					break;
-				case /* optional uint32 timestamp_updated */ 8:
-					message.timestamp_updated = reader.uint32();
-					break;
-				case /* repeated uint32 tagids_curated */ 9:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.tagids_curated.push(reader.uint32());
-					else message.tagids_curated.push(reader.uint32());
-					break;
-				case /* repeated uint32 tagids_filtered */ 10:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.tagids_filtered.push(reader.uint32());
-					else message.tagids_filtered.push(reader.uint32());
-					break;
-				case /* optional string website_title */ 11:
-					message.website_title = reader.string();
-					break;
-				case /* optional string website_url */ 12:
-					message.website_url = reader.string();
-					break;
-				case /* optional string discussion_url */ 13:
-					message.discussion_url = reader.string();
-					break;
-				case /* optional bool show_broadcast */ 14:
-					message.show_broadcast = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CCuratorPreferences, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional uint32 supported_languages = 1; */
-		if (message.supported_languages !== undefined) writer.tag(1, WireType.Varint).uint32(message.supported_languages);
-		/* optional bool platform_windows = 2; */
-		if (message.platform_windows !== undefined) writer.tag(2, WireType.Varint).bool(message.platform_windows);
-		/* optional bool platform_mac = 3; */
-		if (message.platform_mac !== undefined) writer.tag(3, WireType.Varint).bool(message.platform_mac);
-		/* optional bool platform_linux = 4; */
-		if (message.platform_linux !== undefined) writer.tag(4, WireType.Varint).bool(message.platform_linux);
-		/* optional bool vr_content = 5; */
-		if (message.vr_content !== undefined) writer.tag(5, WireType.Varint).bool(message.vr_content);
-		/* optional bool adult_content_violence = 6; */
-		if (message.adult_content_violence !== undefined)
-			writer.tag(6, WireType.Varint).bool(message.adult_content_violence);
-		/* optional bool adult_content_sex = 7; */
-		if (message.adult_content_sex !== undefined) writer.tag(7, WireType.Varint).bool(message.adult_content_sex);
-		/* optional uint32 timestamp_updated = 8; */
-		if (message.timestamp_updated !== undefined) writer.tag(8, WireType.Varint).uint32(message.timestamp_updated);
-		/* repeated uint32 tagids_curated = 9; */
-		for (let i = 0; i < message.tagids_curated.length; i++)
-			writer.tag(9, WireType.Varint).uint32(message.tagids_curated[i]);
-		/* repeated uint32 tagids_filtered = 10; */
-		for (let i = 0; i < message.tagids_filtered.length; i++)
-			writer.tag(10, WireType.Varint).uint32(message.tagids_filtered[i]);
-		/* optional string website_title = 11; */
-		if (message.website_title !== undefined) writer.tag(11, WireType.LengthDelimited).string(message.website_title);
-		/* optional string website_url = 12; */
-		if (message.website_url !== undefined) writer.tag(12, WireType.LengthDelimited).string(message.website_url);
-		/* optional string discussion_url = 13; */
-		if (message.discussion_url !== undefined) writer.tag(13, WireType.LengthDelimited).string(message.discussion_url);
-		/* optional bool show_broadcast = 14; */
-		if (message.show_broadcast !== undefined) writer.tag(14, WireType.Varint).bool(message.show_broadcast);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCuratorPreferences", [
+      {
+        no: 1,
+        name: "supported_languages",
+        kind: "scalar",
+        localName: "supported_languages",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "platform_windows",
+        kind: "scalar",
+        localName: "platform_windows",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 3,
+        name: "platform_mac",
+        kind: "scalar",
+        localName: "platform_mac",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "platform_linux",
+        kind: "scalar",
+        localName: "platform_linux",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 5,
+        name: "vr_content",
+        kind: "scalar",
+        localName: "vr_content",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 6,
+        name: "adult_content_violence",
+        kind: "scalar",
+        localName: "adult_content_violence",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 7,
+        name: "adult_content_sex",
+        kind: "scalar",
+        localName: "adult_content_sex",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 8,
+        name: "timestamp_updated",
+        kind: "scalar",
+        localName: "timestamp_updated",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "tagids_curated",
+        kind: "scalar",
+        localName: "tagids_curated",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "tagids_filtered",
+        kind: "scalar",
+        localName: "tagids_filtered",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 11,
+        name: "website_title",
+        kind: "scalar",
+        localName: "website_title",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 12,
+        name: "website_url",
+        kind: "scalar",
+        localName: "website_url",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 13,
+        name: "discussion_url",
+        kind: "scalar",
+        localName: "discussion_url",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 14,
+        name: "show_broadcast",
+        kind: "scalar",
+        localName: "show_broadcast",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCuratorPreferences>): CCuratorPreferences {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.tagids_curated = [];
+    message.tagids_filtered = [];
+    if (value !== undefined) reflectionMergePartial<CCuratorPreferences>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCuratorPreferences,
+  ): CCuratorPreferences {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 supported_languages */ 1:
+          message.supported_languages = reader.uint32();
+          break;
+        case /* optional bool platform_windows */ 2:
+          message.platform_windows = reader.bool();
+          break;
+        case /* optional bool platform_mac */ 3:
+          message.platform_mac = reader.bool();
+          break;
+        case /* optional bool platform_linux */ 4:
+          message.platform_linux = reader.bool();
+          break;
+        case /* optional bool vr_content */ 5:
+          message.vr_content = reader.bool();
+          break;
+        case /* optional bool adult_content_violence */ 6:
+          message.adult_content_violence = reader.bool();
+          break;
+        case /* optional bool adult_content_sex */ 7:
+          message.adult_content_sex = reader.bool();
+          break;
+        case /* optional uint32 timestamp_updated */ 8:
+          message.timestamp_updated = reader.uint32();
+          break;
+        case /* repeated uint32 tagids_curated */ 9:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.tagids_curated.push(reader.uint32());
+          else message.tagids_curated.push(reader.uint32());
+          break;
+        case /* repeated uint32 tagids_filtered */ 10:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.tagids_filtered.push(reader.uint32());
+          else message.tagids_filtered.push(reader.uint32());
+          break;
+        case /* optional string website_title */ 11:
+          message.website_title = reader.string();
+          break;
+        case /* optional string website_url */ 12:
+          message.website_url = reader.string();
+          break;
+        case /* optional string discussion_url */ 13:
+          message.discussion_url = reader.string();
+          break;
+        case /* optional bool show_broadcast */ 14:
+          message.show_broadcast = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CCuratorPreferences, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional uint32 supported_languages = 1; */
+    if (message.supported_languages !== undefined) writer.tag(1, WireType.Varint).uint32(message.supported_languages);
+    /* optional bool platform_windows = 2; */
+    if (message.platform_windows !== undefined) writer.tag(2, WireType.Varint).bool(message.platform_windows);
+    /* optional bool platform_mac = 3; */
+    if (message.platform_mac !== undefined) writer.tag(3, WireType.Varint).bool(message.platform_mac);
+    /* optional bool platform_linux = 4; */
+    if (message.platform_linux !== undefined) writer.tag(4, WireType.Varint).bool(message.platform_linux);
+    /* optional bool vr_content = 5; */
+    if (message.vr_content !== undefined) writer.tag(5, WireType.Varint).bool(message.vr_content);
+    /* optional bool adult_content_violence = 6; */
+    if (message.adult_content_violence !== undefined)
+      writer.tag(6, WireType.Varint).bool(message.adult_content_violence);
+    /* optional bool adult_content_sex = 7; */
+    if (message.adult_content_sex !== undefined) writer.tag(7, WireType.Varint).bool(message.adult_content_sex);
+    /* optional uint32 timestamp_updated = 8; */
+    if (message.timestamp_updated !== undefined) writer.tag(8, WireType.Varint).uint32(message.timestamp_updated);
+    /* repeated uint32 tagids_curated = 9; */
+    for (let i = 0; i < message.tagids_curated.length; i++)
+      writer.tag(9, WireType.Varint).uint32(message.tagids_curated[i]);
+    /* repeated uint32 tagids_filtered = 10; */
+    for (let i = 0; i < message.tagids_filtered.length; i++)
+      writer.tag(10, WireType.Varint).uint32(message.tagids_filtered[i]);
+    /* optional string website_title = 11; */
+    if (message.website_title !== undefined) writer.tag(11, WireType.LengthDelimited).string(message.website_title);
+    /* optional string website_url = 12; */
+    if (message.website_url !== undefined) writer.tag(12, WireType.LengthDelimited).string(message.website_url);
+    /* optional string discussion_url = 13; */
+    if (message.discussion_url !== undefined) writer.tag(13, WireType.LengthDelimited).string(message.discussion_url);
+    /* optional bool show_broadcast = 14; */
+    if (message.show_broadcast !== undefined) writer.tag(14, WireType.Varint).bool(message.show_broadcast);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCuratorPreferences
@@ -2499,67 +2499,67 @@ class CCuratorPreferences$Type extends MessageType<CCuratorPreferences> {
 export const CCuratorPreferences = new CCuratorPreferences$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CLocalizationToken$Type extends MessageType<CLocalizationToken> {
-	constructor() {
-		super("CLocalizationToken", [
-			{
-				no: 1,
-				name: "language",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "localized_string",
-				kind: "scalar",
-				localName: "localized_string",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CLocalizationToken>): CLocalizationToken {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CLocalizationToken>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CLocalizationToken,
-	): CLocalizationToken {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 language */ 1:
-					message.language = reader.uint32();
-					break;
-				case /* optional string localized_string */ 2:
-					message.localized_string = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CLocalizationToken, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional uint32 language = 1; */
-		if (message.language !== undefined) writer.tag(1, WireType.Varint).uint32(message.language);
-		/* optional string localized_string = 2; */
-		if (message.localized_string !== undefined)
-			writer.tag(2, WireType.LengthDelimited).string(message.localized_string);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CLocalizationToken", [
+      {
+        no: 1,
+        name: "language",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "localized_string",
+        kind: "scalar",
+        localName: "localized_string",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CLocalizationToken>): CLocalizationToken {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CLocalizationToken>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CLocalizationToken,
+  ): CLocalizationToken {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 language */ 1:
+          message.language = reader.uint32();
+          break;
+        case /* optional string localized_string */ 2:
+          message.localized_string = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CLocalizationToken, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional uint32 language = 1; */
+    if (message.language !== undefined) writer.tag(1, WireType.Varint).uint32(message.language);
+    /* optional string localized_string = 2; */
+    if (message.localized_string !== undefined)
+      writer.tag(2, WireType.LengthDelimited).string(message.localized_string);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CLocalizationToken
@@ -2567,175 +2567,175 @@ class CLocalizationToken$Type extends MessageType<CLocalizationToken> {
 export const CLocalizationToken = new CLocalizationToken$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CClanEventUserNewsTuple$Type extends MessageType<CClanEventUserNewsTuple> {
-	constructor() {
-		super("CClanEventUserNewsTuple", [
-			{
-				no: 1,
-				name: "clanid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "event_gid",
-				kind: "scalar",
-				localName: "event_gid",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "announcement_gid",
-				kind: "scalar",
-				localName: "announcement_gid",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 4,
-				name: "rtime_start",
-				kind: "scalar",
-				localName: "rtime_start",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "rtime_end",
-				kind: "scalar",
-				localName: "rtime_end",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "priority_score",
-				kind: "scalar",
-				localName: "priority_score",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "type",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "clamp_range_slot",
-				kind: "scalar",
-				localName: "clamp_range_slot",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "appid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "rtime32_last_modified",
-				kind: "scalar",
-				localName: "rtime32_last_modified",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CClanEventUserNewsTuple>): CClanEventUserNewsTuple {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CClanEventUserNewsTuple>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CClanEventUserNewsTuple,
-	): CClanEventUserNewsTuple {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 clanid */ 1:
-					message.clanid = reader.uint32();
-					break;
-				case /* optional fixed64 event_gid */ 2:
-					message.event_gid = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed64 announcement_gid */ 3:
-					message.announcement_gid = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 rtime_start */ 4:
-					message.rtime_start = reader.uint32();
-					break;
-				case /* optional uint32 rtime_end */ 5:
-					message.rtime_end = reader.uint32();
-					break;
-				case /* optional uint32 priority_score */ 6:
-					message.priority_score = reader.uint32();
-					break;
-				case /* optional uint32 type */ 7:
-					message.type = reader.uint32();
-					break;
-				case /* optional uint32 clamp_range_slot */ 8:
-					message.clamp_range_slot = reader.uint32();
-					break;
-				case /* optional uint32 appid */ 9:
-					message.appid = reader.uint32();
-					break;
-				case /* optional uint32 rtime32_last_modified */ 10:
-					message.rtime32_last_modified = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CClanEventUserNewsTuple,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 clanid = 1; */
-		if (message.clanid !== undefined) writer.tag(1, WireType.Varint).uint32(message.clanid);
-		/* optional fixed64 event_gid = 2; */
-		if (message.event_gid !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.event_gid);
-		/* optional fixed64 announcement_gid = 3; */
-		if (message.announcement_gid !== undefined) writer.tag(3, WireType.Bit64).fixed64(message.announcement_gid);
-		/* optional uint32 rtime_start = 4; */
-		if (message.rtime_start !== undefined) writer.tag(4, WireType.Varint).uint32(message.rtime_start);
-		/* optional uint32 rtime_end = 5; */
-		if (message.rtime_end !== undefined) writer.tag(5, WireType.Varint).uint32(message.rtime_end);
-		/* optional uint32 priority_score = 6; */
-		if (message.priority_score !== undefined) writer.tag(6, WireType.Varint).uint32(message.priority_score);
-		/* optional uint32 type = 7; */
-		if (message.type !== undefined) writer.tag(7, WireType.Varint).uint32(message.type);
-		/* optional uint32 clamp_range_slot = 8; */
-		if (message.clamp_range_slot !== undefined) writer.tag(8, WireType.Varint).uint32(message.clamp_range_slot);
-		/* optional uint32 appid = 9; */
-		if (message.appid !== undefined) writer.tag(9, WireType.Varint).uint32(message.appid);
-		/* optional uint32 rtime32_last_modified = 10; */
-		if (message.rtime32_last_modified !== undefined)
-			writer.tag(10, WireType.Varint).uint32(message.rtime32_last_modified);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CClanEventUserNewsTuple", [
+      {
+        no: 1,
+        name: "clanid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "event_gid",
+        kind: "scalar",
+        localName: "event_gid",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "announcement_gid",
+        kind: "scalar",
+        localName: "announcement_gid",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 4,
+        name: "rtime_start",
+        kind: "scalar",
+        localName: "rtime_start",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "rtime_end",
+        kind: "scalar",
+        localName: "rtime_end",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "priority_score",
+        kind: "scalar",
+        localName: "priority_score",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "type",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "clamp_range_slot",
+        kind: "scalar",
+        localName: "clamp_range_slot",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "appid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "rtime32_last_modified",
+        kind: "scalar",
+        localName: "rtime32_last_modified",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CClanEventUserNewsTuple>): CClanEventUserNewsTuple {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CClanEventUserNewsTuple>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CClanEventUserNewsTuple,
+  ): CClanEventUserNewsTuple {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 clanid */ 1:
+          message.clanid = reader.uint32();
+          break;
+        case /* optional fixed64 event_gid */ 2:
+          message.event_gid = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed64 announcement_gid */ 3:
+          message.announcement_gid = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 rtime_start */ 4:
+          message.rtime_start = reader.uint32();
+          break;
+        case /* optional uint32 rtime_end */ 5:
+          message.rtime_end = reader.uint32();
+          break;
+        case /* optional uint32 priority_score */ 6:
+          message.priority_score = reader.uint32();
+          break;
+        case /* optional uint32 type */ 7:
+          message.type = reader.uint32();
+          break;
+        case /* optional uint32 clamp_range_slot */ 8:
+          message.clamp_range_slot = reader.uint32();
+          break;
+        case /* optional uint32 appid */ 9:
+          message.appid = reader.uint32();
+          break;
+        case /* optional uint32 rtime32_last_modified */ 10:
+          message.rtime32_last_modified = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CClanEventUserNewsTuple,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 clanid = 1; */
+    if (message.clanid !== undefined) writer.tag(1, WireType.Varint).uint32(message.clanid);
+    /* optional fixed64 event_gid = 2; */
+    if (message.event_gid !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.event_gid);
+    /* optional fixed64 announcement_gid = 3; */
+    if (message.announcement_gid !== undefined) writer.tag(3, WireType.Bit64).fixed64(message.announcement_gid);
+    /* optional uint32 rtime_start = 4; */
+    if (message.rtime_start !== undefined) writer.tag(4, WireType.Varint).uint32(message.rtime_start);
+    /* optional uint32 rtime_end = 5; */
+    if (message.rtime_end !== undefined) writer.tag(5, WireType.Varint).uint32(message.rtime_end);
+    /* optional uint32 priority_score = 6; */
+    if (message.priority_score !== undefined) writer.tag(6, WireType.Varint).uint32(message.priority_score);
+    /* optional uint32 type = 7; */
+    if (message.type !== undefined) writer.tag(7, WireType.Varint).uint32(message.type);
+    /* optional uint32 clamp_range_slot = 8; */
+    if (message.clamp_range_slot !== undefined) writer.tag(8, WireType.Varint).uint32(message.clamp_range_slot);
+    /* optional uint32 appid = 9; */
+    if (message.appid !== undefined) writer.tag(9, WireType.Varint).uint32(message.appid);
+    /* optional uint32 rtime32_last_modified = 10; */
+    if (message.rtime32_last_modified !== undefined)
+      writer.tag(10, WireType.Varint).uint32(message.rtime32_last_modified);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CClanEventUserNewsTuple
@@ -2743,101 +2743,101 @@ class CClanEventUserNewsTuple$Type extends MessageType<CClanEventUserNewsTuple> 
 export const CClanEventUserNewsTuple = new CClanEventUserNewsTuple$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CClanMatchEventByRange$Type extends MessageType<CClanMatchEventByRange> {
-	constructor() {
-		super("CClanMatchEventByRange", [
-			{
-				no: 1,
-				name: "rtime_before",
-				kind: "scalar",
-				localName: "rtime_before",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "rtime_after",
-				kind: "scalar",
-				localName: "rtime_after",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "qualified",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "events",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CClanEventUserNewsTuple,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CClanMatchEventByRange>): CClanMatchEventByRange {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.events = [];
-		if (value !== undefined) reflectionMergePartial<CClanMatchEventByRange>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CClanMatchEventByRange,
-	): CClanMatchEventByRange {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 rtime_before */ 1:
-					message.rtime_before = reader.uint32();
-					break;
-				case /* optional uint32 rtime_after */ 2:
-					message.rtime_after = reader.uint32();
-					break;
-				case /* optional uint32 qualified */ 3:
-					message.qualified = reader.uint32();
-					break;
-				case /* repeated CClanEventUserNewsTuple events */ 4:
-					message.events.push(CClanEventUserNewsTuple.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CClanMatchEventByRange,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 rtime_before = 1; */
-		if (message.rtime_before !== undefined) writer.tag(1, WireType.Varint).uint32(message.rtime_before);
-		/* optional uint32 rtime_after = 2; */
-		if (message.rtime_after !== undefined) writer.tag(2, WireType.Varint).uint32(message.rtime_after);
-		/* optional uint32 qualified = 3; */
-		if (message.qualified !== undefined) writer.tag(3, WireType.Varint).uint32(message.qualified);
-		/* repeated CClanEventUserNewsTuple events = 4; */
-		for (let i = 0; i < message.events.length; i++)
-			CClanEventUserNewsTuple.internalBinaryWrite(
-				message.events[i],
-				writer.tag(4, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CClanMatchEventByRange", [
+      {
+        no: 1,
+        name: "rtime_before",
+        kind: "scalar",
+        localName: "rtime_before",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "rtime_after",
+        kind: "scalar",
+        localName: "rtime_after",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "qualified",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "events",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CClanEventUserNewsTuple,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CClanMatchEventByRange>): CClanMatchEventByRange {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.events = [];
+    if (value !== undefined) reflectionMergePartial<CClanMatchEventByRange>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CClanMatchEventByRange,
+  ): CClanMatchEventByRange {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 rtime_before */ 1:
+          message.rtime_before = reader.uint32();
+          break;
+        case /* optional uint32 rtime_after */ 2:
+          message.rtime_after = reader.uint32();
+          break;
+        case /* optional uint32 qualified */ 3:
+          message.qualified = reader.uint32();
+          break;
+        case /* repeated CClanEventUserNewsTuple events */ 4:
+          message.events.push(CClanEventUserNewsTuple.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CClanMatchEventByRange,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 rtime_before = 1; */
+    if (message.rtime_before !== undefined) writer.tag(1, WireType.Varint).uint32(message.rtime_before);
+    /* optional uint32 rtime_after = 2; */
+    if (message.rtime_after !== undefined) writer.tag(2, WireType.Varint).uint32(message.rtime_after);
+    /* optional uint32 qualified = 3; */
+    if (message.qualified !== undefined) writer.tag(3, WireType.Varint).uint32(message.qualified);
+    /* repeated CClanEventUserNewsTuple events = 4; */
+    for (let i = 0; i < message.events.length; i++)
+      CClanEventUserNewsTuple.internalBinaryWrite(
+        message.events[i],
+        writer.tag(4, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CClanMatchEventByRange
@@ -2845,246 +2845,246 @@ class CClanMatchEventByRange$Type extends MessageType<CClanMatchEventByRange> {
 export const CClanMatchEventByRange = new CClanMatchEventByRange$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCommunity_ClanAnnouncementInfo$Type extends MessageType<CCommunity_ClanAnnouncementInfo> {
-	constructor() {
-		super("CCommunity_ClanAnnouncementInfo", [
-			{
-				no: 1,
-				name: "gid",
-				kind: "scalar",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "clanid",
-				kind: "scalar",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "posterid",
-				kind: "scalar",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 4,
-				name: "headline",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 5,
-				name: "posttime",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "updatetime",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "body",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 8,
-				name: "commentcount",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 9,
-				name: "tags",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 10,
-				name: "language",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 11,
-				name: "hidden",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 12,
-				name: "forum_topic_id",
-				kind: "scalar",
-				localName: "forum_topic_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 13,
-				name: "event_gid",
-				kind: "scalar",
-				localName: "event_gid",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 14,
-				name: "voteupcount",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 15,
-				name: "votedowncount",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 16,
-				name: "ban_check_result",
-				kind: "enum",
-				localName: "ban_check_result",
-				opt: true,
-				T: () => ["EBanContentCheckResult", EBanContentCheckResult],
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCommunity_ClanAnnouncementInfo>): CCommunity_ClanAnnouncementInfo {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.tags = [];
-		if (value !== undefined) reflectionMergePartial<CCommunity_ClanAnnouncementInfo>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCommunity_ClanAnnouncementInfo,
-	): CCommunity_ClanAnnouncementInfo {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint64 gid */ 1:
-					message.gid = reader.uint64().toBigInt();
-					break;
-				case /* optional uint64 clanid */ 2:
-					message.clanid = reader.uint64().toBigInt();
-					break;
-				case /* optional uint64 posterid */ 3:
-					message.posterid = reader.uint64().toBigInt();
-					break;
-				case /* optional string headline */ 4:
-					message.headline = reader.string();
-					break;
-				case /* optional uint32 posttime */ 5:
-					message.posttime = reader.uint32();
-					break;
-				case /* optional uint32 updatetime */ 6:
-					message.updatetime = reader.uint32();
-					break;
-				case /* optional string body */ 7:
-					message.body = reader.string();
-					break;
-				case /* optional int32 commentcount */ 8:
-					message.commentcount = reader.int32();
-					break;
-				case /* repeated string tags */ 9:
-					message.tags.push(reader.string());
-					break;
-				case /* optional int32 language */ 10:
-					message.language = reader.int32();
-					break;
-				case /* optional bool hidden */ 11:
-					message.hidden = reader.bool();
-					break;
-				case /* optional fixed64 forum_topic_id */ 12:
-					message.forum_topic_id = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed64 event_gid */ 13:
-					message.event_gid = reader.fixed64().toBigInt();
-					break;
-				case /* optional int32 voteupcount */ 14:
-					message.voteupcount = reader.int32();
-					break;
-				case /* optional int32 votedowncount */ 15:
-					message.votedowncount = reader.int32();
-					break;
-				case /* optional EBanContentCheckResult ban_check_result */ 16:
-					message.ban_check_result = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCommunity_ClanAnnouncementInfo,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint64 gid = 1; */
-		if (message.gid !== undefined) writer.tag(1, WireType.Varint).uint64(message.gid);
-		/* optional uint64 clanid = 2; */
-		if (message.clanid !== undefined) writer.tag(2, WireType.Varint).uint64(message.clanid);
-		/* optional uint64 posterid = 3; */
-		if (message.posterid !== undefined) writer.tag(3, WireType.Varint).uint64(message.posterid);
-		/* optional string headline = 4; */
-		if (message.headline !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.headline);
-		/* optional uint32 posttime = 5; */
-		if (message.posttime !== undefined) writer.tag(5, WireType.Varint).uint32(message.posttime);
-		/* optional uint32 updatetime = 6; */
-		if (message.updatetime !== undefined) writer.tag(6, WireType.Varint).uint32(message.updatetime);
-		/* optional string body = 7; */
-		if (message.body !== undefined) writer.tag(7, WireType.LengthDelimited).string(message.body);
-		/* optional int32 commentcount = 8; */
-		if (message.commentcount !== undefined) writer.tag(8, WireType.Varint).int32(message.commentcount);
-		/* repeated string tags = 9; */
-		for (let i = 0; i < message.tags.length; i++) writer.tag(9, WireType.LengthDelimited).string(message.tags[i]);
-		/* optional int32 language = 10; */
-		if (message.language !== undefined) writer.tag(10, WireType.Varint).int32(message.language);
-		/* optional bool hidden = 11; */
-		if (message.hidden !== undefined) writer.tag(11, WireType.Varint).bool(message.hidden);
-		/* optional fixed64 forum_topic_id = 12; */
-		if (message.forum_topic_id !== undefined) writer.tag(12, WireType.Bit64).fixed64(message.forum_topic_id);
-		/* optional fixed64 event_gid = 13; */
-		if (message.event_gid !== undefined) writer.tag(13, WireType.Bit64).fixed64(message.event_gid);
-		/* optional int32 voteupcount = 14; */
-		if (message.voteupcount !== undefined) writer.tag(14, WireType.Varint).int32(message.voteupcount);
-		/* optional int32 votedowncount = 15; */
-		if (message.votedowncount !== undefined) writer.tag(15, WireType.Varint).int32(message.votedowncount);
-		/* optional EBanContentCheckResult ban_check_result = 16; */
-		if (message.ban_check_result !== undefined) writer.tag(16, WireType.Varint).int32(message.ban_check_result);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCommunity_ClanAnnouncementInfo", [
+      {
+        no: 1,
+        name: "gid",
+        kind: "scalar",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "clanid",
+        kind: "scalar",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "posterid",
+        kind: "scalar",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 4,
+        name: "headline",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 5,
+        name: "posttime",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "updatetime",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "body",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 8,
+        name: "commentcount",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 9,
+        name: "tags",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 10,
+        name: "language",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 11,
+        name: "hidden",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 12,
+        name: "forum_topic_id",
+        kind: "scalar",
+        localName: "forum_topic_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 13,
+        name: "event_gid",
+        kind: "scalar",
+        localName: "event_gid",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 14,
+        name: "voteupcount",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 15,
+        name: "votedowncount",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 16,
+        name: "ban_check_result",
+        kind: "enum",
+        localName: "ban_check_result",
+        opt: true,
+        T: () => ["EBanContentCheckResult", EBanContentCheckResult],
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCommunity_ClanAnnouncementInfo>): CCommunity_ClanAnnouncementInfo {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.tags = [];
+    if (value !== undefined) reflectionMergePartial<CCommunity_ClanAnnouncementInfo>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCommunity_ClanAnnouncementInfo,
+  ): CCommunity_ClanAnnouncementInfo {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint64 gid */ 1:
+          message.gid = reader.uint64().toBigInt();
+          break;
+        case /* optional uint64 clanid */ 2:
+          message.clanid = reader.uint64().toBigInt();
+          break;
+        case /* optional uint64 posterid */ 3:
+          message.posterid = reader.uint64().toBigInt();
+          break;
+        case /* optional string headline */ 4:
+          message.headline = reader.string();
+          break;
+        case /* optional uint32 posttime */ 5:
+          message.posttime = reader.uint32();
+          break;
+        case /* optional uint32 updatetime */ 6:
+          message.updatetime = reader.uint32();
+          break;
+        case /* optional string body */ 7:
+          message.body = reader.string();
+          break;
+        case /* optional int32 commentcount */ 8:
+          message.commentcount = reader.int32();
+          break;
+        case /* repeated string tags */ 9:
+          message.tags.push(reader.string());
+          break;
+        case /* optional int32 language */ 10:
+          message.language = reader.int32();
+          break;
+        case /* optional bool hidden */ 11:
+          message.hidden = reader.bool();
+          break;
+        case /* optional fixed64 forum_topic_id */ 12:
+          message.forum_topic_id = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed64 event_gid */ 13:
+          message.event_gid = reader.fixed64().toBigInt();
+          break;
+        case /* optional int32 voteupcount */ 14:
+          message.voteupcount = reader.int32();
+          break;
+        case /* optional int32 votedowncount */ 15:
+          message.votedowncount = reader.int32();
+          break;
+        case /* optional EBanContentCheckResult ban_check_result */ 16:
+          message.ban_check_result = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCommunity_ClanAnnouncementInfo,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint64 gid = 1; */
+    if (message.gid !== undefined) writer.tag(1, WireType.Varint).uint64(message.gid);
+    /* optional uint64 clanid = 2; */
+    if (message.clanid !== undefined) writer.tag(2, WireType.Varint).uint64(message.clanid);
+    /* optional uint64 posterid = 3; */
+    if (message.posterid !== undefined) writer.tag(3, WireType.Varint).uint64(message.posterid);
+    /* optional string headline = 4; */
+    if (message.headline !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.headline);
+    /* optional uint32 posttime = 5; */
+    if (message.posttime !== undefined) writer.tag(5, WireType.Varint).uint32(message.posttime);
+    /* optional uint32 updatetime = 6; */
+    if (message.updatetime !== undefined) writer.tag(6, WireType.Varint).uint32(message.updatetime);
+    /* optional string body = 7; */
+    if (message.body !== undefined) writer.tag(7, WireType.LengthDelimited).string(message.body);
+    /* optional int32 commentcount = 8; */
+    if (message.commentcount !== undefined) writer.tag(8, WireType.Varint).int32(message.commentcount);
+    /* repeated string tags = 9; */
+    for (let i = 0; i < message.tags.length; i++) writer.tag(9, WireType.LengthDelimited).string(message.tags[i]);
+    /* optional int32 language = 10; */
+    if (message.language !== undefined) writer.tag(10, WireType.Varint).int32(message.language);
+    /* optional bool hidden = 11; */
+    if (message.hidden !== undefined) writer.tag(11, WireType.Varint).bool(message.hidden);
+    /* optional fixed64 forum_topic_id = 12; */
+    if (message.forum_topic_id !== undefined) writer.tag(12, WireType.Bit64).fixed64(message.forum_topic_id);
+    /* optional fixed64 event_gid = 13; */
+    if (message.event_gid !== undefined) writer.tag(13, WireType.Bit64).fixed64(message.event_gid);
+    /* optional int32 voteupcount = 14; */
+    if (message.voteupcount !== undefined) writer.tag(14, WireType.Varint).int32(message.voteupcount);
+    /* optional int32 votedowncount = 15; */
+    if (message.votedowncount !== undefined) writer.tag(15, WireType.Varint).int32(message.votedowncount);
+    /* optional EBanContentCheckResult ban_check_result = 16; */
+    if (message.ban_check_result !== undefined) writer.tag(16, WireType.Varint).int32(message.ban_check_result);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCommunity_ClanAnnouncementInfo
@@ -3092,449 +3092,449 @@ class CCommunity_ClanAnnouncementInfo$Type extends MessageType<CCommunity_ClanAn
 export const CCommunity_ClanAnnouncementInfo = new CCommunity_ClanAnnouncementInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CClanEventData$Type extends MessageType<CClanEventData> {
-	constructor() {
-		super("CClanEventData", [
-			{
-				no: 1,
-				name: "gid",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "clan_steamid",
-				kind: "scalar",
-				localName: "clan_steamid",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "event_name",
-				kind: "scalar",
-				localName: "event_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 4,
-				name: "event_type",
-				kind: "enum",
-				localName: "event_type",
-				opt: true,
-				T: () => ["EProtoClanEventType", EProtoClanEventType],
-			},
-			{
-				no: 5,
-				name: "appid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "server_address",
-				kind: "scalar",
-				localName: "server_address",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 7,
-				name: "server_password",
-				kind: "scalar",
-				localName: "server_password",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 8,
-				name: "rtime32_start_time",
-				kind: "scalar",
-				localName: "rtime32_start_time",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "rtime32_end_time",
-				kind: "scalar",
-				localName: "rtime32_end_time",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "comment_count",
-				kind: "scalar",
-				localName: "comment_count",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 11,
-				name: "creator_steamid",
-				kind: "scalar",
-				localName: "creator_steamid",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 12,
-				name: "last_update_steamid",
-				kind: "scalar",
-				localName: "last_update_steamid",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 13,
-				name: "event_notes",
-				kind: "scalar",
-				localName: "event_notes",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 14,
-				name: "jsondata",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 15,
-				name: "announcement_body",
-				kind: "message",
-				localName: "announcement_body",
-				T: () => CCommunity_ClanAnnouncementInfo,
-			},
-			{
-				no: 16,
-				name: "published",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 17,
-				name: "hidden",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 18,
-				name: "rtime32_visibility_start",
-				kind: "scalar",
-				localName: "rtime32_visibility_start",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 19,
-				name: "rtime32_visibility_end",
-				kind: "scalar",
-				localName: "rtime32_visibility_end",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 20,
-				name: "broadcaster_accountid",
-				kind: "scalar",
-				localName: "broadcaster_accountid",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 21,
-				name: "follower_count",
-				kind: "scalar",
-				localName: "follower_count",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 22,
-				name: "ignore_count",
-				kind: "scalar",
-				localName: "ignore_count",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 23,
-				name: "forum_topic_id",
-				kind: "scalar",
-				localName: "forum_topic_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 24,
-				name: "rtime32_last_modified",
-				kind: "scalar",
-				localName: "rtime32_last_modified",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 25,
-				name: "news_post_gid",
-				kind: "scalar",
-				localName: "news_post_gid",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 26,
-				name: "rtime_mod_reviewed",
-				kind: "scalar",
-				localName: "rtime_mod_reviewed",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 27,
-				name: "featured_app_tagid",
-				kind: "scalar",
-				localName: "featured_app_tagid",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 28,
-				name: "referenced_appids",
-				kind: "scalar",
-				localName: "referenced_appids",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 29,
-				name: "build_id",
-				kind: "scalar",
-				localName: "build_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 30,
-				name: "build_branch",
-				kind: "scalar",
-				localName: "build_branch",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CClanEventData>): CClanEventData {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.referenced_appids = [];
-		if (value !== undefined) reflectionMergePartial<CClanEventData>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CClanEventData,
-	): CClanEventData {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed64 gid */ 1:
-					message.gid = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed64 clan_steamid */ 2:
-					message.clan_steamid = reader.fixed64().toBigInt();
-					break;
-				case /* optional string event_name */ 3:
-					message.event_name = reader.string();
-					break;
-				case /* optional EProtoClanEventType event_type */ 4:
-					message.event_type = reader.int32();
-					break;
-				case /* optional uint32 appid */ 5:
-					message.appid = reader.uint32();
-					break;
-				case /* optional string server_address */ 6:
-					message.server_address = reader.string();
-					break;
-				case /* optional string server_password */ 7:
-					message.server_password = reader.string();
-					break;
-				case /* optional uint32 rtime32_start_time */ 8:
-					message.rtime32_start_time = reader.uint32();
-					break;
-				case /* optional uint32 rtime32_end_time */ 9:
-					message.rtime32_end_time = reader.uint32();
-					break;
-				case /* optional int32 comment_count */ 10:
-					message.comment_count = reader.int32();
-					break;
-				case /* optional fixed64 creator_steamid */ 11:
-					message.creator_steamid = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed64 last_update_steamid */ 12:
-					message.last_update_steamid = reader.fixed64().toBigInt();
-					break;
-				case /* optional string event_notes */ 13:
-					message.event_notes = reader.string();
-					break;
-				case /* optional string jsondata */ 14:
-					message.jsondata = reader.string();
-					break;
-				case /* optional CCommunity_ClanAnnouncementInfo announcement_body */ 15:
-					message.announcement_body = CCommunity_ClanAnnouncementInfo.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.announcement_body,
-					);
-					break;
-				case /* optional bool published */ 16:
-					message.published = reader.bool();
-					break;
-				case /* optional bool hidden */ 17:
-					message.hidden = reader.bool();
-					break;
-				case /* optional uint32 rtime32_visibility_start */ 18:
-					message.rtime32_visibility_start = reader.uint32();
-					break;
-				case /* optional uint32 rtime32_visibility_end */ 19:
-					message.rtime32_visibility_end = reader.uint32();
-					break;
-				case /* optional uint32 broadcaster_accountid */ 20:
-					message.broadcaster_accountid = reader.uint32();
-					break;
-				case /* optional uint32 follower_count */ 21:
-					message.follower_count = reader.uint32();
-					break;
-				case /* optional uint32 ignore_count */ 22:
-					message.ignore_count = reader.uint32();
-					break;
-				case /* optional fixed64 forum_topic_id */ 23:
-					message.forum_topic_id = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 rtime32_last_modified */ 24:
-					message.rtime32_last_modified = reader.uint32();
-					break;
-				case /* optional fixed64 news_post_gid */ 25:
-					message.news_post_gid = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 rtime_mod_reviewed */ 26:
-					message.rtime_mod_reviewed = reader.uint32();
-					break;
-				case /* optional uint32 featured_app_tagid */ 27:
-					message.featured_app_tagid = reader.uint32();
-					break;
-				case /* repeated uint32 referenced_appids */ 28:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.referenced_appids.push(reader.uint32());
-					else message.referenced_appids.push(reader.uint32());
-					break;
-				case /* optional uint32 build_id */ 29:
-					message.build_id = reader.uint32();
-					break;
-				case /* optional string build_branch */ 30:
-					message.build_branch = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CClanEventData, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional fixed64 gid = 1; */
-		if (message.gid !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.gid);
-		/* optional fixed64 clan_steamid = 2; */
-		if (message.clan_steamid !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.clan_steamid);
-		/* optional string event_name = 3; */
-		if (message.event_name !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.event_name);
-		/* optional EProtoClanEventType event_type = 4; */
-		if (message.event_type !== undefined) writer.tag(4, WireType.Varint).int32(message.event_type);
-		/* optional uint32 appid = 5; */
-		if (message.appid !== undefined) writer.tag(5, WireType.Varint).uint32(message.appid);
-		/* optional string server_address = 6; */
-		if (message.server_address !== undefined) writer.tag(6, WireType.LengthDelimited).string(message.server_address);
-		/* optional string server_password = 7; */
-		if (message.server_password !== undefined) writer.tag(7, WireType.LengthDelimited).string(message.server_password);
-		/* optional uint32 rtime32_start_time = 8; */
-		if (message.rtime32_start_time !== undefined) writer.tag(8, WireType.Varint).uint32(message.rtime32_start_time);
-		/* optional uint32 rtime32_end_time = 9; */
-		if (message.rtime32_end_time !== undefined) writer.tag(9, WireType.Varint).uint32(message.rtime32_end_time);
-		/* optional int32 comment_count = 10; */
-		if (message.comment_count !== undefined) writer.tag(10, WireType.Varint).int32(message.comment_count);
-		/* optional fixed64 creator_steamid = 11; */
-		if (message.creator_steamid !== undefined) writer.tag(11, WireType.Bit64).fixed64(message.creator_steamid);
-		/* optional fixed64 last_update_steamid = 12; */
-		if (message.last_update_steamid !== undefined) writer.tag(12, WireType.Bit64).fixed64(message.last_update_steamid);
-		/* optional string event_notes = 13; */
-		if (message.event_notes !== undefined) writer.tag(13, WireType.LengthDelimited).string(message.event_notes);
-		/* optional string jsondata = 14; */
-		if (message.jsondata !== undefined) writer.tag(14, WireType.LengthDelimited).string(message.jsondata);
-		/* optional CCommunity_ClanAnnouncementInfo announcement_body = 15; */
-		if (message.announcement_body)
-			CCommunity_ClanAnnouncementInfo.internalBinaryWrite(
-				message.announcement_body,
-				writer.tag(15, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional bool published = 16; */
-		if (message.published !== undefined) writer.tag(16, WireType.Varint).bool(message.published);
-		/* optional bool hidden = 17; */
-		if (message.hidden !== undefined) writer.tag(17, WireType.Varint).bool(message.hidden);
-		/* optional uint32 rtime32_visibility_start = 18; */
-		if (message.rtime32_visibility_start !== undefined)
-			writer.tag(18, WireType.Varint).uint32(message.rtime32_visibility_start);
-		/* optional uint32 rtime32_visibility_end = 19; */
-		if (message.rtime32_visibility_end !== undefined)
-			writer.tag(19, WireType.Varint).uint32(message.rtime32_visibility_end);
-		/* optional uint32 broadcaster_accountid = 20; */
-		if (message.broadcaster_accountid !== undefined)
-			writer.tag(20, WireType.Varint).uint32(message.broadcaster_accountid);
-		/* optional uint32 follower_count = 21; */
-		if (message.follower_count !== undefined) writer.tag(21, WireType.Varint).uint32(message.follower_count);
-		/* optional uint32 ignore_count = 22; */
-		if (message.ignore_count !== undefined) writer.tag(22, WireType.Varint).uint32(message.ignore_count);
-		/* optional fixed64 forum_topic_id = 23; */
-		if (message.forum_topic_id !== undefined) writer.tag(23, WireType.Bit64).fixed64(message.forum_topic_id);
-		/* optional uint32 rtime32_last_modified = 24; */
-		if (message.rtime32_last_modified !== undefined)
-			writer.tag(24, WireType.Varint).uint32(message.rtime32_last_modified);
-		/* optional fixed64 news_post_gid = 25; */
-		if (message.news_post_gid !== undefined) writer.tag(25, WireType.Bit64).fixed64(message.news_post_gid);
-		/* optional uint32 rtime_mod_reviewed = 26; */
-		if (message.rtime_mod_reviewed !== undefined) writer.tag(26, WireType.Varint).uint32(message.rtime_mod_reviewed);
-		/* optional uint32 featured_app_tagid = 27; */
-		if (message.featured_app_tagid !== undefined) writer.tag(27, WireType.Varint).uint32(message.featured_app_tagid);
-		/* repeated uint32 referenced_appids = 28; */
-		for (let i = 0; i < message.referenced_appids.length; i++)
-			writer.tag(28, WireType.Varint).uint32(message.referenced_appids[i]);
-		/* optional uint32 build_id = 29; */
-		if (message.build_id !== undefined) writer.tag(29, WireType.Varint).uint32(message.build_id);
-		/* optional string build_branch = 30; */
-		if (message.build_branch !== undefined) writer.tag(30, WireType.LengthDelimited).string(message.build_branch);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CClanEventData", [
+      {
+        no: 1,
+        name: "gid",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "clan_steamid",
+        kind: "scalar",
+        localName: "clan_steamid",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "event_name",
+        kind: "scalar",
+        localName: "event_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 4,
+        name: "event_type",
+        kind: "enum",
+        localName: "event_type",
+        opt: true,
+        T: () => ["EProtoClanEventType", EProtoClanEventType],
+      },
+      {
+        no: 5,
+        name: "appid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "server_address",
+        kind: "scalar",
+        localName: "server_address",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 7,
+        name: "server_password",
+        kind: "scalar",
+        localName: "server_password",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 8,
+        name: "rtime32_start_time",
+        kind: "scalar",
+        localName: "rtime32_start_time",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "rtime32_end_time",
+        kind: "scalar",
+        localName: "rtime32_end_time",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "comment_count",
+        kind: "scalar",
+        localName: "comment_count",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 11,
+        name: "creator_steamid",
+        kind: "scalar",
+        localName: "creator_steamid",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 12,
+        name: "last_update_steamid",
+        kind: "scalar",
+        localName: "last_update_steamid",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 13,
+        name: "event_notes",
+        kind: "scalar",
+        localName: "event_notes",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 14,
+        name: "jsondata",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 15,
+        name: "announcement_body",
+        kind: "message",
+        localName: "announcement_body",
+        T: () => CCommunity_ClanAnnouncementInfo,
+      },
+      {
+        no: 16,
+        name: "published",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 17,
+        name: "hidden",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 18,
+        name: "rtime32_visibility_start",
+        kind: "scalar",
+        localName: "rtime32_visibility_start",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 19,
+        name: "rtime32_visibility_end",
+        kind: "scalar",
+        localName: "rtime32_visibility_end",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 20,
+        name: "broadcaster_accountid",
+        kind: "scalar",
+        localName: "broadcaster_accountid",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 21,
+        name: "follower_count",
+        kind: "scalar",
+        localName: "follower_count",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 22,
+        name: "ignore_count",
+        kind: "scalar",
+        localName: "ignore_count",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 23,
+        name: "forum_topic_id",
+        kind: "scalar",
+        localName: "forum_topic_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 24,
+        name: "rtime32_last_modified",
+        kind: "scalar",
+        localName: "rtime32_last_modified",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 25,
+        name: "news_post_gid",
+        kind: "scalar",
+        localName: "news_post_gid",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 26,
+        name: "rtime_mod_reviewed",
+        kind: "scalar",
+        localName: "rtime_mod_reviewed",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 27,
+        name: "featured_app_tagid",
+        kind: "scalar",
+        localName: "featured_app_tagid",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 28,
+        name: "referenced_appids",
+        kind: "scalar",
+        localName: "referenced_appids",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 29,
+        name: "build_id",
+        kind: "scalar",
+        localName: "build_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 30,
+        name: "build_branch",
+        kind: "scalar",
+        localName: "build_branch",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CClanEventData>): CClanEventData {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.referenced_appids = [];
+    if (value !== undefined) reflectionMergePartial<CClanEventData>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CClanEventData,
+  ): CClanEventData {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed64 gid */ 1:
+          message.gid = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed64 clan_steamid */ 2:
+          message.clan_steamid = reader.fixed64().toBigInt();
+          break;
+        case /* optional string event_name */ 3:
+          message.event_name = reader.string();
+          break;
+        case /* optional EProtoClanEventType event_type */ 4:
+          message.event_type = reader.int32();
+          break;
+        case /* optional uint32 appid */ 5:
+          message.appid = reader.uint32();
+          break;
+        case /* optional string server_address */ 6:
+          message.server_address = reader.string();
+          break;
+        case /* optional string server_password */ 7:
+          message.server_password = reader.string();
+          break;
+        case /* optional uint32 rtime32_start_time */ 8:
+          message.rtime32_start_time = reader.uint32();
+          break;
+        case /* optional uint32 rtime32_end_time */ 9:
+          message.rtime32_end_time = reader.uint32();
+          break;
+        case /* optional int32 comment_count */ 10:
+          message.comment_count = reader.int32();
+          break;
+        case /* optional fixed64 creator_steamid */ 11:
+          message.creator_steamid = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed64 last_update_steamid */ 12:
+          message.last_update_steamid = reader.fixed64().toBigInt();
+          break;
+        case /* optional string event_notes */ 13:
+          message.event_notes = reader.string();
+          break;
+        case /* optional string jsondata */ 14:
+          message.jsondata = reader.string();
+          break;
+        case /* optional CCommunity_ClanAnnouncementInfo announcement_body */ 15:
+          message.announcement_body = CCommunity_ClanAnnouncementInfo.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.announcement_body,
+          );
+          break;
+        case /* optional bool published */ 16:
+          message.published = reader.bool();
+          break;
+        case /* optional bool hidden */ 17:
+          message.hidden = reader.bool();
+          break;
+        case /* optional uint32 rtime32_visibility_start */ 18:
+          message.rtime32_visibility_start = reader.uint32();
+          break;
+        case /* optional uint32 rtime32_visibility_end */ 19:
+          message.rtime32_visibility_end = reader.uint32();
+          break;
+        case /* optional uint32 broadcaster_accountid */ 20:
+          message.broadcaster_accountid = reader.uint32();
+          break;
+        case /* optional uint32 follower_count */ 21:
+          message.follower_count = reader.uint32();
+          break;
+        case /* optional uint32 ignore_count */ 22:
+          message.ignore_count = reader.uint32();
+          break;
+        case /* optional fixed64 forum_topic_id */ 23:
+          message.forum_topic_id = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 rtime32_last_modified */ 24:
+          message.rtime32_last_modified = reader.uint32();
+          break;
+        case /* optional fixed64 news_post_gid */ 25:
+          message.news_post_gid = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 rtime_mod_reviewed */ 26:
+          message.rtime_mod_reviewed = reader.uint32();
+          break;
+        case /* optional uint32 featured_app_tagid */ 27:
+          message.featured_app_tagid = reader.uint32();
+          break;
+        case /* repeated uint32 referenced_appids */ 28:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.referenced_appids.push(reader.uint32());
+          else message.referenced_appids.push(reader.uint32());
+          break;
+        case /* optional uint32 build_id */ 29:
+          message.build_id = reader.uint32();
+          break;
+        case /* optional string build_branch */ 30:
+          message.build_branch = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CClanEventData, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional fixed64 gid = 1; */
+    if (message.gid !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.gid);
+    /* optional fixed64 clan_steamid = 2; */
+    if (message.clan_steamid !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.clan_steamid);
+    /* optional string event_name = 3; */
+    if (message.event_name !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.event_name);
+    /* optional EProtoClanEventType event_type = 4; */
+    if (message.event_type !== undefined) writer.tag(4, WireType.Varint).int32(message.event_type);
+    /* optional uint32 appid = 5; */
+    if (message.appid !== undefined) writer.tag(5, WireType.Varint).uint32(message.appid);
+    /* optional string server_address = 6; */
+    if (message.server_address !== undefined) writer.tag(6, WireType.LengthDelimited).string(message.server_address);
+    /* optional string server_password = 7; */
+    if (message.server_password !== undefined) writer.tag(7, WireType.LengthDelimited).string(message.server_password);
+    /* optional uint32 rtime32_start_time = 8; */
+    if (message.rtime32_start_time !== undefined) writer.tag(8, WireType.Varint).uint32(message.rtime32_start_time);
+    /* optional uint32 rtime32_end_time = 9; */
+    if (message.rtime32_end_time !== undefined) writer.tag(9, WireType.Varint).uint32(message.rtime32_end_time);
+    /* optional int32 comment_count = 10; */
+    if (message.comment_count !== undefined) writer.tag(10, WireType.Varint).int32(message.comment_count);
+    /* optional fixed64 creator_steamid = 11; */
+    if (message.creator_steamid !== undefined) writer.tag(11, WireType.Bit64).fixed64(message.creator_steamid);
+    /* optional fixed64 last_update_steamid = 12; */
+    if (message.last_update_steamid !== undefined) writer.tag(12, WireType.Bit64).fixed64(message.last_update_steamid);
+    /* optional string event_notes = 13; */
+    if (message.event_notes !== undefined) writer.tag(13, WireType.LengthDelimited).string(message.event_notes);
+    /* optional string jsondata = 14; */
+    if (message.jsondata !== undefined) writer.tag(14, WireType.LengthDelimited).string(message.jsondata);
+    /* optional CCommunity_ClanAnnouncementInfo announcement_body = 15; */
+    if (message.announcement_body)
+      CCommunity_ClanAnnouncementInfo.internalBinaryWrite(
+        message.announcement_body,
+        writer.tag(15, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional bool published = 16; */
+    if (message.published !== undefined) writer.tag(16, WireType.Varint).bool(message.published);
+    /* optional bool hidden = 17; */
+    if (message.hidden !== undefined) writer.tag(17, WireType.Varint).bool(message.hidden);
+    /* optional uint32 rtime32_visibility_start = 18; */
+    if (message.rtime32_visibility_start !== undefined)
+      writer.tag(18, WireType.Varint).uint32(message.rtime32_visibility_start);
+    /* optional uint32 rtime32_visibility_end = 19; */
+    if (message.rtime32_visibility_end !== undefined)
+      writer.tag(19, WireType.Varint).uint32(message.rtime32_visibility_end);
+    /* optional uint32 broadcaster_accountid = 20; */
+    if (message.broadcaster_accountid !== undefined)
+      writer.tag(20, WireType.Varint).uint32(message.broadcaster_accountid);
+    /* optional uint32 follower_count = 21; */
+    if (message.follower_count !== undefined) writer.tag(21, WireType.Varint).uint32(message.follower_count);
+    /* optional uint32 ignore_count = 22; */
+    if (message.ignore_count !== undefined) writer.tag(22, WireType.Varint).uint32(message.ignore_count);
+    /* optional fixed64 forum_topic_id = 23; */
+    if (message.forum_topic_id !== undefined) writer.tag(23, WireType.Bit64).fixed64(message.forum_topic_id);
+    /* optional uint32 rtime32_last_modified = 24; */
+    if (message.rtime32_last_modified !== undefined)
+      writer.tag(24, WireType.Varint).uint32(message.rtime32_last_modified);
+    /* optional fixed64 news_post_gid = 25; */
+    if (message.news_post_gid !== undefined) writer.tag(25, WireType.Bit64).fixed64(message.news_post_gid);
+    /* optional uint32 rtime_mod_reviewed = 26; */
+    if (message.rtime_mod_reviewed !== undefined) writer.tag(26, WireType.Varint).uint32(message.rtime_mod_reviewed);
+    /* optional uint32 featured_app_tagid = 27; */
+    if (message.featured_app_tagid !== undefined) writer.tag(27, WireType.Varint).uint32(message.featured_app_tagid);
+    /* repeated uint32 referenced_appids = 28; */
+    for (let i = 0; i < message.referenced_appids.length; i++)
+      writer.tag(28, WireType.Varint).uint32(message.referenced_appids[i]);
+    /* optional uint32 build_id = 29; */
+    if (message.build_id !== undefined) writer.tag(29, WireType.Varint).uint32(message.build_id);
+    /* optional string build_branch = 30; */
+    if (message.build_branch !== undefined) writer.tag(30, WireType.LengthDelimited).string(message.build_branch);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CClanEventData
@@ -3542,166 +3542,166 @@ class CClanEventData$Type extends MessageType<CClanEventData> {
 export const CClanEventData = new CClanEventData$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CBilling_Address$Type extends MessageType<CBilling_Address> {
-	constructor() {
-		super("CBilling_Address", [
-			{
-				no: 1,
-				name: "first_name",
-				kind: "scalar",
-				localName: "first_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "last_name",
-				kind: "scalar",
-				localName: "last_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "address1",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 4,
-				name: "address2",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 5,
-				name: "city",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 6,
-				name: "us_state",
-				kind: "scalar",
-				localName: "us_state",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 7,
-				name: "country_code",
-				kind: "scalar",
-				localName: "country_code",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 8,
-				name: "postcode",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 9,
-				name: "zip_plus4",
-				kind: "scalar",
-				localName: "zip_plus4",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 10,
-				name: "phone",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CBilling_Address>): CBilling_Address {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CBilling_Address>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CBilling_Address,
-	): CBilling_Address {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string first_name */ 1:
-					message.first_name = reader.string();
-					break;
-				case /* optional string last_name */ 2:
-					message.last_name = reader.string();
-					break;
-				case /* optional string address1 */ 3:
-					message.address1 = reader.string();
-					break;
-				case /* optional string address2 */ 4:
-					message.address2 = reader.string();
-					break;
-				case /* optional string city */ 5:
-					message.city = reader.string();
-					break;
-				case /* optional string us_state */ 6:
-					message.us_state = reader.string();
-					break;
-				case /* optional string country_code */ 7:
-					message.country_code = reader.string();
-					break;
-				case /* optional string postcode */ 8:
-					message.postcode = reader.string();
-					break;
-				case /* optional int32 zip_plus4 */ 9:
-					message.zip_plus4 = reader.int32();
-					break;
-				case /* optional string phone */ 10:
-					message.phone = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CBilling_Address, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional string first_name = 1; */
-		if (message.first_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.first_name);
-		/* optional string last_name = 2; */
-		if (message.last_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.last_name);
-		/* optional string address1 = 3; */
-		if (message.address1 !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.address1);
-		/* optional string address2 = 4; */
-		if (message.address2 !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.address2);
-		/* optional string city = 5; */
-		if (message.city !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.city);
-		/* optional string us_state = 6; */
-		if (message.us_state !== undefined) writer.tag(6, WireType.LengthDelimited).string(message.us_state);
-		/* optional string country_code = 7; */
-		if (message.country_code !== undefined) writer.tag(7, WireType.LengthDelimited).string(message.country_code);
-		/* optional string postcode = 8; */
-		if (message.postcode !== undefined) writer.tag(8, WireType.LengthDelimited).string(message.postcode);
-		/* optional int32 zip_plus4 = 9; */
-		if (message.zip_plus4 !== undefined) writer.tag(9, WireType.Varint).int32(message.zip_plus4);
-		/* optional string phone = 10; */
-		if (message.phone !== undefined) writer.tag(10, WireType.LengthDelimited).string(message.phone);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CBilling_Address", [
+      {
+        no: 1,
+        name: "first_name",
+        kind: "scalar",
+        localName: "first_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "last_name",
+        kind: "scalar",
+        localName: "last_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "address1",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 4,
+        name: "address2",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 5,
+        name: "city",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 6,
+        name: "us_state",
+        kind: "scalar",
+        localName: "us_state",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 7,
+        name: "country_code",
+        kind: "scalar",
+        localName: "country_code",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 8,
+        name: "postcode",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 9,
+        name: "zip_plus4",
+        kind: "scalar",
+        localName: "zip_plus4",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 10,
+        name: "phone",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CBilling_Address>): CBilling_Address {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CBilling_Address>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CBilling_Address,
+  ): CBilling_Address {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string first_name */ 1:
+          message.first_name = reader.string();
+          break;
+        case /* optional string last_name */ 2:
+          message.last_name = reader.string();
+          break;
+        case /* optional string address1 */ 3:
+          message.address1 = reader.string();
+          break;
+        case /* optional string address2 */ 4:
+          message.address2 = reader.string();
+          break;
+        case /* optional string city */ 5:
+          message.city = reader.string();
+          break;
+        case /* optional string us_state */ 6:
+          message.us_state = reader.string();
+          break;
+        case /* optional string country_code */ 7:
+          message.country_code = reader.string();
+          break;
+        case /* optional string postcode */ 8:
+          message.postcode = reader.string();
+          break;
+        case /* optional int32 zip_plus4 */ 9:
+          message.zip_plus4 = reader.int32();
+          break;
+        case /* optional string phone */ 10:
+          message.phone = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CBilling_Address, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional string first_name = 1; */
+    if (message.first_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.first_name);
+    /* optional string last_name = 2; */
+    if (message.last_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.last_name);
+    /* optional string address1 = 3; */
+    if (message.address1 !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.address1);
+    /* optional string address2 = 4; */
+    if (message.address2 !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.address2);
+    /* optional string city = 5; */
+    if (message.city !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.city);
+    /* optional string us_state = 6; */
+    if (message.us_state !== undefined) writer.tag(6, WireType.LengthDelimited).string(message.us_state);
+    /* optional string country_code = 7; */
+    if (message.country_code !== undefined) writer.tag(7, WireType.LengthDelimited).string(message.country_code);
+    /* optional string postcode = 8; */
+    if (message.postcode !== undefined) writer.tag(8, WireType.LengthDelimited).string(message.postcode);
+    /* optional int32 zip_plus4 = 9; */
+    if (message.zip_plus4 !== undefined) writer.tag(9, WireType.Varint).int32(message.zip_plus4);
+    /* optional string phone = 10; */
+    if (message.phone !== undefined) writer.tag(10, WireType.LengthDelimited).string(message.phone);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CBilling_Address
@@ -3709,148 +3709,148 @@ class CBilling_Address$Type extends MessageType<CBilling_Address> {
 export const CBilling_Address = new CBilling_Address$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CPackageReservationStatus$Type extends MessageType<CPackageReservationStatus> {
-	constructor() {
-		super("CPackageReservationStatus", [
-			{
-				no: 1,
-				name: "packageid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "reservation_state",
-				kind: "scalar",
-				localName: "reservation_state",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "queue_position",
-				kind: "scalar",
-				localName: "queue_position",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "total_queue_size",
-				kind: "scalar",
-				localName: "total_queue_size",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "reservation_country_code",
-				kind: "scalar",
-				localName: "reservation_country_code",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 6,
-				name: "expired",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 7,
-				name: "time_expires",
-				kind: "scalar",
-				localName: "time_expires",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "time_reserved",
-				kind: "scalar",
-				localName: "time_reserved",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CPackageReservationStatus>): CPackageReservationStatus {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CPackageReservationStatus>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CPackageReservationStatus,
-	): CPackageReservationStatus {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 packageid */ 1:
-					message.packageid = reader.uint32();
-					break;
-				case /* optional int32 reservation_state */ 2:
-					message.reservation_state = reader.int32();
-					break;
-				case /* optional int32 queue_position */ 3:
-					message.queue_position = reader.int32();
-					break;
-				case /* optional int32 total_queue_size */ 4:
-					message.total_queue_size = reader.int32();
-					break;
-				case /* optional string reservation_country_code */ 5:
-					message.reservation_country_code = reader.string();
-					break;
-				case /* optional bool expired */ 6:
-					message.expired = reader.bool();
-					break;
-				case /* optional uint32 time_expires */ 7:
-					message.time_expires = reader.uint32();
-					break;
-				case /* optional uint32 time_reserved */ 8:
-					message.time_reserved = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CPackageReservationStatus,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 packageid = 1; */
-		if (message.packageid !== undefined) writer.tag(1, WireType.Varint).uint32(message.packageid);
-		/* optional int32 reservation_state = 2; */
-		if (message.reservation_state !== undefined) writer.tag(2, WireType.Varint).int32(message.reservation_state);
-		/* optional int32 queue_position = 3; */
-		if (message.queue_position !== undefined) writer.tag(3, WireType.Varint).int32(message.queue_position);
-		/* optional int32 total_queue_size = 4; */
-		if (message.total_queue_size !== undefined) writer.tag(4, WireType.Varint).int32(message.total_queue_size);
-		/* optional string reservation_country_code = 5; */
-		if (message.reservation_country_code !== undefined)
-			writer.tag(5, WireType.LengthDelimited).string(message.reservation_country_code);
-		/* optional bool expired = 6; */
-		if (message.expired !== undefined) writer.tag(6, WireType.Varint).bool(message.expired);
-		/* optional uint32 time_expires = 7; */
-		if (message.time_expires !== undefined) writer.tag(7, WireType.Varint).uint32(message.time_expires);
-		/* optional uint32 time_reserved = 8; */
-		if (message.time_reserved !== undefined) writer.tag(8, WireType.Varint).uint32(message.time_reserved);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CPackageReservationStatus", [
+      {
+        no: 1,
+        name: "packageid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "reservation_state",
+        kind: "scalar",
+        localName: "reservation_state",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "queue_position",
+        kind: "scalar",
+        localName: "queue_position",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "total_queue_size",
+        kind: "scalar",
+        localName: "total_queue_size",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "reservation_country_code",
+        kind: "scalar",
+        localName: "reservation_country_code",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 6,
+        name: "expired",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 7,
+        name: "time_expires",
+        kind: "scalar",
+        localName: "time_expires",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "time_reserved",
+        kind: "scalar",
+        localName: "time_reserved",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CPackageReservationStatus>): CPackageReservationStatus {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CPackageReservationStatus>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CPackageReservationStatus,
+  ): CPackageReservationStatus {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 packageid */ 1:
+          message.packageid = reader.uint32();
+          break;
+        case /* optional int32 reservation_state */ 2:
+          message.reservation_state = reader.int32();
+          break;
+        case /* optional int32 queue_position */ 3:
+          message.queue_position = reader.int32();
+          break;
+        case /* optional int32 total_queue_size */ 4:
+          message.total_queue_size = reader.int32();
+          break;
+        case /* optional string reservation_country_code */ 5:
+          message.reservation_country_code = reader.string();
+          break;
+        case /* optional bool expired */ 6:
+          message.expired = reader.bool();
+          break;
+        case /* optional uint32 time_expires */ 7:
+          message.time_expires = reader.uint32();
+          break;
+        case /* optional uint32 time_reserved */ 8:
+          message.time_reserved = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CPackageReservationStatus,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 packageid = 1; */
+    if (message.packageid !== undefined) writer.tag(1, WireType.Varint).uint32(message.packageid);
+    /* optional int32 reservation_state = 2; */
+    if (message.reservation_state !== undefined) writer.tag(2, WireType.Varint).int32(message.reservation_state);
+    /* optional int32 queue_position = 3; */
+    if (message.queue_position !== undefined) writer.tag(3, WireType.Varint).int32(message.queue_position);
+    /* optional int32 total_queue_size = 4; */
+    if (message.total_queue_size !== undefined) writer.tag(4, WireType.Varint).int32(message.total_queue_size);
+    /* optional string reservation_country_code = 5; */
+    if (message.reservation_country_code !== undefined)
+      writer.tag(5, WireType.LengthDelimited).string(message.reservation_country_code);
+    /* optional bool expired = 6; */
+    if (message.expired !== undefined) writer.tag(6, WireType.Varint).bool(message.expired);
+    /* optional uint32 time_expires = 7; */
+    if (message.time_expires !== undefined) writer.tag(7, WireType.Varint).uint32(message.time_expires);
+    /* optional uint32 time_reserved = 8; */
+    if (message.time_reserved !== undefined) writer.tag(8, WireType.Varint).uint32(message.time_reserved);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CPackageReservationStatus
@@ -3858,65 +3858,65 @@ class CPackageReservationStatus$Type extends MessageType<CPackageReservationStat
 export const CPackageReservationStatus = new CPackageReservationStatus$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgKeyValuePair$Type extends MessageType<CMsgKeyValuePair> {
-	constructor() {
-		super("CMsgKeyValuePair", [
-			{
-				no: 1,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "value",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgKeyValuePair>): CMsgKeyValuePair {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgKeyValuePair>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgKeyValuePair,
-	): CMsgKeyValuePair {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string name */ 1:
-					message.name = reader.string();
-					break;
-				case /* optional string value */ 2:
-					message.value = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgKeyValuePair, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional string name = 1; */
-		if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
-		/* optional string value = 2; */
-		if (message.value !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.value);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgKeyValuePair", [
+      {
+        no: 1,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "value",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgKeyValuePair>): CMsgKeyValuePair {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgKeyValuePair>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgKeyValuePair,
+  ): CMsgKeyValuePair {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string name */ 1:
+          message.name = reader.string();
+          break;
+        case /* optional string value */ 2:
+          message.value = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgKeyValuePair, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional string name = 1; */
+    if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
+    /* optional string value = 2; */
+    if (message.value !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.value);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgKeyValuePair
@@ -3924,59 +3924,59 @@ class CMsgKeyValuePair$Type extends MessageType<CMsgKeyValuePair> {
 export const CMsgKeyValuePair = new CMsgKeyValuePair$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgKeyValueSet$Type extends MessageType<CMsgKeyValueSet> {
-	constructor() {
-		super("CMsgKeyValueSet", [
-			{
-				no: 1,
-				name: "pairs",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgKeyValuePair,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgKeyValueSet>): CMsgKeyValueSet {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.pairs = [];
-		if (value !== undefined) reflectionMergePartial<CMsgKeyValueSet>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgKeyValueSet,
-	): CMsgKeyValueSet {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgKeyValuePair pairs */ 1:
-					message.pairs.push(CMsgKeyValuePair.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgKeyValueSet, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* repeated CMsgKeyValuePair pairs = 1; */
-		for (let i = 0; i < message.pairs.length; i++)
-			CMsgKeyValuePair.internalBinaryWrite(
-				message.pairs[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgKeyValueSet", [
+      {
+        no: 1,
+        name: "pairs",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgKeyValuePair,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgKeyValueSet>): CMsgKeyValueSet {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.pairs = [];
+    if (value !== undefined) reflectionMergePartial<CMsgKeyValueSet>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgKeyValueSet,
+  ): CMsgKeyValueSet {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgKeyValuePair pairs */ 1:
+          message.pairs.push(CMsgKeyValuePair.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgKeyValueSet, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* repeated CMsgKeyValuePair pairs = 1; */
+    for (let i = 0; i < message.pairs.length; i++)
+      CMsgKeyValuePair.internalBinaryWrite(
+        message.pairs[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgKeyValueSet

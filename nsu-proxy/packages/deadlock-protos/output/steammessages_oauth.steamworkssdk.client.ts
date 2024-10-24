@@ -13,37 +13,37 @@ import type { RpcOptions } from "@protobuf-ts/runtime-rpc";
  * @generated from protobuf service OAuthToken
  */
 export interface IOAuthTokenClient {
-	/**
-	 * @generated from protobuf rpc: ImplicitGrantNoPrompt(COAuthToken_ImplicitGrantNoPrompt_Request) returns (COAuthToken_ImplicitGrantNoPrompt_Response);
-	 */
-	implicitGrantNoPrompt(
-		input: COAuthToken_ImplicitGrantNoPrompt_Request,
-		options?: RpcOptions,
-	): UnaryCall<COAuthToken_ImplicitGrantNoPrompt_Request, COAuthToken_ImplicitGrantNoPrompt_Response>;
+  /**
+   * @generated from protobuf rpc: ImplicitGrantNoPrompt(COAuthToken_ImplicitGrantNoPrompt_Request) returns (COAuthToken_ImplicitGrantNoPrompt_Response);
+   */
+  implicitGrantNoPrompt(
+    input: COAuthToken_ImplicitGrantNoPrompt_Request,
+    options?: RpcOptions,
+  ): UnaryCall<COAuthToken_ImplicitGrantNoPrompt_Request, COAuthToken_ImplicitGrantNoPrompt_Response>;
 }
 /**
  * @generated from protobuf service OAuthToken
  */
 export class OAuthTokenClient implements IOAuthTokenClient, ServiceInfo {
-	typeName = OAuthToken.typeName;
-	methods = OAuthToken.methods;
-	options = OAuthToken.options;
-	constructor(private readonly _transport: RpcTransport) {}
-	/**
-	 * @generated from protobuf rpc: ImplicitGrantNoPrompt(COAuthToken_ImplicitGrantNoPrompt_Request) returns (COAuthToken_ImplicitGrantNoPrompt_Response);
-	 */
-	implicitGrantNoPrompt(
-		input: COAuthToken_ImplicitGrantNoPrompt_Request,
-		options?: RpcOptions,
-	): UnaryCall<COAuthToken_ImplicitGrantNoPrompt_Request, COAuthToken_ImplicitGrantNoPrompt_Response> {
-		const method = this.methods[0],
-			opt = this._transport.mergeOptions(options);
-		return stackIntercept<COAuthToken_ImplicitGrantNoPrompt_Request, COAuthToken_ImplicitGrantNoPrompt_Response>(
-			"unary",
-			this._transport,
-			method,
-			opt,
-			input,
-		);
-	}
+  typeName = OAuthToken.typeName;
+  methods = OAuthToken.methods;
+  options = OAuthToken.options;
+  constructor(private readonly _transport: RpcTransport) {}
+  /**
+   * @generated from protobuf rpc: ImplicitGrantNoPrompt(COAuthToken_ImplicitGrantNoPrompt_Request) returns (COAuthToken_ImplicitGrantNoPrompt_Response);
+   */
+  implicitGrantNoPrompt(
+    input: COAuthToken_ImplicitGrantNoPrompt_Request,
+    options?: RpcOptions,
+  ): UnaryCall<COAuthToken_ImplicitGrantNoPrompt_Request, COAuthToken_ImplicitGrantNoPrompt_Response> {
+    const method = this.methods[0],
+      opt = this._transport.mergeOptions(options);
+    return stackIntercept<COAuthToken_ImplicitGrantNoPrompt_Request, COAuthToken_ImplicitGrantNoPrompt_Response>(
+      "unary",
+      this._transport,
+      method,
+      opt,
+      input,
+    );
+  }
 }

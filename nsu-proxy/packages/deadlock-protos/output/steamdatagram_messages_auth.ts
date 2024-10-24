@@ -15,425 +15,425 @@ import { CMsgSteamDatagramCertificateSigned } from "./steamnetworkingsockets_mes
  * @generated from protobuf message CMsgSteamDatagramRelayAuthTicket
  */
 export interface CMsgSteamDatagramRelayAuthTicket {
-	/**
-	 * @generated from protobuf field: optional fixed32 time_expiry = 1;
-	 */
-	time_expiry?: number;
-	/**
-	 * @generated from protobuf field: optional string authorized_client_identity_string = 14;
-	 */
-	authorized_client_identity_string?: string;
-	/**
-	 * @generated from protobuf field: optional string gameserver_identity_string = 15;
-	 */
-	gameserver_identity_string?: string;
-	/**
-	 * @generated from protobuf field: optional fixed32 authorized_public_ip = 3;
-	 */
-	authorized_public_ip?: number;
-	/**
-	 * @generated from protobuf field: optional bytes gameserver_address = 11;
-	 */
-	gameserver_address?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional uint32 app_id = 7;
-	 */
-	app_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 virtual_port = 10;
-	 */
-	virtual_port?: number;
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamDatagramRelayAuthTicket.ExtraField extra_fields = 8;
-	 */
-	extra_fields: CMsgSteamDatagramRelayAuthTicket_ExtraField[];
-	/**
-	 * @generated from protobuf field: optional fixed64 legacy_authorized_steam_id = 2;
-	 */
-	legacy_authorized_steam_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed64 legacy_gameserver_steam_id = 4;
-	 */
-	legacy_gameserver_steam_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed32 legacy_gameserver_pop_id = 9;
-	 */
-	legacy_gameserver_pop_id?: number;
-	/**
-	 * @generated from protobuf field: optional bytes legacy_authorized_client_identity_binary = 12;
-	 */
-	legacy_authorized_client_identity_binary?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional bytes legacy_gameserver_identity_binary = 13;
-	 */
-	legacy_gameserver_identity_binary?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional fixed32 time_expiry = 1;
+   */
+  time_expiry?: number;
+  /**
+   * @generated from protobuf field: optional string authorized_client_identity_string = 14;
+   */
+  authorized_client_identity_string?: string;
+  /**
+   * @generated from protobuf field: optional string gameserver_identity_string = 15;
+   */
+  gameserver_identity_string?: string;
+  /**
+   * @generated from protobuf field: optional fixed32 authorized_public_ip = 3;
+   */
+  authorized_public_ip?: number;
+  /**
+   * @generated from protobuf field: optional bytes gameserver_address = 11;
+   */
+  gameserver_address?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional uint32 app_id = 7;
+   */
+  app_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 virtual_port = 10;
+   */
+  virtual_port?: number;
+  /**
+   * @generated from protobuf field: repeated CMsgSteamDatagramRelayAuthTicket.ExtraField extra_fields = 8;
+   */
+  extra_fields: CMsgSteamDatagramRelayAuthTicket_ExtraField[];
+  /**
+   * @generated from protobuf field: optional fixed64 legacy_authorized_steam_id = 2;
+   */
+  legacy_authorized_steam_id?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed64 legacy_gameserver_steam_id = 4;
+   */
+  legacy_gameserver_steam_id?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed32 legacy_gameserver_pop_id = 9;
+   */
+  legacy_gameserver_pop_id?: number;
+  /**
+   * @generated from protobuf field: optional bytes legacy_authorized_client_identity_binary = 12;
+   */
+  legacy_authorized_client_identity_binary?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bytes legacy_gameserver_identity_binary = 13;
+   */
+  legacy_gameserver_identity_binary?: Uint8Array;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramRelayAuthTicket.ExtraField
  */
 export interface CMsgSteamDatagramRelayAuthTicket_ExtraField {
-	/**
-	 * @generated from protobuf field: optional string name = 1;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: optional string string_value = 2;
-	 */
-	string_value?: string;
-	/**
-	 * @generated from protobuf field: optional sint64 int64_value = 3;
-	 */
-	int64_value?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed64 fixed64_value = 5;
-	 */
-	fixed64_value?: bigint;
+  /**
+   * @generated from protobuf field: optional string name = 1;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: optional string string_value = 2;
+   */
+  string_value?: string;
+  /**
+   * @generated from protobuf field: optional sint64 int64_value = 3;
+   */
+  int64_value?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed64 fixed64_value = 5;
+   */
+  fixed64_value?: bigint;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramSignedRelayAuthTicket
  */
 export interface CMsgSteamDatagramSignedRelayAuthTicket {
-	/**
-	 * @generated from protobuf field: optional fixed64 reserved_do_not_use = 1;
-	 */
-	reserved_do_not_use?: bigint;
-	/**
-	 * @generated from protobuf field: optional bytes ticket = 3;
-	 */
-	ticket?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional bytes signature = 4;
-	 */
-	signature?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional fixed64 key_id = 2;
-	 */
-	key_id?: bigint;
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamDatagramCertificateSigned certs = 5;
-	 */
-	certs: CMsgSteamDatagramCertificateSigned[];
+  /**
+   * @generated from protobuf field: optional fixed64 reserved_do_not_use = 1;
+   */
+  reserved_do_not_use?: bigint;
+  /**
+   * @generated from protobuf field: optional bytes ticket = 3;
+   */
+  ticket?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bytes signature = 4;
+   */
+  signature?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional fixed64 key_id = 2;
+   */
+  key_id?: bigint;
+  /**
+   * @generated from protobuf field: repeated CMsgSteamDatagramCertificateSigned certs = 5;
+   */
+  certs: CMsgSteamDatagramCertificateSigned[];
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramCachedCredentialsForApp
  */
 export interface CMsgSteamDatagramCachedCredentialsForApp {
-	/**
-	 * @generated from protobuf field: optional bytes private_key = 1;
-	 */
-	private_key?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional bytes cert = 2;
-	 */
-	cert?: Uint8Array;
-	/**
-	 * @generated from protobuf field: repeated bytes relay_tickets = 3;
-	 */
-	relay_tickets: Uint8Array[];
+  /**
+   * @generated from protobuf field: optional bytes private_key = 1;
+   */
+  private_key?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bytes cert = 2;
+   */
+  cert?: Uint8Array;
+  /**
+   * @generated from protobuf field: repeated bytes relay_tickets = 3;
+   */
+  relay_tickets: Uint8Array[];
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramGameCoordinatorServerLogin
  */
 export interface CMsgSteamDatagramGameCoordinatorServerLogin {
-	/**
-	 * @generated from protobuf field: optional uint32 time_generated = 1;
-	 */
-	time_generated?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 appid = 2;
-	 */
-	appid?: number;
-	/**
-	 * @generated from protobuf field: optional bytes routing = 3;
-	 */
-	routing?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional bytes appdata = 4;
-	 */
-	appdata?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional bytes legacy_identity_binary = 5;
-	 */
-	legacy_identity_binary?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional string identity_string = 6;
-	 */
-	identity_string?: string;
-	/**
-	 * @generated from protobuf field: optional fixed64 dummy_steam_id = 99;
-	 */
-	dummy_steam_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 time_generated = 1;
+   */
+  time_generated?: number;
+  /**
+   * @generated from protobuf field: optional uint32 appid = 2;
+   */
+  appid?: number;
+  /**
+   * @generated from protobuf field: optional bytes routing = 3;
+   */
+  routing?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bytes appdata = 4;
+   */
+  appdata?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bytes legacy_identity_binary = 5;
+   */
+  legacy_identity_binary?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional string identity_string = 6;
+   */
+  identity_string?: string;
+  /**
+   * @generated from protobuf field: optional fixed64 dummy_steam_id = 99;
+   */
+  dummy_steam_id?: bigint;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramSignedGameCoordinatorServerLogin
  */
 export interface CMsgSteamDatagramSignedGameCoordinatorServerLogin {
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramCertificateSigned cert = 1;
-	 */
-	cert?: CMsgSteamDatagramCertificateSigned;
-	/**
-	 * @generated from protobuf field: optional bytes login = 2;
-	 */
-	login?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional bytes signature = 3;
-	 */
-	signature?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramCertificateSigned cert = 1;
+   */
+  cert?: CMsgSteamDatagramCertificateSigned;
+  /**
+   * @generated from protobuf field: optional bytes login = 2;
+   */
+  login?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bytes signature = 3;
+   */
+  signature?: Uint8Array;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramHostedServerAddressPlaintext
  */
 export interface CMsgSteamDatagramHostedServerAddressPlaintext {
-	/**
-	 * @generated from protobuf field: optional fixed32 ipv4 = 1;
-	 */
-	ipv4?: number;
-	/**
-	 * @generated from protobuf field: optional bytes ipv6 = 2;
-	 */
-	ipv6?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional uint32 port = 3;
-	 */
-	port?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 routing_secret = 4;
-	 */
-	routing_secret?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 protocol_version = 5;
-	 */
-	protocol_version?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 ipv4 = 1;
+   */
+  ipv4?: number;
+  /**
+   * @generated from protobuf field: optional bytes ipv6 = 2;
+   */
+  ipv6?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional uint32 port = 3;
+   */
+  port?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 routing_secret = 4;
+   */
+  routing_secret?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 protocol_version = 5;
+   */
+  protocol_version?: number;
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramRelayAuthTicket$Type extends MessageType<CMsgSteamDatagramRelayAuthTicket> {
-	constructor() {
-		super("CMsgSteamDatagramRelayAuthTicket", [
-			{
-				no: 1,
-				name: "time_expiry",
-				kind: "scalar",
-				localName: "time_expiry",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 14,
-				name: "authorized_client_identity_string",
-				kind: "scalar",
-				localName: "authorized_client_identity_string",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 15,
-				name: "gameserver_identity_string",
-				kind: "scalar",
-				localName: "gameserver_identity_string",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "authorized_public_ip",
-				kind: "scalar",
-				localName: "authorized_public_ip",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 11,
-				name: "gameserver_address",
-				kind: "scalar",
-				localName: "gameserver_address",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 7,
-				name: "app_id",
-				kind: "scalar",
-				localName: "app_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "virtual_port",
-				kind: "scalar",
-				localName: "virtual_port",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "extra_fields",
-				kind: "message",
-				localName: "extra_fields",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamDatagramRelayAuthTicket_ExtraField,
-			},
-			{
-				no: 2,
-				name: "legacy_authorized_steam_id",
-				kind: "scalar",
-				localName: "legacy_authorized_steam_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 4,
-				name: "legacy_gameserver_steam_id",
-				kind: "scalar",
-				localName: "legacy_gameserver_steam_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 9,
-				name: "legacy_gameserver_pop_id",
-				kind: "scalar",
-				localName: "legacy_gameserver_pop_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 12,
-				name: "legacy_authorized_client_identity_binary",
-				kind: "scalar",
-				localName: "legacy_authorized_client_identity_binary",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 13,
-				name: "legacy_gameserver_identity_binary",
-				kind: "scalar",
-				localName: "legacy_gameserver_identity_binary",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramRelayAuthTicket>): CMsgSteamDatagramRelayAuthTicket {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.extra_fields = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramRelayAuthTicket>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramRelayAuthTicket,
-	): CMsgSteamDatagramRelayAuthTicket {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 time_expiry */ 1:
-					message.time_expiry = reader.fixed32();
-					break;
-				case /* optional string authorized_client_identity_string */ 14:
-					message.authorized_client_identity_string = reader.string();
-					break;
-				case /* optional string gameserver_identity_string */ 15:
-					message.gameserver_identity_string = reader.string();
-					break;
-				case /* optional fixed32 authorized_public_ip */ 3:
-					message.authorized_public_ip = reader.fixed32();
-					break;
-				case /* optional bytes gameserver_address */ 11:
-					message.gameserver_address = reader.bytes();
-					break;
-				case /* optional uint32 app_id */ 7:
-					message.app_id = reader.uint32();
-					break;
-				case /* optional uint32 virtual_port */ 10:
-					message.virtual_port = reader.uint32();
-					break;
-				case /* repeated CMsgSteamDatagramRelayAuthTicket.ExtraField extra_fields */ 8:
-					message.extra_fields.push(
-						CMsgSteamDatagramRelayAuthTicket_ExtraField.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* optional fixed64 legacy_authorized_steam_id */ 2:
-					message.legacy_authorized_steam_id = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed64 legacy_gameserver_steam_id */ 4:
-					message.legacy_gameserver_steam_id = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed32 legacy_gameserver_pop_id */ 9:
-					message.legacy_gameserver_pop_id = reader.fixed32();
-					break;
-				case /* optional bytes legacy_authorized_client_identity_binary */ 12:
-					message.legacy_authorized_client_identity_binary = reader.bytes();
-					break;
-				case /* optional bytes legacy_gameserver_identity_binary */ 13:
-					message.legacy_gameserver_identity_binary = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramRelayAuthTicket,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 time_expiry = 1; */
-		if (message.time_expiry !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.time_expiry);
-		/* optional string authorized_client_identity_string = 14; */
-		if (message.authorized_client_identity_string !== undefined)
-			writer.tag(14, WireType.LengthDelimited).string(message.authorized_client_identity_string);
-		/* optional string gameserver_identity_string = 15; */
-		if (message.gameserver_identity_string !== undefined)
-			writer.tag(15, WireType.LengthDelimited).string(message.gameserver_identity_string);
-		/* optional fixed32 authorized_public_ip = 3; */
-		if (message.authorized_public_ip !== undefined) writer.tag(3, WireType.Bit32).fixed32(message.authorized_public_ip);
-		/* optional bytes gameserver_address = 11; */
-		if (message.gameserver_address !== undefined)
-			writer.tag(11, WireType.LengthDelimited).bytes(message.gameserver_address);
-		/* optional uint32 app_id = 7; */
-		if (message.app_id !== undefined) writer.tag(7, WireType.Varint).uint32(message.app_id);
-		/* optional uint32 virtual_port = 10; */
-		if (message.virtual_port !== undefined) writer.tag(10, WireType.Varint).uint32(message.virtual_port);
-		/* repeated CMsgSteamDatagramRelayAuthTicket.ExtraField extra_fields = 8; */
-		for (let i = 0; i < message.extra_fields.length; i++)
-			CMsgSteamDatagramRelayAuthTicket_ExtraField.internalBinaryWrite(
-				message.extra_fields[i],
-				writer.tag(8, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional fixed64 legacy_authorized_steam_id = 2; */
-		if (message.legacy_authorized_steam_id !== undefined)
-			writer.tag(2, WireType.Bit64).fixed64(message.legacy_authorized_steam_id);
-		/* optional fixed64 legacy_gameserver_steam_id = 4; */
-		if (message.legacy_gameserver_steam_id !== undefined)
-			writer.tag(4, WireType.Bit64).fixed64(message.legacy_gameserver_steam_id);
-		/* optional fixed32 legacy_gameserver_pop_id = 9; */
-		if (message.legacy_gameserver_pop_id !== undefined)
-			writer.tag(9, WireType.Bit32).fixed32(message.legacy_gameserver_pop_id);
-		/* optional bytes legacy_authorized_client_identity_binary = 12; */
-		if (message.legacy_authorized_client_identity_binary !== undefined)
-			writer.tag(12, WireType.LengthDelimited).bytes(message.legacy_authorized_client_identity_binary);
-		/* optional bytes legacy_gameserver_identity_binary = 13; */
-		if (message.legacy_gameserver_identity_binary !== undefined)
-			writer.tag(13, WireType.LengthDelimited).bytes(message.legacy_gameserver_identity_binary);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramRelayAuthTicket", [
+      {
+        no: 1,
+        name: "time_expiry",
+        kind: "scalar",
+        localName: "time_expiry",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 14,
+        name: "authorized_client_identity_string",
+        kind: "scalar",
+        localName: "authorized_client_identity_string",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 15,
+        name: "gameserver_identity_string",
+        kind: "scalar",
+        localName: "gameserver_identity_string",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "authorized_public_ip",
+        kind: "scalar",
+        localName: "authorized_public_ip",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 11,
+        name: "gameserver_address",
+        kind: "scalar",
+        localName: "gameserver_address",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 7,
+        name: "app_id",
+        kind: "scalar",
+        localName: "app_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "virtual_port",
+        kind: "scalar",
+        localName: "virtual_port",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "extra_fields",
+        kind: "message",
+        localName: "extra_fields",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamDatagramRelayAuthTicket_ExtraField,
+      },
+      {
+        no: 2,
+        name: "legacy_authorized_steam_id",
+        kind: "scalar",
+        localName: "legacy_authorized_steam_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 4,
+        name: "legacy_gameserver_steam_id",
+        kind: "scalar",
+        localName: "legacy_gameserver_steam_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 9,
+        name: "legacy_gameserver_pop_id",
+        kind: "scalar",
+        localName: "legacy_gameserver_pop_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 12,
+        name: "legacy_authorized_client_identity_binary",
+        kind: "scalar",
+        localName: "legacy_authorized_client_identity_binary",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 13,
+        name: "legacy_gameserver_identity_binary",
+        kind: "scalar",
+        localName: "legacy_gameserver_identity_binary",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramRelayAuthTicket>): CMsgSteamDatagramRelayAuthTicket {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.extra_fields = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramRelayAuthTicket>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramRelayAuthTicket,
+  ): CMsgSteamDatagramRelayAuthTicket {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 time_expiry */ 1:
+          message.time_expiry = reader.fixed32();
+          break;
+        case /* optional string authorized_client_identity_string */ 14:
+          message.authorized_client_identity_string = reader.string();
+          break;
+        case /* optional string gameserver_identity_string */ 15:
+          message.gameserver_identity_string = reader.string();
+          break;
+        case /* optional fixed32 authorized_public_ip */ 3:
+          message.authorized_public_ip = reader.fixed32();
+          break;
+        case /* optional bytes gameserver_address */ 11:
+          message.gameserver_address = reader.bytes();
+          break;
+        case /* optional uint32 app_id */ 7:
+          message.app_id = reader.uint32();
+          break;
+        case /* optional uint32 virtual_port */ 10:
+          message.virtual_port = reader.uint32();
+          break;
+        case /* repeated CMsgSteamDatagramRelayAuthTicket.ExtraField extra_fields */ 8:
+          message.extra_fields.push(
+            CMsgSteamDatagramRelayAuthTicket_ExtraField.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* optional fixed64 legacy_authorized_steam_id */ 2:
+          message.legacy_authorized_steam_id = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed64 legacy_gameserver_steam_id */ 4:
+          message.legacy_gameserver_steam_id = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed32 legacy_gameserver_pop_id */ 9:
+          message.legacy_gameserver_pop_id = reader.fixed32();
+          break;
+        case /* optional bytes legacy_authorized_client_identity_binary */ 12:
+          message.legacy_authorized_client_identity_binary = reader.bytes();
+          break;
+        case /* optional bytes legacy_gameserver_identity_binary */ 13:
+          message.legacy_gameserver_identity_binary = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramRelayAuthTicket,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 time_expiry = 1; */
+    if (message.time_expiry !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.time_expiry);
+    /* optional string authorized_client_identity_string = 14; */
+    if (message.authorized_client_identity_string !== undefined)
+      writer.tag(14, WireType.LengthDelimited).string(message.authorized_client_identity_string);
+    /* optional string gameserver_identity_string = 15; */
+    if (message.gameserver_identity_string !== undefined)
+      writer.tag(15, WireType.LengthDelimited).string(message.gameserver_identity_string);
+    /* optional fixed32 authorized_public_ip = 3; */
+    if (message.authorized_public_ip !== undefined) writer.tag(3, WireType.Bit32).fixed32(message.authorized_public_ip);
+    /* optional bytes gameserver_address = 11; */
+    if (message.gameserver_address !== undefined)
+      writer.tag(11, WireType.LengthDelimited).bytes(message.gameserver_address);
+    /* optional uint32 app_id = 7; */
+    if (message.app_id !== undefined) writer.tag(7, WireType.Varint).uint32(message.app_id);
+    /* optional uint32 virtual_port = 10; */
+    if (message.virtual_port !== undefined) writer.tag(10, WireType.Varint).uint32(message.virtual_port);
+    /* repeated CMsgSteamDatagramRelayAuthTicket.ExtraField extra_fields = 8; */
+    for (let i = 0; i < message.extra_fields.length; i++)
+      CMsgSteamDatagramRelayAuthTicket_ExtraField.internalBinaryWrite(
+        message.extra_fields[i],
+        writer.tag(8, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional fixed64 legacy_authorized_steam_id = 2; */
+    if (message.legacy_authorized_steam_id !== undefined)
+      writer.tag(2, WireType.Bit64).fixed64(message.legacy_authorized_steam_id);
+    /* optional fixed64 legacy_gameserver_steam_id = 4; */
+    if (message.legacy_gameserver_steam_id !== undefined)
+      writer.tag(4, WireType.Bit64).fixed64(message.legacy_gameserver_steam_id);
+    /* optional fixed32 legacy_gameserver_pop_id = 9; */
+    if (message.legacy_gameserver_pop_id !== undefined)
+      writer.tag(9, WireType.Bit32).fixed32(message.legacy_gameserver_pop_id);
+    /* optional bytes legacy_authorized_client_identity_binary = 12; */
+    if (message.legacy_authorized_client_identity_binary !== undefined)
+      writer.tag(12, WireType.LengthDelimited).bytes(message.legacy_authorized_client_identity_binary);
+    /* optional bytes legacy_gameserver_identity_binary = 13; */
+    if (message.legacy_gameserver_identity_binary !== undefined)
+      writer.tag(13, WireType.LengthDelimited).bytes(message.legacy_gameserver_identity_binary);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramRelayAuthTicket
@@ -441,100 +441,100 @@ class CMsgSteamDatagramRelayAuthTicket$Type extends MessageType<CMsgSteamDatagra
 export const CMsgSteamDatagramRelayAuthTicket = new CMsgSteamDatagramRelayAuthTicket$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramRelayAuthTicket_ExtraField$Type extends MessageType<CMsgSteamDatagramRelayAuthTicket_ExtraField> {
-	constructor() {
-		super("CMsgSteamDatagramRelayAuthTicket.ExtraField", [
-			{
-				no: 1,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "string_value",
-				kind: "scalar",
-				localName: "string_value",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "int64_value",
-				kind: "scalar",
-				localName: "int64_value",
-				opt: true,
-				T: 18 /*ScalarType.SINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 5,
-				name: "fixed64_value",
-				kind: "scalar",
-				localName: "fixed64_value",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramRelayAuthTicket_ExtraField>,
-	): CMsgSteamDatagramRelayAuthTicket_ExtraField {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramRelayAuthTicket_ExtraField>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramRelayAuthTicket_ExtraField,
-	): CMsgSteamDatagramRelayAuthTicket_ExtraField {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string name */ 1:
-					message.name = reader.string();
-					break;
-				case /* optional string string_value */ 2:
-					message.string_value = reader.string();
-					break;
-				case /* optional sint64 int64_value */ 3:
-					message.int64_value = reader.sint64().toBigInt();
-					break;
-				case /* optional fixed64 fixed64_value */ 5:
-					message.fixed64_value = reader.fixed64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramRelayAuthTicket_ExtraField,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string name = 1; */
-		if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
-		/* optional string string_value = 2; */
-		if (message.string_value !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.string_value);
-		/* optional sint64 int64_value = 3; */
-		if (message.int64_value !== undefined) writer.tag(3, WireType.Varint).sint64(message.int64_value);
-		/* optional fixed64 fixed64_value = 5; */
-		if (message.fixed64_value !== undefined) writer.tag(5, WireType.Bit64).fixed64(message.fixed64_value);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramRelayAuthTicket.ExtraField", [
+      {
+        no: 1,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "string_value",
+        kind: "scalar",
+        localName: "string_value",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "int64_value",
+        kind: "scalar",
+        localName: "int64_value",
+        opt: true,
+        T: 18 /*ScalarType.SINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 5,
+        name: "fixed64_value",
+        kind: "scalar",
+        localName: "fixed64_value",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramRelayAuthTicket_ExtraField>,
+  ): CMsgSteamDatagramRelayAuthTicket_ExtraField {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramRelayAuthTicket_ExtraField>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramRelayAuthTicket_ExtraField,
+  ): CMsgSteamDatagramRelayAuthTicket_ExtraField {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string name */ 1:
+          message.name = reader.string();
+          break;
+        case /* optional string string_value */ 2:
+          message.string_value = reader.string();
+          break;
+        case /* optional sint64 int64_value */ 3:
+          message.int64_value = reader.sint64().toBigInt();
+          break;
+        case /* optional fixed64 fixed64_value */ 5:
+          message.fixed64_value = reader.fixed64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramRelayAuthTicket_ExtraField,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string name = 1; */
+    if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
+    /* optional string string_value = 2; */
+    if (message.string_value !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.string_value);
+    /* optional sint64 int64_value = 3; */
+    if (message.int64_value !== undefined) writer.tag(3, WireType.Varint).sint64(message.int64_value);
+    /* optional fixed64 fixed64_value = 5; */
+    if (message.fixed64_value !== undefined) writer.tag(5, WireType.Bit64).fixed64(message.fixed64_value);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramRelayAuthTicket.ExtraField
@@ -542,115 +542,115 @@ class CMsgSteamDatagramRelayAuthTicket_ExtraField$Type extends MessageType<CMsgS
 export const CMsgSteamDatagramRelayAuthTicket_ExtraField = new CMsgSteamDatagramRelayAuthTicket_ExtraField$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramSignedRelayAuthTicket$Type extends MessageType<CMsgSteamDatagramSignedRelayAuthTicket> {
-	constructor() {
-		super("CMsgSteamDatagramSignedRelayAuthTicket", [
-			{
-				no: 1,
-				name: "reserved_do_not_use",
-				kind: "scalar",
-				localName: "reserved_do_not_use",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "ticket",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 4,
-				name: "signature",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 2,
-				name: "key_id",
-				kind: "scalar",
-				localName: "key_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 5,
-				name: "certs",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamDatagramCertificateSigned,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramSignedRelayAuthTicket>): CMsgSteamDatagramSignedRelayAuthTicket {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.certs = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramSignedRelayAuthTicket>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramSignedRelayAuthTicket,
-	): CMsgSteamDatagramSignedRelayAuthTicket {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed64 reserved_do_not_use */ 1:
-					message.reserved_do_not_use = reader.fixed64().toBigInt();
-					break;
-				case /* optional bytes ticket */ 3:
-					message.ticket = reader.bytes();
-					break;
-				case /* optional bytes signature */ 4:
-					message.signature = reader.bytes();
-					break;
-				case /* optional fixed64 key_id */ 2:
-					message.key_id = reader.fixed64().toBigInt();
-					break;
-				case /* repeated CMsgSteamDatagramCertificateSigned certs */ 5:
-					message.certs.push(CMsgSteamDatagramCertificateSigned.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramSignedRelayAuthTicket,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed64 reserved_do_not_use = 1; */
-		if (message.reserved_do_not_use !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.reserved_do_not_use);
-		/* optional bytes ticket = 3; */
-		if (message.ticket !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.ticket);
-		/* optional bytes signature = 4; */
-		if (message.signature !== undefined) writer.tag(4, WireType.LengthDelimited).bytes(message.signature);
-		/* optional fixed64 key_id = 2; */
-		if (message.key_id !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.key_id);
-		/* repeated CMsgSteamDatagramCertificateSigned certs = 5; */
-		for (let i = 0; i < message.certs.length; i++)
-			CMsgSteamDatagramCertificateSigned.internalBinaryWrite(
-				message.certs[i],
-				writer.tag(5, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramSignedRelayAuthTicket", [
+      {
+        no: 1,
+        name: "reserved_do_not_use",
+        kind: "scalar",
+        localName: "reserved_do_not_use",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "ticket",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 4,
+        name: "signature",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 2,
+        name: "key_id",
+        kind: "scalar",
+        localName: "key_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 5,
+        name: "certs",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamDatagramCertificateSigned,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramSignedRelayAuthTicket>): CMsgSteamDatagramSignedRelayAuthTicket {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.certs = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramSignedRelayAuthTicket>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramSignedRelayAuthTicket,
+  ): CMsgSteamDatagramSignedRelayAuthTicket {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed64 reserved_do_not_use */ 1:
+          message.reserved_do_not_use = reader.fixed64().toBigInt();
+          break;
+        case /* optional bytes ticket */ 3:
+          message.ticket = reader.bytes();
+          break;
+        case /* optional bytes signature */ 4:
+          message.signature = reader.bytes();
+          break;
+        case /* optional fixed64 key_id */ 2:
+          message.key_id = reader.fixed64().toBigInt();
+          break;
+        case /* repeated CMsgSteamDatagramCertificateSigned certs */ 5:
+          message.certs.push(CMsgSteamDatagramCertificateSigned.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramSignedRelayAuthTicket,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed64 reserved_do_not_use = 1; */
+    if (message.reserved_do_not_use !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.reserved_do_not_use);
+    /* optional bytes ticket = 3; */
+    if (message.ticket !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.ticket);
+    /* optional bytes signature = 4; */
+    if (message.signature !== undefined) writer.tag(4, WireType.LengthDelimited).bytes(message.signature);
+    /* optional fixed64 key_id = 2; */
+    if (message.key_id !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.key_id);
+    /* repeated CMsgSteamDatagramCertificateSigned certs = 5; */
+    for (let i = 0; i < message.certs.length; i++)
+      CMsgSteamDatagramCertificateSigned.internalBinaryWrite(
+        message.certs[i],
+        writer.tag(5, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramSignedRelayAuthTicket
@@ -658,85 +658,85 @@ class CMsgSteamDatagramSignedRelayAuthTicket$Type extends MessageType<CMsgSteamD
 export const CMsgSteamDatagramSignedRelayAuthTicket = new CMsgSteamDatagramSignedRelayAuthTicket$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramCachedCredentialsForApp$Type extends MessageType<CMsgSteamDatagramCachedCredentialsForApp> {
-	constructor() {
-		super("CMsgSteamDatagramCachedCredentialsForApp", [
-			{
-				no: 1,
-				name: "private_key",
-				kind: "scalar",
-				localName: "private_key",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 2,
-				name: "cert",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 3,
-				name: "relay_tickets",
-				kind: "scalar",
-				localName: "relay_tickets",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramCachedCredentialsForApp>): CMsgSteamDatagramCachedCredentialsForApp {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.relay_tickets = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramCachedCredentialsForApp>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramCachedCredentialsForApp,
-	): CMsgSteamDatagramCachedCredentialsForApp {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bytes private_key */ 1:
-					message.private_key = reader.bytes();
-					break;
-				case /* optional bytes cert */ 2:
-					message.cert = reader.bytes();
-					break;
-				case /* repeated bytes relay_tickets */ 3:
-					message.relay_tickets.push(reader.bytes());
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramCachedCredentialsForApp,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bytes private_key = 1; */
-		if (message.private_key !== undefined) writer.tag(1, WireType.LengthDelimited).bytes(message.private_key);
-		/* optional bytes cert = 2; */
-		if (message.cert !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.cert);
-		/* repeated bytes relay_tickets = 3; */
-		for (let i = 0; i < message.relay_tickets.length; i++)
-			writer.tag(3, WireType.LengthDelimited).bytes(message.relay_tickets[i]);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramCachedCredentialsForApp", [
+      {
+        no: 1,
+        name: "private_key",
+        kind: "scalar",
+        localName: "private_key",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 2,
+        name: "cert",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 3,
+        name: "relay_tickets",
+        kind: "scalar",
+        localName: "relay_tickets",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramCachedCredentialsForApp>): CMsgSteamDatagramCachedCredentialsForApp {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.relay_tickets = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramCachedCredentialsForApp>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramCachedCredentialsForApp,
+  ): CMsgSteamDatagramCachedCredentialsForApp {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bytes private_key */ 1:
+          message.private_key = reader.bytes();
+          break;
+        case /* optional bytes cert */ 2:
+          message.cert = reader.bytes();
+          break;
+        case /* repeated bytes relay_tickets */ 3:
+          message.relay_tickets.push(reader.bytes());
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramCachedCredentialsForApp,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bytes private_key = 1; */
+    if (message.private_key !== undefined) writer.tag(1, WireType.LengthDelimited).bytes(message.private_key);
+    /* optional bytes cert = 2; */
+    if (message.cert !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.cert);
+    /* repeated bytes relay_tickets = 3; */
+    for (let i = 0; i < message.relay_tickets.length; i++)
+      writer.tag(3, WireType.LengthDelimited).bytes(message.relay_tickets[i]);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramCachedCredentialsForApp
@@ -744,137 +744,137 @@ class CMsgSteamDatagramCachedCredentialsForApp$Type extends MessageType<CMsgStea
 export const CMsgSteamDatagramCachedCredentialsForApp = new CMsgSteamDatagramCachedCredentialsForApp$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramGameCoordinatorServerLogin$Type extends MessageType<CMsgSteamDatagramGameCoordinatorServerLogin> {
-	constructor() {
-		super("CMsgSteamDatagramGameCoordinatorServerLogin", [
-			{
-				no: 1,
-				name: "time_generated",
-				kind: "scalar",
-				localName: "time_generated",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "appid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "routing",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 4,
-				name: "appdata",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 5,
-				name: "legacy_identity_binary",
-				kind: "scalar",
-				localName: "legacy_identity_binary",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 6,
-				name: "identity_string",
-				kind: "scalar",
-				localName: "identity_string",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 99,
-				name: "dummy_steam_id",
-				kind: "scalar",
-				localName: "dummy_steam_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramGameCoordinatorServerLogin>,
-	): CMsgSteamDatagramGameCoordinatorServerLogin {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramGameCoordinatorServerLogin>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramGameCoordinatorServerLogin,
-	): CMsgSteamDatagramGameCoordinatorServerLogin {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 time_generated */ 1:
-					message.time_generated = reader.uint32();
-					break;
-				case /* optional uint32 appid */ 2:
-					message.appid = reader.uint32();
-					break;
-				case /* optional bytes routing */ 3:
-					message.routing = reader.bytes();
-					break;
-				case /* optional bytes appdata */ 4:
-					message.appdata = reader.bytes();
-					break;
-				case /* optional bytes legacy_identity_binary */ 5:
-					message.legacy_identity_binary = reader.bytes();
-					break;
-				case /* optional string identity_string */ 6:
-					message.identity_string = reader.string();
-					break;
-				case /* optional fixed64 dummy_steam_id */ 99:
-					message.dummy_steam_id = reader.fixed64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramGameCoordinatorServerLogin,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 time_generated = 1; */
-		if (message.time_generated !== undefined) writer.tag(1, WireType.Varint).uint32(message.time_generated);
-		/* optional uint32 appid = 2; */
-		if (message.appid !== undefined) writer.tag(2, WireType.Varint).uint32(message.appid);
-		/* optional bytes routing = 3; */
-		if (message.routing !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.routing);
-		/* optional bytes appdata = 4; */
-		if (message.appdata !== undefined) writer.tag(4, WireType.LengthDelimited).bytes(message.appdata);
-		/* optional bytes legacy_identity_binary = 5; */
-		if (message.legacy_identity_binary !== undefined)
-			writer.tag(5, WireType.LengthDelimited).bytes(message.legacy_identity_binary);
-		/* optional string identity_string = 6; */
-		if (message.identity_string !== undefined) writer.tag(6, WireType.LengthDelimited).string(message.identity_string);
-		/* optional fixed64 dummy_steam_id = 99; */
-		if (message.dummy_steam_id !== undefined) writer.tag(99, WireType.Bit64).fixed64(message.dummy_steam_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramGameCoordinatorServerLogin", [
+      {
+        no: 1,
+        name: "time_generated",
+        kind: "scalar",
+        localName: "time_generated",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "appid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "routing",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 4,
+        name: "appdata",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 5,
+        name: "legacy_identity_binary",
+        kind: "scalar",
+        localName: "legacy_identity_binary",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 6,
+        name: "identity_string",
+        kind: "scalar",
+        localName: "identity_string",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 99,
+        name: "dummy_steam_id",
+        kind: "scalar",
+        localName: "dummy_steam_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramGameCoordinatorServerLogin>,
+  ): CMsgSteamDatagramGameCoordinatorServerLogin {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramGameCoordinatorServerLogin>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramGameCoordinatorServerLogin,
+  ): CMsgSteamDatagramGameCoordinatorServerLogin {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 time_generated */ 1:
+          message.time_generated = reader.uint32();
+          break;
+        case /* optional uint32 appid */ 2:
+          message.appid = reader.uint32();
+          break;
+        case /* optional bytes routing */ 3:
+          message.routing = reader.bytes();
+          break;
+        case /* optional bytes appdata */ 4:
+          message.appdata = reader.bytes();
+          break;
+        case /* optional bytes legacy_identity_binary */ 5:
+          message.legacy_identity_binary = reader.bytes();
+          break;
+        case /* optional string identity_string */ 6:
+          message.identity_string = reader.string();
+          break;
+        case /* optional fixed64 dummy_steam_id */ 99:
+          message.dummy_steam_id = reader.fixed64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramGameCoordinatorServerLogin,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 time_generated = 1; */
+    if (message.time_generated !== undefined) writer.tag(1, WireType.Varint).uint32(message.time_generated);
+    /* optional uint32 appid = 2; */
+    if (message.appid !== undefined) writer.tag(2, WireType.Varint).uint32(message.appid);
+    /* optional bytes routing = 3; */
+    if (message.routing !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.routing);
+    /* optional bytes appdata = 4; */
+    if (message.appdata !== undefined) writer.tag(4, WireType.LengthDelimited).bytes(message.appdata);
+    /* optional bytes legacy_identity_binary = 5; */
+    if (message.legacy_identity_binary !== undefined)
+      writer.tag(5, WireType.LengthDelimited).bytes(message.legacy_identity_binary);
+    /* optional string identity_string = 6; */
+    if (message.identity_string !== undefined) writer.tag(6, WireType.LengthDelimited).string(message.identity_string);
+    /* optional fixed64 dummy_steam_id = 99; */
+    if (message.dummy_steam_id !== undefined) writer.tag(99, WireType.Bit64).fixed64(message.dummy_steam_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramGameCoordinatorServerLogin
@@ -882,206 +882,206 @@ class CMsgSteamDatagramGameCoordinatorServerLogin$Type extends MessageType<CMsgS
 export const CMsgSteamDatagramGameCoordinatorServerLogin = new CMsgSteamDatagramGameCoordinatorServerLogin$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramSignedGameCoordinatorServerLogin$Type extends MessageType<CMsgSteamDatagramSignedGameCoordinatorServerLogin> {
-	constructor() {
-		super("CMsgSteamDatagramSignedGameCoordinatorServerLogin", [
-			{
-				no: 1,
-				name: "cert",
-				kind: "message",
-				T: () => CMsgSteamDatagramCertificateSigned,
-			},
-			{
-				no: 2,
-				name: "login",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 3,
-				name: "signature",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramSignedGameCoordinatorServerLogin>,
-	): CMsgSteamDatagramSignedGameCoordinatorServerLogin {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamDatagramSignedGameCoordinatorServerLogin>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramSignedGameCoordinatorServerLogin,
-	): CMsgSteamDatagramSignedGameCoordinatorServerLogin {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgSteamDatagramCertificateSigned cert */ 1:
-					message.cert = CMsgSteamDatagramCertificateSigned.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.cert,
-					);
-					break;
-				case /* optional bytes login */ 2:
-					message.login = reader.bytes();
-					break;
-				case /* optional bytes signature */ 3:
-					message.signature = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramSignedGameCoordinatorServerLogin,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgSteamDatagramCertificateSigned cert = 1; */
-		if (message.cert)
-			CMsgSteamDatagramCertificateSigned.internalBinaryWrite(
-				message.cert,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional bytes login = 2; */
-		if (message.login !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.login);
-		/* optional bytes signature = 3; */
-		if (message.signature !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.signature);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramSignedGameCoordinatorServerLogin", [
+      {
+        no: 1,
+        name: "cert",
+        kind: "message",
+        T: () => CMsgSteamDatagramCertificateSigned,
+      },
+      {
+        no: 2,
+        name: "login",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 3,
+        name: "signature",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramSignedGameCoordinatorServerLogin>,
+  ): CMsgSteamDatagramSignedGameCoordinatorServerLogin {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamDatagramSignedGameCoordinatorServerLogin>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramSignedGameCoordinatorServerLogin,
+  ): CMsgSteamDatagramSignedGameCoordinatorServerLogin {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgSteamDatagramCertificateSigned cert */ 1:
+          message.cert = CMsgSteamDatagramCertificateSigned.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.cert,
+          );
+          break;
+        case /* optional bytes login */ 2:
+          message.login = reader.bytes();
+          break;
+        case /* optional bytes signature */ 3:
+          message.signature = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramSignedGameCoordinatorServerLogin,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgSteamDatagramCertificateSigned cert = 1; */
+    if (message.cert)
+      CMsgSteamDatagramCertificateSigned.internalBinaryWrite(
+        message.cert,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional bytes login = 2; */
+    if (message.login !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.login);
+    /* optional bytes signature = 3; */
+    if (message.signature !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.signature);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramSignedGameCoordinatorServerLogin
  */
 export const CMsgSteamDatagramSignedGameCoordinatorServerLogin =
-	new CMsgSteamDatagramSignedGameCoordinatorServerLogin$Type();
+  new CMsgSteamDatagramSignedGameCoordinatorServerLogin$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramHostedServerAddressPlaintext$Type extends MessageType<CMsgSteamDatagramHostedServerAddressPlaintext> {
-	constructor() {
-		super("CMsgSteamDatagramHostedServerAddressPlaintext", [
-			{
-				no: 1,
-				name: "ipv4",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "ipv6",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 3,
-				name: "port",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "routing_secret",
-				kind: "scalar",
-				localName: "routing_secret",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 5,
-				name: "protocol_version",
-				kind: "scalar",
-				localName: "protocol_version",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramHostedServerAddressPlaintext>,
-	): CMsgSteamDatagramHostedServerAddressPlaintext {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamDatagramHostedServerAddressPlaintext>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramHostedServerAddressPlaintext,
-	): CMsgSteamDatagramHostedServerAddressPlaintext {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 ipv4 */ 1:
-					message.ipv4 = reader.fixed32();
-					break;
-				case /* optional bytes ipv6 */ 2:
-					message.ipv6 = reader.bytes();
-					break;
-				case /* optional uint32 port */ 3:
-					message.port = reader.uint32();
-					break;
-				case /* optional fixed64 routing_secret */ 4:
-					message.routing_secret = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 protocol_version */ 5:
-					message.protocol_version = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramHostedServerAddressPlaintext,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 ipv4 = 1; */
-		if (message.ipv4 !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.ipv4);
-		/* optional bytes ipv6 = 2; */
-		if (message.ipv6 !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.ipv6);
-		/* optional uint32 port = 3; */
-		if (message.port !== undefined) writer.tag(3, WireType.Varint).uint32(message.port);
-		/* optional fixed64 routing_secret = 4; */
-		if (message.routing_secret !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.routing_secret);
-		/* optional uint32 protocol_version = 5; */
-		if (message.protocol_version !== undefined) writer.tag(5, WireType.Varint).uint32(message.protocol_version);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramHostedServerAddressPlaintext", [
+      {
+        no: 1,
+        name: "ipv4",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "ipv6",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 3,
+        name: "port",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "routing_secret",
+        kind: "scalar",
+        localName: "routing_secret",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 5,
+        name: "protocol_version",
+        kind: "scalar",
+        localName: "protocol_version",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramHostedServerAddressPlaintext>,
+  ): CMsgSteamDatagramHostedServerAddressPlaintext {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamDatagramHostedServerAddressPlaintext>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramHostedServerAddressPlaintext,
+  ): CMsgSteamDatagramHostedServerAddressPlaintext {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 ipv4 */ 1:
+          message.ipv4 = reader.fixed32();
+          break;
+        case /* optional bytes ipv6 */ 2:
+          message.ipv6 = reader.bytes();
+          break;
+        case /* optional uint32 port */ 3:
+          message.port = reader.uint32();
+          break;
+        case /* optional fixed64 routing_secret */ 4:
+          message.routing_secret = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 protocol_version */ 5:
+          message.protocol_version = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramHostedServerAddressPlaintext,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 ipv4 = 1; */
+    if (message.ipv4 !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.ipv4);
+    /* optional bytes ipv6 = 2; */
+    if (message.ipv6 !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.ipv6);
+    /* optional uint32 port = 3; */
+    if (message.port !== undefined) writer.tag(3, WireType.Varint).uint32(message.port);
+    /* optional fixed64 routing_secret = 4; */
+    if (message.routing_secret !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.routing_secret);
+    /* optional uint32 protocol_version = 5; */
+    if (message.protocol_version !== undefined) writer.tag(5, WireType.Varint).uint32(message.protocol_version);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramHostedServerAddressPlaintext

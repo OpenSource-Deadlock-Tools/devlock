@@ -19,1891 +19,1891 @@ import { CMsgSteamDatagramCertificateSigned } from "./steamnetworkingsockets_mes
  * @generated from protobuf message CMsgSteamNetworkingIPAddress
  */
 export interface CMsgSteamNetworkingIPAddress {
-	/**
-	 * @generated from protobuf field: optional fixed32 v4 = 1;
-	 */
-	v4?: number;
-	/**
-	 * @generated from protobuf field: optional bytes v6 = 2;
-	 */
-	v6?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional fixed32 v4 = 1;
+   */
+  v4?: number;
+  /**
+   * @generated from protobuf field: optional bytes v6 = 2;
+   */
+  v6?: Uint8Array;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramSignedMessageGeneric
  */
 export interface CMsgSteamDatagramSignedMessageGeneric {
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramCertificateSigned cert = 1;
-	 */
-	cert?: CMsgSteamDatagramCertificateSigned;
-	/**
-	 * @generated from protobuf field: optional bytes signed_data = 2;
-	 */
-	signed_data?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional bytes signature = 3;
-	 */
-	signature?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional bytes dummy_pad = 1023;
-	 */
-	dummy_pad?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramCertificateSigned cert = 1;
+   */
+  cert?: CMsgSteamDatagramCertificateSigned;
+  /**
+   * @generated from protobuf field: optional bytes signed_data = 2;
+   */
+  signed_data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bytes signature = 3;
+   */
+  signature?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bytes dummy_pad = 1023;
+   */
+  dummy_pad?: Uint8Array;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramRouterPingReply
  */
 export interface CMsgSteamDatagramRouterPingReply {
-	/**
-	 * @generated from protobuf field: optional fixed32 client_timestamp = 1;
-	 */
-	client_timestamp?: number;
-	/**
-	 * @generated from protobuf field: repeated fixed32 latency_datacenter_ids = 2 [packed = true];
-	 */
-	latency_datacenter_ids: number[];
-	/**
-	 * @generated from protobuf field: repeated uint32 latency_ping_ms = 3 [packed = true];
-	 */
-	latency_ping_ms: number[];
-	/**
-	 * @generated from protobuf field: repeated fixed32 latency_datacenter_ids_p2p = 14 [json_name = "latencyDatacenterIdsP2p", packed = true];
-	 */
-	latency_datacenter_ids_p2p: number[];
-	/**
-	 * @generated from protobuf field: repeated uint32 latency_ping_ms_p2p = 15 [json_name = "latencyPingMsP2p", packed = true];
-	 */
-	latency_ping_ms_p2p: number[];
-	/**
-	 * @generated from protobuf field: optional fixed32 your_public_ip = 4;
-	 */
-	your_public_ip?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 your_public_port = 11;
-	 */
-	your_public_port?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 server_time = 5;
-	 */
-	server_time?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 challenge = 6;
-	 */
-	challenge?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 seconds_until_shutdown = 7;
-	 */
-	seconds_until_shutdown?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 client_cookie = 8;
-	 */
-	client_cookie?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 recv_tos = 16;
-	 */
-	recv_tos?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 echo_sent_tos = 17;
-	 */
-	echo_sent_tos?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 sent_tos = 18;
-	 */
-	sent_tos?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 echo_request_reply_tos = 19;
-	 */
-	echo_request_reply_tos?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 scoring_penalty_relay_cluster = 9;
-	 */
-	scoring_penalty_relay_cluster?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 12;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamDatagramRouterPingReply.RouteException route_exceptions = 10;
-	 */
-	route_exceptions: CMsgSteamDatagramRouterPingReply_RouteException[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamDatagramRouterPingReply.AltAddress alt_addresses = 13;
-	 */
-	alt_addresses: CMsgSteamDatagramRouterPingReply_AltAddress[];
-	/**
-	 * @generated from protobuf field: optional bytes dummy_pad = 99;
-	 */
-	dummy_pad?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional uint64 dummy_varint = 100;
-	 */
-	dummy_varint?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed32 client_timestamp = 1;
+   */
+  client_timestamp?: number;
+  /**
+   * @generated from protobuf field: repeated fixed32 latency_datacenter_ids = 2 [packed = true];
+   */
+  latency_datacenter_ids: number[];
+  /**
+   * @generated from protobuf field: repeated uint32 latency_ping_ms = 3 [packed = true];
+   */
+  latency_ping_ms: number[];
+  /**
+   * @generated from protobuf field: repeated fixed32 latency_datacenter_ids_p2p = 14 [json_name = "latencyDatacenterIdsP2p", packed = true];
+   */
+  latency_datacenter_ids_p2p: number[];
+  /**
+   * @generated from protobuf field: repeated uint32 latency_ping_ms_p2p = 15 [json_name = "latencyPingMsP2p", packed = true];
+   */
+  latency_ping_ms_p2p: number[];
+  /**
+   * @generated from protobuf field: optional fixed32 your_public_ip = 4;
+   */
+  your_public_ip?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 your_public_port = 11;
+   */
+  your_public_port?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 server_time = 5;
+   */
+  server_time?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 challenge = 6;
+   */
+  challenge?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 seconds_until_shutdown = 7;
+   */
+  seconds_until_shutdown?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 client_cookie = 8;
+   */
+  client_cookie?: number;
+  /**
+   * @generated from protobuf field: optional uint32 recv_tos = 16;
+   */
+  recv_tos?: number;
+  /**
+   * @generated from protobuf field: optional uint32 echo_sent_tos = 17;
+   */
+  echo_sent_tos?: number;
+  /**
+   * @generated from protobuf field: optional uint32 sent_tos = 18;
+   */
+  sent_tos?: number;
+  /**
+   * @generated from protobuf field: optional uint32 echo_request_reply_tos = 19;
+   */
+  echo_request_reply_tos?: number;
+  /**
+   * @generated from protobuf field: optional uint32 scoring_penalty_relay_cluster = 9;
+   */
+  scoring_penalty_relay_cluster?: number;
+  /**
+   * @generated from protobuf field: optional uint32 flags = 12;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: repeated CMsgSteamDatagramRouterPingReply.RouteException route_exceptions = 10;
+   */
+  route_exceptions: CMsgSteamDatagramRouterPingReply_RouteException[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamDatagramRouterPingReply.AltAddress alt_addresses = 13;
+   */
+  alt_addresses: CMsgSteamDatagramRouterPingReply_AltAddress[];
+  /**
+   * @generated from protobuf field: optional bytes dummy_pad = 99;
+   */
+  dummy_pad?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional uint64 dummy_varint = 100;
+   */
+  dummy_varint?: bigint;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramRouterPingReply.RouteException
  */
 export interface CMsgSteamDatagramRouterPingReply_RouteException {
-	/**
-	 * @generated from protobuf field: optional fixed32 data_center_id = 1;
-	 */
-	data_center_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 2;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 penalty = 3;
-	 */
-	penalty?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 data_center_id = 1;
+   */
+  data_center_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 flags = 2;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional uint32 penalty = 3;
+   */
+  penalty?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramRouterPingReply.AltAddress
  */
 export interface CMsgSteamDatagramRouterPingReply_AltAddress {
-	/**
-	 * @generated from protobuf field: optional fixed32 ipv4 = 1;
-	 */
-	ipv4?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 port = 2;
-	 */
-	port?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 penalty = 3;
-	 */
-	penalty?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramRouterPingReply.AltAddress.Protocol protocol = 4;
-	 */
-	protocol?: CMsgSteamDatagramRouterPingReply_AltAddress_Protocol;
-	/**
-	 * @generated from protobuf field: optional string id = 5;
-	 */
-	id?: string;
+  /**
+   * @generated from protobuf field: optional fixed32 ipv4 = 1;
+   */
+  ipv4?: number;
+  /**
+   * @generated from protobuf field: optional uint32 port = 2;
+   */
+  port?: number;
+  /**
+   * @generated from protobuf field: optional uint32 penalty = 3;
+   */
+  penalty?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramRouterPingReply.AltAddress.Protocol protocol = 4;
+   */
+  protocol?: CMsgSteamDatagramRouterPingReply_AltAddress_Protocol;
+  /**
+   * @generated from protobuf field: optional string id = 5;
+   */
+  id?: string;
 }
 /**
  * @generated from protobuf enum CMsgSteamDatagramRouterPingReply.AltAddress.Protocol
  */
 export enum CMsgSteamDatagramRouterPingReply_AltAddress_Protocol {
-	/**
-	 * @generated from protobuf enum value: DefaultProtocol = 0;
-	 */
-	DefaultProtocol = 0,
+  /**
+   * @generated from protobuf enum value: DefaultProtocol = 0;
+   */
+  DefaultProtocol = 0,
 }
 /**
  * @generated from protobuf enum CMsgSteamDatagramRouterPingReply.Flags
  */
 export enum CMsgSteamDatagramRouterPingReply_Flags {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: FLAG_MAYBE_MORE_DATA_CENTERS = 1;
-	 */
-	FLAG_MAYBE_MORE_DATA_CENTERS = 1,
-	/**
-	 * @generated from protobuf enum value: FLAG_MAYBE_MORE_ALT_ADDRESSES = 2;
-	 */
-	FLAG_MAYBE_MORE_ALT_ADDRESSES = 2,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: FLAG_MAYBE_MORE_DATA_CENTERS = 1;
+   */
+  FLAG_MAYBE_MORE_DATA_CENTERS = 1,
+  /**
+   * @generated from protobuf enum value: FLAG_MAYBE_MORE_ALT_ADDRESSES = 2;
+   */
+  FLAG_MAYBE_MORE_ALT_ADDRESSES = 2,
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramGameserverPingRequestBody
  */
 export interface CMsgSteamDatagramGameserverPingRequestBody {
-	/**
-	 * @generated from protobuf field: optional fixed32 relay_popid = 1;
-	 */
-	relay_popid?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamNetworkingIPAddress your_public_ip = 2;
-	 */
-	your_public_ip?: CMsgSteamNetworkingIPAddress;
-	/**
-	 * @generated from protobuf field: optional uint32 your_public_port = 3;
-	 */
-	your_public_port?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 relay_unix_time = 4;
-	 */
-	relay_unix_time?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed64 routing_secret = 5;
-	 */
-	routing_secret?: bigint;
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamNetworkingIPAddress my_ips = 6;
-	 */
-	my_ips: CMsgSteamNetworkingIPAddress[];
-	/**
-	 * @generated from protobuf field: optional bytes echo = 8;
-	 */
-	echo?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional fixed32 relay_popid = 1;
+   */
+  relay_popid?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSteamNetworkingIPAddress your_public_ip = 2;
+   */
+  your_public_ip?: CMsgSteamNetworkingIPAddress;
+  /**
+   * @generated from protobuf field: optional uint32 your_public_port = 3;
+   */
+  your_public_port?: number;
+  /**
+   * @generated from protobuf field: optional uint64 relay_unix_time = 4;
+   */
+  relay_unix_time?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed64 routing_secret = 5;
+   */
+  routing_secret?: bigint;
+  /**
+   * @generated from protobuf field: repeated CMsgSteamNetworkingIPAddress my_ips = 6;
+   */
+  my_ips: CMsgSteamNetworkingIPAddress[];
+  /**
+   * @generated from protobuf field: optional bytes echo = 8;
+   */
+  echo?: Uint8Array;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramGameserverPingRequestEnvelope
  */
 export interface CMsgSteamDatagramGameserverPingRequestEnvelope {
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramCertificateSigned cert = 6;
-	 */
-	cert?: CMsgSteamDatagramCertificateSigned;
-	/**
-	 * @generated from protobuf field: optional bytes signed_data = 7;
-	 */
-	signed_data?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional bytes signature = 8;
-	 */
-	signature?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional fixed32 legacy_your_public_ip = 1;
-	 */
-	legacy_your_public_ip?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 legacy_your_public_port = 5;
-	 */
-	legacy_your_public_port?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 legacy_relay_unix_time = 2;
-	 */
-	legacy_relay_unix_time?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 legacy_challenge = 3;
-	 */
-	legacy_challenge?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed32 legacy_router_timestamp = 4;
-	 */
-	legacy_router_timestamp?: number;
-	/**
-	 * @generated from protobuf field: optional bytes dummy_pad = 1023;
-	 */
-	dummy_pad?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramCertificateSigned cert = 6;
+   */
+  cert?: CMsgSteamDatagramCertificateSigned;
+  /**
+   * @generated from protobuf field: optional bytes signed_data = 7;
+   */
+  signed_data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bytes signature = 8;
+   */
+  signature?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional fixed32 legacy_your_public_ip = 1;
+   */
+  legacy_your_public_ip?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 legacy_your_public_port = 5;
+   */
+  legacy_your_public_port?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 legacy_relay_unix_time = 2;
+   */
+  legacy_relay_unix_time?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 legacy_challenge = 3;
+   */
+  legacy_challenge?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed32 legacy_router_timestamp = 4;
+   */
+  legacy_router_timestamp?: number;
+  /**
+   * @generated from protobuf field: optional bytes dummy_pad = 1023;
+   */
+  dummy_pad?: Uint8Array;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramGameserverPingReplyData
  */
 export interface CMsgSteamDatagramGameserverPingReplyData {
-	/**
-	 * @generated from protobuf field: optional fixed32 echo_relay_unix_time = 2;
-	 */
-	echo_relay_unix_time?: number;
-	/**
-	 * @generated from protobuf field: optional bytes echo = 8;
-	 */
-	echo?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional fixed64 legacy_challenge = 3;
-	 */
-	legacy_challenge?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed32 legacy_router_timestamp = 4;
-	 */
-	legacy_router_timestamp?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 data_center_id = 5;
-	 */
-	data_center_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 appid = 6;
-	 */
-	appid?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 protocol_version = 7;
-	 */
-	protocol_version?: number;
-	/**
-	 * @generated from protobuf field: optional string build = 9;
-	 */
-	build?: string;
-	/**
-	 * @generated from protobuf field: optional uint64 network_config_version = 10;
-	 */
-	network_config_version?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed32 my_unix_time = 11;
-	 */
-	my_unix_time?: number;
-	/**
-	 * @generated from protobuf field: optional bytes routing_blob = 12;
-	 */
-	routing_blob?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional fixed32 echo_relay_unix_time = 2;
+   */
+  echo_relay_unix_time?: number;
+  /**
+   * @generated from protobuf field: optional bytes echo = 8;
+   */
+  echo?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional fixed64 legacy_challenge = 3;
+   */
+  legacy_challenge?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed32 legacy_router_timestamp = 4;
+   */
+  legacy_router_timestamp?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 data_center_id = 5;
+   */
+  data_center_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 appid = 6;
+   */
+  appid?: number;
+  /**
+   * @generated from protobuf field: optional uint32 protocol_version = 7;
+   */
+  protocol_version?: number;
+  /**
+   * @generated from protobuf field: optional string build = 9;
+   */
+  build?: string;
+  /**
+   * @generated from protobuf field: optional uint64 network_config_version = 10;
+   */
+  network_config_version?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed32 my_unix_time = 11;
+   */
+  my_unix_time?: number;
+  /**
+   * @generated from protobuf field: optional bytes routing_blob = 12;
+   */
+  routing_blob?: Uint8Array;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramNoSessionRelayToClient
  */
 export interface CMsgSteamDatagramNoSessionRelayToClient {
-	/**
-	 * @generated from protobuf field: optional fixed32 connection_id = 7;
-	 */
-	connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 your_public_ip = 2;
-	 */
-	your_public_ip?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 your_public_port = 6;
-	 */
-	your_public_port?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 server_time = 3;
-	 */
-	server_time?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 challenge = 4;
-	 */
-	challenge?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 seconds_until_shutdown = 5;
-	 */
-	seconds_until_shutdown?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 connection_id = 7;
+   */
+  connection_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 your_public_ip = 2;
+   */
+  your_public_ip?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 your_public_port = 6;
+   */
+  your_public_port?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 server_time = 3;
+   */
+  server_time?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 challenge = 4;
+   */
+  challenge?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 seconds_until_shutdown = 5;
+   */
+  seconds_until_shutdown?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramNoSessionRelayToPeer
  */
 export interface CMsgSteamDatagramNoSessionRelayToPeer {
-	/**
-	 * @generated from protobuf field: optional uint32 legacy_relay_session_id = 1;
-	 */
-	legacy_relay_session_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 from_relay_session_id = 2;
-	 */
-	from_relay_session_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 from_connection_id = 7;
-	 */
-	from_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 kludge_pad = 99;
-	 */
-	kludge_pad?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 legacy_relay_session_id = 1;
+   */
+  legacy_relay_session_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 from_relay_session_id = 2;
+   */
+  from_relay_session_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 from_connection_id = 7;
+   */
+  from_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 kludge_pad = 99;
+   */
+  kludge_pad?: bigint;
 }
 /**
  * @generated from protobuf message CMsgTOSTreatment
  */
 export interface CMsgTOSTreatment {
-	/**
-	 * @generated from protobuf field: optional string l4s_detect = 1 [json_name = "l4sDetect"];
-	 */
-	l4s_detect?: string;
-	/**
-	 * @generated from protobuf field: optional string up_ecn1 = 2;
-	 */
-	up_ecn1?: string;
-	/**
-	 * @generated from protobuf field: optional string down_dscp45 = 3;
-	 */
-	down_dscp45?: string;
+  /**
+   * @generated from protobuf field: optional string l4s_detect = 1 [json_name = "l4sDetect"];
+   */
+  l4s_detect?: string;
+  /**
+   * @generated from protobuf field: optional string up_ecn1 = 2;
+   */
+  up_ecn1?: string;
+  /**
+   * @generated from protobuf field: optional string down_dscp45 = 3;
+   */
+  down_dscp45?: string;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramClientPingSampleRequest
  */
 export interface CMsgSteamDatagramClientPingSampleRequest {
-	/**
-	 * @generated from protobuf field: optional fixed32 connection_id = 1;
-	 */
-	connection_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 connection_id = 1;
+   */
+  connection_id?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramClientPingSampleReply
  */
 export interface CMsgSteamDatagramClientPingSampleReply {
-	/**
-	 * @generated from protobuf field: optional fixed32 connection_id = 1;
-	 */
-	connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional bool relay_override_active = 5;
-	 */
-	relay_override_active?: boolean;
-	/**
-	 * @generated from protobuf field: optional CMsgTOSTreatment tos = 6;
-	 */
-	tos?: CMsgTOSTreatment;
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamDatagramClientPingSampleReply.POP pops = 2;
-	 */
-	pops: CMsgSteamDatagramClientPingSampleReply_POP[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamDatagramClientPingSampleReply.LegacyDataCenter legacy_data_centers = 3;
-	 */
-	legacy_data_centers: CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter[];
+  /**
+   * @generated from protobuf field: optional fixed32 connection_id = 1;
+   */
+  connection_id?: number;
+  /**
+   * @generated from protobuf field: optional bool relay_override_active = 5;
+   */
+  relay_override_active?: boolean;
+  /**
+   * @generated from protobuf field: optional CMsgTOSTreatment tos = 6;
+   */
+  tos?: CMsgTOSTreatment;
+  /**
+   * @generated from protobuf field: repeated CMsgSteamDatagramClientPingSampleReply.POP pops = 2;
+   */
+  pops: CMsgSteamDatagramClientPingSampleReply_POP[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamDatagramClientPingSampleReply.LegacyDataCenter legacy_data_centers = 3;
+   */
+  legacy_data_centers: CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter[];
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramClientPingSampleReply.POP
  */
 export interface CMsgSteamDatagramClientPingSampleReply_POP {
-	/**
-	 * @generated from protobuf field: optional fixed32 pop_id = 1;
-	 */
-	pop_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 default_front_ping_ms = 2;
-	 */
-	default_front_ping_ms?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 cluster_penalty = 4;
-	 */
-	cluster_penalty?: number;
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamDatagramClientPingSampleReply.POP.AltAddress alt_addresses = 7;
-	 */
-	alt_addresses: CMsgSteamDatagramClientPingSampleReply_POP_AltAddress[];
-	/**
-	 * @generated from protobuf field: optional uint32 default_e2e_ping_ms = 3 [json_name = "defaultE2ePingMs"];
-	 */
-	default_e2e_ping_ms?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 default_e2e_score = 5 [json_name = "defaultE2eScore"];
-	 */
-	default_e2e_score?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 p2p_via_peer_relay_pop_id = 6 [json_name = "p2pViaPeerRelayPopId"];
-	 */
-	p2p_via_peer_relay_pop_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 best_dc_ping_ms = 9;
-	 */
-	best_dc_ping_ms?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 best_dc_score = 10;
-	 */
-	best_dc_score?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 best_dc_via_relay_pop_id = 11;
-	 */
-	best_dc_via_relay_pop_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 default_dc_ping_ms = 12;
-	 */
-	default_dc_ping_ms?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 default_dc_score = 13;
-	 */
-	default_dc_score?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 default_dc_via_relay_pop_id = 14;
-	 */
-	default_dc_via_relay_pop_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 test_dc_ping_ms = 15;
-	 */
-	test_dc_ping_ms?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 test_dc_score = 16;
-	 */
-	test_dc_score?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 test_dc_via_relay_pop_id = 17;
-	 */
-	test_dc_via_relay_pop_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 pop_id = 1;
+   */
+  pop_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 default_front_ping_ms = 2;
+   */
+  default_front_ping_ms?: number;
+  /**
+   * @generated from protobuf field: optional uint32 cluster_penalty = 4;
+   */
+  cluster_penalty?: number;
+  /**
+   * @generated from protobuf field: repeated CMsgSteamDatagramClientPingSampleReply.POP.AltAddress alt_addresses = 7;
+   */
+  alt_addresses: CMsgSteamDatagramClientPingSampleReply_POP_AltAddress[];
+  /**
+   * @generated from protobuf field: optional uint32 default_e2e_ping_ms = 3 [json_name = "defaultE2ePingMs"];
+   */
+  default_e2e_ping_ms?: number;
+  /**
+   * @generated from protobuf field: optional uint32 default_e2e_score = 5 [json_name = "defaultE2eScore"];
+   */
+  default_e2e_score?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 p2p_via_peer_relay_pop_id = 6 [json_name = "p2pViaPeerRelayPopId"];
+   */
+  p2p_via_peer_relay_pop_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 best_dc_ping_ms = 9;
+   */
+  best_dc_ping_ms?: number;
+  /**
+   * @generated from protobuf field: optional uint32 best_dc_score = 10;
+   */
+  best_dc_score?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 best_dc_via_relay_pop_id = 11;
+   */
+  best_dc_via_relay_pop_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 default_dc_ping_ms = 12;
+   */
+  default_dc_ping_ms?: number;
+  /**
+   * @generated from protobuf field: optional uint32 default_dc_score = 13;
+   */
+  default_dc_score?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 default_dc_via_relay_pop_id = 14;
+   */
+  default_dc_via_relay_pop_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 test_dc_ping_ms = 15;
+   */
+  test_dc_ping_ms?: number;
+  /**
+   * @generated from protobuf field: optional uint32 test_dc_score = 16;
+   */
+  test_dc_score?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 test_dc_via_relay_pop_id = 17;
+   */
+  test_dc_via_relay_pop_id?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramClientPingSampleReply.POP.AltAddress
  */
 export interface CMsgSteamDatagramClientPingSampleReply_POP_AltAddress {
-	/**
-	 * @generated from protobuf field: optional string id = 1;
-	 */
-	id?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 front_ping_ms = 2;
-	 */
-	front_ping_ms?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 penalty = 3;
-	 */
-	penalty?: number;
+  /**
+   * @generated from protobuf field: optional string id = 1;
+   */
+  id?: string;
+  /**
+   * @generated from protobuf field: optional uint32 front_ping_ms = 2;
+   */
+  front_ping_ms?: number;
+  /**
+   * @generated from protobuf field: optional uint32 penalty = 3;
+   */
+  penalty?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramClientPingSampleReply.LegacyDataCenter
  */
 export interface CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter {
-	/**
-	 * @generated from protobuf field: optional fixed32 data_center_id = 1;
-	 */
-	data_center_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 best_dc_via_relay_pop_id = 2;
-	 */
-	best_dc_via_relay_pop_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 best_dc_ping_ms = 3;
-	 */
-	best_dc_ping_ms?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 data_center_id = 1;
+   */
+  data_center_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 best_dc_via_relay_pop_id = 2;
+   */
+  best_dc_via_relay_pop_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 best_dc_ping_ms = 3;
+   */
+  best_dc_ping_ms?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramClientSwitchedPrimary
  */
 export interface CMsgSteamDatagramClientSwitchedPrimary {
-	/**
-	 * @generated from protobuf field: optional fixed32 connection_id = 1;
-	 */
-	connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 from_ip = 2;
-	 */
-	from_ip?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 from_port = 3;
-	 */
-	from_port?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 from_router_cluster = 4;
-	 */
-	from_router_cluster?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 from_active_time = 5;
-	 */
-	from_active_time?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 from_active_packets_recv = 6;
-	 */
-	from_active_packets_recv?: number;
-	/**
-	 * @generated from protobuf field: optional string from_dropped_reason = 7;
-	 */
-	from_dropped_reason?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 gap_ms = 8;
-	 */
-	gap_ms?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality from_quality_now = 9;
-	 */
-	from_quality_now?: CMsgSteamDatagramClientSwitchedPrimary_RouterQuality;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality to_quality_now = 10;
-	 */
-	to_quality_now?: CMsgSteamDatagramClientSwitchedPrimary_RouterQuality;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality from_quality_then = 11;
-	 */
-	from_quality_then?: CMsgSteamDatagramClientSwitchedPrimary_RouterQuality;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality to_quality_then = 12;
-	 */
-	to_quality_then?: CMsgSteamDatagramClientSwitchedPrimary_RouterQuality;
+  /**
+   * @generated from protobuf field: optional fixed32 connection_id = 1;
+   */
+  connection_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 from_ip = 2;
+   */
+  from_ip?: number;
+  /**
+   * @generated from protobuf field: optional uint32 from_port = 3;
+   */
+  from_port?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 from_router_cluster = 4;
+   */
+  from_router_cluster?: number;
+  /**
+   * @generated from protobuf field: optional uint32 from_active_time = 5;
+   */
+  from_active_time?: number;
+  /**
+   * @generated from protobuf field: optional uint32 from_active_packets_recv = 6;
+   */
+  from_active_packets_recv?: number;
+  /**
+   * @generated from protobuf field: optional string from_dropped_reason = 7;
+   */
+  from_dropped_reason?: string;
+  /**
+   * @generated from protobuf field: optional uint32 gap_ms = 8;
+   */
+  gap_ms?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality from_quality_now = 9;
+   */
+  from_quality_now?: CMsgSteamDatagramClientSwitchedPrimary_RouterQuality;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality to_quality_now = 10;
+   */
+  to_quality_now?: CMsgSteamDatagramClientSwitchedPrimary_RouterQuality;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality from_quality_then = 11;
+   */
+  from_quality_then?: CMsgSteamDatagramClientSwitchedPrimary_RouterQuality;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality to_quality_then = 12;
+   */
+  to_quality_then?: CMsgSteamDatagramClientSwitchedPrimary_RouterQuality;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramClientSwitchedPrimary.RouterQuality
  */
 export interface CMsgSteamDatagramClientSwitchedPrimary_RouterQuality {
-	/**
-	 * @generated from protobuf field: optional uint32 score = 1;
-	 */
-	score?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 front_ping = 2;
-	 */
-	front_ping?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 back_ping = 3;
-	 */
-	back_ping?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 seconds_until_down = 4;
-	 */
-	seconds_until_down?: number;
+  /**
+   * @generated from protobuf field: optional uint32 score = 1;
+   */
+  score?: number;
+  /**
+   * @generated from protobuf field: optional uint32 front_ping = 2;
+   */
+  front_ping?: number;
+  /**
+   * @generated from protobuf field: optional uint32 back_ping = 3;
+   */
+  back_ping?: number;
+  /**
+   * @generated from protobuf field: optional uint32 seconds_until_down = 4;
+   */
+  seconds_until_down?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramConnectRequest
  */
 export interface CMsgSteamDatagramConnectRequest {
-	/**
-	 * @generated from protobuf field: optional fixed32 connection_id = 1;
-	 */
-	connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 my_timestamp = 4;
-	 */
-	my_timestamp?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 ping_est_ms = 5;
-	 */
-	ping_est_ms?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 virtual_port = 9;
-	 */
-	virtual_port?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 gameserver_relay_session_id = 2;
-	 */
-	gameserver_relay_session_id?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramSessionCryptInfoSigned crypt = 6;
-	 */
-	crypt?: CMsgSteamDatagramSessionCryptInfoSigned;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramCertificateSigned cert = 7;
-	 */
-	cert?: CMsgSteamDatagramCertificateSigned;
-	/**
-	 * @generated from protobuf field: optional fixed64 routing_secret = 10;
-	 */
-	routing_secret?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed64 legacy_client_steam_id = 3;
-	 */
-	legacy_client_steam_id?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed32 connection_id = 1;
+   */
+  connection_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 my_timestamp = 4;
+   */
+  my_timestamp?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 ping_est_ms = 5;
+   */
+  ping_est_ms?: number;
+  /**
+   * @generated from protobuf field: optional uint32 virtual_port = 9;
+   */
+  virtual_port?: number;
+  /**
+   * @generated from protobuf field: optional uint32 gameserver_relay_session_id = 2;
+   */
+  gameserver_relay_session_id?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramSessionCryptInfoSigned crypt = 6;
+   */
+  crypt?: CMsgSteamDatagramSessionCryptInfoSigned;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramCertificateSigned cert = 7;
+   */
+  cert?: CMsgSteamDatagramCertificateSigned;
+  /**
+   * @generated from protobuf field: optional fixed64 routing_secret = 10;
+   */
+  routing_secret?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed64 legacy_client_steam_id = 3;
+   */
+  legacy_client_steam_id?: bigint;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramConnectOK
  */
 export interface CMsgSteamDatagramConnectOK {
-	/**
-	 * @generated from protobuf field: optional fixed32 client_connection_id = 1;
-	 */
-	client_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 server_connection_id = 7;
-	 */
-	server_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 your_timestamp = 3;
-	 */
-	your_timestamp?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 delay_time_usec = 4;
-	 */
-	delay_time_usec?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 gameserver_relay_session_id = 2;
-	 */
-	gameserver_relay_session_id?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramSessionCryptInfoSigned crypt = 5;
-	 */
-	crypt?: CMsgSteamDatagramSessionCryptInfoSigned;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramCertificateSigned cert = 6;
-	 */
-	cert?: CMsgSteamDatagramCertificateSigned;
+  /**
+   * @generated from protobuf field: optional fixed32 client_connection_id = 1;
+   */
+  client_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 server_connection_id = 7;
+   */
+  server_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 your_timestamp = 3;
+   */
+  your_timestamp?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 delay_time_usec = 4;
+   */
+  delay_time_usec?: number;
+  /**
+   * @generated from protobuf field: optional uint32 gameserver_relay_session_id = 2;
+   */
+  gameserver_relay_session_id?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramSessionCryptInfoSigned crypt = 5;
+   */
+  crypt?: CMsgSteamDatagramSessionCryptInfoSigned;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramCertificateSigned cert = 6;
+   */
+  cert?: CMsgSteamDatagramCertificateSigned;
 }
 /**
  * @generated from protobuf message CMsgSteamNetworkingP2PSDRRoutingSummary
  */
 export interface CMsgSteamNetworkingP2PSDRRoutingSummary {
-	/**
-	 * @generated from protobuf field: optional uint32 initial_ping = 1;
-	 */
-	initial_ping?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 initial_ping_front_local = 2;
-	 */
-	initial_ping_front_local?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 initial_ping_front_remote = 3;
-	 */
-	initial_ping_front_remote?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 initial_score = 4;
-	 */
-	initial_score?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 initial_pop_local = 5;
-	 */
-	initial_pop_local?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 initial_pop_remote = 6;
-	 */
-	initial_pop_remote?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 best_ping = 11;
-	 */
-	best_ping?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 best_ping_front_local = 12;
-	 */
-	best_ping_front_local?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 best_ping_front_remote = 13;
-	 */
-	best_ping_front_remote?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 best_score = 14;
-	 */
-	best_score?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 best_pop_local = 15;
-	 */
-	best_pop_local?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 best_pop_remote = 16;
-	 */
-	best_pop_remote?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 best_time = 17;
-	 */
-	best_time?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 negotiation_ms = 7;
-	 */
-	negotiation_ms?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 selected_seconds = 8;
-	 */
-	selected_seconds?: number;
+  /**
+   * @generated from protobuf field: optional uint32 initial_ping = 1;
+   */
+  initial_ping?: number;
+  /**
+   * @generated from protobuf field: optional uint32 initial_ping_front_local = 2;
+   */
+  initial_ping_front_local?: number;
+  /**
+   * @generated from protobuf field: optional uint32 initial_ping_front_remote = 3;
+   */
+  initial_ping_front_remote?: number;
+  /**
+   * @generated from protobuf field: optional uint32 initial_score = 4;
+   */
+  initial_score?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 initial_pop_local = 5;
+   */
+  initial_pop_local?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 initial_pop_remote = 6;
+   */
+  initial_pop_remote?: number;
+  /**
+   * @generated from protobuf field: optional uint32 best_ping = 11;
+   */
+  best_ping?: number;
+  /**
+   * @generated from protobuf field: optional uint32 best_ping_front_local = 12;
+   */
+  best_ping_front_local?: number;
+  /**
+   * @generated from protobuf field: optional uint32 best_ping_front_remote = 13;
+   */
+  best_ping_front_remote?: number;
+  /**
+   * @generated from protobuf field: optional uint32 best_score = 14;
+   */
+  best_score?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 best_pop_local = 15;
+   */
+  best_pop_local?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 best_pop_remote = 16;
+   */
+  best_pop_remote?: number;
+  /**
+   * @generated from protobuf field: optional uint32 best_time = 17;
+   */
+  best_time?: number;
+  /**
+   * @generated from protobuf field: optional uint32 negotiation_ms = 7;
+   */
+  negotiation_ms?: number;
+  /**
+   * @generated from protobuf field: optional uint32 selected_seconds = 8;
+   */
+  selected_seconds?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramP2PRoutingSummary
  */
 export interface CMsgSteamDatagramP2PRoutingSummary {
-	/**
-	 * @generated from protobuf field: optional CMsgSteamNetworkingICESessionSummary ice = 2;
-	 */
-	ice?: CMsgSteamNetworkingICESessionSummary;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamNetworkingP2PSDRRoutingSummary sdr = 3;
-	 */
-	sdr?: CMsgSteamNetworkingP2PSDRRoutingSummary;
+  /**
+   * @generated from protobuf field: optional CMsgSteamNetworkingICESessionSummary ice = 2;
+   */
+  ice?: CMsgSteamNetworkingICESessionSummary;
+  /**
+   * @generated from protobuf field: optional CMsgSteamNetworkingP2PSDRRoutingSummary sdr = 3;
+   */
+  sdr?: CMsgSteamNetworkingP2PSDRRoutingSummary;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramConnectionClosed
  */
 export interface CMsgSteamDatagramConnectionClosed {
-	/**
-	 * @generated from protobuf field: optional fixed32 to_connection_id = 7;
-	 */
-	to_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 from_connection_id = 8;
-	 */
-	from_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional string from_identity_string = 15;
-	 */
-	from_identity_string?: string;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamNetworkingIdentityLegacyBinary legacy_from_identity_binary = 13;
-	 */
-	legacy_from_identity_binary?: CMsgSteamNetworkingIdentityLegacyBinary;
-	/**
-	 * @generated from protobuf field: optional fixed64 legacy_from_steam_id = 3;
-	 */
-	legacy_from_steam_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 legacy_gameserver_relay_session_id = 2;
-	 */
-	legacy_gameserver_relay_session_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 to_relay_session_id = 9;
-	 */
-	to_relay_session_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 from_relay_session_id = 10;
-	 */
-	from_relay_session_id?: number;
-	/**
-	 * @generated from protobuf field: optional bytes forward_target_relay_routing_token = 11;
-	 */
-	forward_target_relay_routing_token?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional uint32 forward_target_revision = 12;
-	 */
-	forward_target_revision?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionClosed.ERelayMode relay_mode = 4;
-	 */
-	relay_mode?: CMsgSteamDatagramConnectionClosed_ERelayMode;
-	/**
-	 * @generated from protobuf field: optional string debug = 5;
-	 */
-	debug?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 reason_code = 6;
-	 */
-	reason_code?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 routing_secret = 14;
-	 */
-	routing_secret?: bigint;
-	/**
-	 * @generated from protobuf field: optional bool not_primary_session = 16;
-	 */
-	not_primary_session?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool not_primary_transport = 19;
-	 */
-	not_primary_transport?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool relay_override_active = 22;
-	 */
-	relay_override_active?: boolean;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_relay = 17;
-	 */
-	quality_relay?: CMsgSteamDatagramConnectionQuality;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_e2e = 18 [json_name = "qualityE2e"];
-	 */
-	quality_e2e?: CMsgSteamDatagramConnectionQuality;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 21 [json_name = "p2pRoutingSummary"];
-	 */
-	p2p_routing_summary?: CMsgSteamDatagramP2PRoutingSummary;
+  /**
+   * @generated from protobuf field: optional fixed32 to_connection_id = 7;
+   */
+  to_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 from_connection_id = 8;
+   */
+  from_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional string from_identity_string = 15;
+   */
+  from_identity_string?: string;
+  /**
+   * @generated from protobuf field: optional CMsgSteamNetworkingIdentityLegacyBinary legacy_from_identity_binary = 13;
+   */
+  legacy_from_identity_binary?: CMsgSteamNetworkingIdentityLegacyBinary;
+  /**
+   * @generated from protobuf field: optional fixed64 legacy_from_steam_id = 3;
+   */
+  legacy_from_steam_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 legacy_gameserver_relay_session_id = 2;
+   */
+  legacy_gameserver_relay_session_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 to_relay_session_id = 9;
+   */
+  to_relay_session_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 from_relay_session_id = 10;
+   */
+  from_relay_session_id?: number;
+  /**
+   * @generated from protobuf field: optional bytes forward_target_relay_routing_token = 11;
+   */
+  forward_target_relay_routing_token?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional uint32 forward_target_revision = 12;
+   */
+  forward_target_revision?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionClosed.ERelayMode relay_mode = 4;
+   */
+  relay_mode?: CMsgSteamDatagramConnectionClosed_ERelayMode;
+  /**
+   * @generated from protobuf field: optional string debug = 5;
+   */
+  debug?: string;
+  /**
+   * @generated from protobuf field: optional uint32 reason_code = 6;
+   */
+  reason_code?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 routing_secret = 14;
+   */
+  routing_secret?: bigint;
+  /**
+   * @generated from protobuf field: optional bool not_primary_session = 16;
+   */
+  not_primary_session?: boolean;
+  /**
+   * @generated from protobuf field: optional bool not_primary_transport = 19;
+   */
+  not_primary_transport?: boolean;
+  /**
+   * @generated from protobuf field: optional bool relay_override_active = 22;
+   */
+  relay_override_active?: boolean;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_relay = 17;
+   */
+  quality_relay?: CMsgSteamDatagramConnectionQuality;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_e2e = 18 [json_name = "qualityE2e"];
+   */
+  quality_e2e?: CMsgSteamDatagramConnectionQuality;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 21 [json_name = "p2pRoutingSummary"];
+   */
+  p2p_routing_summary?: CMsgSteamDatagramP2PRoutingSummary;
 }
 /**
  * @generated from protobuf enum CMsgSteamDatagramConnectionClosed.ERelayMode
  */
 export enum CMsgSteamDatagramConnectionClosed_ERelayMode {
-	/**
-	 * @generated from protobuf enum value: None = 0;
-	 */
-	None = 0,
-	/**
-	 * @generated from protobuf enum value: EndToEnd = 1;
-	 */
-	EndToEnd = 1,
-	/**
-	 * @generated from protobuf enum value: ClosedByPeer = 2;
-	 */
-	ClosedByPeer = 2,
+  /**
+   * @generated from protobuf enum value: None = 0;
+   */
+  None = 0,
+  /**
+   * @generated from protobuf enum value: EndToEnd = 1;
+   */
+  EndToEnd = 1,
+  /**
+   * @generated from protobuf enum value: ClosedByPeer = 2;
+   */
+  ClosedByPeer = 2,
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramNoConnection
  */
 export interface CMsgSteamDatagramNoConnection {
-	/**
-	 * @generated from protobuf field: optional fixed32 to_connection_id = 5;
-	 */
-	to_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 from_connection_id = 6;
-	 */
-	from_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 legacy_gameserver_relay_session_id = 2;
-	 */
-	legacy_gameserver_relay_session_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 to_relay_session_id = 9;
-	 */
-	to_relay_session_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 from_relay_session_id = 10;
-	 */
-	from_relay_session_id?: number;
-	/**
-	 * @generated from protobuf field: optional string from_identity_string = 7;
-	 */
-	from_identity_string?: string;
-	/**
-	 * @generated from protobuf field: optional fixed64 legacy_from_steam_id = 3;
-	 */
-	legacy_from_steam_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional bool end_to_end = 4;
-	 */
-	end_to_end?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool not_primary_session = 12;
-	 */
-	not_primary_session?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool not_primary_transport = 15;
-	 */
-	not_primary_transport?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool relay_override_active = 17;
-	 */
-	relay_override_active?: boolean;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_relay = 13;
-	 */
-	quality_relay?: CMsgSteamDatagramConnectionQuality;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_e2e = 14 [json_name = "qualityE2e"];
-	 */
-	quality_e2e?: CMsgSteamDatagramConnectionQuality;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 16 [json_name = "p2pRoutingSummary"];
-	 */
-	p2p_routing_summary?: CMsgSteamDatagramP2PRoutingSummary;
-	/**
-	 * @generated from protobuf field: optional fixed64 routing_secret = 11;
-	 */
-	routing_secret?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed32 dummy_pad = 1023;
-	 */
-	dummy_pad?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 to_connection_id = 5;
+   */
+  to_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 from_connection_id = 6;
+   */
+  from_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 legacy_gameserver_relay_session_id = 2;
+   */
+  legacy_gameserver_relay_session_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 to_relay_session_id = 9;
+   */
+  to_relay_session_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 from_relay_session_id = 10;
+   */
+  from_relay_session_id?: number;
+  /**
+   * @generated from protobuf field: optional string from_identity_string = 7;
+   */
+  from_identity_string?: string;
+  /**
+   * @generated from protobuf field: optional fixed64 legacy_from_steam_id = 3;
+   */
+  legacy_from_steam_id?: bigint;
+  /**
+   * @generated from protobuf field: optional bool end_to_end = 4;
+   */
+  end_to_end?: boolean;
+  /**
+   * @generated from protobuf field: optional bool not_primary_session = 12;
+   */
+  not_primary_session?: boolean;
+  /**
+   * @generated from protobuf field: optional bool not_primary_transport = 15;
+   */
+  not_primary_transport?: boolean;
+  /**
+   * @generated from protobuf field: optional bool relay_override_active = 17;
+   */
+  relay_override_active?: boolean;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_relay = 13;
+   */
+  quality_relay?: CMsgSteamDatagramConnectionQuality;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_e2e = 14 [json_name = "qualityE2e"];
+   */
+  quality_e2e?: CMsgSteamDatagramConnectionQuality;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 16 [json_name = "p2pRoutingSummary"];
+   */
+  p2p_routing_summary?: CMsgSteamDatagramP2PRoutingSummary;
+  /**
+   * @generated from protobuf field: optional fixed64 routing_secret = 11;
+   */
+  routing_secret?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed32 dummy_pad = 1023;
+   */
+  dummy_pad?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramGameserverSessionRequest
  */
 export interface CMsgSteamDatagramGameserverSessionRequest {
-	/**
-	 * @generated from protobuf field: optional bytes ticket = 1;
-	 */
-	ticket?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional fixed32 challenge_time = 3;
-	 */
-	challenge_time?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 challenge = 4;
-	 */
-	challenge?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed32 client_connection_id = 5;
-	 */
-	client_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 server_connection_id = 8;
-	 */
-	server_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 network_config_version = 6;
-	 */
-	network_config_version?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 protocol_version = 7;
-	 */
-	protocol_version?: number;
-	/**
-	 * @generated from protobuf field: optional string platform = 9;
-	 */
-	platform?: string;
-	/**
-	 * @generated from protobuf field: optional string build = 10;
-	 */
-	build?: string;
-	/**
-	 * @generated from protobuf field: optional string dev_gameserver_identity = 100;
-	 */
-	dev_gameserver_identity?: string;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramCertificateSigned dev_client_cert = 101;
-	 */
-	dev_client_cert?: CMsgSteamDatagramCertificateSigned;
+  /**
+   * @generated from protobuf field: optional bytes ticket = 1;
+   */
+  ticket?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional fixed32 challenge_time = 3;
+   */
+  challenge_time?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 challenge = 4;
+   */
+  challenge?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed32 client_connection_id = 5;
+   */
+  client_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 server_connection_id = 8;
+   */
+  server_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional uint64 network_config_version = 6;
+   */
+  network_config_version?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 protocol_version = 7;
+   */
+  protocol_version?: number;
+  /**
+   * @generated from protobuf field: optional string platform = 9;
+   */
+  platform?: string;
+  /**
+   * @generated from protobuf field: optional string build = 10;
+   */
+  build?: string;
+  /**
+   * @generated from protobuf field: optional string dev_gameserver_identity = 100;
+   */
+  dev_gameserver_identity?: string;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramCertificateSigned dev_client_cert = 101;
+   */
+  dev_client_cert?: CMsgSteamDatagramCertificateSigned;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramGameserverSessionEstablished
  */
 export interface CMsgSteamDatagramGameserverSessionEstablished {
-	/**
-	 * @generated from protobuf field: optional fixed32 connection_id = 1;
-	 */
-	connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional string gameserver_identity_string = 2;
-	 */
-	gameserver_identity_string?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 seconds_until_shutdown = 4;
-	 */
-	seconds_until_shutdown?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 seq_num_r2c = 6 [json_name = "seqNumR2c"];
-	 */
-	seq_num_r2c?: number;
-	/**
-	 * @generated from protobuf field: optional bytes dummy_legacy_identity_binary = 7;
-	 */
-	dummy_legacy_identity_binary?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional fixed64 legacy_gameserver_steamid = 3;
-	 */
-	legacy_gameserver_steamid?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed32 connection_id = 1;
+   */
+  connection_id?: number;
+  /**
+   * @generated from protobuf field: optional string gameserver_identity_string = 2;
+   */
+  gameserver_identity_string?: string;
+  /**
+   * @generated from protobuf field: optional uint32 seconds_until_shutdown = 4;
+   */
+  seconds_until_shutdown?: number;
+  /**
+   * @generated from protobuf field: optional uint32 seq_num_r2c = 6 [json_name = "seqNumR2c"];
+   */
+  seq_num_r2c?: number;
+  /**
+   * @generated from protobuf field: optional bytes dummy_legacy_identity_binary = 7;
+   */
+  dummy_legacy_identity_binary?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional fixed64 legacy_gameserver_steamid = 3;
+   */
+  legacy_gameserver_steamid?: bigint;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramConnectionStatsClientToRouter
  */
 export interface CMsgSteamDatagramConnectionStatsClientToRouter {
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_relay = 1;
-	 */
-	quality_relay?: CMsgSteamDatagramConnectionQuality;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];
-	 */
-	quality_e2e?: CMsgSteamDatagramConnectionQuality;
-	/**
-	 * @generated from protobuf field: repeated fixed32 ack_relay = 4;
-	 */
-	ack_relay: number[];
-	/**
-	 * @generated from protobuf field: repeated fixed32 legacy_ack_e2e = 5 [json_name = "legacyAckE2e"];
-	 */
-	legacy_ack_e2e: number[];
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 6;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 client_connection_id = 8;
-	 */
-	client_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 seq_num_c2r = 9 [json_name = "seqNumC2r"];
-	 */
-	seq_num_c2r?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 seq_num_e2e = 10 [json_name = "seqNumE2e"];
-	 */
-	seq_num_e2e?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_relay = 1;
+   */
+  quality_relay?: CMsgSteamDatagramConnectionQuality;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];
+   */
+  quality_e2e?: CMsgSteamDatagramConnectionQuality;
+  /**
+   * @generated from protobuf field: repeated fixed32 ack_relay = 4;
+   */
+  ack_relay: number[];
+  /**
+   * @generated from protobuf field: repeated fixed32 legacy_ack_e2e = 5 [json_name = "legacyAckE2e"];
+   */
+  legacy_ack_e2e: number[];
+  /**
+   * @generated from protobuf field: optional uint32 flags = 6;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 client_connection_id = 8;
+   */
+  client_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 seq_num_c2r = 9 [json_name = "seqNumC2r"];
+   */
+  seq_num_c2r?: number;
+  /**
+   * @generated from protobuf field: optional uint32 seq_num_e2e = 10 [json_name = "seqNumE2e"];
+   */
+  seq_num_e2e?: number;
 }
 /**
  * @generated from protobuf enum CMsgSteamDatagramConnectionStatsClientToRouter.Flags
  */
 export enum CMsgSteamDatagramConnectionStatsClientToRouter_Flags {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_RELAY = 1;
-	 */
-	ACK_REQUEST_RELAY = 1,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_E2E = 2;
-	 */
-	ACK_REQUEST_E2E = 2,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_IMMEDIATE = 4;
-	 */
-	ACK_REQUEST_IMMEDIATE = 4,
-	/**
-	 * @generated from protobuf enum value: NOT_PRIMARY_SESSION = 8;
-	 */
-	NOT_PRIMARY_SESSION = 8,
-	/**
-	 * @generated from protobuf enum value: CLIENT_RELAY_OVERRIDE = 32;
-	 */
-	CLIENT_RELAY_OVERRIDE = 32,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_RELAY = 1;
+   */
+  ACK_REQUEST_RELAY = 1,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_E2E = 2;
+   */
+  ACK_REQUEST_E2E = 2,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_IMMEDIATE = 4;
+   */
+  ACK_REQUEST_IMMEDIATE = 4,
+  /**
+   * @generated from protobuf enum value: NOT_PRIMARY_SESSION = 8;
+   */
+  NOT_PRIMARY_SESSION = 8,
+  /**
+   * @generated from protobuf enum value: CLIENT_RELAY_OVERRIDE = 32;
+   */
+  CLIENT_RELAY_OVERRIDE = 32,
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramConnectionStatsRouterToClient
  */
 export interface CMsgSteamDatagramConnectionStatsRouterToClient {
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_relay = 1;
-	 */
-	quality_relay?: CMsgSteamDatagramConnectionQuality;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];
-	 */
-	quality_e2e?: CMsgSteamDatagramConnectionQuality;
-	/**
-	 * @generated from protobuf field: optional uint32 seconds_until_shutdown = 6;
-	 */
-	seconds_until_shutdown?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 migrate_request_ip = 10;
-	 */
-	migrate_request_ip?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 migrate_request_port = 11;
-	 */
-	migrate_request_port?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 scoring_penalty_relay_cluster = 12;
-	 */
-	scoring_penalty_relay_cluster?: number;
-	/**
-	 * @generated from protobuf field: repeated fixed32 ack_relay = 13;
-	 */
-	ack_relay: number[];
-	/**
-	 * @generated from protobuf field: repeated fixed32 legacy_ack_e2e = 14 [json_name = "legacyAckE2e"];
-	 */
-	legacy_ack_e2e: number[];
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 15;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 client_connection_id = 7;
-	 */
-	client_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 seq_num_r2c = 8 [json_name = "seqNumR2c"];
-	 */
-	seq_num_r2c?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 seq_num_e2e = 9 [json_name = "seqNumE2e"];
-	 */
-	seq_num_e2e?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_relay = 1;
+   */
+  quality_relay?: CMsgSteamDatagramConnectionQuality;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];
+   */
+  quality_e2e?: CMsgSteamDatagramConnectionQuality;
+  /**
+   * @generated from protobuf field: optional uint32 seconds_until_shutdown = 6;
+   */
+  seconds_until_shutdown?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 migrate_request_ip = 10;
+   */
+  migrate_request_ip?: number;
+  /**
+   * @generated from protobuf field: optional uint32 migrate_request_port = 11;
+   */
+  migrate_request_port?: number;
+  /**
+   * @generated from protobuf field: optional uint32 scoring_penalty_relay_cluster = 12;
+   */
+  scoring_penalty_relay_cluster?: number;
+  /**
+   * @generated from protobuf field: repeated fixed32 ack_relay = 13;
+   */
+  ack_relay: number[];
+  /**
+   * @generated from protobuf field: repeated fixed32 legacy_ack_e2e = 14 [json_name = "legacyAckE2e"];
+   */
+  legacy_ack_e2e: number[];
+  /**
+   * @generated from protobuf field: optional uint32 flags = 15;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 client_connection_id = 7;
+   */
+  client_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 seq_num_r2c = 8 [json_name = "seqNumR2c"];
+   */
+  seq_num_r2c?: number;
+  /**
+   * @generated from protobuf field: optional uint32 seq_num_e2e = 9 [json_name = "seqNumE2e"];
+   */
+  seq_num_e2e?: number;
 }
 /**
  * @generated from protobuf enum CMsgSteamDatagramConnectionStatsRouterToClient.Flags
  */
 export enum CMsgSteamDatagramConnectionStatsRouterToClient_Flags {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_RELAY = 1;
-	 */
-	ACK_REQUEST_RELAY = 1,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_E2E = 2;
-	 */
-	ACK_REQUEST_E2E = 2,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_IMMEDIATE = 4;
-	 */
-	ACK_REQUEST_IMMEDIATE = 4,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_RELAY = 1;
+   */
+  ACK_REQUEST_RELAY = 1,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_E2E = 2;
+   */
+  ACK_REQUEST_E2E = 2,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_IMMEDIATE = 4;
+   */
+  ACK_REQUEST_IMMEDIATE = 4,
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramConnectionStatsRouterToServer
  */
 export interface CMsgSteamDatagramConnectionStatsRouterToServer {
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_relay = 1;
-	 */
-	quality_relay?: CMsgSteamDatagramConnectionQuality;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];
-	 */
-	quality_e2e?: CMsgSteamDatagramConnectionQuality;
-	/**
-	 * @generated from protobuf field: repeated fixed32 ack_relay = 10;
-	 */
-	ack_relay: number[];
-	/**
-	 * @generated from protobuf field: repeated fixed32 legacy_ack_e2e = 11 [json_name = "legacyAckE2e"];
-	 */
-	legacy_ack_e2e: number[];
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 12;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 seq_num_r2s = 5 [json_name = "seqNumR2s"];
-	 */
-	seq_num_r2s?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 seq_num_e2e = 6 [json_name = "seqNumE2e"];
-	 */
-	seq_num_e2e?: number;
-	/**
-	 * @generated from protobuf field: optional string client_identity_string = 15;
-	 */
-	client_identity_string?: string;
-	/**
-	 * @generated from protobuf field: optional fixed64 legacy_client_steam_id = 7;
-	 */
-	legacy_client_steam_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 relay_session_id = 8;
-	 */
-	relay_session_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 client_connection_id = 9;
-	 */
-	client_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 server_connection_id = 13;
-	 */
-	server_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 routing_secret = 14;
-	 */
-	routing_secret?: bigint;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_relay = 1;
+   */
+  quality_relay?: CMsgSteamDatagramConnectionQuality;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];
+   */
+  quality_e2e?: CMsgSteamDatagramConnectionQuality;
+  /**
+   * @generated from protobuf field: repeated fixed32 ack_relay = 10;
+   */
+  ack_relay: number[];
+  /**
+   * @generated from protobuf field: repeated fixed32 legacy_ack_e2e = 11 [json_name = "legacyAckE2e"];
+   */
+  legacy_ack_e2e: number[];
+  /**
+   * @generated from protobuf field: optional uint32 flags = 12;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional uint32 seq_num_r2s = 5 [json_name = "seqNumR2s"];
+   */
+  seq_num_r2s?: number;
+  /**
+   * @generated from protobuf field: optional uint32 seq_num_e2e = 6 [json_name = "seqNumE2e"];
+   */
+  seq_num_e2e?: number;
+  /**
+   * @generated from protobuf field: optional string client_identity_string = 15;
+   */
+  client_identity_string?: string;
+  /**
+   * @generated from protobuf field: optional fixed64 legacy_client_steam_id = 7;
+   */
+  legacy_client_steam_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 relay_session_id = 8;
+   */
+  relay_session_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 client_connection_id = 9;
+   */
+  client_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 server_connection_id = 13;
+   */
+  server_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 routing_secret = 14;
+   */
+  routing_secret?: bigint;
 }
 /**
  * @generated from protobuf enum CMsgSteamDatagramConnectionStatsRouterToServer.Flags
  */
 export enum CMsgSteamDatagramConnectionStatsRouterToServer_Flags {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_RELAY = 1;
-	 */
-	ACK_REQUEST_RELAY = 1,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_E2E = 2;
-	 */
-	ACK_REQUEST_E2E = 2,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_IMMEDIATE = 4;
-	 */
-	ACK_REQUEST_IMMEDIATE = 4,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_RELAY = 1;
+   */
+  ACK_REQUEST_RELAY = 1,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_E2E = 2;
+   */
+  ACK_REQUEST_E2E = 2,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_IMMEDIATE = 4;
+   */
+  ACK_REQUEST_IMMEDIATE = 4,
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramConnectionStatsServerToRouter
  */
 export interface CMsgSteamDatagramConnectionStatsServerToRouter {
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_relay = 1;
-	 */
-	quality_relay?: CMsgSteamDatagramConnectionQuality;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];
-	 */
-	quality_e2e?: CMsgSteamDatagramConnectionQuality;
-	/**
-	 * @generated from protobuf field: repeated fixed32 ack_relay = 8;
-	 */
-	ack_relay: number[];
-	/**
-	 * @generated from protobuf field: repeated fixed32 legacy_ack_e2e = 9 [json_name = "legacyAckE2e"];
-	 */
-	legacy_ack_e2e: number[];
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 10;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 seq_num_s2r = 3 [json_name = "seqNumS2r"];
-	 */
-	seq_num_s2r?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 seq_num_e2e = 4 [json_name = "seqNumE2e"];
-	 */
-	seq_num_e2e?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 relay_session_id = 6;
-	 */
-	relay_session_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 client_connection_id = 7;
-	 */
-	client_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 server_connection_id = 11;
-	 */
-	server_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_relay = 1;
+   */
+  quality_relay?: CMsgSteamDatagramConnectionQuality;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];
+   */
+  quality_e2e?: CMsgSteamDatagramConnectionQuality;
+  /**
+   * @generated from protobuf field: repeated fixed32 ack_relay = 8;
+   */
+  ack_relay: number[];
+  /**
+   * @generated from protobuf field: repeated fixed32 legacy_ack_e2e = 9 [json_name = "legacyAckE2e"];
+   */
+  legacy_ack_e2e: number[];
+  /**
+   * @generated from protobuf field: optional uint32 flags = 10;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional uint32 seq_num_s2r = 3 [json_name = "seqNumS2r"];
+   */
+  seq_num_s2r?: number;
+  /**
+   * @generated from protobuf field: optional uint32 seq_num_e2e = 4 [json_name = "seqNumE2e"];
+   */
+  seq_num_e2e?: number;
+  /**
+   * @generated from protobuf field: optional uint32 relay_session_id = 6;
+   */
+  relay_session_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 client_connection_id = 7;
+   */
+  client_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 server_connection_id = 11;
+   */
+  server_connection_id?: number;
 }
 /**
  * @generated from protobuf enum CMsgSteamDatagramConnectionStatsServerToRouter.Flags
  */
 export enum CMsgSteamDatagramConnectionStatsServerToRouter_Flags {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_RELAY = 1;
-	 */
-	ACK_REQUEST_RELAY = 1,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_E2E = 2;
-	 */
-	ACK_REQUEST_E2E = 2,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_IMMEDIATE = 4;
-	 */
-	ACK_REQUEST_IMMEDIATE = 4,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_RELAY = 1;
+   */
+  ACK_REQUEST_RELAY = 1,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_E2E = 2;
+   */
+  ACK_REQUEST_E2E = 2,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_IMMEDIATE = 4;
+   */
+  ACK_REQUEST_IMMEDIATE = 4,
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramP2PSessionRequestBody
  */
 export interface CMsgSteamDatagramP2PSessionRequestBody {
-	/**
-	 * @generated from protobuf field: optional fixed32 challenge_time = 1;
-	 */
-	challenge_time?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 challenge = 2;
-	 */
-	challenge?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed32 client_connection_id = 3;
-	 */
-	client_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 legacy_peer_steam_id = 4;
-	 */
-	legacy_peer_steam_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional string peer_identity_string = 11;
-	 */
-	peer_identity_string?: string;
-	/**
-	 * @generated from protobuf field: optional fixed32 peer_connection_id = 5;
-	 */
-	peer_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional bytes encrypted_data = 14;
-	 */
-	encrypted_data?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional uint32 encryption_your_public_key_lead_byte = 15;
-	 */
-	encryption_your_public_key_lead_byte?: number;
-	/**
-	 * @generated from protobuf field: optional bytes encryption_my_ephemeral_public_key = 16;
-	 */
-	encryption_my_ephemeral_public_key?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional uint32 protocol_version = 8;
-	 */
-	protocol_version?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 network_config_version = 9;
-	 */
-	network_config_version?: bigint;
-	/**
-	 * @generated from protobuf field: optional string platform = 12;
-	 */
-	platform?: string;
-	/**
-	 * @generated from protobuf field: optional string build = 13;
-	 */
-	build?: string;
+  /**
+   * @generated from protobuf field: optional fixed32 challenge_time = 1;
+   */
+  challenge_time?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 challenge = 2;
+   */
+  challenge?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed32 client_connection_id = 3;
+   */
+  client_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 legacy_peer_steam_id = 4;
+   */
+  legacy_peer_steam_id?: bigint;
+  /**
+   * @generated from protobuf field: optional string peer_identity_string = 11;
+   */
+  peer_identity_string?: string;
+  /**
+   * @generated from protobuf field: optional fixed32 peer_connection_id = 5;
+   */
+  peer_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional bytes encrypted_data = 14;
+   */
+  encrypted_data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional uint32 encryption_your_public_key_lead_byte = 15;
+   */
+  encryption_your_public_key_lead_byte?: number;
+  /**
+   * @generated from protobuf field: optional bytes encryption_my_ephemeral_public_key = 16;
+   */
+  encryption_my_ephemeral_public_key?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional uint32 protocol_version = 8;
+   */
+  protocol_version?: number;
+  /**
+   * @generated from protobuf field: optional uint64 network_config_version = 9;
+   */
+  network_config_version?: bigint;
+  /**
+   * @generated from protobuf field: optional string platform = 12;
+   */
+  platform?: string;
+  /**
+   * @generated from protobuf field: optional string build = 13;
+   */
+  build?: string;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramP2PSessionRequestBody.EncryptedData
  */
 export interface CMsgSteamDatagramP2PSessionRequestBody_EncryptedData {
-	/**
-	 * @generated from protobuf field: optional string peer_identity_string = 1;
-	 */
-	peer_identity_string?: string;
+  /**
+   * @generated from protobuf field: optional string peer_identity_string = 1;
+   */
+  peer_identity_string?: string;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramP2PSessionRequest
  */
 export interface CMsgSteamDatagramP2PSessionRequest {
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramCertificateSigned cert = 1;
-	 */
-	cert?: CMsgSteamDatagramCertificateSigned;
-	/**
-	 * @generated from protobuf field: optional bytes body = 2;
-	 */
-	body?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional bytes signature = 3;
-	 */
-	signature?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramCertificateSigned cert = 1;
+   */
+  cert?: CMsgSteamDatagramCertificateSigned;
+  /**
+   * @generated from protobuf field: optional bytes body = 2;
+   */
+  body?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bytes signature = 3;
+   */
+  signature?: Uint8Array;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramP2PSessionEstablished
  */
 export interface CMsgSteamDatagramP2PSessionEstablished {
-	/**
-	 * @generated from protobuf field: optional fixed32 connection_id = 1;
-	 */
-	connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 seconds_until_shutdown = 3;
-	 */
-	seconds_until_shutdown?: number;
-	/**
-	 * @generated from protobuf field: optional bytes relay_routing_token = 4;
-	 */
-	relay_routing_token?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional uint32 seq_num_r2c = 5 [json_name = "seqNumR2c"];
-	 */
-	seq_num_r2c?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 connection_id = 1;
+   */
+  connection_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 seconds_until_shutdown = 3;
+   */
+  seconds_until_shutdown?: number;
+  /**
+   * @generated from protobuf field: optional bytes relay_routing_token = 4;
+   */
+  relay_routing_token?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional uint32 seq_num_r2c = 5 [json_name = "seqNumR2c"];
+   */
+  seq_num_r2c?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramConnectionStatsP2PClientToRouter
  */
 export interface CMsgSteamDatagramConnectionStatsP2PClientToRouter {
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_relay = 1;
-	 */
-	quality_relay?: CMsgSteamDatagramConnectionQuality;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];
-	 */
-	quality_e2e?: CMsgSteamDatagramConnectionQuality;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 14 [json_name = "p2pRoutingSummary"];
-	 */
-	p2p_routing_summary?: CMsgSteamDatagramP2PRoutingSummary;
-	/**
-	 * @generated from protobuf field: repeated fixed32 ack_relay = 3;
-	 */
-	ack_relay: number[];
-	/**
-	 * @generated from protobuf field: repeated fixed32 legacy_ack_e2e = 4 [json_name = "legacyAckE2e"];
-	 */
-	legacy_ack_e2e: number[];
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 5;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional bytes forward_target_relay_routing_token = 6;
-	 */
-	forward_target_relay_routing_token?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional uint32 forward_target_revision = 7;
-	 */
-	forward_target_revision?: number;
-	/**
-	 * @generated from protobuf field: optional bytes routes = 8;
-	 */
-	routes?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional uint32 ack_peer_routes_revision = 9;
-	 */
-	ack_peer_routes_revision?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 connection_id = 10;
-	 */
-	connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 seq_num_c2r = 11 [json_name = "seqNumC2r"];
-	 */
-	seq_num_c2r?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 seq_num_e2e = 12 [json_name = "seqNumE2e"];
-	 */
-	seq_num_e2e?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_relay = 1;
+   */
+  quality_relay?: CMsgSteamDatagramConnectionQuality;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];
+   */
+  quality_e2e?: CMsgSteamDatagramConnectionQuality;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 14 [json_name = "p2pRoutingSummary"];
+   */
+  p2p_routing_summary?: CMsgSteamDatagramP2PRoutingSummary;
+  /**
+   * @generated from protobuf field: repeated fixed32 ack_relay = 3;
+   */
+  ack_relay: number[];
+  /**
+   * @generated from protobuf field: repeated fixed32 legacy_ack_e2e = 4 [json_name = "legacyAckE2e"];
+   */
+  legacy_ack_e2e: number[];
+  /**
+   * @generated from protobuf field: optional uint32 flags = 5;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional bytes forward_target_relay_routing_token = 6;
+   */
+  forward_target_relay_routing_token?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional uint32 forward_target_revision = 7;
+   */
+  forward_target_revision?: number;
+  /**
+   * @generated from protobuf field: optional bytes routes = 8;
+   */
+  routes?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional uint32 ack_peer_routes_revision = 9;
+   */
+  ack_peer_routes_revision?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 connection_id = 10;
+   */
+  connection_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 seq_num_c2r = 11 [json_name = "seqNumC2r"];
+   */
+  seq_num_c2r?: number;
+  /**
+   * @generated from protobuf field: optional uint32 seq_num_e2e = 12 [json_name = "seqNumE2e"];
+   */
+  seq_num_e2e?: number;
 }
 /**
  * @generated from protobuf enum CMsgSteamDatagramConnectionStatsP2PClientToRouter.Flags
  */
 export enum CMsgSteamDatagramConnectionStatsP2PClientToRouter_Flags {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_RELAY = 1;
-	 */
-	ACK_REQUEST_RELAY = 1,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_E2E = 2;
-	 */
-	ACK_REQUEST_E2E = 2,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_IMMEDIATE = 4;
-	 */
-	ACK_REQUEST_IMMEDIATE = 4,
-	/**
-	 * @generated from protobuf enum value: NOT_PRIMARY_SESSION = 8;
-	 */
-	NOT_PRIMARY_SESSION = 8,
-	/**
-	 * @generated from protobuf enum value: NOT_PRIMARY_TRANSPORT_E2E = 16;
-	 */
-	NOT_PRIMARY_TRANSPORT_E2E = 16,
-	/**
-	 * @generated from protobuf enum value: CLIENT_RELAY_OVERRIDE = 32;
-	 */
-	CLIENT_RELAY_OVERRIDE = 32,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_RELAY = 1;
+   */
+  ACK_REQUEST_RELAY = 1,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_E2E = 2;
+   */
+  ACK_REQUEST_E2E = 2,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_IMMEDIATE = 4;
+   */
+  ACK_REQUEST_IMMEDIATE = 4,
+  /**
+   * @generated from protobuf enum value: NOT_PRIMARY_SESSION = 8;
+   */
+  NOT_PRIMARY_SESSION = 8,
+  /**
+   * @generated from protobuf enum value: NOT_PRIMARY_TRANSPORT_E2E = 16;
+   */
+  NOT_PRIMARY_TRANSPORT_E2E = 16,
+  /**
+   * @generated from protobuf enum value: CLIENT_RELAY_OVERRIDE = 32;
+   */
+  CLIENT_RELAY_OVERRIDE = 32,
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramConnectionStatsP2PRouterToClient
  */
 export interface CMsgSteamDatagramConnectionStatsP2PRouterToClient {
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_relay = 1;
-	 */
-	quality_relay?: CMsgSteamDatagramConnectionQuality;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];
-	 */
-	quality_e2e?: CMsgSteamDatagramConnectionQuality;
-	/**
-	 * @generated from protobuf field: optional uint32 seconds_until_shutdown = 3;
-	 */
-	seconds_until_shutdown?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 migrate_request_ip = 4;
-	 */
-	migrate_request_ip?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 migrate_request_port = 5;
-	 */
-	migrate_request_port?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 scoring_penalty_relay_cluster = 6;
-	 */
-	scoring_penalty_relay_cluster?: number;
-	/**
-	 * @generated from protobuf field: repeated fixed32 ack_relay = 7;
-	 */
-	ack_relay: number[];
-	/**
-	 * @generated from protobuf field: repeated fixed32 legacy_ack_e2e = 8 [json_name = "legacyAckE2e"];
-	 */
-	legacy_ack_e2e: number[];
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 9;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 ack_forward_target_revision = 10;
-	 */
-	ack_forward_target_revision?: number;
-	/**
-	 * @generated from protobuf field: optional bytes routes = 11;
-	 */
-	routes?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional uint32 ack_peer_routes_revision = 12;
-	 */
-	ack_peer_routes_revision?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 connection_id = 13;
-	 */
-	connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 seq_num_r2c = 14 [json_name = "seqNumR2c"];
-	 */
-	seq_num_r2c?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 seq_num_e2e = 15 [json_name = "seqNumE2e"];
-	 */
-	seq_num_e2e?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_relay = 1;
+   */
+  quality_relay?: CMsgSteamDatagramConnectionQuality;
+  /**
+   * @generated from protobuf field: optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];
+   */
+  quality_e2e?: CMsgSteamDatagramConnectionQuality;
+  /**
+   * @generated from protobuf field: optional uint32 seconds_until_shutdown = 3;
+   */
+  seconds_until_shutdown?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 migrate_request_ip = 4;
+   */
+  migrate_request_ip?: number;
+  /**
+   * @generated from protobuf field: optional uint32 migrate_request_port = 5;
+   */
+  migrate_request_port?: number;
+  /**
+   * @generated from protobuf field: optional uint32 scoring_penalty_relay_cluster = 6;
+   */
+  scoring_penalty_relay_cluster?: number;
+  /**
+   * @generated from protobuf field: repeated fixed32 ack_relay = 7;
+   */
+  ack_relay: number[];
+  /**
+   * @generated from protobuf field: repeated fixed32 legacy_ack_e2e = 8 [json_name = "legacyAckE2e"];
+   */
+  legacy_ack_e2e: number[];
+  /**
+   * @generated from protobuf field: optional uint32 flags = 9;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional uint32 ack_forward_target_revision = 10;
+   */
+  ack_forward_target_revision?: number;
+  /**
+   * @generated from protobuf field: optional bytes routes = 11;
+   */
+  routes?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional uint32 ack_peer_routes_revision = 12;
+   */
+  ack_peer_routes_revision?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 connection_id = 13;
+   */
+  connection_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 seq_num_r2c = 14 [json_name = "seqNumR2c"];
+   */
+  seq_num_r2c?: number;
+  /**
+   * @generated from protobuf field: optional uint32 seq_num_e2e = 15 [json_name = "seqNumE2e"];
+   */
+  seq_num_e2e?: number;
 }
 /**
  * @generated from protobuf enum CMsgSteamDatagramConnectionStatsP2PRouterToClient.Flags
  */
 export enum CMsgSteamDatagramConnectionStatsP2PRouterToClient_Flags {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_RELAY = 1;
-	 */
-	ACK_REQUEST_RELAY = 1,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_E2E = 2;
-	 */
-	ACK_REQUEST_E2E = 2,
-	/**
-	 * @generated from protobuf enum value: ACK_REQUEST_IMMEDIATE = 4;
-	 */
-	ACK_REQUEST_IMMEDIATE = 4,
-	/**
-	 * @generated from protobuf enum value: NOT_PRIMARY_TRANSPORT_E2E = 16;
-	 */
-	NOT_PRIMARY_TRANSPORT_E2E = 16,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_RELAY = 1;
+   */
+  ACK_REQUEST_RELAY = 1,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_E2E = 2;
+   */
+  ACK_REQUEST_E2E = 2,
+  /**
+   * @generated from protobuf enum value: ACK_REQUEST_IMMEDIATE = 4;
+   */
+  ACK_REQUEST_IMMEDIATE = 4,
+  /**
+   * @generated from protobuf enum value: NOT_PRIMARY_TRANSPORT_E2E = 16;
+   */
+  NOT_PRIMARY_TRANSPORT_E2E = 16,
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramP2PBadRouteRouterToClient
  */
 export interface CMsgSteamDatagramP2PBadRouteRouterToClient {
-	/**
-	 * @generated from protobuf field: optional fixed32 connection_id = 1;
-	 */
-	connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional bytes failed_relay_routing_token = 2;
-	 */
-	failed_relay_routing_token?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional uint32 ack_forward_target_revision = 3;
-	 */
-	ack_forward_target_revision?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 kludge_pad = 99;
-	 */
-	kludge_pad?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed32 connection_id = 1;
+   */
+  connection_id?: number;
+  /**
+   * @generated from protobuf field: optional bytes failed_relay_routing_token = 2;
+   */
+  failed_relay_routing_token?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional uint32 ack_forward_target_revision = 3;
+   */
+  ack_forward_target_revision?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 kludge_pad = 99;
+   */
+  kludge_pad?: bigint;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramP2PRoutes
  */
 export interface CMsgSteamDatagramP2PRoutes {
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamDatagramP2PRoutes.RelayCluster relay_clusters = 1;
-	 */
-	relay_clusters: CMsgSteamDatagramP2PRoutes_RelayCluster[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamDatagramP2PRoutes.Route routes = 2;
-	 */
-	routes: CMsgSteamDatagramP2PRoutes_Route[];
-	/**
-	 * @generated from protobuf field: optional uint32 revision = 3;
-	 */
-	revision?: number;
+  /**
+   * @generated from protobuf field: repeated CMsgSteamDatagramP2PRoutes.RelayCluster relay_clusters = 1;
+   */
+  relay_clusters: CMsgSteamDatagramP2PRoutes_RelayCluster[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamDatagramP2PRoutes.Route routes = 2;
+   */
+  routes: CMsgSteamDatagramP2PRoutes_Route[];
+  /**
+   * @generated from protobuf field: optional uint32 revision = 3;
+   */
+  revision?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramP2PRoutes.RelayCluster
  */
 export interface CMsgSteamDatagramP2PRoutes_RelayCluster {
-	/**
-	 * @generated from protobuf field: optional fixed32 pop_id = 1;
-	 */
-	pop_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 ping_ms = 2;
-	 */
-	ping_ms?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 score_penalty = 3;
-	 */
-	score_penalty?: number;
-	/**
-	 * @generated from protobuf field: optional bytes session_relay_routing_token = 4;
-	 */
-	session_relay_routing_token?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional fixed32 pop_id = 1;
+   */
+  pop_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 ping_ms = 2;
+   */
+  ping_ms?: number;
+  /**
+   * @generated from protobuf field: optional uint32 score_penalty = 3;
+   */
+  score_penalty?: number;
+  /**
+   * @generated from protobuf field: optional bytes session_relay_routing_token = 4;
+   */
+  session_relay_routing_token?: Uint8Array;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramP2PRoutes.Route
  */
 export interface CMsgSteamDatagramP2PRoutes_Route {
-	/**
-	 * @generated from protobuf field: optional fixed32 my_pop_id = 1;
-	 */
-	my_pop_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 your_pop_id = 2;
-	 */
-	your_pop_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 legacy_score = 3;
-	 */
-	legacy_score?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 interior_score = 4;
-	 */
-	interior_score?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 my_pop_id = 1;
+   */
+  my_pop_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 your_pop_id = 2;
+   */
+  your_pop_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 legacy_score = 3;
+   */
+  legacy_score?: number;
+  /**
+   * @generated from protobuf field: optional uint32 interior_score = 4;
+   */
+  interior_score?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramSetSecondaryAddressRequest
  */
 export interface CMsgSteamDatagramSetSecondaryAddressRequest {
-	/**
-	 * @generated from protobuf field: optional fixed32 client_main_ip = 1;
-	 */
-	client_main_ip?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 client_main_port = 2;
-	 */
-	client_main_port?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 client_connection_id = 3;
-	 */
-	client_connection_id?: number;
-	/**
-	 * @generated from protobuf field: optional string client_identity = 4;
-	 */
-	client_identity?: string;
-	/**
-	 * @generated from protobuf field: optional bool request_send_duplication = 5;
-	 */
-	request_send_duplication?: boolean;
-	/**
-	 * @generated from protobuf field: optional bytes kludge_pad = 99;
-	 */
-	kludge_pad?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional fixed32 client_main_ip = 1;
+   */
+  client_main_ip?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 client_main_port = 2;
+   */
+  client_main_port?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 client_connection_id = 3;
+   */
+  client_connection_id?: number;
+  /**
+   * @generated from protobuf field: optional string client_identity = 4;
+   */
+  client_identity?: string;
+  /**
+   * @generated from protobuf field: optional bool request_send_duplication = 5;
+   */
+  request_send_duplication?: boolean;
+  /**
+   * @generated from protobuf field: optional bytes kludge_pad = 99;
+   */
+  kludge_pad?: Uint8Array;
 }
 /**
  * @generated from protobuf message CMsgSteamDatagramSetSecondaryAddressResult
  */
 export interface CMsgSteamDatagramSetSecondaryAddressResult {
-	/**
-	 * @generated from protobuf field: optional bool success = 1;
-	 */
-	success?: boolean;
-	/**
-	 * @generated from protobuf field: optional string message = 2;
-	 */
-	message?: string;
+  /**
+   * @generated from protobuf field: optional bool success = 1;
+   */
+  success?: boolean;
+  /**
+   * @generated from protobuf field: optional string message = 2;
+   */
+  message?: string;
 }
 /**
  * @generated from protobuf enum ESteamDatagramMsgID
  */
 export enum ESteamDatagramMsgID {
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_Invalid = 0;
-	 */
-	k_ESteamDatagramMsg_Invalid = 0,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_RouterPingRequest = 1;
-	 */
-	k_ESteamDatagramMsg_RouterPingRequest = 1,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_RouterPingReply = 2;
-	 */
-	k_ESteamDatagramMsg_RouterPingReply = 2,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_GameserverPingRequest = 3;
-	 */
-	k_ESteamDatagramMsg_GameserverPingRequest = 3,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_GameserverSessionRequest = 5;
-	 */
-	k_ESteamDatagramMsg_GameserverSessionRequest = 5,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_GameserverSessionEstablished = 6;
-	 */
-	k_ESteamDatagramMsg_GameserverSessionEstablished = 6,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_NoSession = 7;
-	 */
-	k_ESteamDatagramMsg_NoSession = 7,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_Diagnostic = 8;
-	 */
-	k_ESteamDatagramMsg_Diagnostic = 8,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_DataClientToRouter = 9;
-	 */
-	k_ESteamDatagramMsg_DataClientToRouter = 9,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_DataRouterToServer = 10;
-	 */
-	k_ESteamDatagramMsg_DataRouterToServer = 10,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_DataServerToRouter = 11;
-	 */
-	k_ESteamDatagramMsg_DataServerToRouter = 11,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_DataRouterToClient = 12;
-	 */
-	k_ESteamDatagramMsg_DataRouterToClient = 12,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_Stats = 13;
-	 */
-	k_ESteamDatagramMsg_Stats = 13,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_ClientPingSampleRequest = 14;
-	 */
-	k_ESteamDatagramMsg_ClientPingSampleRequest = 14,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_ClientPingSampleReply = 15;
-	 */
-	k_ESteamDatagramMsg_ClientPingSampleReply = 15,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_ClientToRouterSwitchedPrimary = 16;
-	 */
-	k_ESteamDatagramMsg_ClientToRouterSwitchedPrimary = 16,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_RelayHealth = 17;
-	 */
-	k_ESteamDatagramMsg_RelayHealth = 17,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_ConnectRequest = 18;
-	 */
-	k_ESteamDatagramMsg_ConnectRequest = 18,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_ConnectOK = 19;
-	 */
-	k_ESteamDatagramMsg_ConnectOK = 19,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_ConnectionClosed = 20;
-	 */
-	k_ESteamDatagramMsg_ConnectionClosed = 20,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_NoConnection = 21;
-	 */
-	k_ESteamDatagramMsg_NoConnection = 21,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_TicketDecryptRequest = 22;
-	 */
-	k_ESteamDatagramMsg_TicketDecryptRequest = 22,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_TicketDecryptReply = 23;
-	 */
-	k_ESteamDatagramMsg_TicketDecryptReply = 23,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_P2PSessionRequest = 24;
-	 */
-	k_ESteamDatagramMsg_P2PSessionRequest = 24,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_P2PSessionEstablished = 25;
-	 */
-	k_ESteamDatagramMsg_P2PSessionEstablished = 25,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_P2PStatsClient = 26;
-	 */
-	k_ESteamDatagramMsg_P2PStatsClient = 26,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_P2PStatsRelay = 27;
-	 */
-	k_ESteamDatagramMsg_P2PStatsRelay = 27,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_P2PBadRoute = 28;
-	 */
-	k_ESteamDatagramMsg_P2PBadRoute = 28,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_GameserverPingReply = 29;
-	 */
-	k_ESteamDatagramMsg_GameserverPingReply = 29,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_LegacyGameserverRegistration = 30;
-	 */
-	k_ESteamDatagramMsg_LegacyGameserverRegistration = 30,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_SetSecondaryAddressRequest = 31;
-	 */
-	k_ESteamDatagramMsg_SetSecondaryAddressRequest = 31,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_SetSecondaryAddressResult = 32;
-	 */
-	k_ESteamDatagramMsg_SetSecondaryAddressResult = 32,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_RelayToRelayPingRequest = 33;
-	 */
-	k_ESteamDatagramMsg_RelayToRelayPingRequest = 33,
-	/**
-	 * @generated from protobuf enum value: k_ESteamDatagramMsg_RelayToRelayPingReply = 34;
-	 */
-	k_ESteamDatagramMsg_RelayToRelayPingReply = 34,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_Invalid = 0;
+   */
+  k_ESteamDatagramMsg_Invalid = 0,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_RouterPingRequest = 1;
+   */
+  k_ESteamDatagramMsg_RouterPingRequest = 1,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_RouterPingReply = 2;
+   */
+  k_ESteamDatagramMsg_RouterPingReply = 2,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_GameserverPingRequest = 3;
+   */
+  k_ESteamDatagramMsg_GameserverPingRequest = 3,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_GameserverSessionRequest = 5;
+   */
+  k_ESteamDatagramMsg_GameserverSessionRequest = 5,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_GameserverSessionEstablished = 6;
+   */
+  k_ESteamDatagramMsg_GameserverSessionEstablished = 6,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_NoSession = 7;
+   */
+  k_ESteamDatagramMsg_NoSession = 7,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_Diagnostic = 8;
+   */
+  k_ESteamDatagramMsg_Diagnostic = 8,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_DataClientToRouter = 9;
+   */
+  k_ESteamDatagramMsg_DataClientToRouter = 9,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_DataRouterToServer = 10;
+   */
+  k_ESteamDatagramMsg_DataRouterToServer = 10,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_DataServerToRouter = 11;
+   */
+  k_ESteamDatagramMsg_DataServerToRouter = 11,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_DataRouterToClient = 12;
+   */
+  k_ESteamDatagramMsg_DataRouterToClient = 12,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_Stats = 13;
+   */
+  k_ESteamDatagramMsg_Stats = 13,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_ClientPingSampleRequest = 14;
+   */
+  k_ESteamDatagramMsg_ClientPingSampleRequest = 14,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_ClientPingSampleReply = 15;
+   */
+  k_ESteamDatagramMsg_ClientPingSampleReply = 15,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_ClientToRouterSwitchedPrimary = 16;
+   */
+  k_ESteamDatagramMsg_ClientToRouterSwitchedPrimary = 16,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_RelayHealth = 17;
+   */
+  k_ESteamDatagramMsg_RelayHealth = 17,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_ConnectRequest = 18;
+   */
+  k_ESteamDatagramMsg_ConnectRequest = 18,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_ConnectOK = 19;
+   */
+  k_ESteamDatagramMsg_ConnectOK = 19,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_ConnectionClosed = 20;
+   */
+  k_ESteamDatagramMsg_ConnectionClosed = 20,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_NoConnection = 21;
+   */
+  k_ESteamDatagramMsg_NoConnection = 21,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_TicketDecryptRequest = 22;
+   */
+  k_ESteamDatagramMsg_TicketDecryptRequest = 22,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_TicketDecryptReply = 23;
+   */
+  k_ESteamDatagramMsg_TicketDecryptReply = 23,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_P2PSessionRequest = 24;
+   */
+  k_ESteamDatagramMsg_P2PSessionRequest = 24,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_P2PSessionEstablished = 25;
+   */
+  k_ESteamDatagramMsg_P2PSessionEstablished = 25,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_P2PStatsClient = 26;
+   */
+  k_ESteamDatagramMsg_P2PStatsClient = 26,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_P2PStatsRelay = 27;
+   */
+  k_ESteamDatagramMsg_P2PStatsRelay = 27,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_P2PBadRoute = 28;
+   */
+  k_ESteamDatagramMsg_P2PBadRoute = 28,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_GameserverPingReply = 29;
+   */
+  k_ESteamDatagramMsg_GameserverPingReply = 29,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_LegacyGameserverRegistration = 30;
+   */
+  k_ESteamDatagramMsg_LegacyGameserverRegistration = 30,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_SetSecondaryAddressRequest = 31;
+   */
+  k_ESteamDatagramMsg_SetSecondaryAddressRequest = 31,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_SetSecondaryAddressResult = 32;
+   */
+  k_ESteamDatagramMsg_SetSecondaryAddressResult = 32,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_RelayToRelayPingRequest = 33;
+   */
+  k_ESteamDatagramMsg_RelayToRelayPingRequest = 33,
+  /**
+   * @generated from protobuf enum value: k_ESteamDatagramMsg_RelayToRelayPingReply = 34;
+   */
+  k_ESteamDatagramMsg_RelayToRelayPingReply = 34,
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamNetworkingIPAddress$Type extends MessageType<CMsgSteamNetworkingIPAddress> {
-	constructor() {
-		super("CMsgSteamNetworkingIPAddress", [
-			{
-				no: 1,
-				name: "v4",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "v6",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamNetworkingIPAddress>): CMsgSteamNetworkingIPAddress {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamNetworkingIPAddress>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamNetworkingIPAddress,
-	): CMsgSteamNetworkingIPAddress {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 v4 */ 1:
-					message.v4 = reader.fixed32();
-					break;
-				case /* optional bytes v6 */ 2:
-					message.v6 = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamNetworkingIPAddress,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 v4 = 1; */
-		if (message.v4 !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.v4);
-		/* optional bytes v6 = 2; */
-		if (message.v6 !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.v6);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamNetworkingIPAddress", [
+      {
+        no: 1,
+        name: "v4",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "v6",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamNetworkingIPAddress>): CMsgSteamNetworkingIPAddress {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamNetworkingIPAddress>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamNetworkingIPAddress,
+  ): CMsgSteamNetworkingIPAddress {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 v4 */ 1:
+          message.v4 = reader.fixed32();
+          break;
+        case /* optional bytes v6 */ 2:
+          message.v6 = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamNetworkingIPAddress,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 v4 = 1; */
+    if (message.v4 !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.v4);
+    /* optional bytes v6 = 2; */
+    if (message.v6 !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.v6);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamNetworkingIPAddress
@@ -1911,104 +1911,104 @@ class CMsgSteamNetworkingIPAddress$Type extends MessageType<CMsgSteamNetworkingI
 export const CMsgSteamNetworkingIPAddress = new CMsgSteamNetworkingIPAddress$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramSignedMessageGeneric$Type extends MessageType<CMsgSteamDatagramSignedMessageGeneric> {
-	constructor() {
-		super("CMsgSteamDatagramSignedMessageGeneric", [
-			{
-				no: 1,
-				name: "cert",
-				kind: "message",
-				T: () => CMsgSteamDatagramCertificateSigned,
-			},
-			{
-				no: 2,
-				name: "signed_data",
-				kind: "scalar",
-				localName: "signed_data",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 3,
-				name: "signature",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 1023,
-				name: "dummy_pad",
-				kind: "scalar",
-				localName: "dummy_pad",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramSignedMessageGeneric>): CMsgSteamDatagramSignedMessageGeneric {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramSignedMessageGeneric>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramSignedMessageGeneric,
-	): CMsgSteamDatagramSignedMessageGeneric {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgSteamDatagramCertificateSigned cert */ 1:
-					message.cert = CMsgSteamDatagramCertificateSigned.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.cert,
-					);
-					break;
-				case /* optional bytes signed_data */ 2:
-					message.signed_data = reader.bytes();
-					break;
-				case /* optional bytes signature */ 3:
-					message.signature = reader.bytes();
-					break;
-				case /* optional bytes dummy_pad */ 1023:
-					message.dummy_pad = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramSignedMessageGeneric,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgSteamDatagramCertificateSigned cert = 1; */
-		if (message.cert)
-			CMsgSteamDatagramCertificateSigned.internalBinaryWrite(
-				message.cert,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional bytes signed_data = 2; */
-		if (message.signed_data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.signed_data);
-		/* optional bytes signature = 3; */
-		if (message.signature !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.signature);
-		/* optional bytes dummy_pad = 1023; */
-		if (message.dummy_pad !== undefined) writer.tag(1023, WireType.LengthDelimited).bytes(message.dummy_pad);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramSignedMessageGeneric", [
+      {
+        no: 1,
+        name: "cert",
+        kind: "message",
+        T: () => CMsgSteamDatagramCertificateSigned,
+      },
+      {
+        no: 2,
+        name: "signed_data",
+        kind: "scalar",
+        localName: "signed_data",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 3,
+        name: "signature",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 1023,
+        name: "dummy_pad",
+        kind: "scalar",
+        localName: "dummy_pad",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramSignedMessageGeneric>): CMsgSteamDatagramSignedMessageGeneric {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramSignedMessageGeneric>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramSignedMessageGeneric,
+  ): CMsgSteamDatagramSignedMessageGeneric {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgSteamDatagramCertificateSigned cert */ 1:
+          message.cert = CMsgSteamDatagramCertificateSigned.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.cert,
+          );
+          break;
+        case /* optional bytes signed_data */ 2:
+          message.signed_data = reader.bytes();
+          break;
+        case /* optional bytes signature */ 3:
+          message.signature = reader.bytes();
+          break;
+        case /* optional bytes dummy_pad */ 1023:
+          message.dummy_pad = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramSignedMessageGeneric,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgSteamDatagramCertificateSigned cert = 1; */
+    if (message.cert)
+      CMsgSteamDatagramCertificateSigned.internalBinaryWrite(
+        message.cert,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional bytes signed_data = 2; */
+    if (message.signed_data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.signed_data);
+    /* optional bytes signature = 3; */
+    if (message.signature !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.signature);
+    /* optional bytes dummy_pad = 1023; */
+    if (message.dummy_pad !== undefined) writer.tag(1023, WireType.LengthDelimited).bytes(message.dummy_pad);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramSignedMessageGeneric
@@ -2016,371 +2016,371 @@ class CMsgSteamDatagramSignedMessageGeneric$Type extends MessageType<CMsgSteamDa
 export const CMsgSteamDatagramSignedMessageGeneric = new CMsgSteamDatagramSignedMessageGeneric$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramRouterPingReply$Type extends MessageType<CMsgSteamDatagramRouterPingReply> {
-	constructor() {
-		super("CMsgSteamDatagramRouterPingReply", [
-			{
-				no: 1,
-				name: "client_timestamp",
-				kind: "scalar",
-				localName: "client_timestamp",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "latency_datacenter_ids",
-				kind: "scalar",
-				localName: "latency_datacenter_ids",
-				repeat: 1 /*RepeatType.PACKED*/,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 3,
-				name: "latency_ping_ms",
-				kind: "scalar",
-				localName: "latency_ping_ms",
-				repeat: 1 /*RepeatType.PACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 14,
-				name: "latency_datacenter_ids_p2p",
-				kind: "scalar",
-				localName: "latency_datacenter_ids_p2p",
-				jsonName: "latencyDatacenterIdsP2p",
-				repeat: 1 /*RepeatType.PACKED*/,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 15,
-				name: "latency_ping_ms_p2p",
-				kind: "scalar",
-				localName: "latency_ping_ms_p2p",
-				jsonName: "latencyPingMsP2p",
-				repeat: 1 /*RepeatType.PACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "your_public_ip",
-				kind: "scalar",
-				localName: "your_public_ip",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 11,
-				name: "your_public_port",
-				kind: "scalar",
-				localName: "your_public_port",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 5,
-				name: "server_time",
-				kind: "scalar",
-				localName: "server_time",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 6,
-				name: "challenge",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 7,
-				name: "seconds_until_shutdown",
-				kind: "scalar",
-				localName: "seconds_until_shutdown",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "client_cookie",
-				kind: "scalar",
-				localName: "client_cookie",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 16,
-				name: "recv_tos",
-				kind: "scalar",
-				localName: "recv_tos",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 17,
-				name: "echo_sent_tos",
-				kind: "scalar",
-				localName: "echo_sent_tos",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 18,
-				name: "sent_tos",
-				kind: "scalar",
-				localName: "sent_tos",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 19,
-				name: "echo_request_reply_tos",
-				kind: "scalar",
-				localName: "echo_request_reply_tos",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "scoring_penalty_relay_cluster",
-				kind: "scalar",
-				localName: "scoring_penalty_relay_cluster",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 12,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "route_exceptions",
-				kind: "message",
-				localName: "route_exceptions",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamDatagramRouterPingReply_RouteException,
-			},
-			{
-				no: 13,
-				name: "alt_addresses",
-				kind: "message",
-				localName: "alt_addresses",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamDatagramRouterPingReply_AltAddress,
-			},
-			{
-				no: 99,
-				name: "dummy_pad",
-				kind: "scalar",
-				localName: "dummy_pad",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 100,
-				name: "dummy_varint",
-				kind: "scalar",
-				localName: "dummy_varint",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramRouterPingReply>): CMsgSteamDatagramRouterPingReply {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.latency_datacenter_ids = [];
-		message.latency_ping_ms = [];
-		message.latency_datacenter_ids_p2p = [];
-		message.latency_ping_ms_p2p = [];
-		message.route_exceptions = [];
-		message.alt_addresses = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramRouterPingReply>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramRouterPingReply,
-	): CMsgSteamDatagramRouterPingReply {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 client_timestamp */ 1:
-					message.client_timestamp = reader.fixed32();
-					break;
-				case /* repeated fixed32 latency_datacenter_ids = 2 [packed = true];*/ 2:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.latency_datacenter_ids.push(reader.fixed32());
-					else message.latency_datacenter_ids.push(reader.fixed32());
-					break;
-				case /* repeated uint32 latency_ping_ms = 3 [packed = true];*/ 3:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.latency_ping_ms.push(reader.uint32());
-					else message.latency_ping_ms.push(reader.uint32());
-					break;
-				case /* repeated fixed32 latency_datacenter_ids_p2p = 14 [json_name = "latencyDatacenterIdsP2p", packed = true];*/ 14:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.latency_datacenter_ids_p2p.push(reader.fixed32());
-					else message.latency_datacenter_ids_p2p.push(reader.fixed32());
-					break;
-				case /* repeated uint32 latency_ping_ms_p2p = 15 [json_name = "latencyPingMsP2p", packed = true];*/ 15:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.latency_ping_ms_p2p.push(reader.uint32());
-					else message.latency_ping_ms_p2p.push(reader.uint32());
-					break;
-				case /* optional fixed32 your_public_ip */ 4:
-					message.your_public_ip = reader.fixed32();
-					break;
-				case /* optional fixed32 your_public_port */ 11:
-					message.your_public_port = reader.fixed32();
-					break;
-				case /* optional fixed32 server_time */ 5:
-					message.server_time = reader.fixed32();
-					break;
-				case /* optional fixed64 challenge */ 6:
-					message.challenge = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 seconds_until_shutdown */ 7:
-					message.seconds_until_shutdown = reader.uint32();
-					break;
-				case /* optional fixed32 client_cookie */ 8:
-					message.client_cookie = reader.fixed32();
-					break;
-				case /* optional uint32 recv_tos */ 16:
-					message.recv_tos = reader.uint32();
-					break;
-				case /* optional uint32 echo_sent_tos */ 17:
-					message.echo_sent_tos = reader.uint32();
-					break;
-				case /* optional uint32 sent_tos */ 18:
-					message.sent_tos = reader.uint32();
-					break;
-				case /* optional uint32 echo_request_reply_tos */ 19:
-					message.echo_request_reply_tos = reader.uint32();
-					break;
-				case /* optional uint32 scoring_penalty_relay_cluster */ 9:
-					message.scoring_penalty_relay_cluster = reader.uint32();
-					break;
-				case /* optional uint32 flags */ 12:
-					message.flags = reader.uint32();
-					break;
-				case /* repeated CMsgSteamDatagramRouterPingReply.RouteException route_exceptions */ 10:
-					message.route_exceptions.push(
-						CMsgSteamDatagramRouterPingReply_RouteException.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CMsgSteamDatagramRouterPingReply.AltAddress alt_addresses */ 13:
-					message.alt_addresses.push(
-						CMsgSteamDatagramRouterPingReply_AltAddress.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* optional bytes dummy_pad */ 99:
-					message.dummy_pad = reader.bytes();
-					break;
-				case /* optional uint64 dummy_varint */ 100:
-					message.dummy_varint = reader.uint64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramRouterPingReply,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 client_timestamp = 1; */
-		if (message.client_timestamp !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.client_timestamp);
-		/* repeated fixed32 latency_datacenter_ids = 2 [packed = true]; */
-		if (message.latency_datacenter_ids.length) {
-			writer.tag(2, WireType.LengthDelimited).fork();
-			for (let i = 0; i < message.latency_datacenter_ids.length; i++) writer.fixed32(message.latency_datacenter_ids[i]);
-			writer.join();
-		}
-		/* repeated uint32 latency_ping_ms = 3 [packed = true]; */
-		if (message.latency_ping_ms.length) {
-			writer.tag(3, WireType.LengthDelimited).fork();
-			for (let i = 0; i < message.latency_ping_ms.length; i++) writer.uint32(message.latency_ping_ms[i]);
-			writer.join();
-		}
-		/* repeated fixed32 latency_datacenter_ids_p2p = 14 [json_name = "latencyDatacenterIdsP2p", packed = true]; */
-		if (message.latency_datacenter_ids_p2p.length) {
-			writer.tag(14, WireType.LengthDelimited).fork();
-			for (let i = 0; i < message.latency_datacenter_ids_p2p.length; i++)
-				writer.fixed32(message.latency_datacenter_ids_p2p[i]);
-			writer.join();
-		}
-		/* repeated uint32 latency_ping_ms_p2p = 15 [json_name = "latencyPingMsP2p", packed = true]; */
-		if (message.latency_ping_ms_p2p.length) {
-			writer.tag(15, WireType.LengthDelimited).fork();
-			for (let i = 0; i < message.latency_ping_ms_p2p.length; i++) writer.uint32(message.latency_ping_ms_p2p[i]);
-			writer.join();
-		}
-		/* optional fixed32 your_public_ip = 4; */
-		if (message.your_public_ip !== undefined) writer.tag(4, WireType.Bit32).fixed32(message.your_public_ip);
-		/* optional fixed32 your_public_port = 11; */
-		if (message.your_public_port !== undefined) writer.tag(11, WireType.Bit32).fixed32(message.your_public_port);
-		/* optional fixed32 server_time = 5; */
-		if (message.server_time !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.server_time);
-		/* optional fixed64 challenge = 6; */
-		if (message.challenge !== undefined) writer.tag(6, WireType.Bit64).fixed64(message.challenge);
-		/* optional uint32 seconds_until_shutdown = 7; */
-		if (message.seconds_until_shutdown !== undefined)
-			writer.tag(7, WireType.Varint).uint32(message.seconds_until_shutdown);
-		/* optional fixed32 client_cookie = 8; */
-		if (message.client_cookie !== undefined) writer.tag(8, WireType.Bit32).fixed32(message.client_cookie);
-		/* optional uint32 recv_tos = 16; */
-		if (message.recv_tos !== undefined) writer.tag(16, WireType.Varint).uint32(message.recv_tos);
-		/* optional uint32 echo_sent_tos = 17; */
-		if (message.echo_sent_tos !== undefined) writer.tag(17, WireType.Varint).uint32(message.echo_sent_tos);
-		/* optional uint32 sent_tos = 18; */
-		if (message.sent_tos !== undefined) writer.tag(18, WireType.Varint).uint32(message.sent_tos);
-		/* optional uint32 echo_request_reply_tos = 19; */
-		if (message.echo_request_reply_tos !== undefined)
-			writer.tag(19, WireType.Varint).uint32(message.echo_request_reply_tos);
-		/* optional uint32 scoring_penalty_relay_cluster = 9; */
-		if (message.scoring_penalty_relay_cluster !== undefined)
-			writer.tag(9, WireType.Varint).uint32(message.scoring_penalty_relay_cluster);
-		/* optional uint32 flags = 12; */
-		if (message.flags !== undefined) writer.tag(12, WireType.Varint).uint32(message.flags);
-		/* repeated CMsgSteamDatagramRouterPingReply.RouteException route_exceptions = 10; */
-		for (let i = 0; i < message.route_exceptions.length; i++)
-			CMsgSteamDatagramRouterPingReply_RouteException.internalBinaryWrite(
-				message.route_exceptions[i],
-				writer.tag(10, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamDatagramRouterPingReply.AltAddress alt_addresses = 13; */
-		for (let i = 0; i < message.alt_addresses.length; i++)
-			CMsgSteamDatagramRouterPingReply_AltAddress.internalBinaryWrite(
-				message.alt_addresses[i],
-				writer.tag(13, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional bytes dummy_pad = 99; */
-		if (message.dummy_pad !== undefined) writer.tag(99, WireType.LengthDelimited).bytes(message.dummy_pad);
-		/* optional uint64 dummy_varint = 100; */
-		if (message.dummy_varint !== undefined) writer.tag(100, WireType.Varint).uint64(message.dummy_varint);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramRouterPingReply", [
+      {
+        no: 1,
+        name: "client_timestamp",
+        kind: "scalar",
+        localName: "client_timestamp",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "latency_datacenter_ids",
+        kind: "scalar",
+        localName: "latency_datacenter_ids",
+        repeat: 1 /*RepeatType.PACKED*/,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 3,
+        name: "latency_ping_ms",
+        kind: "scalar",
+        localName: "latency_ping_ms",
+        repeat: 1 /*RepeatType.PACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 14,
+        name: "latency_datacenter_ids_p2p",
+        kind: "scalar",
+        localName: "latency_datacenter_ids_p2p",
+        jsonName: "latencyDatacenterIdsP2p",
+        repeat: 1 /*RepeatType.PACKED*/,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 15,
+        name: "latency_ping_ms_p2p",
+        kind: "scalar",
+        localName: "latency_ping_ms_p2p",
+        jsonName: "latencyPingMsP2p",
+        repeat: 1 /*RepeatType.PACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "your_public_ip",
+        kind: "scalar",
+        localName: "your_public_ip",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 11,
+        name: "your_public_port",
+        kind: "scalar",
+        localName: "your_public_port",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 5,
+        name: "server_time",
+        kind: "scalar",
+        localName: "server_time",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 6,
+        name: "challenge",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 7,
+        name: "seconds_until_shutdown",
+        kind: "scalar",
+        localName: "seconds_until_shutdown",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "client_cookie",
+        kind: "scalar",
+        localName: "client_cookie",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 16,
+        name: "recv_tos",
+        kind: "scalar",
+        localName: "recv_tos",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 17,
+        name: "echo_sent_tos",
+        kind: "scalar",
+        localName: "echo_sent_tos",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 18,
+        name: "sent_tos",
+        kind: "scalar",
+        localName: "sent_tos",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 19,
+        name: "echo_request_reply_tos",
+        kind: "scalar",
+        localName: "echo_request_reply_tos",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "scoring_penalty_relay_cluster",
+        kind: "scalar",
+        localName: "scoring_penalty_relay_cluster",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 12,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "route_exceptions",
+        kind: "message",
+        localName: "route_exceptions",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamDatagramRouterPingReply_RouteException,
+      },
+      {
+        no: 13,
+        name: "alt_addresses",
+        kind: "message",
+        localName: "alt_addresses",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamDatagramRouterPingReply_AltAddress,
+      },
+      {
+        no: 99,
+        name: "dummy_pad",
+        kind: "scalar",
+        localName: "dummy_pad",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 100,
+        name: "dummy_varint",
+        kind: "scalar",
+        localName: "dummy_varint",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramRouterPingReply>): CMsgSteamDatagramRouterPingReply {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.latency_datacenter_ids = [];
+    message.latency_ping_ms = [];
+    message.latency_datacenter_ids_p2p = [];
+    message.latency_ping_ms_p2p = [];
+    message.route_exceptions = [];
+    message.alt_addresses = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramRouterPingReply>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramRouterPingReply,
+  ): CMsgSteamDatagramRouterPingReply {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 client_timestamp */ 1:
+          message.client_timestamp = reader.fixed32();
+          break;
+        case /* repeated fixed32 latency_datacenter_ids = 2 [packed = true];*/ 2:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.latency_datacenter_ids.push(reader.fixed32());
+          else message.latency_datacenter_ids.push(reader.fixed32());
+          break;
+        case /* repeated uint32 latency_ping_ms = 3 [packed = true];*/ 3:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.latency_ping_ms.push(reader.uint32());
+          else message.latency_ping_ms.push(reader.uint32());
+          break;
+        case /* repeated fixed32 latency_datacenter_ids_p2p = 14 [json_name = "latencyDatacenterIdsP2p", packed = true];*/ 14:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.latency_datacenter_ids_p2p.push(reader.fixed32());
+          else message.latency_datacenter_ids_p2p.push(reader.fixed32());
+          break;
+        case /* repeated uint32 latency_ping_ms_p2p = 15 [json_name = "latencyPingMsP2p", packed = true];*/ 15:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.latency_ping_ms_p2p.push(reader.uint32());
+          else message.latency_ping_ms_p2p.push(reader.uint32());
+          break;
+        case /* optional fixed32 your_public_ip */ 4:
+          message.your_public_ip = reader.fixed32();
+          break;
+        case /* optional fixed32 your_public_port */ 11:
+          message.your_public_port = reader.fixed32();
+          break;
+        case /* optional fixed32 server_time */ 5:
+          message.server_time = reader.fixed32();
+          break;
+        case /* optional fixed64 challenge */ 6:
+          message.challenge = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 seconds_until_shutdown */ 7:
+          message.seconds_until_shutdown = reader.uint32();
+          break;
+        case /* optional fixed32 client_cookie */ 8:
+          message.client_cookie = reader.fixed32();
+          break;
+        case /* optional uint32 recv_tos */ 16:
+          message.recv_tos = reader.uint32();
+          break;
+        case /* optional uint32 echo_sent_tos */ 17:
+          message.echo_sent_tos = reader.uint32();
+          break;
+        case /* optional uint32 sent_tos */ 18:
+          message.sent_tos = reader.uint32();
+          break;
+        case /* optional uint32 echo_request_reply_tos */ 19:
+          message.echo_request_reply_tos = reader.uint32();
+          break;
+        case /* optional uint32 scoring_penalty_relay_cluster */ 9:
+          message.scoring_penalty_relay_cluster = reader.uint32();
+          break;
+        case /* optional uint32 flags */ 12:
+          message.flags = reader.uint32();
+          break;
+        case /* repeated CMsgSteamDatagramRouterPingReply.RouteException route_exceptions */ 10:
+          message.route_exceptions.push(
+            CMsgSteamDatagramRouterPingReply_RouteException.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CMsgSteamDatagramRouterPingReply.AltAddress alt_addresses */ 13:
+          message.alt_addresses.push(
+            CMsgSteamDatagramRouterPingReply_AltAddress.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* optional bytes dummy_pad */ 99:
+          message.dummy_pad = reader.bytes();
+          break;
+        case /* optional uint64 dummy_varint */ 100:
+          message.dummy_varint = reader.uint64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramRouterPingReply,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 client_timestamp = 1; */
+    if (message.client_timestamp !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.client_timestamp);
+    /* repeated fixed32 latency_datacenter_ids = 2 [packed = true]; */
+    if (message.latency_datacenter_ids.length) {
+      writer.tag(2, WireType.LengthDelimited).fork();
+      for (let i = 0; i < message.latency_datacenter_ids.length; i++) writer.fixed32(message.latency_datacenter_ids[i]);
+      writer.join();
+    }
+    /* repeated uint32 latency_ping_ms = 3 [packed = true]; */
+    if (message.latency_ping_ms.length) {
+      writer.tag(3, WireType.LengthDelimited).fork();
+      for (let i = 0; i < message.latency_ping_ms.length; i++) writer.uint32(message.latency_ping_ms[i]);
+      writer.join();
+    }
+    /* repeated fixed32 latency_datacenter_ids_p2p = 14 [json_name = "latencyDatacenterIdsP2p", packed = true]; */
+    if (message.latency_datacenter_ids_p2p.length) {
+      writer.tag(14, WireType.LengthDelimited).fork();
+      for (let i = 0; i < message.latency_datacenter_ids_p2p.length; i++)
+        writer.fixed32(message.latency_datacenter_ids_p2p[i]);
+      writer.join();
+    }
+    /* repeated uint32 latency_ping_ms_p2p = 15 [json_name = "latencyPingMsP2p", packed = true]; */
+    if (message.latency_ping_ms_p2p.length) {
+      writer.tag(15, WireType.LengthDelimited).fork();
+      for (let i = 0; i < message.latency_ping_ms_p2p.length; i++) writer.uint32(message.latency_ping_ms_p2p[i]);
+      writer.join();
+    }
+    /* optional fixed32 your_public_ip = 4; */
+    if (message.your_public_ip !== undefined) writer.tag(4, WireType.Bit32).fixed32(message.your_public_ip);
+    /* optional fixed32 your_public_port = 11; */
+    if (message.your_public_port !== undefined) writer.tag(11, WireType.Bit32).fixed32(message.your_public_port);
+    /* optional fixed32 server_time = 5; */
+    if (message.server_time !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.server_time);
+    /* optional fixed64 challenge = 6; */
+    if (message.challenge !== undefined) writer.tag(6, WireType.Bit64).fixed64(message.challenge);
+    /* optional uint32 seconds_until_shutdown = 7; */
+    if (message.seconds_until_shutdown !== undefined)
+      writer.tag(7, WireType.Varint).uint32(message.seconds_until_shutdown);
+    /* optional fixed32 client_cookie = 8; */
+    if (message.client_cookie !== undefined) writer.tag(8, WireType.Bit32).fixed32(message.client_cookie);
+    /* optional uint32 recv_tos = 16; */
+    if (message.recv_tos !== undefined) writer.tag(16, WireType.Varint).uint32(message.recv_tos);
+    /* optional uint32 echo_sent_tos = 17; */
+    if (message.echo_sent_tos !== undefined) writer.tag(17, WireType.Varint).uint32(message.echo_sent_tos);
+    /* optional uint32 sent_tos = 18; */
+    if (message.sent_tos !== undefined) writer.tag(18, WireType.Varint).uint32(message.sent_tos);
+    /* optional uint32 echo_request_reply_tos = 19; */
+    if (message.echo_request_reply_tos !== undefined)
+      writer.tag(19, WireType.Varint).uint32(message.echo_request_reply_tos);
+    /* optional uint32 scoring_penalty_relay_cluster = 9; */
+    if (message.scoring_penalty_relay_cluster !== undefined)
+      writer.tag(9, WireType.Varint).uint32(message.scoring_penalty_relay_cluster);
+    /* optional uint32 flags = 12; */
+    if (message.flags !== undefined) writer.tag(12, WireType.Varint).uint32(message.flags);
+    /* repeated CMsgSteamDatagramRouterPingReply.RouteException route_exceptions = 10; */
+    for (let i = 0; i < message.route_exceptions.length; i++)
+      CMsgSteamDatagramRouterPingReply_RouteException.internalBinaryWrite(
+        message.route_exceptions[i],
+        writer.tag(10, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamDatagramRouterPingReply.AltAddress alt_addresses = 13; */
+    for (let i = 0; i < message.alt_addresses.length; i++)
+      CMsgSteamDatagramRouterPingReply_AltAddress.internalBinaryWrite(
+        message.alt_addresses[i],
+        writer.tag(13, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional bytes dummy_pad = 99; */
+    if (message.dummy_pad !== undefined) writer.tag(99, WireType.LengthDelimited).bytes(message.dummy_pad);
+    /* optional uint64 dummy_varint = 100; */
+    if (message.dummy_varint !== undefined) writer.tag(100, WireType.Varint).uint64(message.dummy_varint);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramRouterPingReply
@@ -2388,197 +2388,197 @@ class CMsgSteamDatagramRouterPingReply$Type extends MessageType<CMsgSteamDatagra
 export const CMsgSteamDatagramRouterPingReply = new CMsgSteamDatagramRouterPingReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramRouterPingReply_RouteException$Type extends MessageType<CMsgSteamDatagramRouterPingReply_RouteException> {
-	constructor() {
-		super("CMsgSteamDatagramRouterPingReply.RouteException", [
-			{
-				no: 1,
-				name: "data_center_id",
-				kind: "scalar",
-				localName: "data_center_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "penalty",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramRouterPingReply_RouteException>,
-	): CMsgSteamDatagramRouterPingReply_RouteException {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamDatagramRouterPingReply_RouteException>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramRouterPingReply_RouteException,
-	): CMsgSteamDatagramRouterPingReply_RouteException {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 data_center_id */ 1:
-					message.data_center_id = reader.fixed32();
-					break;
-				case /* optional uint32 flags */ 2:
-					message.flags = reader.uint32();
-					break;
-				case /* optional uint32 penalty */ 3:
-					message.penalty = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramRouterPingReply_RouteException,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 data_center_id = 1; */
-		if (message.data_center_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.data_center_id);
-		/* optional uint32 flags = 2; */
-		if (message.flags !== undefined) writer.tag(2, WireType.Varint).uint32(message.flags);
-		/* optional uint32 penalty = 3; */
-		if (message.penalty !== undefined) writer.tag(3, WireType.Varint).uint32(message.penalty);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramRouterPingReply.RouteException", [
+      {
+        no: 1,
+        name: "data_center_id",
+        kind: "scalar",
+        localName: "data_center_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "penalty",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramRouterPingReply_RouteException>,
+  ): CMsgSteamDatagramRouterPingReply_RouteException {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamDatagramRouterPingReply_RouteException>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramRouterPingReply_RouteException,
+  ): CMsgSteamDatagramRouterPingReply_RouteException {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 data_center_id */ 1:
+          message.data_center_id = reader.fixed32();
+          break;
+        case /* optional uint32 flags */ 2:
+          message.flags = reader.uint32();
+          break;
+        case /* optional uint32 penalty */ 3:
+          message.penalty = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramRouterPingReply_RouteException,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 data_center_id = 1; */
+    if (message.data_center_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.data_center_id);
+    /* optional uint32 flags = 2; */
+    if (message.flags !== undefined) writer.tag(2, WireType.Varint).uint32(message.flags);
+    /* optional uint32 penalty = 3; */
+    if (message.penalty !== undefined) writer.tag(3, WireType.Varint).uint32(message.penalty);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramRouterPingReply.RouteException
  */
 export const CMsgSteamDatagramRouterPingReply_RouteException =
-	new CMsgSteamDatagramRouterPingReply_RouteException$Type();
+  new CMsgSteamDatagramRouterPingReply_RouteException$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramRouterPingReply_AltAddress$Type extends MessageType<CMsgSteamDatagramRouterPingReply_AltAddress> {
-	constructor() {
-		super("CMsgSteamDatagramRouterPingReply.AltAddress", [
-			{
-				no: 1,
-				name: "ipv4",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "port",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "penalty",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "protocol",
-				kind: "enum",
-				opt: true,
-				T: () => [
-					"CMsgSteamDatagramRouterPingReply.AltAddress.Protocol",
-					CMsgSteamDatagramRouterPingReply_AltAddress_Protocol,
-				],
-			},
-			{
-				no: 5,
-				name: "id",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramRouterPingReply_AltAddress>,
-	): CMsgSteamDatagramRouterPingReply_AltAddress {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramRouterPingReply_AltAddress>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramRouterPingReply_AltAddress,
-	): CMsgSteamDatagramRouterPingReply_AltAddress {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 ipv4 */ 1:
-					message.ipv4 = reader.fixed32();
-					break;
-				case /* optional uint32 port */ 2:
-					message.port = reader.uint32();
-					break;
-				case /* optional uint32 penalty */ 3:
-					message.penalty = reader.uint32();
-					break;
-				case /* optional CMsgSteamDatagramRouterPingReply.AltAddress.Protocol protocol */ 4:
-					message.protocol = reader.int32();
-					break;
-				case /* optional string id */ 5:
-					message.id = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramRouterPingReply_AltAddress,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 ipv4 = 1; */
-		if (message.ipv4 !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.ipv4);
-		/* optional uint32 port = 2; */
-		if (message.port !== undefined) writer.tag(2, WireType.Varint).uint32(message.port);
-		/* optional uint32 penalty = 3; */
-		if (message.penalty !== undefined) writer.tag(3, WireType.Varint).uint32(message.penalty);
-		/* optional CMsgSteamDatagramRouterPingReply.AltAddress.Protocol protocol = 4; */
-		if (message.protocol !== undefined) writer.tag(4, WireType.Varint).int32(message.protocol);
-		/* optional string id = 5; */
-		if (message.id !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramRouterPingReply.AltAddress", [
+      {
+        no: 1,
+        name: "ipv4",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "port",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "penalty",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "protocol",
+        kind: "enum",
+        opt: true,
+        T: () => [
+          "CMsgSteamDatagramRouterPingReply.AltAddress.Protocol",
+          CMsgSteamDatagramRouterPingReply_AltAddress_Protocol,
+        ],
+      },
+      {
+        no: 5,
+        name: "id",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramRouterPingReply_AltAddress>,
+  ): CMsgSteamDatagramRouterPingReply_AltAddress {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramRouterPingReply_AltAddress>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramRouterPingReply_AltAddress,
+  ): CMsgSteamDatagramRouterPingReply_AltAddress {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 ipv4 */ 1:
+          message.ipv4 = reader.fixed32();
+          break;
+        case /* optional uint32 port */ 2:
+          message.port = reader.uint32();
+          break;
+        case /* optional uint32 penalty */ 3:
+          message.penalty = reader.uint32();
+          break;
+        case /* optional CMsgSteamDatagramRouterPingReply.AltAddress.Protocol protocol */ 4:
+          message.protocol = reader.int32();
+          break;
+        case /* optional string id */ 5:
+          message.id = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramRouterPingReply_AltAddress,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 ipv4 = 1; */
+    if (message.ipv4 !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.ipv4);
+    /* optional uint32 port = 2; */
+    if (message.port !== undefined) writer.tag(2, WireType.Varint).uint32(message.port);
+    /* optional uint32 penalty = 3; */
+    if (message.penalty !== undefined) writer.tag(3, WireType.Varint).uint32(message.penalty);
+    /* optional CMsgSteamDatagramRouterPingReply.AltAddress.Protocol protocol = 4; */
+    if (message.protocol !== undefined) writer.tag(4, WireType.Varint).int32(message.protocol);
+    /* optional string id = 5; */
+    if (message.id !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramRouterPingReply.AltAddress
@@ -2586,154 +2586,154 @@ class CMsgSteamDatagramRouterPingReply_AltAddress$Type extends MessageType<CMsgS
 export const CMsgSteamDatagramRouterPingReply_AltAddress = new CMsgSteamDatagramRouterPingReply_AltAddress$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramGameserverPingRequestBody$Type extends MessageType<CMsgSteamDatagramGameserverPingRequestBody> {
-	constructor() {
-		super("CMsgSteamDatagramGameserverPingRequestBody", [
-			{
-				no: 1,
-				name: "relay_popid",
-				kind: "scalar",
-				localName: "relay_popid",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "your_public_ip",
-				kind: "message",
-				localName: "your_public_ip",
-				T: () => CMsgSteamNetworkingIPAddress,
-			},
-			{
-				no: 3,
-				name: "your_public_port",
-				kind: "scalar",
-				localName: "your_public_port",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "relay_unix_time",
-				kind: "scalar",
-				localName: "relay_unix_time",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 5,
-				name: "routing_secret",
-				kind: "scalar",
-				localName: "routing_secret",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 6,
-				name: "my_ips",
-				kind: "message",
-				localName: "my_ips",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamNetworkingIPAddress,
-			},
-			{
-				no: 8,
-				name: "echo",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramGameserverPingRequestBody>,
-	): CMsgSteamDatagramGameserverPingRequestBody {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.my_ips = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramGameserverPingRequestBody>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramGameserverPingRequestBody,
-	): CMsgSteamDatagramGameserverPingRequestBody {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 relay_popid */ 1:
-					message.relay_popid = reader.fixed32();
-					break;
-				case /* optional CMsgSteamNetworkingIPAddress your_public_ip */ 2:
-					message.your_public_ip = CMsgSteamNetworkingIPAddress.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.your_public_ip,
-					);
-					break;
-				case /* optional uint32 your_public_port */ 3:
-					message.your_public_port = reader.uint32();
-					break;
-				case /* optional uint64 relay_unix_time */ 4:
-					message.relay_unix_time = reader.uint64().toBigInt();
-					break;
-				case /* optional fixed64 routing_secret */ 5:
-					message.routing_secret = reader.fixed64().toBigInt();
-					break;
-				case /* repeated CMsgSteamNetworkingIPAddress my_ips */ 6:
-					message.my_ips.push(CMsgSteamNetworkingIPAddress.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* optional bytes echo */ 8:
-					message.echo = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramGameserverPingRequestBody,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 relay_popid = 1; */
-		if (message.relay_popid !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.relay_popid);
-		/* optional CMsgSteamNetworkingIPAddress your_public_ip = 2; */
-		if (message.your_public_ip)
-			CMsgSteamNetworkingIPAddress.internalBinaryWrite(
-				message.your_public_ip,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 your_public_port = 3; */
-		if (message.your_public_port !== undefined) writer.tag(3, WireType.Varint).uint32(message.your_public_port);
-		/* optional uint64 relay_unix_time = 4; */
-		if (message.relay_unix_time !== undefined) writer.tag(4, WireType.Varint).uint64(message.relay_unix_time);
-		/* optional fixed64 routing_secret = 5; */
-		if (message.routing_secret !== undefined) writer.tag(5, WireType.Bit64).fixed64(message.routing_secret);
-		/* repeated CMsgSteamNetworkingIPAddress my_ips = 6; */
-		for (let i = 0; i < message.my_ips.length; i++)
-			CMsgSteamNetworkingIPAddress.internalBinaryWrite(
-				message.my_ips[i],
-				writer.tag(6, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional bytes echo = 8; */
-		if (message.echo !== undefined) writer.tag(8, WireType.LengthDelimited).bytes(message.echo);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramGameserverPingRequestBody", [
+      {
+        no: 1,
+        name: "relay_popid",
+        kind: "scalar",
+        localName: "relay_popid",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "your_public_ip",
+        kind: "message",
+        localName: "your_public_ip",
+        T: () => CMsgSteamNetworkingIPAddress,
+      },
+      {
+        no: 3,
+        name: "your_public_port",
+        kind: "scalar",
+        localName: "your_public_port",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "relay_unix_time",
+        kind: "scalar",
+        localName: "relay_unix_time",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 5,
+        name: "routing_secret",
+        kind: "scalar",
+        localName: "routing_secret",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 6,
+        name: "my_ips",
+        kind: "message",
+        localName: "my_ips",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamNetworkingIPAddress,
+      },
+      {
+        no: 8,
+        name: "echo",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramGameserverPingRequestBody>,
+  ): CMsgSteamDatagramGameserverPingRequestBody {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.my_ips = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramGameserverPingRequestBody>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramGameserverPingRequestBody,
+  ): CMsgSteamDatagramGameserverPingRequestBody {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 relay_popid */ 1:
+          message.relay_popid = reader.fixed32();
+          break;
+        case /* optional CMsgSteamNetworkingIPAddress your_public_ip */ 2:
+          message.your_public_ip = CMsgSteamNetworkingIPAddress.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.your_public_ip,
+          );
+          break;
+        case /* optional uint32 your_public_port */ 3:
+          message.your_public_port = reader.uint32();
+          break;
+        case /* optional uint64 relay_unix_time */ 4:
+          message.relay_unix_time = reader.uint64().toBigInt();
+          break;
+        case /* optional fixed64 routing_secret */ 5:
+          message.routing_secret = reader.fixed64().toBigInt();
+          break;
+        case /* repeated CMsgSteamNetworkingIPAddress my_ips */ 6:
+          message.my_ips.push(CMsgSteamNetworkingIPAddress.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* optional bytes echo */ 8:
+          message.echo = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramGameserverPingRequestBody,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 relay_popid = 1; */
+    if (message.relay_popid !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.relay_popid);
+    /* optional CMsgSteamNetworkingIPAddress your_public_ip = 2; */
+    if (message.your_public_ip)
+      CMsgSteamNetworkingIPAddress.internalBinaryWrite(
+        message.your_public_ip,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 your_public_port = 3; */
+    if (message.your_public_port !== undefined) writer.tag(3, WireType.Varint).uint32(message.your_public_port);
+    /* optional uint64 relay_unix_time = 4; */
+    if (message.relay_unix_time !== undefined) writer.tag(4, WireType.Varint).uint64(message.relay_unix_time);
+    /* optional fixed64 routing_secret = 5; */
+    if (message.routing_secret !== undefined) writer.tag(5, WireType.Bit64).fixed64(message.routing_secret);
+    /* repeated CMsgSteamNetworkingIPAddress my_ips = 6; */
+    for (let i = 0; i < message.my_ips.length; i++)
+      CMsgSteamNetworkingIPAddress.internalBinaryWrite(
+        message.my_ips[i],
+        writer.tag(6, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional bytes echo = 8; */
+    if (message.echo !== undefined) writer.tag(8, WireType.LengthDelimited).bytes(message.echo);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramGameserverPingRequestBody
@@ -2741,177 +2741,177 @@ class CMsgSteamDatagramGameserverPingRequestBody$Type extends MessageType<CMsgSt
 export const CMsgSteamDatagramGameserverPingRequestBody = new CMsgSteamDatagramGameserverPingRequestBody$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramGameserverPingRequestEnvelope$Type extends MessageType<CMsgSteamDatagramGameserverPingRequestEnvelope> {
-	constructor() {
-		super("CMsgSteamDatagramGameserverPingRequestEnvelope", [
-			{
-				no: 6,
-				name: "cert",
-				kind: "message",
-				T: () => CMsgSteamDatagramCertificateSigned,
-			},
-			{
-				no: 7,
-				name: "signed_data",
-				kind: "scalar",
-				localName: "signed_data",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 8,
-				name: "signature",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 1,
-				name: "legacy_your_public_ip",
-				kind: "scalar",
-				localName: "legacy_your_public_ip",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 5,
-				name: "legacy_your_public_port",
-				kind: "scalar",
-				localName: "legacy_your_public_port",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "legacy_relay_unix_time",
-				kind: "scalar",
-				localName: "legacy_relay_unix_time",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 3,
-				name: "legacy_challenge",
-				kind: "scalar",
-				localName: "legacy_challenge",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 4,
-				name: "legacy_router_timestamp",
-				kind: "scalar",
-				localName: "legacy_router_timestamp",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 1023,
-				name: "dummy_pad",
-				kind: "scalar",
-				localName: "dummy_pad",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramGameserverPingRequestEnvelope>,
-	): CMsgSteamDatagramGameserverPingRequestEnvelope {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamDatagramGameserverPingRequestEnvelope>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramGameserverPingRequestEnvelope,
-	): CMsgSteamDatagramGameserverPingRequestEnvelope {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgSteamDatagramCertificateSigned cert */ 6:
-					message.cert = CMsgSteamDatagramCertificateSigned.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.cert,
-					);
-					break;
-				case /* optional bytes signed_data */ 7:
-					message.signed_data = reader.bytes();
-					break;
-				case /* optional bytes signature */ 8:
-					message.signature = reader.bytes();
-					break;
-				case /* optional fixed32 legacy_your_public_ip */ 1:
-					message.legacy_your_public_ip = reader.fixed32();
-					break;
-				case /* optional fixed32 legacy_your_public_port */ 5:
-					message.legacy_your_public_port = reader.fixed32();
-					break;
-				case /* optional fixed32 legacy_relay_unix_time */ 2:
-					message.legacy_relay_unix_time = reader.fixed32();
-					break;
-				case /* optional fixed64 legacy_challenge */ 3:
-					message.legacy_challenge = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed32 legacy_router_timestamp */ 4:
-					message.legacy_router_timestamp = reader.fixed32();
-					break;
-				case /* optional bytes dummy_pad */ 1023:
-					message.dummy_pad = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramGameserverPingRequestEnvelope,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgSteamDatagramCertificateSigned cert = 6; */
-		if (message.cert)
-			CMsgSteamDatagramCertificateSigned.internalBinaryWrite(
-				message.cert,
-				writer.tag(6, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional bytes signed_data = 7; */
-		if (message.signed_data !== undefined) writer.tag(7, WireType.LengthDelimited).bytes(message.signed_data);
-		/* optional bytes signature = 8; */
-		if (message.signature !== undefined) writer.tag(8, WireType.LengthDelimited).bytes(message.signature);
-		/* optional fixed32 legacy_your_public_ip = 1; */
-		if (message.legacy_your_public_ip !== undefined)
-			writer.tag(1, WireType.Bit32).fixed32(message.legacy_your_public_ip);
-		/* optional fixed32 legacy_your_public_port = 5; */
-		if (message.legacy_your_public_port !== undefined)
-			writer.tag(5, WireType.Bit32).fixed32(message.legacy_your_public_port);
-		/* optional fixed32 legacy_relay_unix_time = 2; */
-		if (message.legacy_relay_unix_time !== undefined)
-			writer.tag(2, WireType.Bit32).fixed32(message.legacy_relay_unix_time);
-		/* optional fixed64 legacy_challenge = 3; */
-		if (message.legacy_challenge !== undefined) writer.tag(3, WireType.Bit64).fixed64(message.legacy_challenge);
-		/* optional fixed32 legacy_router_timestamp = 4; */
-		if (message.legacy_router_timestamp !== undefined)
-			writer.tag(4, WireType.Bit32).fixed32(message.legacy_router_timestamp);
-		/* optional bytes dummy_pad = 1023; */
-		if (message.dummy_pad !== undefined) writer.tag(1023, WireType.LengthDelimited).bytes(message.dummy_pad);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramGameserverPingRequestEnvelope", [
+      {
+        no: 6,
+        name: "cert",
+        kind: "message",
+        T: () => CMsgSteamDatagramCertificateSigned,
+      },
+      {
+        no: 7,
+        name: "signed_data",
+        kind: "scalar",
+        localName: "signed_data",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 8,
+        name: "signature",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 1,
+        name: "legacy_your_public_ip",
+        kind: "scalar",
+        localName: "legacy_your_public_ip",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 5,
+        name: "legacy_your_public_port",
+        kind: "scalar",
+        localName: "legacy_your_public_port",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "legacy_relay_unix_time",
+        kind: "scalar",
+        localName: "legacy_relay_unix_time",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 3,
+        name: "legacy_challenge",
+        kind: "scalar",
+        localName: "legacy_challenge",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 4,
+        name: "legacy_router_timestamp",
+        kind: "scalar",
+        localName: "legacy_router_timestamp",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 1023,
+        name: "dummy_pad",
+        kind: "scalar",
+        localName: "dummy_pad",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramGameserverPingRequestEnvelope>,
+  ): CMsgSteamDatagramGameserverPingRequestEnvelope {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamDatagramGameserverPingRequestEnvelope>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramGameserverPingRequestEnvelope,
+  ): CMsgSteamDatagramGameserverPingRequestEnvelope {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgSteamDatagramCertificateSigned cert */ 6:
+          message.cert = CMsgSteamDatagramCertificateSigned.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.cert,
+          );
+          break;
+        case /* optional bytes signed_data */ 7:
+          message.signed_data = reader.bytes();
+          break;
+        case /* optional bytes signature */ 8:
+          message.signature = reader.bytes();
+          break;
+        case /* optional fixed32 legacy_your_public_ip */ 1:
+          message.legacy_your_public_ip = reader.fixed32();
+          break;
+        case /* optional fixed32 legacy_your_public_port */ 5:
+          message.legacy_your_public_port = reader.fixed32();
+          break;
+        case /* optional fixed32 legacy_relay_unix_time */ 2:
+          message.legacy_relay_unix_time = reader.fixed32();
+          break;
+        case /* optional fixed64 legacy_challenge */ 3:
+          message.legacy_challenge = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed32 legacy_router_timestamp */ 4:
+          message.legacy_router_timestamp = reader.fixed32();
+          break;
+        case /* optional bytes dummy_pad */ 1023:
+          message.dummy_pad = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramGameserverPingRequestEnvelope,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgSteamDatagramCertificateSigned cert = 6; */
+    if (message.cert)
+      CMsgSteamDatagramCertificateSigned.internalBinaryWrite(
+        message.cert,
+        writer.tag(6, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional bytes signed_data = 7; */
+    if (message.signed_data !== undefined) writer.tag(7, WireType.LengthDelimited).bytes(message.signed_data);
+    /* optional bytes signature = 8; */
+    if (message.signature !== undefined) writer.tag(8, WireType.LengthDelimited).bytes(message.signature);
+    /* optional fixed32 legacy_your_public_ip = 1; */
+    if (message.legacy_your_public_ip !== undefined)
+      writer.tag(1, WireType.Bit32).fixed32(message.legacy_your_public_ip);
+    /* optional fixed32 legacy_your_public_port = 5; */
+    if (message.legacy_your_public_port !== undefined)
+      writer.tag(5, WireType.Bit32).fixed32(message.legacy_your_public_port);
+    /* optional fixed32 legacy_relay_unix_time = 2; */
+    if (message.legacy_relay_unix_time !== undefined)
+      writer.tag(2, WireType.Bit32).fixed32(message.legacy_relay_unix_time);
+    /* optional fixed64 legacy_challenge = 3; */
+    if (message.legacy_challenge !== undefined) writer.tag(3, WireType.Bit64).fixed64(message.legacy_challenge);
+    /* optional fixed32 legacy_router_timestamp = 4; */
+    if (message.legacy_router_timestamp !== undefined)
+      writer.tag(4, WireType.Bit32).fixed32(message.legacy_router_timestamp);
+    /* optional bytes dummy_pad = 1023; */
+    if (message.dummy_pad !== undefined) writer.tag(1023, WireType.LengthDelimited).bytes(message.dummy_pad);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramGameserverPingRequestEnvelope
@@ -2919,189 +2919,189 @@ class CMsgSteamDatagramGameserverPingRequestEnvelope$Type extends MessageType<CM
 export const CMsgSteamDatagramGameserverPingRequestEnvelope = new CMsgSteamDatagramGameserverPingRequestEnvelope$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramGameserverPingReplyData$Type extends MessageType<CMsgSteamDatagramGameserverPingReplyData> {
-	constructor() {
-		super("CMsgSteamDatagramGameserverPingReplyData", [
-			{
-				no: 2,
-				name: "echo_relay_unix_time",
-				kind: "scalar",
-				localName: "echo_relay_unix_time",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 8,
-				name: "echo",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 3,
-				name: "legacy_challenge",
-				kind: "scalar",
-				localName: "legacy_challenge",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 4,
-				name: "legacy_router_timestamp",
-				kind: "scalar",
-				localName: "legacy_router_timestamp",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 5,
-				name: "data_center_id",
-				kind: "scalar",
-				localName: "data_center_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 6,
-				name: "appid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "protocol_version",
-				kind: "scalar",
-				localName: "protocol_version",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "build",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 10,
-				name: "network_config_version",
-				kind: "scalar",
-				localName: "network_config_version",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 11,
-				name: "my_unix_time",
-				kind: "scalar",
-				localName: "my_unix_time",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 12,
-				name: "routing_blob",
-				kind: "scalar",
-				localName: "routing_blob",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramGameserverPingReplyData>): CMsgSteamDatagramGameserverPingReplyData {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramGameserverPingReplyData>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramGameserverPingReplyData,
-	): CMsgSteamDatagramGameserverPingReplyData {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 echo_relay_unix_time */ 2:
-					message.echo_relay_unix_time = reader.fixed32();
-					break;
-				case /* optional bytes echo */ 8:
-					message.echo = reader.bytes();
-					break;
-				case /* optional fixed64 legacy_challenge */ 3:
-					message.legacy_challenge = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed32 legacy_router_timestamp */ 4:
-					message.legacy_router_timestamp = reader.fixed32();
-					break;
-				case /* optional fixed32 data_center_id */ 5:
-					message.data_center_id = reader.fixed32();
-					break;
-				case /* optional uint32 appid */ 6:
-					message.appid = reader.uint32();
-					break;
-				case /* optional uint32 protocol_version */ 7:
-					message.protocol_version = reader.uint32();
-					break;
-				case /* optional string build */ 9:
-					message.build = reader.string();
-					break;
-				case /* optional uint64 network_config_version */ 10:
-					message.network_config_version = reader.uint64().toBigInt();
-					break;
-				case /* optional fixed32 my_unix_time */ 11:
-					message.my_unix_time = reader.fixed32();
-					break;
-				case /* optional bytes routing_blob */ 12:
-					message.routing_blob = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramGameserverPingReplyData,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 echo_relay_unix_time = 2; */
-		if (message.echo_relay_unix_time !== undefined) writer.tag(2, WireType.Bit32).fixed32(message.echo_relay_unix_time);
-		/* optional bytes echo = 8; */
-		if (message.echo !== undefined) writer.tag(8, WireType.LengthDelimited).bytes(message.echo);
-		/* optional fixed64 legacy_challenge = 3; */
-		if (message.legacy_challenge !== undefined) writer.tag(3, WireType.Bit64).fixed64(message.legacy_challenge);
-		/* optional fixed32 legacy_router_timestamp = 4; */
-		if (message.legacy_router_timestamp !== undefined)
-			writer.tag(4, WireType.Bit32).fixed32(message.legacy_router_timestamp);
-		/* optional fixed32 data_center_id = 5; */
-		if (message.data_center_id !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.data_center_id);
-		/* optional uint32 appid = 6; */
-		if (message.appid !== undefined) writer.tag(6, WireType.Varint).uint32(message.appid);
-		/* optional uint32 protocol_version = 7; */
-		if (message.protocol_version !== undefined) writer.tag(7, WireType.Varint).uint32(message.protocol_version);
-		/* optional string build = 9; */
-		if (message.build !== undefined) writer.tag(9, WireType.LengthDelimited).string(message.build);
-		/* optional uint64 network_config_version = 10; */
-		if (message.network_config_version !== undefined)
-			writer.tag(10, WireType.Varint).uint64(message.network_config_version);
-		/* optional fixed32 my_unix_time = 11; */
-		if (message.my_unix_time !== undefined) writer.tag(11, WireType.Bit32).fixed32(message.my_unix_time);
-		/* optional bytes routing_blob = 12; */
-		if (message.routing_blob !== undefined) writer.tag(12, WireType.LengthDelimited).bytes(message.routing_blob);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramGameserverPingReplyData", [
+      {
+        no: 2,
+        name: "echo_relay_unix_time",
+        kind: "scalar",
+        localName: "echo_relay_unix_time",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 8,
+        name: "echo",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 3,
+        name: "legacy_challenge",
+        kind: "scalar",
+        localName: "legacy_challenge",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 4,
+        name: "legacy_router_timestamp",
+        kind: "scalar",
+        localName: "legacy_router_timestamp",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 5,
+        name: "data_center_id",
+        kind: "scalar",
+        localName: "data_center_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 6,
+        name: "appid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "protocol_version",
+        kind: "scalar",
+        localName: "protocol_version",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "build",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 10,
+        name: "network_config_version",
+        kind: "scalar",
+        localName: "network_config_version",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 11,
+        name: "my_unix_time",
+        kind: "scalar",
+        localName: "my_unix_time",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 12,
+        name: "routing_blob",
+        kind: "scalar",
+        localName: "routing_blob",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramGameserverPingReplyData>): CMsgSteamDatagramGameserverPingReplyData {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramGameserverPingReplyData>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramGameserverPingReplyData,
+  ): CMsgSteamDatagramGameserverPingReplyData {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 echo_relay_unix_time */ 2:
+          message.echo_relay_unix_time = reader.fixed32();
+          break;
+        case /* optional bytes echo */ 8:
+          message.echo = reader.bytes();
+          break;
+        case /* optional fixed64 legacy_challenge */ 3:
+          message.legacy_challenge = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed32 legacy_router_timestamp */ 4:
+          message.legacy_router_timestamp = reader.fixed32();
+          break;
+        case /* optional fixed32 data_center_id */ 5:
+          message.data_center_id = reader.fixed32();
+          break;
+        case /* optional uint32 appid */ 6:
+          message.appid = reader.uint32();
+          break;
+        case /* optional uint32 protocol_version */ 7:
+          message.protocol_version = reader.uint32();
+          break;
+        case /* optional string build */ 9:
+          message.build = reader.string();
+          break;
+        case /* optional uint64 network_config_version */ 10:
+          message.network_config_version = reader.uint64().toBigInt();
+          break;
+        case /* optional fixed32 my_unix_time */ 11:
+          message.my_unix_time = reader.fixed32();
+          break;
+        case /* optional bytes routing_blob */ 12:
+          message.routing_blob = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramGameserverPingReplyData,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 echo_relay_unix_time = 2; */
+    if (message.echo_relay_unix_time !== undefined) writer.tag(2, WireType.Bit32).fixed32(message.echo_relay_unix_time);
+    /* optional bytes echo = 8; */
+    if (message.echo !== undefined) writer.tag(8, WireType.LengthDelimited).bytes(message.echo);
+    /* optional fixed64 legacy_challenge = 3; */
+    if (message.legacy_challenge !== undefined) writer.tag(3, WireType.Bit64).fixed64(message.legacy_challenge);
+    /* optional fixed32 legacy_router_timestamp = 4; */
+    if (message.legacy_router_timestamp !== undefined)
+      writer.tag(4, WireType.Bit32).fixed32(message.legacy_router_timestamp);
+    /* optional fixed32 data_center_id = 5; */
+    if (message.data_center_id !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.data_center_id);
+    /* optional uint32 appid = 6; */
+    if (message.appid !== undefined) writer.tag(6, WireType.Varint).uint32(message.appid);
+    /* optional uint32 protocol_version = 7; */
+    if (message.protocol_version !== undefined) writer.tag(7, WireType.Varint).uint32(message.protocol_version);
+    /* optional string build = 9; */
+    if (message.build !== undefined) writer.tag(9, WireType.LengthDelimited).string(message.build);
+    /* optional uint64 network_config_version = 10; */
+    if (message.network_config_version !== undefined)
+      writer.tag(10, WireType.Varint).uint64(message.network_config_version);
+    /* optional fixed32 my_unix_time = 11; */
+    if (message.my_unix_time !== undefined) writer.tag(11, WireType.Bit32).fixed32(message.my_unix_time);
+    /* optional bytes routing_blob = 12; */
+    if (message.routing_blob !== undefined) writer.tag(12, WireType.LengthDelimited).bytes(message.routing_blob);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramGameserverPingReplyData
@@ -3109,124 +3109,124 @@ class CMsgSteamDatagramGameserverPingReplyData$Type extends MessageType<CMsgStea
 export const CMsgSteamDatagramGameserverPingReplyData = new CMsgSteamDatagramGameserverPingReplyData$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramNoSessionRelayToClient$Type extends MessageType<CMsgSteamDatagramNoSessionRelayToClient> {
-	constructor() {
-		super("CMsgSteamDatagramNoSessionRelayToClient", [
-			{
-				no: 7,
-				name: "connection_id",
-				kind: "scalar",
-				localName: "connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "your_public_ip",
-				kind: "scalar",
-				localName: "your_public_ip",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 6,
-				name: "your_public_port",
-				kind: "scalar",
-				localName: "your_public_port",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 3,
-				name: "server_time",
-				kind: "scalar",
-				localName: "server_time",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 4,
-				name: "challenge",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 5,
-				name: "seconds_until_shutdown",
-				kind: "scalar",
-				localName: "seconds_until_shutdown",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramNoSessionRelayToClient>): CMsgSteamDatagramNoSessionRelayToClient {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramNoSessionRelayToClient>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramNoSessionRelayToClient,
-	): CMsgSteamDatagramNoSessionRelayToClient {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 connection_id */ 7:
-					message.connection_id = reader.fixed32();
-					break;
-				case /* optional fixed32 your_public_ip */ 2:
-					message.your_public_ip = reader.fixed32();
-					break;
-				case /* optional fixed32 your_public_port */ 6:
-					message.your_public_port = reader.fixed32();
-					break;
-				case /* optional fixed32 server_time */ 3:
-					message.server_time = reader.fixed32();
-					break;
-				case /* optional fixed64 challenge */ 4:
-					message.challenge = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 seconds_until_shutdown */ 5:
-					message.seconds_until_shutdown = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramNoSessionRelayToClient,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 connection_id = 7; */
-		if (message.connection_id !== undefined) writer.tag(7, WireType.Bit32).fixed32(message.connection_id);
-		/* optional fixed32 your_public_ip = 2; */
-		if (message.your_public_ip !== undefined) writer.tag(2, WireType.Bit32).fixed32(message.your_public_ip);
-		/* optional fixed32 your_public_port = 6; */
-		if (message.your_public_port !== undefined) writer.tag(6, WireType.Bit32).fixed32(message.your_public_port);
-		/* optional fixed32 server_time = 3; */
-		if (message.server_time !== undefined) writer.tag(3, WireType.Bit32).fixed32(message.server_time);
-		/* optional fixed64 challenge = 4; */
-		if (message.challenge !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.challenge);
-		/* optional uint32 seconds_until_shutdown = 5; */
-		if (message.seconds_until_shutdown !== undefined)
-			writer.tag(5, WireType.Varint).uint32(message.seconds_until_shutdown);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramNoSessionRelayToClient", [
+      {
+        no: 7,
+        name: "connection_id",
+        kind: "scalar",
+        localName: "connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "your_public_ip",
+        kind: "scalar",
+        localName: "your_public_ip",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 6,
+        name: "your_public_port",
+        kind: "scalar",
+        localName: "your_public_port",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 3,
+        name: "server_time",
+        kind: "scalar",
+        localName: "server_time",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 4,
+        name: "challenge",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 5,
+        name: "seconds_until_shutdown",
+        kind: "scalar",
+        localName: "seconds_until_shutdown",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramNoSessionRelayToClient>): CMsgSteamDatagramNoSessionRelayToClient {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramNoSessionRelayToClient>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramNoSessionRelayToClient,
+  ): CMsgSteamDatagramNoSessionRelayToClient {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 connection_id */ 7:
+          message.connection_id = reader.fixed32();
+          break;
+        case /* optional fixed32 your_public_ip */ 2:
+          message.your_public_ip = reader.fixed32();
+          break;
+        case /* optional fixed32 your_public_port */ 6:
+          message.your_public_port = reader.fixed32();
+          break;
+        case /* optional fixed32 server_time */ 3:
+          message.server_time = reader.fixed32();
+          break;
+        case /* optional fixed64 challenge */ 4:
+          message.challenge = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 seconds_until_shutdown */ 5:
+          message.seconds_until_shutdown = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramNoSessionRelayToClient,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 connection_id = 7; */
+    if (message.connection_id !== undefined) writer.tag(7, WireType.Bit32).fixed32(message.connection_id);
+    /* optional fixed32 your_public_ip = 2; */
+    if (message.your_public_ip !== undefined) writer.tag(2, WireType.Bit32).fixed32(message.your_public_ip);
+    /* optional fixed32 your_public_port = 6; */
+    if (message.your_public_port !== undefined) writer.tag(6, WireType.Bit32).fixed32(message.your_public_port);
+    /* optional fixed32 server_time = 3; */
+    if (message.server_time !== undefined) writer.tag(3, WireType.Bit32).fixed32(message.server_time);
+    /* optional fixed64 challenge = 4; */
+    if (message.challenge !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.challenge);
+    /* optional uint32 seconds_until_shutdown = 5; */
+    if (message.seconds_until_shutdown !== undefined)
+      writer.tag(5, WireType.Varint).uint32(message.seconds_until_shutdown);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramNoSessionRelayToClient
@@ -3234,100 +3234,100 @@ class CMsgSteamDatagramNoSessionRelayToClient$Type extends MessageType<CMsgSteam
 export const CMsgSteamDatagramNoSessionRelayToClient = new CMsgSteamDatagramNoSessionRelayToClient$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramNoSessionRelayToPeer$Type extends MessageType<CMsgSteamDatagramNoSessionRelayToPeer> {
-	constructor() {
-		super("CMsgSteamDatagramNoSessionRelayToPeer", [
-			{
-				no: 1,
-				name: "legacy_relay_session_id",
-				kind: "scalar",
-				localName: "legacy_relay_session_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "from_relay_session_id",
-				kind: "scalar",
-				localName: "from_relay_session_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 7,
-				name: "from_connection_id",
-				kind: "scalar",
-				localName: "from_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 99,
-				name: "kludge_pad",
-				kind: "scalar",
-				localName: "kludge_pad",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramNoSessionRelayToPeer>): CMsgSteamDatagramNoSessionRelayToPeer {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramNoSessionRelayToPeer>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramNoSessionRelayToPeer,
-	): CMsgSteamDatagramNoSessionRelayToPeer {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 legacy_relay_session_id */ 1:
-					message.legacy_relay_session_id = reader.uint32();
-					break;
-				case /* optional fixed32 from_relay_session_id */ 2:
-					message.from_relay_session_id = reader.fixed32();
-					break;
-				case /* optional fixed32 from_connection_id */ 7:
-					message.from_connection_id = reader.fixed32();
-					break;
-				case /* optional fixed64 kludge_pad */ 99:
-					message.kludge_pad = reader.fixed64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramNoSessionRelayToPeer,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 legacy_relay_session_id = 1; */
-		if (message.legacy_relay_session_id !== undefined)
-			writer.tag(1, WireType.Varint).uint32(message.legacy_relay_session_id);
-		/* optional fixed32 from_relay_session_id = 2; */
-		if (message.from_relay_session_id !== undefined)
-			writer.tag(2, WireType.Bit32).fixed32(message.from_relay_session_id);
-		/* optional fixed32 from_connection_id = 7; */
-		if (message.from_connection_id !== undefined) writer.tag(7, WireType.Bit32).fixed32(message.from_connection_id);
-		/* optional fixed64 kludge_pad = 99; */
-		if (message.kludge_pad !== undefined) writer.tag(99, WireType.Bit64).fixed64(message.kludge_pad);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramNoSessionRelayToPeer", [
+      {
+        no: 1,
+        name: "legacy_relay_session_id",
+        kind: "scalar",
+        localName: "legacy_relay_session_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "from_relay_session_id",
+        kind: "scalar",
+        localName: "from_relay_session_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 7,
+        name: "from_connection_id",
+        kind: "scalar",
+        localName: "from_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 99,
+        name: "kludge_pad",
+        kind: "scalar",
+        localName: "kludge_pad",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramNoSessionRelayToPeer>): CMsgSteamDatagramNoSessionRelayToPeer {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramNoSessionRelayToPeer>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramNoSessionRelayToPeer,
+  ): CMsgSteamDatagramNoSessionRelayToPeer {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 legacy_relay_session_id */ 1:
+          message.legacy_relay_session_id = reader.uint32();
+          break;
+        case /* optional fixed32 from_relay_session_id */ 2:
+          message.from_relay_session_id = reader.fixed32();
+          break;
+        case /* optional fixed32 from_connection_id */ 7:
+          message.from_connection_id = reader.fixed32();
+          break;
+        case /* optional fixed64 kludge_pad */ 99:
+          message.kludge_pad = reader.fixed64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramNoSessionRelayToPeer,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 legacy_relay_session_id = 1; */
+    if (message.legacy_relay_session_id !== undefined)
+      writer.tag(1, WireType.Varint).uint32(message.legacy_relay_session_id);
+    /* optional fixed32 from_relay_session_id = 2; */
+    if (message.from_relay_session_id !== undefined)
+      writer.tag(2, WireType.Bit32).fixed32(message.from_relay_session_id);
+    /* optional fixed32 from_connection_id = 7; */
+    if (message.from_connection_id !== undefined) writer.tag(7, WireType.Bit32).fixed32(message.from_connection_id);
+    /* optional fixed64 kludge_pad = 99; */
+    if (message.kludge_pad !== undefined) writer.tag(99, WireType.Bit64).fixed64(message.kludge_pad);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramNoSessionRelayToPeer
@@ -3335,81 +3335,81 @@ class CMsgSteamDatagramNoSessionRelayToPeer$Type extends MessageType<CMsgSteamDa
 export const CMsgSteamDatagramNoSessionRelayToPeer = new CMsgSteamDatagramNoSessionRelayToPeer$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTOSTreatment$Type extends MessageType<CMsgTOSTreatment> {
-	constructor() {
-		super("CMsgTOSTreatment", [
-			{
-				no: 1,
-				name: "l4s_detect",
-				kind: "scalar",
-				localName: "l4s_detect",
-				jsonName: "l4sDetect",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "up_ecn1",
-				kind: "scalar",
-				localName: "up_ecn1",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "down_dscp45",
-				kind: "scalar",
-				localName: "down_dscp45",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTOSTreatment>): CMsgTOSTreatment {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTOSTreatment>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTOSTreatment,
-	): CMsgTOSTreatment {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string l4s_detect = 1 [json_name = "l4sDetect"];*/ 1:
-					message.l4s_detect = reader.string();
-					break;
-				case /* optional string up_ecn1 */ 2:
-					message.up_ecn1 = reader.string();
-					break;
-				case /* optional string down_dscp45 */ 3:
-					message.down_dscp45 = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTOSTreatment, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional string l4s_detect = 1 [json_name = "l4sDetect"]; */
-		if (message.l4s_detect !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.l4s_detect);
-		/* optional string up_ecn1 = 2; */
-		if (message.up_ecn1 !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.up_ecn1);
-		/* optional string down_dscp45 = 3; */
-		if (message.down_dscp45 !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.down_dscp45);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTOSTreatment", [
+      {
+        no: 1,
+        name: "l4s_detect",
+        kind: "scalar",
+        localName: "l4s_detect",
+        jsonName: "l4sDetect",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "up_ecn1",
+        kind: "scalar",
+        localName: "up_ecn1",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "down_dscp45",
+        kind: "scalar",
+        localName: "down_dscp45",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTOSTreatment>): CMsgTOSTreatment {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTOSTreatment>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTOSTreatment,
+  ): CMsgTOSTreatment {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string l4s_detect = 1 [json_name = "l4sDetect"];*/ 1:
+          message.l4s_detect = reader.string();
+          break;
+        case /* optional string up_ecn1 */ 2:
+          message.up_ecn1 = reader.string();
+          break;
+        case /* optional string down_dscp45 */ 3:
+          message.down_dscp45 = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTOSTreatment, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional string l4s_detect = 1 [json_name = "l4sDetect"]; */
+    if (message.l4s_detect !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.l4s_detect);
+    /* optional string up_ecn1 = 2; */
+    if (message.up_ecn1 !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.up_ecn1);
+    /* optional string down_dscp45 = 3; */
+    if (message.down_dscp45 !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.down_dscp45);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTOSTreatment
@@ -3417,58 +3417,58 @@ class CMsgTOSTreatment$Type extends MessageType<CMsgTOSTreatment> {
 export const CMsgTOSTreatment = new CMsgTOSTreatment$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramClientPingSampleRequest$Type extends MessageType<CMsgSteamDatagramClientPingSampleRequest> {
-	constructor() {
-		super("CMsgSteamDatagramClientPingSampleRequest", [
-			{
-				no: 1,
-				name: "connection_id",
-				kind: "scalar",
-				localName: "connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramClientPingSampleRequest>): CMsgSteamDatagramClientPingSampleRequest {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramClientPingSampleRequest>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramClientPingSampleRequest,
-	): CMsgSteamDatagramClientPingSampleRequest {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 connection_id */ 1:
-					message.connection_id = reader.fixed32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramClientPingSampleRequest,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 connection_id = 1; */
-		if (message.connection_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.connection_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramClientPingSampleRequest", [
+      {
+        no: 1,
+        name: "connection_id",
+        kind: "scalar",
+        localName: "connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramClientPingSampleRequest>): CMsgSteamDatagramClientPingSampleRequest {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramClientPingSampleRequest>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramClientPingSampleRequest,
+  ): CMsgSteamDatagramClientPingSampleRequest {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 connection_id */ 1:
+          message.connection_id = reader.fixed32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramClientPingSampleRequest,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 connection_id = 1; */
+    if (message.connection_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.connection_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramClientPingSampleRequest
@@ -3476,123 +3476,123 @@ class CMsgSteamDatagramClientPingSampleRequest$Type extends MessageType<CMsgStea
 export const CMsgSteamDatagramClientPingSampleRequest = new CMsgSteamDatagramClientPingSampleRequest$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramClientPingSampleReply$Type extends MessageType<CMsgSteamDatagramClientPingSampleReply> {
-	constructor() {
-		super("CMsgSteamDatagramClientPingSampleReply", [
-			{
-				no: 1,
-				name: "connection_id",
-				kind: "scalar",
-				localName: "connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 5,
-				name: "relay_override_active",
-				kind: "scalar",
-				localName: "relay_override_active",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{ no: 6, name: "tos", kind: "message", T: () => CMsgTOSTreatment },
-			{
-				no: 2,
-				name: "pops",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamDatagramClientPingSampleReply_POP,
-			},
-			{
-				no: 3,
-				name: "legacy_data_centers",
-				kind: "message",
-				localName: "legacy_data_centers",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramClientPingSampleReply>): CMsgSteamDatagramClientPingSampleReply {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.pops = [];
-		message.legacy_data_centers = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramClientPingSampleReply>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramClientPingSampleReply,
-	): CMsgSteamDatagramClientPingSampleReply {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 connection_id */ 1:
-					message.connection_id = reader.fixed32();
-					break;
-				case /* optional bool relay_override_active */ 5:
-					message.relay_override_active = reader.bool();
-					break;
-				case /* optional CMsgTOSTreatment tos */ 6:
-					message.tos = CMsgTOSTreatment.internalBinaryRead(reader, reader.uint32(), options, message.tos);
-					break;
-				case /* repeated CMsgSteamDatagramClientPingSampleReply.POP pops */ 2:
-					message.pops.push(
-						CMsgSteamDatagramClientPingSampleReply_POP.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CMsgSteamDatagramClientPingSampleReply.LegacyDataCenter legacy_data_centers */ 3:
-					message.legacy_data_centers.push(
-						CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-						),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramClientPingSampleReply,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 connection_id = 1; */
-		if (message.connection_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.connection_id);
-		/* optional bool relay_override_active = 5; */
-		if (message.relay_override_active !== undefined) writer.tag(5, WireType.Varint).bool(message.relay_override_active);
-		/* optional CMsgTOSTreatment tos = 6; */
-		if (message.tos)
-			CMsgTOSTreatment.internalBinaryWrite(message.tos, writer.tag(6, WireType.LengthDelimited).fork(), options).join();
-		/* repeated CMsgSteamDatagramClientPingSampleReply.POP pops = 2; */
-		for (let i = 0; i < message.pops.length; i++)
-			CMsgSteamDatagramClientPingSampleReply_POP.internalBinaryWrite(
-				message.pops[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamDatagramClientPingSampleReply.LegacyDataCenter legacy_data_centers = 3; */
-		for (let i = 0; i < message.legacy_data_centers.length; i++)
-			CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter.internalBinaryWrite(
-				message.legacy_data_centers[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramClientPingSampleReply", [
+      {
+        no: 1,
+        name: "connection_id",
+        kind: "scalar",
+        localName: "connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 5,
+        name: "relay_override_active",
+        kind: "scalar",
+        localName: "relay_override_active",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      { no: 6, name: "tos", kind: "message", T: () => CMsgTOSTreatment },
+      {
+        no: 2,
+        name: "pops",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamDatagramClientPingSampleReply_POP,
+      },
+      {
+        no: 3,
+        name: "legacy_data_centers",
+        kind: "message",
+        localName: "legacy_data_centers",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramClientPingSampleReply>): CMsgSteamDatagramClientPingSampleReply {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.pops = [];
+    message.legacy_data_centers = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramClientPingSampleReply>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramClientPingSampleReply,
+  ): CMsgSteamDatagramClientPingSampleReply {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 connection_id */ 1:
+          message.connection_id = reader.fixed32();
+          break;
+        case /* optional bool relay_override_active */ 5:
+          message.relay_override_active = reader.bool();
+          break;
+        case /* optional CMsgTOSTreatment tos */ 6:
+          message.tos = CMsgTOSTreatment.internalBinaryRead(reader, reader.uint32(), options, message.tos);
+          break;
+        case /* repeated CMsgSteamDatagramClientPingSampleReply.POP pops */ 2:
+          message.pops.push(
+            CMsgSteamDatagramClientPingSampleReply_POP.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CMsgSteamDatagramClientPingSampleReply.LegacyDataCenter legacy_data_centers */ 3:
+          message.legacy_data_centers.push(
+            CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+            ),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramClientPingSampleReply,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 connection_id = 1; */
+    if (message.connection_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.connection_id);
+    /* optional bool relay_override_active = 5; */
+    if (message.relay_override_active !== undefined) writer.tag(5, WireType.Varint).bool(message.relay_override_active);
+    /* optional CMsgTOSTreatment tos = 6; */
+    if (message.tos)
+      CMsgTOSTreatment.internalBinaryWrite(message.tos, writer.tag(6, WireType.LengthDelimited).fork(), options).join();
+    /* repeated CMsgSteamDatagramClientPingSampleReply.POP pops = 2; */
+    for (let i = 0; i < message.pops.length; i++)
+      CMsgSteamDatagramClientPingSampleReply_POP.internalBinaryWrite(
+        message.pops[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamDatagramClientPingSampleReply.LegacyDataCenter legacy_data_centers = 3; */
+    for (let i = 0; i < message.legacy_data_centers.length; i++)
+      CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter.internalBinaryWrite(
+        message.legacy_data_centers[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramClientPingSampleReply
@@ -3600,271 +3600,271 @@ class CMsgSteamDatagramClientPingSampleReply$Type extends MessageType<CMsgSteamD
 export const CMsgSteamDatagramClientPingSampleReply = new CMsgSteamDatagramClientPingSampleReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramClientPingSampleReply_POP$Type extends MessageType<CMsgSteamDatagramClientPingSampleReply_POP> {
-	constructor() {
-		super("CMsgSteamDatagramClientPingSampleReply.POP", [
-			{
-				no: 1,
-				name: "pop_id",
-				kind: "scalar",
-				localName: "pop_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "default_front_ping_ms",
-				kind: "scalar",
-				localName: "default_front_ping_ms",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "cluster_penalty",
-				kind: "scalar",
-				localName: "cluster_penalty",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "alt_addresses",
-				kind: "message",
-				localName: "alt_addresses",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamDatagramClientPingSampleReply_POP_AltAddress,
-			},
-			{
-				no: 3,
-				name: "default_e2e_ping_ms",
-				kind: "scalar",
-				localName: "default_e2e_ping_ms",
-				jsonName: "defaultE2ePingMs",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "default_e2e_score",
-				kind: "scalar",
-				localName: "default_e2e_score",
-				jsonName: "defaultE2eScore",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "p2p_via_peer_relay_pop_id",
-				kind: "scalar",
-				localName: "p2p_via_peer_relay_pop_id",
-				jsonName: "p2pViaPeerRelayPopId",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 9,
-				name: "best_dc_ping_ms",
-				kind: "scalar",
-				localName: "best_dc_ping_ms",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "best_dc_score",
-				kind: "scalar",
-				localName: "best_dc_score",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 11,
-				name: "best_dc_via_relay_pop_id",
-				kind: "scalar",
-				localName: "best_dc_via_relay_pop_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 12,
-				name: "default_dc_ping_ms",
-				kind: "scalar",
-				localName: "default_dc_ping_ms",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 13,
-				name: "default_dc_score",
-				kind: "scalar",
-				localName: "default_dc_score",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 14,
-				name: "default_dc_via_relay_pop_id",
-				kind: "scalar",
-				localName: "default_dc_via_relay_pop_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 15,
-				name: "test_dc_ping_ms",
-				kind: "scalar",
-				localName: "test_dc_ping_ms",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 16,
-				name: "test_dc_score",
-				kind: "scalar",
-				localName: "test_dc_score",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 17,
-				name: "test_dc_via_relay_pop_id",
-				kind: "scalar",
-				localName: "test_dc_via_relay_pop_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramClientPingSampleReply_POP>,
-	): CMsgSteamDatagramClientPingSampleReply_POP {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.alt_addresses = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramClientPingSampleReply_POP>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramClientPingSampleReply_POP,
-	): CMsgSteamDatagramClientPingSampleReply_POP {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 pop_id */ 1:
-					message.pop_id = reader.fixed32();
-					break;
-				case /* optional uint32 default_front_ping_ms */ 2:
-					message.default_front_ping_ms = reader.uint32();
-					break;
-				case /* optional uint32 cluster_penalty */ 4:
-					message.cluster_penalty = reader.uint32();
-					break;
-				case /* repeated CMsgSteamDatagramClientPingSampleReply.POP.AltAddress alt_addresses */ 7:
-					message.alt_addresses.push(
-						CMsgSteamDatagramClientPingSampleReply_POP_AltAddress.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* optional uint32 default_e2e_ping_ms = 3 [json_name = "defaultE2ePingMs"];*/ 3:
-					message.default_e2e_ping_ms = reader.uint32();
-					break;
-				case /* optional uint32 default_e2e_score = 5 [json_name = "defaultE2eScore"];*/ 5:
-					message.default_e2e_score = reader.uint32();
-					break;
-				case /* optional fixed32 p2p_via_peer_relay_pop_id = 6 [json_name = "p2pViaPeerRelayPopId"];*/ 6:
-					message.p2p_via_peer_relay_pop_id = reader.fixed32();
-					break;
-				case /* optional uint32 best_dc_ping_ms */ 9:
-					message.best_dc_ping_ms = reader.uint32();
-					break;
-				case /* optional uint32 best_dc_score */ 10:
-					message.best_dc_score = reader.uint32();
-					break;
-				case /* optional fixed32 best_dc_via_relay_pop_id */ 11:
-					message.best_dc_via_relay_pop_id = reader.fixed32();
-					break;
-				case /* optional uint32 default_dc_ping_ms */ 12:
-					message.default_dc_ping_ms = reader.uint32();
-					break;
-				case /* optional uint32 default_dc_score */ 13:
-					message.default_dc_score = reader.uint32();
-					break;
-				case /* optional fixed32 default_dc_via_relay_pop_id */ 14:
-					message.default_dc_via_relay_pop_id = reader.fixed32();
-					break;
-				case /* optional uint32 test_dc_ping_ms */ 15:
-					message.test_dc_ping_ms = reader.uint32();
-					break;
-				case /* optional uint32 test_dc_score */ 16:
-					message.test_dc_score = reader.uint32();
-					break;
-				case /* optional fixed32 test_dc_via_relay_pop_id */ 17:
-					message.test_dc_via_relay_pop_id = reader.fixed32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramClientPingSampleReply_POP,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 pop_id = 1; */
-		if (message.pop_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.pop_id);
-		/* optional uint32 default_front_ping_ms = 2; */
-		if (message.default_front_ping_ms !== undefined)
-			writer.tag(2, WireType.Varint).uint32(message.default_front_ping_ms);
-		/* optional uint32 cluster_penalty = 4; */
-		if (message.cluster_penalty !== undefined) writer.tag(4, WireType.Varint).uint32(message.cluster_penalty);
-		/* repeated CMsgSteamDatagramClientPingSampleReply.POP.AltAddress alt_addresses = 7; */
-		for (let i = 0; i < message.alt_addresses.length; i++)
-			CMsgSteamDatagramClientPingSampleReply_POP_AltAddress.internalBinaryWrite(
-				message.alt_addresses[i],
-				writer.tag(7, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 default_e2e_ping_ms = 3 [json_name = "defaultE2ePingMs"]; */
-		if (message.default_e2e_ping_ms !== undefined) writer.tag(3, WireType.Varint).uint32(message.default_e2e_ping_ms);
-		/* optional uint32 default_e2e_score = 5 [json_name = "defaultE2eScore"]; */
-		if (message.default_e2e_score !== undefined) writer.tag(5, WireType.Varint).uint32(message.default_e2e_score);
-		/* optional fixed32 p2p_via_peer_relay_pop_id = 6 [json_name = "p2pViaPeerRelayPopId"]; */
-		if (message.p2p_via_peer_relay_pop_id !== undefined)
-			writer.tag(6, WireType.Bit32).fixed32(message.p2p_via_peer_relay_pop_id);
-		/* optional uint32 best_dc_ping_ms = 9; */
-		if (message.best_dc_ping_ms !== undefined) writer.tag(9, WireType.Varint).uint32(message.best_dc_ping_ms);
-		/* optional uint32 best_dc_score = 10; */
-		if (message.best_dc_score !== undefined) writer.tag(10, WireType.Varint).uint32(message.best_dc_score);
-		/* optional fixed32 best_dc_via_relay_pop_id = 11; */
-		if (message.best_dc_via_relay_pop_id !== undefined)
-			writer.tag(11, WireType.Bit32).fixed32(message.best_dc_via_relay_pop_id);
-		/* optional uint32 default_dc_ping_ms = 12; */
-		if (message.default_dc_ping_ms !== undefined) writer.tag(12, WireType.Varint).uint32(message.default_dc_ping_ms);
-		/* optional uint32 default_dc_score = 13; */
-		if (message.default_dc_score !== undefined) writer.tag(13, WireType.Varint).uint32(message.default_dc_score);
-		/* optional fixed32 default_dc_via_relay_pop_id = 14; */
-		if (message.default_dc_via_relay_pop_id !== undefined)
-			writer.tag(14, WireType.Bit32).fixed32(message.default_dc_via_relay_pop_id);
-		/* optional uint32 test_dc_ping_ms = 15; */
-		if (message.test_dc_ping_ms !== undefined) writer.tag(15, WireType.Varint).uint32(message.test_dc_ping_ms);
-		/* optional uint32 test_dc_score = 16; */
-		if (message.test_dc_score !== undefined) writer.tag(16, WireType.Varint).uint32(message.test_dc_score);
-		/* optional fixed32 test_dc_via_relay_pop_id = 17; */
-		if (message.test_dc_via_relay_pop_id !== undefined)
-			writer.tag(17, WireType.Bit32).fixed32(message.test_dc_via_relay_pop_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramClientPingSampleReply.POP", [
+      {
+        no: 1,
+        name: "pop_id",
+        kind: "scalar",
+        localName: "pop_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "default_front_ping_ms",
+        kind: "scalar",
+        localName: "default_front_ping_ms",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "cluster_penalty",
+        kind: "scalar",
+        localName: "cluster_penalty",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "alt_addresses",
+        kind: "message",
+        localName: "alt_addresses",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamDatagramClientPingSampleReply_POP_AltAddress,
+      },
+      {
+        no: 3,
+        name: "default_e2e_ping_ms",
+        kind: "scalar",
+        localName: "default_e2e_ping_ms",
+        jsonName: "defaultE2ePingMs",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "default_e2e_score",
+        kind: "scalar",
+        localName: "default_e2e_score",
+        jsonName: "defaultE2eScore",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "p2p_via_peer_relay_pop_id",
+        kind: "scalar",
+        localName: "p2p_via_peer_relay_pop_id",
+        jsonName: "p2pViaPeerRelayPopId",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 9,
+        name: "best_dc_ping_ms",
+        kind: "scalar",
+        localName: "best_dc_ping_ms",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "best_dc_score",
+        kind: "scalar",
+        localName: "best_dc_score",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 11,
+        name: "best_dc_via_relay_pop_id",
+        kind: "scalar",
+        localName: "best_dc_via_relay_pop_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 12,
+        name: "default_dc_ping_ms",
+        kind: "scalar",
+        localName: "default_dc_ping_ms",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 13,
+        name: "default_dc_score",
+        kind: "scalar",
+        localName: "default_dc_score",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 14,
+        name: "default_dc_via_relay_pop_id",
+        kind: "scalar",
+        localName: "default_dc_via_relay_pop_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 15,
+        name: "test_dc_ping_ms",
+        kind: "scalar",
+        localName: "test_dc_ping_ms",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 16,
+        name: "test_dc_score",
+        kind: "scalar",
+        localName: "test_dc_score",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 17,
+        name: "test_dc_via_relay_pop_id",
+        kind: "scalar",
+        localName: "test_dc_via_relay_pop_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramClientPingSampleReply_POP>,
+  ): CMsgSteamDatagramClientPingSampleReply_POP {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.alt_addresses = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramClientPingSampleReply_POP>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramClientPingSampleReply_POP,
+  ): CMsgSteamDatagramClientPingSampleReply_POP {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 pop_id */ 1:
+          message.pop_id = reader.fixed32();
+          break;
+        case /* optional uint32 default_front_ping_ms */ 2:
+          message.default_front_ping_ms = reader.uint32();
+          break;
+        case /* optional uint32 cluster_penalty */ 4:
+          message.cluster_penalty = reader.uint32();
+          break;
+        case /* repeated CMsgSteamDatagramClientPingSampleReply.POP.AltAddress alt_addresses */ 7:
+          message.alt_addresses.push(
+            CMsgSteamDatagramClientPingSampleReply_POP_AltAddress.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* optional uint32 default_e2e_ping_ms = 3 [json_name = "defaultE2ePingMs"];*/ 3:
+          message.default_e2e_ping_ms = reader.uint32();
+          break;
+        case /* optional uint32 default_e2e_score = 5 [json_name = "defaultE2eScore"];*/ 5:
+          message.default_e2e_score = reader.uint32();
+          break;
+        case /* optional fixed32 p2p_via_peer_relay_pop_id = 6 [json_name = "p2pViaPeerRelayPopId"];*/ 6:
+          message.p2p_via_peer_relay_pop_id = reader.fixed32();
+          break;
+        case /* optional uint32 best_dc_ping_ms */ 9:
+          message.best_dc_ping_ms = reader.uint32();
+          break;
+        case /* optional uint32 best_dc_score */ 10:
+          message.best_dc_score = reader.uint32();
+          break;
+        case /* optional fixed32 best_dc_via_relay_pop_id */ 11:
+          message.best_dc_via_relay_pop_id = reader.fixed32();
+          break;
+        case /* optional uint32 default_dc_ping_ms */ 12:
+          message.default_dc_ping_ms = reader.uint32();
+          break;
+        case /* optional uint32 default_dc_score */ 13:
+          message.default_dc_score = reader.uint32();
+          break;
+        case /* optional fixed32 default_dc_via_relay_pop_id */ 14:
+          message.default_dc_via_relay_pop_id = reader.fixed32();
+          break;
+        case /* optional uint32 test_dc_ping_ms */ 15:
+          message.test_dc_ping_ms = reader.uint32();
+          break;
+        case /* optional uint32 test_dc_score */ 16:
+          message.test_dc_score = reader.uint32();
+          break;
+        case /* optional fixed32 test_dc_via_relay_pop_id */ 17:
+          message.test_dc_via_relay_pop_id = reader.fixed32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramClientPingSampleReply_POP,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 pop_id = 1; */
+    if (message.pop_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.pop_id);
+    /* optional uint32 default_front_ping_ms = 2; */
+    if (message.default_front_ping_ms !== undefined)
+      writer.tag(2, WireType.Varint).uint32(message.default_front_ping_ms);
+    /* optional uint32 cluster_penalty = 4; */
+    if (message.cluster_penalty !== undefined) writer.tag(4, WireType.Varint).uint32(message.cluster_penalty);
+    /* repeated CMsgSteamDatagramClientPingSampleReply.POP.AltAddress alt_addresses = 7; */
+    for (let i = 0; i < message.alt_addresses.length; i++)
+      CMsgSteamDatagramClientPingSampleReply_POP_AltAddress.internalBinaryWrite(
+        message.alt_addresses[i],
+        writer.tag(7, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 default_e2e_ping_ms = 3 [json_name = "defaultE2ePingMs"]; */
+    if (message.default_e2e_ping_ms !== undefined) writer.tag(3, WireType.Varint).uint32(message.default_e2e_ping_ms);
+    /* optional uint32 default_e2e_score = 5 [json_name = "defaultE2eScore"]; */
+    if (message.default_e2e_score !== undefined) writer.tag(5, WireType.Varint).uint32(message.default_e2e_score);
+    /* optional fixed32 p2p_via_peer_relay_pop_id = 6 [json_name = "p2pViaPeerRelayPopId"]; */
+    if (message.p2p_via_peer_relay_pop_id !== undefined)
+      writer.tag(6, WireType.Bit32).fixed32(message.p2p_via_peer_relay_pop_id);
+    /* optional uint32 best_dc_ping_ms = 9; */
+    if (message.best_dc_ping_ms !== undefined) writer.tag(9, WireType.Varint).uint32(message.best_dc_ping_ms);
+    /* optional uint32 best_dc_score = 10; */
+    if (message.best_dc_score !== undefined) writer.tag(10, WireType.Varint).uint32(message.best_dc_score);
+    /* optional fixed32 best_dc_via_relay_pop_id = 11; */
+    if (message.best_dc_via_relay_pop_id !== undefined)
+      writer.tag(11, WireType.Bit32).fixed32(message.best_dc_via_relay_pop_id);
+    /* optional uint32 default_dc_ping_ms = 12; */
+    if (message.default_dc_ping_ms !== undefined) writer.tag(12, WireType.Varint).uint32(message.default_dc_ping_ms);
+    /* optional uint32 default_dc_score = 13; */
+    if (message.default_dc_score !== undefined) writer.tag(13, WireType.Varint).uint32(message.default_dc_score);
+    /* optional fixed32 default_dc_via_relay_pop_id = 14; */
+    if (message.default_dc_via_relay_pop_id !== undefined)
+      writer.tag(14, WireType.Bit32).fixed32(message.default_dc_via_relay_pop_id);
+    /* optional uint32 test_dc_ping_ms = 15; */
+    if (message.test_dc_ping_ms !== undefined) writer.tag(15, WireType.Varint).uint32(message.test_dc_ping_ms);
+    /* optional uint32 test_dc_score = 16; */
+    if (message.test_dc_score !== undefined) writer.tag(16, WireType.Varint).uint32(message.test_dc_score);
+    /* optional fixed32 test_dc_via_relay_pop_id = 17; */
+    if (message.test_dc_via_relay_pop_id !== undefined)
+      writer.tag(17, WireType.Bit32).fixed32(message.test_dc_via_relay_pop_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramClientPingSampleReply.POP
@@ -3872,416 +3872,416 @@ class CMsgSteamDatagramClientPingSampleReply_POP$Type extends MessageType<CMsgSt
 export const CMsgSteamDatagramClientPingSampleReply_POP = new CMsgSteamDatagramClientPingSampleReply_POP$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramClientPingSampleReply_POP_AltAddress$Type extends MessageType<CMsgSteamDatagramClientPingSampleReply_POP_AltAddress> {
-	constructor() {
-		super("CMsgSteamDatagramClientPingSampleReply.POP.AltAddress", [
-			{
-				no: 1,
-				name: "id",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "front_ping_ms",
-				kind: "scalar",
-				localName: "front_ping_ms",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "penalty",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramClientPingSampleReply_POP_AltAddress>,
-	): CMsgSteamDatagramClientPingSampleReply_POP_AltAddress {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamDatagramClientPingSampleReply_POP_AltAddress>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramClientPingSampleReply_POP_AltAddress,
-	): CMsgSteamDatagramClientPingSampleReply_POP_AltAddress {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string id */ 1:
-					message.id = reader.string();
-					break;
-				case /* optional uint32 front_ping_ms */ 2:
-					message.front_ping_ms = reader.uint32();
-					break;
-				case /* optional uint32 penalty */ 3:
-					message.penalty = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramClientPingSampleReply_POP_AltAddress,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string id = 1; */
-		if (message.id !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.id);
-		/* optional uint32 front_ping_ms = 2; */
-		if (message.front_ping_ms !== undefined) writer.tag(2, WireType.Varint).uint32(message.front_ping_ms);
-		/* optional uint32 penalty = 3; */
-		if (message.penalty !== undefined) writer.tag(3, WireType.Varint).uint32(message.penalty);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramClientPingSampleReply.POP.AltAddress", [
+      {
+        no: 1,
+        name: "id",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "front_ping_ms",
+        kind: "scalar",
+        localName: "front_ping_ms",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "penalty",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramClientPingSampleReply_POP_AltAddress>,
+  ): CMsgSteamDatagramClientPingSampleReply_POP_AltAddress {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamDatagramClientPingSampleReply_POP_AltAddress>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramClientPingSampleReply_POP_AltAddress,
+  ): CMsgSteamDatagramClientPingSampleReply_POP_AltAddress {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string id */ 1:
+          message.id = reader.string();
+          break;
+        case /* optional uint32 front_ping_ms */ 2:
+          message.front_ping_ms = reader.uint32();
+          break;
+        case /* optional uint32 penalty */ 3:
+          message.penalty = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramClientPingSampleReply_POP_AltAddress,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string id = 1; */
+    if (message.id !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.id);
+    /* optional uint32 front_ping_ms = 2; */
+    if (message.front_ping_ms !== undefined) writer.tag(2, WireType.Varint).uint32(message.front_ping_ms);
+    /* optional uint32 penalty = 3; */
+    if (message.penalty !== undefined) writer.tag(3, WireType.Varint).uint32(message.penalty);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramClientPingSampleReply.POP.AltAddress
  */
 export const CMsgSteamDatagramClientPingSampleReply_POP_AltAddress =
-	new CMsgSteamDatagramClientPingSampleReply_POP_AltAddress$Type();
+  new CMsgSteamDatagramClientPingSampleReply_POP_AltAddress$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter$Type extends MessageType<CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter> {
-	constructor() {
-		super("CMsgSteamDatagramClientPingSampleReply.LegacyDataCenter", [
-			{
-				no: 1,
-				name: "data_center_id",
-				kind: "scalar",
-				localName: "data_center_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "best_dc_via_relay_pop_id",
-				kind: "scalar",
-				localName: "best_dc_via_relay_pop_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 3,
-				name: "best_dc_ping_ms",
-				kind: "scalar",
-				localName: "best_dc_ping_ms",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter>,
-	): CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter,
-	): CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 data_center_id */ 1:
-					message.data_center_id = reader.fixed32();
-					break;
-				case /* optional fixed32 best_dc_via_relay_pop_id */ 2:
-					message.best_dc_via_relay_pop_id = reader.fixed32();
-					break;
-				case /* optional uint32 best_dc_ping_ms */ 3:
-					message.best_dc_ping_ms = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 data_center_id = 1; */
-		if (message.data_center_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.data_center_id);
-		/* optional fixed32 best_dc_via_relay_pop_id = 2; */
-		if (message.best_dc_via_relay_pop_id !== undefined)
-			writer.tag(2, WireType.Bit32).fixed32(message.best_dc_via_relay_pop_id);
-		/* optional uint32 best_dc_ping_ms = 3; */
-		if (message.best_dc_ping_ms !== undefined) writer.tag(3, WireType.Varint).uint32(message.best_dc_ping_ms);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramClientPingSampleReply.LegacyDataCenter", [
+      {
+        no: 1,
+        name: "data_center_id",
+        kind: "scalar",
+        localName: "data_center_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "best_dc_via_relay_pop_id",
+        kind: "scalar",
+        localName: "best_dc_via_relay_pop_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 3,
+        name: "best_dc_ping_ms",
+        kind: "scalar",
+        localName: "best_dc_ping_ms",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter>,
+  ): CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter,
+  ): CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 data_center_id */ 1:
+          message.data_center_id = reader.fixed32();
+          break;
+        case /* optional fixed32 best_dc_via_relay_pop_id */ 2:
+          message.best_dc_via_relay_pop_id = reader.fixed32();
+          break;
+        case /* optional uint32 best_dc_ping_ms */ 3:
+          message.best_dc_ping_ms = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 data_center_id = 1; */
+    if (message.data_center_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.data_center_id);
+    /* optional fixed32 best_dc_via_relay_pop_id = 2; */
+    if (message.best_dc_via_relay_pop_id !== undefined)
+      writer.tag(2, WireType.Bit32).fixed32(message.best_dc_via_relay_pop_id);
+    /* optional uint32 best_dc_ping_ms = 3; */
+    if (message.best_dc_ping_ms !== undefined) writer.tag(3, WireType.Varint).uint32(message.best_dc_ping_ms);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramClientPingSampleReply.LegacyDataCenter
  */
 export const CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter =
-	new CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter$Type();
+  new CMsgSteamDatagramClientPingSampleReply_LegacyDataCenter$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramClientSwitchedPrimary$Type extends MessageType<CMsgSteamDatagramClientSwitchedPrimary> {
-	constructor() {
-		super("CMsgSteamDatagramClientSwitchedPrimary", [
-			{
-				no: 1,
-				name: "connection_id",
-				kind: "scalar",
-				localName: "connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "from_ip",
-				kind: "scalar",
-				localName: "from_ip",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 3,
-				name: "from_port",
-				kind: "scalar",
-				localName: "from_port",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "from_router_cluster",
-				kind: "scalar",
-				localName: "from_router_cluster",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 5,
-				name: "from_active_time",
-				kind: "scalar",
-				localName: "from_active_time",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "from_active_packets_recv",
-				kind: "scalar",
-				localName: "from_active_packets_recv",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "from_dropped_reason",
-				kind: "scalar",
-				localName: "from_dropped_reason",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 8,
-				name: "gap_ms",
-				kind: "scalar",
-				localName: "gap_ms",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "from_quality_now",
-				kind: "message",
-				localName: "from_quality_now",
-				T: () => CMsgSteamDatagramClientSwitchedPrimary_RouterQuality,
-			},
-			{
-				no: 10,
-				name: "to_quality_now",
-				kind: "message",
-				localName: "to_quality_now",
-				T: () => CMsgSteamDatagramClientSwitchedPrimary_RouterQuality,
-			},
-			{
-				no: 11,
-				name: "from_quality_then",
-				kind: "message",
-				localName: "from_quality_then",
-				T: () => CMsgSteamDatagramClientSwitchedPrimary_RouterQuality,
-			},
-			{
-				no: 12,
-				name: "to_quality_then",
-				kind: "message",
-				localName: "to_quality_then",
-				T: () => CMsgSteamDatagramClientSwitchedPrimary_RouterQuality,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramClientSwitchedPrimary>): CMsgSteamDatagramClientSwitchedPrimary {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramClientSwitchedPrimary>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramClientSwitchedPrimary,
-	): CMsgSteamDatagramClientSwitchedPrimary {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 connection_id */ 1:
-					message.connection_id = reader.fixed32();
-					break;
-				case /* optional fixed32 from_ip */ 2:
-					message.from_ip = reader.fixed32();
-					break;
-				case /* optional uint32 from_port */ 3:
-					message.from_port = reader.uint32();
-					break;
-				case /* optional fixed32 from_router_cluster */ 4:
-					message.from_router_cluster = reader.fixed32();
-					break;
-				case /* optional uint32 from_active_time */ 5:
-					message.from_active_time = reader.uint32();
-					break;
-				case /* optional uint32 from_active_packets_recv */ 6:
-					message.from_active_packets_recv = reader.uint32();
-					break;
-				case /* optional string from_dropped_reason */ 7:
-					message.from_dropped_reason = reader.string();
-					break;
-				case /* optional uint32 gap_ms */ 8:
-					message.gap_ms = reader.uint32();
-					break;
-				case /* optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality from_quality_now */ 9:
-					message.from_quality_now = CMsgSteamDatagramClientSwitchedPrimary_RouterQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.from_quality_now,
-					);
-					break;
-				case /* optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality to_quality_now */ 10:
-					message.to_quality_now = CMsgSteamDatagramClientSwitchedPrimary_RouterQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.to_quality_now,
-					);
-					break;
-				case /* optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality from_quality_then */ 11:
-					message.from_quality_then = CMsgSteamDatagramClientSwitchedPrimary_RouterQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.from_quality_then,
-					);
-					break;
-				case /* optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality to_quality_then */ 12:
-					message.to_quality_then = CMsgSteamDatagramClientSwitchedPrimary_RouterQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.to_quality_then,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramClientSwitchedPrimary,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 connection_id = 1; */
-		if (message.connection_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.connection_id);
-		/* optional fixed32 from_ip = 2; */
-		if (message.from_ip !== undefined) writer.tag(2, WireType.Bit32).fixed32(message.from_ip);
-		/* optional uint32 from_port = 3; */
-		if (message.from_port !== undefined) writer.tag(3, WireType.Varint).uint32(message.from_port);
-		/* optional fixed32 from_router_cluster = 4; */
-		if (message.from_router_cluster !== undefined) writer.tag(4, WireType.Bit32).fixed32(message.from_router_cluster);
-		/* optional uint32 from_active_time = 5; */
-		if (message.from_active_time !== undefined) writer.tag(5, WireType.Varint).uint32(message.from_active_time);
-		/* optional uint32 from_active_packets_recv = 6; */
-		if (message.from_active_packets_recv !== undefined)
-			writer.tag(6, WireType.Varint).uint32(message.from_active_packets_recv);
-		/* optional string from_dropped_reason = 7; */
-		if (message.from_dropped_reason !== undefined)
-			writer.tag(7, WireType.LengthDelimited).string(message.from_dropped_reason);
-		/* optional uint32 gap_ms = 8; */
-		if (message.gap_ms !== undefined) writer.tag(8, WireType.Varint).uint32(message.gap_ms);
-		/* optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality from_quality_now = 9; */
-		if (message.from_quality_now)
-			CMsgSteamDatagramClientSwitchedPrimary_RouterQuality.internalBinaryWrite(
-				message.from_quality_now,
-				writer.tag(9, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality to_quality_now = 10; */
-		if (message.to_quality_now)
-			CMsgSteamDatagramClientSwitchedPrimary_RouterQuality.internalBinaryWrite(
-				message.to_quality_now,
-				writer.tag(10, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality from_quality_then = 11; */
-		if (message.from_quality_then)
-			CMsgSteamDatagramClientSwitchedPrimary_RouterQuality.internalBinaryWrite(
-				message.from_quality_then,
-				writer.tag(11, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality to_quality_then = 12; */
-		if (message.to_quality_then)
-			CMsgSteamDatagramClientSwitchedPrimary_RouterQuality.internalBinaryWrite(
-				message.to_quality_then,
-				writer.tag(12, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramClientSwitchedPrimary", [
+      {
+        no: 1,
+        name: "connection_id",
+        kind: "scalar",
+        localName: "connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "from_ip",
+        kind: "scalar",
+        localName: "from_ip",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 3,
+        name: "from_port",
+        kind: "scalar",
+        localName: "from_port",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "from_router_cluster",
+        kind: "scalar",
+        localName: "from_router_cluster",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 5,
+        name: "from_active_time",
+        kind: "scalar",
+        localName: "from_active_time",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "from_active_packets_recv",
+        kind: "scalar",
+        localName: "from_active_packets_recv",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "from_dropped_reason",
+        kind: "scalar",
+        localName: "from_dropped_reason",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 8,
+        name: "gap_ms",
+        kind: "scalar",
+        localName: "gap_ms",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "from_quality_now",
+        kind: "message",
+        localName: "from_quality_now",
+        T: () => CMsgSteamDatagramClientSwitchedPrimary_RouterQuality,
+      },
+      {
+        no: 10,
+        name: "to_quality_now",
+        kind: "message",
+        localName: "to_quality_now",
+        T: () => CMsgSteamDatagramClientSwitchedPrimary_RouterQuality,
+      },
+      {
+        no: 11,
+        name: "from_quality_then",
+        kind: "message",
+        localName: "from_quality_then",
+        T: () => CMsgSteamDatagramClientSwitchedPrimary_RouterQuality,
+      },
+      {
+        no: 12,
+        name: "to_quality_then",
+        kind: "message",
+        localName: "to_quality_then",
+        T: () => CMsgSteamDatagramClientSwitchedPrimary_RouterQuality,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramClientSwitchedPrimary>): CMsgSteamDatagramClientSwitchedPrimary {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramClientSwitchedPrimary>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramClientSwitchedPrimary,
+  ): CMsgSteamDatagramClientSwitchedPrimary {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 connection_id */ 1:
+          message.connection_id = reader.fixed32();
+          break;
+        case /* optional fixed32 from_ip */ 2:
+          message.from_ip = reader.fixed32();
+          break;
+        case /* optional uint32 from_port */ 3:
+          message.from_port = reader.uint32();
+          break;
+        case /* optional fixed32 from_router_cluster */ 4:
+          message.from_router_cluster = reader.fixed32();
+          break;
+        case /* optional uint32 from_active_time */ 5:
+          message.from_active_time = reader.uint32();
+          break;
+        case /* optional uint32 from_active_packets_recv */ 6:
+          message.from_active_packets_recv = reader.uint32();
+          break;
+        case /* optional string from_dropped_reason */ 7:
+          message.from_dropped_reason = reader.string();
+          break;
+        case /* optional uint32 gap_ms */ 8:
+          message.gap_ms = reader.uint32();
+          break;
+        case /* optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality from_quality_now */ 9:
+          message.from_quality_now = CMsgSteamDatagramClientSwitchedPrimary_RouterQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.from_quality_now,
+          );
+          break;
+        case /* optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality to_quality_now */ 10:
+          message.to_quality_now = CMsgSteamDatagramClientSwitchedPrimary_RouterQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.to_quality_now,
+          );
+          break;
+        case /* optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality from_quality_then */ 11:
+          message.from_quality_then = CMsgSteamDatagramClientSwitchedPrimary_RouterQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.from_quality_then,
+          );
+          break;
+        case /* optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality to_quality_then */ 12:
+          message.to_quality_then = CMsgSteamDatagramClientSwitchedPrimary_RouterQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.to_quality_then,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramClientSwitchedPrimary,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 connection_id = 1; */
+    if (message.connection_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.connection_id);
+    /* optional fixed32 from_ip = 2; */
+    if (message.from_ip !== undefined) writer.tag(2, WireType.Bit32).fixed32(message.from_ip);
+    /* optional uint32 from_port = 3; */
+    if (message.from_port !== undefined) writer.tag(3, WireType.Varint).uint32(message.from_port);
+    /* optional fixed32 from_router_cluster = 4; */
+    if (message.from_router_cluster !== undefined) writer.tag(4, WireType.Bit32).fixed32(message.from_router_cluster);
+    /* optional uint32 from_active_time = 5; */
+    if (message.from_active_time !== undefined) writer.tag(5, WireType.Varint).uint32(message.from_active_time);
+    /* optional uint32 from_active_packets_recv = 6; */
+    if (message.from_active_packets_recv !== undefined)
+      writer.tag(6, WireType.Varint).uint32(message.from_active_packets_recv);
+    /* optional string from_dropped_reason = 7; */
+    if (message.from_dropped_reason !== undefined)
+      writer.tag(7, WireType.LengthDelimited).string(message.from_dropped_reason);
+    /* optional uint32 gap_ms = 8; */
+    if (message.gap_ms !== undefined) writer.tag(8, WireType.Varint).uint32(message.gap_ms);
+    /* optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality from_quality_now = 9; */
+    if (message.from_quality_now)
+      CMsgSteamDatagramClientSwitchedPrimary_RouterQuality.internalBinaryWrite(
+        message.from_quality_now,
+        writer.tag(9, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality to_quality_now = 10; */
+    if (message.to_quality_now)
+      CMsgSteamDatagramClientSwitchedPrimary_RouterQuality.internalBinaryWrite(
+        message.to_quality_now,
+        writer.tag(10, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality from_quality_then = 11; */
+    if (message.from_quality_then)
+      CMsgSteamDatagramClientSwitchedPrimary_RouterQuality.internalBinaryWrite(
+        message.from_quality_then,
+        writer.tag(11, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamDatagramClientSwitchedPrimary.RouterQuality to_quality_then = 12; */
+    if (message.to_quality_then)
+      CMsgSteamDatagramClientSwitchedPrimary_RouterQuality.internalBinaryWrite(
+        message.to_quality_then,
+        writer.tag(12, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramClientSwitchedPrimary
@@ -4289,284 +4289,284 @@ class CMsgSteamDatagramClientSwitchedPrimary$Type extends MessageType<CMsgSteamD
 export const CMsgSteamDatagramClientSwitchedPrimary = new CMsgSteamDatagramClientSwitchedPrimary$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramClientSwitchedPrimary_RouterQuality$Type extends MessageType<CMsgSteamDatagramClientSwitchedPrimary_RouterQuality> {
-	constructor() {
-		super("CMsgSteamDatagramClientSwitchedPrimary.RouterQuality", [
-			{
-				no: 1,
-				name: "score",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "front_ping",
-				kind: "scalar",
-				localName: "front_ping",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "back_ping",
-				kind: "scalar",
-				localName: "back_ping",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "seconds_until_down",
-				kind: "scalar",
-				localName: "seconds_until_down",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramClientSwitchedPrimary_RouterQuality>,
-	): CMsgSteamDatagramClientSwitchedPrimary_RouterQuality {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamDatagramClientSwitchedPrimary_RouterQuality>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramClientSwitchedPrimary_RouterQuality,
-	): CMsgSteamDatagramClientSwitchedPrimary_RouterQuality {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 score */ 1:
-					message.score = reader.uint32();
-					break;
-				case /* optional uint32 front_ping */ 2:
-					message.front_ping = reader.uint32();
-					break;
-				case /* optional uint32 back_ping */ 3:
-					message.back_ping = reader.uint32();
-					break;
-				case /* optional uint32 seconds_until_down */ 4:
-					message.seconds_until_down = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramClientSwitchedPrimary_RouterQuality,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 score = 1; */
-		if (message.score !== undefined) writer.tag(1, WireType.Varint).uint32(message.score);
-		/* optional uint32 front_ping = 2; */
-		if (message.front_ping !== undefined) writer.tag(2, WireType.Varint).uint32(message.front_ping);
-		/* optional uint32 back_ping = 3; */
-		if (message.back_ping !== undefined) writer.tag(3, WireType.Varint).uint32(message.back_ping);
-		/* optional uint32 seconds_until_down = 4; */
-		if (message.seconds_until_down !== undefined) writer.tag(4, WireType.Varint).uint32(message.seconds_until_down);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramClientSwitchedPrimary.RouterQuality", [
+      {
+        no: 1,
+        name: "score",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "front_ping",
+        kind: "scalar",
+        localName: "front_ping",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "back_ping",
+        kind: "scalar",
+        localName: "back_ping",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "seconds_until_down",
+        kind: "scalar",
+        localName: "seconds_until_down",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramClientSwitchedPrimary_RouterQuality>,
+  ): CMsgSteamDatagramClientSwitchedPrimary_RouterQuality {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamDatagramClientSwitchedPrimary_RouterQuality>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramClientSwitchedPrimary_RouterQuality,
+  ): CMsgSteamDatagramClientSwitchedPrimary_RouterQuality {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 score */ 1:
+          message.score = reader.uint32();
+          break;
+        case /* optional uint32 front_ping */ 2:
+          message.front_ping = reader.uint32();
+          break;
+        case /* optional uint32 back_ping */ 3:
+          message.back_ping = reader.uint32();
+          break;
+        case /* optional uint32 seconds_until_down */ 4:
+          message.seconds_until_down = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramClientSwitchedPrimary_RouterQuality,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 score = 1; */
+    if (message.score !== undefined) writer.tag(1, WireType.Varint).uint32(message.score);
+    /* optional uint32 front_ping = 2; */
+    if (message.front_ping !== undefined) writer.tag(2, WireType.Varint).uint32(message.front_ping);
+    /* optional uint32 back_ping = 3; */
+    if (message.back_ping !== undefined) writer.tag(3, WireType.Varint).uint32(message.back_ping);
+    /* optional uint32 seconds_until_down = 4; */
+    if (message.seconds_until_down !== undefined) writer.tag(4, WireType.Varint).uint32(message.seconds_until_down);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramClientSwitchedPrimary.RouterQuality
  */
 export const CMsgSteamDatagramClientSwitchedPrimary_RouterQuality =
-	new CMsgSteamDatagramClientSwitchedPrimary_RouterQuality$Type();
+  new CMsgSteamDatagramClientSwitchedPrimary_RouterQuality$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramConnectRequest$Type extends MessageType<CMsgSteamDatagramConnectRequest> {
-	constructor() {
-		super("CMsgSteamDatagramConnectRequest", [
-			{
-				no: 1,
-				name: "connection_id",
-				kind: "scalar",
-				localName: "connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 4,
-				name: "my_timestamp",
-				kind: "scalar",
-				localName: "my_timestamp",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 5,
-				name: "ping_est_ms",
-				kind: "scalar",
-				localName: "ping_est_ms",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "virtual_port",
-				kind: "scalar",
-				localName: "virtual_port",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "gameserver_relay_session_id",
-				kind: "scalar",
-				localName: "gameserver_relay_session_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "crypt",
-				kind: "message",
-				T: () => CMsgSteamDatagramSessionCryptInfoSigned,
-			},
-			{
-				no: 7,
-				name: "cert",
-				kind: "message",
-				T: () => CMsgSteamDatagramCertificateSigned,
-			},
-			{
-				no: 10,
-				name: "routing_secret",
-				kind: "scalar",
-				localName: "routing_secret",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "legacy_client_steam_id",
-				kind: "scalar",
-				localName: "legacy_client_steam_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramConnectRequest>): CMsgSteamDatagramConnectRequest {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramConnectRequest>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramConnectRequest,
-	): CMsgSteamDatagramConnectRequest {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 connection_id */ 1:
-					message.connection_id = reader.fixed32();
-					break;
-				case /* optional fixed64 my_timestamp */ 4:
-					message.my_timestamp = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 ping_est_ms */ 5:
-					message.ping_est_ms = reader.uint32();
-					break;
-				case /* optional uint32 virtual_port */ 9:
-					message.virtual_port = reader.uint32();
-					break;
-				case /* optional uint32 gameserver_relay_session_id */ 2:
-					message.gameserver_relay_session_id = reader.uint32();
-					break;
-				case /* optional CMsgSteamDatagramSessionCryptInfoSigned crypt */ 6:
-					message.crypt = CMsgSteamDatagramSessionCryptInfoSigned.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.crypt,
-					);
-					break;
-				case /* optional CMsgSteamDatagramCertificateSigned cert */ 7:
-					message.cert = CMsgSteamDatagramCertificateSigned.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.cert,
-					);
-					break;
-				case /* optional fixed64 routing_secret */ 10:
-					message.routing_secret = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed64 legacy_client_steam_id */ 3:
-					message.legacy_client_steam_id = reader.fixed64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramConnectRequest,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 connection_id = 1; */
-		if (message.connection_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.connection_id);
-		/* optional fixed64 my_timestamp = 4; */
-		if (message.my_timestamp !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.my_timestamp);
-		/* optional uint32 ping_est_ms = 5; */
-		if (message.ping_est_ms !== undefined) writer.tag(5, WireType.Varint).uint32(message.ping_est_ms);
-		/* optional uint32 virtual_port = 9; */
-		if (message.virtual_port !== undefined) writer.tag(9, WireType.Varint).uint32(message.virtual_port);
-		/* optional uint32 gameserver_relay_session_id = 2; */
-		if (message.gameserver_relay_session_id !== undefined)
-			writer.tag(2, WireType.Varint).uint32(message.gameserver_relay_session_id);
-		/* optional CMsgSteamDatagramSessionCryptInfoSigned crypt = 6; */
-		if (message.crypt)
-			CMsgSteamDatagramSessionCryptInfoSigned.internalBinaryWrite(
-				message.crypt,
-				writer.tag(6, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamDatagramCertificateSigned cert = 7; */
-		if (message.cert)
-			CMsgSteamDatagramCertificateSigned.internalBinaryWrite(
-				message.cert,
-				writer.tag(7, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional fixed64 routing_secret = 10; */
-		if (message.routing_secret !== undefined) writer.tag(10, WireType.Bit64).fixed64(message.routing_secret);
-		/* optional fixed64 legacy_client_steam_id = 3; */
-		if (message.legacy_client_steam_id !== undefined)
-			writer.tag(3, WireType.Bit64).fixed64(message.legacy_client_steam_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramConnectRequest", [
+      {
+        no: 1,
+        name: "connection_id",
+        kind: "scalar",
+        localName: "connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 4,
+        name: "my_timestamp",
+        kind: "scalar",
+        localName: "my_timestamp",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 5,
+        name: "ping_est_ms",
+        kind: "scalar",
+        localName: "ping_est_ms",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "virtual_port",
+        kind: "scalar",
+        localName: "virtual_port",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "gameserver_relay_session_id",
+        kind: "scalar",
+        localName: "gameserver_relay_session_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "crypt",
+        kind: "message",
+        T: () => CMsgSteamDatagramSessionCryptInfoSigned,
+      },
+      {
+        no: 7,
+        name: "cert",
+        kind: "message",
+        T: () => CMsgSteamDatagramCertificateSigned,
+      },
+      {
+        no: 10,
+        name: "routing_secret",
+        kind: "scalar",
+        localName: "routing_secret",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "legacy_client_steam_id",
+        kind: "scalar",
+        localName: "legacy_client_steam_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramConnectRequest>): CMsgSteamDatagramConnectRequest {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramConnectRequest>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramConnectRequest,
+  ): CMsgSteamDatagramConnectRequest {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 connection_id */ 1:
+          message.connection_id = reader.fixed32();
+          break;
+        case /* optional fixed64 my_timestamp */ 4:
+          message.my_timestamp = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 ping_est_ms */ 5:
+          message.ping_est_ms = reader.uint32();
+          break;
+        case /* optional uint32 virtual_port */ 9:
+          message.virtual_port = reader.uint32();
+          break;
+        case /* optional uint32 gameserver_relay_session_id */ 2:
+          message.gameserver_relay_session_id = reader.uint32();
+          break;
+        case /* optional CMsgSteamDatagramSessionCryptInfoSigned crypt */ 6:
+          message.crypt = CMsgSteamDatagramSessionCryptInfoSigned.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.crypt,
+          );
+          break;
+        case /* optional CMsgSteamDatagramCertificateSigned cert */ 7:
+          message.cert = CMsgSteamDatagramCertificateSigned.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.cert,
+          );
+          break;
+        case /* optional fixed64 routing_secret */ 10:
+          message.routing_secret = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed64 legacy_client_steam_id */ 3:
+          message.legacy_client_steam_id = reader.fixed64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramConnectRequest,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 connection_id = 1; */
+    if (message.connection_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.connection_id);
+    /* optional fixed64 my_timestamp = 4; */
+    if (message.my_timestamp !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.my_timestamp);
+    /* optional uint32 ping_est_ms = 5; */
+    if (message.ping_est_ms !== undefined) writer.tag(5, WireType.Varint).uint32(message.ping_est_ms);
+    /* optional uint32 virtual_port = 9; */
+    if (message.virtual_port !== undefined) writer.tag(9, WireType.Varint).uint32(message.virtual_port);
+    /* optional uint32 gameserver_relay_session_id = 2; */
+    if (message.gameserver_relay_session_id !== undefined)
+      writer.tag(2, WireType.Varint).uint32(message.gameserver_relay_session_id);
+    /* optional CMsgSteamDatagramSessionCryptInfoSigned crypt = 6; */
+    if (message.crypt)
+      CMsgSteamDatagramSessionCryptInfoSigned.internalBinaryWrite(
+        message.crypt,
+        writer.tag(6, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamDatagramCertificateSigned cert = 7; */
+    if (message.cert)
+      CMsgSteamDatagramCertificateSigned.internalBinaryWrite(
+        message.cert,
+        writer.tag(7, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional fixed64 routing_secret = 10; */
+    if (message.routing_secret !== undefined) writer.tag(10, WireType.Bit64).fixed64(message.routing_secret);
+    /* optional fixed64 legacy_client_steam_id = 3; */
+    if (message.legacy_client_steam_id !== undefined)
+      writer.tag(3, WireType.Bit64).fixed64(message.legacy_client_steam_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramConnectRequest
@@ -4574,154 +4574,154 @@ class CMsgSteamDatagramConnectRequest$Type extends MessageType<CMsgSteamDatagram
 export const CMsgSteamDatagramConnectRequest = new CMsgSteamDatagramConnectRequest$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramConnectOK$Type extends MessageType<CMsgSteamDatagramConnectOK> {
-	constructor() {
-		super("CMsgSteamDatagramConnectOK", [
-			{
-				no: 1,
-				name: "client_connection_id",
-				kind: "scalar",
-				localName: "client_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 7,
-				name: "server_connection_id",
-				kind: "scalar",
-				localName: "server_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 3,
-				name: "your_timestamp",
-				kind: "scalar",
-				localName: "your_timestamp",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 4,
-				name: "delay_time_usec",
-				kind: "scalar",
-				localName: "delay_time_usec",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "gameserver_relay_session_id",
-				kind: "scalar",
-				localName: "gameserver_relay_session_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "crypt",
-				kind: "message",
-				T: () => CMsgSteamDatagramSessionCryptInfoSigned,
-			},
-			{
-				no: 6,
-				name: "cert",
-				kind: "message",
-				T: () => CMsgSteamDatagramCertificateSigned,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramConnectOK>): CMsgSteamDatagramConnectOK {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramConnectOK>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramConnectOK,
-	): CMsgSteamDatagramConnectOK {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 client_connection_id */ 1:
-					message.client_connection_id = reader.fixed32();
-					break;
-				case /* optional fixed32 server_connection_id */ 7:
-					message.server_connection_id = reader.fixed32();
-					break;
-				case /* optional fixed64 your_timestamp */ 3:
-					message.your_timestamp = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 delay_time_usec */ 4:
-					message.delay_time_usec = reader.uint32();
-					break;
-				case /* optional uint32 gameserver_relay_session_id */ 2:
-					message.gameserver_relay_session_id = reader.uint32();
-					break;
-				case /* optional CMsgSteamDatagramSessionCryptInfoSigned crypt */ 5:
-					message.crypt = CMsgSteamDatagramSessionCryptInfoSigned.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.crypt,
-					);
-					break;
-				case /* optional CMsgSteamDatagramCertificateSigned cert */ 6:
-					message.cert = CMsgSteamDatagramCertificateSigned.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.cert,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramConnectOK,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 client_connection_id = 1; */
-		if (message.client_connection_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.client_connection_id);
-		/* optional fixed32 server_connection_id = 7; */
-		if (message.server_connection_id !== undefined) writer.tag(7, WireType.Bit32).fixed32(message.server_connection_id);
-		/* optional fixed64 your_timestamp = 3; */
-		if (message.your_timestamp !== undefined) writer.tag(3, WireType.Bit64).fixed64(message.your_timestamp);
-		/* optional uint32 delay_time_usec = 4; */
-		if (message.delay_time_usec !== undefined) writer.tag(4, WireType.Varint).uint32(message.delay_time_usec);
-		/* optional uint32 gameserver_relay_session_id = 2; */
-		if (message.gameserver_relay_session_id !== undefined)
-			writer.tag(2, WireType.Varint).uint32(message.gameserver_relay_session_id);
-		/* optional CMsgSteamDatagramSessionCryptInfoSigned crypt = 5; */
-		if (message.crypt)
-			CMsgSteamDatagramSessionCryptInfoSigned.internalBinaryWrite(
-				message.crypt,
-				writer.tag(5, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamDatagramCertificateSigned cert = 6; */
-		if (message.cert)
-			CMsgSteamDatagramCertificateSigned.internalBinaryWrite(
-				message.cert,
-				writer.tag(6, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramConnectOK", [
+      {
+        no: 1,
+        name: "client_connection_id",
+        kind: "scalar",
+        localName: "client_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 7,
+        name: "server_connection_id",
+        kind: "scalar",
+        localName: "server_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 3,
+        name: "your_timestamp",
+        kind: "scalar",
+        localName: "your_timestamp",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 4,
+        name: "delay_time_usec",
+        kind: "scalar",
+        localName: "delay_time_usec",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "gameserver_relay_session_id",
+        kind: "scalar",
+        localName: "gameserver_relay_session_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "crypt",
+        kind: "message",
+        T: () => CMsgSteamDatagramSessionCryptInfoSigned,
+      },
+      {
+        no: 6,
+        name: "cert",
+        kind: "message",
+        T: () => CMsgSteamDatagramCertificateSigned,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramConnectOK>): CMsgSteamDatagramConnectOK {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramConnectOK>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramConnectOK,
+  ): CMsgSteamDatagramConnectOK {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 client_connection_id */ 1:
+          message.client_connection_id = reader.fixed32();
+          break;
+        case /* optional fixed32 server_connection_id */ 7:
+          message.server_connection_id = reader.fixed32();
+          break;
+        case /* optional fixed64 your_timestamp */ 3:
+          message.your_timestamp = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 delay_time_usec */ 4:
+          message.delay_time_usec = reader.uint32();
+          break;
+        case /* optional uint32 gameserver_relay_session_id */ 2:
+          message.gameserver_relay_session_id = reader.uint32();
+          break;
+        case /* optional CMsgSteamDatagramSessionCryptInfoSigned crypt */ 5:
+          message.crypt = CMsgSteamDatagramSessionCryptInfoSigned.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.crypt,
+          );
+          break;
+        case /* optional CMsgSteamDatagramCertificateSigned cert */ 6:
+          message.cert = CMsgSteamDatagramCertificateSigned.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.cert,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramConnectOK,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 client_connection_id = 1; */
+    if (message.client_connection_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.client_connection_id);
+    /* optional fixed32 server_connection_id = 7; */
+    if (message.server_connection_id !== undefined) writer.tag(7, WireType.Bit32).fixed32(message.server_connection_id);
+    /* optional fixed64 your_timestamp = 3; */
+    if (message.your_timestamp !== undefined) writer.tag(3, WireType.Bit64).fixed64(message.your_timestamp);
+    /* optional uint32 delay_time_usec = 4; */
+    if (message.delay_time_usec !== undefined) writer.tag(4, WireType.Varint).uint32(message.delay_time_usec);
+    /* optional uint32 gameserver_relay_session_id = 2; */
+    if (message.gameserver_relay_session_id !== undefined)
+      writer.tag(2, WireType.Varint).uint32(message.gameserver_relay_session_id);
+    /* optional CMsgSteamDatagramSessionCryptInfoSigned crypt = 5; */
+    if (message.crypt)
+      CMsgSteamDatagramSessionCryptInfoSigned.internalBinaryWrite(
+        message.crypt,
+        writer.tag(5, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamDatagramCertificateSigned cert = 6; */
+    if (message.cert)
+      CMsgSteamDatagramCertificateSigned.internalBinaryWrite(
+        message.cert,
+        writer.tag(6, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramConnectOK
@@ -4729,244 +4729,244 @@ class CMsgSteamDatagramConnectOK$Type extends MessageType<CMsgSteamDatagramConne
 export const CMsgSteamDatagramConnectOK = new CMsgSteamDatagramConnectOK$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamNetworkingP2PSDRRoutingSummary$Type extends MessageType<CMsgSteamNetworkingP2PSDRRoutingSummary> {
-	constructor() {
-		super("CMsgSteamNetworkingP2PSDRRoutingSummary", [
-			{
-				no: 1,
-				name: "initial_ping",
-				kind: "scalar",
-				localName: "initial_ping",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "initial_ping_front_local",
-				kind: "scalar",
-				localName: "initial_ping_front_local",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "initial_ping_front_remote",
-				kind: "scalar",
-				localName: "initial_ping_front_remote",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "initial_score",
-				kind: "scalar",
-				localName: "initial_score",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "initial_pop_local",
-				kind: "scalar",
-				localName: "initial_pop_local",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 6,
-				name: "initial_pop_remote",
-				kind: "scalar",
-				localName: "initial_pop_remote",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 11,
-				name: "best_ping",
-				kind: "scalar",
-				localName: "best_ping",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 12,
-				name: "best_ping_front_local",
-				kind: "scalar",
-				localName: "best_ping_front_local",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 13,
-				name: "best_ping_front_remote",
-				kind: "scalar",
-				localName: "best_ping_front_remote",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 14,
-				name: "best_score",
-				kind: "scalar",
-				localName: "best_score",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 15,
-				name: "best_pop_local",
-				kind: "scalar",
-				localName: "best_pop_local",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 16,
-				name: "best_pop_remote",
-				kind: "scalar",
-				localName: "best_pop_remote",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 17,
-				name: "best_time",
-				kind: "scalar",
-				localName: "best_time",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "negotiation_ms",
-				kind: "scalar",
-				localName: "negotiation_ms",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "selected_seconds",
-				kind: "scalar",
-				localName: "selected_seconds",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamNetworkingP2PSDRRoutingSummary>): CMsgSteamNetworkingP2PSDRRoutingSummary {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamNetworkingP2PSDRRoutingSummary>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamNetworkingP2PSDRRoutingSummary,
-	): CMsgSteamNetworkingP2PSDRRoutingSummary {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 initial_ping */ 1:
-					message.initial_ping = reader.uint32();
-					break;
-				case /* optional uint32 initial_ping_front_local */ 2:
-					message.initial_ping_front_local = reader.uint32();
-					break;
-				case /* optional uint32 initial_ping_front_remote */ 3:
-					message.initial_ping_front_remote = reader.uint32();
-					break;
-				case /* optional uint32 initial_score */ 4:
-					message.initial_score = reader.uint32();
-					break;
-				case /* optional fixed32 initial_pop_local */ 5:
-					message.initial_pop_local = reader.fixed32();
-					break;
-				case /* optional fixed32 initial_pop_remote */ 6:
-					message.initial_pop_remote = reader.fixed32();
-					break;
-				case /* optional uint32 best_ping */ 11:
-					message.best_ping = reader.uint32();
-					break;
-				case /* optional uint32 best_ping_front_local */ 12:
-					message.best_ping_front_local = reader.uint32();
-					break;
-				case /* optional uint32 best_ping_front_remote */ 13:
-					message.best_ping_front_remote = reader.uint32();
-					break;
-				case /* optional uint32 best_score */ 14:
-					message.best_score = reader.uint32();
-					break;
-				case /* optional fixed32 best_pop_local */ 15:
-					message.best_pop_local = reader.fixed32();
-					break;
-				case /* optional fixed32 best_pop_remote */ 16:
-					message.best_pop_remote = reader.fixed32();
-					break;
-				case /* optional uint32 best_time */ 17:
-					message.best_time = reader.uint32();
-					break;
-				case /* optional uint32 negotiation_ms */ 7:
-					message.negotiation_ms = reader.uint32();
-					break;
-				case /* optional uint32 selected_seconds */ 8:
-					message.selected_seconds = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamNetworkingP2PSDRRoutingSummary,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 initial_ping = 1; */
-		if (message.initial_ping !== undefined) writer.tag(1, WireType.Varint).uint32(message.initial_ping);
-		/* optional uint32 initial_ping_front_local = 2; */
-		if (message.initial_ping_front_local !== undefined)
-			writer.tag(2, WireType.Varint).uint32(message.initial_ping_front_local);
-		/* optional uint32 initial_ping_front_remote = 3; */
-		if (message.initial_ping_front_remote !== undefined)
-			writer.tag(3, WireType.Varint).uint32(message.initial_ping_front_remote);
-		/* optional uint32 initial_score = 4; */
-		if (message.initial_score !== undefined) writer.tag(4, WireType.Varint).uint32(message.initial_score);
-		/* optional fixed32 initial_pop_local = 5; */
-		if (message.initial_pop_local !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.initial_pop_local);
-		/* optional fixed32 initial_pop_remote = 6; */
-		if (message.initial_pop_remote !== undefined) writer.tag(6, WireType.Bit32).fixed32(message.initial_pop_remote);
-		/* optional uint32 best_ping = 11; */
-		if (message.best_ping !== undefined) writer.tag(11, WireType.Varint).uint32(message.best_ping);
-		/* optional uint32 best_ping_front_local = 12; */
-		if (message.best_ping_front_local !== undefined)
-			writer.tag(12, WireType.Varint).uint32(message.best_ping_front_local);
-		/* optional uint32 best_ping_front_remote = 13; */
-		if (message.best_ping_front_remote !== undefined)
-			writer.tag(13, WireType.Varint).uint32(message.best_ping_front_remote);
-		/* optional uint32 best_score = 14; */
-		if (message.best_score !== undefined) writer.tag(14, WireType.Varint).uint32(message.best_score);
-		/* optional fixed32 best_pop_local = 15; */
-		if (message.best_pop_local !== undefined) writer.tag(15, WireType.Bit32).fixed32(message.best_pop_local);
-		/* optional fixed32 best_pop_remote = 16; */
-		if (message.best_pop_remote !== undefined) writer.tag(16, WireType.Bit32).fixed32(message.best_pop_remote);
-		/* optional uint32 best_time = 17; */
-		if (message.best_time !== undefined) writer.tag(17, WireType.Varint).uint32(message.best_time);
-		/* optional uint32 negotiation_ms = 7; */
-		if (message.negotiation_ms !== undefined) writer.tag(7, WireType.Varint).uint32(message.negotiation_ms);
-		/* optional uint32 selected_seconds = 8; */
-		if (message.selected_seconds !== undefined) writer.tag(8, WireType.Varint).uint32(message.selected_seconds);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamNetworkingP2PSDRRoutingSummary", [
+      {
+        no: 1,
+        name: "initial_ping",
+        kind: "scalar",
+        localName: "initial_ping",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "initial_ping_front_local",
+        kind: "scalar",
+        localName: "initial_ping_front_local",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "initial_ping_front_remote",
+        kind: "scalar",
+        localName: "initial_ping_front_remote",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "initial_score",
+        kind: "scalar",
+        localName: "initial_score",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "initial_pop_local",
+        kind: "scalar",
+        localName: "initial_pop_local",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 6,
+        name: "initial_pop_remote",
+        kind: "scalar",
+        localName: "initial_pop_remote",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 11,
+        name: "best_ping",
+        kind: "scalar",
+        localName: "best_ping",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 12,
+        name: "best_ping_front_local",
+        kind: "scalar",
+        localName: "best_ping_front_local",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 13,
+        name: "best_ping_front_remote",
+        kind: "scalar",
+        localName: "best_ping_front_remote",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 14,
+        name: "best_score",
+        kind: "scalar",
+        localName: "best_score",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 15,
+        name: "best_pop_local",
+        kind: "scalar",
+        localName: "best_pop_local",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 16,
+        name: "best_pop_remote",
+        kind: "scalar",
+        localName: "best_pop_remote",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 17,
+        name: "best_time",
+        kind: "scalar",
+        localName: "best_time",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "negotiation_ms",
+        kind: "scalar",
+        localName: "negotiation_ms",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "selected_seconds",
+        kind: "scalar",
+        localName: "selected_seconds",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamNetworkingP2PSDRRoutingSummary>): CMsgSteamNetworkingP2PSDRRoutingSummary {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamNetworkingP2PSDRRoutingSummary>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamNetworkingP2PSDRRoutingSummary,
+  ): CMsgSteamNetworkingP2PSDRRoutingSummary {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 initial_ping */ 1:
+          message.initial_ping = reader.uint32();
+          break;
+        case /* optional uint32 initial_ping_front_local */ 2:
+          message.initial_ping_front_local = reader.uint32();
+          break;
+        case /* optional uint32 initial_ping_front_remote */ 3:
+          message.initial_ping_front_remote = reader.uint32();
+          break;
+        case /* optional uint32 initial_score */ 4:
+          message.initial_score = reader.uint32();
+          break;
+        case /* optional fixed32 initial_pop_local */ 5:
+          message.initial_pop_local = reader.fixed32();
+          break;
+        case /* optional fixed32 initial_pop_remote */ 6:
+          message.initial_pop_remote = reader.fixed32();
+          break;
+        case /* optional uint32 best_ping */ 11:
+          message.best_ping = reader.uint32();
+          break;
+        case /* optional uint32 best_ping_front_local */ 12:
+          message.best_ping_front_local = reader.uint32();
+          break;
+        case /* optional uint32 best_ping_front_remote */ 13:
+          message.best_ping_front_remote = reader.uint32();
+          break;
+        case /* optional uint32 best_score */ 14:
+          message.best_score = reader.uint32();
+          break;
+        case /* optional fixed32 best_pop_local */ 15:
+          message.best_pop_local = reader.fixed32();
+          break;
+        case /* optional fixed32 best_pop_remote */ 16:
+          message.best_pop_remote = reader.fixed32();
+          break;
+        case /* optional uint32 best_time */ 17:
+          message.best_time = reader.uint32();
+          break;
+        case /* optional uint32 negotiation_ms */ 7:
+          message.negotiation_ms = reader.uint32();
+          break;
+        case /* optional uint32 selected_seconds */ 8:
+          message.selected_seconds = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamNetworkingP2PSDRRoutingSummary,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 initial_ping = 1; */
+    if (message.initial_ping !== undefined) writer.tag(1, WireType.Varint).uint32(message.initial_ping);
+    /* optional uint32 initial_ping_front_local = 2; */
+    if (message.initial_ping_front_local !== undefined)
+      writer.tag(2, WireType.Varint).uint32(message.initial_ping_front_local);
+    /* optional uint32 initial_ping_front_remote = 3; */
+    if (message.initial_ping_front_remote !== undefined)
+      writer.tag(3, WireType.Varint).uint32(message.initial_ping_front_remote);
+    /* optional uint32 initial_score = 4; */
+    if (message.initial_score !== undefined) writer.tag(4, WireType.Varint).uint32(message.initial_score);
+    /* optional fixed32 initial_pop_local = 5; */
+    if (message.initial_pop_local !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.initial_pop_local);
+    /* optional fixed32 initial_pop_remote = 6; */
+    if (message.initial_pop_remote !== undefined) writer.tag(6, WireType.Bit32).fixed32(message.initial_pop_remote);
+    /* optional uint32 best_ping = 11; */
+    if (message.best_ping !== undefined) writer.tag(11, WireType.Varint).uint32(message.best_ping);
+    /* optional uint32 best_ping_front_local = 12; */
+    if (message.best_ping_front_local !== undefined)
+      writer.tag(12, WireType.Varint).uint32(message.best_ping_front_local);
+    /* optional uint32 best_ping_front_remote = 13; */
+    if (message.best_ping_front_remote !== undefined)
+      writer.tag(13, WireType.Varint).uint32(message.best_ping_front_remote);
+    /* optional uint32 best_score = 14; */
+    if (message.best_score !== undefined) writer.tag(14, WireType.Varint).uint32(message.best_score);
+    /* optional fixed32 best_pop_local = 15; */
+    if (message.best_pop_local !== undefined) writer.tag(15, WireType.Bit32).fixed32(message.best_pop_local);
+    /* optional fixed32 best_pop_remote = 16; */
+    if (message.best_pop_remote !== undefined) writer.tag(16, WireType.Bit32).fixed32(message.best_pop_remote);
+    /* optional uint32 best_time = 17; */
+    if (message.best_time !== undefined) writer.tag(17, WireType.Varint).uint32(message.best_time);
+    /* optional uint32 negotiation_ms = 7; */
+    if (message.negotiation_ms !== undefined) writer.tag(7, WireType.Varint).uint32(message.negotiation_ms);
+    /* optional uint32 selected_seconds = 8; */
+    if (message.selected_seconds !== undefined) writer.tag(8, WireType.Varint).uint32(message.selected_seconds);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamNetworkingP2PSDRRoutingSummary
@@ -4974,87 +4974,87 @@ class CMsgSteamNetworkingP2PSDRRoutingSummary$Type extends MessageType<CMsgSteam
 export const CMsgSteamNetworkingP2PSDRRoutingSummary = new CMsgSteamNetworkingP2PSDRRoutingSummary$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramP2PRoutingSummary$Type extends MessageType<CMsgSteamDatagramP2PRoutingSummary> {
-	constructor() {
-		super("CMsgSteamDatagramP2PRoutingSummary", [
-			{
-				no: 2,
-				name: "ice",
-				kind: "message",
-				T: () => CMsgSteamNetworkingICESessionSummary,
-			},
-			{
-				no: 3,
-				name: "sdr",
-				kind: "message",
-				T: () => CMsgSteamNetworkingP2PSDRRoutingSummary,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramP2PRoutingSummary>): CMsgSteamDatagramP2PRoutingSummary {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramP2PRoutingSummary>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramP2PRoutingSummary,
-	): CMsgSteamDatagramP2PRoutingSummary {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgSteamNetworkingICESessionSummary ice */ 2:
-					message.ice = CMsgSteamNetworkingICESessionSummary.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.ice,
-					);
-					break;
-				case /* optional CMsgSteamNetworkingP2PSDRRoutingSummary sdr */ 3:
-					message.sdr = CMsgSteamNetworkingP2PSDRRoutingSummary.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.sdr,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramP2PRoutingSummary,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgSteamNetworkingICESessionSummary ice = 2; */
-		if (message.ice)
-			CMsgSteamNetworkingICESessionSummary.internalBinaryWrite(
-				message.ice,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamNetworkingP2PSDRRoutingSummary sdr = 3; */
-		if (message.sdr)
-			CMsgSteamNetworkingP2PSDRRoutingSummary.internalBinaryWrite(
-				message.sdr,
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramP2PRoutingSummary", [
+      {
+        no: 2,
+        name: "ice",
+        kind: "message",
+        T: () => CMsgSteamNetworkingICESessionSummary,
+      },
+      {
+        no: 3,
+        name: "sdr",
+        kind: "message",
+        T: () => CMsgSteamNetworkingP2PSDRRoutingSummary,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramP2PRoutingSummary>): CMsgSteamDatagramP2PRoutingSummary {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramP2PRoutingSummary>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramP2PRoutingSummary,
+  ): CMsgSteamDatagramP2PRoutingSummary {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgSteamNetworkingICESessionSummary ice */ 2:
+          message.ice = CMsgSteamNetworkingICESessionSummary.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.ice,
+          );
+          break;
+        case /* optional CMsgSteamNetworkingP2PSDRRoutingSummary sdr */ 3:
+          message.sdr = CMsgSteamNetworkingP2PSDRRoutingSummary.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.sdr,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramP2PRoutingSummary,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgSteamNetworkingICESessionSummary ice = 2; */
+    if (message.ice)
+      CMsgSteamNetworkingICESessionSummary.internalBinaryWrite(
+        message.ice,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamNetworkingP2PSDRRoutingSummary sdr = 3; */
+    if (message.sdr)
+      CMsgSteamNetworkingP2PSDRRoutingSummary.internalBinaryWrite(
+        message.sdr,
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramP2PRoutingSummary
@@ -5062,351 +5062,351 @@ class CMsgSteamDatagramP2PRoutingSummary$Type extends MessageType<CMsgSteamDatag
 export const CMsgSteamDatagramP2PRoutingSummary = new CMsgSteamDatagramP2PRoutingSummary$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramConnectionClosed$Type extends MessageType<CMsgSteamDatagramConnectionClosed> {
-	constructor() {
-		super("CMsgSteamDatagramConnectionClosed", [
-			{
-				no: 7,
-				name: "to_connection_id",
-				kind: "scalar",
-				localName: "to_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 8,
-				name: "from_connection_id",
-				kind: "scalar",
-				localName: "from_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 15,
-				name: "from_identity_string",
-				kind: "scalar",
-				localName: "from_identity_string",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 13,
-				name: "legacy_from_identity_binary",
-				kind: "message",
-				localName: "legacy_from_identity_binary",
-				T: () => CMsgSteamNetworkingIdentityLegacyBinary,
-			},
-			{
-				no: 3,
-				name: "legacy_from_steam_id",
-				kind: "scalar",
-				localName: "legacy_from_steam_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "legacy_gameserver_relay_session_id",
-				kind: "scalar",
-				localName: "legacy_gameserver_relay_session_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "to_relay_session_id",
-				kind: "scalar",
-				localName: "to_relay_session_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 10,
-				name: "from_relay_session_id",
-				kind: "scalar",
-				localName: "from_relay_session_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 11,
-				name: "forward_target_relay_routing_token",
-				kind: "scalar",
-				localName: "forward_target_relay_routing_token",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 12,
-				name: "forward_target_revision",
-				kind: "scalar",
-				localName: "forward_target_revision",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "relay_mode",
-				kind: "enum",
-				localName: "relay_mode",
-				opt: true,
-				T: () => ["CMsgSteamDatagramConnectionClosed.ERelayMode", CMsgSteamDatagramConnectionClosed_ERelayMode],
-			},
-			{
-				no: 5,
-				name: "debug",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 6,
-				name: "reason_code",
-				kind: "scalar",
-				localName: "reason_code",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 14,
-				name: "routing_secret",
-				kind: "scalar",
-				localName: "routing_secret",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 16,
-				name: "not_primary_session",
-				kind: "scalar",
-				localName: "not_primary_session",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 19,
-				name: "not_primary_transport",
-				kind: "scalar",
-				localName: "not_primary_transport",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 22,
-				name: "relay_override_active",
-				kind: "scalar",
-				localName: "relay_override_active",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 17,
-				name: "quality_relay",
-				kind: "message",
-				localName: "quality_relay",
-				T: () => CMsgSteamDatagramConnectionQuality,
-			},
-			{
-				no: 18,
-				name: "quality_e2e",
-				kind: "message",
-				localName: "quality_e2e",
-				jsonName: "qualityE2e",
-				T: () => CMsgSteamDatagramConnectionQuality,
-			},
-			{
-				no: 21,
-				name: "p2p_routing_summary",
-				kind: "message",
-				localName: "p2p_routing_summary",
-				jsonName: "p2pRoutingSummary",
-				T: () => CMsgSteamDatagramP2PRoutingSummary,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramConnectionClosed>): CMsgSteamDatagramConnectionClosed {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramConnectionClosed>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramConnectionClosed,
-	): CMsgSteamDatagramConnectionClosed {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 to_connection_id */ 7:
-					message.to_connection_id = reader.fixed32();
-					break;
-				case /* optional fixed32 from_connection_id */ 8:
-					message.from_connection_id = reader.fixed32();
-					break;
-				case /* optional string from_identity_string */ 15:
-					message.from_identity_string = reader.string();
-					break;
-				case /* optional CMsgSteamNetworkingIdentityLegacyBinary legacy_from_identity_binary */ 13:
-					message.legacy_from_identity_binary = CMsgSteamNetworkingIdentityLegacyBinary.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.legacy_from_identity_binary,
-					);
-					break;
-				case /* optional fixed64 legacy_from_steam_id */ 3:
-					message.legacy_from_steam_id = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 legacy_gameserver_relay_session_id */ 2:
-					message.legacy_gameserver_relay_session_id = reader.uint32();
-					break;
-				case /* optional fixed32 to_relay_session_id */ 9:
-					message.to_relay_session_id = reader.fixed32();
-					break;
-				case /* optional fixed32 from_relay_session_id */ 10:
-					message.from_relay_session_id = reader.fixed32();
-					break;
-				case /* optional bytes forward_target_relay_routing_token */ 11:
-					message.forward_target_relay_routing_token = reader.bytes();
-					break;
-				case /* optional uint32 forward_target_revision */ 12:
-					message.forward_target_revision = reader.uint32();
-					break;
-				case /* optional CMsgSteamDatagramConnectionClosed.ERelayMode relay_mode */ 4:
-					message.relay_mode = reader.int32();
-					break;
-				case /* optional string debug */ 5:
-					message.debug = reader.string();
-					break;
-				case /* optional uint32 reason_code */ 6:
-					message.reason_code = reader.uint32();
-					break;
-				case /* optional fixed64 routing_secret */ 14:
-					message.routing_secret = reader.fixed64().toBigInt();
-					break;
-				case /* optional bool not_primary_session */ 16:
-					message.not_primary_session = reader.bool();
-					break;
-				case /* optional bool not_primary_transport */ 19:
-					message.not_primary_transport = reader.bool();
-					break;
-				case /* optional bool relay_override_active */ 22:
-					message.relay_override_active = reader.bool();
-					break;
-				case /* optional CMsgSteamDatagramConnectionQuality quality_relay */ 17:
-					message.quality_relay = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.quality_relay,
-					);
-					break;
-				case /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 18 [json_name = "qualityE2e"];*/ 18:
-					message.quality_e2e = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.quality_e2e,
-					);
-					break;
-				case /* optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 21 [json_name = "p2pRoutingSummary"];*/ 21:
-					message.p2p_routing_summary = CMsgSteamDatagramP2PRoutingSummary.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.p2p_routing_summary,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramConnectionClosed,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 to_connection_id = 7; */
-		if (message.to_connection_id !== undefined) writer.tag(7, WireType.Bit32).fixed32(message.to_connection_id);
-		/* optional fixed32 from_connection_id = 8; */
-		if (message.from_connection_id !== undefined) writer.tag(8, WireType.Bit32).fixed32(message.from_connection_id);
-		/* optional string from_identity_string = 15; */
-		if (message.from_identity_string !== undefined)
-			writer.tag(15, WireType.LengthDelimited).string(message.from_identity_string);
-		/* optional CMsgSteamNetworkingIdentityLegacyBinary legacy_from_identity_binary = 13; */
-		if (message.legacy_from_identity_binary)
-			CMsgSteamNetworkingIdentityLegacyBinary.internalBinaryWrite(
-				message.legacy_from_identity_binary,
-				writer.tag(13, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional fixed64 legacy_from_steam_id = 3; */
-		if (message.legacy_from_steam_id !== undefined) writer.tag(3, WireType.Bit64).fixed64(message.legacy_from_steam_id);
-		/* optional uint32 legacy_gameserver_relay_session_id = 2; */
-		if (message.legacy_gameserver_relay_session_id !== undefined)
-			writer.tag(2, WireType.Varint).uint32(message.legacy_gameserver_relay_session_id);
-		/* optional fixed32 to_relay_session_id = 9; */
-		if (message.to_relay_session_id !== undefined) writer.tag(9, WireType.Bit32).fixed32(message.to_relay_session_id);
-		/* optional fixed32 from_relay_session_id = 10; */
-		if (message.from_relay_session_id !== undefined)
-			writer.tag(10, WireType.Bit32).fixed32(message.from_relay_session_id);
-		/* optional bytes forward_target_relay_routing_token = 11; */
-		if (message.forward_target_relay_routing_token !== undefined)
-			writer.tag(11, WireType.LengthDelimited).bytes(message.forward_target_relay_routing_token);
-		/* optional uint32 forward_target_revision = 12; */
-		if (message.forward_target_revision !== undefined)
-			writer.tag(12, WireType.Varint).uint32(message.forward_target_revision);
-		/* optional CMsgSteamDatagramConnectionClosed.ERelayMode relay_mode = 4; */
-		if (message.relay_mode !== undefined) writer.tag(4, WireType.Varint).int32(message.relay_mode);
-		/* optional string debug = 5; */
-		if (message.debug !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.debug);
-		/* optional uint32 reason_code = 6; */
-		if (message.reason_code !== undefined) writer.tag(6, WireType.Varint).uint32(message.reason_code);
-		/* optional fixed64 routing_secret = 14; */
-		if (message.routing_secret !== undefined) writer.tag(14, WireType.Bit64).fixed64(message.routing_secret);
-		/* optional bool not_primary_session = 16; */
-		if (message.not_primary_session !== undefined) writer.tag(16, WireType.Varint).bool(message.not_primary_session);
-		/* optional bool not_primary_transport = 19; */
-		if (message.not_primary_transport !== undefined)
-			writer.tag(19, WireType.Varint).bool(message.not_primary_transport);
-		/* optional bool relay_override_active = 22; */
-		if (message.relay_override_active !== undefined)
-			writer.tag(22, WireType.Varint).bool(message.relay_override_active);
-		/* optional CMsgSteamDatagramConnectionQuality quality_relay = 17; */
-		if (message.quality_relay)
-			CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
-				message.quality_relay,
-				writer.tag(17, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamDatagramConnectionQuality quality_e2e = 18 [json_name = "qualityE2e"]; */
-		if (message.quality_e2e)
-			CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
-				message.quality_e2e,
-				writer.tag(18, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 21 [json_name = "p2pRoutingSummary"]; */
-		if (message.p2p_routing_summary)
-			CMsgSteamDatagramP2PRoutingSummary.internalBinaryWrite(
-				message.p2p_routing_summary,
-				writer.tag(21, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramConnectionClosed", [
+      {
+        no: 7,
+        name: "to_connection_id",
+        kind: "scalar",
+        localName: "to_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 8,
+        name: "from_connection_id",
+        kind: "scalar",
+        localName: "from_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 15,
+        name: "from_identity_string",
+        kind: "scalar",
+        localName: "from_identity_string",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 13,
+        name: "legacy_from_identity_binary",
+        kind: "message",
+        localName: "legacy_from_identity_binary",
+        T: () => CMsgSteamNetworkingIdentityLegacyBinary,
+      },
+      {
+        no: 3,
+        name: "legacy_from_steam_id",
+        kind: "scalar",
+        localName: "legacy_from_steam_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "legacy_gameserver_relay_session_id",
+        kind: "scalar",
+        localName: "legacy_gameserver_relay_session_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "to_relay_session_id",
+        kind: "scalar",
+        localName: "to_relay_session_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 10,
+        name: "from_relay_session_id",
+        kind: "scalar",
+        localName: "from_relay_session_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 11,
+        name: "forward_target_relay_routing_token",
+        kind: "scalar",
+        localName: "forward_target_relay_routing_token",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 12,
+        name: "forward_target_revision",
+        kind: "scalar",
+        localName: "forward_target_revision",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "relay_mode",
+        kind: "enum",
+        localName: "relay_mode",
+        opt: true,
+        T: () => ["CMsgSteamDatagramConnectionClosed.ERelayMode", CMsgSteamDatagramConnectionClosed_ERelayMode],
+      },
+      {
+        no: 5,
+        name: "debug",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 6,
+        name: "reason_code",
+        kind: "scalar",
+        localName: "reason_code",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 14,
+        name: "routing_secret",
+        kind: "scalar",
+        localName: "routing_secret",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 16,
+        name: "not_primary_session",
+        kind: "scalar",
+        localName: "not_primary_session",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 19,
+        name: "not_primary_transport",
+        kind: "scalar",
+        localName: "not_primary_transport",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 22,
+        name: "relay_override_active",
+        kind: "scalar",
+        localName: "relay_override_active",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 17,
+        name: "quality_relay",
+        kind: "message",
+        localName: "quality_relay",
+        T: () => CMsgSteamDatagramConnectionQuality,
+      },
+      {
+        no: 18,
+        name: "quality_e2e",
+        kind: "message",
+        localName: "quality_e2e",
+        jsonName: "qualityE2e",
+        T: () => CMsgSteamDatagramConnectionQuality,
+      },
+      {
+        no: 21,
+        name: "p2p_routing_summary",
+        kind: "message",
+        localName: "p2p_routing_summary",
+        jsonName: "p2pRoutingSummary",
+        T: () => CMsgSteamDatagramP2PRoutingSummary,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramConnectionClosed>): CMsgSteamDatagramConnectionClosed {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramConnectionClosed>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramConnectionClosed,
+  ): CMsgSteamDatagramConnectionClosed {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 to_connection_id */ 7:
+          message.to_connection_id = reader.fixed32();
+          break;
+        case /* optional fixed32 from_connection_id */ 8:
+          message.from_connection_id = reader.fixed32();
+          break;
+        case /* optional string from_identity_string */ 15:
+          message.from_identity_string = reader.string();
+          break;
+        case /* optional CMsgSteamNetworkingIdentityLegacyBinary legacy_from_identity_binary */ 13:
+          message.legacy_from_identity_binary = CMsgSteamNetworkingIdentityLegacyBinary.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.legacy_from_identity_binary,
+          );
+          break;
+        case /* optional fixed64 legacy_from_steam_id */ 3:
+          message.legacy_from_steam_id = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 legacy_gameserver_relay_session_id */ 2:
+          message.legacy_gameserver_relay_session_id = reader.uint32();
+          break;
+        case /* optional fixed32 to_relay_session_id */ 9:
+          message.to_relay_session_id = reader.fixed32();
+          break;
+        case /* optional fixed32 from_relay_session_id */ 10:
+          message.from_relay_session_id = reader.fixed32();
+          break;
+        case /* optional bytes forward_target_relay_routing_token */ 11:
+          message.forward_target_relay_routing_token = reader.bytes();
+          break;
+        case /* optional uint32 forward_target_revision */ 12:
+          message.forward_target_revision = reader.uint32();
+          break;
+        case /* optional CMsgSteamDatagramConnectionClosed.ERelayMode relay_mode */ 4:
+          message.relay_mode = reader.int32();
+          break;
+        case /* optional string debug */ 5:
+          message.debug = reader.string();
+          break;
+        case /* optional uint32 reason_code */ 6:
+          message.reason_code = reader.uint32();
+          break;
+        case /* optional fixed64 routing_secret */ 14:
+          message.routing_secret = reader.fixed64().toBigInt();
+          break;
+        case /* optional bool not_primary_session */ 16:
+          message.not_primary_session = reader.bool();
+          break;
+        case /* optional bool not_primary_transport */ 19:
+          message.not_primary_transport = reader.bool();
+          break;
+        case /* optional bool relay_override_active */ 22:
+          message.relay_override_active = reader.bool();
+          break;
+        case /* optional CMsgSteamDatagramConnectionQuality quality_relay */ 17:
+          message.quality_relay = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.quality_relay,
+          );
+          break;
+        case /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 18 [json_name = "qualityE2e"];*/ 18:
+          message.quality_e2e = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.quality_e2e,
+          );
+          break;
+        case /* optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 21 [json_name = "p2pRoutingSummary"];*/ 21:
+          message.p2p_routing_summary = CMsgSteamDatagramP2PRoutingSummary.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.p2p_routing_summary,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramConnectionClosed,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 to_connection_id = 7; */
+    if (message.to_connection_id !== undefined) writer.tag(7, WireType.Bit32).fixed32(message.to_connection_id);
+    /* optional fixed32 from_connection_id = 8; */
+    if (message.from_connection_id !== undefined) writer.tag(8, WireType.Bit32).fixed32(message.from_connection_id);
+    /* optional string from_identity_string = 15; */
+    if (message.from_identity_string !== undefined)
+      writer.tag(15, WireType.LengthDelimited).string(message.from_identity_string);
+    /* optional CMsgSteamNetworkingIdentityLegacyBinary legacy_from_identity_binary = 13; */
+    if (message.legacy_from_identity_binary)
+      CMsgSteamNetworkingIdentityLegacyBinary.internalBinaryWrite(
+        message.legacy_from_identity_binary,
+        writer.tag(13, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional fixed64 legacy_from_steam_id = 3; */
+    if (message.legacy_from_steam_id !== undefined) writer.tag(3, WireType.Bit64).fixed64(message.legacy_from_steam_id);
+    /* optional uint32 legacy_gameserver_relay_session_id = 2; */
+    if (message.legacy_gameserver_relay_session_id !== undefined)
+      writer.tag(2, WireType.Varint).uint32(message.legacy_gameserver_relay_session_id);
+    /* optional fixed32 to_relay_session_id = 9; */
+    if (message.to_relay_session_id !== undefined) writer.tag(9, WireType.Bit32).fixed32(message.to_relay_session_id);
+    /* optional fixed32 from_relay_session_id = 10; */
+    if (message.from_relay_session_id !== undefined)
+      writer.tag(10, WireType.Bit32).fixed32(message.from_relay_session_id);
+    /* optional bytes forward_target_relay_routing_token = 11; */
+    if (message.forward_target_relay_routing_token !== undefined)
+      writer.tag(11, WireType.LengthDelimited).bytes(message.forward_target_relay_routing_token);
+    /* optional uint32 forward_target_revision = 12; */
+    if (message.forward_target_revision !== undefined)
+      writer.tag(12, WireType.Varint).uint32(message.forward_target_revision);
+    /* optional CMsgSteamDatagramConnectionClosed.ERelayMode relay_mode = 4; */
+    if (message.relay_mode !== undefined) writer.tag(4, WireType.Varint).int32(message.relay_mode);
+    /* optional string debug = 5; */
+    if (message.debug !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.debug);
+    /* optional uint32 reason_code = 6; */
+    if (message.reason_code !== undefined) writer.tag(6, WireType.Varint).uint32(message.reason_code);
+    /* optional fixed64 routing_secret = 14; */
+    if (message.routing_secret !== undefined) writer.tag(14, WireType.Bit64).fixed64(message.routing_secret);
+    /* optional bool not_primary_session = 16; */
+    if (message.not_primary_session !== undefined) writer.tag(16, WireType.Varint).bool(message.not_primary_session);
+    /* optional bool not_primary_transport = 19; */
+    if (message.not_primary_transport !== undefined)
+      writer.tag(19, WireType.Varint).bool(message.not_primary_transport);
+    /* optional bool relay_override_active = 22; */
+    if (message.relay_override_active !== undefined)
+      writer.tag(22, WireType.Varint).bool(message.relay_override_active);
+    /* optional CMsgSteamDatagramConnectionQuality quality_relay = 17; */
+    if (message.quality_relay)
+      CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
+        message.quality_relay,
+        writer.tag(17, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 18 [json_name = "qualityE2e"]; */
+    if (message.quality_e2e)
+      CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
+        message.quality_e2e,
+        writer.tag(18, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 21 [json_name = "p2pRoutingSummary"]; */
+    if (message.p2p_routing_summary)
+      CMsgSteamDatagramP2PRoutingSummary.internalBinaryWrite(
+        message.p2p_routing_summary,
+        writer.tag(21, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramConnectionClosed
@@ -5414,289 +5414,289 @@ class CMsgSteamDatagramConnectionClosed$Type extends MessageType<CMsgSteamDatagr
 export const CMsgSteamDatagramConnectionClosed = new CMsgSteamDatagramConnectionClosed$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramNoConnection$Type extends MessageType<CMsgSteamDatagramNoConnection> {
-	constructor() {
-		super("CMsgSteamDatagramNoConnection", [
-			{
-				no: 5,
-				name: "to_connection_id",
-				kind: "scalar",
-				localName: "to_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 6,
-				name: "from_connection_id",
-				kind: "scalar",
-				localName: "from_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "legacy_gameserver_relay_session_id",
-				kind: "scalar",
-				localName: "legacy_gameserver_relay_session_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "to_relay_session_id",
-				kind: "scalar",
-				localName: "to_relay_session_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 10,
-				name: "from_relay_session_id",
-				kind: "scalar",
-				localName: "from_relay_session_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 7,
-				name: "from_identity_string",
-				kind: "scalar",
-				localName: "from_identity_string",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "legacy_from_steam_id",
-				kind: "scalar",
-				localName: "legacy_from_steam_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 4,
-				name: "end_to_end",
-				kind: "scalar",
-				localName: "end_to_end",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 12,
-				name: "not_primary_session",
-				kind: "scalar",
-				localName: "not_primary_session",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 15,
-				name: "not_primary_transport",
-				kind: "scalar",
-				localName: "not_primary_transport",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 17,
-				name: "relay_override_active",
-				kind: "scalar",
-				localName: "relay_override_active",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 13,
-				name: "quality_relay",
-				kind: "message",
-				localName: "quality_relay",
-				T: () => CMsgSteamDatagramConnectionQuality,
-			},
-			{
-				no: 14,
-				name: "quality_e2e",
-				kind: "message",
-				localName: "quality_e2e",
-				jsonName: "qualityE2e",
-				T: () => CMsgSteamDatagramConnectionQuality,
-			},
-			{
-				no: 16,
-				name: "p2p_routing_summary",
-				kind: "message",
-				localName: "p2p_routing_summary",
-				jsonName: "p2pRoutingSummary",
-				T: () => CMsgSteamDatagramP2PRoutingSummary,
-			},
-			{
-				no: 11,
-				name: "routing_secret",
-				kind: "scalar",
-				localName: "routing_secret",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 1023,
-				name: "dummy_pad",
-				kind: "scalar",
-				localName: "dummy_pad",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramNoConnection>): CMsgSteamDatagramNoConnection {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramNoConnection>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramNoConnection,
-	): CMsgSteamDatagramNoConnection {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 to_connection_id */ 5:
-					message.to_connection_id = reader.fixed32();
-					break;
-				case /* optional fixed32 from_connection_id */ 6:
-					message.from_connection_id = reader.fixed32();
-					break;
-				case /* optional uint32 legacy_gameserver_relay_session_id */ 2:
-					message.legacy_gameserver_relay_session_id = reader.uint32();
-					break;
-				case /* optional fixed32 to_relay_session_id */ 9:
-					message.to_relay_session_id = reader.fixed32();
-					break;
-				case /* optional fixed32 from_relay_session_id */ 10:
-					message.from_relay_session_id = reader.fixed32();
-					break;
-				case /* optional string from_identity_string */ 7:
-					message.from_identity_string = reader.string();
-					break;
-				case /* optional fixed64 legacy_from_steam_id */ 3:
-					message.legacy_from_steam_id = reader.fixed64().toBigInt();
-					break;
-				case /* optional bool end_to_end */ 4:
-					message.end_to_end = reader.bool();
-					break;
-				case /* optional bool not_primary_session */ 12:
-					message.not_primary_session = reader.bool();
-					break;
-				case /* optional bool not_primary_transport */ 15:
-					message.not_primary_transport = reader.bool();
-					break;
-				case /* optional bool relay_override_active */ 17:
-					message.relay_override_active = reader.bool();
-					break;
-				case /* optional CMsgSteamDatagramConnectionQuality quality_relay */ 13:
-					message.quality_relay = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.quality_relay,
-					);
-					break;
-				case /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 14 [json_name = "qualityE2e"];*/ 14:
-					message.quality_e2e = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.quality_e2e,
-					);
-					break;
-				case /* optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 16 [json_name = "p2pRoutingSummary"];*/ 16:
-					message.p2p_routing_summary = CMsgSteamDatagramP2PRoutingSummary.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.p2p_routing_summary,
-					);
-					break;
-				case /* optional fixed64 routing_secret */ 11:
-					message.routing_secret = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed32 dummy_pad */ 1023:
-					message.dummy_pad = reader.fixed32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramNoConnection,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 to_connection_id = 5; */
-		if (message.to_connection_id !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.to_connection_id);
-		/* optional fixed32 from_connection_id = 6; */
-		if (message.from_connection_id !== undefined) writer.tag(6, WireType.Bit32).fixed32(message.from_connection_id);
-		/* optional uint32 legacy_gameserver_relay_session_id = 2; */
-		if (message.legacy_gameserver_relay_session_id !== undefined)
-			writer.tag(2, WireType.Varint).uint32(message.legacy_gameserver_relay_session_id);
-		/* optional fixed32 to_relay_session_id = 9; */
-		if (message.to_relay_session_id !== undefined) writer.tag(9, WireType.Bit32).fixed32(message.to_relay_session_id);
-		/* optional fixed32 from_relay_session_id = 10; */
-		if (message.from_relay_session_id !== undefined)
-			writer.tag(10, WireType.Bit32).fixed32(message.from_relay_session_id);
-		/* optional string from_identity_string = 7; */
-		if (message.from_identity_string !== undefined)
-			writer.tag(7, WireType.LengthDelimited).string(message.from_identity_string);
-		/* optional fixed64 legacy_from_steam_id = 3; */
-		if (message.legacy_from_steam_id !== undefined) writer.tag(3, WireType.Bit64).fixed64(message.legacy_from_steam_id);
-		/* optional bool end_to_end = 4; */
-		if (message.end_to_end !== undefined) writer.tag(4, WireType.Varint).bool(message.end_to_end);
-		/* optional bool not_primary_session = 12; */
-		if (message.not_primary_session !== undefined) writer.tag(12, WireType.Varint).bool(message.not_primary_session);
-		/* optional bool not_primary_transport = 15; */
-		if (message.not_primary_transport !== undefined)
-			writer.tag(15, WireType.Varint).bool(message.not_primary_transport);
-		/* optional bool relay_override_active = 17; */
-		if (message.relay_override_active !== undefined)
-			writer.tag(17, WireType.Varint).bool(message.relay_override_active);
-		/* optional CMsgSteamDatagramConnectionQuality quality_relay = 13; */
-		if (message.quality_relay)
-			CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
-				message.quality_relay,
-				writer.tag(13, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamDatagramConnectionQuality quality_e2e = 14 [json_name = "qualityE2e"]; */
-		if (message.quality_e2e)
-			CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
-				message.quality_e2e,
-				writer.tag(14, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 16 [json_name = "p2pRoutingSummary"]; */
-		if (message.p2p_routing_summary)
-			CMsgSteamDatagramP2PRoutingSummary.internalBinaryWrite(
-				message.p2p_routing_summary,
-				writer.tag(16, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional fixed64 routing_secret = 11; */
-		if (message.routing_secret !== undefined) writer.tag(11, WireType.Bit64).fixed64(message.routing_secret);
-		/* optional fixed32 dummy_pad = 1023; */
-		if (message.dummy_pad !== undefined) writer.tag(1023, WireType.Bit32).fixed32(message.dummy_pad);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramNoConnection", [
+      {
+        no: 5,
+        name: "to_connection_id",
+        kind: "scalar",
+        localName: "to_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 6,
+        name: "from_connection_id",
+        kind: "scalar",
+        localName: "from_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "legacy_gameserver_relay_session_id",
+        kind: "scalar",
+        localName: "legacy_gameserver_relay_session_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "to_relay_session_id",
+        kind: "scalar",
+        localName: "to_relay_session_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 10,
+        name: "from_relay_session_id",
+        kind: "scalar",
+        localName: "from_relay_session_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 7,
+        name: "from_identity_string",
+        kind: "scalar",
+        localName: "from_identity_string",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "legacy_from_steam_id",
+        kind: "scalar",
+        localName: "legacy_from_steam_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 4,
+        name: "end_to_end",
+        kind: "scalar",
+        localName: "end_to_end",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 12,
+        name: "not_primary_session",
+        kind: "scalar",
+        localName: "not_primary_session",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 15,
+        name: "not_primary_transport",
+        kind: "scalar",
+        localName: "not_primary_transport",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 17,
+        name: "relay_override_active",
+        kind: "scalar",
+        localName: "relay_override_active",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 13,
+        name: "quality_relay",
+        kind: "message",
+        localName: "quality_relay",
+        T: () => CMsgSteamDatagramConnectionQuality,
+      },
+      {
+        no: 14,
+        name: "quality_e2e",
+        kind: "message",
+        localName: "quality_e2e",
+        jsonName: "qualityE2e",
+        T: () => CMsgSteamDatagramConnectionQuality,
+      },
+      {
+        no: 16,
+        name: "p2p_routing_summary",
+        kind: "message",
+        localName: "p2p_routing_summary",
+        jsonName: "p2pRoutingSummary",
+        T: () => CMsgSteamDatagramP2PRoutingSummary,
+      },
+      {
+        no: 11,
+        name: "routing_secret",
+        kind: "scalar",
+        localName: "routing_secret",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 1023,
+        name: "dummy_pad",
+        kind: "scalar",
+        localName: "dummy_pad",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramNoConnection>): CMsgSteamDatagramNoConnection {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramNoConnection>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramNoConnection,
+  ): CMsgSteamDatagramNoConnection {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 to_connection_id */ 5:
+          message.to_connection_id = reader.fixed32();
+          break;
+        case /* optional fixed32 from_connection_id */ 6:
+          message.from_connection_id = reader.fixed32();
+          break;
+        case /* optional uint32 legacy_gameserver_relay_session_id */ 2:
+          message.legacy_gameserver_relay_session_id = reader.uint32();
+          break;
+        case /* optional fixed32 to_relay_session_id */ 9:
+          message.to_relay_session_id = reader.fixed32();
+          break;
+        case /* optional fixed32 from_relay_session_id */ 10:
+          message.from_relay_session_id = reader.fixed32();
+          break;
+        case /* optional string from_identity_string */ 7:
+          message.from_identity_string = reader.string();
+          break;
+        case /* optional fixed64 legacy_from_steam_id */ 3:
+          message.legacy_from_steam_id = reader.fixed64().toBigInt();
+          break;
+        case /* optional bool end_to_end */ 4:
+          message.end_to_end = reader.bool();
+          break;
+        case /* optional bool not_primary_session */ 12:
+          message.not_primary_session = reader.bool();
+          break;
+        case /* optional bool not_primary_transport */ 15:
+          message.not_primary_transport = reader.bool();
+          break;
+        case /* optional bool relay_override_active */ 17:
+          message.relay_override_active = reader.bool();
+          break;
+        case /* optional CMsgSteamDatagramConnectionQuality quality_relay */ 13:
+          message.quality_relay = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.quality_relay,
+          );
+          break;
+        case /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 14 [json_name = "qualityE2e"];*/ 14:
+          message.quality_e2e = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.quality_e2e,
+          );
+          break;
+        case /* optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 16 [json_name = "p2pRoutingSummary"];*/ 16:
+          message.p2p_routing_summary = CMsgSteamDatagramP2PRoutingSummary.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.p2p_routing_summary,
+          );
+          break;
+        case /* optional fixed64 routing_secret */ 11:
+          message.routing_secret = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed32 dummy_pad */ 1023:
+          message.dummy_pad = reader.fixed32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramNoConnection,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 to_connection_id = 5; */
+    if (message.to_connection_id !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.to_connection_id);
+    /* optional fixed32 from_connection_id = 6; */
+    if (message.from_connection_id !== undefined) writer.tag(6, WireType.Bit32).fixed32(message.from_connection_id);
+    /* optional uint32 legacy_gameserver_relay_session_id = 2; */
+    if (message.legacy_gameserver_relay_session_id !== undefined)
+      writer.tag(2, WireType.Varint).uint32(message.legacy_gameserver_relay_session_id);
+    /* optional fixed32 to_relay_session_id = 9; */
+    if (message.to_relay_session_id !== undefined) writer.tag(9, WireType.Bit32).fixed32(message.to_relay_session_id);
+    /* optional fixed32 from_relay_session_id = 10; */
+    if (message.from_relay_session_id !== undefined)
+      writer.tag(10, WireType.Bit32).fixed32(message.from_relay_session_id);
+    /* optional string from_identity_string = 7; */
+    if (message.from_identity_string !== undefined)
+      writer.tag(7, WireType.LengthDelimited).string(message.from_identity_string);
+    /* optional fixed64 legacy_from_steam_id = 3; */
+    if (message.legacy_from_steam_id !== undefined) writer.tag(3, WireType.Bit64).fixed64(message.legacy_from_steam_id);
+    /* optional bool end_to_end = 4; */
+    if (message.end_to_end !== undefined) writer.tag(4, WireType.Varint).bool(message.end_to_end);
+    /* optional bool not_primary_session = 12; */
+    if (message.not_primary_session !== undefined) writer.tag(12, WireType.Varint).bool(message.not_primary_session);
+    /* optional bool not_primary_transport = 15; */
+    if (message.not_primary_transport !== undefined)
+      writer.tag(15, WireType.Varint).bool(message.not_primary_transport);
+    /* optional bool relay_override_active = 17; */
+    if (message.relay_override_active !== undefined)
+      writer.tag(17, WireType.Varint).bool(message.relay_override_active);
+    /* optional CMsgSteamDatagramConnectionQuality quality_relay = 13; */
+    if (message.quality_relay)
+      CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
+        message.quality_relay,
+        writer.tag(13, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 14 [json_name = "qualityE2e"]; */
+    if (message.quality_e2e)
+      CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
+        message.quality_e2e,
+        writer.tag(14, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 16 [json_name = "p2pRoutingSummary"]; */
+    if (message.p2p_routing_summary)
+      CMsgSteamDatagramP2PRoutingSummary.internalBinaryWrite(
+        message.p2p_routing_summary,
+        writer.tag(16, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional fixed64 routing_secret = 11; */
+    if (message.routing_secret !== undefined) writer.tag(11, WireType.Bit64).fixed64(message.routing_secret);
+    /* optional fixed32 dummy_pad = 1023; */
+    if (message.dummy_pad !== undefined) writer.tag(1023, WireType.Bit32).fixed32(message.dummy_pad);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramNoConnection
@@ -5704,197 +5704,197 @@ class CMsgSteamDatagramNoConnection$Type extends MessageType<CMsgSteamDatagramNo
 export const CMsgSteamDatagramNoConnection = new CMsgSteamDatagramNoConnection$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramGameserverSessionRequest$Type extends MessageType<CMsgSteamDatagramGameserverSessionRequest> {
-	constructor() {
-		super("CMsgSteamDatagramGameserverSessionRequest", [
-			{
-				no: 1,
-				name: "ticket",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 3,
-				name: "challenge_time",
-				kind: "scalar",
-				localName: "challenge_time",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 4,
-				name: "challenge",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 5,
-				name: "client_connection_id",
-				kind: "scalar",
-				localName: "client_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 8,
-				name: "server_connection_id",
-				kind: "scalar",
-				localName: "server_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 6,
-				name: "network_config_version",
-				kind: "scalar",
-				localName: "network_config_version",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 7,
-				name: "protocol_version",
-				kind: "scalar",
-				localName: "protocol_version",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "platform",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 10,
-				name: "build",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 100,
-				name: "dev_gameserver_identity",
-				kind: "scalar",
-				localName: "dev_gameserver_identity",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 101,
-				name: "dev_client_cert",
-				kind: "message",
-				localName: "dev_client_cert",
-				T: () => CMsgSteamDatagramCertificateSigned,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramGameserverSessionRequest>): CMsgSteamDatagramGameserverSessionRequest {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramGameserverSessionRequest>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramGameserverSessionRequest,
-	): CMsgSteamDatagramGameserverSessionRequest {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bytes ticket */ 1:
-					message.ticket = reader.bytes();
-					break;
-				case /* optional fixed32 challenge_time */ 3:
-					message.challenge_time = reader.fixed32();
-					break;
-				case /* optional fixed64 challenge */ 4:
-					message.challenge = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed32 client_connection_id */ 5:
-					message.client_connection_id = reader.fixed32();
-					break;
-				case /* optional fixed32 server_connection_id */ 8:
-					message.server_connection_id = reader.fixed32();
-					break;
-				case /* optional uint64 network_config_version */ 6:
-					message.network_config_version = reader.uint64().toBigInt();
-					break;
-				case /* optional uint32 protocol_version */ 7:
-					message.protocol_version = reader.uint32();
-					break;
-				case /* optional string platform */ 9:
-					message.platform = reader.string();
-					break;
-				case /* optional string build */ 10:
-					message.build = reader.string();
-					break;
-				case /* optional string dev_gameserver_identity */ 100:
-					message.dev_gameserver_identity = reader.string();
-					break;
-				case /* optional CMsgSteamDatagramCertificateSigned dev_client_cert */ 101:
-					message.dev_client_cert = CMsgSteamDatagramCertificateSigned.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.dev_client_cert,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramGameserverSessionRequest,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bytes ticket = 1; */
-		if (message.ticket !== undefined) writer.tag(1, WireType.LengthDelimited).bytes(message.ticket);
-		/* optional fixed32 challenge_time = 3; */
-		if (message.challenge_time !== undefined) writer.tag(3, WireType.Bit32).fixed32(message.challenge_time);
-		/* optional fixed64 challenge = 4; */
-		if (message.challenge !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.challenge);
-		/* optional fixed32 client_connection_id = 5; */
-		if (message.client_connection_id !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.client_connection_id);
-		/* optional fixed32 server_connection_id = 8; */
-		if (message.server_connection_id !== undefined) writer.tag(8, WireType.Bit32).fixed32(message.server_connection_id);
-		/* optional uint64 network_config_version = 6; */
-		if (message.network_config_version !== undefined)
-			writer.tag(6, WireType.Varint).uint64(message.network_config_version);
-		/* optional uint32 protocol_version = 7; */
-		if (message.protocol_version !== undefined) writer.tag(7, WireType.Varint).uint32(message.protocol_version);
-		/* optional string platform = 9; */
-		if (message.platform !== undefined) writer.tag(9, WireType.LengthDelimited).string(message.platform);
-		/* optional string build = 10; */
-		if (message.build !== undefined) writer.tag(10, WireType.LengthDelimited).string(message.build);
-		/* optional string dev_gameserver_identity = 100; */
-		if (message.dev_gameserver_identity !== undefined)
-			writer.tag(100, WireType.LengthDelimited).string(message.dev_gameserver_identity);
-		/* optional CMsgSteamDatagramCertificateSigned dev_client_cert = 101; */
-		if (message.dev_client_cert)
-			CMsgSteamDatagramCertificateSigned.internalBinaryWrite(
-				message.dev_client_cert,
-				writer.tag(101, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramGameserverSessionRequest", [
+      {
+        no: 1,
+        name: "ticket",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 3,
+        name: "challenge_time",
+        kind: "scalar",
+        localName: "challenge_time",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 4,
+        name: "challenge",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 5,
+        name: "client_connection_id",
+        kind: "scalar",
+        localName: "client_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 8,
+        name: "server_connection_id",
+        kind: "scalar",
+        localName: "server_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 6,
+        name: "network_config_version",
+        kind: "scalar",
+        localName: "network_config_version",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 7,
+        name: "protocol_version",
+        kind: "scalar",
+        localName: "protocol_version",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "platform",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 10,
+        name: "build",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 100,
+        name: "dev_gameserver_identity",
+        kind: "scalar",
+        localName: "dev_gameserver_identity",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 101,
+        name: "dev_client_cert",
+        kind: "message",
+        localName: "dev_client_cert",
+        T: () => CMsgSteamDatagramCertificateSigned,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramGameserverSessionRequest>): CMsgSteamDatagramGameserverSessionRequest {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramGameserverSessionRequest>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramGameserverSessionRequest,
+  ): CMsgSteamDatagramGameserverSessionRequest {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bytes ticket */ 1:
+          message.ticket = reader.bytes();
+          break;
+        case /* optional fixed32 challenge_time */ 3:
+          message.challenge_time = reader.fixed32();
+          break;
+        case /* optional fixed64 challenge */ 4:
+          message.challenge = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed32 client_connection_id */ 5:
+          message.client_connection_id = reader.fixed32();
+          break;
+        case /* optional fixed32 server_connection_id */ 8:
+          message.server_connection_id = reader.fixed32();
+          break;
+        case /* optional uint64 network_config_version */ 6:
+          message.network_config_version = reader.uint64().toBigInt();
+          break;
+        case /* optional uint32 protocol_version */ 7:
+          message.protocol_version = reader.uint32();
+          break;
+        case /* optional string platform */ 9:
+          message.platform = reader.string();
+          break;
+        case /* optional string build */ 10:
+          message.build = reader.string();
+          break;
+        case /* optional string dev_gameserver_identity */ 100:
+          message.dev_gameserver_identity = reader.string();
+          break;
+        case /* optional CMsgSteamDatagramCertificateSigned dev_client_cert */ 101:
+          message.dev_client_cert = CMsgSteamDatagramCertificateSigned.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.dev_client_cert,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramGameserverSessionRequest,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bytes ticket = 1; */
+    if (message.ticket !== undefined) writer.tag(1, WireType.LengthDelimited).bytes(message.ticket);
+    /* optional fixed32 challenge_time = 3; */
+    if (message.challenge_time !== undefined) writer.tag(3, WireType.Bit32).fixed32(message.challenge_time);
+    /* optional fixed64 challenge = 4; */
+    if (message.challenge !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.challenge);
+    /* optional fixed32 client_connection_id = 5; */
+    if (message.client_connection_id !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.client_connection_id);
+    /* optional fixed32 server_connection_id = 8; */
+    if (message.server_connection_id !== undefined) writer.tag(8, WireType.Bit32).fixed32(message.server_connection_id);
+    /* optional uint64 network_config_version = 6; */
+    if (message.network_config_version !== undefined)
+      writer.tag(6, WireType.Varint).uint64(message.network_config_version);
+    /* optional uint32 protocol_version = 7; */
+    if (message.protocol_version !== undefined) writer.tag(7, WireType.Varint).uint32(message.protocol_version);
+    /* optional string platform = 9; */
+    if (message.platform !== undefined) writer.tag(9, WireType.LengthDelimited).string(message.platform);
+    /* optional string build = 10; */
+    if (message.build !== undefined) writer.tag(10, WireType.LengthDelimited).string(message.build);
+    /* optional string dev_gameserver_identity = 100; */
+    if (message.dev_gameserver_identity !== undefined)
+      writer.tag(100, WireType.LengthDelimited).string(message.dev_gameserver_identity);
+    /* optional CMsgSteamDatagramCertificateSigned dev_client_cert = 101; */
+    if (message.dev_client_cert)
+      CMsgSteamDatagramCertificateSigned.internalBinaryWrite(
+        message.dev_client_cert,
+        writer.tag(101, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramGameserverSessionRequest
@@ -5902,132 +5902,132 @@ class CMsgSteamDatagramGameserverSessionRequest$Type extends MessageType<CMsgSte
 export const CMsgSteamDatagramGameserverSessionRequest = new CMsgSteamDatagramGameserverSessionRequest$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramGameserverSessionEstablished$Type extends MessageType<CMsgSteamDatagramGameserverSessionEstablished> {
-	constructor() {
-		super("CMsgSteamDatagramGameserverSessionEstablished", [
-			{
-				no: 1,
-				name: "connection_id",
-				kind: "scalar",
-				localName: "connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "gameserver_identity_string",
-				kind: "scalar",
-				localName: "gameserver_identity_string",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 4,
-				name: "seconds_until_shutdown",
-				kind: "scalar",
-				localName: "seconds_until_shutdown",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "seq_num_r2c",
-				kind: "scalar",
-				localName: "seq_num_r2c",
-				jsonName: "seqNumR2c",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "dummy_legacy_identity_binary",
-				kind: "scalar",
-				localName: "dummy_legacy_identity_binary",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 3,
-				name: "legacy_gameserver_steamid",
-				kind: "scalar",
-				localName: "legacy_gameserver_steamid",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramGameserverSessionEstablished>,
-	): CMsgSteamDatagramGameserverSessionEstablished {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamDatagramGameserverSessionEstablished>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramGameserverSessionEstablished,
-	): CMsgSteamDatagramGameserverSessionEstablished {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 connection_id */ 1:
-					message.connection_id = reader.fixed32();
-					break;
-				case /* optional string gameserver_identity_string */ 2:
-					message.gameserver_identity_string = reader.string();
-					break;
-				case /* optional uint32 seconds_until_shutdown */ 4:
-					message.seconds_until_shutdown = reader.uint32();
-					break;
-				case /* optional uint32 seq_num_r2c = 6 [json_name = "seqNumR2c"];*/ 6:
-					message.seq_num_r2c = reader.uint32();
-					break;
-				case /* optional bytes dummy_legacy_identity_binary */ 7:
-					message.dummy_legacy_identity_binary = reader.bytes();
-					break;
-				case /* optional fixed64 legacy_gameserver_steamid */ 3:
-					message.legacy_gameserver_steamid = reader.fixed64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramGameserverSessionEstablished,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 connection_id = 1; */
-		if (message.connection_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.connection_id);
-		/* optional string gameserver_identity_string = 2; */
-		if (message.gameserver_identity_string !== undefined)
-			writer.tag(2, WireType.LengthDelimited).string(message.gameserver_identity_string);
-		/* optional uint32 seconds_until_shutdown = 4; */
-		if (message.seconds_until_shutdown !== undefined)
-			writer.tag(4, WireType.Varint).uint32(message.seconds_until_shutdown);
-		/* optional uint32 seq_num_r2c = 6 [json_name = "seqNumR2c"]; */
-		if (message.seq_num_r2c !== undefined) writer.tag(6, WireType.Varint).uint32(message.seq_num_r2c);
-		/* optional bytes dummy_legacy_identity_binary = 7; */
-		if (message.dummy_legacy_identity_binary !== undefined)
-			writer.tag(7, WireType.LengthDelimited).bytes(message.dummy_legacy_identity_binary);
-		/* optional fixed64 legacy_gameserver_steamid = 3; */
-		if (message.legacy_gameserver_steamid !== undefined)
-			writer.tag(3, WireType.Bit64).fixed64(message.legacy_gameserver_steamid);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramGameserverSessionEstablished", [
+      {
+        no: 1,
+        name: "connection_id",
+        kind: "scalar",
+        localName: "connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "gameserver_identity_string",
+        kind: "scalar",
+        localName: "gameserver_identity_string",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 4,
+        name: "seconds_until_shutdown",
+        kind: "scalar",
+        localName: "seconds_until_shutdown",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "seq_num_r2c",
+        kind: "scalar",
+        localName: "seq_num_r2c",
+        jsonName: "seqNumR2c",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "dummy_legacy_identity_binary",
+        kind: "scalar",
+        localName: "dummy_legacy_identity_binary",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 3,
+        name: "legacy_gameserver_steamid",
+        kind: "scalar",
+        localName: "legacy_gameserver_steamid",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramGameserverSessionEstablished>,
+  ): CMsgSteamDatagramGameserverSessionEstablished {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamDatagramGameserverSessionEstablished>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramGameserverSessionEstablished,
+  ): CMsgSteamDatagramGameserverSessionEstablished {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 connection_id */ 1:
+          message.connection_id = reader.fixed32();
+          break;
+        case /* optional string gameserver_identity_string */ 2:
+          message.gameserver_identity_string = reader.string();
+          break;
+        case /* optional uint32 seconds_until_shutdown */ 4:
+          message.seconds_until_shutdown = reader.uint32();
+          break;
+        case /* optional uint32 seq_num_r2c = 6 [json_name = "seqNumR2c"];*/ 6:
+          message.seq_num_r2c = reader.uint32();
+          break;
+        case /* optional bytes dummy_legacy_identity_binary */ 7:
+          message.dummy_legacy_identity_binary = reader.bytes();
+          break;
+        case /* optional fixed64 legacy_gameserver_steamid */ 3:
+          message.legacy_gameserver_steamid = reader.fixed64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramGameserverSessionEstablished,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 connection_id = 1; */
+    if (message.connection_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.connection_id);
+    /* optional string gameserver_identity_string = 2; */
+    if (message.gameserver_identity_string !== undefined)
+      writer.tag(2, WireType.LengthDelimited).string(message.gameserver_identity_string);
+    /* optional uint32 seconds_until_shutdown = 4; */
+    if (message.seconds_until_shutdown !== undefined)
+      writer.tag(4, WireType.Varint).uint32(message.seconds_until_shutdown);
+    /* optional uint32 seq_num_r2c = 6 [json_name = "seqNumR2c"]; */
+    if (message.seq_num_r2c !== undefined) writer.tag(6, WireType.Varint).uint32(message.seq_num_r2c);
+    /* optional bytes dummy_legacy_identity_binary = 7; */
+    if (message.dummy_legacy_identity_binary !== undefined)
+      writer.tag(7, WireType.LengthDelimited).bytes(message.dummy_legacy_identity_binary);
+    /* optional fixed64 legacy_gameserver_steamid = 3; */
+    if (message.legacy_gameserver_steamid !== undefined)
+      writer.tag(3, WireType.Bit64).fixed64(message.legacy_gameserver_steamid);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramGameserverSessionEstablished
@@ -6035,180 +6035,180 @@ class CMsgSteamDatagramGameserverSessionEstablished$Type extends MessageType<CMs
 export const CMsgSteamDatagramGameserverSessionEstablished = new CMsgSteamDatagramGameserverSessionEstablished$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramConnectionStatsClientToRouter$Type extends MessageType<CMsgSteamDatagramConnectionStatsClientToRouter> {
-	constructor() {
-		super("CMsgSteamDatagramConnectionStatsClientToRouter", [
-			{
-				no: 1,
-				name: "quality_relay",
-				kind: "message",
-				localName: "quality_relay",
-				T: () => CMsgSteamDatagramConnectionQuality,
-			},
-			{
-				no: 2,
-				name: "quality_e2e",
-				kind: "message",
-				localName: "quality_e2e",
-				jsonName: "qualityE2e",
-				T: () => CMsgSteamDatagramConnectionQuality,
-			},
-			{
-				no: 4,
-				name: "ack_relay",
-				kind: "scalar",
-				localName: "ack_relay",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 5,
-				name: "legacy_ack_e2e",
-				kind: "scalar",
-				localName: "legacy_ack_e2e",
-				jsonName: "legacyAckE2e",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 6,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "client_connection_id",
-				kind: "scalar",
-				localName: "client_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 9,
-				name: "seq_num_c2r",
-				kind: "scalar",
-				localName: "seq_num_c2r",
-				jsonName: "seqNumC2r",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "seq_num_e2e",
-				kind: "scalar",
-				localName: "seq_num_e2e",
-				jsonName: "seqNumE2e",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramConnectionStatsClientToRouter>,
-	): CMsgSteamDatagramConnectionStatsClientToRouter {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.ack_relay = [];
-		message.legacy_ack_e2e = [];
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamDatagramConnectionStatsClientToRouter>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramConnectionStatsClientToRouter,
-	): CMsgSteamDatagramConnectionStatsClientToRouter {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgSteamDatagramConnectionQuality quality_relay */ 1:
-					message.quality_relay = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.quality_relay,
-					);
-					break;
-				case /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];*/ 2:
-					message.quality_e2e = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.quality_e2e,
-					);
-					break;
-				case /* repeated fixed32 ack_relay */ 4:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.ack_relay.push(reader.fixed32());
-					else message.ack_relay.push(reader.fixed32());
-					break;
-				case /* repeated fixed32 legacy_ack_e2e = 5 [json_name = "legacyAckE2e"];*/ 5:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.legacy_ack_e2e.push(reader.fixed32());
-					else message.legacy_ack_e2e.push(reader.fixed32());
-					break;
-				case /* optional uint32 flags */ 6:
-					message.flags = reader.uint32();
-					break;
-				case /* optional fixed32 client_connection_id */ 8:
-					message.client_connection_id = reader.fixed32();
-					break;
-				case /* optional uint32 seq_num_c2r = 9 [json_name = "seqNumC2r"];*/ 9:
-					message.seq_num_c2r = reader.uint32();
-					break;
-				case /* optional uint32 seq_num_e2e = 10 [json_name = "seqNumE2e"];*/ 10:
-					message.seq_num_e2e = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramConnectionStatsClientToRouter,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgSteamDatagramConnectionQuality quality_relay = 1; */
-		if (message.quality_relay)
-			CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
-				message.quality_relay,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"]; */
-		if (message.quality_e2e)
-			CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
-				message.quality_e2e,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated fixed32 ack_relay = 4; */
-		for (let i = 0; i < message.ack_relay.length; i++) writer.tag(4, WireType.Bit32).fixed32(message.ack_relay[i]);
-		/* repeated fixed32 legacy_ack_e2e = 5 [json_name = "legacyAckE2e"]; */
-		for (let i = 0; i < message.legacy_ack_e2e.length; i++)
-			writer.tag(5, WireType.Bit32).fixed32(message.legacy_ack_e2e[i]);
-		/* optional uint32 flags = 6; */
-		if (message.flags !== undefined) writer.tag(6, WireType.Varint).uint32(message.flags);
-		/* optional fixed32 client_connection_id = 8; */
-		if (message.client_connection_id !== undefined) writer.tag(8, WireType.Bit32).fixed32(message.client_connection_id);
-		/* optional uint32 seq_num_c2r = 9 [json_name = "seqNumC2r"]; */
-		if (message.seq_num_c2r !== undefined) writer.tag(9, WireType.Varint).uint32(message.seq_num_c2r);
-		/* optional uint32 seq_num_e2e = 10 [json_name = "seqNumE2e"]; */
-		if (message.seq_num_e2e !== undefined) writer.tag(10, WireType.Varint).uint32(message.seq_num_e2e);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramConnectionStatsClientToRouter", [
+      {
+        no: 1,
+        name: "quality_relay",
+        kind: "message",
+        localName: "quality_relay",
+        T: () => CMsgSteamDatagramConnectionQuality,
+      },
+      {
+        no: 2,
+        name: "quality_e2e",
+        kind: "message",
+        localName: "quality_e2e",
+        jsonName: "qualityE2e",
+        T: () => CMsgSteamDatagramConnectionQuality,
+      },
+      {
+        no: 4,
+        name: "ack_relay",
+        kind: "scalar",
+        localName: "ack_relay",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 5,
+        name: "legacy_ack_e2e",
+        kind: "scalar",
+        localName: "legacy_ack_e2e",
+        jsonName: "legacyAckE2e",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 6,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "client_connection_id",
+        kind: "scalar",
+        localName: "client_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 9,
+        name: "seq_num_c2r",
+        kind: "scalar",
+        localName: "seq_num_c2r",
+        jsonName: "seqNumC2r",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "seq_num_e2e",
+        kind: "scalar",
+        localName: "seq_num_e2e",
+        jsonName: "seqNumE2e",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramConnectionStatsClientToRouter>,
+  ): CMsgSteamDatagramConnectionStatsClientToRouter {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.ack_relay = [];
+    message.legacy_ack_e2e = [];
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamDatagramConnectionStatsClientToRouter>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramConnectionStatsClientToRouter,
+  ): CMsgSteamDatagramConnectionStatsClientToRouter {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgSteamDatagramConnectionQuality quality_relay */ 1:
+          message.quality_relay = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.quality_relay,
+          );
+          break;
+        case /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];*/ 2:
+          message.quality_e2e = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.quality_e2e,
+          );
+          break;
+        case /* repeated fixed32 ack_relay */ 4:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.ack_relay.push(reader.fixed32());
+          else message.ack_relay.push(reader.fixed32());
+          break;
+        case /* repeated fixed32 legacy_ack_e2e = 5 [json_name = "legacyAckE2e"];*/ 5:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.legacy_ack_e2e.push(reader.fixed32());
+          else message.legacy_ack_e2e.push(reader.fixed32());
+          break;
+        case /* optional uint32 flags */ 6:
+          message.flags = reader.uint32();
+          break;
+        case /* optional fixed32 client_connection_id */ 8:
+          message.client_connection_id = reader.fixed32();
+          break;
+        case /* optional uint32 seq_num_c2r = 9 [json_name = "seqNumC2r"];*/ 9:
+          message.seq_num_c2r = reader.uint32();
+          break;
+        case /* optional uint32 seq_num_e2e = 10 [json_name = "seqNumE2e"];*/ 10:
+          message.seq_num_e2e = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramConnectionStatsClientToRouter,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgSteamDatagramConnectionQuality quality_relay = 1; */
+    if (message.quality_relay)
+      CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
+        message.quality_relay,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"]; */
+    if (message.quality_e2e)
+      CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
+        message.quality_e2e,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated fixed32 ack_relay = 4; */
+    for (let i = 0; i < message.ack_relay.length; i++) writer.tag(4, WireType.Bit32).fixed32(message.ack_relay[i]);
+    /* repeated fixed32 legacy_ack_e2e = 5 [json_name = "legacyAckE2e"]; */
+    for (let i = 0; i < message.legacy_ack_e2e.length; i++)
+      writer.tag(5, WireType.Bit32).fixed32(message.legacy_ack_e2e[i]);
+    /* optional uint32 flags = 6; */
+    if (message.flags !== undefined) writer.tag(6, WireType.Varint).uint32(message.flags);
+    /* optional fixed32 client_connection_id = 8; */
+    if (message.client_connection_id !== undefined) writer.tag(8, WireType.Bit32).fixed32(message.client_connection_id);
+    /* optional uint32 seq_num_c2r = 9 [json_name = "seqNumC2r"]; */
+    if (message.seq_num_c2r !== undefined) writer.tag(9, WireType.Varint).uint32(message.seq_num_c2r);
+    /* optional uint32 seq_num_e2e = 10 [json_name = "seqNumE2e"]; */
+    if (message.seq_num_e2e !== undefined) writer.tag(10, WireType.Varint).uint32(message.seq_num_e2e);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramConnectionStatsClientToRouter
@@ -6216,235 +6216,235 @@ class CMsgSteamDatagramConnectionStatsClientToRouter$Type extends MessageType<CM
 export const CMsgSteamDatagramConnectionStatsClientToRouter = new CMsgSteamDatagramConnectionStatsClientToRouter$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramConnectionStatsRouterToClient$Type extends MessageType<CMsgSteamDatagramConnectionStatsRouterToClient> {
-	constructor() {
-		super("CMsgSteamDatagramConnectionStatsRouterToClient", [
-			{
-				no: 1,
-				name: "quality_relay",
-				kind: "message",
-				localName: "quality_relay",
-				T: () => CMsgSteamDatagramConnectionQuality,
-			},
-			{
-				no: 2,
-				name: "quality_e2e",
-				kind: "message",
-				localName: "quality_e2e",
-				jsonName: "qualityE2e",
-				T: () => CMsgSteamDatagramConnectionQuality,
-			},
-			{
-				no: 6,
-				name: "seconds_until_shutdown",
-				kind: "scalar",
-				localName: "seconds_until_shutdown",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "migrate_request_ip",
-				kind: "scalar",
-				localName: "migrate_request_ip",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 11,
-				name: "migrate_request_port",
-				kind: "scalar",
-				localName: "migrate_request_port",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 12,
-				name: "scoring_penalty_relay_cluster",
-				kind: "scalar",
-				localName: "scoring_penalty_relay_cluster",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 13,
-				name: "ack_relay",
-				kind: "scalar",
-				localName: "ack_relay",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 14,
-				name: "legacy_ack_e2e",
-				kind: "scalar",
-				localName: "legacy_ack_e2e",
-				jsonName: "legacyAckE2e",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 15,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "client_connection_id",
-				kind: "scalar",
-				localName: "client_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 8,
-				name: "seq_num_r2c",
-				kind: "scalar",
-				localName: "seq_num_r2c",
-				jsonName: "seqNumR2c",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "seq_num_e2e",
-				kind: "scalar",
-				localName: "seq_num_e2e",
-				jsonName: "seqNumE2e",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramConnectionStatsRouterToClient>,
-	): CMsgSteamDatagramConnectionStatsRouterToClient {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.ack_relay = [];
-		message.legacy_ack_e2e = [];
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamDatagramConnectionStatsRouterToClient>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramConnectionStatsRouterToClient,
-	): CMsgSteamDatagramConnectionStatsRouterToClient {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgSteamDatagramConnectionQuality quality_relay */ 1:
-					message.quality_relay = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.quality_relay,
-					);
-					break;
-				case /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];*/ 2:
-					message.quality_e2e = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.quality_e2e,
-					);
-					break;
-				case /* optional uint32 seconds_until_shutdown */ 6:
-					message.seconds_until_shutdown = reader.uint32();
-					break;
-				case /* optional fixed32 migrate_request_ip */ 10:
-					message.migrate_request_ip = reader.fixed32();
-					break;
-				case /* optional uint32 migrate_request_port */ 11:
-					message.migrate_request_port = reader.uint32();
-					break;
-				case /* optional uint32 scoring_penalty_relay_cluster */ 12:
-					message.scoring_penalty_relay_cluster = reader.uint32();
-					break;
-				case /* repeated fixed32 ack_relay */ 13:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.ack_relay.push(reader.fixed32());
-					else message.ack_relay.push(reader.fixed32());
-					break;
-				case /* repeated fixed32 legacy_ack_e2e = 14 [json_name = "legacyAckE2e"];*/ 14:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.legacy_ack_e2e.push(reader.fixed32());
-					else message.legacy_ack_e2e.push(reader.fixed32());
-					break;
-				case /* optional uint32 flags */ 15:
-					message.flags = reader.uint32();
-					break;
-				case /* optional fixed32 client_connection_id */ 7:
-					message.client_connection_id = reader.fixed32();
-					break;
-				case /* optional uint32 seq_num_r2c = 8 [json_name = "seqNumR2c"];*/ 8:
-					message.seq_num_r2c = reader.uint32();
-					break;
-				case /* optional uint32 seq_num_e2e = 9 [json_name = "seqNumE2e"];*/ 9:
-					message.seq_num_e2e = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramConnectionStatsRouterToClient,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgSteamDatagramConnectionQuality quality_relay = 1; */
-		if (message.quality_relay)
-			CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
-				message.quality_relay,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"]; */
-		if (message.quality_e2e)
-			CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
-				message.quality_e2e,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 seconds_until_shutdown = 6; */
-		if (message.seconds_until_shutdown !== undefined)
-			writer.tag(6, WireType.Varint).uint32(message.seconds_until_shutdown);
-		/* optional fixed32 migrate_request_ip = 10; */
-		if (message.migrate_request_ip !== undefined) writer.tag(10, WireType.Bit32).fixed32(message.migrate_request_ip);
-		/* optional uint32 migrate_request_port = 11; */
-		if (message.migrate_request_port !== undefined)
-			writer.tag(11, WireType.Varint).uint32(message.migrate_request_port);
-		/* optional uint32 scoring_penalty_relay_cluster = 12; */
-		if (message.scoring_penalty_relay_cluster !== undefined)
-			writer.tag(12, WireType.Varint).uint32(message.scoring_penalty_relay_cluster);
-		/* repeated fixed32 ack_relay = 13; */
-		for (let i = 0; i < message.ack_relay.length; i++) writer.tag(13, WireType.Bit32).fixed32(message.ack_relay[i]);
-		/* repeated fixed32 legacy_ack_e2e = 14 [json_name = "legacyAckE2e"]; */
-		for (let i = 0; i < message.legacy_ack_e2e.length; i++)
-			writer.tag(14, WireType.Bit32).fixed32(message.legacy_ack_e2e[i]);
-		/* optional uint32 flags = 15; */
-		if (message.flags !== undefined) writer.tag(15, WireType.Varint).uint32(message.flags);
-		/* optional fixed32 client_connection_id = 7; */
-		if (message.client_connection_id !== undefined) writer.tag(7, WireType.Bit32).fixed32(message.client_connection_id);
-		/* optional uint32 seq_num_r2c = 8 [json_name = "seqNumR2c"]; */
-		if (message.seq_num_r2c !== undefined) writer.tag(8, WireType.Varint).uint32(message.seq_num_r2c);
-		/* optional uint32 seq_num_e2e = 9 [json_name = "seqNumE2e"]; */
-		if (message.seq_num_e2e !== undefined) writer.tag(9, WireType.Varint).uint32(message.seq_num_e2e);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramConnectionStatsRouterToClient", [
+      {
+        no: 1,
+        name: "quality_relay",
+        kind: "message",
+        localName: "quality_relay",
+        T: () => CMsgSteamDatagramConnectionQuality,
+      },
+      {
+        no: 2,
+        name: "quality_e2e",
+        kind: "message",
+        localName: "quality_e2e",
+        jsonName: "qualityE2e",
+        T: () => CMsgSteamDatagramConnectionQuality,
+      },
+      {
+        no: 6,
+        name: "seconds_until_shutdown",
+        kind: "scalar",
+        localName: "seconds_until_shutdown",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "migrate_request_ip",
+        kind: "scalar",
+        localName: "migrate_request_ip",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 11,
+        name: "migrate_request_port",
+        kind: "scalar",
+        localName: "migrate_request_port",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 12,
+        name: "scoring_penalty_relay_cluster",
+        kind: "scalar",
+        localName: "scoring_penalty_relay_cluster",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 13,
+        name: "ack_relay",
+        kind: "scalar",
+        localName: "ack_relay",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 14,
+        name: "legacy_ack_e2e",
+        kind: "scalar",
+        localName: "legacy_ack_e2e",
+        jsonName: "legacyAckE2e",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 15,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "client_connection_id",
+        kind: "scalar",
+        localName: "client_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 8,
+        name: "seq_num_r2c",
+        kind: "scalar",
+        localName: "seq_num_r2c",
+        jsonName: "seqNumR2c",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "seq_num_e2e",
+        kind: "scalar",
+        localName: "seq_num_e2e",
+        jsonName: "seqNumE2e",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramConnectionStatsRouterToClient>,
+  ): CMsgSteamDatagramConnectionStatsRouterToClient {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.ack_relay = [];
+    message.legacy_ack_e2e = [];
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamDatagramConnectionStatsRouterToClient>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramConnectionStatsRouterToClient,
+  ): CMsgSteamDatagramConnectionStatsRouterToClient {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgSteamDatagramConnectionQuality quality_relay */ 1:
+          message.quality_relay = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.quality_relay,
+          );
+          break;
+        case /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];*/ 2:
+          message.quality_e2e = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.quality_e2e,
+          );
+          break;
+        case /* optional uint32 seconds_until_shutdown */ 6:
+          message.seconds_until_shutdown = reader.uint32();
+          break;
+        case /* optional fixed32 migrate_request_ip */ 10:
+          message.migrate_request_ip = reader.fixed32();
+          break;
+        case /* optional uint32 migrate_request_port */ 11:
+          message.migrate_request_port = reader.uint32();
+          break;
+        case /* optional uint32 scoring_penalty_relay_cluster */ 12:
+          message.scoring_penalty_relay_cluster = reader.uint32();
+          break;
+        case /* repeated fixed32 ack_relay */ 13:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.ack_relay.push(reader.fixed32());
+          else message.ack_relay.push(reader.fixed32());
+          break;
+        case /* repeated fixed32 legacy_ack_e2e = 14 [json_name = "legacyAckE2e"];*/ 14:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.legacy_ack_e2e.push(reader.fixed32());
+          else message.legacy_ack_e2e.push(reader.fixed32());
+          break;
+        case /* optional uint32 flags */ 15:
+          message.flags = reader.uint32();
+          break;
+        case /* optional fixed32 client_connection_id */ 7:
+          message.client_connection_id = reader.fixed32();
+          break;
+        case /* optional uint32 seq_num_r2c = 8 [json_name = "seqNumR2c"];*/ 8:
+          message.seq_num_r2c = reader.uint32();
+          break;
+        case /* optional uint32 seq_num_e2e = 9 [json_name = "seqNumE2e"];*/ 9:
+          message.seq_num_e2e = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramConnectionStatsRouterToClient,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgSteamDatagramConnectionQuality quality_relay = 1; */
+    if (message.quality_relay)
+      CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
+        message.quality_relay,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"]; */
+    if (message.quality_e2e)
+      CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
+        message.quality_e2e,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 seconds_until_shutdown = 6; */
+    if (message.seconds_until_shutdown !== undefined)
+      writer.tag(6, WireType.Varint).uint32(message.seconds_until_shutdown);
+    /* optional fixed32 migrate_request_ip = 10; */
+    if (message.migrate_request_ip !== undefined) writer.tag(10, WireType.Bit32).fixed32(message.migrate_request_ip);
+    /* optional uint32 migrate_request_port = 11; */
+    if (message.migrate_request_port !== undefined)
+      writer.tag(11, WireType.Varint).uint32(message.migrate_request_port);
+    /* optional uint32 scoring_penalty_relay_cluster = 12; */
+    if (message.scoring_penalty_relay_cluster !== undefined)
+      writer.tag(12, WireType.Varint).uint32(message.scoring_penalty_relay_cluster);
+    /* repeated fixed32 ack_relay = 13; */
+    for (let i = 0; i < message.ack_relay.length; i++) writer.tag(13, WireType.Bit32).fixed32(message.ack_relay[i]);
+    /* repeated fixed32 legacy_ack_e2e = 14 [json_name = "legacyAckE2e"]; */
+    for (let i = 0; i < message.legacy_ack_e2e.length; i++)
+      writer.tag(14, WireType.Bit32).fixed32(message.legacy_ack_e2e[i]);
+    /* optional uint32 flags = 15; */
+    if (message.flags !== undefined) writer.tag(15, WireType.Varint).uint32(message.flags);
+    /* optional fixed32 client_connection_id = 7; */
+    if (message.client_connection_id !== undefined) writer.tag(7, WireType.Bit32).fixed32(message.client_connection_id);
+    /* optional uint32 seq_num_r2c = 8 [json_name = "seqNumR2c"]; */
+    if (message.seq_num_r2c !== undefined) writer.tag(8, WireType.Varint).uint32(message.seq_num_r2c);
+    /* optional uint32 seq_num_e2e = 9 [json_name = "seqNumE2e"]; */
+    if (message.seq_num_e2e !== undefined) writer.tag(9, WireType.Varint).uint32(message.seq_num_e2e);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramConnectionStatsRouterToClient
@@ -6452,250 +6452,250 @@ class CMsgSteamDatagramConnectionStatsRouterToClient$Type extends MessageType<CM
 export const CMsgSteamDatagramConnectionStatsRouterToClient = new CMsgSteamDatagramConnectionStatsRouterToClient$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramConnectionStatsRouterToServer$Type extends MessageType<CMsgSteamDatagramConnectionStatsRouterToServer> {
-	constructor() {
-		super("CMsgSteamDatagramConnectionStatsRouterToServer", [
-			{
-				no: 1,
-				name: "quality_relay",
-				kind: "message",
-				localName: "quality_relay",
-				T: () => CMsgSteamDatagramConnectionQuality,
-			},
-			{
-				no: 2,
-				name: "quality_e2e",
-				kind: "message",
-				localName: "quality_e2e",
-				jsonName: "qualityE2e",
-				T: () => CMsgSteamDatagramConnectionQuality,
-			},
-			{
-				no: 10,
-				name: "ack_relay",
-				kind: "scalar",
-				localName: "ack_relay",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 11,
-				name: "legacy_ack_e2e",
-				kind: "scalar",
-				localName: "legacy_ack_e2e",
-				jsonName: "legacyAckE2e",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 12,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "seq_num_r2s",
-				kind: "scalar",
-				localName: "seq_num_r2s",
-				jsonName: "seqNumR2s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "seq_num_e2e",
-				kind: "scalar",
-				localName: "seq_num_e2e",
-				jsonName: "seqNumE2e",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 15,
-				name: "client_identity_string",
-				kind: "scalar",
-				localName: "client_identity_string",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 7,
-				name: "legacy_client_steam_id",
-				kind: "scalar",
-				localName: "legacy_client_steam_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 8,
-				name: "relay_session_id",
-				kind: "scalar",
-				localName: "relay_session_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "client_connection_id",
-				kind: "scalar",
-				localName: "client_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 13,
-				name: "server_connection_id",
-				kind: "scalar",
-				localName: "server_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 14,
-				name: "routing_secret",
-				kind: "scalar",
-				localName: "routing_secret",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramConnectionStatsRouterToServer>,
-	): CMsgSteamDatagramConnectionStatsRouterToServer {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.ack_relay = [];
-		message.legacy_ack_e2e = [];
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamDatagramConnectionStatsRouterToServer>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramConnectionStatsRouterToServer,
-	): CMsgSteamDatagramConnectionStatsRouterToServer {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgSteamDatagramConnectionQuality quality_relay */ 1:
-					message.quality_relay = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.quality_relay,
-					);
-					break;
-				case /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];*/ 2:
-					message.quality_e2e = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.quality_e2e,
-					);
-					break;
-				case /* repeated fixed32 ack_relay */ 10:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.ack_relay.push(reader.fixed32());
-					else message.ack_relay.push(reader.fixed32());
-					break;
-				case /* repeated fixed32 legacy_ack_e2e = 11 [json_name = "legacyAckE2e"];*/ 11:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.legacy_ack_e2e.push(reader.fixed32());
-					else message.legacy_ack_e2e.push(reader.fixed32());
-					break;
-				case /* optional uint32 flags */ 12:
-					message.flags = reader.uint32();
-					break;
-				case /* optional uint32 seq_num_r2s = 5 [json_name = "seqNumR2s"];*/ 5:
-					message.seq_num_r2s = reader.uint32();
-					break;
-				case /* optional uint32 seq_num_e2e = 6 [json_name = "seqNumE2e"];*/ 6:
-					message.seq_num_e2e = reader.uint32();
-					break;
-				case /* optional string client_identity_string */ 15:
-					message.client_identity_string = reader.string();
-					break;
-				case /* optional fixed64 legacy_client_steam_id */ 7:
-					message.legacy_client_steam_id = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 relay_session_id */ 8:
-					message.relay_session_id = reader.uint32();
-					break;
-				case /* optional fixed32 client_connection_id */ 9:
-					message.client_connection_id = reader.fixed32();
-					break;
-				case /* optional fixed32 server_connection_id */ 13:
-					message.server_connection_id = reader.fixed32();
-					break;
-				case /* optional fixed64 routing_secret */ 14:
-					message.routing_secret = reader.fixed64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramConnectionStatsRouterToServer,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgSteamDatagramConnectionQuality quality_relay = 1; */
-		if (message.quality_relay)
-			CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
-				message.quality_relay,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"]; */
-		if (message.quality_e2e)
-			CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
-				message.quality_e2e,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated fixed32 ack_relay = 10; */
-		for (let i = 0; i < message.ack_relay.length; i++) writer.tag(10, WireType.Bit32).fixed32(message.ack_relay[i]);
-		/* repeated fixed32 legacy_ack_e2e = 11 [json_name = "legacyAckE2e"]; */
-		for (let i = 0; i < message.legacy_ack_e2e.length; i++)
-			writer.tag(11, WireType.Bit32).fixed32(message.legacy_ack_e2e[i]);
-		/* optional uint32 flags = 12; */
-		if (message.flags !== undefined) writer.tag(12, WireType.Varint).uint32(message.flags);
-		/* optional uint32 seq_num_r2s = 5 [json_name = "seqNumR2s"]; */
-		if (message.seq_num_r2s !== undefined) writer.tag(5, WireType.Varint).uint32(message.seq_num_r2s);
-		/* optional uint32 seq_num_e2e = 6 [json_name = "seqNumE2e"]; */
-		if (message.seq_num_e2e !== undefined) writer.tag(6, WireType.Varint).uint32(message.seq_num_e2e);
-		/* optional string client_identity_string = 15; */
-		if (message.client_identity_string !== undefined)
-			writer.tag(15, WireType.LengthDelimited).string(message.client_identity_string);
-		/* optional fixed64 legacy_client_steam_id = 7; */
-		if (message.legacy_client_steam_id !== undefined)
-			writer.tag(7, WireType.Bit64).fixed64(message.legacy_client_steam_id);
-		/* optional uint32 relay_session_id = 8; */
-		if (message.relay_session_id !== undefined) writer.tag(8, WireType.Varint).uint32(message.relay_session_id);
-		/* optional fixed32 client_connection_id = 9; */
-		if (message.client_connection_id !== undefined) writer.tag(9, WireType.Bit32).fixed32(message.client_connection_id);
-		/* optional fixed32 server_connection_id = 13; */
-		if (message.server_connection_id !== undefined)
-			writer.tag(13, WireType.Bit32).fixed32(message.server_connection_id);
-		/* optional fixed64 routing_secret = 14; */
-		if (message.routing_secret !== undefined) writer.tag(14, WireType.Bit64).fixed64(message.routing_secret);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramConnectionStatsRouterToServer", [
+      {
+        no: 1,
+        name: "quality_relay",
+        kind: "message",
+        localName: "quality_relay",
+        T: () => CMsgSteamDatagramConnectionQuality,
+      },
+      {
+        no: 2,
+        name: "quality_e2e",
+        kind: "message",
+        localName: "quality_e2e",
+        jsonName: "qualityE2e",
+        T: () => CMsgSteamDatagramConnectionQuality,
+      },
+      {
+        no: 10,
+        name: "ack_relay",
+        kind: "scalar",
+        localName: "ack_relay",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 11,
+        name: "legacy_ack_e2e",
+        kind: "scalar",
+        localName: "legacy_ack_e2e",
+        jsonName: "legacyAckE2e",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 12,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "seq_num_r2s",
+        kind: "scalar",
+        localName: "seq_num_r2s",
+        jsonName: "seqNumR2s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "seq_num_e2e",
+        kind: "scalar",
+        localName: "seq_num_e2e",
+        jsonName: "seqNumE2e",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 15,
+        name: "client_identity_string",
+        kind: "scalar",
+        localName: "client_identity_string",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 7,
+        name: "legacy_client_steam_id",
+        kind: "scalar",
+        localName: "legacy_client_steam_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 8,
+        name: "relay_session_id",
+        kind: "scalar",
+        localName: "relay_session_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "client_connection_id",
+        kind: "scalar",
+        localName: "client_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 13,
+        name: "server_connection_id",
+        kind: "scalar",
+        localName: "server_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 14,
+        name: "routing_secret",
+        kind: "scalar",
+        localName: "routing_secret",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramConnectionStatsRouterToServer>,
+  ): CMsgSteamDatagramConnectionStatsRouterToServer {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.ack_relay = [];
+    message.legacy_ack_e2e = [];
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamDatagramConnectionStatsRouterToServer>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramConnectionStatsRouterToServer,
+  ): CMsgSteamDatagramConnectionStatsRouterToServer {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgSteamDatagramConnectionQuality quality_relay */ 1:
+          message.quality_relay = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.quality_relay,
+          );
+          break;
+        case /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];*/ 2:
+          message.quality_e2e = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.quality_e2e,
+          );
+          break;
+        case /* repeated fixed32 ack_relay */ 10:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.ack_relay.push(reader.fixed32());
+          else message.ack_relay.push(reader.fixed32());
+          break;
+        case /* repeated fixed32 legacy_ack_e2e = 11 [json_name = "legacyAckE2e"];*/ 11:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.legacy_ack_e2e.push(reader.fixed32());
+          else message.legacy_ack_e2e.push(reader.fixed32());
+          break;
+        case /* optional uint32 flags */ 12:
+          message.flags = reader.uint32();
+          break;
+        case /* optional uint32 seq_num_r2s = 5 [json_name = "seqNumR2s"];*/ 5:
+          message.seq_num_r2s = reader.uint32();
+          break;
+        case /* optional uint32 seq_num_e2e = 6 [json_name = "seqNumE2e"];*/ 6:
+          message.seq_num_e2e = reader.uint32();
+          break;
+        case /* optional string client_identity_string */ 15:
+          message.client_identity_string = reader.string();
+          break;
+        case /* optional fixed64 legacy_client_steam_id */ 7:
+          message.legacy_client_steam_id = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 relay_session_id */ 8:
+          message.relay_session_id = reader.uint32();
+          break;
+        case /* optional fixed32 client_connection_id */ 9:
+          message.client_connection_id = reader.fixed32();
+          break;
+        case /* optional fixed32 server_connection_id */ 13:
+          message.server_connection_id = reader.fixed32();
+          break;
+        case /* optional fixed64 routing_secret */ 14:
+          message.routing_secret = reader.fixed64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramConnectionStatsRouterToServer,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgSteamDatagramConnectionQuality quality_relay = 1; */
+    if (message.quality_relay)
+      CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
+        message.quality_relay,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"]; */
+    if (message.quality_e2e)
+      CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
+        message.quality_e2e,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated fixed32 ack_relay = 10; */
+    for (let i = 0; i < message.ack_relay.length; i++) writer.tag(10, WireType.Bit32).fixed32(message.ack_relay[i]);
+    /* repeated fixed32 legacy_ack_e2e = 11 [json_name = "legacyAckE2e"]; */
+    for (let i = 0; i < message.legacy_ack_e2e.length; i++)
+      writer.tag(11, WireType.Bit32).fixed32(message.legacy_ack_e2e[i]);
+    /* optional uint32 flags = 12; */
+    if (message.flags !== undefined) writer.tag(12, WireType.Varint).uint32(message.flags);
+    /* optional uint32 seq_num_r2s = 5 [json_name = "seqNumR2s"]; */
+    if (message.seq_num_r2s !== undefined) writer.tag(5, WireType.Varint).uint32(message.seq_num_r2s);
+    /* optional uint32 seq_num_e2e = 6 [json_name = "seqNumE2e"]; */
+    if (message.seq_num_e2e !== undefined) writer.tag(6, WireType.Varint).uint32(message.seq_num_e2e);
+    /* optional string client_identity_string = 15; */
+    if (message.client_identity_string !== undefined)
+      writer.tag(15, WireType.LengthDelimited).string(message.client_identity_string);
+    /* optional fixed64 legacy_client_steam_id = 7; */
+    if (message.legacy_client_steam_id !== undefined)
+      writer.tag(7, WireType.Bit64).fixed64(message.legacy_client_steam_id);
+    /* optional uint32 relay_session_id = 8; */
+    if (message.relay_session_id !== undefined) writer.tag(8, WireType.Varint).uint32(message.relay_session_id);
+    /* optional fixed32 client_connection_id = 9; */
+    if (message.client_connection_id !== undefined) writer.tag(9, WireType.Bit32).fixed32(message.client_connection_id);
+    /* optional fixed32 server_connection_id = 13; */
+    if (message.server_connection_id !== undefined)
+      writer.tag(13, WireType.Bit32).fixed32(message.server_connection_id);
+    /* optional fixed64 routing_secret = 14; */
+    if (message.routing_secret !== undefined) writer.tag(14, WireType.Bit64).fixed64(message.routing_secret);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramConnectionStatsRouterToServer
@@ -6703,207 +6703,207 @@ class CMsgSteamDatagramConnectionStatsRouterToServer$Type extends MessageType<CM
 export const CMsgSteamDatagramConnectionStatsRouterToServer = new CMsgSteamDatagramConnectionStatsRouterToServer$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramConnectionStatsServerToRouter$Type extends MessageType<CMsgSteamDatagramConnectionStatsServerToRouter> {
-	constructor() {
-		super("CMsgSteamDatagramConnectionStatsServerToRouter", [
-			{
-				no: 1,
-				name: "quality_relay",
-				kind: "message",
-				localName: "quality_relay",
-				T: () => CMsgSteamDatagramConnectionQuality,
-			},
-			{
-				no: 2,
-				name: "quality_e2e",
-				kind: "message",
-				localName: "quality_e2e",
-				jsonName: "qualityE2e",
-				T: () => CMsgSteamDatagramConnectionQuality,
-			},
-			{
-				no: 8,
-				name: "ack_relay",
-				kind: "scalar",
-				localName: "ack_relay",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 9,
-				name: "legacy_ack_e2e",
-				kind: "scalar",
-				localName: "legacy_ack_e2e",
-				jsonName: "legacyAckE2e",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 10,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "seq_num_s2r",
-				kind: "scalar",
-				localName: "seq_num_s2r",
-				jsonName: "seqNumS2r",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "seq_num_e2e",
-				kind: "scalar",
-				localName: "seq_num_e2e",
-				jsonName: "seqNumE2e",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "relay_session_id",
-				kind: "scalar",
-				localName: "relay_session_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "client_connection_id",
-				kind: "scalar",
-				localName: "client_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 11,
-				name: "server_connection_id",
-				kind: "scalar",
-				localName: "server_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramConnectionStatsServerToRouter>,
-	): CMsgSteamDatagramConnectionStatsServerToRouter {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.ack_relay = [];
-		message.legacy_ack_e2e = [];
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamDatagramConnectionStatsServerToRouter>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramConnectionStatsServerToRouter,
-	): CMsgSteamDatagramConnectionStatsServerToRouter {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgSteamDatagramConnectionQuality quality_relay */ 1:
-					message.quality_relay = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.quality_relay,
-					);
-					break;
-				case /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];*/ 2:
-					message.quality_e2e = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.quality_e2e,
-					);
-					break;
-				case /* repeated fixed32 ack_relay */ 8:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.ack_relay.push(reader.fixed32());
-					else message.ack_relay.push(reader.fixed32());
-					break;
-				case /* repeated fixed32 legacy_ack_e2e = 9 [json_name = "legacyAckE2e"];*/ 9:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.legacy_ack_e2e.push(reader.fixed32());
-					else message.legacy_ack_e2e.push(reader.fixed32());
-					break;
-				case /* optional uint32 flags */ 10:
-					message.flags = reader.uint32();
-					break;
-				case /* optional uint32 seq_num_s2r = 3 [json_name = "seqNumS2r"];*/ 3:
-					message.seq_num_s2r = reader.uint32();
-					break;
-				case /* optional uint32 seq_num_e2e = 4 [json_name = "seqNumE2e"];*/ 4:
-					message.seq_num_e2e = reader.uint32();
-					break;
-				case /* optional uint32 relay_session_id */ 6:
-					message.relay_session_id = reader.uint32();
-					break;
-				case /* optional fixed32 client_connection_id */ 7:
-					message.client_connection_id = reader.fixed32();
-					break;
-				case /* optional fixed32 server_connection_id */ 11:
-					message.server_connection_id = reader.fixed32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramConnectionStatsServerToRouter,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgSteamDatagramConnectionQuality quality_relay = 1; */
-		if (message.quality_relay)
-			CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
-				message.quality_relay,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"]; */
-		if (message.quality_e2e)
-			CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
-				message.quality_e2e,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated fixed32 ack_relay = 8; */
-		for (let i = 0; i < message.ack_relay.length; i++) writer.tag(8, WireType.Bit32).fixed32(message.ack_relay[i]);
-		/* repeated fixed32 legacy_ack_e2e = 9 [json_name = "legacyAckE2e"]; */
-		for (let i = 0; i < message.legacy_ack_e2e.length; i++)
-			writer.tag(9, WireType.Bit32).fixed32(message.legacy_ack_e2e[i]);
-		/* optional uint32 flags = 10; */
-		if (message.flags !== undefined) writer.tag(10, WireType.Varint).uint32(message.flags);
-		/* optional uint32 seq_num_s2r = 3 [json_name = "seqNumS2r"]; */
-		if (message.seq_num_s2r !== undefined) writer.tag(3, WireType.Varint).uint32(message.seq_num_s2r);
-		/* optional uint32 seq_num_e2e = 4 [json_name = "seqNumE2e"]; */
-		if (message.seq_num_e2e !== undefined) writer.tag(4, WireType.Varint).uint32(message.seq_num_e2e);
-		/* optional uint32 relay_session_id = 6; */
-		if (message.relay_session_id !== undefined) writer.tag(6, WireType.Varint).uint32(message.relay_session_id);
-		/* optional fixed32 client_connection_id = 7; */
-		if (message.client_connection_id !== undefined) writer.tag(7, WireType.Bit32).fixed32(message.client_connection_id);
-		/* optional fixed32 server_connection_id = 11; */
-		if (message.server_connection_id !== undefined)
-			writer.tag(11, WireType.Bit32).fixed32(message.server_connection_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramConnectionStatsServerToRouter", [
+      {
+        no: 1,
+        name: "quality_relay",
+        kind: "message",
+        localName: "quality_relay",
+        T: () => CMsgSteamDatagramConnectionQuality,
+      },
+      {
+        no: 2,
+        name: "quality_e2e",
+        kind: "message",
+        localName: "quality_e2e",
+        jsonName: "qualityE2e",
+        T: () => CMsgSteamDatagramConnectionQuality,
+      },
+      {
+        no: 8,
+        name: "ack_relay",
+        kind: "scalar",
+        localName: "ack_relay",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 9,
+        name: "legacy_ack_e2e",
+        kind: "scalar",
+        localName: "legacy_ack_e2e",
+        jsonName: "legacyAckE2e",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 10,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "seq_num_s2r",
+        kind: "scalar",
+        localName: "seq_num_s2r",
+        jsonName: "seqNumS2r",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "seq_num_e2e",
+        kind: "scalar",
+        localName: "seq_num_e2e",
+        jsonName: "seqNumE2e",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "relay_session_id",
+        kind: "scalar",
+        localName: "relay_session_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "client_connection_id",
+        kind: "scalar",
+        localName: "client_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 11,
+        name: "server_connection_id",
+        kind: "scalar",
+        localName: "server_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramConnectionStatsServerToRouter>,
+  ): CMsgSteamDatagramConnectionStatsServerToRouter {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.ack_relay = [];
+    message.legacy_ack_e2e = [];
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamDatagramConnectionStatsServerToRouter>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramConnectionStatsServerToRouter,
+  ): CMsgSteamDatagramConnectionStatsServerToRouter {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgSteamDatagramConnectionQuality quality_relay */ 1:
+          message.quality_relay = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.quality_relay,
+          );
+          break;
+        case /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];*/ 2:
+          message.quality_e2e = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.quality_e2e,
+          );
+          break;
+        case /* repeated fixed32 ack_relay */ 8:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.ack_relay.push(reader.fixed32());
+          else message.ack_relay.push(reader.fixed32());
+          break;
+        case /* repeated fixed32 legacy_ack_e2e = 9 [json_name = "legacyAckE2e"];*/ 9:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.legacy_ack_e2e.push(reader.fixed32());
+          else message.legacy_ack_e2e.push(reader.fixed32());
+          break;
+        case /* optional uint32 flags */ 10:
+          message.flags = reader.uint32();
+          break;
+        case /* optional uint32 seq_num_s2r = 3 [json_name = "seqNumS2r"];*/ 3:
+          message.seq_num_s2r = reader.uint32();
+          break;
+        case /* optional uint32 seq_num_e2e = 4 [json_name = "seqNumE2e"];*/ 4:
+          message.seq_num_e2e = reader.uint32();
+          break;
+        case /* optional uint32 relay_session_id */ 6:
+          message.relay_session_id = reader.uint32();
+          break;
+        case /* optional fixed32 client_connection_id */ 7:
+          message.client_connection_id = reader.fixed32();
+          break;
+        case /* optional fixed32 server_connection_id */ 11:
+          message.server_connection_id = reader.fixed32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramConnectionStatsServerToRouter,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgSteamDatagramConnectionQuality quality_relay = 1; */
+    if (message.quality_relay)
+      CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
+        message.quality_relay,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"]; */
+    if (message.quality_e2e)
+      CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
+        message.quality_e2e,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated fixed32 ack_relay = 8; */
+    for (let i = 0; i < message.ack_relay.length; i++) writer.tag(8, WireType.Bit32).fixed32(message.ack_relay[i]);
+    /* repeated fixed32 legacy_ack_e2e = 9 [json_name = "legacyAckE2e"]; */
+    for (let i = 0; i < message.legacy_ack_e2e.length; i++)
+      writer.tag(9, WireType.Bit32).fixed32(message.legacy_ack_e2e[i]);
+    /* optional uint32 flags = 10; */
+    if (message.flags !== undefined) writer.tag(10, WireType.Varint).uint32(message.flags);
+    /* optional uint32 seq_num_s2r = 3 [json_name = "seqNumS2r"]; */
+    if (message.seq_num_s2r !== undefined) writer.tag(3, WireType.Varint).uint32(message.seq_num_s2r);
+    /* optional uint32 seq_num_e2e = 4 [json_name = "seqNumE2e"]; */
+    if (message.seq_num_e2e !== undefined) writer.tag(4, WireType.Varint).uint32(message.seq_num_e2e);
+    /* optional uint32 relay_session_id = 6; */
+    if (message.relay_session_id !== undefined) writer.tag(6, WireType.Varint).uint32(message.relay_session_id);
+    /* optional fixed32 client_connection_id = 7; */
+    if (message.client_connection_id !== undefined) writer.tag(7, WireType.Bit32).fixed32(message.client_connection_id);
+    /* optional fixed32 server_connection_id = 11; */
+    if (message.server_connection_id !== undefined)
+      writer.tag(11, WireType.Bit32).fixed32(message.server_connection_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramConnectionStatsServerToRouter
@@ -6911,218 +6911,218 @@ class CMsgSteamDatagramConnectionStatsServerToRouter$Type extends MessageType<CM
 export const CMsgSteamDatagramConnectionStatsServerToRouter = new CMsgSteamDatagramConnectionStatsServerToRouter$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramP2PSessionRequestBody$Type extends MessageType<CMsgSteamDatagramP2PSessionRequestBody> {
-	constructor() {
-		super("CMsgSteamDatagramP2PSessionRequestBody", [
-			{
-				no: 1,
-				name: "challenge_time",
-				kind: "scalar",
-				localName: "challenge_time",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "challenge",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "client_connection_id",
-				kind: "scalar",
-				localName: "client_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 4,
-				name: "legacy_peer_steam_id",
-				kind: "scalar",
-				localName: "legacy_peer_steam_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 11,
-				name: "peer_identity_string",
-				kind: "scalar",
-				localName: "peer_identity_string",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 5,
-				name: "peer_connection_id",
-				kind: "scalar",
-				localName: "peer_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 14,
-				name: "encrypted_data",
-				kind: "scalar",
-				localName: "encrypted_data",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 15,
-				name: "encryption_your_public_key_lead_byte",
-				kind: "scalar",
-				localName: "encryption_your_public_key_lead_byte",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 16,
-				name: "encryption_my_ephemeral_public_key",
-				kind: "scalar",
-				localName: "encryption_my_ephemeral_public_key",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 8,
-				name: "protocol_version",
-				kind: "scalar",
-				localName: "protocol_version",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "network_config_version",
-				kind: "scalar",
-				localName: "network_config_version",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 12,
-				name: "platform",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 13,
-				name: "build",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramP2PSessionRequestBody>): CMsgSteamDatagramP2PSessionRequestBody {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramP2PSessionRequestBody>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramP2PSessionRequestBody,
-	): CMsgSteamDatagramP2PSessionRequestBody {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 challenge_time */ 1:
-					message.challenge_time = reader.fixed32();
-					break;
-				case /* optional fixed64 challenge */ 2:
-					message.challenge = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed32 client_connection_id */ 3:
-					message.client_connection_id = reader.fixed32();
-					break;
-				case /* optional fixed64 legacy_peer_steam_id */ 4:
-					message.legacy_peer_steam_id = reader.fixed64().toBigInt();
-					break;
-				case /* optional string peer_identity_string */ 11:
-					message.peer_identity_string = reader.string();
-					break;
-				case /* optional fixed32 peer_connection_id */ 5:
-					message.peer_connection_id = reader.fixed32();
-					break;
-				case /* optional bytes encrypted_data */ 14:
-					message.encrypted_data = reader.bytes();
-					break;
-				case /* optional uint32 encryption_your_public_key_lead_byte */ 15:
-					message.encryption_your_public_key_lead_byte = reader.uint32();
-					break;
-				case /* optional bytes encryption_my_ephemeral_public_key */ 16:
-					message.encryption_my_ephemeral_public_key = reader.bytes();
-					break;
-				case /* optional uint32 protocol_version */ 8:
-					message.protocol_version = reader.uint32();
-					break;
-				case /* optional uint64 network_config_version */ 9:
-					message.network_config_version = reader.uint64().toBigInt();
-					break;
-				case /* optional string platform */ 12:
-					message.platform = reader.string();
-					break;
-				case /* optional string build */ 13:
-					message.build = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramP2PSessionRequestBody,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 challenge_time = 1; */
-		if (message.challenge_time !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.challenge_time);
-		/* optional fixed64 challenge = 2; */
-		if (message.challenge !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.challenge);
-		/* optional fixed32 client_connection_id = 3; */
-		if (message.client_connection_id !== undefined) writer.tag(3, WireType.Bit32).fixed32(message.client_connection_id);
-		/* optional fixed64 legacy_peer_steam_id = 4; */
-		if (message.legacy_peer_steam_id !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.legacy_peer_steam_id);
-		/* optional string peer_identity_string = 11; */
-		if (message.peer_identity_string !== undefined)
-			writer.tag(11, WireType.LengthDelimited).string(message.peer_identity_string);
-		/* optional fixed32 peer_connection_id = 5; */
-		if (message.peer_connection_id !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.peer_connection_id);
-		/* optional bytes encrypted_data = 14; */
-		if (message.encrypted_data !== undefined) writer.tag(14, WireType.LengthDelimited).bytes(message.encrypted_data);
-		/* optional uint32 encryption_your_public_key_lead_byte = 15; */
-		if (message.encryption_your_public_key_lead_byte !== undefined)
-			writer.tag(15, WireType.Varint).uint32(message.encryption_your_public_key_lead_byte);
-		/* optional bytes encryption_my_ephemeral_public_key = 16; */
-		if (message.encryption_my_ephemeral_public_key !== undefined)
-			writer.tag(16, WireType.LengthDelimited).bytes(message.encryption_my_ephemeral_public_key);
-		/* optional uint32 protocol_version = 8; */
-		if (message.protocol_version !== undefined) writer.tag(8, WireType.Varint).uint32(message.protocol_version);
-		/* optional uint64 network_config_version = 9; */
-		if (message.network_config_version !== undefined)
-			writer.tag(9, WireType.Varint).uint64(message.network_config_version);
-		/* optional string platform = 12; */
-		if (message.platform !== undefined) writer.tag(12, WireType.LengthDelimited).string(message.platform);
-		/* optional string build = 13; */
-		if (message.build !== undefined) writer.tag(13, WireType.LengthDelimited).string(message.build);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramP2PSessionRequestBody", [
+      {
+        no: 1,
+        name: "challenge_time",
+        kind: "scalar",
+        localName: "challenge_time",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "challenge",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "client_connection_id",
+        kind: "scalar",
+        localName: "client_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 4,
+        name: "legacy_peer_steam_id",
+        kind: "scalar",
+        localName: "legacy_peer_steam_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 11,
+        name: "peer_identity_string",
+        kind: "scalar",
+        localName: "peer_identity_string",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 5,
+        name: "peer_connection_id",
+        kind: "scalar",
+        localName: "peer_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 14,
+        name: "encrypted_data",
+        kind: "scalar",
+        localName: "encrypted_data",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 15,
+        name: "encryption_your_public_key_lead_byte",
+        kind: "scalar",
+        localName: "encryption_your_public_key_lead_byte",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 16,
+        name: "encryption_my_ephemeral_public_key",
+        kind: "scalar",
+        localName: "encryption_my_ephemeral_public_key",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 8,
+        name: "protocol_version",
+        kind: "scalar",
+        localName: "protocol_version",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "network_config_version",
+        kind: "scalar",
+        localName: "network_config_version",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 12,
+        name: "platform",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 13,
+        name: "build",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramP2PSessionRequestBody>): CMsgSteamDatagramP2PSessionRequestBody {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramP2PSessionRequestBody>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramP2PSessionRequestBody,
+  ): CMsgSteamDatagramP2PSessionRequestBody {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 challenge_time */ 1:
+          message.challenge_time = reader.fixed32();
+          break;
+        case /* optional fixed64 challenge */ 2:
+          message.challenge = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed32 client_connection_id */ 3:
+          message.client_connection_id = reader.fixed32();
+          break;
+        case /* optional fixed64 legacy_peer_steam_id */ 4:
+          message.legacy_peer_steam_id = reader.fixed64().toBigInt();
+          break;
+        case /* optional string peer_identity_string */ 11:
+          message.peer_identity_string = reader.string();
+          break;
+        case /* optional fixed32 peer_connection_id */ 5:
+          message.peer_connection_id = reader.fixed32();
+          break;
+        case /* optional bytes encrypted_data */ 14:
+          message.encrypted_data = reader.bytes();
+          break;
+        case /* optional uint32 encryption_your_public_key_lead_byte */ 15:
+          message.encryption_your_public_key_lead_byte = reader.uint32();
+          break;
+        case /* optional bytes encryption_my_ephemeral_public_key */ 16:
+          message.encryption_my_ephemeral_public_key = reader.bytes();
+          break;
+        case /* optional uint32 protocol_version */ 8:
+          message.protocol_version = reader.uint32();
+          break;
+        case /* optional uint64 network_config_version */ 9:
+          message.network_config_version = reader.uint64().toBigInt();
+          break;
+        case /* optional string platform */ 12:
+          message.platform = reader.string();
+          break;
+        case /* optional string build */ 13:
+          message.build = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramP2PSessionRequestBody,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 challenge_time = 1; */
+    if (message.challenge_time !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.challenge_time);
+    /* optional fixed64 challenge = 2; */
+    if (message.challenge !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.challenge);
+    /* optional fixed32 client_connection_id = 3; */
+    if (message.client_connection_id !== undefined) writer.tag(3, WireType.Bit32).fixed32(message.client_connection_id);
+    /* optional fixed64 legacy_peer_steam_id = 4; */
+    if (message.legacy_peer_steam_id !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.legacy_peer_steam_id);
+    /* optional string peer_identity_string = 11; */
+    if (message.peer_identity_string !== undefined)
+      writer.tag(11, WireType.LengthDelimited).string(message.peer_identity_string);
+    /* optional fixed32 peer_connection_id = 5; */
+    if (message.peer_connection_id !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.peer_connection_id);
+    /* optional bytes encrypted_data = 14; */
+    if (message.encrypted_data !== undefined) writer.tag(14, WireType.LengthDelimited).bytes(message.encrypted_data);
+    /* optional uint32 encryption_your_public_key_lead_byte = 15; */
+    if (message.encryption_your_public_key_lead_byte !== undefined)
+      writer.tag(15, WireType.Varint).uint32(message.encryption_your_public_key_lead_byte);
+    /* optional bytes encryption_my_ephemeral_public_key = 16; */
+    if (message.encryption_my_ephemeral_public_key !== undefined)
+      writer.tag(16, WireType.LengthDelimited).bytes(message.encryption_my_ephemeral_public_key);
+    /* optional uint32 protocol_version = 8; */
+    if (message.protocol_version !== undefined) writer.tag(8, WireType.Varint).uint32(message.protocol_version);
+    /* optional uint64 network_config_version = 9; */
+    if (message.network_config_version !== undefined)
+      writer.tag(9, WireType.Varint).uint64(message.network_config_version);
+    /* optional string platform = 12; */
+    if (message.platform !== undefined) writer.tag(12, WireType.LengthDelimited).string(message.platform);
+    /* optional string build = 13; */
+    if (message.build !== undefined) writer.tag(13, WireType.LengthDelimited).string(message.build);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramP2PSessionRequestBody
@@ -7130,154 +7130,154 @@ class CMsgSteamDatagramP2PSessionRequestBody$Type extends MessageType<CMsgSteamD
 export const CMsgSteamDatagramP2PSessionRequestBody = new CMsgSteamDatagramP2PSessionRequestBody$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramP2PSessionRequestBody_EncryptedData$Type extends MessageType<CMsgSteamDatagramP2PSessionRequestBody_EncryptedData> {
-	constructor() {
-		super("CMsgSteamDatagramP2PSessionRequestBody.EncryptedData", [
-			{
-				no: 1,
-				name: "peer_identity_string",
-				kind: "scalar",
-				localName: "peer_identity_string",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramP2PSessionRequestBody_EncryptedData>,
-	): CMsgSteamDatagramP2PSessionRequestBody_EncryptedData {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamDatagramP2PSessionRequestBody_EncryptedData>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramP2PSessionRequestBody_EncryptedData,
-	): CMsgSteamDatagramP2PSessionRequestBody_EncryptedData {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string peer_identity_string */ 1:
-					message.peer_identity_string = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramP2PSessionRequestBody_EncryptedData,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string peer_identity_string = 1; */
-		if (message.peer_identity_string !== undefined)
-			writer.tag(1, WireType.LengthDelimited).string(message.peer_identity_string);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramP2PSessionRequestBody.EncryptedData", [
+      {
+        no: 1,
+        name: "peer_identity_string",
+        kind: "scalar",
+        localName: "peer_identity_string",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramP2PSessionRequestBody_EncryptedData>,
+  ): CMsgSteamDatagramP2PSessionRequestBody_EncryptedData {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamDatagramP2PSessionRequestBody_EncryptedData>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramP2PSessionRequestBody_EncryptedData,
+  ): CMsgSteamDatagramP2PSessionRequestBody_EncryptedData {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string peer_identity_string */ 1:
+          message.peer_identity_string = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramP2PSessionRequestBody_EncryptedData,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string peer_identity_string = 1; */
+    if (message.peer_identity_string !== undefined)
+      writer.tag(1, WireType.LengthDelimited).string(message.peer_identity_string);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramP2PSessionRequestBody.EncryptedData
  */
 export const CMsgSteamDatagramP2PSessionRequestBody_EncryptedData =
-	new CMsgSteamDatagramP2PSessionRequestBody_EncryptedData$Type();
+  new CMsgSteamDatagramP2PSessionRequestBody_EncryptedData$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramP2PSessionRequest$Type extends MessageType<CMsgSteamDatagramP2PSessionRequest> {
-	constructor() {
-		super("CMsgSteamDatagramP2PSessionRequest", [
-			{
-				no: 1,
-				name: "cert",
-				kind: "message",
-				T: () => CMsgSteamDatagramCertificateSigned,
-			},
-			{
-				no: 2,
-				name: "body",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 3,
-				name: "signature",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramP2PSessionRequest>): CMsgSteamDatagramP2PSessionRequest {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramP2PSessionRequest>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramP2PSessionRequest,
-	): CMsgSteamDatagramP2PSessionRequest {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgSteamDatagramCertificateSigned cert */ 1:
-					message.cert = CMsgSteamDatagramCertificateSigned.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.cert,
-					);
-					break;
-				case /* optional bytes body */ 2:
-					message.body = reader.bytes();
-					break;
-				case /* optional bytes signature */ 3:
-					message.signature = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramP2PSessionRequest,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgSteamDatagramCertificateSigned cert = 1; */
-		if (message.cert)
-			CMsgSteamDatagramCertificateSigned.internalBinaryWrite(
-				message.cert,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional bytes body = 2; */
-		if (message.body !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.body);
-		/* optional bytes signature = 3; */
-		if (message.signature !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.signature);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramP2PSessionRequest", [
+      {
+        no: 1,
+        name: "cert",
+        kind: "message",
+        T: () => CMsgSteamDatagramCertificateSigned,
+      },
+      {
+        no: 2,
+        name: "body",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 3,
+        name: "signature",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramP2PSessionRequest>): CMsgSteamDatagramP2PSessionRequest {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramP2PSessionRequest>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramP2PSessionRequest,
+  ): CMsgSteamDatagramP2PSessionRequest {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgSteamDatagramCertificateSigned cert */ 1:
+          message.cert = CMsgSteamDatagramCertificateSigned.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.cert,
+          );
+          break;
+        case /* optional bytes body */ 2:
+          message.body = reader.bytes();
+          break;
+        case /* optional bytes signature */ 3:
+          message.signature = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramP2PSessionRequest,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgSteamDatagramCertificateSigned cert = 1; */
+    if (message.cert)
+      CMsgSteamDatagramCertificateSigned.internalBinaryWrite(
+        message.cert,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional bytes body = 2; */
+    if (message.body !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.body);
+    /* optional bytes signature = 3; */
+    if (message.signature !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.signature);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramP2PSessionRequest
@@ -7285,100 +7285,100 @@ class CMsgSteamDatagramP2PSessionRequest$Type extends MessageType<CMsgSteamDatag
 export const CMsgSteamDatagramP2PSessionRequest = new CMsgSteamDatagramP2PSessionRequest$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramP2PSessionEstablished$Type extends MessageType<CMsgSteamDatagramP2PSessionEstablished> {
-	constructor() {
-		super("CMsgSteamDatagramP2PSessionEstablished", [
-			{
-				no: 1,
-				name: "connection_id",
-				kind: "scalar",
-				localName: "connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 3,
-				name: "seconds_until_shutdown",
-				kind: "scalar",
-				localName: "seconds_until_shutdown",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "relay_routing_token",
-				kind: "scalar",
-				localName: "relay_routing_token",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 5,
-				name: "seq_num_r2c",
-				kind: "scalar",
-				localName: "seq_num_r2c",
-				jsonName: "seqNumR2c",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramP2PSessionEstablished>): CMsgSteamDatagramP2PSessionEstablished {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramP2PSessionEstablished>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramP2PSessionEstablished,
-	): CMsgSteamDatagramP2PSessionEstablished {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 connection_id */ 1:
-					message.connection_id = reader.fixed32();
-					break;
-				case /* optional uint32 seconds_until_shutdown */ 3:
-					message.seconds_until_shutdown = reader.uint32();
-					break;
-				case /* optional bytes relay_routing_token */ 4:
-					message.relay_routing_token = reader.bytes();
-					break;
-				case /* optional uint32 seq_num_r2c = 5 [json_name = "seqNumR2c"];*/ 5:
-					message.seq_num_r2c = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramP2PSessionEstablished,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 connection_id = 1; */
-		if (message.connection_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.connection_id);
-		/* optional uint32 seconds_until_shutdown = 3; */
-		if (message.seconds_until_shutdown !== undefined)
-			writer.tag(3, WireType.Varint).uint32(message.seconds_until_shutdown);
-		/* optional bytes relay_routing_token = 4; */
-		if (message.relay_routing_token !== undefined)
-			writer.tag(4, WireType.LengthDelimited).bytes(message.relay_routing_token);
-		/* optional uint32 seq_num_r2c = 5 [json_name = "seqNumR2c"]; */
-		if (message.seq_num_r2c !== undefined) writer.tag(5, WireType.Varint).uint32(message.seq_num_r2c);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramP2PSessionEstablished", [
+      {
+        no: 1,
+        name: "connection_id",
+        kind: "scalar",
+        localName: "connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 3,
+        name: "seconds_until_shutdown",
+        kind: "scalar",
+        localName: "seconds_until_shutdown",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "relay_routing_token",
+        kind: "scalar",
+        localName: "relay_routing_token",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 5,
+        name: "seq_num_r2c",
+        kind: "scalar",
+        localName: "seq_num_r2c",
+        jsonName: "seqNumR2c",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramP2PSessionEstablished>): CMsgSteamDatagramP2PSessionEstablished {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramP2PSessionEstablished>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramP2PSessionEstablished,
+  ): CMsgSteamDatagramP2PSessionEstablished {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 connection_id */ 1:
+          message.connection_id = reader.fixed32();
+          break;
+        case /* optional uint32 seconds_until_shutdown */ 3:
+          message.seconds_until_shutdown = reader.uint32();
+          break;
+        case /* optional bytes relay_routing_token */ 4:
+          message.relay_routing_token = reader.bytes();
+          break;
+        case /* optional uint32 seq_num_r2c = 5 [json_name = "seqNumR2c"];*/ 5:
+          message.seq_num_r2c = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramP2PSessionEstablished,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 connection_id = 1; */
+    if (message.connection_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.connection_id);
+    /* optional uint32 seconds_until_shutdown = 3; */
+    if (message.seconds_until_shutdown !== undefined)
+      writer.tag(3, WireType.Varint).uint32(message.seconds_until_shutdown);
+    /* optional bytes relay_routing_token = 4; */
+    if (message.relay_routing_token !== undefined)
+      writer.tag(4, WireType.LengthDelimited).bytes(message.relay_routing_token);
+    /* optional uint32 seq_num_r2c = 5 [json_name = "seqNumR2c"]; */
+    if (message.seq_num_r2c !== undefined) writer.tag(5, WireType.Varint).uint32(message.seq_num_r2c);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramP2PSessionEstablished
@@ -7386,637 +7386,637 @@ class CMsgSteamDatagramP2PSessionEstablished$Type extends MessageType<CMsgSteamD
 export const CMsgSteamDatagramP2PSessionEstablished = new CMsgSteamDatagramP2PSessionEstablished$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramConnectionStatsP2PClientToRouter$Type extends MessageType<CMsgSteamDatagramConnectionStatsP2PClientToRouter> {
-	constructor() {
-		super("CMsgSteamDatagramConnectionStatsP2PClientToRouter", [
-			{
-				no: 1,
-				name: "quality_relay",
-				kind: "message",
-				localName: "quality_relay",
-				T: () => CMsgSteamDatagramConnectionQuality,
-			},
-			{
-				no: 2,
-				name: "quality_e2e",
-				kind: "message",
-				localName: "quality_e2e",
-				jsonName: "qualityE2e",
-				T: () => CMsgSteamDatagramConnectionQuality,
-			},
-			{
-				no: 14,
-				name: "p2p_routing_summary",
-				kind: "message",
-				localName: "p2p_routing_summary",
-				jsonName: "p2pRoutingSummary",
-				T: () => CMsgSteamDatagramP2PRoutingSummary,
-			},
-			{
-				no: 3,
-				name: "ack_relay",
-				kind: "scalar",
-				localName: "ack_relay",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 4,
-				name: "legacy_ack_e2e",
-				kind: "scalar",
-				localName: "legacy_ack_e2e",
-				jsonName: "legacyAckE2e",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 5,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "forward_target_relay_routing_token",
-				kind: "scalar",
-				localName: "forward_target_relay_routing_token",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 7,
-				name: "forward_target_revision",
-				kind: "scalar",
-				localName: "forward_target_revision",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "routes",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 9,
-				name: "ack_peer_routes_revision",
-				kind: "scalar",
-				localName: "ack_peer_routes_revision",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "connection_id",
-				kind: "scalar",
-				localName: "connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 11,
-				name: "seq_num_c2r",
-				kind: "scalar",
-				localName: "seq_num_c2r",
-				jsonName: "seqNumC2r",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 12,
-				name: "seq_num_e2e",
-				kind: "scalar",
-				localName: "seq_num_e2e",
-				jsonName: "seqNumE2e",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramConnectionStatsP2PClientToRouter>,
-	): CMsgSteamDatagramConnectionStatsP2PClientToRouter {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.ack_relay = [];
-		message.legacy_ack_e2e = [];
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamDatagramConnectionStatsP2PClientToRouter>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramConnectionStatsP2PClientToRouter,
-	): CMsgSteamDatagramConnectionStatsP2PClientToRouter {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgSteamDatagramConnectionQuality quality_relay */ 1:
-					message.quality_relay = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.quality_relay,
-					);
-					break;
-				case /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];*/ 2:
-					message.quality_e2e = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.quality_e2e,
-					);
-					break;
-				case /* optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 14 [json_name = "p2pRoutingSummary"];*/ 14:
-					message.p2p_routing_summary = CMsgSteamDatagramP2PRoutingSummary.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.p2p_routing_summary,
-					);
-					break;
-				case /* repeated fixed32 ack_relay */ 3:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.ack_relay.push(reader.fixed32());
-					else message.ack_relay.push(reader.fixed32());
-					break;
-				case /* repeated fixed32 legacy_ack_e2e = 4 [json_name = "legacyAckE2e"];*/ 4:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.legacy_ack_e2e.push(reader.fixed32());
-					else message.legacy_ack_e2e.push(reader.fixed32());
-					break;
-				case /* optional uint32 flags */ 5:
-					message.flags = reader.uint32();
-					break;
-				case /* optional bytes forward_target_relay_routing_token */ 6:
-					message.forward_target_relay_routing_token = reader.bytes();
-					break;
-				case /* optional uint32 forward_target_revision */ 7:
-					message.forward_target_revision = reader.uint32();
-					break;
-				case /* optional bytes routes */ 8:
-					message.routes = reader.bytes();
-					break;
-				case /* optional uint32 ack_peer_routes_revision */ 9:
-					message.ack_peer_routes_revision = reader.uint32();
-					break;
-				case /* optional fixed32 connection_id */ 10:
-					message.connection_id = reader.fixed32();
-					break;
-				case /* optional uint32 seq_num_c2r = 11 [json_name = "seqNumC2r"];*/ 11:
-					message.seq_num_c2r = reader.uint32();
-					break;
-				case /* optional uint32 seq_num_e2e = 12 [json_name = "seqNumE2e"];*/ 12:
-					message.seq_num_e2e = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramConnectionStatsP2PClientToRouter,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgSteamDatagramConnectionQuality quality_relay = 1; */
-		if (message.quality_relay)
-			CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
-				message.quality_relay,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"]; */
-		if (message.quality_e2e)
-			CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
-				message.quality_e2e,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 14 [json_name = "p2pRoutingSummary"]; */
-		if (message.p2p_routing_summary)
-			CMsgSteamDatagramP2PRoutingSummary.internalBinaryWrite(
-				message.p2p_routing_summary,
-				writer.tag(14, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated fixed32 ack_relay = 3; */
-		for (let i = 0; i < message.ack_relay.length; i++) writer.tag(3, WireType.Bit32).fixed32(message.ack_relay[i]);
-		/* repeated fixed32 legacy_ack_e2e = 4 [json_name = "legacyAckE2e"]; */
-		for (let i = 0; i < message.legacy_ack_e2e.length; i++)
-			writer.tag(4, WireType.Bit32).fixed32(message.legacy_ack_e2e[i]);
-		/* optional uint32 flags = 5; */
-		if (message.flags !== undefined) writer.tag(5, WireType.Varint).uint32(message.flags);
-		/* optional bytes forward_target_relay_routing_token = 6; */
-		if (message.forward_target_relay_routing_token !== undefined)
-			writer.tag(6, WireType.LengthDelimited).bytes(message.forward_target_relay_routing_token);
-		/* optional uint32 forward_target_revision = 7; */
-		if (message.forward_target_revision !== undefined)
-			writer.tag(7, WireType.Varint).uint32(message.forward_target_revision);
-		/* optional bytes routes = 8; */
-		if (message.routes !== undefined) writer.tag(8, WireType.LengthDelimited).bytes(message.routes);
-		/* optional uint32 ack_peer_routes_revision = 9; */
-		if (message.ack_peer_routes_revision !== undefined)
-			writer.tag(9, WireType.Varint).uint32(message.ack_peer_routes_revision);
-		/* optional fixed32 connection_id = 10; */
-		if (message.connection_id !== undefined) writer.tag(10, WireType.Bit32).fixed32(message.connection_id);
-		/* optional uint32 seq_num_c2r = 11 [json_name = "seqNumC2r"]; */
-		if (message.seq_num_c2r !== undefined) writer.tag(11, WireType.Varint).uint32(message.seq_num_c2r);
-		/* optional uint32 seq_num_e2e = 12 [json_name = "seqNumE2e"]; */
-		if (message.seq_num_e2e !== undefined) writer.tag(12, WireType.Varint).uint32(message.seq_num_e2e);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramConnectionStatsP2PClientToRouter", [
+      {
+        no: 1,
+        name: "quality_relay",
+        kind: "message",
+        localName: "quality_relay",
+        T: () => CMsgSteamDatagramConnectionQuality,
+      },
+      {
+        no: 2,
+        name: "quality_e2e",
+        kind: "message",
+        localName: "quality_e2e",
+        jsonName: "qualityE2e",
+        T: () => CMsgSteamDatagramConnectionQuality,
+      },
+      {
+        no: 14,
+        name: "p2p_routing_summary",
+        kind: "message",
+        localName: "p2p_routing_summary",
+        jsonName: "p2pRoutingSummary",
+        T: () => CMsgSteamDatagramP2PRoutingSummary,
+      },
+      {
+        no: 3,
+        name: "ack_relay",
+        kind: "scalar",
+        localName: "ack_relay",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 4,
+        name: "legacy_ack_e2e",
+        kind: "scalar",
+        localName: "legacy_ack_e2e",
+        jsonName: "legacyAckE2e",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 5,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "forward_target_relay_routing_token",
+        kind: "scalar",
+        localName: "forward_target_relay_routing_token",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 7,
+        name: "forward_target_revision",
+        kind: "scalar",
+        localName: "forward_target_revision",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "routes",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 9,
+        name: "ack_peer_routes_revision",
+        kind: "scalar",
+        localName: "ack_peer_routes_revision",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "connection_id",
+        kind: "scalar",
+        localName: "connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 11,
+        name: "seq_num_c2r",
+        kind: "scalar",
+        localName: "seq_num_c2r",
+        jsonName: "seqNumC2r",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 12,
+        name: "seq_num_e2e",
+        kind: "scalar",
+        localName: "seq_num_e2e",
+        jsonName: "seqNumE2e",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramConnectionStatsP2PClientToRouter>,
+  ): CMsgSteamDatagramConnectionStatsP2PClientToRouter {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.ack_relay = [];
+    message.legacy_ack_e2e = [];
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamDatagramConnectionStatsP2PClientToRouter>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramConnectionStatsP2PClientToRouter,
+  ): CMsgSteamDatagramConnectionStatsP2PClientToRouter {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgSteamDatagramConnectionQuality quality_relay */ 1:
+          message.quality_relay = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.quality_relay,
+          );
+          break;
+        case /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];*/ 2:
+          message.quality_e2e = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.quality_e2e,
+          );
+          break;
+        case /* optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 14 [json_name = "p2pRoutingSummary"];*/ 14:
+          message.p2p_routing_summary = CMsgSteamDatagramP2PRoutingSummary.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.p2p_routing_summary,
+          );
+          break;
+        case /* repeated fixed32 ack_relay */ 3:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.ack_relay.push(reader.fixed32());
+          else message.ack_relay.push(reader.fixed32());
+          break;
+        case /* repeated fixed32 legacy_ack_e2e = 4 [json_name = "legacyAckE2e"];*/ 4:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.legacy_ack_e2e.push(reader.fixed32());
+          else message.legacy_ack_e2e.push(reader.fixed32());
+          break;
+        case /* optional uint32 flags */ 5:
+          message.flags = reader.uint32();
+          break;
+        case /* optional bytes forward_target_relay_routing_token */ 6:
+          message.forward_target_relay_routing_token = reader.bytes();
+          break;
+        case /* optional uint32 forward_target_revision */ 7:
+          message.forward_target_revision = reader.uint32();
+          break;
+        case /* optional bytes routes */ 8:
+          message.routes = reader.bytes();
+          break;
+        case /* optional uint32 ack_peer_routes_revision */ 9:
+          message.ack_peer_routes_revision = reader.uint32();
+          break;
+        case /* optional fixed32 connection_id */ 10:
+          message.connection_id = reader.fixed32();
+          break;
+        case /* optional uint32 seq_num_c2r = 11 [json_name = "seqNumC2r"];*/ 11:
+          message.seq_num_c2r = reader.uint32();
+          break;
+        case /* optional uint32 seq_num_e2e = 12 [json_name = "seqNumE2e"];*/ 12:
+          message.seq_num_e2e = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramConnectionStatsP2PClientToRouter,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgSteamDatagramConnectionQuality quality_relay = 1; */
+    if (message.quality_relay)
+      CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
+        message.quality_relay,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"]; */
+    if (message.quality_e2e)
+      CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
+        message.quality_e2e,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamDatagramP2PRoutingSummary p2p_routing_summary = 14 [json_name = "p2pRoutingSummary"]; */
+    if (message.p2p_routing_summary)
+      CMsgSteamDatagramP2PRoutingSummary.internalBinaryWrite(
+        message.p2p_routing_summary,
+        writer.tag(14, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated fixed32 ack_relay = 3; */
+    for (let i = 0; i < message.ack_relay.length; i++) writer.tag(3, WireType.Bit32).fixed32(message.ack_relay[i]);
+    /* repeated fixed32 legacy_ack_e2e = 4 [json_name = "legacyAckE2e"]; */
+    for (let i = 0; i < message.legacy_ack_e2e.length; i++)
+      writer.tag(4, WireType.Bit32).fixed32(message.legacy_ack_e2e[i]);
+    /* optional uint32 flags = 5; */
+    if (message.flags !== undefined) writer.tag(5, WireType.Varint).uint32(message.flags);
+    /* optional bytes forward_target_relay_routing_token = 6; */
+    if (message.forward_target_relay_routing_token !== undefined)
+      writer.tag(6, WireType.LengthDelimited).bytes(message.forward_target_relay_routing_token);
+    /* optional uint32 forward_target_revision = 7; */
+    if (message.forward_target_revision !== undefined)
+      writer.tag(7, WireType.Varint).uint32(message.forward_target_revision);
+    /* optional bytes routes = 8; */
+    if (message.routes !== undefined) writer.tag(8, WireType.LengthDelimited).bytes(message.routes);
+    /* optional uint32 ack_peer_routes_revision = 9; */
+    if (message.ack_peer_routes_revision !== undefined)
+      writer.tag(9, WireType.Varint).uint32(message.ack_peer_routes_revision);
+    /* optional fixed32 connection_id = 10; */
+    if (message.connection_id !== undefined) writer.tag(10, WireType.Bit32).fixed32(message.connection_id);
+    /* optional uint32 seq_num_c2r = 11 [json_name = "seqNumC2r"]; */
+    if (message.seq_num_c2r !== undefined) writer.tag(11, WireType.Varint).uint32(message.seq_num_c2r);
+    /* optional uint32 seq_num_e2e = 12 [json_name = "seqNumE2e"]; */
+    if (message.seq_num_e2e !== undefined) writer.tag(12, WireType.Varint).uint32(message.seq_num_e2e);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramConnectionStatsP2PClientToRouter
  */
 export const CMsgSteamDatagramConnectionStatsP2PClientToRouter =
-	new CMsgSteamDatagramConnectionStatsP2PClientToRouter$Type();
+  new CMsgSteamDatagramConnectionStatsP2PClientToRouter$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramConnectionStatsP2PRouterToClient$Type extends MessageType<CMsgSteamDatagramConnectionStatsP2PRouterToClient> {
-	constructor() {
-		super("CMsgSteamDatagramConnectionStatsP2PRouterToClient", [
-			{
-				no: 1,
-				name: "quality_relay",
-				kind: "message",
-				localName: "quality_relay",
-				T: () => CMsgSteamDatagramConnectionQuality,
-			},
-			{
-				no: 2,
-				name: "quality_e2e",
-				kind: "message",
-				localName: "quality_e2e",
-				jsonName: "qualityE2e",
-				T: () => CMsgSteamDatagramConnectionQuality,
-			},
-			{
-				no: 3,
-				name: "seconds_until_shutdown",
-				kind: "scalar",
-				localName: "seconds_until_shutdown",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "migrate_request_ip",
-				kind: "scalar",
-				localName: "migrate_request_ip",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 5,
-				name: "migrate_request_port",
-				kind: "scalar",
-				localName: "migrate_request_port",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "scoring_penalty_relay_cluster",
-				kind: "scalar",
-				localName: "scoring_penalty_relay_cluster",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "ack_relay",
-				kind: "scalar",
-				localName: "ack_relay",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 8,
-				name: "legacy_ack_e2e",
-				kind: "scalar",
-				localName: "legacy_ack_e2e",
-				jsonName: "legacyAckE2e",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 9,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "ack_forward_target_revision",
-				kind: "scalar",
-				localName: "ack_forward_target_revision",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 11,
-				name: "routes",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 12,
-				name: "ack_peer_routes_revision",
-				kind: "scalar",
-				localName: "ack_peer_routes_revision",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 13,
-				name: "connection_id",
-				kind: "scalar",
-				localName: "connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 14,
-				name: "seq_num_r2c",
-				kind: "scalar",
-				localName: "seq_num_r2c",
-				jsonName: "seqNumR2c",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 15,
-				name: "seq_num_e2e",
-				kind: "scalar",
-				localName: "seq_num_e2e",
-				jsonName: "seqNumE2e",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramConnectionStatsP2PRouterToClient>,
-	): CMsgSteamDatagramConnectionStatsP2PRouterToClient {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.ack_relay = [];
-		message.legacy_ack_e2e = [];
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamDatagramConnectionStatsP2PRouterToClient>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramConnectionStatsP2PRouterToClient,
-	): CMsgSteamDatagramConnectionStatsP2PRouterToClient {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgSteamDatagramConnectionQuality quality_relay */ 1:
-					message.quality_relay = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.quality_relay,
-					);
-					break;
-				case /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];*/ 2:
-					message.quality_e2e = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.quality_e2e,
-					);
-					break;
-				case /* optional uint32 seconds_until_shutdown */ 3:
-					message.seconds_until_shutdown = reader.uint32();
-					break;
-				case /* optional fixed32 migrate_request_ip */ 4:
-					message.migrate_request_ip = reader.fixed32();
-					break;
-				case /* optional uint32 migrate_request_port */ 5:
-					message.migrate_request_port = reader.uint32();
-					break;
-				case /* optional uint32 scoring_penalty_relay_cluster */ 6:
-					message.scoring_penalty_relay_cluster = reader.uint32();
-					break;
-				case /* repeated fixed32 ack_relay */ 7:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.ack_relay.push(reader.fixed32());
-					else message.ack_relay.push(reader.fixed32());
-					break;
-				case /* repeated fixed32 legacy_ack_e2e = 8 [json_name = "legacyAckE2e"];*/ 8:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.legacy_ack_e2e.push(reader.fixed32());
-					else message.legacy_ack_e2e.push(reader.fixed32());
-					break;
-				case /* optional uint32 flags */ 9:
-					message.flags = reader.uint32();
-					break;
-				case /* optional uint32 ack_forward_target_revision */ 10:
-					message.ack_forward_target_revision = reader.uint32();
-					break;
-				case /* optional bytes routes */ 11:
-					message.routes = reader.bytes();
-					break;
-				case /* optional uint32 ack_peer_routes_revision */ 12:
-					message.ack_peer_routes_revision = reader.uint32();
-					break;
-				case /* optional fixed32 connection_id */ 13:
-					message.connection_id = reader.fixed32();
-					break;
-				case /* optional uint32 seq_num_r2c = 14 [json_name = "seqNumR2c"];*/ 14:
-					message.seq_num_r2c = reader.uint32();
-					break;
-				case /* optional uint32 seq_num_e2e = 15 [json_name = "seqNumE2e"];*/ 15:
-					message.seq_num_e2e = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramConnectionStatsP2PRouterToClient,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgSteamDatagramConnectionQuality quality_relay = 1; */
-		if (message.quality_relay)
-			CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
-				message.quality_relay,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"]; */
-		if (message.quality_e2e)
-			CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
-				message.quality_e2e,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 seconds_until_shutdown = 3; */
-		if (message.seconds_until_shutdown !== undefined)
-			writer.tag(3, WireType.Varint).uint32(message.seconds_until_shutdown);
-		/* optional fixed32 migrate_request_ip = 4; */
-		if (message.migrate_request_ip !== undefined) writer.tag(4, WireType.Bit32).fixed32(message.migrate_request_ip);
-		/* optional uint32 migrate_request_port = 5; */
-		if (message.migrate_request_port !== undefined) writer.tag(5, WireType.Varint).uint32(message.migrate_request_port);
-		/* optional uint32 scoring_penalty_relay_cluster = 6; */
-		if (message.scoring_penalty_relay_cluster !== undefined)
-			writer.tag(6, WireType.Varint).uint32(message.scoring_penalty_relay_cluster);
-		/* repeated fixed32 ack_relay = 7; */
-		for (let i = 0; i < message.ack_relay.length; i++) writer.tag(7, WireType.Bit32).fixed32(message.ack_relay[i]);
-		/* repeated fixed32 legacy_ack_e2e = 8 [json_name = "legacyAckE2e"]; */
-		for (let i = 0; i < message.legacy_ack_e2e.length; i++)
-			writer.tag(8, WireType.Bit32).fixed32(message.legacy_ack_e2e[i]);
-		/* optional uint32 flags = 9; */
-		if (message.flags !== undefined) writer.tag(9, WireType.Varint).uint32(message.flags);
-		/* optional uint32 ack_forward_target_revision = 10; */
-		if (message.ack_forward_target_revision !== undefined)
-			writer.tag(10, WireType.Varint).uint32(message.ack_forward_target_revision);
-		/* optional bytes routes = 11; */
-		if (message.routes !== undefined) writer.tag(11, WireType.LengthDelimited).bytes(message.routes);
-		/* optional uint32 ack_peer_routes_revision = 12; */
-		if (message.ack_peer_routes_revision !== undefined)
-			writer.tag(12, WireType.Varint).uint32(message.ack_peer_routes_revision);
-		/* optional fixed32 connection_id = 13; */
-		if (message.connection_id !== undefined) writer.tag(13, WireType.Bit32).fixed32(message.connection_id);
-		/* optional uint32 seq_num_r2c = 14 [json_name = "seqNumR2c"]; */
-		if (message.seq_num_r2c !== undefined) writer.tag(14, WireType.Varint).uint32(message.seq_num_r2c);
-		/* optional uint32 seq_num_e2e = 15 [json_name = "seqNumE2e"]; */
-		if (message.seq_num_e2e !== undefined) writer.tag(15, WireType.Varint).uint32(message.seq_num_e2e);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramConnectionStatsP2PRouterToClient", [
+      {
+        no: 1,
+        name: "quality_relay",
+        kind: "message",
+        localName: "quality_relay",
+        T: () => CMsgSteamDatagramConnectionQuality,
+      },
+      {
+        no: 2,
+        name: "quality_e2e",
+        kind: "message",
+        localName: "quality_e2e",
+        jsonName: "qualityE2e",
+        T: () => CMsgSteamDatagramConnectionQuality,
+      },
+      {
+        no: 3,
+        name: "seconds_until_shutdown",
+        kind: "scalar",
+        localName: "seconds_until_shutdown",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "migrate_request_ip",
+        kind: "scalar",
+        localName: "migrate_request_ip",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 5,
+        name: "migrate_request_port",
+        kind: "scalar",
+        localName: "migrate_request_port",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "scoring_penalty_relay_cluster",
+        kind: "scalar",
+        localName: "scoring_penalty_relay_cluster",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "ack_relay",
+        kind: "scalar",
+        localName: "ack_relay",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 8,
+        name: "legacy_ack_e2e",
+        kind: "scalar",
+        localName: "legacy_ack_e2e",
+        jsonName: "legacyAckE2e",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 9,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "ack_forward_target_revision",
+        kind: "scalar",
+        localName: "ack_forward_target_revision",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 11,
+        name: "routes",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 12,
+        name: "ack_peer_routes_revision",
+        kind: "scalar",
+        localName: "ack_peer_routes_revision",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 13,
+        name: "connection_id",
+        kind: "scalar",
+        localName: "connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 14,
+        name: "seq_num_r2c",
+        kind: "scalar",
+        localName: "seq_num_r2c",
+        jsonName: "seqNumR2c",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 15,
+        name: "seq_num_e2e",
+        kind: "scalar",
+        localName: "seq_num_e2e",
+        jsonName: "seqNumE2e",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramConnectionStatsP2PRouterToClient>,
+  ): CMsgSteamDatagramConnectionStatsP2PRouterToClient {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.ack_relay = [];
+    message.legacy_ack_e2e = [];
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamDatagramConnectionStatsP2PRouterToClient>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramConnectionStatsP2PRouterToClient,
+  ): CMsgSteamDatagramConnectionStatsP2PRouterToClient {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgSteamDatagramConnectionQuality quality_relay */ 1:
+          message.quality_relay = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.quality_relay,
+          );
+          break;
+        case /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"];*/ 2:
+          message.quality_e2e = CMsgSteamDatagramConnectionQuality.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.quality_e2e,
+          );
+          break;
+        case /* optional uint32 seconds_until_shutdown */ 3:
+          message.seconds_until_shutdown = reader.uint32();
+          break;
+        case /* optional fixed32 migrate_request_ip */ 4:
+          message.migrate_request_ip = reader.fixed32();
+          break;
+        case /* optional uint32 migrate_request_port */ 5:
+          message.migrate_request_port = reader.uint32();
+          break;
+        case /* optional uint32 scoring_penalty_relay_cluster */ 6:
+          message.scoring_penalty_relay_cluster = reader.uint32();
+          break;
+        case /* repeated fixed32 ack_relay */ 7:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.ack_relay.push(reader.fixed32());
+          else message.ack_relay.push(reader.fixed32());
+          break;
+        case /* repeated fixed32 legacy_ack_e2e = 8 [json_name = "legacyAckE2e"];*/ 8:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.legacy_ack_e2e.push(reader.fixed32());
+          else message.legacy_ack_e2e.push(reader.fixed32());
+          break;
+        case /* optional uint32 flags */ 9:
+          message.flags = reader.uint32();
+          break;
+        case /* optional uint32 ack_forward_target_revision */ 10:
+          message.ack_forward_target_revision = reader.uint32();
+          break;
+        case /* optional bytes routes */ 11:
+          message.routes = reader.bytes();
+          break;
+        case /* optional uint32 ack_peer_routes_revision */ 12:
+          message.ack_peer_routes_revision = reader.uint32();
+          break;
+        case /* optional fixed32 connection_id */ 13:
+          message.connection_id = reader.fixed32();
+          break;
+        case /* optional uint32 seq_num_r2c = 14 [json_name = "seqNumR2c"];*/ 14:
+          message.seq_num_r2c = reader.uint32();
+          break;
+        case /* optional uint32 seq_num_e2e = 15 [json_name = "seqNumE2e"];*/ 15:
+          message.seq_num_e2e = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramConnectionStatsP2PRouterToClient,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgSteamDatagramConnectionQuality quality_relay = 1; */
+    if (message.quality_relay)
+      CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
+        message.quality_relay,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamDatagramConnectionQuality quality_e2e = 2 [json_name = "qualityE2e"]; */
+    if (message.quality_e2e)
+      CMsgSteamDatagramConnectionQuality.internalBinaryWrite(
+        message.quality_e2e,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 seconds_until_shutdown = 3; */
+    if (message.seconds_until_shutdown !== undefined)
+      writer.tag(3, WireType.Varint).uint32(message.seconds_until_shutdown);
+    /* optional fixed32 migrate_request_ip = 4; */
+    if (message.migrate_request_ip !== undefined) writer.tag(4, WireType.Bit32).fixed32(message.migrate_request_ip);
+    /* optional uint32 migrate_request_port = 5; */
+    if (message.migrate_request_port !== undefined) writer.tag(5, WireType.Varint).uint32(message.migrate_request_port);
+    /* optional uint32 scoring_penalty_relay_cluster = 6; */
+    if (message.scoring_penalty_relay_cluster !== undefined)
+      writer.tag(6, WireType.Varint).uint32(message.scoring_penalty_relay_cluster);
+    /* repeated fixed32 ack_relay = 7; */
+    for (let i = 0; i < message.ack_relay.length; i++) writer.tag(7, WireType.Bit32).fixed32(message.ack_relay[i]);
+    /* repeated fixed32 legacy_ack_e2e = 8 [json_name = "legacyAckE2e"]; */
+    for (let i = 0; i < message.legacy_ack_e2e.length; i++)
+      writer.tag(8, WireType.Bit32).fixed32(message.legacy_ack_e2e[i]);
+    /* optional uint32 flags = 9; */
+    if (message.flags !== undefined) writer.tag(9, WireType.Varint).uint32(message.flags);
+    /* optional uint32 ack_forward_target_revision = 10; */
+    if (message.ack_forward_target_revision !== undefined)
+      writer.tag(10, WireType.Varint).uint32(message.ack_forward_target_revision);
+    /* optional bytes routes = 11; */
+    if (message.routes !== undefined) writer.tag(11, WireType.LengthDelimited).bytes(message.routes);
+    /* optional uint32 ack_peer_routes_revision = 12; */
+    if (message.ack_peer_routes_revision !== undefined)
+      writer.tag(12, WireType.Varint).uint32(message.ack_peer_routes_revision);
+    /* optional fixed32 connection_id = 13; */
+    if (message.connection_id !== undefined) writer.tag(13, WireType.Bit32).fixed32(message.connection_id);
+    /* optional uint32 seq_num_r2c = 14 [json_name = "seqNumR2c"]; */
+    if (message.seq_num_r2c !== undefined) writer.tag(14, WireType.Varint).uint32(message.seq_num_r2c);
+    /* optional uint32 seq_num_e2e = 15 [json_name = "seqNumE2e"]; */
+    if (message.seq_num_e2e !== undefined) writer.tag(15, WireType.Varint).uint32(message.seq_num_e2e);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramConnectionStatsP2PRouterToClient
  */
 export const CMsgSteamDatagramConnectionStatsP2PRouterToClient =
-	new CMsgSteamDatagramConnectionStatsP2PRouterToClient$Type();
+  new CMsgSteamDatagramConnectionStatsP2PRouterToClient$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramP2PBadRouteRouterToClient$Type extends MessageType<CMsgSteamDatagramP2PBadRouteRouterToClient> {
-	constructor() {
-		super("CMsgSteamDatagramP2PBadRouteRouterToClient", [
-			{
-				no: 1,
-				name: "connection_id",
-				kind: "scalar",
-				localName: "connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "failed_relay_routing_token",
-				kind: "scalar",
-				localName: "failed_relay_routing_token",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 3,
-				name: "ack_forward_target_revision",
-				kind: "scalar",
-				localName: "ack_forward_target_revision",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 99,
-				name: "kludge_pad",
-				kind: "scalar",
-				localName: "kludge_pad",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramP2PBadRouteRouterToClient>,
-	): CMsgSteamDatagramP2PBadRouteRouterToClient {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramP2PBadRouteRouterToClient>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramP2PBadRouteRouterToClient,
-	): CMsgSteamDatagramP2PBadRouteRouterToClient {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 connection_id */ 1:
-					message.connection_id = reader.fixed32();
-					break;
-				case /* optional bytes failed_relay_routing_token */ 2:
-					message.failed_relay_routing_token = reader.bytes();
-					break;
-				case /* optional uint32 ack_forward_target_revision */ 3:
-					message.ack_forward_target_revision = reader.uint32();
-					break;
-				case /* optional fixed64 kludge_pad */ 99:
-					message.kludge_pad = reader.fixed64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramP2PBadRouteRouterToClient,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 connection_id = 1; */
-		if (message.connection_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.connection_id);
-		/* optional bytes failed_relay_routing_token = 2; */
-		if (message.failed_relay_routing_token !== undefined)
-			writer.tag(2, WireType.LengthDelimited).bytes(message.failed_relay_routing_token);
-		/* optional uint32 ack_forward_target_revision = 3; */
-		if (message.ack_forward_target_revision !== undefined)
-			writer.tag(3, WireType.Varint).uint32(message.ack_forward_target_revision);
-		/* optional fixed64 kludge_pad = 99; */
-		if (message.kludge_pad !== undefined) writer.tag(99, WireType.Bit64).fixed64(message.kludge_pad);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramP2PBadRouteRouterToClient", [
+      {
+        no: 1,
+        name: "connection_id",
+        kind: "scalar",
+        localName: "connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "failed_relay_routing_token",
+        kind: "scalar",
+        localName: "failed_relay_routing_token",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 3,
+        name: "ack_forward_target_revision",
+        kind: "scalar",
+        localName: "ack_forward_target_revision",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 99,
+        name: "kludge_pad",
+        kind: "scalar",
+        localName: "kludge_pad",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramP2PBadRouteRouterToClient>,
+  ): CMsgSteamDatagramP2PBadRouteRouterToClient {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramP2PBadRouteRouterToClient>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramP2PBadRouteRouterToClient,
+  ): CMsgSteamDatagramP2PBadRouteRouterToClient {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 connection_id */ 1:
+          message.connection_id = reader.fixed32();
+          break;
+        case /* optional bytes failed_relay_routing_token */ 2:
+          message.failed_relay_routing_token = reader.bytes();
+          break;
+        case /* optional uint32 ack_forward_target_revision */ 3:
+          message.ack_forward_target_revision = reader.uint32();
+          break;
+        case /* optional fixed64 kludge_pad */ 99:
+          message.kludge_pad = reader.fixed64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramP2PBadRouteRouterToClient,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 connection_id = 1; */
+    if (message.connection_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.connection_id);
+    /* optional bytes failed_relay_routing_token = 2; */
+    if (message.failed_relay_routing_token !== undefined)
+      writer.tag(2, WireType.LengthDelimited).bytes(message.failed_relay_routing_token);
+    /* optional uint32 ack_forward_target_revision = 3; */
+    if (message.ack_forward_target_revision !== undefined)
+      writer.tag(3, WireType.Varint).uint32(message.ack_forward_target_revision);
+    /* optional fixed64 kludge_pad = 99; */
+    if (message.kludge_pad !== undefined) writer.tag(99, WireType.Bit64).fixed64(message.kludge_pad);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramP2PBadRouteRouterToClient
@@ -8024,96 +8024,96 @@ class CMsgSteamDatagramP2PBadRouteRouterToClient$Type extends MessageType<CMsgSt
 export const CMsgSteamDatagramP2PBadRouteRouterToClient = new CMsgSteamDatagramP2PBadRouteRouterToClient$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramP2PRoutes$Type extends MessageType<CMsgSteamDatagramP2PRoutes> {
-	constructor() {
-		super("CMsgSteamDatagramP2PRoutes", [
-			{
-				no: 1,
-				name: "relay_clusters",
-				kind: "message",
-				localName: "relay_clusters",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamDatagramP2PRoutes_RelayCluster,
-			},
-			{
-				no: 2,
-				name: "routes",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamDatagramP2PRoutes_Route,
-			},
-			{
-				no: 3,
-				name: "revision",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramP2PRoutes>): CMsgSteamDatagramP2PRoutes {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.relay_clusters = [];
-		message.routes = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramP2PRoutes>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramP2PRoutes,
-	): CMsgSteamDatagramP2PRoutes {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgSteamDatagramP2PRoutes.RelayCluster relay_clusters */ 1:
-					message.relay_clusters.push(
-						CMsgSteamDatagramP2PRoutes_RelayCluster.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CMsgSteamDatagramP2PRoutes.Route routes */ 2:
-					message.routes.push(CMsgSteamDatagramP2PRoutes_Route.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* optional uint32 revision */ 3:
-					message.revision = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramP2PRoutes,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CMsgSteamDatagramP2PRoutes.RelayCluster relay_clusters = 1; */
-		for (let i = 0; i < message.relay_clusters.length; i++)
-			CMsgSteamDatagramP2PRoutes_RelayCluster.internalBinaryWrite(
-				message.relay_clusters[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamDatagramP2PRoutes.Route routes = 2; */
-		for (let i = 0; i < message.routes.length; i++)
-			CMsgSteamDatagramP2PRoutes_Route.internalBinaryWrite(
-				message.routes[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 revision = 3; */
-		if (message.revision !== undefined) writer.tag(3, WireType.Varint).uint32(message.revision);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramP2PRoutes", [
+      {
+        no: 1,
+        name: "relay_clusters",
+        kind: "message",
+        localName: "relay_clusters",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamDatagramP2PRoutes_RelayCluster,
+      },
+      {
+        no: 2,
+        name: "routes",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamDatagramP2PRoutes_Route,
+      },
+      {
+        no: 3,
+        name: "revision",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramP2PRoutes>): CMsgSteamDatagramP2PRoutes {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.relay_clusters = [];
+    message.routes = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramP2PRoutes>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramP2PRoutes,
+  ): CMsgSteamDatagramP2PRoutes {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgSteamDatagramP2PRoutes.RelayCluster relay_clusters */ 1:
+          message.relay_clusters.push(
+            CMsgSteamDatagramP2PRoutes_RelayCluster.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CMsgSteamDatagramP2PRoutes.Route routes */ 2:
+          message.routes.push(CMsgSteamDatagramP2PRoutes_Route.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* optional uint32 revision */ 3:
+          message.revision = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramP2PRoutes,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CMsgSteamDatagramP2PRoutes.RelayCluster relay_clusters = 1; */
+    for (let i = 0; i < message.relay_clusters.length; i++)
+      CMsgSteamDatagramP2PRoutes_RelayCluster.internalBinaryWrite(
+        message.relay_clusters[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamDatagramP2PRoutes.Route routes = 2; */
+    for (let i = 0; i < message.routes.length; i++)
+      CMsgSteamDatagramP2PRoutes_Route.internalBinaryWrite(
+        message.routes[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 revision = 3; */
+    if (message.revision !== undefined) writer.tag(3, WireType.Varint).uint32(message.revision);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramP2PRoutes
@@ -8121,98 +8121,98 @@ class CMsgSteamDatagramP2PRoutes$Type extends MessageType<CMsgSteamDatagramP2PRo
 export const CMsgSteamDatagramP2PRoutes = new CMsgSteamDatagramP2PRoutes$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramP2PRoutes_RelayCluster$Type extends MessageType<CMsgSteamDatagramP2PRoutes_RelayCluster> {
-	constructor() {
-		super("CMsgSteamDatagramP2PRoutes.RelayCluster", [
-			{
-				no: 1,
-				name: "pop_id",
-				kind: "scalar",
-				localName: "pop_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "ping_ms",
-				kind: "scalar",
-				localName: "ping_ms",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "score_penalty",
-				kind: "scalar",
-				localName: "score_penalty",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "session_relay_routing_token",
-				kind: "scalar",
-				localName: "session_relay_routing_token",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramP2PRoutes_RelayCluster>): CMsgSteamDatagramP2PRoutes_RelayCluster {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramP2PRoutes_RelayCluster>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramP2PRoutes_RelayCluster,
-	): CMsgSteamDatagramP2PRoutes_RelayCluster {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 pop_id */ 1:
-					message.pop_id = reader.fixed32();
-					break;
-				case /* optional uint32 ping_ms */ 2:
-					message.ping_ms = reader.uint32();
-					break;
-				case /* optional uint32 score_penalty */ 3:
-					message.score_penalty = reader.uint32();
-					break;
-				case /* optional bytes session_relay_routing_token */ 4:
-					message.session_relay_routing_token = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramP2PRoutes_RelayCluster,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 pop_id = 1; */
-		if (message.pop_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.pop_id);
-		/* optional uint32 ping_ms = 2; */
-		if (message.ping_ms !== undefined) writer.tag(2, WireType.Varint).uint32(message.ping_ms);
-		/* optional uint32 score_penalty = 3; */
-		if (message.score_penalty !== undefined) writer.tag(3, WireType.Varint).uint32(message.score_penalty);
-		/* optional bytes session_relay_routing_token = 4; */
-		if (message.session_relay_routing_token !== undefined)
-			writer.tag(4, WireType.LengthDelimited).bytes(message.session_relay_routing_token);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramP2PRoutes.RelayCluster", [
+      {
+        no: 1,
+        name: "pop_id",
+        kind: "scalar",
+        localName: "pop_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "ping_ms",
+        kind: "scalar",
+        localName: "ping_ms",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "score_penalty",
+        kind: "scalar",
+        localName: "score_penalty",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "session_relay_routing_token",
+        kind: "scalar",
+        localName: "session_relay_routing_token",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramP2PRoutes_RelayCluster>): CMsgSteamDatagramP2PRoutes_RelayCluster {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramP2PRoutes_RelayCluster>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramP2PRoutes_RelayCluster,
+  ): CMsgSteamDatagramP2PRoutes_RelayCluster {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 pop_id */ 1:
+          message.pop_id = reader.fixed32();
+          break;
+        case /* optional uint32 ping_ms */ 2:
+          message.ping_ms = reader.uint32();
+          break;
+        case /* optional uint32 score_penalty */ 3:
+          message.score_penalty = reader.uint32();
+          break;
+        case /* optional bytes session_relay_routing_token */ 4:
+          message.session_relay_routing_token = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramP2PRoutes_RelayCluster,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 pop_id = 1; */
+    if (message.pop_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.pop_id);
+    /* optional uint32 ping_ms = 2; */
+    if (message.ping_ms !== undefined) writer.tag(2, WireType.Varint).uint32(message.ping_ms);
+    /* optional uint32 score_penalty = 3; */
+    if (message.score_penalty !== undefined) writer.tag(3, WireType.Varint).uint32(message.score_penalty);
+    /* optional bytes session_relay_routing_token = 4; */
+    if (message.session_relay_routing_token !== undefined)
+      writer.tag(4, WireType.LengthDelimited).bytes(message.session_relay_routing_token);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramP2PRoutes.RelayCluster
@@ -8220,97 +8220,97 @@ class CMsgSteamDatagramP2PRoutes_RelayCluster$Type extends MessageType<CMsgSteam
 export const CMsgSteamDatagramP2PRoutes_RelayCluster = new CMsgSteamDatagramP2PRoutes_RelayCluster$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramP2PRoutes_Route$Type extends MessageType<CMsgSteamDatagramP2PRoutes_Route> {
-	constructor() {
-		super("CMsgSteamDatagramP2PRoutes.Route", [
-			{
-				no: 1,
-				name: "my_pop_id",
-				kind: "scalar",
-				localName: "my_pop_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "your_pop_id",
-				kind: "scalar",
-				localName: "your_pop_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 3,
-				name: "legacy_score",
-				kind: "scalar",
-				localName: "legacy_score",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "interior_score",
-				kind: "scalar",
-				localName: "interior_score",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamDatagramP2PRoutes_Route>): CMsgSteamDatagramP2PRoutes_Route {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramP2PRoutes_Route>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramP2PRoutes_Route,
-	): CMsgSteamDatagramP2PRoutes_Route {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 my_pop_id */ 1:
-					message.my_pop_id = reader.fixed32();
-					break;
-				case /* optional fixed32 your_pop_id */ 2:
-					message.your_pop_id = reader.fixed32();
-					break;
-				case /* optional uint32 legacy_score */ 3:
-					message.legacy_score = reader.uint32();
-					break;
-				case /* optional uint32 interior_score */ 4:
-					message.interior_score = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramP2PRoutes_Route,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 my_pop_id = 1; */
-		if (message.my_pop_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.my_pop_id);
-		/* optional fixed32 your_pop_id = 2; */
-		if (message.your_pop_id !== undefined) writer.tag(2, WireType.Bit32).fixed32(message.your_pop_id);
-		/* optional uint32 legacy_score = 3; */
-		if (message.legacy_score !== undefined) writer.tag(3, WireType.Varint).uint32(message.legacy_score);
-		/* optional uint32 interior_score = 4; */
-		if (message.interior_score !== undefined) writer.tag(4, WireType.Varint).uint32(message.interior_score);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramP2PRoutes.Route", [
+      {
+        no: 1,
+        name: "my_pop_id",
+        kind: "scalar",
+        localName: "my_pop_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "your_pop_id",
+        kind: "scalar",
+        localName: "your_pop_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 3,
+        name: "legacy_score",
+        kind: "scalar",
+        localName: "legacy_score",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "interior_score",
+        kind: "scalar",
+        localName: "interior_score",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamDatagramP2PRoutes_Route>): CMsgSteamDatagramP2PRoutes_Route {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramP2PRoutes_Route>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramP2PRoutes_Route,
+  ): CMsgSteamDatagramP2PRoutes_Route {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 my_pop_id */ 1:
+          message.my_pop_id = reader.fixed32();
+          break;
+        case /* optional fixed32 your_pop_id */ 2:
+          message.your_pop_id = reader.fixed32();
+          break;
+        case /* optional uint32 legacy_score */ 3:
+          message.legacy_score = reader.uint32();
+          break;
+        case /* optional uint32 interior_score */ 4:
+          message.interior_score = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramP2PRoutes_Route,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 my_pop_id = 1; */
+    if (message.my_pop_id !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.my_pop_id);
+    /* optional fixed32 your_pop_id = 2; */
+    if (message.your_pop_id !== undefined) writer.tag(2, WireType.Bit32).fixed32(message.your_pop_id);
+    /* optional uint32 legacy_score = 3; */
+    if (message.legacy_score !== undefined) writer.tag(3, WireType.Varint).uint32(message.legacy_score);
+    /* optional uint32 interior_score = 4; */
+    if (message.interior_score !== undefined) writer.tag(4, WireType.Varint).uint32(message.interior_score);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramP2PRoutes.Route
@@ -8318,126 +8318,126 @@ class CMsgSteamDatagramP2PRoutes_Route$Type extends MessageType<CMsgSteamDatagra
 export const CMsgSteamDatagramP2PRoutes_Route = new CMsgSteamDatagramP2PRoutes_Route$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramSetSecondaryAddressRequest$Type extends MessageType<CMsgSteamDatagramSetSecondaryAddressRequest> {
-	constructor() {
-		super("CMsgSteamDatagramSetSecondaryAddressRequest", [
-			{
-				no: 1,
-				name: "client_main_ip",
-				kind: "scalar",
-				localName: "client_main_ip",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "client_main_port",
-				kind: "scalar",
-				localName: "client_main_port",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 3,
-				name: "client_connection_id",
-				kind: "scalar",
-				localName: "client_connection_id",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 4,
-				name: "client_identity",
-				kind: "scalar",
-				localName: "client_identity",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 5,
-				name: "request_send_duplication",
-				kind: "scalar",
-				localName: "request_send_duplication",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 99,
-				name: "kludge_pad",
-				kind: "scalar",
-				localName: "kludge_pad",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramSetSecondaryAddressRequest>,
-	): CMsgSteamDatagramSetSecondaryAddressRequest {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramSetSecondaryAddressRequest>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramSetSecondaryAddressRequest,
-	): CMsgSteamDatagramSetSecondaryAddressRequest {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 client_main_ip */ 1:
-					message.client_main_ip = reader.fixed32();
-					break;
-				case /* optional fixed32 client_main_port */ 2:
-					message.client_main_port = reader.fixed32();
-					break;
-				case /* optional fixed32 client_connection_id */ 3:
-					message.client_connection_id = reader.fixed32();
-					break;
-				case /* optional string client_identity */ 4:
-					message.client_identity = reader.string();
-					break;
-				case /* optional bool request_send_duplication */ 5:
-					message.request_send_duplication = reader.bool();
-					break;
-				case /* optional bytes kludge_pad */ 99:
-					message.kludge_pad = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramSetSecondaryAddressRequest,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 client_main_ip = 1; */
-		if (message.client_main_ip !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.client_main_ip);
-		/* optional fixed32 client_main_port = 2; */
-		if (message.client_main_port !== undefined) writer.tag(2, WireType.Bit32).fixed32(message.client_main_port);
-		/* optional fixed32 client_connection_id = 3; */
-		if (message.client_connection_id !== undefined) writer.tag(3, WireType.Bit32).fixed32(message.client_connection_id);
-		/* optional string client_identity = 4; */
-		if (message.client_identity !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.client_identity);
-		/* optional bool request_send_duplication = 5; */
-		if (message.request_send_duplication !== undefined)
-			writer.tag(5, WireType.Varint).bool(message.request_send_duplication);
-		/* optional bytes kludge_pad = 99; */
-		if (message.kludge_pad !== undefined) writer.tag(99, WireType.LengthDelimited).bytes(message.kludge_pad);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramSetSecondaryAddressRequest", [
+      {
+        no: 1,
+        name: "client_main_ip",
+        kind: "scalar",
+        localName: "client_main_ip",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "client_main_port",
+        kind: "scalar",
+        localName: "client_main_port",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 3,
+        name: "client_connection_id",
+        kind: "scalar",
+        localName: "client_connection_id",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 4,
+        name: "client_identity",
+        kind: "scalar",
+        localName: "client_identity",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 5,
+        name: "request_send_duplication",
+        kind: "scalar",
+        localName: "request_send_duplication",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 99,
+        name: "kludge_pad",
+        kind: "scalar",
+        localName: "kludge_pad",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramSetSecondaryAddressRequest>,
+  ): CMsgSteamDatagramSetSecondaryAddressRequest {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramSetSecondaryAddressRequest>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramSetSecondaryAddressRequest,
+  ): CMsgSteamDatagramSetSecondaryAddressRequest {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 client_main_ip */ 1:
+          message.client_main_ip = reader.fixed32();
+          break;
+        case /* optional fixed32 client_main_port */ 2:
+          message.client_main_port = reader.fixed32();
+          break;
+        case /* optional fixed32 client_connection_id */ 3:
+          message.client_connection_id = reader.fixed32();
+          break;
+        case /* optional string client_identity */ 4:
+          message.client_identity = reader.string();
+          break;
+        case /* optional bool request_send_duplication */ 5:
+          message.request_send_duplication = reader.bool();
+          break;
+        case /* optional bytes kludge_pad */ 99:
+          message.kludge_pad = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramSetSecondaryAddressRequest,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 client_main_ip = 1; */
+    if (message.client_main_ip !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.client_main_ip);
+    /* optional fixed32 client_main_port = 2; */
+    if (message.client_main_port !== undefined) writer.tag(2, WireType.Bit32).fixed32(message.client_main_port);
+    /* optional fixed32 client_connection_id = 3; */
+    if (message.client_connection_id !== undefined) writer.tag(3, WireType.Bit32).fixed32(message.client_connection_id);
+    /* optional string client_identity = 4; */
+    if (message.client_identity !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.client_identity);
+    /* optional bool request_send_duplication = 5; */
+    if (message.request_send_duplication !== undefined)
+      writer.tag(5, WireType.Varint).bool(message.request_send_duplication);
+    /* optional bytes kludge_pad = 99; */
+    if (message.kludge_pad !== undefined) writer.tag(99, WireType.LengthDelimited).bytes(message.kludge_pad);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramSetSecondaryAddressRequest
@@ -8445,71 +8445,71 @@ class CMsgSteamDatagramSetSecondaryAddressRequest$Type extends MessageType<CMsgS
 export const CMsgSteamDatagramSetSecondaryAddressRequest = new CMsgSteamDatagramSetSecondaryAddressRequest$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamDatagramSetSecondaryAddressResult$Type extends MessageType<CMsgSteamDatagramSetSecondaryAddressResult> {
-	constructor() {
-		super("CMsgSteamDatagramSetSecondaryAddressResult", [
-			{
-				no: 1,
-				name: "success",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 2,
-				name: "message",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamDatagramSetSecondaryAddressResult>,
-	): CMsgSteamDatagramSetSecondaryAddressResult {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramSetSecondaryAddressResult>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamDatagramSetSecondaryAddressResult,
-	): CMsgSteamDatagramSetSecondaryAddressResult {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool success */ 1:
-					message.success = reader.bool();
-					break;
-				case /* optional string message */ 2:
-					message.message = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamDatagramSetSecondaryAddressResult,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool success = 1; */
-		if (message.success !== undefined) writer.tag(1, WireType.Varint).bool(message.success);
-		/* optional string message = 2; */
-		if (message.message !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.message);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamDatagramSetSecondaryAddressResult", [
+      {
+        no: 1,
+        name: "success",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 2,
+        name: "message",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamDatagramSetSecondaryAddressResult>,
+  ): CMsgSteamDatagramSetSecondaryAddressResult {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamDatagramSetSecondaryAddressResult>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamDatagramSetSecondaryAddressResult,
+  ): CMsgSteamDatagramSetSecondaryAddressResult {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool success */ 1:
+          message.success = reader.bool();
+          break;
+        case /* optional string message */ 2:
+          message.message = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamDatagramSetSecondaryAddressResult,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool success = 1; */
+    if (message.success !== undefined) writer.tag(1, WireType.Varint).bool(message.success);
+    /* optional string message = 2; */
+    if (message.message !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.message);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamDatagramSetSecondaryAddressResult

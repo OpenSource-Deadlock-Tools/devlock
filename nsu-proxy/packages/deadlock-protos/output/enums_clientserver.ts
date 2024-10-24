@@ -5,6083 +5,6083 @@
  * @generated from protobuf enum EMsg
  */
 export enum EMsg {
-	/**
-	 * @generated from protobuf enum value: k_EMsgInvalid = 0;
-	 */
-	k_EMsgInvalid = 0,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMulti = 1;
-	 */
-	k_EMsgMulti = 1,
-	/**
-	 * @generated from protobuf enum value: k_EMsgProtobufWrapped = 2;
-	 */
-	k_EMsgProtobufWrapped = 2,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseGeneral = 100;
-	 */
-	k_EMsgBaseGeneral = 100,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseGeneral = 100;
-	 */
-	k_EMsgGenericReply = 100,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDestJobFailed = 113;
-	 */
-	k_EMsgDestJobFailed = 113,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAlert = 115;
-	 */
-	k_EMsgAlert = 115,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSCIDRequest = 120;
-	 */
-	k_EMsgSCIDRequest = 120,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSCIDResponse = 121;
-	 */
-	k_EMsgSCIDResponse = 121,
-	/**
-	 * @generated from protobuf enum value: k_EMsgJobHeartbeat = 123;
-	 */
-	k_EMsgJobHeartbeat = 123,
-	/**
-	 * @generated from protobuf enum value: k_EMsgHubConnect = 124;
-	 */
-	k_EMsgHubConnect = 124,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSubscribe = 126;
-	 */
-	k_EMsgSubscribe = 126,
-	/**
-	 * @generated from protobuf enum value: k_EMRouteMessage = 127;
-	 */
-	k_EMRouteMessage = 127,
-	/**
-	 * @generated from protobuf enum value: k_EMsgWGRequest = 130;
-	 */
-	k_EMsgWGRequest = 130,
-	/**
-	 * @generated from protobuf enum value: k_EMsgWGResponse = 131;
-	 */
-	k_EMsgWGResponse = 131,
-	/**
-	 * @generated from protobuf enum value: k_EMsgKeepAlive = 132;
-	 */
-	k_EMsgKeepAlive = 132,
-	/**
-	 * @generated from protobuf enum value: k_EMsgWebAPIJobRequest = 133;
-	 */
-	k_EMsgWebAPIJobRequest = 133,
-	/**
-	 * @generated from protobuf enum value: k_EMsgWebAPIJobResponse = 134;
-	 */
-	k_EMsgWebAPIJobResponse = 134,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSessionStart = 135;
-	 */
-	k_EMsgClientSessionStart = 135,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSessionEnd = 136;
-	 */
-	k_EMsgClientSessionEnd = 136,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSessionUpdate = 137;
-	 */
-	k_EMsgClientSessionUpdate = 137,
-	/**
-	 * @generated from protobuf enum value: k_EMsgStatsDeprecated = 138;
-	 */
-	k_EMsgStatsDeprecated = 138,
-	/**
-	 * @generated from protobuf enum value: k_EMsgPing = 139;
-	 */
-	k_EMsgPing = 139,
-	/**
-	 * @generated from protobuf enum value: k_EMsgPingResponse = 140;
-	 */
-	k_EMsgPingResponse = 140,
-	/**
-	 * @generated from protobuf enum value: k_EMsgStats = 141;
-	 */
-	k_EMsgStats = 141,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRequestFullStatsBlock = 142;
-	 */
-	k_EMsgRequestFullStatsBlock = 142,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLoadDBOCacheItem = 143;
-	 */
-	k_EMsgLoadDBOCacheItem = 143,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLoadDBOCacheItemResponse = 144;
-	 */
-	k_EMsgLoadDBOCacheItemResponse = 144,
-	/**
-	 * @generated from protobuf enum value: k_EMsgInvalidateDBOCacheItems = 145;
-	 */
-	k_EMsgInvalidateDBOCacheItems = 145,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServiceMethod = 146;
-	 */
-	k_EMsgServiceMethod = 146,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServiceMethodResponse = 147;
-	 */
-	k_EMsgServiceMethodResponse = 147,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPackageVersions = 148;
-	 */
-	k_EMsgClientPackageVersions = 148,
-	/**
-	 * @generated from protobuf enum value: k_EMsgTimestampRequest = 149;
-	 */
-	k_EMsgTimestampRequest = 149,
-	/**
-	 * @generated from protobuf enum value: k_EMsgTimestampResponse = 150;
-	 */
-	k_EMsgTimestampResponse = 150,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServiceMethodCallFromClient = 151;
-	 */
-	k_EMsgServiceMethodCallFromClient = 151,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServiceMethodSendToClient = 152;
-	 */
-	k_EMsgServiceMethodSendToClient = 152,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseShell = 200;
-	 */
-	k_EMsgBaseShell = 200,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseShell = 200;
-	 */
-	k_EMsgAssignSysID = 200,
-	/**
-	 * @generated from protobuf enum value: k_EMsgExit = 201;
-	 */
-	k_EMsgExit = 201,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDirRequest = 202;
-	 */
-	k_EMsgDirRequest = 202,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDirResponse = 203;
-	 */
-	k_EMsgDirResponse = 203,
-	/**
-	 * @generated from protobuf enum value: k_EMsgZipRequest = 204;
-	 */
-	k_EMsgZipRequest = 204,
-	/**
-	 * @generated from protobuf enum value: k_EMsgZipResponse = 205;
-	 */
-	k_EMsgZipResponse = 205,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUpdateRecordResponse = 215;
-	 */
-	k_EMsgUpdateRecordResponse = 215,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUpdateCreditCardRequest = 221;
-	 */
-	k_EMsgUpdateCreditCardRequest = 221,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUpdateUserBanResponse = 225;
-	 */
-	k_EMsgUpdateUserBanResponse = 225,
-	/**
-	 * @generated from protobuf enum value: k_EMsgPrepareToExit = 226;
-	 */
-	k_EMsgPrepareToExit = 226,
-	/**
-	 * @generated from protobuf enum value: k_EMsgContentDescriptionUpdate = 227;
-	 */
-	k_EMsgContentDescriptionUpdate = 227,
-	/**
-	 * @generated from protobuf enum value: k_EMsgTestResetServer = 228;
-	 */
-	k_EMsgTestResetServer = 228,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUniverseChanged = 229;
-	 */
-	k_EMsgUniverseChanged = 229,
-	/**
-	 * @generated from protobuf enum value: k_EMsgShellConfigInfoUpdate = 230;
-	 */
-	k_EMsgShellConfigInfoUpdate = 230,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRequestWindowsEventLogEntries = 233;
-	 */
-	k_EMsgRequestWindowsEventLogEntries = 233,
-	/**
-	 * @generated from protobuf enum value: k_EMsgProvideWindowsEventLogEntries = 234;
-	 */
-	k_EMsgProvideWindowsEventLogEntries = 234,
-	/**
-	 * @generated from protobuf enum value: k_EMsgShellSearchLogs = 235;
-	 */
-	k_EMsgShellSearchLogs = 235,
-	/**
-	 * @generated from protobuf enum value: k_EMsgShellSearchLogsResponse = 236;
-	 */
-	k_EMsgShellSearchLogsResponse = 236,
-	/**
-	 * @generated from protobuf enum value: k_EMsgShellCheckWindowsUpdates = 237;
-	 */
-	k_EMsgShellCheckWindowsUpdates = 237,
-	/**
-	 * @generated from protobuf enum value: k_EMsgShellCheckWindowsUpdatesResponse = 238;
-	 */
-	k_EMsgShellCheckWindowsUpdatesResponse = 238,
-	/**
-	 * @generated from protobuf enum value: k_EMsgTestFlushDelayedSQL = 240;
-	 */
-	k_EMsgTestFlushDelayedSQL = 240,
-	/**
-	 * @generated from protobuf enum value: k_EMsgTestFlushDelayedSQLResponse = 241;
-	 */
-	k_EMsgTestFlushDelayedSQLResponse = 241,
-	/**
-	 * @generated from protobuf enum value: k_EMsgEnsureExecuteScheduledTask_TEST = 242;
-	 */
-	k_EMsgEnsureExecuteScheduledTask_TEST = 242,
-	/**
-	 * @generated from protobuf enum value: k_EMsgEnsureExecuteScheduledTaskResponse_TEST = 243;
-	 */
-	k_EMsgEnsureExecuteScheduledTaskResponse_TEST = 243,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUpdateScheduledTaskEnableState_TEST = 244;
-	 */
-	k_EMsgUpdateScheduledTaskEnableState_TEST = 244,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUpdateScheduledTaskEnableStateResponse_TEST = 245;
-	 */
-	k_EMsgUpdateScheduledTaskEnableStateResponse_TEST = 245,
-	/**
-	 * @generated from protobuf enum value: k_EMsgContentDescriptionDeltaUpdate = 246;
-	 */
-	k_EMsgContentDescriptionDeltaUpdate = 246,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMShellAndServerAddressUpdates = 247;
-	 */
-	k_EMsgGMShellAndServerAddressUpdates = 247,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseGM = 300;
-	 */
-	k_EMsgBaseGM = 300,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseGM = 300;
-	 */
-	k_EMsgHeartbeat = 300,
-	/**
-	 * @generated from protobuf enum value: k_EMsgShellFailed = 301;
-	 */
-	k_EMsgShellFailed = 301,
-	/**
-	 * @generated from protobuf enum value: k_EMsgExitShells = 307;
-	 */
-	k_EMsgExitShells = 307,
-	/**
-	 * @generated from protobuf enum value: k_EMsgExitShell = 308;
-	 */
-	k_EMsgExitShell = 308,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGracefulExitShell = 309;
-	 */
-	k_EMsgGracefulExitShell = 309,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLicenseProcessingComplete = 316;
-	 */
-	k_EMsgLicenseProcessingComplete = 316,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSetTestFlag = 317;
-	 */
-	k_EMsgSetTestFlag = 317,
-	/**
-	 * @generated from protobuf enum value: k_EMsgQueuedEmailsComplete = 318;
-	 */
-	k_EMsgQueuedEmailsComplete = 318,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMReportPHPError = 319;
-	 */
-	k_EMsgGMReportPHPError = 319,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMDRMSync = 320;
-	 */
-	k_EMsgGMDRMSync = 320,
-	/**
-	 * @generated from protobuf enum value: k_EMsgPhysicalBoxInventory = 321;
-	 */
-	k_EMsgPhysicalBoxInventory = 321,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUpdateConfigFile = 322;
-	 */
-	k_EMsgUpdateConfigFile = 322,
-	/**
-	 * @generated from protobuf enum value: k_EMsgTestInitDB = 323;
-	 */
-	k_EMsgTestInitDB = 323,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMWriteConfigToSQL = 324;
-	 */
-	k_EMsgGMWriteConfigToSQL = 324,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMLoadActivationCodes = 325;
-	 */
-	k_EMsgGMLoadActivationCodes = 325,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMQueueForFBS = 326;
-	 */
-	k_EMsgGMQueueForFBS = 326,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMSchemaConversionResults = 327;
-	 */
-	k_EMsgGMSchemaConversionResults = 327,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMWriteShellFailureToSQL = 329;
-	 */
-	k_EMsgGMWriteShellFailureToSQL = 329,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMWriteStatsToSOS = 330;
-	 */
-	k_EMsgGMWriteStatsToSOS = 330,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMGetServiceMethodRouting = 331;
-	 */
-	k_EMsgGMGetServiceMethodRouting = 331,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMGetServiceMethodRoutingResponse = 332;
-	 */
-	k_EMsgGMGetServiceMethodRoutingResponse = 332,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMTestNextBuildSchemaConversion = 334;
-	 */
-	k_EMsgGMTestNextBuildSchemaConversion = 334,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMTestNextBuildSchemaConversionResponse = 335;
-	 */
-	k_EMsgGMTestNextBuildSchemaConversionResponse = 335,
-	/**
-	 * @generated from protobuf enum value: k_EMsgExpectShellRestart = 336;
-	 */
-	k_EMsgExpectShellRestart = 336,
-	/**
-	 * @generated from protobuf enum value: k_EMsgHotFixProgress = 337;
-	 */
-	k_EMsgHotFixProgress = 337,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMStatsForwardToAdminConnections = 338;
-	 */
-	k_EMsgGMStatsForwardToAdminConnections = 338,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseAIS = 400;
-	 */
-	k_EMsgBaseAIS = 400,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAISRequestContentDescription = 402;
-	 */
-	k_EMsgAISRequestContentDescription = 402,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAISUpdateAppInfo = 403;
-	 */
-	k_EMsgAISUpdateAppInfo = 403,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAISGetPackageChangeNumber = 405;
-	 */
-	k_EMsgAISGetPackageChangeNumber = 405,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAISGetPackageChangeNumberResponse = 406;
-	 */
-	k_EMsgAISGetPackageChangeNumberResponse = 406,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAIGetAppGCFlags = 423;
-	 */
-	k_EMsgAIGetAppGCFlags = 423,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAIGetAppGCFlagsResponse = 424;
-	 */
-	k_EMsgAIGetAppGCFlagsResponse = 424,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAIGetAppList = 425;
-	 */
-	k_EMsgAIGetAppList = 425,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAIGetAppListResponse = 426;
-	 */
-	k_EMsgAIGetAppListResponse = 426,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAISGetCouponDefinition = 429;
-	 */
-	k_EMsgAISGetCouponDefinition = 429,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAISGetCouponDefinitionResponse = 430;
-	 */
-	k_EMsgAISGetCouponDefinitionResponse = 430,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAISUpdateSubordinateContentDescription = 431;
-	 */
-	k_EMsgAISUpdateSubordinateContentDescription = 431,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAISUpdateSubordinateContentDescriptionResponse = 432;
-	 */
-	k_EMsgAISUpdateSubordinateContentDescriptionResponse = 432,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAISTestEnableGC = 433;
-	 */
-	k_EMsgAISTestEnableGC = 433,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseAM = 500;
-	 */
-	k_EMsgBaseAM = 500,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMUpdateUserBanRequest = 504;
-	 */
-	k_EMsgAMUpdateUserBanRequest = 504,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMAddLicense = 505;
-	 */
-	k_EMsgAMAddLicense = 505,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSendSystemIMToUser = 508;
-	 */
-	k_EMsgAMSendSystemIMToUser = 508,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMExtendLicense = 509;
-	 */
-	k_EMsgAMExtendLicense = 509,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMAddMinutesToLicense = 510;
-	 */
-	k_EMsgAMAddMinutesToLicense = 510,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCancelLicense = 511;
-	 */
-	k_EMsgAMCancelLicense = 511,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMInitPurchase = 512;
-	 */
-	k_EMsgAMInitPurchase = 512,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMPurchaseResponse = 513;
-	 */
-	k_EMsgAMPurchaseResponse = 513,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetFinalPrice = 514;
-	 */
-	k_EMsgAMGetFinalPrice = 514,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetFinalPriceResponse = 515;
-	 */
-	k_EMsgAMGetFinalPriceResponse = 515,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetLegacyGameKey = 516;
-	 */
-	k_EMsgAMGetLegacyGameKey = 516,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetLegacyGameKeyResponse = 517;
-	 */
-	k_EMsgAMGetLegacyGameKeyResponse = 517,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFindHungTransactions = 518;
-	 */
-	k_EMsgAMFindHungTransactions = 518,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetAccountTrustedRequest = 519;
-	 */
-	k_EMsgAMSetAccountTrustedRequest = 519,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCancelPurchase = 522;
-	 */
-	k_EMsgAMCancelPurchase = 522,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMNewChallenge = 523;
-	 */
-	k_EMsgAMNewChallenge = 523,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMLoadOEMTickets = 524;
-	 */
-	k_EMsgAMLoadOEMTickets = 524,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFixPendingPurchase = 525;
-	 */
-	k_EMsgAMFixPendingPurchase = 525,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFixPendingPurchaseResponse = 526;
-	 */
-	k_EMsgAMFixPendingPurchaseResponse = 526,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMIsUserBanned = 527;
-	 */
-	k_EMsgAMIsUserBanned = 527,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRegisterKey = 528;
-	 */
-	k_EMsgAMRegisterKey = 528,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMLoadActivationCodes = 529;
-	 */
-	k_EMsgAMLoadActivationCodes = 529,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMLoadActivationCodesResponse = 530;
-	 */
-	k_EMsgAMLoadActivationCodesResponse = 530,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMLookupKeyResponse = 531;
-	 */
-	k_EMsgAMLookupKeyResponse = 531,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMLookupKey = 532;
-	 */
-	k_EMsgAMLookupKey = 532,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMChatCleanup = 533;
-	 */
-	k_EMsgAMChatCleanup = 533,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClanCleanup = 534;
-	 */
-	k_EMsgAMClanCleanup = 534,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFixPendingRefund = 535;
-	 */
-	k_EMsgAMFixPendingRefund = 535,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMReverseChargeback = 536;
-	 */
-	k_EMsgAMReverseChargeback = 536,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMReverseChargebackResponse = 537;
-	 */
-	k_EMsgAMReverseChargebackResponse = 537,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClanCleanupList = 538;
-	 */
-	k_EMsgAMClanCleanupList = 538,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetLicenses = 539;
-	 */
-	k_EMsgAMGetLicenses = 539,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetLicensesResponse = 540;
-	 */
-	k_EMsgAMGetLicensesResponse = 540,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSendCartRepurchase = 541;
-	 */
-	k_EMsgAMSendCartRepurchase = 541,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSendCartRepurchaseResponse = 542;
-	 */
-	k_EMsgAMSendCartRepurchaseResponse = 542,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAllowUserToPlayQuery = 550;
-	 */
-	k_EMsgAllowUserToPlayQuery = 550,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAllowUserToPlayResponse = 551;
-	 */
-	k_EMsgAllowUserToPlayResponse = 551,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMVerfiyUser = 552;
-	 */
-	k_EMsgAMVerfiyUser = 552,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientNotPlaying = 553;
-	 */
-	k_EMsgAMClientNotPlaying = 553,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientRequestFriendship = 554;
-	 */
-	k_EMsgAMClientRequestFriendship = 554,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRelayPublishStatus = 555;
-	 */
-	k_EMsgAMRelayPublishStatus = 555,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMInitPurchaseResponse = 560;
-	 */
-	k_EMsgAMInitPurchaseResponse = 560,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRevokePurchaseResponse = 561;
-	 */
-	k_EMsgAMRevokePurchaseResponse = 561,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRefreshGuestPasses = 563;
-	 */
-	k_EMsgAMRefreshGuestPasses = 563,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGrantGuestPasses = 566;
-	 */
-	k_EMsgAMGrantGuestPasses = 566,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClanDataUpdated = 567;
-	 */
-	k_EMsgAMClanDataUpdated = 567,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMReloadAccount = 568;
-	 */
-	k_EMsgAMReloadAccount = 568,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientChatMsgRelay = 569;
-	 */
-	k_EMsgAMClientChatMsgRelay = 569,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMChatMulti = 570;
-	 */
-	k_EMsgAMChatMulti = 570,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientChatInviteRelay = 571;
-	 */
-	k_EMsgAMClientChatInviteRelay = 571,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMChatInvite = 572;
-	 */
-	k_EMsgAMChatInvite = 572,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientJoinChatRelay = 573;
-	 */
-	k_EMsgAMClientJoinChatRelay = 573,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientChatMemberInfoRelay = 574;
-	 */
-	k_EMsgAMClientChatMemberInfoRelay = 574,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMPublishChatMemberInfo = 575;
-	 */
-	k_EMsgAMPublishChatMemberInfo = 575,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientAcceptFriendInvite = 576;
-	 */
-	k_EMsgAMClientAcceptFriendInvite = 576,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMChatEnter = 577;
-	 */
-	k_EMsgAMChatEnter = 577,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientPublishRemovalFromSource = 578;
-	 */
-	k_EMsgAMClientPublishRemovalFromSource = 578,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMChatActionResult = 579;
-	 */
-	k_EMsgAMChatActionResult = 579,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFindAccounts = 580;
-	 */
-	k_EMsgAMFindAccounts = 580,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFindAccountsResponse = 581;
-	 */
-	k_EMsgAMFindAccountsResponse = 581,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMIsAccountNameInUse = 582;
-	 */
-	k_EMsgAMIsAccountNameInUse = 582,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMIsAccountNameInUseResponse = 583;
-	 */
-	k_EMsgAMIsAccountNameInUseResponse = 583,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetAccountFlags = 584;
-	 */
-	k_EMsgAMSetAccountFlags = 584,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCreateClan = 586;
-	 */
-	k_EMsgAMCreateClan = 586,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCreateClanResponse = 587;
-	 */
-	k_EMsgAMCreateClanResponse = 587,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanDetails = 588;
-	 */
-	k_EMsgAMGetClanDetails = 588,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanDetailsResponse = 589;
-	 */
-	k_EMsgAMGetClanDetailsResponse = 589,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetPersonaName = 590;
-	 */
-	k_EMsgAMSetPersonaName = 590,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetAvatar = 591;
-	 */
-	k_EMsgAMSetAvatar = 591,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMAuthenticateUser = 592;
-	 */
-	k_EMsgAMAuthenticateUser = 592,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMAuthenticateUserResponse = 593;
-	 */
-	k_EMsgAMAuthenticateUserResponse = 593,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMP2PIntroducerMessage = 596;
-	 */
-	k_EMsgAMP2PIntroducerMessage = 596,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientChatAction = 597;
-	 */
-	k_EMsgClientChatAction = 597,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientChatActionRelay = 598;
-	 */
-	k_EMsgAMClientChatActionRelay = 598,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseVS = 600;
-	 */
-	k_EMsgBaseVS = 600,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseVS = 600;
-	 */
-	k_EMsgReqChallenge = 600,
-	/**
-	 * @generated from protobuf enum value: k_EMsgVACResponse = 601;
-	 */
-	k_EMsgVACResponse = 601,
-	/**
-	 * @generated from protobuf enum value: k_EMsgReqChallengeTest = 602;
-	 */
-	k_EMsgReqChallengeTest = 602,
-	/**
-	 * @generated from protobuf enum value: k_EMsgVSMarkCheat = 604;
-	 */
-	k_EMsgVSMarkCheat = 604,
-	/**
-	 * @generated from protobuf enum value: k_EMsgVSAddCheat = 605;
-	 */
-	k_EMsgVSAddCheat = 605,
-	/**
-	 * @generated from protobuf enum value: k_EMsgVSPurgeCodeModDB = 606;
-	 */
-	k_EMsgVSPurgeCodeModDB = 606,
-	/**
-	 * @generated from protobuf enum value: k_EMsgVSGetChallengeResults = 607;
-	 */
-	k_EMsgVSGetChallengeResults = 607,
-	/**
-	 * @generated from protobuf enum value: k_EMsgVSChallengeResultText = 608;
-	 */
-	k_EMsgVSChallengeResultText = 608,
-	/**
-	 * @generated from protobuf enum value: k_EMsgVSReportLingerer = 609;
-	 */
-	k_EMsgVSReportLingerer = 609,
-	/**
-	 * @generated from protobuf enum value: k_EMsgVSRequestManagedChallenge = 610;
-	 */
-	k_EMsgVSRequestManagedChallenge = 610,
-	/**
-	 * @generated from protobuf enum value: k_EMsgVSLoadDBFinished = 611;
-	 */
-	k_EMsgVSLoadDBFinished = 611,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseDRMS = 625;
-	 */
-	k_EMsgBaseDRMS = 625,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMBuildBlobRequest = 628;
-	 */
-	k_EMsgDRMBuildBlobRequest = 628,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMBuildBlobResponse = 629;
-	 */
-	k_EMsgDRMBuildBlobResponse = 629,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMResolveGuidRequest = 630;
-	 */
-	k_EMsgDRMResolveGuidRequest = 630,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMResolveGuidResponse = 631;
-	 */
-	k_EMsgDRMResolveGuidResponse = 631,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMVariabilityReport = 633;
-	 */
-	k_EMsgDRMVariabilityReport = 633,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMVariabilityReportResponse = 634;
-	 */
-	k_EMsgDRMVariabilityReportResponse = 634,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMStabilityReport = 635;
-	 */
-	k_EMsgDRMStabilityReport = 635,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMStabilityReportResponse = 636;
-	 */
-	k_EMsgDRMStabilityReportResponse = 636,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMDetailsReportRequest = 637;
-	 */
-	k_EMsgDRMDetailsReportRequest = 637,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMDetailsReportResponse = 638;
-	 */
-	k_EMsgDRMDetailsReportResponse = 638,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMProcessFile = 639;
-	 */
-	k_EMsgDRMProcessFile = 639,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMAdminUpdate = 640;
-	 */
-	k_EMsgDRMAdminUpdate = 640,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMAdminUpdateResponse = 641;
-	 */
-	k_EMsgDRMAdminUpdateResponse = 641,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMSync = 642;
-	 */
-	k_EMsgDRMSync = 642,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMSyncResponse = 643;
-	 */
-	k_EMsgDRMSyncResponse = 643,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMProcessFileResponse = 644;
-	 */
-	k_EMsgDRMProcessFileResponse = 644,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMEmptyGuidCache = 645;
-	 */
-	k_EMsgDRMEmptyGuidCache = 645,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMEmptyGuidCacheResponse = 646;
-	 */
-	k_EMsgDRMEmptyGuidCacheResponse = 646,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseCS = 650;
-	 */
-	k_EMsgBaseCS = 650,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseClient = 700;
-	 */
-	k_EMsgBaseClient = 700,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLogOn_Deprecated = 701;
-	 */
-	k_EMsgClientLogOn_Deprecated = 701,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAnonLogOn_Deprecated = 702;
-	 */
-	k_EMsgClientAnonLogOn_Deprecated = 702,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientHeartBeat = 703;
-	 */
-	k_EMsgClientHeartBeat = 703,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientVACResponse = 704;
-	 */
-	k_EMsgClientVACResponse = 704,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGamesPlayed_obsolete = 705;
-	 */
-	k_EMsgClientGamesPlayed_obsolete = 705,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLogOff = 706;
-	 */
-	k_EMsgClientLogOff = 706,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientNoUDPConnectivity = 707;
-	 */
-	k_EMsgClientNoUDPConnectivity = 707,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientConnectionStats = 710;
-	 */
-	k_EMsgClientConnectionStats = 710,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPingResponse = 712;
-	 */
-	k_EMsgClientPingResponse = 712,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRemoveFriend = 714;
-	 */
-	k_EMsgClientRemoveFriend = 714,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGamesPlayedNoDataBlob = 715;
-	 */
-	k_EMsgClientGamesPlayedNoDataBlob = 715,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientChangeStatus = 716;
-	 */
-	k_EMsgClientChangeStatus = 716,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientVacStatusResponse = 717;
-	 */
-	k_EMsgClientVacStatusResponse = 717,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFriendMsg = 718;
-	 */
-	k_EMsgClientFriendMsg = 718,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGameConnect_obsolete = 719;
-	 */
-	k_EMsgClientGameConnect_obsolete = 719,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGamesPlayed2_obsolete = 720;
-	 */
-	k_EMsgClientGamesPlayed2_obsolete = 720,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGameEnded_obsolete = 721;
-	 */
-	k_EMsgClientGameEnded_obsolete = 721,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSystemIM = 726;
-	 */
-	k_EMsgClientSystemIM = 726,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSystemIMAck = 727;
-	 */
-	k_EMsgClientSystemIMAck = 727,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetLicenses = 728;
-	 */
-	k_EMsgClientGetLicenses = 728,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetLegacyGameKey = 730;
-	 */
-	k_EMsgClientGetLegacyGameKey = 730,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientContentServerLogOn_Deprecated = 731;
-	 */
-	k_EMsgClientContentServerLogOn_Deprecated = 731,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAckVACBan2 = 732;
-	 */
-	k_EMsgClientAckVACBan2 = 732,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetPurchaseReceipts = 736;
-	 */
-	k_EMsgClientGetPurchaseReceipts = 736,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGamesPlayed3_obsolete = 738;
-	 */
-	k_EMsgClientGamesPlayed3_obsolete = 738,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAckGuestPass = 740;
-	 */
-	k_EMsgClientAckGuestPass = 740,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRedeemGuestPass = 741;
-	 */
-	k_EMsgClientRedeemGuestPass = 741,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGamesPlayed = 742;
-	 */
-	k_EMsgClientGamesPlayed = 742,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRegisterKey = 743;
-	 */
-	k_EMsgClientRegisterKey = 743,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientInviteUserToClan = 744;
-	 */
-	k_EMsgClientInviteUserToClan = 744,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAcknowledgeClanInvite = 745;
-	 */
-	k_EMsgClientAcknowledgeClanInvite = 745,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPurchaseWithMachineID = 746;
-	 */
-	k_EMsgClientPurchaseWithMachineID = 746,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAppUsageEvent = 747;
-	 */
-	k_EMsgClientAppUsageEvent = 747,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLogOnResponse = 751;
-	 */
-	k_EMsgClientLogOnResponse = 751,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSetHeartbeatRate = 755;
-	 */
-	k_EMsgClientSetHeartbeatRate = 755,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientNotLoggedOnDeprecated = 756;
-	 */
-	k_EMsgClientNotLoggedOnDeprecated = 756,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLoggedOff = 757;
-	 */
-	k_EMsgClientLoggedOff = 757,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSApprove = 758;
-	 */
-	k_EMsgGSApprove = 758,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSDeny = 759;
-	 */
-	k_EMsgGSDeny = 759,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSKick = 760;
-	 */
-	k_EMsgGSKick = 760,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPurchaseResponse = 763;
-	 */
-	k_EMsgClientPurchaseResponse = 763,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPing = 764;
-	 */
-	k_EMsgClientPing = 764,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientNOP = 765;
-	 */
-	k_EMsgClientNOP = 765,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPersonaState = 766;
-	 */
-	k_EMsgClientPersonaState = 766,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFriendsList = 767;
-	 */
-	k_EMsgClientFriendsList = 767,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAccountInfo = 768;
-	 */
-	k_EMsgClientAccountInfo = 768,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientNewsUpdate = 771;
-	 */
-	k_EMsgClientNewsUpdate = 771,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGameConnectDeny = 773;
-	 */
-	k_EMsgClientGameConnectDeny = 773,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSStatusReply = 774;
-	 */
-	k_EMsgGSStatusReply = 774,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGameConnectTokens = 779;
-	 */
-	k_EMsgClientGameConnectTokens = 779,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLicenseList = 780;
-	 */
-	k_EMsgClientLicenseList = 780,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientVACBanStatus = 782;
-	 */
-	k_EMsgClientVACBanStatus = 782,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientCMList = 783;
-	 */
-	k_EMsgClientCMList = 783,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientEncryptPct = 784;
-	 */
-	k_EMsgClientEncryptPct = 784,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetLegacyGameKeyResponse = 785;
-	 */
-	k_EMsgClientGetLegacyGameKeyResponse = 785,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAddFriend = 791;
-	 */
-	k_EMsgClientAddFriend = 791,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAddFriendResponse = 792;
-	 */
-	k_EMsgClientAddFriendResponse = 792,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAckGuestPassResponse = 796;
-	 */
-	k_EMsgClientAckGuestPassResponse = 796,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRedeemGuestPassResponse = 797;
-	 */
-	k_EMsgClientRedeemGuestPassResponse = 797,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUpdateGuestPassesList = 798;
-	 */
-	k_EMsgClientUpdateGuestPassesList = 798,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientChatMsg = 799;
-	 */
-	k_EMsgClientChatMsg = 799,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientChatInvite = 800;
-	 */
-	k_EMsgClientChatInvite = 800,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientJoinChat = 801;
-	 */
-	k_EMsgClientJoinChat = 801,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientChatMemberInfo = 802;
-	 */
-	k_EMsgClientChatMemberInfo = 802,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLogOnWithCredentials_Deprecated = 803;
-	 */
-	k_EMsgClientLogOnWithCredentials_Deprecated = 803,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPasswordChangeResponse = 805;
-	 */
-	k_EMsgClientPasswordChangeResponse = 805,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientChatEnter = 807;
-	 */
-	k_EMsgClientChatEnter = 807,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFriendRemovedFromSource = 808;
-	 */
-	k_EMsgClientFriendRemovedFromSource = 808,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientCreateChat = 809;
-	 */
-	k_EMsgClientCreateChat = 809,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientCreateChatResponse = 810;
-	 */
-	k_EMsgClientCreateChatResponse = 810,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientP2PIntroducerMessage = 813;
-	 */
-	k_EMsgClientP2PIntroducerMessage = 813,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientChatActionResult = 814;
-	 */
-	k_EMsgClientChatActionResult = 814,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestFriendData = 815;
-	 */
-	k_EMsgClientRequestFriendData = 815,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetUserStats = 818;
-	 */
-	k_EMsgClientGetUserStats = 818,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetUserStatsResponse = 819;
-	 */
-	k_EMsgClientGetUserStatsResponse = 819,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientStoreUserStats = 820;
-	 */
-	k_EMsgClientStoreUserStats = 820,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientStoreUserStatsResponse = 821;
-	 */
-	k_EMsgClientStoreUserStatsResponse = 821,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientClanState = 822;
-	 */
-	k_EMsgClientClanState = 822,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientServiceModule = 830;
-	 */
-	k_EMsgClientServiceModule = 830,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientServiceCall = 831;
-	 */
-	k_EMsgClientServiceCall = 831,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientServiceCallResponse = 832;
-	 */
-	k_EMsgClientServiceCallResponse = 832,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientNatTraversalStatEvent = 839;
-	 */
-	k_EMsgClientNatTraversalStatEvent = 839,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSteamUsageEvent = 842;
-	 */
-	k_EMsgClientSteamUsageEvent = 842,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientCheckPassword = 845;
-	 */
-	k_EMsgClientCheckPassword = 845,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientResetPassword = 846;
-	 */
-	k_EMsgClientResetPassword = 846,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientCheckPasswordResponse = 848;
-	 */
-	k_EMsgClientCheckPasswordResponse = 848,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientResetPasswordResponse = 849;
-	 */
-	k_EMsgClientResetPasswordResponse = 849,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSessionToken = 850;
-	 */
-	k_EMsgClientSessionToken = 850,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDRMProblemReport = 851;
-	 */
-	k_EMsgClientDRMProblemReport = 851,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSetIgnoreFriend = 855;
-	 */
-	k_EMsgClientSetIgnoreFriend = 855,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSetIgnoreFriendResponse = 856;
-	 */
-	k_EMsgClientSetIgnoreFriendResponse = 856,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetAppOwnershipTicket = 857;
-	 */
-	k_EMsgClientGetAppOwnershipTicket = 857,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetAppOwnershipTicketResponse = 858;
-	 */
-	k_EMsgClientGetAppOwnershipTicketResponse = 858,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetLobbyListResponse = 860;
-	 */
-	k_EMsgClientGetLobbyListResponse = 860,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientServerList = 880;
-	 */
-	k_EMsgClientServerList = 880,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDRMBlobRequest = 896;
-	 */
-	k_EMsgClientDRMBlobRequest = 896,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDRMBlobResponse = 897;
-	 */
-	k_EMsgClientDRMBlobResponse = 897,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseGameServer = 900;
-	 */
-	k_EMsgBaseGameServer = 900,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSDisconnectNotice = 901;
-	 */
-	k_EMsgGSDisconnectNotice = 901,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSStatus = 903;
-	 */
-	k_EMsgGSStatus = 903,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSUserPlaying = 905;
-	 */
-	k_EMsgGSUserPlaying = 905,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSStatus2 = 906;
-	 */
-	k_EMsgGSStatus2 = 906,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSStatusUpdate_Unused = 907;
-	 */
-	k_EMsgGSStatusUpdate_Unused = 907,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSServerType = 908;
-	 */
-	k_EMsgGSServerType = 908,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSPlayerList = 909;
-	 */
-	k_EMsgGSPlayerList = 909,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSGetUserAchievementStatus = 910;
-	 */
-	k_EMsgGSGetUserAchievementStatus = 910,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSGetUserAchievementStatusResponse = 911;
-	 */
-	k_EMsgGSGetUserAchievementStatusResponse = 911,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSGetPlayStats = 918;
-	 */
-	k_EMsgGSGetPlayStats = 918,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSGetPlayStatsResponse = 919;
-	 */
-	k_EMsgGSGetPlayStatsResponse = 919,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSGetUserGroupStatus = 920;
-	 */
-	k_EMsgGSGetUserGroupStatus = 920,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetUserGroupStatus = 921;
-	 */
-	k_EMsgAMGetUserGroupStatus = 921,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetUserGroupStatusResponse = 922;
-	 */
-	k_EMsgAMGetUserGroupStatusResponse = 922,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSGetUserGroupStatusResponse = 923;
-	 */
-	k_EMsgGSGetUserGroupStatusResponse = 923,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSGetReputation = 936;
-	 */
-	k_EMsgGSGetReputation = 936,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSGetReputationResponse = 937;
-	 */
-	k_EMsgGSGetReputationResponse = 937,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSAssociateWithClan = 938;
-	 */
-	k_EMsgGSAssociateWithClan = 938,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSAssociateWithClanResponse = 939;
-	 */
-	k_EMsgGSAssociateWithClanResponse = 939,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSComputeNewPlayerCompatibility = 940;
-	 */
-	k_EMsgGSComputeNewPlayerCompatibility = 940,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSComputeNewPlayerCompatibilityResponse = 941;
-	 */
-	k_EMsgGSComputeNewPlayerCompatibilityResponse = 941,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseAdmin = 1000;
-	 */
-	k_EMsgBaseAdmin = 1000,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseAdmin = 1000;
-	 */
-	k_EMsgAdminCmd = 1000,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAdminCmdResponse = 1004;
-	 */
-	k_EMsgAdminCmdResponse = 1004,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAdminLogListenRequest = 1005;
-	 */
-	k_EMsgAdminLogListenRequest = 1005,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAdminLogEvent = 1006;
-	 */
-	k_EMsgAdminLogEvent = 1006,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUniverseData = 1010;
-	 */
-	k_EMsgUniverseData = 1010,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAdminSpew = 1019;
-	 */
-	k_EMsgAdminSpew = 1019,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAdminConsoleTitle = 1020;
-	 */
-	k_EMsgAdminConsoleTitle = 1020,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAdminGCSpew = 1023;
-	 */
-	k_EMsgAdminGCSpew = 1023,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAdminGCCommand = 1024;
-	 */
-	k_EMsgAdminGCCommand = 1024,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAdminGCGetCommandList = 1025;
-	 */
-	k_EMsgAdminGCGetCommandList = 1025,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAdminGCGetCommandListResponse = 1026;
-	 */
-	k_EMsgAdminGCGetCommandListResponse = 1026,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSConnectionData = 1027;
-	 */
-	k_EMsgFBSConnectionData = 1027,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAdminMsgSpew = 1028;
-	 */
-	k_EMsgAdminMsgSpew = 1028,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseFBS = 1100;
-	 */
-	k_EMsgBaseFBS = 1100,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseFBS = 1100;
-	 */
-	k_EMsgFBSReqVersion = 1100,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSVersionInfo = 1101;
-	 */
-	k_EMsgFBSVersionInfo = 1101,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSForceRefresh = 1102;
-	 */
-	k_EMsgFBSForceRefresh = 1102,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSForceBounce = 1103;
-	 */
-	k_EMsgFBSForceBounce = 1103,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSDeployPackage = 1104;
-	 */
-	k_EMsgFBSDeployPackage = 1104,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSDeployResponse = 1105;
-	 */
-	k_EMsgFBSDeployResponse = 1105,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSUpdateBootstrapper = 1106;
-	 */
-	k_EMsgFBSUpdateBootstrapper = 1106,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSSetState = 1107;
-	 */
-	k_EMsgFBSSetState = 1107,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSApplyOSUpdates = 1108;
-	 */
-	k_EMsgFBSApplyOSUpdates = 1108,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSRunCMDScript = 1109;
-	 */
-	k_EMsgFBSRunCMDScript = 1109,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSRebootBox = 1110;
-	 */
-	k_EMsgFBSRebootBox = 1110,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSSetBigBrotherMode = 1111;
-	 */
-	k_EMsgFBSSetBigBrotherMode = 1111,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSMinidumpServer = 1112;
-	 */
-	k_EMsgFBSMinidumpServer = 1112,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSDeployHotFixPackage = 1114;
-	 */
-	k_EMsgFBSDeployHotFixPackage = 1114,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSDeployHotFixResponse = 1115;
-	 */
-	k_EMsgFBSDeployHotFixResponse = 1115,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSDownloadHotFix = 1116;
-	 */
-	k_EMsgFBSDownloadHotFix = 1116,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSDownloadHotFixResponse = 1117;
-	 */
-	k_EMsgFBSDownloadHotFixResponse = 1117,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSUpdateTargetConfigFile = 1118;
-	 */
-	k_EMsgFBSUpdateTargetConfigFile = 1118,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSApplyAccountCred = 1119;
-	 */
-	k_EMsgFBSApplyAccountCred = 1119,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSApplyAccountCredResponse = 1120;
-	 */
-	k_EMsgFBSApplyAccountCredResponse = 1120,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSSetShellCount = 1121;
-	 */
-	k_EMsgFBSSetShellCount = 1121,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSTerminateShell = 1122;
-	 */
-	k_EMsgFBSTerminateShell = 1122,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSQueryGMForRequest = 1123;
-	 */
-	k_EMsgFBSQueryGMForRequest = 1123,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSQueryGMResponse = 1124;
-	 */
-	k_EMsgFBSQueryGMResponse = 1124,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSTerminateZombies = 1125;
-	 */
-	k_EMsgFBSTerminateZombies = 1125,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSInfoFromBootstrapper = 1126;
-	 */
-	k_EMsgFBSInfoFromBootstrapper = 1126,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSRebootBoxResponse = 1127;
-	 */
-	k_EMsgFBSRebootBoxResponse = 1127,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSBootstrapperPackageRequest = 1128;
-	 */
-	k_EMsgFBSBootstrapperPackageRequest = 1128,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSBootstrapperPackageResponse = 1129;
-	 */
-	k_EMsgFBSBootstrapperPackageResponse = 1129,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSBootstrapperGetPackageChunk = 1130;
-	 */
-	k_EMsgFBSBootstrapperGetPackageChunk = 1130,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSBootstrapperGetPackageChunkResponse = 1131;
-	 */
-	k_EMsgFBSBootstrapperGetPackageChunkResponse = 1131,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSBootstrapperPackageTransferProgress = 1132;
-	 */
-	k_EMsgFBSBootstrapperPackageTransferProgress = 1132,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSRestartBootstrapper = 1133;
-	 */
-	k_EMsgFBSRestartBootstrapper = 1133,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFBSPauseFrozenDumps = 1134;
-	 */
-	k_EMsgFBSPauseFrozenDumps = 1134,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseFileXfer = 1200;
-	 */
-	k_EMsgBaseFileXfer = 1200,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseFileXfer = 1200;
-	 */
-	k_EMsgFileXferRequest = 1200,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFileXferResponse = 1201;
-	 */
-	k_EMsgFileXferResponse = 1201,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFileXferData = 1202;
-	 */
-	k_EMsgFileXferData = 1202,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFileXferEnd = 1203;
-	 */
-	k_EMsgFileXferEnd = 1203,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFileXferDataAck = 1204;
-	 */
-	k_EMsgFileXferDataAck = 1204,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseChannelAuth = 1300;
-	 */
-	k_EMsgBaseChannelAuth = 1300,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseChannelAuth = 1300;
-	 */
-	k_EMsgChannelAuthChallenge = 1300,
-	/**
-	 * @generated from protobuf enum value: k_EMsgChannelAuthResponse = 1301;
-	 */
-	k_EMsgChannelAuthResponse = 1301,
-	/**
-	 * @generated from protobuf enum value: k_EMsgChannelAuthResult = 1302;
-	 */
-	k_EMsgChannelAuthResult = 1302,
-	/**
-	 * @generated from protobuf enum value: k_EMsgChannelEncryptRequest = 1303;
-	 */
-	k_EMsgChannelEncryptRequest = 1303,
-	/**
-	 * @generated from protobuf enum value: k_EMsgChannelEncryptResponse = 1304;
-	 */
-	k_EMsgChannelEncryptResponse = 1304,
-	/**
-	 * @generated from protobuf enum value: k_EMsgChannelEncryptResult = 1305;
-	 */
-	k_EMsgChannelEncryptResult = 1305,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseBS = 1400;
-	 */
-	k_EMsgBaseBS = 1400,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSPurchaseStart = 1401;
-	 */
-	k_EMsgBSPurchaseStart = 1401,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSPurchaseResponse = 1402;
-	 */
-	k_EMsgBSPurchaseResponse = 1402,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSAuthenticateCCTrans = 1403;
-	 */
-	k_EMsgBSAuthenticateCCTrans = 1403,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSAuthenticateCCTransResponse = 1404;
-	 */
-	k_EMsgBSAuthenticateCCTransResponse = 1404,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSSettleComplete = 1406;
-	 */
-	k_EMsgBSSettleComplete = 1406,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSInitPayPalTxn = 1408;
-	 */
-	k_EMsgBSInitPayPalTxn = 1408,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSInitPayPalTxnResponse = 1409;
-	 */
-	k_EMsgBSInitPayPalTxnResponse = 1409,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSGetPayPalUserInfo = 1410;
-	 */
-	k_EMsgBSGetPayPalUserInfo = 1410,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSGetPayPalUserInfoResponse = 1411;
-	 */
-	k_EMsgBSGetPayPalUserInfoResponse = 1411,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSPaymentInstrBan = 1417;
-	 */
-	k_EMsgBSPaymentInstrBan = 1417,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSPaymentInstrBanResponse = 1418;
-	 */
-	k_EMsgBSPaymentInstrBanResponse = 1418,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSInitGCBankXferTxn = 1421;
-	 */
-	k_EMsgBSInitGCBankXferTxn = 1421,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSInitGCBankXferTxnResponse = 1422;
-	 */
-	k_EMsgBSInitGCBankXferTxnResponse = 1422,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSCommitGCTxn = 1425;
-	 */
-	k_EMsgBSCommitGCTxn = 1425,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSQueryTransactionStatus = 1426;
-	 */
-	k_EMsgBSQueryTransactionStatus = 1426,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSQueryTransactionStatusResponse = 1427;
-	 */
-	k_EMsgBSQueryTransactionStatusResponse = 1427,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSQueryTxnExtendedInfo = 1433;
-	 */
-	k_EMsgBSQueryTxnExtendedInfo = 1433,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSQueryTxnExtendedInfoResponse = 1434;
-	 */
-	k_EMsgBSQueryTxnExtendedInfoResponse = 1434,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSUpdateConversionRates = 1435;
-	 */
-	k_EMsgBSUpdateConversionRates = 1435,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSPurchaseRunFraudChecks = 1437;
-	 */
-	k_EMsgBSPurchaseRunFraudChecks = 1437,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSPurchaseRunFraudChecksResponse = 1438;
-	 */
-	k_EMsgBSPurchaseRunFraudChecksResponse = 1438,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSQueryBankInformation = 1440;
-	 */
-	k_EMsgBSQueryBankInformation = 1440,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSQueryBankInformationResponse = 1441;
-	 */
-	k_EMsgBSQueryBankInformationResponse = 1441,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSValidateXsollaSignature = 1445;
-	 */
-	k_EMsgBSValidateXsollaSignature = 1445,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSValidateXsollaSignatureResponse = 1446;
-	 */
-	k_EMsgBSValidateXsollaSignatureResponse = 1446,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSQiwiWalletInvoice = 1448;
-	 */
-	k_EMsgBSQiwiWalletInvoice = 1448,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSQiwiWalletInvoiceResponse = 1449;
-	 */
-	k_EMsgBSQiwiWalletInvoiceResponse = 1449,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSUpdateInventoryFromProPack = 1450;
-	 */
-	k_EMsgBSUpdateInventoryFromProPack = 1450,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSUpdateInventoryFromProPackResponse = 1451;
-	 */
-	k_EMsgBSUpdateInventoryFromProPackResponse = 1451,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSSendShippingRequest = 1452;
-	 */
-	k_EMsgBSSendShippingRequest = 1452,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSSendShippingRequestResponse = 1453;
-	 */
-	k_EMsgBSSendShippingRequestResponse = 1453,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSGetProPackOrderStatus = 1454;
-	 */
-	k_EMsgBSGetProPackOrderStatus = 1454,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSGetProPackOrderStatusResponse = 1455;
-	 */
-	k_EMsgBSGetProPackOrderStatusResponse = 1455,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSCheckJobRunning = 1456;
-	 */
-	k_EMsgBSCheckJobRunning = 1456,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSCheckJobRunningResponse = 1457;
-	 */
-	k_EMsgBSCheckJobRunningResponse = 1457,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSResetPackagePurchaseRateLimit = 1458;
-	 */
-	k_EMsgBSResetPackagePurchaseRateLimit = 1458,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSResetPackagePurchaseRateLimitResponse = 1459;
-	 */
-	k_EMsgBSResetPackagePurchaseRateLimitResponse = 1459,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSUpdatePaymentData = 1460;
-	 */
-	k_EMsgBSUpdatePaymentData = 1460,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSUpdatePaymentDataResponse = 1461;
-	 */
-	k_EMsgBSUpdatePaymentDataResponse = 1461,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSGetBillingAddress = 1462;
-	 */
-	k_EMsgBSGetBillingAddress = 1462,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSGetBillingAddressResponse = 1463;
-	 */
-	k_EMsgBSGetBillingAddressResponse = 1463,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSGetCreditCardInfo = 1464;
-	 */
-	k_EMsgBSGetCreditCardInfo = 1464,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSGetCreditCardInfoResponse = 1465;
-	 */
-	k_EMsgBSGetCreditCardInfoResponse = 1465,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSRemoveExpiredPaymentData = 1468;
-	 */
-	k_EMsgBSRemoveExpiredPaymentData = 1468,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSRemoveExpiredPaymentDataResponse = 1469;
-	 */
-	k_EMsgBSRemoveExpiredPaymentDataResponse = 1469,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSConvertToCurrentKeys = 1470;
-	 */
-	k_EMsgBSConvertToCurrentKeys = 1470,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSConvertToCurrentKeysResponse = 1471;
-	 */
-	k_EMsgBSConvertToCurrentKeysResponse = 1471,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSInitPurchase = 1472;
-	 */
-	k_EMsgBSInitPurchase = 1472,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSInitPurchaseResponse = 1473;
-	 */
-	k_EMsgBSInitPurchaseResponse = 1473,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSCompletePurchase = 1474;
-	 */
-	k_EMsgBSCompletePurchase = 1474,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSCompletePurchaseResponse = 1475;
-	 */
-	k_EMsgBSCompletePurchaseResponse = 1475,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSPruneCardUsageStats = 1476;
-	 */
-	k_EMsgBSPruneCardUsageStats = 1476,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSPruneCardUsageStatsResponse = 1477;
-	 */
-	k_EMsgBSPruneCardUsageStatsResponse = 1477,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSStoreBankInformation = 1478;
-	 */
-	k_EMsgBSStoreBankInformation = 1478,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSStoreBankInformationResponse = 1479;
-	 */
-	k_EMsgBSStoreBankInformationResponse = 1479,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSVerifyPOSAKey = 1480;
-	 */
-	k_EMsgBSVerifyPOSAKey = 1480,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSVerifyPOSAKeyResponse = 1481;
-	 */
-	k_EMsgBSVerifyPOSAKeyResponse = 1481,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSReverseRedeemPOSAKey = 1482;
-	 */
-	k_EMsgBSReverseRedeemPOSAKey = 1482,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSReverseRedeemPOSAKeyResponse = 1483;
-	 */
-	k_EMsgBSReverseRedeemPOSAKeyResponse = 1483,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSQueryFindCreditCard = 1484;
-	 */
-	k_EMsgBSQueryFindCreditCard = 1484,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSQueryFindCreditCardResponse = 1485;
-	 */
-	k_EMsgBSQueryFindCreditCardResponse = 1485,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSStatusInquiryPOSAKey = 1486;
-	 */
-	k_EMsgBSStatusInquiryPOSAKey = 1486,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSStatusInquiryPOSAKeyResponse = 1487;
-	 */
-	k_EMsgBSStatusInquiryPOSAKeyResponse = 1487,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSBoaCompraConfirmProductDelivery = 1494;
-	 */
-	k_EMsgBSBoaCompraConfirmProductDelivery = 1494,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSBoaCompraConfirmProductDeliveryResponse = 1495;
-	 */
-	k_EMsgBSBoaCompraConfirmProductDeliveryResponse = 1495,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSGenerateBoaCompraMD5 = 1496;
-	 */
-	k_EMsgBSGenerateBoaCompraMD5 = 1496,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSGenerateBoaCompraMD5Response = 1497;
-	 */
-	k_EMsgBSGenerateBoaCompraMD5Response = 1497,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSCommitWPTxn = 1498;
-	 */
-	k_EMsgBSCommitWPTxn = 1498,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBSCommitAdyenTxn = 1499;
-	 */
-	k_EMsgBSCommitAdyenTxn = 1499,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseATS = 1500;
-	 */
-	k_EMsgBaseATS = 1500,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSStartStressTest = 1501;
-	 */
-	k_EMsgATSStartStressTest = 1501,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSStopStressTest = 1502;
-	 */
-	k_EMsgATSStopStressTest = 1502,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSRunFailServerTest = 1503;
-	 */
-	k_EMsgATSRunFailServerTest = 1503,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSUFSPerfTestTask = 1504;
-	 */
-	k_EMsgATSUFSPerfTestTask = 1504,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSUFSPerfTestResponse = 1505;
-	 */
-	k_EMsgATSUFSPerfTestResponse = 1505,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSCycleTCM = 1506;
-	 */
-	k_EMsgATSCycleTCM = 1506,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSInitDRMSStressTest = 1507;
-	 */
-	k_EMsgATSInitDRMSStressTest = 1507,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSCallTest = 1508;
-	 */
-	k_EMsgATSCallTest = 1508,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSCallTestReply = 1509;
-	 */
-	k_EMsgATSCallTestReply = 1509,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSStartExternalStress = 1510;
-	 */
-	k_EMsgATSStartExternalStress = 1510,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSExternalStressJobStart = 1511;
-	 */
-	k_EMsgATSExternalStressJobStart = 1511,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSExternalStressJobQueued = 1512;
-	 */
-	k_EMsgATSExternalStressJobQueued = 1512,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSExternalStressJobRunning = 1513;
-	 */
-	k_EMsgATSExternalStressJobRunning = 1513,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSExternalStressJobStopped = 1514;
-	 */
-	k_EMsgATSExternalStressJobStopped = 1514,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSExternalStressJobStopAll = 1515;
-	 */
-	k_EMsgATSExternalStressJobStopAll = 1515,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSExternalStressActionResult = 1516;
-	 */
-	k_EMsgATSExternalStressActionResult = 1516,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSStarted = 1517;
-	 */
-	k_EMsgATSStarted = 1517,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSCSPerfTestTask = 1518;
-	 */
-	k_EMsgATSCSPerfTestTask = 1518,
-	/**
-	 * @generated from protobuf enum value: k_EMsgATSCSPerfTestResponse = 1519;
-	 */
-	k_EMsgATSCSPerfTestResponse = 1519,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseDP = 1600;
-	 */
-	k_EMsgBaseDP = 1600,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDPSetPublishingState = 1601;
-	 */
-	k_EMsgDPSetPublishingState = 1601,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDPUniquePlayersStat = 1603;
-	 */
-	k_EMsgDPUniquePlayersStat = 1603,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDPStreamingUniquePlayersStat = 1604;
-	 */
-	k_EMsgDPStreamingUniquePlayersStat = 1604,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDPBlockingStats = 1607;
-	 */
-	k_EMsgDPBlockingStats = 1607,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDPNatTraversalStats = 1608;
-	 */
-	k_EMsgDPNatTraversalStats = 1608,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDPCloudStats = 1612;
-	 */
-	k_EMsgDPCloudStats = 1612,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDPGetPlayerCount = 1615;
-	 */
-	k_EMsgDPGetPlayerCount = 1615,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDPGetPlayerCountResponse = 1616;
-	 */
-	k_EMsgDPGetPlayerCountResponse = 1616,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDPGameServersPlayersStats = 1617;
-	 */
-	k_EMsgDPGameServersPlayersStats = 1617,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDPCheckSpecialSurvey = 1620;
-	 */
-	k_EMsgClientDPCheckSpecialSurvey = 1620,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDPCheckSpecialSurveyResponse = 1621;
-	 */
-	k_EMsgClientDPCheckSpecialSurveyResponse = 1621,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDPSendSpecialSurveyResponse = 1622;
-	 */
-	k_EMsgClientDPSendSpecialSurveyResponse = 1622,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDPSendSpecialSurveyResponseReply = 1623;
-	 */
-	k_EMsgClientDPSendSpecialSurveyResponseReply = 1623,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDPStoreSaleStatistics = 1624;
-	 */
-	k_EMsgDPStoreSaleStatistics = 1624,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDPUpdateAppJobReport = 1625;
-	 */
-	k_EMsgClientDPUpdateAppJobReport = 1625,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDPUnsignedInstallScript = 1627;
-	 */
-	k_EMsgClientDPUnsignedInstallScript = 1627,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDPPartnerMicroTxns = 1628;
-	 */
-	k_EMsgDPPartnerMicroTxns = 1628,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDPPartnerMicroTxnsResponse = 1629;
-	 */
-	k_EMsgDPPartnerMicroTxnsResponse = 1629,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDPContentStatsReport = 1630;
-	 */
-	k_EMsgClientDPContentStatsReport = 1630,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDPVRUniquePlayersStat = 1631;
-	 */
-	k_EMsgDPVRUniquePlayersStat = 1631,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseCM = 1700;
-	 */
-	k_EMsgBaseCM = 1700,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCMSetAllowState = 1701;
-	 */
-	k_EMsgCMSetAllowState = 1701,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCMSpewAllowState = 1702;
-	 */
-	k_EMsgCMSpewAllowState = 1702,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCMSessionRejected = 1703;
-	 */
-	k_EMsgCMSessionRejected = 1703,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCMSetSecrets = 1704;
-	 */
-	k_EMsgCMSetSecrets = 1704,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCMGetSecrets = 1705;
-	 */
-	k_EMsgCMGetSecrets = 1705,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseGC = 2200;
-	 */
-	k_EMsgBaseGC = 2200,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCCmdRevive = 2203;
-	 */
-	k_EMsgGCCmdRevive = 2203,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCCmdDown = 2206;
-	 */
-	k_EMsgGCCmdDown = 2206,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCCmdDeploy = 2207;
-	 */
-	k_EMsgGCCmdDeploy = 2207,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCCmdDeployResponse = 2208;
-	 */
-	k_EMsgGCCmdDeployResponse = 2208,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCCmdSwitch = 2209;
-	 */
-	k_EMsgGCCmdSwitch = 2209,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRefreshSessions = 2210;
-	 */
-	k_EMsgAMRefreshSessions = 2210,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCAchievementAwarded = 2212;
-	 */
-	k_EMsgGCAchievementAwarded = 2212,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCSystemMessage = 2213;
-	 */
-	k_EMsgGCSystemMessage = 2213,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCCmdStatus = 2216;
-	 */
-	k_EMsgGCCmdStatus = 2216,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCRegisterWebInterfaces_Deprecated = 2217;
-	 */
-	k_EMsgGCRegisterWebInterfaces_Deprecated = 2217,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCGetAccountDetails_DEPRECATED = 2218;
-	 */
-	k_EMsgGCGetAccountDetails_DEPRECATED = 2218,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCInterAppMessage = 2219;
-	 */
-	k_EMsgGCInterAppMessage = 2219,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCGetEmailTemplate = 2220;
-	 */
-	k_EMsgGCGetEmailTemplate = 2220,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCGetEmailTemplateResponse = 2221;
-	 */
-	k_EMsgGCGetEmailTemplateResponse = 2221,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHRelay = 2222;
-	 */
-	k_EMsgGCHRelay = 2222,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHRelayToClient = 2223;
-	 */
-	k_EMsgGCHRelayToClient = 2223,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHUpdateSession = 2224;
-	 */
-	k_EMsgGCHUpdateSession = 2224,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHRequestUpdateSession = 2225;
-	 */
-	k_EMsgGCHRequestUpdateSession = 2225,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHRequestStatus = 2226;
-	 */
-	k_EMsgGCHRequestStatus = 2226,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHRequestStatusResponse = 2227;
-	 */
-	k_EMsgGCHRequestStatusResponse = 2227,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHAccountVacStatusChange = 2228;
-	 */
-	k_EMsgGCHAccountVacStatusChange = 2228,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHSpawnGC = 2229;
-	 */
-	k_EMsgGCHSpawnGC = 2229,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHSpawnGCResponse = 2230;
-	 */
-	k_EMsgGCHSpawnGCResponse = 2230,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHKillGC = 2231;
-	 */
-	k_EMsgGCHKillGC = 2231,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHKillGCResponse = 2232;
-	 */
-	k_EMsgGCHKillGCResponse = 2232,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHAccountTradeBanStatusChange = 2233;
-	 */
-	k_EMsgGCHAccountTradeBanStatusChange = 2233,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHAccountLockStatusChange = 2234;
-	 */
-	k_EMsgGCHAccountLockStatusChange = 2234,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHVacVerificationChange = 2235;
-	 */
-	k_EMsgGCHVacVerificationChange = 2235,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHAccountPhoneNumberChange = 2236;
-	 */
-	k_EMsgGCHAccountPhoneNumberChange = 2236,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHAccountTwoFactorChange = 2237;
-	 */
-	k_EMsgGCHAccountTwoFactorChange = 2237,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHInviteUserToLobby = 2238;
-	 */
-	k_EMsgGCHInviteUserToLobby = 2238,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHUpdateMultipleSessions = 2239;
-	 */
-	k_EMsgGCHUpdateMultipleSessions = 2239,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHMarkAppSessionsAuthoritative = 2240;
-	 */
-	k_EMsgGCHMarkAppSessionsAuthoritative = 2240,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHRecurringSubscriptionStatusChange = 2241;
-	 */
-	k_EMsgGCHRecurringSubscriptionStatusChange = 2241,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHAppCheersReceived = 2242;
-	 */
-	k_EMsgGCHAppCheersReceived = 2242,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHAppCheersGetAllowedTypes = 2243;
-	 */
-	k_EMsgGCHAppCheersGetAllowedTypes = 2243,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCHAppCheersGetAllowedTypesResponse = 2244;
-	 */
-	k_EMsgGCHAppCheersGetAllowedTypesResponse = 2244,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseP2P = 2500;
-	 */
-	k_EMsgBaseP2P = 2500,
-	/**
-	 * @generated from protobuf enum value: k_EMsgP2PIntroducerMessage = 2502;
-	 */
-	k_EMsgP2PIntroducerMessage = 2502,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseSM = 2900;
-	 */
-	k_EMsgBaseSM = 2900,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSMExpensiveReport = 2902;
-	 */
-	k_EMsgSMExpensiveReport = 2902,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSMHourlyReport = 2903;
-	 */
-	k_EMsgSMHourlyReport = 2903,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSMPartitionRenames = 2905;
-	 */
-	k_EMsgSMPartitionRenames = 2905,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSMMonitorSpace = 2906;
-	 */
-	k_EMsgSMMonitorSpace = 2906,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSMTestNextBuildSchemaConversion = 2907;
-	 */
-	k_EMsgSMTestNextBuildSchemaConversion = 2907,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSMTestNextBuildSchemaConversionResponse = 2908;
-	 */
-	k_EMsgSMTestNextBuildSchemaConversionResponse = 2908,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseTest = 3000;
-	 */
-	k_EMsgBaseTest = 3000,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseTest = 3000;
-	 */
-	k_EMsgFailServer = 3000,
-	/**
-	 * @generated from protobuf enum value: k_EMsgJobHeartbeatTest = 3001;
-	 */
-	k_EMsgJobHeartbeatTest = 3001,
-	/**
-	 * @generated from protobuf enum value: k_EMsgJobHeartbeatTestResponse = 3002;
-	 */
-	k_EMsgJobHeartbeatTestResponse = 3002,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseFTSRange = 3100;
-	 */
-	k_EMsgBaseFTSRange = 3100,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseCCSRange = 3150;
-	 */
-	k_EMsgBaseCCSRange = 3150,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCCSDeleteAllCommentsByAuthor = 3161;
-	 */
-	k_EMsgCCSDeleteAllCommentsByAuthor = 3161,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCCSDeleteAllCommentsByAuthorResponse = 3162;
-	 */
-	k_EMsgCCSDeleteAllCommentsByAuthorResponse = 3162,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseLBSRange = 3200;
-	 */
-	k_EMsgBaseLBSRange = 3200,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLBSSetScore = 3201;
-	 */
-	k_EMsgLBSSetScore = 3201,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLBSSetScoreResponse = 3202;
-	 */
-	k_EMsgLBSSetScoreResponse = 3202,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLBSFindOrCreateLB = 3203;
-	 */
-	k_EMsgLBSFindOrCreateLB = 3203,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLBSFindOrCreateLBResponse = 3204;
-	 */
-	k_EMsgLBSFindOrCreateLBResponse = 3204,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLBSGetLBEntries = 3205;
-	 */
-	k_EMsgLBSGetLBEntries = 3205,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLBSGetLBEntriesResponse = 3206;
-	 */
-	k_EMsgLBSGetLBEntriesResponse = 3206,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLBSGetLBList = 3207;
-	 */
-	k_EMsgLBSGetLBList = 3207,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLBSGetLBListResponse = 3208;
-	 */
-	k_EMsgLBSGetLBListResponse = 3208,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLBSSetLBDetails = 3209;
-	 */
-	k_EMsgLBSSetLBDetails = 3209,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLBSDeleteLB = 3210;
-	 */
-	k_EMsgLBSDeleteLB = 3210,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLBSDeleteLBEntry = 3211;
-	 */
-	k_EMsgLBSDeleteLBEntry = 3211,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLBSResetLB = 3212;
-	 */
-	k_EMsgLBSResetLB = 3212,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLBSResetLBResponse = 3213;
-	 */
-	k_EMsgLBSResetLBResponse = 3213,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLBSDeleteLBResponse = 3214;
-	 */
-	k_EMsgLBSDeleteLBResponse = 3214,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseOGS = 3400;
-	 */
-	k_EMsgBaseOGS = 3400,
-	/**
-	 * @generated from protobuf enum value: k_EMsgOGSBeginSession = 3401;
-	 */
-	k_EMsgOGSBeginSession = 3401,
-	/**
-	 * @generated from protobuf enum value: k_EMsgOGSBeginSessionResponse = 3402;
-	 */
-	k_EMsgOGSBeginSessionResponse = 3402,
-	/**
-	 * @generated from protobuf enum value: k_EMsgOGSEndSession = 3403;
-	 */
-	k_EMsgOGSEndSession = 3403,
-	/**
-	 * @generated from protobuf enum value: k_EMsgOGSEndSessionResponse = 3404;
-	 */
-	k_EMsgOGSEndSessionResponse = 3404,
-	/**
-	 * @generated from protobuf enum value: k_EMsgOGSWriteAppSessionRow = 3406;
-	 */
-	k_EMsgOGSWriteAppSessionRow = 3406,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseBRP = 3600;
-	 */
-	k_EMsgBaseBRP = 3600,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBRPPostTransactionTax = 3629;
-	 */
-	k_EMsgBRPPostTransactionTax = 3629,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBRPPostTransactionTaxResponse = 3630;
-	 */
-	k_EMsgBRPPostTransactionTaxResponse = 3630,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseAMRange2 = 4000;
-	 */
-	k_EMsgBaseAMRange2 = 4000,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCreateChat = 4001;
-	 */
-	k_EMsgAMCreateChat = 4001,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCreateChatResponse = 4002;
-	 */
-	k_EMsgAMCreateChatResponse = 4002,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetProfileURL = 4005;
-	 */
-	k_EMsgAMSetProfileURL = 4005,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountEmailAddress = 4006;
-	 */
-	k_EMsgAMGetAccountEmailAddress = 4006,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountEmailAddressResponse = 4007;
-	 */
-	k_EMsgAMGetAccountEmailAddressResponse = 4007,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRequestClanData = 4008;
-	 */
-	k_EMsgAMRequestClanData = 4008,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRouteToClients = 4009;
-	 */
-	k_EMsgAMRouteToClients = 4009,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMLeaveClan = 4010;
-	 */
-	k_EMsgAMLeaveClan = 4010,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClanPermissions = 4011;
-	 */
-	k_EMsgAMClanPermissions = 4011,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClanPermissionsResponse = 4012;
-	 */
-	k_EMsgAMClanPermissionsResponse = 4012,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCreateClanEventDummyForRateLimiting = 4013;
-	 */
-	k_EMsgAMCreateClanEventDummyForRateLimiting = 4013,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMUpdateClanEventDummyForRateLimiting = 4015;
-	 */
-	k_EMsgAMUpdateClanEventDummyForRateLimiting = 4015,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetClanPermissionSettings = 4021;
-	 */
-	k_EMsgAMSetClanPermissionSettings = 4021,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetClanPermissionSettingsResponse = 4022;
-	 */
-	k_EMsgAMSetClanPermissionSettingsResponse = 4022,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanPermissionSettings = 4023;
-	 */
-	k_EMsgAMGetClanPermissionSettings = 4023,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanPermissionSettingsResponse = 4024;
-	 */
-	k_EMsgAMGetClanPermissionSettingsResponse = 4024,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMPublishChatRoomInfo = 4025;
-	 */
-	k_EMsgAMPublishChatRoomInfo = 4025,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientChatRoomInfo = 4026;
-	 */
-	k_EMsgClientChatRoomInfo = 4026,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanHistory = 4039;
-	 */
-	k_EMsgAMGetClanHistory = 4039,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanHistoryResponse = 4040;
-	 */
-	k_EMsgAMGetClanHistoryResponse = 4040,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanPermissionBits = 4041;
-	 */
-	k_EMsgAMGetClanPermissionBits = 4041,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanPermissionBitsResponse = 4042;
-	 */
-	k_EMsgAMGetClanPermissionBitsResponse = 4042,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetClanPermissionBits = 4043;
-	 */
-	k_EMsgAMSetClanPermissionBits = 4043,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetClanPermissionBitsResponse = 4044;
-	 */
-	k_EMsgAMSetClanPermissionBitsResponse = 4044,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSessionInfoRequest = 4045;
-	 */
-	k_EMsgAMSessionInfoRequest = 4045,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSessionInfoResponse = 4046;
-	 */
-	k_EMsgAMSessionInfoResponse = 4046,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMValidateWGToken = 4047;
-	 */
-	k_EMsgAMValidateWGToken = 4047,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanRank = 4050;
-	 */
-	k_EMsgAMGetClanRank = 4050,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanRankResponse = 4051;
-	 */
-	k_EMsgAMGetClanRankResponse = 4051,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetClanRank = 4052;
-	 */
-	k_EMsgAMSetClanRank = 4052,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetClanRankResponse = 4053;
-	 */
-	k_EMsgAMSetClanRankResponse = 4053,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanPOTW = 4054;
-	 */
-	k_EMsgAMGetClanPOTW = 4054,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanPOTWResponse = 4055;
-	 */
-	k_EMsgAMGetClanPOTWResponse = 4055,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetClanPOTW = 4056;
-	 */
-	k_EMsgAMSetClanPOTW = 4056,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetClanPOTWResponse = 4057;
-	 */
-	k_EMsgAMSetClanPOTWResponse = 4057,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMDumpUser = 4059;
-	 */
-	k_EMsgAMDumpUser = 4059,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMKickUserFromClan = 4060;
-	 */
-	k_EMsgAMKickUserFromClan = 4060,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMAddFounderToClan = 4061;
-	 */
-	k_EMsgAMAddFounderToClan = 4061,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMValidateWGTokenResponse = 4062;
-	 */
-	k_EMsgAMValidateWGTokenResponse = 4062,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetAccountDetails = 4064;
-	 */
-	k_EMsgAMSetAccountDetails = 4064,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetChatBanList = 4065;
-	 */
-	k_EMsgAMGetChatBanList = 4065,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetChatBanListResponse = 4066;
-	 */
-	k_EMsgAMGetChatBanListResponse = 4066,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMUnBanFromChat = 4067;
-	 */
-	k_EMsgAMUnBanFromChat = 4067,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetClanDetails = 4068;
-	 */
-	k_EMsgAMSetClanDetails = 4068,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUGSGetUserGameStats = 4073;
-	 */
-	k_EMsgUGSGetUserGameStats = 4073,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUGSGetUserGameStatsResponse = 4074;
-	 */
-	k_EMsgUGSGetUserGameStatsResponse = 4074,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCheckClanMembership = 4075;
-	 */
-	k_EMsgAMCheckClanMembership = 4075,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanMembers = 4076;
-	 */
-	k_EMsgAMGetClanMembers = 4076,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanMembersResponse = 4077;
-	 */
-	k_EMsgAMGetClanMembersResponse = 4077,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMNotifyChatOfClanChange = 4079;
-	 */
-	k_EMsgAMNotifyChatOfClanChange = 4079,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMResubmitPurchase = 4080;
-	 */
-	k_EMsgAMResubmitPurchase = 4080,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMAddFriend = 4081;
-	 */
-	k_EMsgAMAddFriend = 4081,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMAddFriendResponse = 4082;
-	 */
-	k_EMsgAMAddFriendResponse = 4082,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRemoveFriend = 4083;
-	 */
-	k_EMsgAMRemoveFriend = 4083,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMDumpClan = 4084;
-	 */
-	k_EMsgAMDumpClan = 4084,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMChangeClanOwner = 4085;
-	 */
-	k_EMsgAMChangeClanOwner = 4085,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCancelEasyCollect = 4086;
-	 */
-	k_EMsgAMCancelEasyCollect = 4086,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCancelEasyCollectResponse = 4087;
-	 */
-	k_EMsgAMCancelEasyCollectResponse = 4087,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClansInCommon = 4090;
-	 */
-	k_EMsgAMClansInCommon = 4090,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClansInCommonResponse = 4091;
-	 */
-	k_EMsgAMClansInCommonResponse = 4091,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMIsValidAccountID = 4092;
-	 */
-	k_EMsgAMIsValidAccountID = 4092,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMWipeFriendsList = 4095;
-	 */
-	k_EMsgAMWipeFriendsList = 4095,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetIgnored = 4096;
-	 */
-	k_EMsgAMSetIgnored = 4096,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClansInCommonCountResponse = 4097;
-	 */
-	k_EMsgAMClansInCommonCountResponse = 4097,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFriendsList = 4098;
-	 */
-	k_EMsgAMFriendsList = 4098,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFriendsListResponse = 4099;
-	 */
-	k_EMsgAMFriendsListResponse = 4099,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFriendsInCommon = 4100;
-	 */
-	k_EMsgAMFriendsInCommon = 4100,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFriendsInCommonResponse = 4101;
-	 */
-	k_EMsgAMFriendsInCommonResponse = 4101,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFriendsInCommonCountResponse = 4102;
-	 */
-	k_EMsgAMFriendsInCommonCountResponse = 4102,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClansInCommonCount = 4103;
-	 */
-	k_EMsgAMClansInCommonCount = 4103,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMChallengeVerdict = 4104;
-	 */
-	k_EMsgAMChallengeVerdict = 4104,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMChallengeNotification = 4105;
-	 */
-	k_EMsgAMChallengeNotification = 4105,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFindGSByIP = 4106;
-	 */
-	k_EMsgAMFindGSByIP = 4106,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFoundGSByIP = 4107;
-	 */
-	k_EMsgAMFoundGSByIP = 4107,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGiftRevoked = 4108;
-	 */
-	k_EMsgAMGiftRevoked = 4108,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMUserClanList = 4110;
-	 */
-	k_EMsgAMUserClanList = 4110,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMUserClanListResponse = 4111;
-	 */
-	k_EMsgAMUserClanListResponse = 4111,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountDetails2 = 4112;
-	 */
-	k_EMsgAMGetAccountDetails2 = 4112,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountDetailsResponse2 = 4113;
-	 */
-	k_EMsgAMGetAccountDetailsResponse2 = 4113,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetCommunityProfileSettings = 4114;
-	 */
-	k_EMsgAMSetCommunityProfileSettings = 4114,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetCommunityProfileSettingsResponse = 4115;
-	 */
-	k_EMsgAMSetCommunityProfileSettingsResponse = 4115,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetCommunityPrivacyState = 4116;
-	 */
-	k_EMsgAMGetCommunityPrivacyState = 4116,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetCommunityPrivacyStateResponse = 4117;
-	 */
-	k_EMsgAMGetCommunityPrivacyStateResponse = 4117,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCheckClanInviteRateLimiting = 4118;
-	 */
-	k_EMsgAMCheckClanInviteRateLimiting = 4118,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUGSGetUserAchievementStatus = 4119;
-	 */
-	k_EMsgUGSGetUserAchievementStatus = 4119,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetIgnored = 4120;
-	 */
-	k_EMsgAMGetIgnored = 4120,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetIgnoredResponse = 4121;
-	 */
-	k_EMsgAMGetIgnoredResponse = 4121,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetIgnoredResponse = 4122;
-	 */
-	k_EMsgAMSetIgnoredResponse = 4122,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetFriendRelationshipNone = 4123;
-	 */
-	k_EMsgAMSetFriendRelationshipNone = 4123,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetFriendRelationship = 4124;
-	 */
-	k_EMsgAMGetFriendRelationship = 4124,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetFriendRelationshipResponse = 4125;
-	 */
-	k_EMsgAMGetFriendRelationshipResponse = 4125,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMServiceModulesCache = 4126;
-	 */
-	k_EMsgAMServiceModulesCache = 4126,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMServiceModulesCall = 4127;
-	 */
-	k_EMsgAMServiceModulesCall = 4127,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMServiceModulesCallResponse = 4128;
-	 */
-	k_EMsgAMServiceModulesCallResponse = 4128,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCommunityAddFriendNews = 4140;
-	 */
-	k_EMsgCommunityAddFriendNews = 4140,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFindClanUser = 4143;
-	 */
-	k_EMsgAMFindClanUser = 4143,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFindClanUserResponse = 4144;
-	 */
-	k_EMsgAMFindClanUserResponse = 4144,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMBanFromChat = 4145;
-	 */
-	k_EMsgAMBanFromChat = 4145,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetUserNewsSubscriptions = 4147;
-	 */
-	k_EMsgAMGetUserNewsSubscriptions = 4147,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetUserNewsSubscriptionsResponse = 4148;
-	 */
-	k_EMsgAMGetUserNewsSubscriptionsResponse = 4148,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetUserNewsSubscriptions = 4149;
-	 */
-	k_EMsgAMSetUserNewsSubscriptions = 4149,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSendQueuedEmails = 4152;
-	 */
-	k_EMsgAMSendQueuedEmails = 4152,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetLicenseFlags = 4153;
-	 */
-	k_EMsgAMSetLicenseFlags = 4153,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCommunityDeleteUserNews = 4155;
-	 */
-	k_EMsgCommunityDeleteUserNews = 4155,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMAllowUserFilesRequest = 4156;
-	 */
-	k_EMsgAMAllowUserFilesRequest = 4156,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMAllowUserFilesResponse = 4157;
-	 */
-	k_EMsgAMAllowUserFilesResponse = 4157,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountStatus = 4158;
-	 */
-	k_EMsgAMGetAccountStatus = 4158,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountStatusResponse = 4159;
-	 */
-	k_EMsgAMGetAccountStatusResponse = 4159,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMEditBanReason = 4160;
-	 */
-	k_EMsgAMEditBanReason = 4160,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCheckClanMembershipResponse = 4161;
-	 */
-	k_EMsgAMCheckClanMembershipResponse = 4161,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMProbeClanMembershipList = 4162;
-	 */
-	k_EMsgAMProbeClanMembershipList = 4162,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMProbeClanMembershipListResponse = 4163;
-	 */
-	k_EMsgAMProbeClanMembershipListResponse = 4163,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUGSGetUserAchievementStatusResponse = 4164;
-	 */
-	k_EMsgUGSGetUserAchievementStatusResponse = 4164,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetFriendsLobbies = 4165;
-	 */
-	k_EMsgAMGetFriendsLobbies = 4165,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetFriendsLobbiesResponse = 4166;
-	 */
-	k_EMsgAMGetFriendsLobbiesResponse = 4166,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetUserFriendNewsResponse = 4172;
-	 */
-	k_EMsgAMGetUserFriendNewsResponse = 4172,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCommunityGetUserFriendNews = 4173;
-	 */
-	k_EMsgCommunityGetUserFriendNews = 4173,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetUserClansNewsResponse = 4174;
-	 */
-	k_EMsgAMGetUserClansNewsResponse = 4174,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetUserClansNews = 4175;
-	 */
-	k_EMsgAMGetUserClansNews = 4175,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetPreviousCBAccount = 4184;
-	 */
-	k_EMsgAMGetPreviousCBAccount = 4184,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetPreviousCBAccountResponse = 4185;
-	 */
-	k_EMsgAMGetPreviousCBAccountResponse = 4185,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetUserLicenseHistory = 4190;
-	 */
-	k_EMsgAMGetUserLicenseHistory = 4190,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetUserLicenseHistoryResponse = 4191;
-	 */
-	k_EMsgAMGetUserLicenseHistoryResponse = 4191,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSupportChangePassword = 4194;
-	 */
-	k_EMsgAMSupportChangePassword = 4194,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSupportChangeEmail = 4195;
-	 */
-	k_EMsgAMSupportChangeEmail = 4195,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMResetUserVerificationGSByIP = 4197;
-	 */
-	k_EMsgAMResetUserVerificationGSByIP = 4197,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMUpdateGSPlayStats = 4198;
-	 */
-	k_EMsgAMUpdateGSPlayStats = 4198,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSupportEnableOrDisable = 4199;
-	 */
-	k_EMsgAMSupportEnableOrDisable = 4199,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetPurchaseStatus = 4206;
-	 */
-	k_EMsgAMGetPurchaseStatus = 4206,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSupportIsAccountEnabled = 4209;
-	 */
-	k_EMsgAMSupportIsAccountEnabled = 4209,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSupportIsAccountEnabledResponse = 4210;
-	 */
-	k_EMsgAMSupportIsAccountEnabledResponse = 4210,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUGSGetUserStats = 4211;
-	 */
-	k_EMsgUGSGetUserStats = 4211,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGSSearch = 4213;
-	 */
-	k_EMsgAMGSSearch = 4213,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMarketingMessageUpdate = 4216;
-	 */
-	k_EMsgMarketingMessageUpdate = 4216,
-	/**
-	 * @generated from protobuf enum value: k_EMsgChatServerRouteFriendMsg = 4219;
-	 */
-	k_EMsgChatServerRouteFriendMsg = 4219,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMTicketAuthRequestOrResponse = 4220;
-	 */
-	k_EMsgAMTicketAuthRequestOrResponse = 4220,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMAddFreeLicense = 4224;
-	 */
-	k_EMsgAMAddFreeLicense = 4224,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMValidateEmailLink = 4231;
-	 */
-	k_EMsgAMValidateEmailLink = 4231,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMValidateEmailLinkResponse = 4232;
-	 */
-	k_EMsgAMValidateEmailLinkResponse = 4232,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUGSStoreUserStats = 4236;
-	 */
-	k_EMsgUGSStoreUserStats = 4236,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMDeleteStoredCard = 4241;
-	 */
-	k_EMsgAMDeleteStoredCard = 4241,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRevokeLegacyGameKeys = 4242;
-	 */
-	k_EMsgAMRevokeLegacyGameKeys = 4242,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetWalletDetails = 4244;
-	 */
-	k_EMsgAMGetWalletDetails = 4244,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetWalletDetailsResponse = 4245;
-	 */
-	k_EMsgAMGetWalletDetailsResponse = 4245,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMDeleteStoredPaymentInfo = 4246;
-	 */
-	k_EMsgAMDeleteStoredPaymentInfo = 4246,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetStoredPaymentSummary = 4247;
-	 */
-	k_EMsgAMGetStoredPaymentSummary = 4247,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetStoredPaymentSummaryResponse = 4248;
-	 */
-	k_EMsgAMGetStoredPaymentSummaryResponse = 4248,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetWalletConversionRate = 4249;
-	 */
-	k_EMsgAMGetWalletConversionRate = 4249,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetWalletConversionRateResponse = 4250;
-	 */
-	k_EMsgAMGetWalletConversionRateResponse = 4250,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMConvertWallet = 4251;
-	 */
-	k_EMsgAMConvertWallet = 4251,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMConvertWalletResponse = 4252;
-	 */
-	k_EMsgAMConvertWalletResponse = 4252,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetPreApproval = 4255;
-	 */
-	k_EMsgAMSetPreApproval = 4255,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetPreApprovalResponse = 4256;
-	 */
-	k_EMsgAMSetPreApprovalResponse = 4256,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCreateRefund = 4258;
-	 */
-	k_EMsgAMCreateRefund = 4258,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCreateChargeback = 4260;
-	 */
-	k_EMsgAMCreateChargeback = 4260,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCreateDispute = 4262;
-	 */
-	k_EMsgAMCreateDispute = 4262,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClearDispute = 4264;
-	 */
-	k_EMsgAMClearDispute = 4264,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCreateFinancialAdjustment = 4265;
-	 */
-	k_EMsgAMCreateFinancialAdjustment = 4265,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMPlayerNicknameList = 4266;
-	 */
-	k_EMsgAMPlayerNicknameList = 4266,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMPlayerNicknameListResponse = 4267;
-	 */
-	k_EMsgAMPlayerNicknameListResponse = 4267,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetDRMTestConfig = 4268;
-	 */
-	k_EMsgAMSetDRMTestConfig = 4268,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetUserCurrentGameInfo = 4269;
-	 */
-	k_EMsgAMGetUserCurrentGameInfo = 4269,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetUserCurrentGameInfoResponse = 4270;
-	 */
-	k_EMsgAMGetUserCurrentGameInfoResponse = 4270,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetGSPlayerList = 4271;
-	 */
-	k_EMsgAMGetGSPlayerList = 4271,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetGSPlayerListResponse = 4272;
-	 */
-	k_EMsgAMGetGSPlayerListResponse = 4272,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetSteamIDForMicroTxn = 4278;
-	 */
-	k_EMsgAMGetSteamIDForMicroTxn = 4278,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetSteamIDForMicroTxnResponse = 4279;
-	 */
-	k_EMsgAMGetSteamIDForMicroTxnResponse = 4279,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetPartnerMember = 4280;
-	 */
-	k_EMsgAMSetPartnerMember = 4280,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRemovePublisherUser = 4281;
-	 */
-	k_EMsgAMRemovePublisherUser = 4281,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetUserLicenseList = 4282;
-	 */
-	k_EMsgAMGetUserLicenseList = 4282,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetUserLicenseListResponse = 4283;
-	 */
-	k_EMsgAMGetUserLicenseListResponse = 4283,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMReloadGameGroupPolicy = 4284;
-	 */
-	k_EMsgAMReloadGameGroupPolicy = 4284,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMAddFreeLicenseResponse = 4285;
-	 */
-	k_EMsgAMAddFreeLicenseResponse = 4285,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMVACStatusUpdate = 4286;
-	 */
-	k_EMsgAMVACStatusUpdate = 4286,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountDetails = 4287;
-	 */
-	k_EMsgAMGetAccountDetails = 4287,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountDetailsResponse = 4288;
-	 */
-	k_EMsgAMGetAccountDetailsResponse = 4288,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetPlayerLinkDetails = 4289;
-	 */
-	k_EMsgAMGetPlayerLinkDetails = 4289,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetPlayerLinkDetailsResponse = 4290;
-	 */
-	k_EMsgAMGetPlayerLinkDetailsResponse = 4290,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountFlagsForWGSpoofing = 4294;
-	 */
-	k_EMsgAMGetAccountFlagsForWGSpoofing = 4294,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountFlagsForWGSpoofingResponse = 4295;
-	 */
-	k_EMsgAMGetAccountFlagsForWGSpoofingResponse = 4295,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanOfficers = 4298;
-	 */
-	k_EMsgAMGetClanOfficers = 4298,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanOfficersResponse = 4299;
-	 */
-	k_EMsgAMGetClanOfficersResponse = 4299,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMNameChange = 4300;
-	 */
-	k_EMsgAMNameChange = 4300,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetNameHistory = 4301;
-	 */
-	k_EMsgAMGetNameHistory = 4301,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetNameHistoryResponse = 4302;
-	 */
-	k_EMsgAMGetNameHistoryResponse = 4302,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMUpdateProviderStatus = 4305;
-	 */
-	k_EMsgAMUpdateProviderStatus = 4305,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSupportRemoveAccountSecurity = 4307;
-	 */
-	k_EMsgAMSupportRemoveAccountSecurity = 4307,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMIsAccountInCaptchaGracePeriod = 4308;
-	 */
-	k_EMsgAMIsAccountInCaptchaGracePeriod = 4308,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMIsAccountInCaptchaGracePeriodResponse = 4309;
-	 */
-	k_EMsgAMIsAccountInCaptchaGracePeriodResponse = 4309,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMAccountPS3Unlink = 4310;
-	 */
-	k_EMsgAMAccountPS3Unlink = 4310,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMAccountPS3UnlinkResponse = 4311;
-	 */
-	k_EMsgAMAccountPS3UnlinkResponse = 4311,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUGSStoreUserStatsResponse = 4312;
-	 */
-	k_EMsgUGSStoreUserStatsResponse = 4312,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountPSNInfo = 4313;
-	 */
-	k_EMsgAMGetAccountPSNInfo = 4313,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountPSNInfoResponse = 4314;
-	 */
-	k_EMsgAMGetAccountPSNInfoResponse = 4314,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMAuthenticatedPlayerList = 4315;
-	 */
-	k_EMsgAMAuthenticatedPlayerList = 4315,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetUserGifts = 4316;
-	 */
-	k_EMsgAMGetUserGifts = 4316,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetUserGiftsResponse = 4317;
-	 */
-	k_EMsgAMGetUserGiftsResponse = 4317,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMTransferLockedGifts = 4320;
-	 */
-	k_EMsgAMTransferLockedGifts = 4320,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMTransferLockedGiftsResponse = 4321;
-	 */
-	k_EMsgAMTransferLockedGiftsResponse = 4321,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMPlayerHostedOnGameServer = 4322;
-	 */
-	k_EMsgAMPlayerHostedOnGameServer = 4322,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountBanInfo = 4323;
-	 */
-	k_EMsgAMGetAccountBanInfo = 4323,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountBanInfoResponse = 4324;
-	 */
-	k_EMsgAMGetAccountBanInfoResponse = 4324,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRecordBanEnforcement = 4325;
-	 */
-	k_EMsgAMRecordBanEnforcement = 4325,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRollbackGiftTransfer = 4326;
-	 */
-	k_EMsgAMRollbackGiftTransfer = 4326,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRollbackGiftTransferResponse = 4327;
-	 */
-	k_EMsgAMRollbackGiftTransferResponse = 4327,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMHandlePendingTransaction = 4328;
-	 */
-	k_EMsgAMHandlePendingTransaction = 4328,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRequestClanDetails = 4329;
-	 */
-	k_EMsgAMRequestClanDetails = 4329,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMDeleteStoredPaypalAgreement = 4330;
-	 */
-	k_EMsgAMDeleteStoredPaypalAgreement = 4330,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGameServerUpdate = 4331;
-	 */
-	k_EMsgAMGameServerUpdate = 4331,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGameServerRemove = 4332;
-	 */
-	k_EMsgAMGameServerRemove = 4332,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetPaypalAgreements = 4333;
-	 */
-	k_EMsgAMGetPaypalAgreements = 4333,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetPaypalAgreementsResponse = 4334;
-	 */
-	k_EMsgAMGetPaypalAgreementsResponse = 4334,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGameServerPlayerCompatibilityCheck = 4335;
-	 */
-	k_EMsgAMGameServerPlayerCompatibilityCheck = 4335,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGameServerPlayerCompatibilityCheckResponse = 4336;
-	 */
-	k_EMsgAMGameServerPlayerCompatibilityCheckResponse = 4336,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRenewLicense = 4337;
-	 */
-	k_EMsgAMRenewLicense = 4337,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountCommunityBanInfo = 4338;
-	 */
-	k_EMsgAMGetAccountCommunityBanInfo = 4338,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountCommunityBanInfoResponse = 4339;
-	 */
-	k_EMsgAMGetAccountCommunityBanInfoResponse = 4339,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGameServerAccountChangePassword = 4340;
-	 */
-	k_EMsgAMGameServerAccountChangePassword = 4340,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGameServerAccountDeleteAccount = 4341;
-	 */
-	k_EMsgAMGameServerAccountDeleteAccount = 4341,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRenewAgreement = 4342;
-	 */
-	k_EMsgAMRenewAgreement = 4342,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMXsollaPayment = 4344;
-	 */
-	k_EMsgAMXsollaPayment = 4344,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMXsollaPaymentResponse = 4345;
-	 */
-	k_EMsgAMXsollaPaymentResponse = 4345,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMAcctAllowedToPurchase = 4346;
-	 */
-	k_EMsgAMAcctAllowedToPurchase = 4346,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMAcctAllowedToPurchaseResponse = 4347;
-	 */
-	k_EMsgAMAcctAllowedToPurchaseResponse = 4347,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSwapKioskDeposit = 4348;
-	 */
-	k_EMsgAMSwapKioskDeposit = 4348,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSwapKioskDepositResponse = 4349;
-	 */
-	k_EMsgAMSwapKioskDepositResponse = 4349,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetUserGiftUnowned = 4350;
-	 */
-	k_EMsgAMSetUserGiftUnowned = 4350,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetUserGiftUnownedResponse = 4351;
-	 */
-	k_EMsgAMSetUserGiftUnownedResponse = 4351,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClaimUnownedUserGift = 4352;
-	 */
-	k_EMsgAMClaimUnownedUserGift = 4352,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClaimUnownedUserGiftResponse = 4353;
-	 */
-	k_EMsgAMClaimUnownedUserGiftResponse = 4353,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetClanName = 4354;
-	 */
-	k_EMsgAMSetClanName = 4354,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSetClanNameResponse = 4355;
-	 */
-	k_EMsgAMSetClanNameResponse = 4355,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGrantCoupon = 4356;
-	 */
-	k_EMsgAMGrantCoupon = 4356,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGrantCouponResponse = 4357;
-	 */
-	k_EMsgAMGrantCouponResponse = 4357,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMIsPackageRestrictedInUserCountry = 4358;
-	 */
-	k_EMsgAMIsPackageRestrictedInUserCountry = 4358,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMIsPackageRestrictedInUserCountryResponse = 4359;
-	 */
-	k_EMsgAMIsPackageRestrictedInUserCountryResponse = 4359,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMHandlePendingTransactionResponse = 4360;
-	 */
-	k_EMsgAMHandlePendingTransactionResponse = 4360,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGrantGuestPasses2 = 4361;
-	 */
-	k_EMsgAMGrantGuestPasses2 = 4361,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGrantGuestPasses2Response = 4362;
-	 */
-	k_EMsgAMGrantGuestPasses2Response = 4362,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetPlayerBanDetails = 4365;
-	 */
-	k_EMsgAMGetPlayerBanDetails = 4365,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetPlayerBanDetailsResponse = 4366;
-	 */
-	k_EMsgAMGetPlayerBanDetailsResponse = 4366,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFinalizePurchase = 4367;
-	 */
-	k_EMsgAMFinalizePurchase = 4367,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFinalizePurchaseResponse = 4368;
-	 */
-	k_EMsgAMFinalizePurchaseResponse = 4368,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMPersonaChangeResponse = 4372;
-	 */
-	k_EMsgAMPersonaChangeResponse = 4372,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanDetailsForForumCreation = 4373;
-	 */
-	k_EMsgAMGetClanDetailsForForumCreation = 4373,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetClanDetailsForForumCreationResponse = 4374;
-	 */
-	k_EMsgAMGetClanDetailsForForumCreationResponse = 4374,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetPendingNotificationCount = 4375;
-	 */
-	k_EMsgAMGetPendingNotificationCount = 4375,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetPendingNotificationCountResponse = 4376;
-	 */
-	k_EMsgAMGetPendingNotificationCountResponse = 4376,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMPasswordHashUpgrade = 4377;
-	 */
-	k_EMsgAMPasswordHashUpgrade = 4377,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMBoaCompraPayment = 4380;
-	 */
-	k_EMsgAMBoaCompraPayment = 4380,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMBoaCompraPaymentResponse = 4381;
-	 */
-	k_EMsgAMBoaCompraPaymentResponse = 4381,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCompleteExternalPurchase = 4383;
-	 */
-	k_EMsgAMCompleteExternalPurchase = 4383,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMCompleteExternalPurchaseResponse = 4384;
-	 */
-	k_EMsgAMCompleteExternalPurchaseResponse = 4384,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMResolveNegativeWalletCredits = 4385;
-	 */
-	k_EMsgAMResolveNegativeWalletCredits = 4385,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMResolveNegativeWalletCreditsResponse = 4386;
-	 */
-	k_EMsgAMResolveNegativeWalletCreditsResponse = 4386,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMPlayerGetClanBasicDetails = 4389;
-	 */
-	k_EMsgAMPlayerGetClanBasicDetails = 4389,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMPlayerGetClanBasicDetailsResponse = 4390;
-	 */
-	k_EMsgAMPlayerGetClanBasicDetailsResponse = 4390,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMMOLPayment = 4391;
-	 */
-	k_EMsgAMMOLPayment = 4391,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMMOLPaymentResponse = 4392;
-	 */
-	k_EMsgAMMOLPaymentResponse = 4392,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGetUserIPCountry = 4393;
-	 */
-	k_EMsgGetUserIPCountry = 4393,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGetUserIPCountryResponse = 4394;
-	 */
-	k_EMsgGetUserIPCountryResponse = 4394,
-	/**
-	 * @generated from protobuf enum value: k_EMsgNotificationOfSuspiciousActivity = 4395;
-	 */
-	k_EMsgNotificationOfSuspiciousActivity = 4395,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMDegicaPayment = 4396;
-	 */
-	k_EMsgAMDegicaPayment = 4396,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMDegicaPaymentResponse = 4397;
-	 */
-	k_EMsgAMDegicaPaymentResponse = 4397,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMEClubPayment = 4398;
-	 */
-	k_EMsgAMEClubPayment = 4398,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMEClubPaymentResponse = 4399;
-	 */
-	k_EMsgAMEClubPaymentResponse = 4399,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMPayPalPaymentsHubPayment = 4400;
-	 */
-	k_EMsgAMPayPalPaymentsHubPayment = 4400,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMPayPalPaymentsHubPaymentResponse = 4401;
-	 */
-	k_EMsgAMPayPalPaymentsHubPaymentResponse = 4401,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMTwoFactorRecoverAuthenticatorRequest = 4402;
-	 */
-	k_EMsgAMTwoFactorRecoverAuthenticatorRequest = 4402,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMTwoFactorRecoverAuthenticatorResponse = 4403;
-	 */
-	k_EMsgAMTwoFactorRecoverAuthenticatorResponse = 4403,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSmart2PayPayment = 4404;
-	 */
-	k_EMsgAMSmart2PayPayment = 4404,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSmart2PayPaymentResponse = 4405;
-	 */
-	k_EMsgAMSmart2PayPaymentResponse = 4405,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMValidatePasswordResetCodeAndSendSmsRequest = 4406;
-	 */
-	k_EMsgAMValidatePasswordResetCodeAndSendSmsRequest = 4406,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMValidatePasswordResetCodeAndSendSmsResponse = 4407;
-	 */
-	k_EMsgAMValidatePasswordResetCodeAndSendSmsResponse = 4407,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountResetDetailsRequest = 4408;
-	 */
-	k_EMsgAMGetAccountResetDetailsRequest = 4408,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGetAccountResetDetailsResponse = 4409;
-	 */
-	k_EMsgAMGetAccountResetDetailsResponse = 4409,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMBitPayPayment = 4410;
-	 */
-	k_EMsgAMBitPayPayment = 4410,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMBitPayPaymentResponse = 4411;
-	 */
-	k_EMsgAMBitPayPaymentResponse = 4411,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSendAccountInfoUpdate = 4412;
-	 */
-	k_EMsgAMSendAccountInfoUpdate = 4412,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMSendScheduledGift = 4413;
-	 */
-	k_EMsgAMSendScheduledGift = 4413,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMNodwinPayment = 4414;
-	 */
-	k_EMsgAMNodwinPayment = 4414,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMNodwinPaymentResponse = 4415;
-	 */
-	k_EMsgAMNodwinPaymentResponse = 4415,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMResolveWalletRevoke = 4416;
-	 */
-	k_EMsgAMResolveWalletRevoke = 4416,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMResolveWalletReverseRevoke = 4417;
-	 */
-	k_EMsgAMResolveWalletReverseRevoke = 4417,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFundedPayment = 4418;
-	 */
-	k_EMsgAMFundedPayment = 4418,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMFundedPaymentResponse = 4419;
-	 */
-	k_EMsgAMFundedPaymentResponse = 4419,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRequestPersonaUpdateForChatServer = 4420;
-	 */
-	k_EMsgAMRequestPersonaUpdateForChatServer = 4420,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMPerfectWorldPayment = 4421;
-	 */
-	k_EMsgAMPerfectWorldPayment = 4421,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMPerfectWorldPaymentResponse = 4422;
-	 */
-	k_EMsgAMPerfectWorldPaymentResponse = 4422,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMECommPayPayment = 4423;
-	 */
-	k_EMsgAMECommPayPayment = 4423,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMECommPayPaymentResponse = 4424;
-	 */
-	k_EMsgAMECommPayPaymentResponse = 4424,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBasePSRange = 5000;
-	 */
-	k_EMsgBasePSRange = 5000,
-	/**
-	 * @generated from protobuf enum value: k_EMsgPSCreateShoppingCart = 5001;
-	 */
-	k_EMsgPSCreateShoppingCart = 5001,
-	/**
-	 * @generated from protobuf enum value: k_EMsgPSCreateShoppingCartResponse = 5002;
-	 */
-	k_EMsgPSCreateShoppingCartResponse = 5002,
-	/**
-	 * @generated from protobuf enum value: k_EMsgPSIsValidShoppingCart = 5003;
-	 */
-	k_EMsgPSIsValidShoppingCart = 5003,
-	/**
-	 * @generated from protobuf enum value: k_EMsgPSIsValidShoppingCartResponse = 5004;
-	 */
-	k_EMsgPSIsValidShoppingCartResponse = 5004,
-	/**
-	 * @generated from protobuf enum value: k_EMsgPSRemoveLineItemFromShoppingCart = 5007;
-	 */
-	k_EMsgPSRemoveLineItemFromShoppingCart = 5007,
-	/**
-	 * @generated from protobuf enum value: k_EMsgPSRemoveLineItemFromShoppingCartResponse = 5008;
-	 */
-	k_EMsgPSRemoveLineItemFromShoppingCartResponse = 5008,
-	/**
-	 * @generated from protobuf enum value: k_EMsgPSGetShoppingCartContents = 5009;
-	 */
-	k_EMsgPSGetShoppingCartContents = 5009,
-	/**
-	 * @generated from protobuf enum value: k_EMsgPSGetShoppingCartContentsResponse = 5010;
-	 */
-	k_EMsgPSGetShoppingCartContentsResponse = 5010,
-	/**
-	 * @generated from protobuf enum value: k_EMsgPSAddWalletCreditToShoppingCart = 5011;
-	 */
-	k_EMsgPSAddWalletCreditToShoppingCart = 5011,
-	/**
-	 * @generated from protobuf enum value: k_EMsgPSAddWalletCreditToShoppingCartResponse = 5012;
-	 */
-	k_EMsgPSAddWalletCreditToShoppingCartResponse = 5012,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseUFSRange = 5200;
-	 */
-	k_EMsgBaseUFSRange = 5200,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSUploadFileRequest = 5202;
-	 */
-	k_EMsgClientUFSUploadFileRequest = 5202,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSUploadFileResponse = 5203;
-	 */
-	k_EMsgClientUFSUploadFileResponse = 5203,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSUploadFileChunk = 5204;
-	 */
-	k_EMsgClientUFSUploadFileChunk = 5204,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSUploadFileFinished = 5205;
-	 */
-	k_EMsgClientUFSUploadFileFinished = 5205,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSGetFileListForApp = 5206;
-	 */
-	k_EMsgClientUFSGetFileListForApp = 5206,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSGetFileListForAppResponse = 5207;
-	 */
-	k_EMsgClientUFSGetFileListForAppResponse = 5207,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSDownloadRequest = 5210;
-	 */
-	k_EMsgClientUFSDownloadRequest = 5210,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSDownloadResponse = 5211;
-	 */
-	k_EMsgClientUFSDownloadResponse = 5211,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSDownloadChunk = 5212;
-	 */
-	k_EMsgClientUFSDownloadChunk = 5212,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSLoginRequest = 5213;
-	 */
-	k_EMsgClientUFSLoginRequest = 5213,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSLoginResponse = 5214;
-	 */
-	k_EMsgClientUFSLoginResponse = 5214,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSReloadPartitionInfo = 5215;
-	 */
-	k_EMsgUFSReloadPartitionInfo = 5215,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSTransferHeartbeat = 5216;
-	 */
-	k_EMsgClientUFSTransferHeartbeat = 5216,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSSynchronizeFile = 5217;
-	 */
-	k_EMsgUFSSynchronizeFile = 5217,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSSynchronizeFileResponse = 5218;
-	 */
-	k_EMsgUFSSynchronizeFileResponse = 5218,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSDeleteFileRequest = 5219;
-	 */
-	k_EMsgClientUFSDeleteFileRequest = 5219,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSDeleteFileResponse = 5220;
-	 */
-	k_EMsgClientUFSDeleteFileResponse = 5220,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSGetUGCDetails = 5226;
-	 */
-	k_EMsgClientUFSGetUGCDetails = 5226,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSGetUGCDetailsResponse = 5227;
-	 */
-	k_EMsgClientUFSGetUGCDetailsResponse = 5227,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSUpdateFileFlags = 5228;
-	 */
-	k_EMsgUFSUpdateFileFlags = 5228,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSUpdateFileFlagsResponse = 5229;
-	 */
-	k_EMsgUFSUpdateFileFlagsResponse = 5229,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSGetSingleFileInfo = 5230;
-	 */
-	k_EMsgClientUFSGetSingleFileInfo = 5230,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSGetSingleFileInfoResponse = 5231;
-	 */
-	k_EMsgClientUFSGetSingleFileInfoResponse = 5231,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSShareFile = 5232;
-	 */
-	k_EMsgClientUFSShareFile = 5232,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSShareFileResponse = 5233;
-	 */
-	k_EMsgClientUFSShareFileResponse = 5233,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSReloadAccount = 5234;
-	 */
-	k_EMsgUFSReloadAccount = 5234,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSReloadAccountResponse = 5235;
-	 */
-	k_EMsgUFSReloadAccountResponse = 5235,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSUpdateRecordBatched = 5236;
-	 */
-	k_EMsgUFSUpdateRecordBatched = 5236,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSUpdateRecordBatchedResponse = 5237;
-	 */
-	k_EMsgUFSUpdateRecordBatchedResponse = 5237,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSMigrateFile = 5238;
-	 */
-	k_EMsgUFSMigrateFile = 5238,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSMigrateFileResponse = 5239;
-	 */
-	k_EMsgUFSMigrateFileResponse = 5239,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSGetUGCURLs = 5240;
-	 */
-	k_EMsgUFSGetUGCURLs = 5240,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSGetUGCURLsResponse = 5241;
-	 */
-	k_EMsgUFSGetUGCURLsResponse = 5241,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSHttpUploadFileFinishRequest = 5242;
-	 */
-	k_EMsgUFSHttpUploadFileFinishRequest = 5242,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSHttpUploadFileFinishResponse = 5243;
-	 */
-	k_EMsgUFSHttpUploadFileFinishResponse = 5243,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSDownloadStartRequest = 5244;
-	 */
-	k_EMsgUFSDownloadStartRequest = 5244,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSDownloadStartResponse = 5245;
-	 */
-	k_EMsgUFSDownloadStartResponse = 5245,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSDownloadChunkRequest = 5246;
-	 */
-	k_EMsgUFSDownloadChunkRequest = 5246,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSDownloadChunkResponse = 5247;
-	 */
-	k_EMsgUFSDownloadChunkResponse = 5247,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSDownloadFinishRequest = 5248;
-	 */
-	k_EMsgUFSDownloadFinishRequest = 5248,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSDownloadFinishResponse = 5249;
-	 */
-	k_EMsgUFSDownloadFinishResponse = 5249,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSFlushURLCache = 5250;
-	 */
-	k_EMsgUFSFlushURLCache = 5250,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSUploadCommit = 5251;
-	 */
-	k_EMsgClientUFSUploadCommit = 5251,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUFSUploadCommitResponse = 5252;
-	 */
-	k_EMsgClientUFSUploadCommitResponse = 5252,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSMigrateFileAppID = 5253;
-	 */
-	k_EMsgUFSMigrateFileAppID = 5253,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUFSMigrateFileAppIDResponse = 5254;
-	 */
-	k_EMsgUFSMigrateFileAppIDResponse = 5254,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseClient2 = 5400;
-	 */
-	k_EMsgBaseClient2 = 5400,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestForgottenPasswordEmail = 5401;
-	 */
-	k_EMsgClientRequestForgottenPasswordEmail = 5401,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestForgottenPasswordEmailResponse = 5402;
-	 */
-	k_EMsgClientRequestForgottenPasswordEmailResponse = 5402,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientCreateAccountResponse = 5403;
-	 */
-	k_EMsgClientCreateAccountResponse = 5403,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientResetForgottenPassword = 5404;
-	 */
-	k_EMsgClientResetForgottenPassword = 5404,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientResetForgottenPasswordResponse = 5405;
-	 */
-	k_EMsgClientResetForgottenPasswordResponse = 5405,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientInformOfResetForgottenPassword = 5407;
-	 */
-	k_EMsgClientInformOfResetForgottenPassword = 5407,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientInformOfResetForgottenPasswordResponse = 5408;
-	 */
-	k_EMsgClientInformOfResetForgottenPasswordResponse = 5408,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAnonUserLogOn_Deprecated = 5409;
-	 */
-	k_EMsgClientAnonUserLogOn_Deprecated = 5409,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGamesPlayedWithDataBlob = 5410;
-	 */
-	k_EMsgClientGamesPlayedWithDataBlob = 5410,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUpdateUserGameInfo = 5411;
-	 */
-	k_EMsgClientUpdateUserGameInfo = 5411,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFileToDownload = 5412;
-	 */
-	k_EMsgClientFileToDownload = 5412,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFileToDownloadResponse = 5413;
-	 */
-	k_EMsgClientFileToDownloadResponse = 5413,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLBSSetScore = 5414;
-	 */
-	k_EMsgClientLBSSetScore = 5414,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLBSSetScoreResponse = 5415;
-	 */
-	k_EMsgClientLBSSetScoreResponse = 5415,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLBSFindOrCreateLB = 5416;
-	 */
-	k_EMsgClientLBSFindOrCreateLB = 5416,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLBSFindOrCreateLBResponse = 5417;
-	 */
-	k_EMsgClientLBSFindOrCreateLBResponse = 5417,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLBSGetLBEntries = 5418;
-	 */
-	k_EMsgClientLBSGetLBEntries = 5418,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLBSGetLBEntriesResponse = 5419;
-	 */
-	k_EMsgClientLBSGetLBEntriesResponse = 5419,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientChatDeclined = 5426;
-	 */
-	k_EMsgClientChatDeclined = 5426,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFriendMsgIncoming = 5427;
-	 */
-	k_EMsgClientFriendMsgIncoming = 5427,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAuthList_Deprecated = 5428;
-	 */
-	k_EMsgClientAuthList_Deprecated = 5428,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientTicketAuthComplete = 5429;
-	 */
-	k_EMsgClientTicketAuthComplete = 5429,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientIsLimitedAccount = 5430;
-	 */
-	k_EMsgClientIsLimitedAccount = 5430,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestAuthList = 5431;
-	 */
-	k_EMsgClientRequestAuthList = 5431,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAuthList = 5432;
-	 */
-	k_EMsgClientAuthList = 5432,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientStat = 5433;
-	 */
-	k_EMsgClientStat = 5433,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientP2PConnectionInfo = 5434;
-	 */
-	k_EMsgClientP2PConnectionInfo = 5434,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientP2PConnectionFailInfo = 5435;
-	 */
-	k_EMsgClientP2PConnectionFailInfo = 5435,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetDepotDecryptionKey = 5438;
-	 */
-	k_EMsgClientGetDepotDecryptionKey = 5438,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetDepotDecryptionKeyResponse = 5439;
-	 */
-	k_EMsgClientGetDepotDecryptionKeyResponse = 5439,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGSPerformHardwareSurvey = 5440;
-	 */
-	k_EMsgGSPerformHardwareSurvey = 5440,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientEnableTestLicense = 5443;
-	 */
-	k_EMsgClientEnableTestLicense = 5443,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientEnableTestLicenseResponse = 5444;
-	 */
-	k_EMsgClientEnableTestLicenseResponse = 5444,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDisableTestLicense = 5445;
-	 */
-	k_EMsgClientDisableTestLicense = 5445,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDisableTestLicenseResponse = 5446;
-	 */
-	k_EMsgClientDisableTestLicenseResponse = 5446,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestValidationMail = 5448;
-	 */
-	k_EMsgClientRequestValidationMail = 5448,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestValidationMailResponse = 5449;
-	 */
-	k_EMsgClientRequestValidationMailResponse = 5449,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientCheckAppBetaPassword = 5450;
-	 */
-	k_EMsgClientCheckAppBetaPassword = 5450,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientCheckAppBetaPasswordResponse = 5451;
-	 */
-	k_EMsgClientCheckAppBetaPasswordResponse = 5451,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientToGC = 5452;
-	 */
-	k_EMsgClientToGC = 5452,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFromGC = 5453;
-	 */
-	k_EMsgClientFromGC = 5453,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientEmailAddrInfo = 5456;
-	 */
-	k_EMsgClientEmailAddrInfo = 5456,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPasswordChange3 = 5457;
-	 */
-	k_EMsgClientPasswordChange3 = 5457,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientEmailChange3 = 5458;
-	 */
-	k_EMsgClientEmailChange3 = 5458,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPersonalQAChange3 = 5459;
-	 */
-	k_EMsgClientPersonalQAChange3 = 5459,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientResetForgottenPassword3 = 5460;
-	 */
-	k_EMsgClientResetForgottenPassword3 = 5460,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestForgottenPasswordEmail3 = 5461;
-	 */
-	k_EMsgClientRequestForgottenPasswordEmail3 = 5461,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientNewLoginKey = 5463;
-	 */
-	k_EMsgClientNewLoginKey = 5463,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientNewLoginKeyAccepted = 5464;
-	 */
-	k_EMsgClientNewLoginKeyAccepted = 5464,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLogOnWithHash_Deprecated = 5465;
-	 */
-	k_EMsgClientLogOnWithHash_Deprecated = 5465,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientStoreUserStats2 = 5466;
-	 */
-	k_EMsgClientStoreUserStats2 = 5466,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientStatsUpdated = 5467;
-	 */
-	k_EMsgClientStatsUpdated = 5467,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientActivateOEMLicense = 5468;
-	 */
-	k_EMsgClientActivateOEMLicense = 5468,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRegisterOEMMachine = 5469;
-	 */
-	k_EMsgClientRegisterOEMMachine = 5469,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRegisterOEMMachineResponse = 5470;
-	 */
-	k_EMsgClientRegisterOEMMachineResponse = 5470,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestedClientStats = 5480;
-	 */
-	k_EMsgClientRequestedClientStats = 5480,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientStat2Int32 = 5481;
-	 */
-	k_EMsgClientStat2Int32 = 5481,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientStat2 = 5482;
-	 */
-	k_EMsgClientStat2 = 5482,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientVerifyPassword = 5483;
-	 */
-	k_EMsgClientVerifyPassword = 5483,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientVerifyPasswordResponse = 5484;
-	 */
-	k_EMsgClientVerifyPasswordResponse = 5484,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDRMDownloadRequest = 5485;
-	 */
-	k_EMsgClientDRMDownloadRequest = 5485,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDRMDownloadResponse = 5486;
-	 */
-	k_EMsgClientDRMDownloadResponse = 5486,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDRMFinalResult = 5487;
-	 */
-	k_EMsgClientDRMFinalResult = 5487,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetFriendsWhoPlayGame = 5488;
-	 */
-	k_EMsgClientGetFriendsWhoPlayGame = 5488,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetFriendsWhoPlayGameResponse = 5489;
-	 */
-	k_EMsgClientGetFriendsWhoPlayGameResponse = 5489,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientOGSBeginSession = 5490;
-	 */
-	k_EMsgClientOGSBeginSession = 5490,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientOGSBeginSessionResponse = 5491;
-	 */
-	k_EMsgClientOGSBeginSessionResponse = 5491,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientOGSEndSession = 5492;
-	 */
-	k_EMsgClientOGSEndSession = 5492,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientOGSEndSessionResponse = 5493;
-	 */
-	k_EMsgClientOGSEndSessionResponse = 5493,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientOGSWriteRow = 5494;
-	 */
-	k_EMsgClientOGSWriteRow = 5494,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDRMTest = 5495;
-	 */
-	k_EMsgClientDRMTest = 5495,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDRMTestResult = 5496;
-	 */
-	k_EMsgClientDRMTestResult = 5496,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientServerUnavailable = 5500;
-	 */
-	k_EMsgClientServerUnavailable = 5500,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientServersAvailable = 5501;
-	 */
-	k_EMsgClientServersAvailable = 5501,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRegisterAuthTicketWithCM = 5502;
-	 */
-	k_EMsgClientRegisterAuthTicketWithCM = 5502,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGCMsgFailed = 5503;
-	 */
-	k_EMsgClientGCMsgFailed = 5503,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMicroTxnAuthRequest = 5504;
-	 */
-	k_EMsgClientMicroTxnAuthRequest = 5504,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMicroTxnAuthorize = 5505;
-	 */
-	k_EMsgClientMicroTxnAuthorize = 5505,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMicroTxnAuthorizeResponse = 5506;
-	 */
-	k_EMsgClientMicroTxnAuthorizeResponse = 5506,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetMicroTxnInfo = 5508;
-	 */
-	k_EMsgClientGetMicroTxnInfo = 5508,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetMicroTxnInfoResponse = 5509;
-	 */
-	k_EMsgClientGetMicroTxnInfoResponse = 5509,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMarketingMessageUpdate2 = 5510;
-	 */
-	k_EMsgClientMarketingMessageUpdate2 = 5510,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDeregisterWithServer = 5511;
-	 */
-	k_EMsgClientDeregisterWithServer = 5511,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSubscribeToPersonaFeed = 5512;
-	 */
-	k_EMsgClientSubscribeToPersonaFeed = 5512,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLogon = 5514;
-	 */
-	k_EMsgClientLogon = 5514,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetClientDetails = 5515;
-	 */
-	k_EMsgClientGetClientDetails = 5515,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetClientDetailsResponse = 5516;
-	 */
-	k_EMsgClientGetClientDetailsResponse = 5516,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientReportOverlayDetourFailure = 5517;
-	 */
-	k_EMsgClientReportOverlayDetourFailure = 5517,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetClientAppList = 5518;
-	 */
-	k_EMsgClientGetClientAppList = 5518,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetClientAppListResponse = 5519;
-	 */
-	k_EMsgClientGetClientAppListResponse = 5519,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientInstallClientApp = 5520;
-	 */
-	k_EMsgClientInstallClientApp = 5520,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientInstallClientAppResponse = 5521;
-	 */
-	k_EMsgClientInstallClientAppResponse = 5521,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUninstallClientApp = 5522;
-	 */
-	k_EMsgClientUninstallClientApp = 5522,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUninstallClientAppResponse = 5523;
-	 */
-	k_EMsgClientUninstallClientAppResponse = 5523,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSetClientAppUpdateState = 5524;
-	 */
-	k_EMsgClientSetClientAppUpdateState = 5524,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSetClientAppUpdateStateResponse = 5525;
-	 */
-	k_EMsgClientSetClientAppUpdateStateResponse = 5525,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestEncryptedAppTicket = 5526;
-	 */
-	k_EMsgClientRequestEncryptedAppTicket = 5526,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestEncryptedAppTicketResponse = 5527;
-	 */
-	k_EMsgClientRequestEncryptedAppTicketResponse = 5527,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientWalletInfoUpdate = 5528;
-	 */
-	k_EMsgClientWalletInfoUpdate = 5528,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLBSSetUGC = 5529;
-	 */
-	k_EMsgClientLBSSetUGC = 5529,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLBSSetUGCResponse = 5530;
-	 */
-	k_EMsgClientLBSSetUGCResponse = 5530,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAMGetClanOfficers = 5531;
-	 */
-	k_EMsgClientAMGetClanOfficers = 5531,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAMGetClanOfficersResponse = 5532;
-	 */
-	k_EMsgClientAMGetClanOfficersResponse = 5532,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFriendProfileInfo = 5535;
-	 */
-	k_EMsgClientFriendProfileInfo = 5535,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFriendProfileInfoResponse = 5536;
-	 */
-	k_EMsgClientFriendProfileInfoResponse = 5536,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUpdateMachineAuth = 5537;
-	 */
-	k_EMsgClientUpdateMachineAuth = 5537,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUpdateMachineAuthResponse = 5538;
-	 */
-	k_EMsgClientUpdateMachineAuthResponse = 5538,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientReadMachineAuth = 5539;
-	 */
-	k_EMsgClientReadMachineAuth = 5539,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientReadMachineAuthResponse = 5540;
-	 */
-	k_EMsgClientReadMachineAuthResponse = 5540,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestMachineAuth = 5541;
-	 */
-	k_EMsgClientRequestMachineAuth = 5541,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestMachineAuthResponse = 5542;
-	 */
-	k_EMsgClientRequestMachineAuthResponse = 5542,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientScreenshotsChanged = 5543;
-	 */
-	k_EMsgClientScreenshotsChanged = 5543,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetCDNAuthToken = 5546;
-	 */
-	k_EMsgClientGetCDNAuthToken = 5546,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetCDNAuthTokenResponse = 5547;
-	 */
-	k_EMsgClientGetCDNAuthTokenResponse = 5547,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDownloadRateStatistics = 5548;
-	 */
-	k_EMsgClientDownloadRateStatistics = 5548,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestAccountData = 5549;
-	 */
-	k_EMsgClientRequestAccountData = 5549,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestAccountDataResponse = 5550;
-	 */
-	k_EMsgClientRequestAccountDataResponse = 5550,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientResetForgottenPassword4 = 5551;
-	 */
-	k_EMsgClientResetForgottenPassword4 = 5551,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientHideFriend = 5552;
-	 */
-	k_EMsgClientHideFriend = 5552,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFriendsGroupsList = 5553;
-	 */
-	k_EMsgClientFriendsGroupsList = 5553,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetClanActivityCounts = 5554;
-	 */
-	k_EMsgClientGetClanActivityCounts = 5554,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetClanActivityCountsResponse = 5555;
-	 */
-	k_EMsgClientGetClanActivityCountsResponse = 5555,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientOGSReportString = 5556;
-	 */
-	k_EMsgClientOGSReportString = 5556,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientOGSReportBug = 5557;
-	 */
-	k_EMsgClientOGSReportBug = 5557,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSentLogs = 5558;
-	 */
-	k_EMsgClientSentLogs = 5558,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLogonGameServer = 5559;
-	 */
-	k_EMsgClientLogonGameServer = 5559,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientCreateFriendsGroup = 5560;
-	 */
-	k_EMsgAMClientCreateFriendsGroup = 5560,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientCreateFriendsGroupResponse = 5561;
-	 */
-	k_EMsgAMClientCreateFriendsGroupResponse = 5561,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientDeleteFriendsGroup = 5562;
-	 */
-	k_EMsgAMClientDeleteFriendsGroup = 5562,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientDeleteFriendsGroupResponse = 5563;
-	 */
-	k_EMsgAMClientDeleteFriendsGroupResponse = 5563,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientManageFriendsGroup = 5564;
-	 */
-	k_EMsgAMClientManageFriendsGroup = 5564,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientManageFriendsGroupResponse = 5565;
-	 */
-	k_EMsgAMClientManageFriendsGroupResponse = 5565,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientAddFriendToGroup = 5566;
-	 */
-	k_EMsgAMClientAddFriendToGroup = 5566,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientAddFriendToGroupResponse = 5567;
-	 */
-	k_EMsgAMClientAddFriendToGroupResponse = 5567,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientRemoveFriendFromGroup = 5568;
-	 */
-	k_EMsgAMClientRemoveFriendFromGroup = 5568,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientRemoveFriendFromGroupResponse = 5569;
-	 */
-	k_EMsgAMClientRemoveFriendFromGroupResponse = 5569,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAMGetPersonaNameHistory = 5570;
-	 */
-	k_EMsgClientAMGetPersonaNameHistory = 5570,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAMGetPersonaNameHistoryResponse = 5571;
-	 */
-	k_EMsgClientAMGetPersonaNameHistoryResponse = 5571,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestFreeLicense = 5572;
-	 */
-	k_EMsgClientRequestFreeLicense = 5572,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestFreeLicenseResponse = 5573;
-	 */
-	k_EMsgClientRequestFreeLicenseResponse = 5573,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDRMDownloadRequestWithCrashData = 5574;
-	 */
-	k_EMsgClientDRMDownloadRequestWithCrashData = 5574,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAuthListAck = 5575;
-	 */
-	k_EMsgClientAuthListAck = 5575,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientItemAnnouncements = 5576;
-	 */
-	k_EMsgClientItemAnnouncements = 5576,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestItemAnnouncements = 5577;
-	 */
-	k_EMsgClientRequestItemAnnouncements = 5577,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFriendMsgEchoToSender = 5578;
-	 */
-	k_EMsgClientFriendMsgEchoToSender = 5578,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientCommentNotifications = 5582;
-	 */
-	k_EMsgClientCommentNotifications = 5582,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestCommentNotifications = 5583;
-	 */
-	k_EMsgClientRequestCommentNotifications = 5583,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPersonaChangeResponse = 5584;
-	 */
-	k_EMsgClientPersonaChangeResponse = 5584,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestWebAPIAuthenticateUserNonce = 5585;
-	 */
-	k_EMsgClientRequestWebAPIAuthenticateUserNonce = 5585,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRequestWebAPIAuthenticateUserNonceResponse = 5586;
-	 */
-	k_EMsgClientRequestWebAPIAuthenticateUserNonceResponse = 5586,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPlayerNicknameList = 5587;
-	 */
-	k_EMsgClientPlayerNicknameList = 5587,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientSetPlayerNickname = 5588;
-	 */
-	k_EMsgAMClientSetPlayerNickname = 5588,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMClientSetPlayerNicknameResponse = 5589;
-	 */
-	k_EMsgAMClientSetPlayerNicknameResponse = 5589,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetNumberOfCurrentPlayersDP = 5592;
-	 */
-	k_EMsgClientGetNumberOfCurrentPlayersDP = 5592,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetNumberOfCurrentPlayersDPResponse = 5593;
-	 */
-	k_EMsgClientGetNumberOfCurrentPlayersDPResponse = 5593,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientServiceMethodLegacy = 5594;
-	 */
-	k_EMsgClientServiceMethodLegacy = 5594,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientServiceMethodLegacyResponse = 5595;
-	 */
-	k_EMsgClientServiceMethodLegacyResponse = 5595,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFriendUserStatusPublished = 5596;
-	 */
-	k_EMsgClientFriendUserStatusPublished = 5596,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientCurrentUIMode = 5597;
-	 */
-	k_EMsgClientCurrentUIMode = 5597,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientVanityURLChangedNotification = 5598;
-	 */
-	k_EMsgClientVanityURLChangedNotification = 5598,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUserNotifications = 5599;
-	 */
-	k_EMsgClientUserNotifications = 5599,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseDFS = 5600;
-	 */
-	k_EMsgBaseDFS = 5600,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDFSGetFile = 5601;
-	 */
-	k_EMsgDFSGetFile = 5601,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDFSInstallLocalFile = 5602;
-	 */
-	k_EMsgDFSInstallLocalFile = 5602,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDFSConnection = 5603;
-	 */
-	k_EMsgDFSConnection = 5603,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDFSConnectionReply = 5604;
-	 */
-	k_EMsgDFSConnectionReply = 5604,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDFSAuthenticateRequest = 5605;
-	 */
-	k_EMsgClientDFSAuthenticateRequest = 5605,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDFSAuthenticateResponse = 5606;
-	 */
-	k_EMsgClientDFSAuthenticateResponse = 5606,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDFSEndSession = 5607;
-	 */
-	k_EMsgClientDFSEndSession = 5607,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDFSPurgeFile = 5608;
-	 */
-	k_EMsgDFSPurgeFile = 5608,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDFSRouteFile = 5609;
-	 */
-	k_EMsgDFSRouteFile = 5609,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDFSGetFileFromServer = 5610;
-	 */
-	k_EMsgDFSGetFileFromServer = 5610,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDFSAcceptedResponse = 5611;
-	 */
-	k_EMsgDFSAcceptedResponse = 5611,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDFSRequestPingback = 5612;
-	 */
-	k_EMsgDFSRequestPingback = 5612,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDFSRecvTransmitFile = 5613;
-	 */
-	k_EMsgDFSRecvTransmitFile = 5613,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDFSSendTransmitFile = 5614;
-	 */
-	k_EMsgDFSSendTransmitFile = 5614,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDFSRequestPingback2 = 5615;
-	 */
-	k_EMsgDFSRequestPingback2 = 5615,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDFSResponsePingback2 = 5616;
-	 */
-	k_EMsgDFSResponsePingback2 = 5616,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDFSDownloadStatus = 5617;
-	 */
-	k_EMsgClientDFSDownloadStatus = 5617,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDFSStartTransfer = 5618;
-	 */
-	k_EMsgDFSStartTransfer = 5618,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDFSTransferComplete = 5619;
-	 */
-	k_EMsgDFSTransferComplete = 5619,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDFSRouteFileResponse = 5620;
-	 */
-	k_EMsgDFSRouteFileResponse = 5620,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientNetworkingCertRequest = 5621;
-	 */
-	k_EMsgClientNetworkingCertRequest = 5621,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientNetworkingCertRequestResponse = 5622;
-	 */
-	k_EMsgClientNetworkingCertRequestResponse = 5622,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientChallengeRequest = 5623;
-	 */
-	k_EMsgClientChallengeRequest = 5623,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientChallengeResponse = 5624;
-	 */
-	k_EMsgClientChallengeResponse = 5624,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBadgeCraftedNotification = 5625;
-	 */
-	k_EMsgBadgeCraftedNotification = 5625,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientNetworkingMobileCertRequest = 5626;
-	 */
-	k_EMsgClientNetworkingMobileCertRequest = 5626,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientNetworkingMobileCertRequestResponse = 5627;
-	 */
-	k_EMsgClientNetworkingMobileCertRequestResponse = 5627,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseMDS = 5800;
-	 */
-	k_EMsgBaseMDS = 5800,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMDSGetDepotDecryptionKey = 5812;
-	 */
-	k_EMsgMDSGetDepotDecryptionKey = 5812,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMDSGetDepotDecryptionKeyResponse = 5813;
-	 */
-	k_EMsgMDSGetDepotDecryptionKeyResponse = 5813,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMDSContentServerConfigRequest = 5827;
-	 */
-	k_EMsgMDSContentServerConfigRequest = 5827,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMDSContentServerConfig = 5828;
-	 */
-	k_EMsgMDSContentServerConfig = 5828,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMDSGetDepotManifest = 5829;
-	 */
-	k_EMsgMDSGetDepotManifest = 5829,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMDSGetDepotManifestResponse = 5830;
-	 */
-	k_EMsgMDSGetDepotManifestResponse = 5830,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMDSGetDepotManifestChunk = 5831;
-	 */
-	k_EMsgMDSGetDepotManifestChunk = 5831,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMDSGetDepotChunk = 5832;
-	 */
-	k_EMsgMDSGetDepotChunk = 5832,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMDSGetDepotChunkResponse = 5833;
-	 */
-	k_EMsgMDSGetDepotChunkResponse = 5833,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMDSGetDepotChunkChunk = 5834;
-	 */
-	k_EMsgMDSGetDepotChunkChunk = 5834,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMDSToCSFlushChunk = 5844;
-	 */
-	k_EMsgMDSToCSFlushChunk = 5844,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMDSMigrateChunk = 5847;
-	 */
-	k_EMsgMDSMigrateChunk = 5847,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMDSMigrateChunkResponse = 5848;
-	 */
-	k_EMsgMDSMigrateChunkResponse = 5848,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMDSToCSFlushManifest = 5849;
-	 */
-	k_EMsgMDSToCSFlushManifest = 5849,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCSBase = 6200;
-	 */
-	k_EMsgCSBase = 6200,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCSPing = 6201;
-	 */
-	k_EMsgCSPing = 6201,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCSPingResponse = 6202;
-	 */
-	k_EMsgCSPingResponse = 6202,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMSBase = 6400;
-	 */
-	k_EMsgGMSBase = 6400,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMSGameServerReplicate = 6401;
-	 */
-	k_EMsgGMSGameServerReplicate = 6401,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGMSServerQuery = 6403;
-	 */
-	k_EMsgClientGMSServerQuery = 6403,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGMSClientServerQueryResponse = 6404;
-	 */
-	k_EMsgGMSClientServerQueryResponse = 6404,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGMSGameServerUpdate = 6405;
-	 */
-	k_EMsgAMGMSGameServerUpdate = 6405,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMGMSGameServerRemove = 6406;
-	 */
-	k_EMsgAMGMSGameServerRemove = 6406,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGameServerOutOfDate = 6407;
-	 */
-	k_EMsgGameServerOutOfDate = 6407,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDeviceAuthorizationBase = 6500;
-	 */
-	k_EMsgDeviceAuthorizationBase = 6500,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAuthorizeLocalDeviceRequest = 6501;
-	 */
-	k_EMsgClientAuthorizeLocalDeviceRequest = 6501,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAuthorizeLocalDeviceResponse = 6502;
-	 */
-	k_EMsgClientAuthorizeLocalDeviceResponse = 6502,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDeauthorizeDeviceRequest = 6503;
-	 */
-	k_EMsgClientDeauthorizeDeviceRequest = 6503,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientDeauthorizeDevice = 6504;
-	 */
-	k_EMsgClientDeauthorizeDevice = 6504,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUseLocalDeviceAuthorizations = 6505;
-	 */
-	k_EMsgClientUseLocalDeviceAuthorizations = 6505,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetAuthorizedDevices = 6506;
-	 */
-	k_EMsgClientGetAuthorizedDevices = 6506,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetAuthorizedDevicesResponse = 6507;
-	 */
-	k_EMsgClientGetAuthorizedDevicesResponse = 6507,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMNotifySessionDeviceAuthorized = 6508;
-	 */
-	k_EMsgAMNotifySessionDeviceAuthorized = 6508,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientAuthorizeLocalDeviceNotification = 6509;
-	 */
-	k_EMsgClientAuthorizeLocalDeviceNotification = 6509,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMMSBase = 6600;
-	 */
-	k_EMsgMMSBase = 6600,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSCreateLobby = 6601;
-	 */
-	k_EMsgClientMMSCreateLobby = 6601,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSCreateLobbyResponse = 6602;
-	 */
-	k_EMsgClientMMSCreateLobbyResponse = 6602,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSJoinLobby = 6603;
-	 */
-	k_EMsgClientMMSJoinLobby = 6603,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSJoinLobbyResponse = 6604;
-	 */
-	k_EMsgClientMMSJoinLobbyResponse = 6604,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSLeaveLobby = 6605;
-	 */
-	k_EMsgClientMMSLeaveLobby = 6605,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSLeaveLobbyResponse = 6606;
-	 */
-	k_EMsgClientMMSLeaveLobbyResponse = 6606,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSGetLobbyList = 6607;
-	 */
-	k_EMsgClientMMSGetLobbyList = 6607,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSGetLobbyListResponse = 6608;
-	 */
-	k_EMsgClientMMSGetLobbyListResponse = 6608,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSSetLobbyData = 6609;
-	 */
-	k_EMsgClientMMSSetLobbyData = 6609,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSSetLobbyDataResponse = 6610;
-	 */
-	k_EMsgClientMMSSetLobbyDataResponse = 6610,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSGetLobbyData = 6611;
-	 */
-	k_EMsgClientMMSGetLobbyData = 6611,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSLobbyData = 6612;
-	 */
-	k_EMsgClientMMSLobbyData = 6612,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSSendLobbyChatMsg = 6613;
-	 */
-	k_EMsgClientMMSSendLobbyChatMsg = 6613,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSLobbyChatMsg = 6614;
-	 */
-	k_EMsgClientMMSLobbyChatMsg = 6614,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSSetLobbyOwner = 6615;
-	 */
-	k_EMsgClientMMSSetLobbyOwner = 6615,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSSetLobbyOwnerResponse = 6616;
-	 */
-	k_EMsgClientMMSSetLobbyOwnerResponse = 6616,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSSetLobbyGameServer = 6617;
-	 */
-	k_EMsgClientMMSSetLobbyGameServer = 6617,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSLobbyGameServerSet = 6618;
-	 */
-	k_EMsgClientMMSLobbyGameServerSet = 6618,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSUserJoinedLobby = 6619;
-	 */
-	k_EMsgClientMMSUserJoinedLobby = 6619,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSUserLeftLobby = 6620;
-	 */
-	k_EMsgClientMMSUserLeftLobby = 6620,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSInviteToLobby = 6621;
-	 */
-	k_EMsgClientMMSInviteToLobby = 6621,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSFlushFrenemyListCache = 6622;
-	 */
-	k_EMsgClientMMSFlushFrenemyListCache = 6622,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSFlushFrenemyListCacheResponse = 6623;
-	 */
-	k_EMsgClientMMSFlushFrenemyListCacheResponse = 6623,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSSetLobbyLinked = 6624;
-	 */
-	k_EMsgClientMMSSetLobbyLinked = 6624,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSSetRatelimitPolicyOnClient = 6625;
-	 */
-	k_EMsgClientMMSSetRatelimitPolicyOnClient = 6625,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSGetLobbyStatus = 6626;
-	 */
-	k_EMsgClientMMSGetLobbyStatus = 6626,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientMMSGetLobbyStatusResponse = 6627;
-	 */
-	k_EMsgClientMMSGetLobbyStatusResponse = 6627,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMMSGetLobbyList = 6628;
-	 */
-	k_EMsgMMSGetLobbyList = 6628,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMMSGetLobbyListResponse = 6629;
-	 */
-	k_EMsgMMSGetLobbyListResponse = 6629,
-	/**
-	 * @generated from protobuf enum value: k_EMsgNonStdMsgBase = 6800;
-	 */
-	k_EMsgNonStdMsgBase = 6800,
-	/**
-	 * @generated from protobuf enum value: k_EMsgNonStdMsgMemcached = 6801;
-	 */
-	k_EMsgNonStdMsgMemcached = 6801,
-	/**
-	 * @generated from protobuf enum value: k_EMsgNonStdMsgHTTPServer = 6802;
-	 */
-	k_EMsgNonStdMsgHTTPServer = 6802,
-	/**
-	 * @generated from protobuf enum value: k_EMsgNonStdMsgHTTPClient = 6803;
-	 */
-	k_EMsgNonStdMsgHTTPClient = 6803,
-	/**
-	 * @generated from protobuf enum value: k_EMsgNonStdMsgWGResponse = 6804;
-	 */
-	k_EMsgNonStdMsgWGResponse = 6804,
-	/**
-	 * @generated from protobuf enum value: k_EMsgNonStdMsgPHPSimulator = 6805;
-	 */
-	k_EMsgNonStdMsgPHPSimulator = 6805,
-	/**
-	 * @generated from protobuf enum value: k_EMsgNonStdMsgChase = 6806;
-	 */
-	k_EMsgNonStdMsgChase = 6806,
-	/**
-	 * @generated from protobuf enum value: k_EMsgNonStdMsgDFSTransfer = 6807;
-	 */
-	k_EMsgNonStdMsgDFSTransfer = 6807,
-	/**
-	 * @generated from protobuf enum value: k_EMsgNonStdMsgTests = 6808;
-	 */
-	k_EMsgNonStdMsgTests = 6808,
-	/**
-	 * @generated from protobuf enum value: k_EMsgNonStdMsgUMQpipeAAPL = 6809;
-	 */
-	k_EMsgNonStdMsgUMQpipeAAPL = 6809,
-	/**
-	 * @generated from protobuf enum value: k_EMSgNonStdMsgSyslog = 6810;
-	 */
-	k_EMSgNonStdMsgSyslog = 6810,
-	/**
-	 * @generated from protobuf enum value: k_EMsgNonStdMsgLogsink = 6811;
-	 */
-	k_EMsgNonStdMsgLogsink = 6811,
-	/**
-	 * @generated from protobuf enum value: k_EMsgNonStdMsgSteam2Emulator = 6812;
-	 */
-	k_EMsgNonStdMsgSteam2Emulator = 6812,
-	/**
-	 * @generated from protobuf enum value: k_EMsgNonStdMsgRTMPServer = 6813;
-	 */
-	k_EMsgNonStdMsgRTMPServer = 6813,
-	/**
-	 * @generated from protobuf enum value: k_EMsgNonStdMsgWebSocket = 6814;
-	 */
-	k_EMsgNonStdMsgWebSocket = 6814,
-	/**
-	 * @generated from protobuf enum value: k_EMsgNonStdMsgRedis = 6815;
-	 */
-	k_EMsgNonStdMsgRedis = 6815,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUDSBase = 7000;
-	 */
-	k_EMsgUDSBase = 7000,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUDSP2PSessionStarted = 7001;
-	 */
-	k_EMsgClientUDSP2PSessionStarted = 7001,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUDSP2PSessionEnded = 7002;
-	 */
-	k_EMsgClientUDSP2PSessionEnded = 7002,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUDSRenderUserAuth = 7003;
-	 */
-	k_EMsgUDSRenderUserAuth = 7003,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUDSRenderUserAuthResponse = 7004;
-	 */
-	k_EMsgUDSRenderUserAuthResponse = 7004,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientInviteToGame = 7005;
-	 */
-	k_EMsgClientInviteToGame = 7005,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUDSHasSession = 7006;
-	 */
-	k_EMsgUDSHasSession = 7006,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUDSHasSessionResponse = 7007;
-	 */
-	k_EMsgUDSHasSessionResponse = 7007,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMPASBase = 7100;
-	 */
-	k_EMsgMPASBase = 7100,
-	/**
-	 * @generated from protobuf enum value: k_EMsgMPASVacBanReset = 7101;
-	 */
-	k_EMsgMPASVacBanReset = 7101,
-	/**
-	 * @generated from protobuf enum value: k_EMsgKGSBase = 7200;
-	 */
-	k_EMsgKGSBase = 7200,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMBase = 7300;
-	 */
-	k_EMsgUCMBase = 7300,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMAddScreenshot = 7301;
-	 */
-	k_EMsgClientUCMAddScreenshot = 7301,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMAddScreenshotResponse = 7302;
-	 */
-	k_EMsgClientUCMAddScreenshotResponse = 7302,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMResetCommunityContent = 7307;
-	 */
-	k_EMsgUCMResetCommunityContent = 7307,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMResetCommunityContentResponse = 7308;
-	 */
-	k_EMsgUCMResetCommunityContentResponse = 7308,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMDeleteScreenshot = 7309;
-	 */
-	k_EMsgClientUCMDeleteScreenshot = 7309,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMDeleteScreenshotResponse = 7310;
-	 */
-	k_EMsgClientUCMDeleteScreenshotResponse = 7310,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMPublishFile = 7311;
-	 */
-	k_EMsgClientUCMPublishFile = 7311,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMPublishFileResponse = 7312;
-	 */
-	k_EMsgClientUCMPublishFileResponse = 7312,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMDeletePublishedFile = 7315;
-	 */
-	k_EMsgClientUCMDeletePublishedFile = 7315,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMDeletePublishedFileResponse = 7316;
-	 */
-	k_EMsgClientUCMDeletePublishedFileResponse = 7316,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMUpdatePublishedFile = 7325;
-	 */
-	k_EMsgClientUCMUpdatePublishedFile = 7325,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMUpdatePublishedFileResponse = 7326;
-	 */
-	k_EMsgClientUCMUpdatePublishedFileResponse = 7326,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMUpdatePublishedFile = 7327;
-	 */
-	k_EMsgUCMUpdatePublishedFile = 7327,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMUpdatePublishedFileResponse = 7328;
-	 */
-	k_EMsgUCMUpdatePublishedFileResponse = 7328,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMDeletePublishedFile = 7329;
-	 */
-	k_EMsgUCMDeletePublishedFile = 7329,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMDeletePublishedFileResponse = 7330;
-	 */
-	k_EMsgUCMDeletePublishedFileResponse = 7330,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMUpdatePublishedFileStat = 7331;
-	 */
-	k_EMsgUCMUpdatePublishedFileStat = 7331,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMReloadPublishedFile = 7337;
-	 */
-	k_EMsgUCMReloadPublishedFile = 7337,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMReloadUserFileListCaches = 7338;
-	 */
-	k_EMsgUCMReloadUserFileListCaches = 7338,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMPublishedFileReported = 7339;
-	 */
-	k_EMsgUCMPublishedFileReported = 7339,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMPublishedFilePreviewAdd = 7341;
-	 */
-	k_EMsgUCMPublishedFilePreviewAdd = 7341,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMPublishedFilePreviewAddResponse = 7342;
-	 */
-	k_EMsgUCMPublishedFilePreviewAddResponse = 7342,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMPublishedFilePreviewRemove = 7343;
-	 */
-	k_EMsgUCMPublishedFilePreviewRemove = 7343,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMPublishedFilePreviewRemoveResponse = 7344;
-	 */
-	k_EMsgUCMPublishedFilePreviewRemoveResponse = 7344,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMPublishedFileSubscribed = 7349;
-	 */
-	k_EMsgUCMPublishedFileSubscribed = 7349,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMPublishedFileUnsubscribed = 7350;
-	 */
-	k_EMsgUCMPublishedFileUnsubscribed = 7350,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMPublishFile = 7351;
-	 */
-	k_EMsgUCMPublishFile = 7351,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMPublishFileResponse = 7352;
-	 */
-	k_EMsgUCMPublishFileResponse = 7352,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMPublishedFileChildAdd = 7353;
-	 */
-	k_EMsgUCMPublishedFileChildAdd = 7353,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMPublishedFileChildAddResponse = 7354;
-	 */
-	k_EMsgUCMPublishedFileChildAddResponse = 7354,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMPublishedFileChildRemove = 7355;
-	 */
-	k_EMsgUCMPublishedFileChildRemove = 7355,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMPublishedFileChildRemoveResponse = 7356;
-	 */
-	k_EMsgUCMPublishedFileChildRemoveResponse = 7356,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMPublishedFileParentChanged = 7359;
-	 */
-	k_EMsgUCMPublishedFileParentChanged = 7359,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMSetUserPublishedFileAction = 7364;
-	 */
-	k_EMsgClientUCMSetUserPublishedFileAction = 7364,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMSetUserPublishedFileActionResponse = 7365;
-	 */
-	k_EMsgClientUCMSetUserPublishedFileActionResponse = 7365,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMEnumeratePublishedFilesByUserAction = 7366;
-	 */
-	k_EMsgClientUCMEnumeratePublishedFilesByUserAction = 7366,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMEnumeratePublishedFilesByUserActionResponse = 7367;
-	 */
-	k_EMsgClientUCMEnumeratePublishedFilesByUserActionResponse = 7367,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMGetUserSubscribedFiles = 7369;
-	 */
-	k_EMsgUCMGetUserSubscribedFiles = 7369,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMGetUserSubscribedFilesResponse = 7370;
-	 */
-	k_EMsgUCMGetUserSubscribedFilesResponse = 7370,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMFixStatsPublishedFile = 7371;
-	 */
-	k_EMsgUCMFixStatsPublishedFile = 7371,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMEnumerateUserSubscribedFilesWithUpdates = 7378;
-	 */
-	k_EMsgClientUCMEnumerateUserSubscribedFilesWithUpdates = 7378,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMEnumerateUserSubscribedFilesWithUpdatesResponse = 7379;
-	 */
-	k_EMsgClientUCMEnumerateUserSubscribedFilesWithUpdatesResponse = 7379,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUCMPublishedFileContentUpdated = 7380;
-	 */
-	k_EMsgUCMPublishedFileContentUpdated = 7380,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUCMPublishedFileUpdated = 7381;
-	 */
-	k_EMsgClientUCMPublishedFileUpdated = 7381,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientWorkshopItemChangesRequest = 7382;
-	 */
-	k_EMsgClientWorkshopItemChangesRequest = 7382,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientWorkshopItemChangesResponse = 7383;
-	 */
-	k_EMsgClientWorkshopItemChangesResponse = 7383,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFSBase = 7500;
-	 */
-	k_EMsgFSBase = 7500,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRichPresenceUpload = 7501;
-	 */
-	k_EMsgClientRichPresenceUpload = 7501,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRichPresenceRequest = 7502;
-	 */
-	k_EMsgClientRichPresenceRequest = 7502,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientRichPresenceInfo = 7503;
-	 */
-	k_EMsgClientRichPresenceInfo = 7503,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFSRichPresenceRequest = 7504;
-	 */
-	k_EMsgFSRichPresenceRequest = 7504,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFSRichPresenceResponse = 7505;
-	 */
-	k_EMsgFSRichPresenceResponse = 7505,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFSComputeFrenematrix = 7506;
-	 */
-	k_EMsgFSComputeFrenematrix = 7506,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFSComputeFrenematrixResponse = 7507;
-	 */
-	k_EMsgFSComputeFrenematrixResponse = 7507,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFSPlayStatusNotification = 7508;
-	 */
-	k_EMsgFSPlayStatusNotification = 7508,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFSAddOrRemoveFollower = 7510;
-	 */
-	k_EMsgFSAddOrRemoveFollower = 7510,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFSAddOrRemoveFollowerResponse = 7511;
-	 */
-	k_EMsgFSAddOrRemoveFollowerResponse = 7511,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFSUpdateFollowingList = 7512;
-	 */
-	k_EMsgFSUpdateFollowingList = 7512,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFSCommentNotification = 7513;
-	 */
-	k_EMsgFSCommentNotification = 7513,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFSCommentNotificationViewed = 7514;
-	 */
-	k_EMsgFSCommentNotificationViewed = 7514,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFSGetFollowerCount = 7515;
-	 */
-	k_EMsgClientFSGetFollowerCount = 7515,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFSGetFollowerCountResponse = 7516;
-	 */
-	k_EMsgClientFSGetFollowerCountResponse = 7516,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFSGetIsFollowing = 7517;
-	 */
-	k_EMsgClientFSGetIsFollowing = 7517,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFSGetIsFollowingResponse = 7518;
-	 */
-	k_EMsgClientFSGetIsFollowingResponse = 7518,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFSEnumerateFollowingList = 7519;
-	 */
-	k_EMsgClientFSEnumerateFollowingList = 7519,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFSEnumerateFollowingListResponse = 7520;
-	 */
-	k_EMsgClientFSEnumerateFollowingListResponse = 7520,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFSGetPendingNotificationCount = 7521;
-	 */
-	k_EMsgFSGetPendingNotificationCount = 7521,
-	/**
-	 * @generated from protobuf enum value: k_EMsgFSGetPendingNotificationCountResponse = 7522;
-	 */
-	k_EMsgFSGetPendingNotificationCountResponse = 7522,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientChatOfflineMessageNotification = 7523;
-	 */
-	k_EMsgClientChatOfflineMessageNotification = 7523,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientChatRequestOfflineMessageCount = 7524;
-	 */
-	k_EMsgClientChatRequestOfflineMessageCount = 7524,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientChatGetFriendMessageHistory = 7525;
-	 */
-	k_EMsgClientChatGetFriendMessageHistory = 7525,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientChatGetFriendMessageHistoryResponse = 7526;
-	 */
-	k_EMsgClientChatGetFriendMessageHistoryResponse = 7526,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientChatGetFriendMessageHistoryForOfflineMessages = 7527;
-	 */
-	k_EMsgClientChatGetFriendMessageHistoryForOfflineMessages = 7527,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFSGetFriendsSteamLevels = 7528;
-	 */
-	k_EMsgClientFSGetFriendsSteamLevels = 7528,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientFSGetFriendsSteamLevelsResponse = 7529;
-	 */
-	k_EMsgClientFSGetFriendsSteamLevelsResponse = 7529,
-	/**
-	 * @generated from protobuf enum value: k_EMsgAMRequestFriendData = 7530;
-	 */
-	k_EMsgAMRequestFriendData = 7530,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMRange2 = 7600;
-	 */
-	k_EMsgDRMRange2 = 7600,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMRange2 = 7600;
-	 */
-	k_EMsgCEGVersionSetEnableDisableRequest = 7600,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCEGVersionSetEnableDisableResponse = 7601;
-	 */
-	k_EMsgCEGVersionSetEnableDisableResponse = 7601,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCEGPropStatusDRMSRequest = 7602;
-	 */
-	k_EMsgCEGPropStatusDRMSRequest = 7602,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCEGPropStatusDRMSResponse = 7603;
-	 */
-	k_EMsgCEGPropStatusDRMSResponse = 7603,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCEGWhackFailureReportRequest = 7604;
-	 */
-	k_EMsgCEGWhackFailureReportRequest = 7604,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCEGWhackFailureReportResponse = 7605;
-	 */
-	k_EMsgCEGWhackFailureReportResponse = 7605,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMSFetchVersionSet = 7606;
-	 */
-	k_EMsgDRMSFetchVersionSet = 7606,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMSFetchVersionSetResponse = 7607;
-	 */
-	k_EMsgDRMSFetchVersionSetResponse = 7607,
-	/**
-	 * @generated from protobuf enum value: k_EMsgEconBase = 7700;
-	 */
-	k_EMsgEconBase = 7700,
-	/**
-	 * @generated from protobuf enum value: k_EMsgEconTrading_InitiateTradeRequest = 7701;
-	 */
-	k_EMsgEconTrading_InitiateTradeRequest = 7701,
-	/**
-	 * @generated from protobuf enum value: k_EMsgEconTrading_InitiateTradeProposed = 7702;
-	 */
-	k_EMsgEconTrading_InitiateTradeProposed = 7702,
-	/**
-	 * @generated from protobuf enum value: k_EMsgEconTrading_InitiateTradeResponse = 7703;
-	 */
-	k_EMsgEconTrading_InitiateTradeResponse = 7703,
-	/**
-	 * @generated from protobuf enum value: k_EMsgEconTrading_InitiateTradeResult = 7704;
-	 */
-	k_EMsgEconTrading_InitiateTradeResult = 7704,
-	/**
-	 * @generated from protobuf enum value: k_EMsgEconTrading_StartSession = 7705;
-	 */
-	k_EMsgEconTrading_StartSession = 7705,
-	/**
-	 * @generated from protobuf enum value: k_EMsgEconTrading_CancelTradeRequest = 7706;
-	 */
-	k_EMsgEconTrading_CancelTradeRequest = 7706,
-	/**
-	 * @generated from protobuf enum value: k_EMsgEconFlushInventoryCache = 7707;
-	 */
-	k_EMsgEconFlushInventoryCache = 7707,
-	/**
-	 * @generated from protobuf enum value: k_EMsgEconFlushInventoryCacheResponse = 7708;
-	 */
-	k_EMsgEconFlushInventoryCacheResponse = 7708,
-	/**
-	 * @generated from protobuf enum value: k_EMsgEconCDKeyProcessTransaction = 7711;
-	 */
-	k_EMsgEconCDKeyProcessTransaction = 7711,
-	/**
-	 * @generated from protobuf enum value: k_EMsgEconCDKeyProcessTransactionResponse = 7712;
-	 */
-	k_EMsgEconCDKeyProcessTransactionResponse = 7712,
-	/**
-	 * @generated from protobuf enum value: k_EMsgEconGetErrorLogs = 7713;
-	 */
-	k_EMsgEconGetErrorLogs = 7713,
-	/**
-	 * @generated from protobuf enum value: k_EMsgEconGetErrorLogsResponse = 7714;
-	 */
-	k_EMsgEconGetErrorLogsResponse = 7714,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRMRange = 7800;
-	 */
-	k_EMsgRMRange = 7800,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRMRange = 7800;
-	 */
-	k_EMsgRMTestVerisignOTP = 7800,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRMTestVerisignOTPResponse = 7801;
-	 */
-	k_EMsgRMTestVerisignOTPResponse = 7801,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRMDeleteMemcachedKeys = 7803;
-	 */
-	k_EMsgRMDeleteMemcachedKeys = 7803,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRMRemoteInvoke = 7804;
-	 */
-	k_EMsgRMRemoteInvoke = 7804,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBadLoginIPList = 7805;
-	 */
-	k_EMsgBadLoginIPList = 7805,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRMMsgTraceAddTrigger = 7806;
-	 */
-	k_EMsgRMMsgTraceAddTrigger = 7806,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRMMsgTraceRemoveTrigger = 7807;
-	 */
-	k_EMsgRMMsgTraceRemoveTrigger = 7807,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRMMsgTraceEvent = 7808;
-	 */
-	k_EMsgRMMsgTraceEvent = 7808,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUGSBase = 7900;
-	 */
-	k_EMsgUGSBase = 7900,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUGSBase = 7900;
-	 */
-	k_EMsgUGSUpdateGlobalStats = 7900,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUGSGetGlobalStats = 7901;
-	 */
-	k_EMsgClientUGSGetGlobalStats = 7901,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUGSGetGlobalStatsResponse = 7902;
-	 */
-	k_EMsgClientUGSGetGlobalStatsResponse = 7902,
-	/**
-	 * @generated from protobuf enum value: k_EMsgStoreBase = 8000;
-	 */
-	k_EMsgStoreBase = 8000,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUMQBase = 8100;
-	 */
-	k_EMsgUMQBase = 8100,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUMQBase = 8100;
-	 */
-	k_EMsgUMQLogonRequest = 8100,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUMQLogonResponse = 8101;
-	 */
-	k_EMsgUMQLogonResponse = 8101,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUMQLogoffRequest = 8102;
-	 */
-	k_EMsgUMQLogoffRequest = 8102,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUMQLogoffResponse = 8103;
-	 */
-	k_EMsgUMQLogoffResponse = 8103,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUMQSendChatMessage = 8104;
-	 */
-	k_EMsgUMQSendChatMessage = 8104,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUMQIncomingChatMessage = 8105;
-	 */
-	k_EMsgUMQIncomingChatMessage = 8105,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUMQPoll = 8106;
-	 */
-	k_EMsgUMQPoll = 8106,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUMQPollResults = 8107;
-	 */
-	k_EMsgUMQPollResults = 8107,
-	/**
-	 * @generated from protobuf enum value: k_EMsgUMQ2AM_ClientMsgBatch = 8108;
-	 */
-	k_EMsgUMQ2AM_ClientMsgBatch = 8108,
-	/**
-	 * @generated from protobuf enum value: k_EMsgWorkshopBase = 8200;
-	 */
-	k_EMsgWorkshopBase = 8200,
-	/**
-	 * @generated from protobuf enum value: k_EMsgWebAPIBase = 8300;
-	 */
-	k_EMsgWebAPIBase = 8300,
-	/**
-	 * @generated from protobuf enum value: k_EMsgWebAPIBase = 8300;
-	 */
-	k_EMsgWebAPIValidateOAuth2Token = 8300,
-	/**
-	 * @generated from protobuf enum value: k_EMsgWebAPIValidateOAuth2TokenResponse = 8301;
-	 */
-	k_EMsgWebAPIValidateOAuth2TokenResponse = 8301,
-	/**
-	 * @generated from protobuf enum value: k_EMsgWebAPIRegisterGCInterfaces = 8303;
-	 */
-	k_EMsgWebAPIRegisterGCInterfaces = 8303,
-	/**
-	 * @generated from protobuf enum value: k_EMsgWebAPIInvalidateOAuthClientCache = 8304;
-	 */
-	k_EMsgWebAPIInvalidateOAuthClientCache = 8304,
-	/**
-	 * @generated from protobuf enum value: k_EMsgWebAPIInvalidateOAuthTokenCache = 8305;
-	 */
-	k_EMsgWebAPIInvalidateOAuthTokenCache = 8305,
-	/**
-	 * @generated from protobuf enum value: k_EMsgWebAPISetSecrets = 8306;
-	 */
-	k_EMsgWebAPISetSecrets = 8306,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBackpackBase = 8400;
-	 */
-	k_EMsgBackpackBase = 8400,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBackpackAddToCurrency = 8401;
-	 */
-	k_EMsgBackpackAddToCurrency = 8401,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBackpackAddToCurrencyResponse = 8402;
-	 */
-	k_EMsgBackpackAddToCurrencyResponse = 8402,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCREBase = 8500;
-	 */
-	k_EMsgCREBase = 8500,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCREItemVoteSummary = 8503;
-	 */
-	k_EMsgCREItemVoteSummary = 8503,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCREItemVoteSummaryResponse = 8504;
-	 */
-	k_EMsgCREItemVoteSummaryResponse = 8504,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCREUpdateUserPublishedItemVote = 8507;
-	 */
-	k_EMsgCREUpdateUserPublishedItemVote = 8507,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCREUpdateUserPublishedItemVoteResponse = 8508;
-	 */
-	k_EMsgCREUpdateUserPublishedItemVoteResponse = 8508,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCREGetUserPublishedItemVoteDetails = 8509;
-	 */
-	k_EMsgCREGetUserPublishedItemVoteDetails = 8509,
-	/**
-	 * @generated from protobuf enum value: k_EMsgCREGetUserPublishedItemVoteDetailsResponse = 8510;
-	 */
-	k_EMsgCREGetUserPublishedItemVoteDetailsResponse = 8510,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSecretsBase = 8600;
-	 */
-	k_EMsgSecretsBase = 8600,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSecretsBase = 8600;
-	 */
-	k_EMsgSecretsRequestCredentialPair = 8600,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSecretsCredentialPairResponse = 8601;
-	 */
-	k_EMsgSecretsCredentialPairResponse = 8601,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBoxMonitorBase = 8700;
-	 */
-	k_EMsgBoxMonitorBase = 8700,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBoxMonitorBase = 8700;
-	 */
-	k_EMsgBoxMonitorReportRequest = 8700,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBoxMonitorReportResponse = 8701;
-	 */
-	k_EMsgBoxMonitorReportResponse = 8701,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLogsinkBase = 8800;
-	 */
-	k_EMsgLogsinkBase = 8800,
-	/**
-	 * @generated from protobuf enum value: k_EMsgLogsinkBase = 8800;
-	 */
-	k_EMsgLogsinkWriteReport = 8800,
-	/**
-	 * @generated from protobuf enum value: k_EMsgPICSBase = 8900;
-	 */
-	k_EMsgPICSBase = 8900,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPICSChangesSinceRequest = 8901;
-	 */
-	k_EMsgClientPICSChangesSinceRequest = 8901,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPICSChangesSinceResponse = 8902;
-	 */
-	k_EMsgClientPICSChangesSinceResponse = 8902,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPICSProductInfoRequest = 8903;
-	 */
-	k_EMsgClientPICSProductInfoRequest = 8903,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPICSProductInfoResponse = 8904;
-	 */
-	k_EMsgClientPICSProductInfoResponse = 8904,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPICSAccessTokenRequest = 8905;
-	 */
-	k_EMsgClientPICSAccessTokenRequest = 8905,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientPICSAccessTokenResponse = 8906;
-	 */
-	k_EMsgClientPICSAccessTokenResponse = 8906,
-	/**
-	 * @generated from protobuf enum value: k_EMsgWorkerProcess = 9000;
-	 */
-	k_EMsgWorkerProcess = 9000,
-	/**
-	 * @generated from protobuf enum value: k_EMsgWorkerProcess = 9000;
-	 */
-	k_EMsgWorkerProcessPingRequest = 9000,
-	/**
-	 * @generated from protobuf enum value: k_EMsgWorkerProcessPingResponse = 9001;
-	 */
-	k_EMsgWorkerProcessPingResponse = 9001,
-	/**
-	 * @generated from protobuf enum value: k_EMsgWorkerProcessShutdown = 9002;
-	 */
-	k_EMsgWorkerProcessShutdown = 9002,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcess = 9100;
-	 */
-	k_EMsgDRMWorkerProcess = 9100,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcess = 9100;
-	 */
-	k_EMsgDRMWorkerProcessDRMAndSign = 9100,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessDRMAndSignResponse = 9101;
-	 */
-	k_EMsgDRMWorkerProcessDRMAndSignResponse = 9101,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessSteamworksInfoRequest = 9102;
-	 */
-	k_EMsgDRMWorkerProcessSteamworksInfoRequest = 9102,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessSteamworksInfoResponse = 9103;
-	 */
-	k_EMsgDRMWorkerProcessSteamworksInfoResponse = 9103,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessInstallDRMDLLRequest = 9104;
-	 */
-	k_EMsgDRMWorkerProcessInstallDRMDLLRequest = 9104,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessInstallDRMDLLResponse = 9105;
-	 */
-	k_EMsgDRMWorkerProcessInstallDRMDLLResponse = 9105,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessSecretIdStringRequest = 9106;
-	 */
-	k_EMsgDRMWorkerProcessSecretIdStringRequest = 9106,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessSecretIdStringResponse = 9107;
-	 */
-	k_EMsgDRMWorkerProcessSecretIdStringResponse = 9107,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessInstallProcessedFilesRequest = 9110;
-	 */
-	k_EMsgDRMWorkerProcessInstallProcessedFilesRequest = 9110,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessInstallProcessedFilesResponse = 9111;
-	 */
-	k_EMsgDRMWorkerProcessInstallProcessedFilesResponse = 9111,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessExamineBlobRequest = 9112;
-	 */
-	k_EMsgDRMWorkerProcessExamineBlobRequest = 9112,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessExamineBlobResponse = 9113;
-	 */
-	k_EMsgDRMWorkerProcessExamineBlobResponse = 9113,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessDescribeSecretRequest = 9114;
-	 */
-	k_EMsgDRMWorkerProcessDescribeSecretRequest = 9114,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessDescribeSecretResponse = 9115;
-	 */
-	k_EMsgDRMWorkerProcessDescribeSecretResponse = 9115,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessBackfillOriginalRequest = 9116;
-	 */
-	k_EMsgDRMWorkerProcessBackfillOriginalRequest = 9116,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessBackfillOriginalResponse = 9117;
-	 */
-	k_EMsgDRMWorkerProcessBackfillOriginalResponse = 9117,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessValidateDRMDLLRequest = 9118;
-	 */
-	k_EMsgDRMWorkerProcessValidateDRMDLLRequest = 9118,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessValidateDRMDLLResponse = 9119;
-	 */
-	k_EMsgDRMWorkerProcessValidateDRMDLLResponse = 9119,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessValidateFileRequest = 9120;
-	 */
-	k_EMsgDRMWorkerProcessValidateFileRequest = 9120,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessValidateFileResponse = 9121;
-	 */
-	k_EMsgDRMWorkerProcessValidateFileResponse = 9121,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessSplitAndInstallRequest = 9122;
-	 */
-	k_EMsgDRMWorkerProcessSplitAndInstallRequest = 9122,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessSplitAndInstallResponse = 9123;
-	 */
-	k_EMsgDRMWorkerProcessSplitAndInstallResponse = 9123,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessGetBlobRequest = 9124;
-	 */
-	k_EMsgDRMWorkerProcessGetBlobRequest = 9124,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessGetBlobResponse = 9125;
-	 */
-	k_EMsgDRMWorkerProcessGetBlobResponse = 9125,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessEvaluateCrashRequest = 9126;
-	 */
-	k_EMsgDRMWorkerProcessEvaluateCrashRequest = 9126,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessEvaluateCrashResponse = 9127;
-	 */
-	k_EMsgDRMWorkerProcessEvaluateCrashResponse = 9127,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessAnalyzeFileRequest = 9128;
-	 */
-	k_EMsgDRMWorkerProcessAnalyzeFileRequest = 9128,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessAnalyzeFileResponse = 9129;
-	 */
-	k_EMsgDRMWorkerProcessAnalyzeFileResponse = 9129,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessUnpackBlobRequest = 9130;
-	 */
-	k_EMsgDRMWorkerProcessUnpackBlobRequest = 9130,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessUnpackBlobResponse = 9131;
-	 */
-	k_EMsgDRMWorkerProcessUnpackBlobResponse = 9131,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessInstallAllRequest = 9132;
-	 */
-	k_EMsgDRMWorkerProcessInstallAllRequest = 9132,
-	/**
-	 * @generated from protobuf enum value: k_EMsgDRMWorkerProcessInstallAllResponse = 9133;
-	 */
-	k_EMsgDRMWorkerProcessInstallAllResponse = 9133,
-	/**
-	 * @generated from protobuf enum value: k_EMsgTestWorkerProcess = 9200;
-	 */
-	k_EMsgTestWorkerProcess = 9200,
-	/**
-	 * @generated from protobuf enum value: k_EMsgTestWorkerProcess = 9200;
-	 */
-	k_EMsgTestWorkerProcessLoadUnloadModuleRequest = 9200,
-	/**
-	 * @generated from protobuf enum value: k_EMsgTestWorkerProcessLoadUnloadModuleResponse = 9201;
-	 */
-	k_EMsgTestWorkerProcessLoadUnloadModuleResponse = 9201,
-	/**
-	 * @generated from protobuf enum value: k_EMsgTestWorkerProcessServiceModuleCallRequest = 9202;
-	 */
-	k_EMsgTestWorkerProcessServiceModuleCallRequest = 9202,
-	/**
-	 * @generated from protobuf enum value: k_EMsgTestWorkerProcessServiceModuleCallResponse = 9203;
-	 */
-	k_EMsgTestWorkerProcessServiceModuleCallResponse = 9203,
-	/**
-	 * @generated from protobuf enum value: k_EMsgQuestServerBase = 9300;
-	 */
-	k_EMsgQuestServerBase = 9300,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientGetEmoticonList = 9330;
-	 */
-	k_EMsgClientGetEmoticonList = 9330,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientEmoticonList = 9331;
-	 */
-	k_EMsgClientEmoticonList = 9331,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSLCBase = 9400;
-	 */
-	k_EMsgSLCBase = 9400,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSLCBase = 9400;
-	 */
-	k_EMsgSLCUserSessionStatus = 9400,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSLCRequestUserSessionStatus = 9401;
-	 */
-	k_EMsgSLCRequestUserSessionStatus = 9401,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSLCSharedLicensesLockStatus = 9402;
-	 */
-	k_EMsgSLCSharedLicensesLockStatus = 9402,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSharedLibraryLockStatus = 9405;
-	 */
-	k_EMsgClientSharedLibraryLockStatus = 9405,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSharedLibraryStopPlaying = 9406;
-	 */
-	k_EMsgClientSharedLibraryStopPlaying = 9406,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSLCOwnerLibraryChanged = 9407;
-	 */
-	k_EMsgSLCOwnerLibraryChanged = 9407,
-	/**
-	 * @generated from protobuf enum value: k_EMsgSLCSharedLibraryChanged = 9408;
-	 */
-	k_EMsgSLCSharedLibraryChanged = 9408,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRemoteClientBase = 9500;
-	 */
-	k_EMsgRemoteClientBase = 9500,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRemoteClientBase = 9500;
-	 */
-	k_EMsgRemoteClientAuth_OBSOLETE = 9500,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRemoteClientAuthResponse_OBSOLETE = 9501;
-	 */
-	k_EMsgRemoteClientAuthResponse_OBSOLETE = 9501,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRemoteClientAppStatus = 9502;
-	 */
-	k_EMsgRemoteClientAppStatus = 9502,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRemoteClientStartStream = 9503;
-	 */
-	k_EMsgRemoteClientStartStream = 9503,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRemoteClientStartStreamResponse = 9504;
-	 */
-	k_EMsgRemoteClientStartStreamResponse = 9504,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRemoteClientPing = 9505;
-	 */
-	k_EMsgRemoteClientPing = 9505,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRemoteClientPingResponse = 9506;
-	 */
-	k_EMsgRemoteClientPingResponse = 9506,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUnlockStreaming = 9507;
-	 */
-	k_EMsgClientUnlockStreaming = 9507,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUnlockStreamingResponse = 9508;
-	 */
-	k_EMsgClientUnlockStreamingResponse = 9508,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRemoteClientAcceptEULA = 9509;
-	 */
-	k_EMsgRemoteClientAcceptEULA = 9509,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRemoteClientGetControllerConfig = 9510;
-	 */
-	k_EMsgRemoteClientGetControllerConfig = 9510,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRemoteClientGetControllerConfigResponse = 9511;
-	 */
-	k_EMsgRemoteClientGetControllerConfigResponse = 9511,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRemoteClientStreamingEnabled = 9512;
-	 */
-	k_EMsgRemoteClientStreamingEnabled = 9512,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUnlockHEVC = 9513;
-	 */
-	k_EMsgClientUnlockHEVC = 9513,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientUnlockHEVCResponse = 9514;
-	 */
-	k_EMsgClientUnlockHEVCResponse = 9514,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRemoteClientStatusRequest = 9515;
-	 */
-	k_EMsgRemoteClientStatusRequest = 9515,
-	/**
-	 * @generated from protobuf enum value: k_EMsgRemoteClientStatusResponse = 9516;
-	 */
-	k_EMsgRemoteClientStatusResponse = 9516,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientConcurrentSessionsBase = 9600;
-	 */
-	k_EMsgClientConcurrentSessionsBase = 9600,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientConcurrentSessionsBase = 9600;
-	 */
-	k_EMsgClientPlayingSessionState = 9600,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientKickPlayingSession = 9601;
-	 */
-	k_EMsgClientKickPlayingSession = 9601,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientBroadcastBase = 9700;
-	 */
-	k_EMsgClientBroadcastBase = 9700,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientBroadcastBase = 9700;
-	 */
-	k_EMsgClientBroadcastInit = 9700,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientBroadcastFrames = 9701;
-	 */
-	k_EMsgClientBroadcastFrames = 9701,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientBroadcastDisconnect = 9702;
-	 */
-	k_EMsgClientBroadcastDisconnect = 9702,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientBroadcastScreenshot = 9703;
-	 */
-	k_EMsgClientBroadcastScreenshot = 9703,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientBroadcastUploadConfig = 9704;
-	 */
-	k_EMsgClientBroadcastUploadConfig = 9704,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseClient3 = 9800;
-	 */
-	k_EMsgBaseClient3 = 9800,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseClient3 = 9800;
-	 */
-	k_EMsgClientVoiceCallPreAuthorize = 9800,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientVoiceCallPreAuthorizeResponse = 9801;
-	 */
-	k_EMsgClientVoiceCallPreAuthorizeResponse = 9801,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientServerTimestampRequest = 9802;
-	 */
-	k_EMsgClientServerTimestampRequest = 9802,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientServerTimestampResponse = 9803;
-	 */
-	k_EMsgClientServerTimestampResponse = 9803,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServiceMethodCallFromClientNonAuthed = 9804;
-	 */
-	k_EMsgServiceMethodCallFromClientNonAuthed = 9804,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientHello = 9805;
-	 */
-	k_EMsgClientHello = 9805,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLANP2PBase = 9900;
-	 */
-	k_EMsgClientLANP2PBase = 9900,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLANP2PBase = 9900;
-	 */
-	k_EMsgClientLANP2PRequestChunk = 9900,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLANP2PRequestChunkResponse = 9901;
-	 */
-	k_EMsgClientLANP2PRequestChunkResponse = 9901,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientLANP2PMax = 9999;
-	 */
-	k_EMsgClientLANP2PMax = 9999,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseWatchdogServer = 10000;
-	 */
-	k_EMsgBaseWatchdogServer = 10000,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseWatchdogServer = 10000;
-	 */
-	k_EMsgNotifyWatchdog = 10000,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSiteLicenseBase = 10100;
-	 */
-	k_EMsgClientSiteLicenseBase = 10100,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSiteLicenseBase = 10100;
-	 */
-	k_EMsgClientSiteLicenseSiteInfoNotification = 10100,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSiteLicenseCheckout = 10101;
-	 */
-	k_EMsgClientSiteLicenseCheckout = 10101,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSiteLicenseCheckoutResponse = 10102;
-	 */
-	k_EMsgClientSiteLicenseCheckoutResponse = 10102,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSiteLicenseGetAvailableSeats = 10103;
-	 */
-	k_EMsgClientSiteLicenseGetAvailableSeats = 10103,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSiteLicenseGetAvailableSeatsResponse = 10104;
-	 */
-	k_EMsgClientSiteLicenseGetAvailableSeatsResponse = 10104,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSiteLicenseGetContentCacheInfo = 10105;
-	 */
-	k_EMsgClientSiteLicenseGetContentCacheInfo = 10105,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClientSiteLicenseGetContentCacheInfoResponse = 10106;
-	 */
-	k_EMsgClientSiteLicenseGetContentCacheInfoResponse = 10106,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseChatServer = 12000;
-	 */
-	k_EMsgBaseChatServer = 12000,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseChatServer = 12000;
-	 */
-	k_EMsgChatServerGetPendingNotificationCount = 12000,
-	/**
-	 * @generated from protobuf enum value: k_EMsgChatServerGetPendingNotificationCountResponse = 12001;
-	 */
-	k_EMsgChatServerGetPendingNotificationCountResponse = 12001,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseSecretServer = 12100;
-	 */
-	k_EMsgBaseSecretServer = 12100,
-	/**
-	 * @generated from protobuf enum value: k_EMsgBaseSecretServer = 12100;
-	 */
-	k_EMsgServerSecretChanged = 12100,
+  /**
+   * @generated from protobuf enum value: k_EMsgInvalid = 0;
+   */
+  k_EMsgInvalid = 0,
+  /**
+   * @generated from protobuf enum value: k_EMsgMulti = 1;
+   */
+  k_EMsgMulti = 1,
+  /**
+   * @generated from protobuf enum value: k_EMsgProtobufWrapped = 2;
+   */
+  k_EMsgProtobufWrapped = 2,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseGeneral = 100;
+   */
+  k_EMsgBaseGeneral = 100,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseGeneral = 100;
+   */
+  k_EMsgGenericReply = 100,
+  /**
+   * @generated from protobuf enum value: k_EMsgDestJobFailed = 113;
+   */
+  k_EMsgDestJobFailed = 113,
+  /**
+   * @generated from protobuf enum value: k_EMsgAlert = 115;
+   */
+  k_EMsgAlert = 115,
+  /**
+   * @generated from protobuf enum value: k_EMsgSCIDRequest = 120;
+   */
+  k_EMsgSCIDRequest = 120,
+  /**
+   * @generated from protobuf enum value: k_EMsgSCIDResponse = 121;
+   */
+  k_EMsgSCIDResponse = 121,
+  /**
+   * @generated from protobuf enum value: k_EMsgJobHeartbeat = 123;
+   */
+  k_EMsgJobHeartbeat = 123,
+  /**
+   * @generated from protobuf enum value: k_EMsgHubConnect = 124;
+   */
+  k_EMsgHubConnect = 124,
+  /**
+   * @generated from protobuf enum value: k_EMsgSubscribe = 126;
+   */
+  k_EMsgSubscribe = 126,
+  /**
+   * @generated from protobuf enum value: k_EMRouteMessage = 127;
+   */
+  k_EMRouteMessage = 127,
+  /**
+   * @generated from protobuf enum value: k_EMsgWGRequest = 130;
+   */
+  k_EMsgWGRequest = 130,
+  /**
+   * @generated from protobuf enum value: k_EMsgWGResponse = 131;
+   */
+  k_EMsgWGResponse = 131,
+  /**
+   * @generated from protobuf enum value: k_EMsgKeepAlive = 132;
+   */
+  k_EMsgKeepAlive = 132,
+  /**
+   * @generated from protobuf enum value: k_EMsgWebAPIJobRequest = 133;
+   */
+  k_EMsgWebAPIJobRequest = 133,
+  /**
+   * @generated from protobuf enum value: k_EMsgWebAPIJobResponse = 134;
+   */
+  k_EMsgWebAPIJobResponse = 134,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSessionStart = 135;
+   */
+  k_EMsgClientSessionStart = 135,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSessionEnd = 136;
+   */
+  k_EMsgClientSessionEnd = 136,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSessionUpdate = 137;
+   */
+  k_EMsgClientSessionUpdate = 137,
+  /**
+   * @generated from protobuf enum value: k_EMsgStatsDeprecated = 138;
+   */
+  k_EMsgStatsDeprecated = 138,
+  /**
+   * @generated from protobuf enum value: k_EMsgPing = 139;
+   */
+  k_EMsgPing = 139,
+  /**
+   * @generated from protobuf enum value: k_EMsgPingResponse = 140;
+   */
+  k_EMsgPingResponse = 140,
+  /**
+   * @generated from protobuf enum value: k_EMsgStats = 141;
+   */
+  k_EMsgStats = 141,
+  /**
+   * @generated from protobuf enum value: k_EMsgRequestFullStatsBlock = 142;
+   */
+  k_EMsgRequestFullStatsBlock = 142,
+  /**
+   * @generated from protobuf enum value: k_EMsgLoadDBOCacheItem = 143;
+   */
+  k_EMsgLoadDBOCacheItem = 143,
+  /**
+   * @generated from protobuf enum value: k_EMsgLoadDBOCacheItemResponse = 144;
+   */
+  k_EMsgLoadDBOCacheItemResponse = 144,
+  /**
+   * @generated from protobuf enum value: k_EMsgInvalidateDBOCacheItems = 145;
+   */
+  k_EMsgInvalidateDBOCacheItems = 145,
+  /**
+   * @generated from protobuf enum value: k_EMsgServiceMethod = 146;
+   */
+  k_EMsgServiceMethod = 146,
+  /**
+   * @generated from protobuf enum value: k_EMsgServiceMethodResponse = 147;
+   */
+  k_EMsgServiceMethodResponse = 147,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPackageVersions = 148;
+   */
+  k_EMsgClientPackageVersions = 148,
+  /**
+   * @generated from protobuf enum value: k_EMsgTimestampRequest = 149;
+   */
+  k_EMsgTimestampRequest = 149,
+  /**
+   * @generated from protobuf enum value: k_EMsgTimestampResponse = 150;
+   */
+  k_EMsgTimestampResponse = 150,
+  /**
+   * @generated from protobuf enum value: k_EMsgServiceMethodCallFromClient = 151;
+   */
+  k_EMsgServiceMethodCallFromClient = 151,
+  /**
+   * @generated from protobuf enum value: k_EMsgServiceMethodSendToClient = 152;
+   */
+  k_EMsgServiceMethodSendToClient = 152,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseShell = 200;
+   */
+  k_EMsgBaseShell = 200,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseShell = 200;
+   */
+  k_EMsgAssignSysID = 200,
+  /**
+   * @generated from protobuf enum value: k_EMsgExit = 201;
+   */
+  k_EMsgExit = 201,
+  /**
+   * @generated from protobuf enum value: k_EMsgDirRequest = 202;
+   */
+  k_EMsgDirRequest = 202,
+  /**
+   * @generated from protobuf enum value: k_EMsgDirResponse = 203;
+   */
+  k_EMsgDirResponse = 203,
+  /**
+   * @generated from protobuf enum value: k_EMsgZipRequest = 204;
+   */
+  k_EMsgZipRequest = 204,
+  /**
+   * @generated from protobuf enum value: k_EMsgZipResponse = 205;
+   */
+  k_EMsgZipResponse = 205,
+  /**
+   * @generated from protobuf enum value: k_EMsgUpdateRecordResponse = 215;
+   */
+  k_EMsgUpdateRecordResponse = 215,
+  /**
+   * @generated from protobuf enum value: k_EMsgUpdateCreditCardRequest = 221;
+   */
+  k_EMsgUpdateCreditCardRequest = 221,
+  /**
+   * @generated from protobuf enum value: k_EMsgUpdateUserBanResponse = 225;
+   */
+  k_EMsgUpdateUserBanResponse = 225,
+  /**
+   * @generated from protobuf enum value: k_EMsgPrepareToExit = 226;
+   */
+  k_EMsgPrepareToExit = 226,
+  /**
+   * @generated from protobuf enum value: k_EMsgContentDescriptionUpdate = 227;
+   */
+  k_EMsgContentDescriptionUpdate = 227,
+  /**
+   * @generated from protobuf enum value: k_EMsgTestResetServer = 228;
+   */
+  k_EMsgTestResetServer = 228,
+  /**
+   * @generated from protobuf enum value: k_EMsgUniverseChanged = 229;
+   */
+  k_EMsgUniverseChanged = 229,
+  /**
+   * @generated from protobuf enum value: k_EMsgShellConfigInfoUpdate = 230;
+   */
+  k_EMsgShellConfigInfoUpdate = 230,
+  /**
+   * @generated from protobuf enum value: k_EMsgRequestWindowsEventLogEntries = 233;
+   */
+  k_EMsgRequestWindowsEventLogEntries = 233,
+  /**
+   * @generated from protobuf enum value: k_EMsgProvideWindowsEventLogEntries = 234;
+   */
+  k_EMsgProvideWindowsEventLogEntries = 234,
+  /**
+   * @generated from protobuf enum value: k_EMsgShellSearchLogs = 235;
+   */
+  k_EMsgShellSearchLogs = 235,
+  /**
+   * @generated from protobuf enum value: k_EMsgShellSearchLogsResponse = 236;
+   */
+  k_EMsgShellSearchLogsResponse = 236,
+  /**
+   * @generated from protobuf enum value: k_EMsgShellCheckWindowsUpdates = 237;
+   */
+  k_EMsgShellCheckWindowsUpdates = 237,
+  /**
+   * @generated from protobuf enum value: k_EMsgShellCheckWindowsUpdatesResponse = 238;
+   */
+  k_EMsgShellCheckWindowsUpdatesResponse = 238,
+  /**
+   * @generated from protobuf enum value: k_EMsgTestFlushDelayedSQL = 240;
+   */
+  k_EMsgTestFlushDelayedSQL = 240,
+  /**
+   * @generated from protobuf enum value: k_EMsgTestFlushDelayedSQLResponse = 241;
+   */
+  k_EMsgTestFlushDelayedSQLResponse = 241,
+  /**
+   * @generated from protobuf enum value: k_EMsgEnsureExecuteScheduledTask_TEST = 242;
+   */
+  k_EMsgEnsureExecuteScheduledTask_TEST = 242,
+  /**
+   * @generated from protobuf enum value: k_EMsgEnsureExecuteScheduledTaskResponse_TEST = 243;
+   */
+  k_EMsgEnsureExecuteScheduledTaskResponse_TEST = 243,
+  /**
+   * @generated from protobuf enum value: k_EMsgUpdateScheduledTaskEnableState_TEST = 244;
+   */
+  k_EMsgUpdateScheduledTaskEnableState_TEST = 244,
+  /**
+   * @generated from protobuf enum value: k_EMsgUpdateScheduledTaskEnableStateResponse_TEST = 245;
+   */
+  k_EMsgUpdateScheduledTaskEnableStateResponse_TEST = 245,
+  /**
+   * @generated from protobuf enum value: k_EMsgContentDescriptionDeltaUpdate = 246;
+   */
+  k_EMsgContentDescriptionDeltaUpdate = 246,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMShellAndServerAddressUpdates = 247;
+   */
+  k_EMsgGMShellAndServerAddressUpdates = 247,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseGM = 300;
+   */
+  k_EMsgBaseGM = 300,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseGM = 300;
+   */
+  k_EMsgHeartbeat = 300,
+  /**
+   * @generated from protobuf enum value: k_EMsgShellFailed = 301;
+   */
+  k_EMsgShellFailed = 301,
+  /**
+   * @generated from protobuf enum value: k_EMsgExitShells = 307;
+   */
+  k_EMsgExitShells = 307,
+  /**
+   * @generated from protobuf enum value: k_EMsgExitShell = 308;
+   */
+  k_EMsgExitShell = 308,
+  /**
+   * @generated from protobuf enum value: k_EMsgGracefulExitShell = 309;
+   */
+  k_EMsgGracefulExitShell = 309,
+  /**
+   * @generated from protobuf enum value: k_EMsgLicenseProcessingComplete = 316;
+   */
+  k_EMsgLicenseProcessingComplete = 316,
+  /**
+   * @generated from protobuf enum value: k_EMsgSetTestFlag = 317;
+   */
+  k_EMsgSetTestFlag = 317,
+  /**
+   * @generated from protobuf enum value: k_EMsgQueuedEmailsComplete = 318;
+   */
+  k_EMsgQueuedEmailsComplete = 318,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMReportPHPError = 319;
+   */
+  k_EMsgGMReportPHPError = 319,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMDRMSync = 320;
+   */
+  k_EMsgGMDRMSync = 320,
+  /**
+   * @generated from protobuf enum value: k_EMsgPhysicalBoxInventory = 321;
+   */
+  k_EMsgPhysicalBoxInventory = 321,
+  /**
+   * @generated from protobuf enum value: k_EMsgUpdateConfigFile = 322;
+   */
+  k_EMsgUpdateConfigFile = 322,
+  /**
+   * @generated from protobuf enum value: k_EMsgTestInitDB = 323;
+   */
+  k_EMsgTestInitDB = 323,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMWriteConfigToSQL = 324;
+   */
+  k_EMsgGMWriteConfigToSQL = 324,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMLoadActivationCodes = 325;
+   */
+  k_EMsgGMLoadActivationCodes = 325,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMQueueForFBS = 326;
+   */
+  k_EMsgGMQueueForFBS = 326,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMSchemaConversionResults = 327;
+   */
+  k_EMsgGMSchemaConversionResults = 327,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMWriteShellFailureToSQL = 329;
+   */
+  k_EMsgGMWriteShellFailureToSQL = 329,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMWriteStatsToSOS = 330;
+   */
+  k_EMsgGMWriteStatsToSOS = 330,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMGetServiceMethodRouting = 331;
+   */
+  k_EMsgGMGetServiceMethodRouting = 331,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMGetServiceMethodRoutingResponse = 332;
+   */
+  k_EMsgGMGetServiceMethodRoutingResponse = 332,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMTestNextBuildSchemaConversion = 334;
+   */
+  k_EMsgGMTestNextBuildSchemaConversion = 334,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMTestNextBuildSchemaConversionResponse = 335;
+   */
+  k_EMsgGMTestNextBuildSchemaConversionResponse = 335,
+  /**
+   * @generated from protobuf enum value: k_EMsgExpectShellRestart = 336;
+   */
+  k_EMsgExpectShellRestart = 336,
+  /**
+   * @generated from protobuf enum value: k_EMsgHotFixProgress = 337;
+   */
+  k_EMsgHotFixProgress = 337,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMStatsForwardToAdminConnections = 338;
+   */
+  k_EMsgGMStatsForwardToAdminConnections = 338,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseAIS = 400;
+   */
+  k_EMsgBaseAIS = 400,
+  /**
+   * @generated from protobuf enum value: k_EMsgAISRequestContentDescription = 402;
+   */
+  k_EMsgAISRequestContentDescription = 402,
+  /**
+   * @generated from protobuf enum value: k_EMsgAISUpdateAppInfo = 403;
+   */
+  k_EMsgAISUpdateAppInfo = 403,
+  /**
+   * @generated from protobuf enum value: k_EMsgAISGetPackageChangeNumber = 405;
+   */
+  k_EMsgAISGetPackageChangeNumber = 405,
+  /**
+   * @generated from protobuf enum value: k_EMsgAISGetPackageChangeNumberResponse = 406;
+   */
+  k_EMsgAISGetPackageChangeNumberResponse = 406,
+  /**
+   * @generated from protobuf enum value: k_EMsgAIGetAppGCFlags = 423;
+   */
+  k_EMsgAIGetAppGCFlags = 423,
+  /**
+   * @generated from protobuf enum value: k_EMsgAIGetAppGCFlagsResponse = 424;
+   */
+  k_EMsgAIGetAppGCFlagsResponse = 424,
+  /**
+   * @generated from protobuf enum value: k_EMsgAIGetAppList = 425;
+   */
+  k_EMsgAIGetAppList = 425,
+  /**
+   * @generated from protobuf enum value: k_EMsgAIGetAppListResponse = 426;
+   */
+  k_EMsgAIGetAppListResponse = 426,
+  /**
+   * @generated from protobuf enum value: k_EMsgAISGetCouponDefinition = 429;
+   */
+  k_EMsgAISGetCouponDefinition = 429,
+  /**
+   * @generated from protobuf enum value: k_EMsgAISGetCouponDefinitionResponse = 430;
+   */
+  k_EMsgAISGetCouponDefinitionResponse = 430,
+  /**
+   * @generated from protobuf enum value: k_EMsgAISUpdateSubordinateContentDescription = 431;
+   */
+  k_EMsgAISUpdateSubordinateContentDescription = 431,
+  /**
+   * @generated from protobuf enum value: k_EMsgAISUpdateSubordinateContentDescriptionResponse = 432;
+   */
+  k_EMsgAISUpdateSubordinateContentDescriptionResponse = 432,
+  /**
+   * @generated from protobuf enum value: k_EMsgAISTestEnableGC = 433;
+   */
+  k_EMsgAISTestEnableGC = 433,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseAM = 500;
+   */
+  k_EMsgBaseAM = 500,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMUpdateUserBanRequest = 504;
+   */
+  k_EMsgAMUpdateUserBanRequest = 504,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMAddLicense = 505;
+   */
+  k_EMsgAMAddLicense = 505,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSendSystemIMToUser = 508;
+   */
+  k_EMsgAMSendSystemIMToUser = 508,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMExtendLicense = 509;
+   */
+  k_EMsgAMExtendLicense = 509,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMAddMinutesToLicense = 510;
+   */
+  k_EMsgAMAddMinutesToLicense = 510,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCancelLicense = 511;
+   */
+  k_EMsgAMCancelLicense = 511,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMInitPurchase = 512;
+   */
+  k_EMsgAMInitPurchase = 512,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMPurchaseResponse = 513;
+   */
+  k_EMsgAMPurchaseResponse = 513,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetFinalPrice = 514;
+   */
+  k_EMsgAMGetFinalPrice = 514,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetFinalPriceResponse = 515;
+   */
+  k_EMsgAMGetFinalPriceResponse = 515,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetLegacyGameKey = 516;
+   */
+  k_EMsgAMGetLegacyGameKey = 516,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetLegacyGameKeyResponse = 517;
+   */
+  k_EMsgAMGetLegacyGameKeyResponse = 517,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFindHungTransactions = 518;
+   */
+  k_EMsgAMFindHungTransactions = 518,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetAccountTrustedRequest = 519;
+   */
+  k_EMsgAMSetAccountTrustedRequest = 519,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCancelPurchase = 522;
+   */
+  k_EMsgAMCancelPurchase = 522,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMNewChallenge = 523;
+   */
+  k_EMsgAMNewChallenge = 523,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMLoadOEMTickets = 524;
+   */
+  k_EMsgAMLoadOEMTickets = 524,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFixPendingPurchase = 525;
+   */
+  k_EMsgAMFixPendingPurchase = 525,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFixPendingPurchaseResponse = 526;
+   */
+  k_EMsgAMFixPendingPurchaseResponse = 526,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMIsUserBanned = 527;
+   */
+  k_EMsgAMIsUserBanned = 527,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRegisterKey = 528;
+   */
+  k_EMsgAMRegisterKey = 528,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMLoadActivationCodes = 529;
+   */
+  k_EMsgAMLoadActivationCodes = 529,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMLoadActivationCodesResponse = 530;
+   */
+  k_EMsgAMLoadActivationCodesResponse = 530,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMLookupKeyResponse = 531;
+   */
+  k_EMsgAMLookupKeyResponse = 531,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMLookupKey = 532;
+   */
+  k_EMsgAMLookupKey = 532,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMChatCleanup = 533;
+   */
+  k_EMsgAMChatCleanup = 533,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClanCleanup = 534;
+   */
+  k_EMsgAMClanCleanup = 534,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFixPendingRefund = 535;
+   */
+  k_EMsgAMFixPendingRefund = 535,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMReverseChargeback = 536;
+   */
+  k_EMsgAMReverseChargeback = 536,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMReverseChargebackResponse = 537;
+   */
+  k_EMsgAMReverseChargebackResponse = 537,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClanCleanupList = 538;
+   */
+  k_EMsgAMClanCleanupList = 538,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetLicenses = 539;
+   */
+  k_EMsgAMGetLicenses = 539,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetLicensesResponse = 540;
+   */
+  k_EMsgAMGetLicensesResponse = 540,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSendCartRepurchase = 541;
+   */
+  k_EMsgAMSendCartRepurchase = 541,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSendCartRepurchaseResponse = 542;
+   */
+  k_EMsgAMSendCartRepurchaseResponse = 542,
+  /**
+   * @generated from protobuf enum value: k_EMsgAllowUserToPlayQuery = 550;
+   */
+  k_EMsgAllowUserToPlayQuery = 550,
+  /**
+   * @generated from protobuf enum value: k_EMsgAllowUserToPlayResponse = 551;
+   */
+  k_EMsgAllowUserToPlayResponse = 551,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMVerfiyUser = 552;
+   */
+  k_EMsgAMVerfiyUser = 552,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientNotPlaying = 553;
+   */
+  k_EMsgAMClientNotPlaying = 553,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientRequestFriendship = 554;
+   */
+  k_EMsgAMClientRequestFriendship = 554,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRelayPublishStatus = 555;
+   */
+  k_EMsgAMRelayPublishStatus = 555,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMInitPurchaseResponse = 560;
+   */
+  k_EMsgAMInitPurchaseResponse = 560,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRevokePurchaseResponse = 561;
+   */
+  k_EMsgAMRevokePurchaseResponse = 561,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRefreshGuestPasses = 563;
+   */
+  k_EMsgAMRefreshGuestPasses = 563,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGrantGuestPasses = 566;
+   */
+  k_EMsgAMGrantGuestPasses = 566,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClanDataUpdated = 567;
+   */
+  k_EMsgAMClanDataUpdated = 567,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMReloadAccount = 568;
+   */
+  k_EMsgAMReloadAccount = 568,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientChatMsgRelay = 569;
+   */
+  k_EMsgAMClientChatMsgRelay = 569,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMChatMulti = 570;
+   */
+  k_EMsgAMChatMulti = 570,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientChatInviteRelay = 571;
+   */
+  k_EMsgAMClientChatInviteRelay = 571,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMChatInvite = 572;
+   */
+  k_EMsgAMChatInvite = 572,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientJoinChatRelay = 573;
+   */
+  k_EMsgAMClientJoinChatRelay = 573,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientChatMemberInfoRelay = 574;
+   */
+  k_EMsgAMClientChatMemberInfoRelay = 574,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMPublishChatMemberInfo = 575;
+   */
+  k_EMsgAMPublishChatMemberInfo = 575,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientAcceptFriendInvite = 576;
+   */
+  k_EMsgAMClientAcceptFriendInvite = 576,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMChatEnter = 577;
+   */
+  k_EMsgAMChatEnter = 577,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientPublishRemovalFromSource = 578;
+   */
+  k_EMsgAMClientPublishRemovalFromSource = 578,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMChatActionResult = 579;
+   */
+  k_EMsgAMChatActionResult = 579,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFindAccounts = 580;
+   */
+  k_EMsgAMFindAccounts = 580,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFindAccountsResponse = 581;
+   */
+  k_EMsgAMFindAccountsResponse = 581,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMIsAccountNameInUse = 582;
+   */
+  k_EMsgAMIsAccountNameInUse = 582,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMIsAccountNameInUseResponse = 583;
+   */
+  k_EMsgAMIsAccountNameInUseResponse = 583,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetAccountFlags = 584;
+   */
+  k_EMsgAMSetAccountFlags = 584,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCreateClan = 586;
+   */
+  k_EMsgAMCreateClan = 586,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCreateClanResponse = 587;
+   */
+  k_EMsgAMCreateClanResponse = 587,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanDetails = 588;
+   */
+  k_EMsgAMGetClanDetails = 588,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanDetailsResponse = 589;
+   */
+  k_EMsgAMGetClanDetailsResponse = 589,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetPersonaName = 590;
+   */
+  k_EMsgAMSetPersonaName = 590,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetAvatar = 591;
+   */
+  k_EMsgAMSetAvatar = 591,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMAuthenticateUser = 592;
+   */
+  k_EMsgAMAuthenticateUser = 592,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMAuthenticateUserResponse = 593;
+   */
+  k_EMsgAMAuthenticateUserResponse = 593,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMP2PIntroducerMessage = 596;
+   */
+  k_EMsgAMP2PIntroducerMessage = 596,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientChatAction = 597;
+   */
+  k_EMsgClientChatAction = 597,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientChatActionRelay = 598;
+   */
+  k_EMsgAMClientChatActionRelay = 598,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseVS = 600;
+   */
+  k_EMsgBaseVS = 600,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseVS = 600;
+   */
+  k_EMsgReqChallenge = 600,
+  /**
+   * @generated from protobuf enum value: k_EMsgVACResponse = 601;
+   */
+  k_EMsgVACResponse = 601,
+  /**
+   * @generated from protobuf enum value: k_EMsgReqChallengeTest = 602;
+   */
+  k_EMsgReqChallengeTest = 602,
+  /**
+   * @generated from protobuf enum value: k_EMsgVSMarkCheat = 604;
+   */
+  k_EMsgVSMarkCheat = 604,
+  /**
+   * @generated from protobuf enum value: k_EMsgVSAddCheat = 605;
+   */
+  k_EMsgVSAddCheat = 605,
+  /**
+   * @generated from protobuf enum value: k_EMsgVSPurgeCodeModDB = 606;
+   */
+  k_EMsgVSPurgeCodeModDB = 606,
+  /**
+   * @generated from protobuf enum value: k_EMsgVSGetChallengeResults = 607;
+   */
+  k_EMsgVSGetChallengeResults = 607,
+  /**
+   * @generated from protobuf enum value: k_EMsgVSChallengeResultText = 608;
+   */
+  k_EMsgVSChallengeResultText = 608,
+  /**
+   * @generated from protobuf enum value: k_EMsgVSReportLingerer = 609;
+   */
+  k_EMsgVSReportLingerer = 609,
+  /**
+   * @generated from protobuf enum value: k_EMsgVSRequestManagedChallenge = 610;
+   */
+  k_EMsgVSRequestManagedChallenge = 610,
+  /**
+   * @generated from protobuf enum value: k_EMsgVSLoadDBFinished = 611;
+   */
+  k_EMsgVSLoadDBFinished = 611,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseDRMS = 625;
+   */
+  k_EMsgBaseDRMS = 625,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMBuildBlobRequest = 628;
+   */
+  k_EMsgDRMBuildBlobRequest = 628,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMBuildBlobResponse = 629;
+   */
+  k_EMsgDRMBuildBlobResponse = 629,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMResolveGuidRequest = 630;
+   */
+  k_EMsgDRMResolveGuidRequest = 630,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMResolveGuidResponse = 631;
+   */
+  k_EMsgDRMResolveGuidResponse = 631,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMVariabilityReport = 633;
+   */
+  k_EMsgDRMVariabilityReport = 633,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMVariabilityReportResponse = 634;
+   */
+  k_EMsgDRMVariabilityReportResponse = 634,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMStabilityReport = 635;
+   */
+  k_EMsgDRMStabilityReport = 635,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMStabilityReportResponse = 636;
+   */
+  k_EMsgDRMStabilityReportResponse = 636,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMDetailsReportRequest = 637;
+   */
+  k_EMsgDRMDetailsReportRequest = 637,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMDetailsReportResponse = 638;
+   */
+  k_EMsgDRMDetailsReportResponse = 638,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMProcessFile = 639;
+   */
+  k_EMsgDRMProcessFile = 639,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMAdminUpdate = 640;
+   */
+  k_EMsgDRMAdminUpdate = 640,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMAdminUpdateResponse = 641;
+   */
+  k_EMsgDRMAdminUpdateResponse = 641,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMSync = 642;
+   */
+  k_EMsgDRMSync = 642,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMSyncResponse = 643;
+   */
+  k_EMsgDRMSyncResponse = 643,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMProcessFileResponse = 644;
+   */
+  k_EMsgDRMProcessFileResponse = 644,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMEmptyGuidCache = 645;
+   */
+  k_EMsgDRMEmptyGuidCache = 645,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMEmptyGuidCacheResponse = 646;
+   */
+  k_EMsgDRMEmptyGuidCacheResponse = 646,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseCS = 650;
+   */
+  k_EMsgBaseCS = 650,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseClient = 700;
+   */
+  k_EMsgBaseClient = 700,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLogOn_Deprecated = 701;
+   */
+  k_EMsgClientLogOn_Deprecated = 701,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAnonLogOn_Deprecated = 702;
+   */
+  k_EMsgClientAnonLogOn_Deprecated = 702,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientHeartBeat = 703;
+   */
+  k_EMsgClientHeartBeat = 703,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientVACResponse = 704;
+   */
+  k_EMsgClientVACResponse = 704,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGamesPlayed_obsolete = 705;
+   */
+  k_EMsgClientGamesPlayed_obsolete = 705,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLogOff = 706;
+   */
+  k_EMsgClientLogOff = 706,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientNoUDPConnectivity = 707;
+   */
+  k_EMsgClientNoUDPConnectivity = 707,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientConnectionStats = 710;
+   */
+  k_EMsgClientConnectionStats = 710,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPingResponse = 712;
+   */
+  k_EMsgClientPingResponse = 712,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRemoveFriend = 714;
+   */
+  k_EMsgClientRemoveFriend = 714,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGamesPlayedNoDataBlob = 715;
+   */
+  k_EMsgClientGamesPlayedNoDataBlob = 715,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientChangeStatus = 716;
+   */
+  k_EMsgClientChangeStatus = 716,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientVacStatusResponse = 717;
+   */
+  k_EMsgClientVacStatusResponse = 717,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFriendMsg = 718;
+   */
+  k_EMsgClientFriendMsg = 718,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGameConnect_obsolete = 719;
+   */
+  k_EMsgClientGameConnect_obsolete = 719,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGamesPlayed2_obsolete = 720;
+   */
+  k_EMsgClientGamesPlayed2_obsolete = 720,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGameEnded_obsolete = 721;
+   */
+  k_EMsgClientGameEnded_obsolete = 721,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSystemIM = 726;
+   */
+  k_EMsgClientSystemIM = 726,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSystemIMAck = 727;
+   */
+  k_EMsgClientSystemIMAck = 727,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetLicenses = 728;
+   */
+  k_EMsgClientGetLicenses = 728,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetLegacyGameKey = 730;
+   */
+  k_EMsgClientGetLegacyGameKey = 730,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientContentServerLogOn_Deprecated = 731;
+   */
+  k_EMsgClientContentServerLogOn_Deprecated = 731,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAckVACBan2 = 732;
+   */
+  k_EMsgClientAckVACBan2 = 732,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetPurchaseReceipts = 736;
+   */
+  k_EMsgClientGetPurchaseReceipts = 736,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGamesPlayed3_obsolete = 738;
+   */
+  k_EMsgClientGamesPlayed3_obsolete = 738,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAckGuestPass = 740;
+   */
+  k_EMsgClientAckGuestPass = 740,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRedeemGuestPass = 741;
+   */
+  k_EMsgClientRedeemGuestPass = 741,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGamesPlayed = 742;
+   */
+  k_EMsgClientGamesPlayed = 742,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRegisterKey = 743;
+   */
+  k_EMsgClientRegisterKey = 743,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientInviteUserToClan = 744;
+   */
+  k_EMsgClientInviteUserToClan = 744,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAcknowledgeClanInvite = 745;
+   */
+  k_EMsgClientAcknowledgeClanInvite = 745,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPurchaseWithMachineID = 746;
+   */
+  k_EMsgClientPurchaseWithMachineID = 746,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAppUsageEvent = 747;
+   */
+  k_EMsgClientAppUsageEvent = 747,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLogOnResponse = 751;
+   */
+  k_EMsgClientLogOnResponse = 751,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSetHeartbeatRate = 755;
+   */
+  k_EMsgClientSetHeartbeatRate = 755,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientNotLoggedOnDeprecated = 756;
+   */
+  k_EMsgClientNotLoggedOnDeprecated = 756,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLoggedOff = 757;
+   */
+  k_EMsgClientLoggedOff = 757,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSApprove = 758;
+   */
+  k_EMsgGSApprove = 758,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSDeny = 759;
+   */
+  k_EMsgGSDeny = 759,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSKick = 760;
+   */
+  k_EMsgGSKick = 760,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPurchaseResponse = 763;
+   */
+  k_EMsgClientPurchaseResponse = 763,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPing = 764;
+   */
+  k_EMsgClientPing = 764,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientNOP = 765;
+   */
+  k_EMsgClientNOP = 765,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPersonaState = 766;
+   */
+  k_EMsgClientPersonaState = 766,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFriendsList = 767;
+   */
+  k_EMsgClientFriendsList = 767,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAccountInfo = 768;
+   */
+  k_EMsgClientAccountInfo = 768,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientNewsUpdate = 771;
+   */
+  k_EMsgClientNewsUpdate = 771,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGameConnectDeny = 773;
+   */
+  k_EMsgClientGameConnectDeny = 773,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSStatusReply = 774;
+   */
+  k_EMsgGSStatusReply = 774,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGameConnectTokens = 779;
+   */
+  k_EMsgClientGameConnectTokens = 779,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLicenseList = 780;
+   */
+  k_EMsgClientLicenseList = 780,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientVACBanStatus = 782;
+   */
+  k_EMsgClientVACBanStatus = 782,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientCMList = 783;
+   */
+  k_EMsgClientCMList = 783,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientEncryptPct = 784;
+   */
+  k_EMsgClientEncryptPct = 784,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetLegacyGameKeyResponse = 785;
+   */
+  k_EMsgClientGetLegacyGameKeyResponse = 785,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAddFriend = 791;
+   */
+  k_EMsgClientAddFriend = 791,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAddFriendResponse = 792;
+   */
+  k_EMsgClientAddFriendResponse = 792,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAckGuestPassResponse = 796;
+   */
+  k_EMsgClientAckGuestPassResponse = 796,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRedeemGuestPassResponse = 797;
+   */
+  k_EMsgClientRedeemGuestPassResponse = 797,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUpdateGuestPassesList = 798;
+   */
+  k_EMsgClientUpdateGuestPassesList = 798,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientChatMsg = 799;
+   */
+  k_EMsgClientChatMsg = 799,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientChatInvite = 800;
+   */
+  k_EMsgClientChatInvite = 800,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientJoinChat = 801;
+   */
+  k_EMsgClientJoinChat = 801,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientChatMemberInfo = 802;
+   */
+  k_EMsgClientChatMemberInfo = 802,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLogOnWithCredentials_Deprecated = 803;
+   */
+  k_EMsgClientLogOnWithCredentials_Deprecated = 803,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPasswordChangeResponse = 805;
+   */
+  k_EMsgClientPasswordChangeResponse = 805,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientChatEnter = 807;
+   */
+  k_EMsgClientChatEnter = 807,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFriendRemovedFromSource = 808;
+   */
+  k_EMsgClientFriendRemovedFromSource = 808,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientCreateChat = 809;
+   */
+  k_EMsgClientCreateChat = 809,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientCreateChatResponse = 810;
+   */
+  k_EMsgClientCreateChatResponse = 810,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientP2PIntroducerMessage = 813;
+   */
+  k_EMsgClientP2PIntroducerMessage = 813,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientChatActionResult = 814;
+   */
+  k_EMsgClientChatActionResult = 814,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestFriendData = 815;
+   */
+  k_EMsgClientRequestFriendData = 815,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetUserStats = 818;
+   */
+  k_EMsgClientGetUserStats = 818,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetUserStatsResponse = 819;
+   */
+  k_EMsgClientGetUserStatsResponse = 819,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientStoreUserStats = 820;
+   */
+  k_EMsgClientStoreUserStats = 820,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientStoreUserStatsResponse = 821;
+   */
+  k_EMsgClientStoreUserStatsResponse = 821,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientClanState = 822;
+   */
+  k_EMsgClientClanState = 822,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientServiceModule = 830;
+   */
+  k_EMsgClientServiceModule = 830,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientServiceCall = 831;
+   */
+  k_EMsgClientServiceCall = 831,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientServiceCallResponse = 832;
+   */
+  k_EMsgClientServiceCallResponse = 832,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientNatTraversalStatEvent = 839;
+   */
+  k_EMsgClientNatTraversalStatEvent = 839,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSteamUsageEvent = 842;
+   */
+  k_EMsgClientSteamUsageEvent = 842,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientCheckPassword = 845;
+   */
+  k_EMsgClientCheckPassword = 845,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientResetPassword = 846;
+   */
+  k_EMsgClientResetPassword = 846,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientCheckPasswordResponse = 848;
+   */
+  k_EMsgClientCheckPasswordResponse = 848,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientResetPasswordResponse = 849;
+   */
+  k_EMsgClientResetPasswordResponse = 849,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSessionToken = 850;
+   */
+  k_EMsgClientSessionToken = 850,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDRMProblemReport = 851;
+   */
+  k_EMsgClientDRMProblemReport = 851,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSetIgnoreFriend = 855;
+   */
+  k_EMsgClientSetIgnoreFriend = 855,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSetIgnoreFriendResponse = 856;
+   */
+  k_EMsgClientSetIgnoreFriendResponse = 856,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetAppOwnershipTicket = 857;
+   */
+  k_EMsgClientGetAppOwnershipTicket = 857,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetAppOwnershipTicketResponse = 858;
+   */
+  k_EMsgClientGetAppOwnershipTicketResponse = 858,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetLobbyListResponse = 860;
+   */
+  k_EMsgClientGetLobbyListResponse = 860,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientServerList = 880;
+   */
+  k_EMsgClientServerList = 880,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDRMBlobRequest = 896;
+   */
+  k_EMsgClientDRMBlobRequest = 896,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDRMBlobResponse = 897;
+   */
+  k_EMsgClientDRMBlobResponse = 897,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseGameServer = 900;
+   */
+  k_EMsgBaseGameServer = 900,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSDisconnectNotice = 901;
+   */
+  k_EMsgGSDisconnectNotice = 901,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSStatus = 903;
+   */
+  k_EMsgGSStatus = 903,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSUserPlaying = 905;
+   */
+  k_EMsgGSUserPlaying = 905,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSStatus2 = 906;
+   */
+  k_EMsgGSStatus2 = 906,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSStatusUpdate_Unused = 907;
+   */
+  k_EMsgGSStatusUpdate_Unused = 907,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSServerType = 908;
+   */
+  k_EMsgGSServerType = 908,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSPlayerList = 909;
+   */
+  k_EMsgGSPlayerList = 909,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSGetUserAchievementStatus = 910;
+   */
+  k_EMsgGSGetUserAchievementStatus = 910,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSGetUserAchievementStatusResponse = 911;
+   */
+  k_EMsgGSGetUserAchievementStatusResponse = 911,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSGetPlayStats = 918;
+   */
+  k_EMsgGSGetPlayStats = 918,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSGetPlayStatsResponse = 919;
+   */
+  k_EMsgGSGetPlayStatsResponse = 919,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSGetUserGroupStatus = 920;
+   */
+  k_EMsgGSGetUserGroupStatus = 920,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetUserGroupStatus = 921;
+   */
+  k_EMsgAMGetUserGroupStatus = 921,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetUserGroupStatusResponse = 922;
+   */
+  k_EMsgAMGetUserGroupStatusResponse = 922,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSGetUserGroupStatusResponse = 923;
+   */
+  k_EMsgGSGetUserGroupStatusResponse = 923,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSGetReputation = 936;
+   */
+  k_EMsgGSGetReputation = 936,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSGetReputationResponse = 937;
+   */
+  k_EMsgGSGetReputationResponse = 937,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSAssociateWithClan = 938;
+   */
+  k_EMsgGSAssociateWithClan = 938,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSAssociateWithClanResponse = 939;
+   */
+  k_EMsgGSAssociateWithClanResponse = 939,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSComputeNewPlayerCompatibility = 940;
+   */
+  k_EMsgGSComputeNewPlayerCompatibility = 940,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSComputeNewPlayerCompatibilityResponse = 941;
+   */
+  k_EMsgGSComputeNewPlayerCompatibilityResponse = 941,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseAdmin = 1000;
+   */
+  k_EMsgBaseAdmin = 1000,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseAdmin = 1000;
+   */
+  k_EMsgAdminCmd = 1000,
+  /**
+   * @generated from protobuf enum value: k_EMsgAdminCmdResponse = 1004;
+   */
+  k_EMsgAdminCmdResponse = 1004,
+  /**
+   * @generated from protobuf enum value: k_EMsgAdminLogListenRequest = 1005;
+   */
+  k_EMsgAdminLogListenRequest = 1005,
+  /**
+   * @generated from protobuf enum value: k_EMsgAdminLogEvent = 1006;
+   */
+  k_EMsgAdminLogEvent = 1006,
+  /**
+   * @generated from protobuf enum value: k_EMsgUniverseData = 1010;
+   */
+  k_EMsgUniverseData = 1010,
+  /**
+   * @generated from protobuf enum value: k_EMsgAdminSpew = 1019;
+   */
+  k_EMsgAdminSpew = 1019,
+  /**
+   * @generated from protobuf enum value: k_EMsgAdminConsoleTitle = 1020;
+   */
+  k_EMsgAdminConsoleTitle = 1020,
+  /**
+   * @generated from protobuf enum value: k_EMsgAdminGCSpew = 1023;
+   */
+  k_EMsgAdminGCSpew = 1023,
+  /**
+   * @generated from protobuf enum value: k_EMsgAdminGCCommand = 1024;
+   */
+  k_EMsgAdminGCCommand = 1024,
+  /**
+   * @generated from protobuf enum value: k_EMsgAdminGCGetCommandList = 1025;
+   */
+  k_EMsgAdminGCGetCommandList = 1025,
+  /**
+   * @generated from protobuf enum value: k_EMsgAdminGCGetCommandListResponse = 1026;
+   */
+  k_EMsgAdminGCGetCommandListResponse = 1026,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSConnectionData = 1027;
+   */
+  k_EMsgFBSConnectionData = 1027,
+  /**
+   * @generated from protobuf enum value: k_EMsgAdminMsgSpew = 1028;
+   */
+  k_EMsgAdminMsgSpew = 1028,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseFBS = 1100;
+   */
+  k_EMsgBaseFBS = 1100,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseFBS = 1100;
+   */
+  k_EMsgFBSReqVersion = 1100,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSVersionInfo = 1101;
+   */
+  k_EMsgFBSVersionInfo = 1101,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSForceRefresh = 1102;
+   */
+  k_EMsgFBSForceRefresh = 1102,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSForceBounce = 1103;
+   */
+  k_EMsgFBSForceBounce = 1103,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSDeployPackage = 1104;
+   */
+  k_EMsgFBSDeployPackage = 1104,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSDeployResponse = 1105;
+   */
+  k_EMsgFBSDeployResponse = 1105,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSUpdateBootstrapper = 1106;
+   */
+  k_EMsgFBSUpdateBootstrapper = 1106,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSSetState = 1107;
+   */
+  k_EMsgFBSSetState = 1107,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSApplyOSUpdates = 1108;
+   */
+  k_EMsgFBSApplyOSUpdates = 1108,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSRunCMDScript = 1109;
+   */
+  k_EMsgFBSRunCMDScript = 1109,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSRebootBox = 1110;
+   */
+  k_EMsgFBSRebootBox = 1110,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSSetBigBrotherMode = 1111;
+   */
+  k_EMsgFBSSetBigBrotherMode = 1111,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSMinidumpServer = 1112;
+   */
+  k_EMsgFBSMinidumpServer = 1112,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSDeployHotFixPackage = 1114;
+   */
+  k_EMsgFBSDeployHotFixPackage = 1114,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSDeployHotFixResponse = 1115;
+   */
+  k_EMsgFBSDeployHotFixResponse = 1115,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSDownloadHotFix = 1116;
+   */
+  k_EMsgFBSDownloadHotFix = 1116,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSDownloadHotFixResponse = 1117;
+   */
+  k_EMsgFBSDownloadHotFixResponse = 1117,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSUpdateTargetConfigFile = 1118;
+   */
+  k_EMsgFBSUpdateTargetConfigFile = 1118,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSApplyAccountCred = 1119;
+   */
+  k_EMsgFBSApplyAccountCred = 1119,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSApplyAccountCredResponse = 1120;
+   */
+  k_EMsgFBSApplyAccountCredResponse = 1120,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSSetShellCount = 1121;
+   */
+  k_EMsgFBSSetShellCount = 1121,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSTerminateShell = 1122;
+   */
+  k_EMsgFBSTerminateShell = 1122,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSQueryGMForRequest = 1123;
+   */
+  k_EMsgFBSQueryGMForRequest = 1123,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSQueryGMResponse = 1124;
+   */
+  k_EMsgFBSQueryGMResponse = 1124,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSTerminateZombies = 1125;
+   */
+  k_EMsgFBSTerminateZombies = 1125,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSInfoFromBootstrapper = 1126;
+   */
+  k_EMsgFBSInfoFromBootstrapper = 1126,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSRebootBoxResponse = 1127;
+   */
+  k_EMsgFBSRebootBoxResponse = 1127,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSBootstrapperPackageRequest = 1128;
+   */
+  k_EMsgFBSBootstrapperPackageRequest = 1128,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSBootstrapperPackageResponse = 1129;
+   */
+  k_EMsgFBSBootstrapperPackageResponse = 1129,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSBootstrapperGetPackageChunk = 1130;
+   */
+  k_EMsgFBSBootstrapperGetPackageChunk = 1130,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSBootstrapperGetPackageChunkResponse = 1131;
+   */
+  k_EMsgFBSBootstrapperGetPackageChunkResponse = 1131,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSBootstrapperPackageTransferProgress = 1132;
+   */
+  k_EMsgFBSBootstrapperPackageTransferProgress = 1132,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSRestartBootstrapper = 1133;
+   */
+  k_EMsgFBSRestartBootstrapper = 1133,
+  /**
+   * @generated from protobuf enum value: k_EMsgFBSPauseFrozenDumps = 1134;
+   */
+  k_EMsgFBSPauseFrozenDumps = 1134,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseFileXfer = 1200;
+   */
+  k_EMsgBaseFileXfer = 1200,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseFileXfer = 1200;
+   */
+  k_EMsgFileXferRequest = 1200,
+  /**
+   * @generated from protobuf enum value: k_EMsgFileXferResponse = 1201;
+   */
+  k_EMsgFileXferResponse = 1201,
+  /**
+   * @generated from protobuf enum value: k_EMsgFileXferData = 1202;
+   */
+  k_EMsgFileXferData = 1202,
+  /**
+   * @generated from protobuf enum value: k_EMsgFileXferEnd = 1203;
+   */
+  k_EMsgFileXferEnd = 1203,
+  /**
+   * @generated from protobuf enum value: k_EMsgFileXferDataAck = 1204;
+   */
+  k_EMsgFileXferDataAck = 1204,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseChannelAuth = 1300;
+   */
+  k_EMsgBaseChannelAuth = 1300,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseChannelAuth = 1300;
+   */
+  k_EMsgChannelAuthChallenge = 1300,
+  /**
+   * @generated from protobuf enum value: k_EMsgChannelAuthResponse = 1301;
+   */
+  k_EMsgChannelAuthResponse = 1301,
+  /**
+   * @generated from protobuf enum value: k_EMsgChannelAuthResult = 1302;
+   */
+  k_EMsgChannelAuthResult = 1302,
+  /**
+   * @generated from protobuf enum value: k_EMsgChannelEncryptRequest = 1303;
+   */
+  k_EMsgChannelEncryptRequest = 1303,
+  /**
+   * @generated from protobuf enum value: k_EMsgChannelEncryptResponse = 1304;
+   */
+  k_EMsgChannelEncryptResponse = 1304,
+  /**
+   * @generated from protobuf enum value: k_EMsgChannelEncryptResult = 1305;
+   */
+  k_EMsgChannelEncryptResult = 1305,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseBS = 1400;
+   */
+  k_EMsgBaseBS = 1400,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSPurchaseStart = 1401;
+   */
+  k_EMsgBSPurchaseStart = 1401,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSPurchaseResponse = 1402;
+   */
+  k_EMsgBSPurchaseResponse = 1402,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSAuthenticateCCTrans = 1403;
+   */
+  k_EMsgBSAuthenticateCCTrans = 1403,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSAuthenticateCCTransResponse = 1404;
+   */
+  k_EMsgBSAuthenticateCCTransResponse = 1404,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSSettleComplete = 1406;
+   */
+  k_EMsgBSSettleComplete = 1406,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSInitPayPalTxn = 1408;
+   */
+  k_EMsgBSInitPayPalTxn = 1408,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSInitPayPalTxnResponse = 1409;
+   */
+  k_EMsgBSInitPayPalTxnResponse = 1409,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSGetPayPalUserInfo = 1410;
+   */
+  k_EMsgBSGetPayPalUserInfo = 1410,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSGetPayPalUserInfoResponse = 1411;
+   */
+  k_EMsgBSGetPayPalUserInfoResponse = 1411,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSPaymentInstrBan = 1417;
+   */
+  k_EMsgBSPaymentInstrBan = 1417,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSPaymentInstrBanResponse = 1418;
+   */
+  k_EMsgBSPaymentInstrBanResponse = 1418,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSInitGCBankXferTxn = 1421;
+   */
+  k_EMsgBSInitGCBankXferTxn = 1421,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSInitGCBankXferTxnResponse = 1422;
+   */
+  k_EMsgBSInitGCBankXferTxnResponse = 1422,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSCommitGCTxn = 1425;
+   */
+  k_EMsgBSCommitGCTxn = 1425,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSQueryTransactionStatus = 1426;
+   */
+  k_EMsgBSQueryTransactionStatus = 1426,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSQueryTransactionStatusResponse = 1427;
+   */
+  k_EMsgBSQueryTransactionStatusResponse = 1427,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSQueryTxnExtendedInfo = 1433;
+   */
+  k_EMsgBSQueryTxnExtendedInfo = 1433,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSQueryTxnExtendedInfoResponse = 1434;
+   */
+  k_EMsgBSQueryTxnExtendedInfoResponse = 1434,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSUpdateConversionRates = 1435;
+   */
+  k_EMsgBSUpdateConversionRates = 1435,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSPurchaseRunFraudChecks = 1437;
+   */
+  k_EMsgBSPurchaseRunFraudChecks = 1437,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSPurchaseRunFraudChecksResponse = 1438;
+   */
+  k_EMsgBSPurchaseRunFraudChecksResponse = 1438,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSQueryBankInformation = 1440;
+   */
+  k_EMsgBSQueryBankInformation = 1440,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSQueryBankInformationResponse = 1441;
+   */
+  k_EMsgBSQueryBankInformationResponse = 1441,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSValidateXsollaSignature = 1445;
+   */
+  k_EMsgBSValidateXsollaSignature = 1445,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSValidateXsollaSignatureResponse = 1446;
+   */
+  k_EMsgBSValidateXsollaSignatureResponse = 1446,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSQiwiWalletInvoice = 1448;
+   */
+  k_EMsgBSQiwiWalletInvoice = 1448,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSQiwiWalletInvoiceResponse = 1449;
+   */
+  k_EMsgBSQiwiWalletInvoiceResponse = 1449,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSUpdateInventoryFromProPack = 1450;
+   */
+  k_EMsgBSUpdateInventoryFromProPack = 1450,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSUpdateInventoryFromProPackResponse = 1451;
+   */
+  k_EMsgBSUpdateInventoryFromProPackResponse = 1451,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSSendShippingRequest = 1452;
+   */
+  k_EMsgBSSendShippingRequest = 1452,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSSendShippingRequestResponse = 1453;
+   */
+  k_EMsgBSSendShippingRequestResponse = 1453,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSGetProPackOrderStatus = 1454;
+   */
+  k_EMsgBSGetProPackOrderStatus = 1454,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSGetProPackOrderStatusResponse = 1455;
+   */
+  k_EMsgBSGetProPackOrderStatusResponse = 1455,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSCheckJobRunning = 1456;
+   */
+  k_EMsgBSCheckJobRunning = 1456,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSCheckJobRunningResponse = 1457;
+   */
+  k_EMsgBSCheckJobRunningResponse = 1457,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSResetPackagePurchaseRateLimit = 1458;
+   */
+  k_EMsgBSResetPackagePurchaseRateLimit = 1458,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSResetPackagePurchaseRateLimitResponse = 1459;
+   */
+  k_EMsgBSResetPackagePurchaseRateLimitResponse = 1459,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSUpdatePaymentData = 1460;
+   */
+  k_EMsgBSUpdatePaymentData = 1460,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSUpdatePaymentDataResponse = 1461;
+   */
+  k_EMsgBSUpdatePaymentDataResponse = 1461,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSGetBillingAddress = 1462;
+   */
+  k_EMsgBSGetBillingAddress = 1462,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSGetBillingAddressResponse = 1463;
+   */
+  k_EMsgBSGetBillingAddressResponse = 1463,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSGetCreditCardInfo = 1464;
+   */
+  k_EMsgBSGetCreditCardInfo = 1464,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSGetCreditCardInfoResponse = 1465;
+   */
+  k_EMsgBSGetCreditCardInfoResponse = 1465,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSRemoveExpiredPaymentData = 1468;
+   */
+  k_EMsgBSRemoveExpiredPaymentData = 1468,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSRemoveExpiredPaymentDataResponse = 1469;
+   */
+  k_EMsgBSRemoveExpiredPaymentDataResponse = 1469,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSConvertToCurrentKeys = 1470;
+   */
+  k_EMsgBSConvertToCurrentKeys = 1470,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSConvertToCurrentKeysResponse = 1471;
+   */
+  k_EMsgBSConvertToCurrentKeysResponse = 1471,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSInitPurchase = 1472;
+   */
+  k_EMsgBSInitPurchase = 1472,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSInitPurchaseResponse = 1473;
+   */
+  k_EMsgBSInitPurchaseResponse = 1473,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSCompletePurchase = 1474;
+   */
+  k_EMsgBSCompletePurchase = 1474,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSCompletePurchaseResponse = 1475;
+   */
+  k_EMsgBSCompletePurchaseResponse = 1475,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSPruneCardUsageStats = 1476;
+   */
+  k_EMsgBSPruneCardUsageStats = 1476,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSPruneCardUsageStatsResponse = 1477;
+   */
+  k_EMsgBSPruneCardUsageStatsResponse = 1477,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSStoreBankInformation = 1478;
+   */
+  k_EMsgBSStoreBankInformation = 1478,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSStoreBankInformationResponse = 1479;
+   */
+  k_EMsgBSStoreBankInformationResponse = 1479,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSVerifyPOSAKey = 1480;
+   */
+  k_EMsgBSVerifyPOSAKey = 1480,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSVerifyPOSAKeyResponse = 1481;
+   */
+  k_EMsgBSVerifyPOSAKeyResponse = 1481,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSReverseRedeemPOSAKey = 1482;
+   */
+  k_EMsgBSReverseRedeemPOSAKey = 1482,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSReverseRedeemPOSAKeyResponse = 1483;
+   */
+  k_EMsgBSReverseRedeemPOSAKeyResponse = 1483,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSQueryFindCreditCard = 1484;
+   */
+  k_EMsgBSQueryFindCreditCard = 1484,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSQueryFindCreditCardResponse = 1485;
+   */
+  k_EMsgBSQueryFindCreditCardResponse = 1485,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSStatusInquiryPOSAKey = 1486;
+   */
+  k_EMsgBSStatusInquiryPOSAKey = 1486,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSStatusInquiryPOSAKeyResponse = 1487;
+   */
+  k_EMsgBSStatusInquiryPOSAKeyResponse = 1487,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSBoaCompraConfirmProductDelivery = 1494;
+   */
+  k_EMsgBSBoaCompraConfirmProductDelivery = 1494,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSBoaCompraConfirmProductDeliveryResponse = 1495;
+   */
+  k_EMsgBSBoaCompraConfirmProductDeliveryResponse = 1495,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSGenerateBoaCompraMD5 = 1496;
+   */
+  k_EMsgBSGenerateBoaCompraMD5 = 1496,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSGenerateBoaCompraMD5Response = 1497;
+   */
+  k_EMsgBSGenerateBoaCompraMD5Response = 1497,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSCommitWPTxn = 1498;
+   */
+  k_EMsgBSCommitWPTxn = 1498,
+  /**
+   * @generated from protobuf enum value: k_EMsgBSCommitAdyenTxn = 1499;
+   */
+  k_EMsgBSCommitAdyenTxn = 1499,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseATS = 1500;
+   */
+  k_EMsgBaseATS = 1500,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSStartStressTest = 1501;
+   */
+  k_EMsgATSStartStressTest = 1501,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSStopStressTest = 1502;
+   */
+  k_EMsgATSStopStressTest = 1502,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSRunFailServerTest = 1503;
+   */
+  k_EMsgATSRunFailServerTest = 1503,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSUFSPerfTestTask = 1504;
+   */
+  k_EMsgATSUFSPerfTestTask = 1504,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSUFSPerfTestResponse = 1505;
+   */
+  k_EMsgATSUFSPerfTestResponse = 1505,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSCycleTCM = 1506;
+   */
+  k_EMsgATSCycleTCM = 1506,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSInitDRMSStressTest = 1507;
+   */
+  k_EMsgATSInitDRMSStressTest = 1507,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSCallTest = 1508;
+   */
+  k_EMsgATSCallTest = 1508,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSCallTestReply = 1509;
+   */
+  k_EMsgATSCallTestReply = 1509,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSStartExternalStress = 1510;
+   */
+  k_EMsgATSStartExternalStress = 1510,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSExternalStressJobStart = 1511;
+   */
+  k_EMsgATSExternalStressJobStart = 1511,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSExternalStressJobQueued = 1512;
+   */
+  k_EMsgATSExternalStressJobQueued = 1512,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSExternalStressJobRunning = 1513;
+   */
+  k_EMsgATSExternalStressJobRunning = 1513,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSExternalStressJobStopped = 1514;
+   */
+  k_EMsgATSExternalStressJobStopped = 1514,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSExternalStressJobStopAll = 1515;
+   */
+  k_EMsgATSExternalStressJobStopAll = 1515,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSExternalStressActionResult = 1516;
+   */
+  k_EMsgATSExternalStressActionResult = 1516,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSStarted = 1517;
+   */
+  k_EMsgATSStarted = 1517,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSCSPerfTestTask = 1518;
+   */
+  k_EMsgATSCSPerfTestTask = 1518,
+  /**
+   * @generated from protobuf enum value: k_EMsgATSCSPerfTestResponse = 1519;
+   */
+  k_EMsgATSCSPerfTestResponse = 1519,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseDP = 1600;
+   */
+  k_EMsgBaseDP = 1600,
+  /**
+   * @generated from protobuf enum value: k_EMsgDPSetPublishingState = 1601;
+   */
+  k_EMsgDPSetPublishingState = 1601,
+  /**
+   * @generated from protobuf enum value: k_EMsgDPUniquePlayersStat = 1603;
+   */
+  k_EMsgDPUniquePlayersStat = 1603,
+  /**
+   * @generated from protobuf enum value: k_EMsgDPStreamingUniquePlayersStat = 1604;
+   */
+  k_EMsgDPStreamingUniquePlayersStat = 1604,
+  /**
+   * @generated from protobuf enum value: k_EMsgDPBlockingStats = 1607;
+   */
+  k_EMsgDPBlockingStats = 1607,
+  /**
+   * @generated from protobuf enum value: k_EMsgDPNatTraversalStats = 1608;
+   */
+  k_EMsgDPNatTraversalStats = 1608,
+  /**
+   * @generated from protobuf enum value: k_EMsgDPCloudStats = 1612;
+   */
+  k_EMsgDPCloudStats = 1612,
+  /**
+   * @generated from protobuf enum value: k_EMsgDPGetPlayerCount = 1615;
+   */
+  k_EMsgDPGetPlayerCount = 1615,
+  /**
+   * @generated from protobuf enum value: k_EMsgDPGetPlayerCountResponse = 1616;
+   */
+  k_EMsgDPGetPlayerCountResponse = 1616,
+  /**
+   * @generated from protobuf enum value: k_EMsgDPGameServersPlayersStats = 1617;
+   */
+  k_EMsgDPGameServersPlayersStats = 1617,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDPCheckSpecialSurvey = 1620;
+   */
+  k_EMsgClientDPCheckSpecialSurvey = 1620,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDPCheckSpecialSurveyResponse = 1621;
+   */
+  k_EMsgClientDPCheckSpecialSurveyResponse = 1621,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDPSendSpecialSurveyResponse = 1622;
+   */
+  k_EMsgClientDPSendSpecialSurveyResponse = 1622,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDPSendSpecialSurveyResponseReply = 1623;
+   */
+  k_EMsgClientDPSendSpecialSurveyResponseReply = 1623,
+  /**
+   * @generated from protobuf enum value: k_EMsgDPStoreSaleStatistics = 1624;
+   */
+  k_EMsgDPStoreSaleStatistics = 1624,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDPUpdateAppJobReport = 1625;
+   */
+  k_EMsgClientDPUpdateAppJobReport = 1625,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDPUnsignedInstallScript = 1627;
+   */
+  k_EMsgClientDPUnsignedInstallScript = 1627,
+  /**
+   * @generated from protobuf enum value: k_EMsgDPPartnerMicroTxns = 1628;
+   */
+  k_EMsgDPPartnerMicroTxns = 1628,
+  /**
+   * @generated from protobuf enum value: k_EMsgDPPartnerMicroTxnsResponse = 1629;
+   */
+  k_EMsgDPPartnerMicroTxnsResponse = 1629,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDPContentStatsReport = 1630;
+   */
+  k_EMsgClientDPContentStatsReport = 1630,
+  /**
+   * @generated from protobuf enum value: k_EMsgDPVRUniquePlayersStat = 1631;
+   */
+  k_EMsgDPVRUniquePlayersStat = 1631,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseCM = 1700;
+   */
+  k_EMsgBaseCM = 1700,
+  /**
+   * @generated from protobuf enum value: k_EMsgCMSetAllowState = 1701;
+   */
+  k_EMsgCMSetAllowState = 1701,
+  /**
+   * @generated from protobuf enum value: k_EMsgCMSpewAllowState = 1702;
+   */
+  k_EMsgCMSpewAllowState = 1702,
+  /**
+   * @generated from protobuf enum value: k_EMsgCMSessionRejected = 1703;
+   */
+  k_EMsgCMSessionRejected = 1703,
+  /**
+   * @generated from protobuf enum value: k_EMsgCMSetSecrets = 1704;
+   */
+  k_EMsgCMSetSecrets = 1704,
+  /**
+   * @generated from protobuf enum value: k_EMsgCMGetSecrets = 1705;
+   */
+  k_EMsgCMGetSecrets = 1705,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseGC = 2200;
+   */
+  k_EMsgBaseGC = 2200,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCCmdRevive = 2203;
+   */
+  k_EMsgGCCmdRevive = 2203,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCCmdDown = 2206;
+   */
+  k_EMsgGCCmdDown = 2206,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCCmdDeploy = 2207;
+   */
+  k_EMsgGCCmdDeploy = 2207,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCCmdDeployResponse = 2208;
+   */
+  k_EMsgGCCmdDeployResponse = 2208,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCCmdSwitch = 2209;
+   */
+  k_EMsgGCCmdSwitch = 2209,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRefreshSessions = 2210;
+   */
+  k_EMsgAMRefreshSessions = 2210,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCAchievementAwarded = 2212;
+   */
+  k_EMsgGCAchievementAwarded = 2212,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCSystemMessage = 2213;
+   */
+  k_EMsgGCSystemMessage = 2213,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCCmdStatus = 2216;
+   */
+  k_EMsgGCCmdStatus = 2216,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCRegisterWebInterfaces_Deprecated = 2217;
+   */
+  k_EMsgGCRegisterWebInterfaces_Deprecated = 2217,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCGetAccountDetails_DEPRECATED = 2218;
+   */
+  k_EMsgGCGetAccountDetails_DEPRECATED = 2218,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCInterAppMessage = 2219;
+   */
+  k_EMsgGCInterAppMessage = 2219,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCGetEmailTemplate = 2220;
+   */
+  k_EMsgGCGetEmailTemplate = 2220,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCGetEmailTemplateResponse = 2221;
+   */
+  k_EMsgGCGetEmailTemplateResponse = 2221,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHRelay = 2222;
+   */
+  k_EMsgGCHRelay = 2222,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHRelayToClient = 2223;
+   */
+  k_EMsgGCHRelayToClient = 2223,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHUpdateSession = 2224;
+   */
+  k_EMsgGCHUpdateSession = 2224,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHRequestUpdateSession = 2225;
+   */
+  k_EMsgGCHRequestUpdateSession = 2225,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHRequestStatus = 2226;
+   */
+  k_EMsgGCHRequestStatus = 2226,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHRequestStatusResponse = 2227;
+   */
+  k_EMsgGCHRequestStatusResponse = 2227,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHAccountVacStatusChange = 2228;
+   */
+  k_EMsgGCHAccountVacStatusChange = 2228,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHSpawnGC = 2229;
+   */
+  k_EMsgGCHSpawnGC = 2229,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHSpawnGCResponse = 2230;
+   */
+  k_EMsgGCHSpawnGCResponse = 2230,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHKillGC = 2231;
+   */
+  k_EMsgGCHKillGC = 2231,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHKillGCResponse = 2232;
+   */
+  k_EMsgGCHKillGCResponse = 2232,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHAccountTradeBanStatusChange = 2233;
+   */
+  k_EMsgGCHAccountTradeBanStatusChange = 2233,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHAccountLockStatusChange = 2234;
+   */
+  k_EMsgGCHAccountLockStatusChange = 2234,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHVacVerificationChange = 2235;
+   */
+  k_EMsgGCHVacVerificationChange = 2235,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHAccountPhoneNumberChange = 2236;
+   */
+  k_EMsgGCHAccountPhoneNumberChange = 2236,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHAccountTwoFactorChange = 2237;
+   */
+  k_EMsgGCHAccountTwoFactorChange = 2237,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHInviteUserToLobby = 2238;
+   */
+  k_EMsgGCHInviteUserToLobby = 2238,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHUpdateMultipleSessions = 2239;
+   */
+  k_EMsgGCHUpdateMultipleSessions = 2239,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHMarkAppSessionsAuthoritative = 2240;
+   */
+  k_EMsgGCHMarkAppSessionsAuthoritative = 2240,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHRecurringSubscriptionStatusChange = 2241;
+   */
+  k_EMsgGCHRecurringSubscriptionStatusChange = 2241,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHAppCheersReceived = 2242;
+   */
+  k_EMsgGCHAppCheersReceived = 2242,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHAppCheersGetAllowedTypes = 2243;
+   */
+  k_EMsgGCHAppCheersGetAllowedTypes = 2243,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCHAppCheersGetAllowedTypesResponse = 2244;
+   */
+  k_EMsgGCHAppCheersGetAllowedTypesResponse = 2244,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseP2P = 2500;
+   */
+  k_EMsgBaseP2P = 2500,
+  /**
+   * @generated from protobuf enum value: k_EMsgP2PIntroducerMessage = 2502;
+   */
+  k_EMsgP2PIntroducerMessage = 2502,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseSM = 2900;
+   */
+  k_EMsgBaseSM = 2900,
+  /**
+   * @generated from protobuf enum value: k_EMsgSMExpensiveReport = 2902;
+   */
+  k_EMsgSMExpensiveReport = 2902,
+  /**
+   * @generated from protobuf enum value: k_EMsgSMHourlyReport = 2903;
+   */
+  k_EMsgSMHourlyReport = 2903,
+  /**
+   * @generated from protobuf enum value: k_EMsgSMPartitionRenames = 2905;
+   */
+  k_EMsgSMPartitionRenames = 2905,
+  /**
+   * @generated from protobuf enum value: k_EMsgSMMonitorSpace = 2906;
+   */
+  k_EMsgSMMonitorSpace = 2906,
+  /**
+   * @generated from protobuf enum value: k_EMsgSMTestNextBuildSchemaConversion = 2907;
+   */
+  k_EMsgSMTestNextBuildSchemaConversion = 2907,
+  /**
+   * @generated from protobuf enum value: k_EMsgSMTestNextBuildSchemaConversionResponse = 2908;
+   */
+  k_EMsgSMTestNextBuildSchemaConversionResponse = 2908,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseTest = 3000;
+   */
+  k_EMsgBaseTest = 3000,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseTest = 3000;
+   */
+  k_EMsgFailServer = 3000,
+  /**
+   * @generated from protobuf enum value: k_EMsgJobHeartbeatTest = 3001;
+   */
+  k_EMsgJobHeartbeatTest = 3001,
+  /**
+   * @generated from protobuf enum value: k_EMsgJobHeartbeatTestResponse = 3002;
+   */
+  k_EMsgJobHeartbeatTestResponse = 3002,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseFTSRange = 3100;
+   */
+  k_EMsgBaseFTSRange = 3100,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseCCSRange = 3150;
+   */
+  k_EMsgBaseCCSRange = 3150,
+  /**
+   * @generated from protobuf enum value: k_EMsgCCSDeleteAllCommentsByAuthor = 3161;
+   */
+  k_EMsgCCSDeleteAllCommentsByAuthor = 3161,
+  /**
+   * @generated from protobuf enum value: k_EMsgCCSDeleteAllCommentsByAuthorResponse = 3162;
+   */
+  k_EMsgCCSDeleteAllCommentsByAuthorResponse = 3162,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseLBSRange = 3200;
+   */
+  k_EMsgBaseLBSRange = 3200,
+  /**
+   * @generated from protobuf enum value: k_EMsgLBSSetScore = 3201;
+   */
+  k_EMsgLBSSetScore = 3201,
+  /**
+   * @generated from protobuf enum value: k_EMsgLBSSetScoreResponse = 3202;
+   */
+  k_EMsgLBSSetScoreResponse = 3202,
+  /**
+   * @generated from protobuf enum value: k_EMsgLBSFindOrCreateLB = 3203;
+   */
+  k_EMsgLBSFindOrCreateLB = 3203,
+  /**
+   * @generated from protobuf enum value: k_EMsgLBSFindOrCreateLBResponse = 3204;
+   */
+  k_EMsgLBSFindOrCreateLBResponse = 3204,
+  /**
+   * @generated from protobuf enum value: k_EMsgLBSGetLBEntries = 3205;
+   */
+  k_EMsgLBSGetLBEntries = 3205,
+  /**
+   * @generated from protobuf enum value: k_EMsgLBSGetLBEntriesResponse = 3206;
+   */
+  k_EMsgLBSGetLBEntriesResponse = 3206,
+  /**
+   * @generated from protobuf enum value: k_EMsgLBSGetLBList = 3207;
+   */
+  k_EMsgLBSGetLBList = 3207,
+  /**
+   * @generated from protobuf enum value: k_EMsgLBSGetLBListResponse = 3208;
+   */
+  k_EMsgLBSGetLBListResponse = 3208,
+  /**
+   * @generated from protobuf enum value: k_EMsgLBSSetLBDetails = 3209;
+   */
+  k_EMsgLBSSetLBDetails = 3209,
+  /**
+   * @generated from protobuf enum value: k_EMsgLBSDeleteLB = 3210;
+   */
+  k_EMsgLBSDeleteLB = 3210,
+  /**
+   * @generated from protobuf enum value: k_EMsgLBSDeleteLBEntry = 3211;
+   */
+  k_EMsgLBSDeleteLBEntry = 3211,
+  /**
+   * @generated from protobuf enum value: k_EMsgLBSResetLB = 3212;
+   */
+  k_EMsgLBSResetLB = 3212,
+  /**
+   * @generated from protobuf enum value: k_EMsgLBSResetLBResponse = 3213;
+   */
+  k_EMsgLBSResetLBResponse = 3213,
+  /**
+   * @generated from protobuf enum value: k_EMsgLBSDeleteLBResponse = 3214;
+   */
+  k_EMsgLBSDeleteLBResponse = 3214,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseOGS = 3400;
+   */
+  k_EMsgBaseOGS = 3400,
+  /**
+   * @generated from protobuf enum value: k_EMsgOGSBeginSession = 3401;
+   */
+  k_EMsgOGSBeginSession = 3401,
+  /**
+   * @generated from protobuf enum value: k_EMsgOGSBeginSessionResponse = 3402;
+   */
+  k_EMsgOGSBeginSessionResponse = 3402,
+  /**
+   * @generated from protobuf enum value: k_EMsgOGSEndSession = 3403;
+   */
+  k_EMsgOGSEndSession = 3403,
+  /**
+   * @generated from protobuf enum value: k_EMsgOGSEndSessionResponse = 3404;
+   */
+  k_EMsgOGSEndSessionResponse = 3404,
+  /**
+   * @generated from protobuf enum value: k_EMsgOGSWriteAppSessionRow = 3406;
+   */
+  k_EMsgOGSWriteAppSessionRow = 3406,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseBRP = 3600;
+   */
+  k_EMsgBaseBRP = 3600,
+  /**
+   * @generated from protobuf enum value: k_EMsgBRPPostTransactionTax = 3629;
+   */
+  k_EMsgBRPPostTransactionTax = 3629,
+  /**
+   * @generated from protobuf enum value: k_EMsgBRPPostTransactionTaxResponse = 3630;
+   */
+  k_EMsgBRPPostTransactionTaxResponse = 3630,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseAMRange2 = 4000;
+   */
+  k_EMsgBaseAMRange2 = 4000,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCreateChat = 4001;
+   */
+  k_EMsgAMCreateChat = 4001,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCreateChatResponse = 4002;
+   */
+  k_EMsgAMCreateChatResponse = 4002,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetProfileURL = 4005;
+   */
+  k_EMsgAMSetProfileURL = 4005,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountEmailAddress = 4006;
+   */
+  k_EMsgAMGetAccountEmailAddress = 4006,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountEmailAddressResponse = 4007;
+   */
+  k_EMsgAMGetAccountEmailAddressResponse = 4007,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRequestClanData = 4008;
+   */
+  k_EMsgAMRequestClanData = 4008,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRouteToClients = 4009;
+   */
+  k_EMsgAMRouteToClients = 4009,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMLeaveClan = 4010;
+   */
+  k_EMsgAMLeaveClan = 4010,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClanPermissions = 4011;
+   */
+  k_EMsgAMClanPermissions = 4011,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClanPermissionsResponse = 4012;
+   */
+  k_EMsgAMClanPermissionsResponse = 4012,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCreateClanEventDummyForRateLimiting = 4013;
+   */
+  k_EMsgAMCreateClanEventDummyForRateLimiting = 4013,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMUpdateClanEventDummyForRateLimiting = 4015;
+   */
+  k_EMsgAMUpdateClanEventDummyForRateLimiting = 4015,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetClanPermissionSettings = 4021;
+   */
+  k_EMsgAMSetClanPermissionSettings = 4021,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetClanPermissionSettingsResponse = 4022;
+   */
+  k_EMsgAMSetClanPermissionSettingsResponse = 4022,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanPermissionSettings = 4023;
+   */
+  k_EMsgAMGetClanPermissionSettings = 4023,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanPermissionSettingsResponse = 4024;
+   */
+  k_EMsgAMGetClanPermissionSettingsResponse = 4024,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMPublishChatRoomInfo = 4025;
+   */
+  k_EMsgAMPublishChatRoomInfo = 4025,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientChatRoomInfo = 4026;
+   */
+  k_EMsgClientChatRoomInfo = 4026,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanHistory = 4039;
+   */
+  k_EMsgAMGetClanHistory = 4039,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanHistoryResponse = 4040;
+   */
+  k_EMsgAMGetClanHistoryResponse = 4040,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanPermissionBits = 4041;
+   */
+  k_EMsgAMGetClanPermissionBits = 4041,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanPermissionBitsResponse = 4042;
+   */
+  k_EMsgAMGetClanPermissionBitsResponse = 4042,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetClanPermissionBits = 4043;
+   */
+  k_EMsgAMSetClanPermissionBits = 4043,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetClanPermissionBitsResponse = 4044;
+   */
+  k_EMsgAMSetClanPermissionBitsResponse = 4044,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSessionInfoRequest = 4045;
+   */
+  k_EMsgAMSessionInfoRequest = 4045,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSessionInfoResponse = 4046;
+   */
+  k_EMsgAMSessionInfoResponse = 4046,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMValidateWGToken = 4047;
+   */
+  k_EMsgAMValidateWGToken = 4047,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanRank = 4050;
+   */
+  k_EMsgAMGetClanRank = 4050,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanRankResponse = 4051;
+   */
+  k_EMsgAMGetClanRankResponse = 4051,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetClanRank = 4052;
+   */
+  k_EMsgAMSetClanRank = 4052,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetClanRankResponse = 4053;
+   */
+  k_EMsgAMSetClanRankResponse = 4053,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanPOTW = 4054;
+   */
+  k_EMsgAMGetClanPOTW = 4054,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanPOTWResponse = 4055;
+   */
+  k_EMsgAMGetClanPOTWResponse = 4055,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetClanPOTW = 4056;
+   */
+  k_EMsgAMSetClanPOTW = 4056,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetClanPOTWResponse = 4057;
+   */
+  k_EMsgAMSetClanPOTWResponse = 4057,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMDumpUser = 4059;
+   */
+  k_EMsgAMDumpUser = 4059,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMKickUserFromClan = 4060;
+   */
+  k_EMsgAMKickUserFromClan = 4060,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMAddFounderToClan = 4061;
+   */
+  k_EMsgAMAddFounderToClan = 4061,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMValidateWGTokenResponse = 4062;
+   */
+  k_EMsgAMValidateWGTokenResponse = 4062,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetAccountDetails = 4064;
+   */
+  k_EMsgAMSetAccountDetails = 4064,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetChatBanList = 4065;
+   */
+  k_EMsgAMGetChatBanList = 4065,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetChatBanListResponse = 4066;
+   */
+  k_EMsgAMGetChatBanListResponse = 4066,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMUnBanFromChat = 4067;
+   */
+  k_EMsgAMUnBanFromChat = 4067,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetClanDetails = 4068;
+   */
+  k_EMsgAMSetClanDetails = 4068,
+  /**
+   * @generated from protobuf enum value: k_EMsgUGSGetUserGameStats = 4073;
+   */
+  k_EMsgUGSGetUserGameStats = 4073,
+  /**
+   * @generated from protobuf enum value: k_EMsgUGSGetUserGameStatsResponse = 4074;
+   */
+  k_EMsgUGSGetUserGameStatsResponse = 4074,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCheckClanMembership = 4075;
+   */
+  k_EMsgAMCheckClanMembership = 4075,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanMembers = 4076;
+   */
+  k_EMsgAMGetClanMembers = 4076,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanMembersResponse = 4077;
+   */
+  k_EMsgAMGetClanMembersResponse = 4077,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMNotifyChatOfClanChange = 4079;
+   */
+  k_EMsgAMNotifyChatOfClanChange = 4079,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMResubmitPurchase = 4080;
+   */
+  k_EMsgAMResubmitPurchase = 4080,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMAddFriend = 4081;
+   */
+  k_EMsgAMAddFriend = 4081,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMAddFriendResponse = 4082;
+   */
+  k_EMsgAMAddFriendResponse = 4082,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRemoveFriend = 4083;
+   */
+  k_EMsgAMRemoveFriend = 4083,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMDumpClan = 4084;
+   */
+  k_EMsgAMDumpClan = 4084,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMChangeClanOwner = 4085;
+   */
+  k_EMsgAMChangeClanOwner = 4085,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCancelEasyCollect = 4086;
+   */
+  k_EMsgAMCancelEasyCollect = 4086,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCancelEasyCollectResponse = 4087;
+   */
+  k_EMsgAMCancelEasyCollectResponse = 4087,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClansInCommon = 4090;
+   */
+  k_EMsgAMClansInCommon = 4090,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClansInCommonResponse = 4091;
+   */
+  k_EMsgAMClansInCommonResponse = 4091,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMIsValidAccountID = 4092;
+   */
+  k_EMsgAMIsValidAccountID = 4092,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMWipeFriendsList = 4095;
+   */
+  k_EMsgAMWipeFriendsList = 4095,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetIgnored = 4096;
+   */
+  k_EMsgAMSetIgnored = 4096,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClansInCommonCountResponse = 4097;
+   */
+  k_EMsgAMClansInCommonCountResponse = 4097,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFriendsList = 4098;
+   */
+  k_EMsgAMFriendsList = 4098,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFriendsListResponse = 4099;
+   */
+  k_EMsgAMFriendsListResponse = 4099,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFriendsInCommon = 4100;
+   */
+  k_EMsgAMFriendsInCommon = 4100,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFriendsInCommonResponse = 4101;
+   */
+  k_EMsgAMFriendsInCommonResponse = 4101,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFriendsInCommonCountResponse = 4102;
+   */
+  k_EMsgAMFriendsInCommonCountResponse = 4102,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClansInCommonCount = 4103;
+   */
+  k_EMsgAMClansInCommonCount = 4103,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMChallengeVerdict = 4104;
+   */
+  k_EMsgAMChallengeVerdict = 4104,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMChallengeNotification = 4105;
+   */
+  k_EMsgAMChallengeNotification = 4105,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFindGSByIP = 4106;
+   */
+  k_EMsgAMFindGSByIP = 4106,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFoundGSByIP = 4107;
+   */
+  k_EMsgAMFoundGSByIP = 4107,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGiftRevoked = 4108;
+   */
+  k_EMsgAMGiftRevoked = 4108,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMUserClanList = 4110;
+   */
+  k_EMsgAMUserClanList = 4110,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMUserClanListResponse = 4111;
+   */
+  k_EMsgAMUserClanListResponse = 4111,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountDetails2 = 4112;
+   */
+  k_EMsgAMGetAccountDetails2 = 4112,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountDetailsResponse2 = 4113;
+   */
+  k_EMsgAMGetAccountDetailsResponse2 = 4113,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetCommunityProfileSettings = 4114;
+   */
+  k_EMsgAMSetCommunityProfileSettings = 4114,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetCommunityProfileSettingsResponse = 4115;
+   */
+  k_EMsgAMSetCommunityProfileSettingsResponse = 4115,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetCommunityPrivacyState = 4116;
+   */
+  k_EMsgAMGetCommunityPrivacyState = 4116,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetCommunityPrivacyStateResponse = 4117;
+   */
+  k_EMsgAMGetCommunityPrivacyStateResponse = 4117,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCheckClanInviteRateLimiting = 4118;
+   */
+  k_EMsgAMCheckClanInviteRateLimiting = 4118,
+  /**
+   * @generated from protobuf enum value: k_EMsgUGSGetUserAchievementStatus = 4119;
+   */
+  k_EMsgUGSGetUserAchievementStatus = 4119,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetIgnored = 4120;
+   */
+  k_EMsgAMGetIgnored = 4120,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetIgnoredResponse = 4121;
+   */
+  k_EMsgAMGetIgnoredResponse = 4121,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetIgnoredResponse = 4122;
+   */
+  k_EMsgAMSetIgnoredResponse = 4122,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetFriendRelationshipNone = 4123;
+   */
+  k_EMsgAMSetFriendRelationshipNone = 4123,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetFriendRelationship = 4124;
+   */
+  k_EMsgAMGetFriendRelationship = 4124,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetFriendRelationshipResponse = 4125;
+   */
+  k_EMsgAMGetFriendRelationshipResponse = 4125,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMServiceModulesCache = 4126;
+   */
+  k_EMsgAMServiceModulesCache = 4126,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMServiceModulesCall = 4127;
+   */
+  k_EMsgAMServiceModulesCall = 4127,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMServiceModulesCallResponse = 4128;
+   */
+  k_EMsgAMServiceModulesCallResponse = 4128,
+  /**
+   * @generated from protobuf enum value: k_EMsgCommunityAddFriendNews = 4140;
+   */
+  k_EMsgCommunityAddFriendNews = 4140,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFindClanUser = 4143;
+   */
+  k_EMsgAMFindClanUser = 4143,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFindClanUserResponse = 4144;
+   */
+  k_EMsgAMFindClanUserResponse = 4144,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMBanFromChat = 4145;
+   */
+  k_EMsgAMBanFromChat = 4145,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetUserNewsSubscriptions = 4147;
+   */
+  k_EMsgAMGetUserNewsSubscriptions = 4147,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetUserNewsSubscriptionsResponse = 4148;
+   */
+  k_EMsgAMGetUserNewsSubscriptionsResponse = 4148,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetUserNewsSubscriptions = 4149;
+   */
+  k_EMsgAMSetUserNewsSubscriptions = 4149,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSendQueuedEmails = 4152;
+   */
+  k_EMsgAMSendQueuedEmails = 4152,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetLicenseFlags = 4153;
+   */
+  k_EMsgAMSetLicenseFlags = 4153,
+  /**
+   * @generated from protobuf enum value: k_EMsgCommunityDeleteUserNews = 4155;
+   */
+  k_EMsgCommunityDeleteUserNews = 4155,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMAllowUserFilesRequest = 4156;
+   */
+  k_EMsgAMAllowUserFilesRequest = 4156,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMAllowUserFilesResponse = 4157;
+   */
+  k_EMsgAMAllowUserFilesResponse = 4157,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountStatus = 4158;
+   */
+  k_EMsgAMGetAccountStatus = 4158,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountStatusResponse = 4159;
+   */
+  k_EMsgAMGetAccountStatusResponse = 4159,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMEditBanReason = 4160;
+   */
+  k_EMsgAMEditBanReason = 4160,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCheckClanMembershipResponse = 4161;
+   */
+  k_EMsgAMCheckClanMembershipResponse = 4161,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMProbeClanMembershipList = 4162;
+   */
+  k_EMsgAMProbeClanMembershipList = 4162,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMProbeClanMembershipListResponse = 4163;
+   */
+  k_EMsgAMProbeClanMembershipListResponse = 4163,
+  /**
+   * @generated from protobuf enum value: k_EMsgUGSGetUserAchievementStatusResponse = 4164;
+   */
+  k_EMsgUGSGetUserAchievementStatusResponse = 4164,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetFriendsLobbies = 4165;
+   */
+  k_EMsgAMGetFriendsLobbies = 4165,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetFriendsLobbiesResponse = 4166;
+   */
+  k_EMsgAMGetFriendsLobbiesResponse = 4166,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetUserFriendNewsResponse = 4172;
+   */
+  k_EMsgAMGetUserFriendNewsResponse = 4172,
+  /**
+   * @generated from protobuf enum value: k_EMsgCommunityGetUserFriendNews = 4173;
+   */
+  k_EMsgCommunityGetUserFriendNews = 4173,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetUserClansNewsResponse = 4174;
+   */
+  k_EMsgAMGetUserClansNewsResponse = 4174,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetUserClansNews = 4175;
+   */
+  k_EMsgAMGetUserClansNews = 4175,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetPreviousCBAccount = 4184;
+   */
+  k_EMsgAMGetPreviousCBAccount = 4184,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetPreviousCBAccountResponse = 4185;
+   */
+  k_EMsgAMGetPreviousCBAccountResponse = 4185,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetUserLicenseHistory = 4190;
+   */
+  k_EMsgAMGetUserLicenseHistory = 4190,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetUserLicenseHistoryResponse = 4191;
+   */
+  k_EMsgAMGetUserLicenseHistoryResponse = 4191,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSupportChangePassword = 4194;
+   */
+  k_EMsgAMSupportChangePassword = 4194,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSupportChangeEmail = 4195;
+   */
+  k_EMsgAMSupportChangeEmail = 4195,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMResetUserVerificationGSByIP = 4197;
+   */
+  k_EMsgAMResetUserVerificationGSByIP = 4197,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMUpdateGSPlayStats = 4198;
+   */
+  k_EMsgAMUpdateGSPlayStats = 4198,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSupportEnableOrDisable = 4199;
+   */
+  k_EMsgAMSupportEnableOrDisable = 4199,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetPurchaseStatus = 4206;
+   */
+  k_EMsgAMGetPurchaseStatus = 4206,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSupportIsAccountEnabled = 4209;
+   */
+  k_EMsgAMSupportIsAccountEnabled = 4209,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSupportIsAccountEnabledResponse = 4210;
+   */
+  k_EMsgAMSupportIsAccountEnabledResponse = 4210,
+  /**
+   * @generated from protobuf enum value: k_EMsgUGSGetUserStats = 4211;
+   */
+  k_EMsgUGSGetUserStats = 4211,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGSSearch = 4213;
+   */
+  k_EMsgAMGSSearch = 4213,
+  /**
+   * @generated from protobuf enum value: k_EMsgMarketingMessageUpdate = 4216;
+   */
+  k_EMsgMarketingMessageUpdate = 4216,
+  /**
+   * @generated from protobuf enum value: k_EMsgChatServerRouteFriendMsg = 4219;
+   */
+  k_EMsgChatServerRouteFriendMsg = 4219,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMTicketAuthRequestOrResponse = 4220;
+   */
+  k_EMsgAMTicketAuthRequestOrResponse = 4220,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMAddFreeLicense = 4224;
+   */
+  k_EMsgAMAddFreeLicense = 4224,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMValidateEmailLink = 4231;
+   */
+  k_EMsgAMValidateEmailLink = 4231,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMValidateEmailLinkResponse = 4232;
+   */
+  k_EMsgAMValidateEmailLinkResponse = 4232,
+  /**
+   * @generated from protobuf enum value: k_EMsgUGSStoreUserStats = 4236;
+   */
+  k_EMsgUGSStoreUserStats = 4236,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMDeleteStoredCard = 4241;
+   */
+  k_EMsgAMDeleteStoredCard = 4241,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRevokeLegacyGameKeys = 4242;
+   */
+  k_EMsgAMRevokeLegacyGameKeys = 4242,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetWalletDetails = 4244;
+   */
+  k_EMsgAMGetWalletDetails = 4244,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetWalletDetailsResponse = 4245;
+   */
+  k_EMsgAMGetWalletDetailsResponse = 4245,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMDeleteStoredPaymentInfo = 4246;
+   */
+  k_EMsgAMDeleteStoredPaymentInfo = 4246,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetStoredPaymentSummary = 4247;
+   */
+  k_EMsgAMGetStoredPaymentSummary = 4247,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetStoredPaymentSummaryResponse = 4248;
+   */
+  k_EMsgAMGetStoredPaymentSummaryResponse = 4248,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetWalletConversionRate = 4249;
+   */
+  k_EMsgAMGetWalletConversionRate = 4249,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetWalletConversionRateResponse = 4250;
+   */
+  k_EMsgAMGetWalletConversionRateResponse = 4250,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMConvertWallet = 4251;
+   */
+  k_EMsgAMConvertWallet = 4251,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMConvertWalletResponse = 4252;
+   */
+  k_EMsgAMConvertWalletResponse = 4252,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetPreApproval = 4255;
+   */
+  k_EMsgAMSetPreApproval = 4255,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetPreApprovalResponse = 4256;
+   */
+  k_EMsgAMSetPreApprovalResponse = 4256,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCreateRefund = 4258;
+   */
+  k_EMsgAMCreateRefund = 4258,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCreateChargeback = 4260;
+   */
+  k_EMsgAMCreateChargeback = 4260,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCreateDispute = 4262;
+   */
+  k_EMsgAMCreateDispute = 4262,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClearDispute = 4264;
+   */
+  k_EMsgAMClearDispute = 4264,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCreateFinancialAdjustment = 4265;
+   */
+  k_EMsgAMCreateFinancialAdjustment = 4265,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMPlayerNicknameList = 4266;
+   */
+  k_EMsgAMPlayerNicknameList = 4266,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMPlayerNicknameListResponse = 4267;
+   */
+  k_EMsgAMPlayerNicknameListResponse = 4267,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetDRMTestConfig = 4268;
+   */
+  k_EMsgAMSetDRMTestConfig = 4268,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetUserCurrentGameInfo = 4269;
+   */
+  k_EMsgAMGetUserCurrentGameInfo = 4269,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetUserCurrentGameInfoResponse = 4270;
+   */
+  k_EMsgAMGetUserCurrentGameInfoResponse = 4270,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetGSPlayerList = 4271;
+   */
+  k_EMsgAMGetGSPlayerList = 4271,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetGSPlayerListResponse = 4272;
+   */
+  k_EMsgAMGetGSPlayerListResponse = 4272,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetSteamIDForMicroTxn = 4278;
+   */
+  k_EMsgAMGetSteamIDForMicroTxn = 4278,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetSteamIDForMicroTxnResponse = 4279;
+   */
+  k_EMsgAMGetSteamIDForMicroTxnResponse = 4279,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetPartnerMember = 4280;
+   */
+  k_EMsgAMSetPartnerMember = 4280,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRemovePublisherUser = 4281;
+   */
+  k_EMsgAMRemovePublisherUser = 4281,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetUserLicenseList = 4282;
+   */
+  k_EMsgAMGetUserLicenseList = 4282,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetUserLicenseListResponse = 4283;
+   */
+  k_EMsgAMGetUserLicenseListResponse = 4283,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMReloadGameGroupPolicy = 4284;
+   */
+  k_EMsgAMReloadGameGroupPolicy = 4284,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMAddFreeLicenseResponse = 4285;
+   */
+  k_EMsgAMAddFreeLicenseResponse = 4285,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMVACStatusUpdate = 4286;
+   */
+  k_EMsgAMVACStatusUpdate = 4286,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountDetails = 4287;
+   */
+  k_EMsgAMGetAccountDetails = 4287,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountDetailsResponse = 4288;
+   */
+  k_EMsgAMGetAccountDetailsResponse = 4288,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetPlayerLinkDetails = 4289;
+   */
+  k_EMsgAMGetPlayerLinkDetails = 4289,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetPlayerLinkDetailsResponse = 4290;
+   */
+  k_EMsgAMGetPlayerLinkDetailsResponse = 4290,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountFlagsForWGSpoofing = 4294;
+   */
+  k_EMsgAMGetAccountFlagsForWGSpoofing = 4294,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountFlagsForWGSpoofingResponse = 4295;
+   */
+  k_EMsgAMGetAccountFlagsForWGSpoofingResponse = 4295,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanOfficers = 4298;
+   */
+  k_EMsgAMGetClanOfficers = 4298,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanOfficersResponse = 4299;
+   */
+  k_EMsgAMGetClanOfficersResponse = 4299,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMNameChange = 4300;
+   */
+  k_EMsgAMNameChange = 4300,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetNameHistory = 4301;
+   */
+  k_EMsgAMGetNameHistory = 4301,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetNameHistoryResponse = 4302;
+   */
+  k_EMsgAMGetNameHistoryResponse = 4302,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMUpdateProviderStatus = 4305;
+   */
+  k_EMsgAMUpdateProviderStatus = 4305,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSupportRemoveAccountSecurity = 4307;
+   */
+  k_EMsgAMSupportRemoveAccountSecurity = 4307,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMIsAccountInCaptchaGracePeriod = 4308;
+   */
+  k_EMsgAMIsAccountInCaptchaGracePeriod = 4308,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMIsAccountInCaptchaGracePeriodResponse = 4309;
+   */
+  k_EMsgAMIsAccountInCaptchaGracePeriodResponse = 4309,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMAccountPS3Unlink = 4310;
+   */
+  k_EMsgAMAccountPS3Unlink = 4310,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMAccountPS3UnlinkResponse = 4311;
+   */
+  k_EMsgAMAccountPS3UnlinkResponse = 4311,
+  /**
+   * @generated from protobuf enum value: k_EMsgUGSStoreUserStatsResponse = 4312;
+   */
+  k_EMsgUGSStoreUserStatsResponse = 4312,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountPSNInfo = 4313;
+   */
+  k_EMsgAMGetAccountPSNInfo = 4313,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountPSNInfoResponse = 4314;
+   */
+  k_EMsgAMGetAccountPSNInfoResponse = 4314,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMAuthenticatedPlayerList = 4315;
+   */
+  k_EMsgAMAuthenticatedPlayerList = 4315,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetUserGifts = 4316;
+   */
+  k_EMsgAMGetUserGifts = 4316,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetUserGiftsResponse = 4317;
+   */
+  k_EMsgAMGetUserGiftsResponse = 4317,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMTransferLockedGifts = 4320;
+   */
+  k_EMsgAMTransferLockedGifts = 4320,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMTransferLockedGiftsResponse = 4321;
+   */
+  k_EMsgAMTransferLockedGiftsResponse = 4321,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMPlayerHostedOnGameServer = 4322;
+   */
+  k_EMsgAMPlayerHostedOnGameServer = 4322,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountBanInfo = 4323;
+   */
+  k_EMsgAMGetAccountBanInfo = 4323,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountBanInfoResponse = 4324;
+   */
+  k_EMsgAMGetAccountBanInfoResponse = 4324,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRecordBanEnforcement = 4325;
+   */
+  k_EMsgAMRecordBanEnforcement = 4325,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRollbackGiftTransfer = 4326;
+   */
+  k_EMsgAMRollbackGiftTransfer = 4326,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRollbackGiftTransferResponse = 4327;
+   */
+  k_EMsgAMRollbackGiftTransferResponse = 4327,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMHandlePendingTransaction = 4328;
+   */
+  k_EMsgAMHandlePendingTransaction = 4328,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRequestClanDetails = 4329;
+   */
+  k_EMsgAMRequestClanDetails = 4329,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMDeleteStoredPaypalAgreement = 4330;
+   */
+  k_EMsgAMDeleteStoredPaypalAgreement = 4330,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGameServerUpdate = 4331;
+   */
+  k_EMsgAMGameServerUpdate = 4331,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGameServerRemove = 4332;
+   */
+  k_EMsgAMGameServerRemove = 4332,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetPaypalAgreements = 4333;
+   */
+  k_EMsgAMGetPaypalAgreements = 4333,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetPaypalAgreementsResponse = 4334;
+   */
+  k_EMsgAMGetPaypalAgreementsResponse = 4334,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGameServerPlayerCompatibilityCheck = 4335;
+   */
+  k_EMsgAMGameServerPlayerCompatibilityCheck = 4335,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGameServerPlayerCompatibilityCheckResponse = 4336;
+   */
+  k_EMsgAMGameServerPlayerCompatibilityCheckResponse = 4336,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRenewLicense = 4337;
+   */
+  k_EMsgAMRenewLicense = 4337,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountCommunityBanInfo = 4338;
+   */
+  k_EMsgAMGetAccountCommunityBanInfo = 4338,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountCommunityBanInfoResponse = 4339;
+   */
+  k_EMsgAMGetAccountCommunityBanInfoResponse = 4339,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGameServerAccountChangePassword = 4340;
+   */
+  k_EMsgAMGameServerAccountChangePassword = 4340,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGameServerAccountDeleteAccount = 4341;
+   */
+  k_EMsgAMGameServerAccountDeleteAccount = 4341,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRenewAgreement = 4342;
+   */
+  k_EMsgAMRenewAgreement = 4342,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMXsollaPayment = 4344;
+   */
+  k_EMsgAMXsollaPayment = 4344,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMXsollaPaymentResponse = 4345;
+   */
+  k_EMsgAMXsollaPaymentResponse = 4345,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMAcctAllowedToPurchase = 4346;
+   */
+  k_EMsgAMAcctAllowedToPurchase = 4346,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMAcctAllowedToPurchaseResponse = 4347;
+   */
+  k_EMsgAMAcctAllowedToPurchaseResponse = 4347,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSwapKioskDeposit = 4348;
+   */
+  k_EMsgAMSwapKioskDeposit = 4348,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSwapKioskDepositResponse = 4349;
+   */
+  k_EMsgAMSwapKioskDepositResponse = 4349,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetUserGiftUnowned = 4350;
+   */
+  k_EMsgAMSetUserGiftUnowned = 4350,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetUserGiftUnownedResponse = 4351;
+   */
+  k_EMsgAMSetUserGiftUnownedResponse = 4351,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClaimUnownedUserGift = 4352;
+   */
+  k_EMsgAMClaimUnownedUserGift = 4352,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClaimUnownedUserGiftResponse = 4353;
+   */
+  k_EMsgAMClaimUnownedUserGiftResponse = 4353,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetClanName = 4354;
+   */
+  k_EMsgAMSetClanName = 4354,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSetClanNameResponse = 4355;
+   */
+  k_EMsgAMSetClanNameResponse = 4355,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGrantCoupon = 4356;
+   */
+  k_EMsgAMGrantCoupon = 4356,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGrantCouponResponse = 4357;
+   */
+  k_EMsgAMGrantCouponResponse = 4357,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMIsPackageRestrictedInUserCountry = 4358;
+   */
+  k_EMsgAMIsPackageRestrictedInUserCountry = 4358,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMIsPackageRestrictedInUserCountryResponse = 4359;
+   */
+  k_EMsgAMIsPackageRestrictedInUserCountryResponse = 4359,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMHandlePendingTransactionResponse = 4360;
+   */
+  k_EMsgAMHandlePendingTransactionResponse = 4360,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGrantGuestPasses2 = 4361;
+   */
+  k_EMsgAMGrantGuestPasses2 = 4361,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGrantGuestPasses2Response = 4362;
+   */
+  k_EMsgAMGrantGuestPasses2Response = 4362,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetPlayerBanDetails = 4365;
+   */
+  k_EMsgAMGetPlayerBanDetails = 4365,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetPlayerBanDetailsResponse = 4366;
+   */
+  k_EMsgAMGetPlayerBanDetailsResponse = 4366,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFinalizePurchase = 4367;
+   */
+  k_EMsgAMFinalizePurchase = 4367,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFinalizePurchaseResponse = 4368;
+   */
+  k_EMsgAMFinalizePurchaseResponse = 4368,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMPersonaChangeResponse = 4372;
+   */
+  k_EMsgAMPersonaChangeResponse = 4372,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanDetailsForForumCreation = 4373;
+   */
+  k_EMsgAMGetClanDetailsForForumCreation = 4373,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetClanDetailsForForumCreationResponse = 4374;
+   */
+  k_EMsgAMGetClanDetailsForForumCreationResponse = 4374,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetPendingNotificationCount = 4375;
+   */
+  k_EMsgAMGetPendingNotificationCount = 4375,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetPendingNotificationCountResponse = 4376;
+   */
+  k_EMsgAMGetPendingNotificationCountResponse = 4376,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMPasswordHashUpgrade = 4377;
+   */
+  k_EMsgAMPasswordHashUpgrade = 4377,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMBoaCompraPayment = 4380;
+   */
+  k_EMsgAMBoaCompraPayment = 4380,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMBoaCompraPaymentResponse = 4381;
+   */
+  k_EMsgAMBoaCompraPaymentResponse = 4381,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCompleteExternalPurchase = 4383;
+   */
+  k_EMsgAMCompleteExternalPurchase = 4383,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMCompleteExternalPurchaseResponse = 4384;
+   */
+  k_EMsgAMCompleteExternalPurchaseResponse = 4384,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMResolveNegativeWalletCredits = 4385;
+   */
+  k_EMsgAMResolveNegativeWalletCredits = 4385,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMResolveNegativeWalletCreditsResponse = 4386;
+   */
+  k_EMsgAMResolveNegativeWalletCreditsResponse = 4386,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMPlayerGetClanBasicDetails = 4389;
+   */
+  k_EMsgAMPlayerGetClanBasicDetails = 4389,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMPlayerGetClanBasicDetailsResponse = 4390;
+   */
+  k_EMsgAMPlayerGetClanBasicDetailsResponse = 4390,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMMOLPayment = 4391;
+   */
+  k_EMsgAMMOLPayment = 4391,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMMOLPaymentResponse = 4392;
+   */
+  k_EMsgAMMOLPaymentResponse = 4392,
+  /**
+   * @generated from protobuf enum value: k_EMsgGetUserIPCountry = 4393;
+   */
+  k_EMsgGetUserIPCountry = 4393,
+  /**
+   * @generated from protobuf enum value: k_EMsgGetUserIPCountryResponse = 4394;
+   */
+  k_EMsgGetUserIPCountryResponse = 4394,
+  /**
+   * @generated from protobuf enum value: k_EMsgNotificationOfSuspiciousActivity = 4395;
+   */
+  k_EMsgNotificationOfSuspiciousActivity = 4395,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMDegicaPayment = 4396;
+   */
+  k_EMsgAMDegicaPayment = 4396,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMDegicaPaymentResponse = 4397;
+   */
+  k_EMsgAMDegicaPaymentResponse = 4397,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMEClubPayment = 4398;
+   */
+  k_EMsgAMEClubPayment = 4398,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMEClubPaymentResponse = 4399;
+   */
+  k_EMsgAMEClubPaymentResponse = 4399,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMPayPalPaymentsHubPayment = 4400;
+   */
+  k_EMsgAMPayPalPaymentsHubPayment = 4400,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMPayPalPaymentsHubPaymentResponse = 4401;
+   */
+  k_EMsgAMPayPalPaymentsHubPaymentResponse = 4401,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMTwoFactorRecoverAuthenticatorRequest = 4402;
+   */
+  k_EMsgAMTwoFactorRecoverAuthenticatorRequest = 4402,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMTwoFactorRecoverAuthenticatorResponse = 4403;
+   */
+  k_EMsgAMTwoFactorRecoverAuthenticatorResponse = 4403,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSmart2PayPayment = 4404;
+   */
+  k_EMsgAMSmart2PayPayment = 4404,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSmart2PayPaymentResponse = 4405;
+   */
+  k_EMsgAMSmart2PayPaymentResponse = 4405,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMValidatePasswordResetCodeAndSendSmsRequest = 4406;
+   */
+  k_EMsgAMValidatePasswordResetCodeAndSendSmsRequest = 4406,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMValidatePasswordResetCodeAndSendSmsResponse = 4407;
+   */
+  k_EMsgAMValidatePasswordResetCodeAndSendSmsResponse = 4407,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountResetDetailsRequest = 4408;
+   */
+  k_EMsgAMGetAccountResetDetailsRequest = 4408,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGetAccountResetDetailsResponse = 4409;
+   */
+  k_EMsgAMGetAccountResetDetailsResponse = 4409,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMBitPayPayment = 4410;
+   */
+  k_EMsgAMBitPayPayment = 4410,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMBitPayPaymentResponse = 4411;
+   */
+  k_EMsgAMBitPayPaymentResponse = 4411,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSendAccountInfoUpdate = 4412;
+   */
+  k_EMsgAMSendAccountInfoUpdate = 4412,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMSendScheduledGift = 4413;
+   */
+  k_EMsgAMSendScheduledGift = 4413,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMNodwinPayment = 4414;
+   */
+  k_EMsgAMNodwinPayment = 4414,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMNodwinPaymentResponse = 4415;
+   */
+  k_EMsgAMNodwinPaymentResponse = 4415,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMResolveWalletRevoke = 4416;
+   */
+  k_EMsgAMResolveWalletRevoke = 4416,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMResolveWalletReverseRevoke = 4417;
+   */
+  k_EMsgAMResolveWalletReverseRevoke = 4417,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFundedPayment = 4418;
+   */
+  k_EMsgAMFundedPayment = 4418,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMFundedPaymentResponse = 4419;
+   */
+  k_EMsgAMFundedPaymentResponse = 4419,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRequestPersonaUpdateForChatServer = 4420;
+   */
+  k_EMsgAMRequestPersonaUpdateForChatServer = 4420,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMPerfectWorldPayment = 4421;
+   */
+  k_EMsgAMPerfectWorldPayment = 4421,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMPerfectWorldPaymentResponse = 4422;
+   */
+  k_EMsgAMPerfectWorldPaymentResponse = 4422,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMECommPayPayment = 4423;
+   */
+  k_EMsgAMECommPayPayment = 4423,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMECommPayPaymentResponse = 4424;
+   */
+  k_EMsgAMECommPayPaymentResponse = 4424,
+  /**
+   * @generated from protobuf enum value: k_EMsgBasePSRange = 5000;
+   */
+  k_EMsgBasePSRange = 5000,
+  /**
+   * @generated from protobuf enum value: k_EMsgPSCreateShoppingCart = 5001;
+   */
+  k_EMsgPSCreateShoppingCart = 5001,
+  /**
+   * @generated from protobuf enum value: k_EMsgPSCreateShoppingCartResponse = 5002;
+   */
+  k_EMsgPSCreateShoppingCartResponse = 5002,
+  /**
+   * @generated from protobuf enum value: k_EMsgPSIsValidShoppingCart = 5003;
+   */
+  k_EMsgPSIsValidShoppingCart = 5003,
+  /**
+   * @generated from protobuf enum value: k_EMsgPSIsValidShoppingCartResponse = 5004;
+   */
+  k_EMsgPSIsValidShoppingCartResponse = 5004,
+  /**
+   * @generated from protobuf enum value: k_EMsgPSRemoveLineItemFromShoppingCart = 5007;
+   */
+  k_EMsgPSRemoveLineItemFromShoppingCart = 5007,
+  /**
+   * @generated from protobuf enum value: k_EMsgPSRemoveLineItemFromShoppingCartResponse = 5008;
+   */
+  k_EMsgPSRemoveLineItemFromShoppingCartResponse = 5008,
+  /**
+   * @generated from protobuf enum value: k_EMsgPSGetShoppingCartContents = 5009;
+   */
+  k_EMsgPSGetShoppingCartContents = 5009,
+  /**
+   * @generated from protobuf enum value: k_EMsgPSGetShoppingCartContentsResponse = 5010;
+   */
+  k_EMsgPSGetShoppingCartContentsResponse = 5010,
+  /**
+   * @generated from protobuf enum value: k_EMsgPSAddWalletCreditToShoppingCart = 5011;
+   */
+  k_EMsgPSAddWalletCreditToShoppingCart = 5011,
+  /**
+   * @generated from protobuf enum value: k_EMsgPSAddWalletCreditToShoppingCartResponse = 5012;
+   */
+  k_EMsgPSAddWalletCreditToShoppingCartResponse = 5012,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseUFSRange = 5200;
+   */
+  k_EMsgBaseUFSRange = 5200,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSUploadFileRequest = 5202;
+   */
+  k_EMsgClientUFSUploadFileRequest = 5202,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSUploadFileResponse = 5203;
+   */
+  k_EMsgClientUFSUploadFileResponse = 5203,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSUploadFileChunk = 5204;
+   */
+  k_EMsgClientUFSUploadFileChunk = 5204,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSUploadFileFinished = 5205;
+   */
+  k_EMsgClientUFSUploadFileFinished = 5205,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSGetFileListForApp = 5206;
+   */
+  k_EMsgClientUFSGetFileListForApp = 5206,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSGetFileListForAppResponse = 5207;
+   */
+  k_EMsgClientUFSGetFileListForAppResponse = 5207,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSDownloadRequest = 5210;
+   */
+  k_EMsgClientUFSDownloadRequest = 5210,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSDownloadResponse = 5211;
+   */
+  k_EMsgClientUFSDownloadResponse = 5211,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSDownloadChunk = 5212;
+   */
+  k_EMsgClientUFSDownloadChunk = 5212,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSLoginRequest = 5213;
+   */
+  k_EMsgClientUFSLoginRequest = 5213,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSLoginResponse = 5214;
+   */
+  k_EMsgClientUFSLoginResponse = 5214,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSReloadPartitionInfo = 5215;
+   */
+  k_EMsgUFSReloadPartitionInfo = 5215,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSTransferHeartbeat = 5216;
+   */
+  k_EMsgClientUFSTransferHeartbeat = 5216,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSSynchronizeFile = 5217;
+   */
+  k_EMsgUFSSynchronizeFile = 5217,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSSynchronizeFileResponse = 5218;
+   */
+  k_EMsgUFSSynchronizeFileResponse = 5218,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSDeleteFileRequest = 5219;
+   */
+  k_EMsgClientUFSDeleteFileRequest = 5219,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSDeleteFileResponse = 5220;
+   */
+  k_EMsgClientUFSDeleteFileResponse = 5220,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSGetUGCDetails = 5226;
+   */
+  k_EMsgClientUFSGetUGCDetails = 5226,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSGetUGCDetailsResponse = 5227;
+   */
+  k_EMsgClientUFSGetUGCDetailsResponse = 5227,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSUpdateFileFlags = 5228;
+   */
+  k_EMsgUFSUpdateFileFlags = 5228,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSUpdateFileFlagsResponse = 5229;
+   */
+  k_EMsgUFSUpdateFileFlagsResponse = 5229,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSGetSingleFileInfo = 5230;
+   */
+  k_EMsgClientUFSGetSingleFileInfo = 5230,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSGetSingleFileInfoResponse = 5231;
+   */
+  k_EMsgClientUFSGetSingleFileInfoResponse = 5231,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSShareFile = 5232;
+   */
+  k_EMsgClientUFSShareFile = 5232,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSShareFileResponse = 5233;
+   */
+  k_EMsgClientUFSShareFileResponse = 5233,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSReloadAccount = 5234;
+   */
+  k_EMsgUFSReloadAccount = 5234,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSReloadAccountResponse = 5235;
+   */
+  k_EMsgUFSReloadAccountResponse = 5235,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSUpdateRecordBatched = 5236;
+   */
+  k_EMsgUFSUpdateRecordBatched = 5236,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSUpdateRecordBatchedResponse = 5237;
+   */
+  k_EMsgUFSUpdateRecordBatchedResponse = 5237,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSMigrateFile = 5238;
+   */
+  k_EMsgUFSMigrateFile = 5238,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSMigrateFileResponse = 5239;
+   */
+  k_EMsgUFSMigrateFileResponse = 5239,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSGetUGCURLs = 5240;
+   */
+  k_EMsgUFSGetUGCURLs = 5240,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSGetUGCURLsResponse = 5241;
+   */
+  k_EMsgUFSGetUGCURLsResponse = 5241,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSHttpUploadFileFinishRequest = 5242;
+   */
+  k_EMsgUFSHttpUploadFileFinishRequest = 5242,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSHttpUploadFileFinishResponse = 5243;
+   */
+  k_EMsgUFSHttpUploadFileFinishResponse = 5243,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSDownloadStartRequest = 5244;
+   */
+  k_EMsgUFSDownloadStartRequest = 5244,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSDownloadStartResponse = 5245;
+   */
+  k_EMsgUFSDownloadStartResponse = 5245,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSDownloadChunkRequest = 5246;
+   */
+  k_EMsgUFSDownloadChunkRequest = 5246,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSDownloadChunkResponse = 5247;
+   */
+  k_EMsgUFSDownloadChunkResponse = 5247,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSDownloadFinishRequest = 5248;
+   */
+  k_EMsgUFSDownloadFinishRequest = 5248,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSDownloadFinishResponse = 5249;
+   */
+  k_EMsgUFSDownloadFinishResponse = 5249,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSFlushURLCache = 5250;
+   */
+  k_EMsgUFSFlushURLCache = 5250,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSUploadCommit = 5251;
+   */
+  k_EMsgClientUFSUploadCommit = 5251,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUFSUploadCommitResponse = 5252;
+   */
+  k_EMsgClientUFSUploadCommitResponse = 5252,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSMigrateFileAppID = 5253;
+   */
+  k_EMsgUFSMigrateFileAppID = 5253,
+  /**
+   * @generated from protobuf enum value: k_EMsgUFSMigrateFileAppIDResponse = 5254;
+   */
+  k_EMsgUFSMigrateFileAppIDResponse = 5254,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseClient2 = 5400;
+   */
+  k_EMsgBaseClient2 = 5400,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestForgottenPasswordEmail = 5401;
+   */
+  k_EMsgClientRequestForgottenPasswordEmail = 5401,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestForgottenPasswordEmailResponse = 5402;
+   */
+  k_EMsgClientRequestForgottenPasswordEmailResponse = 5402,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientCreateAccountResponse = 5403;
+   */
+  k_EMsgClientCreateAccountResponse = 5403,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientResetForgottenPassword = 5404;
+   */
+  k_EMsgClientResetForgottenPassword = 5404,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientResetForgottenPasswordResponse = 5405;
+   */
+  k_EMsgClientResetForgottenPasswordResponse = 5405,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientInformOfResetForgottenPassword = 5407;
+   */
+  k_EMsgClientInformOfResetForgottenPassword = 5407,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientInformOfResetForgottenPasswordResponse = 5408;
+   */
+  k_EMsgClientInformOfResetForgottenPasswordResponse = 5408,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAnonUserLogOn_Deprecated = 5409;
+   */
+  k_EMsgClientAnonUserLogOn_Deprecated = 5409,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGamesPlayedWithDataBlob = 5410;
+   */
+  k_EMsgClientGamesPlayedWithDataBlob = 5410,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUpdateUserGameInfo = 5411;
+   */
+  k_EMsgClientUpdateUserGameInfo = 5411,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFileToDownload = 5412;
+   */
+  k_EMsgClientFileToDownload = 5412,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFileToDownloadResponse = 5413;
+   */
+  k_EMsgClientFileToDownloadResponse = 5413,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLBSSetScore = 5414;
+   */
+  k_EMsgClientLBSSetScore = 5414,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLBSSetScoreResponse = 5415;
+   */
+  k_EMsgClientLBSSetScoreResponse = 5415,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLBSFindOrCreateLB = 5416;
+   */
+  k_EMsgClientLBSFindOrCreateLB = 5416,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLBSFindOrCreateLBResponse = 5417;
+   */
+  k_EMsgClientLBSFindOrCreateLBResponse = 5417,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLBSGetLBEntries = 5418;
+   */
+  k_EMsgClientLBSGetLBEntries = 5418,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLBSGetLBEntriesResponse = 5419;
+   */
+  k_EMsgClientLBSGetLBEntriesResponse = 5419,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientChatDeclined = 5426;
+   */
+  k_EMsgClientChatDeclined = 5426,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFriendMsgIncoming = 5427;
+   */
+  k_EMsgClientFriendMsgIncoming = 5427,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAuthList_Deprecated = 5428;
+   */
+  k_EMsgClientAuthList_Deprecated = 5428,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientTicketAuthComplete = 5429;
+   */
+  k_EMsgClientTicketAuthComplete = 5429,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientIsLimitedAccount = 5430;
+   */
+  k_EMsgClientIsLimitedAccount = 5430,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestAuthList = 5431;
+   */
+  k_EMsgClientRequestAuthList = 5431,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAuthList = 5432;
+   */
+  k_EMsgClientAuthList = 5432,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientStat = 5433;
+   */
+  k_EMsgClientStat = 5433,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientP2PConnectionInfo = 5434;
+   */
+  k_EMsgClientP2PConnectionInfo = 5434,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientP2PConnectionFailInfo = 5435;
+   */
+  k_EMsgClientP2PConnectionFailInfo = 5435,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetDepotDecryptionKey = 5438;
+   */
+  k_EMsgClientGetDepotDecryptionKey = 5438,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetDepotDecryptionKeyResponse = 5439;
+   */
+  k_EMsgClientGetDepotDecryptionKeyResponse = 5439,
+  /**
+   * @generated from protobuf enum value: k_EMsgGSPerformHardwareSurvey = 5440;
+   */
+  k_EMsgGSPerformHardwareSurvey = 5440,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientEnableTestLicense = 5443;
+   */
+  k_EMsgClientEnableTestLicense = 5443,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientEnableTestLicenseResponse = 5444;
+   */
+  k_EMsgClientEnableTestLicenseResponse = 5444,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDisableTestLicense = 5445;
+   */
+  k_EMsgClientDisableTestLicense = 5445,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDisableTestLicenseResponse = 5446;
+   */
+  k_EMsgClientDisableTestLicenseResponse = 5446,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestValidationMail = 5448;
+   */
+  k_EMsgClientRequestValidationMail = 5448,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestValidationMailResponse = 5449;
+   */
+  k_EMsgClientRequestValidationMailResponse = 5449,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientCheckAppBetaPassword = 5450;
+   */
+  k_EMsgClientCheckAppBetaPassword = 5450,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientCheckAppBetaPasswordResponse = 5451;
+   */
+  k_EMsgClientCheckAppBetaPasswordResponse = 5451,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientToGC = 5452;
+   */
+  k_EMsgClientToGC = 5452,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFromGC = 5453;
+   */
+  k_EMsgClientFromGC = 5453,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientEmailAddrInfo = 5456;
+   */
+  k_EMsgClientEmailAddrInfo = 5456,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPasswordChange3 = 5457;
+   */
+  k_EMsgClientPasswordChange3 = 5457,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientEmailChange3 = 5458;
+   */
+  k_EMsgClientEmailChange3 = 5458,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPersonalQAChange3 = 5459;
+   */
+  k_EMsgClientPersonalQAChange3 = 5459,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientResetForgottenPassword3 = 5460;
+   */
+  k_EMsgClientResetForgottenPassword3 = 5460,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestForgottenPasswordEmail3 = 5461;
+   */
+  k_EMsgClientRequestForgottenPasswordEmail3 = 5461,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientNewLoginKey = 5463;
+   */
+  k_EMsgClientNewLoginKey = 5463,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientNewLoginKeyAccepted = 5464;
+   */
+  k_EMsgClientNewLoginKeyAccepted = 5464,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLogOnWithHash_Deprecated = 5465;
+   */
+  k_EMsgClientLogOnWithHash_Deprecated = 5465,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientStoreUserStats2 = 5466;
+   */
+  k_EMsgClientStoreUserStats2 = 5466,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientStatsUpdated = 5467;
+   */
+  k_EMsgClientStatsUpdated = 5467,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientActivateOEMLicense = 5468;
+   */
+  k_EMsgClientActivateOEMLicense = 5468,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRegisterOEMMachine = 5469;
+   */
+  k_EMsgClientRegisterOEMMachine = 5469,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRegisterOEMMachineResponse = 5470;
+   */
+  k_EMsgClientRegisterOEMMachineResponse = 5470,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestedClientStats = 5480;
+   */
+  k_EMsgClientRequestedClientStats = 5480,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientStat2Int32 = 5481;
+   */
+  k_EMsgClientStat2Int32 = 5481,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientStat2 = 5482;
+   */
+  k_EMsgClientStat2 = 5482,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientVerifyPassword = 5483;
+   */
+  k_EMsgClientVerifyPassword = 5483,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientVerifyPasswordResponse = 5484;
+   */
+  k_EMsgClientVerifyPasswordResponse = 5484,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDRMDownloadRequest = 5485;
+   */
+  k_EMsgClientDRMDownloadRequest = 5485,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDRMDownloadResponse = 5486;
+   */
+  k_EMsgClientDRMDownloadResponse = 5486,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDRMFinalResult = 5487;
+   */
+  k_EMsgClientDRMFinalResult = 5487,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetFriendsWhoPlayGame = 5488;
+   */
+  k_EMsgClientGetFriendsWhoPlayGame = 5488,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetFriendsWhoPlayGameResponse = 5489;
+   */
+  k_EMsgClientGetFriendsWhoPlayGameResponse = 5489,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientOGSBeginSession = 5490;
+   */
+  k_EMsgClientOGSBeginSession = 5490,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientOGSBeginSessionResponse = 5491;
+   */
+  k_EMsgClientOGSBeginSessionResponse = 5491,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientOGSEndSession = 5492;
+   */
+  k_EMsgClientOGSEndSession = 5492,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientOGSEndSessionResponse = 5493;
+   */
+  k_EMsgClientOGSEndSessionResponse = 5493,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientOGSWriteRow = 5494;
+   */
+  k_EMsgClientOGSWriteRow = 5494,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDRMTest = 5495;
+   */
+  k_EMsgClientDRMTest = 5495,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDRMTestResult = 5496;
+   */
+  k_EMsgClientDRMTestResult = 5496,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientServerUnavailable = 5500;
+   */
+  k_EMsgClientServerUnavailable = 5500,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientServersAvailable = 5501;
+   */
+  k_EMsgClientServersAvailable = 5501,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRegisterAuthTicketWithCM = 5502;
+   */
+  k_EMsgClientRegisterAuthTicketWithCM = 5502,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGCMsgFailed = 5503;
+   */
+  k_EMsgClientGCMsgFailed = 5503,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMicroTxnAuthRequest = 5504;
+   */
+  k_EMsgClientMicroTxnAuthRequest = 5504,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMicroTxnAuthorize = 5505;
+   */
+  k_EMsgClientMicroTxnAuthorize = 5505,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMicroTxnAuthorizeResponse = 5506;
+   */
+  k_EMsgClientMicroTxnAuthorizeResponse = 5506,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetMicroTxnInfo = 5508;
+   */
+  k_EMsgClientGetMicroTxnInfo = 5508,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetMicroTxnInfoResponse = 5509;
+   */
+  k_EMsgClientGetMicroTxnInfoResponse = 5509,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMarketingMessageUpdate2 = 5510;
+   */
+  k_EMsgClientMarketingMessageUpdate2 = 5510,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDeregisterWithServer = 5511;
+   */
+  k_EMsgClientDeregisterWithServer = 5511,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSubscribeToPersonaFeed = 5512;
+   */
+  k_EMsgClientSubscribeToPersonaFeed = 5512,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLogon = 5514;
+   */
+  k_EMsgClientLogon = 5514,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetClientDetails = 5515;
+   */
+  k_EMsgClientGetClientDetails = 5515,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetClientDetailsResponse = 5516;
+   */
+  k_EMsgClientGetClientDetailsResponse = 5516,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientReportOverlayDetourFailure = 5517;
+   */
+  k_EMsgClientReportOverlayDetourFailure = 5517,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetClientAppList = 5518;
+   */
+  k_EMsgClientGetClientAppList = 5518,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetClientAppListResponse = 5519;
+   */
+  k_EMsgClientGetClientAppListResponse = 5519,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientInstallClientApp = 5520;
+   */
+  k_EMsgClientInstallClientApp = 5520,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientInstallClientAppResponse = 5521;
+   */
+  k_EMsgClientInstallClientAppResponse = 5521,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUninstallClientApp = 5522;
+   */
+  k_EMsgClientUninstallClientApp = 5522,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUninstallClientAppResponse = 5523;
+   */
+  k_EMsgClientUninstallClientAppResponse = 5523,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSetClientAppUpdateState = 5524;
+   */
+  k_EMsgClientSetClientAppUpdateState = 5524,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSetClientAppUpdateStateResponse = 5525;
+   */
+  k_EMsgClientSetClientAppUpdateStateResponse = 5525,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestEncryptedAppTicket = 5526;
+   */
+  k_EMsgClientRequestEncryptedAppTicket = 5526,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestEncryptedAppTicketResponse = 5527;
+   */
+  k_EMsgClientRequestEncryptedAppTicketResponse = 5527,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientWalletInfoUpdate = 5528;
+   */
+  k_EMsgClientWalletInfoUpdate = 5528,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLBSSetUGC = 5529;
+   */
+  k_EMsgClientLBSSetUGC = 5529,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLBSSetUGCResponse = 5530;
+   */
+  k_EMsgClientLBSSetUGCResponse = 5530,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAMGetClanOfficers = 5531;
+   */
+  k_EMsgClientAMGetClanOfficers = 5531,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAMGetClanOfficersResponse = 5532;
+   */
+  k_EMsgClientAMGetClanOfficersResponse = 5532,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFriendProfileInfo = 5535;
+   */
+  k_EMsgClientFriendProfileInfo = 5535,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFriendProfileInfoResponse = 5536;
+   */
+  k_EMsgClientFriendProfileInfoResponse = 5536,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUpdateMachineAuth = 5537;
+   */
+  k_EMsgClientUpdateMachineAuth = 5537,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUpdateMachineAuthResponse = 5538;
+   */
+  k_EMsgClientUpdateMachineAuthResponse = 5538,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientReadMachineAuth = 5539;
+   */
+  k_EMsgClientReadMachineAuth = 5539,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientReadMachineAuthResponse = 5540;
+   */
+  k_EMsgClientReadMachineAuthResponse = 5540,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestMachineAuth = 5541;
+   */
+  k_EMsgClientRequestMachineAuth = 5541,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestMachineAuthResponse = 5542;
+   */
+  k_EMsgClientRequestMachineAuthResponse = 5542,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientScreenshotsChanged = 5543;
+   */
+  k_EMsgClientScreenshotsChanged = 5543,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetCDNAuthToken = 5546;
+   */
+  k_EMsgClientGetCDNAuthToken = 5546,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetCDNAuthTokenResponse = 5547;
+   */
+  k_EMsgClientGetCDNAuthTokenResponse = 5547,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDownloadRateStatistics = 5548;
+   */
+  k_EMsgClientDownloadRateStatistics = 5548,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestAccountData = 5549;
+   */
+  k_EMsgClientRequestAccountData = 5549,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestAccountDataResponse = 5550;
+   */
+  k_EMsgClientRequestAccountDataResponse = 5550,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientResetForgottenPassword4 = 5551;
+   */
+  k_EMsgClientResetForgottenPassword4 = 5551,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientHideFriend = 5552;
+   */
+  k_EMsgClientHideFriend = 5552,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFriendsGroupsList = 5553;
+   */
+  k_EMsgClientFriendsGroupsList = 5553,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetClanActivityCounts = 5554;
+   */
+  k_EMsgClientGetClanActivityCounts = 5554,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetClanActivityCountsResponse = 5555;
+   */
+  k_EMsgClientGetClanActivityCountsResponse = 5555,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientOGSReportString = 5556;
+   */
+  k_EMsgClientOGSReportString = 5556,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientOGSReportBug = 5557;
+   */
+  k_EMsgClientOGSReportBug = 5557,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSentLogs = 5558;
+   */
+  k_EMsgClientSentLogs = 5558,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLogonGameServer = 5559;
+   */
+  k_EMsgClientLogonGameServer = 5559,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientCreateFriendsGroup = 5560;
+   */
+  k_EMsgAMClientCreateFriendsGroup = 5560,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientCreateFriendsGroupResponse = 5561;
+   */
+  k_EMsgAMClientCreateFriendsGroupResponse = 5561,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientDeleteFriendsGroup = 5562;
+   */
+  k_EMsgAMClientDeleteFriendsGroup = 5562,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientDeleteFriendsGroupResponse = 5563;
+   */
+  k_EMsgAMClientDeleteFriendsGroupResponse = 5563,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientManageFriendsGroup = 5564;
+   */
+  k_EMsgAMClientManageFriendsGroup = 5564,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientManageFriendsGroupResponse = 5565;
+   */
+  k_EMsgAMClientManageFriendsGroupResponse = 5565,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientAddFriendToGroup = 5566;
+   */
+  k_EMsgAMClientAddFriendToGroup = 5566,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientAddFriendToGroupResponse = 5567;
+   */
+  k_EMsgAMClientAddFriendToGroupResponse = 5567,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientRemoveFriendFromGroup = 5568;
+   */
+  k_EMsgAMClientRemoveFriendFromGroup = 5568,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientRemoveFriendFromGroupResponse = 5569;
+   */
+  k_EMsgAMClientRemoveFriendFromGroupResponse = 5569,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAMGetPersonaNameHistory = 5570;
+   */
+  k_EMsgClientAMGetPersonaNameHistory = 5570,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAMGetPersonaNameHistoryResponse = 5571;
+   */
+  k_EMsgClientAMGetPersonaNameHistoryResponse = 5571,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestFreeLicense = 5572;
+   */
+  k_EMsgClientRequestFreeLicense = 5572,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestFreeLicenseResponse = 5573;
+   */
+  k_EMsgClientRequestFreeLicenseResponse = 5573,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDRMDownloadRequestWithCrashData = 5574;
+   */
+  k_EMsgClientDRMDownloadRequestWithCrashData = 5574,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAuthListAck = 5575;
+   */
+  k_EMsgClientAuthListAck = 5575,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientItemAnnouncements = 5576;
+   */
+  k_EMsgClientItemAnnouncements = 5576,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestItemAnnouncements = 5577;
+   */
+  k_EMsgClientRequestItemAnnouncements = 5577,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFriendMsgEchoToSender = 5578;
+   */
+  k_EMsgClientFriendMsgEchoToSender = 5578,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientCommentNotifications = 5582;
+   */
+  k_EMsgClientCommentNotifications = 5582,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestCommentNotifications = 5583;
+   */
+  k_EMsgClientRequestCommentNotifications = 5583,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPersonaChangeResponse = 5584;
+   */
+  k_EMsgClientPersonaChangeResponse = 5584,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestWebAPIAuthenticateUserNonce = 5585;
+   */
+  k_EMsgClientRequestWebAPIAuthenticateUserNonce = 5585,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRequestWebAPIAuthenticateUserNonceResponse = 5586;
+   */
+  k_EMsgClientRequestWebAPIAuthenticateUserNonceResponse = 5586,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPlayerNicknameList = 5587;
+   */
+  k_EMsgClientPlayerNicknameList = 5587,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientSetPlayerNickname = 5588;
+   */
+  k_EMsgAMClientSetPlayerNickname = 5588,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMClientSetPlayerNicknameResponse = 5589;
+   */
+  k_EMsgAMClientSetPlayerNicknameResponse = 5589,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetNumberOfCurrentPlayersDP = 5592;
+   */
+  k_EMsgClientGetNumberOfCurrentPlayersDP = 5592,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetNumberOfCurrentPlayersDPResponse = 5593;
+   */
+  k_EMsgClientGetNumberOfCurrentPlayersDPResponse = 5593,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientServiceMethodLegacy = 5594;
+   */
+  k_EMsgClientServiceMethodLegacy = 5594,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientServiceMethodLegacyResponse = 5595;
+   */
+  k_EMsgClientServiceMethodLegacyResponse = 5595,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFriendUserStatusPublished = 5596;
+   */
+  k_EMsgClientFriendUserStatusPublished = 5596,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientCurrentUIMode = 5597;
+   */
+  k_EMsgClientCurrentUIMode = 5597,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientVanityURLChangedNotification = 5598;
+   */
+  k_EMsgClientVanityURLChangedNotification = 5598,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUserNotifications = 5599;
+   */
+  k_EMsgClientUserNotifications = 5599,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseDFS = 5600;
+   */
+  k_EMsgBaseDFS = 5600,
+  /**
+   * @generated from protobuf enum value: k_EMsgDFSGetFile = 5601;
+   */
+  k_EMsgDFSGetFile = 5601,
+  /**
+   * @generated from protobuf enum value: k_EMsgDFSInstallLocalFile = 5602;
+   */
+  k_EMsgDFSInstallLocalFile = 5602,
+  /**
+   * @generated from protobuf enum value: k_EMsgDFSConnection = 5603;
+   */
+  k_EMsgDFSConnection = 5603,
+  /**
+   * @generated from protobuf enum value: k_EMsgDFSConnectionReply = 5604;
+   */
+  k_EMsgDFSConnectionReply = 5604,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDFSAuthenticateRequest = 5605;
+   */
+  k_EMsgClientDFSAuthenticateRequest = 5605,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDFSAuthenticateResponse = 5606;
+   */
+  k_EMsgClientDFSAuthenticateResponse = 5606,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDFSEndSession = 5607;
+   */
+  k_EMsgClientDFSEndSession = 5607,
+  /**
+   * @generated from protobuf enum value: k_EMsgDFSPurgeFile = 5608;
+   */
+  k_EMsgDFSPurgeFile = 5608,
+  /**
+   * @generated from protobuf enum value: k_EMsgDFSRouteFile = 5609;
+   */
+  k_EMsgDFSRouteFile = 5609,
+  /**
+   * @generated from protobuf enum value: k_EMsgDFSGetFileFromServer = 5610;
+   */
+  k_EMsgDFSGetFileFromServer = 5610,
+  /**
+   * @generated from protobuf enum value: k_EMsgDFSAcceptedResponse = 5611;
+   */
+  k_EMsgDFSAcceptedResponse = 5611,
+  /**
+   * @generated from protobuf enum value: k_EMsgDFSRequestPingback = 5612;
+   */
+  k_EMsgDFSRequestPingback = 5612,
+  /**
+   * @generated from protobuf enum value: k_EMsgDFSRecvTransmitFile = 5613;
+   */
+  k_EMsgDFSRecvTransmitFile = 5613,
+  /**
+   * @generated from protobuf enum value: k_EMsgDFSSendTransmitFile = 5614;
+   */
+  k_EMsgDFSSendTransmitFile = 5614,
+  /**
+   * @generated from protobuf enum value: k_EMsgDFSRequestPingback2 = 5615;
+   */
+  k_EMsgDFSRequestPingback2 = 5615,
+  /**
+   * @generated from protobuf enum value: k_EMsgDFSResponsePingback2 = 5616;
+   */
+  k_EMsgDFSResponsePingback2 = 5616,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDFSDownloadStatus = 5617;
+   */
+  k_EMsgClientDFSDownloadStatus = 5617,
+  /**
+   * @generated from protobuf enum value: k_EMsgDFSStartTransfer = 5618;
+   */
+  k_EMsgDFSStartTransfer = 5618,
+  /**
+   * @generated from protobuf enum value: k_EMsgDFSTransferComplete = 5619;
+   */
+  k_EMsgDFSTransferComplete = 5619,
+  /**
+   * @generated from protobuf enum value: k_EMsgDFSRouteFileResponse = 5620;
+   */
+  k_EMsgDFSRouteFileResponse = 5620,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientNetworkingCertRequest = 5621;
+   */
+  k_EMsgClientNetworkingCertRequest = 5621,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientNetworkingCertRequestResponse = 5622;
+   */
+  k_EMsgClientNetworkingCertRequestResponse = 5622,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientChallengeRequest = 5623;
+   */
+  k_EMsgClientChallengeRequest = 5623,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientChallengeResponse = 5624;
+   */
+  k_EMsgClientChallengeResponse = 5624,
+  /**
+   * @generated from protobuf enum value: k_EMsgBadgeCraftedNotification = 5625;
+   */
+  k_EMsgBadgeCraftedNotification = 5625,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientNetworkingMobileCertRequest = 5626;
+   */
+  k_EMsgClientNetworkingMobileCertRequest = 5626,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientNetworkingMobileCertRequestResponse = 5627;
+   */
+  k_EMsgClientNetworkingMobileCertRequestResponse = 5627,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseMDS = 5800;
+   */
+  k_EMsgBaseMDS = 5800,
+  /**
+   * @generated from protobuf enum value: k_EMsgMDSGetDepotDecryptionKey = 5812;
+   */
+  k_EMsgMDSGetDepotDecryptionKey = 5812,
+  /**
+   * @generated from protobuf enum value: k_EMsgMDSGetDepotDecryptionKeyResponse = 5813;
+   */
+  k_EMsgMDSGetDepotDecryptionKeyResponse = 5813,
+  /**
+   * @generated from protobuf enum value: k_EMsgMDSContentServerConfigRequest = 5827;
+   */
+  k_EMsgMDSContentServerConfigRequest = 5827,
+  /**
+   * @generated from protobuf enum value: k_EMsgMDSContentServerConfig = 5828;
+   */
+  k_EMsgMDSContentServerConfig = 5828,
+  /**
+   * @generated from protobuf enum value: k_EMsgMDSGetDepotManifest = 5829;
+   */
+  k_EMsgMDSGetDepotManifest = 5829,
+  /**
+   * @generated from protobuf enum value: k_EMsgMDSGetDepotManifestResponse = 5830;
+   */
+  k_EMsgMDSGetDepotManifestResponse = 5830,
+  /**
+   * @generated from protobuf enum value: k_EMsgMDSGetDepotManifestChunk = 5831;
+   */
+  k_EMsgMDSGetDepotManifestChunk = 5831,
+  /**
+   * @generated from protobuf enum value: k_EMsgMDSGetDepotChunk = 5832;
+   */
+  k_EMsgMDSGetDepotChunk = 5832,
+  /**
+   * @generated from protobuf enum value: k_EMsgMDSGetDepotChunkResponse = 5833;
+   */
+  k_EMsgMDSGetDepotChunkResponse = 5833,
+  /**
+   * @generated from protobuf enum value: k_EMsgMDSGetDepotChunkChunk = 5834;
+   */
+  k_EMsgMDSGetDepotChunkChunk = 5834,
+  /**
+   * @generated from protobuf enum value: k_EMsgMDSToCSFlushChunk = 5844;
+   */
+  k_EMsgMDSToCSFlushChunk = 5844,
+  /**
+   * @generated from protobuf enum value: k_EMsgMDSMigrateChunk = 5847;
+   */
+  k_EMsgMDSMigrateChunk = 5847,
+  /**
+   * @generated from protobuf enum value: k_EMsgMDSMigrateChunkResponse = 5848;
+   */
+  k_EMsgMDSMigrateChunkResponse = 5848,
+  /**
+   * @generated from protobuf enum value: k_EMsgMDSToCSFlushManifest = 5849;
+   */
+  k_EMsgMDSToCSFlushManifest = 5849,
+  /**
+   * @generated from protobuf enum value: k_EMsgCSBase = 6200;
+   */
+  k_EMsgCSBase = 6200,
+  /**
+   * @generated from protobuf enum value: k_EMsgCSPing = 6201;
+   */
+  k_EMsgCSPing = 6201,
+  /**
+   * @generated from protobuf enum value: k_EMsgCSPingResponse = 6202;
+   */
+  k_EMsgCSPingResponse = 6202,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMSBase = 6400;
+   */
+  k_EMsgGMSBase = 6400,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMSGameServerReplicate = 6401;
+   */
+  k_EMsgGMSGameServerReplicate = 6401,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGMSServerQuery = 6403;
+   */
+  k_EMsgClientGMSServerQuery = 6403,
+  /**
+   * @generated from protobuf enum value: k_EMsgGMSClientServerQueryResponse = 6404;
+   */
+  k_EMsgGMSClientServerQueryResponse = 6404,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGMSGameServerUpdate = 6405;
+   */
+  k_EMsgAMGMSGameServerUpdate = 6405,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMGMSGameServerRemove = 6406;
+   */
+  k_EMsgAMGMSGameServerRemove = 6406,
+  /**
+   * @generated from protobuf enum value: k_EMsgGameServerOutOfDate = 6407;
+   */
+  k_EMsgGameServerOutOfDate = 6407,
+  /**
+   * @generated from protobuf enum value: k_EMsgDeviceAuthorizationBase = 6500;
+   */
+  k_EMsgDeviceAuthorizationBase = 6500,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAuthorizeLocalDeviceRequest = 6501;
+   */
+  k_EMsgClientAuthorizeLocalDeviceRequest = 6501,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAuthorizeLocalDeviceResponse = 6502;
+   */
+  k_EMsgClientAuthorizeLocalDeviceResponse = 6502,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDeauthorizeDeviceRequest = 6503;
+   */
+  k_EMsgClientDeauthorizeDeviceRequest = 6503,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientDeauthorizeDevice = 6504;
+   */
+  k_EMsgClientDeauthorizeDevice = 6504,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUseLocalDeviceAuthorizations = 6505;
+   */
+  k_EMsgClientUseLocalDeviceAuthorizations = 6505,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetAuthorizedDevices = 6506;
+   */
+  k_EMsgClientGetAuthorizedDevices = 6506,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetAuthorizedDevicesResponse = 6507;
+   */
+  k_EMsgClientGetAuthorizedDevicesResponse = 6507,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMNotifySessionDeviceAuthorized = 6508;
+   */
+  k_EMsgAMNotifySessionDeviceAuthorized = 6508,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientAuthorizeLocalDeviceNotification = 6509;
+   */
+  k_EMsgClientAuthorizeLocalDeviceNotification = 6509,
+  /**
+   * @generated from protobuf enum value: k_EMsgMMSBase = 6600;
+   */
+  k_EMsgMMSBase = 6600,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSCreateLobby = 6601;
+   */
+  k_EMsgClientMMSCreateLobby = 6601,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSCreateLobbyResponse = 6602;
+   */
+  k_EMsgClientMMSCreateLobbyResponse = 6602,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSJoinLobby = 6603;
+   */
+  k_EMsgClientMMSJoinLobby = 6603,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSJoinLobbyResponse = 6604;
+   */
+  k_EMsgClientMMSJoinLobbyResponse = 6604,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSLeaveLobby = 6605;
+   */
+  k_EMsgClientMMSLeaveLobby = 6605,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSLeaveLobbyResponse = 6606;
+   */
+  k_EMsgClientMMSLeaveLobbyResponse = 6606,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSGetLobbyList = 6607;
+   */
+  k_EMsgClientMMSGetLobbyList = 6607,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSGetLobbyListResponse = 6608;
+   */
+  k_EMsgClientMMSGetLobbyListResponse = 6608,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSSetLobbyData = 6609;
+   */
+  k_EMsgClientMMSSetLobbyData = 6609,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSSetLobbyDataResponse = 6610;
+   */
+  k_EMsgClientMMSSetLobbyDataResponse = 6610,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSGetLobbyData = 6611;
+   */
+  k_EMsgClientMMSGetLobbyData = 6611,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSLobbyData = 6612;
+   */
+  k_EMsgClientMMSLobbyData = 6612,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSSendLobbyChatMsg = 6613;
+   */
+  k_EMsgClientMMSSendLobbyChatMsg = 6613,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSLobbyChatMsg = 6614;
+   */
+  k_EMsgClientMMSLobbyChatMsg = 6614,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSSetLobbyOwner = 6615;
+   */
+  k_EMsgClientMMSSetLobbyOwner = 6615,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSSetLobbyOwnerResponse = 6616;
+   */
+  k_EMsgClientMMSSetLobbyOwnerResponse = 6616,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSSetLobbyGameServer = 6617;
+   */
+  k_EMsgClientMMSSetLobbyGameServer = 6617,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSLobbyGameServerSet = 6618;
+   */
+  k_EMsgClientMMSLobbyGameServerSet = 6618,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSUserJoinedLobby = 6619;
+   */
+  k_EMsgClientMMSUserJoinedLobby = 6619,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSUserLeftLobby = 6620;
+   */
+  k_EMsgClientMMSUserLeftLobby = 6620,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSInviteToLobby = 6621;
+   */
+  k_EMsgClientMMSInviteToLobby = 6621,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSFlushFrenemyListCache = 6622;
+   */
+  k_EMsgClientMMSFlushFrenemyListCache = 6622,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSFlushFrenemyListCacheResponse = 6623;
+   */
+  k_EMsgClientMMSFlushFrenemyListCacheResponse = 6623,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSSetLobbyLinked = 6624;
+   */
+  k_EMsgClientMMSSetLobbyLinked = 6624,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSSetRatelimitPolicyOnClient = 6625;
+   */
+  k_EMsgClientMMSSetRatelimitPolicyOnClient = 6625,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSGetLobbyStatus = 6626;
+   */
+  k_EMsgClientMMSGetLobbyStatus = 6626,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientMMSGetLobbyStatusResponse = 6627;
+   */
+  k_EMsgClientMMSGetLobbyStatusResponse = 6627,
+  /**
+   * @generated from protobuf enum value: k_EMsgMMSGetLobbyList = 6628;
+   */
+  k_EMsgMMSGetLobbyList = 6628,
+  /**
+   * @generated from protobuf enum value: k_EMsgMMSGetLobbyListResponse = 6629;
+   */
+  k_EMsgMMSGetLobbyListResponse = 6629,
+  /**
+   * @generated from protobuf enum value: k_EMsgNonStdMsgBase = 6800;
+   */
+  k_EMsgNonStdMsgBase = 6800,
+  /**
+   * @generated from protobuf enum value: k_EMsgNonStdMsgMemcached = 6801;
+   */
+  k_EMsgNonStdMsgMemcached = 6801,
+  /**
+   * @generated from protobuf enum value: k_EMsgNonStdMsgHTTPServer = 6802;
+   */
+  k_EMsgNonStdMsgHTTPServer = 6802,
+  /**
+   * @generated from protobuf enum value: k_EMsgNonStdMsgHTTPClient = 6803;
+   */
+  k_EMsgNonStdMsgHTTPClient = 6803,
+  /**
+   * @generated from protobuf enum value: k_EMsgNonStdMsgWGResponse = 6804;
+   */
+  k_EMsgNonStdMsgWGResponse = 6804,
+  /**
+   * @generated from protobuf enum value: k_EMsgNonStdMsgPHPSimulator = 6805;
+   */
+  k_EMsgNonStdMsgPHPSimulator = 6805,
+  /**
+   * @generated from protobuf enum value: k_EMsgNonStdMsgChase = 6806;
+   */
+  k_EMsgNonStdMsgChase = 6806,
+  /**
+   * @generated from protobuf enum value: k_EMsgNonStdMsgDFSTransfer = 6807;
+   */
+  k_EMsgNonStdMsgDFSTransfer = 6807,
+  /**
+   * @generated from protobuf enum value: k_EMsgNonStdMsgTests = 6808;
+   */
+  k_EMsgNonStdMsgTests = 6808,
+  /**
+   * @generated from protobuf enum value: k_EMsgNonStdMsgUMQpipeAAPL = 6809;
+   */
+  k_EMsgNonStdMsgUMQpipeAAPL = 6809,
+  /**
+   * @generated from protobuf enum value: k_EMSgNonStdMsgSyslog = 6810;
+   */
+  k_EMSgNonStdMsgSyslog = 6810,
+  /**
+   * @generated from protobuf enum value: k_EMsgNonStdMsgLogsink = 6811;
+   */
+  k_EMsgNonStdMsgLogsink = 6811,
+  /**
+   * @generated from protobuf enum value: k_EMsgNonStdMsgSteam2Emulator = 6812;
+   */
+  k_EMsgNonStdMsgSteam2Emulator = 6812,
+  /**
+   * @generated from protobuf enum value: k_EMsgNonStdMsgRTMPServer = 6813;
+   */
+  k_EMsgNonStdMsgRTMPServer = 6813,
+  /**
+   * @generated from protobuf enum value: k_EMsgNonStdMsgWebSocket = 6814;
+   */
+  k_EMsgNonStdMsgWebSocket = 6814,
+  /**
+   * @generated from protobuf enum value: k_EMsgNonStdMsgRedis = 6815;
+   */
+  k_EMsgNonStdMsgRedis = 6815,
+  /**
+   * @generated from protobuf enum value: k_EMsgUDSBase = 7000;
+   */
+  k_EMsgUDSBase = 7000,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUDSP2PSessionStarted = 7001;
+   */
+  k_EMsgClientUDSP2PSessionStarted = 7001,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUDSP2PSessionEnded = 7002;
+   */
+  k_EMsgClientUDSP2PSessionEnded = 7002,
+  /**
+   * @generated from protobuf enum value: k_EMsgUDSRenderUserAuth = 7003;
+   */
+  k_EMsgUDSRenderUserAuth = 7003,
+  /**
+   * @generated from protobuf enum value: k_EMsgUDSRenderUserAuthResponse = 7004;
+   */
+  k_EMsgUDSRenderUserAuthResponse = 7004,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientInviteToGame = 7005;
+   */
+  k_EMsgClientInviteToGame = 7005,
+  /**
+   * @generated from protobuf enum value: k_EMsgUDSHasSession = 7006;
+   */
+  k_EMsgUDSHasSession = 7006,
+  /**
+   * @generated from protobuf enum value: k_EMsgUDSHasSessionResponse = 7007;
+   */
+  k_EMsgUDSHasSessionResponse = 7007,
+  /**
+   * @generated from protobuf enum value: k_EMsgMPASBase = 7100;
+   */
+  k_EMsgMPASBase = 7100,
+  /**
+   * @generated from protobuf enum value: k_EMsgMPASVacBanReset = 7101;
+   */
+  k_EMsgMPASVacBanReset = 7101,
+  /**
+   * @generated from protobuf enum value: k_EMsgKGSBase = 7200;
+   */
+  k_EMsgKGSBase = 7200,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMBase = 7300;
+   */
+  k_EMsgUCMBase = 7300,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMAddScreenshot = 7301;
+   */
+  k_EMsgClientUCMAddScreenshot = 7301,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMAddScreenshotResponse = 7302;
+   */
+  k_EMsgClientUCMAddScreenshotResponse = 7302,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMResetCommunityContent = 7307;
+   */
+  k_EMsgUCMResetCommunityContent = 7307,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMResetCommunityContentResponse = 7308;
+   */
+  k_EMsgUCMResetCommunityContentResponse = 7308,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMDeleteScreenshot = 7309;
+   */
+  k_EMsgClientUCMDeleteScreenshot = 7309,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMDeleteScreenshotResponse = 7310;
+   */
+  k_EMsgClientUCMDeleteScreenshotResponse = 7310,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMPublishFile = 7311;
+   */
+  k_EMsgClientUCMPublishFile = 7311,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMPublishFileResponse = 7312;
+   */
+  k_EMsgClientUCMPublishFileResponse = 7312,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMDeletePublishedFile = 7315;
+   */
+  k_EMsgClientUCMDeletePublishedFile = 7315,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMDeletePublishedFileResponse = 7316;
+   */
+  k_EMsgClientUCMDeletePublishedFileResponse = 7316,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMUpdatePublishedFile = 7325;
+   */
+  k_EMsgClientUCMUpdatePublishedFile = 7325,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMUpdatePublishedFileResponse = 7326;
+   */
+  k_EMsgClientUCMUpdatePublishedFileResponse = 7326,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMUpdatePublishedFile = 7327;
+   */
+  k_EMsgUCMUpdatePublishedFile = 7327,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMUpdatePublishedFileResponse = 7328;
+   */
+  k_EMsgUCMUpdatePublishedFileResponse = 7328,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMDeletePublishedFile = 7329;
+   */
+  k_EMsgUCMDeletePublishedFile = 7329,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMDeletePublishedFileResponse = 7330;
+   */
+  k_EMsgUCMDeletePublishedFileResponse = 7330,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMUpdatePublishedFileStat = 7331;
+   */
+  k_EMsgUCMUpdatePublishedFileStat = 7331,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMReloadPublishedFile = 7337;
+   */
+  k_EMsgUCMReloadPublishedFile = 7337,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMReloadUserFileListCaches = 7338;
+   */
+  k_EMsgUCMReloadUserFileListCaches = 7338,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMPublishedFileReported = 7339;
+   */
+  k_EMsgUCMPublishedFileReported = 7339,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMPublishedFilePreviewAdd = 7341;
+   */
+  k_EMsgUCMPublishedFilePreviewAdd = 7341,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMPublishedFilePreviewAddResponse = 7342;
+   */
+  k_EMsgUCMPublishedFilePreviewAddResponse = 7342,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMPublishedFilePreviewRemove = 7343;
+   */
+  k_EMsgUCMPublishedFilePreviewRemove = 7343,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMPublishedFilePreviewRemoveResponse = 7344;
+   */
+  k_EMsgUCMPublishedFilePreviewRemoveResponse = 7344,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMPublishedFileSubscribed = 7349;
+   */
+  k_EMsgUCMPublishedFileSubscribed = 7349,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMPublishedFileUnsubscribed = 7350;
+   */
+  k_EMsgUCMPublishedFileUnsubscribed = 7350,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMPublishFile = 7351;
+   */
+  k_EMsgUCMPublishFile = 7351,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMPublishFileResponse = 7352;
+   */
+  k_EMsgUCMPublishFileResponse = 7352,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMPublishedFileChildAdd = 7353;
+   */
+  k_EMsgUCMPublishedFileChildAdd = 7353,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMPublishedFileChildAddResponse = 7354;
+   */
+  k_EMsgUCMPublishedFileChildAddResponse = 7354,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMPublishedFileChildRemove = 7355;
+   */
+  k_EMsgUCMPublishedFileChildRemove = 7355,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMPublishedFileChildRemoveResponse = 7356;
+   */
+  k_EMsgUCMPublishedFileChildRemoveResponse = 7356,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMPublishedFileParentChanged = 7359;
+   */
+  k_EMsgUCMPublishedFileParentChanged = 7359,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMSetUserPublishedFileAction = 7364;
+   */
+  k_EMsgClientUCMSetUserPublishedFileAction = 7364,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMSetUserPublishedFileActionResponse = 7365;
+   */
+  k_EMsgClientUCMSetUserPublishedFileActionResponse = 7365,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMEnumeratePublishedFilesByUserAction = 7366;
+   */
+  k_EMsgClientUCMEnumeratePublishedFilesByUserAction = 7366,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMEnumeratePublishedFilesByUserActionResponse = 7367;
+   */
+  k_EMsgClientUCMEnumeratePublishedFilesByUserActionResponse = 7367,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMGetUserSubscribedFiles = 7369;
+   */
+  k_EMsgUCMGetUserSubscribedFiles = 7369,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMGetUserSubscribedFilesResponse = 7370;
+   */
+  k_EMsgUCMGetUserSubscribedFilesResponse = 7370,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMFixStatsPublishedFile = 7371;
+   */
+  k_EMsgUCMFixStatsPublishedFile = 7371,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMEnumerateUserSubscribedFilesWithUpdates = 7378;
+   */
+  k_EMsgClientUCMEnumerateUserSubscribedFilesWithUpdates = 7378,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMEnumerateUserSubscribedFilesWithUpdatesResponse = 7379;
+   */
+  k_EMsgClientUCMEnumerateUserSubscribedFilesWithUpdatesResponse = 7379,
+  /**
+   * @generated from protobuf enum value: k_EMsgUCMPublishedFileContentUpdated = 7380;
+   */
+  k_EMsgUCMPublishedFileContentUpdated = 7380,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUCMPublishedFileUpdated = 7381;
+   */
+  k_EMsgClientUCMPublishedFileUpdated = 7381,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientWorkshopItemChangesRequest = 7382;
+   */
+  k_EMsgClientWorkshopItemChangesRequest = 7382,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientWorkshopItemChangesResponse = 7383;
+   */
+  k_EMsgClientWorkshopItemChangesResponse = 7383,
+  /**
+   * @generated from protobuf enum value: k_EMsgFSBase = 7500;
+   */
+  k_EMsgFSBase = 7500,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRichPresenceUpload = 7501;
+   */
+  k_EMsgClientRichPresenceUpload = 7501,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRichPresenceRequest = 7502;
+   */
+  k_EMsgClientRichPresenceRequest = 7502,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientRichPresenceInfo = 7503;
+   */
+  k_EMsgClientRichPresenceInfo = 7503,
+  /**
+   * @generated from protobuf enum value: k_EMsgFSRichPresenceRequest = 7504;
+   */
+  k_EMsgFSRichPresenceRequest = 7504,
+  /**
+   * @generated from protobuf enum value: k_EMsgFSRichPresenceResponse = 7505;
+   */
+  k_EMsgFSRichPresenceResponse = 7505,
+  /**
+   * @generated from protobuf enum value: k_EMsgFSComputeFrenematrix = 7506;
+   */
+  k_EMsgFSComputeFrenematrix = 7506,
+  /**
+   * @generated from protobuf enum value: k_EMsgFSComputeFrenematrixResponse = 7507;
+   */
+  k_EMsgFSComputeFrenematrixResponse = 7507,
+  /**
+   * @generated from protobuf enum value: k_EMsgFSPlayStatusNotification = 7508;
+   */
+  k_EMsgFSPlayStatusNotification = 7508,
+  /**
+   * @generated from protobuf enum value: k_EMsgFSAddOrRemoveFollower = 7510;
+   */
+  k_EMsgFSAddOrRemoveFollower = 7510,
+  /**
+   * @generated from protobuf enum value: k_EMsgFSAddOrRemoveFollowerResponse = 7511;
+   */
+  k_EMsgFSAddOrRemoveFollowerResponse = 7511,
+  /**
+   * @generated from protobuf enum value: k_EMsgFSUpdateFollowingList = 7512;
+   */
+  k_EMsgFSUpdateFollowingList = 7512,
+  /**
+   * @generated from protobuf enum value: k_EMsgFSCommentNotification = 7513;
+   */
+  k_EMsgFSCommentNotification = 7513,
+  /**
+   * @generated from protobuf enum value: k_EMsgFSCommentNotificationViewed = 7514;
+   */
+  k_EMsgFSCommentNotificationViewed = 7514,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFSGetFollowerCount = 7515;
+   */
+  k_EMsgClientFSGetFollowerCount = 7515,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFSGetFollowerCountResponse = 7516;
+   */
+  k_EMsgClientFSGetFollowerCountResponse = 7516,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFSGetIsFollowing = 7517;
+   */
+  k_EMsgClientFSGetIsFollowing = 7517,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFSGetIsFollowingResponse = 7518;
+   */
+  k_EMsgClientFSGetIsFollowingResponse = 7518,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFSEnumerateFollowingList = 7519;
+   */
+  k_EMsgClientFSEnumerateFollowingList = 7519,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFSEnumerateFollowingListResponse = 7520;
+   */
+  k_EMsgClientFSEnumerateFollowingListResponse = 7520,
+  /**
+   * @generated from protobuf enum value: k_EMsgFSGetPendingNotificationCount = 7521;
+   */
+  k_EMsgFSGetPendingNotificationCount = 7521,
+  /**
+   * @generated from protobuf enum value: k_EMsgFSGetPendingNotificationCountResponse = 7522;
+   */
+  k_EMsgFSGetPendingNotificationCountResponse = 7522,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientChatOfflineMessageNotification = 7523;
+   */
+  k_EMsgClientChatOfflineMessageNotification = 7523,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientChatRequestOfflineMessageCount = 7524;
+   */
+  k_EMsgClientChatRequestOfflineMessageCount = 7524,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientChatGetFriendMessageHistory = 7525;
+   */
+  k_EMsgClientChatGetFriendMessageHistory = 7525,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientChatGetFriendMessageHistoryResponse = 7526;
+   */
+  k_EMsgClientChatGetFriendMessageHistoryResponse = 7526,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientChatGetFriendMessageHistoryForOfflineMessages = 7527;
+   */
+  k_EMsgClientChatGetFriendMessageHistoryForOfflineMessages = 7527,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFSGetFriendsSteamLevels = 7528;
+   */
+  k_EMsgClientFSGetFriendsSteamLevels = 7528,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientFSGetFriendsSteamLevelsResponse = 7529;
+   */
+  k_EMsgClientFSGetFriendsSteamLevelsResponse = 7529,
+  /**
+   * @generated from protobuf enum value: k_EMsgAMRequestFriendData = 7530;
+   */
+  k_EMsgAMRequestFriendData = 7530,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMRange2 = 7600;
+   */
+  k_EMsgDRMRange2 = 7600,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMRange2 = 7600;
+   */
+  k_EMsgCEGVersionSetEnableDisableRequest = 7600,
+  /**
+   * @generated from protobuf enum value: k_EMsgCEGVersionSetEnableDisableResponse = 7601;
+   */
+  k_EMsgCEGVersionSetEnableDisableResponse = 7601,
+  /**
+   * @generated from protobuf enum value: k_EMsgCEGPropStatusDRMSRequest = 7602;
+   */
+  k_EMsgCEGPropStatusDRMSRequest = 7602,
+  /**
+   * @generated from protobuf enum value: k_EMsgCEGPropStatusDRMSResponse = 7603;
+   */
+  k_EMsgCEGPropStatusDRMSResponse = 7603,
+  /**
+   * @generated from protobuf enum value: k_EMsgCEGWhackFailureReportRequest = 7604;
+   */
+  k_EMsgCEGWhackFailureReportRequest = 7604,
+  /**
+   * @generated from protobuf enum value: k_EMsgCEGWhackFailureReportResponse = 7605;
+   */
+  k_EMsgCEGWhackFailureReportResponse = 7605,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMSFetchVersionSet = 7606;
+   */
+  k_EMsgDRMSFetchVersionSet = 7606,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMSFetchVersionSetResponse = 7607;
+   */
+  k_EMsgDRMSFetchVersionSetResponse = 7607,
+  /**
+   * @generated from protobuf enum value: k_EMsgEconBase = 7700;
+   */
+  k_EMsgEconBase = 7700,
+  /**
+   * @generated from protobuf enum value: k_EMsgEconTrading_InitiateTradeRequest = 7701;
+   */
+  k_EMsgEconTrading_InitiateTradeRequest = 7701,
+  /**
+   * @generated from protobuf enum value: k_EMsgEconTrading_InitiateTradeProposed = 7702;
+   */
+  k_EMsgEconTrading_InitiateTradeProposed = 7702,
+  /**
+   * @generated from protobuf enum value: k_EMsgEconTrading_InitiateTradeResponse = 7703;
+   */
+  k_EMsgEconTrading_InitiateTradeResponse = 7703,
+  /**
+   * @generated from protobuf enum value: k_EMsgEconTrading_InitiateTradeResult = 7704;
+   */
+  k_EMsgEconTrading_InitiateTradeResult = 7704,
+  /**
+   * @generated from protobuf enum value: k_EMsgEconTrading_StartSession = 7705;
+   */
+  k_EMsgEconTrading_StartSession = 7705,
+  /**
+   * @generated from protobuf enum value: k_EMsgEconTrading_CancelTradeRequest = 7706;
+   */
+  k_EMsgEconTrading_CancelTradeRequest = 7706,
+  /**
+   * @generated from protobuf enum value: k_EMsgEconFlushInventoryCache = 7707;
+   */
+  k_EMsgEconFlushInventoryCache = 7707,
+  /**
+   * @generated from protobuf enum value: k_EMsgEconFlushInventoryCacheResponse = 7708;
+   */
+  k_EMsgEconFlushInventoryCacheResponse = 7708,
+  /**
+   * @generated from protobuf enum value: k_EMsgEconCDKeyProcessTransaction = 7711;
+   */
+  k_EMsgEconCDKeyProcessTransaction = 7711,
+  /**
+   * @generated from protobuf enum value: k_EMsgEconCDKeyProcessTransactionResponse = 7712;
+   */
+  k_EMsgEconCDKeyProcessTransactionResponse = 7712,
+  /**
+   * @generated from protobuf enum value: k_EMsgEconGetErrorLogs = 7713;
+   */
+  k_EMsgEconGetErrorLogs = 7713,
+  /**
+   * @generated from protobuf enum value: k_EMsgEconGetErrorLogsResponse = 7714;
+   */
+  k_EMsgEconGetErrorLogsResponse = 7714,
+  /**
+   * @generated from protobuf enum value: k_EMsgRMRange = 7800;
+   */
+  k_EMsgRMRange = 7800,
+  /**
+   * @generated from protobuf enum value: k_EMsgRMRange = 7800;
+   */
+  k_EMsgRMTestVerisignOTP = 7800,
+  /**
+   * @generated from protobuf enum value: k_EMsgRMTestVerisignOTPResponse = 7801;
+   */
+  k_EMsgRMTestVerisignOTPResponse = 7801,
+  /**
+   * @generated from protobuf enum value: k_EMsgRMDeleteMemcachedKeys = 7803;
+   */
+  k_EMsgRMDeleteMemcachedKeys = 7803,
+  /**
+   * @generated from protobuf enum value: k_EMsgRMRemoteInvoke = 7804;
+   */
+  k_EMsgRMRemoteInvoke = 7804,
+  /**
+   * @generated from protobuf enum value: k_EMsgBadLoginIPList = 7805;
+   */
+  k_EMsgBadLoginIPList = 7805,
+  /**
+   * @generated from protobuf enum value: k_EMsgRMMsgTraceAddTrigger = 7806;
+   */
+  k_EMsgRMMsgTraceAddTrigger = 7806,
+  /**
+   * @generated from protobuf enum value: k_EMsgRMMsgTraceRemoveTrigger = 7807;
+   */
+  k_EMsgRMMsgTraceRemoveTrigger = 7807,
+  /**
+   * @generated from protobuf enum value: k_EMsgRMMsgTraceEvent = 7808;
+   */
+  k_EMsgRMMsgTraceEvent = 7808,
+  /**
+   * @generated from protobuf enum value: k_EMsgUGSBase = 7900;
+   */
+  k_EMsgUGSBase = 7900,
+  /**
+   * @generated from protobuf enum value: k_EMsgUGSBase = 7900;
+   */
+  k_EMsgUGSUpdateGlobalStats = 7900,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUGSGetGlobalStats = 7901;
+   */
+  k_EMsgClientUGSGetGlobalStats = 7901,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUGSGetGlobalStatsResponse = 7902;
+   */
+  k_EMsgClientUGSGetGlobalStatsResponse = 7902,
+  /**
+   * @generated from protobuf enum value: k_EMsgStoreBase = 8000;
+   */
+  k_EMsgStoreBase = 8000,
+  /**
+   * @generated from protobuf enum value: k_EMsgUMQBase = 8100;
+   */
+  k_EMsgUMQBase = 8100,
+  /**
+   * @generated from protobuf enum value: k_EMsgUMQBase = 8100;
+   */
+  k_EMsgUMQLogonRequest = 8100,
+  /**
+   * @generated from protobuf enum value: k_EMsgUMQLogonResponse = 8101;
+   */
+  k_EMsgUMQLogonResponse = 8101,
+  /**
+   * @generated from protobuf enum value: k_EMsgUMQLogoffRequest = 8102;
+   */
+  k_EMsgUMQLogoffRequest = 8102,
+  /**
+   * @generated from protobuf enum value: k_EMsgUMQLogoffResponse = 8103;
+   */
+  k_EMsgUMQLogoffResponse = 8103,
+  /**
+   * @generated from protobuf enum value: k_EMsgUMQSendChatMessage = 8104;
+   */
+  k_EMsgUMQSendChatMessage = 8104,
+  /**
+   * @generated from protobuf enum value: k_EMsgUMQIncomingChatMessage = 8105;
+   */
+  k_EMsgUMQIncomingChatMessage = 8105,
+  /**
+   * @generated from protobuf enum value: k_EMsgUMQPoll = 8106;
+   */
+  k_EMsgUMQPoll = 8106,
+  /**
+   * @generated from protobuf enum value: k_EMsgUMQPollResults = 8107;
+   */
+  k_EMsgUMQPollResults = 8107,
+  /**
+   * @generated from protobuf enum value: k_EMsgUMQ2AM_ClientMsgBatch = 8108;
+   */
+  k_EMsgUMQ2AM_ClientMsgBatch = 8108,
+  /**
+   * @generated from protobuf enum value: k_EMsgWorkshopBase = 8200;
+   */
+  k_EMsgWorkshopBase = 8200,
+  /**
+   * @generated from protobuf enum value: k_EMsgWebAPIBase = 8300;
+   */
+  k_EMsgWebAPIBase = 8300,
+  /**
+   * @generated from protobuf enum value: k_EMsgWebAPIBase = 8300;
+   */
+  k_EMsgWebAPIValidateOAuth2Token = 8300,
+  /**
+   * @generated from protobuf enum value: k_EMsgWebAPIValidateOAuth2TokenResponse = 8301;
+   */
+  k_EMsgWebAPIValidateOAuth2TokenResponse = 8301,
+  /**
+   * @generated from protobuf enum value: k_EMsgWebAPIRegisterGCInterfaces = 8303;
+   */
+  k_EMsgWebAPIRegisterGCInterfaces = 8303,
+  /**
+   * @generated from protobuf enum value: k_EMsgWebAPIInvalidateOAuthClientCache = 8304;
+   */
+  k_EMsgWebAPIInvalidateOAuthClientCache = 8304,
+  /**
+   * @generated from protobuf enum value: k_EMsgWebAPIInvalidateOAuthTokenCache = 8305;
+   */
+  k_EMsgWebAPIInvalidateOAuthTokenCache = 8305,
+  /**
+   * @generated from protobuf enum value: k_EMsgWebAPISetSecrets = 8306;
+   */
+  k_EMsgWebAPISetSecrets = 8306,
+  /**
+   * @generated from protobuf enum value: k_EMsgBackpackBase = 8400;
+   */
+  k_EMsgBackpackBase = 8400,
+  /**
+   * @generated from protobuf enum value: k_EMsgBackpackAddToCurrency = 8401;
+   */
+  k_EMsgBackpackAddToCurrency = 8401,
+  /**
+   * @generated from protobuf enum value: k_EMsgBackpackAddToCurrencyResponse = 8402;
+   */
+  k_EMsgBackpackAddToCurrencyResponse = 8402,
+  /**
+   * @generated from protobuf enum value: k_EMsgCREBase = 8500;
+   */
+  k_EMsgCREBase = 8500,
+  /**
+   * @generated from protobuf enum value: k_EMsgCREItemVoteSummary = 8503;
+   */
+  k_EMsgCREItemVoteSummary = 8503,
+  /**
+   * @generated from protobuf enum value: k_EMsgCREItemVoteSummaryResponse = 8504;
+   */
+  k_EMsgCREItemVoteSummaryResponse = 8504,
+  /**
+   * @generated from protobuf enum value: k_EMsgCREUpdateUserPublishedItemVote = 8507;
+   */
+  k_EMsgCREUpdateUserPublishedItemVote = 8507,
+  /**
+   * @generated from protobuf enum value: k_EMsgCREUpdateUserPublishedItemVoteResponse = 8508;
+   */
+  k_EMsgCREUpdateUserPublishedItemVoteResponse = 8508,
+  /**
+   * @generated from protobuf enum value: k_EMsgCREGetUserPublishedItemVoteDetails = 8509;
+   */
+  k_EMsgCREGetUserPublishedItemVoteDetails = 8509,
+  /**
+   * @generated from protobuf enum value: k_EMsgCREGetUserPublishedItemVoteDetailsResponse = 8510;
+   */
+  k_EMsgCREGetUserPublishedItemVoteDetailsResponse = 8510,
+  /**
+   * @generated from protobuf enum value: k_EMsgSecretsBase = 8600;
+   */
+  k_EMsgSecretsBase = 8600,
+  /**
+   * @generated from protobuf enum value: k_EMsgSecretsBase = 8600;
+   */
+  k_EMsgSecretsRequestCredentialPair = 8600,
+  /**
+   * @generated from protobuf enum value: k_EMsgSecretsCredentialPairResponse = 8601;
+   */
+  k_EMsgSecretsCredentialPairResponse = 8601,
+  /**
+   * @generated from protobuf enum value: k_EMsgBoxMonitorBase = 8700;
+   */
+  k_EMsgBoxMonitorBase = 8700,
+  /**
+   * @generated from protobuf enum value: k_EMsgBoxMonitorBase = 8700;
+   */
+  k_EMsgBoxMonitorReportRequest = 8700,
+  /**
+   * @generated from protobuf enum value: k_EMsgBoxMonitorReportResponse = 8701;
+   */
+  k_EMsgBoxMonitorReportResponse = 8701,
+  /**
+   * @generated from protobuf enum value: k_EMsgLogsinkBase = 8800;
+   */
+  k_EMsgLogsinkBase = 8800,
+  /**
+   * @generated from protobuf enum value: k_EMsgLogsinkBase = 8800;
+   */
+  k_EMsgLogsinkWriteReport = 8800,
+  /**
+   * @generated from protobuf enum value: k_EMsgPICSBase = 8900;
+   */
+  k_EMsgPICSBase = 8900,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPICSChangesSinceRequest = 8901;
+   */
+  k_EMsgClientPICSChangesSinceRequest = 8901,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPICSChangesSinceResponse = 8902;
+   */
+  k_EMsgClientPICSChangesSinceResponse = 8902,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPICSProductInfoRequest = 8903;
+   */
+  k_EMsgClientPICSProductInfoRequest = 8903,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPICSProductInfoResponse = 8904;
+   */
+  k_EMsgClientPICSProductInfoResponse = 8904,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPICSAccessTokenRequest = 8905;
+   */
+  k_EMsgClientPICSAccessTokenRequest = 8905,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientPICSAccessTokenResponse = 8906;
+   */
+  k_EMsgClientPICSAccessTokenResponse = 8906,
+  /**
+   * @generated from protobuf enum value: k_EMsgWorkerProcess = 9000;
+   */
+  k_EMsgWorkerProcess = 9000,
+  /**
+   * @generated from protobuf enum value: k_EMsgWorkerProcess = 9000;
+   */
+  k_EMsgWorkerProcessPingRequest = 9000,
+  /**
+   * @generated from protobuf enum value: k_EMsgWorkerProcessPingResponse = 9001;
+   */
+  k_EMsgWorkerProcessPingResponse = 9001,
+  /**
+   * @generated from protobuf enum value: k_EMsgWorkerProcessShutdown = 9002;
+   */
+  k_EMsgWorkerProcessShutdown = 9002,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcess = 9100;
+   */
+  k_EMsgDRMWorkerProcess = 9100,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcess = 9100;
+   */
+  k_EMsgDRMWorkerProcessDRMAndSign = 9100,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessDRMAndSignResponse = 9101;
+   */
+  k_EMsgDRMWorkerProcessDRMAndSignResponse = 9101,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessSteamworksInfoRequest = 9102;
+   */
+  k_EMsgDRMWorkerProcessSteamworksInfoRequest = 9102,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessSteamworksInfoResponse = 9103;
+   */
+  k_EMsgDRMWorkerProcessSteamworksInfoResponse = 9103,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessInstallDRMDLLRequest = 9104;
+   */
+  k_EMsgDRMWorkerProcessInstallDRMDLLRequest = 9104,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessInstallDRMDLLResponse = 9105;
+   */
+  k_EMsgDRMWorkerProcessInstallDRMDLLResponse = 9105,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessSecretIdStringRequest = 9106;
+   */
+  k_EMsgDRMWorkerProcessSecretIdStringRequest = 9106,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessSecretIdStringResponse = 9107;
+   */
+  k_EMsgDRMWorkerProcessSecretIdStringResponse = 9107,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessInstallProcessedFilesRequest = 9110;
+   */
+  k_EMsgDRMWorkerProcessInstallProcessedFilesRequest = 9110,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessInstallProcessedFilesResponse = 9111;
+   */
+  k_EMsgDRMWorkerProcessInstallProcessedFilesResponse = 9111,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessExamineBlobRequest = 9112;
+   */
+  k_EMsgDRMWorkerProcessExamineBlobRequest = 9112,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessExamineBlobResponse = 9113;
+   */
+  k_EMsgDRMWorkerProcessExamineBlobResponse = 9113,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessDescribeSecretRequest = 9114;
+   */
+  k_EMsgDRMWorkerProcessDescribeSecretRequest = 9114,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessDescribeSecretResponse = 9115;
+   */
+  k_EMsgDRMWorkerProcessDescribeSecretResponse = 9115,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessBackfillOriginalRequest = 9116;
+   */
+  k_EMsgDRMWorkerProcessBackfillOriginalRequest = 9116,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessBackfillOriginalResponse = 9117;
+   */
+  k_EMsgDRMWorkerProcessBackfillOriginalResponse = 9117,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessValidateDRMDLLRequest = 9118;
+   */
+  k_EMsgDRMWorkerProcessValidateDRMDLLRequest = 9118,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessValidateDRMDLLResponse = 9119;
+   */
+  k_EMsgDRMWorkerProcessValidateDRMDLLResponse = 9119,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessValidateFileRequest = 9120;
+   */
+  k_EMsgDRMWorkerProcessValidateFileRequest = 9120,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessValidateFileResponse = 9121;
+   */
+  k_EMsgDRMWorkerProcessValidateFileResponse = 9121,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessSplitAndInstallRequest = 9122;
+   */
+  k_EMsgDRMWorkerProcessSplitAndInstallRequest = 9122,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessSplitAndInstallResponse = 9123;
+   */
+  k_EMsgDRMWorkerProcessSplitAndInstallResponse = 9123,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessGetBlobRequest = 9124;
+   */
+  k_EMsgDRMWorkerProcessGetBlobRequest = 9124,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessGetBlobResponse = 9125;
+   */
+  k_EMsgDRMWorkerProcessGetBlobResponse = 9125,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessEvaluateCrashRequest = 9126;
+   */
+  k_EMsgDRMWorkerProcessEvaluateCrashRequest = 9126,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessEvaluateCrashResponse = 9127;
+   */
+  k_EMsgDRMWorkerProcessEvaluateCrashResponse = 9127,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessAnalyzeFileRequest = 9128;
+   */
+  k_EMsgDRMWorkerProcessAnalyzeFileRequest = 9128,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessAnalyzeFileResponse = 9129;
+   */
+  k_EMsgDRMWorkerProcessAnalyzeFileResponse = 9129,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessUnpackBlobRequest = 9130;
+   */
+  k_EMsgDRMWorkerProcessUnpackBlobRequest = 9130,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessUnpackBlobResponse = 9131;
+   */
+  k_EMsgDRMWorkerProcessUnpackBlobResponse = 9131,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessInstallAllRequest = 9132;
+   */
+  k_EMsgDRMWorkerProcessInstallAllRequest = 9132,
+  /**
+   * @generated from protobuf enum value: k_EMsgDRMWorkerProcessInstallAllResponse = 9133;
+   */
+  k_EMsgDRMWorkerProcessInstallAllResponse = 9133,
+  /**
+   * @generated from protobuf enum value: k_EMsgTestWorkerProcess = 9200;
+   */
+  k_EMsgTestWorkerProcess = 9200,
+  /**
+   * @generated from protobuf enum value: k_EMsgTestWorkerProcess = 9200;
+   */
+  k_EMsgTestWorkerProcessLoadUnloadModuleRequest = 9200,
+  /**
+   * @generated from protobuf enum value: k_EMsgTestWorkerProcessLoadUnloadModuleResponse = 9201;
+   */
+  k_EMsgTestWorkerProcessLoadUnloadModuleResponse = 9201,
+  /**
+   * @generated from protobuf enum value: k_EMsgTestWorkerProcessServiceModuleCallRequest = 9202;
+   */
+  k_EMsgTestWorkerProcessServiceModuleCallRequest = 9202,
+  /**
+   * @generated from protobuf enum value: k_EMsgTestWorkerProcessServiceModuleCallResponse = 9203;
+   */
+  k_EMsgTestWorkerProcessServiceModuleCallResponse = 9203,
+  /**
+   * @generated from protobuf enum value: k_EMsgQuestServerBase = 9300;
+   */
+  k_EMsgQuestServerBase = 9300,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientGetEmoticonList = 9330;
+   */
+  k_EMsgClientGetEmoticonList = 9330,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientEmoticonList = 9331;
+   */
+  k_EMsgClientEmoticonList = 9331,
+  /**
+   * @generated from protobuf enum value: k_EMsgSLCBase = 9400;
+   */
+  k_EMsgSLCBase = 9400,
+  /**
+   * @generated from protobuf enum value: k_EMsgSLCBase = 9400;
+   */
+  k_EMsgSLCUserSessionStatus = 9400,
+  /**
+   * @generated from protobuf enum value: k_EMsgSLCRequestUserSessionStatus = 9401;
+   */
+  k_EMsgSLCRequestUserSessionStatus = 9401,
+  /**
+   * @generated from protobuf enum value: k_EMsgSLCSharedLicensesLockStatus = 9402;
+   */
+  k_EMsgSLCSharedLicensesLockStatus = 9402,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSharedLibraryLockStatus = 9405;
+   */
+  k_EMsgClientSharedLibraryLockStatus = 9405,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSharedLibraryStopPlaying = 9406;
+   */
+  k_EMsgClientSharedLibraryStopPlaying = 9406,
+  /**
+   * @generated from protobuf enum value: k_EMsgSLCOwnerLibraryChanged = 9407;
+   */
+  k_EMsgSLCOwnerLibraryChanged = 9407,
+  /**
+   * @generated from protobuf enum value: k_EMsgSLCSharedLibraryChanged = 9408;
+   */
+  k_EMsgSLCSharedLibraryChanged = 9408,
+  /**
+   * @generated from protobuf enum value: k_EMsgRemoteClientBase = 9500;
+   */
+  k_EMsgRemoteClientBase = 9500,
+  /**
+   * @generated from protobuf enum value: k_EMsgRemoteClientBase = 9500;
+   */
+  k_EMsgRemoteClientAuth_OBSOLETE = 9500,
+  /**
+   * @generated from protobuf enum value: k_EMsgRemoteClientAuthResponse_OBSOLETE = 9501;
+   */
+  k_EMsgRemoteClientAuthResponse_OBSOLETE = 9501,
+  /**
+   * @generated from protobuf enum value: k_EMsgRemoteClientAppStatus = 9502;
+   */
+  k_EMsgRemoteClientAppStatus = 9502,
+  /**
+   * @generated from protobuf enum value: k_EMsgRemoteClientStartStream = 9503;
+   */
+  k_EMsgRemoteClientStartStream = 9503,
+  /**
+   * @generated from protobuf enum value: k_EMsgRemoteClientStartStreamResponse = 9504;
+   */
+  k_EMsgRemoteClientStartStreamResponse = 9504,
+  /**
+   * @generated from protobuf enum value: k_EMsgRemoteClientPing = 9505;
+   */
+  k_EMsgRemoteClientPing = 9505,
+  /**
+   * @generated from protobuf enum value: k_EMsgRemoteClientPingResponse = 9506;
+   */
+  k_EMsgRemoteClientPingResponse = 9506,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUnlockStreaming = 9507;
+   */
+  k_EMsgClientUnlockStreaming = 9507,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUnlockStreamingResponse = 9508;
+   */
+  k_EMsgClientUnlockStreamingResponse = 9508,
+  /**
+   * @generated from protobuf enum value: k_EMsgRemoteClientAcceptEULA = 9509;
+   */
+  k_EMsgRemoteClientAcceptEULA = 9509,
+  /**
+   * @generated from protobuf enum value: k_EMsgRemoteClientGetControllerConfig = 9510;
+   */
+  k_EMsgRemoteClientGetControllerConfig = 9510,
+  /**
+   * @generated from protobuf enum value: k_EMsgRemoteClientGetControllerConfigResponse = 9511;
+   */
+  k_EMsgRemoteClientGetControllerConfigResponse = 9511,
+  /**
+   * @generated from protobuf enum value: k_EMsgRemoteClientStreamingEnabled = 9512;
+   */
+  k_EMsgRemoteClientStreamingEnabled = 9512,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUnlockHEVC = 9513;
+   */
+  k_EMsgClientUnlockHEVC = 9513,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientUnlockHEVCResponse = 9514;
+   */
+  k_EMsgClientUnlockHEVCResponse = 9514,
+  /**
+   * @generated from protobuf enum value: k_EMsgRemoteClientStatusRequest = 9515;
+   */
+  k_EMsgRemoteClientStatusRequest = 9515,
+  /**
+   * @generated from protobuf enum value: k_EMsgRemoteClientStatusResponse = 9516;
+   */
+  k_EMsgRemoteClientStatusResponse = 9516,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientConcurrentSessionsBase = 9600;
+   */
+  k_EMsgClientConcurrentSessionsBase = 9600,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientConcurrentSessionsBase = 9600;
+   */
+  k_EMsgClientPlayingSessionState = 9600,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientKickPlayingSession = 9601;
+   */
+  k_EMsgClientKickPlayingSession = 9601,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientBroadcastBase = 9700;
+   */
+  k_EMsgClientBroadcastBase = 9700,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientBroadcastBase = 9700;
+   */
+  k_EMsgClientBroadcastInit = 9700,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientBroadcastFrames = 9701;
+   */
+  k_EMsgClientBroadcastFrames = 9701,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientBroadcastDisconnect = 9702;
+   */
+  k_EMsgClientBroadcastDisconnect = 9702,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientBroadcastScreenshot = 9703;
+   */
+  k_EMsgClientBroadcastScreenshot = 9703,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientBroadcastUploadConfig = 9704;
+   */
+  k_EMsgClientBroadcastUploadConfig = 9704,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseClient3 = 9800;
+   */
+  k_EMsgBaseClient3 = 9800,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseClient3 = 9800;
+   */
+  k_EMsgClientVoiceCallPreAuthorize = 9800,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientVoiceCallPreAuthorizeResponse = 9801;
+   */
+  k_EMsgClientVoiceCallPreAuthorizeResponse = 9801,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientServerTimestampRequest = 9802;
+   */
+  k_EMsgClientServerTimestampRequest = 9802,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientServerTimestampResponse = 9803;
+   */
+  k_EMsgClientServerTimestampResponse = 9803,
+  /**
+   * @generated from protobuf enum value: k_EMsgServiceMethodCallFromClientNonAuthed = 9804;
+   */
+  k_EMsgServiceMethodCallFromClientNonAuthed = 9804,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientHello = 9805;
+   */
+  k_EMsgClientHello = 9805,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLANP2PBase = 9900;
+   */
+  k_EMsgClientLANP2PBase = 9900,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLANP2PBase = 9900;
+   */
+  k_EMsgClientLANP2PRequestChunk = 9900,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLANP2PRequestChunkResponse = 9901;
+   */
+  k_EMsgClientLANP2PRequestChunkResponse = 9901,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientLANP2PMax = 9999;
+   */
+  k_EMsgClientLANP2PMax = 9999,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseWatchdogServer = 10000;
+   */
+  k_EMsgBaseWatchdogServer = 10000,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseWatchdogServer = 10000;
+   */
+  k_EMsgNotifyWatchdog = 10000,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSiteLicenseBase = 10100;
+   */
+  k_EMsgClientSiteLicenseBase = 10100,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSiteLicenseBase = 10100;
+   */
+  k_EMsgClientSiteLicenseSiteInfoNotification = 10100,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSiteLicenseCheckout = 10101;
+   */
+  k_EMsgClientSiteLicenseCheckout = 10101,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSiteLicenseCheckoutResponse = 10102;
+   */
+  k_EMsgClientSiteLicenseCheckoutResponse = 10102,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSiteLicenseGetAvailableSeats = 10103;
+   */
+  k_EMsgClientSiteLicenseGetAvailableSeats = 10103,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSiteLicenseGetAvailableSeatsResponse = 10104;
+   */
+  k_EMsgClientSiteLicenseGetAvailableSeatsResponse = 10104,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSiteLicenseGetContentCacheInfo = 10105;
+   */
+  k_EMsgClientSiteLicenseGetContentCacheInfo = 10105,
+  /**
+   * @generated from protobuf enum value: k_EMsgClientSiteLicenseGetContentCacheInfoResponse = 10106;
+   */
+  k_EMsgClientSiteLicenseGetContentCacheInfoResponse = 10106,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseChatServer = 12000;
+   */
+  k_EMsgBaseChatServer = 12000,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseChatServer = 12000;
+   */
+  k_EMsgChatServerGetPendingNotificationCount = 12000,
+  /**
+   * @generated from protobuf enum value: k_EMsgChatServerGetPendingNotificationCountResponse = 12001;
+   */
+  k_EMsgChatServerGetPendingNotificationCountResponse = 12001,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseSecretServer = 12100;
+   */
+  k_EMsgBaseSecretServer = 12100,
+  /**
+   * @generated from protobuf enum value: k_EMsgBaseSecretServer = 12100;
+   */
+  k_EMsgServerSecretChanged = 12100,
 }
 /**
  * @generated from protobuf enum EClientPersonaStateFlag
  */
 export enum EClientPersonaStateFlag {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: k_EClientPersonaStateFlagStatus = 1;
-	 */
-	k_EClientPersonaStateFlagStatus = 1,
-	/**
-	 * @generated from protobuf enum value: k_EClientPersonaStateFlagPlayerName = 2;
-	 */
-	k_EClientPersonaStateFlagPlayerName = 2,
-	/**
-	 * @generated from protobuf enum value: k_EClientPersonaStateFlagQueryPort = 4;
-	 */
-	k_EClientPersonaStateFlagQueryPort = 4,
-	/**
-	 * @generated from protobuf enum value: k_EClientPersonaStateFlagSourceID = 8;
-	 */
-	k_EClientPersonaStateFlagSourceID = 8,
-	/**
-	 * @generated from protobuf enum value: k_EClientPersonaStateFlagPresence = 16;
-	 */
-	k_EClientPersonaStateFlagPresence = 16,
-	/**
-	 * @generated from protobuf enum value: k_EClientPersonaStateFlagLastSeen = 64;
-	 */
-	k_EClientPersonaStateFlagLastSeen = 64,
-	/**
-	 * @generated from protobuf enum value: k_EClientPersonaStateFlagUserClanRank = 128;
-	 */
-	k_EClientPersonaStateFlagUserClanRank = 128,
-	/**
-	 * @generated from protobuf enum value: k_EClientPersonaStateGameExtraInfo = 256;
-	 */
-	k_EClientPersonaStateGameExtraInfo = 256,
-	/**
-	 * @generated from protobuf enum value: k_EClientPersonaStateGameDataBlob = 512;
-	 */
-	k_EClientPersonaStateGameDataBlob = 512,
-	/**
-	 * @generated from protobuf enum value: k_EClientPersonaStateFlagClanData = 1024;
-	 */
-	k_EClientPersonaStateFlagClanData = 1024,
-	/**
-	 * @generated from protobuf enum value: k_EClientPersonaStateFlagFacebook = 2048;
-	 */
-	k_EClientPersonaStateFlagFacebook = 2048,
-	/**
-	 * @generated from protobuf enum value: k_EClientPersonaStateFlagRichPresence = 4096;
-	 */
-	k_EClientPersonaStateFlagRichPresence = 4096,
-	/**
-	 * @generated from protobuf enum value: k_EClientPersonaStateFlagBroadcast = 8192;
-	 */
-	k_EClientPersonaStateFlagBroadcast = 8192,
-	/**
-	 * @generated from protobuf enum value: k_EClientPersonaStateFlagWatching = 16384;
-	 */
-	k_EClientPersonaStateFlagWatching = 16384,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: k_EClientPersonaStateFlagStatus = 1;
+   */
+  k_EClientPersonaStateFlagStatus = 1,
+  /**
+   * @generated from protobuf enum value: k_EClientPersonaStateFlagPlayerName = 2;
+   */
+  k_EClientPersonaStateFlagPlayerName = 2,
+  /**
+   * @generated from protobuf enum value: k_EClientPersonaStateFlagQueryPort = 4;
+   */
+  k_EClientPersonaStateFlagQueryPort = 4,
+  /**
+   * @generated from protobuf enum value: k_EClientPersonaStateFlagSourceID = 8;
+   */
+  k_EClientPersonaStateFlagSourceID = 8,
+  /**
+   * @generated from protobuf enum value: k_EClientPersonaStateFlagPresence = 16;
+   */
+  k_EClientPersonaStateFlagPresence = 16,
+  /**
+   * @generated from protobuf enum value: k_EClientPersonaStateFlagLastSeen = 64;
+   */
+  k_EClientPersonaStateFlagLastSeen = 64,
+  /**
+   * @generated from protobuf enum value: k_EClientPersonaStateFlagUserClanRank = 128;
+   */
+  k_EClientPersonaStateFlagUserClanRank = 128,
+  /**
+   * @generated from protobuf enum value: k_EClientPersonaStateGameExtraInfo = 256;
+   */
+  k_EClientPersonaStateGameExtraInfo = 256,
+  /**
+   * @generated from protobuf enum value: k_EClientPersonaStateGameDataBlob = 512;
+   */
+  k_EClientPersonaStateGameDataBlob = 512,
+  /**
+   * @generated from protobuf enum value: k_EClientPersonaStateFlagClanData = 1024;
+   */
+  k_EClientPersonaStateFlagClanData = 1024,
+  /**
+   * @generated from protobuf enum value: k_EClientPersonaStateFlagFacebook = 2048;
+   */
+  k_EClientPersonaStateFlagFacebook = 2048,
+  /**
+   * @generated from protobuf enum value: k_EClientPersonaStateFlagRichPresence = 4096;
+   */
+  k_EClientPersonaStateFlagRichPresence = 4096,
+  /**
+   * @generated from protobuf enum value: k_EClientPersonaStateFlagBroadcast = 8192;
+   */
+  k_EClientPersonaStateFlagBroadcast = 8192,
+  /**
+   * @generated from protobuf enum value: k_EClientPersonaStateFlagWatching = 16384;
+   */
+  k_EClientPersonaStateFlagWatching = 16384,
 }
 /**
  * @generated from protobuf enum EMsgClanAccountFlags
  */
 export enum EMsgClanAccountFlags {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClanAccountFlagPublic = 1;
-	 */
-	k_EMsgClanAccountFlagPublic = 1,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClanAccountFlagLarge = 2;
-	 */
-	k_EMsgClanAccountFlagLarge = 2,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClanAccountFlagLocked = 4;
-	 */
-	k_EMsgClanAccountFlagLocked = 4,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClanAccountFlagDisabled = 8;
-	 */
-	k_EMsgClanAccountFlagDisabled = 8,
-	/**
-	 * @generated from protobuf enum value: k_EMsgClanAccountFlagOGG = 16;
-	 */
-	k_EMsgClanAccountFlagOGG = 16,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: k_EMsgClanAccountFlagPublic = 1;
+   */
+  k_EMsgClanAccountFlagPublic = 1,
+  /**
+   * @generated from protobuf enum value: k_EMsgClanAccountFlagLarge = 2;
+   */
+  k_EMsgClanAccountFlagLarge = 2,
+  /**
+   * @generated from protobuf enum value: k_EMsgClanAccountFlagLocked = 4;
+   */
+  k_EMsgClanAccountFlagLocked = 4,
+  /**
+   * @generated from protobuf enum value: k_EMsgClanAccountFlagDisabled = 8;
+   */
+  k_EMsgClanAccountFlagDisabled = 8,
+  /**
+   * @generated from protobuf enum value: k_EMsgClanAccountFlagOGG = 16;
+   */
+  k_EMsgClanAccountFlagOGG = 16,
 }
 /**
  * @generated from protobuf enum ESteamReviewScore
  */
 export enum ESteamReviewScore {
-	/**
-	 * @generated from protobuf enum value: k_ESteamReviewScore_OverwhelminglyPositive = 9;
-	 */
-	k_ESteamReviewScore_OverwhelminglyPositive = 9,
-	/**
-	 * @generated from protobuf enum value: k_ESteamReviewScore_VeryPositive = 8;
-	 */
-	k_ESteamReviewScore_VeryPositive = 8,
-	/**
-	 * @generated from protobuf enum value: k_ESteamReviewScore_Positive = 7;
-	 */
-	k_ESteamReviewScore_Positive = 7,
-	/**
-	 * @generated from protobuf enum value: k_ESteamReviewScore_MostlyPositive = 6;
-	 */
-	k_ESteamReviewScore_MostlyPositive = 6,
-	/**
-	 * @generated from protobuf enum value: k_ESteamReviewScore_Mixed = 5;
-	 */
-	k_ESteamReviewScore_Mixed = 5,
-	/**
-	 * @generated from protobuf enum value: k_ESteamReviewScore_MostlyNegative = 4;
-	 */
-	k_ESteamReviewScore_MostlyNegative = 4,
-	/**
-	 * @generated from protobuf enum value: k_ESteamReviewScore_Negative = 3;
-	 */
-	k_ESteamReviewScore_Negative = 3,
-	/**
-	 * @generated from protobuf enum value: k_ESteamReviewScore_VeryNegative = 2;
-	 */
-	k_ESteamReviewScore_VeryNegative = 2,
-	/**
-	 * @generated from protobuf enum value: k_ESteamReviewScore_OverwhelminglyNegative = 1;
-	 */
-	k_ESteamReviewScore_OverwhelminglyNegative = 1,
-	/**
-	 * @generated from protobuf enum value: k_ESteamReviewScore_None = 0;
-	 */
-	k_ESteamReviewScore_None = 0,
+  /**
+   * @generated from protobuf enum value: k_ESteamReviewScore_OverwhelminglyPositive = 9;
+   */
+  k_ESteamReviewScore_OverwhelminglyPositive = 9,
+  /**
+   * @generated from protobuf enum value: k_ESteamReviewScore_VeryPositive = 8;
+   */
+  k_ESteamReviewScore_VeryPositive = 8,
+  /**
+   * @generated from protobuf enum value: k_ESteamReviewScore_Positive = 7;
+   */
+  k_ESteamReviewScore_Positive = 7,
+  /**
+   * @generated from protobuf enum value: k_ESteamReviewScore_MostlyPositive = 6;
+   */
+  k_ESteamReviewScore_MostlyPositive = 6,
+  /**
+   * @generated from protobuf enum value: k_ESteamReviewScore_Mixed = 5;
+   */
+  k_ESteamReviewScore_Mixed = 5,
+  /**
+   * @generated from protobuf enum value: k_ESteamReviewScore_MostlyNegative = 4;
+   */
+  k_ESteamReviewScore_MostlyNegative = 4,
+  /**
+   * @generated from protobuf enum value: k_ESteamReviewScore_Negative = 3;
+   */
+  k_ESteamReviewScore_Negative = 3,
+  /**
+   * @generated from protobuf enum value: k_ESteamReviewScore_VeryNegative = 2;
+   */
+  k_ESteamReviewScore_VeryNegative = 2,
+  /**
+   * @generated from protobuf enum value: k_ESteamReviewScore_OverwhelminglyNegative = 1;
+   */
+  k_ESteamReviewScore_OverwhelminglyNegative = 1,
+  /**
+   * @generated from protobuf enum value: k_ESteamReviewScore_None = 0;
+   */
+  k_ESteamReviewScore_None = 0,
 }

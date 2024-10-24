@@ -16,898 +16,898 @@ import { CMsgVector } from "./networkbasetypes.js";
  * @generated from protobuf message CMsgTEArmorRicochet
  */
 export interface CMsgTEArmorRicochet {
-	/**
-	 * @generated from protobuf field: optional CMsgVector pos = 1;
-	 */
-	pos?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector dir = 2;
-	 */
-	dir?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector pos = 1;
+   */
+  pos?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector dir = 2;
+   */
+  dir?: CMsgVector;
 }
 /**
  * @generated from protobuf message CMsgTEBaseBeam
  */
 export interface CMsgTEBaseBeam {
-	/**
-	 * @generated from protobuf field: optional fixed64 modelindex = 1;
-	 */
-	modelindex?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed64 haloindex = 2;
-	 */
-	haloindex?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 startframe = 3;
-	 */
-	startframe?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 framerate = 4;
-	 */
-	framerate?: number;
-	/**
-	 * @generated from protobuf field: optional float life = 5;
-	 */
-	life?: number;
-	/**
-	 * @generated from protobuf field: optional float width = 6;
-	 */
-	width?: number;
-	/**
-	 * @generated from protobuf field: optional float endwidth = 7;
-	 */
-	endwidth?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 fadelength = 8;
-	 */
-	fadelength?: number;
-	/**
-	 * @generated from protobuf field: optional float amplitude = 9;
-	 */
-	amplitude?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 color = 10;
-	 */
-	color?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 speed = 11;
-	 */
-	speed?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 12;
-	 */
-	flags?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 modelindex = 1;
+   */
+  modelindex?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed64 haloindex = 2;
+   */
+  haloindex?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 startframe = 3;
+   */
+  startframe?: number;
+  /**
+   * @generated from protobuf field: optional uint32 framerate = 4;
+   */
+  framerate?: number;
+  /**
+   * @generated from protobuf field: optional float life = 5;
+   */
+  life?: number;
+  /**
+   * @generated from protobuf field: optional float width = 6;
+   */
+  width?: number;
+  /**
+   * @generated from protobuf field: optional float endwidth = 7;
+   */
+  endwidth?: number;
+  /**
+   * @generated from protobuf field: optional uint32 fadelength = 8;
+   */
+  fadelength?: number;
+  /**
+   * @generated from protobuf field: optional float amplitude = 9;
+   */
+  amplitude?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 color = 10;
+   */
+  color?: number;
+  /**
+   * @generated from protobuf field: optional uint32 speed = 11;
+   */
+  speed?: number;
+  /**
+   * @generated from protobuf field: optional uint32 flags = 12;
+   */
+  flags?: number;
 }
 /**
  * @generated from protobuf message CMsgTEBeamEntPoint
  */
 export interface CMsgTEBeamEntPoint {
-	/**
-	 * @generated from protobuf field: optional CMsgTEBaseBeam base = 1;
-	 */
-	base?: CMsgTEBaseBeam;
-	/**
-	 * @generated from protobuf field: optional uint32 startentity = 2;
-	 */
-	startentity?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 endentity = 3;
-	 */
-	endentity?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector start = 4;
-	 */
-	start?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector end = 5;
-	 */
-	end?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgTEBaseBeam base = 1;
+   */
+  base?: CMsgTEBaseBeam;
+  /**
+   * @generated from protobuf field: optional uint32 startentity = 2;
+   */
+  startentity?: number;
+  /**
+   * @generated from protobuf field: optional uint32 endentity = 3;
+   */
+  endentity?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector start = 4;
+   */
+  start?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector end = 5;
+   */
+  end?: CMsgVector;
 }
 /**
  * @generated from protobuf message CMsgTEBeamEnts
  */
 export interface CMsgTEBeamEnts {
-	/**
-	 * @generated from protobuf field: optional CMsgTEBaseBeam base = 1;
-	 */
-	base?: CMsgTEBaseBeam;
-	/**
-	 * @generated from protobuf field: optional uint32 startentity = 2;
-	 */
-	startentity?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 endentity = 3;
-	 */
-	endentity?: number;
+  /**
+   * @generated from protobuf field: optional CMsgTEBaseBeam base = 1;
+   */
+  base?: CMsgTEBaseBeam;
+  /**
+   * @generated from protobuf field: optional uint32 startentity = 2;
+   */
+  startentity?: number;
+  /**
+   * @generated from protobuf field: optional uint32 endentity = 3;
+   */
+  endentity?: number;
 }
 /**
  * @generated from protobuf message CMsgTEBeamPoints
  */
 export interface CMsgTEBeamPoints {
-	/**
-	 * @generated from protobuf field: optional CMsgTEBaseBeam base = 1;
-	 */
-	base?: CMsgTEBaseBeam;
-	/**
-	 * @generated from protobuf field: optional CMsgVector start = 2;
-	 */
-	start?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector end = 3;
-	 */
-	end?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgTEBaseBeam base = 1;
+   */
+  base?: CMsgTEBaseBeam;
+  /**
+   * @generated from protobuf field: optional CMsgVector start = 2;
+   */
+  start?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector end = 3;
+   */
+  end?: CMsgVector;
 }
 /**
  * @generated from protobuf message CMsgTEBeamRing
  */
 export interface CMsgTEBeamRing {
-	/**
-	 * @generated from protobuf field: optional CMsgTEBaseBeam base = 1;
-	 */
-	base?: CMsgTEBaseBeam;
-	/**
-	 * @generated from protobuf field: optional uint32 startentity = 2;
-	 */
-	startentity?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 endentity = 3;
-	 */
-	endentity?: number;
+  /**
+   * @generated from protobuf field: optional CMsgTEBaseBeam base = 1;
+   */
+  base?: CMsgTEBaseBeam;
+  /**
+   * @generated from protobuf field: optional uint32 startentity = 2;
+   */
+  startentity?: number;
+  /**
+   * @generated from protobuf field: optional uint32 endentity = 3;
+   */
+  endentity?: number;
 }
 /**
  * @generated from protobuf message CMsgTEBSPDecal
  */
 export interface CMsgTEBSPDecal {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector normal = 2;
-	 */
-	normal?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector saxis = 3;
-	 */
-	saxis?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional int32 entity = 4;
-	 */
-	entity?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 index = 5;
-	 */
-	index?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector normal = 2;
+   */
+  normal?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector saxis = 3;
+   */
+  saxis?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional int32 entity = 4;
+   */
+  entity?: number;
+  /**
+   * @generated from protobuf field: optional uint32 index = 5;
+   */
+  index?: number;
 }
 /**
  * @generated from protobuf message CMsgTEBubbles
  */
 export interface CMsgTEBubbles {
-	/**
-	 * @generated from protobuf field: optional CMsgVector mins = 1;
-	 */
-	mins?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector maxs = 2;
-	 */
-	maxs?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional float height = 3;
-	 */
-	height?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 count = 4;
-	 */
-	count?: number;
-	/**
-	 * @generated from protobuf field: optional float speed = 5;
-	 */
-	speed?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector mins = 1;
+   */
+  mins?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector maxs = 2;
+   */
+  maxs?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional float height = 3;
+   */
+  height?: number;
+  /**
+   * @generated from protobuf field: optional uint32 count = 4;
+   */
+  count?: number;
+  /**
+   * @generated from protobuf field: optional float speed = 5;
+   */
+  speed?: number;
 }
 /**
  * @generated from protobuf message CMsgTEBubbleTrail
  */
 export interface CMsgTEBubbleTrail {
-	/**
-	 * @generated from protobuf field: optional CMsgVector mins = 1;
-	 */
-	mins?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector maxs = 2;
-	 */
-	maxs?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional float waterz = 3;
-	 */
-	waterz?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 count = 4;
-	 */
-	count?: number;
-	/**
-	 * @generated from protobuf field: optional float speed = 5;
-	 */
-	speed?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector mins = 1;
+   */
+  mins?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector maxs = 2;
+   */
+  maxs?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional float waterz = 3;
+   */
+  waterz?: number;
+  /**
+   * @generated from protobuf field: optional uint32 count = 4;
+   */
+  count?: number;
+  /**
+   * @generated from protobuf field: optional float speed = 5;
+   */
+  speed?: number;
 }
 /**
  * @generated from protobuf message CMsgTEDecal
  */
 export interface CMsgTEDecal {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector start = 2;
-	 */
-	start?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional int32 entity = 3;
-	 */
-	entity?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hitbox = 4;
-	 */
-	hitbox?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 index = 5;
-	 */
-	index?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector start = 2;
+   */
+  start?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional int32 entity = 3;
+   */
+  entity?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hitbox = 4;
+   */
+  hitbox?: number;
+  /**
+   * @generated from protobuf field: optional uint32 index = 5;
+   */
+  index?: number;
 }
 /**
  * @generated from protobuf message CMsgEffectData
  */
 export interface CMsgEffectData {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector start = 2;
-	 */
-	start?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector normal = 3;
-	 */
-	normal?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgQAngle angles = 4;
-	 */
-	angles?: CMsgQAngle;
-	/**
-	 * @generated from protobuf field: optional fixed32 entity = 5;
-	 */
-	entity?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 otherentity = 6;
-	 */
-	otherentity?: number;
-	/**
-	 * @generated from protobuf field: optional float scale = 7;
-	 */
-	scale?: number;
-	/**
-	 * @generated from protobuf field: optional float magnitude = 8;
-	 */
-	magnitude?: number;
-	/**
-	 * @generated from protobuf field: optional float radius = 9;
-	 */
-	radius?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 surfaceprop = 10;
-	 */
-	surfaceprop?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 effectindex = 11;
-	 */
-	effectindex?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 damagetype = 12;
-	 */
-	damagetype?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 material = 13;
-	 */
-	material?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hitbox = 14;
-	 */
-	hitbox?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 color = 15;
-	 */
-	color?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 16;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional int32 attachmentindex = 17;
-	 */
-	attachmentindex?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 effectname = 18;
-	 */
-	effectname?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 attachmentname = 19;
-	 */
-	attachmentname?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector start = 2;
+   */
+  start?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector normal = 3;
+   */
+  normal?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgQAngle angles = 4;
+   */
+  angles?: CMsgQAngle;
+  /**
+   * @generated from protobuf field: optional fixed32 entity = 5;
+   */
+  entity?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 otherentity = 6;
+   */
+  otherentity?: number;
+  /**
+   * @generated from protobuf field: optional float scale = 7;
+   */
+  scale?: number;
+  /**
+   * @generated from protobuf field: optional float magnitude = 8;
+   */
+  magnitude?: number;
+  /**
+   * @generated from protobuf field: optional float radius = 9;
+   */
+  radius?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 surfaceprop = 10;
+   */
+  surfaceprop?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 effectindex = 11;
+   */
+  effectindex?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 damagetype = 12;
+   */
+  damagetype?: number;
+  /**
+   * @generated from protobuf field: optional uint32 material = 13;
+   */
+  material?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hitbox = 14;
+   */
+  hitbox?: number;
+  /**
+   * @generated from protobuf field: optional uint32 color = 15;
+   */
+  color?: number;
+  /**
+   * @generated from protobuf field: optional uint32 flags = 16;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional int32 attachmentindex = 17;
+   */
+  attachmentindex?: number;
+  /**
+   * @generated from protobuf field: optional uint32 effectname = 18;
+   */
+  effectname?: number;
+  /**
+   * @generated from protobuf field: optional uint32 attachmentname = 19;
+   */
+  attachmentname?: number;
 }
 /**
  * @generated from protobuf message CMsgTEEffectDispatch
  */
 export interface CMsgTEEffectDispatch {
-	/**
-	 * @generated from protobuf field: optional CMsgEffectData effectdata = 1;
-	 */
-	effectdata?: CMsgEffectData;
+  /**
+   * @generated from protobuf field: optional CMsgEffectData effectdata = 1;
+   */
+  effectdata?: CMsgEffectData;
 }
 /**
  * @generated from protobuf message CMsgTEEnergySplash
  */
 export interface CMsgTEEnergySplash {
-	/**
-	 * @generated from protobuf field: optional CMsgVector pos = 1;
-	 */
-	pos?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector dir = 2;
-	 */
-	dir?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional bool explosive = 3;
-	 */
-	explosive?: boolean;
+  /**
+   * @generated from protobuf field: optional CMsgVector pos = 1;
+   */
+  pos?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector dir = 2;
+   */
+  dir?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional bool explosive = 3;
+   */
+  explosive?: boolean;
 }
 /**
  * @generated from protobuf message CMsgTEFizz
  */
 export interface CMsgTEFizz {
-	/**
-	 * @generated from protobuf field: optional int32 entity = 1;
-	 */
-	entity?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 density = 2;
-	 */
-	density?: number;
-	/**
-	 * @generated from protobuf field: optional int32 current = 3;
-	 */
-	current?: number;
+  /**
+   * @generated from protobuf field: optional int32 entity = 1;
+   */
+  entity?: number;
+  /**
+   * @generated from protobuf field: optional uint32 density = 2;
+   */
+  density?: number;
+  /**
+   * @generated from protobuf field: optional int32 current = 3;
+   */
+  current?: number;
 }
 /**
  * @generated from protobuf message CMsgTEShatterSurface
  */
 export interface CMsgTEShatterSurface {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgQAngle angles = 2;
-	 */
-	angles?: CMsgQAngle;
-	/**
-	 * @generated from protobuf field: optional CMsgVector force = 3;
-	 */
-	force?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector forcepos = 4;
-	 */
-	forcepos?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional float width = 5;
-	 */
-	width?: number;
-	/**
-	 * @generated from protobuf field: optional float height = 6;
-	 */
-	height?: number;
-	/**
-	 * @generated from protobuf field: optional float shardsize = 7;
-	 */
-	shardsize?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 surfacetype = 8;
-	 */
-	surfacetype?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 frontcolor = 9;
-	 */
-	frontcolor?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 backcolor = 10;
-	 */
-	backcolor?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgQAngle angles = 2;
+   */
+  angles?: CMsgQAngle;
+  /**
+   * @generated from protobuf field: optional CMsgVector force = 3;
+   */
+  force?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector forcepos = 4;
+   */
+  forcepos?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional float width = 5;
+   */
+  width?: number;
+  /**
+   * @generated from protobuf field: optional float height = 6;
+   */
+  height?: number;
+  /**
+   * @generated from protobuf field: optional float shardsize = 7;
+   */
+  shardsize?: number;
+  /**
+   * @generated from protobuf field: optional uint32 surfacetype = 8;
+   */
+  surfacetype?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 frontcolor = 9;
+   */
+  frontcolor?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 backcolor = 10;
+   */
+  backcolor?: number;
 }
 /**
  * @generated from protobuf message CMsgTEGlowSprite
  */
 export interface CMsgTEGlowSprite {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional float scale = 2;
-	 */
-	scale?: number;
-	/**
-	 * @generated from protobuf field: optional float life = 3;
-	 */
-	life?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 brightness = 4;
-	 */
-	brightness?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional float scale = 2;
+   */
+  scale?: number;
+  /**
+   * @generated from protobuf field: optional float life = 3;
+   */
+  life?: number;
+  /**
+   * @generated from protobuf field: optional uint32 brightness = 4;
+   */
+  brightness?: number;
 }
 /**
  * @generated from protobuf message CMsgTEImpact
  */
 export interface CMsgTEImpact {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector normal = 2;
-	 */
-	normal?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional uint32 type = 3;
-	 */
-	type?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector normal = 2;
+   */
+  normal?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional uint32 type = 3;
+   */
+  type?: number;
 }
 /**
  * @generated from protobuf message CMsgTEMuzzleFlash
  */
 export interface CMsgTEMuzzleFlash {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgQAngle angles = 2;
-	 */
-	angles?: CMsgQAngle;
-	/**
-	 * @generated from protobuf field: optional float scale = 3;
-	 */
-	scale?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 type = 4;
-	 */
-	type?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgQAngle angles = 2;
+   */
+  angles?: CMsgQAngle;
+  /**
+   * @generated from protobuf field: optional float scale = 3;
+   */
+  scale?: number;
+  /**
+   * @generated from protobuf field: optional uint32 type = 4;
+   */
+  type?: number;
 }
 /**
  * @generated from protobuf message CMsgTEBloodStream
  */
 export interface CMsgTEBloodStream {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector direction = 2;
-	 */
-	direction?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional fixed32 color = 3;
-	 */
-	color?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 amount = 4;
-	 */
-	amount?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector direction = 2;
+   */
+  direction?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional fixed32 color = 3;
+   */
+  color?: number;
+  /**
+   * @generated from protobuf field: optional uint32 amount = 4;
+   */
+  amount?: number;
 }
 /**
  * @generated from protobuf message CMsgTEExplosion
  */
 export interface CMsgTEExplosion {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional uint32 framerate = 2;
-	 */
-	framerate?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 3;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector normal = 4;
-	 */
-	normal?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional uint32 materialtype = 5;
-	 */
-	materialtype?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 radius = 6;
-	 */
-	radius?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 magnitude = 7;
-	 */
-	magnitude?: number;
-	/**
-	 * @generated from protobuf field: optional float scale = 8;
-	 */
-	scale?: number;
-	/**
-	 * @generated from protobuf field: optional bool affect_ragdolls = 9;
-	 */
-	affect_ragdolls?: boolean;
-	/**
-	 * @generated from protobuf field: optional string effect_name = 10;
-	 */
-	effect_name?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 explosion_type = 11;
-	 */
-	explosion_type?: number;
-	/**
-	 * @generated from protobuf field: optional bool create_debris = 12;
-	 */
-	create_debris?: boolean;
-	/**
-	 * @generated from protobuf field: optional CMsgVector debris_origin = 13;
-	 */
-	debris_origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional fixed32 debris_surfaceprop = 14;
-	 */
-	debris_surfaceprop?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional uint32 framerate = 2;
+   */
+  framerate?: number;
+  /**
+   * @generated from protobuf field: optional uint32 flags = 3;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector normal = 4;
+   */
+  normal?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional uint32 materialtype = 5;
+   */
+  materialtype?: number;
+  /**
+   * @generated from protobuf field: optional uint32 radius = 6;
+   */
+  radius?: number;
+  /**
+   * @generated from protobuf field: optional uint32 magnitude = 7;
+   */
+  magnitude?: number;
+  /**
+   * @generated from protobuf field: optional float scale = 8;
+   */
+  scale?: number;
+  /**
+   * @generated from protobuf field: optional bool affect_ragdolls = 9;
+   */
+  affect_ragdolls?: boolean;
+  /**
+   * @generated from protobuf field: optional string effect_name = 10;
+   */
+  effect_name?: string;
+  /**
+   * @generated from protobuf field: optional uint32 explosion_type = 11;
+   */
+  explosion_type?: number;
+  /**
+   * @generated from protobuf field: optional bool create_debris = 12;
+   */
+  create_debris?: boolean;
+  /**
+   * @generated from protobuf field: optional CMsgVector debris_origin = 13;
+   */
+  debris_origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional fixed32 debris_surfaceprop = 14;
+   */
+  debris_surfaceprop?: number;
 }
 /**
  * @generated from protobuf message CMsgTEDust
  */
 export interface CMsgTEDust {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional float size = 2;
-	 */
-	size?: number;
-	/**
-	 * @generated from protobuf field: optional float speed = 3;
-	 */
-	speed?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector direction = 4;
-	 */
-	direction?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional float size = 2;
+   */
+  size?: number;
+  /**
+   * @generated from protobuf field: optional float speed = 3;
+   */
+  speed?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector direction = 4;
+   */
+  direction?: CMsgVector;
 }
 /**
  * @generated from protobuf message CMsgTELargeFunnel
  */
 export interface CMsgTELargeFunnel {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional uint32 reversed = 2;
-	 */
-	reversed?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional uint32 reversed = 2;
+   */
+  reversed?: number;
 }
 /**
  * @generated from protobuf message CMsgTESparks
  */
 export interface CMsgTESparks {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional uint32 magnitude = 2;
-	 */
-	magnitude?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 length = 3;
-	 */
-	length?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector direction = 4;
-	 */
-	direction?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional uint32 magnitude = 2;
+   */
+  magnitude?: number;
+  /**
+   * @generated from protobuf field: optional uint32 length = 3;
+   */
+  length?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector direction = 4;
+   */
+  direction?: CMsgVector;
 }
 /**
  * @generated from protobuf message CMsgTEPhysicsProp
  */
 export interface CMsgTEPhysicsProp {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector velocity = 2;
-	 */
-	velocity?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgQAngle angles = 3;
-	 */
-	angles?: CMsgQAngle;
-	/**
-	 * @generated from protobuf field: optional fixed32 skin = 4;
-	 */
-	skin?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 5;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 effects = 6;
-	 */
-	effects?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 color = 7;
-	 */
-	color?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 modelindex = 8;
-	 */
-	modelindex?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 unused_breakmodelsnottomake = 9;
-	 */
-	unused_breakmodelsnottomake?: number;
-	/**
-	 * @generated from protobuf field: optional float scale = 10;
-	 */
-	scale?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector dmgpos = 11;
-	 */
-	dmgpos?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector dmgdir = 12;
-	 */
-	dmgdir?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional int32 dmgtype = 13;
-	 */
-	dmgtype?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector velocity = 2;
+   */
+  velocity?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgQAngle angles = 3;
+   */
+  angles?: CMsgQAngle;
+  /**
+   * @generated from protobuf field: optional fixed32 skin = 4;
+   */
+  skin?: number;
+  /**
+   * @generated from protobuf field: optional uint32 flags = 5;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional uint32 effects = 6;
+   */
+  effects?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 color = 7;
+   */
+  color?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 modelindex = 8;
+   */
+  modelindex?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 unused_breakmodelsnottomake = 9;
+   */
+  unused_breakmodelsnottomake?: number;
+  /**
+   * @generated from protobuf field: optional float scale = 10;
+   */
+  scale?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector dmgpos = 11;
+   */
+  dmgpos?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector dmgdir = 12;
+   */
+  dmgdir?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional int32 dmgtype = 13;
+   */
+  dmgtype?: number;
 }
 /**
  * @generated from protobuf message CMsgTEPlayerDecal
  */
 export interface CMsgTEPlayerDecal {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional int32 player = 2;
-	 */
-	player?: number;
-	/**
-	 * @generated from protobuf field: optional int32 entity = 3;
-	 */
-	entity?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional int32 player = 2;
+   */
+  player?: number;
+  /**
+   * @generated from protobuf field: optional int32 entity = 3;
+   */
+  entity?: number;
 }
 /**
  * @generated from protobuf message CMsgTEProjectedDecal
  */
 export interface CMsgTEProjectedDecal {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgQAngle angles = 2;
-	 */
-	angles?: CMsgQAngle;
-	/**
-	 * @generated from protobuf field: optional uint32 index = 3;
-	 */
-	index?: number;
-	/**
-	 * @generated from protobuf field: optional float distance = 4;
-	 */
-	distance?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgQAngle angles = 2;
+   */
+  angles?: CMsgQAngle;
+  /**
+   * @generated from protobuf field: optional uint32 index = 3;
+   */
+  index?: number;
+  /**
+   * @generated from protobuf field: optional float distance = 4;
+   */
+  distance?: number;
 }
 /**
  * @generated from protobuf message CMsgTESmoke
  */
 export interface CMsgTESmoke {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional float scale = 2;
-	 */
-	scale?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional float scale = 2;
+   */
+  scale?: number;
 }
 /**
  * @generated from protobuf message CMsgTEWorldDecal
  */
 export interface CMsgTEWorldDecal {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector normal = 2;
-	 */
-	normal?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional uint32 index = 3;
-	 */
-	index?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector normal = 2;
+   */
+  normal?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional uint32 index = 3;
+   */
+  index?: number;
 }
 /**
  * @generated from protobuf enum ETEProtobufIds
  */
 export enum ETEProtobufIds {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: TE_EffectDispatchId = 400;
-	 */
-	TE_EffectDispatchId = 400,
-	/**
-	 * @generated from protobuf enum value: TE_ArmorRicochetId = 401;
-	 */
-	TE_ArmorRicochetId = 401,
-	/**
-	 * @generated from protobuf enum value: TE_BeamEntPointId = 402;
-	 */
-	TE_BeamEntPointId = 402,
-	/**
-	 * @generated from protobuf enum value: TE_BeamEntsId = 403;
-	 */
-	TE_BeamEntsId = 403,
-	/**
-	 * @generated from protobuf enum value: TE_BeamPointsId = 404;
-	 */
-	TE_BeamPointsId = 404,
-	/**
-	 * @generated from protobuf enum value: TE_BeamRingId = 405;
-	 */
-	TE_BeamRingId = 405,
-	/**
-	 * @generated from protobuf enum value: TE_BSPDecalId = 407;
-	 */
-	TE_BSPDecalId = 407,
-	/**
-	 * @generated from protobuf enum value: TE_BubblesId = 408;
-	 */
-	TE_BubblesId = 408,
-	/**
-	 * @generated from protobuf enum value: TE_BubbleTrailId = 409;
-	 */
-	TE_BubbleTrailId = 409,
-	/**
-	 * @generated from protobuf enum value: TE_DecalId = 410;
-	 */
-	TE_DecalId = 410,
-	/**
-	 * @generated from protobuf enum value: TE_WorldDecalId = 411;
-	 */
-	TE_WorldDecalId = 411,
-	/**
-	 * @generated from protobuf enum value: TE_EnergySplashId = 412;
-	 */
-	TE_EnergySplashId = 412,
-	/**
-	 * @generated from protobuf enum value: TE_FizzId = 413;
-	 */
-	TE_FizzId = 413,
-	/**
-	 * @generated from protobuf enum value: TE_ShatterSurfaceId = 414;
-	 */
-	TE_ShatterSurfaceId = 414,
-	/**
-	 * @generated from protobuf enum value: TE_GlowSpriteId = 415;
-	 */
-	TE_GlowSpriteId = 415,
-	/**
-	 * @generated from protobuf enum value: TE_ImpactId = 416;
-	 */
-	TE_ImpactId = 416,
-	/**
-	 * @generated from protobuf enum value: TE_MuzzleFlashId = 417;
-	 */
-	TE_MuzzleFlashId = 417,
-	/**
-	 * @generated from protobuf enum value: TE_BloodStreamId = 418;
-	 */
-	TE_BloodStreamId = 418,
-	/**
-	 * @generated from protobuf enum value: TE_ExplosionId = 419;
-	 */
-	TE_ExplosionId = 419,
-	/**
-	 * @generated from protobuf enum value: TE_DustId = 420;
-	 */
-	TE_DustId = 420,
-	/**
-	 * @generated from protobuf enum value: TE_LargeFunnelId = 421;
-	 */
-	TE_LargeFunnelId = 421,
-	/**
-	 * @generated from protobuf enum value: TE_SparksId = 422;
-	 */
-	TE_SparksId = 422,
-	/**
-	 * @generated from protobuf enum value: TE_PhysicsPropId = 423;
-	 */
-	TE_PhysicsPropId = 423,
-	/**
-	 * @generated from protobuf enum value: TE_PlayerDecalId = 424;
-	 */
-	TE_PlayerDecalId = 424,
-	/**
-	 * @generated from protobuf enum value: TE_ProjectedDecalId = 425;
-	 */
-	TE_ProjectedDecalId = 425,
-	/**
-	 * @generated from protobuf enum value: TE_SmokeId = 426;
-	 */
-	TE_SmokeId = 426,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: TE_EffectDispatchId = 400;
+   */
+  TE_EffectDispatchId = 400,
+  /**
+   * @generated from protobuf enum value: TE_ArmorRicochetId = 401;
+   */
+  TE_ArmorRicochetId = 401,
+  /**
+   * @generated from protobuf enum value: TE_BeamEntPointId = 402;
+   */
+  TE_BeamEntPointId = 402,
+  /**
+   * @generated from protobuf enum value: TE_BeamEntsId = 403;
+   */
+  TE_BeamEntsId = 403,
+  /**
+   * @generated from protobuf enum value: TE_BeamPointsId = 404;
+   */
+  TE_BeamPointsId = 404,
+  /**
+   * @generated from protobuf enum value: TE_BeamRingId = 405;
+   */
+  TE_BeamRingId = 405,
+  /**
+   * @generated from protobuf enum value: TE_BSPDecalId = 407;
+   */
+  TE_BSPDecalId = 407,
+  /**
+   * @generated from protobuf enum value: TE_BubblesId = 408;
+   */
+  TE_BubblesId = 408,
+  /**
+   * @generated from protobuf enum value: TE_BubbleTrailId = 409;
+   */
+  TE_BubbleTrailId = 409,
+  /**
+   * @generated from protobuf enum value: TE_DecalId = 410;
+   */
+  TE_DecalId = 410,
+  /**
+   * @generated from protobuf enum value: TE_WorldDecalId = 411;
+   */
+  TE_WorldDecalId = 411,
+  /**
+   * @generated from protobuf enum value: TE_EnergySplashId = 412;
+   */
+  TE_EnergySplashId = 412,
+  /**
+   * @generated from protobuf enum value: TE_FizzId = 413;
+   */
+  TE_FizzId = 413,
+  /**
+   * @generated from protobuf enum value: TE_ShatterSurfaceId = 414;
+   */
+  TE_ShatterSurfaceId = 414,
+  /**
+   * @generated from protobuf enum value: TE_GlowSpriteId = 415;
+   */
+  TE_GlowSpriteId = 415,
+  /**
+   * @generated from protobuf enum value: TE_ImpactId = 416;
+   */
+  TE_ImpactId = 416,
+  /**
+   * @generated from protobuf enum value: TE_MuzzleFlashId = 417;
+   */
+  TE_MuzzleFlashId = 417,
+  /**
+   * @generated from protobuf enum value: TE_BloodStreamId = 418;
+   */
+  TE_BloodStreamId = 418,
+  /**
+   * @generated from protobuf enum value: TE_ExplosionId = 419;
+   */
+  TE_ExplosionId = 419,
+  /**
+   * @generated from protobuf enum value: TE_DustId = 420;
+   */
+  TE_DustId = 420,
+  /**
+   * @generated from protobuf enum value: TE_LargeFunnelId = 421;
+   */
+  TE_LargeFunnelId = 421,
+  /**
+   * @generated from protobuf enum value: TE_SparksId = 422;
+   */
+  TE_SparksId = 422,
+  /**
+   * @generated from protobuf enum value: TE_PhysicsPropId = 423;
+   */
+  TE_PhysicsPropId = 423,
+  /**
+   * @generated from protobuf enum value: TE_PlayerDecalId = 424;
+   */
+  TE_PlayerDecalId = 424,
+  /**
+   * @generated from protobuf enum value: TE_ProjectedDecalId = 425;
+   */
+  TE_ProjectedDecalId = 425,
+  /**
+   * @generated from protobuf enum value: TE_SmokeId = 426;
+   */
+  TE_SmokeId = 426,
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEArmorRicochet$Type extends MessageType<CMsgTEArmorRicochet> {
-	constructor() {
-		super("CMsgTEArmorRicochet", [
-			{ no: 1, name: "pos", kind: "message", T: () => CMsgVector },
-			{ no: 2, name: "dir", kind: "message", T: () => CMsgVector },
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEArmorRicochet>): CMsgTEArmorRicochet {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEArmorRicochet>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEArmorRicochet,
-	): CMsgTEArmorRicochet {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector pos */ 1:
-					message.pos = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.pos);
-					break;
-				case /* optional CMsgVector dir */ 2:
-					message.dir = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.dir);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEArmorRicochet, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector pos = 1; */
-		if (message.pos)
-			CMsgVector.internalBinaryWrite(message.pos, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector dir = 2; */
-		if (message.dir)
-			CMsgVector.internalBinaryWrite(message.dir, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEArmorRicochet", [
+      { no: 1, name: "pos", kind: "message", T: () => CMsgVector },
+      { no: 2, name: "dir", kind: "message", T: () => CMsgVector },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEArmorRicochet>): CMsgTEArmorRicochet {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEArmorRicochet>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEArmorRicochet,
+  ): CMsgTEArmorRicochet {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector pos */ 1:
+          message.pos = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.pos);
+          break;
+        case /* optional CMsgVector dir */ 2:
+          message.dir = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.dir);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEArmorRicochet, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector pos = 1; */
+    if (message.pos)
+      CMsgVector.internalBinaryWrite(message.pos, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector dir = 2; */
+    if (message.dir)
+      CMsgVector.internalBinaryWrite(message.dir, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEArmorRicochet
@@ -915,187 +915,187 @@ class CMsgTEArmorRicochet$Type extends MessageType<CMsgTEArmorRicochet> {
 export const CMsgTEArmorRicochet = new CMsgTEArmorRicochet$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEBaseBeam$Type extends MessageType<CMsgTEBaseBeam> {
-	constructor() {
-		super("CMsgTEBaseBeam", [
-			{
-				no: 1,
-				name: "modelindex",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "haloindex",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "startframe",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "framerate",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "life",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 6,
-				name: "width",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 7,
-				name: "endwidth",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 8,
-				name: "fadelength",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "amplitude",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 10,
-				name: "color",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 11,
-				name: "speed",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 12,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEBaseBeam>): CMsgTEBaseBeam {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEBaseBeam>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEBaseBeam,
-	): CMsgTEBaseBeam {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed64 modelindex */ 1:
-					message.modelindex = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed64 haloindex */ 2:
-					message.haloindex = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 startframe */ 3:
-					message.startframe = reader.uint32();
-					break;
-				case /* optional uint32 framerate */ 4:
-					message.framerate = reader.uint32();
-					break;
-				case /* optional float life */ 5:
-					message.life = reader.float();
-					break;
-				case /* optional float width */ 6:
-					message.width = reader.float();
-					break;
-				case /* optional float endwidth */ 7:
-					message.endwidth = reader.float();
-					break;
-				case /* optional uint32 fadelength */ 8:
-					message.fadelength = reader.uint32();
-					break;
-				case /* optional float amplitude */ 9:
-					message.amplitude = reader.float();
-					break;
-				case /* optional fixed32 color */ 10:
-					message.color = reader.fixed32();
-					break;
-				case /* optional uint32 speed */ 11:
-					message.speed = reader.uint32();
-					break;
-				case /* optional uint32 flags */ 12:
-					message.flags = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEBaseBeam, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional fixed64 modelindex = 1; */
-		if (message.modelindex !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.modelindex);
-		/* optional fixed64 haloindex = 2; */
-		if (message.haloindex !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.haloindex);
-		/* optional uint32 startframe = 3; */
-		if (message.startframe !== undefined) writer.tag(3, WireType.Varint).uint32(message.startframe);
-		/* optional uint32 framerate = 4; */
-		if (message.framerate !== undefined) writer.tag(4, WireType.Varint).uint32(message.framerate);
-		/* optional float life = 5; */
-		if (message.life !== undefined) writer.tag(5, WireType.Bit32).float(message.life);
-		/* optional float width = 6; */
-		if (message.width !== undefined) writer.tag(6, WireType.Bit32).float(message.width);
-		/* optional float endwidth = 7; */
-		if (message.endwidth !== undefined) writer.tag(7, WireType.Bit32).float(message.endwidth);
-		/* optional uint32 fadelength = 8; */
-		if (message.fadelength !== undefined) writer.tag(8, WireType.Varint).uint32(message.fadelength);
-		/* optional float amplitude = 9; */
-		if (message.amplitude !== undefined) writer.tag(9, WireType.Bit32).float(message.amplitude);
-		/* optional fixed32 color = 10; */
-		if (message.color !== undefined) writer.tag(10, WireType.Bit32).fixed32(message.color);
-		/* optional uint32 speed = 11; */
-		if (message.speed !== undefined) writer.tag(11, WireType.Varint).uint32(message.speed);
-		/* optional uint32 flags = 12; */
-		if (message.flags !== undefined) writer.tag(12, WireType.Varint).uint32(message.flags);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEBaseBeam", [
+      {
+        no: 1,
+        name: "modelindex",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "haloindex",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "startframe",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "framerate",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "life",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 6,
+        name: "width",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 7,
+        name: "endwidth",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 8,
+        name: "fadelength",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "amplitude",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 10,
+        name: "color",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 11,
+        name: "speed",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 12,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEBaseBeam>): CMsgTEBaseBeam {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEBaseBeam>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEBaseBeam,
+  ): CMsgTEBaseBeam {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed64 modelindex */ 1:
+          message.modelindex = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed64 haloindex */ 2:
+          message.haloindex = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 startframe */ 3:
+          message.startframe = reader.uint32();
+          break;
+        case /* optional uint32 framerate */ 4:
+          message.framerate = reader.uint32();
+          break;
+        case /* optional float life */ 5:
+          message.life = reader.float();
+          break;
+        case /* optional float width */ 6:
+          message.width = reader.float();
+          break;
+        case /* optional float endwidth */ 7:
+          message.endwidth = reader.float();
+          break;
+        case /* optional uint32 fadelength */ 8:
+          message.fadelength = reader.uint32();
+          break;
+        case /* optional float amplitude */ 9:
+          message.amplitude = reader.float();
+          break;
+        case /* optional fixed32 color */ 10:
+          message.color = reader.fixed32();
+          break;
+        case /* optional uint32 speed */ 11:
+          message.speed = reader.uint32();
+          break;
+        case /* optional uint32 flags */ 12:
+          message.flags = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEBaseBeam, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional fixed64 modelindex = 1; */
+    if (message.modelindex !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.modelindex);
+    /* optional fixed64 haloindex = 2; */
+    if (message.haloindex !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.haloindex);
+    /* optional uint32 startframe = 3; */
+    if (message.startframe !== undefined) writer.tag(3, WireType.Varint).uint32(message.startframe);
+    /* optional uint32 framerate = 4; */
+    if (message.framerate !== undefined) writer.tag(4, WireType.Varint).uint32(message.framerate);
+    /* optional float life = 5; */
+    if (message.life !== undefined) writer.tag(5, WireType.Bit32).float(message.life);
+    /* optional float width = 6; */
+    if (message.width !== undefined) writer.tag(6, WireType.Bit32).float(message.width);
+    /* optional float endwidth = 7; */
+    if (message.endwidth !== undefined) writer.tag(7, WireType.Bit32).float(message.endwidth);
+    /* optional uint32 fadelength = 8; */
+    if (message.fadelength !== undefined) writer.tag(8, WireType.Varint).uint32(message.fadelength);
+    /* optional float amplitude = 9; */
+    if (message.amplitude !== undefined) writer.tag(9, WireType.Bit32).float(message.amplitude);
+    /* optional fixed32 color = 10; */
+    if (message.color !== undefined) writer.tag(10, WireType.Bit32).fixed32(message.color);
+    /* optional uint32 speed = 11; */
+    if (message.speed !== undefined) writer.tag(11, WireType.Varint).uint32(message.speed);
+    /* optional uint32 flags = 12; */
+    if (message.flags !== undefined) writer.tag(12, WireType.Varint).uint32(message.flags);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEBaseBeam
@@ -1103,86 +1103,86 @@ class CMsgTEBaseBeam$Type extends MessageType<CMsgTEBaseBeam> {
 export const CMsgTEBaseBeam = new CMsgTEBaseBeam$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEBeamEntPoint$Type extends MessageType<CMsgTEBeamEntPoint> {
-	constructor() {
-		super("CMsgTEBeamEntPoint", [
-			{ no: 1, name: "base", kind: "message", T: () => CMsgTEBaseBeam },
-			{
-				no: 2,
-				name: "startentity",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "endentity",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{ no: 4, name: "start", kind: "message", T: () => CMsgVector },
-			{ no: 5, name: "end", kind: "message", T: () => CMsgVector },
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEBeamEntPoint>): CMsgTEBeamEntPoint {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEBeamEntPoint>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEBeamEntPoint,
-	): CMsgTEBeamEntPoint {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgTEBaseBeam base */ 1:
-					message.base = CMsgTEBaseBeam.internalBinaryRead(reader, reader.uint32(), options, message.base);
-					break;
-				case /* optional uint32 startentity */ 2:
-					message.startentity = reader.uint32();
-					break;
-				case /* optional uint32 endentity */ 3:
-					message.endentity = reader.uint32();
-					break;
-				case /* optional CMsgVector start */ 4:
-					message.start = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.start);
-					break;
-				case /* optional CMsgVector end */ 5:
-					message.end = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.end);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEBeamEntPoint, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgTEBaseBeam base = 1; */
-		if (message.base)
-			CMsgTEBaseBeam.internalBinaryWrite(message.base, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional uint32 startentity = 2; */
-		if (message.startentity !== undefined) writer.tag(2, WireType.Varint).uint32(message.startentity);
-		/* optional uint32 endentity = 3; */
-		if (message.endentity !== undefined) writer.tag(3, WireType.Varint).uint32(message.endentity);
-		/* optional CMsgVector start = 4; */
-		if (message.start)
-			CMsgVector.internalBinaryWrite(message.start, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector end = 5; */
-		if (message.end)
-			CMsgVector.internalBinaryWrite(message.end, writer.tag(5, WireType.LengthDelimited).fork(), options).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEBeamEntPoint", [
+      { no: 1, name: "base", kind: "message", T: () => CMsgTEBaseBeam },
+      {
+        no: 2,
+        name: "startentity",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "endentity",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      { no: 4, name: "start", kind: "message", T: () => CMsgVector },
+      { no: 5, name: "end", kind: "message", T: () => CMsgVector },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEBeamEntPoint>): CMsgTEBeamEntPoint {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEBeamEntPoint>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEBeamEntPoint,
+  ): CMsgTEBeamEntPoint {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgTEBaseBeam base */ 1:
+          message.base = CMsgTEBaseBeam.internalBinaryRead(reader, reader.uint32(), options, message.base);
+          break;
+        case /* optional uint32 startentity */ 2:
+          message.startentity = reader.uint32();
+          break;
+        case /* optional uint32 endentity */ 3:
+          message.endentity = reader.uint32();
+          break;
+        case /* optional CMsgVector start */ 4:
+          message.start = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.start);
+          break;
+        case /* optional CMsgVector end */ 5:
+          message.end = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.end);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEBeamEntPoint, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgTEBaseBeam base = 1; */
+    if (message.base)
+      CMsgTEBaseBeam.internalBinaryWrite(message.base, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional uint32 startentity = 2; */
+    if (message.startentity !== undefined) writer.tag(2, WireType.Varint).uint32(message.startentity);
+    /* optional uint32 endentity = 3; */
+    if (message.endentity !== undefined) writer.tag(3, WireType.Varint).uint32(message.endentity);
+    /* optional CMsgVector start = 4; */
+    if (message.start)
+      CMsgVector.internalBinaryWrite(message.start, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector end = 5; */
+    if (message.end)
+      CMsgVector.internalBinaryWrite(message.end, writer.tag(5, WireType.LengthDelimited).fork(), options).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEBeamEntPoint
@@ -1190,72 +1190,72 @@ class CMsgTEBeamEntPoint$Type extends MessageType<CMsgTEBeamEntPoint> {
 export const CMsgTEBeamEntPoint = new CMsgTEBeamEntPoint$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEBeamEnts$Type extends MessageType<CMsgTEBeamEnts> {
-	constructor() {
-		super("CMsgTEBeamEnts", [
-			{ no: 1, name: "base", kind: "message", T: () => CMsgTEBaseBeam },
-			{
-				no: 2,
-				name: "startentity",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "endentity",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEBeamEnts>): CMsgTEBeamEnts {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEBeamEnts>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEBeamEnts,
-	): CMsgTEBeamEnts {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgTEBaseBeam base */ 1:
-					message.base = CMsgTEBaseBeam.internalBinaryRead(reader, reader.uint32(), options, message.base);
-					break;
-				case /* optional uint32 startentity */ 2:
-					message.startentity = reader.uint32();
-					break;
-				case /* optional uint32 endentity */ 3:
-					message.endentity = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEBeamEnts, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgTEBaseBeam base = 1; */
-		if (message.base)
-			CMsgTEBaseBeam.internalBinaryWrite(message.base, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional uint32 startentity = 2; */
-		if (message.startentity !== undefined) writer.tag(2, WireType.Varint).uint32(message.startentity);
-		/* optional uint32 endentity = 3; */
-		if (message.endentity !== undefined) writer.tag(3, WireType.Varint).uint32(message.endentity);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEBeamEnts", [
+      { no: 1, name: "base", kind: "message", T: () => CMsgTEBaseBeam },
+      {
+        no: 2,
+        name: "startentity",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "endentity",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEBeamEnts>): CMsgTEBeamEnts {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEBeamEnts>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEBeamEnts,
+  ): CMsgTEBeamEnts {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgTEBaseBeam base */ 1:
+          message.base = CMsgTEBaseBeam.internalBinaryRead(reader, reader.uint32(), options, message.base);
+          break;
+        case /* optional uint32 startentity */ 2:
+          message.startentity = reader.uint32();
+          break;
+        case /* optional uint32 endentity */ 3:
+          message.endentity = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEBeamEnts, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgTEBaseBeam base = 1; */
+    if (message.base)
+      CMsgTEBaseBeam.internalBinaryWrite(message.base, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional uint32 startentity = 2; */
+    if (message.startentity !== undefined) writer.tag(2, WireType.Varint).uint32(message.startentity);
+    /* optional uint32 endentity = 3; */
+    if (message.endentity !== undefined) writer.tag(3, WireType.Varint).uint32(message.endentity);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEBeamEnts
@@ -1263,62 +1263,62 @@ class CMsgTEBeamEnts$Type extends MessageType<CMsgTEBeamEnts> {
 export const CMsgTEBeamEnts = new CMsgTEBeamEnts$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEBeamPoints$Type extends MessageType<CMsgTEBeamPoints> {
-	constructor() {
-		super("CMsgTEBeamPoints", [
-			{ no: 1, name: "base", kind: "message", T: () => CMsgTEBaseBeam },
-			{ no: 2, name: "start", kind: "message", T: () => CMsgVector },
-			{ no: 3, name: "end", kind: "message", T: () => CMsgVector },
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEBeamPoints>): CMsgTEBeamPoints {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEBeamPoints>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEBeamPoints,
-	): CMsgTEBeamPoints {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgTEBaseBeam base */ 1:
-					message.base = CMsgTEBaseBeam.internalBinaryRead(reader, reader.uint32(), options, message.base);
-					break;
-				case /* optional CMsgVector start */ 2:
-					message.start = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.start);
-					break;
-				case /* optional CMsgVector end */ 3:
-					message.end = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.end);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEBeamPoints, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgTEBaseBeam base = 1; */
-		if (message.base)
-			CMsgTEBaseBeam.internalBinaryWrite(message.base, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector start = 2; */
-		if (message.start)
-			CMsgVector.internalBinaryWrite(message.start, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector end = 3; */
-		if (message.end)
-			CMsgVector.internalBinaryWrite(message.end, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEBeamPoints", [
+      { no: 1, name: "base", kind: "message", T: () => CMsgTEBaseBeam },
+      { no: 2, name: "start", kind: "message", T: () => CMsgVector },
+      { no: 3, name: "end", kind: "message", T: () => CMsgVector },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEBeamPoints>): CMsgTEBeamPoints {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEBeamPoints>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEBeamPoints,
+  ): CMsgTEBeamPoints {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgTEBaseBeam base */ 1:
+          message.base = CMsgTEBaseBeam.internalBinaryRead(reader, reader.uint32(), options, message.base);
+          break;
+        case /* optional CMsgVector start */ 2:
+          message.start = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.start);
+          break;
+        case /* optional CMsgVector end */ 3:
+          message.end = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.end);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEBeamPoints, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgTEBaseBeam base = 1; */
+    if (message.base)
+      CMsgTEBaseBeam.internalBinaryWrite(message.base, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector start = 2; */
+    if (message.start)
+      CMsgVector.internalBinaryWrite(message.start, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector end = 3; */
+    if (message.end)
+      CMsgVector.internalBinaryWrite(message.end, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEBeamPoints
@@ -1326,72 +1326,72 @@ class CMsgTEBeamPoints$Type extends MessageType<CMsgTEBeamPoints> {
 export const CMsgTEBeamPoints = new CMsgTEBeamPoints$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEBeamRing$Type extends MessageType<CMsgTEBeamRing> {
-	constructor() {
-		super("CMsgTEBeamRing", [
-			{ no: 1, name: "base", kind: "message", T: () => CMsgTEBaseBeam },
-			{
-				no: 2,
-				name: "startentity",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "endentity",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEBeamRing>): CMsgTEBeamRing {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEBeamRing>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEBeamRing,
-	): CMsgTEBeamRing {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgTEBaseBeam base */ 1:
-					message.base = CMsgTEBaseBeam.internalBinaryRead(reader, reader.uint32(), options, message.base);
-					break;
-				case /* optional uint32 startentity */ 2:
-					message.startentity = reader.uint32();
-					break;
-				case /* optional uint32 endentity */ 3:
-					message.endentity = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEBeamRing, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgTEBaseBeam base = 1; */
-		if (message.base)
-			CMsgTEBaseBeam.internalBinaryWrite(message.base, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional uint32 startentity = 2; */
-		if (message.startentity !== undefined) writer.tag(2, WireType.Varint).uint32(message.startentity);
-		/* optional uint32 endentity = 3; */
-		if (message.endentity !== undefined) writer.tag(3, WireType.Varint).uint32(message.endentity);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEBeamRing", [
+      { no: 1, name: "base", kind: "message", T: () => CMsgTEBaseBeam },
+      {
+        no: 2,
+        name: "startentity",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "endentity",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEBeamRing>): CMsgTEBeamRing {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEBeamRing>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEBeamRing,
+  ): CMsgTEBeamRing {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgTEBaseBeam base */ 1:
+          message.base = CMsgTEBaseBeam.internalBinaryRead(reader, reader.uint32(), options, message.base);
+          break;
+        case /* optional uint32 startentity */ 2:
+          message.startentity = reader.uint32();
+          break;
+        case /* optional uint32 endentity */ 3:
+          message.endentity = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEBeamRing, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgTEBaseBeam base = 1; */
+    if (message.base)
+      CMsgTEBaseBeam.internalBinaryWrite(message.base, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional uint32 startentity = 2; */
+    if (message.startentity !== undefined) writer.tag(2, WireType.Varint).uint32(message.startentity);
+    /* optional uint32 endentity = 3; */
+    if (message.endentity !== undefined) writer.tag(3, WireType.Varint).uint32(message.endentity);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEBeamRing
@@ -1399,86 +1399,86 @@ class CMsgTEBeamRing$Type extends MessageType<CMsgTEBeamRing> {
 export const CMsgTEBeamRing = new CMsgTEBeamRing$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEBSPDecal$Type extends MessageType<CMsgTEBSPDecal> {
-	constructor() {
-		super("CMsgTEBSPDecal", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{ no: 2, name: "normal", kind: "message", T: () => CMsgVector },
-			{ no: 3, name: "saxis", kind: "message", T: () => CMsgVector },
-			{
-				no: 4,
-				name: "entity",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "index",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEBSPDecal>): CMsgTEBSPDecal {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEBSPDecal>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEBSPDecal,
-	): CMsgTEBSPDecal {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional CMsgVector normal */ 2:
-					message.normal = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.normal);
-					break;
-				case /* optional CMsgVector saxis */ 3:
-					message.saxis = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.saxis);
-					break;
-				case /* optional int32 entity */ 4:
-					message.entity = reader.int32();
-					break;
-				case /* optional uint32 index */ 5:
-					message.index = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEBSPDecal, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector normal = 2; */
-		if (message.normal)
-			CMsgVector.internalBinaryWrite(message.normal, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector saxis = 3; */
-		if (message.saxis)
-			CMsgVector.internalBinaryWrite(message.saxis, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
-		/* optional int32 entity = 4; */
-		if (message.entity !== undefined) writer.tag(4, WireType.Varint).int32(message.entity);
-		/* optional uint32 index = 5; */
-		if (message.index !== undefined) writer.tag(5, WireType.Varint).uint32(message.index);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEBSPDecal", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      { no: 2, name: "normal", kind: "message", T: () => CMsgVector },
+      { no: 3, name: "saxis", kind: "message", T: () => CMsgVector },
+      {
+        no: 4,
+        name: "entity",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "index",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEBSPDecal>): CMsgTEBSPDecal {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEBSPDecal>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEBSPDecal,
+  ): CMsgTEBSPDecal {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional CMsgVector normal */ 2:
+          message.normal = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.normal);
+          break;
+        case /* optional CMsgVector saxis */ 3:
+          message.saxis = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.saxis);
+          break;
+        case /* optional int32 entity */ 4:
+          message.entity = reader.int32();
+          break;
+        case /* optional uint32 index */ 5:
+          message.index = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEBSPDecal, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector normal = 2; */
+    if (message.normal)
+      CMsgVector.internalBinaryWrite(message.normal, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector saxis = 3; */
+    if (message.saxis)
+      CMsgVector.internalBinaryWrite(message.saxis, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
+    /* optional int32 entity = 4; */
+    if (message.entity !== undefined) writer.tag(4, WireType.Varint).int32(message.entity);
+    /* optional uint32 index = 5; */
+    if (message.index !== undefined) writer.tag(5, WireType.Varint).uint32(message.index);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEBSPDecal
@@ -1486,91 +1486,91 @@ class CMsgTEBSPDecal$Type extends MessageType<CMsgTEBSPDecal> {
 export const CMsgTEBSPDecal = new CMsgTEBSPDecal$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEBubbles$Type extends MessageType<CMsgTEBubbles> {
-	constructor() {
-		super("CMsgTEBubbles", [
-			{ no: 1, name: "mins", kind: "message", T: () => CMsgVector },
-			{ no: 2, name: "maxs", kind: "message", T: () => CMsgVector },
-			{
-				no: 3,
-				name: "height",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "count",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "speed",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEBubbles>): CMsgTEBubbles {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEBubbles>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEBubbles,
-	): CMsgTEBubbles {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector mins */ 1:
-					message.mins = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.mins);
-					break;
-				case /* optional CMsgVector maxs */ 2:
-					message.maxs = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.maxs);
-					break;
-				case /* optional float height */ 3:
-					message.height = reader.float();
-					break;
-				case /* optional uint32 count */ 4:
-					message.count = reader.uint32();
-					break;
-				case /* optional float speed */ 5:
-					message.speed = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEBubbles, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector mins = 1; */
-		if (message.mins)
-			CMsgVector.internalBinaryWrite(message.mins, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector maxs = 2; */
-		if (message.maxs)
-			CMsgVector.internalBinaryWrite(message.maxs, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional float height = 3; */
-		if (message.height !== undefined) writer.tag(3, WireType.Bit32).float(message.height);
-		/* optional uint32 count = 4; */
-		if (message.count !== undefined) writer.tag(4, WireType.Varint).uint32(message.count);
-		/* optional float speed = 5; */
-		if (message.speed !== undefined) writer.tag(5, WireType.Bit32).float(message.speed);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEBubbles", [
+      { no: 1, name: "mins", kind: "message", T: () => CMsgVector },
+      { no: 2, name: "maxs", kind: "message", T: () => CMsgVector },
+      {
+        no: 3,
+        name: "height",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "count",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "speed",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEBubbles>): CMsgTEBubbles {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEBubbles>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEBubbles,
+  ): CMsgTEBubbles {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector mins */ 1:
+          message.mins = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.mins);
+          break;
+        case /* optional CMsgVector maxs */ 2:
+          message.maxs = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.maxs);
+          break;
+        case /* optional float height */ 3:
+          message.height = reader.float();
+          break;
+        case /* optional uint32 count */ 4:
+          message.count = reader.uint32();
+          break;
+        case /* optional float speed */ 5:
+          message.speed = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEBubbles, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector mins = 1; */
+    if (message.mins)
+      CMsgVector.internalBinaryWrite(message.mins, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector maxs = 2; */
+    if (message.maxs)
+      CMsgVector.internalBinaryWrite(message.maxs, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional float height = 3; */
+    if (message.height !== undefined) writer.tag(3, WireType.Bit32).float(message.height);
+    /* optional uint32 count = 4; */
+    if (message.count !== undefined) writer.tag(4, WireType.Varint).uint32(message.count);
+    /* optional float speed = 5; */
+    if (message.speed !== undefined) writer.tag(5, WireType.Bit32).float(message.speed);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEBubbles
@@ -1578,91 +1578,91 @@ class CMsgTEBubbles$Type extends MessageType<CMsgTEBubbles> {
 export const CMsgTEBubbles = new CMsgTEBubbles$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEBubbleTrail$Type extends MessageType<CMsgTEBubbleTrail> {
-	constructor() {
-		super("CMsgTEBubbleTrail", [
-			{ no: 1, name: "mins", kind: "message", T: () => CMsgVector },
-			{ no: 2, name: "maxs", kind: "message", T: () => CMsgVector },
-			{
-				no: 3,
-				name: "waterz",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "count",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "speed",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEBubbleTrail>): CMsgTEBubbleTrail {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEBubbleTrail>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEBubbleTrail,
-	): CMsgTEBubbleTrail {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector mins */ 1:
-					message.mins = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.mins);
-					break;
-				case /* optional CMsgVector maxs */ 2:
-					message.maxs = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.maxs);
-					break;
-				case /* optional float waterz */ 3:
-					message.waterz = reader.float();
-					break;
-				case /* optional uint32 count */ 4:
-					message.count = reader.uint32();
-					break;
-				case /* optional float speed */ 5:
-					message.speed = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEBubbleTrail, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector mins = 1; */
-		if (message.mins)
-			CMsgVector.internalBinaryWrite(message.mins, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector maxs = 2; */
-		if (message.maxs)
-			CMsgVector.internalBinaryWrite(message.maxs, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional float waterz = 3; */
-		if (message.waterz !== undefined) writer.tag(3, WireType.Bit32).float(message.waterz);
-		/* optional uint32 count = 4; */
-		if (message.count !== undefined) writer.tag(4, WireType.Varint).uint32(message.count);
-		/* optional float speed = 5; */
-		if (message.speed !== undefined) writer.tag(5, WireType.Bit32).float(message.speed);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEBubbleTrail", [
+      { no: 1, name: "mins", kind: "message", T: () => CMsgVector },
+      { no: 2, name: "maxs", kind: "message", T: () => CMsgVector },
+      {
+        no: 3,
+        name: "waterz",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "count",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "speed",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEBubbleTrail>): CMsgTEBubbleTrail {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEBubbleTrail>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEBubbleTrail,
+  ): CMsgTEBubbleTrail {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector mins */ 1:
+          message.mins = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.mins);
+          break;
+        case /* optional CMsgVector maxs */ 2:
+          message.maxs = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.maxs);
+          break;
+        case /* optional float waterz */ 3:
+          message.waterz = reader.float();
+          break;
+        case /* optional uint32 count */ 4:
+          message.count = reader.uint32();
+          break;
+        case /* optional float speed */ 5:
+          message.speed = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEBubbleTrail, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector mins = 1; */
+    if (message.mins)
+      CMsgVector.internalBinaryWrite(message.mins, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector maxs = 2; */
+    if (message.maxs)
+      CMsgVector.internalBinaryWrite(message.maxs, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional float waterz = 3; */
+    if (message.waterz !== undefined) writer.tag(3, WireType.Bit32).float(message.waterz);
+    /* optional uint32 count = 4; */
+    if (message.count !== undefined) writer.tag(4, WireType.Varint).uint32(message.count);
+    /* optional float speed = 5; */
+    if (message.speed !== undefined) writer.tag(5, WireType.Bit32).float(message.speed);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEBubbleTrail
@@ -1670,91 +1670,91 @@ class CMsgTEBubbleTrail$Type extends MessageType<CMsgTEBubbleTrail> {
 export const CMsgTEBubbleTrail = new CMsgTEBubbleTrail$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEDecal$Type extends MessageType<CMsgTEDecal> {
-	constructor() {
-		super("CMsgTEDecal", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{ no: 2, name: "start", kind: "message", T: () => CMsgVector },
-			{
-				no: 3,
-				name: "entity",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "hitbox",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "index",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEDecal>): CMsgTEDecal {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEDecal>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEDecal,
-	): CMsgTEDecal {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional CMsgVector start */ 2:
-					message.start = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.start);
-					break;
-				case /* optional int32 entity */ 3:
-					message.entity = reader.int32();
-					break;
-				case /* optional uint32 hitbox */ 4:
-					message.hitbox = reader.uint32();
-					break;
-				case /* optional uint32 index */ 5:
-					message.index = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEDecal, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector start = 2; */
-		if (message.start)
-			CMsgVector.internalBinaryWrite(message.start, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional int32 entity = 3; */
-		if (message.entity !== undefined) writer.tag(3, WireType.Varint).int32(message.entity);
-		/* optional uint32 hitbox = 4; */
-		if (message.hitbox !== undefined) writer.tag(4, WireType.Varint).uint32(message.hitbox);
-		/* optional uint32 index = 5; */
-		if (message.index !== undefined) writer.tag(5, WireType.Varint).uint32(message.index);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEDecal", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      { no: 2, name: "start", kind: "message", T: () => CMsgVector },
+      {
+        no: 3,
+        name: "entity",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "hitbox",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "index",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEDecal>): CMsgTEDecal {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEDecal>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEDecal,
+  ): CMsgTEDecal {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional CMsgVector start */ 2:
+          message.start = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.start);
+          break;
+        case /* optional int32 entity */ 3:
+          message.entity = reader.int32();
+          break;
+        case /* optional uint32 hitbox */ 4:
+          message.hitbox = reader.uint32();
+          break;
+        case /* optional uint32 index */ 5:
+          message.index = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEDecal, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector start = 2; */
+    if (message.start)
+      CMsgVector.internalBinaryWrite(message.start, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional int32 entity = 3; */
+    if (message.entity !== undefined) writer.tag(3, WireType.Varint).int32(message.entity);
+    /* optional uint32 hitbox = 4; */
+    if (message.hitbox !== undefined) writer.tag(4, WireType.Varint).uint32(message.hitbox);
+    /* optional uint32 index = 5; */
+    if (message.index !== undefined) writer.tag(5, WireType.Varint).uint32(message.index);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEDecal
@@ -1762,250 +1762,250 @@ class CMsgTEDecal$Type extends MessageType<CMsgTEDecal> {
 export const CMsgTEDecal = new CMsgTEDecal$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgEffectData$Type extends MessageType<CMsgEffectData> {
-	constructor() {
-		super("CMsgEffectData", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{ no: 2, name: "start", kind: "message", T: () => CMsgVector },
-			{ no: 3, name: "normal", kind: "message", T: () => CMsgVector },
-			{ no: 4, name: "angles", kind: "message", T: () => CMsgQAngle },
-			{
-				no: 5,
-				name: "entity",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 6,
-				name: "otherentity",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 7,
-				name: "scale",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 8,
-				name: "magnitude",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 9,
-				name: "radius",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 10,
-				name: "surfaceprop",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 11,
-				name: "effectindex",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 12,
-				name: "damagetype",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 13,
-				name: "material",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 14,
-				name: "hitbox",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 15,
-				name: "color",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 16,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 17,
-				name: "attachmentindex",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 18,
-				name: "effectname",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 19,
-				name: "attachmentname",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgEffectData>): CMsgEffectData {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgEffectData>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgEffectData,
-	): CMsgEffectData {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional CMsgVector start */ 2:
-					message.start = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.start);
-					break;
-				case /* optional CMsgVector normal */ 3:
-					message.normal = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.normal);
-					break;
-				case /* optional CMsgQAngle angles */ 4:
-					message.angles = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angles);
-					break;
-				case /* optional fixed32 entity */ 5:
-					message.entity = reader.fixed32();
-					break;
-				case /* optional fixed32 otherentity */ 6:
-					message.otherentity = reader.fixed32();
-					break;
-				case /* optional float scale */ 7:
-					message.scale = reader.float();
-					break;
-				case /* optional float magnitude */ 8:
-					message.magnitude = reader.float();
-					break;
-				case /* optional float radius */ 9:
-					message.radius = reader.float();
-					break;
-				case /* optional fixed32 surfaceprop */ 10:
-					message.surfaceprop = reader.fixed32();
-					break;
-				case /* optional fixed64 effectindex */ 11:
-					message.effectindex = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 damagetype */ 12:
-					message.damagetype = reader.uint32();
-					break;
-				case /* optional uint32 material */ 13:
-					message.material = reader.uint32();
-					break;
-				case /* optional uint32 hitbox */ 14:
-					message.hitbox = reader.uint32();
-					break;
-				case /* optional uint32 color */ 15:
-					message.color = reader.uint32();
-					break;
-				case /* optional uint32 flags */ 16:
-					message.flags = reader.uint32();
-					break;
-				case /* optional int32 attachmentindex */ 17:
-					message.attachmentindex = reader.int32();
-					break;
-				case /* optional uint32 effectname */ 18:
-					message.effectname = reader.uint32();
-					break;
-				case /* optional uint32 attachmentname */ 19:
-					message.attachmentname = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgEffectData, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector start = 2; */
-		if (message.start)
-			CMsgVector.internalBinaryWrite(message.start, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector normal = 3; */
-		if (message.normal)
-			CMsgVector.internalBinaryWrite(message.normal, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgQAngle angles = 4; */
-		if (message.angles)
-			CMsgQAngle.internalBinaryWrite(message.angles, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
-		/* optional fixed32 entity = 5; */
-		if (message.entity !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.entity);
-		/* optional fixed32 otherentity = 6; */
-		if (message.otherentity !== undefined) writer.tag(6, WireType.Bit32).fixed32(message.otherentity);
-		/* optional float scale = 7; */
-		if (message.scale !== undefined) writer.tag(7, WireType.Bit32).float(message.scale);
-		/* optional float magnitude = 8; */
-		if (message.magnitude !== undefined) writer.tag(8, WireType.Bit32).float(message.magnitude);
-		/* optional float radius = 9; */
-		if (message.radius !== undefined) writer.tag(9, WireType.Bit32).float(message.radius);
-		/* optional fixed32 surfaceprop = 10; */
-		if (message.surfaceprop !== undefined) writer.tag(10, WireType.Bit32).fixed32(message.surfaceprop);
-		/* optional fixed64 effectindex = 11; */
-		if (message.effectindex !== undefined) writer.tag(11, WireType.Bit64).fixed64(message.effectindex);
-		/* optional uint32 damagetype = 12; */
-		if (message.damagetype !== undefined) writer.tag(12, WireType.Varint).uint32(message.damagetype);
-		/* optional uint32 material = 13; */
-		if (message.material !== undefined) writer.tag(13, WireType.Varint).uint32(message.material);
-		/* optional uint32 hitbox = 14; */
-		if (message.hitbox !== undefined) writer.tag(14, WireType.Varint).uint32(message.hitbox);
-		/* optional uint32 color = 15; */
-		if (message.color !== undefined) writer.tag(15, WireType.Varint).uint32(message.color);
-		/* optional uint32 flags = 16; */
-		if (message.flags !== undefined) writer.tag(16, WireType.Varint).uint32(message.flags);
-		/* optional int32 attachmentindex = 17; */
-		if (message.attachmentindex !== undefined) writer.tag(17, WireType.Varint).int32(message.attachmentindex);
-		/* optional uint32 effectname = 18; */
-		if (message.effectname !== undefined) writer.tag(18, WireType.Varint).uint32(message.effectname);
-		/* optional uint32 attachmentname = 19; */
-		if (message.attachmentname !== undefined) writer.tag(19, WireType.Varint).uint32(message.attachmentname);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgEffectData", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      { no: 2, name: "start", kind: "message", T: () => CMsgVector },
+      { no: 3, name: "normal", kind: "message", T: () => CMsgVector },
+      { no: 4, name: "angles", kind: "message", T: () => CMsgQAngle },
+      {
+        no: 5,
+        name: "entity",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 6,
+        name: "otherentity",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 7,
+        name: "scale",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 8,
+        name: "magnitude",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 9,
+        name: "radius",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 10,
+        name: "surfaceprop",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 11,
+        name: "effectindex",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 12,
+        name: "damagetype",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 13,
+        name: "material",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 14,
+        name: "hitbox",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 15,
+        name: "color",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 16,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 17,
+        name: "attachmentindex",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 18,
+        name: "effectname",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 19,
+        name: "attachmentname",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgEffectData>): CMsgEffectData {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgEffectData>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgEffectData,
+  ): CMsgEffectData {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional CMsgVector start */ 2:
+          message.start = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.start);
+          break;
+        case /* optional CMsgVector normal */ 3:
+          message.normal = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.normal);
+          break;
+        case /* optional CMsgQAngle angles */ 4:
+          message.angles = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angles);
+          break;
+        case /* optional fixed32 entity */ 5:
+          message.entity = reader.fixed32();
+          break;
+        case /* optional fixed32 otherentity */ 6:
+          message.otherentity = reader.fixed32();
+          break;
+        case /* optional float scale */ 7:
+          message.scale = reader.float();
+          break;
+        case /* optional float magnitude */ 8:
+          message.magnitude = reader.float();
+          break;
+        case /* optional float radius */ 9:
+          message.radius = reader.float();
+          break;
+        case /* optional fixed32 surfaceprop */ 10:
+          message.surfaceprop = reader.fixed32();
+          break;
+        case /* optional fixed64 effectindex */ 11:
+          message.effectindex = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 damagetype */ 12:
+          message.damagetype = reader.uint32();
+          break;
+        case /* optional uint32 material */ 13:
+          message.material = reader.uint32();
+          break;
+        case /* optional uint32 hitbox */ 14:
+          message.hitbox = reader.uint32();
+          break;
+        case /* optional uint32 color */ 15:
+          message.color = reader.uint32();
+          break;
+        case /* optional uint32 flags */ 16:
+          message.flags = reader.uint32();
+          break;
+        case /* optional int32 attachmentindex */ 17:
+          message.attachmentindex = reader.int32();
+          break;
+        case /* optional uint32 effectname */ 18:
+          message.effectname = reader.uint32();
+          break;
+        case /* optional uint32 attachmentname */ 19:
+          message.attachmentname = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgEffectData, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector start = 2; */
+    if (message.start)
+      CMsgVector.internalBinaryWrite(message.start, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector normal = 3; */
+    if (message.normal)
+      CMsgVector.internalBinaryWrite(message.normal, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgQAngle angles = 4; */
+    if (message.angles)
+      CMsgQAngle.internalBinaryWrite(message.angles, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
+    /* optional fixed32 entity = 5; */
+    if (message.entity !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.entity);
+    /* optional fixed32 otherentity = 6; */
+    if (message.otherentity !== undefined) writer.tag(6, WireType.Bit32).fixed32(message.otherentity);
+    /* optional float scale = 7; */
+    if (message.scale !== undefined) writer.tag(7, WireType.Bit32).float(message.scale);
+    /* optional float magnitude = 8; */
+    if (message.magnitude !== undefined) writer.tag(8, WireType.Bit32).float(message.magnitude);
+    /* optional float radius = 9; */
+    if (message.radius !== undefined) writer.tag(9, WireType.Bit32).float(message.radius);
+    /* optional fixed32 surfaceprop = 10; */
+    if (message.surfaceprop !== undefined) writer.tag(10, WireType.Bit32).fixed32(message.surfaceprop);
+    /* optional fixed64 effectindex = 11; */
+    if (message.effectindex !== undefined) writer.tag(11, WireType.Bit64).fixed64(message.effectindex);
+    /* optional uint32 damagetype = 12; */
+    if (message.damagetype !== undefined) writer.tag(12, WireType.Varint).uint32(message.damagetype);
+    /* optional uint32 material = 13; */
+    if (message.material !== undefined) writer.tag(13, WireType.Varint).uint32(message.material);
+    /* optional uint32 hitbox = 14; */
+    if (message.hitbox !== undefined) writer.tag(14, WireType.Varint).uint32(message.hitbox);
+    /* optional uint32 color = 15; */
+    if (message.color !== undefined) writer.tag(15, WireType.Varint).uint32(message.color);
+    /* optional uint32 flags = 16; */
+    if (message.flags !== undefined) writer.tag(16, WireType.Varint).uint32(message.flags);
+    /* optional int32 attachmentindex = 17; */
+    if (message.attachmentindex !== undefined) writer.tag(17, WireType.Varint).int32(message.attachmentindex);
+    /* optional uint32 effectname = 18; */
+    if (message.effectname !== undefined) writer.tag(18, WireType.Varint).uint32(message.effectname);
+    /* optional uint32 attachmentname = 19; */
+    if (message.attachmentname !== undefined) writer.tag(19, WireType.Varint).uint32(message.attachmentname);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgEffectData
@@ -2013,54 +2013,54 @@ class CMsgEffectData$Type extends MessageType<CMsgEffectData> {
 export const CMsgEffectData = new CMsgEffectData$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEEffectDispatch$Type extends MessageType<CMsgTEEffectDispatch> {
-	constructor() {
-		super("CMsgTEEffectDispatch", [{ no: 1, name: "effectdata", kind: "message", T: () => CMsgEffectData }]);
-	}
-	create(value?: PartialMessage<CMsgTEEffectDispatch>): CMsgTEEffectDispatch {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEEffectDispatch>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEEffectDispatch,
-	): CMsgTEEffectDispatch {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgEffectData effectdata */ 1:
-					message.effectdata = CMsgEffectData.internalBinaryRead(reader, reader.uint32(), options, message.effectdata);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgTEEffectDispatch,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgEffectData effectdata = 1; */
-		if (message.effectdata)
-			CMsgEffectData.internalBinaryWrite(
-				message.effectdata,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEEffectDispatch", [{ no: 1, name: "effectdata", kind: "message", T: () => CMsgEffectData }]);
+  }
+  create(value?: PartialMessage<CMsgTEEffectDispatch>): CMsgTEEffectDispatch {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEEffectDispatch>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEEffectDispatch,
+  ): CMsgTEEffectDispatch {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgEffectData effectdata */ 1:
+          message.effectdata = CMsgEffectData.internalBinaryRead(reader, reader.uint32(), options, message.effectdata);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgTEEffectDispatch,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgEffectData effectdata = 1; */
+    if (message.effectdata)
+      CMsgEffectData.internalBinaryWrite(
+        message.effectdata,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEEffectDispatch
@@ -2068,67 +2068,67 @@ class CMsgTEEffectDispatch$Type extends MessageType<CMsgTEEffectDispatch> {
 export const CMsgTEEffectDispatch = new CMsgTEEffectDispatch$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEEnergySplash$Type extends MessageType<CMsgTEEnergySplash> {
-	constructor() {
-		super("CMsgTEEnergySplash", [
-			{ no: 1, name: "pos", kind: "message", T: () => CMsgVector },
-			{ no: 2, name: "dir", kind: "message", T: () => CMsgVector },
-			{
-				no: 3,
-				name: "explosive",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEEnergySplash>): CMsgTEEnergySplash {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEEnergySplash>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEEnergySplash,
-	): CMsgTEEnergySplash {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector pos */ 1:
-					message.pos = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.pos);
-					break;
-				case /* optional CMsgVector dir */ 2:
-					message.dir = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.dir);
-					break;
-				case /* optional bool explosive */ 3:
-					message.explosive = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEEnergySplash, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector pos = 1; */
-		if (message.pos)
-			CMsgVector.internalBinaryWrite(message.pos, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector dir = 2; */
-		if (message.dir)
-			CMsgVector.internalBinaryWrite(message.dir, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional bool explosive = 3; */
-		if (message.explosive !== undefined) writer.tag(3, WireType.Varint).bool(message.explosive);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEEnergySplash", [
+      { no: 1, name: "pos", kind: "message", T: () => CMsgVector },
+      { no: 2, name: "dir", kind: "message", T: () => CMsgVector },
+      {
+        no: 3,
+        name: "explosive",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEEnergySplash>): CMsgTEEnergySplash {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEEnergySplash>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEEnergySplash,
+  ): CMsgTEEnergySplash {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector pos */ 1:
+          message.pos = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.pos);
+          break;
+        case /* optional CMsgVector dir */ 2:
+          message.dir = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.dir);
+          break;
+        case /* optional bool explosive */ 3:
+          message.explosive = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEEnergySplash, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector pos = 1; */
+    if (message.pos)
+      CMsgVector.internalBinaryWrite(message.pos, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector dir = 2; */
+    if (message.dir)
+      CMsgVector.internalBinaryWrite(message.dir, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional bool explosive = 3; */
+    if (message.explosive !== undefined) writer.tag(3, WireType.Varint).bool(message.explosive);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEEnergySplash
@@ -2136,77 +2136,77 @@ class CMsgTEEnergySplash$Type extends MessageType<CMsgTEEnergySplash> {
 export const CMsgTEEnergySplash = new CMsgTEEnergySplash$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEFizz$Type extends MessageType<CMsgTEFizz> {
-	constructor() {
-		super("CMsgTEFizz", [
-			{
-				no: 1,
-				name: "entity",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "density",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "current",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEFizz>): CMsgTEFizz {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEFizz>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEFizz,
-	): CMsgTEFizz {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 entity */ 1:
-					message.entity = reader.int32();
-					break;
-				case /* optional uint32 density */ 2:
-					message.density = reader.uint32();
-					break;
-				case /* optional int32 current */ 3:
-					message.current = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEFizz, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional int32 entity = 1; */
-		if (message.entity !== undefined) writer.tag(1, WireType.Varint).int32(message.entity);
-		/* optional uint32 density = 2; */
-		if (message.density !== undefined) writer.tag(2, WireType.Varint).uint32(message.density);
-		/* optional int32 current = 3; */
-		if (message.current !== undefined) writer.tag(3, WireType.Varint).int32(message.current);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEFizz", [
+      {
+        no: 1,
+        name: "entity",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "density",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "current",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEFizz>): CMsgTEFizz {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEFizz>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEFizz,
+  ): CMsgTEFizz {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 entity */ 1:
+          message.entity = reader.int32();
+          break;
+        case /* optional uint32 density */ 2:
+          message.density = reader.uint32();
+          break;
+        case /* optional int32 current */ 3:
+          message.current = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEFizz, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional int32 entity = 1; */
+    if (message.entity !== undefined) writer.tag(1, WireType.Varint).int32(message.entity);
+    /* optional uint32 density = 2; */
+    if (message.density !== undefined) writer.tag(2, WireType.Varint).uint32(message.density);
+    /* optional int32 current = 3; */
+    if (message.current !== undefined) writer.tag(3, WireType.Varint).int32(message.current);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEFizz
@@ -2214,145 +2214,145 @@ class CMsgTEFizz$Type extends MessageType<CMsgTEFizz> {
 export const CMsgTEFizz = new CMsgTEFizz$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEShatterSurface$Type extends MessageType<CMsgTEShatterSurface> {
-	constructor() {
-		super("CMsgTEShatterSurface", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{ no: 2, name: "angles", kind: "message", T: () => CMsgQAngle },
-			{ no: 3, name: "force", kind: "message", T: () => CMsgVector },
-			{ no: 4, name: "forcepos", kind: "message", T: () => CMsgVector },
-			{
-				no: 5,
-				name: "width",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 6,
-				name: "height",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 7,
-				name: "shardsize",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 8,
-				name: "surfacetype",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "frontcolor",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 10,
-				name: "backcolor",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEShatterSurface>): CMsgTEShatterSurface {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEShatterSurface>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEShatterSurface,
-	): CMsgTEShatterSurface {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional CMsgQAngle angles */ 2:
-					message.angles = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angles);
-					break;
-				case /* optional CMsgVector force */ 3:
-					message.force = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.force);
-					break;
-				case /* optional CMsgVector forcepos */ 4:
-					message.forcepos = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.forcepos);
-					break;
-				case /* optional float width */ 5:
-					message.width = reader.float();
-					break;
-				case /* optional float height */ 6:
-					message.height = reader.float();
-					break;
-				case /* optional float shardsize */ 7:
-					message.shardsize = reader.float();
-					break;
-				case /* optional uint32 surfacetype */ 8:
-					message.surfacetype = reader.uint32();
-					break;
-				case /* optional fixed32 frontcolor */ 9:
-					message.frontcolor = reader.fixed32();
-					break;
-				case /* optional fixed32 backcolor */ 10:
-					message.backcolor = reader.fixed32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgTEShatterSurface,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgQAngle angles = 2; */
-		if (message.angles)
-			CMsgQAngle.internalBinaryWrite(message.angles, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector force = 3; */
-		if (message.force)
-			CMsgVector.internalBinaryWrite(message.force, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector forcepos = 4; */
-		if (message.forcepos)
-			CMsgVector.internalBinaryWrite(message.forcepos, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
-		/* optional float width = 5; */
-		if (message.width !== undefined) writer.tag(5, WireType.Bit32).float(message.width);
-		/* optional float height = 6; */
-		if (message.height !== undefined) writer.tag(6, WireType.Bit32).float(message.height);
-		/* optional float shardsize = 7; */
-		if (message.shardsize !== undefined) writer.tag(7, WireType.Bit32).float(message.shardsize);
-		/* optional uint32 surfacetype = 8; */
-		if (message.surfacetype !== undefined) writer.tag(8, WireType.Varint).uint32(message.surfacetype);
-		/* optional fixed32 frontcolor = 9; */
-		if (message.frontcolor !== undefined) writer.tag(9, WireType.Bit32).fixed32(message.frontcolor);
-		/* optional fixed32 backcolor = 10; */
-		if (message.backcolor !== undefined) writer.tag(10, WireType.Bit32).fixed32(message.backcolor);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEShatterSurface", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      { no: 2, name: "angles", kind: "message", T: () => CMsgQAngle },
+      { no: 3, name: "force", kind: "message", T: () => CMsgVector },
+      { no: 4, name: "forcepos", kind: "message", T: () => CMsgVector },
+      {
+        no: 5,
+        name: "width",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 6,
+        name: "height",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 7,
+        name: "shardsize",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 8,
+        name: "surfacetype",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "frontcolor",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 10,
+        name: "backcolor",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEShatterSurface>): CMsgTEShatterSurface {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEShatterSurface>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEShatterSurface,
+  ): CMsgTEShatterSurface {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional CMsgQAngle angles */ 2:
+          message.angles = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angles);
+          break;
+        case /* optional CMsgVector force */ 3:
+          message.force = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.force);
+          break;
+        case /* optional CMsgVector forcepos */ 4:
+          message.forcepos = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.forcepos);
+          break;
+        case /* optional float width */ 5:
+          message.width = reader.float();
+          break;
+        case /* optional float height */ 6:
+          message.height = reader.float();
+          break;
+        case /* optional float shardsize */ 7:
+          message.shardsize = reader.float();
+          break;
+        case /* optional uint32 surfacetype */ 8:
+          message.surfacetype = reader.uint32();
+          break;
+        case /* optional fixed32 frontcolor */ 9:
+          message.frontcolor = reader.fixed32();
+          break;
+        case /* optional fixed32 backcolor */ 10:
+          message.backcolor = reader.fixed32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgTEShatterSurface,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgQAngle angles = 2; */
+    if (message.angles)
+      CMsgQAngle.internalBinaryWrite(message.angles, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector force = 3; */
+    if (message.force)
+      CMsgVector.internalBinaryWrite(message.force, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector forcepos = 4; */
+    if (message.forcepos)
+      CMsgVector.internalBinaryWrite(message.forcepos, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
+    /* optional float width = 5; */
+    if (message.width !== undefined) writer.tag(5, WireType.Bit32).float(message.width);
+    /* optional float height = 6; */
+    if (message.height !== undefined) writer.tag(6, WireType.Bit32).float(message.height);
+    /* optional float shardsize = 7; */
+    if (message.shardsize !== undefined) writer.tag(7, WireType.Bit32).float(message.shardsize);
+    /* optional uint32 surfacetype = 8; */
+    if (message.surfacetype !== undefined) writer.tag(8, WireType.Varint).uint32(message.surfacetype);
+    /* optional fixed32 frontcolor = 9; */
+    if (message.frontcolor !== undefined) writer.tag(9, WireType.Bit32).fixed32(message.frontcolor);
+    /* optional fixed32 backcolor = 10; */
+    if (message.backcolor !== undefined) writer.tag(10, WireType.Bit32).fixed32(message.backcolor);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEShatterSurface
@@ -2360,84 +2360,84 @@ class CMsgTEShatterSurface$Type extends MessageType<CMsgTEShatterSurface> {
 export const CMsgTEShatterSurface = new CMsgTEShatterSurface$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEGlowSprite$Type extends MessageType<CMsgTEGlowSprite> {
-	constructor() {
-		super("CMsgTEGlowSprite", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{
-				no: 2,
-				name: "scale",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "life",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "brightness",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEGlowSprite>): CMsgTEGlowSprite {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEGlowSprite>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEGlowSprite,
-	): CMsgTEGlowSprite {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional float scale */ 2:
-					message.scale = reader.float();
-					break;
-				case /* optional float life */ 3:
-					message.life = reader.float();
-					break;
-				case /* optional uint32 brightness */ 4:
-					message.brightness = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEGlowSprite, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional float scale = 2; */
-		if (message.scale !== undefined) writer.tag(2, WireType.Bit32).float(message.scale);
-		/* optional float life = 3; */
-		if (message.life !== undefined) writer.tag(3, WireType.Bit32).float(message.life);
-		/* optional uint32 brightness = 4; */
-		if (message.brightness !== undefined) writer.tag(4, WireType.Varint).uint32(message.brightness);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEGlowSprite", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      {
+        no: 2,
+        name: "scale",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "life",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "brightness",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEGlowSprite>): CMsgTEGlowSprite {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEGlowSprite>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEGlowSprite,
+  ): CMsgTEGlowSprite {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional float scale */ 2:
+          message.scale = reader.float();
+          break;
+        case /* optional float life */ 3:
+          message.life = reader.float();
+          break;
+        case /* optional uint32 brightness */ 4:
+          message.brightness = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEGlowSprite, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional float scale = 2; */
+    if (message.scale !== undefined) writer.tag(2, WireType.Bit32).float(message.scale);
+    /* optional float life = 3; */
+    if (message.life !== undefined) writer.tag(3, WireType.Bit32).float(message.life);
+    /* optional uint32 brightness = 4; */
+    if (message.brightness !== undefined) writer.tag(4, WireType.Varint).uint32(message.brightness);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEGlowSprite
@@ -2445,67 +2445,67 @@ class CMsgTEGlowSprite$Type extends MessageType<CMsgTEGlowSprite> {
 export const CMsgTEGlowSprite = new CMsgTEGlowSprite$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEImpact$Type extends MessageType<CMsgTEImpact> {
-	constructor() {
-		super("CMsgTEImpact", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{ no: 2, name: "normal", kind: "message", T: () => CMsgVector },
-			{
-				no: 3,
-				name: "type",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEImpact>): CMsgTEImpact {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEImpact>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEImpact,
-	): CMsgTEImpact {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional CMsgVector normal */ 2:
-					message.normal = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.normal);
-					break;
-				case /* optional uint32 type */ 3:
-					message.type = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEImpact, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector normal = 2; */
-		if (message.normal)
-			CMsgVector.internalBinaryWrite(message.normal, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional uint32 type = 3; */
-		if (message.type !== undefined) writer.tag(3, WireType.Varint).uint32(message.type);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEImpact", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      { no: 2, name: "normal", kind: "message", T: () => CMsgVector },
+      {
+        no: 3,
+        name: "type",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEImpact>): CMsgTEImpact {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEImpact>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEImpact,
+  ): CMsgTEImpact {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional CMsgVector normal */ 2:
+          message.normal = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.normal);
+          break;
+        case /* optional uint32 type */ 3:
+          message.type = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEImpact, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector normal = 2; */
+    if (message.normal)
+      CMsgVector.internalBinaryWrite(message.normal, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional uint32 type = 3; */
+    if (message.type !== undefined) writer.tag(3, WireType.Varint).uint32(message.type);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEImpact
@@ -2513,79 +2513,79 @@ class CMsgTEImpact$Type extends MessageType<CMsgTEImpact> {
 export const CMsgTEImpact = new CMsgTEImpact$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEMuzzleFlash$Type extends MessageType<CMsgTEMuzzleFlash> {
-	constructor() {
-		super("CMsgTEMuzzleFlash", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{ no: 2, name: "angles", kind: "message", T: () => CMsgQAngle },
-			{
-				no: 3,
-				name: "scale",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "type",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEMuzzleFlash>): CMsgTEMuzzleFlash {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEMuzzleFlash>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEMuzzleFlash,
-	): CMsgTEMuzzleFlash {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional CMsgQAngle angles */ 2:
-					message.angles = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angles);
-					break;
-				case /* optional float scale */ 3:
-					message.scale = reader.float();
-					break;
-				case /* optional uint32 type */ 4:
-					message.type = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEMuzzleFlash, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgQAngle angles = 2; */
-		if (message.angles)
-			CMsgQAngle.internalBinaryWrite(message.angles, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional float scale = 3; */
-		if (message.scale !== undefined) writer.tag(3, WireType.Bit32).float(message.scale);
-		/* optional uint32 type = 4; */
-		if (message.type !== undefined) writer.tag(4, WireType.Varint).uint32(message.type);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEMuzzleFlash", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      { no: 2, name: "angles", kind: "message", T: () => CMsgQAngle },
+      {
+        no: 3,
+        name: "scale",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "type",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEMuzzleFlash>): CMsgTEMuzzleFlash {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEMuzzleFlash>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEMuzzleFlash,
+  ): CMsgTEMuzzleFlash {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional CMsgQAngle angles */ 2:
+          message.angles = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angles);
+          break;
+        case /* optional float scale */ 3:
+          message.scale = reader.float();
+          break;
+        case /* optional uint32 type */ 4:
+          message.type = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEMuzzleFlash, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgQAngle angles = 2; */
+    if (message.angles)
+      CMsgQAngle.internalBinaryWrite(message.angles, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional float scale = 3; */
+    if (message.scale !== undefined) writer.tag(3, WireType.Bit32).float(message.scale);
+    /* optional uint32 type = 4; */
+    if (message.type !== undefined) writer.tag(4, WireType.Varint).uint32(message.type);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEMuzzleFlash
@@ -2593,79 +2593,79 @@ class CMsgTEMuzzleFlash$Type extends MessageType<CMsgTEMuzzleFlash> {
 export const CMsgTEMuzzleFlash = new CMsgTEMuzzleFlash$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEBloodStream$Type extends MessageType<CMsgTEBloodStream> {
-	constructor() {
-		super("CMsgTEBloodStream", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{ no: 2, name: "direction", kind: "message", T: () => CMsgVector },
-			{
-				no: 3,
-				name: "color",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 4,
-				name: "amount",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEBloodStream>): CMsgTEBloodStream {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEBloodStream>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEBloodStream,
-	): CMsgTEBloodStream {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional CMsgVector direction */ 2:
-					message.direction = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.direction);
-					break;
-				case /* optional fixed32 color */ 3:
-					message.color = reader.fixed32();
-					break;
-				case /* optional uint32 amount */ 4:
-					message.amount = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEBloodStream, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector direction = 2; */
-		if (message.direction)
-			CMsgVector.internalBinaryWrite(message.direction, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional fixed32 color = 3; */
-		if (message.color !== undefined) writer.tag(3, WireType.Bit32).fixed32(message.color);
-		/* optional uint32 amount = 4; */
-		if (message.amount !== undefined) writer.tag(4, WireType.Varint).uint32(message.amount);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEBloodStream", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      { no: 2, name: "direction", kind: "message", T: () => CMsgVector },
+      {
+        no: 3,
+        name: "color",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 4,
+        name: "amount",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEBloodStream>): CMsgTEBloodStream {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEBloodStream>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEBloodStream,
+  ): CMsgTEBloodStream {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional CMsgVector direction */ 2:
+          message.direction = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.direction);
+          break;
+        case /* optional fixed32 color */ 3:
+          message.color = reader.fixed32();
+          break;
+        case /* optional uint32 amount */ 4:
+          message.amount = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEBloodStream, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector direction = 2; */
+    if (message.direction)
+      CMsgVector.internalBinaryWrite(message.direction, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional fixed32 color = 3; */
+    if (message.color !== undefined) writer.tag(3, WireType.Bit32).fixed32(message.color);
+    /* optional uint32 amount = 4; */
+    if (message.amount !== undefined) writer.tag(4, WireType.Varint).uint32(message.amount);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEBloodStream
@@ -2673,214 +2673,214 @@ class CMsgTEBloodStream$Type extends MessageType<CMsgTEBloodStream> {
 export const CMsgTEBloodStream = new CMsgTEBloodStream$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEExplosion$Type extends MessageType<CMsgTEExplosion> {
-	constructor() {
-		super("CMsgTEExplosion", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{
-				no: 2,
-				name: "framerate",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{ no: 4, name: "normal", kind: "message", T: () => CMsgVector },
-			{
-				no: 5,
-				name: "materialtype",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "radius",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "magnitude",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "scale",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 9,
-				name: "affect_ragdolls",
-				kind: "scalar",
-				localName: "affect_ragdolls",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 10,
-				name: "effect_name",
-				kind: "scalar",
-				localName: "effect_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 11,
-				name: "explosion_type",
-				kind: "scalar",
-				localName: "explosion_type",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 12,
-				name: "create_debris",
-				kind: "scalar",
-				localName: "create_debris",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 13,
-				name: "debris_origin",
-				kind: "message",
-				localName: "debris_origin",
-				T: () => CMsgVector,
-			},
-			{
-				no: 14,
-				name: "debris_surfaceprop",
-				kind: "scalar",
-				localName: "debris_surfaceprop",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEExplosion>): CMsgTEExplosion {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEExplosion>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEExplosion,
-	): CMsgTEExplosion {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional uint32 framerate */ 2:
-					message.framerate = reader.uint32();
-					break;
-				case /* optional uint32 flags */ 3:
-					message.flags = reader.uint32();
-					break;
-				case /* optional CMsgVector normal */ 4:
-					message.normal = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.normal);
-					break;
-				case /* optional uint32 materialtype */ 5:
-					message.materialtype = reader.uint32();
-					break;
-				case /* optional uint32 radius */ 6:
-					message.radius = reader.uint32();
-					break;
-				case /* optional uint32 magnitude */ 7:
-					message.magnitude = reader.uint32();
-					break;
-				case /* optional float scale */ 8:
-					message.scale = reader.float();
-					break;
-				case /* optional bool affect_ragdolls */ 9:
-					message.affect_ragdolls = reader.bool();
-					break;
-				case /* optional string effect_name */ 10:
-					message.effect_name = reader.string();
-					break;
-				case /* optional uint32 explosion_type */ 11:
-					message.explosion_type = reader.uint32();
-					break;
-				case /* optional bool create_debris */ 12:
-					message.create_debris = reader.bool();
-					break;
-				case /* optional CMsgVector debris_origin */ 13:
-					message.debris_origin = CMsgVector.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.debris_origin,
-					);
-					break;
-				case /* optional fixed32 debris_surfaceprop */ 14:
-					message.debris_surfaceprop = reader.fixed32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEExplosion, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional uint32 framerate = 2; */
-		if (message.framerate !== undefined) writer.tag(2, WireType.Varint).uint32(message.framerate);
-		/* optional uint32 flags = 3; */
-		if (message.flags !== undefined) writer.tag(3, WireType.Varint).uint32(message.flags);
-		/* optional CMsgVector normal = 4; */
-		if (message.normal)
-			CMsgVector.internalBinaryWrite(message.normal, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
-		/* optional uint32 materialtype = 5; */
-		if (message.materialtype !== undefined) writer.tag(5, WireType.Varint).uint32(message.materialtype);
-		/* optional uint32 radius = 6; */
-		if (message.radius !== undefined) writer.tag(6, WireType.Varint).uint32(message.radius);
-		/* optional uint32 magnitude = 7; */
-		if (message.magnitude !== undefined) writer.tag(7, WireType.Varint).uint32(message.magnitude);
-		/* optional float scale = 8; */
-		if (message.scale !== undefined) writer.tag(8, WireType.Bit32).float(message.scale);
-		/* optional bool affect_ragdolls = 9; */
-		if (message.affect_ragdolls !== undefined) writer.tag(9, WireType.Varint).bool(message.affect_ragdolls);
-		/* optional string effect_name = 10; */
-		if (message.effect_name !== undefined) writer.tag(10, WireType.LengthDelimited).string(message.effect_name);
-		/* optional uint32 explosion_type = 11; */
-		if (message.explosion_type !== undefined) writer.tag(11, WireType.Varint).uint32(message.explosion_type);
-		/* optional bool create_debris = 12; */
-		if (message.create_debris !== undefined) writer.tag(12, WireType.Varint).bool(message.create_debris);
-		/* optional CMsgVector debris_origin = 13; */
-		if (message.debris_origin)
-			CMsgVector.internalBinaryWrite(
-				message.debris_origin,
-				writer.tag(13, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional fixed32 debris_surfaceprop = 14; */
-		if (message.debris_surfaceprop !== undefined) writer.tag(14, WireType.Bit32).fixed32(message.debris_surfaceprop);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEExplosion", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      {
+        no: 2,
+        name: "framerate",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      { no: 4, name: "normal", kind: "message", T: () => CMsgVector },
+      {
+        no: 5,
+        name: "materialtype",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "radius",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "magnitude",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "scale",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 9,
+        name: "affect_ragdolls",
+        kind: "scalar",
+        localName: "affect_ragdolls",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 10,
+        name: "effect_name",
+        kind: "scalar",
+        localName: "effect_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 11,
+        name: "explosion_type",
+        kind: "scalar",
+        localName: "explosion_type",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 12,
+        name: "create_debris",
+        kind: "scalar",
+        localName: "create_debris",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 13,
+        name: "debris_origin",
+        kind: "message",
+        localName: "debris_origin",
+        T: () => CMsgVector,
+      },
+      {
+        no: 14,
+        name: "debris_surfaceprop",
+        kind: "scalar",
+        localName: "debris_surfaceprop",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEExplosion>): CMsgTEExplosion {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEExplosion>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEExplosion,
+  ): CMsgTEExplosion {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional uint32 framerate */ 2:
+          message.framerate = reader.uint32();
+          break;
+        case /* optional uint32 flags */ 3:
+          message.flags = reader.uint32();
+          break;
+        case /* optional CMsgVector normal */ 4:
+          message.normal = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.normal);
+          break;
+        case /* optional uint32 materialtype */ 5:
+          message.materialtype = reader.uint32();
+          break;
+        case /* optional uint32 radius */ 6:
+          message.radius = reader.uint32();
+          break;
+        case /* optional uint32 magnitude */ 7:
+          message.magnitude = reader.uint32();
+          break;
+        case /* optional float scale */ 8:
+          message.scale = reader.float();
+          break;
+        case /* optional bool affect_ragdolls */ 9:
+          message.affect_ragdolls = reader.bool();
+          break;
+        case /* optional string effect_name */ 10:
+          message.effect_name = reader.string();
+          break;
+        case /* optional uint32 explosion_type */ 11:
+          message.explosion_type = reader.uint32();
+          break;
+        case /* optional bool create_debris */ 12:
+          message.create_debris = reader.bool();
+          break;
+        case /* optional CMsgVector debris_origin */ 13:
+          message.debris_origin = CMsgVector.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.debris_origin,
+          );
+          break;
+        case /* optional fixed32 debris_surfaceprop */ 14:
+          message.debris_surfaceprop = reader.fixed32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEExplosion, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional uint32 framerate = 2; */
+    if (message.framerate !== undefined) writer.tag(2, WireType.Varint).uint32(message.framerate);
+    /* optional uint32 flags = 3; */
+    if (message.flags !== undefined) writer.tag(3, WireType.Varint).uint32(message.flags);
+    /* optional CMsgVector normal = 4; */
+    if (message.normal)
+      CMsgVector.internalBinaryWrite(message.normal, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
+    /* optional uint32 materialtype = 5; */
+    if (message.materialtype !== undefined) writer.tag(5, WireType.Varint).uint32(message.materialtype);
+    /* optional uint32 radius = 6; */
+    if (message.radius !== undefined) writer.tag(6, WireType.Varint).uint32(message.radius);
+    /* optional uint32 magnitude = 7; */
+    if (message.magnitude !== undefined) writer.tag(7, WireType.Varint).uint32(message.magnitude);
+    /* optional float scale = 8; */
+    if (message.scale !== undefined) writer.tag(8, WireType.Bit32).float(message.scale);
+    /* optional bool affect_ragdolls = 9; */
+    if (message.affect_ragdolls !== undefined) writer.tag(9, WireType.Varint).bool(message.affect_ragdolls);
+    /* optional string effect_name = 10; */
+    if (message.effect_name !== undefined) writer.tag(10, WireType.LengthDelimited).string(message.effect_name);
+    /* optional uint32 explosion_type = 11; */
+    if (message.explosion_type !== undefined) writer.tag(11, WireType.Varint).uint32(message.explosion_type);
+    /* optional bool create_debris = 12; */
+    if (message.create_debris !== undefined) writer.tag(12, WireType.Varint).bool(message.create_debris);
+    /* optional CMsgVector debris_origin = 13; */
+    if (message.debris_origin)
+      CMsgVector.internalBinaryWrite(
+        message.debris_origin,
+        writer.tag(13, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional fixed32 debris_surfaceprop = 14; */
+    if (message.debris_surfaceprop !== undefined) writer.tag(14, WireType.Bit32).fixed32(message.debris_surfaceprop);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEExplosion
@@ -2888,79 +2888,79 @@ class CMsgTEExplosion$Type extends MessageType<CMsgTEExplosion> {
 export const CMsgTEExplosion = new CMsgTEExplosion$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEDust$Type extends MessageType<CMsgTEDust> {
-	constructor() {
-		super("CMsgTEDust", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{
-				no: 2,
-				name: "size",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "speed",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{ no: 4, name: "direction", kind: "message", T: () => CMsgVector },
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEDust>): CMsgTEDust {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEDust>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEDust,
-	): CMsgTEDust {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional float size */ 2:
-					message.size = reader.float();
-					break;
-				case /* optional float speed */ 3:
-					message.speed = reader.float();
-					break;
-				case /* optional CMsgVector direction */ 4:
-					message.direction = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.direction);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEDust, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional float size = 2; */
-		if (message.size !== undefined) writer.tag(2, WireType.Bit32).float(message.size);
-		/* optional float speed = 3; */
-		if (message.speed !== undefined) writer.tag(3, WireType.Bit32).float(message.speed);
-		/* optional CMsgVector direction = 4; */
-		if (message.direction)
-			CMsgVector.internalBinaryWrite(message.direction, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEDust", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      {
+        no: 2,
+        name: "size",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "speed",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      { no: 4, name: "direction", kind: "message", T: () => CMsgVector },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEDust>): CMsgTEDust {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEDust>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEDust,
+  ): CMsgTEDust {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional float size */ 2:
+          message.size = reader.float();
+          break;
+        case /* optional float speed */ 3:
+          message.speed = reader.float();
+          break;
+        case /* optional CMsgVector direction */ 4:
+          message.direction = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.direction);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEDust, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional float size = 2; */
+    if (message.size !== undefined) writer.tag(2, WireType.Bit32).float(message.size);
+    /* optional float speed = 3; */
+    if (message.speed !== undefined) writer.tag(3, WireType.Bit32).float(message.speed);
+    /* optional CMsgVector direction = 4; */
+    if (message.direction)
+      CMsgVector.internalBinaryWrite(message.direction, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEDust
@@ -2968,60 +2968,60 @@ class CMsgTEDust$Type extends MessageType<CMsgTEDust> {
 export const CMsgTEDust = new CMsgTEDust$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTELargeFunnel$Type extends MessageType<CMsgTELargeFunnel> {
-	constructor() {
-		super("CMsgTELargeFunnel", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{
-				no: 2,
-				name: "reversed",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTELargeFunnel>): CMsgTELargeFunnel {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTELargeFunnel>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTELargeFunnel,
-	): CMsgTELargeFunnel {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional uint32 reversed */ 2:
-					message.reversed = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTELargeFunnel, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional uint32 reversed = 2; */
-		if (message.reversed !== undefined) writer.tag(2, WireType.Varint).uint32(message.reversed);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTELargeFunnel", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      {
+        no: 2,
+        name: "reversed",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTELargeFunnel>): CMsgTELargeFunnel {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTELargeFunnel>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTELargeFunnel,
+  ): CMsgTELargeFunnel {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional uint32 reversed */ 2:
+          message.reversed = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTELargeFunnel, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional uint32 reversed = 2; */
+    if (message.reversed !== undefined) writer.tag(2, WireType.Varint).uint32(message.reversed);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTELargeFunnel
@@ -3029,79 +3029,79 @@ class CMsgTELargeFunnel$Type extends MessageType<CMsgTELargeFunnel> {
 export const CMsgTELargeFunnel = new CMsgTELargeFunnel$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTESparks$Type extends MessageType<CMsgTESparks> {
-	constructor() {
-		super("CMsgTESparks", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{
-				no: 2,
-				name: "magnitude",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "length",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{ no: 4, name: "direction", kind: "message", T: () => CMsgVector },
-		]);
-	}
-	create(value?: PartialMessage<CMsgTESparks>): CMsgTESparks {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTESparks>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTESparks,
-	): CMsgTESparks {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional uint32 magnitude */ 2:
-					message.magnitude = reader.uint32();
-					break;
-				case /* optional uint32 length */ 3:
-					message.length = reader.uint32();
-					break;
-				case /* optional CMsgVector direction */ 4:
-					message.direction = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.direction);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTESparks, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional uint32 magnitude = 2; */
-		if (message.magnitude !== undefined) writer.tag(2, WireType.Varint).uint32(message.magnitude);
-		/* optional uint32 length = 3; */
-		if (message.length !== undefined) writer.tag(3, WireType.Varint).uint32(message.length);
-		/* optional CMsgVector direction = 4; */
-		if (message.direction)
-			CMsgVector.internalBinaryWrite(message.direction, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTESparks", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      {
+        no: 2,
+        name: "magnitude",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "length",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      { no: 4, name: "direction", kind: "message", T: () => CMsgVector },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTESparks>): CMsgTESparks {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTESparks>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTESparks,
+  ): CMsgTESparks {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional uint32 magnitude */ 2:
+          message.magnitude = reader.uint32();
+          break;
+        case /* optional uint32 length */ 3:
+          message.length = reader.uint32();
+          break;
+        case /* optional CMsgVector direction */ 4:
+          message.direction = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.direction);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTESparks, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional uint32 magnitude = 2; */
+    if (message.magnitude !== undefined) writer.tag(2, WireType.Varint).uint32(message.magnitude);
+    /* optional uint32 length = 3; */
+    if (message.length !== undefined) writer.tag(3, WireType.Varint).uint32(message.length);
+    /* optional CMsgVector direction = 4; */
+    if (message.direction)
+      CMsgVector.internalBinaryWrite(message.direction, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTESparks
@@ -3109,175 +3109,175 @@ class CMsgTESparks$Type extends MessageType<CMsgTESparks> {
 export const CMsgTESparks = new CMsgTESparks$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEPhysicsProp$Type extends MessageType<CMsgTEPhysicsProp> {
-	constructor() {
-		super("CMsgTEPhysicsProp", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{ no: 2, name: "velocity", kind: "message", T: () => CMsgVector },
-			{ no: 3, name: "angles", kind: "message", T: () => CMsgQAngle },
-			{
-				no: 4,
-				name: "skin",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 5,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "effects",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "color",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 8,
-				name: "modelindex",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 9,
-				name: "unused_breakmodelsnottomake",
-				kind: "scalar",
-				localName: "unused_breakmodelsnottomake",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "scale",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{ no: 11, name: "dmgpos", kind: "message", T: () => CMsgVector },
-			{ no: 12, name: "dmgdir", kind: "message", T: () => CMsgVector },
-			{
-				no: 13,
-				name: "dmgtype",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEPhysicsProp>): CMsgTEPhysicsProp {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEPhysicsProp>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEPhysicsProp,
-	): CMsgTEPhysicsProp {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional CMsgVector velocity */ 2:
-					message.velocity = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.velocity);
-					break;
-				case /* optional CMsgQAngle angles */ 3:
-					message.angles = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angles);
-					break;
-				case /* optional fixed32 skin */ 4:
-					message.skin = reader.fixed32();
-					break;
-				case /* optional uint32 flags */ 5:
-					message.flags = reader.uint32();
-					break;
-				case /* optional uint32 effects */ 6:
-					message.effects = reader.uint32();
-					break;
-				case /* optional fixed32 color */ 7:
-					message.color = reader.fixed32();
-					break;
-				case /* optional fixed64 modelindex */ 8:
-					message.modelindex = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 unused_breakmodelsnottomake */ 9:
-					message.unused_breakmodelsnottomake = reader.uint32();
-					break;
-				case /* optional float scale */ 10:
-					message.scale = reader.float();
-					break;
-				case /* optional CMsgVector dmgpos */ 11:
-					message.dmgpos = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.dmgpos);
-					break;
-				case /* optional CMsgVector dmgdir */ 12:
-					message.dmgdir = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.dmgdir);
-					break;
-				case /* optional int32 dmgtype */ 13:
-					message.dmgtype = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEPhysicsProp, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector velocity = 2; */
-		if (message.velocity)
-			CMsgVector.internalBinaryWrite(message.velocity, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgQAngle angles = 3; */
-		if (message.angles)
-			CMsgQAngle.internalBinaryWrite(message.angles, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
-		/* optional fixed32 skin = 4; */
-		if (message.skin !== undefined) writer.tag(4, WireType.Bit32).fixed32(message.skin);
-		/* optional uint32 flags = 5; */
-		if (message.flags !== undefined) writer.tag(5, WireType.Varint).uint32(message.flags);
-		/* optional uint32 effects = 6; */
-		if (message.effects !== undefined) writer.tag(6, WireType.Varint).uint32(message.effects);
-		/* optional fixed32 color = 7; */
-		if (message.color !== undefined) writer.tag(7, WireType.Bit32).fixed32(message.color);
-		/* optional fixed64 modelindex = 8; */
-		if (message.modelindex !== undefined) writer.tag(8, WireType.Bit64).fixed64(message.modelindex);
-		/* optional uint32 unused_breakmodelsnottomake = 9; */
-		if (message.unused_breakmodelsnottomake !== undefined)
-			writer.tag(9, WireType.Varint).uint32(message.unused_breakmodelsnottomake);
-		/* optional float scale = 10; */
-		if (message.scale !== undefined) writer.tag(10, WireType.Bit32).float(message.scale);
-		/* optional CMsgVector dmgpos = 11; */
-		if (message.dmgpos)
-			CMsgVector.internalBinaryWrite(message.dmgpos, writer.tag(11, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector dmgdir = 12; */
-		if (message.dmgdir)
-			CMsgVector.internalBinaryWrite(message.dmgdir, writer.tag(12, WireType.LengthDelimited).fork(), options).join();
-		/* optional int32 dmgtype = 13; */
-		if (message.dmgtype !== undefined) writer.tag(13, WireType.Varint).int32(message.dmgtype);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEPhysicsProp", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      { no: 2, name: "velocity", kind: "message", T: () => CMsgVector },
+      { no: 3, name: "angles", kind: "message", T: () => CMsgQAngle },
+      {
+        no: 4,
+        name: "skin",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 5,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "effects",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "color",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 8,
+        name: "modelindex",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 9,
+        name: "unused_breakmodelsnottomake",
+        kind: "scalar",
+        localName: "unused_breakmodelsnottomake",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "scale",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      { no: 11, name: "dmgpos", kind: "message", T: () => CMsgVector },
+      { no: 12, name: "dmgdir", kind: "message", T: () => CMsgVector },
+      {
+        no: 13,
+        name: "dmgtype",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEPhysicsProp>): CMsgTEPhysicsProp {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEPhysicsProp>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEPhysicsProp,
+  ): CMsgTEPhysicsProp {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional CMsgVector velocity */ 2:
+          message.velocity = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.velocity);
+          break;
+        case /* optional CMsgQAngle angles */ 3:
+          message.angles = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angles);
+          break;
+        case /* optional fixed32 skin */ 4:
+          message.skin = reader.fixed32();
+          break;
+        case /* optional uint32 flags */ 5:
+          message.flags = reader.uint32();
+          break;
+        case /* optional uint32 effects */ 6:
+          message.effects = reader.uint32();
+          break;
+        case /* optional fixed32 color */ 7:
+          message.color = reader.fixed32();
+          break;
+        case /* optional fixed64 modelindex */ 8:
+          message.modelindex = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 unused_breakmodelsnottomake */ 9:
+          message.unused_breakmodelsnottomake = reader.uint32();
+          break;
+        case /* optional float scale */ 10:
+          message.scale = reader.float();
+          break;
+        case /* optional CMsgVector dmgpos */ 11:
+          message.dmgpos = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.dmgpos);
+          break;
+        case /* optional CMsgVector dmgdir */ 12:
+          message.dmgdir = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.dmgdir);
+          break;
+        case /* optional int32 dmgtype */ 13:
+          message.dmgtype = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEPhysicsProp, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector velocity = 2; */
+    if (message.velocity)
+      CMsgVector.internalBinaryWrite(message.velocity, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgQAngle angles = 3; */
+    if (message.angles)
+      CMsgQAngle.internalBinaryWrite(message.angles, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
+    /* optional fixed32 skin = 4; */
+    if (message.skin !== undefined) writer.tag(4, WireType.Bit32).fixed32(message.skin);
+    /* optional uint32 flags = 5; */
+    if (message.flags !== undefined) writer.tag(5, WireType.Varint).uint32(message.flags);
+    /* optional uint32 effects = 6; */
+    if (message.effects !== undefined) writer.tag(6, WireType.Varint).uint32(message.effects);
+    /* optional fixed32 color = 7; */
+    if (message.color !== undefined) writer.tag(7, WireType.Bit32).fixed32(message.color);
+    /* optional fixed64 modelindex = 8; */
+    if (message.modelindex !== undefined) writer.tag(8, WireType.Bit64).fixed64(message.modelindex);
+    /* optional uint32 unused_breakmodelsnottomake = 9; */
+    if (message.unused_breakmodelsnottomake !== undefined)
+      writer.tag(9, WireType.Varint).uint32(message.unused_breakmodelsnottomake);
+    /* optional float scale = 10; */
+    if (message.scale !== undefined) writer.tag(10, WireType.Bit32).float(message.scale);
+    /* optional CMsgVector dmgpos = 11; */
+    if (message.dmgpos)
+      CMsgVector.internalBinaryWrite(message.dmgpos, writer.tag(11, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector dmgdir = 12; */
+    if (message.dmgdir)
+      CMsgVector.internalBinaryWrite(message.dmgdir, writer.tag(12, WireType.LengthDelimited).fork(), options).join();
+    /* optional int32 dmgtype = 13; */
+    if (message.dmgtype !== undefined) writer.tag(13, WireType.Varint).int32(message.dmgtype);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEPhysicsProp
@@ -3285,72 +3285,72 @@ class CMsgTEPhysicsProp$Type extends MessageType<CMsgTEPhysicsProp> {
 export const CMsgTEPhysicsProp = new CMsgTEPhysicsProp$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEPlayerDecal$Type extends MessageType<CMsgTEPlayerDecal> {
-	constructor() {
-		super("CMsgTEPlayerDecal", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{
-				no: 2,
-				name: "player",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "entity",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEPlayerDecal>): CMsgTEPlayerDecal {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEPlayerDecal>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEPlayerDecal,
-	): CMsgTEPlayerDecal {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional int32 player */ 2:
-					message.player = reader.int32();
-					break;
-				case /* optional int32 entity */ 3:
-					message.entity = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEPlayerDecal, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional int32 player = 2; */
-		if (message.player !== undefined) writer.tag(2, WireType.Varint).int32(message.player);
-		/* optional int32 entity = 3; */
-		if (message.entity !== undefined) writer.tag(3, WireType.Varint).int32(message.entity);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEPlayerDecal", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      {
+        no: 2,
+        name: "player",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "entity",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEPlayerDecal>): CMsgTEPlayerDecal {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEPlayerDecal>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEPlayerDecal,
+  ): CMsgTEPlayerDecal {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional int32 player */ 2:
+          message.player = reader.int32();
+          break;
+        case /* optional int32 entity */ 3:
+          message.entity = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEPlayerDecal, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional int32 player = 2; */
+    if (message.player !== undefined) writer.tag(2, WireType.Varint).int32(message.player);
+    /* optional int32 entity = 3; */
+    if (message.entity !== undefined) writer.tag(3, WireType.Varint).int32(message.entity);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEPlayerDecal
@@ -3358,83 +3358,83 @@ class CMsgTEPlayerDecal$Type extends MessageType<CMsgTEPlayerDecal> {
 export const CMsgTEPlayerDecal = new CMsgTEPlayerDecal$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEProjectedDecal$Type extends MessageType<CMsgTEProjectedDecal> {
-	constructor() {
-		super("CMsgTEProjectedDecal", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{ no: 2, name: "angles", kind: "message", T: () => CMsgQAngle },
-			{
-				no: 3,
-				name: "index",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "distance",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEProjectedDecal>): CMsgTEProjectedDecal {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEProjectedDecal>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEProjectedDecal,
-	): CMsgTEProjectedDecal {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional CMsgQAngle angles */ 2:
-					message.angles = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angles);
-					break;
-				case /* optional uint32 index */ 3:
-					message.index = reader.uint32();
-					break;
-				case /* optional float distance */ 4:
-					message.distance = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgTEProjectedDecal,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgQAngle angles = 2; */
-		if (message.angles)
-			CMsgQAngle.internalBinaryWrite(message.angles, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional uint32 index = 3; */
-		if (message.index !== undefined) writer.tag(3, WireType.Varint).uint32(message.index);
-		/* optional float distance = 4; */
-		if (message.distance !== undefined) writer.tag(4, WireType.Bit32).float(message.distance);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEProjectedDecal", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      { no: 2, name: "angles", kind: "message", T: () => CMsgQAngle },
+      {
+        no: 3,
+        name: "index",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "distance",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEProjectedDecal>): CMsgTEProjectedDecal {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEProjectedDecal>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEProjectedDecal,
+  ): CMsgTEProjectedDecal {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional CMsgQAngle angles */ 2:
+          message.angles = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angles);
+          break;
+        case /* optional uint32 index */ 3:
+          message.index = reader.uint32();
+          break;
+        case /* optional float distance */ 4:
+          message.distance = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgTEProjectedDecal,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgQAngle angles = 2; */
+    if (message.angles)
+      CMsgQAngle.internalBinaryWrite(message.angles, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional uint32 index = 3; */
+    if (message.index !== undefined) writer.tag(3, WireType.Varint).uint32(message.index);
+    /* optional float distance = 4; */
+    if (message.distance !== undefined) writer.tag(4, WireType.Bit32).float(message.distance);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEProjectedDecal
@@ -3442,60 +3442,60 @@ class CMsgTEProjectedDecal$Type extends MessageType<CMsgTEProjectedDecal> {
 export const CMsgTEProjectedDecal = new CMsgTEProjectedDecal$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTESmoke$Type extends MessageType<CMsgTESmoke> {
-	constructor() {
-		super("CMsgTESmoke", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{
-				no: 2,
-				name: "scale",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTESmoke>): CMsgTESmoke {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTESmoke>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTESmoke,
-	): CMsgTESmoke {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional float scale */ 2:
-					message.scale = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTESmoke, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional float scale = 2; */
-		if (message.scale !== undefined) writer.tag(2, WireType.Bit32).float(message.scale);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTESmoke", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      {
+        no: 2,
+        name: "scale",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTESmoke>): CMsgTESmoke {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTESmoke>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTESmoke,
+  ): CMsgTESmoke {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional float scale */ 2:
+          message.scale = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTESmoke, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional float scale = 2; */
+    if (message.scale !== undefined) writer.tag(2, WireType.Bit32).float(message.scale);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTESmoke
@@ -3503,67 +3503,67 @@ class CMsgTESmoke$Type extends MessageType<CMsgTESmoke> {
 export const CMsgTESmoke = new CMsgTESmoke$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTEWorldDecal$Type extends MessageType<CMsgTEWorldDecal> {
-	constructor() {
-		super("CMsgTEWorldDecal", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{ no: 2, name: "normal", kind: "message", T: () => CMsgVector },
-			{
-				no: 3,
-				name: "index",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgTEWorldDecal>): CMsgTEWorldDecal {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTEWorldDecal>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTEWorldDecal,
-	): CMsgTEWorldDecal {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional CMsgVector normal */ 2:
-					message.normal = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.normal);
-					break;
-				case /* optional uint32 index */ 3:
-					message.index = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTEWorldDecal, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector normal = 2; */
-		if (message.normal)
-			CMsgVector.internalBinaryWrite(message.normal, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional uint32 index = 3; */
-		if (message.index !== undefined) writer.tag(3, WireType.Varint).uint32(message.index);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTEWorldDecal", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      { no: 2, name: "normal", kind: "message", T: () => CMsgVector },
+      {
+        no: 3,
+        name: "index",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTEWorldDecal>): CMsgTEWorldDecal {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTEWorldDecal>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTEWorldDecal,
+  ): CMsgTEWorldDecal {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional CMsgVector normal */ 2:
+          message.normal = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.normal);
+          break;
+        case /* optional uint32 index */ 3:
+          message.index = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTEWorldDecal, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector normal = 2; */
+    if (message.normal)
+      CMsgVector.internalBinaryWrite(message.normal, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional uint32 index = 3; */
+    if (message.index !== undefined) writer.tag(3, WireType.Varint).uint32(message.index);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTEWorldDecal

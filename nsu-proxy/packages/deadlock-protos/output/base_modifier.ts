@@ -15,789 +15,789 @@ import { CMsgVector } from "./networkbasetypes.js";
  * @generated from protobuf message CModifierTableEntry
  */
 export interface CModifierTableEntry {
-	/**
-	 * @generated from protobuf field: MODIFIER_ENTRY_TYPE entry_type = 1;
-	 */
-	entry_type: MODIFIER_ENTRY_TYPE;
-	/**
-	 * @generated from protobuf field: uint32 parent = 2;
-	 */
-	parent: number;
-	/**
-	 * @generated from protobuf field: uint32 serial_number = 3;
-	 */
-	serial_number: number;
-	/**
-	 * @generated from protobuf field: optional uint32 modifier_subclass = 4;
-	 */
-	modifier_subclass?: number;
-	/**
-	 * @generated from protobuf field: optional int32 stack_count = 5;
-	 */
-	stack_count?: number;
-	/**
-	 * @generated from protobuf field: optional int32 max_stack_count = 6;
-	 */
-	max_stack_count?: number;
-	/**
-	 * @generated from protobuf field: optional float last_applied_time = 7;
-	 */
-	last_applied_time?: number;
-	/**
-	 * @generated from protobuf field: optional float duration = 8;
-	 */
-	duration?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 caster = 9;
-	 */
-	caster?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 ability = 10;
-	 */
-	ability?: number;
-	/**
-	 * @generated from protobuf field: optional int32 aura_provider_serial_number = 11;
-	 */
-	aura_provider_serial_number?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 aura_provider_ehandle = 12;
-	 */
-	aura_provider_ehandle?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 ability_subclass = 13;
-	 */
-	ability_subclass?: number;
-	/**
-	 * @generated from protobuf field: optional bool bool1_ = 20;
-	 */
-	bool1_?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool bool2_ = 21;
-	 */
-	bool2_?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool bool3_ = 22;
-	 */
-	bool3_?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool bool4_ = 23;
-	 */
-	bool4_?: boolean;
-	/**
-	 * @generated from protobuf field: optional int32 int1_ = 25;
-	 */
-	int1_?: number;
-	/**
-	 * @generated from protobuf field: optional int32 int2_ = 26;
-	 */
-	int2_?: number;
-	/**
-	 * @generated from protobuf field: optional int32 int3_ = 27;
-	 */
-	int3_?: number;
-	/**
-	 * @generated from protobuf field: optional int32 int4_ = 28;
-	 */
-	int4_?: number;
-	/**
-	 * @generated from protobuf field: optional float float1_ = 30;
-	 */
-	float1_?: number;
-	/**
-	 * @generated from protobuf field: optional float float2_ = 31;
-	 */
-	float2_?: number;
-	/**
-	 * @generated from protobuf field: optional float float3_ = 32;
-	 */
-	float3_?: number;
-	/**
-	 * @generated from protobuf field: optional float float4_ = 33;
-	 */
-	float4_?: number;
-	/**
-	 * @generated from protobuf field: optional float float5_ = 49;
-	 */
-	float5_?: number;
-	/**
-	 * @generated from protobuf field: optional float float6_ = 50;
-	 */
-	float6_?: number;
-	/**
-	 * @generated from protobuf field: optional float float7_ = 51;
-	 */
-	float7_?: number;
-	/**
-	 * @generated from protobuf field: optional float float8_ = 52;
-	 */
-	float8_?: number;
-	/**
-	 * @generated from protobuf field: optional float float9_ = 53;
-	 */
-	float9_?: number;
-	/**
-	 * @generated from protobuf field: optional float float10_ = 54;
-	 */
-	float10_?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 uint1_ = 35;
-	 */
-	uint1_?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 uint2_ = 36;
-	 */
-	uint2_?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 uint3_ = 37;
-	 */
-	uint3_?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 uint4_ = 38;
-	 */
-	uint4_?: bigint;
-	/**
-	 * @generated from protobuf field: optional CMsgVector vec1_ = 40;
-	 */
-	vec1_?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector vec2_ = 41;
-	 */
-	vec2_?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector vec3_ = 42;
-	 */
-	vec3_?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector vec4_ = 43;
-	 */
-	vec4_?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional string string1_ = 45;
-	 */
-	string1_?: string;
-	/**
-	 * @generated from protobuf field: optional string string2_ = 46;
-	 */
-	string2_?: string;
-	/**
-	 * @generated from protobuf field: optional string string3_ = 47;
-	 */
-	string3_?: string;
-	/**
-	 * @generated from protobuf field: optional string string4_ = 48;
-	 */
-	string4_?: string;
+  /**
+   * @generated from protobuf field: MODIFIER_ENTRY_TYPE entry_type = 1;
+   */
+  entry_type: MODIFIER_ENTRY_TYPE;
+  /**
+   * @generated from protobuf field: uint32 parent = 2;
+   */
+  parent: number;
+  /**
+   * @generated from protobuf field: uint32 serial_number = 3;
+   */
+  serial_number: number;
+  /**
+   * @generated from protobuf field: optional uint32 modifier_subclass = 4;
+   */
+  modifier_subclass?: number;
+  /**
+   * @generated from protobuf field: optional int32 stack_count = 5;
+   */
+  stack_count?: number;
+  /**
+   * @generated from protobuf field: optional int32 max_stack_count = 6;
+   */
+  max_stack_count?: number;
+  /**
+   * @generated from protobuf field: optional float last_applied_time = 7;
+   */
+  last_applied_time?: number;
+  /**
+   * @generated from protobuf field: optional float duration = 8;
+   */
+  duration?: number;
+  /**
+   * @generated from protobuf field: optional uint32 caster = 9;
+   */
+  caster?: number;
+  /**
+   * @generated from protobuf field: optional uint32 ability = 10;
+   */
+  ability?: number;
+  /**
+   * @generated from protobuf field: optional int32 aura_provider_serial_number = 11;
+   */
+  aura_provider_serial_number?: number;
+  /**
+   * @generated from protobuf field: optional uint32 aura_provider_ehandle = 12;
+   */
+  aura_provider_ehandle?: number;
+  /**
+   * @generated from protobuf field: optional uint32 ability_subclass = 13;
+   */
+  ability_subclass?: number;
+  /**
+   * @generated from protobuf field: optional bool bool1_ = 20;
+   */
+  bool1_?: boolean;
+  /**
+   * @generated from protobuf field: optional bool bool2_ = 21;
+   */
+  bool2_?: boolean;
+  /**
+   * @generated from protobuf field: optional bool bool3_ = 22;
+   */
+  bool3_?: boolean;
+  /**
+   * @generated from protobuf field: optional bool bool4_ = 23;
+   */
+  bool4_?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 int1_ = 25;
+   */
+  int1_?: number;
+  /**
+   * @generated from protobuf field: optional int32 int2_ = 26;
+   */
+  int2_?: number;
+  /**
+   * @generated from protobuf field: optional int32 int3_ = 27;
+   */
+  int3_?: number;
+  /**
+   * @generated from protobuf field: optional int32 int4_ = 28;
+   */
+  int4_?: number;
+  /**
+   * @generated from protobuf field: optional float float1_ = 30;
+   */
+  float1_?: number;
+  /**
+   * @generated from protobuf field: optional float float2_ = 31;
+   */
+  float2_?: number;
+  /**
+   * @generated from protobuf field: optional float float3_ = 32;
+   */
+  float3_?: number;
+  /**
+   * @generated from protobuf field: optional float float4_ = 33;
+   */
+  float4_?: number;
+  /**
+   * @generated from protobuf field: optional float float5_ = 49;
+   */
+  float5_?: number;
+  /**
+   * @generated from protobuf field: optional float float6_ = 50;
+   */
+  float6_?: number;
+  /**
+   * @generated from protobuf field: optional float float7_ = 51;
+   */
+  float7_?: number;
+  /**
+   * @generated from protobuf field: optional float float8_ = 52;
+   */
+  float8_?: number;
+  /**
+   * @generated from protobuf field: optional float float9_ = 53;
+   */
+  float9_?: number;
+  /**
+   * @generated from protobuf field: optional float float10_ = 54;
+   */
+  float10_?: number;
+  /**
+   * @generated from protobuf field: optional uint64 uint1_ = 35;
+   */
+  uint1_?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 uint2_ = 36;
+   */
+  uint2_?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 uint3_ = 37;
+   */
+  uint3_?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 uint4_ = 38;
+   */
+  uint4_?: bigint;
+  /**
+   * @generated from protobuf field: optional CMsgVector vec1_ = 40;
+   */
+  vec1_?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector vec2_ = 41;
+   */
+  vec2_?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector vec3_ = 42;
+   */
+  vec3_?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector vec4_ = 43;
+   */
+  vec4_?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional string string1_ = 45;
+   */
+  string1_?: string;
+  /**
+   * @generated from protobuf field: optional string string2_ = 46;
+   */
+  string2_?: string;
+  /**
+   * @generated from protobuf field: optional string string3_ = 47;
+   */
+  string3_?: string;
+  /**
+   * @generated from protobuf field: optional string string4_ = 48;
+   */
+  string4_?: string;
 }
 /**
  * @generated from protobuf enum MODIFIER_ENTRY_TYPE
  */
 export enum MODIFIER_ENTRY_TYPE {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: MODIFIER_ENTRY_TYPE_ACTIVE = 1;
-	 */
-	MODIFIER_ENTRY_TYPE_ACTIVE = 1,
-	/**
-	 * @generated from protobuf enum value: MODIFIER_ENTRY_TYPE_REMOVED = 2;
-	 */
-	MODIFIER_ENTRY_TYPE_REMOVED = 2,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: MODIFIER_ENTRY_TYPE_ACTIVE = 1;
+   */
+  MODIFIER_ENTRY_TYPE_ACTIVE = 1,
+  /**
+   * @generated from protobuf enum value: MODIFIER_ENTRY_TYPE_REMOVED = 2;
+   */
+  MODIFIER_ENTRY_TYPE_REMOVED = 2,
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CModifierTableEntry$Type extends MessageType<CModifierTableEntry> {
-	constructor() {
-		super("CModifierTableEntry", [
-			{
-				no: 1,
-				name: "entry_type",
-				kind: "enum",
-				localName: "entry_type",
-				T: () => ["MODIFIER_ENTRY_TYPE", MODIFIER_ENTRY_TYPE],
-			},
-			{ no: 2, name: "parent", kind: "scalar", T: 13 /*ScalarType.UINT32*/ },
-			{
-				no: 3,
-				name: "serial_number",
-				kind: "scalar",
-				localName: "serial_number",
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "modifier_subclass",
-				kind: "scalar",
-				localName: "modifier_subclass",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "stack_count",
-				kind: "scalar",
-				localName: "stack_count",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 6,
-				name: "max_stack_count",
-				kind: "scalar",
-				localName: "max_stack_count",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 7,
-				name: "last_applied_time",
-				kind: "scalar",
-				localName: "last_applied_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 8,
-				name: "duration",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 9,
-				name: "caster",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "ability",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 11,
-				name: "aura_provider_serial_number",
-				kind: "scalar",
-				localName: "aura_provider_serial_number",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 12,
-				name: "aura_provider_ehandle",
-				kind: "scalar",
-				localName: "aura_provider_ehandle",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 13,
-				name: "ability_subclass",
-				kind: "scalar",
-				localName: "ability_subclass",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 20,
-				name: "bool1_",
-				kind: "scalar",
-				localName: "bool1_",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 21,
-				name: "bool2_",
-				kind: "scalar",
-				localName: "bool2_",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 22,
-				name: "bool3_",
-				kind: "scalar",
-				localName: "bool3_",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 23,
-				name: "bool4_",
-				kind: "scalar",
-				localName: "bool4_",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 25,
-				name: "int1_",
-				kind: "scalar",
-				localName: "int1_",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 26,
-				name: "int2_",
-				kind: "scalar",
-				localName: "int2_",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 27,
-				name: "int3_",
-				kind: "scalar",
-				localName: "int3_",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 28,
-				name: "int4_",
-				kind: "scalar",
-				localName: "int4_",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 30,
-				name: "float1_",
-				kind: "scalar",
-				localName: "float1_",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 31,
-				name: "float2_",
-				kind: "scalar",
-				localName: "float2_",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 32,
-				name: "float3_",
-				kind: "scalar",
-				localName: "float3_",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 33,
-				name: "float4_",
-				kind: "scalar",
-				localName: "float4_",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 49,
-				name: "float5_",
-				kind: "scalar",
-				localName: "float5_",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 50,
-				name: "float6_",
-				kind: "scalar",
-				localName: "float6_",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 51,
-				name: "float7_",
-				kind: "scalar",
-				localName: "float7_",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 52,
-				name: "float8_",
-				kind: "scalar",
-				localName: "float8_",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 53,
-				name: "float9_",
-				kind: "scalar",
-				localName: "float9_",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 54,
-				name: "float10_",
-				kind: "scalar",
-				localName: "float10_",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 35,
-				name: "uint1_",
-				kind: "scalar",
-				localName: "uint1_",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 36,
-				name: "uint2_",
-				kind: "scalar",
-				localName: "uint2_",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 37,
-				name: "uint3_",
-				kind: "scalar",
-				localName: "uint3_",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 38,
-				name: "uint4_",
-				kind: "scalar",
-				localName: "uint4_",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 40,
-				name: "vec1_",
-				kind: "message",
-				localName: "vec1_",
-				T: () => CMsgVector,
-			},
-			{
-				no: 41,
-				name: "vec2_",
-				kind: "message",
-				localName: "vec2_",
-				T: () => CMsgVector,
-			},
-			{
-				no: 42,
-				name: "vec3_",
-				kind: "message",
-				localName: "vec3_",
-				T: () => CMsgVector,
-			},
-			{
-				no: 43,
-				name: "vec4_",
-				kind: "message",
-				localName: "vec4_",
-				T: () => CMsgVector,
-			},
-			{
-				no: 45,
-				name: "string1_",
-				kind: "scalar",
-				localName: "string1_",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 46,
-				name: "string2_",
-				kind: "scalar",
-				localName: "string2_",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 47,
-				name: "string3_",
-				kind: "scalar",
-				localName: "string3_",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 48,
-				name: "string4_",
-				kind: "scalar",
-				localName: "string4_",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CModifierTableEntry>): CModifierTableEntry {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.entry_type = 0;
-		message.parent = 0;
-		message.serial_number = 0;
-		if (value !== undefined) reflectionMergePartial<CModifierTableEntry>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CModifierTableEntry,
-	): CModifierTableEntry {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* MODIFIER_ENTRY_TYPE entry_type */ 1:
-					message.entry_type = reader.int32();
-					break;
-				case /* uint32 parent */ 2:
-					message.parent = reader.uint32();
-					break;
-				case /* uint32 serial_number */ 3:
-					message.serial_number = reader.uint32();
-					break;
-				case /* optional uint32 modifier_subclass */ 4:
-					message.modifier_subclass = reader.uint32();
-					break;
-				case /* optional int32 stack_count */ 5:
-					message.stack_count = reader.int32();
-					break;
-				case /* optional int32 max_stack_count */ 6:
-					message.max_stack_count = reader.int32();
-					break;
-				case /* optional float last_applied_time */ 7:
-					message.last_applied_time = reader.float();
-					break;
-				case /* optional float duration */ 8:
-					message.duration = reader.float();
-					break;
-				case /* optional uint32 caster */ 9:
-					message.caster = reader.uint32();
-					break;
-				case /* optional uint32 ability */ 10:
-					message.ability = reader.uint32();
-					break;
-				case /* optional int32 aura_provider_serial_number */ 11:
-					message.aura_provider_serial_number = reader.int32();
-					break;
-				case /* optional uint32 aura_provider_ehandle */ 12:
-					message.aura_provider_ehandle = reader.uint32();
-					break;
-				case /* optional uint32 ability_subclass */ 13:
-					message.ability_subclass = reader.uint32();
-					break;
-				case /* optional bool bool1_ */ 20:
-					message.bool1_ = reader.bool();
-					break;
-				case /* optional bool bool2_ */ 21:
-					message.bool2_ = reader.bool();
-					break;
-				case /* optional bool bool3_ */ 22:
-					message.bool3_ = reader.bool();
-					break;
-				case /* optional bool bool4_ */ 23:
-					message.bool4_ = reader.bool();
-					break;
-				case /* optional int32 int1_ */ 25:
-					message.int1_ = reader.int32();
-					break;
-				case /* optional int32 int2_ */ 26:
-					message.int2_ = reader.int32();
-					break;
-				case /* optional int32 int3_ */ 27:
-					message.int3_ = reader.int32();
-					break;
-				case /* optional int32 int4_ */ 28:
-					message.int4_ = reader.int32();
-					break;
-				case /* optional float float1_ */ 30:
-					message.float1_ = reader.float();
-					break;
-				case /* optional float float2_ */ 31:
-					message.float2_ = reader.float();
-					break;
-				case /* optional float float3_ */ 32:
-					message.float3_ = reader.float();
-					break;
-				case /* optional float float4_ */ 33:
-					message.float4_ = reader.float();
-					break;
-				case /* optional float float5_ */ 49:
-					message.float5_ = reader.float();
-					break;
-				case /* optional float float6_ */ 50:
-					message.float6_ = reader.float();
-					break;
-				case /* optional float float7_ */ 51:
-					message.float7_ = reader.float();
-					break;
-				case /* optional float float8_ */ 52:
-					message.float8_ = reader.float();
-					break;
-				case /* optional float float9_ */ 53:
-					message.float9_ = reader.float();
-					break;
-				case /* optional float float10_ */ 54:
-					message.float10_ = reader.float();
-					break;
-				case /* optional uint64 uint1_ */ 35:
-					message.uint1_ = reader.uint64().toBigInt();
-					break;
-				case /* optional uint64 uint2_ */ 36:
-					message.uint2_ = reader.uint64().toBigInt();
-					break;
-				case /* optional uint64 uint3_ */ 37:
-					message.uint3_ = reader.uint64().toBigInt();
-					break;
-				case /* optional uint64 uint4_ */ 38:
-					message.uint4_ = reader.uint64().toBigInt();
-					break;
-				case /* optional CMsgVector vec1_ */ 40:
-					message.vec1_ = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.vec1_);
-					break;
-				case /* optional CMsgVector vec2_ */ 41:
-					message.vec2_ = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.vec2_);
-					break;
-				case /* optional CMsgVector vec3_ */ 42:
-					message.vec3_ = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.vec3_);
-					break;
-				case /* optional CMsgVector vec4_ */ 43:
-					message.vec4_ = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.vec4_);
-					break;
-				case /* optional string string1_ */ 45:
-					message.string1_ = reader.string();
-					break;
-				case /* optional string string2_ */ 46:
-					message.string2_ = reader.string();
-					break;
-				case /* optional string string3_ */ 47:
-					message.string3_ = reader.string();
-					break;
-				case /* optional string string4_ */ 48:
-					message.string4_ = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CModifierTableEntry, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* MODIFIER_ENTRY_TYPE entry_type = 1; */
-		if (message.entry_type !== 0) writer.tag(1, WireType.Varint).int32(message.entry_type);
-		/* uint32 parent = 2; */
-		if (message.parent !== 0) writer.tag(2, WireType.Varint).uint32(message.parent);
-		/* uint32 serial_number = 3; */
-		if (message.serial_number !== 0) writer.tag(3, WireType.Varint).uint32(message.serial_number);
-		/* optional uint32 modifier_subclass = 4; */
-		if (message.modifier_subclass !== undefined) writer.tag(4, WireType.Varint).uint32(message.modifier_subclass);
-		/* optional int32 stack_count = 5; */
-		if (message.stack_count !== undefined) writer.tag(5, WireType.Varint).int32(message.stack_count);
-		/* optional int32 max_stack_count = 6; */
-		if (message.max_stack_count !== undefined) writer.tag(6, WireType.Varint).int32(message.max_stack_count);
-		/* optional float last_applied_time = 7; */
-		if (message.last_applied_time !== undefined) writer.tag(7, WireType.Bit32).float(message.last_applied_time);
-		/* optional float duration = 8; */
-		if (message.duration !== undefined) writer.tag(8, WireType.Bit32).float(message.duration);
-		/* optional uint32 caster = 9; */
-		if (message.caster !== undefined) writer.tag(9, WireType.Varint).uint32(message.caster);
-		/* optional uint32 ability = 10; */
-		if (message.ability !== undefined) writer.tag(10, WireType.Varint).uint32(message.ability);
-		/* optional int32 aura_provider_serial_number = 11; */
-		if (message.aura_provider_serial_number !== undefined)
-			writer.tag(11, WireType.Varint).int32(message.aura_provider_serial_number);
-		/* optional uint32 aura_provider_ehandle = 12; */
-		if (message.aura_provider_ehandle !== undefined)
-			writer.tag(12, WireType.Varint).uint32(message.aura_provider_ehandle);
-		/* optional uint32 ability_subclass = 13; */
-		if (message.ability_subclass !== undefined) writer.tag(13, WireType.Varint).uint32(message.ability_subclass);
-		/* optional bool bool1_ = 20; */
-		if (message.bool1_ !== undefined) writer.tag(20, WireType.Varint).bool(message.bool1_);
-		/* optional bool bool2_ = 21; */
-		if (message.bool2_ !== undefined) writer.tag(21, WireType.Varint).bool(message.bool2_);
-		/* optional bool bool3_ = 22; */
-		if (message.bool3_ !== undefined) writer.tag(22, WireType.Varint).bool(message.bool3_);
-		/* optional bool bool4_ = 23; */
-		if (message.bool4_ !== undefined) writer.tag(23, WireType.Varint).bool(message.bool4_);
-		/* optional int32 int1_ = 25; */
-		if (message.int1_ !== undefined) writer.tag(25, WireType.Varint).int32(message.int1_);
-		/* optional int32 int2_ = 26; */
-		if (message.int2_ !== undefined) writer.tag(26, WireType.Varint).int32(message.int2_);
-		/* optional int32 int3_ = 27; */
-		if (message.int3_ !== undefined) writer.tag(27, WireType.Varint).int32(message.int3_);
-		/* optional int32 int4_ = 28; */
-		if (message.int4_ !== undefined) writer.tag(28, WireType.Varint).int32(message.int4_);
-		/* optional float float1_ = 30; */
-		if (message.float1_ !== undefined) writer.tag(30, WireType.Bit32).float(message.float1_);
-		/* optional float float2_ = 31; */
-		if (message.float2_ !== undefined) writer.tag(31, WireType.Bit32).float(message.float2_);
-		/* optional float float3_ = 32; */
-		if (message.float3_ !== undefined) writer.tag(32, WireType.Bit32).float(message.float3_);
-		/* optional float float4_ = 33; */
-		if (message.float4_ !== undefined) writer.tag(33, WireType.Bit32).float(message.float4_);
-		/* optional float float5_ = 49; */
-		if (message.float5_ !== undefined) writer.tag(49, WireType.Bit32).float(message.float5_);
-		/* optional float float6_ = 50; */
-		if (message.float6_ !== undefined) writer.tag(50, WireType.Bit32).float(message.float6_);
-		/* optional float float7_ = 51; */
-		if (message.float7_ !== undefined) writer.tag(51, WireType.Bit32).float(message.float7_);
-		/* optional float float8_ = 52; */
-		if (message.float8_ !== undefined) writer.tag(52, WireType.Bit32).float(message.float8_);
-		/* optional float float9_ = 53; */
-		if (message.float9_ !== undefined) writer.tag(53, WireType.Bit32).float(message.float9_);
-		/* optional float float10_ = 54; */
-		if (message.float10_ !== undefined) writer.tag(54, WireType.Bit32).float(message.float10_);
-		/* optional uint64 uint1_ = 35; */
-		if (message.uint1_ !== undefined) writer.tag(35, WireType.Varint).uint64(message.uint1_);
-		/* optional uint64 uint2_ = 36; */
-		if (message.uint2_ !== undefined) writer.tag(36, WireType.Varint).uint64(message.uint2_);
-		/* optional uint64 uint3_ = 37; */
-		if (message.uint3_ !== undefined) writer.tag(37, WireType.Varint).uint64(message.uint3_);
-		/* optional uint64 uint4_ = 38; */
-		if (message.uint4_ !== undefined) writer.tag(38, WireType.Varint).uint64(message.uint4_);
-		/* optional CMsgVector vec1_ = 40; */
-		if (message.vec1_)
-			CMsgVector.internalBinaryWrite(message.vec1_, writer.tag(40, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector vec2_ = 41; */
-		if (message.vec2_)
-			CMsgVector.internalBinaryWrite(message.vec2_, writer.tag(41, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector vec3_ = 42; */
-		if (message.vec3_)
-			CMsgVector.internalBinaryWrite(message.vec3_, writer.tag(42, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector vec4_ = 43; */
-		if (message.vec4_)
-			CMsgVector.internalBinaryWrite(message.vec4_, writer.tag(43, WireType.LengthDelimited).fork(), options).join();
-		/* optional string string1_ = 45; */
-		if (message.string1_ !== undefined) writer.tag(45, WireType.LengthDelimited).string(message.string1_);
-		/* optional string string2_ = 46; */
-		if (message.string2_ !== undefined) writer.tag(46, WireType.LengthDelimited).string(message.string2_);
-		/* optional string string3_ = 47; */
-		if (message.string3_ !== undefined) writer.tag(47, WireType.LengthDelimited).string(message.string3_);
-		/* optional string string4_ = 48; */
-		if (message.string4_ !== undefined) writer.tag(48, WireType.LengthDelimited).string(message.string4_);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CModifierTableEntry", [
+      {
+        no: 1,
+        name: "entry_type",
+        kind: "enum",
+        localName: "entry_type",
+        T: () => ["MODIFIER_ENTRY_TYPE", MODIFIER_ENTRY_TYPE],
+      },
+      { no: 2, name: "parent", kind: "scalar", T: 13 /*ScalarType.UINT32*/ },
+      {
+        no: 3,
+        name: "serial_number",
+        kind: "scalar",
+        localName: "serial_number",
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "modifier_subclass",
+        kind: "scalar",
+        localName: "modifier_subclass",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "stack_count",
+        kind: "scalar",
+        localName: "stack_count",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 6,
+        name: "max_stack_count",
+        kind: "scalar",
+        localName: "max_stack_count",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 7,
+        name: "last_applied_time",
+        kind: "scalar",
+        localName: "last_applied_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 8,
+        name: "duration",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 9,
+        name: "caster",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "ability",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 11,
+        name: "aura_provider_serial_number",
+        kind: "scalar",
+        localName: "aura_provider_serial_number",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 12,
+        name: "aura_provider_ehandle",
+        kind: "scalar",
+        localName: "aura_provider_ehandle",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 13,
+        name: "ability_subclass",
+        kind: "scalar",
+        localName: "ability_subclass",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 20,
+        name: "bool1_",
+        kind: "scalar",
+        localName: "bool1_",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 21,
+        name: "bool2_",
+        kind: "scalar",
+        localName: "bool2_",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 22,
+        name: "bool3_",
+        kind: "scalar",
+        localName: "bool3_",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 23,
+        name: "bool4_",
+        kind: "scalar",
+        localName: "bool4_",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 25,
+        name: "int1_",
+        kind: "scalar",
+        localName: "int1_",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 26,
+        name: "int2_",
+        kind: "scalar",
+        localName: "int2_",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 27,
+        name: "int3_",
+        kind: "scalar",
+        localName: "int3_",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 28,
+        name: "int4_",
+        kind: "scalar",
+        localName: "int4_",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 30,
+        name: "float1_",
+        kind: "scalar",
+        localName: "float1_",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 31,
+        name: "float2_",
+        kind: "scalar",
+        localName: "float2_",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 32,
+        name: "float3_",
+        kind: "scalar",
+        localName: "float3_",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 33,
+        name: "float4_",
+        kind: "scalar",
+        localName: "float4_",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 49,
+        name: "float5_",
+        kind: "scalar",
+        localName: "float5_",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 50,
+        name: "float6_",
+        kind: "scalar",
+        localName: "float6_",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 51,
+        name: "float7_",
+        kind: "scalar",
+        localName: "float7_",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 52,
+        name: "float8_",
+        kind: "scalar",
+        localName: "float8_",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 53,
+        name: "float9_",
+        kind: "scalar",
+        localName: "float9_",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 54,
+        name: "float10_",
+        kind: "scalar",
+        localName: "float10_",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 35,
+        name: "uint1_",
+        kind: "scalar",
+        localName: "uint1_",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 36,
+        name: "uint2_",
+        kind: "scalar",
+        localName: "uint2_",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 37,
+        name: "uint3_",
+        kind: "scalar",
+        localName: "uint3_",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 38,
+        name: "uint4_",
+        kind: "scalar",
+        localName: "uint4_",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 40,
+        name: "vec1_",
+        kind: "message",
+        localName: "vec1_",
+        T: () => CMsgVector,
+      },
+      {
+        no: 41,
+        name: "vec2_",
+        kind: "message",
+        localName: "vec2_",
+        T: () => CMsgVector,
+      },
+      {
+        no: 42,
+        name: "vec3_",
+        kind: "message",
+        localName: "vec3_",
+        T: () => CMsgVector,
+      },
+      {
+        no: 43,
+        name: "vec4_",
+        kind: "message",
+        localName: "vec4_",
+        T: () => CMsgVector,
+      },
+      {
+        no: 45,
+        name: "string1_",
+        kind: "scalar",
+        localName: "string1_",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 46,
+        name: "string2_",
+        kind: "scalar",
+        localName: "string2_",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 47,
+        name: "string3_",
+        kind: "scalar",
+        localName: "string3_",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 48,
+        name: "string4_",
+        kind: "scalar",
+        localName: "string4_",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CModifierTableEntry>): CModifierTableEntry {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.entry_type = 0;
+    message.parent = 0;
+    message.serial_number = 0;
+    if (value !== undefined) reflectionMergePartial<CModifierTableEntry>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CModifierTableEntry,
+  ): CModifierTableEntry {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* MODIFIER_ENTRY_TYPE entry_type */ 1:
+          message.entry_type = reader.int32();
+          break;
+        case /* uint32 parent */ 2:
+          message.parent = reader.uint32();
+          break;
+        case /* uint32 serial_number */ 3:
+          message.serial_number = reader.uint32();
+          break;
+        case /* optional uint32 modifier_subclass */ 4:
+          message.modifier_subclass = reader.uint32();
+          break;
+        case /* optional int32 stack_count */ 5:
+          message.stack_count = reader.int32();
+          break;
+        case /* optional int32 max_stack_count */ 6:
+          message.max_stack_count = reader.int32();
+          break;
+        case /* optional float last_applied_time */ 7:
+          message.last_applied_time = reader.float();
+          break;
+        case /* optional float duration */ 8:
+          message.duration = reader.float();
+          break;
+        case /* optional uint32 caster */ 9:
+          message.caster = reader.uint32();
+          break;
+        case /* optional uint32 ability */ 10:
+          message.ability = reader.uint32();
+          break;
+        case /* optional int32 aura_provider_serial_number */ 11:
+          message.aura_provider_serial_number = reader.int32();
+          break;
+        case /* optional uint32 aura_provider_ehandle */ 12:
+          message.aura_provider_ehandle = reader.uint32();
+          break;
+        case /* optional uint32 ability_subclass */ 13:
+          message.ability_subclass = reader.uint32();
+          break;
+        case /* optional bool bool1_ */ 20:
+          message.bool1_ = reader.bool();
+          break;
+        case /* optional bool bool2_ */ 21:
+          message.bool2_ = reader.bool();
+          break;
+        case /* optional bool bool3_ */ 22:
+          message.bool3_ = reader.bool();
+          break;
+        case /* optional bool bool4_ */ 23:
+          message.bool4_ = reader.bool();
+          break;
+        case /* optional int32 int1_ */ 25:
+          message.int1_ = reader.int32();
+          break;
+        case /* optional int32 int2_ */ 26:
+          message.int2_ = reader.int32();
+          break;
+        case /* optional int32 int3_ */ 27:
+          message.int3_ = reader.int32();
+          break;
+        case /* optional int32 int4_ */ 28:
+          message.int4_ = reader.int32();
+          break;
+        case /* optional float float1_ */ 30:
+          message.float1_ = reader.float();
+          break;
+        case /* optional float float2_ */ 31:
+          message.float2_ = reader.float();
+          break;
+        case /* optional float float3_ */ 32:
+          message.float3_ = reader.float();
+          break;
+        case /* optional float float4_ */ 33:
+          message.float4_ = reader.float();
+          break;
+        case /* optional float float5_ */ 49:
+          message.float5_ = reader.float();
+          break;
+        case /* optional float float6_ */ 50:
+          message.float6_ = reader.float();
+          break;
+        case /* optional float float7_ */ 51:
+          message.float7_ = reader.float();
+          break;
+        case /* optional float float8_ */ 52:
+          message.float8_ = reader.float();
+          break;
+        case /* optional float float9_ */ 53:
+          message.float9_ = reader.float();
+          break;
+        case /* optional float float10_ */ 54:
+          message.float10_ = reader.float();
+          break;
+        case /* optional uint64 uint1_ */ 35:
+          message.uint1_ = reader.uint64().toBigInt();
+          break;
+        case /* optional uint64 uint2_ */ 36:
+          message.uint2_ = reader.uint64().toBigInt();
+          break;
+        case /* optional uint64 uint3_ */ 37:
+          message.uint3_ = reader.uint64().toBigInt();
+          break;
+        case /* optional uint64 uint4_ */ 38:
+          message.uint4_ = reader.uint64().toBigInt();
+          break;
+        case /* optional CMsgVector vec1_ */ 40:
+          message.vec1_ = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.vec1_);
+          break;
+        case /* optional CMsgVector vec2_ */ 41:
+          message.vec2_ = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.vec2_);
+          break;
+        case /* optional CMsgVector vec3_ */ 42:
+          message.vec3_ = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.vec3_);
+          break;
+        case /* optional CMsgVector vec4_ */ 43:
+          message.vec4_ = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.vec4_);
+          break;
+        case /* optional string string1_ */ 45:
+          message.string1_ = reader.string();
+          break;
+        case /* optional string string2_ */ 46:
+          message.string2_ = reader.string();
+          break;
+        case /* optional string string3_ */ 47:
+          message.string3_ = reader.string();
+          break;
+        case /* optional string string4_ */ 48:
+          message.string4_ = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CModifierTableEntry, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* MODIFIER_ENTRY_TYPE entry_type = 1; */
+    if (message.entry_type !== 0) writer.tag(1, WireType.Varint).int32(message.entry_type);
+    /* uint32 parent = 2; */
+    if (message.parent !== 0) writer.tag(2, WireType.Varint).uint32(message.parent);
+    /* uint32 serial_number = 3; */
+    if (message.serial_number !== 0) writer.tag(3, WireType.Varint).uint32(message.serial_number);
+    /* optional uint32 modifier_subclass = 4; */
+    if (message.modifier_subclass !== undefined) writer.tag(4, WireType.Varint).uint32(message.modifier_subclass);
+    /* optional int32 stack_count = 5; */
+    if (message.stack_count !== undefined) writer.tag(5, WireType.Varint).int32(message.stack_count);
+    /* optional int32 max_stack_count = 6; */
+    if (message.max_stack_count !== undefined) writer.tag(6, WireType.Varint).int32(message.max_stack_count);
+    /* optional float last_applied_time = 7; */
+    if (message.last_applied_time !== undefined) writer.tag(7, WireType.Bit32).float(message.last_applied_time);
+    /* optional float duration = 8; */
+    if (message.duration !== undefined) writer.tag(8, WireType.Bit32).float(message.duration);
+    /* optional uint32 caster = 9; */
+    if (message.caster !== undefined) writer.tag(9, WireType.Varint).uint32(message.caster);
+    /* optional uint32 ability = 10; */
+    if (message.ability !== undefined) writer.tag(10, WireType.Varint).uint32(message.ability);
+    /* optional int32 aura_provider_serial_number = 11; */
+    if (message.aura_provider_serial_number !== undefined)
+      writer.tag(11, WireType.Varint).int32(message.aura_provider_serial_number);
+    /* optional uint32 aura_provider_ehandle = 12; */
+    if (message.aura_provider_ehandle !== undefined)
+      writer.tag(12, WireType.Varint).uint32(message.aura_provider_ehandle);
+    /* optional uint32 ability_subclass = 13; */
+    if (message.ability_subclass !== undefined) writer.tag(13, WireType.Varint).uint32(message.ability_subclass);
+    /* optional bool bool1_ = 20; */
+    if (message.bool1_ !== undefined) writer.tag(20, WireType.Varint).bool(message.bool1_);
+    /* optional bool bool2_ = 21; */
+    if (message.bool2_ !== undefined) writer.tag(21, WireType.Varint).bool(message.bool2_);
+    /* optional bool bool3_ = 22; */
+    if (message.bool3_ !== undefined) writer.tag(22, WireType.Varint).bool(message.bool3_);
+    /* optional bool bool4_ = 23; */
+    if (message.bool4_ !== undefined) writer.tag(23, WireType.Varint).bool(message.bool4_);
+    /* optional int32 int1_ = 25; */
+    if (message.int1_ !== undefined) writer.tag(25, WireType.Varint).int32(message.int1_);
+    /* optional int32 int2_ = 26; */
+    if (message.int2_ !== undefined) writer.tag(26, WireType.Varint).int32(message.int2_);
+    /* optional int32 int3_ = 27; */
+    if (message.int3_ !== undefined) writer.tag(27, WireType.Varint).int32(message.int3_);
+    /* optional int32 int4_ = 28; */
+    if (message.int4_ !== undefined) writer.tag(28, WireType.Varint).int32(message.int4_);
+    /* optional float float1_ = 30; */
+    if (message.float1_ !== undefined) writer.tag(30, WireType.Bit32).float(message.float1_);
+    /* optional float float2_ = 31; */
+    if (message.float2_ !== undefined) writer.tag(31, WireType.Bit32).float(message.float2_);
+    /* optional float float3_ = 32; */
+    if (message.float3_ !== undefined) writer.tag(32, WireType.Bit32).float(message.float3_);
+    /* optional float float4_ = 33; */
+    if (message.float4_ !== undefined) writer.tag(33, WireType.Bit32).float(message.float4_);
+    /* optional float float5_ = 49; */
+    if (message.float5_ !== undefined) writer.tag(49, WireType.Bit32).float(message.float5_);
+    /* optional float float6_ = 50; */
+    if (message.float6_ !== undefined) writer.tag(50, WireType.Bit32).float(message.float6_);
+    /* optional float float7_ = 51; */
+    if (message.float7_ !== undefined) writer.tag(51, WireType.Bit32).float(message.float7_);
+    /* optional float float8_ = 52; */
+    if (message.float8_ !== undefined) writer.tag(52, WireType.Bit32).float(message.float8_);
+    /* optional float float9_ = 53; */
+    if (message.float9_ !== undefined) writer.tag(53, WireType.Bit32).float(message.float9_);
+    /* optional float float10_ = 54; */
+    if (message.float10_ !== undefined) writer.tag(54, WireType.Bit32).float(message.float10_);
+    /* optional uint64 uint1_ = 35; */
+    if (message.uint1_ !== undefined) writer.tag(35, WireType.Varint).uint64(message.uint1_);
+    /* optional uint64 uint2_ = 36; */
+    if (message.uint2_ !== undefined) writer.tag(36, WireType.Varint).uint64(message.uint2_);
+    /* optional uint64 uint3_ = 37; */
+    if (message.uint3_ !== undefined) writer.tag(37, WireType.Varint).uint64(message.uint3_);
+    /* optional uint64 uint4_ = 38; */
+    if (message.uint4_ !== undefined) writer.tag(38, WireType.Varint).uint64(message.uint4_);
+    /* optional CMsgVector vec1_ = 40; */
+    if (message.vec1_)
+      CMsgVector.internalBinaryWrite(message.vec1_, writer.tag(40, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector vec2_ = 41; */
+    if (message.vec2_)
+      CMsgVector.internalBinaryWrite(message.vec2_, writer.tag(41, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector vec3_ = 42; */
+    if (message.vec3_)
+      CMsgVector.internalBinaryWrite(message.vec3_, writer.tag(42, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector vec4_ = 43; */
+    if (message.vec4_)
+      CMsgVector.internalBinaryWrite(message.vec4_, writer.tag(43, WireType.LengthDelimited).fork(), options).join();
+    /* optional string string1_ = 45; */
+    if (message.string1_ !== undefined) writer.tag(45, WireType.LengthDelimited).string(message.string1_);
+    /* optional string string2_ = 46; */
+    if (message.string2_ !== undefined) writer.tag(46, WireType.LengthDelimited).string(message.string2_);
+    /* optional string string3_ = 47; */
+    if (message.string3_ !== undefined) writer.tag(47, WireType.LengthDelimited).string(message.string3_);
+    /* optional string string4_ = 48; */
+    if (message.string4_ !== undefined) writer.tag(48, WireType.LengthDelimited).string(message.string4_);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CModifierTableEntry

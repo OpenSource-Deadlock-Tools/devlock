@@ -15,214 +15,214 @@ import { CCLCMsg_SplitPlayerConnect } from "./netmessages.js";
  * @generated from protobuf message C2S_CONNECT_Message
  */
 export interface C2S_CONNECT_Message {
-	/**
-	 * @generated from protobuf field: optional uint32 host_version = 1;
-	 */
-	host_version?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 auth_protocol = 2;
-	 */
-	auth_protocol?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 challenge_number = 3;
-	 */
-	challenge_number?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 reservation_cookie = 4;
-	 */
-	reservation_cookie?: bigint;
-	/**
-	 * @generated from protobuf field: optional bool low_violence = 5;
-	 */
-	low_violence?: boolean;
-	/**
-	 * @generated from protobuf field: optional bytes encrypted_password = 6;
-	 */
-	encrypted_password?: Uint8Array;
-	/**
-	 * @generated from protobuf field: repeated CCLCMsg_SplitPlayerConnect splitplayers = 7;
-	 */
-	splitplayers: CCLCMsg_SplitPlayerConnect[];
-	/**
-	 * @generated from protobuf field: optional bytes auth_steam = 8;
-	 */
-	auth_steam?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional string challenge_context = 9;
-	 */
-	challenge_context?: string;
+  /**
+   * @generated from protobuf field: optional uint32 host_version = 1;
+   */
+  host_version?: number;
+  /**
+   * @generated from protobuf field: optional uint32 auth_protocol = 2;
+   */
+  auth_protocol?: number;
+  /**
+   * @generated from protobuf field: optional uint32 challenge_number = 3;
+   */
+  challenge_number?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 reservation_cookie = 4;
+   */
+  reservation_cookie?: bigint;
+  /**
+   * @generated from protobuf field: optional bool low_violence = 5;
+   */
+  low_violence?: boolean;
+  /**
+   * @generated from protobuf field: optional bytes encrypted_password = 6;
+   */
+  encrypted_password?: Uint8Array;
+  /**
+   * @generated from protobuf field: repeated CCLCMsg_SplitPlayerConnect splitplayers = 7;
+   */
+  splitplayers: CCLCMsg_SplitPlayerConnect[];
+  /**
+   * @generated from protobuf field: optional bytes auth_steam = 8;
+   */
+  auth_steam?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional string challenge_context = 9;
+   */
+  challenge_context?: string;
 }
 /**
  * @generated from protobuf message C2S_CONNECTION_Message
  */
 export interface C2S_CONNECTION_Message {
-	/**
-	 * @generated from protobuf field: optional string addon_name = 1;
-	 */
-	addon_name?: string;
+  /**
+   * @generated from protobuf field: optional string addon_name = 1;
+   */
+  addon_name?: string;
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class C2S_CONNECT_Message$Type extends MessageType<C2S_CONNECT_Message> {
-	constructor() {
-		super("C2S_CONNECT_Message", [
-			{
-				no: 1,
-				name: "host_version",
-				kind: "scalar",
-				localName: "host_version",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "auth_protocol",
-				kind: "scalar",
-				localName: "auth_protocol",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "challenge_number",
-				kind: "scalar",
-				localName: "challenge_number",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "reservation_cookie",
-				kind: "scalar",
-				localName: "reservation_cookie",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 5,
-				name: "low_violence",
-				kind: "scalar",
-				localName: "low_violence",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 6,
-				name: "encrypted_password",
-				kind: "scalar",
-				localName: "encrypted_password",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 7,
-				name: "splitplayers",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CCLCMsg_SplitPlayerConnect,
-			},
-			{
-				no: 8,
-				name: "auth_steam",
-				kind: "scalar",
-				localName: "auth_steam",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 9,
-				name: "challenge_context",
-				kind: "scalar",
-				localName: "challenge_context",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<C2S_CONNECT_Message>): C2S_CONNECT_Message {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.splitplayers = [];
-		if (value !== undefined) reflectionMergePartial<C2S_CONNECT_Message>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: C2S_CONNECT_Message,
-	): C2S_CONNECT_Message {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 host_version */ 1:
-					message.host_version = reader.uint32();
-					break;
-				case /* optional uint32 auth_protocol */ 2:
-					message.auth_protocol = reader.uint32();
-					break;
-				case /* optional uint32 challenge_number */ 3:
-					message.challenge_number = reader.uint32();
-					break;
-				case /* optional fixed64 reservation_cookie */ 4:
-					message.reservation_cookie = reader.fixed64().toBigInt();
-					break;
-				case /* optional bool low_violence */ 5:
-					message.low_violence = reader.bool();
-					break;
-				case /* optional bytes encrypted_password */ 6:
-					message.encrypted_password = reader.bytes();
-					break;
-				case /* repeated CCLCMsg_SplitPlayerConnect splitplayers */ 7:
-					message.splitplayers.push(CCLCMsg_SplitPlayerConnect.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* optional bytes auth_steam */ 8:
-					message.auth_steam = reader.bytes();
-					break;
-				case /* optional string challenge_context */ 9:
-					message.challenge_context = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: C2S_CONNECT_Message, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional uint32 host_version = 1; */
-		if (message.host_version !== undefined) writer.tag(1, WireType.Varint).uint32(message.host_version);
-		/* optional uint32 auth_protocol = 2; */
-		if (message.auth_protocol !== undefined) writer.tag(2, WireType.Varint).uint32(message.auth_protocol);
-		/* optional uint32 challenge_number = 3; */
-		if (message.challenge_number !== undefined) writer.tag(3, WireType.Varint).uint32(message.challenge_number);
-		/* optional fixed64 reservation_cookie = 4; */
-		if (message.reservation_cookie !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.reservation_cookie);
-		/* optional bool low_violence = 5; */
-		if (message.low_violence !== undefined) writer.tag(5, WireType.Varint).bool(message.low_violence);
-		/* optional bytes encrypted_password = 6; */
-		if (message.encrypted_password !== undefined)
-			writer.tag(6, WireType.LengthDelimited).bytes(message.encrypted_password);
-		/* repeated CCLCMsg_SplitPlayerConnect splitplayers = 7; */
-		for (let i = 0; i < message.splitplayers.length; i++)
-			CCLCMsg_SplitPlayerConnect.internalBinaryWrite(
-				message.splitplayers[i],
-				writer.tag(7, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional bytes auth_steam = 8; */
-		if (message.auth_steam !== undefined) writer.tag(8, WireType.LengthDelimited).bytes(message.auth_steam);
-		/* optional string challenge_context = 9; */
-		if (message.challenge_context !== undefined)
-			writer.tag(9, WireType.LengthDelimited).string(message.challenge_context);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("C2S_CONNECT_Message", [
+      {
+        no: 1,
+        name: "host_version",
+        kind: "scalar",
+        localName: "host_version",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "auth_protocol",
+        kind: "scalar",
+        localName: "auth_protocol",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "challenge_number",
+        kind: "scalar",
+        localName: "challenge_number",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "reservation_cookie",
+        kind: "scalar",
+        localName: "reservation_cookie",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 5,
+        name: "low_violence",
+        kind: "scalar",
+        localName: "low_violence",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 6,
+        name: "encrypted_password",
+        kind: "scalar",
+        localName: "encrypted_password",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 7,
+        name: "splitplayers",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CCLCMsg_SplitPlayerConnect,
+      },
+      {
+        no: 8,
+        name: "auth_steam",
+        kind: "scalar",
+        localName: "auth_steam",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 9,
+        name: "challenge_context",
+        kind: "scalar",
+        localName: "challenge_context",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<C2S_CONNECT_Message>): C2S_CONNECT_Message {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.splitplayers = [];
+    if (value !== undefined) reflectionMergePartial<C2S_CONNECT_Message>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: C2S_CONNECT_Message,
+  ): C2S_CONNECT_Message {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 host_version */ 1:
+          message.host_version = reader.uint32();
+          break;
+        case /* optional uint32 auth_protocol */ 2:
+          message.auth_protocol = reader.uint32();
+          break;
+        case /* optional uint32 challenge_number */ 3:
+          message.challenge_number = reader.uint32();
+          break;
+        case /* optional fixed64 reservation_cookie */ 4:
+          message.reservation_cookie = reader.fixed64().toBigInt();
+          break;
+        case /* optional bool low_violence */ 5:
+          message.low_violence = reader.bool();
+          break;
+        case /* optional bytes encrypted_password */ 6:
+          message.encrypted_password = reader.bytes();
+          break;
+        case /* repeated CCLCMsg_SplitPlayerConnect splitplayers */ 7:
+          message.splitplayers.push(CCLCMsg_SplitPlayerConnect.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* optional bytes auth_steam */ 8:
+          message.auth_steam = reader.bytes();
+          break;
+        case /* optional string challenge_context */ 9:
+          message.challenge_context = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: C2S_CONNECT_Message, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional uint32 host_version = 1; */
+    if (message.host_version !== undefined) writer.tag(1, WireType.Varint).uint32(message.host_version);
+    /* optional uint32 auth_protocol = 2; */
+    if (message.auth_protocol !== undefined) writer.tag(2, WireType.Varint).uint32(message.auth_protocol);
+    /* optional uint32 challenge_number = 3; */
+    if (message.challenge_number !== undefined) writer.tag(3, WireType.Varint).uint32(message.challenge_number);
+    /* optional fixed64 reservation_cookie = 4; */
+    if (message.reservation_cookie !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.reservation_cookie);
+    /* optional bool low_violence = 5; */
+    if (message.low_violence !== undefined) writer.tag(5, WireType.Varint).bool(message.low_violence);
+    /* optional bytes encrypted_password = 6; */
+    if (message.encrypted_password !== undefined)
+      writer.tag(6, WireType.LengthDelimited).bytes(message.encrypted_password);
+    /* repeated CCLCMsg_SplitPlayerConnect splitplayers = 7; */
+    for (let i = 0; i < message.splitplayers.length; i++)
+      CCLCMsg_SplitPlayerConnect.internalBinaryWrite(
+        message.splitplayers[i],
+        writer.tag(7, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional bytes auth_steam = 8; */
+    if (message.auth_steam !== undefined) writer.tag(8, WireType.LengthDelimited).bytes(message.auth_steam);
+    /* optional string challenge_context = 9; */
+    if (message.challenge_context !== undefined)
+      writer.tag(9, WireType.LengthDelimited).string(message.challenge_context);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message C2S_CONNECT_Message
@@ -230,58 +230,58 @@ class C2S_CONNECT_Message$Type extends MessageType<C2S_CONNECT_Message> {
 export const C2S_CONNECT_Message = new C2S_CONNECT_Message$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class C2S_CONNECTION_Message$Type extends MessageType<C2S_CONNECTION_Message> {
-	constructor() {
-		super("C2S_CONNECTION_Message", [
-			{
-				no: 1,
-				name: "addon_name",
-				kind: "scalar",
-				localName: "addon_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<C2S_CONNECTION_Message>): C2S_CONNECTION_Message {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<C2S_CONNECTION_Message>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: C2S_CONNECTION_Message,
-	): C2S_CONNECTION_Message {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string addon_name */ 1:
-					message.addon_name = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: C2S_CONNECTION_Message,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string addon_name = 1; */
-		if (message.addon_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.addon_name);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("C2S_CONNECTION_Message", [
+      {
+        no: 1,
+        name: "addon_name",
+        kind: "scalar",
+        localName: "addon_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<C2S_CONNECTION_Message>): C2S_CONNECTION_Message {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<C2S_CONNECTION_Message>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: C2S_CONNECTION_Message,
+  ): C2S_CONNECTION_Message {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string addon_name */ 1:
+          message.addon_name = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: C2S_CONNECTION_Message,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string addon_name = 1; */
+    if (message.addon_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.addon_name);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message C2S_CONNECTION_Message

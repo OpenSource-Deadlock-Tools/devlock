@@ -17,2173 +17,2173 @@ import { CSVCMsg_GameSessionConfiguration } from "./networkbasetypes.js";
  * @generated from protobuf message CCLCMsg_ClientInfo
  */
 export interface CCLCMsg_ClientInfo {
-	/**
-	 * @generated from protobuf field: optional fixed32 send_table_crc = 1;
-	 */
-	send_table_crc?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 server_count = 2;
-	 */
-	server_count?: number;
-	/**
-	 * @generated from protobuf field: optional bool is_hltv = 3;
-	 */
-	is_hltv?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 friends_id = 5;
-	 */
-	friends_id?: number;
-	/**
-	 * @generated from protobuf field: optional string friends_name = 6;
-	 */
-	friends_name?: string;
+  /**
+   * @generated from protobuf field: optional fixed32 send_table_crc = 1;
+   */
+  send_table_crc?: number;
+  /**
+   * @generated from protobuf field: optional uint32 server_count = 2;
+   */
+  server_count?: number;
+  /**
+   * @generated from protobuf field: optional bool is_hltv = 3;
+   */
+  is_hltv?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 friends_id = 5;
+   */
+  friends_id?: number;
+  /**
+   * @generated from protobuf field: optional string friends_name = 6;
+   */
+  friends_name?: string;
 }
 /**
  * @generated from protobuf message CCLCMsg_Move
  */
 export interface CCLCMsg_Move {
-	/**
-	 * @generated from protobuf field: optional bytes data = 3;
-	 */
-	data?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional uint32 last_command_number = 4;
-	 */
-	last_command_number?: number;
+  /**
+   * @generated from protobuf field: optional bytes data = 3;
+   */
+  data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional uint32 last_command_number = 4;
+   */
+  last_command_number?: number;
 }
 /**
  * @generated from protobuf message CMsgVoiceAudio
  */
 export interface CMsgVoiceAudio {
-	/**
-	 * @generated from protobuf field: optional VoiceDataFormat_t format = 1;
-	 */
-	format?: VoiceDataFormat_t;
-	/**
-	 * @generated from protobuf field: optional bytes voice_data = 2;
-	 */
-	voice_data?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional int32 sequence_bytes = 3;
-	 */
-	sequence_bytes?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 section_number = 4;
-	 */
-	section_number?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 sample_rate = 5;
-	 */
-	sample_rate?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 uncompressed_sample_offset = 6;
-	 */
-	uncompressed_sample_offset?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 num_packets = 7;
-	 */
-	num_packets?: number;
-	/**
-	 * @generated from protobuf field: repeated uint32 packet_offsets = 8 [packed = true];
-	 */
-	packet_offsets: number[];
-	/**
-	 * @generated from protobuf field: optional float voice_level = 9;
-	 */
-	voice_level?: number;
+  /**
+   * @generated from protobuf field: optional VoiceDataFormat_t format = 1;
+   */
+  format?: VoiceDataFormat_t;
+  /**
+   * @generated from protobuf field: optional bytes voice_data = 2;
+   */
+  voice_data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional int32 sequence_bytes = 3;
+   */
+  sequence_bytes?: number;
+  /**
+   * @generated from protobuf field: optional uint32 section_number = 4;
+   */
+  section_number?: number;
+  /**
+   * @generated from protobuf field: optional uint32 sample_rate = 5;
+   */
+  sample_rate?: number;
+  /**
+   * @generated from protobuf field: optional uint32 uncompressed_sample_offset = 6;
+   */
+  uncompressed_sample_offset?: number;
+  /**
+   * @generated from protobuf field: optional uint32 num_packets = 7;
+   */
+  num_packets?: number;
+  /**
+   * @generated from protobuf field: repeated uint32 packet_offsets = 8 [packed = true];
+   */
+  packet_offsets: number[];
+  /**
+   * @generated from protobuf field: optional float voice_level = 9;
+   */
+  voice_level?: number;
 }
 /**
  * @generated from protobuf message CCLCMsg_VoiceData
  */
 export interface CCLCMsg_VoiceData {
-	/**
-	 * @generated from protobuf field: optional CMsgVoiceAudio audio = 1;
-	 */
-	audio?: CMsgVoiceAudio;
-	/**
-	 * @generated from protobuf field: optional fixed64 xuid = 2;
-	 */
-	xuid?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 tick = 3;
-	 */
-	tick?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVoiceAudio audio = 1;
+   */
+  audio?: CMsgVoiceAudio;
+  /**
+   * @generated from protobuf field: optional fixed64 xuid = 2;
+   */
+  xuid?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 tick = 3;
+   */
+  tick?: number;
 }
 /**
  * @generated from protobuf message CCLCMsg_BaselineAck
  */
 export interface CCLCMsg_BaselineAck {
-	/**
-	 * @generated from protobuf field: optional int32 baseline_tick = 1;
-	 */
-	baseline_tick?: number;
-	/**
-	 * @generated from protobuf field: optional int32 baseline_nr = 2;
-	 */
-	baseline_nr?: number;
+  /**
+   * @generated from protobuf field: optional int32 baseline_tick = 1;
+   */
+  baseline_tick?: number;
+  /**
+   * @generated from protobuf field: optional int32 baseline_nr = 2;
+   */
+  baseline_nr?: number;
 }
 /**
  * @generated from protobuf message CCLCMsg_ListenEvents
  */
 export interface CCLCMsg_ListenEvents {
-	/**
-	 * @generated from protobuf field: repeated fixed32 event_mask = 1;
-	 */
-	event_mask: number[];
+  /**
+   * @generated from protobuf field: repeated fixed32 event_mask = 1;
+   */
+  event_mask: number[];
 }
 /**
  * @generated from protobuf message CCLCMsg_RespondCvarValue
  */
 export interface CCLCMsg_RespondCvarValue {
-	/**
-	 * @generated from protobuf field: optional int32 cookie = 1;
-	 */
-	cookie?: number;
-	/**
-	 * @generated from protobuf field: optional int32 status_code = 2;
-	 */
-	status_code?: number;
-	/**
-	 * @generated from protobuf field: optional string name = 3;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: optional string value = 4;
-	 */
-	value?: string;
+  /**
+   * @generated from protobuf field: optional int32 cookie = 1;
+   */
+  cookie?: number;
+  /**
+   * @generated from protobuf field: optional int32 status_code = 2;
+   */
+  status_code?: number;
+  /**
+   * @generated from protobuf field: optional string name = 3;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: optional string value = 4;
+   */
+  value?: string;
 }
 /**
  * @generated from protobuf message CCLCMsg_FileCRCCheck
  */
 export interface CCLCMsg_FileCRCCheck {
-	/**
-	 * @generated from protobuf field: optional int32 code_path = 1;
-	 */
-	code_path?: number;
-	/**
-	 * @generated from protobuf field: optional string path = 2;
-	 */
-	path?: string;
-	/**
-	 * @generated from protobuf field: optional int32 code_filename = 3;
-	 */
-	code_filename?: number;
-	/**
-	 * @generated from protobuf field: optional string filename = 4;
-	 */
-	filename?: string;
-	/**
-	 * @generated from protobuf field: optional fixed32 crc = 5;
-	 */
-	crc?: number;
+  /**
+   * @generated from protobuf field: optional int32 code_path = 1;
+   */
+  code_path?: number;
+  /**
+   * @generated from protobuf field: optional string path = 2;
+   */
+  path?: string;
+  /**
+   * @generated from protobuf field: optional int32 code_filename = 3;
+   */
+  code_filename?: number;
+  /**
+   * @generated from protobuf field: optional string filename = 4;
+   */
+  filename?: string;
+  /**
+   * @generated from protobuf field: optional fixed32 crc = 5;
+   */
+  crc?: number;
 }
 /**
  * @generated from protobuf message CCLCMsg_LoadingProgress
  */
 export interface CCLCMsg_LoadingProgress {
-	/**
-	 * @generated from protobuf field: optional int32 progress = 1;
-	 */
-	progress?: number;
+  /**
+   * @generated from protobuf field: optional int32 progress = 1;
+   */
+  progress?: number;
 }
 /**
  * @generated from protobuf message CCLCMsg_SplitPlayerConnect
  */
 export interface CCLCMsg_SplitPlayerConnect {
-	/**
-	 * @generated from protobuf field: optional string playername = 1;
-	 */
-	playername?: string;
+  /**
+   * @generated from protobuf field: optional string playername = 1;
+   */
+  playername?: string;
 }
 /**
  * @generated from protobuf message CCLCMsg_SplitPlayerDisconnect
  */
 export interface CCLCMsg_SplitPlayerDisconnect {
-	/**
-	 * @generated from protobuf field: optional int32 slot = 1;
-	 */
-	slot?: number;
+  /**
+   * @generated from protobuf field: optional int32 slot = 1;
+   */
+  slot?: number;
 }
 /**
  * @generated from protobuf message CCLCMsg_ServerStatus
  */
 export interface CCLCMsg_ServerStatus {
-	/**
-	 * @generated from protobuf field: optional bool simplified = 1;
-	 */
-	simplified?: boolean;
+  /**
+   * @generated from protobuf field: optional bool simplified = 1;
+   */
+  simplified?: boolean;
 }
 /**
  * @generated from protobuf message CCLCMsg_RequestPause
  */
 export interface CCLCMsg_RequestPause {
-	/**
-	 * @generated from protobuf field: optional RequestPause_t pause_type = 1;
-	 */
-	pause_type?: RequestPause_t;
-	/**
-	 * @generated from protobuf field: optional int32 pause_group = 2;
-	 */
-	pause_group?: number;
+  /**
+   * @generated from protobuf field: optional RequestPause_t pause_type = 1;
+   */
+  pause_type?: RequestPause_t;
+  /**
+   * @generated from protobuf field: optional int32 pause_group = 2;
+   */
+  pause_group?: number;
 }
 /**
  * @generated from protobuf message CCLCMsg_CmdKeyValues
  */
 export interface CCLCMsg_CmdKeyValues {
-	/**
-	 * @generated from protobuf field: optional bytes data = 1;
-	 */
-	data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bytes data = 1;
+   */
+  data?: Uint8Array;
 }
 /**
  * @generated from protobuf message CCLCMsg_RconServerDetails
  */
 export interface CCLCMsg_RconServerDetails {
-	/**
-	 * @generated from protobuf field: optional bytes token = 1;
-	 */
-	token?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bytes token = 1;
+   */
+  token?: Uint8Array;
 }
 /**
  * @generated from protobuf message CMsgSource2SystemSpecs
  */
 export interface CMsgSource2SystemSpecs {
-	/**
-	 * @generated from protobuf field: optional string cpu_id = 1;
-	 */
-	cpu_id?: string;
-	/**
-	 * @generated from protobuf field: optional string cpu_brand = 2;
-	 */
-	cpu_brand?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 cpu_model = 3;
-	 */
-	cpu_model?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 cpu_num_physical = 4;
-	 */
-	cpu_num_physical?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 ram_physical_total_mb = 21;
-	 */
-	ram_physical_total_mb?: number;
-	/**
-	 * @generated from protobuf field: optional string gpu_rendersystem_dll_name = 41;
-	 */
-	gpu_rendersystem_dll_name?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 gpu_vendor_id = 42;
-	 */
-	gpu_vendor_id?: number;
-	/**
-	 * @generated from protobuf field: optional string gpu_driver_name = 43;
-	 */
-	gpu_driver_name?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 gpu_driver_version_high = 44;
-	 */
-	gpu_driver_version_high?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 gpu_driver_version_low = 45;
-	 */
-	gpu_driver_version_low?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 gpu_dx_support_level = 46;
-	 */
-	gpu_dx_support_level?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 gpu_texture_memory_size_mb = 47;
-	 */
-	gpu_texture_memory_size_mb?: number;
+  /**
+   * @generated from protobuf field: optional string cpu_id = 1;
+   */
+  cpu_id?: string;
+  /**
+   * @generated from protobuf field: optional string cpu_brand = 2;
+   */
+  cpu_brand?: string;
+  /**
+   * @generated from protobuf field: optional uint32 cpu_model = 3;
+   */
+  cpu_model?: number;
+  /**
+   * @generated from protobuf field: optional uint32 cpu_num_physical = 4;
+   */
+  cpu_num_physical?: number;
+  /**
+   * @generated from protobuf field: optional uint32 ram_physical_total_mb = 21;
+   */
+  ram_physical_total_mb?: number;
+  /**
+   * @generated from protobuf field: optional string gpu_rendersystem_dll_name = 41;
+   */
+  gpu_rendersystem_dll_name?: string;
+  /**
+   * @generated from protobuf field: optional uint32 gpu_vendor_id = 42;
+   */
+  gpu_vendor_id?: number;
+  /**
+   * @generated from protobuf field: optional string gpu_driver_name = 43;
+   */
+  gpu_driver_name?: string;
+  /**
+   * @generated from protobuf field: optional uint32 gpu_driver_version_high = 44;
+   */
+  gpu_driver_version_high?: number;
+  /**
+   * @generated from protobuf field: optional uint32 gpu_driver_version_low = 45;
+   */
+  gpu_driver_version_low?: number;
+  /**
+   * @generated from protobuf field: optional uint32 gpu_dx_support_level = 46;
+   */
+  gpu_dx_support_level?: number;
+  /**
+   * @generated from protobuf field: optional uint32 gpu_texture_memory_size_mb = 47;
+   */
+  gpu_texture_memory_size_mb?: number;
 }
 /**
  * @generated from protobuf message CMsgSource2VProfLiteReportItem
  */
 export interface CMsgSource2VProfLiteReportItem {
-	/**
-	 * @generated from protobuf field: optional string name = 1;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 active_samples = 2;
-	 */
-	active_samples?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 usec_max = 3;
-	 */
-	usec_max?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 usec_avg_active = 11;
-	 */
-	usec_avg_active?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 usec_p50_active = 12;
-	 */
-	usec_p50_active?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 usec_p99_active = 13;
-	 */
-	usec_p99_active?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 usec_avg_all = 21;
-	 */
-	usec_avg_all?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 usec_p50_all = 22;
-	 */
-	usec_p50_all?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 usec_p99_all = 23;
-	 */
-	usec_p99_all?: number;
+  /**
+   * @generated from protobuf field: optional string name = 1;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: optional uint32 active_samples = 2;
+   */
+  active_samples?: number;
+  /**
+   * @generated from protobuf field: optional uint32 usec_max = 3;
+   */
+  usec_max?: number;
+  /**
+   * @generated from protobuf field: optional uint32 usec_avg_active = 11;
+   */
+  usec_avg_active?: number;
+  /**
+   * @generated from protobuf field: optional uint32 usec_p50_active = 12;
+   */
+  usec_p50_active?: number;
+  /**
+   * @generated from protobuf field: optional uint32 usec_p99_active = 13;
+   */
+  usec_p99_active?: number;
+  /**
+   * @generated from protobuf field: optional uint32 usec_avg_all = 21;
+   */
+  usec_avg_all?: number;
+  /**
+   * @generated from protobuf field: optional uint32 usec_p50_all = 22;
+   */
+  usec_p50_all?: number;
+  /**
+   * @generated from protobuf field: optional uint32 usec_p99_all = 23;
+   */
+  usec_p99_all?: number;
 }
 /**
  * @generated from protobuf message CMsgSource2VProfLiteReport
  */
 export interface CMsgSource2VProfLiteReport {
-	/**
-	 * @generated from protobuf field: optional CMsgSource2VProfLiteReportItem total = 1;
-	 */
-	total?: CMsgSource2VProfLiteReportItem;
-	/**
-	 * @generated from protobuf field: repeated CMsgSource2VProfLiteReportItem items = 2;
-	 */
-	items: CMsgSource2VProfLiteReportItem[];
-	/**
-	 * @generated from protobuf field: optional uint32 discarded_frames = 3;
-	 */
-	discarded_frames?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSource2VProfLiteReportItem total = 1;
+   */
+  total?: CMsgSource2VProfLiteReportItem;
+  /**
+   * @generated from protobuf field: repeated CMsgSource2VProfLiteReportItem items = 2;
+   */
+  items: CMsgSource2VProfLiteReportItem[];
+  /**
+   * @generated from protobuf field: optional uint32 discarded_frames = 3;
+   */
+  discarded_frames?: number;
 }
 /**
  * @generated from protobuf message CCLCMsg_Diagnostic
  */
 export interface CCLCMsg_Diagnostic {
-	/**
-	 * @generated from protobuf field: optional CMsgSource2SystemSpecs system_specs = 1;
-	 */
-	system_specs?: CMsgSource2SystemSpecs;
-	/**
-	 * @generated from protobuf field: optional CMsgSource2VProfLiteReport vprof_report = 2;
-	 */
-	vprof_report?: CMsgSource2VProfLiteReport;
+  /**
+   * @generated from protobuf field: optional CMsgSource2SystemSpecs system_specs = 1;
+   */
+  system_specs?: CMsgSource2SystemSpecs;
+  /**
+   * @generated from protobuf field: optional CMsgSource2VProfLiteReport vprof_report = 2;
+   */
+  vprof_report?: CMsgSource2VProfLiteReport;
 }
 /**
  * @generated from protobuf message CSource2Metrics_MatchPerfSummary_Notification
  */
 export interface CSource2Metrics_MatchPerfSummary_Notification {
-	/**
-	 * @generated from protobuf field: optional uint32 appid = 1;
-	 */
-	appid?: number;
-	/**
-	 * @generated from protobuf field: optional string game_mode = 2;
-	 */
-	game_mode?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 server_build_id = 3;
-	 */
-	server_build_id?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgSource2VProfLiteReport server_profile = 10;
-	 */
-	server_profile?: CMsgSource2VProfLiteReport;
-	/**
-	 * @generated from protobuf field: repeated CSource2Metrics_MatchPerfSummary_Notification.Client clients = 11;
-	 */
-	clients: CSource2Metrics_MatchPerfSummary_Notification_Client[];
-	/**
-	 * @generated from protobuf field: optional string map = 20;
-	 */
-	map?: string;
+  /**
+   * @generated from protobuf field: optional uint32 appid = 1;
+   */
+  appid?: number;
+  /**
+   * @generated from protobuf field: optional string game_mode = 2;
+   */
+  game_mode?: string;
+  /**
+   * @generated from protobuf field: optional uint32 server_build_id = 3;
+   */
+  server_build_id?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSource2VProfLiteReport server_profile = 10;
+   */
+  server_profile?: CMsgSource2VProfLiteReport;
+  /**
+   * @generated from protobuf field: repeated CSource2Metrics_MatchPerfSummary_Notification.Client clients = 11;
+   */
+  clients: CSource2Metrics_MatchPerfSummary_Notification_Client[];
+  /**
+   * @generated from protobuf field: optional string map = 20;
+   */
+  map?: string;
 }
 /**
  * @generated from protobuf message CSource2Metrics_MatchPerfSummary_Notification.Client
  */
 export interface CSource2Metrics_MatchPerfSummary_Notification_Client {
-	/**
-	 * @generated from protobuf field: optional CMsgSource2SystemSpecs system_specs = 1;
-	 */
-	system_specs?: CMsgSource2SystemSpecs;
-	/**
-	 * @generated from protobuf field: optional CMsgSource2VProfLiteReport profile = 2;
-	 */
-	profile?: CMsgSource2VProfLiteReport;
-	/**
-	 * @generated from protobuf field: optional uint32 build_id = 3;
-	 */
-	build_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 steamid = 10;
-	 */
-	steamid?: bigint;
+  /**
+   * @generated from protobuf field: optional CMsgSource2SystemSpecs system_specs = 1;
+   */
+  system_specs?: CMsgSource2SystemSpecs;
+  /**
+   * @generated from protobuf field: optional CMsgSource2VProfLiteReport profile = 2;
+   */
+  profile?: CMsgSource2VProfLiteReport;
+  /**
+   * @generated from protobuf field: optional uint32 build_id = 3;
+   */
+  build_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 steamid = 10;
+   */
+  steamid?: bigint;
 }
 /**
  * @generated from protobuf message CSVCMsg_ServerInfo
  */
 export interface CSVCMsg_ServerInfo {
-	/**
-	 * @generated from protobuf field: optional int32 protocol = 1;
-	 */
-	protocol?: number;
-	/**
-	 * @generated from protobuf field: optional int32 server_count = 2;
-	 */
-	server_count?: number;
-	/**
-	 * @generated from protobuf field: optional bool is_dedicated = 3;
-	 */
-	is_dedicated?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_hltv = 4;
-	 */
-	is_hltv?: boolean;
-	/**
-	 * @generated from protobuf field: optional int32 c_os = 6;
-	 */
-	c_os?: number;
-	/**
-	 * @generated from protobuf field: optional int32 max_clients = 10;
-	 */
-	max_clients?: number;
-	/**
-	 * @generated from protobuf field: optional int32 max_classes = 11;
-	 */
-	max_classes?: number;
-	/**
-	 * @generated from protobuf field: optional int32 player_slot = 12;
-	 */
-	player_slot?: number;
-	/**
-	 * @generated from protobuf field: optional float tick_interval = 13;
-	 */
-	tick_interval?: number;
-	/**
-	 * @generated from protobuf field: optional string game_dir = 14;
-	 */
-	game_dir?: string;
-	/**
-	 * @generated from protobuf field: optional string map_name = 15;
-	 */
-	map_name?: string;
-	/**
-	 * @generated from protobuf field: optional string sky_name = 16;
-	 */
-	sky_name?: string;
-	/**
-	 * @generated from protobuf field: optional string host_name = 17;
-	 */
-	host_name?: string;
-	/**
-	 * @generated from protobuf field: optional string addon_name = 18;
-	 */
-	addon_name?: string;
-	/**
-	 * @generated from protobuf field: optional CSVCMsg_GameSessionConfiguration game_session_config = 19;
-	 */
-	game_session_config?: CSVCMsg_GameSessionConfiguration;
-	/**
-	 * @generated from protobuf field: optional bytes game_session_manifest = 20;
-	 */
-	game_session_manifest?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional int32 protocol = 1;
+   */
+  protocol?: number;
+  /**
+   * @generated from protobuf field: optional int32 server_count = 2;
+   */
+  server_count?: number;
+  /**
+   * @generated from protobuf field: optional bool is_dedicated = 3;
+   */
+  is_dedicated?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_hltv = 4;
+   */
+  is_hltv?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 c_os = 6;
+   */
+  c_os?: number;
+  /**
+   * @generated from protobuf field: optional int32 max_clients = 10;
+   */
+  max_clients?: number;
+  /**
+   * @generated from protobuf field: optional int32 max_classes = 11;
+   */
+  max_classes?: number;
+  /**
+   * @generated from protobuf field: optional int32 player_slot = 12;
+   */
+  player_slot?: number;
+  /**
+   * @generated from protobuf field: optional float tick_interval = 13;
+   */
+  tick_interval?: number;
+  /**
+   * @generated from protobuf field: optional string game_dir = 14;
+   */
+  game_dir?: string;
+  /**
+   * @generated from protobuf field: optional string map_name = 15;
+   */
+  map_name?: string;
+  /**
+   * @generated from protobuf field: optional string sky_name = 16;
+   */
+  sky_name?: string;
+  /**
+   * @generated from protobuf field: optional string host_name = 17;
+   */
+  host_name?: string;
+  /**
+   * @generated from protobuf field: optional string addon_name = 18;
+   */
+  addon_name?: string;
+  /**
+   * @generated from protobuf field: optional CSVCMsg_GameSessionConfiguration game_session_config = 19;
+   */
+  game_session_config?: CSVCMsg_GameSessionConfiguration;
+  /**
+   * @generated from protobuf field: optional bytes game_session_manifest = 20;
+   */
+  game_session_manifest?: Uint8Array;
 }
 /**
  * @generated from protobuf message CSVCMsg_ClassInfo
  */
 export interface CSVCMsg_ClassInfo {
-	/**
-	 * @generated from protobuf field: optional bool create_on_client = 1;
-	 */
-	create_on_client?: boolean;
-	/**
-	 * @generated from protobuf field: repeated CSVCMsg_ClassInfo.class_t classes = 2;
-	 */
-	classes: CSVCMsg_ClassInfo_class_t[];
+  /**
+   * @generated from protobuf field: optional bool create_on_client = 1;
+   */
+  create_on_client?: boolean;
+  /**
+   * @generated from protobuf field: repeated CSVCMsg_ClassInfo.class_t classes = 2;
+   */
+  classes: CSVCMsg_ClassInfo_class_t[];
 }
 /**
  * @generated from protobuf message CSVCMsg_ClassInfo.class_t
  */
 export interface CSVCMsg_ClassInfo_class_t {
-	/**
-	 * @generated from protobuf field: optional int32 class_id = 1;
-	 */
-	class_id?: number;
-	/**
-	 * @generated from protobuf field: optional string class_name = 3;
-	 */
-	class_name?: string;
+  /**
+   * @generated from protobuf field: optional int32 class_id = 1;
+   */
+  class_id?: number;
+  /**
+   * @generated from protobuf field: optional string class_name = 3;
+   */
+  class_name?: string;
 }
 /**
  * @generated from protobuf message CSVCMsg_SetPause
  */
 export interface CSVCMsg_SetPause {
-	/**
-	 * @generated from protobuf field: optional bool paused = 1;
-	 */
-	paused?: boolean;
+  /**
+   * @generated from protobuf field: optional bool paused = 1;
+   */
+  paused?: boolean;
 }
 /**
  * @generated from protobuf message CSVCMsg_VoiceInit
  */
 export interface CSVCMsg_VoiceInit {
-	/**
-	 * @generated from protobuf field: optional int32 quality = 1;
-	 */
-	quality?: number;
-	/**
-	 * @generated from protobuf field: optional string codec = 2;
-	 */
-	codec?: string;
-	/**
-	 * @generated from protobuf field: optional int32 version = 3;
-	 */
-	version?: number;
+  /**
+   * @generated from protobuf field: optional int32 quality = 1;
+   */
+  quality?: number;
+  /**
+   * @generated from protobuf field: optional string codec = 2;
+   */
+  codec?: string;
+  /**
+   * @generated from protobuf field: optional int32 version = 3;
+   */
+  version?: number;
 }
 /**
  * @generated from protobuf message CSVCMsg_Print
  */
 export interface CSVCMsg_Print {
-	/**
-	 * @generated from protobuf field: optional string text = 1;
-	 */
-	text?: string;
+  /**
+   * @generated from protobuf field: optional string text = 1;
+   */
+  text?: string;
 }
 /**
  * @generated from protobuf message CSVCMsg_Sounds
  */
 export interface CSVCMsg_Sounds {
-	/**
-	 * @generated from protobuf field: optional bool reliable_sound = 1;
-	 */
-	reliable_sound?: boolean;
-	/**
-	 * @generated from protobuf field: repeated CSVCMsg_Sounds.sounddata_t sounds = 2;
-	 */
-	sounds: CSVCMsg_Sounds_sounddata_t[];
+  /**
+   * @generated from protobuf field: optional bool reliable_sound = 1;
+   */
+  reliable_sound?: boolean;
+  /**
+   * @generated from protobuf field: repeated CSVCMsg_Sounds.sounddata_t sounds = 2;
+   */
+  sounds: CSVCMsg_Sounds_sounddata_t[];
 }
 /**
  * @generated from protobuf message CSVCMsg_Sounds.sounddata_t
  */
 export interface CSVCMsg_Sounds_sounddata_t {
-	/**
-	 * @generated from protobuf field: optional sint32 origin_x = 1;
-	 */
-	origin_x?: number;
-	/**
-	 * @generated from protobuf field: optional sint32 origin_y = 2;
-	 */
-	origin_y?: number;
-	/**
-	 * @generated from protobuf field: optional sint32 origin_z = 3;
-	 */
-	origin_z?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 volume = 4;
-	 */
-	volume?: number;
-	/**
-	 * @generated from protobuf field: optional float delay_value = 5;
-	 */
-	delay_value?: number;
-	/**
-	 * @generated from protobuf field: optional int32 sequence_number = 6;
-	 */
-	sequence_number?: number;
-	/**
-	 * @generated from protobuf field: optional int32 entity_index = 7;
-	 */
-	entity_index?: number;
-	/**
-	 * @generated from protobuf field: optional int32 channel = 8;
-	 */
-	channel?: number;
-	/**
-	 * @generated from protobuf field: optional int32 pitch = 9;
-	 */
-	pitch?: number;
-	/**
-	 * @generated from protobuf field: optional int32 flags = 10;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 sound_num = 11;
-	 */
-	sound_num?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 sound_num_handle = 12;
-	 */
-	sound_num_handle?: number;
-	/**
-	 * @generated from protobuf field: optional int32 speaker_entity = 13;
-	 */
-	speaker_entity?: number;
-	/**
-	 * @generated from protobuf field: optional int32 random_seed = 14;
-	 */
-	random_seed?: number;
-	/**
-	 * @generated from protobuf field: optional int32 sound_level = 15;
-	 */
-	sound_level?: number;
-	/**
-	 * @generated from protobuf field: optional bool is_sentence = 16;
-	 */
-	is_sentence?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_ambient = 17;
-	 */
-	is_ambient?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 guid = 18;
-	 */
-	guid?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 sound_resource_id = 19;
-	 */
-	sound_resource_id?: bigint;
+  /**
+   * @generated from protobuf field: optional sint32 origin_x = 1;
+   */
+  origin_x?: number;
+  /**
+   * @generated from protobuf field: optional sint32 origin_y = 2;
+   */
+  origin_y?: number;
+  /**
+   * @generated from protobuf field: optional sint32 origin_z = 3;
+   */
+  origin_z?: number;
+  /**
+   * @generated from protobuf field: optional uint32 volume = 4;
+   */
+  volume?: number;
+  /**
+   * @generated from protobuf field: optional float delay_value = 5;
+   */
+  delay_value?: number;
+  /**
+   * @generated from protobuf field: optional int32 sequence_number = 6;
+   */
+  sequence_number?: number;
+  /**
+   * @generated from protobuf field: optional int32 entity_index = 7;
+   */
+  entity_index?: number;
+  /**
+   * @generated from protobuf field: optional int32 channel = 8;
+   */
+  channel?: number;
+  /**
+   * @generated from protobuf field: optional int32 pitch = 9;
+   */
+  pitch?: number;
+  /**
+   * @generated from protobuf field: optional int32 flags = 10;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional uint32 sound_num = 11;
+   */
+  sound_num?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 sound_num_handle = 12;
+   */
+  sound_num_handle?: number;
+  /**
+   * @generated from protobuf field: optional int32 speaker_entity = 13;
+   */
+  speaker_entity?: number;
+  /**
+   * @generated from protobuf field: optional int32 random_seed = 14;
+   */
+  random_seed?: number;
+  /**
+   * @generated from protobuf field: optional int32 sound_level = 15;
+   */
+  sound_level?: number;
+  /**
+   * @generated from protobuf field: optional bool is_sentence = 16;
+   */
+  is_sentence?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_ambient = 17;
+   */
+  is_ambient?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 guid = 18;
+   */
+  guid?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 sound_resource_id = 19;
+   */
+  sound_resource_id?: bigint;
 }
 /**
  * @generated from protobuf message CSVCMsg_Prefetch
  */
 export interface CSVCMsg_Prefetch {
-	/**
-	 * @generated from protobuf field: optional int32 sound_index = 1;
-	 */
-	sound_index?: number;
-	/**
-	 * @generated from protobuf field: optional PrefetchType resource_type = 2;
-	 */
-	resource_type?: PrefetchType;
+  /**
+   * @generated from protobuf field: optional int32 sound_index = 1;
+   */
+  sound_index?: number;
+  /**
+   * @generated from protobuf field: optional PrefetchType resource_type = 2;
+   */
+  resource_type?: PrefetchType;
 }
 /**
  * @generated from protobuf message CSVCMsg_SetView
  */
 export interface CSVCMsg_SetView {
-	/**
-	 * @generated from protobuf field: optional int32 entity_index = 1;
-	 */
-	entity_index?: number;
-	/**
-	 * @generated from protobuf field: optional int32 slot = 2;
-	 */
-	slot?: number;
+  /**
+   * @generated from protobuf field: optional int32 entity_index = 1;
+   */
+  entity_index?: number;
+  /**
+   * @generated from protobuf field: optional int32 slot = 2;
+   */
+  slot?: number;
 }
 /**
  * @generated from protobuf message CSVCMsg_FixAngle
  */
 export interface CSVCMsg_FixAngle {
-	/**
-	 * @generated from protobuf field: optional bool relative = 1;
-	 */
-	relative?: boolean;
-	/**
-	 * @generated from protobuf field: optional CMsgQAngle angle = 2;
-	 */
-	angle?: CMsgQAngle;
+  /**
+   * @generated from protobuf field: optional bool relative = 1;
+   */
+  relative?: boolean;
+  /**
+   * @generated from protobuf field: optional CMsgQAngle angle = 2;
+   */
+  angle?: CMsgQAngle;
 }
 /**
  * @generated from protobuf message CSVCMsg_CrosshairAngle
  */
 export interface CSVCMsg_CrosshairAngle {
-	/**
-	 * @generated from protobuf field: optional CMsgQAngle angle = 1;
-	 */
-	angle?: CMsgQAngle;
+  /**
+   * @generated from protobuf field: optional CMsgQAngle angle = 1;
+   */
+  angle?: CMsgQAngle;
 }
 /**
  * @generated from protobuf message CSVCMsg_BSPDecal
  */
 export interface CSVCMsg_BSPDecal {
-	/**
-	 * @generated from protobuf field: optional CMsgVector pos = 1;
-	 */
-	pos?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional int32 decal_texture_index = 2;
-	 */
-	decal_texture_index?: number;
-	/**
-	 * @generated from protobuf field: optional int32 entity_index = 3;
-	 */
-	entity_index?: number;
-	/**
-	 * @generated from protobuf field: optional int32 model_index = 4;
-	 */
-	model_index?: number;
-	/**
-	 * @generated from protobuf field: optional bool low_priority = 5;
-	 */
-	low_priority?: boolean;
+  /**
+   * @generated from protobuf field: optional CMsgVector pos = 1;
+   */
+  pos?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional int32 decal_texture_index = 2;
+   */
+  decal_texture_index?: number;
+  /**
+   * @generated from protobuf field: optional int32 entity_index = 3;
+   */
+  entity_index?: number;
+  /**
+   * @generated from protobuf field: optional int32 model_index = 4;
+   */
+  model_index?: number;
+  /**
+   * @generated from protobuf field: optional bool low_priority = 5;
+   */
+  low_priority?: boolean;
 }
 /**
  * @generated from protobuf message CSVCMsg_SplitScreen
  */
 export interface CSVCMsg_SplitScreen {
-	/**
-	 * @generated from protobuf field: optional ESplitScreenMessageType type = 1;
-	 */
-	type?: ESplitScreenMessageType;
-	/**
-	 * @generated from protobuf field: optional int32 slot = 2;
-	 */
-	slot?: number;
-	/**
-	 * @generated from protobuf field: optional int32 player_index = 3;
-	 */
-	player_index?: number;
+  /**
+   * @generated from protobuf field: optional ESplitScreenMessageType type = 1;
+   */
+  type?: ESplitScreenMessageType;
+  /**
+   * @generated from protobuf field: optional int32 slot = 2;
+   */
+  slot?: number;
+  /**
+   * @generated from protobuf field: optional int32 player_index = 3;
+   */
+  player_index?: number;
 }
 /**
  * @generated from protobuf message CSVCMsg_GetCvarValue
  */
 export interface CSVCMsg_GetCvarValue {
-	/**
-	 * @generated from protobuf field: optional int32 cookie = 1;
-	 */
-	cookie?: number;
-	/**
-	 * @generated from protobuf field: optional string cvar_name = 2;
-	 */
-	cvar_name?: string;
+  /**
+   * @generated from protobuf field: optional int32 cookie = 1;
+   */
+  cookie?: number;
+  /**
+   * @generated from protobuf field: optional string cvar_name = 2;
+   */
+  cvar_name?: string;
 }
 /**
  * @generated from protobuf message CSVCMsg_Menu
  */
 export interface CSVCMsg_Menu {
-	/**
-	 * @generated from protobuf field: optional int32 dialog_type = 1;
-	 */
-	dialog_type?: number;
-	/**
-	 * @generated from protobuf field: optional bytes menu_key_values = 2;
-	 */
-	menu_key_values?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional int32 dialog_type = 1;
+   */
+  dialog_type?: number;
+  /**
+   * @generated from protobuf field: optional bytes menu_key_values = 2;
+   */
+  menu_key_values?: Uint8Array;
 }
 /**
  * @generated from protobuf message CSVCMsg_UserMessage
  */
 export interface CSVCMsg_UserMessage {
-	/**
-	 * @generated from protobuf field: optional int32 msg_type = 1;
-	 */
-	msg_type?: number;
-	/**
-	 * @generated from protobuf field: optional bytes msg_data = 2;
-	 */
-	msg_data?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional int32 passthrough = 3;
-	 */
-	passthrough?: number;
+  /**
+   * @generated from protobuf field: optional int32 msg_type = 1;
+   */
+  msg_type?: number;
+  /**
+   * @generated from protobuf field: optional bytes msg_data = 2;
+   */
+  msg_data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional int32 passthrough = 3;
+   */
+  passthrough?: number;
 }
 /**
  * @generated from protobuf message CSVCMsg_SendTable
  */
 export interface CSVCMsg_SendTable {
-	/**
-	 * @generated from protobuf field: optional bool is_end = 1;
-	 */
-	is_end?: boolean;
-	/**
-	 * @generated from protobuf field: optional string net_table_name = 2;
-	 */
-	net_table_name?: string;
-	/**
-	 * @generated from protobuf field: optional bool needs_decoder = 3;
-	 */
-	needs_decoder?: boolean;
-	/**
-	 * @generated from protobuf field: repeated CSVCMsg_SendTable.sendprop_t props = 4;
-	 */
-	props: CSVCMsg_SendTable_sendprop_t[];
+  /**
+   * @generated from protobuf field: optional bool is_end = 1;
+   */
+  is_end?: boolean;
+  /**
+   * @generated from protobuf field: optional string net_table_name = 2;
+   */
+  net_table_name?: string;
+  /**
+   * @generated from protobuf field: optional bool needs_decoder = 3;
+   */
+  needs_decoder?: boolean;
+  /**
+   * @generated from protobuf field: repeated CSVCMsg_SendTable.sendprop_t props = 4;
+   */
+  props: CSVCMsg_SendTable_sendprop_t[];
 }
 /**
  * @generated from protobuf message CSVCMsg_SendTable.sendprop_t
  */
 export interface CSVCMsg_SendTable_sendprop_t {
-	/**
-	 * @generated from protobuf field: optional int32 type = 1;
-	 */
-	type?: number;
-	/**
-	 * @generated from protobuf field: optional string var_name = 2;
-	 */
-	var_name?: string;
-	/**
-	 * @generated from protobuf field: optional int32 flags = 3;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional int32 priority = 4;
-	 */
-	priority?: number;
-	/**
-	 * @generated from protobuf field: optional string dt_name = 5;
-	 */
-	dt_name?: string;
-	/**
-	 * @generated from protobuf field: optional int32 num_elements = 6;
-	 */
-	num_elements?: number;
-	/**
-	 * @generated from protobuf field: optional float low_value = 7;
-	 */
-	low_value?: number;
-	/**
-	 * @generated from protobuf field: optional float high_value = 8;
-	 */
-	high_value?: number;
-	/**
-	 * @generated from protobuf field: optional int32 num_bits = 9;
-	 */
-	num_bits?: number;
+  /**
+   * @generated from protobuf field: optional int32 type = 1;
+   */
+  type?: number;
+  /**
+   * @generated from protobuf field: optional string var_name = 2;
+   */
+  var_name?: string;
+  /**
+   * @generated from protobuf field: optional int32 flags = 3;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional int32 priority = 4;
+   */
+  priority?: number;
+  /**
+   * @generated from protobuf field: optional string dt_name = 5;
+   */
+  dt_name?: string;
+  /**
+   * @generated from protobuf field: optional int32 num_elements = 6;
+   */
+  num_elements?: number;
+  /**
+   * @generated from protobuf field: optional float low_value = 7;
+   */
+  low_value?: number;
+  /**
+   * @generated from protobuf field: optional float high_value = 8;
+   */
+  high_value?: number;
+  /**
+   * @generated from protobuf field: optional int32 num_bits = 9;
+   */
+  num_bits?: number;
 }
 /**
  * @generated from protobuf message CSVCMsg_GameEventList
  */
 export interface CSVCMsg_GameEventList {
-	/**
-	 * @generated from protobuf field: repeated CSVCMsg_GameEventList.descriptor_t descriptors = 1;
-	 */
-	descriptors: CSVCMsg_GameEventList_descriptor_t[];
+  /**
+   * @generated from protobuf field: repeated CSVCMsg_GameEventList.descriptor_t descriptors = 1;
+   */
+  descriptors: CSVCMsg_GameEventList_descriptor_t[];
 }
 /**
  * @generated from protobuf message CSVCMsg_GameEventList.key_t
  */
 export interface CSVCMsg_GameEventList_key_t {
-	/**
-	 * @generated from protobuf field: optional int32 type = 1;
-	 */
-	type?: number;
-	/**
-	 * @generated from protobuf field: optional string name = 2;
-	 */
-	name?: string;
+  /**
+   * @generated from protobuf field: optional int32 type = 1;
+   */
+  type?: number;
+  /**
+   * @generated from protobuf field: optional string name = 2;
+   */
+  name?: string;
 }
 /**
  * @generated from protobuf message CSVCMsg_GameEventList.descriptor_t
  */
 export interface CSVCMsg_GameEventList_descriptor_t {
-	/**
-	 * @generated from protobuf field: optional int32 eventid = 1;
-	 */
-	eventid?: number;
-	/**
-	 * @generated from protobuf field: optional string name = 2;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: repeated CSVCMsg_GameEventList.key_t keys = 3;
-	 */
-	keys: CSVCMsg_GameEventList_key_t[];
+  /**
+   * @generated from protobuf field: optional int32 eventid = 1;
+   */
+  eventid?: number;
+  /**
+   * @generated from protobuf field: optional string name = 2;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: repeated CSVCMsg_GameEventList.key_t keys = 3;
+   */
+  keys: CSVCMsg_GameEventList_key_t[];
 }
 /**
  * @generated from protobuf message CSVCMsg_PacketEntities
  */
 export interface CSVCMsg_PacketEntities {
-	/**
-	 * @generated from protobuf field: optional int32 max_entries = 1;
-	 */
-	max_entries?: number;
-	/**
-	 * @generated from protobuf field: optional int32 updated_entries = 2;
-	 */
-	updated_entries?: number;
-	/**
-	 * @generated from protobuf field: optional bool legacy_is_delta = 3;
-	 */
-	legacy_is_delta?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool update_baseline = 4;
-	 */
-	update_baseline?: boolean;
-	/**
-	 * @generated from protobuf field: optional int32 baseline = 5;
-	 */
-	baseline?: number;
-	/**
-	 * @generated from protobuf field: optional int32 delta_from = 6;
-	 */
-	delta_from?: number;
-	/**
-	 * @generated from protobuf field: optional bytes entity_data = 7;
-	 */
-	entity_data?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional bool pending_full_frame = 8;
-	 */
-	pending_full_frame?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 active_spawngroup_handle = 9;
-	 */
-	active_spawngroup_handle?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 max_spawngroup_creationsequence = 10;
-	 */
-	max_spawngroup_creationsequence?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 last_cmd_number_executed = 11;
-	 */
-	last_cmd_number_executed?: number;
-	/**
-	 * @generated from protobuf field: optional sint32 last_cmd_number_recv_delta = 17;
-	 */
-	last_cmd_number_recv_delta?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 server_tick = 12;
-	 */
-	server_tick?: number;
-	/**
-	 * @generated from protobuf field: optional bytes serialized_entities = 13;
-	 */
-	serialized_entities?: Uint8Array;
-	/**
-	 * @generated from protobuf field: repeated CSVCMsg_PacketEntities.alternate_baseline_t alternate_baselines = 15;
-	 */
-	alternate_baselines: CSVCMsg_PacketEntities_alternate_baseline_t[];
-	/**
-	 * @generated from protobuf field: optional uint32 has_pvs_vis_bits = 16;
-	 */
-	has_pvs_vis_bits?: number;
-	/**
-	 * @generated from protobuf field: repeated sint32 cmd_recv_status = 22 [packed = true];
-	 */
-	cmd_recv_status: number[];
-	/**
-	 * @generated from protobuf field: optional CSVCMsg_PacketEntities.non_transmitted_entities_t non_transmitted_entities = 19;
-	 */
-	non_transmitted_entities?: CSVCMsg_PacketEntities_non_transmitted_entities_t;
-	/**
-	 * @generated from protobuf field: optional uint32 cq_starved_command_ticks = 20;
-	 */
-	cq_starved_command_ticks?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 cq_discarded_command_ticks = 21;
-	 */
-	cq_discarded_command_ticks?: number;
-	/**
-	 * @generated from protobuf field: optional bytes dev_padding = 999;
-	 */
-	dev_padding?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional int32 max_entries = 1;
+   */
+  max_entries?: number;
+  /**
+   * @generated from protobuf field: optional int32 updated_entries = 2;
+   */
+  updated_entries?: number;
+  /**
+   * @generated from protobuf field: optional bool legacy_is_delta = 3;
+   */
+  legacy_is_delta?: boolean;
+  /**
+   * @generated from protobuf field: optional bool update_baseline = 4;
+   */
+  update_baseline?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 baseline = 5;
+   */
+  baseline?: number;
+  /**
+   * @generated from protobuf field: optional int32 delta_from = 6;
+   */
+  delta_from?: number;
+  /**
+   * @generated from protobuf field: optional bytes entity_data = 7;
+   */
+  entity_data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bool pending_full_frame = 8;
+   */
+  pending_full_frame?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 active_spawngroup_handle = 9;
+   */
+  active_spawngroup_handle?: number;
+  /**
+   * @generated from protobuf field: optional uint32 max_spawngroup_creationsequence = 10;
+   */
+  max_spawngroup_creationsequence?: number;
+  /**
+   * @generated from protobuf field: optional uint32 last_cmd_number_executed = 11;
+   */
+  last_cmd_number_executed?: number;
+  /**
+   * @generated from protobuf field: optional sint32 last_cmd_number_recv_delta = 17;
+   */
+  last_cmd_number_recv_delta?: number;
+  /**
+   * @generated from protobuf field: optional uint32 server_tick = 12;
+   */
+  server_tick?: number;
+  /**
+   * @generated from protobuf field: optional bytes serialized_entities = 13;
+   */
+  serialized_entities?: Uint8Array;
+  /**
+   * @generated from protobuf field: repeated CSVCMsg_PacketEntities.alternate_baseline_t alternate_baselines = 15;
+   */
+  alternate_baselines: CSVCMsg_PacketEntities_alternate_baseline_t[];
+  /**
+   * @generated from protobuf field: optional uint32 has_pvs_vis_bits = 16;
+   */
+  has_pvs_vis_bits?: number;
+  /**
+   * @generated from protobuf field: repeated sint32 cmd_recv_status = 22 [packed = true];
+   */
+  cmd_recv_status: number[];
+  /**
+   * @generated from protobuf field: optional CSVCMsg_PacketEntities.non_transmitted_entities_t non_transmitted_entities = 19;
+   */
+  non_transmitted_entities?: CSVCMsg_PacketEntities_non_transmitted_entities_t;
+  /**
+   * @generated from protobuf field: optional uint32 cq_starved_command_ticks = 20;
+   */
+  cq_starved_command_ticks?: number;
+  /**
+   * @generated from protobuf field: optional uint32 cq_discarded_command_ticks = 21;
+   */
+  cq_discarded_command_ticks?: number;
+  /**
+   * @generated from protobuf field: optional bytes dev_padding = 999;
+   */
+  dev_padding?: Uint8Array;
 }
 /**
  * @generated from protobuf message CSVCMsg_PacketEntities.alternate_baseline_t
  */
 export interface CSVCMsg_PacketEntities_alternate_baseline_t {
-	/**
-	 * @generated from protobuf field: optional int32 entity_index = 1;
-	 */
-	entity_index?: number;
-	/**
-	 * @generated from protobuf field: optional int32 baseline_index = 2;
-	 */
-	baseline_index?: number;
+  /**
+   * @generated from protobuf field: optional int32 entity_index = 1;
+   */
+  entity_index?: number;
+  /**
+   * @generated from protobuf field: optional int32 baseline_index = 2;
+   */
+  baseline_index?: number;
 }
 /**
  * @generated from protobuf message CSVCMsg_PacketEntities.non_transmitted_entities_t
  */
 export interface CSVCMsg_PacketEntities_non_transmitted_entities_t {
-	/**
-	 * @generated from protobuf field: optional int32 header_count = 1;
-	 */
-	header_count?: number;
-	/**
-	 * @generated from protobuf field: optional bytes data = 2;
-	 */
-	data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional int32 header_count = 1;
+   */
+  header_count?: number;
+  /**
+   * @generated from protobuf field: optional bytes data = 2;
+   */
+  data?: Uint8Array;
 }
 /**
  * @generated from protobuf message CSVCMsg_TempEntities
  */
 export interface CSVCMsg_TempEntities {
-	/**
-	 * @generated from protobuf field: optional bool reliable = 1;
-	 */
-	reliable?: boolean;
-	/**
-	 * @generated from protobuf field: optional int32 num_entries = 2;
-	 */
-	num_entries?: number;
-	/**
-	 * @generated from protobuf field: optional bytes entity_data = 3;
-	 */
-	entity_data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bool reliable = 1;
+   */
+  reliable?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 num_entries = 2;
+   */
+  num_entries?: number;
+  /**
+   * @generated from protobuf field: optional bytes entity_data = 3;
+   */
+  entity_data?: Uint8Array;
 }
 /**
  * @generated from protobuf message CSVCMsg_CreateStringTable
  */
 export interface CSVCMsg_CreateStringTable {
-	/**
-	 * @generated from protobuf field: optional string name = 1;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: optional int32 num_entries = 2;
-	 */
-	num_entries?: number;
-	/**
-	 * @generated from protobuf field: optional bool user_data_fixed_size = 3;
-	 */
-	user_data_fixed_size?: boolean;
-	/**
-	 * @generated from protobuf field: optional int32 user_data_size = 4;
-	 */
-	user_data_size?: number;
-	/**
-	 * @generated from protobuf field: optional int32 user_data_size_bits = 5;
-	 */
-	user_data_size_bits?: number;
-	/**
-	 * @generated from protobuf field: optional int32 flags = 6;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional bytes string_data = 7;
-	 */
-	string_data?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional int32 uncompressed_size = 8;
-	 */
-	uncompressed_size?: number;
-	/**
-	 * @generated from protobuf field: optional bool data_compressed = 9;
-	 */
-	data_compressed?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool using_varint_bitcounts = 10;
-	 */
-	using_varint_bitcounts?: boolean;
+  /**
+   * @generated from protobuf field: optional string name = 1;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: optional int32 num_entries = 2;
+   */
+  num_entries?: number;
+  /**
+   * @generated from protobuf field: optional bool user_data_fixed_size = 3;
+   */
+  user_data_fixed_size?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 user_data_size = 4;
+   */
+  user_data_size?: number;
+  /**
+   * @generated from protobuf field: optional int32 user_data_size_bits = 5;
+   */
+  user_data_size_bits?: number;
+  /**
+   * @generated from protobuf field: optional int32 flags = 6;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional bytes string_data = 7;
+   */
+  string_data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional int32 uncompressed_size = 8;
+   */
+  uncompressed_size?: number;
+  /**
+   * @generated from protobuf field: optional bool data_compressed = 9;
+   */
+  data_compressed?: boolean;
+  /**
+   * @generated from protobuf field: optional bool using_varint_bitcounts = 10;
+   */
+  using_varint_bitcounts?: boolean;
 }
 /**
  * @generated from protobuf message CSVCMsg_UpdateStringTable
  */
 export interface CSVCMsg_UpdateStringTable {
-	/**
-	 * @generated from protobuf field: optional int32 table_id = 1;
-	 */
-	table_id?: number;
-	/**
-	 * @generated from protobuf field: optional int32 num_changed_entries = 2;
-	 */
-	num_changed_entries?: number;
-	/**
-	 * @generated from protobuf field: optional bytes string_data = 3;
-	 */
-	string_data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional int32 table_id = 1;
+   */
+  table_id?: number;
+  /**
+   * @generated from protobuf field: optional int32 num_changed_entries = 2;
+   */
+  num_changed_entries?: number;
+  /**
+   * @generated from protobuf field: optional bytes string_data = 3;
+   */
+  string_data?: Uint8Array;
 }
 /**
  * @generated from protobuf message CSVCMsg_VoiceData
  */
 export interface CSVCMsg_VoiceData {
-	/**
-	 * @generated from protobuf field: optional CMsgVoiceAudio audio = 1;
-	 */
-	audio?: CMsgVoiceAudio;
-	/**
-	 * @generated from protobuf field: optional int32 client = 2;
-	 */
-	client?: number;
-	/**
-	 * @generated from protobuf field: optional bool proximity = 3;
-	 */
-	proximity?: boolean;
-	/**
-	 * @generated from protobuf field: optional fixed64 xuid = 4;
-	 */
-	xuid?: bigint;
-	/**
-	 * @generated from protobuf field: optional int32 audible_mask = 5;
-	 */
-	audible_mask?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 tick = 6;
-	 */
-	tick?: number;
-	/**
-	 * @generated from protobuf field: optional int32 passthrough = 7;
-	 */
-	passthrough?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVoiceAudio audio = 1;
+   */
+  audio?: CMsgVoiceAudio;
+  /**
+   * @generated from protobuf field: optional int32 client = 2;
+   */
+  client?: number;
+  /**
+   * @generated from protobuf field: optional bool proximity = 3;
+   */
+  proximity?: boolean;
+  /**
+   * @generated from protobuf field: optional fixed64 xuid = 4;
+   */
+  xuid?: bigint;
+  /**
+   * @generated from protobuf field: optional int32 audible_mask = 5;
+   */
+  audible_mask?: number;
+  /**
+   * @generated from protobuf field: optional uint32 tick = 6;
+   */
+  tick?: number;
+  /**
+   * @generated from protobuf field: optional int32 passthrough = 7;
+   */
+  passthrough?: number;
 }
 /**
  * @generated from protobuf message CSVCMsg_PacketReliable
  */
 export interface CSVCMsg_PacketReliable {
-	/**
-	 * @generated from protobuf field: optional int32 tick = 1;
-	 */
-	tick?: number;
-	/**
-	 * @generated from protobuf field: optional int32 messagessize = 2;
-	 */
-	messagessize?: number;
-	/**
-	 * @generated from protobuf field: optional bool state = 3;
-	 */
-	state?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 tick = 1;
+   */
+  tick?: number;
+  /**
+   * @generated from protobuf field: optional int32 messagessize = 2;
+   */
+  messagessize?: number;
+  /**
+   * @generated from protobuf field: optional bool state = 3;
+   */
+  state?: boolean;
 }
 /**
  * @generated from protobuf message CSVCMsg_FullFrameSplit
  */
 export interface CSVCMsg_FullFrameSplit {
-	/**
-	 * @generated from protobuf field: optional int32 tick = 1;
-	 */
-	tick?: number;
-	/**
-	 * @generated from protobuf field: optional int32 section = 2;
-	 */
-	section?: number;
-	/**
-	 * @generated from protobuf field: optional int32 total = 3;
-	 */
-	total?: number;
-	/**
-	 * @generated from protobuf field: optional bytes data = 4;
-	 */
-	data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional int32 tick = 1;
+   */
+  tick?: number;
+  /**
+   * @generated from protobuf field: optional int32 section = 2;
+   */
+  section?: number;
+  /**
+   * @generated from protobuf field: optional int32 total = 3;
+   */
+  total?: number;
+  /**
+   * @generated from protobuf field: optional bytes data = 4;
+   */
+  data?: Uint8Array;
 }
 /**
  * @generated from protobuf message CSVCMsg_HLTVStatus
  */
 export interface CSVCMsg_HLTVStatus {
-	/**
-	 * @generated from protobuf field: optional string master = 1;
-	 */
-	master?: string;
-	/**
-	 * @generated from protobuf field: optional int32 clients = 2;
-	 */
-	clients?: number;
-	/**
-	 * @generated from protobuf field: optional int32 slots = 3;
-	 */
-	slots?: number;
-	/**
-	 * @generated from protobuf field: optional int32 proxies = 4;
-	 */
-	proxies?: number;
+  /**
+   * @generated from protobuf field: optional string master = 1;
+   */
+  master?: string;
+  /**
+   * @generated from protobuf field: optional int32 clients = 2;
+   */
+  clients?: number;
+  /**
+   * @generated from protobuf field: optional int32 slots = 3;
+   */
+  slots?: number;
+  /**
+   * @generated from protobuf field: optional int32 proxies = 4;
+   */
+  proxies?: number;
 }
 /**
  * @generated from protobuf message CSVCMsg_ServerSteamID
  */
 export interface CSVCMsg_ServerSteamID {
-	/**
-	 * @generated from protobuf field: optional uint64 steam_id = 1;
-	 */
-	steam_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 steam_id = 1;
+   */
+  steam_id?: bigint;
 }
 /**
  * @generated from protobuf message CSVCMsg_CmdKeyValues
  */
 export interface CSVCMsg_CmdKeyValues {
-	/**
-	 * @generated from protobuf field: optional bytes data = 1;
-	 */
-	data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bytes data = 1;
+   */
+  data?: Uint8Array;
 }
 /**
  * @generated from protobuf message CSVCMsg_RconServerDetails
  */
 export interface CSVCMsg_RconServerDetails {
-	/**
-	 * @generated from protobuf field: optional bytes token = 1;
-	 */
-	token?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional string details = 2;
-	 */
-	details?: string;
+  /**
+   * @generated from protobuf field: optional bytes token = 1;
+   */
+  token?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional string details = 2;
+   */
+  details?: string;
 }
 /**
  * @generated from protobuf message CMsgIPCAddress
  */
 export interface CMsgIPCAddress {
-	/**
-	 * @generated from protobuf field: optional fixed64 computer_guid = 1;
-	 */
-	computer_guid?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 process_id = 2;
-	 */
-	process_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 computer_guid = 1;
+   */
+  computer_guid?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 process_id = 2;
+   */
+  process_id?: number;
 }
 /**
  * @generated from protobuf message CMsgServerPeer
  */
 export interface CMsgServerPeer {
-	/**
-	 * @generated from protobuf field: optional int32 player_slot = 1;
-	 */
-	player_slot?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 steamid = 2;
-	 */
-	steamid?: bigint;
-	/**
-	 * @generated from protobuf field: optional CMsgIPCAddress ipc = 3;
-	 */
-	ipc?: CMsgIPCAddress;
-	/**
-	 * @generated from protobuf field: optional bool they_hear_you = 4;
-	 */
-	they_hear_you?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool you_hear_them = 5;
-	 */
-	you_hear_them?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_listenserver_host = 6;
-	 */
-	is_listenserver_host?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 player_slot = 1;
+   */
+  player_slot?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 steamid = 2;
+   */
+  steamid?: bigint;
+  /**
+   * @generated from protobuf field: optional CMsgIPCAddress ipc = 3;
+   */
+  ipc?: CMsgIPCAddress;
+  /**
+   * @generated from protobuf field: optional bool they_hear_you = 4;
+   */
+  they_hear_you?: boolean;
+  /**
+   * @generated from protobuf field: optional bool you_hear_them = 5;
+   */
+  you_hear_them?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_listenserver_host = 6;
+   */
+  is_listenserver_host?: boolean;
 }
 /**
  * @generated from protobuf message CSVCMsg_PeerList
  */
 export interface CSVCMsg_PeerList {
-	/**
-	 * @generated from protobuf field: repeated CMsgServerPeer peer = 1;
-	 */
-	peer: CMsgServerPeer[];
+  /**
+   * @generated from protobuf field: repeated CMsgServerPeer peer = 1;
+   */
+  peer: CMsgServerPeer[];
 }
 /**
  * @generated from protobuf message CSVCMsg_ClearAllStringTables
  */
 export interface CSVCMsg_ClearAllStringTables {
-	/**
-	 * @generated from protobuf field: optional string mapname = 1;
-	 */
-	mapname?: string;
-	/**
-	 * @generated from protobuf field: optional bool create_tables_skipped = 3;
-	 */
-	create_tables_skipped?: boolean;
+  /**
+   * @generated from protobuf field: optional string mapname = 1;
+   */
+  mapname?: string;
+  /**
+   * @generated from protobuf field: optional bool create_tables_skipped = 3;
+   */
+  create_tables_skipped?: boolean;
 }
 /**
  * @generated from protobuf message ProtoFlattenedSerializerField_t
  */
 export interface ProtoFlattenedSerializerField_t {
-	/**
-	 * @generated from protobuf field: optional int32 var_type_sym = 1;
-	 */
-	var_type_sym?: number;
-	/**
-	 * @generated from protobuf field: optional int32 var_name_sym = 2;
-	 */
-	var_name_sym?: number;
-	/**
-	 * @generated from protobuf field: optional int32 bit_count = 3;
-	 */
-	bit_count?: number;
-	/**
-	 * @generated from protobuf field: optional float low_value = 4;
-	 */
-	low_value?: number;
-	/**
-	 * @generated from protobuf field: optional float high_value = 5;
-	 */
-	high_value?: number;
-	/**
-	 * @generated from protobuf field: optional int32 encode_flags = 6;
-	 */
-	encode_flags?: number;
-	/**
-	 * @generated from protobuf field: optional int32 field_serializer_name_sym = 7;
-	 */
-	field_serializer_name_sym?: number;
-	/**
-	 * @generated from protobuf field: optional int32 field_serializer_version = 8;
-	 */
-	field_serializer_version?: number;
-	/**
-	 * @generated from protobuf field: optional int32 send_node_sym = 9;
-	 */
-	send_node_sym?: number;
-	/**
-	 * @generated from protobuf field: optional int32 var_encoder_sym = 10;
-	 */
-	var_encoder_sym?: number;
-	/**
-	 * @generated from protobuf field: repeated ProtoFlattenedSerializerField_t.polymorphic_field_t polymorphic_types = 11;
-	 */
-	polymorphic_types: ProtoFlattenedSerializerField_t_polymorphic_field_t[];
-	/**
-	 * @generated from protobuf field: optional int32 var_serializer_sym = 12;
-	 */
-	var_serializer_sym?: number;
+  /**
+   * @generated from protobuf field: optional int32 var_type_sym = 1;
+   */
+  var_type_sym?: number;
+  /**
+   * @generated from protobuf field: optional int32 var_name_sym = 2;
+   */
+  var_name_sym?: number;
+  /**
+   * @generated from protobuf field: optional int32 bit_count = 3;
+   */
+  bit_count?: number;
+  /**
+   * @generated from protobuf field: optional float low_value = 4;
+   */
+  low_value?: number;
+  /**
+   * @generated from protobuf field: optional float high_value = 5;
+   */
+  high_value?: number;
+  /**
+   * @generated from protobuf field: optional int32 encode_flags = 6;
+   */
+  encode_flags?: number;
+  /**
+   * @generated from protobuf field: optional int32 field_serializer_name_sym = 7;
+   */
+  field_serializer_name_sym?: number;
+  /**
+   * @generated from protobuf field: optional int32 field_serializer_version = 8;
+   */
+  field_serializer_version?: number;
+  /**
+   * @generated from protobuf field: optional int32 send_node_sym = 9;
+   */
+  send_node_sym?: number;
+  /**
+   * @generated from protobuf field: optional int32 var_encoder_sym = 10;
+   */
+  var_encoder_sym?: number;
+  /**
+   * @generated from protobuf field: repeated ProtoFlattenedSerializerField_t.polymorphic_field_t polymorphic_types = 11;
+   */
+  polymorphic_types: ProtoFlattenedSerializerField_t_polymorphic_field_t[];
+  /**
+   * @generated from protobuf field: optional int32 var_serializer_sym = 12;
+   */
+  var_serializer_sym?: number;
 }
 /**
  * @generated from protobuf message ProtoFlattenedSerializerField_t.polymorphic_field_t
  */
 export interface ProtoFlattenedSerializerField_t_polymorphic_field_t {
-	/**
-	 * @generated from protobuf field: optional int32 polymorphic_field_serializer_name_sym = 1;
-	 */
-	polymorphic_field_serializer_name_sym?: number;
-	/**
-	 * @generated from protobuf field: optional int32 polymorphic_field_serializer_version = 2;
-	 */
-	polymorphic_field_serializer_version?: number;
+  /**
+   * @generated from protobuf field: optional int32 polymorphic_field_serializer_name_sym = 1;
+   */
+  polymorphic_field_serializer_name_sym?: number;
+  /**
+   * @generated from protobuf field: optional int32 polymorphic_field_serializer_version = 2;
+   */
+  polymorphic_field_serializer_version?: number;
 }
 /**
  * @generated from protobuf message ProtoFlattenedSerializer_t
  */
 export interface ProtoFlattenedSerializer_t {
-	/**
-	 * @generated from protobuf field: optional int32 serializer_name_sym = 1;
-	 */
-	serializer_name_sym?: number;
-	/**
-	 * @generated from protobuf field: optional int32 serializer_version = 2;
-	 */
-	serializer_version?: number;
-	/**
-	 * @generated from protobuf field: repeated int32 fields_index = 3;
-	 */
-	fields_index: number[];
+  /**
+   * @generated from protobuf field: optional int32 serializer_name_sym = 1;
+   */
+  serializer_name_sym?: number;
+  /**
+   * @generated from protobuf field: optional int32 serializer_version = 2;
+   */
+  serializer_version?: number;
+  /**
+   * @generated from protobuf field: repeated int32 fields_index = 3;
+   */
+  fields_index: number[];
 }
 /**
  * @generated from protobuf message CSVCMsg_FlattenedSerializer
  */
 export interface CSVCMsg_FlattenedSerializer {
-	/**
-	 * @generated from protobuf field: repeated ProtoFlattenedSerializer_t serializers = 1;
-	 */
-	serializers: ProtoFlattenedSerializer_t[];
-	/**
-	 * @generated from protobuf field: repeated string symbols = 2;
-	 */
-	symbols: string[];
-	/**
-	 * @generated from protobuf field: repeated ProtoFlattenedSerializerField_t fields = 3;
-	 */
-	fields: ProtoFlattenedSerializerField_t[];
+  /**
+   * @generated from protobuf field: repeated ProtoFlattenedSerializer_t serializers = 1;
+   */
+  serializers: ProtoFlattenedSerializer_t[];
+  /**
+   * @generated from protobuf field: repeated string symbols = 2;
+   */
+  symbols: string[];
+  /**
+   * @generated from protobuf field: repeated ProtoFlattenedSerializerField_t fields = 3;
+   */
+  fields: ProtoFlattenedSerializerField_t[];
 }
 /**
  * @generated from protobuf message CSVCMsg_StopSound
  */
 export interface CSVCMsg_StopSound {
-	/**
-	 * @generated from protobuf field: optional fixed32 guid = 1;
-	 */
-	guid?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 guid = 1;
+   */
+  guid?: number;
 }
 /**
  * @generated from protobuf message CBidirMsg_RebroadcastGameEvent
  */
 export interface CBidirMsg_RebroadcastGameEvent {
-	/**
-	 * @generated from protobuf field: optional bool posttoserver = 1;
-	 */
-	posttoserver?: boolean;
-	/**
-	 * @generated from protobuf field: optional int32 buftype = 2;
-	 */
-	buftype?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 clientbitcount = 3;
-	 */
-	clientbitcount?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 receivingclients = 4;
-	 */
-	receivingclients?: bigint;
+  /**
+   * @generated from protobuf field: optional bool posttoserver = 1;
+   */
+  posttoserver?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 buftype = 2;
+   */
+  buftype?: number;
+  /**
+   * @generated from protobuf field: optional uint32 clientbitcount = 3;
+   */
+  clientbitcount?: number;
+  /**
+   * @generated from protobuf field: optional uint64 receivingclients = 4;
+   */
+  receivingclients?: bigint;
 }
 /**
  * @generated from protobuf message CBidirMsg_RebroadcastSource
  */
 export interface CBidirMsg_RebroadcastSource {
-	/**
-	 * @generated from protobuf field: optional int32 eventsource = 1;
-	 */
-	eventsource?: number;
+  /**
+   * @generated from protobuf field: optional int32 eventsource = 1;
+   */
+  eventsource?: number;
 }
 /**
  * @generated from protobuf message CMsgServerNetworkStats
  */
 export interface CMsgServerNetworkStats {
-	/**
-	 * @generated from protobuf field: optional bool dedicated = 1;
-	 */
-	dedicated?: boolean;
-	/**
-	 * @generated from protobuf field: optional int32 cpu_usage = 2;
-	 */
-	cpu_usage?: number;
-	/**
-	 * @generated from protobuf field: optional int32 memory_used_mb = 3;
-	 */
-	memory_used_mb?: number;
-	/**
-	 * @generated from protobuf field: optional int32 memory_free_mb = 4;
-	 */
-	memory_free_mb?: number;
-	/**
-	 * @generated from protobuf field: optional int32 uptime = 5;
-	 */
-	uptime?: number;
-	/**
-	 * @generated from protobuf field: optional int32 spawn_count = 6;
-	 */
-	spawn_count?: number;
-	/**
-	 * @generated from protobuf field: optional int32 num_clients = 8;
-	 */
-	num_clients?: number;
-	/**
-	 * @generated from protobuf field: optional int32 num_bots = 9;
-	 */
-	num_bots?: number;
-	/**
-	 * @generated from protobuf field: optional int32 num_spectators = 10;
-	 */
-	num_spectators?: number;
-	/**
-	 * @generated from protobuf field: optional int32 num_tv_relays = 11;
-	 */
-	num_tv_relays?: number;
-	/**
-	 * @generated from protobuf field: optional float fps = 12;
-	 */
-	fps?: number;
-	/**
-	 * @generated from protobuf field: repeated CMsgServerNetworkStats.Port ports = 17;
-	 */
-	ports: CMsgServerNetworkStats_Port[];
-	/**
-	 * @generated from protobuf field: optional float avg_ping_ms = 18;
-	 */
-	avg_ping_ms?: number;
-	/**
-	 * @generated from protobuf field: optional float avg_engine_latency_out = 19;
-	 */
-	avg_engine_latency_out?: number;
-	/**
-	 * @generated from protobuf field: optional float avg_packets_out = 20;
-	 */
-	avg_packets_out?: number;
-	/**
-	 * @generated from protobuf field: optional float avg_packets_in = 21;
-	 */
-	avg_packets_in?: number;
-	/**
-	 * @generated from protobuf field: optional float avg_loss_out = 22;
-	 */
-	avg_loss_out?: number;
-	/**
-	 * @generated from protobuf field: optional float avg_loss_in = 23;
-	 */
-	avg_loss_in?: number;
-	/**
-	 * @generated from protobuf field: optional float avg_data_out = 24;
-	 */
-	avg_data_out?: number;
-	/**
-	 * @generated from protobuf field: optional float avg_data_in = 25;
-	 */
-	avg_data_in?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 total_data_in = 26;
-	 */
-	total_data_in?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 total_packets_in = 27;
-	 */
-	total_packets_in?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 total_data_out = 28;
-	 */
-	total_data_out?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 total_packets_out = 29;
-	 */
-	total_packets_out?: bigint;
-	/**
-	 * @generated from protobuf field: repeated CMsgServerNetworkStats.Player players = 30;
-	 */
-	players: CMsgServerNetworkStats_Player[];
+  /**
+   * @generated from protobuf field: optional bool dedicated = 1;
+   */
+  dedicated?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 cpu_usage = 2;
+   */
+  cpu_usage?: number;
+  /**
+   * @generated from protobuf field: optional int32 memory_used_mb = 3;
+   */
+  memory_used_mb?: number;
+  /**
+   * @generated from protobuf field: optional int32 memory_free_mb = 4;
+   */
+  memory_free_mb?: number;
+  /**
+   * @generated from protobuf field: optional int32 uptime = 5;
+   */
+  uptime?: number;
+  /**
+   * @generated from protobuf field: optional int32 spawn_count = 6;
+   */
+  spawn_count?: number;
+  /**
+   * @generated from protobuf field: optional int32 num_clients = 8;
+   */
+  num_clients?: number;
+  /**
+   * @generated from protobuf field: optional int32 num_bots = 9;
+   */
+  num_bots?: number;
+  /**
+   * @generated from protobuf field: optional int32 num_spectators = 10;
+   */
+  num_spectators?: number;
+  /**
+   * @generated from protobuf field: optional int32 num_tv_relays = 11;
+   */
+  num_tv_relays?: number;
+  /**
+   * @generated from protobuf field: optional float fps = 12;
+   */
+  fps?: number;
+  /**
+   * @generated from protobuf field: repeated CMsgServerNetworkStats.Port ports = 17;
+   */
+  ports: CMsgServerNetworkStats_Port[];
+  /**
+   * @generated from protobuf field: optional float avg_ping_ms = 18;
+   */
+  avg_ping_ms?: number;
+  /**
+   * @generated from protobuf field: optional float avg_engine_latency_out = 19;
+   */
+  avg_engine_latency_out?: number;
+  /**
+   * @generated from protobuf field: optional float avg_packets_out = 20;
+   */
+  avg_packets_out?: number;
+  /**
+   * @generated from protobuf field: optional float avg_packets_in = 21;
+   */
+  avg_packets_in?: number;
+  /**
+   * @generated from protobuf field: optional float avg_loss_out = 22;
+   */
+  avg_loss_out?: number;
+  /**
+   * @generated from protobuf field: optional float avg_loss_in = 23;
+   */
+  avg_loss_in?: number;
+  /**
+   * @generated from protobuf field: optional float avg_data_out = 24;
+   */
+  avg_data_out?: number;
+  /**
+   * @generated from protobuf field: optional float avg_data_in = 25;
+   */
+  avg_data_in?: number;
+  /**
+   * @generated from protobuf field: optional uint64 total_data_in = 26;
+   */
+  total_data_in?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 total_packets_in = 27;
+   */
+  total_packets_in?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 total_data_out = 28;
+   */
+  total_data_out?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 total_packets_out = 29;
+   */
+  total_packets_out?: bigint;
+  /**
+   * @generated from protobuf field: repeated CMsgServerNetworkStats.Player players = 30;
+   */
+  players: CMsgServerNetworkStats_Player[];
 }
 /**
  * @generated from protobuf message CMsgServerNetworkStats.Port
  */
 export interface CMsgServerNetworkStats_Port {
-	/**
-	 * @generated from protobuf field: optional int32 port = 1;
-	 */
-	port?: number;
-	/**
-	 * @generated from protobuf field: optional string name = 2;
-	 */
-	name?: string;
+  /**
+   * @generated from protobuf field: optional int32 port = 1;
+   */
+  port?: number;
+  /**
+   * @generated from protobuf field: optional string name = 2;
+   */
+  name?: string;
 }
 /**
  * @generated from protobuf message CMsgServerNetworkStats.Player
  */
 export interface CMsgServerNetworkStats_Player {
-	/**
-	 * @generated from protobuf field: optional uint64 steamid = 1;
-	 */
-	steamid?: bigint;
-	/**
-	 * @generated from protobuf field: optional string remote_addr = 2;
-	 */
-	remote_addr?: string;
-	/**
-	 * @generated from protobuf field: optional int32 ping_avg_ms = 4;
-	 */
-	ping_avg_ms?: number;
-	/**
-	 * @generated from protobuf field: optional float packet_loss_pct = 5;
-	 */
-	packet_loss_pct?: number;
-	/**
-	 * @generated from protobuf field: optional bool is_bot = 6;
-	 */
-	is_bot?: boolean;
-	/**
-	 * @generated from protobuf field: optional float loss_in = 7;
-	 */
-	loss_in?: number;
-	/**
-	 * @generated from protobuf field: optional float loss_out = 8;
-	 */
-	loss_out?: number;
-	/**
-	 * @generated from protobuf field: optional int32 engine_latency_ms = 9;
-	 */
-	engine_latency_ms?: number;
+  /**
+   * @generated from protobuf field: optional uint64 steamid = 1;
+   */
+  steamid?: bigint;
+  /**
+   * @generated from protobuf field: optional string remote_addr = 2;
+   */
+  remote_addr?: string;
+  /**
+   * @generated from protobuf field: optional int32 ping_avg_ms = 4;
+   */
+  ping_avg_ms?: number;
+  /**
+   * @generated from protobuf field: optional float packet_loss_pct = 5;
+   */
+  packet_loss_pct?: number;
+  /**
+   * @generated from protobuf field: optional bool is_bot = 6;
+   */
+  is_bot?: boolean;
+  /**
+   * @generated from protobuf field: optional float loss_in = 7;
+   */
+  loss_in?: number;
+  /**
+   * @generated from protobuf field: optional float loss_out = 8;
+   */
+  loss_out?: number;
+  /**
+   * @generated from protobuf field: optional int32 engine_latency_ms = 9;
+   */
+  engine_latency_ms?: number;
 }
 /**
  * @generated from protobuf message CSVCMsg_HltvReplay
  */
 export interface CSVCMsg_HltvReplay {
-	/**
-	 * @generated from protobuf field: optional int32 delay = 1;
-	 */
-	delay?: number;
-	/**
-	 * @generated from protobuf field: optional int32 primary_target = 2;
-	 */
-	primary_target?: number;
-	/**
-	 * @generated from protobuf field: optional int32 replay_stop_at = 3;
-	 */
-	replay_stop_at?: number;
-	/**
-	 * @generated from protobuf field: optional int32 replay_start_at = 4;
-	 */
-	replay_start_at?: number;
-	/**
-	 * @generated from protobuf field: optional int32 replay_slowdown_begin = 5;
-	 */
-	replay_slowdown_begin?: number;
-	/**
-	 * @generated from protobuf field: optional int32 replay_slowdown_end = 6;
-	 */
-	replay_slowdown_end?: number;
-	/**
-	 * @generated from protobuf field: optional float replay_slowdown_rate = 7;
-	 */
-	replay_slowdown_rate?: number;
-	/**
-	 * @generated from protobuf field: optional int32 reason = 8;
-	 */
-	reason?: number;
+  /**
+   * @generated from protobuf field: optional int32 delay = 1;
+   */
+  delay?: number;
+  /**
+   * @generated from protobuf field: optional int32 primary_target = 2;
+   */
+  primary_target?: number;
+  /**
+   * @generated from protobuf field: optional int32 replay_stop_at = 3;
+   */
+  replay_stop_at?: number;
+  /**
+   * @generated from protobuf field: optional int32 replay_start_at = 4;
+   */
+  replay_start_at?: number;
+  /**
+   * @generated from protobuf field: optional int32 replay_slowdown_begin = 5;
+   */
+  replay_slowdown_begin?: number;
+  /**
+   * @generated from protobuf field: optional int32 replay_slowdown_end = 6;
+   */
+  replay_slowdown_end?: number;
+  /**
+   * @generated from protobuf field: optional float replay_slowdown_rate = 7;
+   */
+  replay_slowdown_rate?: number;
+  /**
+   * @generated from protobuf field: optional int32 reason = 8;
+   */
+  reason?: number;
 }
 /**
  * @generated from protobuf message CCLCMsg_HltvReplay
  */
 export interface CCLCMsg_HltvReplay {
-	/**
-	 * @generated from protobuf field: optional int32 request = 1;
-	 */
-	request?: number;
-	/**
-	 * @generated from protobuf field: optional float slowdown_length = 2;
-	 */
-	slowdown_length?: number;
-	/**
-	 * @generated from protobuf field: optional float slowdown_rate = 3;
-	 */
-	slowdown_rate?: number;
-	/**
-	 * @generated from protobuf field: optional int32 primary_target = 4;
-	 */
-	primary_target?: number;
-	/**
-	 * @generated from protobuf field: optional float event_time = 5;
-	 */
-	event_time?: number;
+  /**
+   * @generated from protobuf field: optional int32 request = 1;
+   */
+  request?: number;
+  /**
+   * @generated from protobuf field: optional float slowdown_length = 2;
+   */
+  slowdown_length?: number;
+  /**
+   * @generated from protobuf field: optional float slowdown_rate = 3;
+   */
+  slowdown_rate?: number;
+  /**
+   * @generated from protobuf field: optional int32 primary_target = 4;
+   */
+  primary_target?: number;
+  /**
+   * @generated from protobuf field: optional float event_time = 5;
+   */
+  event_time?: number;
 }
 /**
  * @generated from protobuf message CSVCMsg_Broadcast_Command
  */
 export interface CSVCMsg_Broadcast_Command {
-	/**
-	 * @generated from protobuf field: optional string cmd = 1;
-	 */
-	cmd?: string;
+  /**
+   * @generated from protobuf field: optional string cmd = 1;
+   */
+  cmd?: string;
 }
 /**
  * @generated from protobuf message CCLCMsg_HltvFixupOperatorTick
  */
 export interface CCLCMsg_HltvFixupOperatorTick {
-	/**
-	 * @generated from protobuf field: optional int32 tick = 1;
-	 */
-	tick?: number;
-	/**
-	 * @generated from protobuf field: optional bytes props_data = 2;
-	 */
-	props_data?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 3;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgQAngle eye_angles = 4;
-	 */
-	eye_angles?: CMsgQAngle;
-	/**
-	 * @generated from protobuf field: optional int32 observer_mode = 5;
-	 */
-	observer_mode?: number;
-	/**
-	 * @generated from protobuf field: optional bool cameraman_scoreboard = 6;
-	 */
-	cameraman_scoreboard?: boolean;
-	/**
-	 * @generated from protobuf field: optional int32 observer_target = 7;
-	 */
-	observer_target?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector view_offset = 8;
-	 */
-	view_offset?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional int32 tick = 1;
+   */
+  tick?: number;
+  /**
+   * @generated from protobuf field: optional bytes props_data = 2;
+   */
+  props_data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 3;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgQAngle eye_angles = 4;
+   */
+  eye_angles?: CMsgQAngle;
+  /**
+   * @generated from protobuf field: optional int32 observer_mode = 5;
+   */
+  observer_mode?: number;
+  /**
+   * @generated from protobuf field: optional bool cameraman_scoreboard = 6;
+   */
+  cameraman_scoreboard?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 observer_target = 7;
+   */
+  observer_target?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector view_offset = 8;
+   */
+  view_offset?: CMsgVector;
 }
 /**
  * @generated from protobuf message CSVCMsg_HltvFixupOperatorStatus
  */
 export interface CSVCMsg_HltvFixupOperatorStatus {
-	/**
-	 * @generated from protobuf field: optional uint32 mode = 1;
-	 */
-	mode?: number;
-	/**
-	 * @generated from protobuf field: optional string override_operator_name = 2;
-	 */
-	override_operator_name?: string;
+  /**
+   * @generated from protobuf field: optional uint32 mode = 1;
+   */
+  mode?: number;
+  /**
+   * @generated from protobuf field: optional string override_operator_name = 2;
+   */
+  override_operator_name?: string;
 }
 /**
  * @generated from protobuf message CMsgServerUserCmd
  */
 export interface CMsgServerUserCmd {
-	/**
-	 * @generated from protobuf field: optional bytes data = 1;
-	 */
-	data?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional int32 cmd_number = 2;
-	 */
-	cmd_number?: number;
-	/**
-	 * @generated from protobuf field: optional int32 player_slot = 3;
-	 */
-	player_slot?: number;
-	/**
-	 * @generated from protobuf field: optional int32 server_tick_executed = 4;
-	 */
-	server_tick_executed?: number;
-	/**
-	 * @generated from protobuf field: optional int32 client_tick = 5;
-	 */
-	client_tick?: number;
+  /**
+   * @generated from protobuf field: optional bytes data = 1;
+   */
+  data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional int32 cmd_number = 2;
+   */
+  cmd_number?: number;
+  /**
+   * @generated from protobuf field: optional int32 player_slot = 3;
+   */
+  player_slot?: number;
+  /**
+   * @generated from protobuf field: optional int32 server_tick_executed = 4;
+   */
+  server_tick_executed?: number;
+  /**
+   * @generated from protobuf field: optional int32 client_tick = 5;
+   */
+  client_tick?: number;
 }
 /**
  * @generated from protobuf message CSVCMsg_UserCommands
  */
 export interface CSVCMsg_UserCommands {
-	/**
-	 * @generated from protobuf field: repeated CMsgServerUserCmd commands = 1;
-	 */
-	commands: CMsgServerUserCmd[];
+  /**
+   * @generated from protobuf field: repeated CMsgServerUserCmd commands = 1;
+   */
+  commands: CMsgServerUserCmd[];
 }
 /**
  * @generated from protobuf enum CLC_Messages
  */
 export enum CLC_Messages {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: clc_ClientInfo = 20;
-	 */
-	clc_ClientInfo = 20,
-	/**
-	 * @generated from protobuf enum value: clc_Move = 21;
-	 */
-	clc_Move = 21,
-	/**
-	 * @generated from protobuf enum value: clc_VoiceData = 22;
-	 */
-	clc_VoiceData = 22,
-	/**
-	 * @generated from protobuf enum value: clc_BaselineAck = 23;
-	 */
-	clc_BaselineAck = 23,
-	/**
-	 * @generated from protobuf enum value: clc_RespondCvarValue = 25;
-	 */
-	clc_RespondCvarValue = 25,
-	/**
-	 * @generated from protobuf enum value: clc_FileCRCCheck = 26;
-	 */
-	clc_FileCRCCheck = 26,
-	/**
-	 * @generated from protobuf enum value: clc_LoadingProgress = 27;
-	 */
-	clc_LoadingProgress = 27,
-	/**
-	 * @generated from protobuf enum value: clc_SplitPlayerConnect = 28;
-	 */
-	clc_SplitPlayerConnect = 28,
-	/**
-	 * @generated from protobuf enum value: clc_SplitPlayerDisconnect = 30;
-	 */
-	clc_SplitPlayerDisconnect = 30,
-	/**
-	 * @generated from protobuf enum value: clc_ServerStatus = 31;
-	 */
-	clc_ServerStatus = 31,
-	/**
-	 * @generated from protobuf enum value: clc_RequestPause = 33;
-	 */
-	clc_RequestPause = 33,
-	/**
-	 * @generated from protobuf enum value: clc_CmdKeyValues = 34;
-	 */
-	clc_CmdKeyValues = 34,
-	/**
-	 * @generated from protobuf enum value: clc_RconServerDetails = 35;
-	 */
-	clc_RconServerDetails = 35,
-	/**
-	 * @generated from protobuf enum value: clc_HltvReplay = 36;
-	 */
-	clc_HltvReplay = 36,
-	/**
-	 * @generated from protobuf enum value: clc_Diagnostic = 37;
-	 */
-	clc_Diagnostic = 37,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: clc_ClientInfo = 20;
+   */
+  clc_ClientInfo = 20,
+  /**
+   * @generated from protobuf enum value: clc_Move = 21;
+   */
+  clc_Move = 21,
+  /**
+   * @generated from protobuf enum value: clc_VoiceData = 22;
+   */
+  clc_VoiceData = 22,
+  /**
+   * @generated from protobuf enum value: clc_BaselineAck = 23;
+   */
+  clc_BaselineAck = 23,
+  /**
+   * @generated from protobuf enum value: clc_RespondCvarValue = 25;
+   */
+  clc_RespondCvarValue = 25,
+  /**
+   * @generated from protobuf enum value: clc_FileCRCCheck = 26;
+   */
+  clc_FileCRCCheck = 26,
+  /**
+   * @generated from protobuf enum value: clc_LoadingProgress = 27;
+   */
+  clc_LoadingProgress = 27,
+  /**
+   * @generated from protobuf enum value: clc_SplitPlayerConnect = 28;
+   */
+  clc_SplitPlayerConnect = 28,
+  /**
+   * @generated from protobuf enum value: clc_SplitPlayerDisconnect = 30;
+   */
+  clc_SplitPlayerDisconnect = 30,
+  /**
+   * @generated from protobuf enum value: clc_ServerStatus = 31;
+   */
+  clc_ServerStatus = 31,
+  /**
+   * @generated from protobuf enum value: clc_RequestPause = 33;
+   */
+  clc_RequestPause = 33,
+  /**
+   * @generated from protobuf enum value: clc_CmdKeyValues = 34;
+   */
+  clc_CmdKeyValues = 34,
+  /**
+   * @generated from protobuf enum value: clc_RconServerDetails = 35;
+   */
+  clc_RconServerDetails = 35,
+  /**
+   * @generated from protobuf enum value: clc_HltvReplay = 36;
+   */
+  clc_HltvReplay = 36,
+  /**
+   * @generated from protobuf enum value: clc_Diagnostic = 37;
+   */
+  clc_Diagnostic = 37,
 }
 /**
  * @generated from protobuf enum SVC_Messages
  */
 export enum SVC_Messages {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: svc_ServerInfo = 40;
-	 */
-	svc_ServerInfo = 40,
-	/**
-	 * @generated from protobuf enum value: svc_FlattenedSerializer = 41;
-	 */
-	svc_FlattenedSerializer = 41,
-	/**
-	 * @generated from protobuf enum value: svc_ClassInfo = 42;
-	 */
-	svc_ClassInfo = 42,
-	/**
-	 * @generated from protobuf enum value: svc_SetPause = 43;
-	 */
-	svc_SetPause = 43,
-	/**
-	 * @generated from protobuf enum value: svc_CreateStringTable = 44;
-	 */
-	svc_CreateStringTable = 44,
-	/**
-	 * @generated from protobuf enum value: svc_UpdateStringTable = 45;
-	 */
-	svc_UpdateStringTable = 45,
-	/**
-	 * @generated from protobuf enum value: svc_VoiceInit = 46;
-	 */
-	svc_VoiceInit = 46,
-	/**
-	 * @generated from protobuf enum value: svc_VoiceData = 47;
-	 */
-	svc_VoiceData = 47,
-	/**
-	 * @generated from protobuf enum value: svc_Print = 48;
-	 */
-	svc_Print = 48,
-	/**
-	 * @generated from protobuf enum value: svc_Sounds = 49;
-	 */
-	svc_Sounds = 49,
-	/**
-	 * @generated from protobuf enum value: svc_SetView = 50;
-	 */
-	svc_SetView = 50,
-	/**
-	 * @generated from protobuf enum value: svc_ClearAllStringTables = 51;
-	 */
-	svc_ClearAllStringTables = 51,
-	/**
-	 * @generated from protobuf enum value: svc_CmdKeyValues = 52;
-	 */
-	svc_CmdKeyValues = 52,
-	/**
-	 * @generated from protobuf enum value: svc_BSPDecal = 53;
-	 */
-	svc_BSPDecal = 53,
-	/**
-	 * @generated from protobuf enum value: svc_SplitScreen = 54;
-	 */
-	svc_SplitScreen = 54,
-	/**
-	 * @generated from protobuf enum value: svc_PacketEntities = 55;
-	 */
-	svc_PacketEntities = 55,
-	/**
-	 * @generated from protobuf enum value: svc_Prefetch = 56;
-	 */
-	svc_Prefetch = 56,
-	/**
-	 * @generated from protobuf enum value: svc_Menu = 57;
-	 */
-	svc_Menu = 57,
-	/**
-	 * @generated from protobuf enum value: svc_GetCvarValue = 58;
-	 */
-	svc_GetCvarValue = 58,
-	/**
-	 * @generated from protobuf enum value: svc_StopSound = 59;
-	 */
-	svc_StopSound = 59,
-	/**
-	 * @generated from protobuf enum value: svc_PeerList = 60;
-	 */
-	svc_PeerList = 60,
-	/**
-	 * @generated from protobuf enum value: svc_PacketReliable = 61;
-	 */
-	svc_PacketReliable = 61,
-	/**
-	 * @generated from protobuf enum value: svc_HLTVStatus = 62;
-	 */
-	svc_HLTVStatus = 62,
-	/**
-	 * @generated from protobuf enum value: svc_ServerSteamID = 63;
-	 */
-	svc_ServerSteamID = 63,
-	/**
-	 * @generated from protobuf enum value: svc_FullFrameSplit = 70;
-	 */
-	svc_FullFrameSplit = 70,
-	/**
-	 * @generated from protobuf enum value: svc_RconServerDetails = 71;
-	 */
-	svc_RconServerDetails = 71,
-	/**
-	 * @generated from protobuf enum value: svc_UserMessage = 72;
-	 */
-	svc_UserMessage = 72,
-	/**
-	 * @generated from protobuf enum value: svc_Broadcast_Command = 74;
-	 */
-	svc_Broadcast_Command = 74,
-	/**
-	 * @generated from protobuf enum value: svc_HltvFixupOperatorStatus = 75;
-	 */
-	svc_HltvFixupOperatorStatus = 75,
-	/**
-	 * @generated from protobuf enum value: svc_UserCmds = 76;
-	 */
-	svc_UserCmds = 76,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: svc_ServerInfo = 40;
+   */
+  svc_ServerInfo = 40,
+  /**
+   * @generated from protobuf enum value: svc_FlattenedSerializer = 41;
+   */
+  svc_FlattenedSerializer = 41,
+  /**
+   * @generated from protobuf enum value: svc_ClassInfo = 42;
+   */
+  svc_ClassInfo = 42,
+  /**
+   * @generated from protobuf enum value: svc_SetPause = 43;
+   */
+  svc_SetPause = 43,
+  /**
+   * @generated from protobuf enum value: svc_CreateStringTable = 44;
+   */
+  svc_CreateStringTable = 44,
+  /**
+   * @generated from protobuf enum value: svc_UpdateStringTable = 45;
+   */
+  svc_UpdateStringTable = 45,
+  /**
+   * @generated from protobuf enum value: svc_VoiceInit = 46;
+   */
+  svc_VoiceInit = 46,
+  /**
+   * @generated from protobuf enum value: svc_VoiceData = 47;
+   */
+  svc_VoiceData = 47,
+  /**
+   * @generated from protobuf enum value: svc_Print = 48;
+   */
+  svc_Print = 48,
+  /**
+   * @generated from protobuf enum value: svc_Sounds = 49;
+   */
+  svc_Sounds = 49,
+  /**
+   * @generated from protobuf enum value: svc_SetView = 50;
+   */
+  svc_SetView = 50,
+  /**
+   * @generated from protobuf enum value: svc_ClearAllStringTables = 51;
+   */
+  svc_ClearAllStringTables = 51,
+  /**
+   * @generated from protobuf enum value: svc_CmdKeyValues = 52;
+   */
+  svc_CmdKeyValues = 52,
+  /**
+   * @generated from protobuf enum value: svc_BSPDecal = 53;
+   */
+  svc_BSPDecal = 53,
+  /**
+   * @generated from protobuf enum value: svc_SplitScreen = 54;
+   */
+  svc_SplitScreen = 54,
+  /**
+   * @generated from protobuf enum value: svc_PacketEntities = 55;
+   */
+  svc_PacketEntities = 55,
+  /**
+   * @generated from protobuf enum value: svc_Prefetch = 56;
+   */
+  svc_Prefetch = 56,
+  /**
+   * @generated from protobuf enum value: svc_Menu = 57;
+   */
+  svc_Menu = 57,
+  /**
+   * @generated from protobuf enum value: svc_GetCvarValue = 58;
+   */
+  svc_GetCvarValue = 58,
+  /**
+   * @generated from protobuf enum value: svc_StopSound = 59;
+   */
+  svc_StopSound = 59,
+  /**
+   * @generated from protobuf enum value: svc_PeerList = 60;
+   */
+  svc_PeerList = 60,
+  /**
+   * @generated from protobuf enum value: svc_PacketReliable = 61;
+   */
+  svc_PacketReliable = 61,
+  /**
+   * @generated from protobuf enum value: svc_HLTVStatus = 62;
+   */
+  svc_HLTVStatus = 62,
+  /**
+   * @generated from protobuf enum value: svc_ServerSteamID = 63;
+   */
+  svc_ServerSteamID = 63,
+  /**
+   * @generated from protobuf enum value: svc_FullFrameSplit = 70;
+   */
+  svc_FullFrameSplit = 70,
+  /**
+   * @generated from protobuf enum value: svc_RconServerDetails = 71;
+   */
+  svc_RconServerDetails = 71,
+  /**
+   * @generated from protobuf enum value: svc_UserMessage = 72;
+   */
+  svc_UserMessage = 72,
+  /**
+   * @generated from protobuf enum value: svc_Broadcast_Command = 74;
+   */
+  svc_Broadcast_Command = 74,
+  /**
+   * @generated from protobuf enum value: svc_HltvFixupOperatorStatus = 75;
+   */
+  svc_HltvFixupOperatorStatus = 75,
+  /**
+   * @generated from protobuf enum value: svc_UserCmds = 76;
+   */
+  svc_UserCmds = 76,
 }
 /**
  * @generated from protobuf enum VoiceDataFormat_t
  */
 export enum VoiceDataFormat_t {
-	/**
-	 * @generated from protobuf enum value: VOICEDATA_FORMAT_STEAM = 0;
-	 */
-	VOICEDATA_FORMAT_STEAM = 0,
-	/**
-	 * @generated from protobuf enum value: VOICEDATA_FORMAT_ENGINE = 1;
-	 */
-	VOICEDATA_FORMAT_ENGINE = 1,
-	/**
-	 * @generated from protobuf enum value: VOICEDATA_FORMAT_OPUS = 2;
-	 */
-	VOICEDATA_FORMAT_OPUS = 2,
+  /**
+   * @generated from protobuf enum value: VOICEDATA_FORMAT_STEAM = 0;
+   */
+  VOICEDATA_FORMAT_STEAM = 0,
+  /**
+   * @generated from protobuf enum value: VOICEDATA_FORMAT_ENGINE = 1;
+   */
+  VOICEDATA_FORMAT_ENGINE = 1,
+  /**
+   * @generated from protobuf enum value: VOICEDATA_FORMAT_OPUS = 2;
+   */
+  VOICEDATA_FORMAT_OPUS = 2,
 }
 /**
  * @generated from protobuf enum RequestPause_t
  */
 export enum RequestPause_t {
-	/**
-	 * @generated from protobuf enum value: RP_PAUSE = 0;
-	 */
-	RP_PAUSE = 0,
-	/**
-	 * @generated from protobuf enum value: RP_UNPAUSE = 1;
-	 */
-	RP_UNPAUSE = 1,
-	/**
-	 * @generated from protobuf enum value: RP_TOGGLEPAUSE = 2;
-	 */
-	RP_TOGGLEPAUSE = 2,
+  /**
+   * @generated from protobuf enum value: RP_PAUSE = 0;
+   */
+  RP_PAUSE = 0,
+  /**
+   * @generated from protobuf enum value: RP_UNPAUSE = 1;
+   */
+  RP_UNPAUSE = 1,
+  /**
+   * @generated from protobuf enum value: RP_TOGGLEPAUSE = 2;
+   */
+  RP_TOGGLEPAUSE = 2,
 }
 /**
  * @generated from protobuf enum PrefetchType
  */
 export enum PrefetchType {
-	/**
-	 * @generated from protobuf enum value: PFT_SOUND = 0;
-	 */
-	PFT_SOUND = 0,
+  /**
+   * @generated from protobuf enum value: PFT_SOUND = 0;
+   */
+  PFT_SOUND = 0,
 }
 /**
  * @generated from protobuf enum ESplitScreenMessageType
  */
 export enum ESplitScreenMessageType {
-	/**
-	 * @generated from protobuf enum value: MSG_SPLITSCREEN_ADDUSER = 0;
-	 */
-	MSG_SPLITSCREEN_ADDUSER = 0,
-	/**
-	 * @generated from protobuf enum value: MSG_SPLITSCREEN_REMOVEUSER = 1;
-	 */
-	MSG_SPLITSCREEN_REMOVEUSER = 1,
+  /**
+   * @generated from protobuf enum value: MSG_SPLITSCREEN_ADDUSER = 0;
+   */
+  MSG_SPLITSCREEN_ADDUSER = 0,
+  /**
+   * @generated from protobuf enum value: MSG_SPLITSCREEN_REMOVEUSER = 1;
+   */
+  MSG_SPLITSCREEN_REMOVEUSER = 1,
 }
 /**
  * @generated from protobuf enum EQueryCvarValueStatus
  */
 export enum EQueryCvarValueStatus {
-	/**
-	 * @generated from protobuf enum value: eQueryCvarValueStatus_ValueIntact = 0;
-	 */
-	eQueryCvarValueStatus_ValueIntact = 0,
-	/**
-	 * @generated from protobuf enum value: eQueryCvarValueStatus_CvarNotFound = 1;
-	 */
-	eQueryCvarValueStatus_CvarNotFound = 1,
-	/**
-	 * @generated from protobuf enum value: eQueryCvarValueStatus_NotACvar = 2;
-	 */
-	eQueryCvarValueStatus_NotACvar = 2,
-	/**
-	 * @generated from protobuf enum value: eQueryCvarValueStatus_CvarProtected = 3;
-	 */
-	eQueryCvarValueStatus_CvarProtected = 3,
+  /**
+   * @generated from protobuf enum value: eQueryCvarValueStatus_ValueIntact = 0;
+   */
+  eQueryCvarValueStatus_ValueIntact = 0,
+  /**
+   * @generated from protobuf enum value: eQueryCvarValueStatus_CvarNotFound = 1;
+   */
+  eQueryCvarValueStatus_CvarNotFound = 1,
+  /**
+   * @generated from protobuf enum value: eQueryCvarValueStatus_NotACvar = 2;
+   */
+  eQueryCvarValueStatus_NotACvar = 2,
+  /**
+   * @generated from protobuf enum value: eQueryCvarValueStatus_CvarProtected = 3;
+   */
+  eQueryCvarValueStatus_CvarProtected = 3,
 }
 /**
  * @generated from protobuf enum DIALOG_TYPE
  */
 export enum DIALOG_TYPE {
-	/**
-	 * @generated from protobuf enum value: DIALOG_MSG = 0;
-	 */
-	DIALOG_MSG = 0,
-	/**
-	 * @generated from protobuf enum value: DIALOG_MENU = 1;
-	 */
-	DIALOG_MENU = 1,
-	/**
-	 * @generated from protobuf enum value: DIALOG_TEXT = 2;
-	 */
-	DIALOG_TEXT = 2,
-	/**
-	 * @generated from protobuf enum value: DIALOG_ENTRY = 3;
-	 */
-	DIALOG_ENTRY = 3,
-	/**
-	 * @generated from protobuf enum value: DIALOG_ASKCONNECT = 4;
-	 */
-	DIALOG_ASKCONNECT = 4,
+  /**
+   * @generated from protobuf enum value: DIALOG_MSG = 0;
+   */
+  DIALOG_MSG = 0,
+  /**
+   * @generated from protobuf enum value: DIALOG_MENU = 1;
+   */
+  DIALOG_MENU = 1,
+  /**
+   * @generated from protobuf enum value: DIALOG_TEXT = 2;
+   */
+  DIALOG_TEXT = 2,
+  /**
+   * @generated from protobuf enum value: DIALOG_ENTRY = 3;
+   */
+  DIALOG_ENTRY = 3,
+  /**
+   * @generated from protobuf enum value: DIALOG_ASKCONNECT = 4;
+   */
+  DIALOG_ASKCONNECT = 4,
 }
 /**
  * @generated from protobuf enum SVC_Messages_LowFrequency
  */
 export enum SVC_Messages_LowFrequency {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: svc_dummy = 600;
-	 */
-	svc_dummy = 600,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: svc_dummy = 600;
+   */
+  svc_dummy = 600,
 }
 /**
  * @generated from protobuf enum Bidirectional_Messages
  */
 export enum Bidirectional_Messages {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: bi_RebroadcastGameEvent = 16;
-	 */
-	bi_RebroadcastGameEvent = 16,
-	/**
-	 * @generated from protobuf enum value: bi_RebroadcastSource = 17;
-	 */
-	bi_RebroadcastSource = 17,
-	/**
-	 * @generated from protobuf enum value: bi_GameEvent = 18;
-	 */
-	bi_GameEvent = 18,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: bi_RebroadcastGameEvent = 16;
+   */
+  bi_RebroadcastGameEvent = 16,
+  /**
+   * @generated from protobuf enum value: bi_RebroadcastSource = 17;
+   */
+  bi_RebroadcastSource = 17,
+  /**
+   * @generated from protobuf enum value: bi_GameEvent = 18;
+   */
+  bi_GameEvent = 18,
 }
 /**
  * @generated from protobuf enum Bidirectional_Messages_LowFrequency
  */
 export enum Bidirectional_Messages_LowFrequency {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: bi_RelayInfo = 700;
-	 */
-	bi_RelayInfo = 700,
-	/**
-	 * @generated from protobuf enum value: bi_RelayPacket = 701;
-	 */
-	bi_RelayPacket = 701,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: bi_RelayInfo = 700;
+   */
+  bi_RelayInfo = 700,
+  /**
+   * @generated from protobuf enum value: bi_RelayPacket = 701;
+   */
+  bi_RelayPacket = 701,
 }
 /**
  * @generated from protobuf enum ReplayEventType_t
  */
 export enum ReplayEventType_t {
-	/**
-	 * @generated from protobuf enum value: REPLAY_EVENT_CANCEL = 0;
-	 */
-	REPLAY_EVENT_CANCEL = 0,
-	/**
-	 * @generated from protobuf enum value: REPLAY_EVENT_DEATH = 1;
-	 */
-	REPLAY_EVENT_DEATH = 1,
-	/**
-	 * @generated from protobuf enum value: REPLAY_EVENT_GENERIC = 2;
-	 */
-	REPLAY_EVENT_GENERIC = 2,
-	/**
-	 * @generated from protobuf enum value: REPLAY_EVENT_STUCK_NEED_FULL_UPDATE = 3;
-	 */
-	REPLAY_EVENT_STUCK_NEED_FULL_UPDATE = 3,
-	/**
-	 * @generated from protobuf enum value: REPLAY_EVENT_VICTORY = 4;
-	 */
-	REPLAY_EVENT_VICTORY = 4,
+  /**
+   * @generated from protobuf enum value: REPLAY_EVENT_CANCEL = 0;
+   */
+  REPLAY_EVENT_CANCEL = 0,
+  /**
+   * @generated from protobuf enum value: REPLAY_EVENT_DEATH = 1;
+   */
+  REPLAY_EVENT_DEATH = 1,
+  /**
+   * @generated from protobuf enum value: REPLAY_EVENT_GENERIC = 2;
+   */
+  REPLAY_EVENT_GENERIC = 2,
+  /**
+   * @generated from protobuf enum value: REPLAY_EVENT_STUCK_NEED_FULL_UPDATE = 3;
+   */
+  REPLAY_EVENT_STUCK_NEED_FULL_UPDATE = 3,
+  /**
+   * @generated from protobuf enum value: REPLAY_EVENT_VICTORY = 4;
+   */
+  REPLAY_EVENT_VICTORY = 4,
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_ClientInfo$Type extends MessageType<CCLCMsg_ClientInfo> {
-	constructor() {
-		super("CCLCMsg_ClientInfo", [
-			{
-				no: 1,
-				name: "send_table_crc",
-				kind: "scalar",
-				localName: "send_table_crc",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "server_count",
-				kind: "scalar",
-				localName: "server_count",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "is_hltv",
-				kind: "scalar",
-				localName: "is_hltv",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 5,
-				name: "friends_id",
-				kind: "scalar",
-				localName: "friends_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "friends_name",
-				kind: "scalar",
-				localName: "friends_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_ClientInfo>): CCLCMsg_ClientInfo {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_ClientInfo>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_ClientInfo,
-	): CCLCMsg_ClientInfo {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 send_table_crc */ 1:
-					message.send_table_crc = reader.fixed32();
-					break;
-				case /* optional uint32 server_count */ 2:
-					message.server_count = reader.uint32();
-					break;
-				case /* optional bool is_hltv */ 3:
-					message.is_hltv = reader.bool();
-					break;
-				case /* optional uint32 friends_id */ 5:
-					message.friends_id = reader.uint32();
-					break;
-				case /* optional string friends_name */ 6:
-					message.friends_name = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CCLCMsg_ClientInfo, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional fixed32 send_table_crc = 1; */
-		if (message.send_table_crc !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.send_table_crc);
-		/* optional uint32 server_count = 2; */
-		if (message.server_count !== undefined) writer.tag(2, WireType.Varint).uint32(message.server_count);
-		/* optional bool is_hltv = 3; */
-		if (message.is_hltv !== undefined) writer.tag(3, WireType.Varint).bool(message.is_hltv);
-		/* optional uint32 friends_id = 5; */
-		if (message.friends_id !== undefined) writer.tag(5, WireType.Varint).uint32(message.friends_id);
-		/* optional string friends_name = 6; */
-		if (message.friends_name !== undefined) writer.tag(6, WireType.LengthDelimited).string(message.friends_name);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_ClientInfo", [
+      {
+        no: 1,
+        name: "send_table_crc",
+        kind: "scalar",
+        localName: "send_table_crc",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "server_count",
+        kind: "scalar",
+        localName: "server_count",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "is_hltv",
+        kind: "scalar",
+        localName: "is_hltv",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 5,
+        name: "friends_id",
+        kind: "scalar",
+        localName: "friends_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "friends_name",
+        kind: "scalar",
+        localName: "friends_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_ClientInfo>): CCLCMsg_ClientInfo {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_ClientInfo>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_ClientInfo,
+  ): CCLCMsg_ClientInfo {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 send_table_crc */ 1:
+          message.send_table_crc = reader.fixed32();
+          break;
+        case /* optional uint32 server_count */ 2:
+          message.server_count = reader.uint32();
+          break;
+        case /* optional bool is_hltv */ 3:
+          message.is_hltv = reader.bool();
+          break;
+        case /* optional uint32 friends_id */ 5:
+          message.friends_id = reader.uint32();
+          break;
+        case /* optional string friends_name */ 6:
+          message.friends_name = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CCLCMsg_ClientInfo, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional fixed32 send_table_crc = 1; */
+    if (message.send_table_crc !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.send_table_crc);
+    /* optional uint32 server_count = 2; */
+    if (message.server_count !== undefined) writer.tag(2, WireType.Varint).uint32(message.server_count);
+    /* optional bool is_hltv = 3; */
+    if (message.is_hltv !== undefined) writer.tag(3, WireType.Varint).bool(message.is_hltv);
+    /* optional uint32 friends_id = 5; */
+    if (message.friends_id !== undefined) writer.tag(5, WireType.Varint).uint32(message.friends_id);
+    /* optional string friends_name = 6; */
+    if (message.friends_name !== undefined) writer.tag(6, WireType.LengthDelimited).string(message.friends_name);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_ClientInfo
@@ -2191,66 +2191,66 @@ class CCLCMsg_ClientInfo$Type extends MessageType<CCLCMsg_ClientInfo> {
 export const CCLCMsg_ClientInfo = new CCLCMsg_ClientInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_Move$Type extends MessageType<CCLCMsg_Move> {
-	constructor() {
-		super("CCLCMsg_Move", [
-			{
-				no: 3,
-				name: "data",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 4,
-				name: "last_command_number",
-				kind: "scalar",
-				localName: "last_command_number",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_Move>): CCLCMsg_Move {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_Move>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_Move,
-	): CCLCMsg_Move {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bytes data */ 3:
-					message.data = reader.bytes();
-					break;
-				case /* optional uint32 last_command_number */ 4:
-					message.last_command_number = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CCLCMsg_Move, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional bytes data = 3; */
-		if (message.data !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.data);
-		/* optional uint32 last_command_number = 4; */
-		if (message.last_command_number !== undefined) writer.tag(4, WireType.Varint).uint32(message.last_command_number);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_Move", [
+      {
+        no: 3,
+        name: "data",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 4,
+        name: "last_command_number",
+        kind: "scalar",
+        localName: "last_command_number",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_Move>): CCLCMsg_Move {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_Move>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_Move,
+  ): CCLCMsg_Move {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bytes data */ 3:
+          message.data = reader.bytes();
+          break;
+        case /* optional uint32 last_command_number */ 4:
+          message.last_command_number = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CCLCMsg_Move, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional bytes data = 3; */
+    if (message.data !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.data);
+    /* optional uint32 last_command_number = 4; */
+    if (message.last_command_number !== undefined) writer.tag(4, WireType.Varint).uint32(message.last_command_number);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_Move
@@ -2258,165 +2258,165 @@ class CCLCMsg_Move$Type extends MessageType<CCLCMsg_Move> {
 export const CCLCMsg_Move = new CCLCMsg_Move$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgVoiceAudio$Type extends MessageType<CMsgVoiceAudio> {
-	constructor() {
-		super("CMsgVoiceAudio", [
-			{
-				no: 1,
-				name: "format",
-				kind: "enum",
-				opt: true,
-				T: () => ["VoiceDataFormat_t", VoiceDataFormat_t],
-			},
-			{
-				no: 2,
-				name: "voice_data",
-				kind: "scalar",
-				localName: "voice_data",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 3,
-				name: "sequence_bytes",
-				kind: "scalar",
-				localName: "sequence_bytes",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "section_number",
-				kind: "scalar",
-				localName: "section_number",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "sample_rate",
-				kind: "scalar",
-				localName: "sample_rate",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "uncompressed_sample_offset",
-				kind: "scalar",
-				localName: "uncompressed_sample_offset",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "num_packets",
-				kind: "scalar",
-				localName: "num_packets",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "packet_offsets",
-				kind: "scalar",
-				localName: "packet_offsets",
-				repeat: 1 /*RepeatType.PACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "voice_level",
-				kind: "scalar",
-				localName: "voice_level",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgVoiceAudio>): CMsgVoiceAudio {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.packet_offsets = [];
-		if (value !== undefined) reflectionMergePartial<CMsgVoiceAudio>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgVoiceAudio,
-	): CMsgVoiceAudio {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional VoiceDataFormat_t format */ 1:
-					message.format = reader.int32();
-					break;
-				case /* optional bytes voice_data */ 2:
-					message.voice_data = reader.bytes();
-					break;
-				case /* optional int32 sequence_bytes */ 3:
-					message.sequence_bytes = reader.int32();
-					break;
-				case /* optional uint32 section_number */ 4:
-					message.section_number = reader.uint32();
-					break;
-				case /* optional uint32 sample_rate */ 5:
-					message.sample_rate = reader.uint32();
-					break;
-				case /* optional uint32 uncompressed_sample_offset */ 6:
-					message.uncompressed_sample_offset = reader.uint32();
-					break;
-				case /* optional uint32 num_packets */ 7:
-					message.num_packets = reader.uint32();
-					break;
-				case /* repeated uint32 packet_offsets = 8 [packed = true];*/ 8:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.packet_offsets.push(reader.uint32());
-					else message.packet_offsets.push(reader.uint32());
-					break;
-				case /* optional float voice_level */ 9:
-					message.voice_level = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgVoiceAudio, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional VoiceDataFormat_t format = 1; */
-		if (message.format !== undefined) writer.tag(1, WireType.Varint).int32(message.format);
-		/* optional bytes voice_data = 2; */
-		if (message.voice_data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.voice_data);
-		/* optional int32 sequence_bytes = 3; */
-		if (message.sequence_bytes !== undefined) writer.tag(3, WireType.Varint).int32(message.sequence_bytes);
-		/* optional uint32 section_number = 4; */
-		if (message.section_number !== undefined) writer.tag(4, WireType.Varint).uint32(message.section_number);
-		/* optional uint32 sample_rate = 5; */
-		if (message.sample_rate !== undefined) writer.tag(5, WireType.Varint).uint32(message.sample_rate);
-		/* optional uint32 uncompressed_sample_offset = 6; */
-		if (message.uncompressed_sample_offset !== undefined)
-			writer.tag(6, WireType.Varint).uint32(message.uncompressed_sample_offset);
-		/* optional uint32 num_packets = 7; */
-		if (message.num_packets !== undefined) writer.tag(7, WireType.Varint).uint32(message.num_packets);
-		/* repeated uint32 packet_offsets = 8 [packed = true]; */
-		if (message.packet_offsets.length) {
-			writer.tag(8, WireType.LengthDelimited).fork();
-			for (let i = 0; i < message.packet_offsets.length; i++) writer.uint32(message.packet_offsets[i]);
-			writer.join();
-		}
-		/* optional float voice_level = 9; */
-		if (message.voice_level !== undefined) writer.tag(9, WireType.Bit32).float(message.voice_level);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgVoiceAudio", [
+      {
+        no: 1,
+        name: "format",
+        kind: "enum",
+        opt: true,
+        T: () => ["VoiceDataFormat_t", VoiceDataFormat_t],
+      },
+      {
+        no: 2,
+        name: "voice_data",
+        kind: "scalar",
+        localName: "voice_data",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 3,
+        name: "sequence_bytes",
+        kind: "scalar",
+        localName: "sequence_bytes",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "section_number",
+        kind: "scalar",
+        localName: "section_number",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "sample_rate",
+        kind: "scalar",
+        localName: "sample_rate",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "uncompressed_sample_offset",
+        kind: "scalar",
+        localName: "uncompressed_sample_offset",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "num_packets",
+        kind: "scalar",
+        localName: "num_packets",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "packet_offsets",
+        kind: "scalar",
+        localName: "packet_offsets",
+        repeat: 1 /*RepeatType.PACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "voice_level",
+        kind: "scalar",
+        localName: "voice_level",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgVoiceAudio>): CMsgVoiceAudio {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.packet_offsets = [];
+    if (value !== undefined) reflectionMergePartial<CMsgVoiceAudio>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgVoiceAudio,
+  ): CMsgVoiceAudio {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional VoiceDataFormat_t format */ 1:
+          message.format = reader.int32();
+          break;
+        case /* optional bytes voice_data */ 2:
+          message.voice_data = reader.bytes();
+          break;
+        case /* optional int32 sequence_bytes */ 3:
+          message.sequence_bytes = reader.int32();
+          break;
+        case /* optional uint32 section_number */ 4:
+          message.section_number = reader.uint32();
+          break;
+        case /* optional uint32 sample_rate */ 5:
+          message.sample_rate = reader.uint32();
+          break;
+        case /* optional uint32 uncompressed_sample_offset */ 6:
+          message.uncompressed_sample_offset = reader.uint32();
+          break;
+        case /* optional uint32 num_packets */ 7:
+          message.num_packets = reader.uint32();
+          break;
+        case /* repeated uint32 packet_offsets = 8 [packed = true];*/ 8:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.packet_offsets.push(reader.uint32());
+          else message.packet_offsets.push(reader.uint32());
+          break;
+        case /* optional float voice_level */ 9:
+          message.voice_level = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgVoiceAudio, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional VoiceDataFormat_t format = 1; */
+    if (message.format !== undefined) writer.tag(1, WireType.Varint).int32(message.format);
+    /* optional bytes voice_data = 2; */
+    if (message.voice_data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.voice_data);
+    /* optional int32 sequence_bytes = 3; */
+    if (message.sequence_bytes !== undefined) writer.tag(3, WireType.Varint).int32(message.sequence_bytes);
+    /* optional uint32 section_number = 4; */
+    if (message.section_number !== undefined) writer.tag(4, WireType.Varint).uint32(message.section_number);
+    /* optional uint32 sample_rate = 5; */
+    if (message.sample_rate !== undefined) writer.tag(5, WireType.Varint).uint32(message.sample_rate);
+    /* optional uint32 uncompressed_sample_offset = 6; */
+    if (message.uncompressed_sample_offset !== undefined)
+      writer.tag(6, WireType.Varint).uint32(message.uncompressed_sample_offset);
+    /* optional uint32 num_packets = 7; */
+    if (message.num_packets !== undefined) writer.tag(7, WireType.Varint).uint32(message.num_packets);
+    /* repeated uint32 packet_offsets = 8 [packed = true]; */
+    if (message.packet_offsets.length) {
+      writer.tag(8, WireType.LengthDelimited).fork();
+      for (let i = 0; i < message.packet_offsets.length; i++) writer.uint32(message.packet_offsets[i]);
+      writer.join();
+    }
+    /* optional float voice_level = 9; */
+    if (message.voice_level !== undefined) writer.tag(9, WireType.Bit32).float(message.voice_level);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgVoiceAudio
@@ -2424,73 +2424,73 @@ class CMsgVoiceAudio$Type extends MessageType<CMsgVoiceAudio> {
 export const CMsgVoiceAudio = new CMsgVoiceAudio$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_VoiceData$Type extends MessageType<CCLCMsg_VoiceData> {
-	constructor() {
-		super("CCLCMsg_VoiceData", [
-			{ no: 1, name: "audio", kind: "message", T: () => CMsgVoiceAudio },
-			{
-				no: 2,
-				name: "xuid",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "tick",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_VoiceData>): CCLCMsg_VoiceData {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_VoiceData>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_VoiceData,
-	): CCLCMsg_VoiceData {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVoiceAudio audio */ 1:
-					message.audio = CMsgVoiceAudio.internalBinaryRead(reader, reader.uint32(), options, message.audio);
-					break;
-				case /* optional fixed64 xuid */ 2:
-					message.xuid = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 tick */ 3:
-					message.tick = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CCLCMsg_VoiceData, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVoiceAudio audio = 1; */
-		if (message.audio)
-			CMsgVoiceAudio.internalBinaryWrite(message.audio, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional fixed64 xuid = 2; */
-		if (message.xuid !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.xuid);
-		/* optional uint32 tick = 3; */
-		if (message.tick !== undefined) writer.tag(3, WireType.Varint).uint32(message.tick);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_VoiceData", [
+      { no: 1, name: "audio", kind: "message", T: () => CMsgVoiceAudio },
+      {
+        no: 2,
+        name: "xuid",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "tick",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_VoiceData>): CCLCMsg_VoiceData {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_VoiceData>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_VoiceData,
+  ): CCLCMsg_VoiceData {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVoiceAudio audio */ 1:
+          message.audio = CMsgVoiceAudio.internalBinaryRead(reader, reader.uint32(), options, message.audio);
+          break;
+        case /* optional fixed64 xuid */ 2:
+          message.xuid = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 tick */ 3:
+          message.tick = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CCLCMsg_VoiceData, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVoiceAudio audio = 1; */
+    if (message.audio)
+      CMsgVoiceAudio.internalBinaryWrite(message.audio, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional fixed64 xuid = 2; */
+    if (message.xuid !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.xuid);
+    /* optional uint32 tick = 3; */
+    if (message.tick !== undefined) writer.tag(3, WireType.Varint).uint32(message.tick);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_VoiceData
@@ -2498,67 +2498,67 @@ class CCLCMsg_VoiceData$Type extends MessageType<CCLCMsg_VoiceData> {
 export const CCLCMsg_VoiceData = new CCLCMsg_VoiceData$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_BaselineAck$Type extends MessageType<CCLCMsg_BaselineAck> {
-	constructor() {
-		super("CCLCMsg_BaselineAck", [
-			{
-				no: 1,
-				name: "baseline_tick",
-				kind: "scalar",
-				localName: "baseline_tick",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "baseline_nr",
-				kind: "scalar",
-				localName: "baseline_nr",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_BaselineAck>): CCLCMsg_BaselineAck {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_BaselineAck>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_BaselineAck,
-	): CCLCMsg_BaselineAck {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 baseline_tick */ 1:
-					message.baseline_tick = reader.int32();
-					break;
-				case /* optional int32 baseline_nr */ 2:
-					message.baseline_nr = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CCLCMsg_BaselineAck, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional int32 baseline_tick = 1; */
-		if (message.baseline_tick !== undefined) writer.tag(1, WireType.Varint).int32(message.baseline_tick);
-		/* optional int32 baseline_nr = 2; */
-		if (message.baseline_nr !== undefined) writer.tag(2, WireType.Varint).int32(message.baseline_nr);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_BaselineAck", [
+      {
+        no: 1,
+        name: "baseline_tick",
+        kind: "scalar",
+        localName: "baseline_tick",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "baseline_nr",
+        kind: "scalar",
+        localName: "baseline_nr",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_BaselineAck>): CCLCMsg_BaselineAck {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_BaselineAck>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_BaselineAck,
+  ): CCLCMsg_BaselineAck {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 baseline_tick */ 1:
+          message.baseline_tick = reader.int32();
+          break;
+        case /* optional int32 baseline_nr */ 2:
+          message.baseline_nr = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CCLCMsg_BaselineAck, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional int32 baseline_tick = 1; */
+    if (message.baseline_tick !== undefined) writer.tag(1, WireType.Varint).int32(message.baseline_tick);
+    /* optional int32 baseline_nr = 2; */
+    if (message.baseline_nr !== undefined) writer.tag(2, WireType.Varint).int32(message.baseline_nr);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_BaselineAck
@@ -2566,61 +2566,61 @@ class CCLCMsg_BaselineAck$Type extends MessageType<CCLCMsg_BaselineAck> {
 export const CCLCMsg_BaselineAck = new CCLCMsg_BaselineAck$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_ListenEvents$Type extends MessageType<CCLCMsg_ListenEvents> {
-	constructor() {
-		super("CCLCMsg_ListenEvents", [
-			{
-				no: 1,
-				name: "event_mask",
-				kind: "scalar",
-				localName: "event_mask",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_ListenEvents>): CCLCMsg_ListenEvents {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.event_mask = [];
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_ListenEvents>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_ListenEvents,
-	): CCLCMsg_ListenEvents {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated fixed32 event_mask */ 1:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.event_mask.push(reader.fixed32());
-					else message.event_mask.push(reader.fixed32());
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCLCMsg_ListenEvents,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated fixed32 event_mask = 1; */
-		for (let i = 0; i < message.event_mask.length; i++) writer.tag(1, WireType.Bit32).fixed32(message.event_mask[i]);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_ListenEvents", [
+      {
+        no: 1,
+        name: "event_mask",
+        kind: "scalar",
+        localName: "event_mask",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_ListenEvents>): CCLCMsg_ListenEvents {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.event_mask = [];
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_ListenEvents>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_ListenEvents,
+  ): CCLCMsg_ListenEvents {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated fixed32 event_mask */ 1:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.event_mask.push(reader.fixed32());
+          else message.event_mask.push(reader.fixed32());
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCLCMsg_ListenEvents,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated fixed32 event_mask = 1; */
+    for (let i = 0; i < message.event_mask.length; i++) writer.tag(1, WireType.Bit32).fixed32(message.event_mask[i]);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_ListenEvents
@@ -2628,94 +2628,94 @@ class CCLCMsg_ListenEvents$Type extends MessageType<CCLCMsg_ListenEvents> {
 export const CCLCMsg_ListenEvents = new CCLCMsg_ListenEvents$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_RespondCvarValue$Type extends MessageType<CCLCMsg_RespondCvarValue> {
-	constructor() {
-		super("CCLCMsg_RespondCvarValue", [
-			{
-				no: 1,
-				name: "cookie",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "status_code",
-				kind: "scalar",
-				localName: "status_code",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 4,
-				name: "value",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_RespondCvarValue>): CCLCMsg_RespondCvarValue {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_RespondCvarValue>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_RespondCvarValue,
-	): CCLCMsg_RespondCvarValue {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 cookie */ 1:
-					message.cookie = reader.int32();
-					break;
-				case /* optional int32 status_code */ 2:
-					message.status_code = reader.int32();
-					break;
-				case /* optional string name */ 3:
-					message.name = reader.string();
-					break;
-				case /* optional string value */ 4:
-					message.value = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCLCMsg_RespondCvarValue,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 cookie = 1; */
-		if (message.cookie !== undefined) writer.tag(1, WireType.Varint).int32(message.cookie);
-		/* optional int32 status_code = 2; */
-		if (message.status_code !== undefined) writer.tag(2, WireType.Varint).int32(message.status_code);
-		/* optional string name = 3; */
-		if (message.name !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.name);
-		/* optional string value = 4; */
-		if (message.value !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.value);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_RespondCvarValue", [
+      {
+        no: 1,
+        name: "cookie",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "status_code",
+        kind: "scalar",
+        localName: "status_code",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 4,
+        name: "value",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_RespondCvarValue>): CCLCMsg_RespondCvarValue {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_RespondCvarValue>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_RespondCvarValue,
+  ): CCLCMsg_RespondCvarValue {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 cookie */ 1:
+          message.cookie = reader.int32();
+          break;
+        case /* optional int32 status_code */ 2:
+          message.status_code = reader.int32();
+          break;
+        case /* optional string name */ 3:
+          message.name = reader.string();
+          break;
+        case /* optional string value */ 4:
+          message.value = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCLCMsg_RespondCvarValue,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 cookie = 1; */
+    if (message.cookie !== undefined) writer.tag(1, WireType.Varint).int32(message.cookie);
+    /* optional int32 status_code = 2; */
+    if (message.status_code !== undefined) writer.tag(2, WireType.Varint).int32(message.status_code);
+    /* optional string name = 3; */
+    if (message.name !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.name);
+    /* optional string value = 4; */
+    if (message.value !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.value);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_RespondCvarValue
@@ -2723,107 +2723,107 @@ class CCLCMsg_RespondCvarValue$Type extends MessageType<CCLCMsg_RespondCvarValue
 export const CCLCMsg_RespondCvarValue = new CCLCMsg_RespondCvarValue$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_FileCRCCheck$Type extends MessageType<CCLCMsg_FileCRCCheck> {
-	constructor() {
-		super("CCLCMsg_FileCRCCheck", [
-			{
-				no: 1,
-				name: "code_path",
-				kind: "scalar",
-				localName: "code_path",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "path",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "code_filename",
-				kind: "scalar",
-				localName: "code_filename",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "filename",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 5,
-				name: "crc",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_FileCRCCheck>): CCLCMsg_FileCRCCheck {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_FileCRCCheck>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_FileCRCCheck,
-	): CCLCMsg_FileCRCCheck {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 code_path */ 1:
-					message.code_path = reader.int32();
-					break;
-				case /* optional string path */ 2:
-					message.path = reader.string();
-					break;
-				case /* optional int32 code_filename */ 3:
-					message.code_filename = reader.int32();
-					break;
-				case /* optional string filename */ 4:
-					message.filename = reader.string();
-					break;
-				case /* optional fixed32 crc */ 5:
-					message.crc = reader.fixed32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCLCMsg_FileCRCCheck,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 code_path = 1; */
-		if (message.code_path !== undefined) writer.tag(1, WireType.Varint).int32(message.code_path);
-		/* optional string path = 2; */
-		if (message.path !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.path);
-		/* optional int32 code_filename = 3; */
-		if (message.code_filename !== undefined) writer.tag(3, WireType.Varint).int32(message.code_filename);
-		/* optional string filename = 4; */
-		if (message.filename !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.filename);
-		/* optional fixed32 crc = 5; */
-		if (message.crc !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.crc);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_FileCRCCheck", [
+      {
+        no: 1,
+        name: "code_path",
+        kind: "scalar",
+        localName: "code_path",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "path",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "code_filename",
+        kind: "scalar",
+        localName: "code_filename",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "filename",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 5,
+        name: "crc",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_FileCRCCheck>): CCLCMsg_FileCRCCheck {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_FileCRCCheck>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_FileCRCCheck,
+  ): CCLCMsg_FileCRCCheck {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 code_path */ 1:
+          message.code_path = reader.int32();
+          break;
+        case /* optional string path */ 2:
+          message.path = reader.string();
+          break;
+        case /* optional int32 code_filename */ 3:
+          message.code_filename = reader.int32();
+          break;
+        case /* optional string filename */ 4:
+          message.filename = reader.string();
+          break;
+        case /* optional fixed32 crc */ 5:
+          message.crc = reader.fixed32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCLCMsg_FileCRCCheck,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 code_path = 1; */
+    if (message.code_path !== undefined) writer.tag(1, WireType.Varint).int32(message.code_path);
+    /* optional string path = 2; */
+    if (message.path !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.path);
+    /* optional int32 code_filename = 3; */
+    if (message.code_filename !== undefined) writer.tag(3, WireType.Varint).int32(message.code_filename);
+    /* optional string filename = 4; */
+    if (message.filename !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.filename);
+    /* optional fixed32 crc = 5; */
+    if (message.crc !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.crc);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_FileCRCCheck
@@ -2831,57 +2831,57 @@ class CCLCMsg_FileCRCCheck$Type extends MessageType<CCLCMsg_FileCRCCheck> {
 export const CCLCMsg_FileCRCCheck = new CCLCMsg_FileCRCCheck$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_LoadingProgress$Type extends MessageType<CCLCMsg_LoadingProgress> {
-	constructor() {
-		super("CCLCMsg_LoadingProgress", [
-			{
-				no: 1,
-				name: "progress",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_LoadingProgress>): CCLCMsg_LoadingProgress {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_LoadingProgress>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_LoadingProgress,
-	): CCLCMsg_LoadingProgress {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 progress */ 1:
-					message.progress = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCLCMsg_LoadingProgress,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 progress = 1; */
-		if (message.progress !== undefined) writer.tag(1, WireType.Varint).int32(message.progress);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_LoadingProgress", [
+      {
+        no: 1,
+        name: "progress",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_LoadingProgress>): CCLCMsg_LoadingProgress {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_LoadingProgress>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_LoadingProgress,
+  ): CCLCMsg_LoadingProgress {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 progress */ 1:
+          message.progress = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCLCMsg_LoadingProgress,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 progress = 1; */
+    if (message.progress !== undefined) writer.tag(1, WireType.Varint).int32(message.progress);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_LoadingProgress
@@ -2889,57 +2889,57 @@ class CCLCMsg_LoadingProgress$Type extends MessageType<CCLCMsg_LoadingProgress> 
 export const CCLCMsg_LoadingProgress = new CCLCMsg_LoadingProgress$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_SplitPlayerConnect$Type extends MessageType<CCLCMsg_SplitPlayerConnect> {
-	constructor() {
-		super("CCLCMsg_SplitPlayerConnect", [
-			{
-				no: 1,
-				name: "playername",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_SplitPlayerConnect>): CCLCMsg_SplitPlayerConnect {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_SplitPlayerConnect>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_SplitPlayerConnect,
-	): CCLCMsg_SplitPlayerConnect {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string playername */ 1:
-					message.playername = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCLCMsg_SplitPlayerConnect,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string playername = 1; */
-		if (message.playername !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.playername);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_SplitPlayerConnect", [
+      {
+        no: 1,
+        name: "playername",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_SplitPlayerConnect>): CCLCMsg_SplitPlayerConnect {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_SplitPlayerConnect>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_SplitPlayerConnect,
+  ): CCLCMsg_SplitPlayerConnect {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string playername */ 1:
+          message.playername = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCLCMsg_SplitPlayerConnect,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string playername = 1; */
+    if (message.playername !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.playername);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_SplitPlayerConnect
@@ -2947,57 +2947,57 @@ class CCLCMsg_SplitPlayerConnect$Type extends MessageType<CCLCMsg_SplitPlayerCon
 export const CCLCMsg_SplitPlayerConnect = new CCLCMsg_SplitPlayerConnect$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_SplitPlayerDisconnect$Type extends MessageType<CCLCMsg_SplitPlayerDisconnect> {
-	constructor() {
-		super("CCLCMsg_SplitPlayerDisconnect", [
-			{
-				no: 1,
-				name: "slot",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_SplitPlayerDisconnect>): CCLCMsg_SplitPlayerDisconnect {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_SplitPlayerDisconnect>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_SplitPlayerDisconnect,
-	): CCLCMsg_SplitPlayerDisconnect {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 slot */ 1:
-					message.slot = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCLCMsg_SplitPlayerDisconnect,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 slot = 1; */
-		if (message.slot !== undefined) writer.tag(1, WireType.Varint).int32(message.slot);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_SplitPlayerDisconnect", [
+      {
+        no: 1,
+        name: "slot",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_SplitPlayerDisconnect>): CCLCMsg_SplitPlayerDisconnect {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_SplitPlayerDisconnect>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_SplitPlayerDisconnect,
+  ): CCLCMsg_SplitPlayerDisconnect {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 slot */ 1:
+          message.slot = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCLCMsg_SplitPlayerDisconnect,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 slot = 1; */
+    if (message.slot !== undefined) writer.tag(1, WireType.Varint).int32(message.slot);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_SplitPlayerDisconnect
@@ -3005,57 +3005,57 @@ class CCLCMsg_SplitPlayerDisconnect$Type extends MessageType<CCLCMsg_SplitPlayer
 export const CCLCMsg_SplitPlayerDisconnect = new CCLCMsg_SplitPlayerDisconnect$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_ServerStatus$Type extends MessageType<CCLCMsg_ServerStatus> {
-	constructor() {
-		super("CCLCMsg_ServerStatus", [
-			{
-				no: 1,
-				name: "simplified",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_ServerStatus>): CCLCMsg_ServerStatus {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_ServerStatus>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_ServerStatus,
-	): CCLCMsg_ServerStatus {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool simplified */ 1:
-					message.simplified = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCLCMsg_ServerStatus,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool simplified = 1; */
-		if (message.simplified !== undefined) writer.tag(1, WireType.Varint).bool(message.simplified);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_ServerStatus", [
+      {
+        no: 1,
+        name: "simplified",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_ServerStatus>): CCLCMsg_ServerStatus {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_ServerStatus>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_ServerStatus,
+  ): CCLCMsg_ServerStatus {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool simplified */ 1:
+          message.simplified = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCLCMsg_ServerStatus,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool simplified = 1; */
+    if (message.simplified !== undefined) writer.tag(1, WireType.Varint).bool(message.simplified);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_ServerStatus
@@ -3063,71 +3063,71 @@ class CCLCMsg_ServerStatus$Type extends MessageType<CCLCMsg_ServerStatus> {
 export const CCLCMsg_ServerStatus = new CCLCMsg_ServerStatus$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_RequestPause$Type extends MessageType<CCLCMsg_RequestPause> {
-	constructor() {
-		super("CCLCMsg_RequestPause", [
-			{
-				no: 1,
-				name: "pause_type",
-				kind: "enum",
-				localName: "pause_type",
-				opt: true,
-				T: () => ["RequestPause_t", RequestPause_t],
-			},
-			{
-				no: 2,
-				name: "pause_group",
-				kind: "scalar",
-				localName: "pause_group",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_RequestPause>): CCLCMsg_RequestPause {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_RequestPause>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_RequestPause,
-	): CCLCMsg_RequestPause {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional RequestPause_t pause_type */ 1:
-					message.pause_type = reader.int32();
-					break;
-				case /* optional int32 pause_group */ 2:
-					message.pause_group = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCLCMsg_RequestPause,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional RequestPause_t pause_type = 1; */
-		if (message.pause_type !== undefined) writer.tag(1, WireType.Varint).int32(message.pause_type);
-		/* optional int32 pause_group = 2; */
-		if (message.pause_group !== undefined) writer.tag(2, WireType.Varint).int32(message.pause_group);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_RequestPause", [
+      {
+        no: 1,
+        name: "pause_type",
+        kind: "enum",
+        localName: "pause_type",
+        opt: true,
+        T: () => ["RequestPause_t", RequestPause_t],
+      },
+      {
+        no: 2,
+        name: "pause_group",
+        kind: "scalar",
+        localName: "pause_group",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_RequestPause>): CCLCMsg_RequestPause {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_RequestPause>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_RequestPause,
+  ): CCLCMsg_RequestPause {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional RequestPause_t pause_type */ 1:
+          message.pause_type = reader.int32();
+          break;
+        case /* optional int32 pause_group */ 2:
+          message.pause_group = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCLCMsg_RequestPause,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional RequestPause_t pause_type = 1; */
+    if (message.pause_type !== undefined) writer.tag(1, WireType.Varint).int32(message.pause_type);
+    /* optional int32 pause_group = 2; */
+    if (message.pause_group !== undefined) writer.tag(2, WireType.Varint).int32(message.pause_group);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_RequestPause
@@ -3135,57 +3135,57 @@ class CCLCMsg_RequestPause$Type extends MessageType<CCLCMsg_RequestPause> {
 export const CCLCMsg_RequestPause = new CCLCMsg_RequestPause$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_CmdKeyValues$Type extends MessageType<CCLCMsg_CmdKeyValues> {
-	constructor() {
-		super("CCLCMsg_CmdKeyValues", [
-			{
-				no: 1,
-				name: "data",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_CmdKeyValues>): CCLCMsg_CmdKeyValues {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_CmdKeyValues>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_CmdKeyValues,
-	): CCLCMsg_CmdKeyValues {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bytes data */ 1:
-					message.data = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCLCMsg_CmdKeyValues,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bytes data = 1; */
-		if (message.data !== undefined) writer.tag(1, WireType.LengthDelimited).bytes(message.data);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_CmdKeyValues", [
+      {
+        no: 1,
+        name: "data",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_CmdKeyValues>): CCLCMsg_CmdKeyValues {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_CmdKeyValues>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_CmdKeyValues,
+  ): CCLCMsg_CmdKeyValues {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bytes data */ 1:
+          message.data = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCLCMsg_CmdKeyValues,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bytes data = 1; */
+    if (message.data !== undefined) writer.tag(1, WireType.LengthDelimited).bytes(message.data);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_CmdKeyValues
@@ -3193,57 +3193,57 @@ class CCLCMsg_CmdKeyValues$Type extends MessageType<CCLCMsg_CmdKeyValues> {
 export const CCLCMsg_CmdKeyValues = new CCLCMsg_CmdKeyValues$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_RconServerDetails$Type extends MessageType<CCLCMsg_RconServerDetails> {
-	constructor() {
-		super("CCLCMsg_RconServerDetails", [
-			{
-				no: 1,
-				name: "token",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_RconServerDetails>): CCLCMsg_RconServerDetails {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_RconServerDetails>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_RconServerDetails,
-	): CCLCMsg_RconServerDetails {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bytes token */ 1:
-					message.token = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCLCMsg_RconServerDetails,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bytes token = 1; */
-		if (message.token !== undefined) writer.tag(1, WireType.LengthDelimited).bytes(message.token);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_RconServerDetails", [
+      {
+        no: 1,
+        name: "token",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_RconServerDetails>): CCLCMsg_RconServerDetails {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_RconServerDetails>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_RconServerDetails,
+  ): CCLCMsg_RconServerDetails {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bytes token */ 1:
+          message.token = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCLCMsg_RconServerDetails,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bytes token = 1; */
+    if (message.token !== undefined) writer.tag(1, WireType.LengthDelimited).bytes(message.token);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_RconServerDetails
@@ -3251,207 +3251,207 @@ class CCLCMsg_RconServerDetails$Type extends MessageType<CCLCMsg_RconServerDetai
 export const CCLCMsg_RconServerDetails = new CCLCMsg_RconServerDetails$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSource2SystemSpecs$Type extends MessageType<CMsgSource2SystemSpecs> {
-	constructor() {
-		super("CMsgSource2SystemSpecs", [
-			{
-				no: 1,
-				name: "cpu_id",
-				kind: "scalar",
-				localName: "cpu_id",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "cpu_brand",
-				kind: "scalar",
-				localName: "cpu_brand",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "cpu_model",
-				kind: "scalar",
-				localName: "cpu_model",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "cpu_num_physical",
-				kind: "scalar",
-				localName: "cpu_num_physical",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 21,
-				name: "ram_physical_total_mb",
-				kind: "scalar",
-				localName: "ram_physical_total_mb",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 41,
-				name: "gpu_rendersystem_dll_name",
-				kind: "scalar",
-				localName: "gpu_rendersystem_dll_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 42,
-				name: "gpu_vendor_id",
-				kind: "scalar",
-				localName: "gpu_vendor_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 43,
-				name: "gpu_driver_name",
-				kind: "scalar",
-				localName: "gpu_driver_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 44,
-				name: "gpu_driver_version_high",
-				kind: "scalar",
-				localName: "gpu_driver_version_high",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 45,
-				name: "gpu_driver_version_low",
-				kind: "scalar",
-				localName: "gpu_driver_version_low",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 46,
-				name: "gpu_dx_support_level",
-				kind: "scalar",
-				localName: "gpu_dx_support_level",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 47,
-				name: "gpu_texture_memory_size_mb",
-				kind: "scalar",
-				localName: "gpu_texture_memory_size_mb",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSource2SystemSpecs>): CMsgSource2SystemSpecs {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSource2SystemSpecs>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSource2SystemSpecs,
-	): CMsgSource2SystemSpecs {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string cpu_id */ 1:
-					message.cpu_id = reader.string();
-					break;
-				case /* optional string cpu_brand */ 2:
-					message.cpu_brand = reader.string();
-					break;
-				case /* optional uint32 cpu_model */ 3:
-					message.cpu_model = reader.uint32();
-					break;
-				case /* optional uint32 cpu_num_physical */ 4:
-					message.cpu_num_physical = reader.uint32();
-					break;
-				case /* optional uint32 ram_physical_total_mb */ 21:
-					message.ram_physical_total_mb = reader.uint32();
-					break;
-				case /* optional string gpu_rendersystem_dll_name */ 41:
-					message.gpu_rendersystem_dll_name = reader.string();
-					break;
-				case /* optional uint32 gpu_vendor_id */ 42:
-					message.gpu_vendor_id = reader.uint32();
-					break;
-				case /* optional string gpu_driver_name */ 43:
-					message.gpu_driver_name = reader.string();
-					break;
-				case /* optional uint32 gpu_driver_version_high */ 44:
-					message.gpu_driver_version_high = reader.uint32();
-					break;
-				case /* optional uint32 gpu_driver_version_low */ 45:
-					message.gpu_driver_version_low = reader.uint32();
-					break;
-				case /* optional uint32 gpu_dx_support_level */ 46:
-					message.gpu_dx_support_level = reader.uint32();
-					break;
-				case /* optional uint32 gpu_texture_memory_size_mb */ 47:
-					message.gpu_texture_memory_size_mb = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSource2SystemSpecs,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string cpu_id = 1; */
-		if (message.cpu_id !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.cpu_id);
-		/* optional string cpu_brand = 2; */
-		if (message.cpu_brand !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.cpu_brand);
-		/* optional uint32 cpu_model = 3; */
-		if (message.cpu_model !== undefined) writer.tag(3, WireType.Varint).uint32(message.cpu_model);
-		/* optional uint32 cpu_num_physical = 4; */
-		if (message.cpu_num_physical !== undefined) writer.tag(4, WireType.Varint).uint32(message.cpu_num_physical);
-		/* optional uint32 ram_physical_total_mb = 21; */
-		if (message.ram_physical_total_mb !== undefined)
-			writer.tag(21, WireType.Varint).uint32(message.ram_physical_total_mb);
-		/* optional string gpu_rendersystem_dll_name = 41; */
-		if (message.gpu_rendersystem_dll_name !== undefined)
-			writer.tag(41, WireType.LengthDelimited).string(message.gpu_rendersystem_dll_name);
-		/* optional uint32 gpu_vendor_id = 42; */
-		if (message.gpu_vendor_id !== undefined) writer.tag(42, WireType.Varint).uint32(message.gpu_vendor_id);
-		/* optional string gpu_driver_name = 43; */
-		if (message.gpu_driver_name !== undefined) writer.tag(43, WireType.LengthDelimited).string(message.gpu_driver_name);
-		/* optional uint32 gpu_driver_version_high = 44; */
-		if (message.gpu_driver_version_high !== undefined)
-			writer.tag(44, WireType.Varint).uint32(message.gpu_driver_version_high);
-		/* optional uint32 gpu_driver_version_low = 45; */
-		if (message.gpu_driver_version_low !== undefined)
-			writer.tag(45, WireType.Varint).uint32(message.gpu_driver_version_low);
-		/* optional uint32 gpu_dx_support_level = 46; */
-		if (message.gpu_dx_support_level !== undefined)
-			writer.tag(46, WireType.Varint).uint32(message.gpu_dx_support_level);
-		/* optional uint32 gpu_texture_memory_size_mb = 47; */
-		if (message.gpu_texture_memory_size_mb !== undefined)
-			writer.tag(47, WireType.Varint).uint32(message.gpu_texture_memory_size_mb);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSource2SystemSpecs", [
+      {
+        no: 1,
+        name: "cpu_id",
+        kind: "scalar",
+        localName: "cpu_id",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "cpu_brand",
+        kind: "scalar",
+        localName: "cpu_brand",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "cpu_model",
+        kind: "scalar",
+        localName: "cpu_model",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "cpu_num_physical",
+        kind: "scalar",
+        localName: "cpu_num_physical",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 21,
+        name: "ram_physical_total_mb",
+        kind: "scalar",
+        localName: "ram_physical_total_mb",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 41,
+        name: "gpu_rendersystem_dll_name",
+        kind: "scalar",
+        localName: "gpu_rendersystem_dll_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 42,
+        name: "gpu_vendor_id",
+        kind: "scalar",
+        localName: "gpu_vendor_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 43,
+        name: "gpu_driver_name",
+        kind: "scalar",
+        localName: "gpu_driver_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 44,
+        name: "gpu_driver_version_high",
+        kind: "scalar",
+        localName: "gpu_driver_version_high",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 45,
+        name: "gpu_driver_version_low",
+        kind: "scalar",
+        localName: "gpu_driver_version_low",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 46,
+        name: "gpu_dx_support_level",
+        kind: "scalar",
+        localName: "gpu_dx_support_level",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 47,
+        name: "gpu_texture_memory_size_mb",
+        kind: "scalar",
+        localName: "gpu_texture_memory_size_mb",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSource2SystemSpecs>): CMsgSource2SystemSpecs {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSource2SystemSpecs>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSource2SystemSpecs,
+  ): CMsgSource2SystemSpecs {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string cpu_id */ 1:
+          message.cpu_id = reader.string();
+          break;
+        case /* optional string cpu_brand */ 2:
+          message.cpu_brand = reader.string();
+          break;
+        case /* optional uint32 cpu_model */ 3:
+          message.cpu_model = reader.uint32();
+          break;
+        case /* optional uint32 cpu_num_physical */ 4:
+          message.cpu_num_physical = reader.uint32();
+          break;
+        case /* optional uint32 ram_physical_total_mb */ 21:
+          message.ram_physical_total_mb = reader.uint32();
+          break;
+        case /* optional string gpu_rendersystem_dll_name */ 41:
+          message.gpu_rendersystem_dll_name = reader.string();
+          break;
+        case /* optional uint32 gpu_vendor_id */ 42:
+          message.gpu_vendor_id = reader.uint32();
+          break;
+        case /* optional string gpu_driver_name */ 43:
+          message.gpu_driver_name = reader.string();
+          break;
+        case /* optional uint32 gpu_driver_version_high */ 44:
+          message.gpu_driver_version_high = reader.uint32();
+          break;
+        case /* optional uint32 gpu_driver_version_low */ 45:
+          message.gpu_driver_version_low = reader.uint32();
+          break;
+        case /* optional uint32 gpu_dx_support_level */ 46:
+          message.gpu_dx_support_level = reader.uint32();
+          break;
+        case /* optional uint32 gpu_texture_memory_size_mb */ 47:
+          message.gpu_texture_memory_size_mb = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSource2SystemSpecs,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string cpu_id = 1; */
+    if (message.cpu_id !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.cpu_id);
+    /* optional string cpu_brand = 2; */
+    if (message.cpu_brand !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.cpu_brand);
+    /* optional uint32 cpu_model = 3; */
+    if (message.cpu_model !== undefined) writer.tag(3, WireType.Varint).uint32(message.cpu_model);
+    /* optional uint32 cpu_num_physical = 4; */
+    if (message.cpu_num_physical !== undefined) writer.tag(4, WireType.Varint).uint32(message.cpu_num_physical);
+    /* optional uint32 ram_physical_total_mb = 21; */
+    if (message.ram_physical_total_mb !== undefined)
+      writer.tag(21, WireType.Varint).uint32(message.ram_physical_total_mb);
+    /* optional string gpu_rendersystem_dll_name = 41; */
+    if (message.gpu_rendersystem_dll_name !== undefined)
+      writer.tag(41, WireType.LengthDelimited).string(message.gpu_rendersystem_dll_name);
+    /* optional uint32 gpu_vendor_id = 42; */
+    if (message.gpu_vendor_id !== undefined) writer.tag(42, WireType.Varint).uint32(message.gpu_vendor_id);
+    /* optional string gpu_driver_name = 43; */
+    if (message.gpu_driver_name !== undefined) writer.tag(43, WireType.LengthDelimited).string(message.gpu_driver_name);
+    /* optional uint32 gpu_driver_version_high = 44; */
+    if (message.gpu_driver_version_high !== undefined)
+      writer.tag(44, WireType.Varint).uint32(message.gpu_driver_version_high);
+    /* optional uint32 gpu_driver_version_low = 45; */
+    if (message.gpu_driver_version_low !== undefined)
+      writer.tag(45, WireType.Varint).uint32(message.gpu_driver_version_low);
+    /* optional uint32 gpu_dx_support_level = 46; */
+    if (message.gpu_dx_support_level !== undefined)
+      writer.tag(46, WireType.Varint).uint32(message.gpu_dx_support_level);
+    /* optional uint32 gpu_texture_memory_size_mb = 47; */
+    if (message.gpu_texture_memory_size_mb !== undefined)
+      writer.tag(47, WireType.Varint).uint32(message.gpu_texture_memory_size_mb);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSource2SystemSpecs
@@ -3459,161 +3459,161 @@ class CMsgSource2SystemSpecs$Type extends MessageType<CMsgSource2SystemSpecs> {
 export const CMsgSource2SystemSpecs = new CMsgSource2SystemSpecs$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSource2VProfLiteReportItem$Type extends MessageType<CMsgSource2VProfLiteReportItem> {
-	constructor() {
-		super("CMsgSource2VProfLiteReportItem", [
-			{
-				no: 1,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "active_samples",
-				kind: "scalar",
-				localName: "active_samples",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "usec_max",
-				kind: "scalar",
-				localName: "usec_max",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 11,
-				name: "usec_avg_active",
-				kind: "scalar",
-				localName: "usec_avg_active",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 12,
-				name: "usec_p50_active",
-				kind: "scalar",
-				localName: "usec_p50_active",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 13,
-				name: "usec_p99_active",
-				kind: "scalar",
-				localName: "usec_p99_active",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 21,
-				name: "usec_avg_all",
-				kind: "scalar",
-				localName: "usec_avg_all",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 22,
-				name: "usec_p50_all",
-				kind: "scalar",
-				localName: "usec_p50_all",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 23,
-				name: "usec_p99_all",
-				kind: "scalar",
-				localName: "usec_p99_all",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSource2VProfLiteReportItem>): CMsgSource2VProfLiteReportItem {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSource2VProfLiteReportItem>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSource2VProfLiteReportItem,
-	): CMsgSource2VProfLiteReportItem {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string name */ 1:
-					message.name = reader.string();
-					break;
-				case /* optional uint32 active_samples */ 2:
-					message.active_samples = reader.uint32();
-					break;
-				case /* optional uint32 usec_max */ 3:
-					message.usec_max = reader.uint32();
-					break;
-				case /* optional uint32 usec_avg_active */ 11:
-					message.usec_avg_active = reader.uint32();
-					break;
-				case /* optional uint32 usec_p50_active */ 12:
-					message.usec_p50_active = reader.uint32();
-					break;
-				case /* optional uint32 usec_p99_active */ 13:
-					message.usec_p99_active = reader.uint32();
-					break;
-				case /* optional uint32 usec_avg_all */ 21:
-					message.usec_avg_all = reader.uint32();
-					break;
-				case /* optional uint32 usec_p50_all */ 22:
-					message.usec_p50_all = reader.uint32();
-					break;
-				case /* optional uint32 usec_p99_all */ 23:
-					message.usec_p99_all = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSource2VProfLiteReportItem,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string name = 1; */
-		if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
-		/* optional uint32 active_samples = 2; */
-		if (message.active_samples !== undefined) writer.tag(2, WireType.Varint).uint32(message.active_samples);
-		/* optional uint32 usec_max = 3; */
-		if (message.usec_max !== undefined) writer.tag(3, WireType.Varint).uint32(message.usec_max);
-		/* optional uint32 usec_avg_active = 11; */
-		if (message.usec_avg_active !== undefined) writer.tag(11, WireType.Varint).uint32(message.usec_avg_active);
-		/* optional uint32 usec_p50_active = 12; */
-		if (message.usec_p50_active !== undefined) writer.tag(12, WireType.Varint).uint32(message.usec_p50_active);
-		/* optional uint32 usec_p99_active = 13; */
-		if (message.usec_p99_active !== undefined) writer.tag(13, WireType.Varint).uint32(message.usec_p99_active);
-		/* optional uint32 usec_avg_all = 21; */
-		if (message.usec_avg_all !== undefined) writer.tag(21, WireType.Varint).uint32(message.usec_avg_all);
-		/* optional uint32 usec_p50_all = 22; */
-		if (message.usec_p50_all !== undefined) writer.tag(22, WireType.Varint).uint32(message.usec_p50_all);
-		/* optional uint32 usec_p99_all = 23; */
-		if (message.usec_p99_all !== undefined) writer.tag(23, WireType.Varint).uint32(message.usec_p99_all);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSource2VProfLiteReportItem", [
+      {
+        no: 1,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "active_samples",
+        kind: "scalar",
+        localName: "active_samples",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "usec_max",
+        kind: "scalar",
+        localName: "usec_max",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 11,
+        name: "usec_avg_active",
+        kind: "scalar",
+        localName: "usec_avg_active",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 12,
+        name: "usec_p50_active",
+        kind: "scalar",
+        localName: "usec_p50_active",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 13,
+        name: "usec_p99_active",
+        kind: "scalar",
+        localName: "usec_p99_active",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 21,
+        name: "usec_avg_all",
+        kind: "scalar",
+        localName: "usec_avg_all",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 22,
+        name: "usec_p50_all",
+        kind: "scalar",
+        localName: "usec_p50_all",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 23,
+        name: "usec_p99_all",
+        kind: "scalar",
+        localName: "usec_p99_all",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSource2VProfLiteReportItem>): CMsgSource2VProfLiteReportItem {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSource2VProfLiteReportItem>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSource2VProfLiteReportItem,
+  ): CMsgSource2VProfLiteReportItem {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string name */ 1:
+          message.name = reader.string();
+          break;
+        case /* optional uint32 active_samples */ 2:
+          message.active_samples = reader.uint32();
+          break;
+        case /* optional uint32 usec_max */ 3:
+          message.usec_max = reader.uint32();
+          break;
+        case /* optional uint32 usec_avg_active */ 11:
+          message.usec_avg_active = reader.uint32();
+          break;
+        case /* optional uint32 usec_p50_active */ 12:
+          message.usec_p50_active = reader.uint32();
+          break;
+        case /* optional uint32 usec_p99_active */ 13:
+          message.usec_p99_active = reader.uint32();
+          break;
+        case /* optional uint32 usec_avg_all */ 21:
+          message.usec_avg_all = reader.uint32();
+          break;
+        case /* optional uint32 usec_p50_all */ 22:
+          message.usec_p50_all = reader.uint32();
+          break;
+        case /* optional uint32 usec_p99_all */ 23:
+          message.usec_p99_all = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSource2VProfLiteReportItem,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string name = 1; */
+    if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
+    /* optional uint32 active_samples = 2; */
+    if (message.active_samples !== undefined) writer.tag(2, WireType.Varint).uint32(message.active_samples);
+    /* optional uint32 usec_max = 3; */
+    if (message.usec_max !== undefined) writer.tag(3, WireType.Varint).uint32(message.usec_max);
+    /* optional uint32 usec_avg_active = 11; */
+    if (message.usec_avg_active !== undefined) writer.tag(11, WireType.Varint).uint32(message.usec_avg_active);
+    /* optional uint32 usec_p50_active = 12; */
+    if (message.usec_p50_active !== undefined) writer.tag(12, WireType.Varint).uint32(message.usec_p50_active);
+    /* optional uint32 usec_p99_active = 13; */
+    if (message.usec_p99_active !== undefined) writer.tag(13, WireType.Varint).uint32(message.usec_p99_active);
+    /* optional uint32 usec_avg_all = 21; */
+    if (message.usec_avg_all !== undefined) writer.tag(21, WireType.Varint).uint32(message.usec_avg_all);
+    /* optional uint32 usec_p50_all = 22; */
+    if (message.usec_p50_all !== undefined) writer.tag(22, WireType.Varint).uint32(message.usec_p50_all);
+    /* optional uint32 usec_p99_all = 23; */
+    if (message.usec_p99_all !== undefined) writer.tag(23, WireType.Varint).uint32(message.usec_p99_all);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSource2VProfLiteReportItem
@@ -3621,97 +3621,97 @@ class CMsgSource2VProfLiteReportItem$Type extends MessageType<CMsgSource2VProfLi
 export const CMsgSource2VProfLiteReportItem = new CMsgSource2VProfLiteReportItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSource2VProfLiteReport$Type extends MessageType<CMsgSource2VProfLiteReport> {
-	constructor() {
-		super("CMsgSource2VProfLiteReport", [
-			{
-				no: 1,
-				name: "total",
-				kind: "message",
-				T: () => CMsgSource2VProfLiteReportItem,
-			},
-			{
-				no: 2,
-				name: "items",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSource2VProfLiteReportItem,
-			},
-			{
-				no: 3,
-				name: "discarded_frames",
-				kind: "scalar",
-				localName: "discarded_frames",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSource2VProfLiteReport>): CMsgSource2VProfLiteReport {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.items = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSource2VProfLiteReport>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSource2VProfLiteReport,
-	): CMsgSource2VProfLiteReport {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgSource2VProfLiteReportItem total */ 1:
-					message.total = CMsgSource2VProfLiteReportItem.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.total,
-					);
-					break;
-				case /* repeated CMsgSource2VProfLiteReportItem items */ 2:
-					message.items.push(CMsgSource2VProfLiteReportItem.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* optional uint32 discarded_frames */ 3:
-					message.discarded_frames = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSource2VProfLiteReport,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgSource2VProfLiteReportItem total = 1; */
-		if (message.total)
-			CMsgSource2VProfLiteReportItem.internalBinaryWrite(
-				message.total,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSource2VProfLiteReportItem items = 2; */
-		for (let i = 0; i < message.items.length; i++)
-			CMsgSource2VProfLiteReportItem.internalBinaryWrite(
-				message.items[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 discarded_frames = 3; */
-		if (message.discarded_frames !== undefined) writer.tag(3, WireType.Varint).uint32(message.discarded_frames);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSource2VProfLiteReport", [
+      {
+        no: 1,
+        name: "total",
+        kind: "message",
+        T: () => CMsgSource2VProfLiteReportItem,
+      },
+      {
+        no: 2,
+        name: "items",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSource2VProfLiteReportItem,
+      },
+      {
+        no: 3,
+        name: "discarded_frames",
+        kind: "scalar",
+        localName: "discarded_frames",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSource2VProfLiteReport>): CMsgSource2VProfLiteReport {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.items = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSource2VProfLiteReport>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSource2VProfLiteReport,
+  ): CMsgSource2VProfLiteReport {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgSource2VProfLiteReportItem total */ 1:
+          message.total = CMsgSource2VProfLiteReportItem.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.total,
+          );
+          break;
+        case /* repeated CMsgSource2VProfLiteReportItem items */ 2:
+          message.items.push(CMsgSource2VProfLiteReportItem.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* optional uint32 discarded_frames */ 3:
+          message.discarded_frames = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSource2VProfLiteReport,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgSource2VProfLiteReportItem total = 1; */
+    if (message.total)
+      CMsgSource2VProfLiteReportItem.internalBinaryWrite(
+        message.total,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSource2VProfLiteReportItem items = 2; */
+    for (let i = 0; i < message.items.length; i++)
+      CMsgSource2VProfLiteReportItem.internalBinaryWrite(
+        message.items[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 discarded_frames = 3; */
+    if (message.discarded_frames !== undefined) writer.tag(3, WireType.Varint).uint32(message.discarded_frames);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSource2VProfLiteReport
@@ -3719,85 +3719,85 @@ class CMsgSource2VProfLiteReport$Type extends MessageType<CMsgSource2VProfLiteRe
 export const CMsgSource2VProfLiteReport = new CMsgSource2VProfLiteReport$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_Diagnostic$Type extends MessageType<CCLCMsg_Diagnostic> {
-	constructor() {
-		super("CCLCMsg_Diagnostic", [
-			{
-				no: 1,
-				name: "system_specs",
-				kind: "message",
-				localName: "system_specs",
-				T: () => CMsgSource2SystemSpecs,
-			},
-			{
-				no: 2,
-				name: "vprof_report",
-				kind: "message",
-				localName: "vprof_report",
-				T: () => CMsgSource2VProfLiteReport,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_Diagnostic>): CCLCMsg_Diagnostic {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_Diagnostic>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_Diagnostic,
-	): CCLCMsg_Diagnostic {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgSource2SystemSpecs system_specs */ 1:
-					message.system_specs = CMsgSource2SystemSpecs.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.system_specs,
-					);
-					break;
-				case /* optional CMsgSource2VProfLiteReport vprof_report */ 2:
-					message.vprof_report = CMsgSource2VProfLiteReport.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.vprof_report,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CCLCMsg_Diagnostic, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgSource2SystemSpecs system_specs = 1; */
-		if (message.system_specs)
-			CMsgSource2SystemSpecs.internalBinaryWrite(
-				message.system_specs,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSource2VProfLiteReport vprof_report = 2; */
-		if (message.vprof_report)
-			CMsgSource2VProfLiteReport.internalBinaryWrite(
-				message.vprof_report,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_Diagnostic", [
+      {
+        no: 1,
+        name: "system_specs",
+        kind: "message",
+        localName: "system_specs",
+        T: () => CMsgSource2SystemSpecs,
+      },
+      {
+        no: 2,
+        name: "vprof_report",
+        kind: "message",
+        localName: "vprof_report",
+        T: () => CMsgSource2VProfLiteReport,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_Diagnostic>): CCLCMsg_Diagnostic {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_Diagnostic>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_Diagnostic,
+  ): CCLCMsg_Diagnostic {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgSource2SystemSpecs system_specs */ 1:
+          message.system_specs = CMsgSource2SystemSpecs.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.system_specs,
+          );
+          break;
+        case /* optional CMsgSource2VProfLiteReport vprof_report */ 2:
+          message.vprof_report = CMsgSource2VProfLiteReport.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.vprof_report,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CCLCMsg_Diagnostic, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgSource2SystemSpecs system_specs = 1; */
+    if (message.system_specs)
+      CMsgSource2SystemSpecs.internalBinaryWrite(
+        message.system_specs,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSource2VProfLiteReport vprof_report = 2; */
+    if (message.vprof_report)
+      CMsgSource2VProfLiteReport.internalBinaryWrite(
+        message.vprof_report,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_Diagnostic
@@ -3805,140 +3805,140 @@ class CCLCMsg_Diagnostic$Type extends MessageType<CCLCMsg_Diagnostic> {
 export const CCLCMsg_Diagnostic = new CCLCMsg_Diagnostic$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSource2Metrics_MatchPerfSummary_Notification$Type extends MessageType<CSource2Metrics_MatchPerfSummary_Notification> {
-	constructor() {
-		super("CSource2Metrics_MatchPerfSummary_Notification", [
-			{
-				no: 1,
-				name: "appid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "game_mode",
-				kind: "scalar",
-				localName: "game_mode",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "server_build_id",
-				kind: "scalar",
-				localName: "server_build_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "server_profile",
-				kind: "message",
-				localName: "server_profile",
-				T: () => CMsgSource2VProfLiteReport,
-			},
-			{
-				no: 11,
-				name: "clients",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CSource2Metrics_MatchPerfSummary_Notification_Client,
-			},
-			{
-				no: 20,
-				name: "map",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CSource2Metrics_MatchPerfSummary_Notification>,
-	): CSource2Metrics_MatchPerfSummary_Notification {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.clients = [];
-		if (value !== undefined)
-			reflectionMergePartial<CSource2Metrics_MatchPerfSummary_Notification>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSource2Metrics_MatchPerfSummary_Notification,
-	): CSource2Metrics_MatchPerfSummary_Notification {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 appid */ 1:
-					message.appid = reader.uint32();
-					break;
-				case /* optional string game_mode */ 2:
-					message.game_mode = reader.string();
-					break;
-				case /* optional uint32 server_build_id */ 3:
-					message.server_build_id = reader.uint32();
-					break;
-				case /* optional CMsgSource2VProfLiteReport server_profile */ 10:
-					message.server_profile = CMsgSource2VProfLiteReport.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.server_profile,
-					);
-					break;
-				case /* repeated CSource2Metrics_MatchPerfSummary_Notification.Client clients */ 11:
-					message.clients.push(
-						CSource2Metrics_MatchPerfSummary_Notification_Client.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* optional string map */ 20:
-					message.map = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSource2Metrics_MatchPerfSummary_Notification,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 appid = 1; */
-		if (message.appid !== undefined) writer.tag(1, WireType.Varint).uint32(message.appid);
-		/* optional string game_mode = 2; */
-		if (message.game_mode !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.game_mode);
-		/* optional uint32 server_build_id = 3; */
-		if (message.server_build_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.server_build_id);
-		/* optional CMsgSource2VProfLiteReport server_profile = 10; */
-		if (message.server_profile)
-			CMsgSource2VProfLiteReport.internalBinaryWrite(
-				message.server_profile,
-				writer.tag(10, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CSource2Metrics_MatchPerfSummary_Notification.Client clients = 11; */
-		for (let i = 0; i < message.clients.length; i++)
-			CSource2Metrics_MatchPerfSummary_Notification_Client.internalBinaryWrite(
-				message.clients[i],
-				writer.tag(11, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional string map = 20; */
-		if (message.map !== undefined) writer.tag(20, WireType.LengthDelimited).string(message.map);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSource2Metrics_MatchPerfSummary_Notification", [
+      {
+        no: 1,
+        name: "appid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "game_mode",
+        kind: "scalar",
+        localName: "game_mode",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "server_build_id",
+        kind: "scalar",
+        localName: "server_build_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "server_profile",
+        kind: "message",
+        localName: "server_profile",
+        T: () => CMsgSource2VProfLiteReport,
+      },
+      {
+        no: 11,
+        name: "clients",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CSource2Metrics_MatchPerfSummary_Notification_Client,
+      },
+      {
+        no: 20,
+        name: "map",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CSource2Metrics_MatchPerfSummary_Notification>,
+  ): CSource2Metrics_MatchPerfSummary_Notification {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.clients = [];
+    if (value !== undefined)
+      reflectionMergePartial<CSource2Metrics_MatchPerfSummary_Notification>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSource2Metrics_MatchPerfSummary_Notification,
+  ): CSource2Metrics_MatchPerfSummary_Notification {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 appid */ 1:
+          message.appid = reader.uint32();
+          break;
+        case /* optional string game_mode */ 2:
+          message.game_mode = reader.string();
+          break;
+        case /* optional uint32 server_build_id */ 3:
+          message.server_build_id = reader.uint32();
+          break;
+        case /* optional CMsgSource2VProfLiteReport server_profile */ 10:
+          message.server_profile = CMsgSource2VProfLiteReport.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.server_profile,
+          );
+          break;
+        case /* repeated CSource2Metrics_MatchPerfSummary_Notification.Client clients */ 11:
+          message.clients.push(
+            CSource2Metrics_MatchPerfSummary_Notification_Client.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* optional string map */ 20:
+          message.map = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSource2Metrics_MatchPerfSummary_Notification,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 appid = 1; */
+    if (message.appid !== undefined) writer.tag(1, WireType.Varint).uint32(message.appid);
+    /* optional string game_mode = 2; */
+    if (message.game_mode !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.game_mode);
+    /* optional uint32 server_build_id = 3; */
+    if (message.server_build_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.server_build_id);
+    /* optional CMsgSource2VProfLiteReport server_profile = 10; */
+    if (message.server_profile)
+      CMsgSource2VProfLiteReport.internalBinaryWrite(
+        message.server_profile,
+        writer.tag(10, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CSource2Metrics_MatchPerfSummary_Notification.Client clients = 11; */
+    for (let i = 0; i < message.clients.length; i++)
+      CSource2Metrics_MatchPerfSummary_Notification_Client.internalBinaryWrite(
+        message.clients[i],
+        writer.tag(11, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional string map = 20; */
+    if (message.map !== undefined) writer.tag(20, WireType.LengthDelimited).string(message.map);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSource2Metrics_MatchPerfSummary_Notification
@@ -3946,377 +3946,377 @@ class CSource2Metrics_MatchPerfSummary_Notification$Type extends MessageType<CSo
 export const CSource2Metrics_MatchPerfSummary_Notification = new CSource2Metrics_MatchPerfSummary_Notification$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSource2Metrics_MatchPerfSummary_Notification_Client$Type extends MessageType<CSource2Metrics_MatchPerfSummary_Notification_Client> {
-	constructor() {
-		super("CSource2Metrics_MatchPerfSummary_Notification.Client", [
-			{
-				no: 1,
-				name: "system_specs",
-				kind: "message",
-				localName: "system_specs",
-				T: () => CMsgSource2SystemSpecs,
-			},
-			{
-				no: 2,
-				name: "profile",
-				kind: "message",
-				T: () => CMsgSource2VProfLiteReport,
-			},
-			{
-				no: 3,
-				name: "build_id",
-				kind: "scalar",
-				localName: "build_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "steamid",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CSource2Metrics_MatchPerfSummary_Notification_Client>,
-	): CSource2Metrics_MatchPerfSummary_Notification_Client {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CSource2Metrics_MatchPerfSummary_Notification_Client>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSource2Metrics_MatchPerfSummary_Notification_Client,
-	): CSource2Metrics_MatchPerfSummary_Notification_Client {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgSource2SystemSpecs system_specs */ 1:
-					message.system_specs = CMsgSource2SystemSpecs.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.system_specs,
-					);
-					break;
-				case /* optional CMsgSource2VProfLiteReport profile */ 2:
-					message.profile = CMsgSource2VProfLiteReport.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.profile,
-					);
-					break;
-				case /* optional uint32 build_id */ 3:
-					message.build_id = reader.uint32();
-					break;
-				case /* optional fixed64 steamid */ 10:
-					message.steamid = reader.fixed64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSource2Metrics_MatchPerfSummary_Notification_Client,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgSource2SystemSpecs system_specs = 1; */
-		if (message.system_specs)
-			CMsgSource2SystemSpecs.internalBinaryWrite(
-				message.system_specs,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSource2VProfLiteReport profile = 2; */
-		if (message.profile)
-			CMsgSource2VProfLiteReport.internalBinaryWrite(
-				message.profile,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 build_id = 3; */
-		if (message.build_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.build_id);
-		/* optional fixed64 steamid = 10; */
-		if (message.steamid !== undefined) writer.tag(10, WireType.Bit64).fixed64(message.steamid);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSource2Metrics_MatchPerfSummary_Notification.Client", [
+      {
+        no: 1,
+        name: "system_specs",
+        kind: "message",
+        localName: "system_specs",
+        T: () => CMsgSource2SystemSpecs,
+      },
+      {
+        no: 2,
+        name: "profile",
+        kind: "message",
+        T: () => CMsgSource2VProfLiteReport,
+      },
+      {
+        no: 3,
+        name: "build_id",
+        kind: "scalar",
+        localName: "build_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "steamid",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CSource2Metrics_MatchPerfSummary_Notification_Client>,
+  ): CSource2Metrics_MatchPerfSummary_Notification_Client {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CSource2Metrics_MatchPerfSummary_Notification_Client>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSource2Metrics_MatchPerfSummary_Notification_Client,
+  ): CSource2Metrics_MatchPerfSummary_Notification_Client {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgSource2SystemSpecs system_specs */ 1:
+          message.system_specs = CMsgSource2SystemSpecs.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.system_specs,
+          );
+          break;
+        case /* optional CMsgSource2VProfLiteReport profile */ 2:
+          message.profile = CMsgSource2VProfLiteReport.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.profile,
+          );
+          break;
+        case /* optional uint32 build_id */ 3:
+          message.build_id = reader.uint32();
+          break;
+        case /* optional fixed64 steamid */ 10:
+          message.steamid = reader.fixed64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSource2Metrics_MatchPerfSummary_Notification_Client,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgSource2SystemSpecs system_specs = 1; */
+    if (message.system_specs)
+      CMsgSource2SystemSpecs.internalBinaryWrite(
+        message.system_specs,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSource2VProfLiteReport profile = 2; */
+    if (message.profile)
+      CMsgSource2VProfLiteReport.internalBinaryWrite(
+        message.profile,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 build_id = 3; */
+    if (message.build_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.build_id);
+    /* optional fixed64 steamid = 10; */
+    if (message.steamid !== undefined) writer.tag(10, WireType.Bit64).fixed64(message.steamid);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSource2Metrics_MatchPerfSummary_Notification.Client
  */
 export const CSource2Metrics_MatchPerfSummary_Notification_Client =
-	new CSource2Metrics_MatchPerfSummary_Notification_Client$Type();
+  new CSource2Metrics_MatchPerfSummary_Notification_Client$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_ServerInfo$Type extends MessageType<CSVCMsg_ServerInfo> {
-	constructor() {
-		super("CSVCMsg_ServerInfo", [
-			{
-				no: 1,
-				name: "protocol",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "server_count",
-				kind: "scalar",
-				localName: "server_count",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "is_dedicated",
-				kind: "scalar",
-				localName: "is_dedicated",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "is_hltv",
-				kind: "scalar",
-				localName: "is_hltv",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 6,
-				name: "c_os",
-				kind: "scalar",
-				localName: "c_os",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 10,
-				name: "max_clients",
-				kind: "scalar",
-				localName: "max_clients",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 11,
-				name: "max_classes",
-				kind: "scalar",
-				localName: "max_classes",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 12,
-				name: "player_slot",
-				kind: "scalar",
-				localName: "player_slot",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 13,
-				name: "tick_interval",
-				kind: "scalar",
-				localName: "tick_interval",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 14,
-				name: "game_dir",
-				kind: "scalar",
-				localName: "game_dir",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 15,
-				name: "map_name",
-				kind: "scalar",
-				localName: "map_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 16,
-				name: "sky_name",
-				kind: "scalar",
-				localName: "sky_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 17,
-				name: "host_name",
-				kind: "scalar",
-				localName: "host_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 18,
-				name: "addon_name",
-				kind: "scalar",
-				localName: "addon_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 19,
-				name: "game_session_config",
-				kind: "message",
-				localName: "game_session_config",
-				T: () => CSVCMsg_GameSessionConfiguration,
-			},
-			{
-				no: 20,
-				name: "game_session_manifest",
-				kind: "scalar",
-				localName: "game_session_manifest",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_ServerInfo>): CSVCMsg_ServerInfo {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_ServerInfo>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_ServerInfo,
-	): CSVCMsg_ServerInfo {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 protocol */ 1:
-					message.protocol = reader.int32();
-					break;
-				case /* optional int32 server_count */ 2:
-					message.server_count = reader.int32();
-					break;
-				case /* optional bool is_dedicated */ 3:
-					message.is_dedicated = reader.bool();
-					break;
-				case /* optional bool is_hltv */ 4:
-					message.is_hltv = reader.bool();
-					break;
-				case /* optional int32 c_os */ 6:
-					message.c_os = reader.int32();
-					break;
-				case /* optional int32 max_clients */ 10:
-					message.max_clients = reader.int32();
-					break;
-				case /* optional int32 max_classes */ 11:
-					message.max_classes = reader.int32();
-					break;
-				case /* optional int32 player_slot */ 12:
-					message.player_slot = reader.int32();
-					break;
-				case /* optional float tick_interval */ 13:
-					message.tick_interval = reader.float();
-					break;
-				case /* optional string game_dir */ 14:
-					message.game_dir = reader.string();
-					break;
-				case /* optional string map_name */ 15:
-					message.map_name = reader.string();
-					break;
-				case /* optional string sky_name */ 16:
-					message.sky_name = reader.string();
-					break;
-				case /* optional string host_name */ 17:
-					message.host_name = reader.string();
-					break;
-				case /* optional string addon_name */ 18:
-					message.addon_name = reader.string();
-					break;
-				case /* optional CSVCMsg_GameSessionConfiguration game_session_config */ 19:
-					message.game_session_config = CSVCMsg_GameSessionConfiguration.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.game_session_config,
-					);
-					break;
-				case /* optional bytes game_session_manifest */ 20:
-					message.game_session_manifest = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_ServerInfo, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional int32 protocol = 1; */
-		if (message.protocol !== undefined) writer.tag(1, WireType.Varint).int32(message.protocol);
-		/* optional int32 server_count = 2; */
-		if (message.server_count !== undefined) writer.tag(2, WireType.Varint).int32(message.server_count);
-		/* optional bool is_dedicated = 3; */
-		if (message.is_dedicated !== undefined) writer.tag(3, WireType.Varint).bool(message.is_dedicated);
-		/* optional bool is_hltv = 4; */
-		if (message.is_hltv !== undefined) writer.tag(4, WireType.Varint).bool(message.is_hltv);
-		/* optional int32 c_os = 6; */
-		if (message.c_os !== undefined) writer.tag(6, WireType.Varint).int32(message.c_os);
-		/* optional int32 max_clients = 10; */
-		if (message.max_clients !== undefined) writer.tag(10, WireType.Varint).int32(message.max_clients);
-		/* optional int32 max_classes = 11; */
-		if (message.max_classes !== undefined) writer.tag(11, WireType.Varint).int32(message.max_classes);
-		/* optional int32 player_slot = 12; */
-		if (message.player_slot !== undefined) writer.tag(12, WireType.Varint).int32(message.player_slot);
-		/* optional float tick_interval = 13; */
-		if (message.tick_interval !== undefined) writer.tag(13, WireType.Bit32).float(message.tick_interval);
-		/* optional string game_dir = 14; */
-		if (message.game_dir !== undefined) writer.tag(14, WireType.LengthDelimited).string(message.game_dir);
-		/* optional string map_name = 15; */
-		if (message.map_name !== undefined) writer.tag(15, WireType.LengthDelimited).string(message.map_name);
-		/* optional string sky_name = 16; */
-		if (message.sky_name !== undefined) writer.tag(16, WireType.LengthDelimited).string(message.sky_name);
-		/* optional string host_name = 17; */
-		if (message.host_name !== undefined) writer.tag(17, WireType.LengthDelimited).string(message.host_name);
-		/* optional string addon_name = 18; */
-		if (message.addon_name !== undefined) writer.tag(18, WireType.LengthDelimited).string(message.addon_name);
-		/* optional CSVCMsg_GameSessionConfiguration game_session_config = 19; */
-		if (message.game_session_config)
-			CSVCMsg_GameSessionConfiguration.internalBinaryWrite(
-				message.game_session_config,
-				writer.tag(19, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional bytes game_session_manifest = 20; */
-		if (message.game_session_manifest !== undefined)
-			writer.tag(20, WireType.LengthDelimited).bytes(message.game_session_manifest);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_ServerInfo", [
+      {
+        no: 1,
+        name: "protocol",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "server_count",
+        kind: "scalar",
+        localName: "server_count",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "is_dedicated",
+        kind: "scalar",
+        localName: "is_dedicated",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "is_hltv",
+        kind: "scalar",
+        localName: "is_hltv",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 6,
+        name: "c_os",
+        kind: "scalar",
+        localName: "c_os",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 10,
+        name: "max_clients",
+        kind: "scalar",
+        localName: "max_clients",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 11,
+        name: "max_classes",
+        kind: "scalar",
+        localName: "max_classes",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 12,
+        name: "player_slot",
+        kind: "scalar",
+        localName: "player_slot",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 13,
+        name: "tick_interval",
+        kind: "scalar",
+        localName: "tick_interval",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 14,
+        name: "game_dir",
+        kind: "scalar",
+        localName: "game_dir",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 15,
+        name: "map_name",
+        kind: "scalar",
+        localName: "map_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 16,
+        name: "sky_name",
+        kind: "scalar",
+        localName: "sky_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 17,
+        name: "host_name",
+        kind: "scalar",
+        localName: "host_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 18,
+        name: "addon_name",
+        kind: "scalar",
+        localName: "addon_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 19,
+        name: "game_session_config",
+        kind: "message",
+        localName: "game_session_config",
+        T: () => CSVCMsg_GameSessionConfiguration,
+      },
+      {
+        no: 20,
+        name: "game_session_manifest",
+        kind: "scalar",
+        localName: "game_session_manifest",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_ServerInfo>): CSVCMsg_ServerInfo {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_ServerInfo>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_ServerInfo,
+  ): CSVCMsg_ServerInfo {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 protocol */ 1:
+          message.protocol = reader.int32();
+          break;
+        case /* optional int32 server_count */ 2:
+          message.server_count = reader.int32();
+          break;
+        case /* optional bool is_dedicated */ 3:
+          message.is_dedicated = reader.bool();
+          break;
+        case /* optional bool is_hltv */ 4:
+          message.is_hltv = reader.bool();
+          break;
+        case /* optional int32 c_os */ 6:
+          message.c_os = reader.int32();
+          break;
+        case /* optional int32 max_clients */ 10:
+          message.max_clients = reader.int32();
+          break;
+        case /* optional int32 max_classes */ 11:
+          message.max_classes = reader.int32();
+          break;
+        case /* optional int32 player_slot */ 12:
+          message.player_slot = reader.int32();
+          break;
+        case /* optional float tick_interval */ 13:
+          message.tick_interval = reader.float();
+          break;
+        case /* optional string game_dir */ 14:
+          message.game_dir = reader.string();
+          break;
+        case /* optional string map_name */ 15:
+          message.map_name = reader.string();
+          break;
+        case /* optional string sky_name */ 16:
+          message.sky_name = reader.string();
+          break;
+        case /* optional string host_name */ 17:
+          message.host_name = reader.string();
+          break;
+        case /* optional string addon_name */ 18:
+          message.addon_name = reader.string();
+          break;
+        case /* optional CSVCMsg_GameSessionConfiguration game_session_config */ 19:
+          message.game_session_config = CSVCMsg_GameSessionConfiguration.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.game_session_config,
+          );
+          break;
+        case /* optional bytes game_session_manifest */ 20:
+          message.game_session_manifest = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_ServerInfo, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional int32 protocol = 1; */
+    if (message.protocol !== undefined) writer.tag(1, WireType.Varint).int32(message.protocol);
+    /* optional int32 server_count = 2; */
+    if (message.server_count !== undefined) writer.tag(2, WireType.Varint).int32(message.server_count);
+    /* optional bool is_dedicated = 3; */
+    if (message.is_dedicated !== undefined) writer.tag(3, WireType.Varint).bool(message.is_dedicated);
+    /* optional bool is_hltv = 4; */
+    if (message.is_hltv !== undefined) writer.tag(4, WireType.Varint).bool(message.is_hltv);
+    /* optional int32 c_os = 6; */
+    if (message.c_os !== undefined) writer.tag(6, WireType.Varint).int32(message.c_os);
+    /* optional int32 max_clients = 10; */
+    if (message.max_clients !== undefined) writer.tag(10, WireType.Varint).int32(message.max_clients);
+    /* optional int32 max_classes = 11; */
+    if (message.max_classes !== undefined) writer.tag(11, WireType.Varint).int32(message.max_classes);
+    /* optional int32 player_slot = 12; */
+    if (message.player_slot !== undefined) writer.tag(12, WireType.Varint).int32(message.player_slot);
+    /* optional float tick_interval = 13; */
+    if (message.tick_interval !== undefined) writer.tag(13, WireType.Bit32).float(message.tick_interval);
+    /* optional string game_dir = 14; */
+    if (message.game_dir !== undefined) writer.tag(14, WireType.LengthDelimited).string(message.game_dir);
+    /* optional string map_name = 15; */
+    if (message.map_name !== undefined) writer.tag(15, WireType.LengthDelimited).string(message.map_name);
+    /* optional string sky_name = 16; */
+    if (message.sky_name !== undefined) writer.tag(16, WireType.LengthDelimited).string(message.sky_name);
+    /* optional string host_name = 17; */
+    if (message.host_name !== undefined) writer.tag(17, WireType.LengthDelimited).string(message.host_name);
+    /* optional string addon_name = 18; */
+    if (message.addon_name !== undefined) writer.tag(18, WireType.LengthDelimited).string(message.addon_name);
+    /* optional CSVCMsg_GameSessionConfiguration game_session_config = 19; */
+    if (message.game_session_config)
+      CSVCMsg_GameSessionConfiguration.internalBinaryWrite(
+        message.game_session_config,
+        writer.tag(19, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional bytes game_session_manifest = 20; */
+    if (message.game_session_manifest !== undefined)
+      writer.tag(20, WireType.LengthDelimited).bytes(message.game_session_manifest);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_ServerInfo
@@ -4324,72 +4324,72 @@ class CSVCMsg_ServerInfo$Type extends MessageType<CSVCMsg_ServerInfo> {
 export const CSVCMsg_ServerInfo = new CSVCMsg_ServerInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_ClassInfo$Type extends MessageType<CSVCMsg_ClassInfo> {
-	constructor() {
-		super("CSVCMsg_ClassInfo", [
-			{
-				no: 1,
-				name: "create_on_client",
-				kind: "scalar",
-				localName: "create_on_client",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 2,
-				name: "classes",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CSVCMsg_ClassInfo_class_t,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_ClassInfo>): CSVCMsg_ClassInfo {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.classes = [];
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_ClassInfo>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_ClassInfo,
-	): CSVCMsg_ClassInfo {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool create_on_client */ 1:
-					message.create_on_client = reader.bool();
-					break;
-				case /* repeated CSVCMsg_ClassInfo.class_t classes */ 2:
-					message.classes.push(CSVCMsg_ClassInfo_class_t.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_ClassInfo, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional bool create_on_client = 1; */
-		if (message.create_on_client !== undefined) writer.tag(1, WireType.Varint).bool(message.create_on_client);
-		/* repeated CSVCMsg_ClassInfo.class_t classes = 2; */
-		for (let i = 0; i < message.classes.length; i++)
-			CSVCMsg_ClassInfo_class_t.internalBinaryWrite(
-				message.classes[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_ClassInfo", [
+      {
+        no: 1,
+        name: "create_on_client",
+        kind: "scalar",
+        localName: "create_on_client",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 2,
+        name: "classes",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CSVCMsg_ClassInfo_class_t,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_ClassInfo>): CSVCMsg_ClassInfo {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.classes = [];
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_ClassInfo>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_ClassInfo,
+  ): CSVCMsg_ClassInfo {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool create_on_client */ 1:
+          message.create_on_client = reader.bool();
+          break;
+        case /* repeated CSVCMsg_ClassInfo.class_t classes */ 2:
+          message.classes.push(CSVCMsg_ClassInfo_class_t.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_ClassInfo, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional bool create_on_client = 1; */
+    if (message.create_on_client !== undefined) writer.tag(1, WireType.Varint).bool(message.create_on_client);
+    /* repeated CSVCMsg_ClassInfo.class_t classes = 2; */
+    for (let i = 0; i < message.classes.length; i++)
+      CSVCMsg_ClassInfo_class_t.internalBinaryWrite(
+        message.classes[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_ClassInfo
@@ -4397,71 +4397,71 @@ class CSVCMsg_ClassInfo$Type extends MessageType<CSVCMsg_ClassInfo> {
 export const CSVCMsg_ClassInfo = new CSVCMsg_ClassInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_ClassInfo_class_t$Type extends MessageType<CSVCMsg_ClassInfo_class_t> {
-	constructor() {
-		super("CSVCMsg_ClassInfo.class_t", [
-			{
-				no: 1,
-				name: "class_id",
-				kind: "scalar",
-				localName: "class_id",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "class_name",
-				kind: "scalar",
-				localName: "class_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_ClassInfo_class_t>): CSVCMsg_ClassInfo_class_t {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_ClassInfo_class_t>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_ClassInfo_class_t,
-	): CSVCMsg_ClassInfo_class_t {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 class_id */ 1:
-					message.class_id = reader.int32();
-					break;
-				case /* optional string class_name */ 3:
-					message.class_name = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_ClassInfo_class_t,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 class_id = 1; */
-		if (message.class_id !== undefined) writer.tag(1, WireType.Varint).int32(message.class_id);
-		/* optional string class_name = 3; */
-		if (message.class_name !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.class_name);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_ClassInfo.class_t", [
+      {
+        no: 1,
+        name: "class_id",
+        kind: "scalar",
+        localName: "class_id",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "class_name",
+        kind: "scalar",
+        localName: "class_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_ClassInfo_class_t>): CSVCMsg_ClassInfo_class_t {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_ClassInfo_class_t>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_ClassInfo_class_t,
+  ): CSVCMsg_ClassInfo_class_t {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 class_id */ 1:
+          message.class_id = reader.int32();
+          break;
+        case /* optional string class_name */ 3:
+          message.class_name = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_ClassInfo_class_t,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 class_id = 1; */
+    if (message.class_id !== undefined) writer.tag(1, WireType.Varint).int32(message.class_id);
+    /* optional string class_name = 3; */
+    if (message.class_name !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.class_name);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_ClassInfo.class_t
@@ -4469,53 +4469,53 @@ class CSVCMsg_ClassInfo_class_t$Type extends MessageType<CSVCMsg_ClassInfo_class
 export const CSVCMsg_ClassInfo_class_t = new CSVCMsg_ClassInfo_class_t$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_SetPause$Type extends MessageType<CSVCMsg_SetPause> {
-	constructor() {
-		super("CSVCMsg_SetPause", [
-			{
-				no: 1,
-				name: "paused",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_SetPause>): CSVCMsg_SetPause {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_SetPause>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_SetPause,
-	): CSVCMsg_SetPause {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool paused */ 1:
-					message.paused = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_SetPause, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional bool paused = 1; */
-		if (message.paused !== undefined) writer.tag(1, WireType.Varint).bool(message.paused);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_SetPause", [
+      {
+        no: 1,
+        name: "paused",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_SetPause>): CSVCMsg_SetPause {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_SetPause>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_SetPause,
+  ): CSVCMsg_SetPause {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool paused */ 1:
+          message.paused = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_SetPause, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional bool paused = 1; */
+    if (message.paused !== undefined) writer.tag(1, WireType.Varint).bool(message.paused);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_SetPause
@@ -4523,77 +4523,77 @@ class CSVCMsg_SetPause$Type extends MessageType<CSVCMsg_SetPause> {
 export const CSVCMsg_SetPause = new CSVCMsg_SetPause$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_VoiceInit$Type extends MessageType<CSVCMsg_VoiceInit> {
-	constructor() {
-		super("CSVCMsg_VoiceInit", [
-			{
-				no: 1,
-				name: "quality",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "codec",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "version",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_VoiceInit>): CSVCMsg_VoiceInit {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_VoiceInit>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_VoiceInit,
-	): CSVCMsg_VoiceInit {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 quality */ 1:
-					message.quality = reader.int32();
-					break;
-				case /* optional string codec */ 2:
-					message.codec = reader.string();
-					break;
-				case /* optional int32 version */ 3:
-					message.version = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_VoiceInit, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional int32 quality = 1; */
-		if (message.quality !== undefined) writer.tag(1, WireType.Varint).int32(message.quality);
-		/* optional string codec = 2; */
-		if (message.codec !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.codec);
-		/* optional int32 version = 3; */
-		if (message.version !== undefined) writer.tag(3, WireType.Varint).int32(message.version);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_VoiceInit", [
+      {
+        no: 1,
+        name: "quality",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "codec",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "version",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_VoiceInit>): CSVCMsg_VoiceInit {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_VoiceInit>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_VoiceInit,
+  ): CSVCMsg_VoiceInit {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 quality */ 1:
+          message.quality = reader.int32();
+          break;
+        case /* optional string codec */ 2:
+          message.codec = reader.string();
+          break;
+        case /* optional int32 version */ 3:
+          message.version = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_VoiceInit, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional int32 quality = 1; */
+    if (message.quality !== undefined) writer.tag(1, WireType.Varint).int32(message.quality);
+    /* optional string codec = 2; */
+    if (message.codec !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.codec);
+    /* optional int32 version = 3; */
+    if (message.version !== undefined) writer.tag(3, WireType.Varint).int32(message.version);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_VoiceInit
@@ -4601,53 +4601,53 @@ class CSVCMsg_VoiceInit$Type extends MessageType<CSVCMsg_VoiceInit> {
 export const CSVCMsg_VoiceInit = new CSVCMsg_VoiceInit$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_Print$Type extends MessageType<CSVCMsg_Print> {
-	constructor() {
-		super("CSVCMsg_Print", [
-			{
-				no: 1,
-				name: "text",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_Print>): CSVCMsg_Print {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_Print>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_Print,
-	): CSVCMsg_Print {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string text */ 1:
-					message.text = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_Print, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional string text = 1; */
-		if (message.text !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.text);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_Print", [
+      {
+        no: 1,
+        name: "text",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_Print>): CSVCMsg_Print {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_Print>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_Print,
+  ): CSVCMsg_Print {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string text */ 1:
+          message.text = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_Print, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional string text = 1; */
+    if (message.text !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.text);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_Print
@@ -4655,72 +4655,72 @@ class CSVCMsg_Print$Type extends MessageType<CSVCMsg_Print> {
 export const CSVCMsg_Print = new CSVCMsg_Print$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_Sounds$Type extends MessageType<CSVCMsg_Sounds> {
-	constructor() {
-		super("CSVCMsg_Sounds", [
-			{
-				no: 1,
-				name: "reliable_sound",
-				kind: "scalar",
-				localName: "reliable_sound",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 2,
-				name: "sounds",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CSVCMsg_Sounds_sounddata_t,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_Sounds>): CSVCMsg_Sounds {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.sounds = [];
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_Sounds>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_Sounds,
-	): CSVCMsg_Sounds {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool reliable_sound */ 1:
-					message.reliable_sound = reader.bool();
-					break;
-				case /* repeated CSVCMsg_Sounds.sounddata_t sounds */ 2:
-					message.sounds.push(CSVCMsg_Sounds_sounddata_t.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_Sounds, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional bool reliable_sound = 1; */
-		if (message.reliable_sound !== undefined) writer.tag(1, WireType.Varint).bool(message.reliable_sound);
-		/* repeated CSVCMsg_Sounds.sounddata_t sounds = 2; */
-		for (let i = 0; i < message.sounds.length; i++)
-			CSVCMsg_Sounds_sounddata_t.internalBinaryWrite(
-				message.sounds[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_Sounds", [
+      {
+        no: 1,
+        name: "reliable_sound",
+        kind: "scalar",
+        localName: "reliable_sound",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 2,
+        name: "sounds",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CSVCMsg_Sounds_sounddata_t,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_Sounds>): CSVCMsg_Sounds {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.sounds = [];
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_Sounds>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_Sounds,
+  ): CSVCMsg_Sounds {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool reliable_sound */ 1:
+          message.reliable_sound = reader.bool();
+          break;
+        case /* repeated CSVCMsg_Sounds.sounddata_t sounds */ 2:
+          message.sounds.push(CSVCMsg_Sounds_sounddata_t.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_Sounds, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional bool reliable_sound = 1; */
+    if (message.reliable_sound !== undefined) writer.tag(1, WireType.Varint).bool(message.reliable_sound);
+    /* repeated CSVCMsg_Sounds.sounddata_t sounds = 2; */
+    for (let i = 0; i < message.sounds.length; i++)
+      CSVCMsg_Sounds_sounddata_t.internalBinaryWrite(
+        message.sounds[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_Sounds
@@ -4728,288 +4728,288 @@ class CSVCMsg_Sounds$Type extends MessageType<CSVCMsg_Sounds> {
 export const CSVCMsg_Sounds = new CSVCMsg_Sounds$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_Sounds_sounddata_t$Type extends MessageType<CSVCMsg_Sounds_sounddata_t> {
-	constructor() {
-		super("CSVCMsg_Sounds.sounddata_t", [
-			{
-				no: 1,
-				name: "origin_x",
-				kind: "scalar",
-				localName: "origin_x",
-				opt: true,
-				T: 17 /*ScalarType.SINT32*/,
-			},
-			{
-				no: 2,
-				name: "origin_y",
-				kind: "scalar",
-				localName: "origin_y",
-				opt: true,
-				T: 17 /*ScalarType.SINT32*/,
-			},
-			{
-				no: 3,
-				name: "origin_z",
-				kind: "scalar",
-				localName: "origin_z",
-				opt: true,
-				T: 17 /*ScalarType.SINT32*/,
-			},
-			{
-				no: 4,
-				name: "volume",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "delay_value",
-				kind: "scalar",
-				localName: "delay_value",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 6,
-				name: "sequence_number",
-				kind: "scalar",
-				localName: "sequence_number",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 7,
-				name: "entity_index",
-				kind: "scalar",
-				localName: "entity_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 8,
-				name: "channel",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 9,
-				name: "pitch",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 10,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 11,
-				name: "sound_num",
-				kind: "scalar",
-				localName: "sound_num",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 12,
-				name: "sound_num_handle",
-				kind: "scalar",
-				localName: "sound_num_handle",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 13,
-				name: "speaker_entity",
-				kind: "scalar",
-				localName: "speaker_entity",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 14,
-				name: "random_seed",
-				kind: "scalar",
-				localName: "random_seed",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 15,
-				name: "sound_level",
-				kind: "scalar",
-				localName: "sound_level",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 16,
-				name: "is_sentence",
-				kind: "scalar",
-				localName: "is_sentence",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 17,
-				name: "is_ambient",
-				kind: "scalar",
-				localName: "is_ambient",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 18,
-				name: "guid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 19,
-				name: "sound_resource_id",
-				kind: "scalar",
-				localName: "sound_resource_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_Sounds_sounddata_t>): CSVCMsg_Sounds_sounddata_t {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_Sounds_sounddata_t>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_Sounds_sounddata_t,
-	): CSVCMsg_Sounds_sounddata_t {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional sint32 origin_x */ 1:
-					message.origin_x = reader.sint32();
-					break;
-				case /* optional sint32 origin_y */ 2:
-					message.origin_y = reader.sint32();
-					break;
-				case /* optional sint32 origin_z */ 3:
-					message.origin_z = reader.sint32();
-					break;
-				case /* optional uint32 volume */ 4:
-					message.volume = reader.uint32();
-					break;
-				case /* optional float delay_value */ 5:
-					message.delay_value = reader.float();
-					break;
-				case /* optional int32 sequence_number */ 6:
-					message.sequence_number = reader.int32();
-					break;
-				case /* optional int32 entity_index */ 7:
-					message.entity_index = reader.int32();
-					break;
-				case /* optional int32 channel */ 8:
-					message.channel = reader.int32();
-					break;
-				case /* optional int32 pitch */ 9:
-					message.pitch = reader.int32();
-					break;
-				case /* optional int32 flags */ 10:
-					message.flags = reader.int32();
-					break;
-				case /* optional uint32 sound_num */ 11:
-					message.sound_num = reader.uint32();
-					break;
-				case /* optional fixed32 sound_num_handle */ 12:
-					message.sound_num_handle = reader.fixed32();
-					break;
-				case /* optional int32 speaker_entity */ 13:
-					message.speaker_entity = reader.int32();
-					break;
-				case /* optional int32 random_seed */ 14:
-					message.random_seed = reader.int32();
-					break;
-				case /* optional int32 sound_level */ 15:
-					message.sound_level = reader.int32();
-					break;
-				case /* optional bool is_sentence */ 16:
-					message.is_sentence = reader.bool();
-					break;
-				case /* optional bool is_ambient */ 17:
-					message.is_ambient = reader.bool();
-					break;
-				case /* optional uint32 guid */ 18:
-					message.guid = reader.uint32();
-					break;
-				case /* optional fixed64 sound_resource_id */ 19:
-					message.sound_resource_id = reader.fixed64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_Sounds_sounddata_t,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional sint32 origin_x = 1; */
-		if (message.origin_x !== undefined) writer.tag(1, WireType.Varint).sint32(message.origin_x);
-		/* optional sint32 origin_y = 2; */
-		if (message.origin_y !== undefined) writer.tag(2, WireType.Varint).sint32(message.origin_y);
-		/* optional sint32 origin_z = 3; */
-		if (message.origin_z !== undefined) writer.tag(3, WireType.Varint).sint32(message.origin_z);
-		/* optional uint32 volume = 4; */
-		if (message.volume !== undefined) writer.tag(4, WireType.Varint).uint32(message.volume);
-		/* optional float delay_value = 5; */
-		if (message.delay_value !== undefined) writer.tag(5, WireType.Bit32).float(message.delay_value);
-		/* optional int32 sequence_number = 6; */
-		if (message.sequence_number !== undefined) writer.tag(6, WireType.Varint).int32(message.sequence_number);
-		/* optional int32 entity_index = 7; */
-		if (message.entity_index !== undefined) writer.tag(7, WireType.Varint).int32(message.entity_index);
-		/* optional int32 channel = 8; */
-		if (message.channel !== undefined) writer.tag(8, WireType.Varint).int32(message.channel);
-		/* optional int32 pitch = 9; */
-		if (message.pitch !== undefined) writer.tag(9, WireType.Varint).int32(message.pitch);
-		/* optional int32 flags = 10; */
-		if (message.flags !== undefined) writer.tag(10, WireType.Varint).int32(message.flags);
-		/* optional uint32 sound_num = 11; */
-		if (message.sound_num !== undefined) writer.tag(11, WireType.Varint).uint32(message.sound_num);
-		/* optional fixed32 sound_num_handle = 12; */
-		if (message.sound_num_handle !== undefined) writer.tag(12, WireType.Bit32).fixed32(message.sound_num_handle);
-		/* optional int32 speaker_entity = 13; */
-		if (message.speaker_entity !== undefined) writer.tag(13, WireType.Varint).int32(message.speaker_entity);
-		/* optional int32 random_seed = 14; */
-		if (message.random_seed !== undefined) writer.tag(14, WireType.Varint).int32(message.random_seed);
-		/* optional int32 sound_level = 15; */
-		if (message.sound_level !== undefined) writer.tag(15, WireType.Varint).int32(message.sound_level);
-		/* optional bool is_sentence = 16; */
-		if (message.is_sentence !== undefined) writer.tag(16, WireType.Varint).bool(message.is_sentence);
-		/* optional bool is_ambient = 17; */
-		if (message.is_ambient !== undefined) writer.tag(17, WireType.Varint).bool(message.is_ambient);
-		/* optional uint32 guid = 18; */
-		if (message.guid !== undefined) writer.tag(18, WireType.Varint).uint32(message.guid);
-		/* optional fixed64 sound_resource_id = 19; */
-		if (message.sound_resource_id !== undefined) writer.tag(19, WireType.Bit64).fixed64(message.sound_resource_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_Sounds.sounddata_t", [
+      {
+        no: 1,
+        name: "origin_x",
+        kind: "scalar",
+        localName: "origin_x",
+        opt: true,
+        T: 17 /*ScalarType.SINT32*/,
+      },
+      {
+        no: 2,
+        name: "origin_y",
+        kind: "scalar",
+        localName: "origin_y",
+        opt: true,
+        T: 17 /*ScalarType.SINT32*/,
+      },
+      {
+        no: 3,
+        name: "origin_z",
+        kind: "scalar",
+        localName: "origin_z",
+        opt: true,
+        T: 17 /*ScalarType.SINT32*/,
+      },
+      {
+        no: 4,
+        name: "volume",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "delay_value",
+        kind: "scalar",
+        localName: "delay_value",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 6,
+        name: "sequence_number",
+        kind: "scalar",
+        localName: "sequence_number",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 7,
+        name: "entity_index",
+        kind: "scalar",
+        localName: "entity_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 8,
+        name: "channel",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 9,
+        name: "pitch",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 10,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 11,
+        name: "sound_num",
+        kind: "scalar",
+        localName: "sound_num",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 12,
+        name: "sound_num_handle",
+        kind: "scalar",
+        localName: "sound_num_handle",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 13,
+        name: "speaker_entity",
+        kind: "scalar",
+        localName: "speaker_entity",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 14,
+        name: "random_seed",
+        kind: "scalar",
+        localName: "random_seed",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 15,
+        name: "sound_level",
+        kind: "scalar",
+        localName: "sound_level",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 16,
+        name: "is_sentence",
+        kind: "scalar",
+        localName: "is_sentence",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 17,
+        name: "is_ambient",
+        kind: "scalar",
+        localName: "is_ambient",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 18,
+        name: "guid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 19,
+        name: "sound_resource_id",
+        kind: "scalar",
+        localName: "sound_resource_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_Sounds_sounddata_t>): CSVCMsg_Sounds_sounddata_t {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_Sounds_sounddata_t>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_Sounds_sounddata_t,
+  ): CSVCMsg_Sounds_sounddata_t {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional sint32 origin_x */ 1:
+          message.origin_x = reader.sint32();
+          break;
+        case /* optional sint32 origin_y */ 2:
+          message.origin_y = reader.sint32();
+          break;
+        case /* optional sint32 origin_z */ 3:
+          message.origin_z = reader.sint32();
+          break;
+        case /* optional uint32 volume */ 4:
+          message.volume = reader.uint32();
+          break;
+        case /* optional float delay_value */ 5:
+          message.delay_value = reader.float();
+          break;
+        case /* optional int32 sequence_number */ 6:
+          message.sequence_number = reader.int32();
+          break;
+        case /* optional int32 entity_index */ 7:
+          message.entity_index = reader.int32();
+          break;
+        case /* optional int32 channel */ 8:
+          message.channel = reader.int32();
+          break;
+        case /* optional int32 pitch */ 9:
+          message.pitch = reader.int32();
+          break;
+        case /* optional int32 flags */ 10:
+          message.flags = reader.int32();
+          break;
+        case /* optional uint32 sound_num */ 11:
+          message.sound_num = reader.uint32();
+          break;
+        case /* optional fixed32 sound_num_handle */ 12:
+          message.sound_num_handle = reader.fixed32();
+          break;
+        case /* optional int32 speaker_entity */ 13:
+          message.speaker_entity = reader.int32();
+          break;
+        case /* optional int32 random_seed */ 14:
+          message.random_seed = reader.int32();
+          break;
+        case /* optional int32 sound_level */ 15:
+          message.sound_level = reader.int32();
+          break;
+        case /* optional bool is_sentence */ 16:
+          message.is_sentence = reader.bool();
+          break;
+        case /* optional bool is_ambient */ 17:
+          message.is_ambient = reader.bool();
+          break;
+        case /* optional uint32 guid */ 18:
+          message.guid = reader.uint32();
+          break;
+        case /* optional fixed64 sound_resource_id */ 19:
+          message.sound_resource_id = reader.fixed64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_Sounds_sounddata_t,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional sint32 origin_x = 1; */
+    if (message.origin_x !== undefined) writer.tag(1, WireType.Varint).sint32(message.origin_x);
+    /* optional sint32 origin_y = 2; */
+    if (message.origin_y !== undefined) writer.tag(2, WireType.Varint).sint32(message.origin_y);
+    /* optional sint32 origin_z = 3; */
+    if (message.origin_z !== undefined) writer.tag(3, WireType.Varint).sint32(message.origin_z);
+    /* optional uint32 volume = 4; */
+    if (message.volume !== undefined) writer.tag(4, WireType.Varint).uint32(message.volume);
+    /* optional float delay_value = 5; */
+    if (message.delay_value !== undefined) writer.tag(5, WireType.Bit32).float(message.delay_value);
+    /* optional int32 sequence_number = 6; */
+    if (message.sequence_number !== undefined) writer.tag(6, WireType.Varint).int32(message.sequence_number);
+    /* optional int32 entity_index = 7; */
+    if (message.entity_index !== undefined) writer.tag(7, WireType.Varint).int32(message.entity_index);
+    /* optional int32 channel = 8; */
+    if (message.channel !== undefined) writer.tag(8, WireType.Varint).int32(message.channel);
+    /* optional int32 pitch = 9; */
+    if (message.pitch !== undefined) writer.tag(9, WireType.Varint).int32(message.pitch);
+    /* optional int32 flags = 10; */
+    if (message.flags !== undefined) writer.tag(10, WireType.Varint).int32(message.flags);
+    /* optional uint32 sound_num = 11; */
+    if (message.sound_num !== undefined) writer.tag(11, WireType.Varint).uint32(message.sound_num);
+    /* optional fixed32 sound_num_handle = 12; */
+    if (message.sound_num_handle !== undefined) writer.tag(12, WireType.Bit32).fixed32(message.sound_num_handle);
+    /* optional int32 speaker_entity = 13; */
+    if (message.speaker_entity !== undefined) writer.tag(13, WireType.Varint).int32(message.speaker_entity);
+    /* optional int32 random_seed = 14; */
+    if (message.random_seed !== undefined) writer.tag(14, WireType.Varint).int32(message.random_seed);
+    /* optional int32 sound_level = 15; */
+    if (message.sound_level !== undefined) writer.tag(15, WireType.Varint).int32(message.sound_level);
+    /* optional bool is_sentence = 16; */
+    if (message.is_sentence !== undefined) writer.tag(16, WireType.Varint).bool(message.is_sentence);
+    /* optional bool is_ambient = 17; */
+    if (message.is_ambient !== undefined) writer.tag(17, WireType.Varint).bool(message.is_ambient);
+    /* optional uint32 guid = 18; */
+    if (message.guid !== undefined) writer.tag(18, WireType.Varint).uint32(message.guid);
+    /* optional fixed64 sound_resource_id = 19; */
+    if (message.sound_resource_id !== undefined) writer.tag(19, WireType.Bit64).fixed64(message.sound_resource_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_Sounds.sounddata_t
@@ -5017,67 +5017,67 @@ class CSVCMsg_Sounds_sounddata_t$Type extends MessageType<CSVCMsg_Sounds_soundda
 export const CSVCMsg_Sounds_sounddata_t = new CSVCMsg_Sounds_sounddata_t$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_Prefetch$Type extends MessageType<CSVCMsg_Prefetch> {
-	constructor() {
-		super("CSVCMsg_Prefetch", [
-			{
-				no: 1,
-				name: "sound_index",
-				kind: "scalar",
-				localName: "sound_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "resource_type",
-				kind: "enum",
-				localName: "resource_type",
-				opt: true,
-				T: () => ["PrefetchType", PrefetchType],
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_Prefetch>): CSVCMsg_Prefetch {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_Prefetch>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_Prefetch,
-	): CSVCMsg_Prefetch {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 sound_index */ 1:
-					message.sound_index = reader.int32();
-					break;
-				case /* optional PrefetchType resource_type */ 2:
-					message.resource_type = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_Prefetch, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional int32 sound_index = 1; */
-		if (message.sound_index !== undefined) writer.tag(1, WireType.Varint).int32(message.sound_index);
-		/* optional PrefetchType resource_type = 2; */
-		if (message.resource_type !== undefined) writer.tag(2, WireType.Varint).int32(message.resource_type);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_Prefetch", [
+      {
+        no: 1,
+        name: "sound_index",
+        kind: "scalar",
+        localName: "sound_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "resource_type",
+        kind: "enum",
+        localName: "resource_type",
+        opt: true,
+        T: () => ["PrefetchType", PrefetchType],
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_Prefetch>): CSVCMsg_Prefetch {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_Prefetch>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_Prefetch,
+  ): CSVCMsg_Prefetch {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 sound_index */ 1:
+          message.sound_index = reader.int32();
+          break;
+        case /* optional PrefetchType resource_type */ 2:
+          message.resource_type = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_Prefetch, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional int32 sound_index = 1; */
+    if (message.sound_index !== undefined) writer.tag(1, WireType.Varint).int32(message.sound_index);
+    /* optional PrefetchType resource_type = 2; */
+    if (message.resource_type !== undefined) writer.tag(2, WireType.Varint).int32(message.resource_type);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_Prefetch
@@ -5085,66 +5085,66 @@ class CSVCMsg_Prefetch$Type extends MessageType<CSVCMsg_Prefetch> {
 export const CSVCMsg_Prefetch = new CSVCMsg_Prefetch$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_SetView$Type extends MessageType<CSVCMsg_SetView> {
-	constructor() {
-		super("CSVCMsg_SetView", [
-			{
-				no: 1,
-				name: "entity_index",
-				kind: "scalar",
-				localName: "entity_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "slot",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_SetView>): CSVCMsg_SetView {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_SetView>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_SetView,
-	): CSVCMsg_SetView {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 entity_index */ 1:
-					message.entity_index = reader.int32();
-					break;
-				case /* optional int32 slot */ 2:
-					message.slot = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_SetView, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional int32 entity_index = 1; */
-		if (message.entity_index !== undefined) writer.tag(1, WireType.Varint).int32(message.entity_index);
-		/* optional int32 slot = 2; */
-		if (message.slot !== undefined) writer.tag(2, WireType.Varint).int32(message.slot);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_SetView", [
+      {
+        no: 1,
+        name: "entity_index",
+        kind: "scalar",
+        localName: "entity_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "slot",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_SetView>): CSVCMsg_SetView {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_SetView>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_SetView,
+  ): CSVCMsg_SetView {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 entity_index */ 1:
+          message.entity_index = reader.int32();
+          break;
+        case /* optional int32 slot */ 2:
+          message.slot = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_SetView, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional int32 entity_index = 1; */
+    if (message.entity_index !== undefined) writer.tag(1, WireType.Varint).int32(message.entity_index);
+    /* optional int32 slot = 2; */
+    if (message.slot !== undefined) writer.tag(2, WireType.Varint).int32(message.slot);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_SetView
@@ -5152,60 +5152,60 @@ class CSVCMsg_SetView$Type extends MessageType<CSVCMsg_SetView> {
 export const CSVCMsg_SetView = new CSVCMsg_SetView$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_FixAngle$Type extends MessageType<CSVCMsg_FixAngle> {
-	constructor() {
-		super("CSVCMsg_FixAngle", [
-			{
-				no: 1,
-				name: "relative",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{ no: 2, name: "angle", kind: "message", T: () => CMsgQAngle },
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_FixAngle>): CSVCMsg_FixAngle {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_FixAngle>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_FixAngle,
-	): CSVCMsg_FixAngle {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool relative */ 1:
-					message.relative = reader.bool();
-					break;
-				case /* optional CMsgQAngle angle */ 2:
-					message.angle = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angle);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_FixAngle, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional bool relative = 1; */
-		if (message.relative !== undefined) writer.tag(1, WireType.Varint).bool(message.relative);
-		/* optional CMsgQAngle angle = 2; */
-		if (message.angle)
-			CMsgQAngle.internalBinaryWrite(message.angle, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_FixAngle", [
+      {
+        no: 1,
+        name: "relative",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      { no: 2, name: "angle", kind: "message", T: () => CMsgQAngle },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_FixAngle>): CSVCMsg_FixAngle {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_FixAngle>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_FixAngle,
+  ): CSVCMsg_FixAngle {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool relative */ 1:
+          message.relative = reader.bool();
+          break;
+        case /* optional CMsgQAngle angle */ 2:
+          message.angle = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angle);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_FixAngle, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional bool relative = 1; */
+    if (message.relative !== undefined) writer.tag(1, WireType.Varint).bool(message.relative);
+    /* optional CMsgQAngle angle = 2; */
+    if (message.angle)
+      CMsgQAngle.internalBinaryWrite(message.angle, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_FixAngle
@@ -5213,50 +5213,50 @@ class CSVCMsg_FixAngle$Type extends MessageType<CSVCMsg_FixAngle> {
 export const CSVCMsg_FixAngle = new CSVCMsg_FixAngle$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_CrosshairAngle$Type extends MessageType<CSVCMsg_CrosshairAngle> {
-	constructor() {
-		super("CSVCMsg_CrosshairAngle", [{ no: 1, name: "angle", kind: "message", T: () => CMsgQAngle }]);
-	}
-	create(value?: PartialMessage<CSVCMsg_CrosshairAngle>): CSVCMsg_CrosshairAngle {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_CrosshairAngle>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_CrosshairAngle,
-	): CSVCMsg_CrosshairAngle {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgQAngle angle */ 1:
-					message.angle = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angle);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_CrosshairAngle,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgQAngle angle = 1; */
-		if (message.angle)
-			CMsgQAngle.internalBinaryWrite(message.angle, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_CrosshairAngle", [{ no: 1, name: "angle", kind: "message", T: () => CMsgQAngle }]);
+  }
+  create(value?: PartialMessage<CSVCMsg_CrosshairAngle>): CSVCMsg_CrosshairAngle {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_CrosshairAngle>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_CrosshairAngle,
+  ): CSVCMsg_CrosshairAngle {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgQAngle angle */ 1:
+          message.angle = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angle);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_CrosshairAngle,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgQAngle angle = 1; */
+    if (message.angle)
+      CMsgQAngle.internalBinaryWrite(message.angle, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_CrosshairAngle
@@ -5264,100 +5264,100 @@ class CSVCMsg_CrosshairAngle$Type extends MessageType<CSVCMsg_CrosshairAngle> {
 export const CSVCMsg_CrosshairAngle = new CSVCMsg_CrosshairAngle$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_BSPDecal$Type extends MessageType<CSVCMsg_BSPDecal> {
-	constructor() {
-		super("CSVCMsg_BSPDecal", [
-			{ no: 1, name: "pos", kind: "message", T: () => CMsgVector },
-			{
-				no: 2,
-				name: "decal_texture_index",
-				kind: "scalar",
-				localName: "decal_texture_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "entity_index",
-				kind: "scalar",
-				localName: "entity_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "model_index",
-				kind: "scalar",
-				localName: "model_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "low_priority",
-				kind: "scalar",
-				localName: "low_priority",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_BSPDecal>): CSVCMsg_BSPDecal {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_BSPDecal>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_BSPDecal,
-	): CSVCMsg_BSPDecal {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector pos */ 1:
-					message.pos = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.pos);
-					break;
-				case /* optional int32 decal_texture_index */ 2:
-					message.decal_texture_index = reader.int32();
-					break;
-				case /* optional int32 entity_index */ 3:
-					message.entity_index = reader.int32();
-					break;
-				case /* optional int32 model_index */ 4:
-					message.model_index = reader.int32();
-					break;
-				case /* optional bool low_priority */ 5:
-					message.low_priority = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_BSPDecal, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector pos = 1; */
-		if (message.pos)
-			CMsgVector.internalBinaryWrite(message.pos, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional int32 decal_texture_index = 2; */
-		if (message.decal_texture_index !== undefined) writer.tag(2, WireType.Varint).int32(message.decal_texture_index);
-		/* optional int32 entity_index = 3; */
-		if (message.entity_index !== undefined) writer.tag(3, WireType.Varint).int32(message.entity_index);
-		/* optional int32 model_index = 4; */
-		if (message.model_index !== undefined) writer.tag(4, WireType.Varint).int32(message.model_index);
-		/* optional bool low_priority = 5; */
-		if (message.low_priority !== undefined) writer.tag(5, WireType.Varint).bool(message.low_priority);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_BSPDecal", [
+      { no: 1, name: "pos", kind: "message", T: () => CMsgVector },
+      {
+        no: 2,
+        name: "decal_texture_index",
+        kind: "scalar",
+        localName: "decal_texture_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "entity_index",
+        kind: "scalar",
+        localName: "entity_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "model_index",
+        kind: "scalar",
+        localName: "model_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "low_priority",
+        kind: "scalar",
+        localName: "low_priority",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_BSPDecal>): CSVCMsg_BSPDecal {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_BSPDecal>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_BSPDecal,
+  ): CSVCMsg_BSPDecal {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector pos */ 1:
+          message.pos = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.pos);
+          break;
+        case /* optional int32 decal_texture_index */ 2:
+          message.decal_texture_index = reader.int32();
+          break;
+        case /* optional int32 entity_index */ 3:
+          message.entity_index = reader.int32();
+          break;
+        case /* optional int32 model_index */ 4:
+          message.model_index = reader.int32();
+          break;
+        case /* optional bool low_priority */ 5:
+          message.low_priority = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_BSPDecal, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector pos = 1; */
+    if (message.pos)
+      CMsgVector.internalBinaryWrite(message.pos, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional int32 decal_texture_index = 2; */
+    if (message.decal_texture_index !== undefined) writer.tag(2, WireType.Varint).int32(message.decal_texture_index);
+    /* optional int32 entity_index = 3; */
+    if (message.entity_index !== undefined) writer.tag(3, WireType.Varint).int32(message.entity_index);
+    /* optional int32 model_index = 4; */
+    if (message.model_index !== undefined) writer.tag(4, WireType.Varint).int32(message.model_index);
+    /* optional bool low_priority = 5; */
+    if (message.low_priority !== undefined) writer.tag(5, WireType.Varint).bool(message.low_priority);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_BSPDecal
@@ -5365,78 +5365,78 @@ class CSVCMsg_BSPDecal$Type extends MessageType<CSVCMsg_BSPDecal> {
 export const CSVCMsg_BSPDecal = new CSVCMsg_BSPDecal$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_SplitScreen$Type extends MessageType<CSVCMsg_SplitScreen> {
-	constructor() {
-		super("CSVCMsg_SplitScreen", [
-			{
-				no: 1,
-				name: "type",
-				kind: "enum",
-				opt: true,
-				T: () => ["ESplitScreenMessageType", ESplitScreenMessageType],
-			},
-			{
-				no: 2,
-				name: "slot",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "player_index",
-				kind: "scalar",
-				localName: "player_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_SplitScreen>): CSVCMsg_SplitScreen {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_SplitScreen>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_SplitScreen,
-	): CSVCMsg_SplitScreen {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional ESplitScreenMessageType type */ 1:
-					message.type = reader.int32();
-					break;
-				case /* optional int32 slot */ 2:
-					message.slot = reader.int32();
-					break;
-				case /* optional int32 player_index */ 3:
-					message.player_index = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_SplitScreen, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional ESplitScreenMessageType type = 1; */
-		if (message.type !== undefined) writer.tag(1, WireType.Varint).int32(message.type);
-		/* optional int32 slot = 2; */
-		if (message.slot !== undefined) writer.tag(2, WireType.Varint).int32(message.slot);
-		/* optional int32 player_index = 3; */
-		if (message.player_index !== undefined) writer.tag(3, WireType.Varint).int32(message.player_index);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_SplitScreen", [
+      {
+        no: 1,
+        name: "type",
+        kind: "enum",
+        opt: true,
+        T: () => ["ESplitScreenMessageType", ESplitScreenMessageType],
+      },
+      {
+        no: 2,
+        name: "slot",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "player_index",
+        kind: "scalar",
+        localName: "player_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_SplitScreen>): CSVCMsg_SplitScreen {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_SplitScreen>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_SplitScreen,
+  ): CSVCMsg_SplitScreen {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional ESplitScreenMessageType type */ 1:
+          message.type = reader.int32();
+          break;
+        case /* optional int32 slot */ 2:
+          message.slot = reader.int32();
+          break;
+        case /* optional int32 player_index */ 3:
+          message.player_index = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_SplitScreen, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional ESplitScreenMessageType type = 1; */
+    if (message.type !== undefined) writer.tag(1, WireType.Varint).int32(message.type);
+    /* optional int32 slot = 2; */
+    if (message.slot !== undefined) writer.tag(2, WireType.Varint).int32(message.slot);
+    /* optional int32 player_index = 3; */
+    if (message.player_index !== undefined) writer.tag(3, WireType.Varint).int32(message.player_index);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_SplitScreen
@@ -5444,70 +5444,70 @@ class CSVCMsg_SplitScreen$Type extends MessageType<CSVCMsg_SplitScreen> {
 export const CSVCMsg_SplitScreen = new CSVCMsg_SplitScreen$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_GetCvarValue$Type extends MessageType<CSVCMsg_GetCvarValue> {
-	constructor() {
-		super("CSVCMsg_GetCvarValue", [
-			{
-				no: 1,
-				name: "cookie",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "cvar_name",
-				kind: "scalar",
-				localName: "cvar_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_GetCvarValue>): CSVCMsg_GetCvarValue {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_GetCvarValue>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_GetCvarValue,
-	): CSVCMsg_GetCvarValue {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 cookie */ 1:
-					message.cookie = reader.int32();
-					break;
-				case /* optional string cvar_name */ 2:
-					message.cvar_name = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_GetCvarValue,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 cookie = 1; */
-		if (message.cookie !== undefined) writer.tag(1, WireType.Varint).int32(message.cookie);
-		/* optional string cvar_name = 2; */
-		if (message.cvar_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.cvar_name);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_GetCvarValue", [
+      {
+        no: 1,
+        name: "cookie",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "cvar_name",
+        kind: "scalar",
+        localName: "cvar_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_GetCvarValue>): CSVCMsg_GetCvarValue {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_GetCvarValue>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_GetCvarValue,
+  ): CSVCMsg_GetCvarValue {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 cookie */ 1:
+          message.cookie = reader.int32();
+          break;
+        case /* optional string cvar_name */ 2:
+          message.cvar_name = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_GetCvarValue,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 cookie = 1; */
+    if (message.cookie !== undefined) writer.tag(1, WireType.Varint).int32(message.cookie);
+    /* optional string cvar_name = 2; */
+    if (message.cvar_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.cvar_name);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_GetCvarValue
@@ -5515,67 +5515,67 @@ class CSVCMsg_GetCvarValue$Type extends MessageType<CSVCMsg_GetCvarValue> {
 export const CSVCMsg_GetCvarValue = new CSVCMsg_GetCvarValue$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_Menu$Type extends MessageType<CSVCMsg_Menu> {
-	constructor() {
-		super("CSVCMsg_Menu", [
-			{
-				no: 1,
-				name: "dialog_type",
-				kind: "scalar",
-				localName: "dialog_type",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "menu_key_values",
-				kind: "scalar",
-				localName: "menu_key_values",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_Menu>): CSVCMsg_Menu {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_Menu>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_Menu,
-	): CSVCMsg_Menu {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 dialog_type */ 1:
-					message.dialog_type = reader.int32();
-					break;
-				case /* optional bytes menu_key_values */ 2:
-					message.menu_key_values = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_Menu, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional int32 dialog_type = 1; */
-		if (message.dialog_type !== undefined) writer.tag(1, WireType.Varint).int32(message.dialog_type);
-		/* optional bytes menu_key_values = 2; */
-		if (message.menu_key_values !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.menu_key_values);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_Menu", [
+      {
+        no: 1,
+        name: "dialog_type",
+        kind: "scalar",
+        localName: "dialog_type",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "menu_key_values",
+        kind: "scalar",
+        localName: "menu_key_values",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_Menu>): CSVCMsg_Menu {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_Menu>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_Menu,
+  ): CSVCMsg_Menu {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 dialog_type */ 1:
+          message.dialog_type = reader.int32();
+          break;
+        case /* optional bytes menu_key_values */ 2:
+          message.menu_key_values = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_Menu, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional int32 dialog_type = 1; */
+    if (message.dialog_type !== undefined) writer.tag(1, WireType.Varint).int32(message.dialog_type);
+    /* optional bytes menu_key_values = 2; */
+    if (message.menu_key_values !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.menu_key_values);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_Menu
@@ -5583,79 +5583,79 @@ class CSVCMsg_Menu$Type extends MessageType<CSVCMsg_Menu> {
 export const CSVCMsg_Menu = new CSVCMsg_Menu$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_UserMessage$Type extends MessageType<CSVCMsg_UserMessage> {
-	constructor() {
-		super("CSVCMsg_UserMessage", [
-			{
-				no: 1,
-				name: "msg_type",
-				kind: "scalar",
-				localName: "msg_type",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "msg_data",
-				kind: "scalar",
-				localName: "msg_data",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 3,
-				name: "passthrough",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_UserMessage>): CSVCMsg_UserMessage {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_UserMessage>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_UserMessage,
-	): CSVCMsg_UserMessage {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 msg_type */ 1:
-					message.msg_type = reader.int32();
-					break;
-				case /* optional bytes msg_data */ 2:
-					message.msg_data = reader.bytes();
-					break;
-				case /* optional int32 passthrough */ 3:
-					message.passthrough = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_UserMessage, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional int32 msg_type = 1; */
-		if (message.msg_type !== undefined) writer.tag(1, WireType.Varint).int32(message.msg_type);
-		/* optional bytes msg_data = 2; */
-		if (message.msg_data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.msg_data);
-		/* optional int32 passthrough = 3; */
-		if (message.passthrough !== undefined) writer.tag(3, WireType.Varint).int32(message.passthrough);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_UserMessage", [
+      {
+        no: 1,
+        name: "msg_type",
+        kind: "scalar",
+        localName: "msg_type",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "msg_data",
+        kind: "scalar",
+        localName: "msg_data",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 3,
+        name: "passthrough",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_UserMessage>): CSVCMsg_UserMessage {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_UserMessage>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_UserMessage,
+  ): CSVCMsg_UserMessage {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 msg_type */ 1:
+          message.msg_type = reader.int32();
+          break;
+        case /* optional bytes msg_data */ 2:
+          message.msg_data = reader.bytes();
+          break;
+        case /* optional int32 passthrough */ 3:
+          message.passthrough = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_UserMessage, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional int32 msg_type = 1; */
+    if (message.msg_type !== undefined) writer.tag(1, WireType.Varint).int32(message.msg_type);
+    /* optional bytes msg_data = 2; */
+    if (message.msg_data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.msg_data);
+    /* optional int32 passthrough = 3; */
+    if (message.passthrough !== undefined) writer.tag(3, WireType.Varint).int32(message.passthrough);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_UserMessage
@@ -5663,98 +5663,98 @@ class CSVCMsg_UserMessage$Type extends MessageType<CSVCMsg_UserMessage> {
 export const CSVCMsg_UserMessage = new CSVCMsg_UserMessage$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_SendTable$Type extends MessageType<CSVCMsg_SendTable> {
-	constructor() {
-		super("CSVCMsg_SendTable", [
-			{
-				no: 1,
-				name: "is_end",
-				kind: "scalar",
-				localName: "is_end",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 2,
-				name: "net_table_name",
-				kind: "scalar",
-				localName: "net_table_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "needs_decoder",
-				kind: "scalar",
-				localName: "needs_decoder",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "props",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CSVCMsg_SendTable_sendprop_t,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_SendTable>): CSVCMsg_SendTable {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.props = [];
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_SendTable>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_SendTable,
-	): CSVCMsg_SendTable {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool is_end */ 1:
-					message.is_end = reader.bool();
-					break;
-				case /* optional string net_table_name */ 2:
-					message.net_table_name = reader.string();
-					break;
-				case /* optional bool needs_decoder */ 3:
-					message.needs_decoder = reader.bool();
-					break;
-				case /* repeated CSVCMsg_SendTable.sendprop_t props */ 4:
-					message.props.push(CSVCMsg_SendTable_sendprop_t.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_SendTable, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional bool is_end = 1; */
-		if (message.is_end !== undefined) writer.tag(1, WireType.Varint).bool(message.is_end);
-		/* optional string net_table_name = 2; */
-		if (message.net_table_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.net_table_name);
-		/* optional bool needs_decoder = 3; */
-		if (message.needs_decoder !== undefined) writer.tag(3, WireType.Varint).bool(message.needs_decoder);
-		/* repeated CSVCMsg_SendTable.sendprop_t props = 4; */
-		for (let i = 0; i < message.props.length; i++)
-			CSVCMsg_SendTable_sendprop_t.internalBinaryWrite(
-				message.props[i],
-				writer.tag(4, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_SendTable", [
+      {
+        no: 1,
+        name: "is_end",
+        kind: "scalar",
+        localName: "is_end",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 2,
+        name: "net_table_name",
+        kind: "scalar",
+        localName: "net_table_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "needs_decoder",
+        kind: "scalar",
+        localName: "needs_decoder",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "props",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CSVCMsg_SendTable_sendprop_t,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_SendTable>): CSVCMsg_SendTable {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.props = [];
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_SendTable>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_SendTable,
+  ): CSVCMsg_SendTable {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool is_end */ 1:
+          message.is_end = reader.bool();
+          break;
+        case /* optional string net_table_name */ 2:
+          message.net_table_name = reader.string();
+          break;
+        case /* optional bool needs_decoder */ 3:
+          message.needs_decoder = reader.bool();
+          break;
+        case /* repeated CSVCMsg_SendTable.sendprop_t props */ 4:
+          message.props.push(CSVCMsg_SendTable_sendprop_t.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_SendTable, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional bool is_end = 1; */
+    if (message.is_end !== undefined) writer.tag(1, WireType.Varint).bool(message.is_end);
+    /* optional string net_table_name = 2; */
+    if (message.net_table_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.net_table_name);
+    /* optional bool needs_decoder = 3; */
+    if (message.needs_decoder !== undefined) writer.tag(3, WireType.Varint).bool(message.needs_decoder);
+    /* repeated CSVCMsg_SendTable.sendprop_t props = 4; */
+    for (let i = 0; i < message.props.length; i++)
+      CSVCMsg_SendTable_sendprop_t.internalBinaryWrite(
+        message.props[i],
+        writer.tag(4, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_SendTable
@@ -5762,159 +5762,159 @@ class CSVCMsg_SendTable$Type extends MessageType<CSVCMsg_SendTable> {
 export const CSVCMsg_SendTable = new CSVCMsg_SendTable$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_SendTable_sendprop_t$Type extends MessageType<CSVCMsg_SendTable_sendprop_t> {
-	constructor() {
-		super("CSVCMsg_SendTable.sendprop_t", [
-			{
-				no: 1,
-				name: "type",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "var_name",
-				kind: "scalar",
-				localName: "var_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "priority",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "dt_name",
-				kind: "scalar",
-				localName: "dt_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 6,
-				name: "num_elements",
-				kind: "scalar",
-				localName: "num_elements",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 7,
-				name: "low_value",
-				kind: "scalar",
-				localName: "low_value",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 8,
-				name: "high_value",
-				kind: "scalar",
-				localName: "high_value",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 9,
-				name: "num_bits",
-				kind: "scalar",
-				localName: "num_bits",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_SendTable_sendprop_t>): CSVCMsg_SendTable_sendprop_t {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_SendTable_sendprop_t>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_SendTable_sendprop_t,
-	): CSVCMsg_SendTable_sendprop_t {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 type */ 1:
-					message.type = reader.int32();
-					break;
-				case /* optional string var_name */ 2:
-					message.var_name = reader.string();
-					break;
-				case /* optional int32 flags */ 3:
-					message.flags = reader.int32();
-					break;
-				case /* optional int32 priority */ 4:
-					message.priority = reader.int32();
-					break;
-				case /* optional string dt_name */ 5:
-					message.dt_name = reader.string();
-					break;
-				case /* optional int32 num_elements */ 6:
-					message.num_elements = reader.int32();
-					break;
-				case /* optional float low_value */ 7:
-					message.low_value = reader.float();
-					break;
-				case /* optional float high_value */ 8:
-					message.high_value = reader.float();
-					break;
-				case /* optional int32 num_bits */ 9:
-					message.num_bits = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_SendTable_sendprop_t,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 type = 1; */
-		if (message.type !== undefined) writer.tag(1, WireType.Varint).int32(message.type);
-		/* optional string var_name = 2; */
-		if (message.var_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.var_name);
-		/* optional int32 flags = 3; */
-		if (message.flags !== undefined) writer.tag(3, WireType.Varint).int32(message.flags);
-		/* optional int32 priority = 4; */
-		if (message.priority !== undefined) writer.tag(4, WireType.Varint).int32(message.priority);
-		/* optional string dt_name = 5; */
-		if (message.dt_name !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.dt_name);
-		/* optional int32 num_elements = 6; */
-		if (message.num_elements !== undefined) writer.tag(6, WireType.Varint).int32(message.num_elements);
-		/* optional float low_value = 7; */
-		if (message.low_value !== undefined) writer.tag(7, WireType.Bit32).float(message.low_value);
-		/* optional float high_value = 8; */
-		if (message.high_value !== undefined) writer.tag(8, WireType.Bit32).float(message.high_value);
-		/* optional int32 num_bits = 9; */
-		if (message.num_bits !== undefined) writer.tag(9, WireType.Varint).int32(message.num_bits);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_SendTable.sendprop_t", [
+      {
+        no: 1,
+        name: "type",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "var_name",
+        kind: "scalar",
+        localName: "var_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "priority",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "dt_name",
+        kind: "scalar",
+        localName: "dt_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 6,
+        name: "num_elements",
+        kind: "scalar",
+        localName: "num_elements",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 7,
+        name: "low_value",
+        kind: "scalar",
+        localName: "low_value",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 8,
+        name: "high_value",
+        kind: "scalar",
+        localName: "high_value",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 9,
+        name: "num_bits",
+        kind: "scalar",
+        localName: "num_bits",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_SendTable_sendprop_t>): CSVCMsg_SendTable_sendprop_t {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_SendTable_sendprop_t>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_SendTable_sendprop_t,
+  ): CSVCMsg_SendTable_sendprop_t {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 type */ 1:
+          message.type = reader.int32();
+          break;
+        case /* optional string var_name */ 2:
+          message.var_name = reader.string();
+          break;
+        case /* optional int32 flags */ 3:
+          message.flags = reader.int32();
+          break;
+        case /* optional int32 priority */ 4:
+          message.priority = reader.int32();
+          break;
+        case /* optional string dt_name */ 5:
+          message.dt_name = reader.string();
+          break;
+        case /* optional int32 num_elements */ 6:
+          message.num_elements = reader.int32();
+          break;
+        case /* optional float low_value */ 7:
+          message.low_value = reader.float();
+          break;
+        case /* optional float high_value */ 8:
+          message.high_value = reader.float();
+          break;
+        case /* optional int32 num_bits */ 9:
+          message.num_bits = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_SendTable_sendprop_t,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 type = 1; */
+    if (message.type !== undefined) writer.tag(1, WireType.Varint).int32(message.type);
+    /* optional string var_name = 2; */
+    if (message.var_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.var_name);
+    /* optional int32 flags = 3; */
+    if (message.flags !== undefined) writer.tag(3, WireType.Varint).int32(message.flags);
+    /* optional int32 priority = 4; */
+    if (message.priority !== undefined) writer.tag(4, WireType.Varint).int32(message.priority);
+    /* optional string dt_name = 5; */
+    if (message.dt_name !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.dt_name);
+    /* optional int32 num_elements = 6; */
+    if (message.num_elements !== undefined) writer.tag(6, WireType.Varint).int32(message.num_elements);
+    /* optional float low_value = 7; */
+    if (message.low_value !== undefined) writer.tag(7, WireType.Bit32).float(message.low_value);
+    /* optional float high_value = 8; */
+    if (message.high_value !== undefined) writer.tag(8, WireType.Bit32).float(message.high_value);
+    /* optional int32 num_bits = 9; */
+    if (message.num_bits !== undefined) writer.tag(9, WireType.Varint).int32(message.num_bits);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_SendTable.sendprop_t
@@ -5922,65 +5922,65 @@ class CSVCMsg_SendTable_sendprop_t$Type extends MessageType<CSVCMsg_SendTable_se
 export const CSVCMsg_SendTable_sendprop_t = new CSVCMsg_SendTable_sendprop_t$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_GameEventList$Type extends MessageType<CSVCMsg_GameEventList> {
-	constructor() {
-		super("CSVCMsg_GameEventList", [
-			{
-				no: 1,
-				name: "descriptors",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CSVCMsg_GameEventList_descriptor_t,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_GameEventList>): CSVCMsg_GameEventList {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.descriptors = [];
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_GameEventList>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_GameEventList,
-	): CSVCMsg_GameEventList {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CSVCMsg_GameEventList.descriptor_t descriptors */ 1:
-					message.descriptors.push(
-						CSVCMsg_GameEventList_descriptor_t.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_GameEventList,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CSVCMsg_GameEventList.descriptor_t descriptors = 1; */
-		for (let i = 0; i < message.descriptors.length; i++)
-			CSVCMsg_GameEventList_descriptor_t.internalBinaryWrite(
-				message.descriptors[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_GameEventList", [
+      {
+        no: 1,
+        name: "descriptors",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CSVCMsg_GameEventList_descriptor_t,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_GameEventList>): CSVCMsg_GameEventList {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.descriptors = [];
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_GameEventList>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_GameEventList,
+  ): CSVCMsg_GameEventList {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CSVCMsg_GameEventList.descriptor_t descriptors */ 1:
+          message.descriptors.push(
+            CSVCMsg_GameEventList_descriptor_t.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_GameEventList,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CSVCMsg_GameEventList.descriptor_t descriptors = 1; */
+    for (let i = 0; i < message.descriptors.length; i++)
+      CSVCMsg_GameEventList_descriptor_t.internalBinaryWrite(
+        message.descriptors[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_GameEventList
@@ -5988,69 +5988,69 @@ class CSVCMsg_GameEventList$Type extends MessageType<CSVCMsg_GameEventList> {
 export const CSVCMsg_GameEventList = new CSVCMsg_GameEventList$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_GameEventList_key_t$Type extends MessageType<CSVCMsg_GameEventList_key_t> {
-	constructor() {
-		super("CSVCMsg_GameEventList.key_t", [
-			{
-				no: 1,
-				name: "type",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_GameEventList_key_t>): CSVCMsg_GameEventList_key_t {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_GameEventList_key_t>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_GameEventList_key_t,
-	): CSVCMsg_GameEventList_key_t {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 type */ 1:
-					message.type = reader.int32();
-					break;
-				case /* optional string name */ 2:
-					message.name = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_GameEventList_key_t,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 type = 1; */
-		if (message.type !== undefined) writer.tag(1, WireType.Varint).int32(message.type);
-		/* optional string name = 2; */
-		if (message.name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.name);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_GameEventList.key_t", [
+      {
+        no: 1,
+        name: "type",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_GameEventList_key_t>): CSVCMsg_GameEventList_key_t {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_GameEventList_key_t>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_GameEventList_key_t,
+  ): CSVCMsg_GameEventList_key_t {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 type */ 1:
+          message.type = reader.int32();
+          break;
+        case /* optional string name */ 2:
+          message.name = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_GameEventList_key_t,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 type = 1; */
+    if (message.type !== undefined) writer.tag(1, WireType.Varint).int32(message.type);
+    /* optional string name = 2; */
+    if (message.name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.name);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_GameEventList.key_t
@@ -6058,87 +6058,87 @@ class CSVCMsg_GameEventList_key_t$Type extends MessageType<CSVCMsg_GameEventList
 export const CSVCMsg_GameEventList_key_t = new CSVCMsg_GameEventList_key_t$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_GameEventList_descriptor_t$Type extends MessageType<CSVCMsg_GameEventList_descriptor_t> {
-	constructor() {
-		super("CSVCMsg_GameEventList.descriptor_t", [
-			{
-				no: 1,
-				name: "eventid",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "keys",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CSVCMsg_GameEventList_key_t,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_GameEventList_descriptor_t>): CSVCMsg_GameEventList_descriptor_t {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.keys = [];
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_GameEventList_descriptor_t>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_GameEventList_descriptor_t,
-	): CSVCMsg_GameEventList_descriptor_t {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 eventid */ 1:
-					message.eventid = reader.int32();
-					break;
-				case /* optional string name */ 2:
-					message.name = reader.string();
-					break;
-				case /* repeated CSVCMsg_GameEventList.key_t keys */ 3:
-					message.keys.push(CSVCMsg_GameEventList_key_t.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_GameEventList_descriptor_t,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 eventid = 1; */
-		if (message.eventid !== undefined) writer.tag(1, WireType.Varint).int32(message.eventid);
-		/* optional string name = 2; */
-		if (message.name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.name);
-		/* repeated CSVCMsg_GameEventList.key_t keys = 3; */
-		for (let i = 0; i < message.keys.length; i++)
-			CSVCMsg_GameEventList_key_t.internalBinaryWrite(
-				message.keys[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_GameEventList.descriptor_t", [
+      {
+        no: 1,
+        name: "eventid",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "keys",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CSVCMsg_GameEventList_key_t,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_GameEventList_descriptor_t>): CSVCMsg_GameEventList_descriptor_t {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.keys = [];
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_GameEventList_descriptor_t>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_GameEventList_descriptor_t,
+  ): CSVCMsg_GameEventList_descriptor_t {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 eventid */ 1:
+          message.eventid = reader.int32();
+          break;
+        case /* optional string name */ 2:
+          message.name = reader.string();
+          break;
+        case /* repeated CSVCMsg_GameEventList.key_t keys */ 3:
+          message.keys.push(CSVCMsg_GameEventList_key_t.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_GameEventList_descriptor_t,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 eventid = 1; */
+    if (message.eventid !== undefined) writer.tag(1, WireType.Varint).int32(message.eventid);
+    /* optional string name = 2; */
+    if (message.name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.name);
+    /* repeated CSVCMsg_GameEventList.key_t keys = 3; */
+    for (let i = 0; i < message.keys.length; i++)
+      CSVCMsg_GameEventList_key_t.internalBinaryWrite(
+        message.keys[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_GameEventList.descriptor_t
@@ -6146,348 +6146,348 @@ class CSVCMsg_GameEventList_descriptor_t$Type extends MessageType<CSVCMsg_GameEv
 export const CSVCMsg_GameEventList_descriptor_t = new CSVCMsg_GameEventList_descriptor_t$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_PacketEntities$Type extends MessageType<CSVCMsg_PacketEntities> {
-	constructor() {
-		super("CSVCMsg_PacketEntities", [
-			{
-				no: 1,
-				name: "max_entries",
-				kind: "scalar",
-				localName: "max_entries",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "updated_entries",
-				kind: "scalar",
-				localName: "updated_entries",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "legacy_is_delta",
-				kind: "scalar",
-				localName: "legacy_is_delta",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "update_baseline",
-				kind: "scalar",
-				localName: "update_baseline",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 5,
-				name: "baseline",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 6,
-				name: "delta_from",
-				kind: "scalar",
-				localName: "delta_from",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 7,
-				name: "entity_data",
-				kind: "scalar",
-				localName: "entity_data",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 8,
-				name: "pending_full_frame",
-				kind: "scalar",
-				localName: "pending_full_frame",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 9,
-				name: "active_spawngroup_handle",
-				kind: "scalar",
-				localName: "active_spawngroup_handle",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "max_spawngroup_creationsequence",
-				kind: "scalar",
-				localName: "max_spawngroup_creationsequence",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 11,
-				name: "last_cmd_number_executed",
-				kind: "scalar",
-				localName: "last_cmd_number_executed",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 17,
-				name: "last_cmd_number_recv_delta",
-				kind: "scalar",
-				localName: "last_cmd_number_recv_delta",
-				opt: true,
-				T: 17 /*ScalarType.SINT32*/,
-			},
-			{
-				no: 12,
-				name: "server_tick",
-				kind: "scalar",
-				localName: "server_tick",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 13,
-				name: "serialized_entities",
-				kind: "scalar",
-				localName: "serialized_entities",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 15,
-				name: "alternate_baselines",
-				kind: "message",
-				localName: "alternate_baselines",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CSVCMsg_PacketEntities_alternate_baseline_t,
-			},
-			{
-				no: 16,
-				name: "has_pvs_vis_bits",
-				kind: "scalar",
-				localName: "has_pvs_vis_bits",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 22,
-				name: "cmd_recv_status",
-				kind: "scalar",
-				localName: "cmd_recv_status",
-				repeat: 1 /*RepeatType.PACKED*/,
-				T: 17 /*ScalarType.SINT32*/,
-			},
-			{
-				no: 19,
-				name: "non_transmitted_entities",
-				kind: "message",
-				localName: "non_transmitted_entities",
-				T: () => CSVCMsg_PacketEntities_non_transmitted_entities_t,
-			},
-			{
-				no: 20,
-				name: "cq_starved_command_ticks",
-				kind: "scalar",
-				localName: "cq_starved_command_ticks",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 21,
-				name: "cq_discarded_command_ticks",
-				kind: "scalar",
-				localName: "cq_discarded_command_ticks",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 999,
-				name: "dev_padding",
-				kind: "scalar",
-				localName: "dev_padding",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_PacketEntities>): CSVCMsg_PacketEntities {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.alternate_baselines = [];
-		message.cmd_recv_status = [];
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_PacketEntities>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_PacketEntities,
-	): CSVCMsg_PacketEntities {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 max_entries */ 1:
-					message.max_entries = reader.int32();
-					break;
-				case /* optional int32 updated_entries */ 2:
-					message.updated_entries = reader.int32();
-					break;
-				case /* optional bool legacy_is_delta */ 3:
-					message.legacy_is_delta = reader.bool();
-					break;
-				case /* optional bool update_baseline */ 4:
-					message.update_baseline = reader.bool();
-					break;
-				case /* optional int32 baseline */ 5:
-					message.baseline = reader.int32();
-					break;
-				case /* optional int32 delta_from */ 6:
-					message.delta_from = reader.int32();
-					break;
-				case /* optional bytes entity_data */ 7:
-					message.entity_data = reader.bytes();
-					break;
-				case /* optional bool pending_full_frame */ 8:
-					message.pending_full_frame = reader.bool();
-					break;
-				case /* optional uint32 active_spawngroup_handle */ 9:
-					message.active_spawngroup_handle = reader.uint32();
-					break;
-				case /* optional uint32 max_spawngroup_creationsequence */ 10:
-					message.max_spawngroup_creationsequence = reader.uint32();
-					break;
-				case /* optional uint32 last_cmd_number_executed */ 11:
-					message.last_cmd_number_executed = reader.uint32();
-					break;
-				case /* optional sint32 last_cmd_number_recv_delta */ 17:
-					message.last_cmd_number_recv_delta = reader.sint32();
-					break;
-				case /* optional uint32 server_tick */ 12:
-					message.server_tick = reader.uint32();
-					break;
-				case /* optional bytes serialized_entities */ 13:
-					message.serialized_entities = reader.bytes();
-					break;
-				case /* repeated CSVCMsg_PacketEntities.alternate_baseline_t alternate_baselines */ 15:
-					message.alternate_baselines.push(
-						CSVCMsg_PacketEntities_alternate_baseline_t.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* optional uint32 has_pvs_vis_bits */ 16:
-					message.has_pvs_vis_bits = reader.uint32();
-					break;
-				case /* repeated sint32 cmd_recv_status = 22 [packed = true];*/ 22:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.cmd_recv_status.push(reader.sint32());
-					else message.cmd_recv_status.push(reader.sint32());
-					break;
-				case /* optional CSVCMsg_PacketEntities.non_transmitted_entities_t non_transmitted_entities */ 19:
-					message.non_transmitted_entities = CSVCMsg_PacketEntities_non_transmitted_entities_t.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.non_transmitted_entities,
-					);
-					break;
-				case /* optional uint32 cq_starved_command_ticks */ 20:
-					message.cq_starved_command_ticks = reader.uint32();
-					break;
-				case /* optional uint32 cq_discarded_command_ticks */ 21:
-					message.cq_discarded_command_ticks = reader.uint32();
-					break;
-				case /* optional bytes dev_padding */ 999:
-					message.dev_padding = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_PacketEntities,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 max_entries = 1; */
-		if (message.max_entries !== undefined) writer.tag(1, WireType.Varint).int32(message.max_entries);
-		/* optional int32 updated_entries = 2; */
-		if (message.updated_entries !== undefined) writer.tag(2, WireType.Varint).int32(message.updated_entries);
-		/* optional bool legacy_is_delta = 3; */
-		if (message.legacy_is_delta !== undefined) writer.tag(3, WireType.Varint).bool(message.legacy_is_delta);
-		/* optional bool update_baseline = 4; */
-		if (message.update_baseline !== undefined) writer.tag(4, WireType.Varint).bool(message.update_baseline);
-		/* optional int32 baseline = 5; */
-		if (message.baseline !== undefined) writer.tag(5, WireType.Varint).int32(message.baseline);
-		/* optional int32 delta_from = 6; */
-		if (message.delta_from !== undefined) writer.tag(6, WireType.Varint).int32(message.delta_from);
-		/* optional bytes entity_data = 7; */
-		if (message.entity_data !== undefined) writer.tag(7, WireType.LengthDelimited).bytes(message.entity_data);
-		/* optional bool pending_full_frame = 8; */
-		if (message.pending_full_frame !== undefined) writer.tag(8, WireType.Varint).bool(message.pending_full_frame);
-		/* optional uint32 active_spawngroup_handle = 9; */
-		if (message.active_spawngroup_handle !== undefined)
-			writer.tag(9, WireType.Varint).uint32(message.active_spawngroup_handle);
-		/* optional uint32 max_spawngroup_creationsequence = 10; */
-		if (message.max_spawngroup_creationsequence !== undefined)
-			writer.tag(10, WireType.Varint).uint32(message.max_spawngroup_creationsequence);
-		/* optional uint32 last_cmd_number_executed = 11; */
-		if (message.last_cmd_number_executed !== undefined)
-			writer.tag(11, WireType.Varint).uint32(message.last_cmd_number_executed);
-		/* optional sint32 last_cmd_number_recv_delta = 17; */
-		if (message.last_cmd_number_recv_delta !== undefined)
-			writer.tag(17, WireType.Varint).sint32(message.last_cmd_number_recv_delta);
-		/* optional uint32 server_tick = 12; */
-		if (message.server_tick !== undefined) writer.tag(12, WireType.Varint).uint32(message.server_tick);
-		/* optional bytes serialized_entities = 13; */
-		if (message.serialized_entities !== undefined)
-			writer.tag(13, WireType.LengthDelimited).bytes(message.serialized_entities);
-		/* repeated CSVCMsg_PacketEntities.alternate_baseline_t alternate_baselines = 15; */
-		for (let i = 0; i < message.alternate_baselines.length; i++)
-			CSVCMsg_PacketEntities_alternate_baseline_t.internalBinaryWrite(
-				message.alternate_baselines[i],
-				writer.tag(15, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 has_pvs_vis_bits = 16; */
-		if (message.has_pvs_vis_bits !== undefined) writer.tag(16, WireType.Varint).uint32(message.has_pvs_vis_bits);
-		/* repeated sint32 cmd_recv_status = 22 [packed = true]; */
-		if (message.cmd_recv_status.length) {
-			writer.tag(22, WireType.LengthDelimited).fork();
-			for (let i = 0; i < message.cmd_recv_status.length; i++) writer.sint32(message.cmd_recv_status[i]);
-			writer.join();
-		}
-		/* optional CSVCMsg_PacketEntities.non_transmitted_entities_t non_transmitted_entities = 19; */
-		if (message.non_transmitted_entities)
-			CSVCMsg_PacketEntities_non_transmitted_entities_t.internalBinaryWrite(
-				message.non_transmitted_entities,
-				writer.tag(19, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 cq_starved_command_ticks = 20; */
-		if (message.cq_starved_command_ticks !== undefined)
-			writer.tag(20, WireType.Varint).uint32(message.cq_starved_command_ticks);
-		/* optional uint32 cq_discarded_command_ticks = 21; */
-		if (message.cq_discarded_command_ticks !== undefined)
-			writer.tag(21, WireType.Varint).uint32(message.cq_discarded_command_ticks);
-		/* optional bytes dev_padding = 999; */
-		if (message.dev_padding !== undefined) writer.tag(999, WireType.LengthDelimited).bytes(message.dev_padding);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_PacketEntities", [
+      {
+        no: 1,
+        name: "max_entries",
+        kind: "scalar",
+        localName: "max_entries",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "updated_entries",
+        kind: "scalar",
+        localName: "updated_entries",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "legacy_is_delta",
+        kind: "scalar",
+        localName: "legacy_is_delta",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "update_baseline",
+        kind: "scalar",
+        localName: "update_baseline",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 5,
+        name: "baseline",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 6,
+        name: "delta_from",
+        kind: "scalar",
+        localName: "delta_from",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 7,
+        name: "entity_data",
+        kind: "scalar",
+        localName: "entity_data",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 8,
+        name: "pending_full_frame",
+        kind: "scalar",
+        localName: "pending_full_frame",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 9,
+        name: "active_spawngroup_handle",
+        kind: "scalar",
+        localName: "active_spawngroup_handle",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "max_spawngroup_creationsequence",
+        kind: "scalar",
+        localName: "max_spawngroup_creationsequence",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 11,
+        name: "last_cmd_number_executed",
+        kind: "scalar",
+        localName: "last_cmd_number_executed",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 17,
+        name: "last_cmd_number_recv_delta",
+        kind: "scalar",
+        localName: "last_cmd_number_recv_delta",
+        opt: true,
+        T: 17 /*ScalarType.SINT32*/,
+      },
+      {
+        no: 12,
+        name: "server_tick",
+        kind: "scalar",
+        localName: "server_tick",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 13,
+        name: "serialized_entities",
+        kind: "scalar",
+        localName: "serialized_entities",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 15,
+        name: "alternate_baselines",
+        kind: "message",
+        localName: "alternate_baselines",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CSVCMsg_PacketEntities_alternate_baseline_t,
+      },
+      {
+        no: 16,
+        name: "has_pvs_vis_bits",
+        kind: "scalar",
+        localName: "has_pvs_vis_bits",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 22,
+        name: "cmd_recv_status",
+        kind: "scalar",
+        localName: "cmd_recv_status",
+        repeat: 1 /*RepeatType.PACKED*/,
+        T: 17 /*ScalarType.SINT32*/,
+      },
+      {
+        no: 19,
+        name: "non_transmitted_entities",
+        kind: "message",
+        localName: "non_transmitted_entities",
+        T: () => CSVCMsg_PacketEntities_non_transmitted_entities_t,
+      },
+      {
+        no: 20,
+        name: "cq_starved_command_ticks",
+        kind: "scalar",
+        localName: "cq_starved_command_ticks",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 21,
+        name: "cq_discarded_command_ticks",
+        kind: "scalar",
+        localName: "cq_discarded_command_ticks",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 999,
+        name: "dev_padding",
+        kind: "scalar",
+        localName: "dev_padding",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_PacketEntities>): CSVCMsg_PacketEntities {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.alternate_baselines = [];
+    message.cmd_recv_status = [];
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_PacketEntities>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_PacketEntities,
+  ): CSVCMsg_PacketEntities {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 max_entries */ 1:
+          message.max_entries = reader.int32();
+          break;
+        case /* optional int32 updated_entries */ 2:
+          message.updated_entries = reader.int32();
+          break;
+        case /* optional bool legacy_is_delta */ 3:
+          message.legacy_is_delta = reader.bool();
+          break;
+        case /* optional bool update_baseline */ 4:
+          message.update_baseline = reader.bool();
+          break;
+        case /* optional int32 baseline */ 5:
+          message.baseline = reader.int32();
+          break;
+        case /* optional int32 delta_from */ 6:
+          message.delta_from = reader.int32();
+          break;
+        case /* optional bytes entity_data */ 7:
+          message.entity_data = reader.bytes();
+          break;
+        case /* optional bool pending_full_frame */ 8:
+          message.pending_full_frame = reader.bool();
+          break;
+        case /* optional uint32 active_spawngroup_handle */ 9:
+          message.active_spawngroup_handle = reader.uint32();
+          break;
+        case /* optional uint32 max_spawngroup_creationsequence */ 10:
+          message.max_spawngroup_creationsequence = reader.uint32();
+          break;
+        case /* optional uint32 last_cmd_number_executed */ 11:
+          message.last_cmd_number_executed = reader.uint32();
+          break;
+        case /* optional sint32 last_cmd_number_recv_delta */ 17:
+          message.last_cmd_number_recv_delta = reader.sint32();
+          break;
+        case /* optional uint32 server_tick */ 12:
+          message.server_tick = reader.uint32();
+          break;
+        case /* optional bytes serialized_entities */ 13:
+          message.serialized_entities = reader.bytes();
+          break;
+        case /* repeated CSVCMsg_PacketEntities.alternate_baseline_t alternate_baselines */ 15:
+          message.alternate_baselines.push(
+            CSVCMsg_PacketEntities_alternate_baseline_t.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* optional uint32 has_pvs_vis_bits */ 16:
+          message.has_pvs_vis_bits = reader.uint32();
+          break;
+        case /* repeated sint32 cmd_recv_status = 22 [packed = true];*/ 22:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.cmd_recv_status.push(reader.sint32());
+          else message.cmd_recv_status.push(reader.sint32());
+          break;
+        case /* optional CSVCMsg_PacketEntities.non_transmitted_entities_t non_transmitted_entities */ 19:
+          message.non_transmitted_entities = CSVCMsg_PacketEntities_non_transmitted_entities_t.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.non_transmitted_entities,
+          );
+          break;
+        case /* optional uint32 cq_starved_command_ticks */ 20:
+          message.cq_starved_command_ticks = reader.uint32();
+          break;
+        case /* optional uint32 cq_discarded_command_ticks */ 21:
+          message.cq_discarded_command_ticks = reader.uint32();
+          break;
+        case /* optional bytes dev_padding */ 999:
+          message.dev_padding = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_PacketEntities,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 max_entries = 1; */
+    if (message.max_entries !== undefined) writer.tag(1, WireType.Varint).int32(message.max_entries);
+    /* optional int32 updated_entries = 2; */
+    if (message.updated_entries !== undefined) writer.tag(2, WireType.Varint).int32(message.updated_entries);
+    /* optional bool legacy_is_delta = 3; */
+    if (message.legacy_is_delta !== undefined) writer.tag(3, WireType.Varint).bool(message.legacy_is_delta);
+    /* optional bool update_baseline = 4; */
+    if (message.update_baseline !== undefined) writer.tag(4, WireType.Varint).bool(message.update_baseline);
+    /* optional int32 baseline = 5; */
+    if (message.baseline !== undefined) writer.tag(5, WireType.Varint).int32(message.baseline);
+    /* optional int32 delta_from = 6; */
+    if (message.delta_from !== undefined) writer.tag(6, WireType.Varint).int32(message.delta_from);
+    /* optional bytes entity_data = 7; */
+    if (message.entity_data !== undefined) writer.tag(7, WireType.LengthDelimited).bytes(message.entity_data);
+    /* optional bool pending_full_frame = 8; */
+    if (message.pending_full_frame !== undefined) writer.tag(8, WireType.Varint).bool(message.pending_full_frame);
+    /* optional uint32 active_spawngroup_handle = 9; */
+    if (message.active_spawngroup_handle !== undefined)
+      writer.tag(9, WireType.Varint).uint32(message.active_spawngroup_handle);
+    /* optional uint32 max_spawngroup_creationsequence = 10; */
+    if (message.max_spawngroup_creationsequence !== undefined)
+      writer.tag(10, WireType.Varint).uint32(message.max_spawngroup_creationsequence);
+    /* optional uint32 last_cmd_number_executed = 11; */
+    if (message.last_cmd_number_executed !== undefined)
+      writer.tag(11, WireType.Varint).uint32(message.last_cmd_number_executed);
+    /* optional sint32 last_cmd_number_recv_delta = 17; */
+    if (message.last_cmd_number_recv_delta !== undefined)
+      writer.tag(17, WireType.Varint).sint32(message.last_cmd_number_recv_delta);
+    /* optional uint32 server_tick = 12; */
+    if (message.server_tick !== undefined) writer.tag(12, WireType.Varint).uint32(message.server_tick);
+    /* optional bytes serialized_entities = 13; */
+    if (message.serialized_entities !== undefined)
+      writer.tag(13, WireType.LengthDelimited).bytes(message.serialized_entities);
+    /* repeated CSVCMsg_PacketEntities.alternate_baseline_t alternate_baselines = 15; */
+    for (let i = 0; i < message.alternate_baselines.length; i++)
+      CSVCMsg_PacketEntities_alternate_baseline_t.internalBinaryWrite(
+        message.alternate_baselines[i],
+        writer.tag(15, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 has_pvs_vis_bits = 16; */
+    if (message.has_pvs_vis_bits !== undefined) writer.tag(16, WireType.Varint).uint32(message.has_pvs_vis_bits);
+    /* repeated sint32 cmd_recv_status = 22 [packed = true]; */
+    if (message.cmd_recv_status.length) {
+      writer.tag(22, WireType.LengthDelimited).fork();
+      for (let i = 0; i < message.cmd_recv_status.length; i++) writer.sint32(message.cmd_recv_status[i]);
+      writer.join();
+    }
+    /* optional CSVCMsg_PacketEntities.non_transmitted_entities_t non_transmitted_entities = 19; */
+    if (message.non_transmitted_entities)
+      CSVCMsg_PacketEntities_non_transmitted_entities_t.internalBinaryWrite(
+        message.non_transmitted_entities,
+        writer.tag(19, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 cq_starved_command_ticks = 20; */
+    if (message.cq_starved_command_ticks !== undefined)
+      writer.tag(20, WireType.Varint).uint32(message.cq_starved_command_ticks);
+    /* optional uint32 cq_discarded_command_ticks = 21; */
+    if (message.cq_discarded_command_ticks !== undefined)
+      writer.tag(21, WireType.Varint).uint32(message.cq_discarded_command_ticks);
+    /* optional bytes dev_padding = 999; */
+    if (message.dev_padding !== undefined) writer.tag(999, WireType.LengthDelimited).bytes(message.dev_padding);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_PacketEntities
@@ -6495,73 +6495,73 @@ class CSVCMsg_PacketEntities$Type extends MessageType<CSVCMsg_PacketEntities> {
 export const CSVCMsg_PacketEntities = new CSVCMsg_PacketEntities$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_PacketEntities_alternate_baseline_t$Type extends MessageType<CSVCMsg_PacketEntities_alternate_baseline_t> {
-	constructor() {
-		super("CSVCMsg_PacketEntities.alternate_baseline_t", [
-			{
-				no: 1,
-				name: "entity_index",
-				kind: "scalar",
-				localName: "entity_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "baseline_index",
-				kind: "scalar",
-				localName: "baseline_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CSVCMsg_PacketEntities_alternate_baseline_t>,
-	): CSVCMsg_PacketEntities_alternate_baseline_t {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_PacketEntities_alternate_baseline_t>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_PacketEntities_alternate_baseline_t,
-	): CSVCMsg_PacketEntities_alternate_baseline_t {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 entity_index */ 1:
-					message.entity_index = reader.int32();
-					break;
-				case /* optional int32 baseline_index */ 2:
-					message.baseline_index = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_PacketEntities_alternate_baseline_t,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 entity_index = 1; */
-		if (message.entity_index !== undefined) writer.tag(1, WireType.Varint).int32(message.entity_index);
-		/* optional int32 baseline_index = 2; */
-		if (message.baseline_index !== undefined) writer.tag(2, WireType.Varint).int32(message.baseline_index);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_PacketEntities.alternate_baseline_t", [
+      {
+        no: 1,
+        name: "entity_index",
+        kind: "scalar",
+        localName: "entity_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "baseline_index",
+        kind: "scalar",
+        localName: "baseline_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CSVCMsg_PacketEntities_alternate_baseline_t>,
+  ): CSVCMsg_PacketEntities_alternate_baseline_t {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_PacketEntities_alternate_baseline_t>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_PacketEntities_alternate_baseline_t,
+  ): CSVCMsg_PacketEntities_alternate_baseline_t {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 entity_index */ 1:
+          message.entity_index = reader.int32();
+          break;
+        case /* optional int32 baseline_index */ 2:
+          message.baseline_index = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_PacketEntities_alternate_baseline_t,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 entity_index = 1; */
+    if (message.entity_index !== undefined) writer.tag(1, WireType.Varint).int32(message.entity_index);
+    /* optional int32 baseline_index = 2; */
+    if (message.baseline_index !== undefined) writer.tag(2, WireType.Varint).int32(message.baseline_index);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_PacketEntities.alternate_baseline_t
@@ -6569,158 +6569,158 @@ class CSVCMsg_PacketEntities_alternate_baseline_t$Type extends MessageType<CSVCM
 export const CSVCMsg_PacketEntities_alternate_baseline_t = new CSVCMsg_PacketEntities_alternate_baseline_t$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_PacketEntities_non_transmitted_entities_t$Type extends MessageType<CSVCMsg_PacketEntities_non_transmitted_entities_t> {
-	constructor() {
-		super("CSVCMsg_PacketEntities.non_transmitted_entities_t", [
-			{
-				no: 1,
-				name: "header_count",
-				kind: "scalar",
-				localName: "header_count",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "data",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CSVCMsg_PacketEntities_non_transmitted_entities_t>,
-	): CSVCMsg_PacketEntities_non_transmitted_entities_t {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CSVCMsg_PacketEntities_non_transmitted_entities_t>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_PacketEntities_non_transmitted_entities_t,
-	): CSVCMsg_PacketEntities_non_transmitted_entities_t {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 header_count */ 1:
-					message.header_count = reader.int32();
-					break;
-				case /* optional bytes data */ 2:
-					message.data = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_PacketEntities_non_transmitted_entities_t,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 header_count = 1; */
-		if (message.header_count !== undefined) writer.tag(1, WireType.Varint).int32(message.header_count);
-		/* optional bytes data = 2; */
-		if (message.data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.data);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_PacketEntities.non_transmitted_entities_t", [
+      {
+        no: 1,
+        name: "header_count",
+        kind: "scalar",
+        localName: "header_count",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "data",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CSVCMsg_PacketEntities_non_transmitted_entities_t>,
+  ): CSVCMsg_PacketEntities_non_transmitted_entities_t {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CSVCMsg_PacketEntities_non_transmitted_entities_t>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_PacketEntities_non_transmitted_entities_t,
+  ): CSVCMsg_PacketEntities_non_transmitted_entities_t {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 header_count */ 1:
+          message.header_count = reader.int32();
+          break;
+        case /* optional bytes data */ 2:
+          message.data = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_PacketEntities_non_transmitted_entities_t,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 header_count = 1; */
+    if (message.header_count !== undefined) writer.tag(1, WireType.Varint).int32(message.header_count);
+    /* optional bytes data = 2; */
+    if (message.data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.data);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_PacketEntities.non_transmitted_entities_t
  */
 export const CSVCMsg_PacketEntities_non_transmitted_entities_t =
-	new CSVCMsg_PacketEntities_non_transmitted_entities_t$Type();
+  new CSVCMsg_PacketEntities_non_transmitted_entities_t$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_TempEntities$Type extends MessageType<CSVCMsg_TempEntities> {
-	constructor() {
-		super("CSVCMsg_TempEntities", [
-			{
-				no: 1,
-				name: "reliable",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 2,
-				name: "num_entries",
-				kind: "scalar",
-				localName: "num_entries",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "entity_data",
-				kind: "scalar",
-				localName: "entity_data",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_TempEntities>): CSVCMsg_TempEntities {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_TempEntities>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_TempEntities,
-	): CSVCMsg_TempEntities {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool reliable */ 1:
-					message.reliable = reader.bool();
-					break;
-				case /* optional int32 num_entries */ 2:
-					message.num_entries = reader.int32();
-					break;
-				case /* optional bytes entity_data */ 3:
-					message.entity_data = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_TempEntities,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool reliable = 1; */
-		if (message.reliable !== undefined) writer.tag(1, WireType.Varint).bool(message.reliable);
-		/* optional int32 num_entries = 2; */
-		if (message.num_entries !== undefined) writer.tag(2, WireType.Varint).int32(message.num_entries);
-		/* optional bytes entity_data = 3; */
-		if (message.entity_data !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.entity_data);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_TempEntities", [
+      {
+        no: 1,
+        name: "reliable",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 2,
+        name: "num_entries",
+        kind: "scalar",
+        localName: "num_entries",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "entity_data",
+        kind: "scalar",
+        localName: "entity_data",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_TempEntities>): CSVCMsg_TempEntities {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_TempEntities>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_TempEntities,
+  ): CSVCMsg_TempEntities {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool reliable */ 1:
+          message.reliable = reader.bool();
+          break;
+        case /* optional int32 num_entries */ 2:
+          message.num_entries = reader.int32();
+          break;
+        case /* optional bytes entity_data */ 3:
+          message.entity_data = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_TempEntities,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool reliable = 1; */
+    if (message.reliable !== undefined) writer.tag(1, WireType.Varint).bool(message.reliable);
+    /* optional int32 num_entries = 2; */
+    if (message.num_entries !== undefined) writer.tag(2, WireType.Varint).int32(message.num_entries);
+    /* optional bytes entity_data = 3; */
+    if (message.entity_data !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.entity_data);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_TempEntities
@@ -6728,174 +6728,174 @@ class CSVCMsg_TempEntities$Type extends MessageType<CSVCMsg_TempEntities> {
 export const CSVCMsg_TempEntities = new CSVCMsg_TempEntities$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_CreateStringTable$Type extends MessageType<CSVCMsg_CreateStringTable> {
-	constructor() {
-		super("CSVCMsg_CreateStringTable", [
-			{
-				no: 1,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "num_entries",
-				kind: "scalar",
-				localName: "num_entries",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "user_data_fixed_size",
-				kind: "scalar",
-				localName: "user_data_fixed_size",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "user_data_size",
-				kind: "scalar",
-				localName: "user_data_size",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "user_data_size_bits",
-				kind: "scalar",
-				localName: "user_data_size_bits",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 6,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 7,
-				name: "string_data",
-				kind: "scalar",
-				localName: "string_data",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 8,
-				name: "uncompressed_size",
-				kind: "scalar",
-				localName: "uncompressed_size",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 9,
-				name: "data_compressed",
-				kind: "scalar",
-				localName: "data_compressed",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 10,
-				name: "using_varint_bitcounts",
-				kind: "scalar",
-				localName: "using_varint_bitcounts",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_CreateStringTable>): CSVCMsg_CreateStringTable {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_CreateStringTable>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_CreateStringTable,
-	): CSVCMsg_CreateStringTable {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string name */ 1:
-					message.name = reader.string();
-					break;
-				case /* optional int32 num_entries */ 2:
-					message.num_entries = reader.int32();
-					break;
-				case /* optional bool user_data_fixed_size */ 3:
-					message.user_data_fixed_size = reader.bool();
-					break;
-				case /* optional int32 user_data_size */ 4:
-					message.user_data_size = reader.int32();
-					break;
-				case /* optional int32 user_data_size_bits */ 5:
-					message.user_data_size_bits = reader.int32();
-					break;
-				case /* optional int32 flags */ 6:
-					message.flags = reader.int32();
-					break;
-				case /* optional bytes string_data */ 7:
-					message.string_data = reader.bytes();
-					break;
-				case /* optional int32 uncompressed_size */ 8:
-					message.uncompressed_size = reader.int32();
-					break;
-				case /* optional bool data_compressed */ 9:
-					message.data_compressed = reader.bool();
-					break;
-				case /* optional bool using_varint_bitcounts */ 10:
-					message.using_varint_bitcounts = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_CreateStringTable,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string name = 1; */
-		if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
-		/* optional int32 num_entries = 2; */
-		if (message.num_entries !== undefined) writer.tag(2, WireType.Varint).int32(message.num_entries);
-		/* optional bool user_data_fixed_size = 3; */
-		if (message.user_data_fixed_size !== undefined) writer.tag(3, WireType.Varint).bool(message.user_data_fixed_size);
-		/* optional int32 user_data_size = 4; */
-		if (message.user_data_size !== undefined) writer.tag(4, WireType.Varint).int32(message.user_data_size);
-		/* optional int32 user_data_size_bits = 5; */
-		if (message.user_data_size_bits !== undefined) writer.tag(5, WireType.Varint).int32(message.user_data_size_bits);
-		/* optional int32 flags = 6; */
-		if (message.flags !== undefined) writer.tag(6, WireType.Varint).int32(message.flags);
-		/* optional bytes string_data = 7; */
-		if (message.string_data !== undefined) writer.tag(7, WireType.LengthDelimited).bytes(message.string_data);
-		/* optional int32 uncompressed_size = 8; */
-		if (message.uncompressed_size !== undefined) writer.tag(8, WireType.Varint).int32(message.uncompressed_size);
-		/* optional bool data_compressed = 9; */
-		if (message.data_compressed !== undefined) writer.tag(9, WireType.Varint).bool(message.data_compressed);
-		/* optional bool using_varint_bitcounts = 10; */
-		if (message.using_varint_bitcounts !== undefined)
-			writer.tag(10, WireType.Varint).bool(message.using_varint_bitcounts);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_CreateStringTable", [
+      {
+        no: 1,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "num_entries",
+        kind: "scalar",
+        localName: "num_entries",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "user_data_fixed_size",
+        kind: "scalar",
+        localName: "user_data_fixed_size",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "user_data_size",
+        kind: "scalar",
+        localName: "user_data_size",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "user_data_size_bits",
+        kind: "scalar",
+        localName: "user_data_size_bits",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 6,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 7,
+        name: "string_data",
+        kind: "scalar",
+        localName: "string_data",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 8,
+        name: "uncompressed_size",
+        kind: "scalar",
+        localName: "uncompressed_size",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 9,
+        name: "data_compressed",
+        kind: "scalar",
+        localName: "data_compressed",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 10,
+        name: "using_varint_bitcounts",
+        kind: "scalar",
+        localName: "using_varint_bitcounts",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_CreateStringTable>): CSVCMsg_CreateStringTable {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_CreateStringTable>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_CreateStringTable,
+  ): CSVCMsg_CreateStringTable {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string name */ 1:
+          message.name = reader.string();
+          break;
+        case /* optional int32 num_entries */ 2:
+          message.num_entries = reader.int32();
+          break;
+        case /* optional bool user_data_fixed_size */ 3:
+          message.user_data_fixed_size = reader.bool();
+          break;
+        case /* optional int32 user_data_size */ 4:
+          message.user_data_size = reader.int32();
+          break;
+        case /* optional int32 user_data_size_bits */ 5:
+          message.user_data_size_bits = reader.int32();
+          break;
+        case /* optional int32 flags */ 6:
+          message.flags = reader.int32();
+          break;
+        case /* optional bytes string_data */ 7:
+          message.string_data = reader.bytes();
+          break;
+        case /* optional int32 uncompressed_size */ 8:
+          message.uncompressed_size = reader.int32();
+          break;
+        case /* optional bool data_compressed */ 9:
+          message.data_compressed = reader.bool();
+          break;
+        case /* optional bool using_varint_bitcounts */ 10:
+          message.using_varint_bitcounts = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_CreateStringTable,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string name = 1; */
+    if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
+    /* optional int32 num_entries = 2; */
+    if (message.num_entries !== undefined) writer.tag(2, WireType.Varint).int32(message.num_entries);
+    /* optional bool user_data_fixed_size = 3; */
+    if (message.user_data_fixed_size !== undefined) writer.tag(3, WireType.Varint).bool(message.user_data_fixed_size);
+    /* optional int32 user_data_size = 4; */
+    if (message.user_data_size !== undefined) writer.tag(4, WireType.Varint).int32(message.user_data_size);
+    /* optional int32 user_data_size_bits = 5; */
+    if (message.user_data_size_bits !== undefined) writer.tag(5, WireType.Varint).int32(message.user_data_size_bits);
+    /* optional int32 flags = 6; */
+    if (message.flags !== undefined) writer.tag(6, WireType.Varint).int32(message.flags);
+    /* optional bytes string_data = 7; */
+    if (message.string_data !== undefined) writer.tag(7, WireType.LengthDelimited).bytes(message.string_data);
+    /* optional int32 uncompressed_size = 8; */
+    if (message.uncompressed_size !== undefined) writer.tag(8, WireType.Varint).int32(message.uncompressed_size);
+    /* optional bool data_compressed = 9; */
+    if (message.data_compressed !== undefined) writer.tag(9, WireType.Varint).bool(message.data_compressed);
+    /* optional bool using_varint_bitcounts = 10; */
+    if (message.using_varint_bitcounts !== undefined)
+      writer.tag(10, WireType.Varint).bool(message.using_varint_bitcounts);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_CreateStringTable
@@ -6903,84 +6903,84 @@ class CSVCMsg_CreateStringTable$Type extends MessageType<CSVCMsg_CreateStringTab
 export const CSVCMsg_CreateStringTable = new CSVCMsg_CreateStringTable$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_UpdateStringTable$Type extends MessageType<CSVCMsg_UpdateStringTable> {
-	constructor() {
-		super("CSVCMsg_UpdateStringTable", [
-			{
-				no: 1,
-				name: "table_id",
-				kind: "scalar",
-				localName: "table_id",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "num_changed_entries",
-				kind: "scalar",
-				localName: "num_changed_entries",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "string_data",
-				kind: "scalar",
-				localName: "string_data",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_UpdateStringTable>): CSVCMsg_UpdateStringTable {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_UpdateStringTable>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_UpdateStringTable,
-	): CSVCMsg_UpdateStringTable {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 table_id */ 1:
-					message.table_id = reader.int32();
-					break;
-				case /* optional int32 num_changed_entries */ 2:
-					message.num_changed_entries = reader.int32();
-					break;
-				case /* optional bytes string_data */ 3:
-					message.string_data = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_UpdateStringTable,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 table_id = 1; */
-		if (message.table_id !== undefined) writer.tag(1, WireType.Varint).int32(message.table_id);
-		/* optional int32 num_changed_entries = 2; */
-		if (message.num_changed_entries !== undefined) writer.tag(2, WireType.Varint).int32(message.num_changed_entries);
-		/* optional bytes string_data = 3; */
-		if (message.string_data !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.string_data);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_UpdateStringTable", [
+      {
+        no: 1,
+        name: "table_id",
+        kind: "scalar",
+        localName: "table_id",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "num_changed_entries",
+        kind: "scalar",
+        localName: "num_changed_entries",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "string_data",
+        kind: "scalar",
+        localName: "string_data",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_UpdateStringTable>): CSVCMsg_UpdateStringTable {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_UpdateStringTable>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_UpdateStringTable,
+  ): CSVCMsg_UpdateStringTable {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 table_id */ 1:
+          message.table_id = reader.int32();
+          break;
+        case /* optional int32 num_changed_entries */ 2:
+          message.num_changed_entries = reader.int32();
+          break;
+        case /* optional bytes string_data */ 3:
+          message.string_data = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_UpdateStringTable,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 table_id = 1; */
+    if (message.table_id !== undefined) writer.tag(1, WireType.Varint).int32(message.table_id);
+    /* optional int32 num_changed_entries = 2; */
+    if (message.num_changed_entries !== undefined) writer.tag(2, WireType.Varint).int32(message.num_changed_entries);
+    /* optional bytes string_data = 3; */
+    if (message.string_data !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.string_data);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_UpdateStringTable
@@ -6988,122 +6988,122 @@ class CSVCMsg_UpdateStringTable$Type extends MessageType<CSVCMsg_UpdateStringTab
 export const CSVCMsg_UpdateStringTable = new CSVCMsg_UpdateStringTable$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_VoiceData$Type extends MessageType<CSVCMsg_VoiceData> {
-	constructor() {
-		super("CSVCMsg_VoiceData", [
-			{ no: 1, name: "audio", kind: "message", T: () => CMsgVoiceAudio },
-			{
-				no: 2,
-				name: "client",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "proximity",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "xuid",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 5,
-				name: "audible_mask",
-				kind: "scalar",
-				localName: "audible_mask",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 6,
-				name: "tick",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "passthrough",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_VoiceData>): CSVCMsg_VoiceData {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_VoiceData>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_VoiceData,
-	): CSVCMsg_VoiceData {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVoiceAudio audio */ 1:
-					message.audio = CMsgVoiceAudio.internalBinaryRead(reader, reader.uint32(), options, message.audio);
-					break;
-				case /* optional int32 client */ 2:
-					message.client = reader.int32();
-					break;
-				case /* optional bool proximity */ 3:
-					message.proximity = reader.bool();
-					break;
-				case /* optional fixed64 xuid */ 4:
-					message.xuid = reader.fixed64().toBigInt();
-					break;
-				case /* optional int32 audible_mask */ 5:
-					message.audible_mask = reader.int32();
-					break;
-				case /* optional uint32 tick */ 6:
-					message.tick = reader.uint32();
-					break;
-				case /* optional int32 passthrough */ 7:
-					message.passthrough = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_VoiceData, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVoiceAudio audio = 1; */
-		if (message.audio)
-			CMsgVoiceAudio.internalBinaryWrite(message.audio, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional int32 client = 2; */
-		if (message.client !== undefined) writer.tag(2, WireType.Varint).int32(message.client);
-		/* optional bool proximity = 3; */
-		if (message.proximity !== undefined) writer.tag(3, WireType.Varint).bool(message.proximity);
-		/* optional fixed64 xuid = 4; */
-		if (message.xuid !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.xuid);
-		/* optional int32 audible_mask = 5; */
-		if (message.audible_mask !== undefined) writer.tag(5, WireType.Varint).int32(message.audible_mask);
-		/* optional uint32 tick = 6; */
-		if (message.tick !== undefined) writer.tag(6, WireType.Varint).uint32(message.tick);
-		/* optional int32 passthrough = 7; */
-		if (message.passthrough !== undefined) writer.tag(7, WireType.Varint).int32(message.passthrough);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_VoiceData", [
+      { no: 1, name: "audio", kind: "message", T: () => CMsgVoiceAudio },
+      {
+        no: 2,
+        name: "client",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "proximity",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "xuid",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 5,
+        name: "audible_mask",
+        kind: "scalar",
+        localName: "audible_mask",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 6,
+        name: "tick",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "passthrough",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_VoiceData>): CSVCMsg_VoiceData {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_VoiceData>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_VoiceData,
+  ): CSVCMsg_VoiceData {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVoiceAudio audio */ 1:
+          message.audio = CMsgVoiceAudio.internalBinaryRead(reader, reader.uint32(), options, message.audio);
+          break;
+        case /* optional int32 client */ 2:
+          message.client = reader.int32();
+          break;
+        case /* optional bool proximity */ 3:
+          message.proximity = reader.bool();
+          break;
+        case /* optional fixed64 xuid */ 4:
+          message.xuid = reader.fixed64().toBigInt();
+          break;
+        case /* optional int32 audible_mask */ 5:
+          message.audible_mask = reader.int32();
+          break;
+        case /* optional uint32 tick */ 6:
+          message.tick = reader.uint32();
+          break;
+        case /* optional int32 passthrough */ 7:
+          message.passthrough = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_VoiceData, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVoiceAudio audio = 1; */
+    if (message.audio)
+      CMsgVoiceAudio.internalBinaryWrite(message.audio, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional int32 client = 2; */
+    if (message.client !== undefined) writer.tag(2, WireType.Varint).int32(message.client);
+    /* optional bool proximity = 3; */
+    if (message.proximity !== undefined) writer.tag(3, WireType.Varint).bool(message.proximity);
+    /* optional fixed64 xuid = 4; */
+    if (message.xuid !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.xuid);
+    /* optional int32 audible_mask = 5; */
+    if (message.audible_mask !== undefined) writer.tag(5, WireType.Varint).int32(message.audible_mask);
+    /* optional uint32 tick = 6; */
+    if (message.tick !== undefined) writer.tag(6, WireType.Varint).uint32(message.tick);
+    /* optional int32 passthrough = 7; */
+    if (message.passthrough !== undefined) writer.tag(7, WireType.Varint).int32(message.passthrough);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_VoiceData
@@ -7111,81 +7111,81 @@ class CSVCMsg_VoiceData$Type extends MessageType<CSVCMsg_VoiceData> {
 export const CSVCMsg_VoiceData = new CSVCMsg_VoiceData$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_PacketReliable$Type extends MessageType<CSVCMsg_PacketReliable> {
-	constructor() {
-		super("CSVCMsg_PacketReliable", [
-			{
-				no: 1,
-				name: "tick",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "messagessize",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "state",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_PacketReliable>): CSVCMsg_PacketReliable {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_PacketReliable>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_PacketReliable,
-	): CSVCMsg_PacketReliable {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 tick */ 1:
-					message.tick = reader.int32();
-					break;
-				case /* optional int32 messagessize */ 2:
-					message.messagessize = reader.int32();
-					break;
-				case /* optional bool state */ 3:
-					message.state = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_PacketReliable,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 tick = 1; */
-		if (message.tick !== undefined) writer.tag(1, WireType.Varint).int32(message.tick);
-		/* optional int32 messagessize = 2; */
-		if (message.messagessize !== undefined) writer.tag(2, WireType.Varint).int32(message.messagessize);
-		/* optional bool state = 3; */
-		if (message.state !== undefined) writer.tag(3, WireType.Varint).bool(message.state);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_PacketReliable", [
+      {
+        no: 1,
+        name: "tick",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "messagessize",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "state",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_PacketReliable>): CSVCMsg_PacketReliable {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_PacketReliable>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_PacketReliable,
+  ): CSVCMsg_PacketReliable {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 tick */ 1:
+          message.tick = reader.int32();
+          break;
+        case /* optional int32 messagessize */ 2:
+          message.messagessize = reader.int32();
+          break;
+        case /* optional bool state */ 3:
+          message.state = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_PacketReliable,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 tick = 1; */
+    if (message.tick !== undefined) writer.tag(1, WireType.Varint).int32(message.tick);
+    /* optional int32 messagessize = 2; */
+    if (message.messagessize !== undefined) writer.tag(2, WireType.Varint).int32(message.messagessize);
+    /* optional bool state = 3; */
+    if (message.state !== undefined) writer.tag(3, WireType.Varint).bool(message.state);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_PacketReliable
@@ -7193,93 +7193,93 @@ class CSVCMsg_PacketReliable$Type extends MessageType<CSVCMsg_PacketReliable> {
 export const CSVCMsg_PacketReliable = new CSVCMsg_PacketReliable$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_FullFrameSplit$Type extends MessageType<CSVCMsg_FullFrameSplit> {
-	constructor() {
-		super("CSVCMsg_FullFrameSplit", [
-			{
-				no: 1,
-				name: "tick",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "section",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "total",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "data",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_FullFrameSplit>): CSVCMsg_FullFrameSplit {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_FullFrameSplit>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_FullFrameSplit,
-	): CSVCMsg_FullFrameSplit {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 tick */ 1:
-					message.tick = reader.int32();
-					break;
-				case /* optional int32 section */ 2:
-					message.section = reader.int32();
-					break;
-				case /* optional int32 total */ 3:
-					message.total = reader.int32();
-					break;
-				case /* optional bytes data */ 4:
-					message.data = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_FullFrameSplit,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 tick = 1; */
-		if (message.tick !== undefined) writer.tag(1, WireType.Varint).int32(message.tick);
-		/* optional int32 section = 2; */
-		if (message.section !== undefined) writer.tag(2, WireType.Varint).int32(message.section);
-		/* optional int32 total = 3; */
-		if (message.total !== undefined) writer.tag(3, WireType.Varint).int32(message.total);
-		/* optional bytes data = 4; */
-		if (message.data !== undefined) writer.tag(4, WireType.LengthDelimited).bytes(message.data);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_FullFrameSplit", [
+      {
+        no: 1,
+        name: "tick",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "section",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "total",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "data",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_FullFrameSplit>): CSVCMsg_FullFrameSplit {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_FullFrameSplit>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_FullFrameSplit,
+  ): CSVCMsg_FullFrameSplit {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 tick */ 1:
+          message.tick = reader.int32();
+          break;
+        case /* optional int32 section */ 2:
+          message.section = reader.int32();
+          break;
+        case /* optional int32 total */ 3:
+          message.total = reader.int32();
+          break;
+        case /* optional bytes data */ 4:
+          message.data = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_FullFrameSplit,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 tick = 1; */
+    if (message.tick !== undefined) writer.tag(1, WireType.Varint).int32(message.tick);
+    /* optional int32 section = 2; */
+    if (message.section !== undefined) writer.tag(2, WireType.Varint).int32(message.section);
+    /* optional int32 total = 3; */
+    if (message.total !== undefined) writer.tag(3, WireType.Varint).int32(message.total);
+    /* optional bytes data = 4; */
+    if (message.data !== undefined) writer.tag(4, WireType.LengthDelimited).bytes(message.data);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_FullFrameSplit
@@ -7287,89 +7287,89 @@ class CSVCMsg_FullFrameSplit$Type extends MessageType<CSVCMsg_FullFrameSplit> {
 export const CSVCMsg_FullFrameSplit = new CSVCMsg_FullFrameSplit$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_HLTVStatus$Type extends MessageType<CSVCMsg_HLTVStatus> {
-	constructor() {
-		super("CSVCMsg_HLTVStatus", [
-			{
-				no: 1,
-				name: "master",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "clients",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "slots",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "proxies",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_HLTVStatus>): CSVCMsg_HLTVStatus {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_HLTVStatus>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_HLTVStatus,
-	): CSVCMsg_HLTVStatus {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string master */ 1:
-					message.master = reader.string();
-					break;
-				case /* optional int32 clients */ 2:
-					message.clients = reader.int32();
-					break;
-				case /* optional int32 slots */ 3:
-					message.slots = reader.int32();
-					break;
-				case /* optional int32 proxies */ 4:
-					message.proxies = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_HLTVStatus, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional string master = 1; */
-		if (message.master !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.master);
-		/* optional int32 clients = 2; */
-		if (message.clients !== undefined) writer.tag(2, WireType.Varint).int32(message.clients);
-		/* optional int32 slots = 3; */
-		if (message.slots !== undefined) writer.tag(3, WireType.Varint).int32(message.slots);
-		/* optional int32 proxies = 4; */
-		if (message.proxies !== undefined) writer.tag(4, WireType.Varint).int32(message.proxies);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_HLTVStatus", [
+      {
+        no: 1,
+        name: "master",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "clients",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "slots",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "proxies",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_HLTVStatus>): CSVCMsg_HLTVStatus {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_HLTVStatus>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_HLTVStatus,
+  ): CSVCMsg_HLTVStatus {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string master */ 1:
+          message.master = reader.string();
+          break;
+        case /* optional int32 clients */ 2:
+          message.clients = reader.int32();
+          break;
+        case /* optional int32 slots */ 3:
+          message.slots = reader.int32();
+          break;
+        case /* optional int32 proxies */ 4:
+          message.proxies = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_HLTVStatus, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional string master = 1; */
+    if (message.master !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.master);
+    /* optional int32 clients = 2; */
+    if (message.clients !== undefined) writer.tag(2, WireType.Varint).int32(message.clients);
+    /* optional int32 slots = 3; */
+    if (message.slots !== undefined) writer.tag(3, WireType.Varint).int32(message.slots);
+    /* optional int32 proxies = 4; */
+    if (message.proxies !== undefined) writer.tag(4, WireType.Varint).int32(message.proxies);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_HLTVStatus
@@ -7377,59 +7377,59 @@ class CSVCMsg_HLTVStatus$Type extends MessageType<CSVCMsg_HLTVStatus> {
 export const CSVCMsg_HLTVStatus = new CSVCMsg_HLTVStatus$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_ServerSteamID$Type extends MessageType<CSVCMsg_ServerSteamID> {
-	constructor() {
-		super("CSVCMsg_ServerSteamID", [
-			{
-				no: 1,
-				name: "steam_id",
-				kind: "scalar",
-				localName: "steam_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_ServerSteamID>): CSVCMsg_ServerSteamID {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_ServerSteamID>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_ServerSteamID,
-	): CSVCMsg_ServerSteamID {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint64 steam_id */ 1:
-					message.steam_id = reader.uint64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_ServerSteamID,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint64 steam_id = 1; */
-		if (message.steam_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.steam_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_ServerSteamID", [
+      {
+        no: 1,
+        name: "steam_id",
+        kind: "scalar",
+        localName: "steam_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_ServerSteamID>): CSVCMsg_ServerSteamID {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_ServerSteamID>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_ServerSteamID,
+  ): CSVCMsg_ServerSteamID {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint64 steam_id */ 1:
+          message.steam_id = reader.uint64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_ServerSteamID,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint64 steam_id = 1; */
+    if (message.steam_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.steam_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_ServerSteamID
@@ -7437,57 +7437,57 @@ class CSVCMsg_ServerSteamID$Type extends MessageType<CSVCMsg_ServerSteamID> {
 export const CSVCMsg_ServerSteamID = new CSVCMsg_ServerSteamID$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_CmdKeyValues$Type extends MessageType<CSVCMsg_CmdKeyValues> {
-	constructor() {
-		super("CSVCMsg_CmdKeyValues", [
-			{
-				no: 1,
-				name: "data",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_CmdKeyValues>): CSVCMsg_CmdKeyValues {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_CmdKeyValues>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_CmdKeyValues,
-	): CSVCMsg_CmdKeyValues {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bytes data */ 1:
-					message.data = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_CmdKeyValues,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bytes data = 1; */
-		if (message.data !== undefined) writer.tag(1, WireType.LengthDelimited).bytes(message.data);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_CmdKeyValues", [
+      {
+        no: 1,
+        name: "data",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_CmdKeyValues>): CSVCMsg_CmdKeyValues {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_CmdKeyValues>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_CmdKeyValues,
+  ): CSVCMsg_CmdKeyValues {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bytes data */ 1:
+          message.data = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_CmdKeyValues,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bytes data = 1; */
+    if (message.data !== undefined) writer.tag(1, WireType.LengthDelimited).bytes(message.data);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_CmdKeyValues
@@ -7495,69 +7495,69 @@ class CSVCMsg_CmdKeyValues$Type extends MessageType<CSVCMsg_CmdKeyValues> {
 export const CSVCMsg_CmdKeyValues = new CSVCMsg_CmdKeyValues$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_RconServerDetails$Type extends MessageType<CSVCMsg_RconServerDetails> {
-	constructor() {
-		super("CSVCMsg_RconServerDetails", [
-			{
-				no: 1,
-				name: "token",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 2,
-				name: "details",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_RconServerDetails>): CSVCMsg_RconServerDetails {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_RconServerDetails>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_RconServerDetails,
-	): CSVCMsg_RconServerDetails {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bytes token */ 1:
-					message.token = reader.bytes();
-					break;
-				case /* optional string details */ 2:
-					message.details = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_RconServerDetails,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bytes token = 1; */
-		if (message.token !== undefined) writer.tag(1, WireType.LengthDelimited).bytes(message.token);
-		/* optional string details = 2; */
-		if (message.details !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.details);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_RconServerDetails", [
+      {
+        no: 1,
+        name: "token",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 2,
+        name: "details",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_RconServerDetails>): CSVCMsg_RconServerDetails {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_RconServerDetails>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_RconServerDetails,
+  ): CSVCMsg_RconServerDetails {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bytes token */ 1:
+          message.token = reader.bytes();
+          break;
+        case /* optional string details */ 2:
+          message.details = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_RconServerDetails,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bytes token = 1; */
+    if (message.token !== undefined) writer.tag(1, WireType.LengthDelimited).bytes(message.token);
+    /* optional string details = 2; */
+    if (message.details !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.details);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_RconServerDetails
@@ -7565,68 +7565,68 @@ class CSVCMsg_RconServerDetails$Type extends MessageType<CSVCMsg_RconServerDetai
 export const CSVCMsg_RconServerDetails = new CSVCMsg_RconServerDetails$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgIPCAddress$Type extends MessageType<CMsgIPCAddress> {
-	constructor() {
-		super("CMsgIPCAddress", [
-			{
-				no: 1,
-				name: "computer_guid",
-				kind: "scalar",
-				localName: "computer_guid",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "process_id",
-				kind: "scalar",
-				localName: "process_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgIPCAddress>): CMsgIPCAddress {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgIPCAddress>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgIPCAddress,
-	): CMsgIPCAddress {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed64 computer_guid */ 1:
-					message.computer_guid = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 process_id */ 2:
-					message.process_id = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgIPCAddress, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional fixed64 computer_guid = 1; */
-		if (message.computer_guid !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.computer_guid);
-		/* optional uint32 process_id = 2; */
-		if (message.process_id !== undefined) writer.tag(2, WireType.Varint).uint32(message.process_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgIPCAddress", [
+      {
+        no: 1,
+        name: "computer_guid",
+        kind: "scalar",
+        localName: "computer_guid",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "process_id",
+        kind: "scalar",
+        localName: "process_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgIPCAddress>): CMsgIPCAddress {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgIPCAddress>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgIPCAddress,
+  ): CMsgIPCAddress {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed64 computer_guid */ 1:
+          message.computer_guid = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 process_id */ 2:
+          message.process_id = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgIPCAddress, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional fixed64 computer_guid = 1; */
+    if (message.computer_guid !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.computer_guid);
+    /* optional uint32 process_id = 2; */
+    if (message.process_id !== undefined) writer.tag(2, WireType.Varint).uint32(message.process_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgIPCAddress
@@ -7634,113 +7634,113 @@ class CMsgIPCAddress$Type extends MessageType<CMsgIPCAddress> {
 export const CMsgIPCAddress = new CMsgIPCAddress$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerPeer$Type extends MessageType<CMsgServerPeer> {
-	constructor() {
-		super("CMsgServerPeer", [
-			{
-				no: 1,
-				name: "player_slot",
-				kind: "scalar",
-				localName: "player_slot",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "steamid",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{ no: 3, name: "ipc", kind: "message", T: () => CMsgIPCAddress },
-			{
-				no: 4,
-				name: "they_hear_you",
-				kind: "scalar",
-				localName: "they_hear_you",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 5,
-				name: "you_hear_them",
-				kind: "scalar",
-				localName: "you_hear_them",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 6,
-				name: "is_listenserver_host",
-				kind: "scalar",
-				localName: "is_listenserver_host",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerPeer>): CMsgServerPeer {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerPeer>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerPeer,
-	): CMsgServerPeer {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 player_slot */ 1:
-					message.player_slot = reader.int32();
-					break;
-				case /* optional fixed64 steamid */ 2:
-					message.steamid = reader.fixed64().toBigInt();
-					break;
-				case /* optional CMsgIPCAddress ipc */ 3:
-					message.ipc = CMsgIPCAddress.internalBinaryRead(reader, reader.uint32(), options, message.ipc);
-					break;
-				case /* optional bool they_hear_you */ 4:
-					message.they_hear_you = reader.bool();
-					break;
-				case /* optional bool you_hear_them */ 5:
-					message.you_hear_them = reader.bool();
-					break;
-				case /* optional bool is_listenserver_host */ 6:
-					message.is_listenserver_host = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgServerPeer, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional int32 player_slot = 1; */
-		if (message.player_slot !== undefined) writer.tag(1, WireType.Varint).int32(message.player_slot);
-		/* optional fixed64 steamid = 2; */
-		if (message.steamid !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.steamid);
-		/* optional CMsgIPCAddress ipc = 3; */
-		if (message.ipc)
-			CMsgIPCAddress.internalBinaryWrite(message.ipc, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
-		/* optional bool they_hear_you = 4; */
-		if (message.they_hear_you !== undefined) writer.tag(4, WireType.Varint).bool(message.they_hear_you);
-		/* optional bool you_hear_them = 5; */
-		if (message.you_hear_them !== undefined) writer.tag(5, WireType.Varint).bool(message.you_hear_them);
-		/* optional bool is_listenserver_host = 6; */
-		if (message.is_listenserver_host !== undefined) writer.tag(6, WireType.Varint).bool(message.is_listenserver_host);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerPeer", [
+      {
+        no: 1,
+        name: "player_slot",
+        kind: "scalar",
+        localName: "player_slot",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "steamid",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      { no: 3, name: "ipc", kind: "message", T: () => CMsgIPCAddress },
+      {
+        no: 4,
+        name: "they_hear_you",
+        kind: "scalar",
+        localName: "they_hear_you",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 5,
+        name: "you_hear_them",
+        kind: "scalar",
+        localName: "you_hear_them",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 6,
+        name: "is_listenserver_host",
+        kind: "scalar",
+        localName: "is_listenserver_host",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerPeer>): CMsgServerPeer {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerPeer>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerPeer,
+  ): CMsgServerPeer {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 player_slot */ 1:
+          message.player_slot = reader.int32();
+          break;
+        case /* optional fixed64 steamid */ 2:
+          message.steamid = reader.fixed64().toBigInt();
+          break;
+        case /* optional CMsgIPCAddress ipc */ 3:
+          message.ipc = CMsgIPCAddress.internalBinaryRead(reader, reader.uint32(), options, message.ipc);
+          break;
+        case /* optional bool they_hear_you */ 4:
+          message.they_hear_you = reader.bool();
+          break;
+        case /* optional bool you_hear_them */ 5:
+          message.you_hear_them = reader.bool();
+          break;
+        case /* optional bool is_listenserver_host */ 6:
+          message.is_listenserver_host = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgServerPeer, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional int32 player_slot = 1; */
+    if (message.player_slot !== undefined) writer.tag(1, WireType.Varint).int32(message.player_slot);
+    /* optional fixed64 steamid = 2; */
+    if (message.steamid !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.steamid);
+    /* optional CMsgIPCAddress ipc = 3; */
+    if (message.ipc)
+      CMsgIPCAddress.internalBinaryWrite(message.ipc, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
+    /* optional bool they_hear_you = 4; */
+    if (message.they_hear_you !== undefined) writer.tag(4, WireType.Varint).bool(message.they_hear_you);
+    /* optional bool you_hear_them = 5; */
+    if (message.you_hear_them !== undefined) writer.tag(5, WireType.Varint).bool(message.you_hear_them);
+    /* optional bool is_listenserver_host = 6; */
+    if (message.is_listenserver_host !== undefined) writer.tag(6, WireType.Varint).bool(message.is_listenserver_host);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerPeer
@@ -7748,59 +7748,59 @@ class CMsgServerPeer$Type extends MessageType<CMsgServerPeer> {
 export const CMsgServerPeer = new CMsgServerPeer$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_PeerList$Type extends MessageType<CSVCMsg_PeerList> {
-	constructor() {
-		super("CSVCMsg_PeerList", [
-			{
-				no: 1,
-				name: "peer",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerPeer,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_PeerList>): CSVCMsg_PeerList {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.peer = [];
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_PeerList>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_PeerList,
-	): CSVCMsg_PeerList {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgServerPeer peer */ 1:
-					message.peer.push(CMsgServerPeer.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_PeerList, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* repeated CMsgServerPeer peer = 1; */
-		for (let i = 0; i < message.peer.length; i++)
-			CMsgServerPeer.internalBinaryWrite(
-				message.peer[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_PeerList", [
+      {
+        no: 1,
+        name: "peer",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerPeer,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_PeerList>): CSVCMsg_PeerList {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.peer = [];
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_PeerList>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_PeerList,
+  ): CSVCMsg_PeerList {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgServerPeer peer */ 1:
+          message.peer.push(CMsgServerPeer.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_PeerList, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* repeated CMsgServerPeer peer = 1; */
+    for (let i = 0; i < message.peer.length; i++)
+      CMsgServerPeer.internalBinaryWrite(
+        message.peer[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_PeerList
@@ -7808,70 +7808,70 @@ class CSVCMsg_PeerList$Type extends MessageType<CSVCMsg_PeerList> {
 export const CSVCMsg_PeerList = new CSVCMsg_PeerList$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_ClearAllStringTables$Type extends MessageType<CSVCMsg_ClearAllStringTables> {
-	constructor() {
-		super("CSVCMsg_ClearAllStringTables", [
-			{
-				no: 1,
-				name: "mapname",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "create_tables_skipped",
-				kind: "scalar",
-				localName: "create_tables_skipped",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_ClearAllStringTables>): CSVCMsg_ClearAllStringTables {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_ClearAllStringTables>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_ClearAllStringTables,
-	): CSVCMsg_ClearAllStringTables {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string mapname */ 1:
-					message.mapname = reader.string();
-					break;
-				case /* optional bool create_tables_skipped */ 3:
-					message.create_tables_skipped = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_ClearAllStringTables,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string mapname = 1; */
-		if (message.mapname !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.mapname);
-		/* optional bool create_tables_skipped = 3; */
-		if (message.create_tables_skipped !== undefined) writer.tag(3, WireType.Varint).bool(message.create_tables_skipped);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_ClearAllStringTables", [
+      {
+        no: 1,
+        name: "mapname",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "create_tables_skipped",
+        kind: "scalar",
+        localName: "create_tables_skipped",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_ClearAllStringTables>): CSVCMsg_ClearAllStringTables {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_ClearAllStringTables>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_ClearAllStringTables,
+  ): CSVCMsg_ClearAllStringTables {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string mapname */ 1:
+          message.mapname = reader.string();
+          break;
+        case /* optional bool create_tables_skipped */ 3:
+          message.create_tables_skipped = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_ClearAllStringTables,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string mapname = 1; */
+    if (message.mapname !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.mapname);
+    /* optional bool create_tables_skipped = 3; */
+    if (message.create_tables_skipped !== undefined) writer.tag(3, WireType.Varint).bool(message.create_tables_skipped);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_ClearAllStringTables
@@ -7879,211 +7879,211 @@ class CSVCMsg_ClearAllStringTables$Type extends MessageType<CSVCMsg_ClearAllStri
 export const CSVCMsg_ClearAllStringTables = new CSVCMsg_ClearAllStringTables$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ProtoFlattenedSerializerField_t$Type extends MessageType<ProtoFlattenedSerializerField_t> {
-	constructor() {
-		super("ProtoFlattenedSerializerField_t", [
-			{
-				no: 1,
-				name: "var_type_sym",
-				kind: "scalar",
-				localName: "var_type_sym",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "var_name_sym",
-				kind: "scalar",
-				localName: "var_name_sym",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "bit_count",
-				kind: "scalar",
-				localName: "bit_count",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "low_value",
-				kind: "scalar",
-				localName: "low_value",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 5,
-				name: "high_value",
-				kind: "scalar",
-				localName: "high_value",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 6,
-				name: "encode_flags",
-				kind: "scalar",
-				localName: "encode_flags",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 7,
-				name: "field_serializer_name_sym",
-				kind: "scalar",
-				localName: "field_serializer_name_sym",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 8,
-				name: "field_serializer_version",
-				kind: "scalar",
-				localName: "field_serializer_version",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 9,
-				name: "send_node_sym",
-				kind: "scalar",
-				localName: "send_node_sym",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 10,
-				name: "var_encoder_sym",
-				kind: "scalar",
-				localName: "var_encoder_sym",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 11,
-				name: "polymorphic_types",
-				kind: "message",
-				localName: "polymorphic_types",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => ProtoFlattenedSerializerField_t_polymorphic_field_t,
-			},
-			{
-				no: 12,
-				name: "var_serializer_sym",
-				kind: "scalar",
-				localName: "var_serializer_sym",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<ProtoFlattenedSerializerField_t>): ProtoFlattenedSerializerField_t {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.polymorphic_types = [];
-		if (value !== undefined) reflectionMergePartial<ProtoFlattenedSerializerField_t>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: ProtoFlattenedSerializerField_t,
-	): ProtoFlattenedSerializerField_t {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 var_type_sym */ 1:
-					message.var_type_sym = reader.int32();
-					break;
-				case /* optional int32 var_name_sym */ 2:
-					message.var_name_sym = reader.int32();
-					break;
-				case /* optional int32 bit_count */ 3:
-					message.bit_count = reader.int32();
-					break;
-				case /* optional float low_value */ 4:
-					message.low_value = reader.float();
-					break;
-				case /* optional float high_value */ 5:
-					message.high_value = reader.float();
-					break;
-				case /* optional int32 encode_flags */ 6:
-					message.encode_flags = reader.int32();
-					break;
-				case /* optional int32 field_serializer_name_sym */ 7:
-					message.field_serializer_name_sym = reader.int32();
-					break;
-				case /* optional int32 field_serializer_version */ 8:
-					message.field_serializer_version = reader.int32();
-					break;
-				case /* optional int32 send_node_sym */ 9:
-					message.send_node_sym = reader.int32();
-					break;
-				case /* optional int32 var_encoder_sym */ 10:
-					message.var_encoder_sym = reader.int32();
-					break;
-				case /* repeated ProtoFlattenedSerializerField_t.polymorphic_field_t polymorphic_types */ 11:
-					message.polymorphic_types.push(
-						ProtoFlattenedSerializerField_t_polymorphic_field_t.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* optional int32 var_serializer_sym */ 12:
-					message.var_serializer_sym = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: ProtoFlattenedSerializerField_t,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 var_type_sym = 1; */
-		if (message.var_type_sym !== undefined) writer.tag(1, WireType.Varint).int32(message.var_type_sym);
-		/* optional int32 var_name_sym = 2; */
-		if (message.var_name_sym !== undefined) writer.tag(2, WireType.Varint).int32(message.var_name_sym);
-		/* optional int32 bit_count = 3; */
-		if (message.bit_count !== undefined) writer.tag(3, WireType.Varint).int32(message.bit_count);
-		/* optional float low_value = 4; */
-		if (message.low_value !== undefined) writer.tag(4, WireType.Bit32).float(message.low_value);
-		/* optional float high_value = 5; */
-		if (message.high_value !== undefined) writer.tag(5, WireType.Bit32).float(message.high_value);
-		/* optional int32 encode_flags = 6; */
-		if (message.encode_flags !== undefined) writer.tag(6, WireType.Varint).int32(message.encode_flags);
-		/* optional int32 field_serializer_name_sym = 7; */
-		if (message.field_serializer_name_sym !== undefined)
-			writer.tag(7, WireType.Varint).int32(message.field_serializer_name_sym);
-		/* optional int32 field_serializer_version = 8; */
-		if (message.field_serializer_version !== undefined)
-			writer.tag(8, WireType.Varint).int32(message.field_serializer_version);
-		/* optional int32 send_node_sym = 9; */
-		if (message.send_node_sym !== undefined) writer.tag(9, WireType.Varint).int32(message.send_node_sym);
-		/* optional int32 var_encoder_sym = 10; */
-		if (message.var_encoder_sym !== undefined) writer.tag(10, WireType.Varint).int32(message.var_encoder_sym);
-		/* repeated ProtoFlattenedSerializerField_t.polymorphic_field_t polymorphic_types = 11; */
-		for (let i = 0; i < message.polymorphic_types.length; i++)
-			ProtoFlattenedSerializerField_t_polymorphic_field_t.internalBinaryWrite(
-				message.polymorphic_types[i],
-				writer.tag(11, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional int32 var_serializer_sym = 12; */
-		if (message.var_serializer_sym !== undefined) writer.tag(12, WireType.Varint).int32(message.var_serializer_sym);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("ProtoFlattenedSerializerField_t", [
+      {
+        no: 1,
+        name: "var_type_sym",
+        kind: "scalar",
+        localName: "var_type_sym",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "var_name_sym",
+        kind: "scalar",
+        localName: "var_name_sym",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "bit_count",
+        kind: "scalar",
+        localName: "bit_count",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "low_value",
+        kind: "scalar",
+        localName: "low_value",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 5,
+        name: "high_value",
+        kind: "scalar",
+        localName: "high_value",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 6,
+        name: "encode_flags",
+        kind: "scalar",
+        localName: "encode_flags",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 7,
+        name: "field_serializer_name_sym",
+        kind: "scalar",
+        localName: "field_serializer_name_sym",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 8,
+        name: "field_serializer_version",
+        kind: "scalar",
+        localName: "field_serializer_version",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 9,
+        name: "send_node_sym",
+        kind: "scalar",
+        localName: "send_node_sym",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 10,
+        name: "var_encoder_sym",
+        kind: "scalar",
+        localName: "var_encoder_sym",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 11,
+        name: "polymorphic_types",
+        kind: "message",
+        localName: "polymorphic_types",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => ProtoFlattenedSerializerField_t_polymorphic_field_t,
+      },
+      {
+        no: 12,
+        name: "var_serializer_sym",
+        kind: "scalar",
+        localName: "var_serializer_sym",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<ProtoFlattenedSerializerField_t>): ProtoFlattenedSerializerField_t {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.polymorphic_types = [];
+    if (value !== undefined) reflectionMergePartial<ProtoFlattenedSerializerField_t>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: ProtoFlattenedSerializerField_t,
+  ): ProtoFlattenedSerializerField_t {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 var_type_sym */ 1:
+          message.var_type_sym = reader.int32();
+          break;
+        case /* optional int32 var_name_sym */ 2:
+          message.var_name_sym = reader.int32();
+          break;
+        case /* optional int32 bit_count */ 3:
+          message.bit_count = reader.int32();
+          break;
+        case /* optional float low_value */ 4:
+          message.low_value = reader.float();
+          break;
+        case /* optional float high_value */ 5:
+          message.high_value = reader.float();
+          break;
+        case /* optional int32 encode_flags */ 6:
+          message.encode_flags = reader.int32();
+          break;
+        case /* optional int32 field_serializer_name_sym */ 7:
+          message.field_serializer_name_sym = reader.int32();
+          break;
+        case /* optional int32 field_serializer_version */ 8:
+          message.field_serializer_version = reader.int32();
+          break;
+        case /* optional int32 send_node_sym */ 9:
+          message.send_node_sym = reader.int32();
+          break;
+        case /* optional int32 var_encoder_sym */ 10:
+          message.var_encoder_sym = reader.int32();
+          break;
+        case /* repeated ProtoFlattenedSerializerField_t.polymorphic_field_t polymorphic_types */ 11:
+          message.polymorphic_types.push(
+            ProtoFlattenedSerializerField_t_polymorphic_field_t.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* optional int32 var_serializer_sym */ 12:
+          message.var_serializer_sym = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: ProtoFlattenedSerializerField_t,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 var_type_sym = 1; */
+    if (message.var_type_sym !== undefined) writer.tag(1, WireType.Varint).int32(message.var_type_sym);
+    /* optional int32 var_name_sym = 2; */
+    if (message.var_name_sym !== undefined) writer.tag(2, WireType.Varint).int32(message.var_name_sym);
+    /* optional int32 bit_count = 3; */
+    if (message.bit_count !== undefined) writer.tag(3, WireType.Varint).int32(message.bit_count);
+    /* optional float low_value = 4; */
+    if (message.low_value !== undefined) writer.tag(4, WireType.Bit32).float(message.low_value);
+    /* optional float high_value = 5; */
+    if (message.high_value !== undefined) writer.tag(5, WireType.Bit32).float(message.high_value);
+    /* optional int32 encode_flags = 6; */
+    if (message.encode_flags !== undefined) writer.tag(6, WireType.Varint).int32(message.encode_flags);
+    /* optional int32 field_serializer_name_sym = 7; */
+    if (message.field_serializer_name_sym !== undefined)
+      writer.tag(7, WireType.Varint).int32(message.field_serializer_name_sym);
+    /* optional int32 field_serializer_version = 8; */
+    if (message.field_serializer_version !== undefined)
+      writer.tag(8, WireType.Varint).int32(message.field_serializer_version);
+    /* optional int32 send_node_sym = 9; */
+    if (message.send_node_sym !== undefined) writer.tag(9, WireType.Varint).int32(message.send_node_sym);
+    /* optional int32 var_encoder_sym = 10; */
+    if (message.var_encoder_sym !== undefined) writer.tag(10, WireType.Varint).int32(message.var_encoder_sym);
+    /* repeated ProtoFlattenedSerializerField_t.polymorphic_field_t polymorphic_types = 11; */
+    for (let i = 0; i < message.polymorphic_types.length; i++)
+      ProtoFlattenedSerializerField_t_polymorphic_field_t.internalBinaryWrite(
+        message.polymorphic_types[i],
+        writer.tag(11, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional int32 var_serializer_sym = 12; */
+    if (message.var_serializer_sym !== undefined) writer.tag(12, WireType.Varint).int32(message.var_serializer_sym);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message ProtoFlattenedSerializerField_t
@@ -8091,165 +8091,165 @@ class ProtoFlattenedSerializerField_t$Type extends MessageType<ProtoFlattenedSer
 export const ProtoFlattenedSerializerField_t = new ProtoFlattenedSerializerField_t$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ProtoFlattenedSerializerField_t_polymorphic_field_t$Type extends MessageType<ProtoFlattenedSerializerField_t_polymorphic_field_t> {
-	constructor() {
-		super("ProtoFlattenedSerializerField_t.polymorphic_field_t", [
-			{
-				no: 1,
-				name: "polymorphic_field_serializer_name_sym",
-				kind: "scalar",
-				localName: "polymorphic_field_serializer_name_sym",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "polymorphic_field_serializer_version",
-				kind: "scalar",
-				localName: "polymorphic_field_serializer_version",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<ProtoFlattenedSerializerField_t_polymorphic_field_t>,
-	): ProtoFlattenedSerializerField_t_polymorphic_field_t {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<ProtoFlattenedSerializerField_t_polymorphic_field_t>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: ProtoFlattenedSerializerField_t_polymorphic_field_t,
-	): ProtoFlattenedSerializerField_t_polymorphic_field_t {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 polymorphic_field_serializer_name_sym */ 1:
-					message.polymorphic_field_serializer_name_sym = reader.int32();
-					break;
-				case /* optional int32 polymorphic_field_serializer_version */ 2:
-					message.polymorphic_field_serializer_version = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: ProtoFlattenedSerializerField_t_polymorphic_field_t,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 polymorphic_field_serializer_name_sym = 1; */
-		if (message.polymorphic_field_serializer_name_sym !== undefined)
-			writer.tag(1, WireType.Varint).int32(message.polymorphic_field_serializer_name_sym);
-		/* optional int32 polymorphic_field_serializer_version = 2; */
-		if (message.polymorphic_field_serializer_version !== undefined)
-			writer.tag(2, WireType.Varint).int32(message.polymorphic_field_serializer_version);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("ProtoFlattenedSerializerField_t.polymorphic_field_t", [
+      {
+        no: 1,
+        name: "polymorphic_field_serializer_name_sym",
+        kind: "scalar",
+        localName: "polymorphic_field_serializer_name_sym",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "polymorphic_field_serializer_version",
+        kind: "scalar",
+        localName: "polymorphic_field_serializer_version",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<ProtoFlattenedSerializerField_t_polymorphic_field_t>,
+  ): ProtoFlattenedSerializerField_t_polymorphic_field_t {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<ProtoFlattenedSerializerField_t_polymorphic_field_t>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: ProtoFlattenedSerializerField_t_polymorphic_field_t,
+  ): ProtoFlattenedSerializerField_t_polymorphic_field_t {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 polymorphic_field_serializer_name_sym */ 1:
+          message.polymorphic_field_serializer_name_sym = reader.int32();
+          break;
+        case /* optional int32 polymorphic_field_serializer_version */ 2:
+          message.polymorphic_field_serializer_version = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: ProtoFlattenedSerializerField_t_polymorphic_field_t,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 polymorphic_field_serializer_name_sym = 1; */
+    if (message.polymorphic_field_serializer_name_sym !== undefined)
+      writer.tag(1, WireType.Varint).int32(message.polymorphic_field_serializer_name_sym);
+    /* optional int32 polymorphic_field_serializer_version = 2; */
+    if (message.polymorphic_field_serializer_version !== undefined)
+      writer.tag(2, WireType.Varint).int32(message.polymorphic_field_serializer_version);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message ProtoFlattenedSerializerField_t.polymorphic_field_t
  */
 export const ProtoFlattenedSerializerField_t_polymorphic_field_t =
-	new ProtoFlattenedSerializerField_t_polymorphic_field_t$Type();
+  new ProtoFlattenedSerializerField_t_polymorphic_field_t$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ProtoFlattenedSerializer_t$Type extends MessageType<ProtoFlattenedSerializer_t> {
-	constructor() {
-		super("ProtoFlattenedSerializer_t", [
-			{
-				no: 1,
-				name: "serializer_name_sym",
-				kind: "scalar",
-				localName: "serializer_name_sym",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "serializer_version",
-				kind: "scalar",
-				localName: "serializer_version",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "fields_index",
-				kind: "scalar",
-				localName: "fields_index",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<ProtoFlattenedSerializer_t>): ProtoFlattenedSerializer_t {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.fields_index = [];
-		if (value !== undefined) reflectionMergePartial<ProtoFlattenedSerializer_t>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: ProtoFlattenedSerializer_t,
-	): ProtoFlattenedSerializer_t {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 serializer_name_sym */ 1:
-					message.serializer_name_sym = reader.int32();
-					break;
-				case /* optional int32 serializer_version */ 2:
-					message.serializer_version = reader.int32();
-					break;
-				case /* repeated int32 fields_index */ 3:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.fields_index.push(reader.int32());
-					else message.fields_index.push(reader.int32());
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: ProtoFlattenedSerializer_t,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 serializer_name_sym = 1; */
-		if (message.serializer_name_sym !== undefined) writer.tag(1, WireType.Varint).int32(message.serializer_name_sym);
-		/* optional int32 serializer_version = 2; */
-		if (message.serializer_version !== undefined) writer.tag(2, WireType.Varint).int32(message.serializer_version);
-		/* repeated int32 fields_index = 3; */
-		for (let i = 0; i < message.fields_index.length; i++) writer.tag(3, WireType.Varint).int32(message.fields_index[i]);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("ProtoFlattenedSerializer_t", [
+      {
+        no: 1,
+        name: "serializer_name_sym",
+        kind: "scalar",
+        localName: "serializer_name_sym",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "serializer_version",
+        kind: "scalar",
+        localName: "serializer_version",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "fields_index",
+        kind: "scalar",
+        localName: "fields_index",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<ProtoFlattenedSerializer_t>): ProtoFlattenedSerializer_t {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.fields_index = [];
+    if (value !== undefined) reflectionMergePartial<ProtoFlattenedSerializer_t>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: ProtoFlattenedSerializer_t,
+  ): ProtoFlattenedSerializer_t {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 serializer_name_sym */ 1:
+          message.serializer_name_sym = reader.int32();
+          break;
+        case /* optional int32 serializer_version */ 2:
+          message.serializer_version = reader.int32();
+          break;
+        case /* repeated int32 fields_index */ 3:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.fields_index.push(reader.int32());
+          else message.fields_index.push(reader.int32());
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: ProtoFlattenedSerializer_t,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 serializer_name_sym = 1; */
+    if (message.serializer_name_sym !== undefined) writer.tag(1, WireType.Varint).int32(message.serializer_name_sym);
+    /* optional int32 serializer_version = 2; */
+    if (message.serializer_version !== undefined) writer.tag(2, WireType.Varint).int32(message.serializer_version);
+    /* repeated int32 fields_index = 3; */
+    for (let i = 0; i < message.fields_index.length; i++) writer.tag(3, WireType.Varint).int32(message.fields_index[i]);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message ProtoFlattenedSerializer_t
@@ -8257,94 +8257,94 @@ class ProtoFlattenedSerializer_t$Type extends MessageType<ProtoFlattenedSerializ
 export const ProtoFlattenedSerializer_t = new ProtoFlattenedSerializer_t$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_FlattenedSerializer$Type extends MessageType<CSVCMsg_FlattenedSerializer> {
-	constructor() {
-		super("CSVCMsg_FlattenedSerializer", [
-			{
-				no: 1,
-				name: "serializers",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => ProtoFlattenedSerializer_t,
-			},
-			{
-				no: 2,
-				name: "symbols",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "fields",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => ProtoFlattenedSerializerField_t,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_FlattenedSerializer>): CSVCMsg_FlattenedSerializer {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.serializers = [];
-		message.symbols = [];
-		message.fields = [];
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_FlattenedSerializer>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_FlattenedSerializer,
-	): CSVCMsg_FlattenedSerializer {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated ProtoFlattenedSerializer_t serializers */ 1:
-					message.serializers.push(ProtoFlattenedSerializer_t.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* repeated string symbols */ 2:
-					message.symbols.push(reader.string());
-					break;
-				case /* repeated ProtoFlattenedSerializerField_t fields */ 3:
-					message.fields.push(ProtoFlattenedSerializerField_t.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_FlattenedSerializer,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated ProtoFlattenedSerializer_t serializers = 1; */
-		for (let i = 0; i < message.serializers.length; i++)
-			ProtoFlattenedSerializer_t.internalBinaryWrite(
-				message.serializers[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated string symbols = 2; */
-		for (let i = 0; i < message.symbols.length; i++) writer.tag(2, WireType.LengthDelimited).string(message.symbols[i]);
-		/* repeated ProtoFlattenedSerializerField_t fields = 3; */
-		for (let i = 0; i < message.fields.length; i++)
-			ProtoFlattenedSerializerField_t.internalBinaryWrite(
-				message.fields[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_FlattenedSerializer", [
+      {
+        no: 1,
+        name: "serializers",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => ProtoFlattenedSerializer_t,
+      },
+      {
+        no: 2,
+        name: "symbols",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "fields",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => ProtoFlattenedSerializerField_t,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_FlattenedSerializer>): CSVCMsg_FlattenedSerializer {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.serializers = [];
+    message.symbols = [];
+    message.fields = [];
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_FlattenedSerializer>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_FlattenedSerializer,
+  ): CSVCMsg_FlattenedSerializer {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated ProtoFlattenedSerializer_t serializers */ 1:
+          message.serializers.push(ProtoFlattenedSerializer_t.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* repeated string symbols */ 2:
+          message.symbols.push(reader.string());
+          break;
+        case /* repeated ProtoFlattenedSerializerField_t fields */ 3:
+          message.fields.push(ProtoFlattenedSerializerField_t.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_FlattenedSerializer,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated ProtoFlattenedSerializer_t serializers = 1; */
+    for (let i = 0; i < message.serializers.length; i++)
+      ProtoFlattenedSerializer_t.internalBinaryWrite(
+        message.serializers[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated string symbols = 2; */
+    for (let i = 0; i < message.symbols.length; i++) writer.tag(2, WireType.LengthDelimited).string(message.symbols[i]);
+    /* repeated ProtoFlattenedSerializerField_t fields = 3; */
+    for (let i = 0; i < message.fields.length; i++)
+      ProtoFlattenedSerializerField_t.internalBinaryWrite(
+        message.fields[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_FlattenedSerializer
@@ -8352,53 +8352,53 @@ class CSVCMsg_FlattenedSerializer$Type extends MessageType<CSVCMsg_FlattenedSeri
 export const CSVCMsg_FlattenedSerializer = new CSVCMsg_FlattenedSerializer$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_StopSound$Type extends MessageType<CSVCMsg_StopSound> {
-	constructor() {
-		super("CSVCMsg_StopSound", [
-			{
-				no: 1,
-				name: "guid",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_StopSound>): CSVCMsg_StopSound {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_StopSound>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_StopSound,
-	): CSVCMsg_StopSound {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 guid */ 1:
-					message.guid = reader.fixed32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_StopSound, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional fixed32 guid = 1; */
-		if (message.guid !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.guid);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_StopSound", [
+      {
+        no: 1,
+        name: "guid",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_StopSound>): CSVCMsg_StopSound {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_StopSound>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_StopSound,
+  ): CSVCMsg_StopSound {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 guid */ 1:
+          message.guid = reader.fixed32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_StopSound, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional fixed32 guid = 1; */
+    if (message.guid !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.guid);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_StopSound
@@ -8406,94 +8406,94 @@ class CSVCMsg_StopSound$Type extends MessageType<CSVCMsg_StopSound> {
 export const CSVCMsg_StopSound = new CSVCMsg_StopSound$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CBidirMsg_RebroadcastGameEvent$Type extends MessageType<CBidirMsg_RebroadcastGameEvent> {
-	constructor() {
-		super("CBidirMsg_RebroadcastGameEvent", [
-			{
-				no: 1,
-				name: "posttoserver",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 2,
-				name: "buftype",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "clientbitcount",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "receivingclients",
-				kind: "scalar",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CBidirMsg_RebroadcastGameEvent>): CBidirMsg_RebroadcastGameEvent {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CBidirMsg_RebroadcastGameEvent>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CBidirMsg_RebroadcastGameEvent,
-	): CBidirMsg_RebroadcastGameEvent {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool posttoserver */ 1:
-					message.posttoserver = reader.bool();
-					break;
-				case /* optional int32 buftype */ 2:
-					message.buftype = reader.int32();
-					break;
-				case /* optional uint32 clientbitcount */ 3:
-					message.clientbitcount = reader.uint32();
-					break;
-				case /* optional uint64 receivingclients */ 4:
-					message.receivingclients = reader.uint64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CBidirMsg_RebroadcastGameEvent,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool posttoserver = 1; */
-		if (message.posttoserver !== undefined) writer.tag(1, WireType.Varint).bool(message.posttoserver);
-		/* optional int32 buftype = 2; */
-		if (message.buftype !== undefined) writer.tag(2, WireType.Varint).int32(message.buftype);
-		/* optional uint32 clientbitcount = 3; */
-		if (message.clientbitcount !== undefined) writer.tag(3, WireType.Varint).uint32(message.clientbitcount);
-		/* optional uint64 receivingclients = 4; */
-		if (message.receivingclients !== undefined) writer.tag(4, WireType.Varint).uint64(message.receivingclients);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CBidirMsg_RebroadcastGameEvent", [
+      {
+        no: 1,
+        name: "posttoserver",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 2,
+        name: "buftype",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "clientbitcount",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "receivingclients",
+        kind: "scalar",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CBidirMsg_RebroadcastGameEvent>): CBidirMsg_RebroadcastGameEvent {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CBidirMsg_RebroadcastGameEvent>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CBidirMsg_RebroadcastGameEvent,
+  ): CBidirMsg_RebroadcastGameEvent {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool posttoserver */ 1:
+          message.posttoserver = reader.bool();
+          break;
+        case /* optional int32 buftype */ 2:
+          message.buftype = reader.int32();
+          break;
+        case /* optional uint32 clientbitcount */ 3:
+          message.clientbitcount = reader.uint32();
+          break;
+        case /* optional uint64 receivingclients */ 4:
+          message.receivingclients = reader.uint64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CBidirMsg_RebroadcastGameEvent,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool posttoserver = 1; */
+    if (message.posttoserver !== undefined) writer.tag(1, WireType.Varint).bool(message.posttoserver);
+    /* optional int32 buftype = 2; */
+    if (message.buftype !== undefined) writer.tag(2, WireType.Varint).int32(message.buftype);
+    /* optional uint32 clientbitcount = 3; */
+    if (message.clientbitcount !== undefined) writer.tag(3, WireType.Varint).uint32(message.clientbitcount);
+    /* optional uint64 receivingclients = 4; */
+    if (message.receivingclients !== undefined) writer.tag(4, WireType.Varint).uint64(message.receivingclients);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CBidirMsg_RebroadcastGameEvent
@@ -8501,57 +8501,57 @@ class CBidirMsg_RebroadcastGameEvent$Type extends MessageType<CBidirMsg_Rebroadc
 export const CBidirMsg_RebroadcastGameEvent = new CBidirMsg_RebroadcastGameEvent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CBidirMsg_RebroadcastSource$Type extends MessageType<CBidirMsg_RebroadcastSource> {
-	constructor() {
-		super("CBidirMsg_RebroadcastSource", [
-			{
-				no: 1,
-				name: "eventsource",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CBidirMsg_RebroadcastSource>): CBidirMsg_RebroadcastSource {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CBidirMsg_RebroadcastSource>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CBidirMsg_RebroadcastSource,
-	): CBidirMsg_RebroadcastSource {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 eventsource */ 1:
-					message.eventsource = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CBidirMsg_RebroadcastSource,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 eventsource = 1; */
-		if (message.eventsource !== undefined) writer.tag(1, WireType.Varint).int32(message.eventsource);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CBidirMsg_RebroadcastSource", [
+      {
+        no: 1,
+        name: "eventsource",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CBidirMsg_RebroadcastSource>): CBidirMsg_RebroadcastSource {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CBidirMsg_RebroadcastSource>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CBidirMsg_RebroadcastSource,
+  ): CBidirMsg_RebroadcastSource {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 eventsource */ 1:
+          message.eventsource = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CBidirMsg_RebroadcastSource,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 eventsource = 1; */
+    if (message.eventsource !== undefined) writer.tag(1, WireType.Varint).int32(message.eventsource);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CBidirMsg_RebroadcastSource
@@ -8559,382 +8559,382 @@ class CBidirMsg_RebroadcastSource$Type extends MessageType<CBidirMsg_Rebroadcast
 export const CBidirMsg_RebroadcastSource = new CBidirMsg_RebroadcastSource$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerNetworkStats$Type extends MessageType<CMsgServerNetworkStats> {
-	constructor() {
-		super("CMsgServerNetworkStats", [
-			{
-				no: 1,
-				name: "dedicated",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 2,
-				name: "cpu_usage",
-				kind: "scalar",
-				localName: "cpu_usage",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "memory_used_mb",
-				kind: "scalar",
-				localName: "memory_used_mb",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "memory_free_mb",
-				kind: "scalar",
-				localName: "memory_free_mb",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "uptime",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 6,
-				name: "spawn_count",
-				kind: "scalar",
-				localName: "spawn_count",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 8,
-				name: "num_clients",
-				kind: "scalar",
-				localName: "num_clients",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 9,
-				name: "num_bots",
-				kind: "scalar",
-				localName: "num_bots",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 10,
-				name: "num_spectators",
-				kind: "scalar",
-				localName: "num_spectators",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 11,
-				name: "num_tv_relays",
-				kind: "scalar",
-				localName: "num_tv_relays",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 12,
-				name: "fps",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 17,
-				name: "ports",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerNetworkStats_Port,
-			},
-			{
-				no: 18,
-				name: "avg_ping_ms",
-				kind: "scalar",
-				localName: "avg_ping_ms",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 19,
-				name: "avg_engine_latency_out",
-				kind: "scalar",
-				localName: "avg_engine_latency_out",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 20,
-				name: "avg_packets_out",
-				kind: "scalar",
-				localName: "avg_packets_out",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 21,
-				name: "avg_packets_in",
-				kind: "scalar",
-				localName: "avg_packets_in",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 22,
-				name: "avg_loss_out",
-				kind: "scalar",
-				localName: "avg_loss_out",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 23,
-				name: "avg_loss_in",
-				kind: "scalar",
-				localName: "avg_loss_in",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 24,
-				name: "avg_data_out",
-				kind: "scalar",
-				localName: "avg_data_out",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 25,
-				name: "avg_data_in",
-				kind: "scalar",
-				localName: "avg_data_in",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 26,
-				name: "total_data_in",
-				kind: "scalar",
-				localName: "total_data_in",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 27,
-				name: "total_packets_in",
-				kind: "scalar",
-				localName: "total_packets_in",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 28,
-				name: "total_data_out",
-				kind: "scalar",
-				localName: "total_data_out",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 29,
-				name: "total_packets_out",
-				kind: "scalar",
-				localName: "total_packets_out",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 30,
-				name: "players",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerNetworkStats_Player,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerNetworkStats>): CMsgServerNetworkStats {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.ports = [];
-		message.players = [];
-		if (value !== undefined) reflectionMergePartial<CMsgServerNetworkStats>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerNetworkStats,
-	): CMsgServerNetworkStats {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool dedicated */ 1:
-					message.dedicated = reader.bool();
-					break;
-				case /* optional int32 cpu_usage */ 2:
-					message.cpu_usage = reader.int32();
-					break;
-				case /* optional int32 memory_used_mb */ 3:
-					message.memory_used_mb = reader.int32();
-					break;
-				case /* optional int32 memory_free_mb */ 4:
-					message.memory_free_mb = reader.int32();
-					break;
-				case /* optional int32 uptime */ 5:
-					message.uptime = reader.int32();
-					break;
-				case /* optional int32 spawn_count */ 6:
-					message.spawn_count = reader.int32();
-					break;
-				case /* optional int32 num_clients */ 8:
-					message.num_clients = reader.int32();
-					break;
-				case /* optional int32 num_bots */ 9:
-					message.num_bots = reader.int32();
-					break;
-				case /* optional int32 num_spectators */ 10:
-					message.num_spectators = reader.int32();
-					break;
-				case /* optional int32 num_tv_relays */ 11:
-					message.num_tv_relays = reader.int32();
-					break;
-				case /* optional float fps */ 12:
-					message.fps = reader.float();
-					break;
-				case /* repeated CMsgServerNetworkStats.Port ports */ 17:
-					message.ports.push(CMsgServerNetworkStats_Port.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* optional float avg_ping_ms */ 18:
-					message.avg_ping_ms = reader.float();
-					break;
-				case /* optional float avg_engine_latency_out */ 19:
-					message.avg_engine_latency_out = reader.float();
-					break;
-				case /* optional float avg_packets_out */ 20:
-					message.avg_packets_out = reader.float();
-					break;
-				case /* optional float avg_packets_in */ 21:
-					message.avg_packets_in = reader.float();
-					break;
-				case /* optional float avg_loss_out */ 22:
-					message.avg_loss_out = reader.float();
-					break;
-				case /* optional float avg_loss_in */ 23:
-					message.avg_loss_in = reader.float();
-					break;
-				case /* optional float avg_data_out */ 24:
-					message.avg_data_out = reader.float();
-					break;
-				case /* optional float avg_data_in */ 25:
-					message.avg_data_in = reader.float();
-					break;
-				case /* optional uint64 total_data_in */ 26:
-					message.total_data_in = reader.uint64().toBigInt();
-					break;
-				case /* optional uint64 total_packets_in */ 27:
-					message.total_packets_in = reader.uint64().toBigInt();
-					break;
-				case /* optional uint64 total_data_out */ 28:
-					message.total_data_out = reader.uint64().toBigInt();
-					break;
-				case /* optional uint64 total_packets_out */ 29:
-					message.total_packets_out = reader.uint64().toBigInt();
-					break;
-				case /* repeated CMsgServerNetworkStats.Player players */ 30:
-					message.players.push(CMsgServerNetworkStats_Player.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerNetworkStats,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool dedicated = 1; */
-		if (message.dedicated !== undefined) writer.tag(1, WireType.Varint).bool(message.dedicated);
-		/* optional int32 cpu_usage = 2; */
-		if (message.cpu_usage !== undefined) writer.tag(2, WireType.Varint).int32(message.cpu_usage);
-		/* optional int32 memory_used_mb = 3; */
-		if (message.memory_used_mb !== undefined) writer.tag(3, WireType.Varint).int32(message.memory_used_mb);
-		/* optional int32 memory_free_mb = 4; */
-		if (message.memory_free_mb !== undefined) writer.tag(4, WireType.Varint).int32(message.memory_free_mb);
-		/* optional int32 uptime = 5; */
-		if (message.uptime !== undefined) writer.tag(5, WireType.Varint).int32(message.uptime);
-		/* optional int32 spawn_count = 6; */
-		if (message.spawn_count !== undefined) writer.tag(6, WireType.Varint).int32(message.spawn_count);
-		/* optional int32 num_clients = 8; */
-		if (message.num_clients !== undefined) writer.tag(8, WireType.Varint).int32(message.num_clients);
-		/* optional int32 num_bots = 9; */
-		if (message.num_bots !== undefined) writer.tag(9, WireType.Varint).int32(message.num_bots);
-		/* optional int32 num_spectators = 10; */
-		if (message.num_spectators !== undefined) writer.tag(10, WireType.Varint).int32(message.num_spectators);
-		/* optional int32 num_tv_relays = 11; */
-		if (message.num_tv_relays !== undefined) writer.tag(11, WireType.Varint).int32(message.num_tv_relays);
-		/* optional float fps = 12; */
-		if (message.fps !== undefined) writer.tag(12, WireType.Bit32).float(message.fps);
-		/* repeated CMsgServerNetworkStats.Port ports = 17; */
-		for (let i = 0; i < message.ports.length; i++)
-			CMsgServerNetworkStats_Port.internalBinaryWrite(
-				message.ports[i],
-				writer.tag(17, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional float avg_ping_ms = 18; */
-		if (message.avg_ping_ms !== undefined) writer.tag(18, WireType.Bit32).float(message.avg_ping_ms);
-		/* optional float avg_engine_latency_out = 19; */
-		if (message.avg_engine_latency_out !== undefined)
-			writer.tag(19, WireType.Bit32).float(message.avg_engine_latency_out);
-		/* optional float avg_packets_out = 20; */
-		if (message.avg_packets_out !== undefined) writer.tag(20, WireType.Bit32).float(message.avg_packets_out);
-		/* optional float avg_packets_in = 21; */
-		if (message.avg_packets_in !== undefined) writer.tag(21, WireType.Bit32).float(message.avg_packets_in);
-		/* optional float avg_loss_out = 22; */
-		if (message.avg_loss_out !== undefined) writer.tag(22, WireType.Bit32).float(message.avg_loss_out);
-		/* optional float avg_loss_in = 23; */
-		if (message.avg_loss_in !== undefined) writer.tag(23, WireType.Bit32).float(message.avg_loss_in);
-		/* optional float avg_data_out = 24; */
-		if (message.avg_data_out !== undefined) writer.tag(24, WireType.Bit32).float(message.avg_data_out);
-		/* optional float avg_data_in = 25; */
-		if (message.avg_data_in !== undefined) writer.tag(25, WireType.Bit32).float(message.avg_data_in);
-		/* optional uint64 total_data_in = 26; */
-		if (message.total_data_in !== undefined) writer.tag(26, WireType.Varint).uint64(message.total_data_in);
-		/* optional uint64 total_packets_in = 27; */
-		if (message.total_packets_in !== undefined) writer.tag(27, WireType.Varint).uint64(message.total_packets_in);
-		/* optional uint64 total_data_out = 28; */
-		if (message.total_data_out !== undefined) writer.tag(28, WireType.Varint).uint64(message.total_data_out);
-		/* optional uint64 total_packets_out = 29; */
-		if (message.total_packets_out !== undefined) writer.tag(29, WireType.Varint).uint64(message.total_packets_out);
-		/* repeated CMsgServerNetworkStats.Player players = 30; */
-		for (let i = 0; i < message.players.length; i++)
-			CMsgServerNetworkStats_Player.internalBinaryWrite(
-				message.players[i],
-				writer.tag(30, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerNetworkStats", [
+      {
+        no: 1,
+        name: "dedicated",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 2,
+        name: "cpu_usage",
+        kind: "scalar",
+        localName: "cpu_usage",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "memory_used_mb",
+        kind: "scalar",
+        localName: "memory_used_mb",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "memory_free_mb",
+        kind: "scalar",
+        localName: "memory_free_mb",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "uptime",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 6,
+        name: "spawn_count",
+        kind: "scalar",
+        localName: "spawn_count",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 8,
+        name: "num_clients",
+        kind: "scalar",
+        localName: "num_clients",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 9,
+        name: "num_bots",
+        kind: "scalar",
+        localName: "num_bots",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 10,
+        name: "num_spectators",
+        kind: "scalar",
+        localName: "num_spectators",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 11,
+        name: "num_tv_relays",
+        kind: "scalar",
+        localName: "num_tv_relays",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 12,
+        name: "fps",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 17,
+        name: "ports",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerNetworkStats_Port,
+      },
+      {
+        no: 18,
+        name: "avg_ping_ms",
+        kind: "scalar",
+        localName: "avg_ping_ms",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 19,
+        name: "avg_engine_latency_out",
+        kind: "scalar",
+        localName: "avg_engine_latency_out",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 20,
+        name: "avg_packets_out",
+        kind: "scalar",
+        localName: "avg_packets_out",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 21,
+        name: "avg_packets_in",
+        kind: "scalar",
+        localName: "avg_packets_in",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 22,
+        name: "avg_loss_out",
+        kind: "scalar",
+        localName: "avg_loss_out",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 23,
+        name: "avg_loss_in",
+        kind: "scalar",
+        localName: "avg_loss_in",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 24,
+        name: "avg_data_out",
+        kind: "scalar",
+        localName: "avg_data_out",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 25,
+        name: "avg_data_in",
+        kind: "scalar",
+        localName: "avg_data_in",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 26,
+        name: "total_data_in",
+        kind: "scalar",
+        localName: "total_data_in",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 27,
+        name: "total_packets_in",
+        kind: "scalar",
+        localName: "total_packets_in",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 28,
+        name: "total_data_out",
+        kind: "scalar",
+        localName: "total_data_out",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 29,
+        name: "total_packets_out",
+        kind: "scalar",
+        localName: "total_packets_out",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 30,
+        name: "players",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerNetworkStats_Player,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerNetworkStats>): CMsgServerNetworkStats {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.ports = [];
+    message.players = [];
+    if (value !== undefined) reflectionMergePartial<CMsgServerNetworkStats>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerNetworkStats,
+  ): CMsgServerNetworkStats {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool dedicated */ 1:
+          message.dedicated = reader.bool();
+          break;
+        case /* optional int32 cpu_usage */ 2:
+          message.cpu_usage = reader.int32();
+          break;
+        case /* optional int32 memory_used_mb */ 3:
+          message.memory_used_mb = reader.int32();
+          break;
+        case /* optional int32 memory_free_mb */ 4:
+          message.memory_free_mb = reader.int32();
+          break;
+        case /* optional int32 uptime */ 5:
+          message.uptime = reader.int32();
+          break;
+        case /* optional int32 spawn_count */ 6:
+          message.spawn_count = reader.int32();
+          break;
+        case /* optional int32 num_clients */ 8:
+          message.num_clients = reader.int32();
+          break;
+        case /* optional int32 num_bots */ 9:
+          message.num_bots = reader.int32();
+          break;
+        case /* optional int32 num_spectators */ 10:
+          message.num_spectators = reader.int32();
+          break;
+        case /* optional int32 num_tv_relays */ 11:
+          message.num_tv_relays = reader.int32();
+          break;
+        case /* optional float fps */ 12:
+          message.fps = reader.float();
+          break;
+        case /* repeated CMsgServerNetworkStats.Port ports */ 17:
+          message.ports.push(CMsgServerNetworkStats_Port.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* optional float avg_ping_ms */ 18:
+          message.avg_ping_ms = reader.float();
+          break;
+        case /* optional float avg_engine_latency_out */ 19:
+          message.avg_engine_latency_out = reader.float();
+          break;
+        case /* optional float avg_packets_out */ 20:
+          message.avg_packets_out = reader.float();
+          break;
+        case /* optional float avg_packets_in */ 21:
+          message.avg_packets_in = reader.float();
+          break;
+        case /* optional float avg_loss_out */ 22:
+          message.avg_loss_out = reader.float();
+          break;
+        case /* optional float avg_loss_in */ 23:
+          message.avg_loss_in = reader.float();
+          break;
+        case /* optional float avg_data_out */ 24:
+          message.avg_data_out = reader.float();
+          break;
+        case /* optional float avg_data_in */ 25:
+          message.avg_data_in = reader.float();
+          break;
+        case /* optional uint64 total_data_in */ 26:
+          message.total_data_in = reader.uint64().toBigInt();
+          break;
+        case /* optional uint64 total_packets_in */ 27:
+          message.total_packets_in = reader.uint64().toBigInt();
+          break;
+        case /* optional uint64 total_data_out */ 28:
+          message.total_data_out = reader.uint64().toBigInt();
+          break;
+        case /* optional uint64 total_packets_out */ 29:
+          message.total_packets_out = reader.uint64().toBigInt();
+          break;
+        case /* repeated CMsgServerNetworkStats.Player players */ 30:
+          message.players.push(CMsgServerNetworkStats_Player.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerNetworkStats,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool dedicated = 1; */
+    if (message.dedicated !== undefined) writer.tag(1, WireType.Varint).bool(message.dedicated);
+    /* optional int32 cpu_usage = 2; */
+    if (message.cpu_usage !== undefined) writer.tag(2, WireType.Varint).int32(message.cpu_usage);
+    /* optional int32 memory_used_mb = 3; */
+    if (message.memory_used_mb !== undefined) writer.tag(3, WireType.Varint).int32(message.memory_used_mb);
+    /* optional int32 memory_free_mb = 4; */
+    if (message.memory_free_mb !== undefined) writer.tag(4, WireType.Varint).int32(message.memory_free_mb);
+    /* optional int32 uptime = 5; */
+    if (message.uptime !== undefined) writer.tag(5, WireType.Varint).int32(message.uptime);
+    /* optional int32 spawn_count = 6; */
+    if (message.spawn_count !== undefined) writer.tag(6, WireType.Varint).int32(message.spawn_count);
+    /* optional int32 num_clients = 8; */
+    if (message.num_clients !== undefined) writer.tag(8, WireType.Varint).int32(message.num_clients);
+    /* optional int32 num_bots = 9; */
+    if (message.num_bots !== undefined) writer.tag(9, WireType.Varint).int32(message.num_bots);
+    /* optional int32 num_spectators = 10; */
+    if (message.num_spectators !== undefined) writer.tag(10, WireType.Varint).int32(message.num_spectators);
+    /* optional int32 num_tv_relays = 11; */
+    if (message.num_tv_relays !== undefined) writer.tag(11, WireType.Varint).int32(message.num_tv_relays);
+    /* optional float fps = 12; */
+    if (message.fps !== undefined) writer.tag(12, WireType.Bit32).float(message.fps);
+    /* repeated CMsgServerNetworkStats.Port ports = 17; */
+    for (let i = 0; i < message.ports.length; i++)
+      CMsgServerNetworkStats_Port.internalBinaryWrite(
+        message.ports[i],
+        writer.tag(17, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional float avg_ping_ms = 18; */
+    if (message.avg_ping_ms !== undefined) writer.tag(18, WireType.Bit32).float(message.avg_ping_ms);
+    /* optional float avg_engine_latency_out = 19; */
+    if (message.avg_engine_latency_out !== undefined)
+      writer.tag(19, WireType.Bit32).float(message.avg_engine_latency_out);
+    /* optional float avg_packets_out = 20; */
+    if (message.avg_packets_out !== undefined) writer.tag(20, WireType.Bit32).float(message.avg_packets_out);
+    /* optional float avg_packets_in = 21; */
+    if (message.avg_packets_in !== undefined) writer.tag(21, WireType.Bit32).float(message.avg_packets_in);
+    /* optional float avg_loss_out = 22; */
+    if (message.avg_loss_out !== undefined) writer.tag(22, WireType.Bit32).float(message.avg_loss_out);
+    /* optional float avg_loss_in = 23; */
+    if (message.avg_loss_in !== undefined) writer.tag(23, WireType.Bit32).float(message.avg_loss_in);
+    /* optional float avg_data_out = 24; */
+    if (message.avg_data_out !== undefined) writer.tag(24, WireType.Bit32).float(message.avg_data_out);
+    /* optional float avg_data_in = 25; */
+    if (message.avg_data_in !== undefined) writer.tag(25, WireType.Bit32).float(message.avg_data_in);
+    /* optional uint64 total_data_in = 26; */
+    if (message.total_data_in !== undefined) writer.tag(26, WireType.Varint).uint64(message.total_data_in);
+    /* optional uint64 total_packets_in = 27; */
+    if (message.total_packets_in !== undefined) writer.tag(27, WireType.Varint).uint64(message.total_packets_in);
+    /* optional uint64 total_data_out = 28; */
+    if (message.total_data_out !== undefined) writer.tag(28, WireType.Varint).uint64(message.total_data_out);
+    /* optional uint64 total_packets_out = 29; */
+    if (message.total_packets_out !== undefined) writer.tag(29, WireType.Varint).uint64(message.total_packets_out);
+    /* repeated CMsgServerNetworkStats.Player players = 30; */
+    for (let i = 0; i < message.players.length; i++)
+      CMsgServerNetworkStats_Player.internalBinaryWrite(
+        message.players[i],
+        writer.tag(30, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerNetworkStats
@@ -8942,69 +8942,69 @@ class CMsgServerNetworkStats$Type extends MessageType<CMsgServerNetworkStats> {
 export const CMsgServerNetworkStats = new CMsgServerNetworkStats$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerNetworkStats_Port$Type extends MessageType<CMsgServerNetworkStats_Port> {
-	constructor() {
-		super("CMsgServerNetworkStats.Port", [
-			{
-				no: 1,
-				name: "port",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerNetworkStats_Port>): CMsgServerNetworkStats_Port {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerNetworkStats_Port>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerNetworkStats_Port,
-	): CMsgServerNetworkStats_Port {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 port */ 1:
-					message.port = reader.int32();
-					break;
-				case /* optional string name */ 2:
-					message.name = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerNetworkStats_Port,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 port = 1; */
-		if (message.port !== undefined) writer.tag(1, WireType.Varint).int32(message.port);
-		/* optional string name = 2; */
-		if (message.name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.name);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerNetworkStats.Port", [
+      {
+        no: 1,
+        name: "port",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerNetworkStats_Port>): CMsgServerNetworkStats_Port {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerNetworkStats_Port>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerNetworkStats_Port,
+  ): CMsgServerNetworkStats_Port {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 port */ 1:
+          message.port = reader.int32();
+          break;
+        case /* optional string name */ 2:
+          message.name = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerNetworkStats_Port,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 port = 1; */
+    if (message.port !== undefined) writer.tag(1, WireType.Varint).int32(message.port);
+    /* optional string name = 2; */
+    if (message.name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.name);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerNetworkStats.Port
@@ -9012,149 +9012,149 @@ class CMsgServerNetworkStats_Port$Type extends MessageType<CMsgServerNetworkStat
 export const CMsgServerNetworkStats_Port = new CMsgServerNetworkStats_Port$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerNetworkStats_Player$Type extends MessageType<CMsgServerNetworkStats_Player> {
-	constructor() {
-		super("CMsgServerNetworkStats.Player", [
-			{
-				no: 1,
-				name: "steamid",
-				kind: "scalar",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "remote_addr",
-				kind: "scalar",
-				localName: "remote_addr",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 4,
-				name: "ping_avg_ms",
-				kind: "scalar",
-				localName: "ping_avg_ms",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "packet_loss_pct",
-				kind: "scalar",
-				localName: "packet_loss_pct",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 6,
-				name: "is_bot",
-				kind: "scalar",
-				localName: "is_bot",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 7,
-				name: "loss_in",
-				kind: "scalar",
-				localName: "loss_in",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 8,
-				name: "loss_out",
-				kind: "scalar",
-				localName: "loss_out",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 9,
-				name: "engine_latency_ms",
-				kind: "scalar",
-				localName: "engine_latency_ms",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerNetworkStats_Player>): CMsgServerNetworkStats_Player {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerNetworkStats_Player>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerNetworkStats_Player,
-	): CMsgServerNetworkStats_Player {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint64 steamid */ 1:
-					message.steamid = reader.uint64().toBigInt();
-					break;
-				case /* optional string remote_addr */ 2:
-					message.remote_addr = reader.string();
-					break;
-				case /* optional int32 ping_avg_ms */ 4:
-					message.ping_avg_ms = reader.int32();
-					break;
-				case /* optional float packet_loss_pct */ 5:
-					message.packet_loss_pct = reader.float();
-					break;
-				case /* optional bool is_bot */ 6:
-					message.is_bot = reader.bool();
-					break;
-				case /* optional float loss_in */ 7:
-					message.loss_in = reader.float();
-					break;
-				case /* optional float loss_out */ 8:
-					message.loss_out = reader.float();
-					break;
-				case /* optional int32 engine_latency_ms */ 9:
-					message.engine_latency_ms = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerNetworkStats_Player,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint64 steamid = 1; */
-		if (message.steamid !== undefined) writer.tag(1, WireType.Varint).uint64(message.steamid);
-		/* optional string remote_addr = 2; */
-		if (message.remote_addr !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.remote_addr);
-		/* optional int32 ping_avg_ms = 4; */
-		if (message.ping_avg_ms !== undefined) writer.tag(4, WireType.Varint).int32(message.ping_avg_ms);
-		/* optional float packet_loss_pct = 5; */
-		if (message.packet_loss_pct !== undefined) writer.tag(5, WireType.Bit32).float(message.packet_loss_pct);
-		/* optional bool is_bot = 6; */
-		if (message.is_bot !== undefined) writer.tag(6, WireType.Varint).bool(message.is_bot);
-		/* optional float loss_in = 7; */
-		if (message.loss_in !== undefined) writer.tag(7, WireType.Bit32).float(message.loss_in);
-		/* optional float loss_out = 8; */
-		if (message.loss_out !== undefined) writer.tag(8, WireType.Bit32).float(message.loss_out);
-		/* optional int32 engine_latency_ms = 9; */
-		if (message.engine_latency_ms !== undefined) writer.tag(9, WireType.Varint).int32(message.engine_latency_ms);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerNetworkStats.Player", [
+      {
+        no: 1,
+        name: "steamid",
+        kind: "scalar",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "remote_addr",
+        kind: "scalar",
+        localName: "remote_addr",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 4,
+        name: "ping_avg_ms",
+        kind: "scalar",
+        localName: "ping_avg_ms",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "packet_loss_pct",
+        kind: "scalar",
+        localName: "packet_loss_pct",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 6,
+        name: "is_bot",
+        kind: "scalar",
+        localName: "is_bot",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 7,
+        name: "loss_in",
+        kind: "scalar",
+        localName: "loss_in",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 8,
+        name: "loss_out",
+        kind: "scalar",
+        localName: "loss_out",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 9,
+        name: "engine_latency_ms",
+        kind: "scalar",
+        localName: "engine_latency_ms",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerNetworkStats_Player>): CMsgServerNetworkStats_Player {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerNetworkStats_Player>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerNetworkStats_Player,
+  ): CMsgServerNetworkStats_Player {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint64 steamid */ 1:
+          message.steamid = reader.uint64().toBigInt();
+          break;
+        case /* optional string remote_addr */ 2:
+          message.remote_addr = reader.string();
+          break;
+        case /* optional int32 ping_avg_ms */ 4:
+          message.ping_avg_ms = reader.int32();
+          break;
+        case /* optional float packet_loss_pct */ 5:
+          message.packet_loss_pct = reader.float();
+          break;
+        case /* optional bool is_bot */ 6:
+          message.is_bot = reader.bool();
+          break;
+        case /* optional float loss_in */ 7:
+          message.loss_in = reader.float();
+          break;
+        case /* optional float loss_out */ 8:
+          message.loss_out = reader.float();
+          break;
+        case /* optional int32 engine_latency_ms */ 9:
+          message.engine_latency_ms = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerNetworkStats_Player,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint64 steamid = 1; */
+    if (message.steamid !== undefined) writer.tag(1, WireType.Varint).uint64(message.steamid);
+    /* optional string remote_addr = 2; */
+    if (message.remote_addr !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.remote_addr);
+    /* optional int32 ping_avg_ms = 4; */
+    if (message.ping_avg_ms !== undefined) writer.tag(4, WireType.Varint).int32(message.ping_avg_ms);
+    /* optional float packet_loss_pct = 5; */
+    if (message.packet_loss_pct !== undefined) writer.tag(5, WireType.Bit32).float(message.packet_loss_pct);
+    /* optional bool is_bot = 6; */
+    if (message.is_bot !== undefined) writer.tag(6, WireType.Varint).bool(message.is_bot);
+    /* optional float loss_in = 7; */
+    if (message.loss_in !== undefined) writer.tag(7, WireType.Bit32).float(message.loss_in);
+    /* optional float loss_out = 8; */
+    if (message.loss_out !== undefined) writer.tag(8, WireType.Bit32).float(message.loss_out);
+    /* optional int32 engine_latency_ms = 9; */
+    if (message.engine_latency_ms !== undefined) writer.tag(9, WireType.Varint).int32(message.engine_latency_ms);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerNetworkStats.Player
@@ -9162,144 +9162,144 @@ class CMsgServerNetworkStats_Player$Type extends MessageType<CMsgServerNetworkSt
 export const CMsgServerNetworkStats_Player = new CMsgServerNetworkStats_Player$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_HltvReplay$Type extends MessageType<CSVCMsg_HltvReplay> {
-	constructor() {
-		super("CSVCMsg_HltvReplay", [
-			{
-				no: 1,
-				name: "delay",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "primary_target",
-				kind: "scalar",
-				localName: "primary_target",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "replay_stop_at",
-				kind: "scalar",
-				localName: "replay_stop_at",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "replay_start_at",
-				kind: "scalar",
-				localName: "replay_start_at",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "replay_slowdown_begin",
-				kind: "scalar",
-				localName: "replay_slowdown_begin",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 6,
-				name: "replay_slowdown_end",
-				kind: "scalar",
-				localName: "replay_slowdown_end",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 7,
-				name: "replay_slowdown_rate",
-				kind: "scalar",
-				localName: "replay_slowdown_rate",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 8,
-				name: "reason",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_HltvReplay>): CSVCMsg_HltvReplay {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_HltvReplay>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_HltvReplay,
-	): CSVCMsg_HltvReplay {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 delay */ 1:
-					message.delay = reader.int32();
-					break;
-				case /* optional int32 primary_target */ 2:
-					message.primary_target = reader.int32();
-					break;
-				case /* optional int32 replay_stop_at */ 3:
-					message.replay_stop_at = reader.int32();
-					break;
-				case /* optional int32 replay_start_at */ 4:
-					message.replay_start_at = reader.int32();
-					break;
-				case /* optional int32 replay_slowdown_begin */ 5:
-					message.replay_slowdown_begin = reader.int32();
-					break;
-				case /* optional int32 replay_slowdown_end */ 6:
-					message.replay_slowdown_end = reader.int32();
-					break;
-				case /* optional float replay_slowdown_rate */ 7:
-					message.replay_slowdown_rate = reader.float();
-					break;
-				case /* optional int32 reason */ 8:
-					message.reason = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_HltvReplay, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional int32 delay = 1; */
-		if (message.delay !== undefined) writer.tag(1, WireType.Varint).int32(message.delay);
-		/* optional int32 primary_target = 2; */
-		if (message.primary_target !== undefined) writer.tag(2, WireType.Varint).int32(message.primary_target);
-		/* optional int32 replay_stop_at = 3; */
-		if (message.replay_stop_at !== undefined) writer.tag(3, WireType.Varint).int32(message.replay_stop_at);
-		/* optional int32 replay_start_at = 4; */
-		if (message.replay_start_at !== undefined) writer.tag(4, WireType.Varint).int32(message.replay_start_at);
-		/* optional int32 replay_slowdown_begin = 5; */
-		if (message.replay_slowdown_begin !== undefined)
-			writer.tag(5, WireType.Varint).int32(message.replay_slowdown_begin);
-		/* optional int32 replay_slowdown_end = 6; */
-		if (message.replay_slowdown_end !== undefined) writer.tag(6, WireType.Varint).int32(message.replay_slowdown_end);
-		/* optional float replay_slowdown_rate = 7; */
-		if (message.replay_slowdown_rate !== undefined) writer.tag(7, WireType.Bit32).float(message.replay_slowdown_rate);
-		/* optional int32 reason = 8; */
-		if (message.reason !== undefined) writer.tag(8, WireType.Varint).int32(message.reason);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_HltvReplay", [
+      {
+        no: 1,
+        name: "delay",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "primary_target",
+        kind: "scalar",
+        localName: "primary_target",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "replay_stop_at",
+        kind: "scalar",
+        localName: "replay_stop_at",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "replay_start_at",
+        kind: "scalar",
+        localName: "replay_start_at",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "replay_slowdown_begin",
+        kind: "scalar",
+        localName: "replay_slowdown_begin",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 6,
+        name: "replay_slowdown_end",
+        kind: "scalar",
+        localName: "replay_slowdown_end",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 7,
+        name: "replay_slowdown_rate",
+        kind: "scalar",
+        localName: "replay_slowdown_rate",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 8,
+        name: "reason",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_HltvReplay>): CSVCMsg_HltvReplay {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_HltvReplay>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_HltvReplay,
+  ): CSVCMsg_HltvReplay {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 delay */ 1:
+          message.delay = reader.int32();
+          break;
+        case /* optional int32 primary_target */ 2:
+          message.primary_target = reader.int32();
+          break;
+        case /* optional int32 replay_stop_at */ 3:
+          message.replay_stop_at = reader.int32();
+          break;
+        case /* optional int32 replay_start_at */ 4:
+          message.replay_start_at = reader.int32();
+          break;
+        case /* optional int32 replay_slowdown_begin */ 5:
+          message.replay_slowdown_begin = reader.int32();
+          break;
+        case /* optional int32 replay_slowdown_end */ 6:
+          message.replay_slowdown_end = reader.int32();
+          break;
+        case /* optional float replay_slowdown_rate */ 7:
+          message.replay_slowdown_rate = reader.float();
+          break;
+        case /* optional int32 reason */ 8:
+          message.reason = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_HltvReplay, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional int32 delay = 1; */
+    if (message.delay !== undefined) writer.tag(1, WireType.Varint).int32(message.delay);
+    /* optional int32 primary_target = 2; */
+    if (message.primary_target !== undefined) writer.tag(2, WireType.Varint).int32(message.primary_target);
+    /* optional int32 replay_stop_at = 3; */
+    if (message.replay_stop_at !== undefined) writer.tag(3, WireType.Varint).int32(message.replay_stop_at);
+    /* optional int32 replay_start_at = 4; */
+    if (message.replay_start_at !== undefined) writer.tag(4, WireType.Varint).int32(message.replay_start_at);
+    /* optional int32 replay_slowdown_begin = 5; */
+    if (message.replay_slowdown_begin !== undefined)
+      writer.tag(5, WireType.Varint).int32(message.replay_slowdown_begin);
+    /* optional int32 replay_slowdown_end = 6; */
+    if (message.replay_slowdown_end !== undefined) writer.tag(6, WireType.Varint).int32(message.replay_slowdown_end);
+    /* optional float replay_slowdown_rate = 7; */
+    if (message.replay_slowdown_rate !== undefined) writer.tag(7, WireType.Bit32).float(message.replay_slowdown_rate);
+    /* optional int32 reason = 8; */
+    if (message.reason !== undefined) writer.tag(8, WireType.Varint).int32(message.reason);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_HltvReplay
@@ -9307,105 +9307,105 @@ class CSVCMsg_HltvReplay$Type extends MessageType<CSVCMsg_HltvReplay> {
 export const CSVCMsg_HltvReplay = new CSVCMsg_HltvReplay$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_HltvReplay$Type extends MessageType<CCLCMsg_HltvReplay> {
-	constructor() {
-		super("CCLCMsg_HltvReplay", [
-			{
-				no: 1,
-				name: "request",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "slowdown_length",
-				kind: "scalar",
-				localName: "slowdown_length",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "slowdown_rate",
-				kind: "scalar",
-				localName: "slowdown_rate",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "primary_target",
-				kind: "scalar",
-				localName: "primary_target",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "event_time",
-				kind: "scalar",
-				localName: "event_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_HltvReplay>): CCLCMsg_HltvReplay {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_HltvReplay>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_HltvReplay,
-	): CCLCMsg_HltvReplay {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 request */ 1:
-					message.request = reader.int32();
-					break;
-				case /* optional float slowdown_length */ 2:
-					message.slowdown_length = reader.float();
-					break;
-				case /* optional float slowdown_rate */ 3:
-					message.slowdown_rate = reader.float();
-					break;
-				case /* optional int32 primary_target */ 4:
-					message.primary_target = reader.int32();
-					break;
-				case /* optional float event_time */ 5:
-					message.event_time = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CCLCMsg_HltvReplay, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional int32 request = 1; */
-		if (message.request !== undefined) writer.tag(1, WireType.Varint).int32(message.request);
-		/* optional float slowdown_length = 2; */
-		if (message.slowdown_length !== undefined) writer.tag(2, WireType.Bit32).float(message.slowdown_length);
-		/* optional float slowdown_rate = 3; */
-		if (message.slowdown_rate !== undefined) writer.tag(3, WireType.Bit32).float(message.slowdown_rate);
-		/* optional int32 primary_target = 4; */
-		if (message.primary_target !== undefined) writer.tag(4, WireType.Varint).int32(message.primary_target);
-		/* optional float event_time = 5; */
-		if (message.event_time !== undefined) writer.tag(5, WireType.Bit32).float(message.event_time);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_HltvReplay", [
+      {
+        no: 1,
+        name: "request",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "slowdown_length",
+        kind: "scalar",
+        localName: "slowdown_length",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "slowdown_rate",
+        kind: "scalar",
+        localName: "slowdown_rate",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "primary_target",
+        kind: "scalar",
+        localName: "primary_target",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "event_time",
+        kind: "scalar",
+        localName: "event_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_HltvReplay>): CCLCMsg_HltvReplay {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_HltvReplay>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_HltvReplay,
+  ): CCLCMsg_HltvReplay {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 request */ 1:
+          message.request = reader.int32();
+          break;
+        case /* optional float slowdown_length */ 2:
+          message.slowdown_length = reader.float();
+          break;
+        case /* optional float slowdown_rate */ 3:
+          message.slowdown_rate = reader.float();
+          break;
+        case /* optional int32 primary_target */ 4:
+          message.primary_target = reader.int32();
+          break;
+        case /* optional float event_time */ 5:
+          message.event_time = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CCLCMsg_HltvReplay, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional int32 request = 1; */
+    if (message.request !== undefined) writer.tag(1, WireType.Varint).int32(message.request);
+    /* optional float slowdown_length = 2; */
+    if (message.slowdown_length !== undefined) writer.tag(2, WireType.Bit32).float(message.slowdown_length);
+    /* optional float slowdown_rate = 3; */
+    if (message.slowdown_rate !== undefined) writer.tag(3, WireType.Bit32).float(message.slowdown_rate);
+    /* optional int32 primary_target = 4; */
+    if (message.primary_target !== undefined) writer.tag(4, WireType.Varint).int32(message.primary_target);
+    /* optional float event_time = 5; */
+    if (message.event_time !== undefined) writer.tag(5, WireType.Bit32).float(message.event_time);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_HltvReplay
@@ -9413,57 +9413,57 @@ class CCLCMsg_HltvReplay$Type extends MessageType<CCLCMsg_HltvReplay> {
 export const CCLCMsg_HltvReplay = new CCLCMsg_HltvReplay$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_Broadcast_Command$Type extends MessageType<CSVCMsg_Broadcast_Command> {
-	constructor() {
-		super("CSVCMsg_Broadcast_Command", [
-			{
-				no: 1,
-				name: "cmd",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_Broadcast_Command>): CSVCMsg_Broadcast_Command {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_Broadcast_Command>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_Broadcast_Command,
-	): CSVCMsg_Broadcast_Command {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string cmd */ 1:
-					message.cmd = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_Broadcast_Command,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string cmd = 1; */
-		if (message.cmd !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.cmd);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_Broadcast_Command", [
+      {
+        no: 1,
+        name: "cmd",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_Broadcast_Command>): CSVCMsg_Broadcast_Command {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_Broadcast_Command>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_Broadcast_Command,
+  ): CSVCMsg_Broadcast_Command {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string cmd */ 1:
+          message.cmd = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_Broadcast_Command,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string cmd = 1; */
+    if (message.cmd !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.cmd);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_Broadcast_Command
@@ -9471,150 +9471,150 @@ class CSVCMsg_Broadcast_Command$Type extends MessageType<CSVCMsg_Broadcast_Comma
 export const CSVCMsg_Broadcast_Command = new CSVCMsg_Broadcast_Command$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCLCMsg_HltvFixupOperatorTick$Type extends MessageType<CCLCMsg_HltvFixupOperatorTick> {
-	constructor() {
-		super("CCLCMsg_HltvFixupOperatorTick", [
-			{
-				no: 1,
-				name: "tick",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "props_data",
-				kind: "scalar",
-				localName: "props_data",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{ no: 3, name: "origin", kind: "message", T: () => CMsgVector },
-			{
-				no: 4,
-				name: "eye_angles",
-				kind: "message",
-				localName: "eye_angles",
-				T: () => CMsgQAngle,
-			},
-			{
-				no: 5,
-				name: "observer_mode",
-				kind: "scalar",
-				localName: "observer_mode",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 6,
-				name: "cameraman_scoreboard",
-				kind: "scalar",
-				localName: "cameraman_scoreboard",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 7,
-				name: "observer_target",
-				kind: "scalar",
-				localName: "observer_target",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 8,
-				name: "view_offset",
-				kind: "message",
-				localName: "view_offset",
-				T: () => CMsgVector,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCLCMsg_HltvFixupOperatorTick>): CCLCMsg_HltvFixupOperatorTick {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCLCMsg_HltvFixupOperatorTick>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCLCMsg_HltvFixupOperatorTick,
-	): CCLCMsg_HltvFixupOperatorTick {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 tick */ 1:
-					message.tick = reader.int32();
-					break;
-				case /* optional bytes props_data */ 2:
-					message.props_data = reader.bytes();
-					break;
-				case /* optional CMsgVector origin */ 3:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional CMsgQAngle eye_angles */ 4:
-					message.eye_angles = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.eye_angles);
-					break;
-				case /* optional int32 observer_mode */ 5:
-					message.observer_mode = reader.int32();
-					break;
-				case /* optional bool cameraman_scoreboard */ 6:
-					message.cameraman_scoreboard = reader.bool();
-					break;
-				case /* optional int32 observer_target */ 7:
-					message.observer_target = reader.int32();
-					break;
-				case /* optional CMsgVector view_offset */ 8:
-					message.view_offset = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.view_offset);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCLCMsg_HltvFixupOperatorTick,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 tick = 1; */
-		if (message.tick !== undefined) writer.tag(1, WireType.Varint).int32(message.tick);
-		/* optional bytes props_data = 2; */
-		if (message.props_data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.props_data);
-		/* optional CMsgVector origin = 3; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgQAngle eye_angles = 4; */
-		if (message.eye_angles)
-			CMsgQAngle.internalBinaryWrite(
-				message.eye_angles,
-				writer.tag(4, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional int32 observer_mode = 5; */
-		if (message.observer_mode !== undefined) writer.tag(5, WireType.Varint).int32(message.observer_mode);
-		/* optional bool cameraman_scoreboard = 6; */
-		if (message.cameraman_scoreboard !== undefined) writer.tag(6, WireType.Varint).bool(message.cameraman_scoreboard);
-		/* optional int32 observer_target = 7; */
-		if (message.observer_target !== undefined) writer.tag(7, WireType.Varint).int32(message.observer_target);
-		/* optional CMsgVector view_offset = 8; */
-		if (message.view_offset)
-			CMsgVector.internalBinaryWrite(
-				message.view_offset,
-				writer.tag(8, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCLCMsg_HltvFixupOperatorTick", [
+      {
+        no: 1,
+        name: "tick",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "props_data",
+        kind: "scalar",
+        localName: "props_data",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      { no: 3, name: "origin", kind: "message", T: () => CMsgVector },
+      {
+        no: 4,
+        name: "eye_angles",
+        kind: "message",
+        localName: "eye_angles",
+        T: () => CMsgQAngle,
+      },
+      {
+        no: 5,
+        name: "observer_mode",
+        kind: "scalar",
+        localName: "observer_mode",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 6,
+        name: "cameraman_scoreboard",
+        kind: "scalar",
+        localName: "cameraman_scoreboard",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 7,
+        name: "observer_target",
+        kind: "scalar",
+        localName: "observer_target",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 8,
+        name: "view_offset",
+        kind: "message",
+        localName: "view_offset",
+        T: () => CMsgVector,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCLCMsg_HltvFixupOperatorTick>): CCLCMsg_HltvFixupOperatorTick {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCLCMsg_HltvFixupOperatorTick>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCLCMsg_HltvFixupOperatorTick,
+  ): CCLCMsg_HltvFixupOperatorTick {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 tick */ 1:
+          message.tick = reader.int32();
+          break;
+        case /* optional bytes props_data */ 2:
+          message.props_data = reader.bytes();
+          break;
+        case /* optional CMsgVector origin */ 3:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional CMsgQAngle eye_angles */ 4:
+          message.eye_angles = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.eye_angles);
+          break;
+        case /* optional int32 observer_mode */ 5:
+          message.observer_mode = reader.int32();
+          break;
+        case /* optional bool cameraman_scoreboard */ 6:
+          message.cameraman_scoreboard = reader.bool();
+          break;
+        case /* optional int32 observer_target */ 7:
+          message.observer_target = reader.int32();
+          break;
+        case /* optional CMsgVector view_offset */ 8:
+          message.view_offset = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.view_offset);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCLCMsg_HltvFixupOperatorTick,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 tick = 1; */
+    if (message.tick !== undefined) writer.tag(1, WireType.Varint).int32(message.tick);
+    /* optional bytes props_data = 2; */
+    if (message.props_data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.props_data);
+    /* optional CMsgVector origin = 3; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgQAngle eye_angles = 4; */
+    if (message.eye_angles)
+      CMsgQAngle.internalBinaryWrite(
+        message.eye_angles,
+        writer.tag(4, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional int32 observer_mode = 5; */
+    if (message.observer_mode !== undefined) writer.tag(5, WireType.Varint).int32(message.observer_mode);
+    /* optional bool cameraman_scoreboard = 6; */
+    if (message.cameraman_scoreboard !== undefined) writer.tag(6, WireType.Varint).bool(message.cameraman_scoreboard);
+    /* optional int32 observer_target = 7; */
+    if (message.observer_target !== undefined) writer.tag(7, WireType.Varint).int32(message.observer_target);
+    /* optional CMsgVector view_offset = 8; */
+    if (message.view_offset)
+      CMsgVector.internalBinaryWrite(
+        message.view_offset,
+        writer.tag(8, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCLCMsg_HltvFixupOperatorTick
@@ -9622,71 +9622,71 @@ class CCLCMsg_HltvFixupOperatorTick$Type extends MessageType<CCLCMsg_HltvFixupOp
 export const CCLCMsg_HltvFixupOperatorTick = new CCLCMsg_HltvFixupOperatorTick$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_HltvFixupOperatorStatus$Type extends MessageType<CSVCMsg_HltvFixupOperatorStatus> {
-	constructor() {
-		super("CSVCMsg_HltvFixupOperatorStatus", [
-			{
-				no: 1,
-				name: "mode",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "override_operator_name",
-				kind: "scalar",
-				localName: "override_operator_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_HltvFixupOperatorStatus>): CSVCMsg_HltvFixupOperatorStatus {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_HltvFixupOperatorStatus>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_HltvFixupOperatorStatus,
-	): CSVCMsg_HltvFixupOperatorStatus {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 mode */ 1:
-					message.mode = reader.uint32();
-					break;
-				case /* optional string override_operator_name */ 2:
-					message.override_operator_name = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_HltvFixupOperatorStatus,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 mode = 1; */
-		if (message.mode !== undefined) writer.tag(1, WireType.Varint).uint32(message.mode);
-		/* optional string override_operator_name = 2; */
-		if (message.override_operator_name !== undefined)
-			writer.tag(2, WireType.LengthDelimited).string(message.override_operator_name);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_HltvFixupOperatorStatus", [
+      {
+        no: 1,
+        name: "mode",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "override_operator_name",
+        kind: "scalar",
+        localName: "override_operator_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_HltvFixupOperatorStatus>): CSVCMsg_HltvFixupOperatorStatus {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_HltvFixupOperatorStatus>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_HltvFixupOperatorStatus,
+  ): CSVCMsg_HltvFixupOperatorStatus {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 mode */ 1:
+          message.mode = reader.uint32();
+          break;
+        case /* optional string override_operator_name */ 2:
+          message.override_operator_name = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_HltvFixupOperatorStatus,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 mode = 1; */
+    if (message.mode !== undefined) writer.tag(1, WireType.Varint).uint32(message.mode);
+    /* optional string override_operator_name = 2; */
+    if (message.override_operator_name !== undefined)
+      writer.tag(2, WireType.LengthDelimited).string(message.override_operator_name);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_HltvFixupOperatorStatus
@@ -9694,105 +9694,105 @@ class CSVCMsg_HltvFixupOperatorStatus$Type extends MessageType<CSVCMsg_HltvFixup
 export const CSVCMsg_HltvFixupOperatorStatus = new CSVCMsg_HltvFixupOperatorStatus$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerUserCmd$Type extends MessageType<CMsgServerUserCmd> {
-	constructor() {
-		super("CMsgServerUserCmd", [
-			{
-				no: 1,
-				name: "data",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 2,
-				name: "cmd_number",
-				kind: "scalar",
-				localName: "cmd_number",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "player_slot",
-				kind: "scalar",
-				localName: "player_slot",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "server_tick_executed",
-				kind: "scalar",
-				localName: "server_tick_executed",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "client_tick",
-				kind: "scalar",
-				localName: "client_tick",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerUserCmd>): CMsgServerUserCmd {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerUserCmd>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerUserCmd,
-	): CMsgServerUserCmd {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bytes data */ 1:
-					message.data = reader.bytes();
-					break;
-				case /* optional int32 cmd_number */ 2:
-					message.cmd_number = reader.int32();
-					break;
-				case /* optional int32 player_slot */ 3:
-					message.player_slot = reader.int32();
-					break;
-				case /* optional int32 server_tick_executed */ 4:
-					message.server_tick_executed = reader.int32();
-					break;
-				case /* optional int32 client_tick */ 5:
-					message.client_tick = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgServerUserCmd, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional bytes data = 1; */
-		if (message.data !== undefined) writer.tag(1, WireType.LengthDelimited).bytes(message.data);
-		/* optional int32 cmd_number = 2; */
-		if (message.cmd_number !== undefined) writer.tag(2, WireType.Varint).int32(message.cmd_number);
-		/* optional int32 player_slot = 3; */
-		if (message.player_slot !== undefined) writer.tag(3, WireType.Varint).int32(message.player_slot);
-		/* optional int32 server_tick_executed = 4; */
-		if (message.server_tick_executed !== undefined) writer.tag(4, WireType.Varint).int32(message.server_tick_executed);
-		/* optional int32 client_tick = 5; */
-		if (message.client_tick !== undefined) writer.tag(5, WireType.Varint).int32(message.client_tick);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerUserCmd", [
+      {
+        no: 1,
+        name: "data",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 2,
+        name: "cmd_number",
+        kind: "scalar",
+        localName: "cmd_number",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "player_slot",
+        kind: "scalar",
+        localName: "player_slot",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "server_tick_executed",
+        kind: "scalar",
+        localName: "server_tick_executed",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "client_tick",
+        kind: "scalar",
+        localName: "client_tick",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerUserCmd>): CMsgServerUserCmd {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerUserCmd>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerUserCmd,
+  ): CMsgServerUserCmd {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bytes data */ 1:
+          message.data = reader.bytes();
+          break;
+        case /* optional int32 cmd_number */ 2:
+          message.cmd_number = reader.int32();
+          break;
+        case /* optional int32 player_slot */ 3:
+          message.player_slot = reader.int32();
+          break;
+        case /* optional int32 server_tick_executed */ 4:
+          message.server_tick_executed = reader.int32();
+          break;
+        case /* optional int32 client_tick */ 5:
+          message.client_tick = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgServerUserCmd, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional bytes data = 1; */
+    if (message.data !== undefined) writer.tag(1, WireType.LengthDelimited).bytes(message.data);
+    /* optional int32 cmd_number = 2; */
+    if (message.cmd_number !== undefined) writer.tag(2, WireType.Varint).int32(message.cmd_number);
+    /* optional int32 player_slot = 3; */
+    if (message.player_slot !== undefined) writer.tag(3, WireType.Varint).int32(message.player_slot);
+    /* optional int32 server_tick_executed = 4; */
+    if (message.server_tick_executed !== undefined) writer.tag(4, WireType.Varint).int32(message.server_tick_executed);
+    /* optional int32 client_tick = 5; */
+    if (message.client_tick !== undefined) writer.tag(5, WireType.Varint).int32(message.client_tick);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerUserCmd
@@ -9800,63 +9800,63 @@ class CMsgServerUserCmd$Type extends MessageType<CMsgServerUserCmd> {
 export const CMsgServerUserCmd = new CMsgServerUserCmd$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_UserCommands$Type extends MessageType<CSVCMsg_UserCommands> {
-	constructor() {
-		super("CSVCMsg_UserCommands", [
-			{
-				no: 1,
-				name: "commands",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerUserCmd,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_UserCommands>): CSVCMsg_UserCommands {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.commands = [];
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_UserCommands>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_UserCommands,
-	): CSVCMsg_UserCommands {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgServerUserCmd commands */ 1:
-					message.commands.push(CMsgServerUserCmd.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_UserCommands,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CMsgServerUserCmd commands = 1; */
-		for (let i = 0; i < message.commands.length; i++)
-			CMsgServerUserCmd.internalBinaryWrite(
-				message.commands[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_UserCommands", [
+      {
+        no: 1,
+        name: "commands",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerUserCmd,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_UserCommands>): CSVCMsg_UserCommands {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.commands = [];
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_UserCommands>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_UserCommands,
+  ): CSVCMsg_UserCommands {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgServerUserCmd commands */ 1:
+          message.commands.push(CMsgServerUserCmd.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_UserCommands,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CMsgServerUserCmd commands = 1; */
+    for (let i = 0; i < message.commands.length; i++)
+      CMsgServerUserCmd.internalBinaryWrite(
+        message.commands[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_UserCommands

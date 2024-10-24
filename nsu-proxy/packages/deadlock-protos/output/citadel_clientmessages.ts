@@ -21,371 +21,371 @@ export interface CCitadelClientMsg_Pause {}
  * @generated from protobuf message CCitadelClientMsg_MapPing
  */
 export interface CCitadelClientMsg_MapPing {
-	/**
-	 * @generated from protobuf field: optional CMsgVector ping_location = 1;
-	 */
-	ping_location?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional int32 event_type = 2;
-	 */
-	event_type?: number;
-	/**
-	 * @generated from protobuf field: optional int32 entity_index = 3;
-	 */
-	entity_index?: number;
-	/**
-	 * @generated from protobuf field: optional bool is_aggressive_ping = 4;
-	 */
-	is_aggressive_ping?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_minimap_ping = 5;
-	 */
-	is_minimap_ping?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_blind_ping = 6;
-	 */
-	is_blind_ping?: boolean;
+  /**
+   * @generated from protobuf field: optional CMsgVector ping_location = 1;
+   */
+  ping_location?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional int32 event_type = 2;
+   */
+  event_type?: number;
+  /**
+   * @generated from protobuf field: optional int32 entity_index = 3;
+   */
+  entity_index?: number;
+  /**
+   * @generated from protobuf field: optional bool is_aggressive_ping = 4;
+   */
+  is_aggressive_ping?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_minimap_ping = 5;
+   */
+  is_minimap_ping?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_blind_ping = 6;
+   */
+  is_blind_ping?: boolean;
 }
 /**
  * @generated from protobuf message CCitadelClientMsg_PingWheel
  */
 export interface CCitadelClientMsg_PingWheel {
-	/**
-	 * @generated from protobuf field: optional uint32 ping_wheel_option_id = 1;
-	 */
-	ping_wheel_option_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 subnav_message_id = 2;
-	 */
-	subnav_message_id?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector ping_location = 3;
-	 */
-	ping_location?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional int32 entity_index = 4;
-	 */
-	entity_index?: number;
+  /**
+   * @generated from protobuf field: optional uint32 ping_wheel_option_id = 1;
+   */
+  ping_wheel_option_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 subnav_message_id = 2;
+   */
+  subnav_message_id?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector ping_location = 3;
+   */
+  ping_location?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional int32 entity_index = 4;
+   */
+  entity_index?: number;
 }
 /**
  * @generated from protobuf message CCitadelClientMsg_AbilityPing
  */
 export interface CCitadelClientMsg_AbilityPing {
-	/**
-	 * @generated from protobuf field: optional int32 entity_index = 1;
-	 */
-	entity_index?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 pinged_ability_id = 2;
-	 */
-	pinged_ability_id?: number;
-	/**
-	 * @generated from protobuf field: optional int32 pinged_player_slot = 3;
-	 */
-	pinged_player_slot?: number;
+  /**
+   * @generated from protobuf field: optional int32 entity_index = 1;
+   */
+  entity_index?: number;
+  /**
+   * @generated from protobuf field: optional uint32 pinged_ability_id = 2;
+   */
+  pinged_ability_id?: number;
+  /**
+   * @generated from protobuf field: optional int32 pinged_player_slot = 3;
+   */
+  pinged_player_slot?: number;
 }
 /**
  * @generated from protobuf message CCitadelClientMsg_MapLine
  */
 export interface CCitadelClientMsg_MapLine {
-	/**
-	 * @generated from protobuf field: optional CMsgMapLine mapline = 1;
-	 */
-	mapline?: CMsgMapLine;
+  /**
+   * @generated from protobuf field: optional CMsgMapLine mapline = 1;
+   */
+  mapline?: CMsgMapLine;
 }
 /**
  * @generated from protobuf message CCitadelClientMsg_QuickResponse
  */
 export interface CCitadelClientMsg_QuickResponse {
-	/**
-	 * @generated from protobuf field: optional uint32 ping_wheel_message_id = 1;
-	 */
-	ping_wheel_message_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 responding_to_ping_message_id = 2;
-	 */
-	responding_to_ping_message_id?: number;
-	/**
-	 * @generated from protobuf field: optional int32 responding_to_player_slot = 3;
-	 */
-	responding_to_player_slot?: number;
+  /**
+   * @generated from protobuf field: optional uint32 ping_wheel_message_id = 1;
+   */
+  ping_wheel_message_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 responding_to_ping_message_id = 2;
+   */
+  responding_to_ping_message_id?: number;
+  /**
+   * @generated from protobuf field: optional int32 responding_to_player_slot = 3;
+   */
+  responding_to_player_slot?: number;
 }
 /**
  * @generated from protobuf message CCitadelClientMsg_PerformanceStats
  */
 export interface CCitadelClientMsg_PerformanceStats {
-	/**
-	 * @generated from protobuf field: optional float current_game_time = 1;
-	 */
-	current_game_time?: number;
-	/**
-	 * @generated from protobuf field: optional float average_fps = 2;
-	 */
-	average_fps?: number;
-	/**
-	 * @generated from protobuf field: optional float min_fps = 3;
-	 */
-	min_fps?: number;
-	/**
-	 * @generated from protobuf field: optional float max_fps = 4;
-	 */
-	max_fps?: number;
+  /**
+   * @generated from protobuf field: optional float current_game_time = 1;
+   */
+  current_game_time?: number;
+  /**
+   * @generated from protobuf field: optional float average_fps = 2;
+   */
+  average_fps?: number;
+  /**
+   * @generated from protobuf field: optional float min_fps = 3;
+   */
+  min_fps?: number;
+  /**
+   * @generated from protobuf field: optional float max_fps = 4;
+   */
+  max_fps?: number;
 }
 /**
  * @generated from protobuf message CCitadelClientMsg_ChatMsg
  */
 export interface CCitadelClientMsg_ChatMsg {
-	/**
-	 * @generated from protobuf field: optional string chat_text = 1;
-	 */
-	chat_text?: string;
-	/**
-	 * @generated from protobuf field: optional bool all_chat = 2;
-	 */
-	all_chat?: boolean;
-	/**
-	 * @generated from protobuf field: optional CMsgLaneColor lane_color = 3;
-	 */
-	lane_color?: CMsgLaneColor;
+  /**
+   * @generated from protobuf field: optional string chat_text = 1;
+   */
+  chat_text?: string;
+  /**
+   * @generated from protobuf field: optional bool all_chat = 2;
+   */
+  all_chat?: boolean;
+  /**
+   * @generated from protobuf field: optional CMsgLaneColor lane_color = 3;
+   */
+  lane_color?: CMsgLaneColor;
 }
 /**
  * @generated from protobuf message CCitadelClientMsg_PerfReport
  */
 export interface CCitadelClientMsg_PerfReport {
-	/**
-	 * @generated from protobuf field: optional float average_frame_time = 1;
-	 */
-	average_frame_time?: number;
-	/**
-	 * @generated from protobuf field: optional float max_frame_time = 2;
-	 */
-	max_frame_time?: number;
-	/**
-	 * @generated from protobuf field: optional float average_compute_time = 3;
-	 */
-	average_compute_time?: number;
-	/**
-	 * @generated from protobuf field: optional float max_compute_time = 4;
-	 */
-	max_compute_time?: number;
-	/**
-	 * @generated from protobuf field: optional float average_client_tick_time = 5;
-	 */
-	average_client_tick_time?: number;
-	/**
-	 * @generated from protobuf field: optional float max_client_tick_time = 6;
-	 */
-	max_client_tick_time?: number;
-	/**
-	 * @generated from protobuf field: optional float average_client_simulate_time = 7;
-	 */
-	average_client_simulate_time?: number;
-	/**
-	 * @generated from protobuf field: optional float max_client_simulate_time = 8;
-	 */
-	max_client_simulate_time?: number;
-	/**
-	 * @generated from protobuf field: optional float average_output_time = 9;
-	 */
-	average_output_time?: number;
-	/**
-	 * @generated from protobuf field: optional float max_output_time = 10;
-	 */
-	max_output_time?: number;
-	/**
-	 * @generated from protobuf field: optional float average_wait_for_rendering_to_complete_time = 11;
-	 */
-	average_wait_for_rendering_to_complete_time?: number;
-	/**
-	 * @generated from protobuf field: optional float max_wait_for_rendering_to_complete_time = 12;
-	 */
-	max_wait_for_rendering_to_complete_time?: number;
-	/**
-	 * @generated from protobuf field: optional float average_swap_time = 13;
-	 */
-	average_swap_time?: number;
-	/**
-	 * @generated from protobuf field: optional float max_swap_time = 14;
-	 */
-	max_swap_time?: number;
-	/**
-	 * @generated from protobuf field: optional float average_frame_update_time = 15;
-	 */
-	average_frame_update_time?: number;
-	/**
-	 * @generated from protobuf field: optional float max_frame_update_time = 16;
-	 */
-	max_frame_update_time?: number;
-	/**
-	 * @generated from protobuf field: optional float average_idle_time = 17;
-	 */
-	average_idle_time?: number;
-	/**
-	 * @generated from protobuf field: optional float max_idle_time = 18;
-	 */
-	max_idle_time?: number;
-	/**
-	 * @generated from protobuf field: optional float average_input_processing_time = 19;
-	 */
-	average_input_processing_time?: number;
-	/**
-	 * @generated from protobuf field: optional float max_input_processing_time = 20;
-	 */
-	max_input_processing_time?: number;
+  /**
+   * @generated from protobuf field: optional float average_frame_time = 1;
+   */
+  average_frame_time?: number;
+  /**
+   * @generated from protobuf field: optional float max_frame_time = 2;
+   */
+  max_frame_time?: number;
+  /**
+   * @generated from protobuf field: optional float average_compute_time = 3;
+   */
+  average_compute_time?: number;
+  /**
+   * @generated from protobuf field: optional float max_compute_time = 4;
+   */
+  max_compute_time?: number;
+  /**
+   * @generated from protobuf field: optional float average_client_tick_time = 5;
+   */
+  average_client_tick_time?: number;
+  /**
+   * @generated from protobuf field: optional float max_client_tick_time = 6;
+   */
+  max_client_tick_time?: number;
+  /**
+   * @generated from protobuf field: optional float average_client_simulate_time = 7;
+   */
+  average_client_simulate_time?: number;
+  /**
+   * @generated from protobuf field: optional float max_client_simulate_time = 8;
+   */
+  max_client_simulate_time?: number;
+  /**
+   * @generated from protobuf field: optional float average_output_time = 9;
+   */
+  average_output_time?: number;
+  /**
+   * @generated from protobuf field: optional float max_output_time = 10;
+   */
+  max_output_time?: number;
+  /**
+   * @generated from protobuf field: optional float average_wait_for_rendering_to_complete_time = 11;
+   */
+  average_wait_for_rendering_to_complete_time?: number;
+  /**
+   * @generated from protobuf field: optional float max_wait_for_rendering_to_complete_time = 12;
+   */
+  max_wait_for_rendering_to_complete_time?: number;
+  /**
+   * @generated from protobuf field: optional float average_swap_time = 13;
+   */
+  average_swap_time?: number;
+  /**
+   * @generated from protobuf field: optional float max_swap_time = 14;
+   */
+  max_swap_time?: number;
+  /**
+   * @generated from protobuf field: optional float average_frame_update_time = 15;
+   */
+  average_frame_update_time?: number;
+  /**
+   * @generated from protobuf field: optional float max_frame_update_time = 16;
+   */
+  max_frame_update_time?: number;
+  /**
+   * @generated from protobuf field: optional float average_idle_time = 17;
+   */
+  average_idle_time?: number;
+  /**
+   * @generated from protobuf field: optional float max_idle_time = 18;
+   */
+  max_idle_time?: number;
+  /**
+   * @generated from protobuf field: optional float average_input_processing_time = 19;
+   */
+  average_input_processing_time?: number;
+  /**
+   * @generated from protobuf field: optional float max_input_processing_time = 20;
+   */
+  max_input_processing_time?: number;
 }
 /**
  * @generated from protobuf message CCitadelClientMsg_GetDamageStats
  */
 export interface CCitadelClientMsg_GetDamageStats {
-	/**
-	 * @generated from protobuf field: optional uint32 lobby_player_slot = 1;
-	 */
-	lobby_player_slot?: number;
-	/**
-	 * @generated from protobuf field: optional string ability_name = 2;
-	 */
-	ability_name?: string;
+  /**
+   * @generated from protobuf field: optional uint32 lobby_player_slot = 1;
+   */
+  lobby_player_slot?: number;
+  /**
+   * @generated from protobuf field: optional string ability_name = 2;
+   */
+  ability_name?: string;
 }
 /**
  * @generated from protobuf message CCitadelClientCachedPlayerStats
  */
 export interface CCitadelClientCachedPlayerStats {
-	/**
-	 * @generated from protobuf field: optional uint32 version = 1;
-	 */
-	version?: number;
-	/**
-	 * @generated from protobuf field: repeated CCitadelClientCachedPlayerStats.Stat stats = 2;
-	 */
-	stats: CCitadelClientCachedPlayerStats_Stat[];
+  /**
+   * @generated from protobuf field: optional uint32 version = 1;
+   */
+  version?: number;
+  /**
+   * @generated from protobuf field: repeated CCitadelClientCachedPlayerStats.Stat stats = 2;
+   */
+  stats: CCitadelClientCachedPlayerStats_Stat[];
 }
 /**
  * @generated from protobuf message CCitadelClientCachedPlayerStats.Stat
  */
 export interface CCitadelClientCachedPlayerStats_Stat {
-	/**
-	 * @generated from protobuf field: optional string stat_name = 1;
-	 */
-	stat_name?: string;
-	/**
-	 * @generated from protobuf field: optional uint64 all_time_total = 2;
-	 */
-	all_time_total?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 all_time_match_max = 3;
-	 */
-	all_time_match_max?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 all_time_life_max = 4;
-	 */
-	all_time_life_max?: number;
+  /**
+   * @generated from protobuf field: optional string stat_name = 1;
+   */
+  stat_name?: string;
+  /**
+   * @generated from protobuf field: optional uint64 all_time_total = 2;
+   */
+  all_time_total?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 all_time_match_max = 3;
+   */
+  all_time_match_max?: number;
+  /**
+   * @generated from protobuf field: optional uint32 all_time_life_max = 4;
+   */
+  all_time_life_max?: number;
 }
 /**
  * @generated from protobuf message CCitadelClientMsg_ExecuteMapUnitAbility
  */
 export interface CCitadelClientMsg_ExecuteMapUnitAbility {
-	/**
-	 * @generated from protobuf field: optional int32 ability_entity_index = 1;
-	 */
-	ability_entity_index?: number;
-	/**
-	 * @generated from protobuf field: optional int32 target_entity_index = 2;
-	 */
-	target_entity_index?: number;
+  /**
+   * @generated from protobuf field: optional int32 ability_entity_index = 1;
+   */
+  ability_entity_index?: number;
+  /**
+   * @generated from protobuf field: optional int32 target_entity_index = 2;
+   */
+  target_entity_index?: number;
 }
 /**
  * @generated from protobuf message CCitadelClientMsg_CheaterVote
  */
 export interface CCitadelClientMsg_CheaterVote {
-	/**
-	 * @generated from protobuf field: optional bool end_game_immediately = 1;
-	 */
-	end_game_immediately?: boolean;
+  /**
+   * @generated from protobuf field: optional bool end_game_immediately = 1;
+   */
+  end_game_immediately?: boolean;
 }
 /**
  * @generated from protobuf enum ECitadelClientMessages
  */
 export enum ECitadelClientMessages {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: CITADEL_CM_MapPing = 1002;
-	 */
-	CITADEL_CM_MapPing = 1002,
-	/**
-	 * @generated from protobuf enum value: CITADEL_CM_PerformanceStats = 1003;
-	 */
-	CITADEL_CM_PerformanceStats = 1003,
-	/**
-	 * @generated from protobuf enum value: CITADEL_CM_PingWheel = 1004;
-	 */
-	CITADEL_CM_PingWheel = 1004,
-	/**
-	 * @generated from protobuf enum value: CITADEL_CM_ChatMsg = 1005;
-	 */
-	CITADEL_CM_ChatMsg = 1005,
-	/**
-	 * @generated from protobuf enum value: CITADEL_CM_PerfReport = 1006;
-	 */
-	CITADEL_CM_PerfReport = 1006,
-	/**
-	 * @generated from protobuf enum value: CITADEL_CM_QuickResponse = 1007;
-	 */
-	CITADEL_CM_QuickResponse = 1007,
-	/**
-	 * @generated from protobuf enum value: CITADEL_CM_Pause = 1008;
-	 */
-	CITADEL_CM_Pause = 1008,
-	/**
-	 * @generated from protobuf enum value: CITADEL_CM_MapLine = 1009;
-	 */
-	CITADEL_CM_MapLine = 1009,
-	/**
-	 * @generated from protobuf enum value: CITADEL_CM_AbilityPing = 1010;
-	 */
-	CITADEL_CM_AbilityPing = 1010,
-	/**
-	 * @generated from protobuf enum value: CITADEL_CM_ExecuteMapUnitAbility = 1011;
-	 */
-	CITADEL_CM_ExecuteMapUnitAbility = 1011,
-	/**
-	 * @generated from protobuf enum value: CITADEL_CM_GetDamageStats = 1012;
-	 */
-	CITADEL_CM_GetDamageStats = 1012,
-	/**
-	 * @generated from protobuf enum value: CITADEL_CM_CheaterVote = 1013;
-	 */
-	CITADEL_CM_CheaterVote = 1013,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: CITADEL_CM_MapPing = 1002;
+   */
+  CITADEL_CM_MapPing = 1002,
+  /**
+   * @generated from protobuf enum value: CITADEL_CM_PerformanceStats = 1003;
+   */
+  CITADEL_CM_PerformanceStats = 1003,
+  /**
+   * @generated from protobuf enum value: CITADEL_CM_PingWheel = 1004;
+   */
+  CITADEL_CM_PingWheel = 1004,
+  /**
+   * @generated from protobuf enum value: CITADEL_CM_ChatMsg = 1005;
+   */
+  CITADEL_CM_ChatMsg = 1005,
+  /**
+   * @generated from protobuf enum value: CITADEL_CM_PerfReport = 1006;
+   */
+  CITADEL_CM_PerfReport = 1006,
+  /**
+   * @generated from protobuf enum value: CITADEL_CM_QuickResponse = 1007;
+   */
+  CITADEL_CM_QuickResponse = 1007,
+  /**
+   * @generated from protobuf enum value: CITADEL_CM_Pause = 1008;
+   */
+  CITADEL_CM_Pause = 1008,
+  /**
+   * @generated from protobuf enum value: CITADEL_CM_MapLine = 1009;
+   */
+  CITADEL_CM_MapLine = 1009,
+  /**
+   * @generated from protobuf enum value: CITADEL_CM_AbilityPing = 1010;
+   */
+  CITADEL_CM_AbilityPing = 1010,
+  /**
+   * @generated from protobuf enum value: CITADEL_CM_ExecuteMapUnitAbility = 1011;
+   */
+  CITADEL_CM_ExecuteMapUnitAbility = 1011,
+  /**
+   * @generated from protobuf enum value: CITADEL_CM_GetDamageStats = 1012;
+   */
+  CITADEL_CM_GetDamageStats = 1012,
+  /**
+   * @generated from protobuf enum value: CITADEL_CM_CheaterVote = 1013;
+   */
+  CITADEL_CM_CheaterVote = 1013,
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CCitadelClientMsg_Pause$Type extends MessageType<CCitadelClientMsg_Pause> {
-	constructor() {
-		super("CCitadelClientMsg_Pause", []);
-	}
-	create(value?: PartialMessage<CCitadelClientMsg_Pause>): CCitadelClientMsg_Pause {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_Pause>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCitadelClientMsg_Pause,
-	): CCitadelClientMsg_Pause {
-		return target ?? this.create();
-	}
-	internalBinaryWrite(
-		message: CCitadelClientMsg_Pause,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCitadelClientMsg_Pause", []);
+  }
+  create(value?: PartialMessage<CCitadelClientMsg_Pause>): CCitadelClientMsg_Pause {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_Pause>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCitadelClientMsg_Pause,
+  ): CCitadelClientMsg_Pause {
+    return target ?? this.create();
+  }
+  internalBinaryWrite(
+    message: CCitadelClientMsg_Pause,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCitadelClientMsg_Pause
@@ -393,132 +393,132 @@ class CCitadelClientMsg_Pause$Type extends MessageType<CCitadelClientMsg_Pause> 
 export const CCitadelClientMsg_Pause = new CCitadelClientMsg_Pause$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCitadelClientMsg_MapPing$Type extends MessageType<CCitadelClientMsg_MapPing> {
-	constructor() {
-		super("CCitadelClientMsg_MapPing", [
-			{
-				no: 1,
-				name: "ping_location",
-				kind: "message",
-				localName: "ping_location",
-				T: () => CMsgVector,
-			},
-			{
-				no: 2,
-				name: "event_type",
-				kind: "scalar",
-				localName: "event_type",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "entity_index",
-				kind: "scalar",
-				localName: "entity_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "is_aggressive_ping",
-				kind: "scalar",
-				localName: "is_aggressive_ping",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 5,
-				name: "is_minimap_ping",
-				kind: "scalar",
-				localName: "is_minimap_ping",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 6,
-				name: "is_blind_ping",
-				kind: "scalar",
-				localName: "is_blind_ping",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCitadelClientMsg_MapPing>): CCitadelClientMsg_MapPing {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_MapPing>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCitadelClientMsg_MapPing,
-	): CCitadelClientMsg_MapPing {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector ping_location */ 1:
-					message.ping_location = CMsgVector.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.ping_location,
-					);
-					break;
-				case /* optional int32 event_type */ 2:
-					message.event_type = reader.int32();
-					break;
-				case /* optional int32 entity_index */ 3:
-					message.entity_index = reader.int32();
-					break;
-				case /* optional bool is_aggressive_ping */ 4:
-					message.is_aggressive_ping = reader.bool();
-					break;
-				case /* optional bool is_minimap_ping */ 5:
-					message.is_minimap_ping = reader.bool();
-					break;
-				case /* optional bool is_blind_ping */ 6:
-					message.is_blind_ping = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCitadelClientMsg_MapPing,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgVector ping_location = 1; */
-		if (message.ping_location)
-			CMsgVector.internalBinaryWrite(
-				message.ping_location,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional int32 event_type = 2; */
-		if (message.event_type !== undefined) writer.tag(2, WireType.Varint).int32(message.event_type);
-		/* optional int32 entity_index = 3; */
-		if (message.entity_index !== undefined) writer.tag(3, WireType.Varint).int32(message.entity_index);
-		/* optional bool is_aggressive_ping = 4; */
-		if (message.is_aggressive_ping !== undefined) writer.tag(4, WireType.Varint).bool(message.is_aggressive_ping);
-		/* optional bool is_minimap_ping = 5; */
-		if (message.is_minimap_ping !== undefined) writer.tag(5, WireType.Varint).bool(message.is_minimap_ping);
-		/* optional bool is_blind_ping = 6; */
-		if (message.is_blind_ping !== undefined) writer.tag(6, WireType.Varint).bool(message.is_blind_ping);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCitadelClientMsg_MapPing", [
+      {
+        no: 1,
+        name: "ping_location",
+        kind: "message",
+        localName: "ping_location",
+        T: () => CMsgVector,
+      },
+      {
+        no: 2,
+        name: "event_type",
+        kind: "scalar",
+        localName: "event_type",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "entity_index",
+        kind: "scalar",
+        localName: "entity_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "is_aggressive_ping",
+        kind: "scalar",
+        localName: "is_aggressive_ping",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 5,
+        name: "is_minimap_ping",
+        kind: "scalar",
+        localName: "is_minimap_ping",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 6,
+        name: "is_blind_ping",
+        kind: "scalar",
+        localName: "is_blind_ping",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCitadelClientMsg_MapPing>): CCitadelClientMsg_MapPing {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_MapPing>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCitadelClientMsg_MapPing,
+  ): CCitadelClientMsg_MapPing {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector ping_location */ 1:
+          message.ping_location = CMsgVector.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.ping_location,
+          );
+          break;
+        case /* optional int32 event_type */ 2:
+          message.event_type = reader.int32();
+          break;
+        case /* optional int32 entity_index */ 3:
+          message.entity_index = reader.int32();
+          break;
+        case /* optional bool is_aggressive_ping */ 4:
+          message.is_aggressive_ping = reader.bool();
+          break;
+        case /* optional bool is_minimap_ping */ 5:
+          message.is_minimap_ping = reader.bool();
+          break;
+        case /* optional bool is_blind_ping */ 6:
+          message.is_blind_ping = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCitadelClientMsg_MapPing,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgVector ping_location = 1; */
+    if (message.ping_location)
+      CMsgVector.internalBinaryWrite(
+        message.ping_location,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional int32 event_type = 2; */
+    if (message.event_type !== undefined) writer.tag(2, WireType.Varint).int32(message.event_type);
+    /* optional int32 entity_index = 3; */
+    if (message.entity_index !== undefined) writer.tag(3, WireType.Varint).int32(message.entity_index);
+    /* optional bool is_aggressive_ping = 4; */
+    if (message.is_aggressive_ping !== undefined) writer.tag(4, WireType.Varint).bool(message.is_aggressive_ping);
+    /* optional bool is_minimap_ping = 5; */
+    if (message.is_minimap_ping !== undefined) writer.tag(5, WireType.Varint).bool(message.is_minimap_ping);
+    /* optional bool is_blind_ping = 6; */
+    if (message.is_blind_ping !== undefined) writer.tag(6, WireType.Varint).bool(message.is_blind_ping);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCitadelClientMsg_MapPing
@@ -526,106 +526,106 @@ class CCitadelClientMsg_MapPing$Type extends MessageType<CCitadelClientMsg_MapPi
 export const CCitadelClientMsg_MapPing = new CCitadelClientMsg_MapPing$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCitadelClientMsg_PingWheel$Type extends MessageType<CCitadelClientMsg_PingWheel> {
-	constructor() {
-		super("CCitadelClientMsg_PingWheel", [
-			{
-				no: 1,
-				name: "ping_wheel_option_id",
-				kind: "scalar",
-				localName: "ping_wheel_option_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "subnav_message_id",
-				kind: "scalar",
-				localName: "subnav_message_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "ping_location",
-				kind: "message",
-				localName: "ping_location",
-				T: () => CMsgVector,
-			},
-			{
-				no: 4,
-				name: "entity_index",
-				kind: "scalar",
-				localName: "entity_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCitadelClientMsg_PingWheel>): CCitadelClientMsg_PingWheel {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_PingWheel>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCitadelClientMsg_PingWheel,
-	): CCitadelClientMsg_PingWheel {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 ping_wheel_option_id */ 1:
-					message.ping_wheel_option_id = reader.uint32();
-					break;
-				case /* optional uint32 subnav_message_id */ 2:
-					message.subnav_message_id = reader.uint32();
-					break;
-				case /* optional CMsgVector ping_location */ 3:
-					message.ping_location = CMsgVector.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.ping_location,
-					);
-					break;
-				case /* optional int32 entity_index */ 4:
-					message.entity_index = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCitadelClientMsg_PingWheel,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 ping_wheel_option_id = 1; */
-		if (message.ping_wheel_option_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.ping_wheel_option_id);
-		/* optional uint32 subnav_message_id = 2; */
-		if (message.subnav_message_id !== undefined) writer.tag(2, WireType.Varint).uint32(message.subnav_message_id);
-		/* optional CMsgVector ping_location = 3; */
-		if (message.ping_location)
-			CMsgVector.internalBinaryWrite(
-				message.ping_location,
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional int32 entity_index = 4; */
-		if (message.entity_index !== undefined) writer.tag(4, WireType.Varint).int32(message.entity_index);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCitadelClientMsg_PingWheel", [
+      {
+        no: 1,
+        name: "ping_wheel_option_id",
+        kind: "scalar",
+        localName: "ping_wheel_option_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "subnav_message_id",
+        kind: "scalar",
+        localName: "subnav_message_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "ping_location",
+        kind: "message",
+        localName: "ping_location",
+        T: () => CMsgVector,
+      },
+      {
+        no: 4,
+        name: "entity_index",
+        kind: "scalar",
+        localName: "entity_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCitadelClientMsg_PingWheel>): CCitadelClientMsg_PingWheel {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_PingWheel>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCitadelClientMsg_PingWheel,
+  ): CCitadelClientMsg_PingWheel {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 ping_wheel_option_id */ 1:
+          message.ping_wheel_option_id = reader.uint32();
+          break;
+        case /* optional uint32 subnav_message_id */ 2:
+          message.subnav_message_id = reader.uint32();
+          break;
+        case /* optional CMsgVector ping_location */ 3:
+          message.ping_location = CMsgVector.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.ping_location,
+          );
+          break;
+        case /* optional int32 entity_index */ 4:
+          message.entity_index = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCitadelClientMsg_PingWheel,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 ping_wheel_option_id = 1; */
+    if (message.ping_wheel_option_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.ping_wheel_option_id);
+    /* optional uint32 subnav_message_id = 2; */
+    if (message.subnav_message_id !== undefined) writer.tag(2, WireType.Varint).uint32(message.subnav_message_id);
+    /* optional CMsgVector ping_location = 3; */
+    if (message.ping_location)
+      CMsgVector.internalBinaryWrite(
+        message.ping_location,
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional int32 entity_index = 4; */
+    if (message.entity_index !== undefined) writer.tag(4, WireType.Varint).int32(message.entity_index);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCitadelClientMsg_PingWheel
@@ -633,84 +633,84 @@ class CCitadelClientMsg_PingWheel$Type extends MessageType<CCitadelClientMsg_Pin
 export const CCitadelClientMsg_PingWheel = new CCitadelClientMsg_PingWheel$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCitadelClientMsg_AbilityPing$Type extends MessageType<CCitadelClientMsg_AbilityPing> {
-	constructor() {
-		super("CCitadelClientMsg_AbilityPing", [
-			{
-				no: 1,
-				name: "entity_index",
-				kind: "scalar",
-				localName: "entity_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "pinged_ability_id",
-				kind: "scalar",
-				localName: "pinged_ability_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "pinged_player_slot",
-				kind: "scalar",
-				localName: "pinged_player_slot",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCitadelClientMsg_AbilityPing>): CCitadelClientMsg_AbilityPing {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_AbilityPing>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCitadelClientMsg_AbilityPing,
-	): CCitadelClientMsg_AbilityPing {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 entity_index */ 1:
-					message.entity_index = reader.int32();
-					break;
-				case /* optional uint32 pinged_ability_id */ 2:
-					message.pinged_ability_id = reader.uint32();
-					break;
-				case /* optional int32 pinged_player_slot */ 3:
-					message.pinged_player_slot = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCitadelClientMsg_AbilityPing,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 entity_index = 1; */
-		if (message.entity_index !== undefined) writer.tag(1, WireType.Varint).int32(message.entity_index);
-		/* optional uint32 pinged_ability_id = 2; */
-		if (message.pinged_ability_id !== undefined) writer.tag(2, WireType.Varint).uint32(message.pinged_ability_id);
-		/* optional int32 pinged_player_slot = 3; */
-		if (message.pinged_player_slot !== undefined) writer.tag(3, WireType.Varint).int32(message.pinged_player_slot);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCitadelClientMsg_AbilityPing", [
+      {
+        no: 1,
+        name: "entity_index",
+        kind: "scalar",
+        localName: "entity_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "pinged_ability_id",
+        kind: "scalar",
+        localName: "pinged_ability_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "pinged_player_slot",
+        kind: "scalar",
+        localName: "pinged_player_slot",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCitadelClientMsg_AbilityPing>): CCitadelClientMsg_AbilityPing {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_AbilityPing>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCitadelClientMsg_AbilityPing,
+  ): CCitadelClientMsg_AbilityPing {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 entity_index */ 1:
+          message.entity_index = reader.int32();
+          break;
+        case /* optional uint32 pinged_ability_id */ 2:
+          message.pinged_ability_id = reader.uint32();
+          break;
+        case /* optional int32 pinged_player_slot */ 3:
+          message.pinged_player_slot = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCitadelClientMsg_AbilityPing,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 entity_index = 1; */
+    if (message.entity_index !== undefined) writer.tag(1, WireType.Varint).int32(message.entity_index);
+    /* optional uint32 pinged_ability_id = 2; */
+    if (message.pinged_ability_id !== undefined) writer.tag(2, WireType.Varint).uint32(message.pinged_ability_id);
+    /* optional int32 pinged_player_slot = 3; */
+    if (message.pinged_player_slot !== undefined) writer.tag(3, WireType.Varint).int32(message.pinged_player_slot);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCitadelClientMsg_AbilityPing
@@ -718,50 +718,50 @@ class CCitadelClientMsg_AbilityPing$Type extends MessageType<CCitadelClientMsg_A
 export const CCitadelClientMsg_AbilityPing = new CCitadelClientMsg_AbilityPing$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCitadelClientMsg_MapLine$Type extends MessageType<CCitadelClientMsg_MapLine> {
-	constructor() {
-		super("CCitadelClientMsg_MapLine", [{ no: 1, name: "mapline", kind: "message", T: () => CMsgMapLine }]);
-	}
-	create(value?: PartialMessage<CCitadelClientMsg_MapLine>): CCitadelClientMsg_MapLine {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_MapLine>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCitadelClientMsg_MapLine,
-	): CCitadelClientMsg_MapLine {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgMapLine mapline */ 1:
-					message.mapline = CMsgMapLine.internalBinaryRead(reader, reader.uint32(), options, message.mapline);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCitadelClientMsg_MapLine,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgMapLine mapline = 1; */
-		if (message.mapline)
-			CMsgMapLine.internalBinaryWrite(message.mapline, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCitadelClientMsg_MapLine", [{ no: 1, name: "mapline", kind: "message", T: () => CMsgMapLine }]);
+  }
+  create(value?: PartialMessage<CCitadelClientMsg_MapLine>): CCitadelClientMsg_MapLine {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_MapLine>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCitadelClientMsg_MapLine,
+  ): CCitadelClientMsg_MapLine {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgMapLine mapline */ 1:
+          message.mapline = CMsgMapLine.internalBinaryRead(reader, reader.uint32(), options, message.mapline);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCitadelClientMsg_MapLine,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgMapLine mapline = 1; */
+    if (message.mapline)
+      CMsgMapLine.internalBinaryWrite(message.mapline, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCitadelClientMsg_MapLine
@@ -769,87 +769,87 @@ class CCitadelClientMsg_MapLine$Type extends MessageType<CCitadelClientMsg_MapLi
 export const CCitadelClientMsg_MapLine = new CCitadelClientMsg_MapLine$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCitadelClientMsg_QuickResponse$Type extends MessageType<CCitadelClientMsg_QuickResponse> {
-	constructor() {
-		super("CCitadelClientMsg_QuickResponse", [
-			{
-				no: 1,
-				name: "ping_wheel_message_id",
-				kind: "scalar",
-				localName: "ping_wheel_message_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "responding_to_ping_message_id",
-				kind: "scalar",
-				localName: "responding_to_ping_message_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "responding_to_player_slot",
-				kind: "scalar",
-				localName: "responding_to_player_slot",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCitadelClientMsg_QuickResponse>): CCitadelClientMsg_QuickResponse {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_QuickResponse>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCitadelClientMsg_QuickResponse,
-	): CCitadelClientMsg_QuickResponse {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 ping_wheel_message_id */ 1:
-					message.ping_wheel_message_id = reader.uint32();
-					break;
-				case /* optional uint32 responding_to_ping_message_id */ 2:
-					message.responding_to_ping_message_id = reader.uint32();
-					break;
-				case /* optional int32 responding_to_player_slot */ 3:
-					message.responding_to_player_slot = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCitadelClientMsg_QuickResponse,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 ping_wheel_message_id = 1; */
-		if (message.ping_wheel_message_id !== undefined)
-			writer.tag(1, WireType.Varint).uint32(message.ping_wheel_message_id);
-		/* optional uint32 responding_to_ping_message_id = 2; */
-		if (message.responding_to_ping_message_id !== undefined)
-			writer.tag(2, WireType.Varint).uint32(message.responding_to_ping_message_id);
-		/* optional int32 responding_to_player_slot = 3; */
-		if (message.responding_to_player_slot !== undefined)
-			writer.tag(3, WireType.Varint).int32(message.responding_to_player_slot);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCitadelClientMsg_QuickResponse", [
+      {
+        no: 1,
+        name: "ping_wheel_message_id",
+        kind: "scalar",
+        localName: "ping_wheel_message_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "responding_to_ping_message_id",
+        kind: "scalar",
+        localName: "responding_to_ping_message_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "responding_to_player_slot",
+        kind: "scalar",
+        localName: "responding_to_player_slot",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCitadelClientMsg_QuickResponse>): CCitadelClientMsg_QuickResponse {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_QuickResponse>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCitadelClientMsg_QuickResponse,
+  ): CCitadelClientMsg_QuickResponse {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 ping_wheel_message_id */ 1:
+          message.ping_wheel_message_id = reader.uint32();
+          break;
+        case /* optional uint32 responding_to_ping_message_id */ 2:
+          message.responding_to_ping_message_id = reader.uint32();
+          break;
+        case /* optional int32 responding_to_player_slot */ 3:
+          message.responding_to_player_slot = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCitadelClientMsg_QuickResponse,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 ping_wheel_message_id = 1; */
+    if (message.ping_wheel_message_id !== undefined)
+      writer.tag(1, WireType.Varint).uint32(message.ping_wheel_message_id);
+    /* optional uint32 responding_to_ping_message_id = 2; */
+    if (message.responding_to_ping_message_id !== undefined)
+      writer.tag(2, WireType.Varint).uint32(message.responding_to_ping_message_id);
+    /* optional int32 responding_to_player_slot = 3; */
+    if (message.responding_to_player_slot !== undefined)
+      writer.tag(3, WireType.Varint).int32(message.responding_to_player_slot);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCitadelClientMsg_QuickResponse
@@ -857,97 +857,97 @@ class CCitadelClientMsg_QuickResponse$Type extends MessageType<CCitadelClientMsg
 export const CCitadelClientMsg_QuickResponse = new CCitadelClientMsg_QuickResponse$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCitadelClientMsg_PerformanceStats$Type extends MessageType<CCitadelClientMsg_PerformanceStats> {
-	constructor() {
-		super("CCitadelClientMsg_PerformanceStats", [
-			{
-				no: 1,
-				name: "current_game_time",
-				kind: "scalar",
-				localName: "current_game_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 2,
-				name: "average_fps",
-				kind: "scalar",
-				localName: "average_fps",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "min_fps",
-				kind: "scalar",
-				localName: "min_fps",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "max_fps",
-				kind: "scalar",
-				localName: "max_fps",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCitadelClientMsg_PerformanceStats>): CCitadelClientMsg_PerformanceStats {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_PerformanceStats>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCitadelClientMsg_PerformanceStats,
-	): CCitadelClientMsg_PerformanceStats {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float current_game_time */ 1:
-					message.current_game_time = reader.float();
-					break;
-				case /* optional float average_fps */ 2:
-					message.average_fps = reader.float();
-					break;
-				case /* optional float min_fps */ 3:
-					message.min_fps = reader.float();
-					break;
-				case /* optional float max_fps */ 4:
-					message.max_fps = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCitadelClientMsg_PerformanceStats,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional float current_game_time = 1; */
-		if (message.current_game_time !== undefined) writer.tag(1, WireType.Bit32).float(message.current_game_time);
-		/* optional float average_fps = 2; */
-		if (message.average_fps !== undefined) writer.tag(2, WireType.Bit32).float(message.average_fps);
-		/* optional float min_fps = 3; */
-		if (message.min_fps !== undefined) writer.tag(3, WireType.Bit32).float(message.min_fps);
-		/* optional float max_fps = 4; */
-		if (message.max_fps !== undefined) writer.tag(4, WireType.Bit32).float(message.max_fps);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCitadelClientMsg_PerformanceStats", [
+      {
+        no: 1,
+        name: "current_game_time",
+        kind: "scalar",
+        localName: "current_game_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 2,
+        name: "average_fps",
+        kind: "scalar",
+        localName: "average_fps",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "min_fps",
+        kind: "scalar",
+        localName: "min_fps",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "max_fps",
+        kind: "scalar",
+        localName: "max_fps",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCitadelClientMsg_PerformanceStats>): CCitadelClientMsg_PerformanceStats {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_PerformanceStats>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCitadelClientMsg_PerformanceStats,
+  ): CCitadelClientMsg_PerformanceStats {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float current_game_time */ 1:
+          message.current_game_time = reader.float();
+          break;
+        case /* optional float average_fps */ 2:
+          message.average_fps = reader.float();
+          break;
+        case /* optional float min_fps */ 3:
+          message.min_fps = reader.float();
+          break;
+        case /* optional float max_fps */ 4:
+          message.max_fps = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCitadelClientMsg_PerformanceStats,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional float current_game_time = 1; */
+    if (message.current_game_time !== undefined) writer.tag(1, WireType.Bit32).float(message.current_game_time);
+    /* optional float average_fps = 2; */
+    if (message.average_fps !== undefined) writer.tag(2, WireType.Bit32).float(message.average_fps);
+    /* optional float min_fps = 3; */
+    if (message.min_fps !== undefined) writer.tag(3, WireType.Bit32).float(message.min_fps);
+    /* optional float max_fps = 4; */
+    if (message.max_fps !== undefined) writer.tag(4, WireType.Bit32).float(message.max_fps);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCitadelClientMsg_PerformanceStats
@@ -955,84 +955,84 @@ class CCitadelClientMsg_PerformanceStats$Type extends MessageType<CCitadelClient
 export const CCitadelClientMsg_PerformanceStats = new CCitadelClientMsg_PerformanceStats$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCitadelClientMsg_ChatMsg$Type extends MessageType<CCitadelClientMsg_ChatMsg> {
-	constructor() {
-		super("CCitadelClientMsg_ChatMsg", [
-			{
-				no: 1,
-				name: "chat_text",
-				kind: "scalar",
-				localName: "chat_text",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "all_chat",
-				kind: "scalar",
-				localName: "all_chat",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 3,
-				name: "lane_color",
-				kind: "enum",
-				localName: "lane_color",
-				opt: true,
-				T: () => ["CMsgLaneColor", CMsgLaneColor],
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCitadelClientMsg_ChatMsg>): CCitadelClientMsg_ChatMsg {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_ChatMsg>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCitadelClientMsg_ChatMsg,
-	): CCitadelClientMsg_ChatMsg {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string chat_text */ 1:
-					message.chat_text = reader.string();
-					break;
-				case /* optional bool all_chat */ 2:
-					message.all_chat = reader.bool();
-					break;
-				case /* optional CMsgLaneColor lane_color */ 3:
-					message.lane_color = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCitadelClientMsg_ChatMsg,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string chat_text = 1; */
-		if (message.chat_text !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.chat_text);
-		/* optional bool all_chat = 2; */
-		if (message.all_chat !== undefined) writer.tag(2, WireType.Varint).bool(message.all_chat);
-		/* optional CMsgLaneColor lane_color = 3; */
-		if (message.lane_color !== undefined) writer.tag(3, WireType.Varint).int32(message.lane_color);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCitadelClientMsg_ChatMsg", [
+      {
+        no: 1,
+        name: "chat_text",
+        kind: "scalar",
+        localName: "chat_text",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "all_chat",
+        kind: "scalar",
+        localName: "all_chat",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 3,
+        name: "lane_color",
+        kind: "enum",
+        localName: "lane_color",
+        opt: true,
+        T: () => ["CMsgLaneColor", CMsgLaneColor],
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCitadelClientMsg_ChatMsg>): CCitadelClientMsg_ChatMsg {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_ChatMsg>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCitadelClientMsg_ChatMsg,
+  ): CCitadelClientMsg_ChatMsg {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string chat_text */ 1:
+          message.chat_text = reader.string();
+          break;
+        case /* optional bool all_chat */ 2:
+          message.all_chat = reader.bool();
+          break;
+        case /* optional CMsgLaneColor lane_color */ 3:
+          message.lane_color = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCitadelClientMsg_ChatMsg,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string chat_text = 1; */
+    if (message.chat_text !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.chat_text);
+    /* optional bool all_chat = 2; */
+    if (message.all_chat !== undefined) writer.tag(2, WireType.Varint).bool(message.all_chat);
+    /* optional CMsgLaneColor lane_color = 3; */
+    if (message.lane_color !== undefined) writer.tag(3, WireType.Varint).int32(message.lane_color);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCitadelClientMsg_ChatMsg
@@ -1040,314 +1040,314 @@ class CCitadelClientMsg_ChatMsg$Type extends MessageType<CCitadelClientMsg_ChatM
 export const CCitadelClientMsg_ChatMsg = new CCitadelClientMsg_ChatMsg$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCitadelClientMsg_PerfReport$Type extends MessageType<CCitadelClientMsg_PerfReport> {
-	constructor() {
-		super("CCitadelClientMsg_PerfReport", [
-			{
-				no: 1,
-				name: "average_frame_time",
-				kind: "scalar",
-				localName: "average_frame_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 2,
-				name: "max_frame_time",
-				kind: "scalar",
-				localName: "max_frame_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "average_compute_time",
-				kind: "scalar",
-				localName: "average_compute_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "max_compute_time",
-				kind: "scalar",
-				localName: "max_compute_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 5,
-				name: "average_client_tick_time",
-				kind: "scalar",
-				localName: "average_client_tick_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 6,
-				name: "max_client_tick_time",
-				kind: "scalar",
-				localName: "max_client_tick_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 7,
-				name: "average_client_simulate_time",
-				kind: "scalar",
-				localName: "average_client_simulate_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 8,
-				name: "max_client_simulate_time",
-				kind: "scalar",
-				localName: "max_client_simulate_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 9,
-				name: "average_output_time",
-				kind: "scalar",
-				localName: "average_output_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 10,
-				name: "max_output_time",
-				kind: "scalar",
-				localName: "max_output_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 11,
-				name: "average_wait_for_rendering_to_complete_time",
-				kind: "scalar",
-				localName: "average_wait_for_rendering_to_complete_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 12,
-				name: "max_wait_for_rendering_to_complete_time",
-				kind: "scalar",
-				localName: "max_wait_for_rendering_to_complete_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 13,
-				name: "average_swap_time",
-				kind: "scalar",
-				localName: "average_swap_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 14,
-				name: "max_swap_time",
-				kind: "scalar",
-				localName: "max_swap_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 15,
-				name: "average_frame_update_time",
-				kind: "scalar",
-				localName: "average_frame_update_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 16,
-				name: "max_frame_update_time",
-				kind: "scalar",
-				localName: "max_frame_update_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 17,
-				name: "average_idle_time",
-				kind: "scalar",
-				localName: "average_idle_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 18,
-				name: "max_idle_time",
-				kind: "scalar",
-				localName: "max_idle_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 19,
-				name: "average_input_processing_time",
-				kind: "scalar",
-				localName: "average_input_processing_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 20,
-				name: "max_input_processing_time",
-				kind: "scalar",
-				localName: "max_input_processing_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCitadelClientMsg_PerfReport>): CCitadelClientMsg_PerfReport {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_PerfReport>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCitadelClientMsg_PerfReport,
-	): CCitadelClientMsg_PerfReport {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float average_frame_time */ 1:
-					message.average_frame_time = reader.float();
-					break;
-				case /* optional float max_frame_time */ 2:
-					message.max_frame_time = reader.float();
-					break;
-				case /* optional float average_compute_time */ 3:
-					message.average_compute_time = reader.float();
-					break;
-				case /* optional float max_compute_time */ 4:
-					message.max_compute_time = reader.float();
-					break;
-				case /* optional float average_client_tick_time */ 5:
-					message.average_client_tick_time = reader.float();
-					break;
-				case /* optional float max_client_tick_time */ 6:
-					message.max_client_tick_time = reader.float();
-					break;
-				case /* optional float average_client_simulate_time */ 7:
-					message.average_client_simulate_time = reader.float();
-					break;
-				case /* optional float max_client_simulate_time */ 8:
-					message.max_client_simulate_time = reader.float();
-					break;
-				case /* optional float average_output_time */ 9:
-					message.average_output_time = reader.float();
-					break;
-				case /* optional float max_output_time */ 10:
-					message.max_output_time = reader.float();
-					break;
-				case /* optional float average_wait_for_rendering_to_complete_time */ 11:
-					message.average_wait_for_rendering_to_complete_time = reader.float();
-					break;
-				case /* optional float max_wait_for_rendering_to_complete_time */ 12:
-					message.max_wait_for_rendering_to_complete_time = reader.float();
-					break;
-				case /* optional float average_swap_time */ 13:
-					message.average_swap_time = reader.float();
-					break;
-				case /* optional float max_swap_time */ 14:
-					message.max_swap_time = reader.float();
-					break;
-				case /* optional float average_frame_update_time */ 15:
-					message.average_frame_update_time = reader.float();
-					break;
-				case /* optional float max_frame_update_time */ 16:
-					message.max_frame_update_time = reader.float();
-					break;
-				case /* optional float average_idle_time */ 17:
-					message.average_idle_time = reader.float();
-					break;
-				case /* optional float max_idle_time */ 18:
-					message.max_idle_time = reader.float();
-					break;
-				case /* optional float average_input_processing_time */ 19:
-					message.average_input_processing_time = reader.float();
-					break;
-				case /* optional float max_input_processing_time */ 20:
-					message.max_input_processing_time = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCitadelClientMsg_PerfReport,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional float average_frame_time = 1; */
-		if (message.average_frame_time !== undefined) writer.tag(1, WireType.Bit32).float(message.average_frame_time);
-		/* optional float max_frame_time = 2; */
-		if (message.max_frame_time !== undefined) writer.tag(2, WireType.Bit32).float(message.max_frame_time);
-		/* optional float average_compute_time = 3; */
-		if (message.average_compute_time !== undefined) writer.tag(3, WireType.Bit32).float(message.average_compute_time);
-		/* optional float max_compute_time = 4; */
-		if (message.max_compute_time !== undefined) writer.tag(4, WireType.Bit32).float(message.max_compute_time);
-		/* optional float average_client_tick_time = 5; */
-		if (message.average_client_tick_time !== undefined)
-			writer.tag(5, WireType.Bit32).float(message.average_client_tick_time);
-		/* optional float max_client_tick_time = 6; */
-		if (message.max_client_tick_time !== undefined) writer.tag(6, WireType.Bit32).float(message.max_client_tick_time);
-		/* optional float average_client_simulate_time = 7; */
-		if (message.average_client_simulate_time !== undefined)
-			writer.tag(7, WireType.Bit32).float(message.average_client_simulate_time);
-		/* optional float max_client_simulate_time = 8; */
-		if (message.max_client_simulate_time !== undefined)
-			writer.tag(8, WireType.Bit32).float(message.max_client_simulate_time);
-		/* optional float average_output_time = 9; */
-		if (message.average_output_time !== undefined) writer.tag(9, WireType.Bit32).float(message.average_output_time);
-		/* optional float max_output_time = 10; */
-		if (message.max_output_time !== undefined) writer.tag(10, WireType.Bit32).float(message.max_output_time);
-		/* optional float average_wait_for_rendering_to_complete_time = 11; */
-		if (message.average_wait_for_rendering_to_complete_time !== undefined)
-			writer.tag(11, WireType.Bit32).float(message.average_wait_for_rendering_to_complete_time);
-		/* optional float max_wait_for_rendering_to_complete_time = 12; */
-		if (message.max_wait_for_rendering_to_complete_time !== undefined)
-			writer.tag(12, WireType.Bit32).float(message.max_wait_for_rendering_to_complete_time);
-		/* optional float average_swap_time = 13; */
-		if (message.average_swap_time !== undefined) writer.tag(13, WireType.Bit32).float(message.average_swap_time);
-		/* optional float max_swap_time = 14; */
-		if (message.max_swap_time !== undefined) writer.tag(14, WireType.Bit32).float(message.max_swap_time);
-		/* optional float average_frame_update_time = 15; */
-		if (message.average_frame_update_time !== undefined)
-			writer.tag(15, WireType.Bit32).float(message.average_frame_update_time);
-		/* optional float max_frame_update_time = 16; */
-		if (message.max_frame_update_time !== undefined)
-			writer.tag(16, WireType.Bit32).float(message.max_frame_update_time);
-		/* optional float average_idle_time = 17; */
-		if (message.average_idle_time !== undefined) writer.tag(17, WireType.Bit32).float(message.average_idle_time);
-		/* optional float max_idle_time = 18; */
-		if (message.max_idle_time !== undefined) writer.tag(18, WireType.Bit32).float(message.max_idle_time);
-		/* optional float average_input_processing_time = 19; */
-		if (message.average_input_processing_time !== undefined)
-			writer.tag(19, WireType.Bit32).float(message.average_input_processing_time);
-		/* optional float max_input_processing_time = 20; */
-		if (message.max_input_processing_time !== undefined)
-			writer.tag(20, WireType.Bit32).float(message.max_input_processing_time);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCitadelClientMsg_PerfReport", [
+      {
+        no: 1,
+        name: "average_frame_time",
+        kind: "scalar",
+        localName: "average_frame_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 2,
+        name: "max_frame_time",
+        kind: "scalar",
+        localName: "max_frame_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "average_compute_time",
+        kind: "scalar",
+        localName: "average_compute_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "max_compute_time",
+        kind: "scalar",
+        localName: "max_compute_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 5,
+        name: "average_client_tick_time",
+        kind: "scalar",
+        localName: "average_client_tick_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 6,
+        name: "max_client_tick_time",
+        kind: "scalar",
+        localName: "max_client_tick_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 7,
+        name: "average_client_simulate_time",
+        kind: "scalar",
+        localName: "average_client_simulate_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 8,
+        name: "max_client_simulate_time",
+        kind: "scalar",
+        localName: "max_client_simulate_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 9,
+        name: "average_output_time",
+        kind: "scalar",
+        localName: "average_output_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 10,
+        name: "max_output_time",
+        kind: "scalar",
+        localName: "max_output_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 11,
+        name: "average_wait_for_rendering_to_complete_time",
+        kind: "scalar",
+        localName: "average_wait_for_rendering_to_complete_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 12,
+        name: "max_wait_for_rendering_to_complete_time",
+        kind: "scalar",
+        localName: "max_wait_for_rendering_to_complete_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 13,
+        name: "average_swap_time",
+        kind: "scalar",
+        localName: "average_swap_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 14,
+        name: "max_swap_time",
+        kind: "scalar",
+        localName: "max_swap_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 15,
+        name: "average_frame_update_time",
+        kind: "scalar",
+        localName: "average_frame_update_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 16,
+        name: "max_frame_update_time",
+        kind: "scalar",
+        localName: "max_frame_update_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 17,
+        name: "average_idle_time",
+        kind: "scalar",
+        localName: "average_idle_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 18,
+        name: "max_idle_time",
+        kind: "scalar",
+        localName: "max_idle_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 19,
+        name: "average_input_processing_time",
+        kind: "scalar",
+        localName: "average_input_processing_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 20,
+        name: "max_input_processing_time",
+        kind: "scalar",
+        localName: "max_input_processing_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCitadelClientMsg_PerfReport>): CCitadelClientMsg_PerfReport {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_PerfReport>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCitadelClientMsg_PerfReport,
+  ): CCitadelClientMsg_PerfReport {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float average_frame_time */ 1:
+          message.average_frame_time = reader.float();
+          break;
+        case /* optional float max_frame_time */ 2:
+          message.max_frame_time = reader.float();
+          break;
+        case /* optional float average_compute_time */ 3:
+          message.average_compute_time = reader.float();
+          break;
+        case /* optional float max_compute_time */ 4:
+          message.max_compute_time = reader.float();
+          break;
+        case /* optional float average_client_tick_time */ 5:
+          message.average_client_tick_time = reader.float();
+          break;
+        case /* optional float max_client_tick_time */ 6:
+          message.max_client_tick_time = reader.float();
+          break;
+        case /* optional float average_client_simulate_time */ 7:
+          message.average_client_simulate_time = reader.float();
+          break;
+        case /* optional float max_client_simulate_time */ 8:
+          message.max_client_simulate_time = reader.float();
+          break;
+        case /* optional float average_output_time */ 9:
+          message.average_output_time = reader.float();
+          break;
+        case /* optional float max_output_time */ 10:
+          message.max_output_time = reader.float();
+          break;
+        case /* optional float average_wait_for_rendering_to_complete_time */ 11:
+          message.average_wait_for_rendering_to_complete_time = reader.float();
+          break;
+        case /* optional float max_wait_for_rendering_to_complete_time */ 12:
+          message.max_wait_for_rendering_to_complete_time = reader.float();
+          break;
+        case /* optional float average_swap_time */ 13:
+          message.average_swap_time = reader.float();
+          break;
+        case /* optional float max_swap_time */ 14:
+          message.max_swap_time = reader.float();
+          break;
+        case /* optional float average_frame_update_time */ 15:
+          message.average_frame_update_time = reader.float();
+          break;
+        case /* optional float max_frame_update_time */ 16:
+          message.max_frame_update_time = reader.float();
+          break;
+        case /* optional float average_idle_time */ 17:
+          message.average_idle_time = reader.float();
+          break;
+        case /* optional float max_idle_time */ 18:
+          message.max_idle_time = reader.float();
+          break;
+        case /* optional float average_input_processing_time */ 19:
+          message.average_input_processing_time = reader.float();
+          break;
+        case /* optional float max_input_processing_time */ 20:
+          message.max_input_processing_time = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCitadelClientMsg_PerfReport,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional float average_frame_time = 1; */
+    if (message.average_frame_time !== undefined) writer.tag(1, WireType.Bit32).float(message.average_frame_time);
+    /* optional float max_frame_time = 2; */
+    if (message.max_frame_time !== undefined) writer.tag(2, WireType.Bit32).float(message.max_frame_time);
+    /* optional float average_compute_time = 3; */
+    if (message.average_compute_time !== undefined) writer.tag(3, WireType.Bit32).float(message.average_compute_time);
+    /* optional float max_compute_time = 4; */
+    if (message.max_compute_time !== undefined) writer.tag(4, WireType.Bit32).float(message.max_compute_time);
+    /* optional float average_client_tick_time = 5; */
+    if (message.average_client_tick_time !== undefined)
+      writer.tag(5, WireType.Bit32).float(message.average_client_tick_time);
+    /* optional float max_client_tick_time = 6; */
+    if (message.max_client_tick_time !== undefined) writer.tag(6, WireType.Bit32).float(message.max_client_tick_time);
+    /* optional float average_client_simulate_time = 7; */
+    if (message.average_client_simulate_time !== undefined)
+      writer.tag(7, WireType.Bit32).float(message.average_client_simulate_time);
+    /* optional float max_client_simulate_time = 8; */
+    if (message.max_client_simulate_time !== undefined)
+      writer.tag(8, WireType.Bit32).float(message.max_client_simulate_time);
+    /* optional float average_output_time = 9; */
+    if (message.average_output_time !== undefined) writer.tag(9, WireType.Bit32).float(message.average_output_time);
+    /* optional float max_output_time = 10; */
+    if (message.max_output_time !== undefined) writer.tag(10, WireType.Bit32).float(message.max_output_time);
+    /* optional float average_wait_for_rendering_to_complete_time = 11; */
+    if (message.average_wait_for_rendering_to_complete_time !== undefined)
+      writer.tag(11, WireType.Bit32).float(message.average_wait_for_rendering_to_complete_time);
+    /* optional float max_wait_for_rendering_to_complete_time = 12; */
+    if (message.max_wait_for_rendering_to_complete_time !== undefined)
+      writer.tag(12, WireType.Bit32).float(message.max_wait_for_rendering_to_complete_time);
+    /* optional float average_swap_time = 13; */
+    if (message.average_swap_time !== undefined) writer.tag(13, WireType.Bit32).float(message.average_swap_time);
+    /* optional float max_swap_time = 14; */
+    if (message.max_swap_time !== undefined) writer.tag(14, WireType.Bit32).float(message.max_swap_time);
+    /* optional float average_frame_update_time = 15; */
+    if (message.average_frame_update_time !== undefined)
+      writer.tag(15, WireType.Bit32).float(message.average_frame_update_time);
+    /* optional float max_frame_update_time = 16; */
+    if (message.max_frame_update_time !== undefined)
+      writer.tag(16, WireType.Bit32).float(message.max_frame_update_time);
+    /* optional float average_idle_time = 17; */
+    if (message.average_idle_time !== undefined) writer.tag(17, WireType.Bit32).float(message.average_idle_time);
+    /* optional float max_idle_time = 18; */
+    if (message.max_idle_time !== undefined) writer.tag(18, WireType.Bit32).float(message.max_idle_time);
+    /* optional float average_input_processing_time = 19; */
+    if (message.average_input_processing_time !== undefined)
+      writer.tag(19, WireType.Bit32).float(message.average_input_processing_time);
+    /* optional float max_input_processing_time = 20; */
+    if (message.max_input_processing_time !== undefined)
+      writer.tag(20, WireType.Bit32).float(message.max_input_processing_time);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCitadelClientMsg_PerfReport
@@ -1355,71 +1355,71 @@ class CCitadelClientMsg_PerfReport$Type extends MessageType<CCitadelClientMsg_Pe
 export const CCitadelClientMsg_PerfReport = new CCitadelClientMsg_PerfReport$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCitadelClientMsg_GetDamageStats$Type extends MessageType<CCitadelClientMsg_GetDamageStats> {
-	constructor() {
-		super("CCitadelClientMsg_GetDamageStats", [
-			{
-				no: 1,
-				name: "lobby_player_slot",
-				kind: "scalar",
-				localName: "lobby_player_slot",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "ability_name",
-				kind: "scalar",
-				localName: "ability_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCitadelClientMsg_GetDamageStats>): CCitadelClientMsg_GetDamageStats {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_GetDamageStats>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCitadelClientMsg_GetDamageStats,
-	): CCitadelClientMsg_GetDamageStats {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 lobby_player_slot */ 1:
-					message.lobby_player_slot = reader.uint32();
-					break;
-				case /* optional string ability_name */ 2:
-					message.ability_name = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCitadelClientMsg_GetDamageStats,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 lobby_player_slot = 1; */
-		if (message.lobby_player_slot !== undefined) writer.tag(1, WireType.Varint).uint32(message.lobby_player_slot);
-		/* optional string ability_name = 2; */
-		if (message.ability_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.ability_name);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCitadelClientMsg_GetDamageStats", [
+      {
+        no: 1,
+        name: "lobby_player_slot",
+        kind: "scalar",
+        localName: "lobby_player_slot",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "ability_name",
+        kind: "scalar",
+        localName: "ability_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCitadelClientMsg_GetDamageStats>): CCitadelClientMsg_GetDamageStats {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_GetDamageStats>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCitadelClientMsg_GetDamageStats,
+  ): CCitadelClientMsg_GetDamageStats {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 lobby_player_slot */ 1:
+          message.lobby_player_slot = reader.uint32();
+          break;
+        case /* optional string ability_name */ 2:
+          message.ability_name = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCitadelClientMsg_GetDamageStats,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 lobby_player_slot = 1; */
+    if (message.lobby_player_slot !== undefined) writer.tag(1, WireType.Varint).uint32(message.lobby_player_slot);
+    /* optional string ability_name = 2; */
+    if (message.ability_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.ability_name);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCitadelClientMsg_GetDamageStats
@@ -1427,75 +1427,75 @@ class CCitadelClientMsg_GetDamageStats$Type extends MessageType<CCitadelClientMs
 export const CCitadelClientMsg_GetDamageStats = new CCitadelClientMsg_GetDamageStats$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCitadelClientCachedPlayerStats$Type extends MessageType<CCitadelClientCachedPlayerStats> {
-	constructor() {
-		super("CCitadelClientCachedPlayerStats", [
-			{
-				no: 1,
-				name: "version",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "stats",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CCitadelClientCachedPlayerStats_Stat,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCitadelClientCachedPlayerStats>): CCitadelClientCachedPlayerStats {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.stats = [];
-		if (value !== undefined) reflectionMergePartial<CCitadelClientCachedPlayerStats>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCitadelClientCachedPlayerStats,
-	): CCitadelClientCachedPlayerStats {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 version */ 1:
-					message.version = reader.uint32();
-					break;
-				case /* repeated CCitadelClientCachedPlayerStats.Stat stats */ 2:
-					message.stats.push(CCitadelClientCachedPlayerStats_Stat.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCitadelClientCachedPlayerStats,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 version = 1; */
-		if (message.version !== undefined) writer.tag(1, WireType.Varint).uint32(message.version);
-		/* repeated CCitadelClientCachedPlayerStats.Stat stats = 2; */
-		for (let i = 0; i < message.stats.length; i++)
-			CCitadelClientCachedPlayerStats_Stat.internalBinaryWrite(
-				message.stats[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCitadelClientCachedPlayerStats", [
+      {
+        no: 1,
+        name: "version",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "stats",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CCitadelClientCachedPlayerStats_Stat,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCitadelClientCachedPlayerStats>): CCitadelClientCachedPlayerStats {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.stats = [];
+    if (value !== undefined) reflectionMergePartial<CCitadelClientCachedPlayerStats>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCitadelClientCachedPlayerStats,
+  ): CCitadelClientCachedPlayerStats {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 version */ 1:
+          message.version = reader.uint32();
+          break;
+        case /* repeated CCitadelClientCachedPlayerStats.Stat stats */ 2:
+          message.stats.push(CCitadelClientCachedPlayerStats_Stat.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCitadelClientCachedPlayerStats,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 version = 1; */
+    if (message.version !== undefined) writer.tag(1, WireType.Varint).uint32(message.version);
+    /* repeated CCitadelClientCachedPlayerStats.Stat stats = 2; */
+    for (let i = 0; i < message.stats.length; i++)
+      CCitadelClientCachedPlayerStats_Stat.internalBinaryWrite(
+        message.stats[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCitadelClientCachedPlayerStats
@@ -1503,98 +1503,98 @@ class CCitadelClientCachedPlayerStats$Type extends MessageType<CCitadelClientCac
 export const CCitadelClientCachedPlayerStats = new CCitadelClientCachedPlayerStats$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCitadelClientCachedPlayerStats_Stat$Type extends MessageType<CCitadelClientCachedPlayerStats_Stat> {
-	constructor() {
-		super("CCitadelClientCachedPlayerStats.Stat", [
-			{
-				no: 1,
-				name: "stat_name",
-				kind: "scalar",
-				localName: "stat_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "all_time_total",
-				kind: "scalar",
-				localName: "all_time_total",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "all_time_match_max",
-				kind: "scalar",
-				localName: "all_time_match_max",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "all_time_life_max",
-				kind: "scalar",
-				localName: "all_time_life_max",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCitadelClientCachedPlayerStats_Stat>): CCitadelClientCachedPlayerStats_Stat {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCitadelClientCachedPlayerStats_Stat>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCitadelClientCachedPlayerStats_Stat,
-	): CCitadelClientCachedPlayerStats_Stat {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string stat_name */ 1:
-					message.stat_name = reader.string();
-					break;
-				case /* optional uint64 all_time_total */ 2:
-					message.all_time_total = reader.uint64().toBigInt();
-					break;
-				case /* optional uint32 all_time_match_max */ 3:
-					message.all_time_match_max = reader.uint32();
-					break;
-				case /* optional uint32 all_time_life_max */ 4:
-					message.all_time_life_max = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCitadelClientCachedPlayerStats_Stat,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string stat_name = 1; */
-		if (message.stat_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.stat_name);
-		/* optional uint64 all_time_total = 2; */
-		if (message.all_time_total !== undefined) writer.tag(2, WireType.Varint).uint64(message.all_time_total);
-		/* optional uint32 all_time_match_max = 3; */
-		if (message.all_time_match_max !== undefined) writer.tag(3, WireType.Varint).uint32(message.all_time_match_max);
-		/* optional uint32 all_time_life_max = 4; */
-		if (message.all_time_life_max !== undefined) writer.tag(4, WireType.Varint).uint32(message.all_time_life_max);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCitadelClientCachedPlayerStats.Stat", [
+      {
+        no: 1,
+        name: "stat_name",
+        kind: "scalar",
+        localName: "stat_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "all_time_total",
+        kind: "scalar",
+        localName: "all_time_total",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "all_time_match_max",
+        kind: "scalar",
+        localName: "all_time_match_max",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "all_time_life_max",
+        kind: "scalar",
+        localName: "all_time_life_max",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCitadelClientCachedPlayerStats_Stat>): CCitadelClientCachedPlayerStats_Stat {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCitadelClientCachedPlayerStats_Stat>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCitadelClientCachedPlayerStats_Stat,
+  ): CCitadelClientCachedPlayerStats_Stat {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string stat_name */ 1:
+          message.stat_name = reader.string();
+          break;
+        case /* optional uint64 all_time_total */ 2:
+          message.all_time_total = reader.uint64().toBigInt();
+          break;
+        case /* optional uint32 all_time_match_max */ 3:
+          message.all_time_match_max = reader.uint32();
+          break;
+        case /* optional uint32 all_time_life_max */ 4:
+          message.all_time_life_max = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCitadelClientCachedPlayerStats_Stat,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string stat_name = 1; */
+    if (message.stat_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.stat_name);
+    /* optional uint64 all_time_total = 2; */
+    if (message.all_time_total !== undefined) writer.tag(2, WireType.Varint).uint64(message.all_time_total);
+    /* optional uint32 all_time_match_max = 3; */
+    if (message.all_time_match_max !== undefined) writer.tag(3, WireType.Varint).uint32(message.all_time_match_max);
+    /* optional uint32 all_time_life_max = 4; */
+    if (message.all_time_life_max !== undefined) writer.tag(4, WireType.Varint).uint32(message.all_time_life_max);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCitadelClientCachedPlayerStats.Stat
@@ -1602,71 +1602,71 @@ class CCitadelClientCachedPlayerStats_Stat$Type extends MessageType<CCitadelClie
 export const CCitadelClientCachedPlayerStats_Stat = new CCitadelClientCachedPlayerStats_Stat$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCitadelClientMsg_ExecuteMapUnitAbility$Type extends MessageType<CCitadelClientMsg_ExecuteMapUnitAbility> {
-	constructor() {
-		super("CCitadelClientMsg_ExecuteMapUnitAbility", [
-			{
-				no: 1,
-				name: "ability_entity_index",
-				kind: "scalar",
-				localName: "ability_entity_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "target_entity_index",
-				kind: "scalar",
-				localName: "target_entity_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCitadelClientMsg_ExecuteMapUnitAbility>): CCitadelClientMsg_ExecuteMapUnitAbility {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_ExecuteMapUnitAbility>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCitadelClientMsg_ExecuteMapUnitAbility,
-	): CCitadelClientMsg_ExecuteMapUnitAbility {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 ability_entity_index */ 1:
-					message.ability_entity_index = reader.int32();
-					break;
-				case /* optional int32 target_entity_index */ 2:
-					message.target_entity_index = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCitadelClientMsg_ExecuteMapUnitAbility,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 ability_entity_index = 1; */
-		if (message.ability_entity_index !== undefined) writer.tag(1, WireType.Varint).int32(message.ability_entity_index);
-		/* optional int32 target_entity_index = 2; */
-		if (message.target_entity_index !== undefined) writer.tag(2, WireType.Varint).int32(message.target_entity_index);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCitadelClientMsg_ExecuteMapUnitAbility", [
+      {
+        no: 1,
+        name: "ability_entity_index",
+        kind: "scalar",
+        localName: "ability_entity_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "target_entity_index",
+        kind: "scalar",
+        localName: "target_entity_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCitadelClientMsg_ExecuteMapUnitAbility>): CCitadelClientMsg_ExecuteMapUnitAbility {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_ExecuteMapUnitAbility>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCitadelClientMsg_ExecuteMapUnitAbility,
+  ): CCitadelClientMsg_ExecuteMapUnitAbility {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 ability_entity_index */ 1:
+          message.ability_entity_index = reader.int32();
+          break;
+        case /* optional int32 target_entity_index */ 2:
+          message.target_entity_index = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCitadelClientMsg_ExecuteMapUnitAbility,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 ability_entity_index = 1; */
+    if (message.ability_entity_index !== undefined) writer.tag(1, WireType.Varint).int32(message.ability_entity_index);
+    /* optional int32 target_entity_index = 2; */
+    if (message.target_entity_index !== undefined) writer.tag(2, WireType.Varint).int32(message.target_entity_index);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCitadelClientMsg_ExecuteMapUnitAbility
@@ -1674,58 +1674,58 @@ class CCitadelClientMsg_ExecuteMapUnitAbility$Type extends MessageType<CCitadelC
 export const CCitadelClientMsg_ExecuteMapUnitAbility = new CCitadelClientMsg_ExecuteMapUnitAbility$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CCitadelClientMsg_CheaterVote$Type extends MessageType<CCitadelClientMsg_CheaterVote> {
-	constructor() {
-		super("CCitadelClientMsg_CheaterVote", [
-			{
-				no: 1,
-				name: "end_game_immediately",
-				kind: "scalar",
-				localName: "end_game_immediately",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CCitadelClientMsg_CheaterVote>): CCitadelClientMsg_CheaterVote {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_CheaterVote>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CCitadelClientMsg_CheaterVote,
-	): CCitadelClientMsg_CheaterVote {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool end_game_immediately */ 1:
-					message.end_game_immediately = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CCitadelClientMsg_CheaterVote,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool end_game_immediately = 1; */
-		if (message.end_game_immediately !== undefined) writer.tag(1, WireType.Varint).bool(message.end_game_immediately);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CCitadelClientMsg_CheaterVote", [
+      {
+        no: 1,
+        name: "end_game_immediately",
+        kind: "scalar",
+        localName: "end_game_immediately",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CCitadelClientMsg_CheaterVote>): CCitadelClientMsg_CheaterVote {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CCitadelClientMsg_CheaterVote>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CCitadelClientMsg_CheaterVote,
+  ): CCitadelClientMsg_CheaterVote {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool end_game_immediately */ 1:
+          message.end_game_immediately = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CCitadelClientMsg_CheaterVote,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool end_game_immediately = 1; */
+    if (message.end_game_immediately !== undefined) writer.tag(1, WireType.Varint).bool(message.end_game_immediately);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CCitadelClientMsg_CheaterVote

@@ -13,34 +13,34 @@ import type { RpcOptions } from "@protobuf-ts/runtime-rpc";
  * @generated from protobuf service HelpRequestLogs
  */
 export interface IHelpRequestLogsClient {
-	/**
-	 * @generated from protobuf rpc: UploadUserApplicationLog(CHelpRequestLogs_UploadUserApplicationLog_Request) returns (CHelpRequestLogs_UploadUserApplicationLog_Response);
-	 */
-	uploadUserApplicationLog(
-		input: CHelpRequestLogs_UploadUserApplicationLog_Request,
-		options?: RpcOptions,
-	): UnaryCall<CHelpRequestLogs_UploadUserApplicationLog_Request, CHelpRequestLogs_UploadUserApplicationLog_Response>;
+  /**
+   * @generated from protobuf rpc: UploadUserApplicationLog(CHelpRequestLogs_UploadUserApplicationLog_Request) returns (CHelpRequestLogs_UploadUserApplicationLog_Response);
+   */
+  uploadUserApplicationLog(
+    input: CHelpRequestLogs_UploadUserApplicationLog_Request,
+    options?: RpcOptions,
+  ): UnaryCall<CHelpRequestLogs_UploadUserApplicationLog_Request, CHelpRequestLogs_UploadUserApplicationLog_Response>;
 }
 /**
  * @generated from protobuf service HelpRequestLogs
  */
 export class HelpRequestLogsClient implements IHelpRequestLogsClient, ServiceInfo {
-	typeName = HelpRequestLogs.typeName;
-	methods = HelpRequestLogs.methods;
-	options = HelpRequestLogs.options;
-	constructor(private readonly _transport: RpcTransport) {}
-	/**
-	 * @generated from protobuf rpc: UploadUserApplicationLog(CHelpRequestLogs_UploadUserApplicationLog_Request) returns (CHelpRequestLogs_UploadUserApplicationLog_Response);
-	 */
-	uploadUserApplicationLog(
-		input: CHelpRequestLogs_UploadUserApplicationLog_Request,
-		options?: RpcOptions,
-	): UnaryCall<CHelpRequestLogs_UploadUserApplicationLog_Request, CHelpRequestLogs_UploadUserApplicationLog_Response> {
-		const method = this.methods[0],
-			opt = this._transport.mergeOptions(options);
-		return stackIntercept<
-			CHelpRequestLogs_UploadUserApplicationLog_Request,
-			CHelpRequestLogs_UploadUserApplicationLog_Response
-		>("unary", this._transport, method, opt, input);
-	}
+  typeName = HelpRequestLogs.typeName;
+  methods = HelpRequestLogs.methods;
+  options = HelpRequestLogs.options;
+  constructor(private readonly _transport: RpcTransport) {}
+  /**
+   * @generated from protobuf rpc: UploadUserApplicationLog(CHelpRequestLogs_UploadUserApplicationLog_Request) returns (CHelpRequestLogs_UploadUserApplicationLog_Response);
+   */
+  uploadUserApplicationLog(
+    input: CHelpRequestLogs_UploadUserApplicationLog_Request,
+    options?: RpcOptions,
+  ): UnaryCall<CHelpRequestLogs_UploadUserApplicationLog_Request, CHelpRequestLogs_UploadUserApplicationLog_Response> {
+    const method = this.methods[0],
+      opt = this._transport.mergeOptions(options);
+    return stackIntercept<
+      CHelpRequestLogs_UploadUserApplicationLog_Request,
+      CHelpRequestLogs_UploadUserApplicationLog_Response
+    >("unary", this._transport, method, opt, input);
+  }
 }

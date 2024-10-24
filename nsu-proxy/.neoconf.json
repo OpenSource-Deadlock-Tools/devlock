@@ -1,7 +1,7 @@
 {
-	"lspconfig": {
-		"vtsls": {
-			"typescript.preferences.importModuleSpecifierEnding": "js"
-		}
-	}
+  "lspconfig": {
+    "vtsls": {
+      "typescript.preferences.importModuleSpecifierEnding": "js"
+    }
+  }
 }

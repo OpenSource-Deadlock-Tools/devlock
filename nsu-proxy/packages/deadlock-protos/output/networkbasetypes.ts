@@ -14,171 +14,171 @@ import { MessageType } from "@protobuf-ts/runtime";
  * @generated from protobuf message CMsgVector
  */
 export interface CMsgVector {
-	/**
-	 * @generated from protobuf field: optional float x = 1;
-	 */
-	x?: number;
-	/**
-	 * @generated from protobuf field: optional float y = 2;
-	 */
-	y?: number;
-	/**
-	 * @generated from protobuf field: optional float z = 3;
-	 */
-	z?: number;
-	/**
-	 * @generated from protobuf field: optional float w = 4;
-	 */
-	w?: number;
+  /**
+   * @generated from protobuf field: optional float x = 1;
+   */
+  x?: number;
+  /**
+   * @generated from protobuf field: optional float y = 2;
+   */
+  y?: number;
+  /**
+   * @generated from protobuf field: optional float z = 3;
+   */
+  z?: number;
+  /**
+   * @generated from protobuf field: optional float w = 4;
+   */
+  w?: number;
 }
 /**
  * @generated from protobuf message CMsgVector2D
  */
 export interface CMsgVector2D {
-	/**
-	 * @generated from protobuf field: optional float x = 1;
-	 */
-	x?: number;
-	/**
-	 * @generated from protobuf field: optional float y = 2;
-	 */
-	y?: number;
+  /**
+   * @generated from protobuf field: optional float x = 1;
+   */
+  x?: number;
+  /**
+   * @generated from protobuf field: optional float y = 2;
+   */
+  y?: number;
 }
 /**
  * @generated from protobuf message CMsgQAngle
  */
 export interface CMsgQAngle {
-	/**
-	 * @generated from protobuf field: optional float x = 1;
-	 */
-	x?: number;
-	/**
-	 * @generated from protobuf field: optional float y = 2;
-	 */
-	y?: number;
-	/**
-	 * @generated from protobuf field: optional float z = 3;
-	 */
-	z?: number;
+  /**
+   * @generated from protobuf field: optional float x = 1;
+   */
+  x?: number;
+  /**
+   * @generated from protobuf field: optional float y = 2;
+   */
+  y?: number;
+  /**
+   * @generated from protobuf field: optional float z = 3;
+   */
+  z?: number;
 }
 /**
  * @generated from protobuf message CMsgQuaternion
  */
 export interface CMsgQuaternion {
-	/**
-	 * @generated from protobuf field: optional float x = 1;
-	 */
-	x?: number;
-	/**
-	 * @generated from protobuf field: optional float y = 2;
-	 */
-	y?: number;
-	/**
-	 * @generated from protobuf field: optional float z = 3;
-	 */
-	z?: number;
-	/**
-	 * @generated from protobuf field: optional float w = 4;
-	 */
-	w?: number;
+  /**
+   * @generated from protobuf field: optional float x = 1;
+   */
+  x?: number;
+  /**
+   * @generated from protobuf field: optional float y = 2;
+   */
+  y?: number;
+  /**
+   * @generated from protobuf field: optional float z = 3;
+   */
+  z?: number;
+  /**
+   * @generated from protobuf field: optional float w = 4;
+   */
+  w?: number;
 }
 /**
  * @generated from protobuf message CMsgTransform
  */
 export interface CMsgTransform {
-	/**
-	 * @generated from protobuf field: optional CMsgVector position = 1;
-	 */
-	position?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional float scale = 2;
-	 */
-	scale?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgQuaternion orientation = 3;
-	 */
-	orientation?: CMsgQuaternion;
+  /**
+   * @generated from protobuf field: optional CMsgVector position = 1;
+   */
+  position?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional float scale = 2;
+   */
+  scale?: number;
+  /**
+   * @generated from protobuf field: optional CMsgQuaternion orientation = 3;
+   */
+  orientation?: CMsgQuaternion;
 }
 /**
  * @generated from protobuf message CMsgRGBA
  */
 export interface CMsgRGBA {
-	/**
-	 * @generated from protobuf field: optional int32 r = 1;
-	 */
-	r?: number;
-	/**
-	 * @generated from protobuf field: optional int32 g = 2;
-	 */
-	g?: number;
-	/**
-	 * @generated from protobuf field: optional int32 b = 3;
-	 */
-	b?: number;
-	/**
-	 * @generated from protobuf field: optional int32 a = 4;
-	 */
-	a?: number;
+  /**
+   * @generated from protobuf field: optional int32 r = 1;
+   */
+  r?: number;
+  /**
+   * @generated from protobuf field: optional int32 g = 2;
+   */
+  g?: number;
+  /**
+   * @generated from protobuf field: optional int32 b = 3;
+   */
+  b?: number;
+  /**
+   * @generated from protobuf field: optional int32 a = 4;
+   */
+  a?: number;
 }
 /**
  * @generated from protobuf message CMsgPlayerInfo
  */
 export interface CMsgPlayerInfo {
-	/**
-	 * @generated from protobuf field: optional string name = 1;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: optional fixed64 xuid = 2;
-	 */
-	xuid?: bigint;
-	/**
-	 * @generated from protobuf field: optional int32 userid = 3;
-	 */
-	userid?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 steamid = 4;
-	 */
-	steamid?: bigint;
-	/**
-	 * @generated from protobuf field: optional bool fakeplayer = 5;
-	 */
-	fakeplayer?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool ishltv = 6;
-	 */
-	ishltv?: boolean;
+  /**
+   * @generated from protobuf field: optional string name = 1;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: optional fixed64 xuid = 2;
+   */
+  xuid?: bigint;
+  /**
+   * @generated from protobuf field: optional int32 userid = 3;
+   */
+  userid?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 steamid = 4;
+   */
+  steamid?: bigint;
+  /**
+   * @generated from protobuf field: optional bool fakeplayer = 5;
+   */
+  fakeplayer?: boolean;
+  /**
+   * @generated from protobuf field: optional bool ishltv = 6;
+   */
+  ishltv?: boolean;
 }
 /**
  * @generated from protobuf message CEntityMsg
  */
 export interface CEntityMsg {
-	/**
-	 * @generated from protobuf field: optional uint32 target_entity = 1;
-	 */
-	target_entity?: number;
+  /**
+   * @generated from protobuf field: optional uint32 target_entity = 1;
+   */
+  target_entity?: number;
 }
 /**
  * @generated from protobuf message CMsg_CVars
  */
 export interface CMsg_CVars {
-	/**
-	 * @generated from protobuf field: repeated CMsg_CVars.CVar cvars = 1;
-	 */
-	cvars: CMsg_CVars_CVar[];
+  /**
+   * @generated from protobuf field: repeated CMsg_CVars.CVar cvars = 1;
+   */
+  cvars: CMsg_CVars_CVar[];
 }
 /**
  * @generated from protobuf message CMsg_CVars.CVar
  */
 export interface CMsg_CVars_CVar {
-	/**
-	 * @generated from protobuf field: optional string name = 1;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: optional string value = 2;
-	 */
-	value?: string;
+  /**
+   * @generated from protobuf field: optional string name = 1;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: optional string value = 2;
+   */
+  value?: string;
 }
 /**
  * @generated from protobuf message CNETMsg_NOP
@@ -188,666 +188,666 @@ export interface CNETMsg_NOP {}
  * @generated from protobuf message CNETMsg_SplitScreenUser
  */
 export interface CNETMsg_SplitScreenUser {
-	/**
-	 * @generated from protobuf field: optional int32 slot = 1;
-	 */
-	slot?: number;
+  /**
+   * @generated from protobuf field: optional int32 slot = 1;
+   */
+  slot?: number;
 }
 /**
  * @generated from protobuf message CNETMsg_Tick
  */
 export interface CNETMsg_Tick {
-	/**
-	 * @generated from protobuf field: optional uint32 tick = 1;
-	 */
-	tick?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 host_computationtime = 4;
-	 */
-	host_computationtime?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 host_computationtime_std_deviation = 5;
-	 */
-	host_computationtime_std_deviation?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 legacy_host_loss = 7;
-	 */
-	legacy_host_loss?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 host_unfiltered_frametime = 8;
-	 */
-	host_unfiltered_frametime?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hltv_replay_flags = 9;
-	 */
-	hltv_replay_flags?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 expected_long_tick = 10;
-	 */
-	expected_long_tick?: number;
-	/**
-	 * @generated from protobuf field: optional string expected_long_tick_reason = 11;
-	 */
-	expected_long_tick_reason?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 host_frame_dropped_pct_x10 = 12;
-	 */
-	host_frame_dropped_pct_x10?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 host_frame_irregular_arrival_pct_x10 = 13;
-	 */
-	host_frame_irregular_arrival_pct_x10?: number;
+  /**
+   * @generated from protobuf field: optional uint32 tick = 1;
+   */
+  tick?: number;
+  /**
+   * @generated from protobuf field: optional uint32 host_computationtime = 4;
+   */
+  host_computationtime?: number;
+  /**
+   * @generated from protobuf field: optional uint32 host_computationtime_std_deviation = 5;
+   */
+  host_computationtime_std_deviation?: number;
+  /**
+   * @generated from protobuf field: optional uint32 legacy_host_loss = 7;
+   */
+  legacy_host_loss?: number;
+  /**
+   * @generated from protobuf field: optional uint32 host_unfiltered_frametime = 8;
+   */
+  host_unfiltered_frametime?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hltv_replay_flags = 9;
+   */
+  hltv_replay_flags?: number;
+  /**
+   * @generated from protobuf field: optional uint32 expected_long_tick = 10;
+   */
+  expected_long_tick?: number;
+  /**
+   * @generated from protobuf field: optional string expected_long_tick_reason = 11;
+   */
+  expected_long_tick_reason?: string;
+  /**
+   * @generated from protobuf field: optional uint32 host_frame_dropped_pct_x10 = 12;
+   */
+  host_frame_dropped_pct_x10?: number;
+  /**
+   * @generated from protobuf field: optional uint32 host_frame_irregular_arrival_pct_x10 = 13;
+   */
+  host_frame_irregular_arrival_pct_x10?: number;
 }
 /**
  * @generated from protobuf message CNETMsg_StringCmd
  */
 export interface CNETMsg_StringCmd {
-	/**
-	 * @generated from protobuf field: optional string command = 1;
-	 */
-	command?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 prediction_sync = 2;
-	 */
-	prediction_sync?: number;
+  /**
+   * @generated from protobuf field: optional string command = 1;
+   */
+  command?: string;
+  /**
+   * @generated from protobuf field: optional uint32 prediction_sync = 2;
+   */
+  prediction_sync?: number;
 }
 /**
  * @generated from protobuf message CNETMsg_SetConVar
  */
 export interface CNETMsg_SetConVar {
-	/**
-	 * @generated from protobuf field: optional CMsg_CVars convars = 1;
-	 */
-	convars?: CMsg_CVars;
+  /**
+   * @generated from protobuf field: optional CMsg_CVars convars = 1;
+   */
+  convars?: CMsg_CVars;
 }
 /**
  * @generated from protobuf message CNETMsg_SignonState
  */
 export interface CNETMsg_SignonState {
-	/**
-	 * @generated from protobuf field: optional SignonState_t signon_state = 1;
-	 */
-	signon_state?: SignonState_t;
-	/**
-	 * @generated from protobuf field: optional uint32 spawn_count = 2;
-	 */
-	spawn_count?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 num_server_players = 3;
-	 */
-	num_server_players?: number;
-	/**
-	 * @generated from protobuf field: repeated string players_networkids = 4;
-	 */
-	players_networkids: string[];
-	/**
-	 * @generated from protobuf field: optional string map_name = 5;
-	 */
-	map_name?: string;
-	/**
-	 * @generated from protobuf field: optional string addons = 6;
-	 */
-	addons?: string;
+  /**
+   * @generated from protobuf field: optional SignonState_t signon_state = 1;
+   */
+  signon_state?: SignonState_t;
+  /**
+   * @generated from protobuf field: optional uint32 spawn_count = 2;
+   */
+  spawn_count?: number;
+  /**
+   * @generated from protobuf field: optional uint32 num_server_players = 3;
+   */
+  num_server_players?: number;
+  /**
+   * @generated from protobuf field: repeated string players_networkids = 4;
+   */
+  players_networkids: string[];
+  /**
+   * @generated from protobuf field: optional string map_name = 5;
+   */
+  map_name?: string;
+  /**
+   * @generated from protobuf field: optional string addons = 6;
+   */
+  addons?: string;
 }
 /**
  * @generated from protobuf message CSVCMsg_GameEvent
  */
 export interface CSVCMsg_GameEvent {
-	/**
-	 * @generated from protobuf field: optional string event_name = 1;
-	 */
-	event_name?: string;
-	/**
-	 * @generated from protobuf field: optional int32 eventid = 2;
-	 */
-	eventid?: number;
-	/**
-	 * @generated from protobuf field: repeated CSVCMsg_GameEvent.key_t keys = 3;
-	 */
-	keys: CSVCMsg_GameEvent_key_t[];
+  /**
+   * @generated from protobuf field: optional string event_name = 1;
+   */
+  event_name?: string;
+  /**
+   * @generated from protobuf field: optional int32 eventid = 2;
+   */
+  eventid?: number;
+  /**
+   * @generated from protobuf field: repeated CSVCMsg_GameEvent.key_t keys = 3;
+   */
+  keys: CSVCMsg_GameEvent_key_t[];
 }
 /**
  * @generated from protobuf message CSVCMsg_GameEvent.key_t
  */
 export interface CSVCMsg_GameEvent_key_t {
-	/**
-	 * @generated from protobuf field: optional int32 type = 1;
-	 */
-	type?: number;
-	/**
-	 * @generated from protobuf field: optional string val_string = 2;
-	 */
-	val_string?: string;
-	/**
-	 * @generated from protobuf field: optional float val_float = 3;
-	 */
-	val_float?: number;
-	/**
-	 * @generated from protobuf field: optional int32 val_long = 4;
-	 */
-	val_long?: number;
-	/**
-	 * @generated from protobuf field: optional int32 val_short = 5;
-	 */
-	val_short?: number;
-	/**
-	 * @generated from protobuf field: optional int32 val_byte = 6;
-	 */
-	val_byte?: number;
-	/**
-	 * @generated from protobuf field: optional bool val_bool = 7;
-	 */
-	val_bool?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint64 val_uint64 = 8;
-	 */
-	val_uint64?: bigint;
+  /**
+   * @generated from protobuf field: optional int32 type = 1;
+   */
+  type?: number;
+  /**
+   * @generated from protobuf field: optional string val_string = 2;
+   */
+  val_string?: string;
+  /**
+   * @generated from protobuf field: optional float val_float = 3;
+   */
+  val_float?: number;
+  /**
+   * @generated from protobuf field: optional int32 val_long = 4;
+   */
+  val_long?: number;
+  /**
+   * @generated from protobuf field: optional int32 val_short = 5;
+   */
+  val_short?: number;
+  /**
+   * @generated from protobuf field: optional int32 val_byte = 6;
+   */
+  val_byte?: number;
+  /**
+   * @generated from protobuf field: optional bool val_bool = 7;
+   */
+  val_bool?: boolean;
+  /**
+   * @generated from protobuf field: optional uint64 val_uint64 = 8;
+   */
+  val_uint64?: bigint;
 }
 /**
  * @generated from protobuf message CSVCMsgList_GameEvents
  */
 export interface CSVCMsgList_GameEvents {
-	/**
-	 * @generated from protobuf field: repeated CSVCMsgList_GameEvents.event_t events = 1;
-	 */
-	events: CSVCMsgList_GameEvents_event_t[];
+  /**
+   * @generated from protobuf field: repeated CSVCMsgList_GameEvents.event_t events = 1;
+   */
+  events: CSVCMsgList_GameEvents_event_t[];
 }
 /**
  * @generated from protobuf message CSVCMsgList_GameEvents.event_t
  */
 export interface CSVCMsgList_GameEvents_event_t {
-	/**
-	 * @generated from protobuf field: optional int32 tick = 1;
-	 */
-	tick?: number;
-	/**
-	 * @generated from protobuf field: optional CSVCMsg_GameEvent event = 2;
-	 */
-	event?: CSVCMsg_GameEvent;
+  /**
+   * @generated from protobuf field: optional int32 tick = 1;
+   */
+  tick?: number;
+  /**
+   * @generated from protobuf field: optional CSVCMsg_GameEvent event = 2;
+   */
+  event?: CSVCMsg_GameEvent;
 }
 /**
  * @generated from protobuf message CNETMsg_SpawnGroup_Load
  */
 export interface CNETMsg_SpawnGroup_Load {
-	/**
-	 * @generated from protobuf field: optional string worldname = 1;
-	 */
-	worldname?: string;
-	/**
-	 * @generated from protobuf field: optional string entitylumpname = 2;
-	 */
-	entitylumpname?: string;
-	/**
-	 * @generated from protobuf field: optional string entityfiltername = 3;
-	 */
-	entityfiltername?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 spawngrouphandle = 4;
-	 */
-	spawngrouphandle?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 spawngroupownerhandle = 5;
-	 */
-	spawngroupownerhandle?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector world_offset_pos = 6;
-	 */
-	world_offset_pos?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgQAngle world_offset_angle = 7;
-	 */
-	world_offset_angle?: CMsgQAngle;
-	/**
-	 * @generated from protobuf field: optional bytes spawngroupmanifest = 8;
-	 */
-	spawngroupmanifest?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 9;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional int32 tickcount = 10;
-	 */
-	tickcount?: number;
-	/**
-	 * @generated from protobuf field: optional bool manifestincomplete = 11;
-	 */
-	manifestincomplete?: boolean;
-	/**
-	 * @generated from protobuf field: optional string localnamefixup = 12;
-	 */
-	localnamefixup?: string;
-	/**
-	 * @generated from protobuf field: optional string parentnamefixup = 13;
-	 */
-	parentnamefixup?: string;
-	/**
-	 * @generated from protobuf field: optional int32 manifestloadpriority = 14;
-	 */
-	manifestloadpriority?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 worldgroupid = 15;
-	 */
-	worldgroupid?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 creationsequence = 16;
-	 */
-	creationsequence?: number;
-	/**
-	 * @generated from protobuf field: optional string savegamefilename = 17;
-	 */
-	savegamefilename?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 spawngroupparenthandle = 18;
-	 */
-	spawngroupparenthandle?: number;
-	/**
-	 * @generated from protobuf field: optional bool leveltransition = 19;
-	 */
-	leveltransition?: boolean;
-	/**
-	 * @generated from protobuf field: optional string worldgroupname = 20;
-	 */
-	worldgroupname?: string;
+  /**
+   * @generated from protobuf field: optional string worldname = 1;
+   */
+  worldname?: string;
+  /**
+   * @generated from protobuf field: optional string entitylumpname = 2;
+   */
+  entitylumpname?: string;
+  /**
+   * @generated from protobuf field: optional string entityfiltername = 3;
+   */
+  entityfiltername?: string;
+  /**
+   * @generated from protobuf field: optional uint32 spawngrouphandle = 4;
+   */
+  spawngrouphandle?: number;
+  /**
+   * @generated from protobuf field: optional uint32 spawngroupownerhandle = 5;
+   */
+  spawngroupownerhandle?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector world_offset_pos = 6;
+   */
+  world_offset_pos?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgQAngle world_offset_angle = 7;
+   */
+  world_offset_angle?: CMsgQAngle;
+  /**
+   * @generated from protobuf field: optional bytes spawngroupmanifest = 8;
+   */
+  spawngroupmanifest?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional uint32 flags = 9;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional int32 tickcount = 10;
+   */
+  tickcount?: number;
+  /**
+   * @generated from protobuf field: optional bool manifestincomplete = 11;
+   */
+  manifestincomplete?: boolean;
+  /**
+   * @generated from protobuf field: optional string localnamefixup = 12;
+   */
+  localnamefixup?: string;
+  /**
+   * @generated from protobuf field: optional string parentnamefixup = 13;
+   */
+  parentnamefixup?: string;
+  /**
+   * @generated from protobuf field: optional int32 manifestloadpriority = 14;
+   */
+  manifestloadpriority?: number;
+  /**
+   * @generated from protobuf field: optional uint32 worldgroupid = 15;
+   */
+  worldgroupid?: number;
+  /**
+   * @generated from protobuf field: optional uint32 creationsequence = 16;
+   */
+  creationsequence?: number;
+  /**
+   * @generated from protobuf field: optional string savegamefilename = 17;
+   */
+  savegamefilename?: string;
+  /**
+   * @generated from protobuf field: optional uint32 spawngroupparenthandle = 18;
+   */
+  spawngroupparenthandle?: number;
+  /**
+   * @generated from protobuf field: optional bool leveltransition = 19;
+   */
+  leveltransition?: boolean;
+  /**
+   * @generated from protobuf field: optional string worldgroupname = 20;
+   */
+  worldgroupname?: string;
 }
 /**
  * @generated from protobuf message CNETMsg_SpawnGroup_ManifestUpdate
  */
 export interface CNETMsg_SpawnGroup_ManifestUpdate {
-	/**
-	 * @generated from protobuf field: optional uint32 spawngrouphandle = 1;
-	 */
-	spawngrouphandle?: number;
-	/**
-	 * @generated from protobuf field: optional bytes spawngroupmanifest = 2;
-	 */
-	spawngroupmanifest?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional bool manifestincomplete = 3;
-	 */
-	manifestincomplete?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 spawngrouphandle = 1;
+   */
+  spawngrouphandle?: number;
+  /**
+   * @generated from protobuf field: optional bytes spawngroupmanifest = 2;
+   */
+  spawngroupmanifest?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bool manifestincomplete = 3;
+   */
+  manifestincomplete?: boolean;
 }
 /**
  * @generated from protobuf message CNETMsg_SpawnGroup_SetCreationTick
  */
 export interface CNETMsg_SpawnGroup_SetCreationTick {
-	/**
-	 * @generated from protobuf field: optional uint32 spawngrouphandle = 1;
-	 */
-	spawngrouphandle?: number;
-	/**
-	 * @generated from protobuf field: optional int32 tickcount = 2;
-	 */
-	tickcount?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 creationsequence = 3;
-	 */
-	creationsequence?: number;
+  /**
+   * @generated from protobuf field: optional uint32 spawngrouphandle = 1;
+   */
+  spawngrouphandle?: number;
+  /**
+   * @generated from protobuf field: optional int32 tickcount = 2;
+   */
+  tickcount?: number;
+  /**
+   * @generated from protobuf field: optional uint32 creationsequence = 3;
+   */
+  creationsequence?: number;
 }
 /**
  * @generated from protobuf message CNETMsg_SpawnGroup_Unload
  */
 export interface CNETMsg_SpawnGroup_Unload {
-	/**
-	 * @generated from protobuf field: optional uint32 spawngrouphandle = 1;
-	 */
-	spawngrouphandle?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 2;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional int32 tickcount = 3;
-	 */
-	tickcount?: number;
+  /**
+   * @generated from protobuf field: optional uint32 spawngrouphandle = 1;
+   */
+  spawngrouphandle?: number;
+  /**
+   * @generated from protobuf field: optional uint32 flags = 2;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional int32 tickcount = 3;
+   */
+  tickcount?: number;
 }
 /**
  * @generated from protobuf message CNETMsg_SpawnGroup_LoadCompleted
  */
 export interface CNETMsg_SpawnGroup_LoadCompleted {
-	/**
-	 * @generated from protobuf field: optional uint32 spawngrouphandle = 1;
-	 */
-	spawngrouphandle?: number;
+  /**
+   * @generated from protobuf field: optional uint32 spawngrouphandle = 1;
+   */
+  spawngrouphandle?: number;
 }
 /**
  * @generated from protobuf message CSVCMsg_GameSessionConfiguration
  */
 export interface CSVCMsg_GameSessionConfiguration {
-	/**
-	 * @generated from protobuf field: optional bool is_multiplayer = 1;
-	 */
-	is_multiplayer?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_loadsavegame = 2;
-	 */
-	is_loadsavegame?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_background_map = 3;
-	 */
-	is_background_map?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_headless = 4;
-	 */
-	is_headless?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 min_client_limit = 5;
-	 */
-	min_client_limit?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 max_client_limit = 6;
-	 */
-	max_client_limit?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 max_clients = 7;
-	 */
-	max_clients?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 tick_interval = 8;
-	 */
-	tick_interval?: number;
-	/**
-	 * @generated from protobuf field: optional string hostname = 9;
-	 */
-	hostname?: string;
-	/**
-	 * @generated from protobuf field: optional string savegamename = 10;
-	 */
-	savegamename?: string;
-	/**
-	 * @generated from protobuf field: optional string s1_mapname = 11;
-	 */
-	s1_mapname?: string;
-	/**
-	 * @generated from protobuf field: optional string gamemode = 12;
-	 */
-	gamemode?: string;
-	/**
-	 * @generated from protobuf field: optional string server_ip_address = 13;
-	 */
-	server_ip_address?: string;
-	/**
-	 * @generated from protobuf field: optional bytes data = 14;
-	 */
-	data?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional bool is_localonly = 15;
-	 */
-	is_localonly?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool no_steam_server = 19;
-	 */
-	no_steam_server?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_transition = 16;
-	 */
-	is_transition?: boolean;
-	/**
-	 * @generated from protobuf field: optional string previouslevel = 17;
-	 */
-	previouslevel?: string;
-	/**
-	 * @generated from protobuf field: optional string landmarkname = 18;
-	 */
-	landmarkname?: string;
+  /**
+   * @generated from protobuf field: optional bool is_multiplayer = 1;
+   */
+  is_multiplayer?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_loadsavegame = 2;
+   */
+  is_loadsavegame?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_background_map = 3;
+   */
+  is_background_map?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_headless = 4;
+   */
+  is_headless?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 min_client_limit = 5;
+   */
+  min_client_limit?: number;
+  /**
+   * @generated from protobuf field: optional uint32 max_client_limit = 6;
+   */
+  max_client_limit?: number;
+  /**
+   * @generated from protobuf field: optional uint32 max_clients = 7;
+   */
+  max_clients?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 tick_interval = 8;
+   */
+  tick_interval?: number;
+  /**
+   * @generated from protobuf field: optional string hostname = 9;
+   */
+  hostname?: string;
+  /**
+   * @generated from protobuf field: optional string savegamename = 10;
+   */
+  savegamename?: string;
+  /**
+   * @generated from protobuf field: optional string s1_mapname = 11;
+   */
+  s1_mapname?: string;
+  /**
+   * @generated from protobuf field: optional string gamemode = 12;
+   */
+  gamemode?: string;
+  /**
+   * @generated from protobuf field: optional string server_ip_address = 13;
+   */
+  server_ip_address?: string;
+  /**
+   * @generated from protobuf field: optional bytes data = 14;
+   */
+  data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bool is_localonly = 15;
+   */
+  is_localonly?: boolean;
+  /**
+   * @generated from protobuf field: optional bool no_steam_server = 19;
+   */
+  no_steam_server?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_transition = 16;
+   */
+  is_transition?: boolean;
+  /**
+   * @generated from protobuf field: optional string previouslevel = 17;
+   */
+  previouslevel?: string;
+  /**
+   * @generated from protobuf field: optional string landmarkname = 18;
+   */
+  landmarkname?: string;
 }
 /**
  * @generated from protobuf message CNETMsg_DebugOverlay
  */
 export interface CNETMsg_DebugOverlay {
-	/**
-	 * @generated from protobuf field: optional int32 etype = 1;
-	 */
-	etype?: number;
-	/**
-	 * @generated from protobuf field: repeated CMsgVector vectors = 2;
-	 */
-	vectors: CMsgVector[];
-	/**
-	 * @generated from protobuf field: repeated CMsgRGBA colors = 3;
-	 */
-	colors: CMsgRGBA[];
-	/**
-	 * @generated from protobuf field: repeated float dimensions = 4;
-	 */
-	dimensions: number[];
-	/**
-	 * @generated from protobuf field: repeated float times = 5;
-	 */
-	times: number[];
-	/**
-	 * @generated from protobuf field: repeated bool bools = 6;
-	 */
-	bools: boolean[];
-	/**
-	 * @generated from protobuf field: repeated uint64 uint64s = 7 [json_name = "uint64s"];
-	 */
-	uint64s: bigint[];
-	/**
-	 * @generated from protobuf field: repeated string strings = 8;
-	 */
-	strings: string[];
+  /**
+   * @generated from protobuf field: optional int32 etype = 1;
+   */
+  etype?: number;
+  /**
+   * @generated from protobuf field: repeated CMsgVector vectors = 2;
+   */
+  vectors: CMsgVector[];
+  /**
+   * @generated from protobuf field: repeated CMsgRGBA colors = 3;
+   */
+  colors: CMsgRGBA[];
+  /**
+   * @generated from protobuf field: repeated float dimensions = 4;
+   */
+  dimensions: number[];
+  /**
+   * @generated from protobuf field: repeated float times = 5;
+   */
+  times: number[];
+  /**
+   * @generated from protobuf field: repeated bool bools = 6;
+   */
+  bools: boolean[];
+  /**
+   * @generated from protobuf field: repeated uint64 uint64s = 7 [json_name = "uint64s"];
+   */
+  uint64s: bigint[];
+  /**
+   * @generated from protobuf field: repeated string strings = 8;
+   */
+  strings: string[];
 }
 /**
  * @generated from protobuf enum SignonState_t
  */
 export enum SignonState_t {
-	/**
-	 * @generated from protobuf enum value: SIGNONSTATE_NONE = 0;
-	 */
-	SIGNONSTATE_NONE = 0,
-	/**
-	 * @generated from protobuf enum value: SIGNONSTATE_CHALLENGE = 1;
-	 */
-	SIGNONSTATE_CHALLENGE = 1,
-	/**
-	 * @generated from protobuf enum value: SIGNONSTATE_CONNECTED = 2;
-	 */
-	SIGNONSTATE_CONNECTED = 2,
-	/**
-	 * @generated from protobuf enum value: SIGNONSTATE_NEW = 3;
-	 */
-	SIGNONSTATE_NEW = 3,
-	/**
-	 * @generated from protobuf enum value: SIGNONSTATE_PRESPAWN = 4;
-	 */
-	SIGNONSTATE_PRESPAWN = 4,
-	/**
-	 * @generated from protobuf enum value: SIGNONSTATE_SPAWN = 5;
-	 */
-	SIGNONSTATE_SPAWN = 5,
-	/**
-	 * @generated from protobuf enum value: SIGNONSTATE_FULL = 6;
-	 */
-	SIGNONSTATE_FULL = 6,
-	/**
-	 * @generated from protobuf enum value: SIGNONSTATE_CHANGELEVEL = 7;
-	 */
-	SIGNONSTATE_CHANGELEVEL = 7,
+  /**
+   * @generated from protobuf enum value: SIGNONSTATE_NONE = 0;
+   */
+  SIGNONSTATE_NONE = 0,
+  /**
+   * @generated from protobuf enum value: SIGNONSTATE_CHALLENGE = 1;
+   */
+  SIGNONSTATE_CHALLENGE = 1,
+  /**
+   * @generated from protobuf enum value: SIGNONSTATE_CONNECTED = 2;
+   */
+  SIGNONSTATE_CONNECTED = 2,
+  /**
+   * @generated from protobuf enum value: SIGNONSTATE_NEW = 3;
+   */
+  SIGNONSTATE_NEW = 3,
+  /**
+   * @generated from protobuf enum value: SIGNONSTATE_PRESPAWN = 4;
+   */
+  SIGNONSTATE_PRESPAWN = 4,
+  /**
+   * @generated from protobuf enum value: SIGNONSTATE_SPAWN = 5;
+   */
+  SIGNONSTATE_SPAWN = 5,
+  /**
+   * @generated from protobuf enum value: SIGNONSTATE_FULL = 6;
+   */
+  SIGNONSTATE_FULL = 6,
+  /**
+   * @generated from protobuf enum value: SIGNONSTATE_CHANGELEVEL = 7;
+   */
+  SIGNONSTATE_CHANGELEVEL = 7,
 }
 /**
  * @generated from protobuf enum NET_Messages
  */
 export enum NET_Messages {
-	/**
-	 * @generated from protobuf enum value: net_NOP = 0;
-	 */
-	net_NOP = 0,
-	/**
-	 * @generated from protobuf enum value: net_Disconnect_Legacy = 1;
-	 */
-	net_Disconnect_Legacy = 1,
-	/**
-	 * @generated from protobuf enum value: net_SplitScreenUser = 3;
-	 */
-	net_SplitScreenUser = 3,
-	/**
-	 * @generated from protobuf enum value: net_Tick = 4;
-	 */
-	net_Tick = 4,
-	/**
-	 * @generated from protobuf enum value: net_StringCmd = 5;
-	 */
-	net_StringCmd = 5,
-	/**
-	 * @generated from protobuf enum value: net_SetConVar = 6;
-	 */
-	net_SetConVar = 6,
-	/**
-	 * @generated from protobuf enum value: net_SignonState = 7;
-	 */
-	net_SignonState = 7,
-	/**
-	 * @generated from protobuf enum value: net_SpawnGroup_Load = 8;
-	 */
-	net_SpawnGroup_Load = 8,
-	/**
-	 * @generated from protobuf enum value: net_SpawnGroup_ManifestUpdate = 9;
-	 */
-	net_SpawnGroup_ManifestUpdate = 9,
-	/**
-	 * @generated from protobuf enum value: net_SpawnGroup_SetCreationTick = 11;
-	 */
-	net_SpawnGroup_SetCreationTick = 11,
-	/**
-	 * @generated from protobuf enum value: net_SpawnGroup_Unload = 12;
-	 */
-	net_SpawnGroup_Unload = 12,
-	/**
-	 * @generated from protobuf enum value: net_SpawnGroup_LoadCompleted = 13;
-	 */
-	net_SpawnGroup_LoadCompleted = 13,
-	/**
-	 * @generated from protobuf enum value: net_DebugOverlay = 15;
-	 */
-	net_DebugOverlay = 15,
+  /**
+   * @generated from protobuf enum value: net_NOP = 0;
+   */
+  net_NOP = 0,
+  /**
+   * @generated from protobuf enum value: net_Disconnect_Legacy = 1;
+   */
+  net_Disconnect_Legacy = 1,
+  /**
+   * @generated from protobuf enum value: net_SplitScreenUser = 3;
+   */
+  net_SplitScreenUser = 3,
+  /**
+   * @generated from protobuf enum value: net_Tick = 4;
+   */
+  net_Tick = 4,
+  /**
+   * @generated from protobuf enum value: net_StringCmd = 5;
+   */
+  net_StringCmd = 5,
+  /**
+   * @generated from protobuf enum value: net_SetConVar = 6;
+   */
+  net_SetConVar = 6,
+  /**
+   * @generated from protobuf enum value: net_SignonState = 7;
+   */
+  net_SignonState = 7,
+  /**
+   * @generated from protobuf enum value: net_SpawnGroup_Load = 8;
+   */
+  net_SpawnGroup_Load = 8,
+  /**
+   * @generated from protobuf enum value: net_SpawnGroup_ManifestUpdate = 9;
+   */
+  net_SpawnGroup_ManifestUpdate = 9,
+  /**
+   * @generated from protobuf enum value: net_SpawnGroup_SetCreationTick = 11;
+   */
+  net_SpawnGroup_SetCreationTick = 11,
+  /**
+   * @generated from protobuf enum value: net_SpawnGroup_Unload = 12;
+   */
+  net_SpawnGroup_Unload = 12,
+  /**
+   * @generated from protobuf enum value: net_SpawnGroup_LoadCompleted = 13;
+   */
+  net_SpawnGroup_LoadCompleted = 13,
+  /**
+   * @generated from protobuf enum value: net_DebugOverlay = 15;
+   */
+  net_DebugOverlay = 15,
 }
 /**
  * @generated from protobuf enum SpawnGroupFlags_t
  */
 export enum SpawnGroupFlags_t {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: SPAWN_GROUP_LOAD_ENTITIES_FROM_SAVE = 1;
-	 */
-	SPAWN_GROUP_LOAD_ENTITIES_FROM_SAVE = 1,
-	/**
-	 * @generated from protobuf enum value: SPAWN_GROUP_DONT_SPAWN_ENTITIES = 2;
-	 */
-	SPAWN_GROUP_DONT_SPAWN_ENTITIES = 2,
-	/**
-	 * @generated from protobuf enum value: SPAWN_GROUP_SYNCHRONOUS_SPAWN = 4;
-	 */
-	SPAWN_GROUP_SYNCHRONOUS_SPAWN = 4,
-	/**
-	 * @generated from protobuf enum value: SPAWN_GROUP_IS_INITIAL_SPAWN_GROUP = 8;
-	 */
-	SPAWN_GROUP_IS_INITIAL_SPAWN_GROUP = 8,
-	/**
-	 * @generated from protobuf enum value: SPAWN_GROUP_CREATE_CLIENT_ONLY_ENTITIES = 16;
-	 */
-	SPAWN_GROUP_CREATE_CLIENT_ONLY_ENTITIES = 16,
-	/**
-	 * @generated from protobuf enum value: SPAWN_GROUP_BLOCK_UNTIL_LOADED = 64;
-	 */
-	SPAWN_GROUP_BLOCK_UNTIL_LOADED = 64,
-	/**
-	 * @generated from protobuf enum value: SPAWN_GROUP_LOAD_STREAMING_DATA = 128;
-	 */
-	SPAWN_GROUP_LOAD_STREAMING_DATA = 128,
-	/**
-	 * @generated from protobuf enum value: SPAWN_GROUP_CREATE_NEW_SCENE_WORLD = 256;
-	 */
-	SPAWN_GROUP_CREATE_NEW_SCENE_WORLD = 256,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: SPAWN_GROUP_LOAD_ENTITIES_FROM_SAVE = 1;
+   */
+  SPAWN_GROUP_LOAD_ENTITIES_FROM_SAVE = 1,
+  /**
+   * @generated from protobuf enum value: SPAWN_GROUP_DONT_SPAWN_ENTITIES = 2;
+   */
+  SPAWN_GROUP_DONT_SPAWN_ENTITIES = 2,
+  /**
+   * @generated from protobuf enum value: SPAWN_GROUP_SYNCHRONOUS_SPAWN = 4;
+   */
+  SPAWN_GROUP_SYNCHRONOUS_SPAWN = 4,
+  /**
+   * @generated from protobuf enum value: SPAWN_GROUP_IS_INITIAL_SPAWN_GROUP = 8;
+   */
+  SPAWN_GROUP_IS_INITIAL_SPAWN_GROUP = 8,
+  /**
+   * @generated from protobuf enum value: SPAWN_GROUP_CREATE_CLIENT_ONLY_ENTITIES = 16;
+   */
+  SPAWN_GROUP_CREATE_CLIENT_ONLY_ENTITIES = 16,
+  /**
+   * @generated from protobuf enum value: SPAWN_GROUP_BLOCK_UNTIL_LOADED = 64;
+   */
+  SPAWN_GROUP_BLOCK_UNTIL_LOADED = 64,
+  /**
+   * @generated from protobuf enum value: SPAWN_GROUP_LOAD_STREAMING_DATA = 128;
+   */
+  SPAWN_GROUP_LOAD_STREAMING_DATA = 128,
+  /**
+   * @generated from protobuf enum value: SPAWN_GROUP_CREATE_NEW_SCENE_WORLD = 256;
+   */
+  SPAWN_GROUP_CREATE_NEW_SCENE_WORLD = 256,
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgVector$Type extends MessageType<CMsgVector> {
-	constructor() {
-		super("CMsgVector", [
-			{
-				no: 1,
-				name: "x",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 2,
-				name: "y",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "z",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "w",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgVector>): CMsgVector {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgVector>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgVector,
-	): CMsgVector {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float x */ 1:
-					message.x = reader.float();
-					break;
-				case /* optional float y */ 2:
-					message.y = reader.float();
-					break;
-				case /* optional float z */ 3:
-					message.z = reader.float();
-					break;
-				case /* optional float w */ 4:
-					message.w = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgVector, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional float x = 1; */
-		if (message.x !== undefined) writer.tag(1, WireType.Bit32).float(message.x);
-		/* optional float y = 2; */
-		if (message.y !== undefined) writer.tag(2, WireType.Bit32).float(message.y);
-		/* optional float z = 3; */
-		if (message.z !== undefined) writer.tag(3, WireType.Bit32).float(message.z);
-		/* optional float w = 4; */
-		if (message.w !== undefined) writer.tag(4, WireType.Bit32).float(message.w);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgVector", [
+      {
+        no: 1,
+        name: "x",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 2,
+        name: "y",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "z",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "w",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgVector>): CMsgVector {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgVector>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgVector,
+  ): CMsgVector {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float x */ 1:
+          message.x = reader.float();
+          break;
+        case /* optional float y */ 2:
+          message.y = reader.float();
+          break;
+        case /* optional float z */ 3:
+          message.z = reader.float();
+          break;
+        case /* optional float w */ 4:
+          message.w = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgVector, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional float x = 1; */
+    if (message.x !== undefined) writer.tag(1, WireType.Bit32).float(message.x);
+    /* optional float y = 2; */
+    if (message.y !== undefined) writer.tag(2, WireType.Bit32).float(message.y);
+    /* optional float z = 3; */
+    if (message.z !== undefined) writer.tag(3, WireType.Bit32).float(message.z);
+    /* optional float w = 4; */
+    if (message.w !== undefined) writer.tag(4, WireType.Bit32).float(message.w);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgVector
@@ -855,65 +855,65 @@ class CMsgVector$Type extends MessageType<CMsgVector> {
 export const CMsgVector = new CMsgVector$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgVector2D$Type extends MessageType<CMsgVector2D> {
-	constructor() {
-		super("CMsgVector2D", [
-			{
-				no: 1,
-				name: "x",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 2,
-				name: "y",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgVector2D>): CMsgVector2D {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgVector2D>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgVector2D,
-	): CMsgVector2D {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float x */ 1:
-					message.x = reader.float();
-					break;
-				case /* optional float y */ 2:
-					message.y = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgVector2D, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional float x = 1; */
-		if (message.x !== undefined) writer.tag(1, WireType.Bit32).float(message.x);
-		/* optional float y = 2; */
-		if (message.y !== undefined) writer.tag(2, WireType.Bit32).float(message.y);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgVector2D", [
+      {
+        no: 1,
+        name: "x",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 2,
+        name: "y",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgVector2D>): CMsgVector2D {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgVector2D>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgVector2D,
+  ): CMsgVector2D {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float x */ 1:
+          message.x = reader.float();
+          break;
+        case /* optional float y */ 2:
+          message.y = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgVector2D, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional float x = 1; */
+    if (message.x !== undefined) writer.tag(1, WireType.Bit32).float(message.x);
+    /* optional float y = 2; */
+    if (message.y !== undefined) writer.tag(2, WireType.Bit32).float(message.y);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgVector2D
@@ -921,77 +921,77 @@ class CMsgVector2D$Type extends MessageType<CMsgVector2D> {
 export const CMsgVector2D = new CMsgVector2D$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgQAngle$Type extends MessageType<CMsgQAngle> {
-	constructor() {
-		super("CMsgQAngle", [
-			{
-				no: 1,
-				name: "x",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 2,
-				name: "y",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "z",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgQAngle>): CMsgQAngle {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgQAngle>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgQAngle,
-	): CMsgQAngle {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float x */ 1:
-					message.x = reader.float();
-					break;
-				case /* optional float y */ 2:
-					message.y = reader.float();
-					break;
-				case /* optional float z */ 3:
-					message.z = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgQAngle, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional float x = 1; */
-		if (message.x !== undefined) writer.tag(1, WireType.Bit32).float(message.x);
-		/* optional float y = 2; */
-		if (message.y !== undefined) writer.tag(2, WireType.Bit32).float(message.y);
-		/* optional float z = 3; */
-		if (message.z !== undefined) writer.tag(3, WireType.Bit32).float(message.z);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgQAngle", [
+      {
+        no: 1,
+        name: "x",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 2,
+        name: "y",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "z",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgQAngle>): CMsgQAngle {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgQAngle>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgQAngle,
+  ): CMsgQAngle {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float x */ 1:
+          message.x = reader.float();
+          break;
+        case /* optional float y */ 2:
+          message.y = reader.float();
+          break;
+        case /* optional float z */ 3:
+          message.z = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgQAngle, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional float x = 1; */
+    if (message.x !== undefined) writer.tag(1, WireType.Bit32).float(message.x);
+    /* optional float y = 2; */
+    if (message.y !== undefined) writer.tag(2, WireType.Bit32).float(message.y);
+    /* optional float z = 3; */
+    if (message.z !== undefined) writer.tag(3, WireType.Bit32).float(message.z);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgQAngle
@@ -999,89 +999,89 @@ class CMsgQAngle$Type extends MessageType<CMsgQAngle> {
 export const CMsgQAngle = new CMsgQAngle$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgQuaternion$Type extends MessageType<CMsgQuaternion> {
-	constructor() {
-		super("CMsgQuaternion", [
-			{
-				no: 1,
-				name: "x",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 2,
-				name: "y",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "z",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "w",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgQuaternion>): CMsgQuaternion {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgQuaternion>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgQuaternion,
-	): CMsgQuaternion {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float x */ 1:
-					message.x = reader.float();
-					break;
-				case /* optional float y */ 2:
-					message.y = reader.float();
-					break;
-				case /* optional float z */ 3:
-					message.z = reader.float();
-					break;
-				case /* optional float w */ 4:
-					message.w = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgQuaternion, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional float x = 1; */
-		if (message.x !== undefined) writer.tag(1, WireType.Bit32).float(message.x);
-		/* optional float y = 2; */
-		if (message.y !== undefined) writer.tag(2, WireType.Bit32).float(message.y);
-		/* optional float z = 3; */
-		if (message.z !== undefined) writer.tag(3, WireType.Bit32).float(message.z);
-		/* optional float w = 4; */
-		if (message.w !== undefined) writer.tag(4, WireType.Bit32).float(message.w);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgQuaternion", [
+      {
+        no: 1,
+        name: "x",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 2,
+        name: "y",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "z",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "w",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgQuaternion>): CMsgQuaternion {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgQuaternion>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgQuaternion,
+  ): CMsgQuaternion {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float x */ 1:
+          message.x = reader.float();
+          break;
+        case /* optional float y */ 2:
+          message.y = reader.float();
+          break;
+        case /* optional float z */ 3:
+          message.z = reader.float();
+          break;
+        case /* optional float w */ 4:
+          message.w = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgQuaternion, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional float x = 1; */
+    if (message.x !== undefined) writer.tag(1, WireType.Bit32).float(message.x);
+    /* optional float y = 2; */
+    if (message.y !== undefined) writer.tag(2, WireType.Bit32).float(message.y);
+    /* optional float z = 3; */
+    if (message.z !== undefined) writer.tag(3, WireType.Bit32).float(message.z);
+    /* optional float w = 4; */
+    if (message.w !== undefined) writer.tag(4, WireType.Bit32).float(message.w);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgQuaternion
@@ -1089,76 +1089,76 @@ class CMsgQuaternion$Type extends MessageType<CMsgQuaternion> {
 export const CMsgQuaternion = new CMsgQuaternion$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgTransform$Type extends MessageType<CMsgTransform> {
-	constructor() {
-		super("CMsgTransform", [
-			{ no: 1, name: "position", kind: "message", T: () => CMsgVector },
-			{
-				no: 2,
-				name: "scale",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{ no: 3, name: "orientation", kind: "message", T: () => CMsgQuaternion },
-		]);
-	}
-	create(value?: PartialMessage<CMsgTransform>): CMsgTransform {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgTransform>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgTransform,
-	): CMsgTransform {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector position */ 1:
-					message.position = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.position);
-					break;
-				case /* optional float scale */ 2:
-					message.scale = reader.float();
-					break;
-				case /* optional CMsgQuaternion orientation */ 3:
-					message.orientation = CMsgQuaternion.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.orientation,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgTransform, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector position = 1; */
-		if (message.position)
-			CMsgVector.internalBinaryWrite(message.position, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional float scale = 2; */
-		if (message.scale !== undefined) writer.tag(2, WireType.Bit32).float(message.scale);
-		/* optional CMsgQuaternion orientation = 3; */
-		if (message.orientation)
-			CMsgQuaternion.internalBinaryWrite(
-				message.orientation,
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgTransform", [
+      { no: 1, name: "position", kind: "message", T: () => CMsgVector },
+      {
+        no: 2,
+        name: "scale",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      { no: 3, name: "orientation", kind: "message", T: () => CMsgQuaternion },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgTransform>): CMsgTransform {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgTransform>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgTransform,
+  ): CMsgTransform {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector position */ 1:
+          message.position = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.position);
+          break;
+        case /* optional float scale */ 2:
+          message.scale = reader.float();
+          break;
+        case /* optional CMsgQuaternion orientation */ 3:
+          message.orientation = CMsgQuaternion.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.orientation,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgTransform, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector position = 1; */
+    if (message.position)
+      CMsgVector.internalBinaryWrite(message.position, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional float scale = 2; */
+    if (message.scale !== undefined) writer.tag(2, WireType.Bit32).float(message.scale);
+    /* optional CMsgQuaternion orientation = 3; */
+    if (message.orientation)
+      CMsgQuaternion.internalBinaryWrite(
+        message.orientation,
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgTransform
@@ -1166,84 +1166,84 @@ class CMsgTransform$Type extends MessageType<CMsgTransform> {
 export const CMsgTransform = new CMsgTransform$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgRGBA$Type extends MessageType<CMsgRGBA> {
-	constructor() {
-		super("CMsgRGBA", [
-			{
-				no: 1,
-				name: "r",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "g",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "b",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "a",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgRGBA>): CMsgRGBA {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgRGBA>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(reader: IBinaryReader, length: number, options: BinaryReadOptions, target?: CMsgRGBA): CMsgRGBA {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 r */ 1:
-					message.r = reader.int32();
-					break;
-				case /* optional int32 g */ 2:
-					message.g = reader.int32();
-					break;
-				case /* optional int32 b */ 3:
-					message.b = reader.int32();
-					break;
-				case /* optional int32 a */ 4:
-					message.a = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgRGBA, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional int32 r = 1; */
-		if (message.r !== undefined) writer.tag(1, WireType.Varint).int32(message.r);
-		/* optional int32 g = 2; */
-		if (message.g !== undefined) writer.tag(2, WireType.Varint).int32(message.g);
-		/* optional int32 b = 3; */
-		if (message.b !== undefined) writer.tag(3, WireType.Varint).int32(message.b);
-		/* optional int32 a = 4; */
-		if (message.a !== undefined) writer.tag(4, WireType.Varint).int32(message.a);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgRGBA", [
+      {
+        no: 1,
+        name: "r",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "g",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "b",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "a",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgRGBA>): CMsgRGBA {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgRGBA>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(reader: IBinaryReader, length: number, options: BinaryReadOptions, target?: CMsgRGBA): CMsgRGBA {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 r */ 1:
+          message.r = reader.int32();
+          break;
+        case /* optional int32 g */ 2:
+          message.g = reader.int32();
+          break;
+        case /* optional int32 b */ 3:
+          message.b = reader.int32();
+          break;
+        case /* optional int32 a */ 4:
+          message.a = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgRGBA, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional int32 r = 1; */
+    if (message.r !== undefined) writer.tag(1, WireType.Varint).int32(message.r);
+    /* optional int32 g = 2; */
+    if (message.g !== undefined) writer.tag(2, WireType.Varint).int32(message.g);
+    /* optional int32 b = 3; */
+    if (message.b !== undefined) writer.tag(3, WireType.Varint).int32(message.b);
+    /* optional int32 a = 4; */
+    if (message.a !== undefined) writer.tag(4, WireType.Varint).int32(message.a);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgRGBA
@@ -1251,115 +1251,115 @@ class CMsgRGBA$Type extends MessageType<CMsgRGBA> {
 export const CMsgRGBA = new CMsgRGBA$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgPlayerInfo$Type extends MessageType<CMsgPlayerInfo> {
-	constructor() {
-		super("CMsgPlayerInfo", [
-			{
-				no: 1,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "xuid",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "userid",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "steamid",
-				kind: "scalar",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 5,
-				name: "fakeplayer",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 6,
-				name: "ishltv",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgPlayerInfo>): CMsgPlayerInfo {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgPlayerInfo>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgPlayerInfo,
-	): CMsgPlayerInfo {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string name */ 1:
-					message.name = reader.string();
-					break;
-				case /* optional fixed64 xuid */ 2:
-					message.xuid = reader.fixed64().toBigInt();
-					break;
-				case /* optional int32 userid */ 3:
-					message.userid = reader.int32();
-					break;
-				case /* optional fixed64 steamid */ 4:
-					message.steamid = reader.fixed64().toBigInt();
-					break;
-				case /* optional bool fakeplayer */ 5:
-					message.fakeplayer = reader.bool();
-					break;
-				case /* optional bool ishltv */ 6:
-					message.ishltv = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgPlayerInfo, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional string name = 1; */
-		if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
-		/* optional fixed64 xuid = 2; */
-		if (message.xuid !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.xuid);
-		/* optional int32 userid = 3; */
-		if (message.userid !== undefined) writer.tag(3, WireType.Varint).int32(message.userid);
-		/* optional fixed64 steamid = 4; */
-		if (message.steamid !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.steamid);
-		/* optional bool fakeplayer = 5; */
-		if (message.fakeplayer !== undefined) writer.tag(5, WireType.Varint).bool(message.fakeplayer);
-		/* optional bool ishltv = 6; */
-		if (message.ishltv !== undefined) writer.tag(6, WireType.Varint).bool(message.ishltv);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgPlayerInfo", [
+      {
+        no: 1,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "xuid",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "userid",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "steamid",
+        kind: "scalar",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 5,
+        name: "fakeplayer",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 6,
+        name: "ishltv",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgPlayerInfo>): CMsgPlayerInfo {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgPlayerInfo>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgPlayerInfo,
+  ): CMsgPlayerInfo {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string name */ 1:
+          message.name = reader.string();
+          break;
+        case /* optional fixed64 xuid */ 2:
+          message.xuid = reader.fixed64().toBigInt();
+          break;
+        case /* optional int32 userid */ 3:
+          message.userid = reader.int32();
+          break;
+        case /* optional fixed64 steamid */ 4:
+          message.steamid = reader.fixed64().toBigInt();
+          break;
+        case /* optional bool fakeplayer */ 5:
+          message.fakeplayer = reader.bool();
+          break;
+        case /* optional bool ishltv */ 6:
+          message.ishltv = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgPlayerInfo, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional string name = 1; */
+    if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
+    /* optional fixed64 xuid = 2; */
+    if (message.xuid !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.xuid);
+    /* optional int32 userid = 3; */
+    if (message.userid !== undefined) writer.tag(3, WireType.Varint).int32(message.userid);
+    /* optional fixed64 steamid = 4; */
+    if (message.steamid !== undefined) writer.tag(4, WireType.Bit64).fixed64(message.steamid);
+    /* optional bool fakeplayer = 5; */
+    if (message.fakeplayer !== undefined) writer.tag(5, WireType.Varint).bool(message.fakeplayer);
+    /* optional bool ishltv = 6; */
+    if (message.ishltv !== undefined) writer.tag(6, WireType.Varint).bool(message.ishltv);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgPlayerInfo
@@ -1367,54 +1367,54 @@ class CMsgPlayerInfo$Type extends MessageType<CMsgPlayerInfo> {
 export const CMsgPlayerInfo = new CMsgPlayerInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CEntityMsg$Type extends MessageType<CEntityMsg> {
-	constructor() {
-		super("CEntityMsg", [
-			{
-				no: 1,
-				name: "target_entity",
-				kind: "scalar",
-				localName: "target_entity",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CEntityMsg>): CEntityMsg {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CEntityMsg>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CEntityMsg,
-	): CEntityMsg {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 target_entity */ 1:
-					message.target_entity = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CEntityMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional uint32 target_entity = 1; */
-		if (message.target_entity !== undefined) writer.tag(1, WireType.Varint).uint32(message.target_entity);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CEntityMsg", [
+      {
+        no: 1,
+        name: "target_entity",
+        kind: "scalar",
+        localName: "target_entity",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CEntityMsg>): CEntityMsg {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CEntityMsg>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CEntityMsg,
+  ): CEntityMsg {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 target_entity */ 1:
+          message.target_entity = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CEntityMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional uint32 target_entity = 1; */
+    if (message.target_entity !== undefined) writer.tag(1, WireType.Varint).uint32(message.target_entity);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CEntityMsg
@@ -1422,59 +1422,59 @@ class CEntityMsg$Type extends MessageType<CEntityMsg> {
 export const CEntityMsg = new CEntityMsg$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsg_CVars$Type extends MessageType<CMsg_CVars> {
-	constructor() {
-		super("CMsg_CVars", [
-			{
-				no: 1,
-				name: "cvars",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsg_CVars_CVar,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsg_CVars>): CMsg_CVars {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.cvars = [];
-		if (value !== undefined) reflectionMergePartial<CMsg_CVars>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsg_CVars,
-	): CMsg_CVars {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsg_CVars.CVar cvars */ 1:
-					message.cvars.push(CMsg_CVars_CVar.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsg_CVars, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* repeated CMsg_CVars.CVar cvars = 1; */
-		for (let i = 0; i < message.cvars.length; i++)
-			CMsg_CVars_CVar.internalBinaryWrite(
-				message.cvars[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsg_CVars", [
+      {
+        no: 1,
+        name: "cvars",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsg_CVars_CVar,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsg_CVars>): CMsg_CVars {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.cvars = [];
+    if (value !== undefined) reflectionMergePartial<CMsg_CVars>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsg_CVars,
+  ): CMsg_CVars {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsg_CVars.CVar cvars */ 1:
+          message.cvars.push(CMsg_CVars_CVar.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsg_CVars, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* repeated CMsg_CVars.CVar cvars = 1; */
+    for (let i = 0; i < message.cvars.length; i++)
+      CMsg_CVars_CVar.internalBinaryWrite(
+        message.cvars[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsg_CVars
@@ -1482,65 +1482,65 @@ class CMsg_CVars$Type extends MessageType<CMsg_CVars> {
 export const CMsg_CVars = new CMsg_CVars$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsg_CVars_CVar$Type extends MessageType<CMsg_CVars_CVar> {
-	constructor() {
-		super("CMsg_CVars.CVar", [
-			{
-				no: 1,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "value",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsg_CVars_CVar>): CMsg_CVars_CVar {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsg_CVars_CVar>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsg_CVars_CVar,
-	): CMsg_CVars_CVar {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string name */ 1:
-					message.name = reader.string();
-					break;
-				case /* optional string value */ 2:
-					message.value = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsg_CVars_CVar, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional string name = 1; */
-		if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
-		/* optional string value = 2; */
-		if (message.value !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.value);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsg_CVars.CVar", [
+      {
+        no: 1,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "value",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsg_CVars_CVar>): CMsg_CVars_CVar {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsg_CVars_CVar>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsg_CVars_CVar,
+  ): CMsg_CVars_CVar {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string name */ 1:
+          message.name = reader.string();
+          break;
+        case /* optional string value */ 2:
+          message.value = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsg_CVars_CVar, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional string name = 1; */
+    if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
+    /* optional string value = 2; */
+    if (message.value !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.value);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsg_CVars.CVar
@@ -1548,27 +1548,27 @@ class CMsg_CVars_CVar$Type extends MessageType<CMsg_CVars_CVar> {
 export const CMsg_CVars_CVar = new CMsg_CVars_CVar$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CNETMsg_NOP$Type extends MessageType<CNETMsg_NOP> {
-	constructor() {
-		super("CNETMsg_NOP", []);
-	}
-	create(value?: PartialMessage<CNETMsg_NOP>): CNETMsg_NOP {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CNETMsg_NOP>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CNETMsg_NOP,
-	): CNETMsg_NOP {
-		return target ?? this.create();
-	}
-	internalBinaryWrite(message: CNETMsg_NOP, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CNETMsg_NOP", []);
+  }
+  create(value?: PartialMessage<CNETMsg_NOP>): CNETMsg_NOP {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CNETMsg_NOP>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CNETMsg_NOP,
+  ): CNETMsg_NOP {
+    return target ?? this.create();
+  }
+  internalBinaryWrite(message: CNETMsg_NOP, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CNETMsg_NOP
@@ -1576,57 +1576,57 @@ class CNETMsg_NOP$Type extends MessageType<CNETMsg_NOP> {
 export const CNETMsg_NOP = new CNETMsg_NOP$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CNETMsg_SplitScreenUser$Type extends MessageType<CNETMsg_SplitScreenUser> {
-	constructor() {
-		super("CNETMsg_SplitScreenUser", [
-			{
-				no: 1,
-				name: "slot",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CNETMsg_SplitScreenUser>): CNETMsg_SplitScreenUser {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CNETMsg_SplitScreenUser>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CNETMsg_SplitScreenUser,
-	): CNETMsg_SplitScreenUser {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 slot */ 1:
-					message.slot = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CNETMsg_SplitScreenUser,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 slot = 1; */
-		if (message.slot !== undefined) writer.tag(1, WireType.Varint).int32(message.slot);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CNETMsg_SplitScreenUser", [
+      {
+        no: 1,
+        name: "slot",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CNETMsg_SplitScreenUser>): CNETMsg_SplitScreenUser {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CNETMsg_SplitScreenUser>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CNETMsg_SplitScreenUser,
+  ): CNETMsg_SplitScreenUser {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 slot */ 1:
+          message.slot = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CNETMsg_SplitScreenUser,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 slot = 1; */
+    if (message.slot !== undefined) writer.tag(1, WireType.Varint).int32(message.slot);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CNETMsg_SplitScreenUser
@@ -1634,175 +1634,175 @@ class CNETMsg_SplitScreenUser$Type extends MessageType<CNETMsg_SplitScreenUser> 
 export const CNETMsg_SplitScreenUser = new CNETMsg_SplitScreenUser$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CNETMsg_Tick$Type extends MessageType<CNETMsg_Tick> {
-	constructor() {
-		super("CNETMsg_Tick", [
-			{
-				no: 1,
-				name: "tick",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "host_computationtime",
-				kind: "scalar",
-				localName: "host_computationtime",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "host_computationtime_std_deviation",
-				kind: "scalar",
-				localName: "host_computationtime_std_deviation",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "legacy_host_loss",
-				kind: "scalar",
-				localName: "legacy_host_loss",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "host_unfiltered_frametime",
-				kind: "scalar",
-				localName: "host_unfiltered_frametime",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "hltv_replay_flags",
-				kind: "scalar",
-				localName: "hltv_replay_flags",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "expected_long_tick",
-				kind: "scalar",
-				localName: "expected_long_tick",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 11,
-				name: "expected_long_tick_reason",
-				kind: "scalar",
-				localName: "expected_long_tick_reason",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 12,
-				name: "host_frame_dropped_pct_x10",
-				kind: "scalar",
-				localName: "host_frame_dropped_pct_x10",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 13,
-				name: "host_frame_irregular_arrival_pct_x10",
-				kind: "scalar",
-				localName: "host_frame_irregular_arrival_pct_x10",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CNETMsg_Tick>): CNETMsg_Tick {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CNETMsg_Tick>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CNETMsg_Tick,
-	): CNETMsg_Tick {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 tick */ 1:
-					message.tick = reader.uint32();
-					break;
-				case /* optional uint32 host_computationtime */ 4:
-					message.host_computationtime = reader.uint32();
-					break;
-				case /* optional uint32 host_computationtime_std_deviation */ 5:
-					message.host_computationtime_std_deviation = reader.uint32();
-					break;
-				case /* optional uint32 legacy_host_loss */ 7:
-					message.legacy_host_loss = reader.uint32();
-					break;
-				case /* optional uint32 host_unfiltered_frametime */ 8:
-					message.host_unfiltered_frametime = reader.uint32();
-					break;
-				case /* optional uint32 hltv_replay_flags */ 9:
-					message.hltv_replay_flags = reader.uint32();
-					break;
-				case /* optional uint32 expected_long_tick */ 10:
-					message.expected_long_tick = reader.uint32();
-					break;
-				case /* optional string expected_long_tick_reason */ 11:
-					message.expected_long_tick_reason = reader.string();
-					break;
-				case /* optional uint32 host_frame_dropped_pct_x10 */ 12:
-					message.host_frame_dropped_pct_x10 = reader.uint32();
-					break;
-				case /* optional uint32 host_frame_irregular_arrival_pct_x10 */ 13:
-					message.host_frame_irregular_arrival_pct_x10 = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CNETMsg_Tick, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional uint32 tick = 1; */
-		if (message.tick !== undefined) writer.tag(1, WireType.Varint).uint32(message.tick);
-		/* optional uint32 host_computationtime = 4; */
-		if (message.host_computationtime !== undefined) writer.tag(4, WireType.Varint).uint32(message.host_computationtime);
-		/* optional uint32 host_computationtime_std_deviation = 5; */
-		if (message.host_computationtime_std_deviation !== undefined)
-			writer.tag(5, WireType.Varint).uint32(message.host_computationtime_std_deviation);
-		/* optional uint32 legacy_host_loss = 7; */
-		if (message.legacy_host_loss !== undefined) writer.tag(7, WireType.Varint).uint32(message.legacy_host_loss);
-		/* optional uint32 host_unfiltered_frametime = 8; */
-		if (message.host_unfiltered_frametime !== undefined)
-			writer.tag(8, WireType.Varint).uint32(message.host_unfiltered_frametime);
-		/* optional uint32 hltv_replay_flags = 9; */
-		if (message.hltv_replay_flags !== undefined) writer.tag(9, WireType.Varint).uint32(message.hltv_replay_flags);
-		/* optional uint32 expected_long_tick = 10; */
-		if (message.expected_long_tick !== undefined) writer.tag(10, WireType.Varint).uint32(message.expected_long_tick);
-		/* optional string expected_long_tick_reason = 11; */
-		if (message.expected_long_tick_reason !== undefined)
-			writer.tag(11, WireType.LengthDelimited).string(message.expected_long_tick_reason);
-		/* optional uint32 host_frame_dropped_pct_x10 = 12; */
-		if (message.host_frame_dropped_pct_x10 !== undefined)
-			writer.tag(12, WireType.Varint).uint32(message.host_frame_dropped_pct_x10);
-		/* optional uint32 host_frame_irregular_arrival_pct_x10 = 13; */
-		if (message.host_frame_irregular_arrival_pct_x10 !== undefined)
-			writer.tag(13, WireType.Varint).uint32(message.host_frame_irregular_arrival_pct_x10);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CNETMsg_Tick", [
+      {
+        no: 1,
+        name: "tick",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "host_computationtime",
+        kind: "scalar",
+        localName: "host_computationtime",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "host_computationtime_std_deviation",
+        kind: "scalar",
+        localName: "host_computationtime_std_deviation",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "legacy_host_loss",
+        kind: "scalar",
+        localName: "legacy_host_loss",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "host_unfiltered_frametime",
+        kind: "scalar",
+        localName: "host_unfiltered_frametime",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "hltv_replay_flags",
+        kind: "scalar",
+        localName: "hltv_replay_flags",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "expected_long_tick",
+        kind: "scalar",
+        localName: "expected_long_tick",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 11,
+        name: "expected_long_tick_reason",
+        kind: "scalar",
+        localName: "expected_long_tick_reason",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 12,
+        name: "host_frame_dropped_pct_x10",
+        kind: "scalar",
+        localName: "host_frame_dropped_pct_x10",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 13,
+        name: "host_frame_irregular_arrival_pct_x10",
+        kind: "scalar",
+        localName: "host_frame_irregular_arrival_pct_x10",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CNETMsg_Tick>): CNETMsg_Tick {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CNETMsg_Tick>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CNETMsg_Tick,
+  ): CNETMsg_Tick {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 tick */ 1:
+          message.tick = reader.uint32();
+          break;
+        case /* optional uint32 host_computationtime */ 4:
+          message.host_computationtime = reader.uint32();
+          break;
+        case /* optional uint32 host_computationtime_std_deviation */ 5:
+          message.host_computationtime_std_deviation = reader.uint32();
+          break;
+        case /* optional uint32 legacy_host_loss */ 7:
+          message.legacy_host_loss = reader.uint32();
+          break;
+        case /* optional uint32 host_unfiltered_frametime */ 8:
+          message.host_unfiltered_frametime = reader.uint32();
+          break;
+        case /* optional uint32 hltv_replay_flags */ 9:
+          message.hltv_replay_flags = reader.uint32();
+          break;
+        case /* optional uint32 expected_long_tick */ 10:
+          message.expected_long_tick = reader.uint32();
+          break;
+        case /* optional string expected_long_tick_reason */ 11:
+          message.expected_long_tick_reason = reader.string();
+          break;
+        case /* optional uint32 host_frame_dropped_pct_x10 */ 12:
+          message.host_frame_dropped_pct_x10 = reader.uint32();
+          break;
+        case /* optional uint32 host_frame_irregular_arrival_pct_x10 */ 13:
+          message.host_frame_irregular_arrival_pct_x10 = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CNETMsg_Tick, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional uint32 tick = 1; */
+    if (message.tick !== undefined) writer.tag(1, WireType.Varint).uint32(message.tick);
+    /* optional uint32 host_computationtime = 4; */
+    if (message.host_computationtime !== undefined) writer.tag(4, WireType.Varint).uint32(message.host_computationtime);
+    /* optional uint32 host_computationtime_std_deviation = 5; */
+    if (message.host_computationtime_std_deviation !== undefined)
+      writer.tag(5, WireType.Varint).uint32(message.host_computationtime_std_deviation);
+    /* optional uint32 legacy_host_loss = 7; */
+    if (message.legacy_host_loss !== undefined) writer.tag(7, WireType.Varint).uint32(message.legacy_host_loss);
+    /* optional uint32 host_unfiltered_frametime = 8; */
+    if (message.host_unfiltered_frametime !== undefined)
+      writer.tag(8, WireType.Varint).uint32(message.host_unfiltered_frametime);
+    /* optional uint32 hltv_replay_flags = 9; */
+    if (message.hltv_replay_flags !== undefined) writer.tag(9, WireType.Varint).uint32(message.hltv_replay_flags);
+    /* optional uint32 expected_long_tick = 10; */
+    if (message.expected_long_tick !== undefined) writer.tag(10, WireType.Varint).uint32(message.expected_long_tick);
+    /* optional string expected_long_tick_reason = 11; */
+    if (message.expected_long_tick_reason !== undefined)
+      writer.tag(11, WireType.LengthDelimited).string(message.expected_long_tick_reason);
+    /* optional uint32 host_frame_dropped_pct_x10 = 12; */
+    if (message.host_frame_dropped_pct_x10 !== undefined)
+      writer.tag(12, WireType.Varint).uint32(message.host_frame_dropped_pct_x10);
+    /* optional uint32 host_frame_irregular_arrival_pct_x10 = 13; */
+    if (message.host_frame_irregular_arrival_pct_x10 !== undefined)
+      writer.tag(13, WireType.Varint).uint32(message.host_frame_irregular_arrival_pct_x10);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CNETMsg_Tick
@@ -1810,66 +1810,66 @@ class CNETMsg_Tick$Type extends MessageType<CNETMsg_Tick> {
 export const CNETMsg_Tick = new CNETMsg_Tick$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CNETMsg_StringCmd$Type extends MessageType<CNETMsg_StringCmd> {
-	constructor() {
-		super("CNETMsg_StringCmd", [
-			{
-				no: 1,
-				name: "command",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "prediction_sync",
-				kind: "scalar",
-				localName: "prediction_sync",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CNETMsg_StringCmd>): CNETMsg_StringCmd {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CNETMsg_StringCmd>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CNETMsg_StringCmd,
-	): CNETMsg_StringCmd {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string command */ 1:
-					message.command = reader.string();
-					break;
-				case /* optional uint32 prediction_sync */ 2:
-					message.prediction_sync = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CNETMsg_StringCmd, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional string command = 1; */
-		if (message.command !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.command);
-		/* optional uint32 prediction_sync = 2; */
-		if (message.prediction_sync !== undefined) writer.tag(2, WireType.Varint).uint32(message.prediction_sync);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CNETMsg_StringCmd", [
+      {
+        no: 1,
+        name: "command",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "prediction_sync",
+        kind: "scalar",
+        localName: "prediction_sync",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CNETMsg_StringCmd>): CNETMsg_StringCmd {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CNETMsg_StringCmd>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CNETMsg_StringCmd,
+  ): CNETMsg_StringCmd {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string command */ 1:
+          message.command = reader.string();
+          break;
+        case /* optional uint32 prediction_sync */ 2:
+          message.prediction_sync = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CNETMsg_StringCmd, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional string command = 1; */
+    if (message.command !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.command);
+    /* optional uint32 prediction_sync = 2; */
+    if (message.prediction_sync !== undefined) writer.tag(2, WireType.Varint).uint32(message.prediction_sync);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CNETMsg_StringCmd
@@ -1877,46 +1877,46 @@ class CNETMsg_StringCmd$Type extends MessageType<CNETMsg_StringCmd> {
 export const CNETMsg_StringCmd = new CNETMsg_StringCmd$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CNETMsg_SetConVar$Type extends MessageType<CNETMsg_SetConVar> {
-	constructor() {
-		super("CNETMsg_SetConVar", [{ no: 1, name: "convars", kind: "message", T: () => CMsg_CVars }]);
-	}
-	create(value?: PartialMessage<CNETMsg_SetConVar>): CNETMsg_SetConVar {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CNETMsg_SetConVar>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CNETMsg_SetConVar,
-	): CNETMsg_SetConVar {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsg_CVars convars */ 1:
-					message.convars = CMsg_CVars.internalBinaryRead(reader, reader.uint32(), options, message.convars);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CNETMsg_SetConVar, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsg_CVars convars = 1; */
-		if (message.convars)
-			CMsg_CVars.internalBinaryWrite(message.convars, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CNETMsg_SetConVar", [{ no: 1, name: "convars", kind: "message", T: () => CMsg_CVars }]);
+  }
+  create(value?: PartialMessage<CNETMsg_SetConVar>): CNETMsg_SetConVar {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CNETMsg_SetConVar>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CNETMsg_SetConVar,
+  ): CNETMsg_SetConVar {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsg_CVars convars */ 1:
+          message.convars = CMsg_CVars.internalBinaryRead(reader, reader.uint32(), options, message.convars);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CNETMsg_SetConVar, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsg_CVars convars = 1; */
+    if (message.convars)
+      CMsg_CVars.internalBinaryWrite(message.convars, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CNETMsg_SetConVar
@@ -1924,120 +1924,120 @@ class CNETMsg_SetConVar$Type extends MessageType<CNETMsg_SetConVar> {
 export const CNETMsg_SetConVar = new CNETMsg_SetConVar$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CNETMsg_SignonState$Type extends MessageType<CNETMsg_SignonState> {
-	constructor() {
-		super("CNETMsg_SignonState", [
-			{
-				no: 1,
-				name: "signon_state",
-				kind: "enum",
-				localName: "signon_state",
-				opt: true,
-				T: () => ["SignonState_t", SignonState_t],
-			},
-			{
-				no: 2,
-				name: "spawn_count",
-				kind: "scalar",
-				localName: "spawn_count",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "num_server_players",
-				kind: "scalar",
-				localName: "num_server_players",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "players_networkids",
-				kind: "scalar",
-				localName: "players_networkids",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 5,
-				name: "map_name",
-				kind: "scalar",
-				localName: "map_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 6,
-				name: "addons",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CNETMsg_SignonState>): CNETMsg_SignonState {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.players_networkids = [];
-		if (value !== undefined) reflectionMergePartial<CNETMsg_SignonState>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CNETMsg_SignonState,
-	): CNETMsg_SignonState {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional SignonState_t signon_state */ 1:
-					message.signon_state = reader.int32();
-					break;
-				case /* optional uint32 spawn_count */ 2:
-					message.spawn_count = reader.uint32();
-					break;
-				case /* optional uint32 num_server_players */ 3:
-					message.num_server_players = reader.uint32();
-					break;
-				case /* repeated string players_networkids */ 4:
-					message.players_networkids.push(reader.string());
-					break;
-				case /* optional string map_name */ 5:
-					message.map_name = reader.string();
-					break;
-				case /* optional string addons */ 6:
-					message.addons = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CNETMsg_SignonState, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional SignonState_t signon_state = 1; */
-		if (message.signon_state !== undefined) writer.tag(1, WireType.Varint).int32(message.signon_state);
-		/* optional uint32 spawn_count = 2; */
-		if (message.spawn_count !== undefined) writer.tag(2, WireType.Varint).uint32(message.spawn_count);
-		/* optional uint32 num_server_players = 3; */
-		if (message.num_server_players !== undefined) writer.tag(3, WireType.Varint).uint32(message.num_server_players);
-		/* repeated string players_networkids = 4; */
-		for (let i = 0; i < message.players_networkids.length; i++)
-			writer.tag(4, WireType.LengthDelimited).string(message.players_networkids[i]);
-		/* optional string map_name = 5; */
-		if (message.map_name !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.map_name);
-		/* optional string addons = 6; */
-		if (message.addons !== undefined) writer.tag(6, WireType.LengthDelimited).string(message.addons);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CNETMsg_SignonState", [
+      {
+        no: 1,
+        name: "signon_state",
+        kind: "enum",
+        localName: "signon_state",
+        opt: true,
+        T: () => ["SignonState_t", SignonState_t],
+      },
+      {
+        no: 2,
+        name: "spawn_count",
+        kind: "scalar",
+        localName: "spawn_count",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "num_server_players",
+        kind: "scalar",
+        localName: "num_server_players",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "players_networkids",
+        kind: "scalar",
+        localName: "players_networkids",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 5,
+        name: "map_name",
+        kind: "scalar",
+        localName: "map_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 6,
+        name: "addons",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CNETMsg_SignonState>): CNETMsg_SignonState {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.players_networkids = [];
+    if (value !== undefined) reflectionMergePartial<CNETMsg_SignonState>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CNETMsg_SignonState,
+  ): CNETMsg_SignonState {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional SignonState_t signon_state */ 1:
+          message.signon_state = reader.int32();
+          break;
+        case /* optional uint32 spawn_count */ 2:
+          message.spawn_count = reader.uint32();
+          break;
+        case /* optional uint32 num_server_players */ 3:
+          message.num_server_players = reader.uint32();
+          break;
+        case /* repeated string players_networkids */ 4:
+          message.players_networkids.push(reader.string());
+          break;
+        case /* optional string map_name */ 5:
+          message.map_name = reader.string();
+          break;
+        case /* optional string addons */ 6:
+          message.addons = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CNETMsg_SignonState, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional SignonState_t signon_state = 1; */
+    if (message.signon_state !== undefined) writer.tag(1, WireType.Varint).int32(message.signon_state);
+    /* optional uint32 spawn_count = 2; */
+    if (message.spawn_count !== undefined) writer.tag(2, WireType.Varint).uint32(message.spawn_count);
+    /* optional uint32 num_server_players = 3; */
+    if (message.num_server_players !== undefined) writer.tag(3, WireType.Varint).uint32(message.num_server_players);
+    /* repeated string players_networkids = 4; */
+    for (let i = 0; i < message.players_networkids.length; i++)
+      writer.tag(4, WireType.LengthDelimited).string(message.players_networkids[i]);
+    /* optional string map_name = 5; */
+    if (message.map_name !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.map_name);
+    /* optional string addons = 6; */
+    if (message.addons !== undefined) writer.tag(6, WireType.LengthDelimited).string(message.addons);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CNETMsg_SignonState
@@ -2045,84 +2045,84 @@ class CNETMsg_SignonState$Type extends MessageType<CNETMsg_SignonState> {
 export const CNETMsg_SignonState = new CNETMsg_SignonState$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_GameEvent$Type extends MessageType<CSVCMsg_GameEvent> {
-	constructor() {
-		super("CSVCMsg_GameEvent", [
-			{
-				no: 1,
-				name: "event_name",
-				kind: "scalar",
-				localName: "event_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "eventid",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "keys",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CSVCMsg_GameEvent_key_t,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_GameEvent>): CSVCMsg_GameEvent {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.keys = [];
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_GameEvent>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_GameEvent,
-	): CSVCMsg_GameEvent {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string event_name */ 1:
-					message.event_name = reader.string();
-					break;
-				case /* optional int32 eventid */ 2:
-					message.eventid = reader.int32();
-					break;
-				case /* repeated CSVCMsg_GameEvent.key_t keys */ 3:
-					message.keys.push(CSVCMsg_GameEvent_key_t.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CSVCMsg_GameEvent, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional string event_name = 1; */
-		if (message.event_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.event_name);
-		/* optional int32 eventid = 2; */
-		if (message.eventid !== undefined) writer.tag(2, WireType.Varint).int32(message.eventid);
-		/* repeated CSVCMsg_GameEvent.key_t keys = 3; */
-		for (let i = 0; i < message.keys.length; i++)
-			CSVCMsg_GameEvent_key_t.internalBinaryWrite(
-				message.keys[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_GameEvent", [
+      {
+        no: 1,
+        name: "event_name",
+        kind: "scalar",
+        localName: "event_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "eventid",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "keys",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CSVCMsg_GameEvent_key_t,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_GameEvent>): CSVCMsg_GameEvent {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.keys = [];
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_GameEvent>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_GameEvent,
+  ): CSVCMsg_GameEvent {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string event_name */ 1:
+          message.event_name = reader.string();
+          break;
+        case /* optional int32 eventid */ 2:
+          message.eventid = reader.int32();
+          break;
+        case /* repeated CSVCMsg_GameEvent.key_t keys */ 3:
+          message.keys.push(CSVCMsg_GameEvent_key_t.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CSVCMsg_GameEvent, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional string event_name = 1; */
+    if (message.event_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.event_name);
+    /* optional int32 eventid = 2; */
+    if (message.eventid !== undefined) writer.tag(2, WireType.Varint).int32(message.eventid);
+    /* repeated CSVCMsg_GameEvent.key_t keys = 3; */
+    for (let i = 0; i < message.keys.length; i++)
+      CSVCMsg_GameEvent_key_t.internalBinaryWrite(
+        message.keys[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_GameEvent
@@ -2130,149 +2130,149 @@ class CSVCMsg_GameEvent$Type extends MessageType<CSVCMsg_GameEvent> {
 export const CSVCMsg_GameEvent = new CSVCMsg_GameEvent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_GameEvent_key_t$Type extends MessageType<CSVCMsg_GameEvent_key_t> {
-	constructor() {
-		super("CSVCMsg_GameEvent.key_t", [
-			{
-				no: 1,
-				name: "type",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "val_string",
-				kind: "scalar",
-				localName: "val_string",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "val_float",
-				kind: "scalar",
-				localName: "val_float",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "val_long",
-				kind: "scalar",
-				localName: "val_long",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "val_short",
-				kind: "scalar",
-				localName: "val_short",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 6,
-				name: "val_byte",
-				kind: "scalar",
-				localName: "val_byte",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 7,
-				name: "val_bool",
-				kind: "scalar",
-				localName: "val_bool",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 8,
-				name: "val_uint64",
-				kind: "scalar",
-				localName: "val_uint64",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_GameEvent_key_t>): CSVCMsg_GameEvent_key_t {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_GameEvent_key_t>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_GameEvent_key_t,
-	): CSVCMsg_GameEvent_key_t {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 type */ 1:
-					message.type = reader.int32();
-					break;
-				case /* optional string val_string */ 2:
-					message.val_string = reader.string();
-					break;
-				case /* optional float val_float */ 3:
-					message.val_float = reader.float();
-					break;
-				case /* optional int32 val_long */ 4:
-					message.val_long = reader.int32();
-					break;
-				case /* optional int32 val_short */ 5:
-					message.val_short = reader.int32();
-					break;
-				case /* optional int32 val_byte */ 6:
-					message.val_byte = reader.int32();
-					break;
-				case /* optional bool val_bool */ 7:
-					message.val_bool = reader.bool();
-					break;
-				case /* optional uint64 val_uint64 */ 8:
-					message.val_uint64 = reader.uint64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_GameEvent_key_t,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 type = 1; */
-		if (message.type !== undefined) writer.tag(1, WireType.Varint).int32(message.type);
-		/* optional string val_string = 2; */
-		if (message.val_string !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.val_string);
-		/* optional float val_float = 3; */
-		if (message.val_float !== undefined) writer.tag(3, WireType.Bit32).float(message.val_float);
-		/* optional int32 val_long = 4; */
-		if (message.val_long !== undefined) writer.tag(4, WireType.Varint).int32(message.val_long);
-		/* optional int32 val_short = 5; */
-		if (message.val_short !== undefined) writer.tag(5, WireType.Varint).int32(message.val_short);
-		/* optional int32 val_byte = 6; */
-		if (message.val_byte !== undefined) writer.tag(6, WireType.Varint).int32(message.val_byte);
-		/* optional bool val_bool = 7; */
-		if (message.val_bool !== undefined) writer.tag(7, WireType.Varint).bool(message.val_bool);
-		/* optional uint64 val_uint64 = 8; */
-		if (message.val_uint64 !== undefined) writer.tag(8, WireType.Varint).uint64(message.val_uint64);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_GameEvent.key_t", [
+      {
+        no: 1,
+        name: "type",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "val_string",
+        kind: "scalar",
+        localName: "val_string",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "val_float",
+        kind: "scalar",
+        localName: "val_float",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "val_long",
+        kind: "scalar",
+        localName: "val_long",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "val_short",
+        kind: "scalar",
+        localName: "val_short",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 6,
+        name: "val_byte",
+        kind: "scalar",
+        localName: "val_byte",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 7,
+        name: "val_bool",
+        kind: "scalar",
+        localName: "val_bool",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 8,
+        name: "val_uint64",
+        kind: "scalar",
+        localName: "val_uint64",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_GameEvent_key_t>): CSVCMsg_GameEvent_key_t {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_GameEvent_key_t>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_GameEvent_key_t,
+  ): CSVCMsg_GameEvent_key_t {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 type */ 1:
+          message.type = reader.int32();
+          break;
+        case /* optional string val_string */ 2:
+          message.val_string = reader.string();
+          break;
+        case /* optional float val_float */ 3:
+          message.val_float = reader.float();
+          break;
+        case /* optional int32 val_long */ 4:
+          message.val_long = reader.int32();
+          break;
+        case /* optional int32 val_short */ 5:
+          message.val_short = reader.int32();
+          break;
+        case /* optional int32 val_byte */ 6:
+          message.val_byte = reader.int32();
+          break;
+        case /* optional bool val_bool */ 7:
+          message.val_bool = reader.bool();
+          break;
+        case /* optional uint64 val_uint64 */ 8:
+          message.val_uint64 = reader.uint64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_GameEvent_key_t,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 type = 1; */
+    if (message.type !== undefined) writer.tag(1, WireType.Varint).int32(message.type);
+    /* optional string val_string = 2; */
+    if (message.val_string !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.val_string);
+    /* optional float val_float = 3; */
+    if (message.val_float !== undefined) writer.tag(3, WireType.Bit32).float(message.val_float);
+    /* optional int32 val_long = 4; */
+    if (message.val_long !== undefined) writer.tag(4, WireType.Varint).int32(message.val_long);
+    /* optional int32 val_short = 5; */
+    if (message.val_short !== undefined) writer.tag(5, WireType.Varint).int32(message.val_short);
+    /* optional int32 val_byte = 6; */
+    if (message.val_byte !== undefined) writer.tag(6, WireType.Varint).int32(message.val_byte);
+    /* optional bool val_bool = 7; */
+    if (message.val_bool !== undefined) writer.tag(7, WireType.Varint).bool(message.val_bool);
+    /* optional uint64 val_uint64 = 8; */
+    if (message.val_uint64 !== undefined) writer.tag(8, WireType.Varint).uint64(message.val_uint64);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_GameEvent.key_t
@@ -2280,63 +2280,63 @@ class CSVCMsg_GameEvent_key_t$Type extends MessageType<CSVCMsg_GameEvent_key_t> 
 export const CSVCMsg_GameEvent_key_t = new CSVCMsg_GameEvent_key_t$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsgList_GameEvents$Type extends MessageType<CSVCMsgList_GameEvents> {
-	constructor() {
-		super("CSVCMsgList_GameEvents", [
-			{
-				no: 1,
-				name: "events",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CSVCMsgList_GameEvents_event_t,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsgList_GameEvents>): CSVCMsgList_GameEvents {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.events = [];
-		if (value !== undefined) reflectionMergePartial<CSVCMsgList_GameEvents>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsgList_GameEvents,
-	): CSVCMsgList_GameEvents {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CSVCMsgList_GameEvents.event_t events */ 1:
-					message.events.push(CSVCMsgList_GameEvents_event_t.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsgList_GameEvents,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CSVCMsgList_GameEvents.event_t events = 1; */
-		for (let i = 0; i < message.events.length; i++)
-			CSVCMsgList_GameEvents_event_t.internalBinaryWrite(
-				message.events[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsgList_GameEvents", [
+      {
+        no: 1,
+        name: "events",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CSVCMsgList_GameEvents_event_t,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsgList_GameEvents>): CSVCMsgList_GameEvents {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.events = [];
+    if (value !== undefined) reflectionMergePartial<CSVCMsgList_GameEvents>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsgList_GameEvents,
+  ): CSVCMsgList_GameEvents {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CSVCMsgList_GameEvents.event_t events */ 1:
+          message.events.push(CSVCMsgList_GameEvents_event_t.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsgList_GameEvents,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CSVCMsgList_GameEvents.event_t events = 1; */
+    for (let i = 0; i < message.events.length; i++)
+      CSVCMsgList_GameEvents_event_t.internalBinaryWrite(
+        message.events[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsgList_GameEvents
@@ -2344,68 +2344,68 @@ class CSVCMsgList_GameEvents$Type extends MessageType<CSVCMsgList_GameEvents> {
 export const CSVCMsgList_GameEvents = new CSVCMsgList_GameEvents$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsgList_GameEvents_event_t$Type extends MessageType<CSVCMsgList_GameEvents_event_t> {
-	constructor() {
-		super("CSVCMsgList_GameEvents.event_t", [
-			{
-				no: 1,
-				name: "tick",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{ no: 2, name: "event", kind: "message", T: () => CSVCMsg_GameEvent },
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsgList_GameEvents_event_t>): CSVCMsgList_GameEvents_event_t {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsgList_GameEvents_event_t>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsgList_GameEvents_event_t,
-	): CSVCMsgList_GameEvents_event_t {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 tick */ 1:
-					message.tick = reader.int32();
-					break;
-				case /* optional CSVCMsg_GameEvent event */ 2:
-					message.event = CSVCMsg_GameEvent.internalBinaryRead(reader, reader.uint32(), options, message.event);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsgList_GameEvents_event_t,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 tick = 1; */
-		if (message.tick !== undefined) writer.tag(1, WireType.Varint).int32(message.tick);
-		/* optional CSVCMsg_GameEvent event = 2; */
-		if (message.event)
-			CSVCMsg_GameEvent.internalBinaryWrite(
-				message.event,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsgList_GameEvents.event_t", [
+      {
+        no: 1,
+        name: "tick",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      { no: 2, name: "event", kind: "message", T: () => CSVCMsg_GameEvent },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsgList_GameEvents_event_t>): CSVCMsgList_GameEvents_event_t {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsgList_GameEvents_event_t>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsgList_GameEvents_event_t,
+  ): CSVCMsgList_GameEvents_event_t {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 tick */ 1:
+          message.tick = reader.int32();
+          break;
+        case /* optional CSVCMsg_GameEvent event */ 2:
+          message.event = CSVCMsg_GameEvent.internalBinaryRead(reader, reader.uint32(), options, message.event);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsgList_GameEvents_event_t,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 tick = 1; */
+    if (message.tick !== undefined) writer.tag(1, WireType.Varint).int32(message.tick);
+    /* optional CSVCMsg_GameEvent event = 2; */
+    if (message.event)
+      CSVCMsg_GameEvent.internalBinaryWrite(
+        message.event,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsgList_GameEvents.event_t
@@ -2413,310 +2413,310 @@ class CSVCMsgList_GameEvents_event_t$Type extends MessageType<CSVCMsgList_GameEv
 export const CSVCMsgList_GameEvents_event_t = new CSVCMsgList_GameEvents_event_t$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CNETMsg_SpawnGroup_Load$Type extends MessageType<CNETMsg_SpawnGroup_Load> {
-	constructor() {
-		super("CNETMsg_SpawnGroup_Load", [
-			{
-				no: 1,
-				name: "worldname",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "entitylumpname",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "entityfiltername",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 4,
-				name: "spawngrouphandle",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "spawngroupownerhandle",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "world_offset_pos",
-				kind: "message",
-				localName: "world_offset_pos",
-				T: () => CMsgVector,
-			},
-			{
-				no: 7,
-				name: "world_offset_angle",
-				kind: "message",
-				localName: "world_offset_angle",
-				T: () => CMsgQAngle,
-			},
-			{
-				no: 8,
-				name: "spawngroupmanifest",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 9,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "tickcount",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 11,
-				name: "manifestincomplete",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 12,
-				name: "localnamefixup",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 13,
-				name: "parentnamefixup",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 14,
-				name: "manifestloadpriority",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 15,
-				name: "worldgroupid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 16,
-				name: "creationsequence",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 17,
-				name: "savegamefilename",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 18,
-				name: "spawngroupparenthandle",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 19,
-				name: "leveltransition",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 20,
-				name: "worldgroupname",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CNETMsg_SpawnGroup_Load>): CNETMsg_SpawnGroup_Load {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CNETMsg_SpawnGroup_Load>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CNETMsg_SpawnGroup_Load,
-	): CNETMsg_SpawnGroup_Load {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string worldname */ 1:
-					message.worldname = reader.string();
-					break;
-				case /* optional string entitylumpname */ 2:
-					message.entitylumpname = reader.string();
-					break;
-				case /* optional string entityfiltername */ 3:
-					message.entityfiltername = reader.string();
-					break;
-				case /* optional uint32 spawngrouphandle */ 4:
-					message.spawngrouphandle = reader.uint32();
-					break;
-				case /* optional uint32 spawngroupownerhandle */ 5:
-					message.spawngroupownerhandle = reader.uint32();
-					break;
-				case /* optional CMsgVector world_offset_pos */ 6:
-					message.world_offset_pos = CMsgVector.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.world_offset_pos,
-					);
-					break;
-				case /* optional CMsgQAngle world_offset_angle */ 7:
-					message.world_offset_angle = CMsgQAngle.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.world_offset_angle,
-					);
-					break;
-				case /* optional bytes spawngroupmanifest */ 8:
-					message.spawngroupmanifest = reader.bytes();
-					break;
-				case /* optional uint32 flags */ 9:
-					message.flags = reader.uint32();
-					break;
-				case /* optional int32 tickcount */ 10:
-					message.tickcount = reader.int32();
-					break;
-				case /* optional bool manifestincomplete */ 11:
-					message.manifestincomplete = reader.bool();
-					break;
-				case /* optional string localnamefixup */ 12:
-					message.localnamefixup = reader.string();
-					break;
-				case /* optional string parentnamefixup */ 13:
-					message.parentnamefixup = reader.string();
-					break;
-				case /* optional int32 manifestloadpriority */ 14:
-					message.manifestloadpriority = reader.int32();
-					break;
-				case /* optional uint32 worldgroupid */ 15:
-					message.worldgroupid = reader.uint32();
-					break;
-				case /* optional uint32 creationsequence */ 16:
-					message.creationsequence = reader.uint32();
-					break;
-				case /* optional string savegamefilename */ 17:
-					message.savegamefilename = reader.string();
-					break;
-				case /* optional uint32 spawngroupparenthandle */ 18:
-					message.spawngroupparenthandle = reader.uint32();
-					break;
-				case /* optional bool leveltransition */ 19:
-					message.leveltransition = reader.bool();
-					break;
-				case /* optional string worldgroupname */ 20:
-					message.worldgroupname = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CNETMsg_SpawnGroup_Load,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string worldname = 1; */
-		if (message.worldname !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.worldname);
-		/* optional string entitylumpname = 2; */
-		if (message.entitylumpname !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.entitylumpname);
-		/* optional string entityfiltername = 3; */
-		if (message.entityfiltername !== undefined)
-			writer.tag(3, WireType.LengthDelimited).string(message.entityfiltername);
-		/* optional uint32 spawngrouphandle = 4; */
-		if (message.spawngrouphandle !== undefined) writer.tag(4, WireType.Varint).uint32(message.spawngrouphandle);
-		/* optional uint32 spawngroupownerhandle = 5; */
-		if (message.spawngroupownerhandle !== undefined)
-			writer.tag(5, WireType.Varint).uint32(message.spawngroupownerhandle);
-		/* optional CMsgVector world_offset_pos = 6; */
-		if (message.world_offset_pos)
-			CMsgVector.internalBinaryWrite(
-				message.world_offset_pos,
-				writer.tag(6, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgQAngle world_offset_angle = 7; */
-		if (message.world_offset_angle)
-			CMsgQAngle.internalBinaryWrite(
-				message.world_offset_angle,
-				writer.tag(7, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional bytes spawngroupmanifest = 8; */
-		if (message.spawngroupmanifest !== undefined)
-			writer.tag(8, WireType.LengthDelimited).bytes(message.spawngroupmanifest);
-		/* optional uint32 flags = 9; */
-		if (message.flags !== undefined) writer.tag(9, WireType.Varint).uint32(message.flags);
-		/* optional int32 tickcount = 10; */
-		if (message.tickcount !== undefined) writer.tag(10, WireType.Varint).int32(message.tickcount);
-		/* optional bool manifestincomplete = 11; */
-		if (message.manifestincomplete !== undefined) writer.tag(11, WireType.Varint).bool(message.manifestincomplete);
-		/* optional string localnamefixup = 12; */
-		if (message.localnamefixup !== undefined) writer.tag(12, WireType.LengthDelimited).string(message.localnamefixup);
-		/* optional string parentnamefixup = 13; */
-		if (message.parentnamefixup !== undefined) writer.tag(13, WireType.LengthDelimited).string(message.parentnamefixup);
-		/* optional int32 manifestloadpriority = 14; */
-		if (message.manifestloadpriority !== undefined) writer.tag(14, WireType.Varint).int32(message.manifestloadpriority);
-		/* optional uint32 worldgroupid = 15; */
-		if (message.worldgroupid !== undefined) writer.tag(15, WireType.Varint).uint32(message.worldgroupid);
-		/* optional uint32 creationsequence = 16; */
-		if (message.creationsequence !== undefined) writer.tag(16, WireType.Varint).uint32(message.creationsequence);
-		/* optional string savegamefilename = 17; */
-		if (message.savegamefilename !== undefined)
-			writer.tag(17, WireType.LengthDelimited).string(message.savegamefilename);
-		/* optional uint32 spawngroupparenthandle = 18; */
-		if (message.spawngroupparenthandle !== undefined)
-			writer.tag(18, WireType.Varint).uint32(message.spawngroupparenthandle);
-		/* optional bool leveltransition = 19; */
-		if (message.leveltransition !== undefined) writer.tag(19, WireType.Varint).bool(message.leveltransition);
-		/* optional string worldgroupname = 20; */
-		if (message.worldgroupname !== undefined) writer.tag(20, WireType.LengthDelimited).string(message.worldgroupname);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CNETMsg_SpawnGroup_Load", [
+      {
+        no: 1,
+        name: "worldname",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "entitylumpname",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "entityfiltername",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 4,
+        name: "spawngrouphandle",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "spawngroupownerhandle",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "world_offset_pos",
+        kind: "message",
+        localName: "world_offset_pos",
+        T: () => CMsgVector,
+      },
+      {
+        no: 7,
+        name: "world_offset_angle",
+        kind: "message",
+        localName: "world_offset_angle",
+        T: () => CMsgQAngle,
+      },
+      {
+        no: 8,
+        name: "spawngroupmanifest",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 9,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "tickcount",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 11,
+        name: "manifestincomplete",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 12,
+        name: "localnamefixup",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 13,
+        name: "parentnamefixup",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 14,
+        name: "manifestloadpriority",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 15,
+        name: "worldgroupid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 16,
+        name: "creationsequence",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 17,
+        name: "savegamefilename",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 18,
+        name: "spawngroupparenthandle",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 19,
+        name: "leveltransition",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 20,
+        name: "worldgroupname",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CNETMsg_SpawnGroup_Load>): CNETMsg_SpawnGroup_Load {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CNETMsg_SpawnGroup_Load>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CNETMsg_SpawnGroup_Load,
+  ): CNETMsg_SpawnGroup_Load {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string worldname */ 1:
+          message.worldname = reader.string();
+          break;
+        case /* optional string entitylumpname */ 2:
+          message.entitylumpname = reader.string();
+          break;
+        case /* optional string entityfiltername */ 3:
+          message.entityfiltername = reader.string();
+          break;
+        case /* optional uint32 spawngrouphandle */ 4:
+          message.spawngrouphandle = reader.uint32();
+          break;
+        case /* optional uint32 spawngroupownerhandle */ 5:
+          message.spawngroupownerhandle = reader.uint32();
+          break;
+        case /* optional CMsgVector world_offset_pos */ 6:
+          message.world_offset_pos = CMsgVector.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.world_offset_pos,
+          );
+          break;
+        case /* optional CMsgQAngle world_offset_angle */ 7:
+          message.world_offset_angle = CMsgQAngle.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.world_offset_angle,
+          );
+          break;
+        case /* optional bytes spawngroupmanifest */ 8:
+          message.spawngroupmanifest = reader.bytes();
+          break;
+        case /* optional uint32 flags */ 9:
+          message.flags = reader.uint32();
+          break;
+        case /* optional int32 tickcount */ 10:
+          message.tickcount = reader.int32();
+          break;
+        case /* optional bool manifestincomplete */ 11:
+          message.manifestincomplete = reader.bool();
+          break;
+        case /* optional string localnamefixup */ 12:
+          message.localnamefixup = reader.string();
+          break;
+        case /* optional string parentnamefixup */ 13:
+          message.parentnamefixup = reader.string();
+          break;
+        case /* optional int32 manifestloadpriority */ 14:
+          message.manifestloadpriority = reader.int32();
+          break;
+        case /* optional uint32 worldgroupid */ 15:
+          message.worldgroupid = reader.uint32();
+          break;
+        case /* optional uint32 creationsequence */ 16:
+          message.creationsequence = reader.uint32();
+          break;
+        case /* optional string savegamefilename */ 17:
+          message.savegamefilename = reader.string();
+          break;
+        case /* optional uint32 spawngroupparenthandle */ 18:
+          message.spawngroupparenthandle = reader.uint32();
+          break;
+        case /* optional bool leveltransition */ 19:
+          message.leveltransition = reader.bool();
+          break;
+        case /* optional string worldgroupname */ 20:
+          message.worldgroupname = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CNETMsg_SpawnGroup_Load,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string worldname = 1; */
+    if (message.worldname !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.worldname);
+    /* optional string entitylumpname = 2; */
+    if (message.entitylumpname !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.entitylumpname);
+    /* optional string entityfiltername = 3; */
+    if (message.entityfiltername !== undefined)
+      writer.tag(3, WireType.LengthDelimited).string(message.entityfiltername);
+    /* optional uint32 spawngrouphandle = 4; */
+    if (message.spawngrouphandle !== undefined) writer.tag(4, WireType.Varint).uint32(message.spawngrouphandle);
+    /* optional uint32 spawngroupownerhandle = 5; */
+    if (message.spawngroupownerhandle !== undefined)
+      writer.tag(5, WireType.Varint).uint32(message.spawngroupownerhandle);
+    /* optional CMsgVector world_offset_pos = 6; */
+    if (message.world_offset_pos)
+      CMsgVector.internalBinaryWrite(
+        message.world_offset_pos,
+        writer.tag(6, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgQAngle world_offset_angle = 7; */
+    if (message.world_offset_angle)
+      CMsgQAngle.internalBinaryWrite(
+        message.world_offset_angle,
+        writer.tag(7, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional bytes spawngroupmanifest = 8; */
+    if (message.spawngroupmanifest !== undefined)
+      writer.tag(8, WireType.LengthDelimited).bytes(message.spawngroupmanifest);
+    /* optional uint32 flags = 9; */
+    if (message.flags !== undefined) writer.tag(9, WireType.Varint).uint32(message.flags);
+    /* optional int32 tickcount = 10; */
+    if (message.tickcount !== undefined) writer.tag(10, WireType.Varint).int32(message.tickcount);
+    /* optional bool manifestincomplete = 11; */
+    if (message.manifestincomplete !== undefined) writer.tag(11, WireType.Varint).bool(message.manifestincomplete);
+    /* optional string localnamefixup = 12; */
+    if (message.localnamefixup !== undefined) writer.tag(12, WireType.LengthDelimited).string(message.localnamefixup);
+    /* optional string parentnamefixup = 13; */
+    if (message.parentnamefixup !== undefined) writer.tag(13, WireType.LengthDelimited).string(message.parentnamefixup);
+    /* optional int32 manifestloadpriority = 14; */
+    if (message.manifestloadpriority !== undefined) writer.tag(14, WireType.Varint).int32(message.manifestloadpriority);
+    /* optional uint32 worldgroupid = 15; */
+    if (message.worldgroupid !== undefined) writer.tag(15, WireType.Varint).uint32(message.worldgroupid);
+    /* optional uint32 creationsequence = 16; */
+    if (message.creationsequence !== undefined) writer.tag(16, WireType.Varint).uint32(message.creationsequence);
+    /* optional string savegamefilename = 17; */
+    if (message.savegamefilename !== undefined)
+      writer.tag(17, WireType.LengthDelimited).string(message.savegamefilename);
+    /* optional uint32 spawngroupparenthandle = 18; */
+    if (message.spawngroupparenthandle !== undefined)
+      writer.tag(18, WireType.Varint).uint32(message.spawngroupparenthandle);
+    /* optional bool leveltransition = 19; */
+    if (message.leveltransition !== undefined) writer.tag(19, WireType.Varint).bool(message.leveltransition);
+    /* optional string worldgroupname = 20; */
+    if (message.worldgroupname !== undefined) writer.tag(20, WireType.LengthDelimited).string(message.worldgroupname);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CNETMsg_SpawnGroup_Load
@@ -2724,82 +2724,82 @@ class CNETMsg_SpawnGroup_Load$Type extends MessageType<CNETMsg_SpawnGroup_Load> 
 export const CNETMsg_SpawnGroup_Load = new CNETMsg_SpawnGroup_Load$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CNETMsg_SpawnGroup_ManifestUpdate$Type extends MessageType<CNETMsg_SpawnGroup_ManifestUpdate> {
-	constructor() {
-		super("CNETMsg_SpawnGroup_ManifestUpdate", [
-			{
-				no: 1,
-				name: "spawngrouphandle",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "spawngroupmanifest",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 3,
-				name: "manifestincomplete",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CNETMsg_SpawnGroup_ManifestUpdate>): CNETMsg_SpawnGroup_ManifestUpdate {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CNETMsg_SpawnGroup_ManifestUpdate>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CNETMsg_SpawnGroup_ManifestUpdate,
-	): CNETMsg_SpawnGroup_ManifestUpdate {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 spawngrouphandle */ 1:
-					message.spawngrouphandle = reader.uint32();
-					break;
-				case /* optional bytes spawngroupmanifest */ 2:
-					message.spawngroupmanifest = reader.bytes();
-					break;
-				case /* optional bool manifestincomplete */ 3:
-					message.manifestincomplete = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CNETMsg_SpawnGroup_ManifestUpdate,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 spawngrouphandle = 1; */
-		if (message.spawngrouphandle !== undefined) writer.tag(1, WireType.Varint).uint32(message.spawngrouphandle);
-		/* optional bytes spawngroupmanifest = 2; */
-		if (message.spawngroupmanifest !== undefined)
-			writer.tag(2, WireType.LengthDelimited).bytes(message.spawngroupmanifest);
-		/* optional bool manifestincomplete = 3; */
-		if (message.manifestincomplete !== undefined) writer.tag(3, WireType.Varint).bool(message.manifestincomplete);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CNETMsg_SpawnGroup_ManifestUpdate", [
+      {
+        no: 1,
+        name: "spawngrouphandle",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "spawngroupmanifest",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 3,
+        name: "manifestincomplete",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CNETMsg_SpawnGroup_ManifestUpdate>): CNETMsg_SpawnGroup_ManifestUpdate {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CNETMsg_SpawnGroup_ManifestUpdate>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CNETMsg_SpawnGroup_ManifestUpdate,
+  ): CNETMsg_SpawnGroup_ManifestUpdate {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 spawngrouphandle */ 1:
+          message.spawngrouphandle = reader.uint32();
+          break;
+        case /* optional bytes spawngroupmanifest */ 2:
+          message.spawngroupmanifest = reader.bytes();
+          break;
+        case /* optional bool manifestincomplete */ 3:
+          message.manifestincomplete = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CNETMsg_SpawnGroup_ManifestUpdate,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 spawngrouphandle = 1; */
+    if (message.spawngrouphandle !== undefined) writer.tag(1, WireType.Varint).uint32(message.spawngrouphandle);
+    /* optional bytes spawngroupmanifest = 2; */
+    if (message.spawngroupmanifest !== undefined)
+      writer.tag(2, WireType.LengthDelimited).bytes(message.spawngroupmanifest);
+    /* optional bool manifestincomplete = 3; */
+    if (message.manifestincomplete !== undefined) writer.tag(3, WireType.Varint).bool(message.manifestincomplete);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CNETMsg_SpawnGroup_ManifestUpdate
@@ -2807,81 +2807,81 @@ class CNETMsg_SpawnGroup_ManifestUpdate$Type extends MessageType<CNETMsg_SpawnGr
 export const CNETMsg_SpawnGroup_ManifestUpdate = new CNETMsg_SpawnGroup_ManifestUpdate$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CNETMsg_SpawnGroup_SetCreationTick$Type extends MessageType<CNETMsg_SpawnGroup_SetCreationTick> {
-	constructor() {
-		super("CNETMsg_SpawnGroup_SetCreationTick", [
-			{
-				no: 1,
-				name: "spawngrouphandle",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "tickcount",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "creationsequence",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CNETMsg_SpawnGroup_SetCreationTick>): CNETMsg_SpawnGroup_SetCreationTick {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CNETMsg_SpawnGroup_SetCreationTick>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CNETMsg_SpawnGroup_SetCreationTick,
-	): CNETMsg_SpawnGroup_SetCreationTick {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 spawngrouphandle */ 1:
-					message.spawngrouphandle = reader.uint32();
-					break;
-				case /* optional int32 tickcount */ 2:
-					message.tickcount = reader.int32();
-					break;
-				case /* optional uint32 creationsequence */ 3:
-					message.creationsequence = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CNETMsg_SpawnGroup_SetCreationTick,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 spawngrouphandle = 1; */
-		if (message.spawngrouphandle !== undefined) writer.tag(1, WireType.Varint).uint32(message.spawngrouphandle);
-		/* optional int32 tickcount = 2; */
-		if (message.tickcount !== undefined) writer.tag(2, WireType.Varint).int32(message.tickcount);
-		/* optional uint32 creationsequence = 3; */
-		if (message.creationsequence !== undefined) writer.tag(3, WireType.Varint).uint32(message.creationsequence);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CNETMsg_SpawnGroup_SetCreationTick", [
+      {
+        no: 1,
+        name: "spawngrouphandle",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "tickcount",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "creationsequence",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CNETMsg_SpawnGroup_SetCreationTick>): CNETMsg_SpawnGroup_SetCreationTick {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CNETMsg_SpawnGroup_SetCreationTick>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CNETMsg_SpawnGroup_SetCreationTick,
+  ): CNETMsg_SpawnGroup_SetCreationTick {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 spawngrouphandle */ 1:
+          message.spawngrouphandle = reader.uint32();
+          break;
+        case /* optional int32 tickcount */ 2:
+          message.tickcount = reader.int32();
+          break;
+        case /* optional uint32 creationsequence */ 3:
+          message.creationsequence = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CNETMsg_SpawnGroup_SetCreationTick,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 spawngrouphandle = 1; */
+    if (message.spawngrouphandle !== undefined) writer.tag(1, WireType.Varint).uint32(message.spawngrouphandle);
+    /* optional int32 tickcount = 2; */
+    if (message.tickcount !== undefined) writer.tag(2, WireType.Varint).int32(message.tickcount);
+    /* optional uint32 creationsequence = 3; */
+    if (message.creationsequence !== undefined) writer.tag(3, WireType.Varint).uint32(message.creationsequence);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CNETMsg_SpawnGroup_SetCreationTick
@@ -2889,81 +2889,81 @@ class CNETMsg_SpawnGroup_SetCreationTick$Type extends MessageType<CNETMsg_SpawnG
 export const CNETMsg_SpawnGroup_SetCreationTick = new CNETMsg_SpawnGroup_SetCreationTick$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CNETMsg_SpawnGroup_Unload$Type extends MessageType<CNETMsg_SpawnGroup_Unload> {
-	constructor() {
-		super("CNETMsg_SpawnGroup_Unload", [
-			{
-				no: 1,
-				name: "spawngrouphandle",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "tickcount",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CNETMsg_SpawnGroup_Unload>): CNETMsg_SpawnGroup_Unload {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CNETMsg_SpawnGroup_Unload>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CNETMsg_SpawnGroup_Unload,
-	): CNETMsg_SpawnGroup_Unload {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 spawngrouphandle */ 1:
-					message.spawngrouphandle = reader.uint32();
-					break;
-				case /* optional uint32 flags */ 2:
-					message.flags = reader.uint32();
-					break;
-				case /* optional int32 tickcount */ 3:
-					message.tickcount = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CNETMsg_SpawnGroup_Unload,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 spawngrouphandle = 1; */
-		if (message.spawngrouphandle !== undefined) writer.tag(1, WireType.Varint).uint32(message.spawngrouphandle);
-		/* optional uint32 flags = 2; */
-		if (message.flags !== undefined) writer.tag(2, WireType.Varint).uint32(message.flags);
-		/* optional int32 tickcount = 3; */
-		if (message.tickcount !== undefined) writer.tag(3, WireType.Varint).int32(message.tickcount);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CNETMsg_SpawnGroup_Unload", [
+      {
+        no: 1,
+        name: "spawngrouphandle",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "tickcount",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CNETMsg_SpawnGroup_Unload>): CNETMsg_SpawnGroup_Unload {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CNETMsg_SpawnGroup_Unload>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CNETMsg_SpawnGroup_Unload,
+  ): CNETMsg_SpawnGroup_Unload {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 spawngrouphandle */ 1:
+          message.spawngrouphandle = reader.uint32();
+          break;
+        case /* optional uint32 flags */ 2:
+          message.flags = reader.uint32();
+          break;
+        case /* optional int32 tickcount */ 3:
+          message.tickcount = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CNETMsg_SpawnGroup_Unload,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 spawngrouphandle = 1; */
+    if (message.spawngrouphandle !== undefined) writer.tag(1, WireType.Varint).uint32(message.spawngrouphandle);
+    /* optional uint32 flags = 2; */
+    if (message.flags !== undefined) writer.tag(2, WireType.Varint).uint32(message.flags);
+    /* optional int32 tickcount = 3; */
+    if (message.tickcount !== undefined) writer.tag(3, WireType.Varint).int32(message.tickcount);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CNETMsg_SpawnGroup_Unload
@@ -2971,57 +2971,57 @@ class CNETMsg_SpawnGroup_Unload$Type extends MessageType<CNETMsg_SpawnGroup_Unlo
 export const CNETMsg_SpawnGroup_Unload = new CNETMsg_SpawnGroup_Unload$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CNETMsg_SpawnGroup_LoadCompleted$Type extends MessageType<CNETMsg_SpawnGroup_LoadCompleted> {
-	constructor() {
-		super("CNETMsg_SpawnGroup_LoadCompleted", [
-			{
-				no: 1,
-				name: "spawngrouphandle",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CNETMsg_SpawnGroup_LoadCompleted>): CNETMsg_SpawnGroup_LoadCompleted {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CNETMsg_SpawnGroup_LoadCompleted>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CNETMsg_SpawnGroup_LoadCompleted,
-	): CNETMsg_SpawnGroup_LoadCompleted {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 spawngrouphandle */ 1:
-					message.spawngrouphandle = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CNETMsg_SpawnGroup_LoadCompleted,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 spawngrouphandle = 1; */
-		if (message.spawngrouphandle !== undefined) writer.tag(1, WireType.Varint).uint32(message.spawngrouphandle);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CNETMsg_SpawnGroup_LoadCompleted", [
+      {
+        no: 1,
+        name: "spawngrouphandle",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CNETMsg_SpawnGroup_LoadCompleted>): CNETMsg_SpawnGroup_LoadCompleted {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CNETMsg_SpawnGroup_LoadCompleted>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CNETMsg_SpawnGroup_LoadCompleted,
+  ): CNETMsg_SpawnGroup_LoadCompleted {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 spawngrouphandle */ 1:
+          message.spawngrouphandle = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CNETMsg_SpawnGroup_LoadCompleted,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 spawngrouphandle = 1; */
+    if (message.spawngrouphandle !== undefined) writer.tag(1, WireType.Varint).uint32(message.spawngrouphandle);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CNETMsg_SpawnGroup_LoadCompleted
@@ -3029,287 +3029,287 @@ class CNETMsg_SpawnGroup_LoadCompleted$Type extends MessageType<CNETMsg_SpawnGro
 export const CNETMsg_SpawnGroup_LoadCompleted = new CNETMsg_SpawnGroup_LoadCompleted$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSVCMsg_GameSessionConfiguration$Type extends MessageType<CSVCMsg_GameSessionConfiguration> {
-	constructor() {
-		super("CSVCMsg_GameSessionConfiguration", [
-			{
-				no: 1,
-				name: "is_multiplayer",
-				kind: "scalar",
-				localName: "is_multiplayer",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 2,
-				name: "is_loadsavegame",
-				kind: "scalar",
-				localName: "is_loadsavegame",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 3,
-				name: "is_background_map",
-				kind: "scalar",
-				localName: "is_background_map",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "is_headless",
-				kind: "scalar",
-				localName: "is_headless",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 5,
-				name: "min_client_limit",
-				kind: "scalar",
-				localName: "min_client_limit",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "max_client_limit",
-				kind: "scalar",
-				localName: "max_client_limit",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "max_clients",
-				kind: "scalar",
-				localName: "max_clients",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "tick_interval",
-				kind: "scalar",
-				localName: "tick_interval",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 9,
-				name: "hostname",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 10,
-				name: "savegamename",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 11,
-				name: "s1_mapname",
-				kind: "scalar",
-				localName: "s1_mapname",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 12,
-				name: "gamemode",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 13,
-				name: "server_ip_address",
-				kind: "scalar",
-				localName: "server_ip_address",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 14,
-				name: "data",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 15,
-				name: "is_localonly",
-				kind: "scalar",
-				localName: "is_localonly",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 19,
-				name: "no_steam_server",
-				kind: "scalar",
-				localName: "no_steam_server",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 16,
-				name: "is_transition",
-				kind: "scalar",
-				localName: "is_transition",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 17,
-				name: "previouslevel",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 18,
-				name: "landmarkname",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSVCMsg_GameSessionConfiguration>): CSVCMsg_GameSessionConfiguration {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSVCMsg_GameSessionConfiguration>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSVCMsg_GameSessionConfiguration,
-	): CSVCMsg_GameSessionConfiguration {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool is_multiplayer */ 1:
-					message.is_multiplayer = reader.bool();
-					break;
-				case /* optional bool is_loadsavegame */ 2:
-					message.is_loadsavegame = reader.bool();
-					break;
-				case /* optional bool is_background_map */ 3:
-					message.is_background_map = reader.bool();
-					break;
-				case /* optional bool is_headless */ 4:
-					message.is_headless = reader.bool();
-					break;
-				case /* optional uint32 min_client_limit */ 5:
-					message.min_client_limit = reader.uint32();
-					break;
-				case /* optional uint32 max_client_limit */ 6:
-					message.max_client_limit = reader.uint32();
-					break;
-				case /* optional uint32 max_clients */ 7:
-					message.max_clients = reader.uint32();
-					break;
-				case /* optional fixed32 tick_interval */ 8:
-					message.tick_interval = reader.fixed32();
-					break;
-				case /* optional string hostname */ 9:
-					message.hostname = reader.string();
-					break;
-				case /* optional string savegamename */ 10:
-					message.savegamename = reader.string();
-					break;
-				case /* optional string s1_mapname */ 11:
-					message.s1_mapname = reader.string();
-					break;
-				case /* optional string gamemode */ 12:
-					message.gamemode = reader.string();
-					break;
-				case /* optional string server_ip_address */ 13:
-					message.server_ip_address = reader.string();
-					break;
-				case /* optional bytes data */ 14:
-					message.data = reader.bytes();
-					break;
-				case /* optional bool is_localonly */ 15:
-					message.is_localonly = reader.bool();
-					break;
-				case /* optional bool no_steam_server */ 19:
-					message.no_steam_server = reader.bool();
-					break;
-				case /* optional bool is_transition */ 16:
-					message.is_transition = reader.bool();
-					break;
-				case /* optional string previouslevel */ 17:
-					message.previouslevel = reader.string();
-					break;
-				case /* optional string landmarkname */ 18:
-					message.landmarkname = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSVCMsg_GameSessionConfiguration,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool is_multiplayer = 1; */
-		if (message.is_multiplayer !== undefined) writer.tag(1, WireType.Varint).bool(message.is_multiplayer);
-		/* optional bool is_loadsavegame = 2; */
-		if (message.is_loadsavegame !== undefined) writer.tag(2, WireType.Varint).bool(message.is_loadsavegame);
-		/* optional bool is_background_map = 3; */
-		if (message.is_background_map !== undefined) writer.tag(3, WireType.Varint).bool(message.is_background_map);
-		/* optional bool is_headless = 4; */
-		if (message.is_headless !== undefined) writer.tag(4, WireType.Varint).bool(message.is_headless);
-		/* optional uint32 min_client_limit = 5; */
-		if (message.min_client_limit !== undefined) writer.tag(5, WireType.Varint).uint32(message.min_client_limit);
-		/* optional uint32 max_client_limit = 6; */
-		if (message.max_client_limit !== undefined) writer.tag(6, WireType.Varint).uint32(message.max_client_limit);
-		/* optional uint32 max_clients = 7; */
-		if (message.max_clients !== undefined) writer.tag(7, WireType.Varint).uint32(message.max_clients);
-		/* optional fixed32 tick_interval = 8; */
-		if (message.tick_interval !== undefined) writer.tag(8, WireType.Bit32).fixed32(message.tick_interval);
-		/* optional string hostname = 9; */
-		if (message.hostname !== undefined) writer.tag(9, WireType.LengthDelimited).string(message.hostname);
-		/* optional string savegamename = 10; */
-		if (message.savegamename !== undefined) writer.tag(10, WireType.LengthDelimited).string(message.savegamename);
-		/* optional string s1_mapname = 11; */
-		if (message.s1_mapname !== undefined) writer.tag(11, WireType.LengthDelimited).string(message.s1_mapname);
-		/* optional string gamemode = 12; */
-		if (message.gamemode !== undefined) writer.tag(12, WireType.LengthDelimited).string(message.gamemode);
-		/* optional string server_ip_address = 13; */
-		if (message.server_ip_address !== undefined)
-			writer.tag(13, WireType.LengthDelimited).string(message.server_ip_address);
-		/* optional bytes data = 14; */
-		if (message.data !== undefined) writer.tag(14, WireType.LengthDelimited).bytes(message.data);
-		/* optional bool is_localonly = 15; */
-		if (message.is_localonly !== undefined) writer.tag(15, WireType.Varint).bool(message.is_localonly);
-		/* optional bool no_steam_server = 19; */
-		if (message.no_steam_server !== undefined) writer.tag(19, WireType.Varint).bool(message.no_steam_server);
-		/* optional bool is_transition = 16; */
-		if (message.is_transition !== undefined) writer.tag(16, WireType.Varint).bool(message.is_transition);
-		/* optional string previouslevel = 17; */
-		if (message.previouslevel !== undefined) writer.tag(17, WireType.LengthDelimited).string(message.previouslevel);
-		/* optional string landmarkname = 18; */
-		if (message.landmarkname !== undefined) writer.tag(18, WireType.LengthDelimited).string(message.landmarkname);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSVCMsg_GameSessionConfiguration", [
+      {
+        no: 1,
+        name: "is_multiplayer",
+        kind: "scalar",
+        localName: "is_multiplayer",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 2,
+        name: "is_loadsavegame",
+        kind: "scalar",
+        localName: "is_loadsavegame",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 3,
+        name: "is_background_map",
+        kind: "scalar",
+        localName: "is_background_map",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "is_headless",
+        kind: "scalar",
+        localName: "is_headless",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 5,
+        name: "min_client_limit",
+        kind: "scalar",
+        localName: "min_client_limit",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "max_client_limit",
+        kind: "scalar",
+        localName: "max_client_limit",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "max_clients",
+        kind: "scalar",
+        localName: "max_clients",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "tick_interval",
+        kind: "scalar",
+        localName: "tick_interval",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 9,
+        name: "hostname",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 10,
+        name: "savegamename",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 11,
+        name: "s1_mapname",
+        kind: "scalar",
+        localName: "s1_mapname",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 12,
+        name: "gamemode",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 13,
+        name: "server_ip_address",
+        kind: "scalar",
+        localName: "server_ip_address",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 14,
+        name: "data",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 15,
+        name: "is_localonly",
+        kind: "scalar",
+        localName: "is_localonly",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 19,
+        name: "no_steam_server",
+        kind: "scalar",
+        localName: "no_steam_server",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 16,
+        name: "is_transition",
+        kind: "scalar",
+        localName: "is_transition",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 17,
+        name: "previouslevel",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 18,
+        name: "landmarkname",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSVCMsg_GameSessionConfiguration>): CSVCMsg_GameSessionConfiguration {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSVCMsg_GameSessionConfiguration>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSVCMsg_GameSessionConfiguration,
+  ): CSVCMsg_GameSessionConfiguration {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool is_multiplayer */ 1:
+          message.is_multiplayer = reader.bool();
+          break;
+        case /* optional bool is_loadsavegame */ 2:
+          message.is_loadsavegame = reader.bool();
+          break;
+        case /* optional bool is_background_map */ 3:
+          message.is_background_map = reader.bool();
+          break;
+        case /* optional bool is_headless */ 4:
+          message.is_headless = reader.bool();
+          break;
+        case /* optional uint32 min_client_limit */ 5:
+          message.min_client_limit = reader.uint32();
+          break;
+        case /* optional uint32 max_client_limit */ 6:
+          message.max_client_limit = reader.uint32();
+          break;
+        case /* optional uint32 max_clients */ 7:
+          message.max_clients = reader.uint32();
+          break;
+        case /* optional fixed32 tick_interval */ 8:
+          message.tick_interval = reader.fixed32();
+          break;
+        case /* optional string hostname */ 9:
+          message.hostname = reader.string();
+          break;
+        case /* optional string savegamename */ 10:
+          message.savegamename = reader.string();
+          break;
+        case /* optional string s1_mapname */ 11:
+          message.s1_mapname = reader.string();
+          break;
+        case /* optional string gamemode */ 12:
+          message.gamemode = reader.string();
+          break;
+        case /* optional string server_ip_address */ 13:
+          message.server_ip_address = reader.string();
+          break;
+        case /* optional bytes data */ 14:
+          message.data = reader.bytes();
+          break;
+        case /* optional bool is_localonly */ 15:
+          message.is_localonly = reader.bool();
+          break;
+        case /* optional bool no_steam_server */ 19:
+          message.no_steam_server = reader.bool();
+          break;
+        case /* optional bool is_transition */ 16:
+          message.is_transition = reader.bool();
+          break;
+        case /* optional string previouslevel */ 17:
+          message.previouslevel = reader.string();
+          break;
+        case /* optional string landmarkname */ 18:
+          message.landmarkname = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSVCMsg_GameSessionConfiguration,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool is_multiplayer = 1; */
+    if (message.is_multiplayer !== undefined) writer.tag(1, WireType.Varint).bool(message.is_multiplayer);
+    /* optional bool is_loadsavegame = 2; */
+    if (message.is_loadsavegame !== undefined) writer.tag(2, WireType.Varint).bool(message.is_loadsavegame);
+    /* optional bool is_background_map = 3; */
+    if (message.is_background_map !== undefined) writer.tag(3, WireType.Varint).bool(message.is_background_map);
+    /* optional bool is_headless = 4; */
+    if (message.is_headless !== undefined) writer.tag(4, WireType.Varint).bool(message.is_headless);
+    /* optional uint32 min_client_limit = 5; */
+    if (message.min_client_limit !== undefined) writer.tag(5, WireType.Varint).uint32(message.min_client_limit);
+    /* optional uint32 max_client_limit = 6; */
+    if (message.max_client_limit !== undefined) writer.tag(6, WireType.Varint).uint32(message.max_client_limit);
+    /* optional uint32 max_clients = 7; */
+    if (message.max_clients !== undefined) writer.tag(7, WireType.Varint).uint32(message.max_clients);
+    /* optional fixed32 tick_interval = 8; */
+    if (message.tick_interval !== undefined) writer.tag(8, WireType.Bit32).fixed32(message.tick_interval);
+    /* optional string hostname = 9; */
+    if (message.hostname !== undefined) writer.tag(9, WireType.LengthDelimited).string(message.hostname);
+    /* optional string savegamename = 10; */
+    if (message.savegamename !== undefined) writer.tag(10, WireType.LengthDelimited).string(message.savegamename);
+    /* optional string s1_mapname = 11; */
+    if (message.s1_mapname !== undefined) writer.tag(11, WireType.LengthDelimited).string(message.s1_mapname);
+    /* optional string gamemode = 12; */
+    if (message.gamemode !== undefined) writer.tag(12, WireType.LengthDelimited).string(message.gamemode);
+    /* optional string server_ip_address = 13; */
+    if (message.server_ip_address !== undefined)
+      writer.tag(13, WireType.LengthDelimited).string(message.server_ip_address);
+    /* optional bytes data = 14; */
+    if (message.data !== undefined) writer.tag(14, WireType.LengthDelimited).bytes(message.data);
+    /* optional bool is_localonly = 15; */
+    if (message.is_localonly !== undefined) writer.tag(15, WireType.Varint).bool(message.is_localonly);
+    /* optional bool no_steam_server = 19; */
+    if (message.no_steam_server !== undefined) writer.tag(19, WireType.Varint).bool(message.no_steam_server);
+    /* optional bool is_transition = 16; */
+    if (message.is_transition !== undefined) writer.tag(16, WireType.Varint).bool(message.is_transition);
+    /* optional string previouslevel = 17; */
+    if (message.previouslevel !== undefined) writer.tag(17, WireType.LengthDelimited).string(message.previouslevel);
+    /* optional string landmarkname = 18; */
+    if (message.landmarkname !== undefined) writer.tag(18, WireType.LengthDelimited).string(message.landmarkname);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSVCMsg_GameSessionConfiguration
@@ -3317,166 +3317,166 @@ class CSVCMsg_GameSessionConfiguration$Type extends MessageType<CSVCMsg_GameSess
 export const CSVCMsg_GameSessionConfiguration = new CSVCMsg_GameSessionConfiguration$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CNETMsg_DebugOverlay$Type extends MessageType<CNETMsg_DebugOverlay> {
-	constructor() {
-		super("CNETMsg_DebugOverlay", [
-			{
-				no: 1,
-				name: "etype",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "vectors",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgVector,
-			},
-			{
-				no: 3,
-				name: "colors",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgRGBA,
-			},
-			{
-				no: 4,
-				name: "dimensions",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 5,
-				name: "times",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 6,
-				name: "bools",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 7,
-				name: "uint64s",
-				kind: "scalar",
-				localName: "uint64s",
-				jsonName: "uint64s",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 8,
-				name: "strings",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CNETMsg_DebugOverlay>): CNETMsg_DebugOverlay {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.vectors = [];
-		message.colors = [];
-		message.dimensions = [];
-		message.times = [];
-		message.bools = [];
-		message.uint64s = [];
-		message.strings = [];
-		if (value !== undefined) reflectionMergePartial<CNETMsg_DebugOverlay>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CNETMsg_DebugOverlay,
-	): CNETMsg_DebugOverlay {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 etype */ 1:
-					message.etype = reader.int32();
-					break;
-				case /* repeated CMsgVector vectors */ 2:
-					message.vectors.push(CMsgVector.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* repeated CMsgRGBA colors */ 3:
-					message.colors.push(CMsgRGBA.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* repeated float dimensions */ 4:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.dimensions.push(reader.float());
-					else message.dimensions.push(reader.float());
-					break;
-				case /* repeated float times */ 5:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.times.push(reader.float());
-					else message.times.push(reader.float());
-					break;
-				case /* repeated bool bools */ 6:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.bools.push(reader.bool());
-					else message.bools.push(reader.bool());
-					break;
-				case /* repeated uint64 uint64s = 7 [json_name = "uint64s"];*/ 7:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.uint64s.push(reader.uint64().toBigInt());
-					else message.uint64s.push(reader.uint64().toBigInt());
-					break;
-				case /* repeated string strings */ 8:
-					message.strings.push(reader.string());
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CNETMsg_DebugOverlay,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 etype = 1; */
-		if (message.etype !== undefined) writer.tag(1, WireType.Varint).int32(message.etype);
-		/* repeated CMsgVector vectors = 2; */
-		for (let i = 0; i < message.vectors.length; i++)
-			CMsgVector.internalBinaryWrite(
-				message.vectors[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgRGBA colors = 3; */
-		for (let i = 0; i < message.colors.length; i++)
-			CMsgRGBA.internalBinaryWrite(message.colors[i], writer.tag(3, WireType.LengthDelimited).fork(), options).join();
-		/* repeated float dimensions = 4; */
-		for (let i = 0; i < message.dimensions.length; i++) writer.tag(4, WireType.Bit32).float(message.dimensions[i]);
-		/* repeated float times = 5; */
-		for (let i = 0; i < message.times.length; i++) writer.tag(5, WireType.Bit32).float(message.times[i]);
-		/* repeated bool bools = 6; */
-		for (let i = 0; i < message.bools.length; i++) writer.tag(6, WireType.Varint).bool(message.bools[i]);
-		/* repeated uint64 uint64s = 7 [json_name = "uint64s"]; */
-		for (let i = 0; i < message.uint64s.length; i++) writer.tag(7, WireType.Varint).uint64(message.uint64s[i]);
-		/* repeated string strings = 8; */
-		for (let i = 0; i < message.strings.length; i++) writer.tag(8, WireType.LengthDelimited).string(message.strings[i]);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CNETMsg_DebugOverlay", [
+      {
+        no: 1,
+        name: "etype",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "vectors",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgVector,
+      },
+      {
+        no: 3,
+        name: "colors",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgRGBA,
+      },
+      {
+        no: 4,
+        name: "dimensions",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 5,
+        name: "times",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 6,
+        name: "bools",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 7,
+        name: "uint64s",
+        kind: "scalar",
+        localName: "uint64s",
+        jsonName: "uint64s",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 8,
+        name: "strings",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CNETMsg_DebugOverlay>): CNETMsg_DebugOverlay {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.vectors = [];
+    message.colors = [];
+    message.dimensions = [];
+    message.times = [];
+    message.bools = [];
+    message.uint64s = [];
+    message.strings = [];
+    if (value !== undefined) reflectionMergePartial<CNETMsg_DebugOverlay>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CNETMsg_DebugOverlay,
+  ): CNETMsg_DebugOverlay {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 etype */ 1:
+          message.etype = reader.int32();
+          break;
+        case /* repeated CMsgVector vectors */ 2:
+          message.vectors.push(CMsgVector.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* repeated CMsgRGBA colors */ 3:
+          message.colors.push(CMsgRGBA.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* repeated float dimensions */ 4:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.dimensions.push(reader.float());
+          else message.dimensions.push(reader.float());
+          break;
+        case /* repeated float times */ 5:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.times.push(reader.float());
+          else message.times.push(reader.float());
+          break;
+        case /* repeated bool bools */ 6:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.bools.push(reader.bool());
+          else message.bools.push(reader.bool());
+          break;
+        case /* repeated uint64 uint64s = 7 [json_name = "uint64s"];*/ 7:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.uint64s.push(reader.uint64().toBigInt());
+          else message.uint64s.push(reader.uint64().toBigInt());
+          break;
+        case /* repeated string strings */ 8:
+          message.strings.push(reader.string());
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CNETMsg_DebugOverlay,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 etype = 1; */
+    if (message.etype !== undefined) writer.tag(1, WireType.Varint).int32(message.etype);
+    /* repeated CMsgVector vectors = 2; */
+    for (let i = 0; i < message.vectors.length; i++)
+      CMsgVector.internalBinaryWrite(
+        message.vectors[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgRGBA colors = 3; */
+    for (let i = 0; i < message.colors.length; i++)
+      CMsgRGBA.internalBinaryWrite(message.colors[i], writer.tag(3, WireType.LengthDelimited).fork(), options).join();
+    /* repeated float dimensions = 4; */
+    for (let i = 0; i < message.dimensions.length; i++) writer.tag(4, WireType.Bit32).float(message.dimensions[i]);
+    /* repeated float times = 5; */
+    for (let i = 0; i < message.times.length; i++) writer.tag(5, WireType.Bit32).float(message.times[i]);
+    /* repeated bool bools = 6; */
+    for (let i = 0; i < message.bools.length; i++) writer.tag(6, WireType.Varint).bool(message.bools[i]);
+    /* repeated uint64 uint64s = 7 [json_name = "uint64s"]; */
+    for (let i = 0; i < message.uint64s.length; i++) writer.tag(7, WireType.Varint).uint64(message.uint64s[i]);
+    /* repeated string strings = 8; */
+    for (let i = 0; i < message.strings.length; i++) writer.tag(8, WireType.LengthDelimited).string(message.strings[i]);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CNETMsg_DebugOverlay

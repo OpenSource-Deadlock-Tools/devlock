@@ -5,12 +5,12 @@
  * @generated from protobuf enum EProtoExecutionSite
  */
 export enum EProtoExecutionSite {
-	/**
-	 * @generated from protobuf enum value: k_EProtoExecutionSiteUnknown = 0;
-	 */
-	k_EProtoExecutionSiteUnknown = 0,
-	/**
-	 * @generated from protobuf enum value: k_EProtoExecutionSiteSteamClient = 3;
-	 */
-	k_EProtoExecutionSiteSteamClient = 3,
+  /**
+   * @generated from protobuf enum value: k_EProtoExecutionSiteUnknown = 0;
+   */
+  k_EProtoExecutionSiteUnknown = 0,
+  /**
+   * @generated from protobuf enum value: k_EProtoExecutionSiteSteamClient = 3;
+   */
+  k_EProtoExecutionSiteSteamClient = 3,
 }

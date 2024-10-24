@@ -18,309 +18,309 @@ import { CMsgVector } from "./networkbasetypes.js";
  * @generated from protobuf message CUserMessageAchievementEvent
  */
 export interface CUserMessageAchievementEvent {
-	/**
-	 * @generated from protobuf field: optional uint32 achievement = 1;
-	 */
-	achievement?: number;
+  /**
+   * @generated from protobuf field: optional uint32 achievement = 1;
+   */
+  achievement?: number;
 }
 /**
  * @generated from protobuf message CUserMessageCloseCaption
  */
 export interface CUserMessageCloseCaption {
-	/**
-	 * @generated from protobuf field: optional fixed32 hash = 1;
-	 */
-	hash?: number;
-	/**
-	 * @generated from protobuf field: optional float duration = 2;
-	 */
-	duration?: number;
-	/**
-	 * @generated from protobuf field: optional bool from_player = 3;
-	 */
-	from_player?: boolean;
-	/**
-	 * @generated from protobuf field: optional int32 ent_index = 4;
-	 */
-	ent_index?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 hash = 1;
+   */
+  hash?: number;
+  /**
+   * @generated from protobuf field: optional float duration = 2;
+   */
+  duration?: number;
+  /**
+   * @generated from protobuf field: optional bool from_player = 3;
+   */
+  from_player?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 ent_index = 4;
+   */
+  ent_index?: number;
 }
 /**
  * @generated from protobuf message CUserMessageCloseCaptionDirect
  */
 export interface CUserMessageCloseCaptionDirect {
-	/**
-	 * @generated from protobuf field: optional fixed32 hash = 1;
-	 */
-	hash?: number;
-	/**
-	 * @generated from protobuf field: optional float duration = 2;
-	 */
-	duration?: number;
-	/**
-	 * @generated from protobuf field: optional bool from_player = 3;
-	 */
-	from_player?: boolean;
-	/**
-	 * @generated from protobuf field: optional int32 ent_index = 4;
-	 */
-	ent_index?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 hash = 1;
+   */
+  hash?: number;
+  /**
+   * @generated from protobuf field: optional float duration = 2;
+   */
+  duration?: number;
+  /**
+   * @generated from protobuf field: optional bool from_player = 3;
+   */
+  from_player?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 ent_index = 4;
+   */
+  ent_index?: number;
 }
 /**
  * @generated from protobuf message CUserMessageCloseCaptionPlaceholder
  */
 export interface CUserMessageCloseCaptionPlaceholder {
-	/**
-	 * @generated from protobuf field: optional string string = 1;
-	 */
-	string?: string;
-	/**
-	 * @generated from protobuf field: optional float duration = 2;
-	 */
-	duration?: number;
-	/**
-	 * @generated from protobuf field: optional bool from_player = 3;
-	 */
-	from_player?: boolean;
-	/**
-	 * @generated from protobuf field: optional int32 ent_index = 4;
-	 */
-	ent_index?: number;
+  /**
+   * @generated from protobuf field: optional string string = 1;
+   */
+  string?: string;
+  /**
+   * @generated from protobuf field: optional float duration = 2;
+   */
+  duration?: number;
+  /**
+   * @generated from protobuf field: optional bool from_player = 3;
+   */
+  from_player?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 ent_index = 4;
+   */
+  ent_index?: number;
 }
 /**
  * @generated from protobuf message CUserMessageCurrentTimescale
  */
 export interface CUserMessageCurrentTimescale {
-	/**
-	 * @generated from protobuf field: optional float current = 1;
-	 */
-	current?: number;
+  /**
+   * @generated from protobuf field: optional float current = 1;
+   */
+  current?: number;
 }
 /**
  * @generated from protobuf message CUserMessageDesiredTimescale
  */
 export interface CUserMessageDesiredTimescale {
-	/**
-	 * @generated from protobuf field: optional float desired = 1;
-	 */
-	desired?: number;
-	/**
-	 * @generated from protobuf field: optional float acceleration = 2;
-	 */
-	acceleration?: number;
-	/**
-	 * @generated from protobuf field: optional float minblendrate = 3;
-	 */
-	minblendrate?: number;
-	/**
-	 * @generated from protobuf field: optional float blenddeltamultiplier = 4;
-	 */
-	blenddeltamultiplier?: number;
+  /**
+   * @generated from protobuf field: optional float desired = 1;
+   */
+  desired?: number;
+  /**
+   * @generated from protobuf field: optional float acceleration = 2;
+   */
+  acceleration?: number;
+  /**
+   * @generated from protobuf field: optional float minblendrate = 3;
+   */
+  minblendrate?: number;
+  /**
+   * @generated from protobuf field: optional float blenddeltamultiplier = 4;
+   */
+  blenddeltamultiplier?: number;
 }
 /**
  * @generated from protobuf message CUserMessageFade
  */
 export interface CUserMessageFade {
-	/**
-	 * @generated from protobuf field: optional uint32 duration = 1;
-	 */
-	duration?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hold_time = 2;
-	 */
-	hold_time?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 3;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 color = 4;
-	 */
-	color?: number;
+  /**
+   * @generated from protobuf field: optional uint32 duration = 1;
+   */
+  duration?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hold_time = 2;
+   */
+  hold_time?: number;
+  /**
+   * @generated from protobuf field: optional uint32 flags = 3;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 color = 4;
+   */
+  color?: number;
 }
 /**
  * @generated from protobuf message CUserMessageShake
  */
 export interface CUserMessageShake {
-	/**
-	 * @generated from protobuf field: optional uint32 command = 1;
-	 */
-	command?: number;
-	/**
-	 * @generated from protobuf field: optional float amplitude = 2;
-	 */
-	amplitude?: number;
-	/**
-	 * @generated from protobuf field: optional float frequency = 3;
-	 */
-	frequency?: number;
-	/**
-	 * @generated from protobuf field: optional float duration = 4;
-	 */
-	duration?: number;
+  /**
+   * @generated from protobuf field: optional uint32 command = 1;
+   */
+  command?: number;
+  /**
+   * @generated from protobuf field: optional float amplitude = 2;
+   */
+  amplitude?: number;
+  /**
+   * @generated from protobuf field: optional float frequency = 3;
+   */
+  frequency?: number;
+  /**
+   * @generated from protobuf field: optional float duration = 4;
+   */
+  duration?: number;
 }
 /**
  * @generated from protobuf message CUserMessageShakeDir
  */
 export interface CUserMessageShakeDir {
-	/**
-	 * @generated from protobuf field: optional CUserMessageShake shake = 1;
-	 */
-	shake?: CUserMessageShake;
-	/**
-	 * @generated from protobuf field: optional CMsgVector direction = 2;
-	 */
-	direction?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CUserMessageShake shake = 1;
+   */
+  shake?: CUserMessageShake;
+  /**
+   * @generated from protobuf field: optional CMsgVector direction = 2;
+   */
+  direction?: CMsgVector;
 }
 /**
  * @generated from protobuf message CUserMessageWaterShake
  */
 export interface CUserMessageWaterShake {
-	/**
-	 * @generated from protobuf field: optional uint32 command = 1;
-	 */
-	command?: number;
-	/**
-	 * @generated from protobuf field: optional float amplitude = 2;
-	 */
-	amplitude?: number;
-	/**
-	 * @generated from protobuf field: optional float frequency = 3;
-	 */
-	frequency?: number;
-	/**
-	 * @generated from protobuf field: optional float duration = 4;
-	 */
-	duration?: number;
+  /**
+   * @generated from protobuf field: optional uint32 command = 1;
+   */
+  command?: number;
+  /**
+   * @generated from protobuf field: optional float amplitude = 2;
+   */
+  amplitude?: number;
+  /**
+   * @generated from protobuf field: optional float frequency = 3;
+   */
+  frequency?: number;
+  /**
+   * @generated from protobuf field: optional float duration = 4;
+   */
+  duration?: number;
 }
 /**
  * @generated from protobuf message CUserMessageScreenTilt
  */
 export interface CUserMessageScreenTilt {
-	/**
-	 * @generated from protobuf field: optional uint32 command = 1;
-	 */
-	command?: number;
-	/**
-	 * @generated from protobuf field: optional bool ease_in_out = 2;
-	 */
-	ease_in_out?: boolean;
-	/**
-	 * @generated from protobuf field: optional CMsgVector angle = 3;
-	 */
-	angle?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional float duration = 4;
-	 */
-	duration?: number;
-	/**
-	 * @generated from protobuf field: optional float time = 5;
-	 */
-	time?: number;
+  /**
+   * @generated from protobuf field: optional uint32 command = 1;
+   */
+  command?: number;
+  /**
+   * @generated from protobuf field: optional bool ease_in_out = 2;
+   */
+  ease_in_out?: boolean;
+  /**
+   * @generated from protobuf field: optional CMsgVector angle = 3;
+   */
+  angle?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional float duration = 4;
+   */
+  duration?: number;
+  /**
+   * @generated from protobuf field: optional float time = 5;
+   */
+  time?: number;
 }
 /**
  * @generated from protobuf message CUserMessageSayText
  */
 export interface CUserMessageSayText {
-	/**
-	 * @generated from protobuf field: optional int32 playerindex = 1;
-	 */
-	playerindex?: number;
-	/**
-	 * @generated from protobuf field: optional string text = 2;
-	 */
-	text?: string;
-	/**
-	 * @generated from protobuf field: optional bool chat = 3;
-	 */
-	chat?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 playerindex = 1;
+   */
+  playerindex?: number;
+  /**
+   * @generated from protobuf field: optional string text = 2;
+   */
+  text?: string;
+  /**
+   * @generated from protobuf field: optional bool chat = 3;
+   */
+  chat?: boolean;
 }
 /**
  * @generated from protobuf message CUserMessageSayText2
  */
 export interface CUserMessageSayText2 {
-	/**
-	 * @generated from protobuf field: optional int32 entityindex = 1;
-	 */
-	entityindex?: number;
-	/**
-	 * @generated from protobuf field: optional bool chat = 2;
-	 */
-	chat?: boolean;
-	/**
-	 * @generated from protobuf field: optional string messagename = 3;
-	 */
-	messagename?: string;
-	/**
-	 * @generated from protobuf field: optional string param1 = 4;
-	 */
-	param1?: string;
-	/**
-	 * @generated from protobuf field: optional string param2 = 5;
-	 */
-	param2?: string;
-	/**
-	 * @generated from protobuf field: optional string param3 = 6;
-	 */
-	param3?: string;
-	/**
-	 * @generated from protobuf field: optional string param4 = 7;
-	 */
-	param4?: string;
+  /**
+   * @generated from protobuf field: optional int32 entityindex = 1;
+   */
+  entityindex?: number;
+  /**
+   * @generated from protobuf field: optional bool chat = 2;
+   */
+  chat?: boolean;
+  /**
+   * @generated from protobuf field: optional string messagename = 3;
+   */
+  messagename?: string;
+  /**
+   * @generated from protobuf field: optional string param1 = 4;
+   */
+  param1?: string;
+  /**
+   * @generated from protobuf field: optional string param2 = 5;
+   */
+  param2?: string;
+  /**
+   * @generated from protobuf field: optional string param3 = 6;
+   */
+  param3?: string;
+  /**
+   * @generated from protobuf field: optional string param4 = 7;
+   */
+  param4?: string;
 }
 /**
  * @generated from protobuf message CUserMessageHudMsg
  */
 export interface CUserMessageHudMsg {
-	/**
-	 * @generated from protobuf field: optional uint32 channel = 1;
-	 */
-	channel?: number;
-	/**
-	 * @generated from protobuf field: optional float x = 2;
-	 */
-	x?: number;
-	/**
-	 * @generated from protobuf field: optional float y = 3;
-	 */
-	y?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 color1 = 4;
-	 */
-	color1?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 color2 = 5;
-	 */
-	color2?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 effect = 6;
-	 */
-	effect?: number;
-	/**
-	 * @generated from protobuf field: optional string message = 11;
-	 */
-	message?: string;
+  /**
+   * @generated from protobuf field: optional uint32 channel = 1;
+   */
+  channel?: number;
+  /**
+   * @generated from protobuf field: optional float x = 2;
+   */
+  x?: number;
+  /**
+   * @generated from protobuf field: optional float y = 3;
+   */
+  y?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 color1 = 4;
+   */
+  color1?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 color2 = 5;
+   */
+  color2?: number;
+  /**
+   * @generated from protobuf field: optional uint32 effect = 6;
+   */
+  effect?: number;
+  /**
+   * @generated from protobuf field: optional string message = 11;
+   */
+  message?: string;
 }
 /**
  * @generated from protobuf message CUserMessageHudText
  */
 export interface CUserMessageHudText {
-	/**
-	 * @generated from protobuf field: optional string message = 1;
-	 */
-	message?: string;
+  /**
+   * @generated from protobuf field: optional string message = 1;
+   */
+  message?: string;
 }
 /**
  * @generated from protobuf message CUserMessageTextMsg
  */
 export interface CUserMessageTextMsg {
-	/**
-	 * @generated from protobuf field: optional uint32 dest = 1;
-	 */
-	dest?: number;
-	/**
-	 * @generated from protobuf field: repeated string param = 2;
-	 */
-	param: string[];
+  /**
+   * @generated from protobuf field: optional uint32 dest = 1;
+   */
+  dest?: number;
+  /**
+   * @generated from protobuf field: repeated string param = 2;
+   */
+  param: string[];
 }
 /**
  * @generated from protobuf message CUserMessageGameTitle
@@ -334,52 +334,52 @@ export interface CUserMessageResetHUD {}
  * @generated from protobuf message CUserMessageSendAudio
  */
 export interface CUserMessageSendAudio {
-	/**
-	 * @generated from protobuf field: optional string soundname = 1;
-	 */
-	soundname?: string;
-	/**
-	 * @generated from protobuf field: optional bool stop = 2;
-	 */
-	stop?: boolean;
+  /**
+   * @generated from protobuf field: optional string soundname = 1;
+   */
+  soundname?: string;
+  /**
+   * @generated from protobuf field: optional bool stop = 2;
+   */
+  stop?: boolean;
 }
 /**
  * @generated from protobuf message CUserMessageAudioParameter
  */
 export interface CUserMessageAudioParameter {
-	/**
-	 * @generated from protobuf field: optional uint32 parameter_type = 1;
-	 */
-	parameter_type?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 name_hash_code = 2;
-	 */
-	name_hash_code?: number;
-	/**
-	 * @generated from protobuf field: optional float value = 3;
-	 */
-	value?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 int_value = 4;
-	 */
-	int_value?: number;
+  /**
+   * @generated from protobuf field: optional uint32 parameter_type = 1;
+   */
+  parameter_type?: number;
+  /**
+   * @generated from protobuf field: optional uint32 name_hash_code = 2;
+   */
+  name_hash_code?: number;
+  /**
+   * @generated from protobuf field: optional float value = 3;
+   */
+  value?: number;
+  /**
+   * @generated from protobuf field: optional uint32 int_value = 4;
+   */
+  int_value?: number;
 }
 /**
  * @generated from protobuf message CUserMessageVoiceMask
  */
 export interface CUserMessageVoiceMask {
-	/**
-	 * @generated from protobuf field: repeated uint32 gamerules_masks = 1;
-	 */
-	gamerules_masks: number[];
-	/**
-	 * @generated from protobuf field: repeated uint32 ban_masks = 2;
-	 */
-	ban_masks: number[];
-	/**
-	 * @generated from protobuf field: optional bool mod_enable = 3;
-	 */
-	mod_enable?: boolean;
+  /**
+   * @generated from protobuf field: repeated uint32 gamerules_masks = 1;
+   */
+  gamerules_masks: number[];
+  /**
+   * @generated from protobuf field: repeated uint32 ban_masks = 2;
+   */
+  ban_masks: number[];
+  /**
+   * @generated from protobuf field: optional bool mod_enable = 3;
+   */
+  mod_enable?: boolean;
 }
 /**
  * @generated from protobuf message CUserMessageRequestState
@@ -389,405 +389,405 @@ export interface CUserMessageRequestState {}
  * @generated from protobuf message CUserMessageRumble
  */
 export interface CUserMessageRumble {
-	/**
-	 * @generated from protobuf field: optional int32 index = 1;
-	 */
-	index?: number;
-	/**
-	 * @generated from protobuf field: optional int32 data = 2;
-	 */
-	data?: number;
-	/**
-	 * @generated from protobuf field: optional int32 flags = 3;
-	 */
-	flags?: number;
+  /**
+   * @generated from protobuf field: optional int32 index = 1;
+   */
+  index?: number;
+  /**
+   * @generated from protobuf field: optional int32 data = 2;
+   */
+  data?: number;
+  /**
+   * @generated from protobuf field: optional int32 flags = 3;
+   */
+  flags?: number;
 }
 /**
  * @generated from protobuf message CUserMessageSayTextChannel
  */
 export interface CUserMessageSayTextChannel {
-	/**
-	 * @generated from protobuf field: optional int32 player = 1;
-	 */
-	player?: number;
-	/**
-	 * @generated from protobuf field: optional int32 channel = 2;
-	 */
-	channel?: number;
-	/**
-	 * @generated from protobuf field: optional string text = 3;
-	 */
-	text?: string;
+  /**
+   * @generated from protobuf field: optional int32 player = 1;
+   */
+  player?: number;
+  /**
+   * @generated from protobuf field: optional int32 channel = 2;
+   */
+  channel?: number;
+  /**
+   * @generated from protobuf field: optional string text = 3;
+   */
+  text?: string;
 }
 /**
  * @generated from protobuf message CUserMessageColoredText
  */
 export interface CUserMessageColoredText {
-	/**
-	 * @generated from protobuf field: optional uint32 color = 1;
-	 */
-	color?: number;
-	/**
-	 * @generated from protobuf field: optional string text = 2;
-	 */
-	text?: string;
-	/**
-	 * @generated from protobuf field: optional bool reset = 3;
-	 */
-	reset?: boolean;
-	/**
-	 * @generated from protobuf field: optional int32 context_player_slot = 4;
-	 */
-	context_player_slot?: number;
-	/**
-	 * @generated from protobuf field: optional int32 context_value = 5;
-	 */
-	context_value?: number;
-	/**
-	 * @generated from protobuf field: optional int32 context_team_id = 6;
-	 */
-	context_team_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 color = 1;
+   */
+  color?: number;
+  /**
+   * @generated from protobuf field: optional string text = 2;
+   */
+  text?: string;
+  /**
+   * @generated from protobuf field: optional bool reset = 3;
+   */
+  reset?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 context_player_slot = 4;
+   */
+  context_player_slot?: number;
+  /**
+   * @generated from protobuf field: optional int32 context_value = 5;
+   */
+  context_value?: number;
+  /**
+   * @generated from protobuf field: optional int32 context_team_id = 6;
+   */
+  context_team_id?: number;
 }
 /**
  * @generated from protobuf message CUserMessageItemPickup
  */
 export interface CUserMessageItemPickup {
-	/**
-	 * @generated from protobuf field: optional string itemname = 1;
-	 */
-	itemname?: string;
+  /**
+   * @generated from protobuf field: optional string itemname = 1;
+   */
+  itemname?: string;
 }
 /**
  * @generated from protobuf message CUserMessageAmmoDenied
  */
 export interface CUserMessageAmmoDenied {
-	/**
-	 * @generated from protobuf field: optional uint32 ammo_id = 1;
-	 */
-	ammo_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 ammo_id = 1;
+   */
+  ammo_id?: number;
 }
 /**
  * @generated from protobuf message CUserMessageShowMenu
  */
 export interface CUserMessageShowMenu {
-	/**
-	 * @generated from protobuf field: optional uint32 validslots = 1;
-	 */
-	validslots?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 displaytime = 2;
-	 */
-	displaytime?: number;
-	/**
-	 * @generated from protobuf field: optional bool needmore = 3;
-	 */
-	needmore?: boolean;
-	/**
-	 * @generated from protobuf field: optional string menustring = 4;
-	 */
-	menustring?: string;
+  /**
+   * @generated from protobuf field: optional uint32 validslots = 1;
+   */
+  validslots?: number;
+  /**
+   * @generated from protobuf field: optional uint32 displaytime = 2;
+   */
+  displaytime?: number;
+  /**
+   * @generated from protobuf field: optional bool needmore = 3;
+   */
+  needmore?: boolean;
+  /**
+   * @generated from protobuf field: optional string menustring = 4;
+   */
+  menustring?: string;
 }
 /**
  * @generated from protobuf message CUserMessageCreditsMsg
  */
 export interface CUserMessageCreditsMsg {
-	/**
-	 * @generated from protobuf field: optional eRollType rolltype = 1;
-	 */
-	rolltype?: eRollType;
-	/**
-	 * @generated from protobuf field: optional float logo_length = 2;
-	 */
-	logo_length?: number;
+  /**
+   * @generated from protobuf field: optional eRollType rolltype = 1;
+   */
+  rolltype?: eRollType;
+  /**
+   * @generated from protobuf field: optional float logo_length = 2;
+   */
+  logo_length?: number;
 }
 /**
  * @generated from protobuf message CEntityMessagePlayJingle
  */
 export interface CEntityMessagePlayJingle {
-	/**
-	 * @generated from protobuf field: optional CEntityMsg entity_msg = 1;
-	 */
-	entity_msg?: CEntityMsg;
+  /**
+   * @generated from protobuf field: optional CEntityMsg entity_msg = 1;
+   */
+  entity_msg?: CEntityMsg;
 }
 /**
  * @generated from protobuf message CEntityMessageScreenOverlay
  */
 export interface CEntityMessageScreenOverlay {
-	/**
-	 * @generated from protobuf field: optional bool start_effect = 1;
-	 */
-	start_effect?: boolean;
-	/**
-	 * @generated from protobuf field: optional CEntityMsg entity_msg = 2;
-	 */
-	entity_msg?: CEntityMsg;
+  /**
+   * @generated from protobuf field: optional bool start_effect = 1;
+   */
+  start_effect?: boolean;
+  /**
+   * @generated from protobuf field: optional CEntityMsg entity_msg = 2;
+   */
+  entity_msg?: CEntityMsg;
 }
 /**
  * @generated from protobuf message CEntityMessageRemoveAllDecals
  */
 export interface CEntityMessageRemoveAllDecals {
-	/**
-	 * @generated from protobuf field: optional bool remove_decals = 1;
-	 */
-	remove_decals?: boolean;
-	/**
-	 * @generated from protobuf field: optional CEntityMsg entity_msg = 2;
-	 */
-	entity_msg?: CEntityMsg;
+  /**
+   * @generated from protobuf field: optional bool remove_decals = 1;
+   */
+  remove_decals?: boolean;
+  /**
+   * @generated from protobuf field: optional CEntityMsg entity_msg = 2;
+   */
+  entity_msg?: CEntityMsg;
 }
 /**
  * @generated from protobuf message CEntityMessagePropagateForce
  */
 export interface CEntityMessagePropagateForce {
-	/**
-	 * @generated from protobuf field: optional CMsgVector impulse = 1;
-	 */
-	impulse?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CEntityMsg entity_msg = 2;
-	 */
-	entity_msg?: CEntityMsg;
+  /**
+   * @generated from protobuf field: optional CMsgVector impulse = 1;
+   */
+  impulse?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CEntityMsg entity_msg = 2;
+   */
+  entity_msg?: CEntityMsg;
 }
 /**
  * @generated from protobuf message CEntityMessageDoSpark
  */
 export interface CEntityMessageDoSpark {
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin = 1;
-	 */
-	origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional int32 entityindex = 2;
-	 */
-	entityindex?: number;
-	/**
-	 * @generated from protobuf field: optional float radius = 3;
-	 */
-	radius?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 color = 4;
-	 */
-	color?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 beams = 5;
-	 */
-	beams?: number;
-	/**
-	 * @generated from protobuf field: optional float thick = 6;
-	 */
-	thick?: number;
-	/**
-	 * @generated from protobuf field: optional float duration = 7;
-	 */
-	duration?: number;
-	/**
-	 * @generated from protobuf field: optional CEntityMsg entity_msg = 8;
-	 */
-	entity_msg?: CEntityMsg;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin = 1;
+   */
+  origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional int32 entityindex = 2;
+   */
+  entityindex?: number;
+  /**
+   * @generated from protobuf field: optional float radius = 3;
+   */
+  radius?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 color = 4;
+   */
+  color?: number;
+  /**
+   * @generated from protobuf field: optional uint32 beams = 5;
+   */
+  beams?: number;
+  /**
+   * @generated from protobuf field: optional float thick = 6;
+   */
+  thick?: number;
+  /**
+   * @generated from protobuf field: optional float duration = 7;
+   */
+  duration?: number;
+  /**
+   * @generated from protobuf field: optional CEntityMsg entity_msg = 8;
+   */
+  entity_msg?: CEntityMsg;
 }
 /**
  * @generated from protobuf message CEntityMessageFixAngle
  */
 export interface CEntityMessageFixAngle {
-	/**
-	 * @generated from protobuf field: optional bool relative = 1;
-	 */
-	relative?: boolean;
-	/**
-	 * @generated from protobuf field: optional CMsgQAngle angle = 2;
-	 */
-	angle?: CMsgQAngle;
-	/**
-	 * @generated from protobuf field: optional CEntityMsg entity_msg = 3;
-	 */
-	entity_msg?: CEntityMsg;
+  /**
+   * @generated from protobuf field: optional bool relative = 1;
+   */
+  relative?: boolean;
+  /**
+   * @generated from protobuf field: optional CMsgQAngle angle = 2;
+   */
+  angle?: CMsgQAngle;
+  /**
+   * @generated from protobuf field: optional CEntityMsg entity_msg = 3;
+   */
+  entity_msg?: CEntityMsg;
 }
 /**
  * @generated from protobuf message CUserMessageCameraTransition
  */
 export interface CUserMessageCameraTransition {
-	/**
-	 * @generated from protobuf field: optional uint32 camera_type = 1;
-	 */
-	camera_type?: number;
-	/**
-	 * @generated from protobuf field: optional float duration = 2;
-	 */
-	duration?: number;
-	/**
-	 * @generated from protobuf field: optional CUserMessageCameraTransition.Transition_DataDriven params_data_driven = 3;
-	 */
-	params_data_driven?: CUserMessageCameraTransition_Transition_DataDriven;
+  /**
+   * @generated from protobuf field: optional uint32 camera_type = 1;
+   */
+  camera_type?: number;
+  /**
+   * @generated from protobuf field: optional float duration = 2;
+   */
+  duration?: number;
+  /**
+   * @generated from protobuf field: optional CUserMessageCameraTransition.Transition_DataDriven params_data_driven = 3;
+   */
+  params_data_driven?: CUserMessageCameraTransition_Transition_DataDriven;
 }
 /**
  * @generated from protobuf message CUserMessageCameraTransition.Transition_DataDriven
  */
 export interface CUserMessageCameraTransition_Transition_DataDriven {
-	/**
-	 * @generated from protobuf field: optional string filename = 1;
-	 */
-	filename?: string;
-	/**
-	 * @generated from protobuf field: optional int32 attach_ent_index = 2;
-	 */
-	attach_ent_index?: number;
-	/**
-	 * @generated from protobuf field: optional float duration = 3;
-	 */
-	duration?: number;
+  /**
+   * @generated from protobuf field: optional string filename = 1;
+   */
+  filename?: string;
+  /**
+   * @generated from protobuf field: optional int32 attach_ent_index = 2;
+   */
+  attach_ent_index?: number;
+  /**
+   * @generated from protobuf field: optional float duration = 3;
+   */
+  duration?: number;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager
  */
 export interface CUserMsg_ParticleManager {
-	/**
-	 * @generated from protobuf field: PARTICLE_MESSAGE type = 1;
-	 */
-	type: PARTICLE_MESSAGE;
-	/**
-	 * @generated from protobuf field: uint32 index = 2;
-	 */
-	index: number;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.ReleaseParticleIndex release_particle_index = 3;
-	 */
-	release_particle_index?: CUserMsg_ParticleManager_ReleaseParticleIndex;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.CreateParticle create_particle = 4;
-	 */
-	create_particle?: CUserMsg_ParticleManager_CreateParticle;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.DestroyParticle destroy_particle = 5;
-	 */
-	destroy_particle?: CUserMsg_ParticleManager_DestroyParticle;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.DestroyParticleInvolving destroy_particle_involving = 6;
-	 */
-	destroy_particle_involving?: CUserMsg_ParticleManager_DestroyParticleInvolving;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticle_OBSOLETE update_particle = 7;
-	 */
-	update_particle?: CUserMsg_ParticleManager_UpdateParticle_OBSOLETE;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticleFwd_OBSOLETE update_particle_fwd = 8;
-	 */
-	update_particle_fwd?: CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticleOrient_OBSOLETE update_particle_orient = 9;
-	 */
-	update_particle_orient?: CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticleFallback update_particle_fallback = 10;
-	 */
-	update_particle_fallback?: CUserMsg_ParticleManager_UpdateParticleFallback;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticleOffset update_particle_offset = 11;
-	 */
-	update_particle_offset?: CUserMsg_ParticleManager_UpdateParticleOffset;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticleEnt update_particle_ent = 12;
-	 */
-	update_particle_ent?: CUserMsg_ParticleManager_UpdateParticleEnt;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticleShouldDraw update_particle_should_draw = 14;
-	 */
-	update_particle_should_draw?: CUserMsg_ParticleManager_UpdateParticleShouldDraw;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticleSetFrozen update_particle_set_frozen = 15;
-	 */
-	update_particle_set_frozen?: CUserMsg_ParticleManager_UpdateParticleSetFrozen;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.ChangeControlPointAttachment change_control_point_attachment = 16;
-	 */
-	change_control_point_attachment?: CUserMsg_ParticleManager_ChangeControlPointAttachment;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateEntityPosition update_entity_position = 17;
-	 */
-	update_entity_position?: CUserMsg_ParticleManager_UpdateEntityPosition;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.SetParticleFoWProperties set_particle_fow_properties = 18;
-	 */
-	set_particle_fow_properties?: CUserMsg_ParticleManager_SetParticleFoWProperties;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.SetParticleText set_particle_text = 19;
-	 */
-	set_particle_text?: CUserMsg_ParticleManager_SetParticleText;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.SetParticleShouldCheckFoW set_particle_should_check_fow = 20;
-	 */
-	set_particle_should_check_fow?: CUserMsg_ParticleManager_SetParticleShouldCheckFoW;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.SetControlPointModel set_control_point_model = 21;
-	 */
-	set_control_point_model?: CUserMsg_ParticleManager_SetControlPointModel;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.SetControlPointSnapshot set_control_point_snapshot = 22;
-	 */
-	set_control_point_snapshot?: CUserMsg_ParticleManager_SetControlPointSnapshot;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.SetTextureAttribute set_texture_attribute = 23;
-	 */
-	set_texture_attribute?: CUserMsg_ParticleManager_SetTextureAttribute;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.SetSceneObjectGenericFlag set_scene_object_generic_flag = 24;
-	 */
-	set_scene_object_generic_flag?: CUserMsg_ParticleManager_SetSceneObjectGenericFlag;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.SetSceneObjectTintAndDesat set_scene_object_tint_and_desat = 25;
-	 */
-	set_scene_object_tint_and_desat?: CUserMsg_ParticleManager_SetSceneObjectTintAndDesat;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.DestroyParticleNamed destroy_particle_named = 26;
-	 */
-	destroy_particle_named?: CUserMsg_ParticleManager_DestroyParticleNamed;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.ParticleSkipToTime particle_skip_to_time = 27;
-	 */
-	particle_skip_to_time?: CUserMsg_ParticleManager_ParticleSkipToTime;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.ParticleCanFreeze particle_can_freeze = 28;
-	 */
-	particle_can_freeze?: CUserMsg_ParticleManager_ParticleCanFreeze;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.SetParticleNamedValueContext set_named_value_context = 29;
-	 */
-	set_named_value_context?: CUserMsg_ParticleManager_SetParticleNamedValueContext;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticleTransform update_particle_transform = 30;
-	 */
-	update_particle_transform?: CUserMsg_ParticleManager_UpdateParticleTransform;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.ParticleFreezeTransitionOverride particle_freeze_transition_override = 31;
-	 */
-	particle_freeze_transition_override?: CUserMsg_ParticleManager_ParticleFreezeTransitionOverride;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.FreezeParticleInvolving freeze_particle_involving = 32;
-	 */
-	freeze_particle_involving?: CUserMsg_ParticleManager_FreezeParticleInvolving;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.AddModellistOverrideElement add_modellist_override_element = 33;
-	 */
-	add_modellist_override_element?: CUserMsg_ParticleManager_AddModellistOverrideElement;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.ClearModellistOverride clear_modellist_override = 34;
-	 */
-	clear_modellist_override?: CUserMsg_ParticleManager_ClearModellistOverride;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.CreatePhysicsSim create_physics_sim = 35;
-	 */
-	create_physics_sim?: CUserMsg_ParticleManager_CreatePhysicsSim;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.DestroyPhysicsSim destroy_physics_sim = 36;
-	 */
-	destroy_physics_sim?: CUserMsg_ParticleManager_DestroyPhysicsSim;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.SetVData set_vdata = 37;
-	 */
-	set_vdata?: CUserMsg_ParticleManager_SetVData;
-	/**
-	 * @generated from protobuf field: optional CUserMsg_ParticleManager.SetMaterialOverride set_material_override = 38;
-	 */
-	set_material_override?: CUserMsg_ParticleManager_SetMaterialOverride;
+  /**
+   * @generated from protobuf field: PARTICLE_MESSAGE type = 1;
+   */
+  type: PARTICLE_MESSAGE;
+  /**
+   * @generated from protobuf field: uint32 index = 2;
+   */
+  index: number;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.ReleaseParticleIndex release_particle_index = 3;
+   */
+  release_particle_index?: CUserMsg_ParticleManager_ReleaseParticleIndex;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.CreateParticle create_particle = 4;
+   */
+  create_particle?: CUserMsg_ParticleManager_CreateParticle;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.DestroyParticle destroy_particle = 5;
+   */
+  destroy_particle?: CUserMsg_ParticleManager_DestroyParticle;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.DestroyParticleInvolving destroy_particle_involving = 6;
+   */
+  destroy_particle_involving?: CUserMsg_ParticleManager_DestroyParticleInvolving;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticle_OBSOLETE update_particle = 7;
+   */
+  update_particle?: CUserMsg_ParticleManager_UpdateParticle_OBSOLETE;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticleFwd_OBSOLETE update_particle_fwd = 8;
+   */
+  update_particle_fwd?: CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticleOrient_OBSOLETE update_particle_orient = 9;
+   */
+  update_particle_orient?: CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticleFallback update_particle_fallback = 10;
+   */
+  update_particle_fallback?: CUserMsg_ParticleManager_UpdateParticleFallback;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticleOffset update_particle_offset = 11;
+   */
+  update_particle_offset?: CUserMsg_ParticleManager_UpdateParticleOffset;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticleEnt update_particle_ent = 12;
+   */
+  update_particle_ent?: CUserMsg_ParticleManager_UpdateParticleEnt;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticleShouldDraw update_particle_should_draw = 14;
+   */
+  update_particle_should_draw?: CUserMsg_ParticleManager_UpdateParticleShouldDraw;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticleSetFrozen update_particle_set_frozen = 15;
+   */
+  update_particle_set_frozen?: CUserMsg_ParticleManager_UpdateParticleSetFrozen;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.ChangeControlPointAttachment change_control_point_attachment = 16;
+   */
+  change_control_point_attachment?: CUserMsg_ParticleManager_ChangeControlPointAttachment;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateEntityPosition update_entity_position = 17;
+   */
+  update_entity_position?: CUserMsg_ParticleManager_UpdateEntityPosition;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.SetParticleFoWProperties set_particle_fow_properties = 18;
+   */
+  set_particle_fow_properties?: CUserMsg_ParticleManager_SetParticleFoWProperties;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.SetParticleText set_particle_text = 19;
+   */
+  set_particle_text?: CUserMsg_ParticleManager_SetParticleText;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.SetParticleShouldCheckFoW set_particle_should_check_fow = 20;
+   */
+  set_particle_should_check_fow?: CUserMsg_ParticleManager_SetParticleShouldCheckFoW;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.SetControlPointModel set_control_point_model = 21;
+   */
+  set_control_point_model?: CUserMsg_ParticleManager_SetControlPointModel;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.SetControlPointSnapshot set_control_point_snapshot = 22;
+   */
+  set_control_point_snapshot?: CUserMsg_ParticleManager_SetControlPointSnapshot;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.SetTextureAttribute set_texture_attribute = 23;
+   */
+  set_texture_attribute?: CUserMsg_ParticleManager_SetTextureAttribute;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.SetSceneObjectGenericFlag set_scene_object_generic_flag = 24;
+   */
+  set_scene_object_generic_flag?: CUserMsg_ParticleManager_SetSceneObjectGenericFlag;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.SetSceneObjectTintAndDesat set_scene_object_tint_and_desat = 25;
+   */
+  set_scene_object_tint_and_desat?: CUserMsg_ParticleManager_SetSceneObjectTintAndDesat;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.DestroyParticleNamed destroy_particle_named = 26;
+   */
+  destroy_particle_named?: CUserMsg_ParticleManager_DestroyParticleNamed;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.ParticleSkipToTime particle_skip_to_time = 27;
+   */
+  particle_skip_to_time?: CUserMsg_ParticleManager_ParticleSkipToTime;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.ParticleCanFreeze particle_can_freeze = 28;
+   */
+  particle_can_freeze?: CUserMsg_ParticleManager_ParticleCanFreeze;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.SetParticleNamedValueContext set_named_value_context = 29;
+   */
+  set_named_value_context?: CUserMsg_ParticleManager_SetParticleNamedValueContext;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.UpdateParticleTransform update_particle_transform = 30;
+   */
+  update_particle_transform?: CUserMsg_ParticleManager_UpdateParticleTransform;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.ParticleFreezeTransitionOverride particle_freeze_transition_override = 31;
+   */
+  particle_freeze_transition_override?: CUserMsg_ParticleManager_ParticleFreezeTransitionOverride;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.FreezeParticleInvolving freeze_particle_involving = 32;
+   */
+  freeze_particle_involving?: CUserMsg_ParticleManager_FreezeParticleInvolving;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.AddModellistOverrideElement add_modellist_override_element = 33;
+   */
+  add_modellist_override_element?: CUserMsg_ParticleManager_AddModellistOverrideElement;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.ClearModellistOverride clear_modellist_override = 34;
+   */
+  clear_modellist_override?: CUserMsg_ParticleManager_ClearModellistOverride;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.CreatePhysicsSim create_physics_sim = 35;
+   */
+  create_physics_sim?: CUserMsg_ParticleManager_CreatePhysicsSim;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.DestroyPhysicsSim destroy_physics_sim = 36;
+   */
+  destroy_physics_sim?: CUserMsg_ParticleManager_DestroyPhysicsSim;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.SetVData set_vdata = 37;
+   */
+  set_vdata?: CUserMsg_ParticleManager_SetVData;
+  /**
+   * @generated from protobuf field: optional CUserMsg_ParticleManager.SetMaterialOverride set_material_override = 38;
+   */
+  set_material_override?: CUserMsg_ParticleManager_SetMaterialOverride;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.ReleaseParticleIndex
@@ -797,540 +797,540 @@ export interface CUserMsg_ParticleManager_ReleaseParticleIndex {}
  * @generated from protobuf message CUserMsg_ParticleManager.CreateParticle
  */
 export interface CUserMsg_ParticleManager_CreateParticle {
-	/**
-	 * @generated from protobuf field: optional fixed64 particle_name_index = 1;
-	 */
-	particle_name_index?: bigint;
-	/**
-	 * @generated from protobuf field: optional int32 attach_type = 2;
-	 */
-	attach_type?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 entity_handle = 3;
-	 */
-	entity_handle?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 entity_handle_for_modifiers = 4;
-	 */
-	entity_handle_for_modifiers?: number;
-	/**
-	 * @generated from protobuf field: optional bool apply_voice_ban_rules = 5;
-	 */
-	apply_voice_ban_rules?: boolean;
-	/**
-	 * @generated from protobuf field: optional int32 team_behavior = 6;
-	 */
-	team_behavior?: number;
-	/**
-	 * @generated from protobuf field: optional string control_point_configuration = 7;
-	 */
-	control_point_configuration?: string;
-	/**
-	 * @generated from protobuf field: optional bool cluster = 8;
-	 */
-	cluster?: boolean;
-	/**
-	 * @generated from protobuf field: optional float endcap_time = 9;
-	 */
-	endcap_time?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector aggregation_position = 10;
-	 */
-	aggregation_position?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional fixed64 particle_name_index = 1;
+   */
+  particle_name_index?: bigint;
+  /**
+   * @generated from protobuf field: optional int32 attach_type = 2;
+   */
+  attach_type?: number;
+  /**
+   * @generated from protobuf field: optional uint32 entity_handle = 3;
+   */
+  entity_handle?: number;
+  /**
+   * @generated from protobuf field: optional uint32 entity_handle_for_modifiers = 4;
+   */
+  entity_handle_for_modifiers?: number;
+  /**
+   * @generated from protobuf field: optional bool apply_voice_ban_rules = 5;
+   */
+  apply_voice_ban_rules?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 team_behavior = 6;
+   */
+  team_behavior?: number;
+  /**
+   * @generated from protobuf field: optional string control_point_configuration = 7;
+   */
+  control_point_configuration?: string;
+  /**
+   * @generated from protobuf field: optional bool cluster = 8;
+   */
+  cluster?: boolean;
+  /**
+   * @generated from protobuf field: optional float endcap_time = 9;
+   */
+  endcap_time?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector aggregation_position = 10;
+   */
+  aggregation_position?: CMsgVector;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.DestroyParticle
  */
 export interface CUserMsg_ParticleManager_DestroyParticle {
-	/**
-	 * @generated from protobuf field: optional bool destroy_immediately = 1;
-	 */
-	destroy_immediately?: boolean;
+  /**
+   * @generated from protobuf field: optional bool destroy_immediately = 1;
+   */
+  destroy_immediately?: boolean;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.DestroyParticleInvolving
  */
 export interface CUserMsg_ParticleManager_DestroyParticleInvolving {
-	/**
-	 * @generated from protobuf field: optional bool destroy_immediately = 1;
-	 */
-	destroy_immediately?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 entity_handle = 3;
-	 */
-	entity_handle?: number;
+  /**
+   * @generated from protobuf field: optional bool destroy_immediately = 1;
+   */
+  destroy_immediately?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 entity_handle = 3;
+   */
+  entity_handle?: number;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.DestroyParticleNamed
  */
 export interface CUserMsg_ParticleManager_DestroyParticleNamed {
-	/**
-	 * @generated from protobuf field: optional fixed64 particle_name_index = 1;
-	 */
-	particle_name_index?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 entity_handle = 2;
-	 */
-	entity_handle?: number;
-	/**
-	 * @generated from protobuf field: optional bool destroy_immediately = 3;
-	 */
-	destroy_immediately?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool play_endcap = 4;
-	 */
-	play_endcap?: boolean;
+  /**
+   * @generated from protobuf field: optional fixed64 particle_name_index = 1;
+   */
+  particle_name_index?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 entity_handle = 2;
+   */
+  entity_handle?: number;
+  /**
+   * @generated from protobuf field: optional bool destroy_immediately = 3;
+   */
+  destroy_immediately?: boolean;
+  /**
+   * @generated from protobuf field: optional bool play_endcap = 4;
+   */
+  play_endcap?: boolean;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.UpdateParticle_OBSOLETE
  */
 export interface CUserMsg_ParticleManager_UpdateParticle_OBSOLETE {
-	/**
-	 * @generated from protobuf field: optional int32 control_point = 1;
-	 */
-	control_point?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector position = 2;
-	 */
-	position?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional int32 control_point = 1;
+   */
+  control_point?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector position = 2;
+   */
+  position?: CMsgVector;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.UpdateParticleFwd_OBSOLETE
  */
 export interface CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE {
-	/**
-	 * @generated from protobuf field: optional int32 control_point = 1;
-	 */
-	control_point?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector forward = 2;
-	 */
-	forward?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional int32 control_point = 1;
+   */
+  control_point?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector forward = 2;
+   */
+  forward?: CMsgVector;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.UpdateParticleOrient_OBSOLETE
  */
 export interface CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE {
-	/**
-	 * @generated from protobuf field: optional int32 control_point = 1;
-	 */
-	control_point?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector forward = 2;
-	 */
-	forward?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector deprecated_right = 3;
-	 */
-	deprecated_right?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector up = 4;
-	 */
-	up?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector left = 5;
-	 */
-	left?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional int32 control_point = 1;
+   */
+  control_point?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector forward = 2;
+   */
+  forward?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector deprecated_right = 3;
+   */
+  deprecated_right?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector up = 4;
+   */
+  up?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector left = 5;
+   */
+  left?: CMsgVector;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.UpdateParticleTransform
  */
 export interface CUserMsg_ParticleManager_UpdateParticleTransform {
-	/**
-	 * @generated from protobuf field: optional int32 control_point = 1;
-	 */
-	control_point?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector position = 2;
-	 */
-	position?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgQuaternion orientation = 3;
-	 */
-	orientation?: CMsgQuaternion;
-	/**
-	 * @generated from protobuf field: optional float interpolation_interval = 4;
-	 */
-	interpolation_interval?: number;
+  /**
+   * @generated from protobuf field: optional int32 control_point = 1;
+   */
+  control_point?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector position = 2;
+   */
+  position?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgQuaternion orientation = 3;
+   */
+  orientation?: CMsgQuaternion;
+  /**
+   * @generated from protobuf field: optional float interpolation_interval = 4;
+   */
+  interpolation_interval?: number;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.UpdateParticleFallback
  */
 export interface CUserMsg_ParticleManager_UpdateParticleFallback {
-	/**
-	 * @generated from protobuf field: optional int32 control_point = 1;
-	 */
-	control_point?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector position = 2;
-	 */
-	position?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional int32 control_point = 1;
+   */
+  control_point?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector position = 2;
+   */
+  position?: CMsgVector;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.UpdateParticleOffset
  */
 export interface CUserMsg_ParticleManager_UpdateParticleOffset {
-	/**
-	 * @generated from protobuf field: optional int32 control_point = 1;
-	 */
-	control_point?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector origin_offset = 2;
-	 */
-	origin_offset?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgQAngle angle_offset = 3;
-	 */
-	angle_offset?: CMsgQAngle;
+  /**
+   * @generated from protobuf field: optional int32 control_point = 1;
+   */
+  control_point?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector origin_offset = 2;
+   */
+  origin_offset?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgQAngle angle_offset = 3;
+   */
+  angle_offset?: CMsgQAngle;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.UpdateParticleEnt
  */
 export interface CUserMsg_ParticleManager_UpdateParticleEnt {
-	/**
-	 * @generated from protobuf field: optional int32 control_point = 1;
-	 */
-	control_point?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 entity_handle = 2;
-	 */
-	entity_handle?: number;
-	/**
-	 * @generated from protobuf field: optional int32 attach_type = 3;
-	 */
-	attach_type?: number;
-	/**
-	 * @generated from protobuf field: optional int32 attachment = 4;
-	 */
-	attachment?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector fallback_position = 5;
-	 */
-	fallback_position?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional bool include_wearables = 6;
-	 */
-	include_wearables?: boolean;
-	/**
-	 * @generated from protobuf field: optional CMsgVector offset_position = 7;
-	 */
-	offset_position?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgQAngle offset_angles = 8;
-	 */
-	offset_angles?: CMsgQAngle;
+  /**
+   * @generated from protobuf field: optional int32 control_point = 1;
+   */
+  control_point?: number;
+  /**
+   * @generated from protobuf field: optional uint32 entity_handle = 2;
+   */
+  entity_handle?: number;
+  /**
+   * @generated from protobuf field: optional int32 attach_type = 3;
+   */
+  attach_type?: number;
+  /**
+   * @generated from protobuf field: optional int32 attachment = 4;
+   */
+  attachment?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector fallback_position = 5;
+   */
+  fallback_position?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional bool include_wearables = 6;
+   */
+  include_wearables?: boolean;
+  /**
+   * @generated from protobuf field: optional CMsgVector offset_position = 7;
+   */
+  offset_position?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgQAngle offset_angles = 8;
+   */
+  offset_angles?: CMsgQAngle;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.UpdateParticleSetFrozen
  */
 export interface CUserMsg_ParticleManager_UpdateParticleSetFrozen {
-	/**
-	 * @generated from protobuf field: optional bool set_frozen = 1;
-	 */
-	set_frozen?: boolean;
-	/**
-	 * @generated from protobuf field: optional float transition_duration = 2;
-	 */
-	transition_duration?: number;
+  /**
+   * @generated from protobuf field: optional bool set_frozen = 1;
+   */
+  set_frozen?: boolean;
+  /**
+   * @generated from protobuf field: optional float transition_duration = 2;
+   */
+  transition_duration?: number;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.UpdateParticleShouldDraw
  */
 export interface CUserMsg_ParticleManager_UpdateParticleShouldDraw {
-	/**
-	 * @generated from protobuf field: optional bool should_draw = 1;
-	 */
-	should_draw?: boolean;
+  /**
+   * @generated from protobuf field: optional bool should_draw = 1;
+   */
+  should_draw?: boolean;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.ChangeControlPointAttachment
  */
 export interface CUserMsg_ParticleManager_ChangeControlPointAttachment {
-	/**
-	 * @generated from protobuf field: optional int32 attachment_old = 1;
-	 */
-	attachment_old?: number;
-	/**
-	 * @generated from protobuf field: optional int32 attachment_new = 2;
-	 */
-	attachment_new?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 entity_handle = 3;
-	 */
-	entity_handle?: number;
+  /**
+   * @generated from protobuf field: optional int32 attachment_old = 1;
+   */
+  attachment_old?: number;
+  /**
+   * @generated from protobuf field: optional int32 attachment_new = 2;
+   */
+  attachment_new?: number;
+  /**
+   * @generated from protobuf field: optional uint32 entity_handle = 3;
+   */
+  entity_handle?: number;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.UpdateEntityPosition
  */
 export interface CUserMsg_ParticleManager_UpdateEntityPosition {
-	/**
-	 * @generated from protobuf field: optional uint32 entity_handle = 1;
-	 */
-	entity_handle?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector position = 2;
-	 */
-	position?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional uint32 entity_handle = 1;
+   */
+  entity_handle?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector position = 2;
+   */
+  position?: CMsgVector;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.SetParticleFoWProperties
  */
 export interface CUserMsg_ParticleManager_SetParticleFoWProperties {
-	/**
-	 * @generated from protobuf field: optional int32 fow_control_point = 1;
-	 */
-	fow_control_point?: number;
-	/**
-	 * @generated from protobuf field: optional int32 fow_control_point2 = 2;
-	 */
-	fow_control_point2?: number;
-	/**
-	 * @generated from protobuf field: optional float fow_radius = 3;
-	 */
-	fow_radius?: number;
+  /**
+   * @generated from protobuf field: optional int32 fow_control_point = 1;
+   */
+  fow_control_point?: number;
+  /**
+   * @generated from protobuf field: optional int32 fow_control_point2 = 2;
+   */
+  fow_control_point2?: number;
+  /**
+   * @generated from protobuf field: optional float fow_radius = 3;
+   */
+  fow_radius?: number;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.SetParticleShouldCheckFoW
  */
 export interface CUserMsg_ParticleManager_SetParticleShouldCheckFoW {
-	/**
-	 * @generated from protobuf field: optional bool check_fow = 1;
-	 */
-	check_fow?: boolean;
+  /**
+   * @generated from protobuf field: optional bool check_fow = 1;
+   */
+  check_fow?: boolean;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.SetControlPointModel
  */
 export interface CUserMsg_ParticleManager_SetControlPointModel {
-	/**
-	 * @generated from protobuf field: optional int32 control_point = 1;
-	 */
-	control_point?: number;
-	/**
-	 * @generated from protobuf field: optional string model_name = 2;
-	 */
-	model_name?: string;
+  /**
+   * @generated from protobuf field: optional int32 control_point = 1;
+   */
+  control_point?: number;
+  /**
+   * @generated from protobuf field: optional string model_name = 2;
+   */
+  model_name?: string;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.SetControlPointSnapshot
  */
 export interface CUserMsg_ParticleManager_SetControlPointSnapshot {
-	/**
-	 * @generated from protobuf field: optional int32 control_point = 1;
-	 */
-	control_point?: number;
-	/**
-	 * @generated from protobuf field: optional string snapshot_name = 2;
-	 */
-	snapshot_name?: string;
+  /**
+   * @generated from protobuf field: optional int32 control_point = 1;
+   */
+  control_point?: number;
+  /**
+   * @generated from protobuf field: optional string snapshot_name = 2;
+   */
+  snapshot_name?: string;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.SetParticleText
  */
 export interface CUserMsg_ParticleManager_SetParticleText {
-	/**
-	 * @generated from protobuf field: optional string text = 1;
-	 */
-	text?: string;
+  /**
+   * @generated from protobuf field: optional string text = 1;
+   */
+  text?: string;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.SetTextureAttribute
  */
 export interface CUserMsg_ParticleManager_SetTextureAttribute {
-	/**
-	 * @generated from protobuf field: optional string attribute_name = 1;
-	 */
-	attribute_name?: string;
-	/**
-	 * @generated from protobuf field: optional string texture_name = 2;
-	 */
-	texture_name?: string;
+  /**
+   * @generated from protobuf field: optional string attribute_name = 1;
+   */
+  attribute_name?: string;
+  /**
+   * @generated from protobuf field: optional string texture_name = 2;
+   */
+  texture_name?: string;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.SetSceneObjectGenericFlag
  */
 export interface CUserMsg_ParticleManager_SetSceneObjectGenericFlag {
-	/**
-	 * @generated from protobuf field: optional bool flag_value = 1;
-	 */
-	flag_value?: boolean;
+  /**
+   * @generated from protobuf field: optional bool flag_value = 1;
+   */
+  flag_value?: boolean;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.SetSceneObjectTintAndDesat
  */
 export interface CUserMsg_ParticleManager_SetSceneObjectTintAndDesat {
-	/**
-	 * @generated from protobuf field: optional fixed32 tint = 1;
-	 */
-	tint?: number;
-	/**
-	 * @generated from protobuf field: optional float desat = 2;
-	 */
-	desat?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 tint = 1;
+   */
+  tint?: number;
+  /**
+   * @generated from protobuf field: optional float desat = 2;
+   */
+  desat?: number;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.ParticleSkipToTime
  */
 export interface CUserMsg_ParticleManager_ParticleSkipToTime {
-	/**
-	 * @generated from protobuf field: optional float skip_to_time = 1;
-	 */
-	skip_to_time?: number;
+  /**
+   * @generated from protobuf field: optional float skip_to_time = 1;
+   */
+  skip_to_time?: number;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.ParticleCanFreeze
  */
 export interface CUserMsg_ParticleManager_ParticleCanFreeze {
-	/**
-	 * @generated from protobuf field: optional bool can_freeze = 1;
-	 */
-	can_freeze?: boolean;
+  /**
+   * @generated from protobuf field: optional bool can_freeze = 1;
+   */
+  can_freeze?: boolean;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.ParticleFreezeTransitionOverride
  */
 export interface CUserMsg_ParticleManager_ParticleFreezeTransitionOverride {
-	/**
-	 * @generated from protobuf field: optional float freeze_transition_override = 1;
-	 */
-	freeze_transition_override?: number;
+  /**
+   * @generated from protobuf field: optional float freeze_transition_override = 1;
+   */
+  freeze_transition_override?: number;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.FreezeParticleInvolving
  */
 export interface CUserMsg_ParticleManager_FreezeParticleInvolving {
-	/**
-	 * @generated from protobuf field: optional bool set_frozen = 1;
-	 */
-	set_frozen?: boolean;
-	/**
-	 * @generated from protobuf field: optional float transition_duration = 2;
-	 */
-	transition_duration?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 entity_handle = 3;
-	 */
-	entity_handle?: number;
+  /**
+   * @generated from protobuf field: optional bool set_frozen = 1;
+   */
+  set_frozen?: boolean;
+  /**
+   * @generated from protobuf field: optional float transition_duration = 2;
+   */
+  transition_duration?: number;
+  /**
+   * @generated from protobuf field: optional uint32 entity_handle = 3;
+   */
+  entity_handle?: number;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.AddModellistOverrideElement
  */
 export interface CUserMsg_ParticleManager_AddModellistOverrideElement {
-	/**
-	 * @generated from protobuf field: optional string model_name = 1;
-	 */
-	model_name?: string;
-	/**
-	 * @generated from protobuf field: optional float spawn_probability = 2;
-	 */
-	spawn_probability?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 groupid = 3;
-	 */
-	groupid?: number;
+  /**
+   * @generated from protobuf field: optional string model_name = 1;
+   */
+  model_name?: string;
+  /**
+   * @generated from protobuf field: optional float spawn_probability = 2;
+   */
+  spawn_probability?: number;
+  /**
+   * @generated from protobuf field: optional uint32 groupid = 3;
+   */
+  groupid?: number;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.ClearModellistOverride
  */
 export interface CUserMsg_ParticleManager_ClearModellistOverride {
-	/**
-	 * @generated from protobuf field: optional uint32 groupid = 1;
-	 */
-	groupid?: number;
+  /**
+   * @generated from protobuf field: optional uint32 groupid = 1;
+   */
+  groupid?: number;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.SetParticleNamedValueContext
  */
 export interface CUserMsg_ParticleManager_SetParticleNamedValueContext {
-	/**
-	 * @generated from protobuf field: repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.FloatContextValue float_values = 1;
-	 */
-	float_values: CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue[];
-	/**
-	 * @generated from protobuf field: repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.VectorContextValue vector_values = 2;
-	 */
-	vector_values: CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue[];
-	/**
-	 * @generated from protobuf field: repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.TransformContextValue transform_values = 3;
-	 */
-	transform_values: CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue[];
-	/**
-	 * @generated from protobuf field: repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.EHandleContext ehandle_values = 4;
-	 */
-	ehandle_values: CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext[];
+  /**
+   * @generated from protobuf field: repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.FloatContextValue float_values = 1;
+   */
+  float_values: CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue[];
+  /**
+   * @generated from protobuf field: repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.VectorContextValue vector_values = 2;
+   */
+  vector_values: CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue[];
+  /**
+   * @generated from protobuf field: repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.TransformContextValue transform_values = 3;
+   */
+  transform_values: CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue[];
+  /**
+   * @generated from protobuf field: repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.EHandleContext ehandle_values = 4;
+   */
+  ehandle_values: CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext[];
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.SetParticleNamedValueContext.FloatContextValue
  */
 export interface CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue {
-	/**
-	 * @generated from protobuf field: optional uint32 value_name_hash = 1;
-	 */
-	value_name_hash?: number;
-	/**
-	 * @generated from protobuf field: optional float value = 2;
-	 */
-	value?: number;
+  /**
+   * @generated from protobuf field: optional uint32 value_name_hash = 1;
+   */
+  value_name_hash?: number;
+  /**
+   * @generated from protobuf field: optional float value = 2;
+   */
+  value?: number;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.SetParticleNamedValueContext.VectorContextValue
  */
 export interface CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue {
-	/**
-	 * @generated from protobuf field: optional uint32 value_name_hash = 1;
-	 */
-	value_name_hash?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgVector value = 2;
-	 */
-	value?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional uint32 value_name_hash = 1;
+   */
+  value_name_hash?: number;
+  /**
+   * @generated from protobuf field: optional CMsgVector value = 2;
+   */
+  value?: CMsgVector;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.SetParticleNamedValueContext.TransformContextValue
  */
 export interface CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue {
-	/**
-	 * @generated from protobuf field: optional uint32 value_name_hash = 1;
-	 */
-	value_name_hash?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgQAngle angles = 2;
-	 */
-	angles?: CMsgQAngle;
-	/**
-	 * @generated from protobuf field: optional CMsgVector translation = 3;
-	 */
-	translation?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional uint32 value_name_hash = 1;
+   */
+  value_name_hash?: number;
+  /**
+   * @generated from protobuf field: optional CMsgQAngle angles = 2;
+   */
+  angles?: CMsgQAngle;
+  /**
+   * @generated from protobuf field: optional CMsgVector translation = 3;
+   */
+  translation?: CMsgVector;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.SetParticleNamedValueContext.EHandleContext
  */
 export interface CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext {
-	/**
-	 * @generated from protobuf field: optional uint32 value_name_hash = 1;
-	 */
-	value_name_hash?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 ent_index = 2;
-	 */
-	ent_index?: number;
+  /**
+   * @generated from protobuf field: optional uint32 value_name_hash = 1;
+   */
+  value_name_hash?: number;
+  /**
+   * @generated from protobuf field: optional uint32 ent_index = 2;
+   */
+  ent_index?: number;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.CreatePhysicsSim
  */
 export interface CUserMsg_ParticleManager_CreatePhysicsSim {
-	/**
-	 * @generated from protobuf field: optional string prop_group_name = 1;
-	 */
-	prop_group_name?: string;
-	/**
-	 * @generated from protobuf field: optional bool use_high_quality_simulation = 2;
-	 */
-	use_high_quality_simulation?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 max_particle_count = 3;
-	 */
-	max_particle_count?: number;
+  /**
+   * @generated from protobuf field: optional string prop_group_name = 1;
+   */
+  prop_group_name?: string;
+  /**
+   * @generated from protobuf field: optional bool use_high_quality_simulation = 2;
+   */
+  use_high_quality_simulation?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 max_particle_count = 3;
+   */
+  max_particle_count?: number;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.DestroyPhysicsSim
@@ -1340,1216 +1340,1216 @@ export interface CUserMsg_ParticleManager_DestroyPhysicsSim {}
  * @generated from protobuf message CUserMsg_ParticleManager.SetVData
  */
 export interface CUserMsg_ParticleManager_SetVData {
-	/**
-	 * @generated from protobuf field: optional string vdata_name = 1;
-	 */
-	vdata_name?: string;
+  /**
+   * @generated from protobuf field: optional string vdata_name = 1;
+   */
+  vdata_name?: string;
 }
 /**
  * @generated from protobuf message CUserMsg_ParticleManager.SetMaterialOverride
  */
 export interface CUserMsg_ParticleManager_SetMaterialOverride {
-	/**
-	 * @generated from protobuf field: optional string material_name = 1;
-	 */
-	material_name?: string;
-	/**
-	 * @generated from protobuf field: optional bool include_children = 2;
-	 */
-	include_children?: boolean;
+  /**
+   * @generated from protobuf field: optional string material_name = 1;
+   */
+  material_name?: string;
+  /**
+   * @generated from protobuf field: optional bool include_children = 2;
+   */
+  include_children?: boolean;
 }
 /**
  * @generated from protobuf message CUserMsg_HudError
  */
 export interface CUserMsg_HudError {
-	/**
-	 * @generated from protobuf field: optional int32 order_id = 1;
-	 */
-	order_id?: number;
+  /**
+   * @generated from protobuf field: optional int32 order_id = 1;
+   */
+  order_id?: number;
 }
 /**
  * @generated from protobuf message CUserMsg_CustomGameEvent
  */
 export interface CUserMsg_CustomGameEvent {
-	/**
-	 * @generated from protobuf field: optional string event_name = 1;
-	 */
-	event_name?: string;
-	/**
-	 * @generated from protobuf field: optional bytes data = 2;
-	 */
-	data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional string event_name = 1;
+   */
+  event_name?: string;
+  /**
+   * @generated from protobuf field: optional bytes data = 2;
+   */
+  data?: Uint8Array;
 }
 /**
  * @generated from protobuf message CUserMessageHapticsManagerPulse
  */
 export interface CUserMessageHapticsManagerPulse {
-	/**
-	 * @generated from protobuf field: optional int32 hand_id = 1;
-	 */
-	hand_id?: number;
-	/**
-	 * @generated from protobuf field: optional float effect_amplitude = 2;
-	 */
-	effect_amplitude?: number;
-	/**
-	 * @generated from protobuf field: optional float effect_frequency = 3;
-	 */
-	effect_frequency?: number;
-	/**
-	 * @generated from protobuf field: optional float effect_duration = 4;
-	 */
-	effect_duration?: number;
+  /**
+   * @generated from protobuf field: optional int32 hand_id = 1;
+   */
+  hand_id?: number;
+  /**
+   * @generated from protobuf field: optional float effect_amplitude = 2;
+   */
+  effect_amplitude?: number;
+  /**
+   * @generated from protobuf field: optional float effect_frequency = 3;
+   */
+  effect_frequency?: number;
+  /**
+   * @generated from protobuf field: optional float effect_duration = 4;
+   */
+  effect_duration?: number;
 }
 /**
  * @generated from protobuf message CUserMessageHapticsManagerEffect
  */
 export interface CUserMessageHapticsManagerEffect {
-	/**
-	 * @generated from protobuf field: optional int32 hand_id = 1;
-	 */
-	hand_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 effect_name_hash_code = 2;
-	 */
-	effect_name_hash_code?: number;
-	/**
-	 * @generated from protobuf field: optional float effect_scale = 3;
-	 */
-	effect_scale?: number;
+  /**
+   * @generated from protobuf field: optional int32 hand_id = 1;
+   */
+  hand_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 effect_name_hash_code = 2;
+   */
+  effect_name_hash_code?: number;
+  /**
+   * @generated from protobuf field: optional float effect_scale = 3;
+   */
+  effect_scale?: number;
 }
 /**
  * @generated from protobuf message CUserMessageAnimStateGraphState
  */
 export interface CUserMessageAnimStateGraphState {
-	/**
-	 * @generated from protobuf field: optional int32 entity_index = 1;
-	 */
-	entity_index?: number;
-	/**
-	 * @generated from protobuf field: optional bytes data = 2;
-	 */
-	data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional int32 entity_index = 1;
+   */
+  entity_index?: number;
+  /**
+   * @generated from protobuf field: optional bytes data = 2;
+   */
+  data?: Uint8Array;
 }
 /**
  * @generated from protobuf message CUserMessageUpdateCssClasses
  */
 export interface CUserMessageUpdateCssClasses {
-	/**
-	 * @generated from protobuf field: optional int32 target_world_panel = 1;
-	 */
-	target_world_panel?: number;
-	/**
-	 * @generated from protobuf field: optional string css_classes = 2;
-	 */
-	css_classes?: string;
-	/**
-	 * @generated from protobuf field: optional bool is_add = 3;
-	 */
-	is_add?: boolean;
+  /**
+   * @generated from protobuf field: optional int32 target_world_panel = 1;
+   */
+  target_world_panel?: number;
+  /**
+   * @generated from protobuf field: optional string css_classes = 2;
+   */
+  css_classes?: string;
+  /**
+   * @generated from protobuf field: optional bool is_add = 3;
+   */
+  is_add?: boolean;
 }
 /**
  * @generated from protobuf message CUserMessageServerFrameTime
  */
 export interface CUserMessageServerFrameTime {
-	/**
-	 * @generated from protobuf field: optional float frame_time = 1;
-	 */
-	frame_time?: number;
+  /**
+   * @generated from protobuf field: optional float frame_time = 1;
+   */
+  frame_time?: number;
 }
 /**
  * @generated from protobuf message CUserMessageLagCompensationError
  */
 export interface CUserMessageLagCompensationError {
-	/**
-	 * @generated from protobuf field: optional float distance = 1;
-	 */
-	distance?: number;
+  /**
+   * @generated from protobuf field: optional float distance = 1;
+   */
+  distance?: number;
 }
 /**
  * @generated from protobuf message CUserMessageRequestDllStatus
  */
 export interface CUserMessageRequestDllStatus {
-	/**
-	 * @generated from protobuf field: optional string dll_action = 1;
-	 */
-	dll_action?: string;
-	/**
-	 * @generated from protobuf field: optional bool full_report = 2;
-	 */
-	full_report?: boolean;
+  /**
+   * @generated from protobuf field: optional string dll_action = 1;
+   */
+  dll_action?: string;
+  /**
+   * @generated from protobuf field: optional bool full_report = 2;
+   */
+  full_report?: boolean;
 }
 /**
  * @generated from protobuf message CUserMessageRequestUtilAction
  */
 export interface CUserMessageRequestUtilAction {
-	/**
-	 * @generated from protobuf field: optional int32 util1 = 2;
-	 */
-	util1?: number;
-	/**
-	 * @generated from protobuf field: optional int32 util2 = 3;
-	 */
-	util2?: number;
-	/**
-	 * @generated from protobuf field: optional int32 util3 = 4;
-	 */
-	util3?: number;
-	/**
-	 * @generated from protobuf field: optional int32 util4 = 5;
-	 */
-	util4?: number;
-	/**
-	 * @generated from protobuf field: optional int32 util5 = 6;
-	 */
-	util5?: number;
+  /**
+   * @generated from protobuf field: optional int32 util1 = 2;
+   */
+  util1?: number;
+  /**
+   * @generated from protobuf field: optional int32 util2 = 3;
+   */
+  util2?: number;
+  /**
+   * @generated from protobuf field: optional int32 util3 = 4;
+   */
+  util3?: number;
+  /**
+   * @generated from protobuf field: optional int32 util4 = 5;
+   */
+  util4?: number;
+  /**
+   * @generated from protobuf field: optional int32 util5 = 6;
+   */
+  util5?: number;
 }
 /**
  * @generated from protobuf message CUserMessage_UtilMsg_Response
  */
 export interface CUserMessage_UtilMsg_Response {
-	/**
-	 * @generated from protobuf field: optional fixed32 crc = 1;
-	 */
-	crc?: number;
-	/**
-	 * @generated from protobuf field: optional int32 item_count = 2;
-	 */
-	item_count?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 crc2 = 3;
-	 */
-	crc2?: number;
-	/**
-	 * @generated from protobuf field: optional int32 item_count2 = 4;
-	 */
-	item_count2?: number;
-	/**
-	 * @generated from protobuf field: repeated int32 crc_part = 5;
-	 */
-	crc_part: number[];
-	/**
-	 * @generated from protobuf field: repeated int32 crc_part2 = 6;
-	 */
-	crc_part2: number[];
-	/**
-	 * @generated from protobuf field: optional int32 client_timestamp = 7;
-	 */
-	client_timestamp?: number;
-	/**
-	 * @generated from protobuf field: optional int32 platform = 8;
-	 */
-	platform?: number;
-	/**
-	 * @generated from protobuf field: repeated CUserMessage_UtilMsg_Response.ItemDetail itemdetails = 9;
-	 */
-	itemdetails: CUserMessage_UtilMsg_Response_ItemDetail[];
-	/**
-	 * @generated from protobuf field: optional int32 itemgroup = 10;
-	 */
-	itemgroup?: number;
-	/**
-	 * @generated from protobuf field: optional int32 total_count = 11;
-	 */
-	total_count?: number;
-	/**
-	 * @generated from protobuf field: optional int32 total_count2 = 12;
-	 */
-	total_count2?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 crc = 1;
+   */
+  crc?: number;
+  /**
+   * @generated from protobuf field: optional int32 item_count = 2;
+   */
+  item_count?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 crc2 = 3;
+   */
+  crc2?: number;
+  /**
+   * @generated from protobuf field: optional int32 item_count2 = 4;
+   */
+  item_count2?: number;
+  /**
+   * @generated from protobuf field: repeated int32 crc_part = 5;
+   */
+  crc_part: number[];
+  /**
+   * @generated from protobuf field: repeated int32 crc_part2 = 6;
+   */
+  crc_part2: number[];
+  /**
+   * @generated from protobuf field: optional int32 client_timestamp = 7;
+   */
+  client_timestamp?: number;
+  /**
+   * @generated from protobuf field: optional int32 platform = 8;
+   */
+  platform?: number;
+  /**
+   * @generated from protobuf field: repeated CUserMessage_UtilMsg_Response.ItemDetail itemdetails = 9;
+   */
+  itemdetails: CUserMessage_UtilMsg_Response_ItemDetail[];
+  /**
+   * @generated from protobuf field: optional int32 itemgroup = 10;
+   */
+  itemgroup?: number;
+  /**
+   * @generated from protobuf field: optional int32 total_count = 11;
+   */
+  total_count?: number;
+  /**
+   * @generated from protobuf field: optional int32 total_count2 = 12;
+   */
+  total_count2?: number;
 }
 /**
  * @generated from protobuf message CUserMessage_UtilMsg_Response.ItemDetail
  */
 export interface CUserMessage_UtilMsg_Response_ItemDetail {
-	/**
-	 * @generated from protobuf field: optional int32 index = 1;
-	 */
-	index?: number;
-	/**
-	 * @generated from protobuf field: optional int32 hash = 2;
-	 */
-	hash?: number;
-	/**
-	 * @generated from protobuf field: optional int32 crc = 3;
-	 */
-	crc?: number;
-	/**
-	 * @generated from protobuf field: optional string name = 4;
-	 */
-	name?: string;
+  /**
+   * @generated from protobuf field: optional int32 index = 1;
+   */
+  index?: number;
+  /**
+   * @generated from protobuf field: optional int32 hash = 2;
+   */
+  hash?: number;
+  /**
+   * @generated from protobuf field: optional int32 crc = 3;
+   */
+  crc?: number;
+  /**
+   * @generated from protobuf field: optional string name = 4;
+   */
+  name?: string;
 }
 /**
  * @generated from protobuf message CUserMessage_DllStatus
  */
 export interface CUserMessage_DllStatus {
-	/**
-	 * @generated from protobuf field: optional string file_report = 1;
-	 */
-	file_report?: string;
-	/**
-	 * @generated from protobuf field: optional string command_line = 2;
-	 */
-	command_line?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 total_files = 3;
-	 */
-	total_files?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 process_id = 4;
-	 */
-	process_id?: number;
-	/**
-	 * @generated from protobuf field: optional int32 osversion = 5;
-	 */
-	osversion?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 client_time = 6;
-	 */
-	client_time?: bigint;
-	/**
-	 * @generated from protobuf field: repeated CUserMessage_DllStatus.CVDiagnostic diagnostics = 7;
-	 */
-	diagnostics: CUserMessage_DllStatus_CVDiagnostic[];
-	/**
-	 * @generated from protobuf field: repeated CUserMessage_DllStatus.CModule modules = 8;
-	 */
-	modules: CUserMessage_DllStatus_CModule[];
+  /**
+   * @generated from protobuf field: optional string file_report = 1;
+   */
+  file_report?: string;
+  /**
+   * @generated from protobuf field: optional string command_line = 2;
+   */
+  command_line?: string;
+  /**
+   * @generated from protobuf field: optional uint32 total_files = 3;
+   */
+  total_files?: number;
+  /**
+   * @generated from protobuf field: optional uint32 process_id = 4;
+   */
+  process_id?: number;
+  /**
+   * @generated from protobuf field: optional int32 osversion = 5;
+   */
+  osversion?: number;
+  /**
+   * @generated from protobuf field: optional uint64 client_time = 6;
+   */
+  client_time?: bigint;
+  /**
+   * @generated from protobuf field: repeated CUserMessage_DllStatus.CVDiagnostic diagnostics = 7;
+   */
+  diagnostics: CUserMessage_DllStatus_CVDiagnostic[];
+  /**
+   * @generated from protobuf field: repeated CUserMessage_DllStatus.CModule modules = 8;
+   */
+  modules: CUserMessage_DllStatus_CModule[];
 }
 /**
  * @generated from protobuf message CUserMessage_DllStatus.CVDiagnostic
  */
 export interface CUserMessage_DllStatus_CVDiagnostic {
-	/**
-	 * @generated from protobuf field: optional uint32 id = 1;
-	 */
-	id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 extended = 2;
-	 */
-	extended?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 value = 3;
-	 */
-	value?: bigint;
-	/**
-	 * @generated from protobuf field: optional string string_value = 4;
-	 */
-	string_value?: string;
+  /**
+   * @generated from protobuf field: optional uint32 id = 1;
+   */
+  id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 extended = 2;
+   */
+  extended?: number;
+  /**
+   * @generated from protobuf field: optional uint64 value = 3;
+   */
+  value?: bigint;
+  /**
+   * @generated from protobuf field: optional string string_value = 4;
+   */
+  string_value?: string;
 }
 /**
  * @generated from protobuf message CUserMessage_DllStatus.CModule
  */
 export interface CUserMessage_DllStatus_CModule {
-	/**
-	 * @generated from protobuf field: optional uint64 base_addr = 1;
-	 */
-	base_addr?: bigint;
-	/**
-	 * @generated from protobuf field: optional string name = 2;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 size = 3;
-	 */
-	size?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 timestamp = 4;
-	 */
-	timestamp?: number;
+  /**
+   * @generated from protobuf field: optional uint64 base_addr = 1;
+   */
+  base_addr?: bigint;
+  /**
+   * @generated from protobuf field: optional string name = 2;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: optional uint32 size = 3;
+   */
+  size?: number;
+  /**
+   * @generated from protobuf field: optional uint32 timestamp = 4;
+   */
+  timestamp?: number;
 }
 /**
  * @generated from protobuf message CUserMessageRequestInventory
  */
 export interface CUserMessageRequestInventory {
-	/**
-	 * @generated from protobuf field: optional int32 inventory = 1;
-	 */
-	inventory?: number;
-	/**
-	 * @generated from protobuf field: optional int32 offset = 2;
-	 */
-	offset?: number;
-	/**
-	 * @generated from protobuf field: optional int32 options = 3;
-	 */
-	options?: number;
+  /**
+   * @generated from protobuf field: optional int32 inventory = 1;
+   */
+  inventory?: number;
+  /**
+   * @generated from protobuf field: optional int32 offset = 2;
+   */
+  offset?: number;
+  /**
+   * @generated from protobuf field: optional int32 options = 3;
+   */
+  options?: number;
 }
 /**
  * @generated from protobuf message CUserMessage_Inventory_Response
  */
 export interface CUserMessage_Inventory_Response {
-	/**
-	 * @generated from protobuf field: optional fixed32 crc = 1;
-	 */
-	crc?: number;
-	/**
-	 * @generated from protobuf field: optional int32 item_count = 2;
-	 */
-	item_count?: number;
-	/**
-	 * @generated from protobuf field: optional int32 osversion = 5;
-	 */
-	osversion?: number;
-	/**
-	 * @generated from protobuf field: optional int32 perf_time = 6;
-	 */
-	perf_time?: number;
-	/**
-	 * @generated from protobuf field: optional int32 client_timestamp = 7;
-	 */
-	client_timestamp?: number;
-	/**
-	 * @generated from protobuf field: optional int32 platform = 8;
-	 */
-	platform?: number;
-	/**
-	 * @generated from protobuf field: repeated CUserMessage_Inventory_Response.InventoryDetail inventories = 9;
-	 */
-	inventories: CUserMessage_Inventory_Response_InventoryDetail[];
-	/**
-	 * @generated from protobuf field: repeated CUserMessage_Inventory_Response.InventoryDetail inventories2 = 10;
-	 */
-	inventories2: CUserMessage_Inventory_Response_InventoryDetail[];
-	/**
-	 * @generated from protobuf field: repeated CUserMessage_Inventory_Response.InventoryDetail inventories3 = 14;
-	 */
-	inventories3: CUserMessage_Inventory_Response_InventoryDetail[];
-	/**
-	 * @generated from protobuf field: optional int32 inv_type = 11;
-	 */
-	inv_type?: number;
-	/**
-	 * @generated from protobuf field: optional int32 build_version = 12;
-	 */
-	build_version?: number;
-	/**
-	 * @generated from protobuf field: optional int32 instance = 13;
-	 */
-	instance?: number;
-	/**
-	 * @generated from protobuf field: optional int64 start_time = 15;
-	 */
-	start_time?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed32 crc = 1;
+   */
+  crc?: number;
+  /**
+   * @generated from protobuf field: optional int32 item_count = 2;
+   */
+  item_count?: number;
+  /**
+   * @generated from protobuf field: optional int32 osversion = 5;
+   */
+  osversion?: number;
+  /**
+   * @generated from protobuf field: optional int32 perf_time = 6;
+   */
+  perf_time?: number;
+  /**
+   * @generated from protobuf field: optional int32 client_timestamp = 7;
+   */
+  client_timestamp?: number;
+  /**
+   * @generated from protobuf field: optional int32 platform = 8;
+   */
+  platform?: number;
+  /**
+   * @generated from protobuf field: repeated CUserMessage_Inventory_Response.InventoryDetail inventories = 9;
+   */
+  inventories: CUserMessage_Inventory_Response_InventoryDetail[];
+  /**
+   * @generated from protobuf field: repeated CUserMessage_Inventory_Response.InventoryDetail inventories2 = 10;
+   */
+  inventories2: CUserMessage_Inventory_Response_InventoryDetail[];
+  /**
+   * @generated from protobuf field: repeated CUserMessage_Inventory_Response.InventoryDetail inventories3 = 14;
+   */
+  inventories3: CUserMessage_Inventory_Response_InventoryDetail[];
+  /**
+   * @generated from protobuf field: optional int32 inv_type = 11;
+   */
+  inv_type?: number;
+  /**
+   * @generated from protobuf field: optional int32 build_version = 12;
+   */
+  build_version?: number;
+  /**
+   * @generated from protobuf field: optional int32 instance = 13;
+   */
+  instance?: number;
+  /**
+   * @generated from protobuf field: optional int64 start_time = 15;
+   */
+  start_time?: bigint;
 }
 /**
  * @generated from protobuf message CUserMessage_Inventory_Response.InventoryDetail
  */
 export interface CUserMessage_Inventory_Response_InventoryDetail {
-	/**
-	 * @generated from protobuf field: optional int32 index = 1;
-	 */
-	index?: number;
-	/**
-	 * @generated from protobuf field: optional int64 primary = 2;
-	 */
-	primary?: bigint;
-	/**
-	 * @generated from protobuf field: optional int64 offset = 3;
-	 */
-	offset?: bigint;
-	/**
-	 * @generated from protobuf field: optional int64 first = 4;
-	 */
-	first?: bigint;
-	/**
-	 * @generated from protobuf field: optional int64 base = 5;
-	 */
-	base?: bigint;
-	/**
-	 * @generated from protobuf field: optional string name = 6;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: optional string base_name = 7;
-	 */
-	base_name?: string;
-	/**
-	 * @generated from protobuf field: optional int32 base_detail = 8;
-	 */
-	base_detail?: number;
-	/**
-	 * @generated from protobuf field: optional int32 base_time = 9;
-	 */
-	base_time?: number;
-	/**
-	 * @generated from protobuf field: optional int32 base_hash = 10;
-	 */
-	base_hash?: number;
+  /**
+   * @generated from protobuf field: optional int32 index = 1;
+   */
+  index?: number;
+  /**
+   * @generated from protobuf field: optional int64 primary = 2;
+   */
+  primary?: bigint;
+  /**
+   * @generated from protobuf field: optional int64 offset = 3;
+   */
+  offset?: bigint;
+  /**
+   * @generated from protobuf field: optional int64 first = 4;
+   */
+  first?: bigint;
+  /**
+   * @generated from protobuf field: optional int64 base = 5;
+   */
+  base?: bigint;
+  /**
+   * @generated from protobuf field: optional string name = 6;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: optional string base_name = 7;
+   */
+  base_name?: string;
+  /**
+   * @generated from protobuf field: optional int32 base_detail = 8;
+   */
+  base_detail?: number;
+  /**
+   * @generated from protobuf field: optional int32 base_time = 9;
+   */
+  base_time?: number;
+  /**
+   * @generated from protobuf field: optional int32 base_hash = 10;
+   */
+  base_hash?: number;
 }
 /**
  * @generated from protobuf message CUserMessageRequestDiagnostic
  */
 export interface CUserMessageRequestDiagnostic {
-	/**
-	 * @generated from protobuf field: repeated CUserMessageRequestDiagnostic.Diagnostic diagnostics = 1;
-	 */
-	diagnostics: CUserMessageRequestDiagnostic_Diagnostic[];
+  /**
+   * @generated from protobuf field: repeated CUserMessageRequestDiagnostic.Diagnostic diagnostics = 1;
+   */
+  diagnostics: CUserMessageRequestDiagnostic_Diagnostic[];
 }
 /**
  * @generated from protobuf message CUserMessageRequestDiagnostic.Diagnostic
  */
 export interface CUserMessageRequestDiagnostic_Diagnostic {
-	/**
-	 * @generated from protobuf field: optional int32 index = 1;
-	 */
-	index?: number;
-	/**
-	 * @generated from protobuf field: optional int64 offset = 2;
-	 */
-	offset?: bigint;
-	/**
-	 * @generated from protobuf field: optional int32 param = 3;
-	 */
-	param?: number;
-	/**
-	 * @generated from protobuf field: optional int32 length = 4;
-	 */
-	length?: number;
-	/**
-	 * @generated from protobuf field: optional int32 type = 5;
-	 */
-	type?: number;
-	/**
-	 * @generated from protobuf field: optional int64 base = 6;
-	 */
-	base?: bigint;
-	/**
-	 * @generated from protobuf field: optional int64 range = 7;
-	 */
-	range?: bigint;
-	/**
-	 * @generated from protobuf field: optional int64 extent = 8;
-	 */
-	extent?: bigint;
-	/**
-	 * @generated from protobuf field: optional int64 detail = 9;
-	 */
-	detail?: bigint;
-	/**
-	 * @generated from protobuf field: optional string name = 10;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: optional string alias = 11;
-	 */
-	alias?: string;
-	/**
-	 * @generated from protobuf field: optional bytes vardetail = 12;
-	 */
-	vardetail?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional int32 context = 13;
-	 */
-	context?: number;
+  /**
+   * @generated from protobuf field: optional int32 index = 1;
+   */
+  index?: number;
+  /**
+   * @generated from protobuf field: optional int64 offset = 2;
+   */
+  offset?: bigint;
+  /**
+   * @generated from protobuf field: optional int32 param = 3;
+   */
+  param?: number;
+  /**
+   * @generated from protobuf field: optional int32 length = 4;
+   */
+  length?: number;
+  /**
+   * @generated from protobuf field: optional int32 type = 5;
+   */
+  type?: number;
+  /**
+   * @generated from protobuf field: optional int64 base = 6;
+   */
+  base?: bigint;
+  /**
+   * @generated from protobuf field: optional int64 range = 7;
+   */
+  range?: bigint;
+  /**
+   * @generated from protobuf field: optional int64 extent = 8;
+   */
+  extent?: bigint;
+  /**
+   * @generated from protobuf field: optional int64 detail = 9;
+   */
+  detail?: bigint;
+  /**
+   * @generated from protobuf field: optional string name = 10;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: optional string alias = 11;
+   */
+  alias?: string;
+  /**
+   * @generated from protobuf field: optional bytes vardetail = 12;
+   */
+  vardetail?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional int32 context = 13;
+   */
+  context?: number;
 }
 /**
  * @generated from protobuf message CUserMessage_Diagnostic_Response
  */
 export interface CUserMessage_Diagnostic_Response {
-	/**
-	 * @generated from protobuf field: repeated CUserMessage_Diagnostic_Response.Diagnostic diagnostics = 1;
-	 */
-	diagnostics: CUserMessage_Diagnostic_Response_Diagnostic[];
-	/**
-	 * @generated from protobuf field: optional int32 build_version = 2;
-	 */
-	build_version?: number;
-	/**
-	 * @generated from protobuf field: optional int32 instance = 3;
-	 */
-	instance?: number;
-	/**
-	 * @generated from protobuf field: optional int64 start_time = 4;
-	 */
-	start_time?: bigint;
-	/**
-	 * @generated from protobuf field: optional int32 osversion = 5;
-	 */
-	osversion?: number;
-	/**
-	 * @generated from protobuf field: optional int32 platform = 6;
-	 */
-	platform?: number;
+  /**
+   * @generated from protobuf field: repeated CUserMessage_Diagnostic_Response.Diagnostic diagnostics = 1;
+   */
+  diagnostics: CUserMessage_Diagnostic_Response_Diagnostic[];
+  /**
+   * @generated from protobuf field: optional int32 build_version = 2;
+   */
+  build_version?: number;
+  /**
+   * @generated from protobuf field: optional int32 instance = 3;
+   */
+  instance?: number;
+  /**
+   * @generated from protobuf field: optional int64 start_time = 4;
+   */
+  start_time?: bigint;
+  /**
+   * @generated from protobuf field: optional int32 osversion = 5;
+   */
+  osversion?: number;
+  /**
+   * @generated from protobuf field: optional int32 platform = 6;
+   */
+  platform?: number;
 }
 /**
  * @generated from protobuf message CUserMessage_Diagnostic_Response.Diagnostic
  */
 export interface CUserMessage_Diagnostic_Response_Diagnostic {
-	/**
-	 * @generated from protobuf field: optional int32 index = 1;
-	 */
-	index?: number;
-	/**
-	 * @generated from protobuf field: optional int64 offset = 2;
-	 */
-	offset?: bigint;
-	/**
-	 * @generated from protobuf field: optional int32 param = 3;
-	 */
-	param?: number;
-	/**
-	 * @generated from protobuf field: optional int32 length = 4;
-	 */
-	length?: number;
-	/**
-	 * @generated from protobuf field: optional bytes detail = 5;
-	 */
-	detail?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional int64 base = 6;
-	 */
-	base?: bigint;
-	/**
-	 * @generated from protobuf field: optional int64 range = 7;
-	 */
-	range?: bigint;
-	/**
-	 * @generated from protobuf field: optional int32 type = 8;
-	 */
-	type?: number;
-	/**
-	 * @generated from protobuf field: optional string name = 10;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: optional string alias = 11;
-	 */
-	alias?: string;
-	/**
-	 * @generated from protobuf field: optional bytes backup = 12;
-	 */
-	backup?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional int32 context = 13;
-	 */
-	context?: number;
-	/**
-	 * @generated from protobuf field: optional int64 control = 14;
-	 */
-	control?: bigint;
-	/**
-	 * @generated from protobuf field: optional int64 augment = 15;
-	 */
-	augment?: bigint;
-	/**
-	 * @generated from protobuf field: optional int64 placebo = 16;
-	 */
-	placebo?: bigint;
+  /**
+   * @generated from protobuf field: optional int32 index = 1;
+   */
+  index?: number;
+  /**
+   * @generated from protobuf field: optional int64 offset = 2;
+   */
+  offset?: bigint;
+  /**
+   * @generated from protobuf field: optional int32 param = 3;
+   */
+  param?: number;
+  /**
+   * @generated from protobuf field: optional int32 length = 4;
+   */
+  length?: number;
+  /**
+   * @generated from protobuf field: optional bytes detail = 5;
+   */
+  detail?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional int64 base = 6;
+   */
+  base?: bigint;
+  /**
+   * @generated from protobuf field: optional int64 range = 7;
+   */
+  range?: bigint;
+  /**
+   * @generated from protobuf field: optional int32 type = 8;
+   */
+  type?: number;
+  /**
+   * @generated from protobuf field: optional string name = 10;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: optional string alias = 11;
+   */
+  alias?: string;
+  /**
+   * @generated from protobuf field: optional bytes backup = 12;
+   */
+  backup?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional int32 context = 13;
+   */
+  context?: number;
+  /**
+   * @generated from protobuf field: optional int64 control = 14;
+   */
+  control?: bigint;
+  /**
+   * @generated from protobuf field: optional int64 augment = 15;
+   */
+  augment?: bigint;
+  /**
+   * @generated from protobuf field: optional int64 placebo = 16;
+   */
+  placebo?: bigint;
 }
 /**
  * @generated from protobuf message CUserMessage_ExtraUserData
  */
 export interface CUserMessage_ExtraUserData {
-	/**
-	 * @generated from protobuf field: optional int32 item = 1;
-	 */
-	item?: number;
-	/**
-	 * @generated from protobuf field: optional int64 value1 = 2;
-	 */
-	value1?: bigint;
-	/**
-	 * @generated from protobuf field: optional int64 value2 = 3;
-	 */
-	value2?: bigint;
-	/**
-	 * @generated from protobuf field: repeated bytes detail1 = 4;
-	 */
-	detail1: Uint8Array[];
-	/**
-	 * @generated from protobuf field: repeated bytes detail2 = 5;
-	 */
-	detail2: Uint8Array[];
+  /**
+   * @generated from protobuf field: optional int32 item = 1;
+   */
+  item?: number;
+  /**
+   * @generated from protobuf field: optional int64 value1 = 2;
+   */
+  value1?: bigint;
+  /**
+   * @generated from protobuf field: optional int64 value2 = 3;
+   */
+  value2?: bigint;
+  /**
+   * @generated from protobuf field: repeated bytes detail1 = 4;
+   */
+  detail1: Uint8Array[];
+  /**
+   * @generated from protobuf field: repeated bytes detail2 = 5;
+   */
+  detail2: Uint8Array[];
 }
 /**
  * @generated from protobuf message CUserMessage_NotifyResponseFound
  */
 export interface CUserMessage_NotifyResponseFound {
-	/**
-	 * @generated from protobuf field: optional int32 ent_index = 1;
-	 */
-	ent_index?: number;
-	/**
-	 * @generated from protobuf field: optional string rule_name = 2;
-	 */
-	rule_name?: string;
-	/**
-	 * @generated from protobuf field: optional string response_value = 3;
-	 */
-	response_value?: string;
-	/**
-	 * @generated from protobuf field: optional string response_concept = 4;
-	 */
-	response_concept?: string;
-	/**
-	 * @generated from protobuf field: repeated CUserMessage_NotifyResponseFound.Criteria criteria = 5;
-	 */
-	criteria: CUserMessage_NotifyResponseFound_Criteria[];
-	/**
-	 * @generated from protobuf field: repeated uint32 int_criteria_names = 6 [packed = true];
-	 */
-	int_criteria_names: number[];
-	/**
-	 * @generated from protobuf field: repeated int32 int_criteria_values = 7 [packed = true];
-	 */
-	int_criteria_values: number[];
-	/**
-	 * @generated from protobuf field: repeated uint32 float_criteria_names = 8 [packed = true];
-	 */
-	float_criteria_names: number[];
-	/**
-	 * @generated from protobuf field: repeated float float_criteria_values = 9;
-	 */
-	float_criteria_values: number[];
-	/**
-	 * @generated from protobuf field: repeated uint32 symbol_criteria_names = 10 [packed = true];
-	 */
-	symbol_criteria_names: number[];
-	/**
-	 * @generated from protobuf field: repeated uint32 symbol_criteria_values = 11 [packed = true];
-	 */
-	symbol_criteria_values: number[];
-	/**
-	 * @generated from protobuf field: optional int32 speak_result = 12;
-	 */
-	speak_result?: number;
+  /**
+   * @generated from protobuf field: optional int32 ent_index = 1;
+   */
+  ent_index?: number;
+  /**
+   * @generated from protobuf field: optional string rule_name = 2;
+   */
+  rule_name?: string;
+  /**
+   * @generated from protobuf field: optional string response_value = 3;
+   */
+  response_value?: string;
+  /**
+   * @generated from protobuf field: optional string response_concept = 4;
+   */
+  response_concept?: string;
+  /**
+   * @generated from protobuf field: repeated CUserMessage_NotifyResponseFound.Criteria criteria = 5;
+   */
+  criteria: CUserMessage_NotifyResponseFound_Criteria[];
+  /**
+   * @generated from protobuf field: repeated uint32 int_criteria_names = 6 [packed = true];
+   */
+  int_criteria_names: number[];
+  /**
+   * @generated from protobuf field: repeated int32 int_criteria_values = 7 [packed = true];
+   */
+  int_criteria_values: number[];
+  /**
+   * @generated from protobuf field: repeated uint32 float_criteria_names = 8 [packed = true];
+   */
+  float_criteria_names: number[];
+  /**
+   * @generated from protobuf field: repeated float float_criteria_values = 9;
+   */
+  float_criteria_values: number[];
+  /**
+   * @generated from protobuf field: repeated uint32 symbol_criteria_names = 10 [packed = true];
+   */
+  symbol_criteria_names: number[];
+  /**
+   * @generated from protobuf field: repeated uint32 symbol_criteria_values = 11 [packed = true];
+   */
+  symbol_criteria_values: number[];
+  /**
+   * @generated from protobuf field: optional int32 speak_result = 12;
+   */
+  speak_result?: number;
 }
 /**
  * @generated from protobuf message CUserMessage_NotifyResponseFound.Criteria
  */
 export interface CUserMessage_NotifyResponseFound_Criteria {
-	/**
-	 * @generated from protobuf field: optional uint32 name_symbol = 1;
-	 */
-	name_symbol?: number;
-	/**
-	 * @generated from protobuf field: optional string value = 2;
-	 */
-	value?: string;
+  /**
+   * @generated from protobuf field: optional uint32 name_symbol = 1;
+   */
+  name_symbol?: number;
+  /**
+   * @generated from protobuf field: optional string value = 2;
+   */
+  value?: string;
 }
 /**
  * @generated from protobuf message CUserMessage_PlayResponseConditional
  */
 export interface CUserMessage_PlayResponseConditional {
-	/**
-	 * @generated from protobuf field: optional int32 ent_index = 1;
-	 */
-	ent_index?: number;
-	/**
-	 * @generated from protobuf field: repeated int32 player_slots = 2;
-	 */
-	player_slots: number[];
-	/**
-	 * @generated from protobuf field: optional string response = 3;
-	 */
-	response?: string;
-	/**
-	 * @generated from protobuf field: optional CMsgVector ent_origin = 4;
-	 */
-	ent_origin?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional float pre_delay = 5;
-	 */
-	pre_delay?: number;
-	/**
-	 * @generated from protobuf field: optional int32 mix_priority = 6;
-	 */
-	mix_priority?: number;
+  /**
+   * @generated from protobuf field: optional int32 ent_index = 1;
+   */
+  ent_index?: number;
+  /**
+   * @generated from protobuf field: repeated int32 player_slots = 2;
+   */
+  player_slots: number[];
+  /**
+   * @generated from protobuf field: optional string response = 3;
+   */
+  response?: string;
+  /**
+   * @generated from protobuf field: optional CMsgVector ent_origin = 4;
+   */
+  ent_origin?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional float pre_delay = 5;
+   */
+  pre_delay?: number;
+  /**
+   * @generated from protobuf field: optional int32 mix_priority = 6;
+   */
+  mix_priority?: number;
 }
 /**
  * @generated from protobuf enum EBaseUserMessages
  */
 export enum EBaseUserMessages {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: UM_AchievementEvent = 101;
-	 */
-	UM_AchievementEvent = 101,
-	/**
-	 * @generated from protobuf enum value: UM_CloseCaption = 102;
-	 */
-	UM_CloseCaption = 102,
-	/**
-	 * @generated from protobuf enum value: UM_CloseCaptionDirect = 103;
-	 */
-	UM_CloseCaptionDirect = 103,
-	/**
-	 * @generated from protobuf enum value: UM_CurrentTimescale = 104;
-	 */
-	UM_CurrentTimescale = 104,
-	/**
-	 * @generated from protobuf enum value: UM_DesiredTimescale = 105;
-	 */
-	UM_DesiredTimescale = 105,
-	/**
-	 * @generated from protobuf enum value: UM_Fade = 106;
-	 */
-	UM_Fade = 106,
-	/**
-	 * @generated from protobuf enum value: UM_GameTitle = 107;
-	 */
-	UM_GameTitle = 107,
-	/**
-	 * @generated from protobuf enum value: UM_HudMsg = 110;
-	 */
-	UM_HudMsg = 110,
-	/**
-	 * @generated from protobuf enum value: UM_HudText = 111;
-	 */
-	UM_HudText = 111,
-	/**
-	 * @generated from protobuf enum value: UM_ColoredText = 113;
-	 */
-	UM_ColoredText = 113,
-	/**
-	 * @generated from protobuf enum value: UM_RequestState = 114;
-	 */
-	UM_RequestState = 114,
-	/**
-	 * @generated from protobuf enum value: UM_ResetHUD = 115;
-	 */
-	UM_ResetHUD = 115,
-	/**
-	 * @generated from protobuf enum value: UM_Rumble = 116;
-	 */
-	UM_Rumble = 116,
-	/**
-	 * @generated from protobuf enum value: UM_SayText = 117;
-	 */
-	UM_SayText = 117,
-	/**
-	 * @generated from protobuf enum value: UM_SayText2 = 118;
-	 */
-	UM_SayText2 = 118,
-	/**
-	 * @generated from protobuf enum value: UM_SayTextChannel = 119;
-	 */
-	UM_SayTextChannel = 119,
-	/**
-	 * @generated from protobuf enum value: UM_Shake = 120;
-	 */
-	UM_Shake = 120,
-	/**
-	 * @generated from protobuf enum value: UM_ShakeDir = 121;
-	 */
-	UM_ShakeDir = 121,
-	/**
-	 * @generated from protobuf enum value: UM_WaterShake = 122;
-	 */
-	UM_WaterShake = 122,
-	/**
-	 * @generated from protobuf enum value: UM_TextMsg = 124;
-	 */
-	UM_TextMsg = 124,
-	/**
-	 * @generated from protobuf enum value: UM_ScreenTilt = 125;
-	 */
-	UM_ScreenTilt = 125,
-	/**
-	 * @generated from protobuf enum value: UM_VoiceMask = 128;
-	 */
-	UM_VoiceMask = 128,
-	/**
-	 * @generated from protobuf enum value: UM_SendAudio = 130;
-	 */
-	UM_SendAudio = 130,
-	/**
-	 * @generated from protobuf enum value: UM_ItemPickup = 131;
-	 */
-	UM_ItemPickup = 131,
-	/**
-	 * @generated from protobuf enum value: UM_AmmoDenied = 132;
-	 */
-	UM_AmmoDenied = 132,
-	/**
-	 * @generated from protobuf enum value: UM_ShowMenu = 134;
-	 */
-	UM_ShowMenu = 134,
-	/**
-	 * @generated from protobuf enum value: UM_CreditsMsg = 135;
-	 */
-	UM_CreditsMsg = 135,
-	/**
-	 * @generated from protobuf enum value: UM_CloseCaptionPlaceholder = 142;
-	 */
-	UM_CloseCaptionPlaceholder = 142,
-	/**
-	 * @generated from protobuf enum value: UM_CameraTransition = 143;
-	 */
-	UM_CameraTransition = 143,
-	/**
-	 * @generated from protobuf enum value: UM_AudioParameter = 144;
-	 */
-	UM_AudioParameter = 144,
-	/**
-	 * @generated from protobuf enum value: UM_ParticleManager = 145;
-	 */
-	UM_ParticleManager = 145,
-	/**
-	 * @generated from protobuf enum value: UM_HudError = 146;
-	 */
-	UM_HudError = 146,
-	/**
-	 * @generated from protobuf enum value: UM_CustomGameEvent = 148;
-	 */
-	UM_CustomGameEvent = 148,
-	/**
-	 * @generated from protobuf enum value: UM_AnimGraphUpdate = 149;
-	 */
-	UM_AnimGraphUpdate = 149,
-	/**
-	 * @generated from protobuf enum value: UM_HapticsManagerPulse = 150;
-	 */
-	UM_HapticsManagerPulse = 150,
-	/**
-	 * @generated from protobuf enum value: UM_HapticsManagerEffect = 151;
-	 */
-	UM_HapticsManagerEffect = 151,
-	/**
-	 * @generated from protobuf enum value: UM_CommandQueueState = 152;
-	 */
-	UM_CommandQueueState = 152,
-	/**
-	 * @generated from protobuf enum value: UM_UpdateCssClasses = 153;
-	 */
-	UM_UpdateCssClasses = 153,
-	/**
-	 * @generated from protobuf enum value: UM_ServerFrameTime = 154;
-	 */
-	UM_ServerFrameTime = 154,
-	/**
-	 * @generated from protobuf enum value: UM_LagCompensationError = 155;
-	 */
-	UM_LagCompensationError = 155,
-	/**
-	 * @generated from protobuf enum value: UM_RequestDllStatus = 156;
-	 */
-	UM_RequestDllStatus = 156,
-	/**
-	 * @generated from protobuf enum value: UM_RequestUtilAction = 157;
-	 */
-	UM_RequestUtilAction = 157,
-	/**
-	 * @generated from protobuf enum value: UM_UtilActionResponse = 158;
-	 */
-	UM_UtilActionResponse = 158,
-	/**
-	 * @generated from protobuf enum value: UM_DllStatusResponse = 159;
-	 */
-	UM_DllStatusResponse = 159,
-	/**
-	 * @generated from protobuf enum value: UM_RequestInventory = 160;
-	 */
-	UM_RequestInventory = 160,
-	/**
-	 * @generated from protobuf enum value: UM_InventoryResponse = 161;
-	 */
-	UM_InventoryResponse = 161,
-	/**
-	 * @generated from protobuf enum value: UM_RequestDiagnostic = 162;
-	 */
-	UM_RequestDiagnostic = 162,
-	/**
-	 * @generated from protobuf enum value: UM_DiagnosticResponse = 163;
-	 */
-	UM_DiagnosticResponse = 163,
-	/**
-	 * @generated from protobuf enum value: UM_ExtraUserData = 164;
-	 */
-	UM_ExtraUserData = 164,
-	/**
-	 * @generated from protobuf enum value: UM_NotifyResponseFound = 165;
-	 */
-	UM_NotifyResponseFound = 165,
-	/**
-	 * @generated from protobuf enum value: UM_PlayResponseConditional = 166;
-	 */
-	UM_PlayResponseConditional = 166,
-	/**
-	 * @generated from protobuf enum value: UM_MAX_BASE = 200;
-	 */
-	UM_MAX_BASE = 200,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: UM_AchievementEvent = 101;
+   */
+  UM_AchievementEvent = 101,
+  /**
+   * @generated from protobuf enum value: UM_CloseCaption = 102;
+   */
+  UM_CloseCaption = 102,
+  /**
+   * @generated from protobuf enum value: UM_CloseCaptionDirect = 103;
+   */
+  UM_CloseCaptionDirect = 103,
+  /**
+   * @generated from protobuf enum value: UM_CurrentTimescale = 104;
+   */
+  UM_CurrentTimescale = 104,
+  /**
+   * @generated from protobuf enum value: UM_DesiredTimescale = 105;
+   */
+  UM_DesiredTimescale = 105,
+  /**
+   * @generated from protobuf enum value: UM_Fade = 106;
+   */
+  UM_Fade = 106,
+  /**
+   * @generated from protobuf enum value: UM_GameTitle = 107;
+   */
+  UM_GameTitle = 107,
+  /**
+   * @generated from protobuf enum value: UM_HudMsg = 110;
+   */
+  UM_HudMsg = 110,
+  /**
+   * @generated from protobuf enum value: UM_HudText = 111;
+   */
+  UM_HudText = 111,
+  /**
+   * @generated from protobuf enum value: UM_ColoredText = 113;
+   */
+  UM_ColoredText = 113,
+  /**
+   * @generated from protobuf enum value: UM_RequestState = 114;
+   */
+  UM_RequestState = 114,
+  /**
+   * @generated from protobuf enum value: UM_ResetHUD = 115;
+   */
+  UM_ResetHUD = 115,
+  /**
+   * @generated from protobuf enum value: UM_Rumble = 116;
+   */
+  UM_Rumble = 116,
+  /**
+   * @generated from protobuf enum value: UM_SayText = 117;
+   */
+  UM_SayText = 117,
+  /**
+   * @generated from protobuf enum value: UM_SayText2 = 118;
+   */
+  UM_SayText2 = 118,
+  /**
+   * @generated from protobuf enum value: UM_SayTextChannel = 119;
+   */
+  UM_SayTextChannel = 119,
+  /**
+   * @generated from protobuf enum value: UM_Shake = 120;
+   */
+  UM_Shake = 120,
+  /**
+   * @generated from protobuf enum value: UM_ShakeDir = 121;
+   */
+  UM_ShakeDir = 121,
+  /**
+   * @generated from protobuf enum value: UM_WaterShake = 122;
+   */
+  UM_WaterShake = 122,
+  /**
+   * @generated from protobuf enum value: UM_TextMsg = 124;
+   */
+  UM_TextMsg = 124,
+  /**
+   * @generated from protobuf enum value: UM_ScreenTilt = 125;
+   */
+  UM_ScreenTilt = 125,
+  /**
+   * @generated from protobuf enum value: UM_VoiceMask = 128;
+   */
+  UM_VoiceMask = 128,
+  /**
+   * @generated from protobuf enum value: UM_SendAudio = 130;
+   */
+  UM_SendAudio = 130,
+  /**
+   * @generated from protobuf enum value: UM_ItemPickup = 131;
+   */
+  UM_ItemPickup = 131,
+  /**
+   * @generated from protobuf enum value: UM_AmmoDenied = 132;
+   */
+  UM_AmmoDenied = 132,
+  /**
+   * @generated from protobuf enum value: UM_ShowMenu = 134;
+   */
+  UM_ShowMenu = 134,
+  /**
+   * @generated from protobuf enum value: UM_CreditsMsg = 135;
+   */
+  UM_CreditsMsg = 135,
+  /**
+   * @generated from protobuf enum value: UM_CloseCaptionPlaceholder = 142;
+   */
+  UM_CloseCaptionPlaceholder = 142,
+  /**
+   * @generated from protobuf enum value: UM_CameraTransition = 143;
+   */
+  UM_CameraTransition = 143,
+  /**
+   * @generated from protobuf enum value: UM_AudioParameter = 144;
+   */
+  UM_AudioParameter = 144,
+  /**
+   * @generated from protobuf enum value: UM_ParticleManager = 145;
+   */
+  UM_ParticleManager = 145,
+  /**
+   * @generated from protobuf enum value: UM_HudError = 146;
+   */
+  UM_HudError = 146,
+  /**
+   * @generated from protobuf enum value: UM_CustomGameEvent = 148;
+   */
+  UM_CustomGameEvent = 148,
+  /**
+   * @generated from protobuf enum value: UM_AnimGraphUpdate = 149;
+   */
+  UM_AnimGraphUpdate = 149,
+  /**
+   * @generated from protobuf enum value: UM_HapticsManagerPulse = 150;
+   */
+  UM_HapticsManagerPulse = 150,
+  /**
+   * @generated from protobuf enum value: UM_HapticsManagerEffect = 151;
+   */
+  UM_HapticsManagerEffect = 151,
+  /**
+   * @generated from protobuf enum value: UM_CommandQueueState = 152;
+   */
+  UM_CommandQueueState = 152,
+  /**
+   * @generated from protobuf enum value: UM_UpdateCssClasses = 153;
+   */
+  UM_UpdateCssClasses = 153,
+  /**
+   * @generated from protobuf enum value: UM_ServerFrameTime = 154;
+   */
+  UM_ServerFrameTime = 154,
+  /**
+   * @generated from protobuf enum value: UM_LagCompensationError = 155;
+   */
+  UM_LagCompensationError = 155,
+  /**
+   * @generated from protobuf enum value: UM_RequestDllStatus = 156;
+   */
+  UM_RequestDllStatus = 156,
+  /**
+   * @generated from protobuf enum value: UM_RequestUtilAction = 157;
+   */
+  UM_RequestUtilAction = 157,
+  /**
+   * @generated from protobuf enum value: UM_UtilActionResponse = 158;
+   */
+  UM_UtilActionResponse = 158,
+  /**
+   * @generated from protobuf enum value: UM_DllStatusResponse = 159;
+   */
+  UM_DllStatusResponse = 159,
+  /**
+   * @generated from protobuf enum value: UM_RequestInventory = 160;
+   */
+  UM_RequestInventory = 160,
+  /**
+   * @generated from protobuf enum value: UM_InventoryResponse = 161;
+   */
+  UM_InventoryResponse = 161,
+  /**
+   * @generated from protobuf enum value: UM_RequestDiagnostic = 162;
+   */
+  UM_RequestDiagnostic = 162,
+  /**
+   * @generated from protobuf enum value: UM_DiagnosticResponse = 163;
+   */
+  UM_DiagnosticResponse = 163,
+  /**
+   * @generated from protobuf enum value: UM_ExtraUserData = 164;
+   */
+  UM_ExtraUserData = 164,
+  /**
+   * @generated from protobuf enum value: UM_NotifyResponseFound = 165;
+   */
+  UM_NotifyResponseFound = 165,
+  /**
+   * @generated from protobuf enum value: UM_PlayResponseConditional = 166;
+   */
+  UM_PlayResponseConditional = 166,
+  /**
+   * @generated from protobuf enum value: UM_MAX_BASE = 200;
+   */
+  UM_MAX_BASE = 200,
 }
 /**
  * @generated from protobuf enum EBaseEntityMessages
  */
 export enum EBaseEntityMessages {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: EM_PlayJingle = 136;
-	 */
-	EM_PlayJingle = 136,
-	/**
-	 * @generated from protobuf enum value: EM_ScreenOverlay = 137;
-	 */
-	EM_ScreenOverlay = 137,
-	/**
-	 * @generated from protobuf enum value: EM_RemoveAllDecals = 138;
-	 */
-	EM_RemoveAllDecals = 138,
-	/**
-	 * @generated from protobuf enum value: EM_PropagateForce = 139;
-	 */
-	EM_PropagateForce = 139,
-	/**
-	 * @generated from protobuf enum value: EM_DoSpark = 140;
-	 */
-	EM_DoSpark = 140,
-	/**
-	 * @generated from protobuf enum value: EM_FixAngle = 141;
-	 */
-	EM_FixAngle = 141,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: EM_PlayJingle = 136;
+   */
+  EM_PlayJingle = 136,
+  /**
+   * @generated from protobuf enum value: EM_ScreenOverlay = 137;
+   */
+  EM_ScreenOverlay = 137,
+  /**
+   * @generated from protobuf enum value: EM_RemoveAllDecals = 138;
+   */
+  EM_RemoveAllDecals = 138,
+  /**
+   * @generated from protobuf enum value: EM_PropagateForce = 139;
+   */
+  EM_PropagateForce = 139,
+  /**
+   * @generated from protobuf enum value: EM_DoSpark = 140;
+   */
+  EM_DoSpark = 140,
+  /**
+   * @generated from protobuf enum value: EM_FixAngle = 141;
+   */
+  EM_FixAngle = 141,
 }
 /**
  * @generated from protobuf enum eRollType
  */
 export enum eRollType {
-	/**
-	 * @generated from protobuf enum value: ROLL_NONE = -1;
-	 */
-	ROLL_NONE = -1,
-	/**
-	 * @generated from protobuf enum value: ROLL_STATS = 0;
-	 */
-	ROLL_STATS = 0,
-	/**
-	 * @generated from protobuf enum value: ROLL_CREDITS = 1;
-	 */
-	ROLL_CREDITS = 1,
-	/**
-	 * @generated from protobuf enum value: ROLL_LATE_JOIN_LOGO = 2;
-	 */
-	ROLL_LATE_JOIN_LOGO = 2,
-	/**
-	 * @generated from protobuf enum value: ROLL_OUTTRO = 3;
-	 */
-	ROLL_OUTTRO = 3,
+  /**
+   * @generated from protobuf enum value: ROLL_NONE = -1;
+   */
+  ROLL_NONE = -1,
+  /**
+   * @generated from protobuf enum value: ROLL_STATS = 0;
+   */
+  ROLL_STATS = 0,
+  /**
+   * @generated from protobuf enum value: ROLL_CREDITS = 1;
+   */
+  ROLL_CREDITS = 1,
+  /**
+   * @generated from protobuf enum value: ROLL_LATE_JOIN_LOGO = 2;
+   */
+  ROLL_LATE_JOIN_LOGO = 2,
+  /**
+   * @generated from protobuf enum value: ROLL_OUTTRO = 3;
+   */
+  ROLL_OUTTRO = 3,
 }
 /**
  * @generated from protobuf enum PARTICLE_MESSAGE
  */
 export enum PARTICLE_MESSAGE {
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_CREATE = 0;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_CREATE = 0,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_UPDATE = 1;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_UPDATE = 1,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_UPDATE_FORWARD = 2;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_UPDATE_FORWARD = 2,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_UPDATE_ORIENTATION = 3;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_UPDATE_ORIENTATION = 3,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_UPDATE_FALLBACK = 4;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_UPDATE_FALLBACK = 4,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENT = 5;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENT = 5,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_UPDATE_OFFSET = 6;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_UPDATE_OFFSET = 6,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_DESTROY = 7;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_DESTROY = 7,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_DESTROY_INVOLVING = 8;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_DESTROY_INVOLVING = 8,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_RELEASE = 9;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_RELEASE = 9,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_LATENCY = 10;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_LATENCY = 10,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SHOULD_DRAW = 11;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_SHOULD_DRAW = 11,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_FROZEN = 12;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_FROZEN = 12,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_CHANGE_CONTROL_POINT_ATTACHMENT = 13;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_CHANGE_CONTROL_POINT_ATTACHMENT = 13,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENTITY_POSITION = 14;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENTITY_POSITION = 14,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_FOW_PROPERTIES = 15;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_SET_FOW_PROPERTIES = 15,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_TEXT = 16;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_SET_TEXT = 16,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_SHOULD_CHECK_FOW = 17;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_SET_SHOULD_CHECK_FOW = 17,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_MODEL = 18;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_MODEL = 18,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_SNAPSHOT = 19;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_SNAPSHOT = 19,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_TEXTURE_ATTRIBUTE = 20;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_SET_TEXTURE_ATTRIBUTE = 20,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_SCENE_OBJECT_GENERIC_FLAG = 21;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_SET_SCENE_OBJECT_GENERIC_FLAG = 21,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_SCENE_OBJECT_TINT_AND_DESAT = 22;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_SET_SCENE_OBJECT_TINT_AND_DESAT = 22,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_DESTROY_NAMED = 23;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_DESTROY_NAMED = 23,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SKIP_TO_TIME = 24;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_SKIP_TO_TIME = 24,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_CAN_FREEZE = 25;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_CAN_FREEZE = 25,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_NAMED_VALUE_CONTEXT = 26;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_SET_NAMED_VALUE_CONTEXT = 26,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_UPDATE_TRANSFORM = 27;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_UPDATE_TRANSFORM = 27,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_FREEZE_TRANSITION_OVERRIDE = 28;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_FREEZE_TRANSITION_OVERRIDE = 28,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_FREEZE_INVOLVING = 29;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_FREEZE_INVOLVING = 29,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_ADD_MODELLIST_OVERRIDE_ELEMENT = 30;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_ADD_MODELLIST_OVERRIDE_ELEMENT = 30,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_CLEAR_MODELLIST_OVERRIDE = 31;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_CLEAR_MODELLIST_OVERRIDE = 31,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_CREATE_PHYSICS_SIM = 32;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_CREATE_PHYSICS_SIM = 32,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_DESTROY_PHYSICS_SIM = 33;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_DESTROY_PHYSICS_SIM = 33,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_VDATA = 34;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_SET_VDATA = 34,
-	/**
-	 * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_MATERIAL_OVERRIDE = 35;
-	 */
-	GAME_PARTICLE_MANAGER_EVENT_SET_MATERIAL_OVERRIDE = 35,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_CREATE = 0;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_CREATE = 0,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_UPDATE = 1;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_UPDATE = 1,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_UPDATE_FORWARD = 2;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_UPDATE_FORWARD = 2,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_UPDATE_ORIENTATION = 3;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_UPDATE_ORIENTATION = 3,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_UPDATE_FALLBACK = 4;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_UPDATE_FALLBACK = 4,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENT = 5;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENT = 5,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_UPDATE_OFFSET = 6;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_UPDATE_OFFSET = 6,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_DESTROY = 7;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_DESTROY = 7,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_DESTROY_INVOLVING = 8;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_DESTROY_INVOLVING = 8,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_RELEASE = 9;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_RELEASE = 9,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_LATENCY = 10;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_LATENCY = 10,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SHOULD_DRAW = 11;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_SHOULD_DRAW = 11,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_FROZEN = 12;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_FROZEN = 12,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_CHANGE_CONTROL_POINT_ATTACHMENT = 13;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_CHANGE_CONTROL_POINT_ATTACHMENT = 13,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENTITY_POSITION = 14;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENTITY_POSITION = 14,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_FOW_PROPERTIES = 15;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_SET_FOW_PROPERTIES = 15,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_TEXT = 16;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_SET_TEXT = 16,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_SHOULD_CHECK_FOW = 17;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_SET_SHOULD_CHECK_FOW = 17,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_MODEL = 18;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_MODEL = 18,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_SNAPSHOT = 19;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_SNAPSHOT = 19,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_TEXTURE_ATTRIBUTE = 20;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_SET_TEXTURE_ATTRIBUTE = 20,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_SCENE_OBJECT_GENERIC_FLAG = 21;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_SET_SCENE_OBJECT_GENERIC_FLAG = 21,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_SCENE_OBJECT_TINT_AND_DESAT = 22;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_SET_SCENE_OBJECT_TINT_AND_DESAT = 22,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_DESTROY_NAMED = 23;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_DESTROY_NAMED = 23,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SKIP_TO_TIME = 24;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_SKIP_TO_TIME = 24,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_CAN_FREEZE = 25;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_CAN_FREEZE = 25,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_NAMED_VALUE_CONTEXT = 26;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_SET_NAMED_VALUE_CONTEXT = 26,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_UPDATE_TRANSFORM = 27;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_UPDATE_TRANSFORM = 27,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_FREEZE_TRANSITION_OVERRIDE = 28;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_FREEZE_TRANSITION_OVERRIDE = 28,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_FREEZE_INVOLVING = 29;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_FREEZE_INVOLVING = 29,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_ADD_MODELLIST_OVERRIDE_ELEMENT = 30;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_ADD_MODELLIST_OVERRIDE_ELEMENT = 30,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_CLEAR_MODELLIST_OVERRIDE = 31;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_CLEAR_MODELLIST_OVERRIDE = 31,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_CREATE_PHYSICS_SIM = 32;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_CREATE_PHYSICS_SIM = 32,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_DESTROY_PHYSICS_SIM = 33;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_DESTROY_PHYSICS_SIM = 33,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_VDATA = 34;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_SET_VDATA = 34,
+  /**
+   * @generated from protobuf enum value: GAME_PARTICLE_MANAGER_EVENT_SET_MATERIAL_OVERRIDE = 35;
+   */
+  GAME_PARTICLE_MANAGER_EVENT_SET_MATERIAL_OVERRIDE = 35,
 }
 /**
  * @generated from protobuf enum EHapticPulseType
  */
 export enum EHapticPulseType {
-	/**
-	 * @generated from protobuf enum value: VR_HAND_HAPTIC_PULSE_LIGHT = 0;
-	 */
-	VR_HAND_HAPTIC_PULSE_LIGHT = 0,
-	/**
-	 * @generated from protobuf enum value: VR_HAND_HAPTIC_PULSE_MEDIUM = 1;
-	 */
-	VR_HAND_HAPTIC_PULSE_MEDIUM = 1,
-	/**
-	 * @generated from protobuf enum value: VR_HAND_HAPTIC_PULSE_STRONG = 2;
-	 */
-	VR_HAND_HAPTIC_PULSE_STRONG = 2,
+  /**
+   * @generated from protobuf enum value: VR_HAND_HAPTIC_PULSE_LIGHT = 0;
+   */
+  VR_HAND_HAPTIC_PULSE_LIGHT = 0,
+  /**
+   * @generated from protobuf enum value: VR_HAND_HAPTIC_PULSE_MEDIUM = 1;
+   */
+  VR_HAND_HAPTIC_PULSE_MEDIUM = 1,
+  /**
+   * @generated from protobuf enum value: VR_HAND_HAPTIC_PULSE_STRONG = 2;
+   */
+  VR_HAND_HAPTIC_PULSE_STRONG = 2,
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageAchievementEvent$Type extends MessageType<CUserMessageAchievementEvent> {
-	constructor() {
-		super("CUserMessageAchievementEvent", [
-			{
-				no: 1,
-				name: "achievement",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageAchievementEvent>): CUserMessageAchievementEvent {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageAchievementEvent>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageAchievementEvent,
-	): CUserMessageAchievementEvent {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 achievement */ 1:
-					message.achievement = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageAchievementEvent,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 achievement = 1; */
-		if (message.achievement !== undefined) writer.tag(1, WireType.Varint).uint32(message.achievement);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageAchievementEvent", [
+      {
+        no: 1,
+        name: "achievement",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageAchievementEvent>): CUserMessageAchievementEvent {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageAchievementEvent>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageAchievementEvent,
+  ): CUserMessageAchievementEvent {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 achievement */ 1:
+          message.achievement = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageAchievementEvent,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 achievement = 1; */
+    if (message.achievement !== undefined) writer.tag(1, WireType.Varint).uint32(message.achievement);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageAchievementEvent
@@ -2557,95 +2557,95 @@ class CUserMessageAchievementEvent$Type extends MessageType<CUserMessageAchievem
 export const CUserMessageAchievementEvent = new CUserMessageAchievementEvent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageCloseCaption$Type extends MessageType<CUserMessageCloseCaption> {
-	constructor() {
-		super("CUserMessageCloseCaption", [
-			{
-				no: 1,
-				name: "hash",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "duration",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "from_player",
-				kind: "scalar",
-				localName: "from_player",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "ent_index",
-				kind: "scalar",
-				localName: "ent_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageCloseCaption>): CUserMessageCloseCaption {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageCloseCaption>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageCloseCaption,
-	): CUserMessageCloseCaption {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 hash */ 1:
-					message.hash = reader.fixed32();
-					break;
-				case /* optional float duration */ 2:
-					message.duration = reader.float();
-					break;
-				case /* optional bool from_player */ 3:
-					message.from_player = reader.bool();
-					break;
-				case /* optional int32 ent_index */ 4:
-					message.ent_index = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageCloseCaption,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 hash = 1; */
-		if (message.hash !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.hash);
-		/* optional float duration = 2; */
-		if (message.duration !== undefined) writer.tag(2, WireType.Bit32).float(message.duration);
-		/* optional bool from_player = 3; */
-		if (message.from_player !== undefined) writer.tag(3, WireType.Varint).bool(message.from_player);
-		/* optional int32 ent_index = 4; */
-		if (message.ent_index !== undefined) writer.tag(4, WireType.Varint).int32(message.ent_index);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageCloseCaption", [
+      {
+        no: 1,
+        name: "hash",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "duration",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "from_player",
+        kind: "scalar",
+        localName: "from_player",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "ent_index",
+        kind: "scalar",
+        localName: "ent_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageCloseCaption>): CUserMessageCloseCaption {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageCloseCaption>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageCloseCaption,
+  ): CUserMessageCloseCaption {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 hash */ 1:
+          message.hash = reader.fixed32();
+          break;
+        case /* optional float duration */ 2:
+          message.duration = reader.float();
+          break;
+        case /* optional bool from_player */ 3:
+          message.from_player = reader.bool();
+          break;
+        case /* optional int32 ent_index */ 4:
+          message.ent_index = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageCloseCaption,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 hash = 1; */
+    if (message.hash !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.hash);
+    /* optional float duration = 2; */
+    if (message.duration !== undefined) writer.tag(2, WireType.Bit32).float(message.duration);
+    /* optional bool from_player = 3; */
+    if (message.from_player !== undefined) writer.tag(3, WireType.Varint).bool(message.from_player);
+    /* optional int32 ent_index = 4; */
+    if (message.ent_index !== undefined) writer.tag(4, WireType.Varint).int32(message.ent_index);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageCloseCaption
@@ -2653,95 +2653,95 @@ class CUserMessageCloseCaption$Type extends MessageType<CUserMessageCloseCaption
 export const CUserMessageCloseCaption = new CUserMessageCloseCaption$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageCloseCaptionDirect$Type extends MessageType<CUserMessageCloseCaptionDirect> {
-	constructor() {
-		super("CUserMessageCloseCaptionDirect", [
-			{
-				no: 1,
-				name: "hash",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "duration",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "from_player",
-				kind: "scalar",
-				localName: "from_player",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "ent_index",
-				kind: "scalar",
-				localName: "ent_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageCloseCaptionDirect>): CUserMessageCloseCaptionDirect {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageCloseCaptionDirect>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageCloseCaptionDirect,
-	): CUserMessageCloseCaptionDirect {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 hash */ 1:
-					message.hash = reader.fixed32();
-					break;
-				case /* optional float duration */ 2:
-					message.duration = reader.float();
-					break;
-				case /* optional bool from_player */ 3:
-					message.from_player = reader.bool();
-					break;
-				case /* optional int32 ent_index */ 4:
-					message.ent_index = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageCloseCaptionDirect,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 hash = 1; */
-		if (message.hash !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.hash);
-		/* optional float duration = 2; */
-		if (message.duration !== undefined) writer.tag(2, WireType.Bit32).float(message.duration);
-		/* optional bool from_player = 3; */
-		if (message.from_player !== undefined) writer.tag(3, WireType.Varint).bool(message.from_player);
-		/* optional int32 ent_index = 4; */
-		if (message.ent_index !== undefined) writer.tag(4, WireType.Varint).int32(message.ent_index);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageCloseCaptionDirect", [
+      {
+        no: 1,
+        name: "hash",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "duration",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "from_player",
+        kind: "scalar",
+        localName: "from_player",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "ent_index",
+        kind: "scalar",
+        localName: "ent_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageCloseCaptionDirect>): CUserMessageCloseCaptionDirect {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageCloseCaptionDirect>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageCloseCaptionDirect,
+  ): CUserMessageCloseCaptionDirect {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 hash */ 1:
+          message.hash = reader.fixed32();
+          break;
+        case /* optional float duration */ 2:
+          message.duration = reader.float();
+          break;
+        case /* optional bool from_player */ 3:
+          message.from_player = reader.bool();
+          break;
+        case /* optional int32 ent_index */ 4:
+          message.ent_index = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageCloseCaptionDirect,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 hash = 1; */
+    if (message.hash !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.hash);
+    /* optional float duration = 2; */
+    if (message.duration !== undefined) writer.tag(2, WireType.Bit32).float(message.duration);
+    /* optional bool from_player = 3; */
+    if (message.from_player !== undefined) writer.tag(3, WireType.Varint).bool(message.from_player);
+    /* optional int32 ent_index = 4; */
+    if (message.ent_index !== undefined) writer.tag(4, WireType.Varint).int32(message.ent_index);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageCloseCaptionDirect
@@ -2749,95 +2749,95 @@ class CUserMessageCloseCaptionDirect$Type extends MessageType<CUserMessageCloseC
 export const CUserMessageCloseCaptionDirect = new CUserMessageCloseCaptionDirect$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageCloseCaptionPlaceholder$Type extends MessageType<CUserMessageCloseCaptionPlaceholder> {
-	constructor() {
-		super("CUserMessageCloseCaptionPlaceholder", [
-			{
-				no: 1,
-				name: "string",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "duration",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "from_player",
-				kind: "scalar",
-				localName: "from_player",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "ent_index",
-				kind: "scalar",
-				localName: "ent_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageCloseCaptionPlaceholder>): CUserMessageCloseCaptionPlaceholder {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageCloseCaptionPlaceholder>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageCloseCaptionPlaceholder,
-	): CUserMessageCloseCaptionPlaceholder {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string string */ 1:
-					message.string = reader.string();
-					break;
-				case /* optional float duration */ 2:
-					message.duration = reader.float();
-					break;
-				case /* optional bool from_player */ 3:
-					message.from_player = reader.bool();
-					break;
-				case /* optional int32 ent_index */ 4:
-					message.ent_index = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageCloseCaptionPlaceholder,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string string = 1; */
-		if (message.string !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.string);
-		/* optional float duration = 2; */
-		if (message.duration !== undefined) writer.tag(2, WireType.Bit32).float(message.duration);
-		/* optional bool from_player = 3; */
-		if (message.from_player !== undefined) writer.tag(3, WireType.Varint).bool(message.from_player);
-		/* optional int32 ent_index = 4; */
-		if (message.ent_index !== undefined) writer.tag(4, WireType.Varint).int32(message.ent_index);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageCloseCaptionPlaceholder", [
+      {
+        no: 1,
+        name: "string",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "duration",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "from_player",
+        kind: "scalar",
+        localName: "from_player",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "ent_index",
+        kind: "scalar",
+        localName: "ent_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageCloseCaptionPlaceholder>): CUserMessageCloseCaptionPlaceholder {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageCloseCaptionPlaceholder>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageCloseCaptionPlaceholder,
+  ): CUserMessageCloseCaptionPlaceholder {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string string */ 1:
+          message.string = reader.string();
+          break;
+        case /* optional float duration */ 2:
+          message.duration = reader.float();
+          break;
+        case /* optional bool from_player */ 3:
+          message.from_player = reader.bool();
+          break;
+        case /* optional int32 ent_index */ 4:
+          message.ent_index = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageCloseCaptionPlaceholder,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string string = 1; */
+    if (message.string !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.string);
+    /* optional float duration = 2; */
+    if (message.duration !== undefined) writer.tag(2, WireType.Bit32).float(message.duration);
+    /* optional bool from_player = 3; */
+    if (message.from_player !== undefined) writer.tag(3, WireType.Varint).bool(message.from_player);
+    /* optional int32 ent_index = 4; */
+    if (message.ent_index !== undefined) writer.tag(4, WireType.Varint).int32(message.ent_index);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageCloseCaptionPlaceholder
@@ -2845,57 +2845,57 @@ class CUserMessageCloseCaptionPlaceholder$Type extends MessageType<CUserMessageC
 export const CUserMessageCloseCaptionPlaceholder = new CUserMessageCloseCaptionPlaceholder$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageCurrentTimescale$Type extends MessageType<CUserMessageCurrentTimescale> {
-	constructor() {
-		super("CUserMessageCurrentTimescale", [
-			{
-				no: 1,
-				name: "current",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageCurrentTimescale>): CUserMessageCurrentTimescale {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageCurrentTimescale>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageCurrentTimescale,
-	): CUserMessageCurrentTimescale {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float current */ 1:
-					message.current = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageCurrentTimescale,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional float current = 1; */
-		if (message.current !== undefined) writer.tag(1, WireType.Bit32).float(message.current);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageCurrentTimescale", [
+      {
+        no: 1,
+        name: "current",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageCurrentTimescale>): CUserMessageCurrentTimescale {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageCurrentTimescale>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageCurrentTimescale,
+  ): CUserMessageCurrentTimescale {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float current */ 1:
+          message.current = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageCurrentTimescale,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional float current = 1; */
+    if (message.current !== undefined) writer.tag(1, WireType.Bit32).float(message.current);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageCurrentTimescale
@@ -2903,93 +2903,93 @@ class CUserMessageCurrentTimescale$Type extends MessageType<CUserMessageCurrentT
 export const CUserMessageCurrentTimescale = new CUserMessageCurrentTimescale$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageDesiredTimescale$Type extends MessageType<CUserMessageDesiredTimescale> {
-	constructor() {
-		super("CUserMessageDesiredTimescale", [
-			{
-				no: 1,
-				name: "desired",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 2,
-				name: "acceleration",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "minblendrate",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "blenddeltamultiplier",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageDesiredTimescale>): CUserMessageDesiredTimescale {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageDesiredTimescale>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageDesiredTimescale,
-	): CUserMessageDesiredTimescale {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float desired */ 1:
-					message.desired = reader.float();
-					break;
-				case /* optional float acceleration */ 2:
-					message.acceleration = reader.float();
-					break;
-				case /* optional float minblendrate */ 3:
-					message.minblendrate = reader.float();
-					break;
-				case /* optional float blenddeltamultiplier */ 4:
-					message.blenddeltamultiplier = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageDesiredTimescale,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional float desired = 1; */
-		if (message.desired !== undefined) writer.tag(1, WireType.Bit32).float(message.desired);
-		/* optional float acceleration = 2; */
-		if (message.acceleration !== undefined) writer.tag(2, WireType.Bit32).float(message.acceleration);
-		/* optional float minblendrate = 3; */
-		if (message.minblendrate !== undefined) writer.tag(3, WireType.Bit32).float(message.minblendrate);
-		/* optional float blenddeltamultiplier = 4; */
-		if (message.blenddeltamultiplier !== undefined) writer.tag(4, WireType.Bit32).float(message.blenddeltamultiplier);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageDesiredTimescale", [
+      {
+        no: 1,
+        name: "desired",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 2,
+        name: "acceleration",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "minblendrate",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "blenddeltamultiplier",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageDesiredTimescale>): CUserMessageDesiredTimescale {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageDesiredTimescale>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageDesiredTimescale,
+  ): CUserMessageDesiredTimescale {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float desired */ 1:
+          message.desired = reader.float();
+          break;
+        case /* optional float acceleration */ 2:
+          message.acceleration = reader.float();
+          break;
+        case /* optional float minblendrate */ 3:
+          message.minblendrate = reader.float();
+          break;
+        case /* optional float blenddeltamultiplier */ 4:
+          message.blenddeltamultiplier = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageDesiredTimescale,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional float desired = 1; */
+    if (message.desired !== undefined) writer.tag(1, WireType.Bit32).float(message.desired);
+    /* optional float acceleration = 2; */
+    if (message.acceleration !== undefined) writer.tag(2, WireType.Bit32).float(message.acceleration);
+    /* optional float minblendrate = 3; */
+    if (message.minblendrate !== undefined) writer.tag(3, WireType.Bit32).float(message.minblendrate);
+    /* optional float blenddeltamultiplier = 4; */
+    if (message.blenddeltamultiplier !== undefined) writer.tag(4, WireType.Bit32).float(message.blenddeltamultiplier);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageDesiredTimescale
@@ -2997,90 +2997,90 @@ class CUserMessageDesiredTimescale$Type extends MessageType<CUserMessageDesiredT
 export const CUserMessageDesiredTimescale = new CUserMessageDesiredTimescale$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageFade$Type extends MessageType<CUserMessageFade> {
-	constructor() {
-		super("CUserMessageFade", [
-			{
-				no: 1,
-				name: "duration",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "hold_time",
-				kind: "scalar",
-				localName: "hold_time",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "color",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageFade>): CUserMessageFade {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageFade>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageFade,
-	): CUserMessageFade {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 duration */ 1:
-					message.duration = reader.uint32();
-					break;
-				case /* optional uint32 hold_time */ 2:
-					message.hold_time = reader.uint32();
-					break;
-				case /* optional uint32 flags */ 3:
-					message.flags = reader.uint32();
-					break;
-				case /* optional fixed32 color */ 4:
-					message.color = reader.fixed32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CUserMessageFade, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional uint32 duration = 1; */
-		if (message.duration !== undefined) writer.tag(1, WireType.Varint).uint32(message.duration);
-		/* optional uint32 hold_time = 2; */
-		if (message.hold_time !== undefined) writer.tag(2, WireType.Varint).uint32(message.hold_time);
-		/* optional uint32 flags = 3; */
-		if (message.flags !== undefined) writer.tag(3, WireType.Varint).uint32(message.flags);
-		/* optional fixed32 color = 4; */
-		if (message.color !== undefined) writer.tag(4, WireType.Bit32).fixed32(message.color);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageFade", [
+      {
+        no: 1,
+        name: "duration",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "hold_time",
+        kind: "scalar",
+        localName: "hold_time",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "color",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageFade>): CUserMessageFade {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageFade>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageFade,
+  ): CUserMessageFade {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 duration */ 1:
+          message.duration = reader.uint32();
+          break;
+        case /* optional uint32 hold_time */ 2:
+          message.hold_time = reader.uint32();
+          break;
+        case /* optional uint32 flags */ 3:
+          message.flags = reader.uint32();
+          break;
+        case /* optional fixed32 color */ 4:
+          message.color = reader.fixed32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CUserMessageFade, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional uint32 duration = 1; */
+    if (message.duration !== undefined) writer.tag(1, WireType.Varint).uint32(message.duration);
+    /* optional uint32 hold_time = 2; */
+    if (message.hold_time !== undefined) writer.tag(2, WireType.Varint).uint32(message.hold_time);
+    /* optional uint32 flags = 3; */
+    if (message.flags !== undefined) writer.tag(3, WireType.Varint).uint32(message.flags);
+    /* optional fixed32 color = 4; */
+    if (message.color !== undefined) writer.tag(4, WireType.Bit32).fixed32(message.color);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageFade
@@ -3088,89 +3088,89 @@ class CUserMessageFade$Type extends MessageType<CUserMessageFade> {
 export const CUserMessageFade = new CUserMessageFade$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageShake$Type extends MessageType<CUserMessageShake> {
-	constructor() {
-		super("CUserMessageShake", [
-			{
-				no: 1,
-				name: "command",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "amplitude",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "frequency",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "duration",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageShake>): CUserMessageShake {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageShake>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageShake,
-	): CUserMessageShake {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 command */ 1:
-					message.command = reader.uint32();
-					break;
-				case /* optional float amplitude */ 2:
-					message.amplitude = reader.float();
-					break;
-				case /* optional float frequency */ 3:
-					message.frequency = reader.float();
-					break;
-				case /* optional float duration */ 4:
-					message.duration = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CUserMessageShake, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional uint32 command = 1; */
-		if (message.command !== undefined) writer.tag(1, WireType.Varint).uint32(message.command);
-		/* optional float amplitude = 2; */
-		if (message.amplitude !== undefined) writer.tag(2, WireType.Bit32).float(message.amplitude);
-		/* optional float frequency = 3; */
-		if (message.frequency !== undefined) writer.tag(3, WireType.Bit32).float(message.frequency);
-		/* optional float duration = 4; */
-		if (message.duration !== undefined) writer.tag(4, WireType.Bit32).float(message.duration);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageShake", [
+      {
+        no: 1,
+        name: "command",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "amplitude",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "frequency",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "duration",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageShake>): CUserMessageShake {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageShake>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageShake,
+  ): CUserMessageShake {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 command */ 1:
+          message.command = reader.uint32();
+          break;
+        case /* optional float amplitude */ 2:
+          message.amplitude = reader.float();
+          break;
+        case /* optional float frequency */ 3:
+          message.frequency = reader.float();
+          break;
+        case /* optional float duration */ 4:
+          message.duration = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CUserMessageShake, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional uint32 command = 1; */
+    if (message.command !== undefined) writer.tag(1, WireType.Varint).uint32(message.command);
+    /* optional float amplitude = 2; */
+    if (message.amplitude !== undefined) writer.tag(2, WireType.Bit32).float(message.amplitude);
+    /* optional float frequency = 3; */
+    if (message.frequency !== undefined) writer.tag(3, WireType.Bit32).float(message.frequency);
+    /* optional float duration = 4; */
+    if (message.duration !== undefined) writer.tag(4, WireType.Bit32).float(message.duration);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageShake
@@ -3178,63 +3178,63 @@ class CUserMessageShake$Type extends MessageType<CUserMessageShake> {
 export const CUserMessageShake = new CUserMessageShake$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageShakeDir$Type extends MessageType<CUserMessageShakeDir> {
-	constructor() {
-		super("CUserMessageShakeDir", [
-			{ no: 1, name: "shake", kind: "message", T: () => CUserMessageShake },
-			{ no: 2, name: "direction", kind: "message", T: () => CMsgVector },
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageShakeDir>): CUserMessageShakeDir {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageShakeDir>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageShakeDir,
-	): CUserMessageShakeDir {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CUserMessageShake shake */ 1:
-					message.shake = CUserMessageShake.internalBinaryRead(reader, reader.uint32(), options, message.shake);
-					break;
-				case /* optional CMsgVector direction */ 2:
-					message.direction = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.direction);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageShakeDir,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CUserMessageShake shake = 1; */
-		if (message.shake)
-			CUserMessageShake.internalBinaryWrite(
-				message.shake,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgVector direction = 2; */
-		if (message.direction)
-			CMsgVector.internalBinaryWrite(message.direction, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageShakeDir", [
+      { no: 1, name: "shake", kind: "message", T: () => CUserMessageShake },
+      { no: 2, name: "direction", kind: "message", T: () => CMsgVector },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageShakeDir>): CUserMessageShakeDir {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageShakeDir>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageShakeDir,
+  ): CUserMessageShakeDir {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CUserMessageShake shake */ 1:
+          message.shake = CUserMessageShake.internalBinaryRead(reader, reader.uint32(), options, message.shake);
+          break;
+        case /* optional CMsgVector direction */ 2:
+          message.direction = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.direction);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageShakeDir,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CUserMessageShake shake = 1; */
+    if (message.shake)
+      CUserMessageShake.internalBinaryWrite(
+        message.shake,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgVector direction = 2; */
+    if (message.direction)
+      CMsgVector.internalBinaryWrite(message.direction, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageShakeDir
@@ -3242,93 +3242,93 @@ class CUserMessageShakeDir$Type extends MessageType<CUserMessageShakeDir> {
 export const CUserMessageShakeDir = new CUserMessageShakeDir$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageWaterShake$Type extends MessageType<CUserMessageWaterShake> {
-	constructor() {
-		super("CUserMessageWaterShake", [
-			{
-				no: 1,
-				name: "command",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "amplitude",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "frequency",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "duration",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageWaterShake>): CUserMessageWaterShake {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageWaterShake>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageWaterShake,
-	): CUserMessageWaterShake {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 command */ 1:
-					message.command = reader.uint32();
-					break;
-				case /* optional float amplitude */ 2:
-					message.amplitude = reader.float();
-					break;
-				case /* optional float frequency */ 3:
-					message.frequency = reader.float();
-					break;
-				case /* optional float duration */ 4:
-					message.duration = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageWaterShake,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 command = 1; */
-		if (message.command !== undefined) writer.tag(1, WireType.Varint).uint32(message.command);
-		/* optional float amplitude = 2; */
-		if (message.amplitude !== undefined) writer.tag(2, WireType.Bit32).float(message.amplitude);
-		/* optional float frequency = 3; */
-		if (message.frequency !== undefined) writer.tag(3, WireType.Bit32).float(message.frequency);
-		/* optional float duration = 4; */
-		if (message.duration !== undefined) writer.tag(4, WireType.Bit32).float(message.duration);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageWaterShake", [
+      {
+        no: 1,
+        name: "command",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "amplitude",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "frequency",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "duration",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageWaterShake>): CUserMessageWaterShake {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageWaterShake>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageWaterShake,
+  ): CUserMessageWaterShake {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 command */ 1:
+          message.command = reader.uint32();
+          break;
+        case /* optional float amplitude */ 2:
+          message.amplitude = reader.float();
+          break;
+        case /* optional float frequency */ 3:
+          message.frequency = reader.float();
+          break;
+        case /* optional float duration */ 4:
+          message.duration = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageWaterShake,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 command = 1; */
+    if (message.command !== undefined) writer.tag(1, WireType.Varint).uint32(message.command);
+    /* optional float amplitude = 2; */
+    if (message.amplitude !== undefined) writer.tag(2, WireType.Bit32).float(message.amplitude);
+    /* optional float frequency = 3; */
+    if (message.frequency !== undefined) writer.tag(3, WireType.Bit32).float(message.frequency);
+    /* optional float duration = 4; */
+    if (message.duration !== undefined) writer.tag(4, WireType.Bit32).float(message.duration);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageWaterShake
@@ -3336,101 +3336,101 @@ class CUserMessageWaterShake$Type extends MessageType<CUserMessageWaterShake> {
 export const CUserMessageWaterShake = new CUserMessageWaterShake$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageScreenTilt$Type extends MessageType<CUserMessageScreenTilt> {
-	constructor() {
-		super("CUserMessageScreenTilt", [
-			{
-				no: 1,
-				name: "command",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "ease_in_out",
-				kind: "scalar",
-				localName: "ease_in_out",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{ no: 3, name: "angle", kind: "message", T: () => CMsgVector },
-			{
-				no: 4,
-				name: "duration",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 5,
-				name: "time",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageScreenTilt>): CUserMessageScreenTilt {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageScreenTilt>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageScreenTilt,
-	): CUserMessageScreenTilt {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 command */ 1:
-					message.command = reader.uint32();
-					break;
-				case /* optional bool ease_in_out */ 2:
-					message.ease_in_out = reader.bool();
-					break;
-				case /* optional CMsgVector angle */ 3:
-					message.angle = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.angle);
-					break;
-				case /* optional float duration */ 4:
-					message.duration = reader.float();
-					break;
-				case /* optional float time */ 5:
-					message.time = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageScreenTilt,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 command = 1; */
-		if (message.command !== undefined) writer.tag(1, WireType.Varint).uint32(message.command);
-		/* optional bool ease_in_out = 2; */
-		if (message.ease_in_out !== undefined) writer.tag(2, WireType.Varint).bool(message.ease_in_out);
-		/* optional CMsgVector angle = 3; */
-		if (message.angle)
-			CMsgVector.internalBinaryWrite(message.angle, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
-		/* optional float duration = 4; */
-		if (message.duration !== undefined) writer.tag(4, WireType.Bit32).float(message.duration);
-		/* optional float time = 5; */
-		if (message.time !== undefined) writer.tag(5, WireType.Bit32).float(message.time);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageScreenTilt", [
+      {
+        no: 1,
+        name: "command",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "ease_in_out",
+        kind: "scalar",
+        localName: "ease_in_out",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      { no: 3, name: "angle", kind: "message", T: () => CMsgVector },
+      {
+        no: 4,
+        name: "duration",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 5,
+        name: "time",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageScreenTilt>): CUserMessageScreenTilt {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageScreenTilt>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageScreenTilt,
+  ): CUserMessageScreenTilt {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 command */ 1:
+          message.command = reader.uint32();
+          break;
+        case /* optional bool ease_in_out */ 2:
+          message.ease_in_out = reader.bool();
+          break;
+        case /* optional CMsgVector angle */ 3:
+          message.angle = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.angle);
+          break;
+        case /* optional float duration */ 4:
+          message.duration = reader.float();
+          break;
+        case /* optional float time */ 5:
+          message.time = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageScreenTilt,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 command = 1; */
+    if (message.command !== undefined) writer.tag(1, WireType.Varint).uint32(message.command);
+    /* optional bool ease_in_out = 2; */
+    if (message.ease_in_out !== undefined) writer.tag(2, WireType.Varint).bool(message.ease_in_out);
+    /* optional CMsgVector angle = 3; */
+    if (message.angle)
+      CMsgVector.internalBinaryWrite(message.angle, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
+    /* optional float duration = 4; */
+    if (message.duration !== undefined) writer.tag(4, WireType.Bit32).float(message.duration);
+    /* optional float time = 5; */
+    if (message.time !== undefined) writer.tag(5, WireType.Bit32).float(message.time);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageScreenTilt
@@ -3438,77 +3438,77 @@ class CUserMessageScreenTilt$Type extends MessageType<CUserMessageScreenTilt> {
 export const CUserMessageScreenTilt = new CUserMessageScreenTilt$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageSayText$Type extends MessageType<CUserMessageSayText> {
-	constructor() {
-		super("CUserMessageSayText", [
-			{
-				no: 1,
-				name: "playerindex",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "text",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "chat",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageSayText>): CUserMessageSayText {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageSayText>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageSayText,
-	): CUserMessageSayText {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 playerindex */ 1:
-					message.playerindex = reader.int32();
-					break;
-				case /* optional string text */ 2:
-					message.text = reader.string();
-					break;
-				case /* optional bool chat */ 3:
-					message.chat = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CUserMessageSayText, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional int32 playerindex = 1; */
-		if (message.playerindex !== undefined) writer.tag(1, WireType.Varint).int32(message.playerindex);
-		/* optional string text = 2; */
-		if (message.text !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.text);
-		/* optional bool chat = 3; */
-		if (message.chat !== undefined) writer.tag(3, WireType.Varint).bool(message.chat);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageSayText", [
+      {
+        no: 1,
+        name: "playerindex",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "text",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "chat",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageSayText>): CUserMessageSayText {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageSayText>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageSayText,
+  ): CUserMessageSayText {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 playerindex */ 1:
+          message.playerindex = reader.int32();
+          break;
+        case /* optional string text */ 2:
+          message.text = reader.string();
+          break;
+        case /* optional bool chat */ 3:
+          message.chat = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CUserMessageSayText, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional int32 playerindex = 1; */
+    if (message.playerindex !== undefined) writer.tag(1, WireType.Varint).int32(message.playerindex);
+    /* optional string text = 2; */
+    if (message.text !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.text);
+    /* optional bool chat = 3; */
+    if (message.chat !== undefined) writer.tag(3, WireType.Varint).bool(message.chat);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageSayText
@@ -3516,129 +3516,129 @@ class CUserMessageSayText$Type extends MessageType<CUserMessageSayText> {
 export const CUserMessageSayText = new CUserMessageSayText$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageSayText2$Type extends MessageType<CUserMessageSayText2> {
-	constructor() {
-		super("CUserMessageSayText2", [
-			{
-				no: 1,
-				name: "entityindex",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "chat",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 3,
-				name: "messagename",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 4,
-				name: "param1",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 5,
-				name: "param2",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 6,
-				name: "param3",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 7,
-				name: "param4",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageSayText2>): CUserMessageSayText2 {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageSayText2>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageSayText2,
-	): CUserMessageSayText2 {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 entityindex */ 1:
-					message.entityindex = reader.int32();
-					break;
-				case /* optional bool chat */ 2:
-					message.chat = reader.bool();
-					break;
-				case /* optional string messagename */ 3:
-					message.messagename = reader.string();
-					break;
-				case /* optional string param1 */ 4:
-					message.param1 = reader.string();
-					break;
-				case /* optional string param2 */ 5:
-					message.param2 = reader.string();
-					break;
-				case /* optional string param3 */ 6:
-					message.param3 = reader.string();
-					break;
-				case /* optional string param4 */ 7:
-					message.param4 = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageSayText2,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 entityindex = 1; */
-		if (message.entityindex !== undefined) writer.tag(1, WireType.Varint).int32(message.entityindex);
-		/* optional bool chat = 2; */
-		if (message.chat !== undefined) writer.tag(2, WireType.Varint).bool(message.chat);
-		/* optional string messagename = 3; */
-		if (message.messagename !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.messagename);
-		/* optional string param1 = 4; */
-		if (message.param1 !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.param1);
-		/* optional string param2 = 5; */
-		if (message.param2 !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.param2);
-		/* optional string param3 = 6; */
-		if (message.param3 !== undefined) writer.tag(6, WireType.LengthDelimited).string(message.param3);
-		/* optional string param4 = 7; */
-		if (message.param4 !== undefined) writer.tag(7, WireType.LengthDelimited).string(message.param4);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageSayText2", [
+      {
+        no: 1,
+        name: "entityindex",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "chat",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 3,
+        name: "messagename",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 4,
+        name: "param1",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 5,
+        name: "param2",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 6,
+        name: "param3",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 7,
+        name: "param4",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageSayText2>): CUserMessageSayText2 {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageSayText2>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageSayText2,
+  ): CUserMessageSayText2 {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 entityindex */ 1:
+          message.entityindex = reader.int32();
+          break;
+        case /* optional bool chat */ 2:
+          message.chat = reader.bool();
+          break;
+        case /* optional string messagename */ 3:
+          message.messagename = reader.string();
+          break;
+        case /* optional string param1 */ 4:
+          message.param1 = reader.string();
+          break;
+        case /* optional string param2 */ 5:
+          message.param2 = reader.string();
+          break;
+        case /* optional string param3 */ 6:
+          message.param3 = reader.string();
+          break;
+        case /* optional string param4 */ 7:
+          message.param4 = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageSayText2,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 entityindex = 1; */
+    if (message.entityindex !== undefined) writer.tag(1, WireType.Varint).int32(message.entityindex);
+    /* optional bool chat = 2; */
+    if (message.chat !== undefined) writer.tag(2, WireType.Varint).bool(message.chat);
+    /* optional string messagename = 3; */
+    if (message.messagename !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.messagename);
+    /* optional string param1 = 4; */
+    if (message.param1 !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.param1);
+    /* optional string param2 = 5; */
+    if (message.param2 !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.param2);
+    /* optional string param3 = 6; */
+    if (message.param3 !== undefined) writer.tag(6, WireType.LengthDelimited).string(message.param3);
+    /* optional string param4 = 7; */
+    if (message.param4 !== undefined) writer.tag(7, WireType.LengthDelimited).string(message.param4);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageSayText2
@@ -3646,125 +3646,125 @@ class CUserMessageSayText2$Type extends MessageType<CUserMessageSayText2> {
 export const CUserMessageSayText2 = new CUserMessageSayText2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageHudMsg$Type extends MessageType<CUserMessageHudMsg> {
-	constructor() {
-		super("CUserMessageHudMsg", [
-			{
-				no: 1,
-				name: "channel",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "x",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "y",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "color1",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 5,
-				name: "color2",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 6,
-				name: "effect",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 11,
-				name: "message",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageHudMsg>): CUserMessageHudMsg {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageHudMsg>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageHudMsg,
-	): CUserMessageHudMsg {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 channel */ 1:
-					message.channel = reader.uint32();
-					break;
-				case /* optional float x */ 2:
-					message.x = reader.float();
-					break;
-				case /* optional float y */ 3:
-					message.y = reader.float();
-					break;
-				case /* optional fixed32 color1 */ 4:
-					message.color1 = reader.fixed32();
-					break;
-				case /* optional fixed32 color2 */ 5:
-					message.color2 = reader.fixed32();
-					break;
-				case /* optional uint32 effect */ 6:
-					message.effect = reader.uint32();
-					break;
-				case /* optional string message */ 11:
-					message.message = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CUserMessageHudMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional uint32 channel = 1; */
-		if (message.channel !== undefined) writer.tag(1, WireType.Varint).uint32(message.channel);
-		/* optional float x = 2; */
-		if (message.x !== undefined) writer.tag(2, WireType.Bit32).float(message.x);
-		/* optional float y = 3; */
-		if (message.y !== undefined) writer.tag(3, WireType.Bit32).float(message.y);
-		/* optional fixed32 color1 = 4; */
-		if (message.color1 !== undefined) writer.tag(4, WireType.Bit32).fixed32(message.color1);
-		/* optional fixed32 color2 = 5; */
-		if (message.color2 !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.color2);
-		/* optional uint32 effect = 6; */
-		if (message.effect !== undefined) writer.tag(6, WireType.Varint).uint32(message.effect);
-		/* optional string message = 11; */
-		if (message.message !== undefined) writer.tag(11, WireType.LengthDelimited).string(message.message);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageHudMsg", [
+      {
+        no: 1,
+        name: "channel",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "x",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "y",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "color1",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 5,
+        name: "color2",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 6,
+        name: "effect",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 11,
+        name: "message",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageHudMsg>): CUserMessageHudMsg {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageHudMsg>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageHudMsg,
+  ): CUserMessageHudMsg {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 channel */ 1:
+          message.channel = reader.uint32();
+          break;
+        case /* optional float x */ 2:
+          message.x = reader.float();
+          break;
+        case /* optional float y */ 3:
+          message.y = reader.float();
+          break;
+        case /* optional fixed32 color1 */ 4:
+          message.color1 = reader.fixed32();
+          break;
+        case /* optional fixed32 color2 */ 5:
+          message.color2 = reader.fixed32();
+          break;
+        case /* optional uint32 effect */ 6:
+          message.effect = reader.uint32();
+          break;
+        case /* optional string message */ 11:
+          message.message = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CUserMessageHudMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional uint32 channel = 1; */
+    if (message.channel !== undefined) writer.tag(1, WireType.Varint).uint32(message.channel);
+    /* optional float x = 2; */
+    if (message.x !== undefined) writer.tag(2, WireType.Bit32).float(message.x);
+    /* optional float y = 3; */
+    if (message.y !== undefined) writer.tag(3, WireType.Bit32).float(message.y);
+    /* optional fixed32 color1 = 4; */
+    if (message.color1 !== undefined) writer.tag(4, WireType.Bit32).fixed32(message.color1);
+    /* optional fixed32 color2 = 5; */
+    if (message.color2 !== undefined) writer.tag(5, WireType.Bit32).fixed32(message.color2);
+    /* optional uint32 effect = 6; */
+    if (message.effect !== undefined) writer.tag(6, WireType.Varint).uint32(message.effect);
+    /* optional string message = 11; */
+    if (message.message !== undefined) writer.tag(11, WireType.LengthDelimited).string(message.message);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageHudMsg
@@ -3772,53 +3772,53 @@ class CUserMessageHudMsg$Type extends MessageType<CUserMessageHudMsg> {
 export const CUserMessageHudMsg = new CUserMessageHudMsg$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageHudText$Type extends MessageType<CUserMessageHudText> {
-	constructor() {
-		super("CUserMessageHudText", [
-			{
-				no: 1,
-				name: "message",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageHudText>): CUserMessageHudText {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageHudText>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageHudText,
-	): CUserMessageHudText {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string message */ 1:
-					message.message = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CUserMessageHudText, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional string message = 1; */
-		if (message.message !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.message);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageHudText", [
+      {
+        no: 1,
+        name: "message",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageHudText>): CUserMessageHudText {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageHudText>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageHudText,
+  ): CUserMessageHudText {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string message */ 1:
+          message.message = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CUserMessageHudText, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional string message = 1; */
+    if (message.message !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.message);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageHudText
@@ -3826,66 +3826,66 @@ class CUserMessageHudText$Type extends MessageType<CUserMessageHudText> {
 export const CUserMessageHudText = new CUserMessageHudText$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageTextMsg$Type extends MessageType<CUserMessageTextMsg> {
-	constructor() {
-		super("CUserMessageTextMsg", [
-			{
-				no: 1,
-				name: "dest",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "param",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageTextMsg>): CUserMessageTextMsg {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.param = [];
-		if (value !== undefined) reflectionMergePartial<CUserMessageTextMsg>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageTextMsg,
-	): CUserMessageTextMsg {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 dest */ 1:
-					message.dest = reader.uint32();
-					break;
-				case /* repeated string param */ 2:
-					message.param.push(reader.string());
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CUserMessageTextMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional uint32 dest = 1; */
-		if (message.dest !== undefined) writer.tag(1, WireType.Varint).uint32(message.dest);
-		/* repeated string param = 2; */
-		for (let i = 0; i < message.param.length; i++) writer.tag(2, WireType.LengthDelimited).string(message.param[i]);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageTextMsg", [
+      {
+        no: 1,
+        name: "dest",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "param",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageTextMsg>): CUserMessageTextMsg {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.param = [];
+    if (value !== undefined) reflectionMergePartial<CUserMessageTextMsg>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageTextMsg,
+  ): CUserMessageTextMsg {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 dest */ 1:
+          message.dest = reader.uint32();
+          break;
+        case /* repeated string param */ 2:
+          message.param.push(reader.string());
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CUserMessageTextMsg, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional uint32 dest = 1; */
+    if (message.dest !== undefined) writer.tag(1, WireType.Varint).uint32(message.dest);
+    /* repeated string param = 2; */
+    for (let i = 0; i < message.param.length; i++) writer.tag(2, WireType.LengthDelimited).string(message.param[i]);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageTextMsg
@@ -3893,31 +3893,31 @@ class CUserMessageTextMsg$Type extends MessageType<CUserMessageTextMsg> {
 export const CUserMessageTextMsg = new CUserMessageTextMsg$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageGameTitle$Type extends MessageType<CUserMessageGameTitle> {
-	constructor() {
-		super("CUserMessageGameTitle", []);
-	}
-	create(value?: PartialMessage<CUserMessageGameTitle>): CUserMessageGameTitle {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageGameTitle>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageGameTitle,
-	): CUserMessageGameTitle {
-		return target ?? this.create();
-	}
-	internalBinaryWrite(
-		message: CUserMessageGameTitle,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageGameTitle", []);
+  }
+  create(value?: PartialMessage<CUserMessageGameTitle>): CUserMessageGameTitle {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageGameTitle>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageGameTitle,
+  ): CUserMessageGameTitle {
+    return target ?? this.create();
+  }
+  internalBinaryWrite(
+    message: CUserMessageGameTitle,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageGameTitle
@@ -3925,31 +3925,31 @@ class CUserMessageGameTitle$Type extends MessageType<CUserMessageGameTitle> {
 export const CUserMessageGameTitle = new CUserMessageGameTitle$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageResetHUD$Type extends MessageType<CUserMessageResetHUD> {
-	constructor() {
-		super("CUserMessageResetHUD", []);
-	}
-	create(value?: PartialMessage<CUserMessageResetHUD>): CUserMessageResetHUD {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageResetHUD>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageResetHUD,
-	): CUserMessageResetHUD {
-		return target ?? this.create();
-	}
-	internalBinaryWrite(
-		message: CUserMessageResetHUD,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageResetHUD", []);
+  }
+  create(value?: PartialMessage<CUserMessageResetHUD>): CUserMessageResetHUD {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageResetHUD>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageResetHUD,
+  ): CUserMessageResetHUD {
+    return target ?? this.create();
+  }
+  internalBinaryWrite(
+    message: CUserMessageResetHUD,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageResetHUD
@@ -3957,69 +3957,69 @@ class CUserMessageResetHUD$Type extends MessageType<CUserMessageResetHUD> {
 export const CUserMessageResetHUD = new CUserMessageResetHUD$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageSendAudio$Type extends MessageType<CUserMessageSendAudio> {
-	constructor() {
-		super("CUserMessageSendAudio", [
-			{
-				no: 1,
-				name: "soundname",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "stop",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageSendAudio>): CUserMessageSendAudio {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageSendAudio>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageSendAudio,
-	): CUserMessageSendAudio {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string soundname */ 1:
-					message.soundname = reader.string();
-					break;
-				case /* optional bool stop */ 2:
-					message.stop = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageSendAudio,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string soundname = 1; */
-		if (message.soundname !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.soundname);
-		/* optional bool stop = 2; */
-		if (message.stop !== undefined) writer.tag(2, WireType.Varint).bool(message.stop);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageSendAudio", [
+      {
+        no: 1,
+        name: "soundname",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "stop",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageSendAudio>): CUserMessageSendAudio {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageSendAudio>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageSendAudio,
+  ): CUserMessageSendAudio {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string soundname */ 1:
+          message.soundname = reader.string();
+          break;
+        case /* optional bool stop */ 2:
+          message.stop = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageSendAudio,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string soundname = 1; */
+    if (message.soundname !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.soundname);
+    /* optional bool stop = 2; */
+    if (message.stop !== undefined) writer.tag(2, WireType.Varint).bool(message.stop);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageSendAudio
@@ -4027,96 +4027,96 @@ class CUserMessageSendAudio$Type extends MessageType<CUserMessageSendAudio> {
 export const CUserMessageSendAudio = new CUserMessageSendAudio$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageAudioParameter$Type extends MessageType<CUserMessageAudioParameter> {
-	constructor() {
-		super("CUserMessageAudioParameter", [
-			{
-				no: 1,
-				name: "parameter_type",
-				kind: "scalar",
-				localName: "parameter_type",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "name_hash_code",
-				kind: "scalar",
-				localName: "name_hash_code",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "value",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "int_value",
-				kind: "scalar",
-				localName: "int_value",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageAudioParameter>): CUserMessageAudioParameter {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageAudioParameter>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageAudioParameter,
-	): CUserMessageAudioParameter {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 parameter_type */ 1:
-					message.parameter_type = reader.uint32();
-					break;
-				case /* optional uint32 name_hash_code */ 2:
-					message.name_hash_code = reader.uint32();
-					break;
-				case /* optional float value */ 3:
-					message.value = reader.float();
-					break;
-				case /* optional uint32 int_value */ 4:
-					message.int_value = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageAudioParameter,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 parameter_type = 1; */
-		if (message.parameter_type !== undefined) writer.tag(1, WireType.Varint).uint32(message.parameter_type);
-		/* optional uint32 name_hash_code = 2; */
-		if (message.name_hash_code !== undefined) writer.tag(2, WireType.Varint).uint32(message.name_hash_code);
-		/* optional float value = 3; */
-		if (message.value !== undefined) writer.tag(3, WireType.Bit32).float(message.value);
-		/* optional uint32 int_value = 4; */
-		if (message.int_value !== undefined) writer.tag(4, WireType.Varint).uint32(message.int_value);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageAudioParameter", [
+      {
+        no: 1,
+        name: "parameter_type",
+        kind: "scalar",
+        localName: "parameter_type",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "name_hash_code",
+        kind: "scalar",
+        localName: "name_hash_code",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "value",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "int_value",
+        kind: "scalar",
+        localName: "int_value",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageAudioParameter>): CUserMessageAudioParameter {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageAudioParameter>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageAudioParameter,
+  ): CUserMessageAudioParameter {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 parameter_type */ 1:
+          message.parameter_type = reader.uint32();
+          break;
+        case /* optional uint32 name_hash_code */ 2:
+          message.name_hash_code = reader.uint32();
+          break;
+        case /* optional float value */ 3:
+          message.value = reader.float();
+          break;
+        case /* optional uint32 int_value */ 4:
+          message.int_value = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageAudioParameter,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 parameter_type = 1; */
+    if (message.parameter_type !== undefined) writer.tag(1, WireType.Varint).uint32(message.parameter_type);
+    /* optional uint32 name_hash_code = 2; */
+    if (message.name_hash_code !== undefined) writer.tag(2, WireType.Varint).uint32(message.name_hash_code);
+    /* optional float value = 3; */
+    if (message.value !== undefined) writer.tag(3, WireType.Bit32).float(message.value);
+    /* optional uint32 int_value = 4; */
+    if (message.int_value !== undefined) writer.tag(4, WireType.Varint).uint32(message.int_value);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageAudioParameter
@@ -4124,91 +4124,91 @@ class CUserMessageAudioParameter$Type extends MessageType<CUserMessageAudioParam
 export const CUserMessageAudioParameter = new CUserMessageAudioParameter$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageVoiceMask$Type extends MessageType<CUserMessageVoiceMask> {
-	constructor() {
-		super("CUserMessageVoiceMask", [
-			{
-				no: 1,
-				name: "gamerules_masks",
-				kind: "scalar",
-				localName: "gamerules_masks",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "ban_masks",
-				kind: "scalar",
-				localName: "ban_masks",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "mod_enable",
-				kind: "scalar",
-				localName: "mod_enable",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageVoiceMask>): CUserMessageVoiceMask {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.gamerules_masks = [];
-		message.ban_masks = [];
-		if (value !== undefined) reflectionMergePartial<CUserMessageVoiceMask>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageVoiceMask,
-	): CUserMessageVoiceMask {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated uint32 gamerules_masks */ 1:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.gamerules_masks.push(reader.uint32());
-					else message.gamerules_masks.push(reader.uint32());
-					break;
-				case /* repeated uint32 ban_masks */ 2:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.ban_masks.push(reader.uint32());
-					else message.ban_masks.push(reader.uint32());
-					break;
-				case /* optional bool mod_enable */ 3:
-					message.mod_enable = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageVoiceMask,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated uint32 gamerules_masks = 1; */
-		for (let i = 0; i < message.gamerules_masks.length; i++)
-			writer.tag(1, WireType.Varint).uint32(message.gamerules_masks[i]);
-		/* repeated uint32 ban_masks = 2; */
-		for (let i = 0; i < message.ban_masks.length; i++) writer.tag(2, WireType.Varint).uint32(message.ban_masks[i]);
-		/* optional bool mod_enable = 3; */
-		if (message.mod_enable !== undefined) writer.tag(3, WireType.Varint).bool(message.mod_enable);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageVoiceMask", [
+      {
+        no: 1,
+        name: "gamerules_masks",
+        kind: "scalar",
+        localName: "gamerules_masks",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "ban_masks",
+        kind: "scalar",
+        localName: "ban_masks",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "mod_enable",
+        kind: "scalar",
+        localName: "mod_enable",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageVoiceMask>): CUserMessageVoiceMask {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.gamerules_masks = [];
+    message.ban_masks = [];
+    if (value !== undefined) reflectionMergePartial<CUserMessageVoiceMask>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageVoiceMask,
+  ): CUserMessageVoiceMask {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated uint32 gamerules_masks */ 1:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.gamerules_masks.push(reader.uint32());
+          else message.gamerules_masks.push(reader.uint32());
+          break;
+        case /* repeated uint32 ban_masks */ 2:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.ban_masks.push(reader.uint32());
+          else message.ban_masks.push(reader.uint32());
+          break;
+        case /* optional bool mod_enable */ 3:
+          message.mod_enable = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageVoiceMask,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated uint32 gamerules_masks = 1; */
+    for (let i = 0; i < message.gamerules_masks.length; i++)
+      writer.tag(1, WireType.Varint).uint32(message.gamerules_masks[i]);
+    /* repeated uint32 ban_masks = 2; */
+    for (let i = 0; i < message.ban_masks.length; i++) writer.tag(2, WireType.Varint).uint32(message.ban_masks[i]);
+    /* optional bool mod_enable = 3; */
+    if (message.mod_enable !== undefined) writer.tag(3, WireType.Varint).bool(message.mod_enable);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageVoiceMask
@@ -4216,31 +4216,31 @@ class CUserMessageVoiceMask$Type extends MessageType<CUserMessageVoiceMask> {
 export const CUserMessageVoiceMask = new CUserMessageVoiceMask$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageRequestState$Type extends MessageType<CUserMessageRequestState> {
-	constructor() {
-		super("CUserMessageRequestState", []);
-	}
-	create(value?: PartialMessage<CUserMessageRequestState>): CUserMessageRequestState {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageRequestState>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageRequestState,
-	): CUserMessageRequestState {
-		return target ?? this.create();
-	}
-	internalBinaryWrite(
-		message: CUserMessageRequestState,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageRequestState", []);
+  }
+  create(value?: PartialMessage<CUserMessageRequestState>): CUserMessageRequestState {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageRequestState>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageRequestState,
+  ): CUserMessageRequestState {
+    return target ?? this.create();
+  }
+  internalBinaryWrite(
+    message: CUserMessageRequestState,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageRequestState
@@ -4248,77 +4248,77 @@ class CUserMessageRequestState$Type extends MessageType<CUserMessageRequestState
 export const CUserMessageRequestState = new CUserMessageRequestState$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageRumble$Type extends MessageType<CUserMessageRumble> {
-	constructor() {
-		super("CUserMessageRumble", [
-			{
-				no: 1,
-				name: "index",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "data",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageRumble>): CUserMessageRumble {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageRumble>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageRumble,
-	): CUserMessageRumble {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 index */ 1:
-					message.index = reader.int32();
-					break;
-				case /* optional int32 data */ 2:
-					message.data = reader.int32();
-					break;
-				case /* optional int32 flags */ 3:
-					message.flags = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CUserMessageRumble, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional int32 index = 1; */
-		if (message.index !== undefined) writer.tag(1, WireType.Varint).int32(message.index);
-		/* optional int32 data = 2; */
-		if (message.data !== undefined) writer.tag(2, WireType.Varint).int32(message.data);
-		/* optional int32 flags = 3; */
-		if (message.flags !== undefined) writer.tag(3, WireType.Varint).int32(message.flags);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageRumble", [
+      {
+        no: 1,
+        name: "index",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "data",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageRumble>): CUserMessageRumble {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageRumble>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageRumble,
+  ): CUserMessageRumble {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 index */ 1:
+          message.index = reader.int32();
+          break;
+        case /* optional int32 data */ 2:
+          message.data = reader.int32();
+          break;
+        case /* optional int32 flags */ 3:
+          message.flags = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CUserMessageRumble, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional int32 index = 1; */
+    if (message.index !== undefined) writer.tag(1, WireType.Varint).int32(message.index);
+    /* optional int32 data = 2; */
+    if (message.data !== undefined) writer.tag(2, WireType.Varint).int32(message.data);
+    /* optional int32 flags = 3; */
+    if (message.flags !== undefined) writer.tag(3, WireType.Varint).int32(message.flags);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageRumble
@@ -4326,81 +4326,81 @@ class CUserMessageRumble$Type extends MessageType<CUserMessageRumble> {
 export const CUserMessageRumble = new CUserMessageRumble$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageSayTextChannel$Type extends MessageType<CUserMessageSayTextChannel> {
-	constructor() {
-		super("CUserMessageSayTextChannel", [
-			{
-				no: 1,
-				name: "player",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "channel",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "text",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageSayTextChannel>): CUserMessageSayTextChannel {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageSayTextChannel>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageSayTextChannel,
-	): CUserMessageSayTextChannel {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 player */ 1:
-					message.player = reader.int32();
-					break;
-				case /* optional int32 channel */ 2:
-					message.channel = reader.int32();
-					break;
-				case /* optional string text */ 3:
-					message.text = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageSayTextChannel,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 player = 1; */
-		if (message.player !== undefined) writer.tag(1, WireType.Varint).int32(message.player);
-		/* optional int32 channel = 2; */
-		if (message.channel !== undefined) writer.tag(2, WireType.Varint).int32(message.channel);
-		/* optional string text = 3; */
-		if (message.text !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.text);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageSayTextChannel", [
+      {
+        no: 1,
+        name: "player",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "channel",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "text",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageSayTextChannel>): CUserMessageSayTextChannel {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageSayTextChannel>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageSayTextChannel,
+  ): CUserMessageSayTextChannel {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 player */ 1:
+          message.player = reader.int32();
+          break;
+        case /* optional int32 channel */ 2:
+          message.channel = reader.int32();
+          break;
+        case /* optional string text */ 3:
+          message.text = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageSayTextChannel,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 player = 1; */
+    if (message.player !== undefined) writer.tag(1, WireType.Varint).int32(message.player);
+    /* optional int32 channel = 2; */
+    if (message.channel !== undefined) writer.tag(2, WireType.Varint).int32(message.channel);
+    /* optional string text = 3; */
+    if (message.text !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.text);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageSayTextChannel
@@ -4408,120 +4408,120 @@ class CUserMessageSayTextChannel$Type extends MessageType<CUserMessageSayTextCha
 export const CUserMessageSayTextChannel = new CUserMessageSayTextChannel$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageColoredText$Type extends MessageType<CUserMessageColoredText> {
-	constructor() {
-		super("CUserMessageColoredText", [
-			{
-				no: 1,
-				name: "color",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "text",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "reset",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "context_player_slot",
-				kind: "scalar",
-				localName: "context_player_slot",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "context_value",
-				kind: "scalar",
-				localName: "context_value",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 6,
-				name: "context_team_id",
-				kind: "scalar",
-				localName: "context_team_id",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageColoredText>): CUserMessageColoredText {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageColoredText>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageColoredText,
-	): CUserMessageColoredText {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 color */ 1:
-					message.color = reader.uint32();
-					break;
-				case /* optional string text */ 2:
-					message.text = reader.string();
-					break;
-				case /* optional bool reset */ 3:
-					message.reset = reader.bool();
-					break;
-				case /* optional int32 context_player_slot */ 4:
-					message.context_player_slot = reader.int32();
-					break;
-				case /* optional int32 context_value */ 5:
-					message.context_value = reader.int32();
-					break;
-				case /* optional int32 context_team_id */ 6:
-					message.context_team_id = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageColoredText,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 color = 1; */
-		if (message.color !== undefined) writer.tag(1, WireType.Varint).uint32(message.color);
-		/* optional string text = 2; */
-		if (message.text !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.text);
-		/* optional bool reset = 3; */
-		if (message.reset !== undefined) writer.tag(3, WireType.Varint).bool(message.reset);
-		/* optional int32 context_player_slot = 4; */
-		if (message.context_player_slot !== undefined) writer.tag(4, WireType.Varint).int32(message.context_player_slot);
-		/* optional int32 context_value = 5; */
-		if (message.context_value !== undefined) writer.tag(5, WireType.Varint).int32(message.context_value);
-		/* optional int32 context_team_id = 6; */
-		if (message.context_team_id !== undefined) writer.tag(6, WireType.Varint).int32(message.context_team_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageColoredText", [
+      {
+        no: 1,
+        name: "color",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "text",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "reset",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "context_player_slot",
+        kind: "scalar",
+        localName: "context_player_slot",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "context_value",
+        kind: "scalar",
+        localName: "context_value",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 6,
+        name: "context_team_id",
+        kind: "scalar",
+        localName: "context_team_id",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageColoredText>): CUserMessageColoredText {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageColoredText>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageColoredText,
+  ): CUserMessageColoredText {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 color */ 1:
+          message.color = reader.uint32();
+          break;
+        case /* optional string text */ 2:
+          message.text = reader.string();
+          break;
+        case /* optional bool reset */ 3:
+          message.reset = reader.bool();
+          break;
+        case /* optional int32 context_player_slot */ 4:
+          message.context_player_slot = reader.int32();
+          break;
+        case /* optional int32 context_value */ 5:
+          message.context_value = reader.int32();
+          break;
+        case /* optional int32 context_team_id */ 6:
+          message.context_team_id = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageColoredText,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 color = 1; */
+    if (message.color !== undefined) writer.tag(1, WireType.Varint).uint32(message.color);
+    /* optional string text = 2; */
+    if (message.text !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.text);
+    /* optional bool reset = 3; */
+    if (message.reset !== undefined) writer.tag(3, WireType.Varint).bool(message.reset);
+    /* optional int32 context_player_slot = 4; */
+    if (message.context_player_slot !== undefined) writer.tag(4, WireType.Varint).int32(message.context_player_slot);
+    /* optional int32 context_value = 5; */
+    if (message.context_value !== undefined) writer.tag(5, WireType.Varint).int32(message.context_value);
+    /* optional int32 context_team_id = 6; */
+    if (message.context_team_id !== undefined) writer.tag(6, WireType.Varint).int32(message.context_team_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageColoredText
@@ -4529,57 +4529,57 @@ class CUserMessageColoredText$Type extends MessageType<CUserMessageColoredText> 
 export const CUserMessageColoredText = new CUserMessageColoredText$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageItemPickup$Type extends MessageType<CUserMessageItemPickup> {
-	constructor() {
-		super("CUserMessageItemPickup", [
-			{
-				no: 1,
-				name: "itemname",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageItemPickup>): CUserMessageItemPickup {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageItemPickup>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageItemPickup,
-	): CUserMessageItemPickup {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string itemname */ 1:
-					message.itemname = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageItemPickup,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string itemname = 1; */
-		if (message.itemname !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.itemname);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageItemPickup", [
+      {
+        no: 1,
+        name: "itemname",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageItemPickup>): CUserMessageItemPickup {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageItemPickup>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageItemPickup,
+  ): CUserMessageItemPickup {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string itemname */ 1:
+          message.itemname = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageItemPickup,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string itemname = 1; */
+    if (message.itemname !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.itemname);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageItemPickup
@@ -4587,58 +4587,58 @@ class CUserMessageItemPickup$Type extends MessageType<CUserMessageItemPickup> {
 export const CUserMessageItemPickup = new CUserMessageItemPickup$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageAmmoDenied$Type extends MessageType<CUserMessageAmmoDenied> {
-	constructor() {
-		super("CUserMessageAmmoDenied", [
-			{
-				no: 1,
-				name: "ammo_id",
-				kind: "scalar",
-				localName: "ammo_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageAmmoDenied>): CUserMessageAmmoDenied {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageAmmoDenied>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageAmmoDenied,
-	): CUserMessageAmmoDenied {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 ammo_id */ 1:
-					message.ammo_id = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageAmmoDenied,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 ammo_id = 1; */
-		if (message.ammo_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.ammo_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageAmmoDenied", [
+      {
+        no: 1,
+        name: "ammo_id",
+        kind: "scalar",
+        localName: "ammo_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageAmmoDenied>): CUserMessageAmmoDenied {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageAmmoDenied>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageAmmoDenied,
+  ): CUserMessageAmmoDenied {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 ammo_id */ 1:
+          message.ammo_id = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageAmmoDenied,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 ammo_id = 1; */
+    if (message.ammo_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.ammo_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageAmmoDenied
@@ -4646,93 +4646,93 @@ class CUserMessageAmmoDenied$Type extends MessageType<CUserMessageAmmoDenied> {
 export const CUserMessageAmmoDenied = new CUserMessageAmmoDenied$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageShowMenu$Type extends MessageType<CUserMessageShowMenu> {
-	constructor() {
-		super("CUserMessageShowMenu", [
-			{
-				no: 1,
-				name: "validslots",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "displaytime",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "needmore",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "menustring",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageShowMenu>): CUserMessageShowMenu {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageShowMenu>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageShowMenu,
-	): CUserMessageShowMenu {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 validslots */ 1:
-					message.validslots = reader.uint32();
-					break;
-				case /* optional uint32 displaytime */ 2:
-					message.displaytime = reader.uint32();
-					break;
-				case /* optional bool needmore */ 3:
-					message.needmore = reader.bool();
-					break;
-				case /* optional string menustring */ 4:
-					message.menustring = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageShowMenu,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 validslots = 1; */
-		if (message.validslots !== undefined) writer.tag(1, WireType.Varint).uint32(message.validslots);
-		/* optional uint32 displaytime = 2; */
-		if (message.displaytime !== undefined) writer.tag(2, WireType.Varint).uint32(message.displaytime);
-		/* optional bool needmore = 3; */
-		if (message.needmore !== undefined) writer.tag(3, WireType.Varint).bool(message.needmore);
-		/* optional string menustring = 4; */
-		if (message.menustring !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.menustring);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageShowMenu", [
+      {
+        no: 1,
+        name: "validslots",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "displaytime",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "needmore",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "menustring",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageShowMenu>): CUserMessageShowMenu {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageShowMenu>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageShowMenu,
+  ): CUserMessageShowMenu {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 validslots */ 1:
+          message.validslots = reader.uint32();
+          break;
+        case /* optional uint32 displaytime */ 2:
+          message.displaytime = reader.uint32();
+          break;
+        case /* optional bool needmore */ 3:
+          message.needmore = reader.bool();
+          break;
+        case /* optional string menustring */ 4:
+          message.menustring = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageShowMenu,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 validslots = 1; */
+    if (message.validslots !== undefined) writer.tag(1, WireType.Varint).uint32(message.validslots);
+    /* optional uint32 displaytime = 2; */
+    if (message.displaytime !== undefined) writer.tag(2, WireType.Varint).uint32(message.displaytime);
+    /* optional bool needmore = 3; */
+    if (message.needmore !== undefined) writer.tag(3, WireType.Varint).bool(message.needmore);
+    /* optional string menustring = 4; */
+    if (message.menustring !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.menustring);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageShowMenu
@@ -4740,70 +4740,70 @@ class CUserMessageShowMenu$Type extends MessageType<CUserMessageShowMenu> {
 export const CUserMessageShowMenu = new CUserMessageShowMenu$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageCreditsMsg$Type extends MessageType<CUserMessageCreditsMsg> {
-	constructor() {
-		super("CUserMessageCreditsMsg", [
-			{
-				no: 1,
-				name: "rolltype",
-				kind: "enum",
-				opt: true,
-				T: () => ["eRollType", eRollType],
-			},
-			{
-				no: 2,
-				name: "logo_length",
-				kind: "scalar",
-				localName: "logo_length",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageCreditsMsg>): CUserMessageCreditsMsg {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageCreditsMsg>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageCreditsMsg,
-	): CUserMessageCreditsMsg {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional eRollType rolltype */ 1:
-					message.rolltype = reader.int32();
-					break;
-				case /* optional float logo_length */ 2:
-					message.logo_length = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageCreditsMsg,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional eRollType rolltype = 1; */
-		if (message.rolltype !== undefined) writer.tag(1, WireType.Varint).int32(message.rolltype);
-		/* optional float logo_length = 2; */
-		if (message.logo_length !== undefined) writer.tag(2, WireType.Bit32).float(message.logo_length);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageCreditsMsg", [
+      {
+        no: 1,
+        name: "rolltype",
+        kind: "enum",
+        opt: true,
+        T: () => ["eRollType", eRollType],
+      },
+      {
+        no: 2,
+        name: "logo_length",
+        kind: "scalar",
+        localName: "logo_length",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageCreditsMsg>): CUserMessageCreditsMsg {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageCreditsMsg>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageCreditsMsg,
+  ): CUserMessageCreditsMsg {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional eRollType rolltype */ 1:
+          message.rolltype = reader.int32();
+          break;
+        case /* optional float logo_length */ 2:
+          message.logo_length = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageCreditsMsg,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional eRollType rolltype = 1; */
+    if (message.rolltype !== undefined) writer.tag(1, WireType.Varint).int32(message.rolltype);
+    /* optional float logo_length = 2; */
+    if (message.logo_length !== undefined) writer.tag(2, WireType.Bit32).float(message.logo_length);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageCreditsMsg
@@ -4811,62 +4811,62 @@ class CUserMessageCreditsMsg$Type extends MessageType<CUserMessageCreditsMsg> {
 export const CUserMessageCreditsMsg = new CUserMessageCreditsMsg$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CEntityMessagePlayJingle$Type extends MessageType<CEntityMessagePlayJingle> {
-	constructor() {
-		super("CEntityMessagePlayJingle", [
-			{
-				no: 1,
-				name: "entity_msg",
-				kind: "message",
-				localName: "entity_msg",
-				T: () => CEntityMsg,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CEntityMessagePlayJingle>): CEntityMessagePlayJingle {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CEntityMessagePlayJingle>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CEntityMessagePlayJingle,
-	): CEntityMessagePlayJingle {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CEntityMsg entity_msg */ 1:
-					message.entity_msg = CEntityMsg.internalBinaryRead(reader, reader.uint32(), options, message.entity_msg);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CEntityMessagePlayJingle,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CEntityMsg entity_msg = 1; */
-		if (message.entity_msg)
-			CEntityMsg.internalBinaryWrite(
-				message.entity_msg,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CEntityMessagePlayJingle", [
+      {
+        no: 1,
+        name: "entity_msg",
+        kind: "message",
+        localName: "entity_msg",
+        T: () => CEntityMsg,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CEntityMessagePlayJingle>): CEntityMessagePlayJingle {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CEntityMessagePlayJingle>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CEntityMessagePlayJingle,
+  ): CEntityMessagePlayJingle {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CEntityMsg entity_msg */ 1:
+          message.entity_msg = CEntityMsg.internalBinaryRead(reader, reader.uint32(), options, message.entity_msg);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CEntityMessagePlayJingle,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CEntityMsg entity_msg = 1; */
+    if (message.entity_msg)
+      CEntityMsg.internalBinaryWrite(
+        message.entity_msg,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CEntityMessagePlayJingle
@@ -4874,75 +4874,75 @@ class CEntityMessagePlayJingle$Type extends MessageType<CEntityMessagePlayJingle
 export const CEntityMessagePlayJingle = new CEntityMessagePlayJingle$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CEntityMessageScreenOverlay$Type extends MessageType<CEntityMessageScreenOverlay> {
-	constructor() {
-		super("CEntityMessageScreenOverlay", [
-			{
-				no: 1,
-				name: "start_effect",
-				kind: "scalar",
-				localName: "start_effect",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 2,
-				name: "entity_msg",
-				kind: "message",
-				localName: "entity_msg",
-				T: () => CEntityMsg,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CEntityMessageScreenOverlay>): CEntityMessageScreenOverlay {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CEntityMessageScreenOverlay>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CEntityMessageScreenOverlay,
-	): CEntityMessageScreenOverlay {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool start_effect */ 1:
-					message.start_effect = reader.bool();
-					break;
-				case /* optional CEntityMsg entity_msg */ 2:
-					message.entity_msg = CEntityMsg.internalBinaryRead(reader, reader.uint32(), options, message.entity_msg);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CEntityMessageScreenOverlay,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool start_effect = 1; */
-		if (message.start_effect !== undefined) writer.tag(1, WireType.Varint).bool(message.start_effect);
-		/* optional CEntityMsg entity_msg = 2; */
-		if (message.entity_msg)
-			CEntityMsg.internalBinaryWrite(
-				message.entity_msg,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CEntityMessageScreenOverlay", [
+      {
+        no: 1,
+        name: "start_effect",
+        kind: "scalar",
+        localName: "start_effect",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 2,
+        name: "entity_msg",
+        kind: "message",
+        localName: "entity_msg",
+        T: () => CEntityMsg,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CEntityMessageScreenOverlay>): CEntityMessageScreenOverlay {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CEntityMessageScreenOverlay>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CEntityMessageScreenOverlay,
+  ): CEntityMessageScreenOverlay {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool start_effect */ 1:
+          message.start_effect = reader.bool();
+          break;
+        case /* optional CEntityMsg entity_msg */ 2:
+          message.entity_msg = CEntityMsg.internalBinaryRead(reader, reader.uint32(), options, message.entity_msg);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CEntityMessageScreenOverlay,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool start_effect = 1; */
+    if (message.start_effect !== undefined) writer.tag(1, WireType.Varint).bool(message.start_effect);
+    /* optional CEntityMsg entity_msg = 2; */
+    if (message.entity_msg)
+      CEntityMsg.internalBinaryWrite(
+        message.entity_msg,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CEntityMessageScreenOverlay
@@ -4950,75 +4950,75 @@ class CEntityMessageScreenOverlay$Type extends MessageType<CEntityMessageScreenO
 export const CEntityMessageScreenOverlay = new CEntityMessageScreenOverlay$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CEntityMessageRemoveAllDecals$Type extends MessageType<CEntityMessageRemoveAllDecals> {
-	constructor() {
-		super("CEntityMessageRemoveAllDecals", [
-			{
-				no: 1,
-				name: "remove_decals",
-				kind: "scalar",
-				localName: "remove_decals",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 2,
-				name: "entity_msg",
-				kind: "message",
-				localName: "entity_msg",
-				T: () => CEntityMsg,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CEntityMessageRemoveAllDecals>): CEntityMessageRemoveAllDecals {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CEntityMessageRemoveAllDecals>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CEntityMessageRemoveAllDecals,
-	): CEntityMessageRemoveAllDecals {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool remove_decals */ 1:
-					message.remove_decals = reader.bool();
-					break;
-				case /* optional CEntityMsg entity_msg */ 2:
-					message.entity_msg = CEntityMsg.internalBinaryRead(reader, reader.uint32(), options, message.entity_msg);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CEntityMessageRemoveAllDecals,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool remove_decals = 1; */
-		if (message.remove_decals !== undefined) writer.tag(1, WireType.Varint).bool(message.remove_decals);
-		/* optional CEntityMsg entity_msg = 2; */
-		if (message.entity_msg)
-			CEntityMsg.internalBinaryWrite(
-				message.entity_msg,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CEntityMessageRemoveAllDecals", [
+      {
+        no: 1,
+        name: "remove_decals",
+        kind: "scalar",
+        localName: "remove_decals",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 2,
+        name: "entity_msg",
+        kind: "message",
+        localName: "entity_msg",
+        T: () => CEntityMsg,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CEntityMessageRemoveAllDecals>): CEntityMessageRemoveAllDecals {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CEntityMessageRemoveAllDecals>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CEntityMessageRemoveAllDecals,
+  ): CEntityMessageRemoveAllDecals {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool remove_decals */ 1:
+          message.remove_decals = reader.bool();
+          break;
+        case /* optional CEntityMsg entity_msg */ 2:
+          message.entity_msg = CEntityMsg.internalBinaryRead(reader, reader.uint32(), options, message.entity_msg);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CEntityMessageRemoveAllDecals,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool remove_decals = 1; */
+    if (message.remove_decals !== undefined) writer.tag(1, WireType.Varint).bool(message.remove_decals);
+    /* optional CEntityMsg entity_msg = 2; */
+    if (message.entity_msg)
+      CEntityMsg.internalBinaryWrite(
+        message.entity_msg,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CEntityMessageRemoveAllDecals
@@ -5026,69 +5026,69 @@ class CEntityMessageRemoveAllDecals$Type extends MessageType<CEntityMessageRemov
 export const CEntityMessageRemoveAllDecals = new CEntityMessageRemoveAllDecals$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CEntityMessagePropagateForce$Type extends MessageType<CEntityMessagePropagateForce> {
-	constructor() {
-		super("CEntityMessagePropagateForce", [
-			{ no: 1, name: "impulse", kind: "message", T: () => CMsgVector },
-			{
-				no: 2,
-				name: "entity_msg",
-				kind: "message",
-				localName: "entity_msg",
-				T: () => CEntityMsg,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CEntityMessagePropagateForce>): CEntityMessagePropagateForce {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CEntityMessagePropagateForce>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CEntityMessagePropagateForce,
-	): CEntityMessagePropagateForce {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector impulse */ 1:
-					message.impulse = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.impulse);
-					break;
-				case /* optional CEntityMsg entity_msg */ 2:
-					message.entity_msg = CEntityMsg.internalBinaryRead(reader, reader.uint32(), options, message.entity_msg);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CEntityMessagePropagateForce,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgVector impulse = 1; */
-		if (message.impulse)
-			CMsgVector.internalBinaryWrite(message.impulse, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CEntityMsg entity_msg = 2; */
-		if (message.entity_msg)
-			CEntityMsg.internalBinaryWrite(
-				message.entity_msg,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CEntityMessagePropagateForce", [
+      { no: 1, name: "impulse", kind: "message", T: () => CMsgVector },
+      {
+        no: 2,
+        name: "entity_msg",
+        kind: "message",
+        localName: "entity_msg",
+        T: () => CEntityMsg,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CEntityMessagePropagateForce>): CEntityMessagePropagateForce {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CEntityMessagePropagateForce>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CEntityMessagePropagateForce,
+  ): CEntityMessagePropagateForce {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector impulse */ 1:
+          message.impulse = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.impulse);
+          break;
+        case /* optional CEntityMsg entity_msg */ 2:
+          message.entity_msg = CEntityMsg.internalBinaryRead(reader, reader.uint32(), options, message.entity_msg);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CEntityMessagePropagateForce,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgVector impulse = 1; */
+    if (message.impulse)
+      CMsgVector.internalBinaryWrite(message.impulse, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CEntityMsg entity_msg = 2; */
+    if (message.entity_msg)
+      CEntityMsg.internalBinaryWrite(
+        message.entity_msg,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CEntityMessagePropagateForce
@@ -5096,141 +5096,141 @@ class CEntityMessagePropagateForce$Type extends MessageType<CEntityMessagePropag
 export const CEntityMessagePropagateForce = new CEntityMessagePropagateForce$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CEntityMessageDoSpark$Type extends MessageType<CEntityMessageDoSpark> {
-	constructor() {
-		super("CEntityMessageDoSpark", [
-			{ no: 1, name: "origin", kind: "message", T: () => CMsgVector },
-			{
-				no: 2,
-				name: "entityindex",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "radius",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "color",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 5,
-				name: "beams",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "thick",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 7,
-				name: "duration",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 8,
-				name: "entity_msg",
-				kind: "message",
-				localName: "entity_msg",
-				T: () => CEntityMsg,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CEntityMessageDoSpark>): CEntityMessageDoSpark {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CEntityMessageDoSpark>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CEntityMessageDoSpark,
-	): CEntityMessageDoSpark {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector origin */ 1:
-					message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
-					break;
-				case /* optional int32 entityindex */ 2:
-					message.entityindex = reader.int32();
-					break;
-				case /* optional float radius */ 3:
-					message.radius = reader.float();
-					break;
-				case /* optional fixed32 color */ 4:
-					message.color = reader.fixed32();
-					break;
-				case /* optional uint32 beams */ 5:
-					message.beams = reader.uint32();
-					break;
-				case /* optional float thick */ 6:
-					message.thick = reader.float();
-					break;
-				case /* optional float duration */ 7:
-					message.duration = reader.float();
-					break;
-				case /* optional CEntityMsg entity_msg */ 8:
-					message.entity_msg = CEntityMsg.internalBinaryRead(reader, reader.uint32(), options, message.entity_msg);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CEntityMessageDoSpark,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgVector origin = 1; */
-		if (message.origin)
-			CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional int32 entityindex = 2; */
-		if (message.entityindex !== undefined) writer.tag(2, WireType.Varint).int32(message.entityindex);
-		/* optional float radius = 3; */
-		if (message.radius !== undefined) writer.tag(3, WireType.Bit32).float(message.radius);
-		/* optional fixed32 color = 4; */
-		if (message.color !== undefined) writer.tag(4, WireType.Bit32).fixed32(message.color);
-		/* optional uint32 beams = 5; */
-		if (message.beams !== undefined) writer.tag(5, WireType.Varint).uint32(message.beams);
-		/* optional float thick = 6; */
-		if (message.thick !== undefined) writer.tag(6, WireType.Bit32).float(message.thick);
-		/* optional float duration = 7; */
-		if (message.duration !== undefined) writer.tag(7, WireType.Bit32).float(message.duration);
-		/* optional CEntityMsg entity_msg = 8; */
-		if (message.entity_msg)
-			CEntityMsg.internalBinaryWrite(
-				message.entity_msg,
-				writer.tag(8, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CEntityMessageDoSpark", [
+      { no: 1, name: "origin", kind: "message", T: () => CMsgVector },
+      {
+        no: 2,
+        name: "entityindex",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "radius",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "color",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 5,
+        name: "beams",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "thick",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 7,
+        name: "duration",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 8,
+        name: "entity_msg",
+        kind: "message",
+        localName: "entity_msg",
+        T: () => CEntityMsg,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CEntityMessageDoSpark>): CEntityMessageDoSpark {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CEntityMessageDoSpark>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CEntityMessageDoSpark,
+  ): CEntityMessageDoSpark {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector origin */ 1:
+          message.origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.origin);
+          break;
+        case /* optional int32 entityindex */ 2:
+          message.entityindex = reader.int32();
+          break;
+        case /* optional float radius */ 3:
+          message.radius = reader.float();
+          break;
+        case /* optional fixed32 color */ 4:
+          message.color = reader.fixed32();
+          break;
+        case /* optional uint32 beams */ 5:
+          message.beams = reader.uint32();
+          break;
+        case /* optional float thick */ 6:
+          message.thick = reader.float();
+          break;
+        case /* optional float duration */ 7:
+          message.duration = reader.float();
+          break;
+        case /* optional CEntityMsg entity_msg */ 8:
+          message.entity_msg = CEntityMsg.internalBinaryRead(reader, reader.uint32(), options, message.entity_msg);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CEntityMessageDoSpark,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgVector origin = 1; */
+    if (message.origin)
+      CMsgVector.internalBinaryWrite(message.origin, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional int32 entityindex = 2; */
+    if (message.entityindex !== undefined) writer.tag(2, WireType.Varint).int32(message.entityindex);
+    /* optional float radius = 3; */
+    if (message.radius !== undefined) writer.tag(3, WireType.Bit32).float(message.radius);
+    /* optional fixed32 color = 4; */
+    if (message.color !== undefined) writer.tag(4, WireType.Bit32).fixed32(message.color);
+    /* optional uint32 beams = 5; */
+    if (message.beams !== undefined) writer.tag(5, WireType.Varint).uint32(message.beams);
+    /* optional float thick = 6; */
+    if (message.thick !== undefined) writer.tag(6, WireType.Bit32).float(message.thick);
+    /* optional float duration = 7; */
+    if (message.duration !== undefined) writer.tag(7, WireType.Bit32).float(message.duration);
+    /* optional CEntityMsg entity_msg = 8; */
+    if (message.entity_msg)
+      CEntityMsg.internalBinaryWrite(
+        message.entity_msg,
+        writer.tag(8, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CEntityMessageDoSpark
@@ -5238,81 +5238,81 @@ class CEntityMessageDoSpark$Type extends MessageType<CEntityMessageDoSpark> {
 export const CEntityMessageDoSpark = new CEntityMessageDoSpark$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CEntityMessageFixAngle$Type extends MessageType<CEntityMessageFixAngle> {
-	constructor() {
-		super("CEntityMessageFixAngle", [
-			{
-				no: 1,
-				name: "relative",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{ no: 2, name: "angle", kind: "message", T: () => CMsgQAngle },
-			{
-				no: 3,
-				name: "entity_msg",
-				kind: "message",
-				localName: "entity_msg",
-				T: () => CEntityMsg,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CEntityMessageFixAngle>): CEntityMessageFixAngle {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CEntityMessageFixAngle>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CEntityMessageFixAngle,
-	): CEntityMessageFixAngle {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool relative */ 1:
-					message.relative = reader.bool();
-					break;
-				case /* optional CMsgQAngle angle */ 2:
-					message.angle = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angle);
-					break;
-				case /* optional CEntityMsg entity_msg */ 3:
-					message.entity_msg = CEntityMsg.internalBinaryRead(reader, reader.uint32(), options, message.entity_msg);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CEntityMessageFixAngle,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool relative = 1; */
-		if (message.relative !== undefined) writer.tag(1, WireType.Varint).bool(message.relative);
-		/* optional CMsgQAngle angle = 2; */
-		if (message.angle)
-			CMsgQAngle.internalBinaryWrite(message.angle, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional CEntityMsg entity_msg = 3; */
-		if (message.entity_msg)
-			CEntityMsg.internalBinaryWrite(
-				message.entity_msg,
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CEntityMessageFixAngle", [
+      {
+        no: 1,
+        name: "relative",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      { no: 2, name: "angle", kind: "message", T: () => CMsgQAngle },
+      {
+        no: 3,
+        name: "entity_msg",
+        kind: "message",
+        localName: "entity_msg",
+        T: () => CEntityMsg,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CEntityMessageFixAngle>): CEntityMessageFixAngle {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CEntityMessageFixAngle>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CEntityMessageFixAngle,
+  ): CEntityMessageFixAngle {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool relative */ 1:
+          message.relative = reader.bool();
+          break;
+        case /* optional CMsgQAngle angle */ 2:
+          message.angle = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angle);
+          break;
+        case /* optional CEntityMsg entity_msg */ 3:
+          message.entity_msg = CEntityMsg.internalBinaryRead(reader, reader.uint32(), options, message.entity_msg);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CEntityMessageFixAngle,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool relative = 1; */
+    if (message.relative !== undefined) writer.tag(1, WireType.Varint).bool(message.relative);
+    /* optional CMsgQAngle angle = 2; */
+    if (message.angle)
+      CMsgQAngle.internalBinaryWrite(message.angle, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional CEntityMsg entity_msg = 3; */
+    if (message.entity_msg)
+      CEntityMsg.internalBinaryWrite(
+        message.entity_msg,
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CEntityMessageFixAngle
@@ -5320,92 +5320,92 @@ class CEntityMessageFixAngle$Type extends MessageType<CEntityMessageFixAngle> {
 export const CEntityMessageFixAngle = new CEntityMessageFixAngle$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageCameraTransition$Type extends MessageType<CUserMessageCameraTransition> {
-	constructor() {
-		super("CUserMessageCameraTransition", [
-			{
-				no: 1,
-				name: "camera_type",
-				kind: "scalar",
-				localName: "camera_type",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "duration",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "params_data_driven",
-				kind: "message",
-				localName: "params_data_driven",
-				T: () => CUserMessageCameraTransition_Transition_DataDriven,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageCameraTransition>): CUserMessageCameraTransition {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageCameraTransition>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageCameraTransition,
-	): CUserMessageCameraTransition {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 camera_type */ 1:
-					message.camera_type = reader.uint32();
-					break;
-				case /* optional float duration */ 2:
-					message.duration = reader.float();
-					break;
-				case /* optional CUserMessageCameraTransition.Transition_DataDriven params_data_driven */ 3:
-					message.params_data_driven = CUserMessageCameraTransition_Transition_DataDriven.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.params_data_driven,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageCameraTransition,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 camera_type = 1; */
-		if (message.camera_type !== undefined) writer.tag(1, WireType.Varint).uint32(message.camera_type);
-		/* optional float duration = 2; */
-		if (message.duration !== undefined) writer.tag(2, WireType.Bit32).float(message.duration);
-		/* optional CUserMessageCameraTransition.Transition_DataDriven params_data_driven = 3; */
-		if (message.params_data_driven)
-			CUserMessageCameraTransition_Transition_DataDriven.internalBinaryWrite(
-				message.params_data_driven,
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageCameraTransition", [
+      {
+        no: 1,
+        name: "camera_type",
+        kind: "scalar",
+        localName: "camera_type",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "duration",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "params_data_driven",
+        kind: "message",
+        localName: "params_data_driven",
+        T: () => CUserMessageCameraTransition_Transition_DataDriven,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageCameraTransition>): CUserMessageCameraTransition {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageCameraTransition>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageCameraTransition,
+  ): CUserMessageCameraTransition {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 camera_type */ 1:
+          message.camera_type = reader.uint32();
+          break;
+        case /* optional float duration */ 2:
+          message.duration = reader.float();
+          break;
+        case /* optional CUserMessageCameraTransition.Transition_DataDriven params_data_driven */ 3:
+          message.params_data_driven = CUserMessageCameraTransition_Transition_DataDriven.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.params_data_driven,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageCameraTransition,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 camera_type = 1; */
+    if (message.camera_type !== undefined) writer.tag(1, WireType.Varint).uint32(message.camera_type);
+    /* optional float duration = 2; */
+    if (message.duration !== undefined) writer.tag(2, WireType.Bit32).float(message.duration);
+    /* optional CUserMessageCameraTransition.Transition_DataDriven params_data_driven = 3; */
+    if (message.params_data_driven)
+      CUserMessageCameraTransition_Transition_DataDriven.internalBinaryWrite(
+        message.params_data_driven,
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageCameraTransition
@@ -5413,925 +5413,925 @@ class CUserMessageCameraTransition$Type extends MessageType<CUserMessageCameraTr
 export const CUserMessageCameraTransition = new CUserMessageCameraTransition$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageCameraTransition_Transition_DataDriven$Type extends MessageType<CUserMessageCameraTransition_Transition_DataDriven> {
-	constructor() {
-		super("CUserMessageCameraTransition.Transition_DataDriven", [
-			{
-				no: 1,
-				name: "filename",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "attach_ent_index",
-				kind: "scalar",
-				localName: "attach_ent_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "duration",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMessageCameraTransition_Transition_DataDriven>,
-	): CUserMessageCameraTransition_Transition_DataDriven {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMessageCameraTransition_Transition_DataDriven>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageCameraTransition_Transition_DataDriven,
-	): CUserMessageCameraTransition_Transition_DataDriven {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string filename */ 1:
-					message.filename = reader.string();
-					break;
-				case /* optional int32 attach_ent_index */ 2:
-					message.attach_ent_index = reader.int32();
-					break;
-				case /* optional float duration */ 3:
-					message.duration = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageCameraTransition_Transition_DataDriven,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string filename = 1; */
-		if (message.filename !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.filename);
-		/* optional int32 attach_ent_index = 2; */
-		if (message.attach_ent_index !== undefined) writer.tag(2, WireType.Varint).int32(message.attach_ent_index);
-		/* optional float duration = 3; */
-		if (message.duration !== undefined) writer.tag(3, WireType.Bit32).float(message.duration);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageCameraTransition.Transition_DataDriven", [
+      {
+        no: 1,
+        name: "filename",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "attach_ent_index",
+        kind: "scalar",
+        localName: "attach_ent_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "duration",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMessageCameraTransition_Transition_DataDriven>,
+  ): CUserMessageCameraTransition_Transition_DataDriven {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMessageCameraTransition_Transition_DataDriven>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageCameraTransition_Transition_DataDriven,
+  ): CUserMessageCameraTransition_Transition_DataDriven {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string filename */ 1:
+          message.filename = reader.string();
+          break;
+        case /* optional int32 attach_ent_index */ 2:
+          message.attach_ent_index = reader.int32();
+          break;
+        case /* optional float duration */ 3:
+          message.duration = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageCameraTransition_Transition_DataDriven,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string filename = 1; */
+    if (message.filename !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.filename);
+    /* optional int32 attach_ent_index = 2; */
+    if (message.attach_ent_index !== undefined) writer.tag(2, WireType.Varint).int32(message.attach_ent_index);
+    /* optional float duration = 3; */
+    if (message.duration !== undefined) writer.tag(3, WireType.Bit32).float(message.duration);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageCameraTransition.Transition_DataDriven
  */
 export const CUserMessageCameraTransition_Transition_DataDriven =
-	new CUserMessageCameraTransition_Transition_DataDriven$Type();
+  new CUserMessageCameraTransition_Transition_DataDriven$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager$Type extends MessageType<CUserMsg_ParticleManager> {
-	constructor() {
-		super("CUserMsg_ParticleManager", [
-			{
-				no: 1,
-				name: "type",
-				kind: "enum",
-				T: () => ["PARTICLE_MESSAGE", PARTICLE_MESSAGE],
-			},
-			{ no: 2, name: "index", kind: "scalar", T: 13 /*ScalarType.UINT32*/ },
-			{
-				no: 3,
-				name: "release_particle_index",
-				kind: "message",
-				localName: "release_particle_index",
-				T: () => CUserMsg_ParticleManager_ReleaseParticleIndex,
-			},
-			{
-				no: 4,
-				name: "create_particle",
-				kind: "message",
-				localName: "create_particle",
-				T: () => CUserMsg_ParticleManager_CreateParticle,
-			},
-			{
-				no: 5,
-				name: "destroy_particle",
-				kind: "message",
-				localName: "destroy_particle",
-				T: () => CUserMsg_ParticleManager_DestroyParticle,
-			},
-			{
-				no: 6,
-				name: "destroy_particle_involving",
-				kind: "message",
-				localName: "destroy_particle_involving",
-				T: () => CUserMsg_ParticleManager_DestroyParticleInvolving,
-			},
-			{
-				no: 7,
-				name: "update_particle",
-				kind: "message",
-				localName: "update_particle",
-				T: () => CUserMsg_ParticleManager_UpdateParticle_OBSOLETE,
-			},
-			{
-				no: 8,
-				name: "update_particle_fwd",
-				kind: "message",
-				localName: "update_particle_fwd",
-				T: () => CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE,
-			},
-			{
-				no: 9,
-				name: "update_particle_orient",
-				kind: "message",
-				localName: "update_particle_orient",
-				T: () => CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE,
-			},
-			{
-				no: 10,
-				name: "update_particle_fallback",
-				kind: "message",
-				localName: "update_particle_fallback",
-				T: () => CUserMsg_ParticleManager_UpdateParticleFallback,
-			},
-			{
-				no: 11,
-				name: "update_particle_offset",
-				kind: "message",
-				localName: "update_particle_offset",
-				T: () => CUserMsg_ParticleManager_UpdateParticleOffset,
-			},
-			{
-				no: 12,
-				name: "update_particle_ent",
-				kind: "message",
-				localName: "update_particle_ent",
-				T: () => CUserMsg_ParticleManager_UpdateParticleEnt,
-			},
-			{
-				no: 14,
-				name: "update_particle_should_draw",
-				kind: "message",
-				localName: "update_particle_should_draw",
-				T: () => CUserMsg_ParticleManager_UpdateParticleShouldDraw,
-			},
-			{
-				no: 15,
-				name: "update_particle_set_frozen",
-				kind: "message",
-				localName: "update_particle_set_frozen",
-				T: () => CUserMsg_ParticleManager_UpdateParticleSetFrozen,
-			},
-			{
-				no: 16,
-				name: "change_control_point_attachment",
-				kind: "message",
-				localName: "change_control_point_attachment",
-				T: () => CUserMsg_ParticleManager_ChangeControlPointAttachment,
-			},
-			{
-				no: 17,
-				name: "update_entity_position",
-				kind: "message",
-				localName: "update_entity_position",
-				T: () => CUserMsg_ParticleManager_UpdateEntityPosition,
-			},
-			{
-				no: 18,
-				name: "set_particle_fow_properties",
-				kind: "message",
-				localName: "set_particle_fow_properties",
-				T: () => CUserMsg_ParticleManager_SetParticleFoWProperties,
-			},
-			{
-				no: 19,
-				name: "set_particle_text",
-				kind: "message",
-				localName: "set_particle_text",
-				T: () => CUserMsg_ParticleManager_SetParticleText,
-			},
-			{
-				no: 20,
-				name: "set_particle_should_check_fow",
-				kind: "message",
-				localName: "set_particle_should_check_fow",
-				T: () => CUserMsg_ParticleManager_SetParticleShouldCheckFoW,
-			},
-			{
-				no: 21,
-				name: "set_control_point_model",
-				kind: "message",
-				localName: "set_control_point_model",
-				T: () => CUserMsg_ParticleManager_SetControlPointModel,
-			},
-			{
-				no: 22,
-				name: "set_control_point_snapshot",
-				kind: "message",
-				localName: "set_control_point_snapshot",
-				T: () => CUserMsg_ParticleManager_SetControlPointSnapshot,
-			},
-			{
-				no: 23,
-				name: "set_texture_attribute",
-				kind: "message",
-				localName: "set_texture_attribute",
-				T: () => CUserMsg_ParticleManager_SetTextureAttribute,
-			},
-			{
-				no: 24,
-				name: "set_scene_object_generic_flag",
-				kind: "message",
-				localName: "set_scene_object_generic_flag",
-				T: () => CUserMsg_ParticleManager_SetSceneObjectGenericFlag,
-			},
-			{
-				no: 25,
-				name: "set_scene_object_tint_and_desat",
-				kind: "message",
-				localName: "set_scene_object_tint_and_desat",
-				T: () => CUserMsg_ParticleManager_SetSceneObjectTintAndDesat,
-			},
-			{
-				no: 26,
-				name: "destroy_particle_named",
-				kind: "message",
-				localName: "destroy_particle_named",
-				T: () => CUserMsg_ParticleManager_DestroyParticleNamed,
-			},
-			{
-				no: 27,
-				name: "particle_skip_to_time",
-				kind: "message",
-				localName: "particle_skip_to_time",
-				T: () => CUserMsg_ParticleManager_ParticleSkipToTime,
-			},
-			{
-				no: 28,
-				name: "particle_can_freeze",
-				kind: "message",
-				localName: "particle_can_freeze",
-				T: () => CUserMsg_ParticleManager_ParticleCanFreeze,
-			},
-			{
-				no: 29,
-				name: "set_named_value_context",
-				kind: "message",
-				localName: "set_named_value_context",
-				T: () => CUserMsg_ParticleManager_SetParticleNamedValueContext,
-			},
-			{
-				no: 30,
-				name: "update_particle_transform",
-				kind: "message",
-				localName: "update_particle_transform",
-				T: () => CUserMsg_ParticleManager_UpdateParticleTransform,
-			},
-			{
-				no: 31,
-				name: "particle_freeze_transition_override",
-				kind: "message",
-				localName: "particle_freeze_transition_override",
-				T: () => CUserMsg_ParticleManager_ParticleFreezeTransitionOverride,
-			},
-			{
-				no: 32,
-				name: "freeze_particle_involving",
-				kind: "message",
-				localName: "freeze_particle_involving",
-				T: () => CUserMsg_ParticleManager_FreezeParticleInvolving,
-			},
-			{
-				no: 33,
-				name: "add_modellist_override_element",
-				kind: "message",
-				localName: "add_modellist_override_element",
-				T: () => CUserMsg_ParticleManager_AddModellistOverrideElement,
-			},
-			{
-				no: 34,
-				name: "clear_modellist_override",
-				kind: "message",
-				localName: "clear_modellist_override",
-				T: () => CUserMsg_ParticleManager_ClearModellistOverride,
-			},
-			{
-				no: 35,
-				name: "create_physics_sim",
-				kind: "message",
-				localName: "create_physics_sim",
-				T: () => CUserMsg_ParticleManager_CreatePhysicsSim,
-			},
-			{
-				no: 36,
-				name: "destroy_physics_sim",
-				kind: "message",
-				localName: "destroy_physics_sim",
-				T: () => CUserMsg_ParticleManager_DestroyPhysicsSim,
-			},
-			{
-				no: 37,
-				name: "set_vdata",
-				kind: "message",
-				localName: "set_vdata",
-				T: () => CUserMsg_ParticleManager_SetVData,
-			},
-			{
-				no: 38,
-				name: "set_material_override",
-				kind: "message",
-				localName: "set_material_override",
-				T: () => CUserMsg_ParticleManager_SetMaterialOverride,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMsg_ParticleManager>): CUserMsg_ParticleManager {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.type = 0;
-		message.index = 0;
-		if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager,
-	): CUserMsg_ParticleManager {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* PARTICLE_MESSAGE type */ 1:
-					message.type = reader.int32();
-					break;
-				case /* uint32 index */ 2:
-					message.index = reader.uint32();
-					break;
-				case /* optional CUserMsg_ParticleManager.ReleaseParticleIndex release_particle_index */ 3:
-					message.release_particle_index = CUserMsg_ParticleManager_ReleaseParticleIndex.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.release_particle_index,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.CreateParticle create_particle */ 4:
-					message.create_particle = CUserMsg_ParticleManager_CreateParticle.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.create_particle,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.DestroyParticle destroy_particle */ 5:
-					message.destroy_particle = CUserMsg_ParticleManager_DestroyParticle.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.destroy_particle,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.DestroyParticleInvolving destroy_particle_involving */ 6:
-					message.destroy_particle_involving = CUserMsg_ParticleManager_DestroyParticleInvolving.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.destroy_particle_involving,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.UpdateParticle_OBSOLETE update_particle */ 7:
-					message.update_particle = CUserMsg_ParticleManager_UpdateParticle_OBSOLETE.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.update_particle,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.UpdateParticleFwd_OBSOLETE update_particle_fwd */ 8:
-					message.update_particle_fwd = CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.update_particle_fwd,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.UpdateParticleOrient_OBSOLETE update_particle_orient */ 9:
-					message.update_particle_orient = CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.update_particle_orient,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.UpdateParticleFallback update_particle_fallback */ 10:
-					message.update_particle_fallback = CUserMsg_ParticleManager_UpdateParticleFallback.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.update_particle_fallback,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.UpdateParticleOffset update_particle_offset */ 11:
-					message.update_particle_offset = CUserMsg_ParticleManager_UpdateParticleOffset.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.update_particle_offset,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.UpdateParticleEnt update_particle_ent */ 12:
-					message.update_particle_ent = CUserMsg_ParticleManager_UpdateParticleEnt.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.update_particle_ent,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.UpdateParticleShouldDraw update_particle_should_draw */ 14:
-					message.update_particle_should_draw = CUserMsg_ParticleManager_UpdateParticleShouldDraw.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.update_particle_should_draw,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.UpdateParticleSetFrozen update_particle_set_frozen */ 15:
-					message.update_particle_set_frozen = CUserMsg_ParticleManager_UpdateParticleSetFrozen.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.update_particle_set_frozen,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.ChangeControlPointAttachment change_control_point_attachment */ 16:
-					message.change_control_point_attachment =
-						CUserMsg_ParticleManager_ChangeControlPointAttachment.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-							message.change_control_point_attachment,
-						);
-					break;
-				case /* optional CUserMsg_ParticleManager.UpdateEntityPosition update_entity_position */ 17:
-					message.update_entity_position = CUserMsg_ParticleManager_UpdateEntityPosition.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.update_entity_position,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.SetParticleFoWProperties set_particle_fow_properties */ 18:
-					message.set_particle_fow_properties = CUserMsg_ParticleManager_SetParticleFoWProperties.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.set_particle_fow_properties,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.SetParticleText set_particle_text */ 19:
-					message.set_particle_text = CUserMsg_ParticleManager_SetParticleText.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.set_particle_text,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.SetParticleShouldCheckFoW set_particle_should_check_fow */ 20:
-					message.set_particle_should_check_fow = CUserMsg_ParticleManager_SetParticleShouldCheckFoW.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.set_particle_should_check_fow,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.SetControlPointModel set_control_point_model */ 21:
-					message.set_control_point_model = CUserMsg_ParticleManager_SetControlPointModel.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.set_control_point_model,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.SetControlPointSnapshot set_control_point_snapshot */ 22:
-					message.set_control_point_snapshot = CUserMsg_ParticleManager_SetControlPointSnapshot.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.set_control_point_snapshot,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.SetTextureAttribute set_texture_attribute */ 23:
-					message.set_texture_attribute = CUserMsg_ParticleManager_SetTextureAttribute.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.set_texture_attribute,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.SetSceneObjectGenericFlag set_scene_object_generic_flag */ 24:
-					message.set_scene_object_generic_flag = CUserMsg_ParticleManager_SetSceneObjectGenericFlag.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.set_scene_object_generic_flag,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.SetSceneObjectTintAndDesat set_scene_object_tint_and_desat */ 25:
-					message.set_scene_object_tint_and_desat =
-						CUserMsg_ParticleManager_SetSceneObjectTintAndDesat.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-							message.set_scene_object_tint_and_desat,
-						);
-					break;
-				case /* optional CUserMsg_ParticleManager.DestroyParticleNamed destroy_particle_named */ 26:
-					message.destroy_particle_named = CUserMsg_ParticleManager_DestroyParticleNamed.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.destroy_particle_named,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.ParticleSkipToTime particle_skip_to_time */ 27:
-					message.particle_skip_to_time = CUserMsg_ParticleManager_ParticleSkipToTime.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.particle_skip_to_time,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.ParticleCanFreeze particle_can_freeze */ 28:
-					message.particle_can_freeze = CUserMsg_ParticleManager_ParticleCanFreeze.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.particle_can_freeze,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.SetParticleNamedValueContext set_named_value_context */ 29:
-					message.set_named_value_context = CUserMsg_ParticleManager_SetParticleNamedValueContext.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.set_named_value_context,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.UpdateParticleTransform update_particle_transform */ 30:
-					message.update_particle_transform = CUserMsg_ParticleManager_UpdateParticleTransform.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.update_particle_transform,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.ParticleFreezeTransitionOverride particle_freeze_transition_override */ 31:
-					message.particle_freeze_transition_override =
-						CUserMsg_ParticleManager_ParticleFreezeTransitionOverride.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-							message.particle_freeze_transition_override,
-						);
-					break;
-				case /* optional CUserMsg_ParticleManager.FreezeParticleInvolving freeze_particle_involving */ 32:
-					message.freeze_particle_involving = CUserMsg_ParticleManager_FreezeParticleInvolving.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.freeze_particle_involving,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.AddModellistOverrideElement add_modellist_override_element */ 33:
-					message.add_modellist_override_element =
-						CUserMsg_ParticleManager_AddModellistOverrideElement.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-							message.add_modellist_override_element,
-						);
-					break;
-				case /* optional CUserMsg_ParticleManager.ClearModellistOverride clear_modellist_override */ 34:
-					message.clear_modellist_override = CUserMsg_ParticleManager_ClearModellistOverride.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.clear_modellist_override,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.CreatePhysicsSim create_physics_sim */ 35:
-					message.create_physics_sim = CUserMsg_ParticleManager_CreatePhysicsSim.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.create_physics_sim,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.DestroyPhysicsSim destroy_physics_sim */ 36:
-					message.destroy_physics_sim = CUserMsg_ParticleManager_DestroyPhysicsSim.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.destroy_physics_sim,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.SetVData set_vdata */ 37:
-					message.set_vdata = CUserMsg_ParticleManager_SetVData.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.set_vdata,
-					);
-					break;
-				case /* optional CUserMsg_ParticleManager.SetMaterialOverride set_material_override */ 38:
-					message.set_material_override = CUserMsg_ParticleManager_SetMaterialOverride.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.set_material_override,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* PARTICLE_MESSAGE type = 1; */
-		if (message.type !== 0) writer.tag(1, WireType.Varint).int32(message.type);
-		/* uint32 index = 2; */
-		if (message.index !== 0) writer.tag(2, WireType.Varint).uint32(message.index);
-		/* optional CUserMsg_ParticleManager.ReleaseParticleIndex release_particle_index = 3; */
-		if (message.release_particle_index)
-			CUserMsg_ParticleManager_ReleaseParticleIndex.internalBinaryWrite(
-				message.release_particle_index,
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.CreateParticle create_particle = 4; */
-		if (message.create_particle)
-			CUserMsg_ParticleManager_CreateParticle.internalBinaryWrite(
-				message.create_particle,
-				writer.tag(4, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.DestroyParticle destroy_particle = 5; */
-		if (message.destroy_particle)
-			CUserMsg_ParticleManager_DestroyParticle.internalBinaryWrite(
-				message.destroy_particle,
-				writer.tag(5, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.DestroyParticleInvolving destroy_particle_involving = 6; */
-		if (message.destroy_particle_involving)
-			CUserMsg_ParticleManager_DestroyParticleInvolving.internalBinaryWrite(
-				message.destroy_particle_involving,
-				writer.tag(6, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.UpdateParticle_OBSOLETE update_particle = 7; */
-		if (message.update_particle)
-			CUserMsg_ParticleManager_UpdateParticle_OBSOLETE.internalBinaryWrite(
-				message.update_particle,
-				writer.tag(7, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.UpdateParticleFwd_OBSOLETE update_particle_fwd = 8; */
-		if (message.update_particle_fwd)
-			CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE.internalBinaryWrite(
-				message.update_particle_fwd,
-				writer.tag(8, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.UpdateParticleOrient_OBSOLETE update_particle_orient = 9; */
-		if (message.update_particle_orient)
-			CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE.internalBinaryWrite(
-				message.update_particle_orient,
-				writer.tag(9, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.UpdateParticleFallback update_particle_fallback = 10; */
-		if (message.update_particle_fallback)
-			CUserMsg_ParticleManager_UpdateParticleFallback.internalBinaryWrite(
-				message.update_particle_fallback,
-				writer.tag(10, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.UpdateParticleOffset update_particle_offset = 11; */
-		if (message.update_particle_offset)
-			CUserMsg_ParticleManager_UpdateParticleOffset.internalBinaryWrite(
-				message.update_particle_offset,
-				writer.tag(11, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.UpdateParticleEnt update_particle_ent = 12; */
-		if (message.update_particle_ent)
-			CUserMsg_ParticleManager_UpdateParticleEnt.internalBinaryWrite(
-				message.update_particle_ent,
-				writer.tag(12, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.UpdateParticleShouldDraw update_particle_should_draw = 14; */
-		if (message.update_particle_should_draw)
-			CUserMsg_ParticleManager_UpdateParticleShouldDraw.internalBinaryWrite(
-				message.update_particle_should_draw,
-				writer.tag(14, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.UpdateParticleSetFrozen update_particle_set_frozen = 15; */
-		if (message.update_particle_set_frozen)
-			CUserMsg_ParticleManager_UpdateParticleSetFrozen.internalBinaryWrite(
-				message.update_particle_set_frozen,
-				writer.tag(15, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.ChangeControlPointAttachment change_control_point_attachment = 16; */
-		if (message.change_control_point_attachment)
-			CUserMsg_ParticleManager_ChangeControlPointAttachment.internalBinaryWrite(
-				message.change_control_point_attachment,
-				writer.tag(16, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.UpdateEntityPosition update_entity_position = 17; */
-		if (message.update_entity_position)
-			CUserMsg_ParticleManager_UpdateEntityPosition.internalBinaryWrite(
-				message.update_entity_position,
-				writer.tag(17, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.SetParticleFoWProperties set_particle_fow_properties = 18; */
-		if (message.set_particle_fow_properties)
-			CUserMsg_ParticleManager_SetParticleFoWProperties.internalBinaryWrite(
-				message.set_particle_fow_properties,
-				writer.tag(18, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.SetParticleText set_particle_text = 19; */
-		if (message.set_particle_text)
-			CUserMsg_ParticleManager_SetParticleText.internalBinaryWrite(
-				message.set_particle_text,
-				writer.tag(19, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.SetParticleShouldCheckFoW set_particle_should_check_fow = 20; */
-		if (message.set_particle_should_check_fow)
-			CUserMsg_ParticleManager_SetParticleShouldCheckFoW.internalBinaryWrite(
-				message.set_particle_should_check_fow,
-				writer.tag(20, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.SetControlPointModel set_control_point_model = 21; */
-		if (message.set_control_point_model)
-			CUserMsg_ParticleManager_SetControlPointModel.internalBinaryWrite(
-				message.set_control_point_model,
-				writer.tag(21, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.SetControlPointSnapshot set_control_point_snapshot = 22; */
-		if (message.set_control_point_snapshot)
-			CUserMsg_ParticleManager_SetControlPointSnapshot.internalBinaryWrite(
-				message.set_control_point_snapshot,
-				writer.tag(22, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.SetTextureAttribute set_texture_attribute = 23; */
-		if (message.set_texture_attribute)
-			CUserMsg_ParticleManager_SetTextureAttribute.internalBinaryWrite(
-				message.set_texture_attribute,
-				writer.tag(23, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.SetSceneObjectGenericFlag set_scene_object_generic_flag = 24; */
-		if (message.set_scene_object_generic_flag)
-			CUserMsg_ParticleManager_SetSceneObjectGenericFlag.internalBinaryWrite(
-				message.set_scene_object_generic_flag,
-				writer.tag(24, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.SetSceneObjectTintAndDesat set_scene_object_tint_and_desat = 25; */
-		if (message.set_scene_object_tint_and_desat)
-			CUserMsg_ParticleManager_SetSceneObjectTintAndDesat.internalBinaryWrite(
-				message.set_scene_object_tint_and_desat,
-				writer.tag(25, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.DestroyParticleNamed destroy_particle_named = 26; */
-		if (message.destroy_particle_named)
-			CUserMsg_ParticleManager_DestroyParticleNamed.internalBinaryWrite(
-				message.destroy_particle_named,
-				writer.tag(26, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.ParticleSkipToTime particle_skip_to_time = 27; */
-		if (message.particle_skip_to_time)
-			CUserMsg_ParticleManager_ParticleSkipToTime.internalBinaryWrite(
-				message.particle_skip_to_time,
-				writer.tag(27, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.ParticleCanFreeze particle_can_freeze = 28; */
-		if (message.particle_can_freeze)
-			CUserMsg_ParticleManager_ParticleCanFreeze.internalBinaryWrite(
-				message.particle_can_freeze,
-				writer.tag(28, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.SetParticleNamedValueContext set_named_value_context = 29; */
-		if (message.set_named_value_context)
-			CUserMsg_ParticleManager_SetParticleNamedValueContext.internalBinaryWrite(
-				message.set_named_value_context,
-				writer.tag(29, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.UpdateParticleTransform update_particle_transform = 30; */
-		if (message.update_particle_transform)
-			CUserMsg_ParticleManager_UpdateParticleTransform.internalBinaryWrite(
-				message.update_particle_transform,
-				writer.tag(30, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.ParticleFreezeTransitionOverride particle_freeze_transition_override = 31; */
-		if (message.particle_freeze_transition_override)
-			CUserMsg_ParticleManager_ParticleFreezeTransitionOverride.internalBinaryWrite(
-				message.particle_freeze_transition_override,
-				writer.tag(31, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.FreezeParticleInvolving freeze_particle_involving = 32; */
-		if (message.freeze_particle_involving)
-			CUserMsg_ParticleManager_FreezeParticleInvolving.internalBinaryWrite(
-				message.freeze_particle_involving,
-				writer.tag(32, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.AddModellistOverrideElement add_modellist_override_element = 33; */
-		if (message.add_modellist_override_element)
-			CUserMsg_ParticleManager_AddModellistOverrideElement.internalBinaryWrite(
-				message.add_modellist_override_element,
-				writer.tag(33, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.ClearModellistOverride clear_modellist_override = 34; */
-		if (message.clear_modellist_override)
-			CUserMsg_ParticleManager_ClearModellistOverride.internalBinaryWrite(
-				message.clear_modellist_override,
-				writer.tag(34, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.CreatePhysicsSim create_physics_sim = 35; */
-		if (message.create_physics_sim)
-			CUserMsg_ParticleManager_CreatePhysicsSim.internalBinaryWrite(
-				message.create_physics_sim,
-				writer.tag(35, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.DestroyPhysicsSim destroy_physics_sim = 36; */
-		if (message.destroy_physics_sim)
-			CUserMsg_ParticleManager_DestroyPhysicsSim.internalBinaryWrite(
-				message.destroy_physics_sim,
-				writer.tag(36, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.SetVData set_vdata = 37; */
-		if (message.set_vdata)
-			CUserMsg_ParticleManager_SetVData.internalBinaryWrite(
-				message.set_vdata,
-				writer.tag(37, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CUserMsg_ParticleManager.SetMaterialOverride set_material_override = 38; */
-		if (message.set_material_override)
-			CUserMsg_ParticleManager_SetMaterialOverride.internalBinaryWrite(
-				message.set_material_override,
-				writer.tag(38, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager", [
+      {
+        no: 1,
+        name: "type",
+        kind: "enum",
+        T: () => ["PARTICLE_MESSAGE", PARTICLE_MESSAGE],
+      },
+      { no: 2, name: "index", kind: "scalar", T: 13 /*ScalarType.UINT32*/ },
+      {
+        no: 3,
+        name: "release_particle_index",
+        kind: "message",
+        localName: "release_particle_index",
+        T: () => CUserMsg_ParticleManager_ReleaseParticleIndex,
+      },
+      {
+        no: 4,
+        name: "create_particle",
+        kind: "message",
+        localName: "create_particle",
+        T: () => CUserMsg_ParticleManager_CreateParticle,
+      },
+      {
+        no: 5,
+        name: "destroy_particle",
+        kind: "message",
+        localName: "destroy_particle",
+        T: () => CUserMsg_ParticleManager_DestroyParticle,
+      },
+      {
+        no: 6,
+        name: "destroy_particle_involving",
+        kind: "message",
+        localName: "destroy_particle_involving",
+        T: () => CUserMsg_ParticleManager_DestroyParticleInvolving,
+      },
+      {
+        no: 7,
+        name: "update_particle",
+        kind: "message",
+        localName: "update_particle",
+        T: () => CUserMsg_ParticleManager_UpdateParticle_OBSOLETE,
+      },
+      {
+        no: 8,
+        name: "update_particle_fwd",
+        kind: "message",
+        localName: "update_particle_fwd",
+        T: () => CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE,
+      },
+      {
+        no: 9,
+        name: "update_particle_orient",
+        kind: "message",
+        localName: "update_particle_orient",
+        T: () => CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE,
+      },
+      {
+        no: 10,
+        name: "update_particle_fallback",
+        kind: "message",
+        localName: "update_particle_fallback",
+        T: () => CUserMsg_ParticleManager_UpdateParticleFallback,
+      },
+      {
+        no: 11,
+        name: "update_particle_offset",
+        kind: "message",
+        localName: "update_particle_offset",
+        T: () => CUserMsg_ParticleManager_UpdateParticleOffset,
+      },
+      {
+        no: 12,
+        name: "update_particle_ent",
+        kind: "message",
+        localName: "update_particle_ent",
+        T: () => CUserMsg_ParticleManager_UpdateParticleEnt,
+      },
+      {
+        no: 14,
+        name: "update_particle_should_draw",
+        kind: "message",
+        localName: "update_particle_should_draw",
+        T: () => CUserMsg_ParticleManager_UpdateParticleShouldDraw,
+      },
+      {
+        no: 15,
+        name: "update_particle_set_frozen",
+        kind: "message",
+        localName: "update_particle_set_frozen",
+        T: () => CUserMsg_ParticleManager_UpdateParticleSetFrozen,
+      },
+      {
+        no: 16,
+        name: "change_control_point_attachment",
+        kind: "message",
+        localName: "change_control_point_attachment",
+        T: () => CUserMsg_ParticleManager_ChangeControlPointAttachment,
+      },
+      {
+        no: 17,
+        name: "update_entity_position",
+        kind: "message",
+        localName: "update_entity_position",
+        T: () => CUserMsg_ParticleManager_UpdateEntityPosition,
+      },
+      {
+        no: 18,
+        name: "set_particle_fow_properties",
+        kind: "message",
+        localName: "set_particle_fow_properties",
+        T: () => CUserMsg_ParticleManager_SetParticleFoWProperties,
+      },
+      {
+        no: 19,
+        name: "set_particle_text",
+        kind: "message",
+        localName: "set_particle_text",
+        T: () => CUserMsg_ParticleManager_SetParticleText,
+      },
+      {
+        no: 20,
+        name: "set_particle_should_check_fow",
+        kind: "message",
+        localName: "set_particle_should_check_fow",
+        T: () => CUserMsg_ParticleManager_SetParticleShouldCheckFoW,
+      },
+      {
+        no: 21,
+        name: "set_control_point_model",
+        kind: "message",
+        localName: "set_control_point_model",
+        T: () => CUserMsg_ParticleManager_SetControlPointModel,
+      },
+      {
+        no: 22,
+        name: "set_control_point_snapshot",
+        kind: "message",
+        localName: "set_control_point_snapshot",
+        T: () => CUserMsg_ParticleManager_SetControlPointSnapshot,
+      },
+      {
+        no: 23,
+        name: "set_texture_attribute",
+        kind: "message",
+        localName: "set_texture_attribute",
+        T: () => CUserMsg_ParticleManager_SetTextureAttribute,
+      },
+      {
+        no: 24,
+        name: "set_scene_object_generic_flag",
+        kind: "message",
+        localName: "set_scene_object_generic_flag",
+        T: () => CUserMsg_ParticleManager_SetSceneObjectGenericFlag,
+      },
+      {
+        no: 25,
+        name: "set_scene_object_tint_and_desat",
+        kind: "message",
+        localName: "set_scene_object_tint_and_desat",
+        T: () => CUserMsg_ParticleManager_SetSceneObjectTintAndDesat,
+      },
+      {
+        no: 26,
+        name: "destroy_particle_named",
+        kind: "message",
+        localName: "destroy_particle_named",
+        T: () => CUserMsg_ParticleManager_DestroyParticleNamed,
+      },
+      {
+        no: 27,
+        name: "particle_skip_to_time",
+        kind: "message",
+        localName: "particle_skip_to_time",
+        T: () => CUserMsg_ParticleManager_ParticleSkipToTime,
+      },
+      {
+        no: 28,
+        name: "particle_can_freeze",
+        kind: "message",
+        localName: "particle_can_freeze",
+        T: () => CUserMsg_ParticleManager_ParticleCanFreeze,
+      },
+      {
+        no: 29,
+        name: "set_named_value_context",
+        kind: "message",
+        localName: "set_named_value_context",
+        T: () => CUserMsg_ParticleManager_SetParticleNamedValueContext,
+      },
+      {
+        no: 30,
+        name: "update_particle_transform",
+        kind: "message",
+        localName: "update_particle_transform",
+        T: () => CUserMsg_ParticleManager_UpdateParticleTransform,
+      },
+      {
+        no: 31,
+        name: "particle_freeze_transition_override",
+        kind: "message",
+        localName: "particle_freeze_transition_override",
+        T: () => CUserMsg_ParticleManager_ParticleFreezeTransitionOverride,
+      },
+      {
+        no: 32,
+        name: "freeze_particle_involving",
+        kind: "message",
+        localName: "freeze_particle_involving",
+        T: () => CUserMsg_ParticleManager_FreezeParticleInvolving,
+      },
+      {
+        no: 33,
+        name: "add_modellist_override_element",
+        kind: "message",
+        localName: "add_modellist_override_element",
+        T: () => CUserMsg_ParticleManager_AddModellistOverrideElement,
+      },
+      {
+        no: 34,
+        name: "clear_modellist_override",
+        kind: "message",
+        localName: "clear_modellist_override",
+        T: () => CUserMsg_ParticleManager_ClearModellistOverride,
+      },
+      {
+        no: 35,
+        name: "create_physics_sim",
+        kind: "message",
+        localName: "create_physics_sim",
+        T: () => CUserMsg_ParticleManager_CreatePhysicsSim,
+      },
+      {
+        no: 36,
+        name: "destroy_physics_sim",
+        kind: "message",
+        localName: "destroy_physics_sim",
+        T: () => CUserMsg_ParticleManager_DestroyPhysicsSim,
+      },
+      {
+        no: 37,
+        name: "set_vdata",
+        kind: "message",
+        localName: "set_vdata",
+        T: () => CUserMsg_ParticleManager_SetVData,
+      },
+      {
+        no: 38,
+        name: "set_material_override",
+        kind: "message",
+        localName: "set_material_override",
+        T: () => CUserMsg_ParticleManager_SetMaterialOverride,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMsg_ParticleManager>): CUserMsg_ParticleManager {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.type = 0;
+    message.index = 0;
+    if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager,
+  ): CUserMsg_ParticleManager {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* PARTICLE_MESSAGE type */ 1:
+          message.type = reader.int32();
+          break;
+        case /* uint32 index */ 2:
+          message.index = reader.uint32();
+          break;
+        case /* optional CUserMsg_ParticleManager.ReleaseParticleIndex release_particle_index */ 3:
+          message.release_particle_index = CUserMsg_ParticleManager_ReleaseParticleIndex.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.release_particle_index,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.CreateParticle create_particle */ 4:
+          message.create_particle = CUserMsg_ParticleManager_CreateParticle.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.create_particle,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.DestroyParticle destroy_particle */ 5:
+          message.destroy_particle = CUserMsg_ParticleManager_DestroyParticle.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.destroy_particle,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.DestroyParticleInvolving destroy_particle_involving */ 6:
+          message.destroy_particle_involving = CUserMsg_ParticleManager_DestroyParticleInvolving.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.destroy_particle_involving,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.UpdateParticle_OBSOLETE update_particle */ 7:
+          message.update_particle = CUserMsg_ParticleManager_UpdateParticle_OBSOLETE.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.update_particle,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.UpdateParticleFwd_OBSOLETE update_particle_fwd */ 8:
+          message.update_particle_fwd = CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.update_particle_fwd,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.UpdateParticleOrient_OBSOLETE update_particle_orient */ 9:
+          message.update_particle_orient = CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.update_particle_orient,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.UpdateParticleFallback update_particle_fallback */ 10:
+          message.update_particle_fallback = CUserMsg_ParticleManager_UpdateParticleFallback.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.update_particle_fallback,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.UpdateParticleOffset update_particle_offset */ 11:
+          message.update_particle_offset = CUserMsg_ParticleManager_UpdateParticleOffset.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.update_particle_offset,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.UpdateParticleEnt update_particle_ent */ 12:
+          message.update_particle_ent = CUserMsg_ParticleManager_UpdateParticleEnt.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.update_particle_ent,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.UpdateParticleShouldDraw update_particle_should_draw */ 14:
+          message.update_particle_should_draw = CUserMsg_ParticleManager_UpdateParticleShouldDraw.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.update_particle_should_draw,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.UpdateParticleSetFrozen update_particle_set_frozen */ 15:
+          message.update_particle_set_frozen = CUserMsg_ParticleManager_UpdateParticleSetFrozen.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.update_particle_set_frozen,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.ChangeControlPointAttachment change_control_point_attachment */ 16:
+          message.change_control_point_attachment =
+            CUserMsg_ParticleManager_ChangeControlPointAttachment.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+              message.change_control_point_attachment,
+            );
+          break;
+        case /* optional CUserMsg_ParticleManager.UpdateEntityPosition update_entity_position */ 17:
+          message.update_entity_position = CUserMsg_ParticleManager_UpdateEntityPosition.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.update_entity_position,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.SetParticleFoWProperties set_particle_fow_properties */ 18:
+          message.set_particle_fow_properties = CUserMsg_ParticleManager_SetParticleFoWProperties.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.set_particle_fow_properties,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.SetParticleText set_particle_text */ 19:
+          message.set_particle_text = CUserMsg_ParticleManager_SetParticleText.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.set_particle_text,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.SetParticleShouldCheckFoW set_particle_should_check_fow */ 20:
+          message.set_particle_should_check_fow = CUserMsg_ParticleManager_SetParticleShouldCheckFoW.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.set_particle_should_check_fow,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.SetControlPointModel set_control_point_model */ 21:
+          message.set_control_point_model = CUserMsg_ParticleManager_SetControlPointModel.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.set_control_point_model,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.SetControlPointSnapshot set_control_point_snapshot */ 22:
+          message.set_control_point_snapshot = CUserMsg_ParticleManager_SetControlPointSnapshot.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.set_control_point_snapshot,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.SetTextureAttribute set_texture_attribute */ 23:
+          message.set_texture_attribute = CUserMsg_ParticleManager_SetTextureAttribute.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.set_texture_attribute,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.SetSceneObjectGenericFlag set_scene_object_generic_flag */ 24:
+          message.set_scene_object_generic_flag = CUserMsg_ParticleManager_SetSceneObjectGenericFlag.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.set_scene_object_generic_flag,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.SetSceneObjectTintAndDesat set_scene_object_tint_and_desat */ 25:
+          message.set_scene_object_tint_and_desat =
+            CUserMsg_ParticleManager_SetSceneObjectTintAndDesat.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+              message.set_scene_object_tint_and_desat,
+            );
+          break;
+        case /* optional CUserMsg_ParticleManager.DestroyParticleNamed destroy_particle_named */ 26:
+          message.destroy_particle_named = CUserMsg_ParticleManager_DestroyParticleNamed.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.destroy_particle_named,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.ParticleSkipToTime particle_skip_to_time */ 27:
+          message.particle_skip_to_time = CUserMsg_ParticleManager_ParticleSkipToTime.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.particle_skip_to_time,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.ParticleCanFreeze particle_can_freeze */ 28:
+          message.particle_can_freeze = CUserMsg_ParticleManager_ParticleCanFreeze.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.particle_can_freeze,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.SetParticleNamedValueContext set_named_value_context */ 29:
+          message.set_named_value_context = CUserMsg_ParticleManager_SetParticleNamedValueContext.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.set_named_value_context,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.UpdateParticleTransform update_particle_transform */ 30:
+          message.update_particle_transform = CUserMsg_ParticleManager_UpdateParticleTransform.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.update_particle_transform,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.ParticleFreezeTransitionOverride particle_freeze_transition_override */ 31:
+          message.particle_freeze_transition_override =
+            CUserMsg_ParticleManager_ParticleFreezeTransitionOverride.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+              message.particle_freeze_transition_override,
+            );
+          break;
+        case /* optional CUserMsg_ParticleManager.FreezeParticleInvolving freeze_particle_involving */ 32:
+          message.freeze_particle_involving = CUserMsg_ParticleManager_FreezeParticleInvolving.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.freeze_particle_involving,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.AddModellistOverrideElement add_modellist_override_element */ 33:
+          message.add_modellist_override_element =
+            CUserMsg_ParticleManager_AddModellistOverrideElement.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+              message.add_modellist_override_element,
+            );
+          break;
+        case /* optional CUserMsg_ParticleManager.ClearModellistOverride clear_modellist_override */ 34:
+          message.clear_modellist_override = CUserMsg_ParticleManager_ClearModellistOverride.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.clear_modellist_override,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.CreatePhysicsSim create_physics_sim */ 35:
+          message.create_physics_sim = CUserMsg_ParticleManager_CreatePhysicsSim.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.create_physics_sim,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.DestroyPhysicsSim destroy_physics_sim */ 36:
+          message.destroy_physics_sim = CUserMsg_ParticleManager_DestroyPhysicsSim.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.destroy_physics_sim,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.SetVData set_vdata */ 37:
+          message.set_vdata = CUserMsg_ParticleManager_SetVData.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.set_vdata,
+          );
+          break;
+        case /* optional CUserMsg_ParticleManager.SetMaterialOverride set_material_override */ 38:
+          message.set_material_override = CUserMsg_ParticleManager_SetMaterialOverride.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.set_material_override,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* PARTICLE_MESSAGE type = 1; */
+    if (message.type !== 0) writer.tag(1, WireType.Varint).int32(message.type);
+    /* uint32 index = 2; */
+    if (message.index !== 0) writer.tag(2, WireType.Varint).uint32(message.index);
+    /* optional CUserMsg_ParticleManager.ReleaseParticleIndex release_particle_index = 3; */
+    if (message.release_particle_index)
+      CUserMsg_ParticleManager_ReleaseParticleIndex.internalBinaryWrite(
+        message.release_particle_index,
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.CreateParticle create_particle = 4; */
+    if (message.create_particle)
+      CUserMsg_ParticleManager_CreateParticle.internalBinaryWrite(
+        message.create_particle,
+        writer.tag(4, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.DestroyParticle destroy_particle = 5; */
+    if (message.destroy_particle)
+      CUserMsg_ParticleManager_DestroyParticle.internalBinaryWrite(
+        message.destroy_particle,
+        writer.tag(5, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.DestroyParticleInvolving destroy_particle_involving = 6; */
+    if (message.destroy_particle_involving)
+      CUserMsg_ParticleManager_DestroyParticleInvolving.internalBinaryWrite(
+        message.destroy_particle_involving,
+        writer.tag(6, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.UpdateParticle_OBSOLETE update_particle = 7; */
+    if (message.update_particle)
+      CUserMsg_ParticleManager_UpdateParticle_OBSOLETE.internalBinaryWrite(
+        message.update_particle,
+        writer.tag(7, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.UpdateParticleFwd_OBSOLETE update_particle_fwd = 8; */
+    if (message.update_particle_fwd)
+      CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE.internalBinaryWrite(
+        message.update_particle_fwd,
+        writer.tag(8, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.UpdateParticleOrient_OBSOLETE update_particle_orient = 9; */
+    if (message.update_particle_orient)
+      CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE.internalBinaryWrite(
+        message.update_particle_orient,
+        writer.tag(9, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.UpdateParticleFallback update_particle_fallback = 10; */
+    if (message.update_particle_fallback)
+      CUserMsg_ParticleManager_UpdateParticleFallback.internalBinaryWrite(
+        message.update_particle_fallback,
+        writer.tag(10, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.UpdateParticleOffset update_particle_offset = 11; */
+    if (message.update_particle_offset)
+      CUserMsg_ParticleManager_UpdateParticleOffset.internalBinaryWrite(
+        message.update_particle_offset,
+        writer.tag(11, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.UpdateParticleEnt update_particle_ent = 12; */
+    if (message.update_particle_ent)
+      CUserMsg_ParticleManager_UpdateParticleEnt.internalBinaryWrite(
+        message.update_particle_ent,
+        writer.tag(12, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.UpdateParticleShouldDraw update_particle_should_draw = 14; */
+    if (message.update_particle_should_draw)
+      CUserMsg_ParticleManager_UpdateParticleShouldDraw.internalBinaryWrite(
+        message.update_particle_should_draw,
+        writer.tag(14, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.UpdateParticleSetFrozen update_particle_set_frozen = 15; */
+    if (message.update_particle_set_frozen)
+      CUserMsg_ParticleManager_UpdateParticleSetFrozen.internalBinaryWrite(
+        message.update_particle_set_frozen,
+        writer.tag(15, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.ChangeControlPointAttachment change_control_point_attachment = 16; */
+    if (message.change_control_point_attachment)
+      CUserMsg_ParticleManager_ChangeControlPointAttachment.internalBinaryWrite(
+        message.change_control_point_attachment,
+        writer.tag(16, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.UpdateEntityPosition update_entity_position = 17; */
+    if (message.update_entity_position)
+      CUserMsg_ParticleManager_UpdateEntityPosition.internalBinaryWrite(
+        message.update_entity_position,
+        writer.tag(17, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.SetParticleFoWProperties set_particle_fow_properties = 18; */
+    if (message.set_particle_fow_properties)
+      CUserMsg_ParticleManager_SetParticleFoWProperties.internalBinaryWrite(
+        message.set_particle_fow_properties,
+        writer.tag(18, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.SetParticleText set_particle_text = 19; */
+    if (message.set_particle_text)
+      CUserMsg_ParticleManager_SetParticleText.internalBinaryWrite(
+        message.set_particle_text,
+        writer.tag(19, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.SetParticleShouldCheckFoW set_particle_should_check_fow = 20; */
+    if (message.set_particle_should_check_fow)
+      CUserMsg_ParticleManager_SetParticleShouldCheckFoW.internalBinaryWrite(
+        message.set_particle_should_check_fow,
+        writer.tag(20, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.SetControlPointModel set_control_point_model = 21; */
+    if (message.set_control_point_model)
+      CUserMsg_ParticleManager_SetControlPointModel.internalBinaryWrite(
+        message.set_control_point_model,
+        writer.tag(21, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.SetControlPointSnapshot set_control_point_snapshot = 22; */
+    if (message.set_control_point_snapshot)
+      CUserMsg_ParticleManager_SetControlPointSnapshot.internalBinaryWrite(
+        message.set_control_point_snapshot,
+        writer.tag(22, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.SetTextureAttribute set_texture_attribute = 23; */
+    if (message.set_texture_attribute)
+      CUserMsg_ParticleManager_SetTextureAttribute.internalBinaryWrite(
+        message.set_texture_attribute,
+        writer.tag(23, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.SetSceneObjectGenericFlag set_scene_object_generic_flag = 24; */
+    if (message.set_scene_object_generic_flag)
+      CUserMsg_ParticleManager_SetSceneObjectGenericFlag.internalBinaryWrite(
+        message.set_scene_object_generic_flag,
+        writer.tag(24, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.SetSceneObjectTintAndDesat set_scene_object_tint_and_desat = 25; */
+    if (message.set_scene_object_tint_and_desat)
+      CUserMsg_ParticleManager_SetSceneObjectTintAndDesat.internalBinaryWrite(
+        message.set_scene_object_tint_and_desat,
+        writer.tag(25, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.DestroyParticleNamed destroy_particle_named = 26; */
+    if (message.destroy_particle_named)
+      CUserMsg_ParticleManager_DestroyParticleNamed.internalBinaryWrite(
+        message.destroy_particle_named,
+        writer.tag(26, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.ParticleSkipToTime particle_skip_to_time = 27; */
+    if (message.particle_skip_to_time)
+      CUserMsg_ParticleManager_ParticleSkipToTime.internalBinaryWrite(
+        message.particle_skip_to_time,
+        writer.tag(27, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.ParticleCanFreeze particle_can_freeze = 28; */
+    if (message.particle_can_freeze)
+      CUserMsg_ParticleManager_ParticleCanFreeze.internalBinaryWrite(
+        message.particle_can_freeze,
+        writer.tag(28, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.SetParticleNamedValueContext set_named_value_context = 29; */
+    if (message.set_named_value_context)
+      CUserMsg_ParticleManager_SetParticleNamedValueContext.internalBinaryWrite(
+        message.set_named_value_context,
+        writer.tag(29, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.UpdateParticleTransform update_particle_transform = 30; */
+    if (message.update_particle_transform)
+      CUserMsg_ParticleManager_UpdateParticleTransform.internalBinaryWrite(
+        message.update_particle_transform,
+        writer.tag(30, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.ParticleFreezeTransitionOverride particle_freeze_transition_override = 31; */
+    if (message.particle_freeze_transition_override)
+      CUserMsg_ParticleManager_ParticleFreezeTransitionOverride.internalBinaryWrite(
+        message.particle_freeze_transition_override,
+        writer.tag(31, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.FreezeParticleInvolving freeze_particle_involving = 32; */
+    if (message.freeze_particle_involving)
+      CUserMsg_ParticleManager_FreezeParticleInvolving.internalBinaryWrite(
+        message.freeze_particle_involving,
+        writer.tag(32, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.AddModellistOverrideElement add_modellist_override_element = 33; */
+    if (message.add_modellist_override_element)
+      CUserMsg_ParticleManager_AddModellistOverrideElement.internalBinaryWrite(
+        message.add_modellist_override_element,
+        writer.tag(33, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.ClearModellistOverride clear_modellist_override = 34; */
+    if (message.clear_modellist_override)
+      CUserMsg_ParticleManager_ClearModellistOverride.internalBinaryWrite(
+        message.clear_modellist_override,
+        writer.tag(34, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.CreatePhysicsSim create_physics_sim = 35; */
+    if (message.create_physics_sim)
+      CUserMsg_ParticleManager_CreatePhysicsSim.internalBinaryWrite(
+        message.create_physics_sim,
+        writer.tag(35, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.DestroyPhysicsSim destroy_physics_sim = 36; */
+    if (message.destroy_physics_sim)
+      CUserMsg_ParticleManager_DestroyPhysicsSim.internalBinaryWrite(
+        message.destroy_physics_sim,
+        writer.tag(36, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.SetVData set_vdata = 37; */
+    if (message.set_vdata)
+      CUserMsg_ParticleManager_SetVData.internalBinaryWrite(
+        message.set_vdata,
+        writer.tag(37, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CUserMsg_ParticleManager.SetMaterialOverride set_material_override = 38; */
+    if (message.set_material_override)
+      CUserMsg_ParticleManager_SetMaterialOverride.internalBinaryWrite(
+        message.set_material_override,
+        writer.tag(38, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager
@@ -6339,34 +6339,34 @@ class CUserMsg_ParticleManager$Type extends MessageType<CUserMsg_ParticleManager
 export const CUserMsg_ParticleManager = new CUserMsg_ParticleManager$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_ReleaseParticleIndex$Type extends MessageType<CUserMsg_ParticleManager_ReleaseParticleIndex> {
-	constructor() {
-		super("CUserMsg_ParticleManager.ReleaseParticleIndex", []);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_ReleaseParticleIndex>,
-	): CUserMsg_ParticleManager_ReleaseParticleIndex {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_ReleaseParticleIndex>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_ReleaseParticleIndex,
-	): CUserMsg_ParticleManager_ReleaseParticleIndex {
-		return target ?? this.create();
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_ReleaseParticleIndex,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.ReleaseParticleIndex", []);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_ReleaseParticleIndex>,
+  ): CUserMsg_ParticleManager_ReleaseParticleIndex {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_ReleaseParticleIndex>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_ReleaseParticleIndex,
+  ): CUserMsg_ParticleManager_ReleaseParticleIndex {
+    return target ?? this.create();
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_ReleaseParticleIndex,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.ReleaseParticleIndex
@@ -6374,186 +6374,186 @@ class CUserMsg_ParticleManager_ReleaseParticleIndex$Type extends MessageType<CUs
 export const CUserMsg_ParticleManager_ReleaseParticleIndex = new CUserMsg_ParticleManager_ReleaseParticleIndex$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_CreateParticle$Type extends MessageType<CUserMsg_ParticleManager_CreateParticle> {
-	constructor() {
-		super("CUserMsg_ParticleManager.CreateParticle", [
-			{
-				no: 1,
-				name: "particle_name_index",
-				kind: "scalar",
-				localName: "particle_name_index",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "attach_type",
-				kind: "scalar",
-				localName: "attach_type",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "entity_handle",
-				kind: "scalar",
-				localName: "entity_handle",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "entity_handle_for_modifiers",
-				kind: "scalar",
-				localName: "entity_handle_for_modifiers",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "apply_voice_ban_rules",
-				kind: "scalar",
-				localName: "apply_voice_ban_rules",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 6,
-				name: "team_behavior",
-				kind: "scalar",
-				localName: "team_behavior",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 7,
-				name: "control_point_configuration",
-				kind: "scalar",
-				localName: "control_point_configuration",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 8,
-				name: "cluster",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 9,
-				name: "endcap_time",
-				kind: "scalar",
-				localName: "endcap_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 10,
-				name: "aggregation_position",
-				kind: "message",
-				localName: "aggregation_position",
-				T: () => CMsgVector,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMsg_ParticleManager_CreateParticle>): CUserMsg_ParticleManager_CreateParticle {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_CreateParticle>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_CreateParticle,
-	): CUserMsg_ParticleManager_CreateParticle {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed64 particle_name_index */ 1:
-					message.particle_name_index = reader.fixed64().toBigInt();
-					break;
-				case /* optional int32 attach_type */ 2:
-					message.attach_type = reader.int32();
-					break;
-				case /* optional uint32 entity_handle */ 3:
-					message.entity_handle = reader.uint32();
-					break;
-				case /* optional uint32 entity_handle_for_modifiers */ 4:
-					message.entity_handle_for_modifiers = reader.uint32();
-					break;
-				case /* optional bool apply_voice_ban_rules */ 5:
-					message.apply_voice_ban_rules = reader.bool();
-					break;
-				case /* optional int32 team_behavior */ 6:
-					message.team_behavior = reader.int32();
-					break;
-				case /* optional string control_point_configuration */ 7:
-					message.control_point_configuration = reader.string();
-					break;
-				case /* optional bool cluster */ 8:
-					message.cluster = reader.bool();
-					break;
-				case /* optional float endcap_time */ 9:
-					message.endcap_time = reader.float();
-					break;
-				case /* optional CMsgVector aggregation_position */ 10:
-					message.aggregation_position = CMsgVector.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.aggregation_position,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_CreateParticle,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed64 particle_name_index = 1; */
-		if (message.particle_name_index !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.particle_name_index);
-		/* optional int32 attach_type = 2; */
-		if (message.attach_type !== undefined) writer.tag(2, WireType.Varint).int32(message.attach_type);
-		/* optional uint32 entity_handle = 3; */
-		if (message.entity_handle !== undefined) writer.tag(3, WireType.Varint).uint32(message.entity_handle);
-		/* optional uint32 entity_handle_for_modifiers = 4; */
-		if (message.entity_handle_for_modifiers !== undefined)
-			writer.tag(4, WireType.Varint).uint32(message.entity_handle_for_modifiers);
-		/* optional bool apply_voice_ban_rules = 5; */
-		if (message.apply_voice_ban_rules !== undefined) writer.tag(5, WireType.Varint).bool(message.apply_voice_ban_rules);
-		/* optional int32 team_behavior = 6; */
-		if (message.team_behavior !== undefined) writer.tag(6, WireType.Varint).int32(message.team_behavior);
-		/* optional string control_point_configuration = 7; */
-		if (message.control_point_configuration !== undefined)
-			writer.tag(7, WireType.LengthDelimited).string(message.control_point_configuration);
-		/* optional bool cluster = 8; */
-		if (message.cluster !== undefined) writer.tag(8, WireType.Varint).bool(message.cluster);
-		/* optional float endcap_time = 9; */
-		if (message.endcap_time !== undefined) writer.tag(9, WireType.Bit32).float(message.endcap_time);
-		/* optional CMsgVector aggregation_position = 10; */
-		if (message.aggregation_position)
-			CMsgVector.internalBinaryWrite(
-				message.aggregation_position,
-				writer.tag(10, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.CreateParticle", [
+      {
+        no: 1,
+        name: "particle_name_index",
+        kind: "scalar",
+        localName: "particle_name_index",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "attach_type",
+        kind: "scalar",
+        localName: "attach_type",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "entity_handle",
+        kind: "scalar",
+        localName: "entity_handle",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "entity_handle_for_modifiers",
+        kind: "scalar",
+        localName: "entity_handle_for_modifiers",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "apply_voice_ban_rules",
+        kind: "scalar",
+        localName: "apply_voice_ban_rules",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 6,
+        name: "team_behavior",
+        kind: "scalar",
+        localName: "team_behavior",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 7,
+        name: "control_point_configuration",
+        kind: "scalar",
+        localName: "control_point_configuration",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 8,
+        name: "cluster",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 9,
+        name: "endcap_time",
+        kind: "scalar",
+        localName: "endcap_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 10,
+        name: "aggregation_position",
+        kind: "message",
+        localName: "aggregation_position",
+        T: () => CMsgVector,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMsg_ParticleManager_CreateParticle>): CUserMsg_ParticleManager_CreateParticle {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_CreateParticle>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_CreateParticle,
+  ): CUserMsg_ParticleManager_CreateParticle {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed64 particle_name_index */ 1:
+          message.particle_name_index = reader.fixed64().toBigInt();
+          break;
+        case /* optional int32 attach_type */ 2:
+          message.attach_type = reader.int32();
+          break;
+        case /* optional uint32 entity_handle */ 3:
+          message.entity_handle = reader.uint32();
+          break;
+        case /* optional uint32 entity_handle_for_modifiers */ 4:
+          message.entity_handle_for_modifiers = reader.uint32();
+          break;
+        case /* optional bool apply_voice_ban_rules */ 5:
+          message.apply_voice_ban_rules = reader.bool();
+          break;
+        case /* optional int32 team_behavior */ 6:
+          message.team_behavior = reader.int32();
+          break;
+        case /* optional string control_point_configuration */ 7:
+          message.control_point_configuration = reader.string();
+          break;
+        case /* optional bool cluster */ 8:
+          message.cluster = reader.bool();
+          break;
+        case /* optional float endcap_time */ 9:
+          message.endcap_time = reader.float();
+          break;
+        case /* optional CMsgVector aggregation_position */ 10:
+          message.aggregation_position = CMsgVector.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.aggregation_position,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_CreateParticle,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed64 particle_name_index = 1; */
+    if (message.particle_name_index !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.particle_name_index);
+    /* optional int32 attach_type = 2; */
+    if (message.attach_type !== undefined) writer.tag(2, WireType.Varint).int32(message.attach_type);
+    /* optional uint32 entity_handle = 3; */
+    if (message.entity_handle !== undefined) writer.tag(3, WireType.Varint).uint32(message.entity_handle);
+    /* optional uint32 entity_handle_for_modifiers = 4; */
+    if (message.entity_handle_for_modifiers !== undefined)
+      writer.tag(4, WireType.Varint).uint32(message.entity_handle_for_modifiers);
+    /* optional bool apply_voice_ban_rules = 5; */
+    if (message.apply_voice_ban_rules !== undefined) writer.tag(5, WireType.Varint).bool(message.apply_voice_ban_rules);
+    /* optional int32 team_behavior = 6; */
+    if (message.team_behavior !== undefined) writer.tag(6, WireType.Varint).int32(message.team_behavior);
+    /* optional string control_point_configuration = 7; */
+    if (message.control_point_configuration !== undefined)
+      writer.tag(7, WireType.LengthDelimited).string(message.control_point_configuration);
+    /* optional bool cluster = 8; */
+    if (message.cluster !== undefined) writer.tag(8, WireType.Varint).bool(message.cluster);
+    /* optional float endcap_time = 9; */
+    if (message.endcap_time !== undefined) writer.tag(9, WireType.Bit32).float(message.endcap_time);
+    /* optional CMsgVector aggregation_position = 10; */
+    if (message.aggregation_position)
+      CMsgVector.internalBinaryWrite(
+        message.aggregation_position,
+        writer.tag(10, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.CreateParticle
@@ -6561,58 +6561,58 @@ class CUserMsg_ParticleManager_CreateParticle$Type extends MessageType<CUserMsg_
 export const CUserMsg_ParticleManager_CreateParticle = new CUserMsg_ParticleManager_CreateParticle$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_DestroyParticle$Type extends MessageType<CUserMsg_ParticleManager_DestroyParticle> {
-	constructor() {
-		super("CUserMsg_ParticleManager.DestroyParticle", [
-			{
-				no: 1,
-				name: "destroy_immediately",
-				kind: "scalar",
-				localName: "destroy_immediately",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMsg_ParticleManager_DestroyParticle>): CUserMsg_ParticleManager_DestroyParticle {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_DestroyParticle>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_DestroyParticle,
-	): CUserMsg_ParticleManager_DestroyParticle {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool destroy_immediately */ 1:
-					message.destroy_immediately = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_DestroyParticle,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool destroy_immediately = 1; */
-		if (message.destroy_immediately !== undefined) writer.tag(1, WireType.Varint).bool(message.destroy_immediately);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.DestroyParticle", [
+      {
+        no: 1,
+        name: "destroy_immediately",
+        kind: "scalar",
+        localName: "destroy_immediately",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMsg_ParticleManager_DestroyParticle>): CUserMsg_ParticleManager_DestroyParticle {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_DestroyParticle>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_DestroyParticle,
+  ): CUserMsg_ParticleManager_DestroyParticle {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool destroy_immediately */ 1:
+          message.destroy_immediately = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_DestroyParticle,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool destroy_immediately = 1; */
+    if (message.destroy_immediately !== undefined) writer.tag(1, WireType.Varint).bool(message.destroy_immediately);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.DestroyParticle
@@ -6620,177 +6620,177 @@ class CUserMsg_ParticleManager_DestroyParticle$Type extends MessageType<CUserMsg
 export const CUserMsg_ParticleManager_DestroyParticle = new CUserMsg_ParticleManager_DestroyParticle$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_DestroyParticleInvolving$Type extends MessageType<CUserMsg_ParticleManager_DestroyParticleInvolving> {
-	constructor() {
-		super("CUserMsg_ParticleManager.DestroyParticleInvolving", [
-			{
-				no: 1,
-				name: "destroy_immediately",
-				kind: "scalar",
-				localName: "destroy_immediately",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 3,
-				name: "entity_handle",
-				kind: "scalar",
-				localName: "entity_handle",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_DestroyParticleInvolving>,
-	): CUserMsg_ParticleManager_DestroyParticleInvolving {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_DestroyParticleInvolving>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_DestroyParticleInvolving,
-	): CUserMsg_ParticleManager_DestroyParticleInvolving {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool destroy_immediately */ 1:
-					message.destroy_immediately = reader.bool();
-					break;
-				case /* optional uint32 entity_handle */ 3:
-					message.entity_handle = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_DestroyParticleInvolving,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool destroy_immediately = 1; */
-		if (message.destroy_immediately !== undefined) writer.tag(1, WireType.Varint).bool(message.destroy_immediately);
-		/* optional uint32 entity_handle = 3; */
-		if (message.entity_handle !== undefined) writer.tag(3, WireType.Varint).uint32(message.entity_handle);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.DestroyParticleInvolving", [
+      {
+        no: 1,
+        name: "destroy_immediately",
+        kind: "scalar",
+        localName: "destroy_immediately",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 3,
+        name: "entity_handle",
+        kind: "scalar",
+        localName: "entity_handle",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_DestroyParticleInvolving>,
+  ): CUserMsg_ParticleManager_DestroyParticleInvolving {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_DestroyParticleInvolving>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_DestroyParticleInvolving,
+  ): CUserMsg_ParticleManager_DestroyParticleInvolving {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool destroy_immediately */ 1:
+          message.destroy_immediately = reader.bool();
+          break;
+        case /* optional uint32 entity_handle */ 3:
+          message.entity_handle = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_DestroyParticleInvolving,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool destroy_immediately = 1; */
+    if (message.destroy_immediately !== undefined) writer.tag(1, WireType.Varint).bool(message.destroy_immediately);
+    /* optional uint32 entity_handle = 3; */
+    if (message.entity_handle !== undefined) writer.tag(3, WireType.Varint).uint32(message.entity_handle);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.DestroyParticleInvolving
  */
 export const CUserMsg_ParticleManager_DestroyParticleInvolving =
-	new CUserMsg_ParticleManager_DestroyParticleInvolving$Type();
+  new CUserMsg_ParticleManager_DestroyParticleInvolving$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_DestroyParticleNamed$Type extends MessageType<CUserMsg_ParticleManager_DestroyParticleNamed> {
-	constructor() {
-		super("CUserMsg_ParticleManager.DestroyParticleNamed", [
-			{
-				no: 1,
-				name: "particle_name_index",
-				kind: "scalar",
-				localName: "particle_name_index",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "entity_handle",
-				kind: "scalar",
-				localName: "entity_handle",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "destroy_immediately",
-				kind: "scalar",
-				localName: "destroy_immediately",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "play_endcap",
-				kind: "scalar",
-				localName: "play_endcap",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_DestroyParticleNamed>,
-	): CUserMsg_ParticleManager_DestroyParticleNamed {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_DestroyParticleNamed>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_DestroyParticleNamed,
-	): CUserMsg_ParticleManager_DestroyParticleNamed {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed64 particle_name_index */ 1:
-					message.particle_name_index = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 entity_handle */ 2:
-					message.entity_handle = reader.uint32();
-					break;
-				case /* optional bool destroy_immediately */ 3:
-					message.destroy_immediately = reader.bool();
-					break;
-				case /* optional bool play_endcap */ 4:
-					message.play_endcap = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_DestroyParticleNamed,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed64 particle_name_index = 1; */
-		if (message.particle_name_index !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.particle_name_index);
-		/* optional uint32 entity_handle = 2; */
-		if (message.entity_handle !== undefined) writer.tag(2, WireType.Varint).uint32(message.entity_handle);
-		/* optional bool destroy_immediately = 3; */
-		if (message.destroy_immediately !== undefined) writer.tag(3, WireType.Varint).bool(message.destroy_immediately);
-		/* optional bool play_endcap = 4; */
-		if (message.play_endcap !== undefined) writer.tag(4, WireType.Varint).bool(message.play_endcap);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.DestroyParticleNamed", [
+      {
+        no: 1,
+        name: "particle_name_index",
+        kind: "scalar",
+        localName: "particle_name_index",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "entity_handle",
+        kind: "scalar",
+        localName: "entity_handle",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "destroy_immediately",
+        kind: "scalar",
+        localName: "destroy_immediately",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "play_endcap",
+        kind: "scalar",
+        localName: "play_endcap",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_DestroyParticleNamed>,
+  ): CUserMsg_ParticleManager_DestroyParticleNamed {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_DestroyParticleNamed>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_DestroyParticleNamed,
+  ): CUserMsg_ParticleManager_DestroyParticleNamed {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed64 particle_name_index */ 1:
+          message.particle_name_index = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 entity_handle */ 2:
+          message.entity_handle = reader.uint32();
+          break;
+        case /* optional bool destroy_immediately */ 3:
+          message.destroy_immediately = reader.bool();
+          break;
+        case /* optional bool play_endcap */ 4:
+          message.play_endcap = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_DestroyParticleNamed,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed64 particle_name_index = 1; */
+    if (message.particle_name_index !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.particle_name_index);
+    /* optional uint32 entity_handle = 2; */
+    if (message.entity_handle !== undefined) writer.tag(2, WireType.Varint).uint32(message.entity_handle);
+    /* optional bool destroy_immediately = 3; */
+    if (message.destroy_immediately !== undefined) writer.tag(3, WireType.Varint).bool(message.destroy_immediately);
+    /* optional bool play_endcap = 4; */
+    if (message.play_endcap !== undefined) writer.tag(4, WireType.Varint).bool(message.play_endcap);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.DestroyParticleNamed
@@ -6798,516 +6798,516 @@ class CUserMsg_ParticleManager_DestroyParticleNamed$Type extends MessageType<CUs
 export const CUserMsg_ParticleManager_DestroyParticleNamed = new CUserMsg_ParticleManager_DestroyParticleNamed$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_UpdateParticle_OBSOLETE$Type extends MessageType<CUserMsg_ParticleManager_UpdateParticle_OBSOLETE> {
-	constructor() {
-		super("CUserMsg_ParticleManager.UpdateParticle_OBSOLETE", [
-			{
-				no: 1,
-				name: "control_point",
-				kind: "scalar",
-				localName: "control_point",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{ no: 2, name: "position", kind: "message", T: () => CMsgVector },
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticle_OBSOLETE>,
-	): CUserMsg_ParticleManager_UpdateParticle_OBSOLETE {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticle_OBSOLETE>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_UpdateParticle_OBSOLETE,
-	): CUserMsg_ParticleManager_UpdateParticle_OBSOLETE {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 control_point */ 1:
-					message.control_point = reader.int32();
-					break;
-				case /* optional CMsgVector position */ 2:
-					message.position = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.position);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_UpdateParticle_OBSOLETE,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 control_point = 1; */
-		if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
-		/* optional CMsgVector position = 2; */
-		if (message.position)
-			CMsgVector.internalBinaryWrite(message.position, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.UpdateParticle_OBSOLETE", [
+      {
+        no: 1,
+        name: "control_point",
+        kind: "scalar",
+        localName: "control_point",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      { no: 2, name: "position", kind: "message", T: () => CMsgVector },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticle_OBSOLETE>,
+  ): CUserMsg_ParticleManager_UpdateParticle_OBSOLETE {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticle_OBSOLETE>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_UpdateParticle_OBSOLETE,
+  ): CUserMsg_ParticleManager_UpdateParticle_OBSOLETE {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 control_point */ 1:
+          message.control_point = reader.int32();
+          break;
+        case /* optional CMsgVector position */ 2:
+          message.position = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.position);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_UpdateParticle_OBSOLETE,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 control_point = 1; */
+    if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
+    /* optional CMsgVector position = 2; */
+    if (message.position)
+      CMsgVector.internalBinaryWrite(message.position, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.UpdateParticle_OBSOLETE
  */
 export const CUserMsg_ParticleManager_UpdateParticle_OBSOLETE =
-	new CUserMsg_ParticleManager_UpdateParticle_OBSOLETE$Type();
+  new CUserMsg_ParticleManager_UpdateParticle_OBSOLETE$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE$Type extends MessageType<CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE> {
-	constructor() {
-		super("CUserMsg_ParticleManager.UpdateParticleFwd_OBSOLETE", [
-			{
-				no: 1,
-				name: "control_point",
-				kind: "scalar",
-				localName: "control_point",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{ no: 2, name: "forward", kind: "message", T: () => CMsgVector },
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE>,
-	): CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE,
-	): CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 control_point */ 1:
-					message.control_point = reader.int32();
-					break;
-				case /* optional CMsgVector forward */ 2:
-					message.forward = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.forward);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 control_point = 1; */
-		if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
-		/* optional CMsgVector forward = 2; */
-		if (message.forward)
-			CMsgVector.internalBinaryWrite(message.forward, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.UpdateParticleFwd_OBSOLETE", [
+      {
+        no: 1,
+        name: "control_point",
+        kind: "scalar",
+        localName: "control_point",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      { no: 2, name: "forward", kind: "message", T: () => CMsgVector },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE>,
+  ): CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE,
+  ): CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 control_point */ 1:
+          message.control_point = reader.int32();
+          break;
+        case /* optional CMsgVector forward */ 2:
+          message.forward = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.forward);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 control_point = 1; */
+    if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
+    /* optional CMsgVector forward = 2; */
+    if (message.forward)
+      CMsgVector.internalBinaryWrite(message.forward, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.UpdateParticleFwd_OBSOLETE
  */
 export const CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE =
-	new CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE$Type();
+  new CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE$Type extends MessageType<CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE> {
-	constructor() {
-		super("CUserMsg_ParticleManager.UpdateParticleOrient_OBSOLETE", [
-			{
-				no: 1,
-				name: "control_point",
-				kind: "scalar",
-				localName: "control_point",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{ no: 2, name: "forward", kind: "message", T: () => CMsgVector },
-			{
-				no: 3,
-				name: "deprecated_right",
-				kind: "message",
-				localName: "deprecated_right",
-				T: () => CMsgVector,
-			},
-			{ no: 4, name: "up", kind: "message", T: () => CMsgVector },
-			{ no: 5, name: "left", kind: "message", T: () => CMsgVector },
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE>,
-	): CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE,
-	): CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 control_point */ 1:
-					message.control_point = reader.int32();
-					break;
-				case /* optional CMsgVector forward */ 2:
-					message.forward = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.forward);
-					break;
-				case /* optional CMsgVector deprecated_right */ 3:
-					message.deprecated_right = CMsgVector.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.deprecated_right,
-					);
-					break;
-				case /* optional CMsgVector up */ 4:
-					message.up = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.up);
-					break;
-				case /* optional CMsgVector left */ 5:
-					message.left = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.left);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 control_point = 1; */
-		if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
-		/* optional CMsgVector forward = 2; */
-		if (message.forward)
-			CMsgVector.internalBinaryWrite(message.forward, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector deprecated_right = 3; */
-		if (message.deprecated_right)
-			CMsgVector.internalBinaryWrite(
-				message.deprecated_right,
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgVector up = 4; */
-		if (message.up)
-			CMsgVector.internalBinaryWrite(message.up, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector left = 5; */
-		if (message.left)
-			CMsgVector.internalBinaryWrite(message.left, writer.tag(5, WireType.LengthDelimited).fork(), options).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.UpdateParticleOrient_OBSOLETE", [
+      {
+        no: 1,
+        name: "control_point",
+        kind: "scalar",
+        localName: "control_point",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      { no: 2, name: "forward", kind: "message", T: () => CMsgVector },
+      {
+        no: 3,
+        name: "deprecated_right",
+        kind: "message",
+        localName: "deprecated_right",
+        T: () => CMsgVector,
+      },
+      { no: 4, name: "up", kind: "message", T: () => CMsgVector },
+      { no: 5, name: "left", kind: "message", T: () => CMsgVector },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE>,
+  ): CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE,
+  ): CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 control_point */ 1:
+          message.control_point = reader.int32();
+          break;
+        case /* optional CMsgVector forward */ 2:
+          message.forward = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.forward);
+          break;
+        case /* optional CMsgVector deprecated_right */ 3:
+          message.deprecated_right = CMsgVector.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.deprecated_right,
+          );
+          break;
+        case /* optional CMsgVector up */ 4:
+          message.up = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.up);
+          break;
+        case /* optional CMsgVector left */ 5:
+          message.left = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.left);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 control_point = 1; */
+    if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
+    /* optional CMsgVector forward = 2; */
+    if (message.forward)
+      CMsgVector.internalBinaryWrite(message.forward, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector deprecated_right = 3; */
+    if (message.deprecated_right)
+      CMsgVector.internalBinaryWrite(
+        message.deprecated_right,
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgVector up = 4; */
+    if (message.up)
+      CMsgVector.internalBinaryWrite(message.up, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector left = 5; */
+    if (message.left)
+      CMsgVector.internalBinaryWrite(message.left, writer.tag(5, WireType.LengthDelimited).fork(), options).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.UpdateParticleOrient_OBSOLETE
  */
 export const CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE =
-	new CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE$Type();
+  new CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_UpdateParticleTransform$Type extends MessageType<CUserMsg_ParticleManager_UpdateParticleTransform> {
-	constructor() {
-		super("CUserMsg_ParticleManager.UpdateParticleTransform", [
-			{
-				no: 1,
-				name: "control_point",
-				kind: "scalar",
-				localName: "control_point",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{ no: 2, name: "position", kind: "message", T: () => CMsgVector },
-			{ no: 3, name: "orientation", kind: "message", T: () => CMsgQuaternion },
-			{
-				no: 4,
-				name: "interpolation_interval",
-				kind: "scalar",
-				localName: "interpolation_interval",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticleTransform>,
-	): CUserMsg_ParticleManager_UpdateParticleTransform {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticleTransform>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_UpdateParticleTransform,
-	): CUserMsg_ParticleManager_UpdateParticleTransform {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 control_point */ 1:
-					message.control_point = reader.int32();
-					break;
-				case /* optional CMsgVector position */ 2:
-					message.position = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.position);
-					break;
-				case /* optional CMsgQuaternion orientation */ 3:
-					message.orientation = CMsgQuaternion.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.orientation,
-					);
-					break;
-				case /* optional float interpolation_interval */ 4:
-					message.interpolation_interval = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_UpdateParticleTransform,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 control_point = 1; */
-		if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
-		/* optional CMsgVector position = 2; */
-		if (message.position)
-			CMsgVector.internalBinaryWrite(message.position, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgQuaternion orientation = 3; */
-		if (message.orientation)
-			CMsgQuaternion.internalBinaryWrite(
-				message.orientation,
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional float interpolation_interval = 4; */
-		if (message.interpolation_interval !== undefined)
-			writer.tag(4, WireType.Bit32).float(message.interpolation_interval);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.UpdateParticleTransform", [
+      {
+        no: 1,
+        name: "control_point",
+        kind: "scalar",
+        localName: "control_point",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      { no: 2, name: "position", kind: "message", T: () => CMsgVector },
+      { no: 3, name: "orientation", kind: "message", T: () => CMsgQuaternion },
+      {
+        no: 4,
+        name: "interpolation_interval",
+        kind: "scalar",
+        localName: "interpolation_interval",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticleTransform>,
+  ): CUserMsg_ParticleManager_UpdateParticleTransform {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticleTransform>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_UpdateParticleTransform,
+  ): CUserMsg_ParticleManager_UpdateParticleTransform {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 control_point */ 1:
+          message.control_point = reader.int32();
+          break;
+        case /* optional CMsgVector position */ 2:
+          message.position = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.position);
+          break;
+        case /* optional CMsgQuaternion orientation */ 3:
+          message.orientation = CMsgQuaternion.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.orientation,
+          );
+          break;
+        case /* optional float interpolation_interval */ 4:
+          message.interpolation_interval = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_UpdateParticleTransform,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 control_point = 1; */
+    if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
+    /* optional CMsgVector position = 2; */
+    if (message.position)
+      CMsgVector.internalBinaryWrite(message.position, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgQuaternion orientation = 3; */
+    if (message.orientation)
+      CMsgQuaternion.internalBinaryWrite(
+        message.orientation,
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional float interpolation_interval = 4; */
+    if (message.interpolation_interval !== undefined)
+      writer.tag(4, WireType.Bit32).float(message.interpolation_interval);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.UpdateParticleTransform
  */
 export const CUserMsg_ParticleManager_UpdateParticleTransform =
-	new CUserMsg_ParticleManager_UpdateParticleTransform$Type();
+  new CUserMsg_ParticleManager_UpdateParticleTransform$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_UpdateParticleFallback$Type extends MessageType<CUserMsg_ParticleManager_UpdateParticleFallback> {
-	constructor() {
-		super("CUserMsg_ParticleManager.UpdateParticleFallback", [
-			{
-				no: 1,
-				name: "control_point",
-				kind: "scalar",
-				localName: "control_point",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{ no: 2, name: "position", kind: "message", T: () => CMsgVector },
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticleFallback>,
-	): CUserMsg_ParticleManager_UpdateParticleFallback {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticleFallback>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_UpdateParticleFallback,
-	): CUserMsg_ParticleManager_UpdateParticleFallback {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 control_point */ 1:
-					message.control_point = reader.int32();
-					break;
-				case /* optional CMsgVector position */ 2:
-					message.position = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.position);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_UpdateParticleFallback,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 control_point = 1; */
-		if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
-		/* optional CMsgVector position = 2; */
-		if (message.position)
-			CMsgVector.internalBinaryWrite(message.position, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.UpdateParticleFallback", [
+      {
+        no: 1,
+        name: "control_point",
+        kind: "scalar",
+        localName: "control_point",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      { no: 2, name: "position", kind: "message", T: () => CMsgVector },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticleFallback>,
+  ): CUserMsg_ParticleManager_UpdateParticleFallback {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticleFallback>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_UpdateParticleFallback,
+  ): CUserMsg_ParticleManager_UpdateParticleFallback {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 control_point */ 1:
+          message.control_point = reader.int32();
+          break;
+        case /* optional CMsgVector position */ 2:
+          message.position = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.position);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_UpdateParticleFallback,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 control_point = 1; */
+    if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
+    /* optional CMsgVector position = 2; */
+    if (message.position)
+      CMsgVector.internalBinaryWrite(message.position, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.UpdateParticleFallback
  */
 export const CUserMsg_ParticleManager_UpdateParticleFallback =
-	new CUserMsg_ParticleManager_UpdateParticleFallback$Type();
+  new CUserMsg_ParticleManager_UpdateParticleFallback$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_UpdateParticleOffset$Type extends MessageType<CUserMsg_ParticleManager_UpdateParticleOffset> {
-	constructor() {
-		super("CUserMsg_ParticleManager.UpdateParticleOffset", [
-			{
-				no: 1,
-				name: "control_point",
-				kind: "scalar",
-				localName: "control_point",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "origin_offset",
-				kind: "message",
-				localName: "origin_offset",
-				T: () => CMsgVector,
-			},
-			{
-				no: 3,
-				name: "angle_offset",
-				kind: "message",
-				localName: "angle_offset",
-				T: () => CMsgQAngle,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticleOffset>,
-	): CUserMsg_ParticleManager_UpdateParticleOffset {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticleOffset>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_UpdateParticleOffset,
-	): CUserMsg_ParticleManager_UpdateParticleOffset {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 control_point */ 1:
-					message.control_point = reader.int32();
-					break;
-				case /* optional CMsgVector origin_offset */ 2:
-					message.origin_offset = CMsgVector.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.origin_offset,
-					);
-					break;
-				case /* optional CMsgQAngle angle_offset */ 3:
-					message.angle_offset = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angle_offset);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_UpdateParticleOffset,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 control_point = 1; */
-		if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
-		/* optional CMsgVector origin_offset = 2; */
-		if (message.origin_offset)
-			CMsgVector.internalBinaryWrite(
-				message.origin_offset,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgQAngle angle_offset = 3; */
-		if (message.angle_offset)
-			CMsgQAngle.internalBinaryWrite(
-				message.angle_offset,
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.UpdateParticleOffset", [
+      {
+        no: 1,
+        name: "control_point",
+        kind: "scalar",
+        localName: "control_point",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "origin_offset",
+        kind: "message",
+        localName: "origin_offset",
+        T: () => CMsgVector,
+      },
+      {
+        no: 3,
+        name: "angle_offset",
+        kind: "message",
+        localName: "angle_offset",
+        T: () => CMsgQAngle,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticleOffset>,
+  ): CUserMsg_ParticleManager_UpdateParticleOffset {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticleOffset>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_UpdateParticleOffset,
+  ): CUserMsg_ParticleManager_UpdateParticleOffset {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 control_point */ 1:
+          message.control_point = reader.int32();
+          break;
+        case /* optional CMsgVector origin_offset */ 2:
+          message.origin_offset = CMsgVector.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.origin_offset,
+          );
+          break;
+        case /* optional CMsgQAngle angle_offset */ 3:
+          message.angle_offset = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angle_offset);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_UpdateParticleOffset,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 control_point = 1; */
+    if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
+    /* optional CMsgVector origin_offset = 2; */
+    if (message.origin_offset)
+      CMsgVector.internalBinaryWrite(
+        message.origin_offset,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgQAngle angle_offset = 3; */
+    if (message.angle_offset)
+      CMsgQAngle.internalBinaryWrite(
+        message.angle_offset,
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.UpdateParticleOffset
@@ -7315,177 +7315,177 @@ class CUserMsg_ParticleManager_UpdateParticleOffset$Type extends MessageType<CUs
 export const CUserMsg_ParticleManager_UpdateParticleOffset = new CUserMsg_ParticleManager_UpdateParticleOffset$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_UpdateParticleEnt$Type extends MessageType<CUserMsg_ParticleManager_UpdateParticleEnt> {
-	constructor() {
-		super("CUserMsg_ParticleManager.UpdateParticleEnt", [
-			{
-				no: 1,
-				name: "control_point",
-				kind: "scalar",
-				localName: "control_point",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "entity_handle",
-				kind: "scalar",
-				localName: "entity_handle",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "attach_type",
-				kind: "scalar",
-				localName: "attach_type",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "attachment",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "fallback_position",
-				kind: "message",
-				localName: "fallback_position",
-				T: () => CMsgVector,
-			},
-			{
-				no: 6,
-				name: "include_wearables",
-				kind: "scalar",
-				localName: "include_wearables",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 7,
-				name: "offset_position",
-				kind: "message",
-				localName: "offset_position",
-				T: () => CMsgVector,
-			},
-			{
-				no: 8,
-				name: "offset_angles",
-				kind: "message",
-				localName: "offset_angles",
-				T: () => CMsgQAngle,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticleEnt>,
-	): CUserMsg_ParticleManager_UpdateParticleEnt {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticleEnt>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_UpdateParticleEnt,
-	): CUserMsg_ParticleManager_UpdateParticleEnt {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 control_point */ 1:
-					message.control_point = reader.int32();
-					break;
-				case /* optional uint32 entity_handle */ 2:
-					message.entity_handle = reader.uint32();
-					break;
-				case /* optional int32 attach_type */ 3:
-					message.attach_type = reader.int32();
-					break;
-				case /* optional int32 attachment */ 4:
-					message.attachment = reader.int32();
-					break;
-				case /* optional CMsgVector fallback_position */ 5:
-					message.fallback_position = CMsgVector.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.fallback_position,
-					);
-					break;
-				case /* optional bool include_wearables */ 6:
-					message.include_wearables = reader.bool();
-					break;
-				case /* optional CMsgVector offset_position */ 7:
-					message.offset_position = CMsgVector.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.offset_position,
-					);
-					break;
-				case /* optional CMsgQAngle offset_angles */ 8:
-					message.offset_angles = CMsgQAngle.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.offset_angles,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_UpdateParticleEnt,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 control_point = 1; */
-		if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
-		/* optional uint32 entity_handle = 2; */
-		if (message.entity_handle !== undefined) writer.tag(2, WireType.Varint).uint32(message.entity_handle);
-		/* optional int32 attach_type = 3; */
-		if (message.attach_type !== undefined) writer.tag(3, WireType.Varint).int32(message.attach_type);
-		/* optional int32 attachment = 4; */
-		if (message.attachment !== undefined) writer.tag(4, WireType.Varint).int32(message.attachment);
-		/* optional CMsgVector fallback_position = 5; */
-		if (message.fallback_position)
-			CMsgVector.internalBinaryWrite(
-				message.fallback_position,
-				writer.tag(5, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional bool include_wearables = 6; */
-		if (message.include_wearables !== undefined) writer.tag(6, WireType.Varint).bool(message.include_wearables);
-		/* optional CMsgVector offset_position = 7; */
-		if (message.offset_position)
-			CMsgVector.internalBinaryWrite(
-				message.offset_position,
-				writer.tag(7, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgQAngle offset_angles = 8; */
-		if (message.offset_angles)
-			CMsgQAngle.internalBinaryWrite(
-				message.offset_angles,
-				writer.tag(8, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.UpdateParticleEnt", [
+      {
+        no: 1,
+        name: "control_point",
+        kind: "scalar",
+        localName: "control_point",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "entity_handle",
+        kind: "scalar",
+        localName: "entity_handle",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "attach_type",
+        kind: "scalar",
+        localName: "attach_type",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "attachment",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "fallback_position",
+        kind: "message",
+        localName: "fallback_position",
+        T: () => CMsgVector,
+      },
+      {
+        no: 6,
+        name: "include_wearables",
+        kind: "scalar",
+        localName: "include_wearables",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 7,
+        name: "offset_position",
+        kind: "message",
+        localName: "offset_position",
+        T: () => CMsgVector,
+      },
+      {
+        no: 8,
+        name: "offset_angles",
+        kind: "message",
+        localName: "offset_angles",
+        T: () => CMsgQAngle,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticleEnt>,
+  ): CUserMsg_ParticleManager_UpdateParticleEnt {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticleEnt>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_UpdateParticleEnt,
+  ): CUserMsg_ParticleManager_UpdateParticleEnt {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 control_point */ 1:
+          message.control_point = reader.int32();
+          break;
+        case /* optional uint32 entity_handle */ 2:
+          message.entity_handle = reader.uint32();
+          break;
+        case /* optional int32 attach_type */ 3:
+          message.attach_type = reader.int32();
+          break;
+        case /* optional int32 attachment */ 4:
+          message.attachment = reader.int32();
+          break;
+        case /* optional CMsgVector fallback_position */ 5:
+          message.fallback_position = CMsgVector.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.fallback_position,
+          );
+          break;
+        case /* optional bool include_wearables */ 6:
+          message.include_wearables = reader.bool();
+          break;
+        case /* optional CMsgVector offset_position */ 7:
+          message.offset_position = CMsgVector.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.offset_position,
+          );
+          break;
+        case /* optional CMsgQAngle offset_angles */ 8:
+          message.offset_angles = CMsgQAngle.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.offset_angles,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_UpdateParticleEnt,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 control_point = 1; */
+    if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
+    /* optional uint32 entity_handle = 2; */
+    if (message.entity_handle !== undefined) writer.tag(2, WireType.Varint).uint32(message.entity_handle);
+    /* optional int32 attach_type = 3; */
+    if (message.attach_type !== undefined) writer.tag(3, WireType.Varint).int32(message.attach_type);
+    /* optional int32 attachment = 4; */
+    if (message.attachment !== undefined) writer.tag(4, WireType.Varint).int32(message.attachment);
+    /* optional CMsgVector fallback_position = 5; */
+    if (message.fallback_position)
+      CMsgVector.internalBinaryWrite(
+        message.fallback_position,
+        writer.tag(5, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional bool include_wearables = 6; */
+    if (message.include_wearables !== undefined) writer.tag(6, WireType.Varint).bool(message.include_wearables);
+    /* optional CMsgVector offset_position = 7; */
+    if (message.offset_position)
+      CMsgVector.internalBinaryWrite(
+        message.offset_position,
+        writer.tag(7, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgQAngle offset_angles = 8; */
+    if (message.offset_angles)
+      CMsgQAngle.internalBinaryWrite(
+        message.offset_angles,
+        writer.tag(8, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.UpdateParticleEnt
@@ -7493,296 +7493,296 @@ class CUserMsg_ParticleManager_UpdateParticleEnt$Type extends MessageType<CUserM
 export const CUserMsg_ParticleManager_UpdateParticleEnt = new CUserMsg_ParticleManager_UpdateParticleEnt$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_UpdateParticleSetFrozen$Type extends MessageType<CUserMsg_ParticleManager_UpdateParticleSetFrozen> {
-	constructor() {
-		super("CUserMsg_ParticleManager.UpdateParticleSetFrozen", [
-			{
-				no: 1,
-				name: "set_frozen",
-				kind: "scalar",
-				localName: "set_frozen",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 2,
-				name: "transition_duration",
-				kind: "scalar",
-				localName: "transition_duration",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticleSetFrozen>,
-	): CUserMsg_ParticleManager_UpdateParticleSetFrozen {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticleSetFrozen>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_UpdateParticleSetFrozen,
-	): CUserMsg_ParticleManager_UpdateParticleSetFrozen {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool set_frozen */ 1:
-					message.set_frozen = reader.bool();
-					break;
-				case /* optional float transition_duration */ 2:
-					message.transition_duration = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_UpdateParticleSetFrozen,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool set_frozen = 1; */
-		if (message.set_frozen !== undefined) writer.tag(1, WireType.Varint).bool(message.set_frozen);
-		/* optional float transition_duration = 2; */
-		if (message.transition_duration !== undefined) writer.tag(2, WireType.Bit32).float(message.transition_duration);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.UpdateParticleSetFrozen", [
+      {
+        no: 1,
+        name: "set_frozen",
+        kind: "scalar",
+        localName: "set_frozen",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 2,
+        name: "transition_duration",
+        kind: "scalar",
+        localName: "transition_duration",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticleSetFrozen>,
+  ): CUserMsg_ParticleManager_UpdateParticleSetFrozen {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticleSetFrozen>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_UpdateParticleSetFrozen,
+  ): CUserMsg_ParticleManager_UpdateParticleSetFrozen {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool set_frozen */ 1:
+          message.set_frozen = reader.bool();
+          break;
+        case /* optional float transition_duration */ 2:
+          message.transition_duration = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_UpdateParticleSetFrozen,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool set_frozen = 1; */
+    if (message.set_frozen !== undefined) writer.tag(1, WireType.Varint).bool(message.set_frozen);
+    /* optional float transition_duration = 2; */
+    if (message.transition_duration !== undefined) writer.tag(2, WireType.Bit32).float(message.transition_duration);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.UpdateParticleSetFrozen
  */
 export const CUserMsg_ParticleManager_UpdateParticleSetFrozen =
-	new CUserMsg_ParticleManager_UpdateParticleSetFrozen$Type();
+  new CUserMsg_ParticleManager_UpdateParticleSetFrozen$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_UpdateParticleShouldDraw$Type extends MessageType<CUserMsg_ParticleManager_UpdateParticleShouldDraw> {
-	constructor() {
-		super("CUserMsg_ParticleManager.UpdateParticleShouldDraw", [
-			{
-				no: 1,
-				name: "should_draw",
-				kind: "scalar",
-				localName: "should_draw",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticleShouldDraw>,
-	): CUserMsg_ParticleManager_UpdateParticleShouldDraw {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticleShouldDraw>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_UpdateParticleShouldDraw,
-	): CUserMsg_ParticleManager_UpdateParticleShouldDraw {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool should_draw */ 1:
-					message.should_draw = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_UpdateParticleShouldDraw,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool should_draw = 1; */
-		if (message.should_draw !== undefined) writer.tag(1, WireType.Varint).bool(message.should_draw);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.UpdateParticleShouldDraw", [
+      {
+        no: 1,
+        name: "should_draw",
+        kind: "scalar",
+        localName: "should_draw",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_UpdateParticleShouldDraw>,
+  ): CUserMsg_ParticleManager_UpdateParticleShouldDraw {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_UpdateParticleShouldDraw>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_UpdateParticleShouldDraw,
+  ): CUserMsg_ParticleManager_UpdateParticleShouldDraw {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool should_draw */ 1:
+          message.should_draw = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_UpdateParticleShouldDraw,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool should_draw = 1; */
+    if (message.should_draw !== undefined) writer.tag(1, WireType.Varint).bool(message.should_draw);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.UpdateParticleShouldDraw
  */
 export const CUserMsg_ParticleManager_UpdateParticleShouldDraw =
-	new CUserMsg_ParticleManager_UpdateParticleShouldDraw$Type();
+  new CUserMsg_ParticleManager_UpdateParticleShouldDraw$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_ChangeControlPointAttachment$Type extends MessageType<CUserMsg_ParticleManager_ChangeControlPointAttachment> {
-	constructor() {
-		super("CUserMsg_ParticleManager.ChangeControlPointAttachment", [
-			{
-				no: 1,
-				name: "attachment_old",
-				kind: "scalar",
-				localName: "attachment_old",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "attachment_new",
-				kind: "scalar",
-				localName: "attachment_new",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "entity_handle",
-				kind: "scalar",
-				localName: "entity_handle",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_ChangeControlPointAttachment>,
-	): CUserMsg_ParticleManager_ChangeControlPointAttachment {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_ChangeControlPointAttachment>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_ChangeControlPointAttachment,
-	): CUserMsg_ParticleManager_ChangeControlPointAttachment {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 attachment_old */ 1:
-					message.attachment_old = reader.int32();
-					break;
-				case /* optional int32 attachment_new */ 2:
-					message.attachment_new = reader.int32();
-					break;
-				case /* optional uint32 entity_handle */ 3:
-					message.entity_handle = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_ChangeControlPointAttachment,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 attachment_old = 1; */
-		if (message.attachment_old !== undefined) writer.tag(1, WireType.Varint).int32(message.attachment_old);
-		/* optional int32 attachment_new = 2; */
-		if (message.attachment_new !== undefined) writer.tag(2, WireType.Varint).int32(message.attachment_new);
-		/* optional uint32 entity_handle = 3; */
-		if (message.entity_handle !== undefined) writer.tag(3, WireType.Varint).uint32(message.entity_handle);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.ChangeControlPointAttachment", [
+      {
+        no: 1,
+        name: "attachment_old",
+        kind: "scalar",
+        localName: "attachment_old",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "attachment_new",
+        kind: "scalar",
+        localName: "attachment_new",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "entity_handle",
+        kind: "scalar",
+        localName: "entity_handle",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_ChangeControlPointAttachment>,
+  ): CUserMsg_ParticleManager_ChangeControlPointAttachment {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_ChangeControlPointAttachment>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_ChangeControlPointAttachment,
+  ): CUserMsg_ParticleManager_ChangeControlPointAttachment {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 attachment_old */ 1:
+          message.attachment_old = reader.int32();
+          break;
+        case /* optional int32 attachment_new */ 2:
+          message.attachment_new = reader.int32();
+          break;
+        case /* optional uint32 entity_handle */ 3:
+          message.entity_handle = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_ChangeControlPointAttachment,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 attachment_old = 1; */
+    if (message.attachment_old !== undefined) writer.tag(1, WireType.Varint).int32(message.attachment_old);
+    /* optional int32 attachment_new = 2; */
+    if (message.attachment_new !== undefined) writer.tag(2, WireType.Varint).int32(message.attachment_new);
+    /* optional uint32 entity_handle = 3; */
+    if (message.entity_handle !== undefined) writer.tag(3, WireType.Varint).uint32(message.entity_handle);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.ChangeControlPointAttachment
  */
 export const CUserMsg_ParticleManager_ChangeControlPointAttachment =
-	new CUserMsg_ParticleManager_ChangeControlPointAttachment$Type();
+  new CUserMsg_ParticleManager_ChangeControlPointAttachment$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_UpdateEntityPosition$Type extends MessageType<CUserMsg_ParticleManager_UpdateEntityPosition> {
-	constructor() {
-		super("CUserMsg_ParticleManager.UpdateEntityPosition", [
-			{
-				no: 1,
-				name: "entity_handle",
-				kind: "scalar",
-				localName: "entity_handle",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{ no: 2, name: "position", kind: "message", T: () => CMsgVector },
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_UpdateEntityPosition>,
-	): CUserMsg_ParticleManager_UpdateEntityPosition {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_UpdateEntityPosition>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_UpdateEntityPosition,
-	): CUserMsg_ParticleManager_UpdateEntityPosition {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 entity_handle */ 1:
-					message.entity_handle = reader.uint32();
-					break;
-				case /* optional CMsgVector position */ 2:
-					message.position = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.position);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_UpdateEntityPosition,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 entity_handle = 1; */
-		if (message.entity_handle !== undefined) writer.tag(1, WireType.Varint).uint32(message.entity_handle);
-		/* optional CMsgVector position = 2; */
-		if (message.position)
-			CMsgVector.internalBinaryWrite(message.position, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.UpdateEntityPosition", [
+      {
+        no: 1,
+        name: "entity_handle",
+        kind: "scalar",
+        localName: "entity_handle",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      { no: 2, name: "position", kind: "message", T: () => CMsgVector },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_UpdateEntityPosition>,
+  ): CUserMsg_ParticleManager_UpdateEntityPosition {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_UpdateEntityPosition>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_UpdateEntityPosition,
+  ): CUserMsg_ParticleManager_UpdateEntityPosition {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 entity_handle */ 1:
+          message.entity_handle = reader.uint32();
+          break;
+        case /* optional CMsgVector position */ 2:
+          message.position = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.position);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_UpdateEntityPosition,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 entity_handle = 1; */
+    if (message.entity_handle !== undefined) writer.tag(1, WireType.Varint).uint32(message.entity_handle);
+    /* optional CMsgVector position = 2; */
+    if (message.position)
+      CMsgVector.internalBinaryWrite(message.position, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.UpdateEntityPosition
@@ -7790,226 +7790,226 @@ class CUserMsg_ParticleManager_UpdateEntityPosition$Type extends MessageType<CUs
 export const CUserMsg_ParticleManager_UpdateEntityPosition = new CUserMsg_ParticleManager_UpdateEntityPosition$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_SetParticleFoWProperties$Type extends MessageType<CUserMsg_ParticleManager_SetParticleFoWProperties> {
-	constructor() {
-		super("CUserMsg_ParticleManager.SetParticleFoWProperties", [
-			{
-				no: 1,
-				name: "fow_control_point",
-				kind: "scalar",
-				localName: "fow_control_point",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "fow_control_point2",
-				kind: "scalar",
-				localName: "fow_control_point2",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "fow_radius",
-				kind: "scalar",
-				localName: "fow_radius",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_SetParticleFoWProperties>,
-	): CUserMsg_ParticleManager_SetParticleFoWProperties {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_SetParticleFoWProperties>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_SetParticleFoWProperties,
-	): CUserMsg_ParticleManager_SetParticleFoWProperties {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 fow_control_point */ 1:
-					message.fow_control_point = reader.int32();
-					break;
-				case /* optional int32 fow_control_point2 */ 2:
-					message.fow_control_point2 = reader.int32();
-					break;
-				case /* optional float fow_radius */ 3:
-					message.fow_radius = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_SetParticleFoWProperties,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 fow_control_point = 1; */
-		if (message.fow_control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.fow_control_point);
-		/* optional int32 fow_control_point2 = 2; */
-		if (message.fow_control_point2 !== undefined) writer.tag(2, WireType.Varint).int32(message.fow_control_point2);
-		/* optional float fow_radius = 3; */
-		if (message.fow_radius !== undefined) writer.tag(3, WireType.Bit32).float(message.fow_radius);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.SetParticleFoWProperties", [
+      {
+        no: 1,
+        name: "fow_control_point",
+        kind: "scalar",
+        localName: "fow_control_point",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "fow_control_point2",
+        kind: "scalar",
+        localName: "fow_control_point2",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "fow_radius",
+        kind: "scalar",
+        localName: "fow_radius",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_SetParticleFoWProperties>,
+  ): CUserMsg_ParticleManager_SetParticleFoWProperties {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_SetParticleFoWProperties>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_SetParticleFoWProperties,
+  ): CUserMsg_ParticleManager_SetParticleFoWProperties {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 fow_control_point */ 1:
+          message.fow_control_point = reader.int32();
+          break;
+        case /* optional int32 fow_control_point2 */ 2:
+          message.fow_control_point2 = reader.int32();
+          break;
+        case /* optional float fow_radius */ 3:
+          message.fow_radius = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_SetParticleFoWProperties,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 fow_control_point = 1; */
+    if (message.fow_control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.fow_control_point);
+    /* optional int32 fow_control_point2 = 2; */
+    if (message.fow_control_point2 !== undefined) writer.tag(2, WireType.Varint).int32(message.fow_control_point2);
+    /* optional float fow_radius = 3; */
+    if (message.fow_radius !== undefined) writer.tag(3, WireType.Bit32).float(message.fow_radius);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.SetParticleFoWProperties
  */
 export const CUserMsg_ParticleManager_SetParticleFoWProperties =
-	new CUserMsg_ParticleManager_SetParticleFoWProperties$Type();
+  new CUserMsg_ParticleManager_SetParticleFoWProperties$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_SetParticleShouldCheckFoW$Type extends MessageType<CUserMsg_ParticleManager_SetParticleShouldCheckFoW> {
-	constructor() {
-		super("CUserMsg_ParticleManager.SetParticleShouldCheckFoW", [
-			{
-				no: 1,
-				name: "check_fow",
-				kind: "scalar",
-				localName: "check_fow",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_SetParticleShouldCheckFoW>,
-	): CUserMsg_ParticleManager_SetParticleShouldCheckFoW {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_SetParticleShouldCheckFoW>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_SetParticleShouldCheckFoW,
-	): CUserMsg_ParticleManager_SetParticleShouldCheckFoW {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool check_fow */ 1:
-					message.check_fow = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_SetParticleShouldCheckFoW,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool check_fow = 1; */
-		if (message.check_fow !== undefined) writer.tag(1, WireType.Varint).bool(message.check_fow);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.SetParticleShouldCheckFoW", [
+      {
+        no: 1,
+        name: "check_fow",
+        kind: "scalar",
+        localName: "check_fow",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_SetParticleShouldCheckFoW>,
+  ): CUserMsg_ParticleManager_SetParticleShouldCheckFoW {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_SetParticleShouldCheckFoW>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_SetParticleShouldCheckFoW,
+  ): CUserMsg_ParticleManager_SetParticleShouldCheckFoW {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool check_fow */ 1:
+          message.check_fow = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_SetParticleShouldCheckFoW,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool check_fow = 1; */
+    if (message.check_fow !== undefined) writer.tag(1, WireType.Varint).bool(message.check_fow);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.SetParticleShouldCheckFoW
  */
 export const CUserMsg_ParticleManager_SetParticleShouldCheckFoW =
-	new CUserMsg_ParticleManager_SetParticleShouldCheckFoW$Type();
+  new CUserMsg_ParticleManager_SetParticleShouldCheckFoW$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_SetControlPointModel$Type extends MessageType<CUserMsg_ParticleManager_SetControlPointModel> {
-	constructor() {
-		super("CUserMsg_ParticleManager.SetControlPointModel", [
-			{
-				no: 1,
-				name: "control_point",
-				kind: "scalar",
-				localName: "control_point",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "model_name",
-				kind: "scalar",
-				localName: "model_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_SetControlPointModel>,
-	): CUserMsg_ParticleManager_SetControlPointModel {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_SetControlPointModel>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_SetControlPointModel,
-	): CUserMsg_ParticleManager_SetControlPointModel {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 control_point */ 1:
-					message.control_point = reader.int32();
-					break;
-				case /* optional string model_name */ 2:
-					message.model_name = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_SetControlPointModel,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 control_point = 1; */
-		if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
-		/* optional string model_name = 2; */
-		if (message.model_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.model_name);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.SetControlPointModel", [
+      {
+        no: 1,
+        name: "control_point",
+        kind: "scalar",
+        localName: "control_point",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "model_name",
+        kind: "scalar",
+        localName: "model_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_SetControlPointModel>,
+  ): CUserMsg_ParticleManager_SetControlPointModel {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_SetControlPointModel>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_SetControlPointModel,
+  ): CUserMsg_ParticleManager_SetControlPointModel {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 control_point */ 1:
+          message.control_point = reader.int32();
+          break;
+        case /* optional string model_name */ 2:
+          message.model_name = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_SetControlPointModel,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 control_point = 1; */
+    if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
+    /* optional string model_name = 2; */
+    if (message.model_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.model_name);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.SetControlPointModel
@@ -8017,133 +8017,133 @@ class CUserMsg_ParticleManager_SetControlPointModel$Type extends MessageType<CUs
 export const CUserMsg_ParticleManager_SetControlPointModel = new CUserMsg_ParticleManager_SetControlPointModel$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_SetControlPointSnapshot$Type extends MessageType<CUserMsg_ParticleManager_SetControlPointSnapshot> {
-	constructor() {
-		super("CUserMsg_ParticleManager.SetControlPointSnapshot", [
-			{
-				no: 1,
-				name: "control_point",
-				kind: "scalar",
-				localName: "control_point",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "snapshot_name",
-				kind: "scalar",
-				localName: "snapshot_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_SetControlPointSnapshot>,
-	): CUserMsg_ParticleManager_SetControlPointSnapshot {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_SetControlPointSnapshot>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_SetControlPointSnapshot,
-	): CUserMsg_ParticleManager_SetControlPointSnapshot {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 control_point */ 1:
-					message.control_point = reader.int32();
-					break;
-				case /* optional string snapshot_name */ 2:
-					message.snapshot_name = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_SetControlPointSnapshot,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 control_point = 1; */
-		if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
-		/* optional string snapshot_name = 2; */
-		if (message.snapshot_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.snapshot_name);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.SetControlPointSnapshot", [
+      {
+        no: 1,
+        name: "control_point",
+        kind: "scalar",
+        localName: "control_point",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "snapshot_name",
+        kind: "scalar",
+        localName: "snapshot_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_SetControlPointSnapshot>,
+  ): CUserMsg_ParticleManager_SetControlPointSnapshot {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_SetControlPointSnapshot>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_SetControlPointSnapshot,
+  ): CUserMsg_ParticleManager_SetControlPointSnapshot {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 control_point */ 1:
+          message.control_point = reader.int32();
+          break;
+        case /* optional string snapshot_name */ 2:
+          message.snapshot_name = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_SetControlPointSnapshot,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 control_point = 1; */
+    if (message.control_point !== undefined) writer.tag(1, WireType.Varint).int32(message.control_point);
+    /* optional string snapshot_name = 2; */
+    if (message.snapshot_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.snapshot_name);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.SetControlPointSnapshot
  */
 export const CUserMsg_ParticleManager_SetControlPointSnapshot =
-	new CUserMsg_ParticleManager_SetControlPointSnapshot$Type();
+  new CUserMsg_ParticleManager_SetControlPointSnapshot$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_SetParticleText$Type extends MessageType<CUserMsg_ParticleManager_SetParticleText> {
-	constructor() {
-		super("CUserMsg_ParticleManager.SetParticleText", [
-			{
-				no: 1,
-				name: "text",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMsg_ParticleManager_SetParticleText>): CUserMsg_ParticleManager_SetParticleText {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_SetParticleText>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_SetParticleText,
-	): CUserMsg_ParticleManager_SetParticleText {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string text */ 1:
-					message.text = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_SetParticleText,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string text = 1; */
-		if (message.text !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.text);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.SetParticleText", [
+      {
+        no: 1,
+        name: "text",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMsg_ParticleManager_SetParticleText>): CUserMsg_ParticleManager_SetParticleText {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_SetParticleText>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_SetParticleText,
+  ): CUserMsg_ParticleManager_SetParticleText {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string text */ 1:
+          message.text = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_SetParticleText,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string text = 1; */
+    if (message.text !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.text);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.SetParticleText
@@ -8151,73 +8151,73 @@ class CUserMsg_ParticleManager_SetParticleText$Type extends MessageType<CUserMsg
 export const CUserMsg_ParticleManager_SetParticleText = new CUserMsg_ParticleManager_SetParticleText$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_SetTextureAttribute$Type extends MessageType<CUserMsg_ParticleManager_SetTextureAttribute> {
-	constructor() {
-		super("CUserMsg_ParticleManager.SetTextureAttribute", [
-			{
-				no: 1,
-				name: "attribute_name",
-				kind: "scalar",
-				localName: "attribute_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "texture_name",
-				kind: "scalar",
-				localName: "texture_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_SetTextureAttribute>,
-	): CUserMsg_ParticleManager_SetTextureAttribute {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_SetTextureAttribute>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_SetTextureAttribute,
-	): CUserMsg_ParticleManager_SetTextureAttribute {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string attribute_name */ 1:
-					message.attribute_name = reader.string();
-					break;
-				case /* optional string texture_name */ 2:
-					message.texture_name = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_SetTextureAttribute,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string attribute_name = 1; */
-		if (message.attribute_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.attribute_name);
-		/* optional string texture_name = 2; */
-		if (message.texture_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.texture_name);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.SetTextureAttribute", [
+      {
+        no: 1,
+        name: "attribute_name",
+        kind: "scalar",
+        localName: "attribute_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "texture_name",
+        kind: "scalar",
+        localName: "texture_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_SetTextureAttribute>,
+  ): CUserMsg_ParticleManager_SetTextureAttribute {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_SetTextureAttribute>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_SetTextureAttribute,
+  ): CUserMsg_ParticleManager_SetTextureAttribute {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string attribute_name */ 1:
+          message.attribute_name = reader.string();
+          break;
+        case /* optional string texture_name */ 2:
+          message.texture_name = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_SetTextureAttribute,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string attribute_name = 1; */
+    if (message.attribute_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.attribute_name);
+    /* optional string texture_name = 2; */
+    if (message.texture_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.texture_name);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.SetTextureAttribute
@@ -8225,197 +8225,197 @@ class CUserMsg_ParticleManager_SetTextureAttribute$Type extends MessageType<CUse
 export const CUserMsg_ParticleManager_SetTextureAttribute = new CUserMsg_ParticleManager_SetTextureAttribute$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_SetSceneObjectGenericFlag$Type extends MessageType<CUserMsg_ParticleManager_SetSceneObjectGenericFlag> {
-	constructor() {
-		super("CUserMsg_ParticleManager.SetSceneObjectGenericFlag", [
-			{
-				no: 1,
-				name: "flag_value",
-				kind: "scalar",
-				localName: "flag_value",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_SetSceneObjectGenericFlag>,
-	): CUserMsg_ParticleManager_SetSceneObjectGenericFlag {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_SetSceneObjectGenericFlag>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_SetSceneObjectGenericFlag,
-	): CUserMsg_ParticleManager_SetSceneObjectGenericFlag {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool flag_value */ 1:
-					message.flag_value = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_SetSceneObjectGenericFlag,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool flag_value = 1; */
-		if (message.flag_value !== undefined) writer.tag(1, WireType.Varint).bool(message.flag_value);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.SetSceneObjectGenericFlag", [
+      {
+        no: 1,
+        name: "flag_value",
+        kind: "scalar",
+        localName: "flag_value",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_SetSceneObjectGenericFlag>,
+  ): CUserMsg_ParticleManager_SetSceneObjectGenericFlag {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_SetSceneObjectGenericFlag>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_SetSceneObjectGenericFlag,
+  ): CUserMsg_ParticleManager_SetSceneObjectGenericFlag {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool flag_value */ 1:
+          message.flag_value = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_SetSceneObjectGenericFlag,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool flag_value = 1; */
+    if (message.flag_value !== undefined) writer.tag(1, WireType.Varint).bool(message.flag_value);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.SetSceneObjectGenericFlag
  */
 export const CUserMsg_ParticleManager_SetSceneObjectGenericFlag =
-	new CUserMsg_ParticleManager_SetSceneObjectGenericFlag$Type();
+  new CUserMsg_ParticleManager_SetSceneObjectGenericFlag$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_SetSceneObjectTintAndDesat$Type extends MessageType<CUserMsg_ParticleManager_SetSceneObjectTintAndDesat> {
-	constructor() {
-		super("CUserMsg_ParticleManager.SetSceneObjectTintAndDesat", [
-			{
-				no: 1,
-				name: "tint",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "desat",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_SetSceneObjectTintAndDesat>,
-	): CUserMsg_ParticleManager_SetSceneObjectTintAndDesat {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_SetSceneObjectTintAndDesat>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_SetSceneObjectTintAndDesat,
-	): CUserMsg_ParticleManager_SetSceneObjectTintAndDesat {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 tint */ 1:
-					message.tint = reader.fixed32();
-					break;
-				case /* optional float desat */ 2:
-					message.desat = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_SetSceneObjectTintAndDesat,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 tint = 1; */
-		if (message.tint !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.tint);
-		/* optional float desat = 2; */
-		if (message.desat !== undefined) writer.tag(2, WireType.Bit32).float(message.desat);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.SetSceneObjectTintAndDesat", [
+      {
+        no: 1,
+        name: "tint",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "desat",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_SetSceneObjectTintAndDesat>,
+  ): CUserMsg_ParticleManager_SetSceneObjectTintAndDesat {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_SetSceneObjectTintAndDesat>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_SetSceneObjectTintAndDesat,
+  ): CUserMsg_ParticleManager_SetSceneObjectTintAndDesat {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 tint */ 1:
+          message.tint = reader.fixed32();
+          break;
+        case /* optional float desat */ 2:
+          message.desat = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_SetSceneObjectTintAndDesat,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 tint = 1; */
+    if (message.tint !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.tint);
+    /* optional float desat = 2; */
+    if (message.desat !== undefined) writer.tag(2, WireType.Bit32).float(message.desat);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.SetSceneObjectTintAndDesat
  */
 export const CUserMsg_ParticleManager_SetSceneObjectTintAndDesat =
-	new CUserMsg_ParticleManager_SetSceneObjectTintAndDesat$Type();
+  new CUserMsg_ParticleManager_SetSceneObjectTintAndDesat$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_ParticleSkipToTime$Type extends MessageType<CUserMsg_ParticleManager_ParticleSkipToTime> {
-	constructor() {
-		super("CUserMsg_ParticleManager.ParticleSkipToTime", [
-			{
-				no: 1,
-				name: "skip_to_time",
-				kind: "scalar",
-				localName: "skip_to_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_ParticleSkipToTime>,
-	): CUserMsg_ParticleManager_ParticleSkipToTime {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_ParticleSkipToTime>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_ParticleSkipToTime,
-	): CUserMsg_ParticleManager_ParticleSkipToTime {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float skip_to_time */ 1:
-					message.skip_to_time = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_ParticleSkipToTime,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional float skip_to_time = 1; */
-		if (message.skip_to_time !== undefined) writer.tag(1, WireType.Bit32).float(message.skip_to_time);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.ParticleSkipToTime", [
+      {
+        no: 1,
+        name: "skip_to_time",
+        kind: "scalar",
+        localName: "skip_to_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_ParticleSkipToTime>,
+  ): CUserMsg_ParticleManager_ParticleSkipToTime {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_ParticleSkipToTime>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_ParticleSkipToTime,
+  ): CUserMsg_ParticleManager_ParticleSkipToTime {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float skip_to_time */ 1:
+          message.skip_to_time = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_ParticleSkipToTime,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional float skip_to_time = 1; */
+    if (message.skip_to_time !== undefined) writer.tag(1, WireType.Bit32).float(message.skip_to_time);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.ParticleSkipToTime
@@ -8423,60 +8423,60 @@ class CUserMsg_ParticleManager_ParticleSkipToTime$Type extends MessageType<CUser
 export const CUserMsg_ParticleManager_ParticleSkipToTime = new CUserMsg_ParticleManager_ParticleSkipToTime$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_ParticleCanFreeze$Type extends MessageType<CUserMsg_ParticleManager_ParticleCanFreeze> {
-	constructor() {
-		super("CUserMsg_ParticleManager.ParticleCanFreeze", [
-			{
-				no: 1,
-				name: "can_freeze",
-				kind: "scalar",
-				localName: "can_freeze",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_ParticleCanFreeze>,
-	): CUserMsg_ParticleManager_ParticleCanFreeze {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_ParticleCanFreeze>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_ParticleCanFreeze,
-	): CUserMsg_ParticleManager_ParticleCanFreeze {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool can_freeze */ 1:
-					message.can_freeze = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_ParticleCanFreeze,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool can_freeze = 1; */
-		if (message.can_freeze !== undefined) writer.tag(1, WireType.Varint).bool(message.can_freeze);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.ParticleCanFreeze", [
+      {
+        no: 1,
+        name: "can_freeze",
+        kind: "scalar",
+        localName: "can_freeze",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_ParticleCanFreeze>,
+  ): CUserMsg_ParticleManager_ParticleCanFreeze {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_ParticleCanFreeze>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_ParticleCanFreeze,
+  ): CUserMsg_ParticleManager_ParticleCanFreeze {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool can_freeze */ 1:
+          message.can_freeze = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_ParticleCanFreeze,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool can_freeze = 1; */
+    if (message.can_freeze !== undefined) writer.tag(1, WireType.Varint).bool(message.can_freeze);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.ParticleCanFreeze
@@ -8484,856 +8484,856 @@ class CUserMsg_ParticleManager_ParticleCanFreeze$Type extends MessageType<CUserM
 export const CUserMsg_ParticleManager_ParticleCanFreeze = new CUserMsg_ParticleManager_ParticleCanFreeze$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_ParticleFreezeTransitionOverride$Type extends MessageType<CUserMsg_ParticleManager_ParticleFreezeTransitionOverride> {
-	constructor() {
-		super("CUserMsg_ParticleManager.ParticleFreezeTransitionOverride", [
-			{
-				no: 1,
-				name: "freeze_transition_override",
-				kind: "scalar",
-				localName: "freeze_transition_override",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_ParticleFreezeTransitionOverride>,
-	): CUserMsg_ParticleManager_ParticleFreezeTransitionOverride {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_ParticleFreezeTransitionOverride>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_ParticleFreezeTransitionOverride,
-	): CUserMsg_ParticleManager_ParticleFreezeTransitionOverride {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float freeze_transition_override */ 1:
-					message.freeze_transition_override = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_ParticleFreezeTransitionOverride,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional float freeze_transition_override = 1; */
-		if (message.freeze_transition_override !== undefined)
-			writer.tag(1, WireType.Bit32).float(message.freeze_transition_override);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.ParticleFreezeTransitionOverride", [
+      {
+        no: 1,
+        name: "freeze_transition_override",
+        kind: "scalar",
+        localName: "freeze_transition_override",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_ParticleFreezeTransitionOverride>,
+  ): CUserMsg_ParticleManager_ParticleFreezeTransitionOverride {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_ParticleFreezeTransitionOverride>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_ParticleFreezeTransitionOverride,
+  ): CUserMsg_ParticleManager_ParticleFreezeTransitionOverride {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float freeze_transition_override */ 1:
+          message.freeze_transition_override = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_ParticleFreezeTransitionOverride,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional float freeze_transition_override = 1; */
+    if (message.freeze_transition_override !== undefined)
+      writer.tag(1, WireType.Bit32).float(message.freeze_transition_override);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.ParticleFreezeTransitionOverride
  */
 export const CUserMsg_ParticleManager_ParticleFreezeTransitionOverride =
-	new CUserMsg_ParticleManager_ParticleFreezeTransitionOverride$Type();
+  new CUserMsg_ParticleManager_ParticleFreezeTransitionOverride$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_FreezeParticleInvolving$Type extends MessageType<CUserMsg_ParticleManager_FreezeParticleInvolving> {
-	constructor() {
-		super("CUserMsg_ParticleManager.FreezeParticleInvolving", [
-			{
-				no: 1,
-				name: "set_frozen",
-				kind: "scalar",
-				localName: "set_frozen",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 2,
-				name: "transition_duration",
-				kind: "scalar",
-				localName: "transition_duration",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "entity_handle",
-				kind: "scalar",
-				localName: "entity_handle",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_FreezeParticleInvolving>,
-	): CUserMsg_ParticleManager_FreezeParticleInvolving {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_FreezeParticleInvolving>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_FreezeParticleInvolving,
-	): CUserMsg_ParticleManager_FreezeParticleInvolving {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool set_frozen */ 1:
-					message.set_frozen = reader.bool();
-					break;
-				case /* optional float transition_duration */ 2:
-					message.transition_duration = reader.float();
-					break;
-				case /* optional uint32 entity_handle */ 3:
-					message.entity_handle = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_FreezeParticleInvolving,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool set_frozen = 1; */
-		if (message.set_frozen !== undefined) writer.tag(1, WireType.Varint).bool(message.set_frozen);
-		/* optional float transition_duration = 2; */
-		if (message.transition_duration !== undefined) writer.tag(2, WireType.Bit32).float(message.transition_duration);
-		/* optional uint32 entity_handle = 3; */
-		if (message.entity_handle !== undefined) writer.tag(3, WireType.Varint).uint32(message.entity_handle);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.FreezeParticleInvolving", [
+      {
+        no: 1,
+        name: "set_frozen",
+        kind: "scalar",
+        localName: "set_frozen",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 2,
+        name: "transition_duration",
+        kind: "scalar",
+        localName: "transition_duration",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "entity_handle",
+        kind: "scalar",
+        localName: "entity_handle",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_FreezeParticleInvolving>,
+  ): CUserMsg_ParticleManager_FreezeParticleInvolving {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_FreezeParticleInvolving>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_FreezeParticleInvolving,
+  ): CUserMsg_ParticleManager_FreezeParticleInvolving {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool set_frozen */ 1:
+          message.set_frozen = reader.bool();
+          break;
+        case /* optional float transition_duration */ 2:
+          message.transition_duration = reader.float();
+          break;
+        case /* optional uint32 entity_handle */ 3:
+          message.entity_handle = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_FreezeParticleInvolving,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool set_frozen = 1; */
+    if (message.set_frozen !== undefined) writer.tag(1, WireType.Varint).bool(message.set_frozen);
+    /* optional float transition_duration = 2; */
+    if (message.transition_duration !== undefined) writer.tag(2, WireType.Bit32).float(message.transition_duration);
+    /* optional uint32 entity_handle = 3; */
+    if (message.entity_handle !== undefined) writer.tag(3, WireType.Varint).uint32(message.entity_handle);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.FreezeParticleInvolving
  */
 export const CUserMsg_ParticleManager_FreezeParticleInvolving =
-	new CUserMsg_ParticleManager_FreezeParticleInvolving$Type();
+  new CUserMsg_ParticleManager_FreezeParticleInvolving$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_AddModellistOverrideElement$Type extends MessageType<CUserMsg_ParticleManager_AddModellistOverrideElement> {
-	constructor() {
-		super("CUserMsg_ParticleManager.AddModellistOverrideElement", [
-			{
-				no: 1,
-				name: "model_name",
-				kind: "scalar",
-				localName: "model_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "spawn_probability",
-				kind: "scalar",
-				localName: "spawn_probability",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "groupid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_AddModellistOverrideElement>,
-	): CUserMsg_ParticleManager_AddModellistOverrideElement {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_AddModellistOverrideElement>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_AddModellistOverrideElement,
-	): CUserMsg_ParticleManager_AddModellistOverrideElement {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string model_name */ 1:
-					message.model_name = reader.string();
-					break;
-				case /* optional float spawn_probability */ 2:
-					message.spawn_probability = reader.float();
-					break;
-				case /* optional uint32 groupid */ 3:
-					message.groupid = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_AddModellistOverrideElement,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string model_name = 1; */
-		if (message.model_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.model_name);
-		/* optional float spawn_probability = 2; */
-		if (message.spawn_probability !== undefined) writer.tag(2, WireType.Bit32).float(message.spawn_probability);
-		/* optional uint32 groupid = 3; */
-		if (message.groupid !== undefined) writer.tag(3, WireType.Varint).uint32(message.groupid);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.AddModellistOverrideElement", [
+      {
+        no: 1,
+        name: "model_name",
+        kind: "scalar",
+        localName: "model_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "spawn_probability",
+        kind: "scalar",
+        localName: "spawn_probability",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "groupid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_AddModellistOverrideElement>,
+  ): CUserMsg_ParticleManager_AddModellistOverrideElement {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_AddModellistOverrideElement>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_AddModellistOverrideElement,
+  ): CUserMsg_ParticleManager_AddModellistOverrideElement {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string model_name */ 1:
+          message.model_name = reader.string();
+          break;
+        case /* optional float spawn_probability */ 2:
+          message.spawn_probability = reader.float();
+          break;
+        case /* optional uint32 groupid */ 3:
+          message.groupid = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_AddModellistOverrideElement,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string model_name = 1; */
+    if (message.model_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.model_name);
+    /* optional float spawn_probability = 2; */
+    if (message.spawn_probability !== undefined) writer.tag(2, WireType.Bit32).float(message.spawn_probability);
+    /* optional uint32 groupid = 3; */
+    if (message.groupid !== undefined) writer.tag(3, WireType.Varint).uint32(message.groupid);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.AddModellistOverrideElement
  */
 export const CUserMsg_ParticleManager_AddModellistOverrideElement =
-	new CUserMsg_ParticleManager_AddModellistOverrideElement$Type();
+  new CUserMsg_ParticleManager_AddModellistOverrideElement$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_ClearModellistOverride$Type extends MessageType<CUserMsg_ParticleManager_ClearModellistOverride> {
-	constructor() {
-		super("CUserMsg_ParticleManager.ClearModellistOverride", [
-			{
-				no: 1,
-				name: "groupid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_ClearModellistOverride>,
-	): CUserMsg_ParticleManager_ClearModellistOverride {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_ClearModellistOverride>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_ClearModellistOverride,
-	): CUserMsg_ParticleManager_ClearModellistOverride {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 groupid */ 1:
-					message.groupid = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_ClearModellistOverride,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 groupid = 1; */
-		if (message.groupid !== undefined) writer.tag(1, WireType.Varint).uint32(message.groupid);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.ClearModellistOverride", [
+      {
+        no: 1,
+        name: "groupid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_ClearModellistOverride>,
+  ): CUserMsg_ParticleManager_ClearModellistOverride {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_ClearModellistOverride>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_ClearModellistOverride,
+  ): CUserMsg_ParticleManager_ClearModellistOverride {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 groupid */ 1:
+          message.groupid = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_ClearModellistOverride,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 groupid = 1; */
+    if (message.groupid !== undefined) writer.tag(1, WireType.Varint).uint32(message.groupid);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.ClearModellistOverride
  */
 export const CUserMsg_ParticleManager_ClearModellistOverride =
-	new CUserMsg_ParticleManager_ClearModellistOverride$Type();
+  new CUserMsg_ParticleManager_ClearModellistOverride$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_SetParticleNamedValueContext$Type extends MessageType<CUserMsg_ParticleManager_SetParticleNamedValueContext> {
-	constructor() {
-		super("CUserMsg_ParticleManager.SetParticleNamedValueContext", [
-			{
-				no: 1,
-				name: "float_values",
-				kind: "message",
-				localName: "float_values",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue,
-			},
-			{
-				no: 2,
-				name: "vector_values",
-				kind: "message",
-				localName: "vector_values",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue,
-			},
-			{
-				no: 3,
-				name: "transform_values",
-				kind: "message",
-				localName: "transform_values",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue,
-			},
-			{
-				no: 4,
-				name: "ehandle_values",
-				kind: "message",
-				localName: "ehandle_values",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_SetParticleNamedValueContext>,
-	): CUserMsg_ParticleManager_SetParticleNamedValueContext {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.float_values = [];
-		message.vector_values = [];
-		message.transform_values = [];
-		message.ehandle_values = [];
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_SetParticleNamedValueContext>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_SetParticleNamedValueContext,
-	): CUserMsg_ParticleManager_SetParticleNamedValueContext {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.FloatContextValue float_values */ 1:
-					message.float_values.push(
-						CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-						),
-					);
-					break;
-				case /* repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.VectorContextValue vector_values */ 2:
-					message.vector_values.push(
-						CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-						),
-					);
-					break;
-				case /* repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.TransformContextValue transform_values */ 3:
-					message.transform_values.push(
-						CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-						),
-					);
-					break;
-				case /* repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.EHandleContext ehandle_values */ 4:
-					message.ehandle_values.push(
-						CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-						),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_SetParticleNamedValueContext,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.FloatContextValue float_values = 1; */
-		for (let i = 0; i < message.float_values.length; i++)
-			CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue.internalBinaryWrite(
-				message.float_values[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.VectorContextValue vector_values = 2; */
-		for (let i = 0; i < message.vector_values.length; i++)
-			CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue.internalBinaryWrite(
-				message.vector_values[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.TransformContextValue transform_values = 3; */
-		for (let i = 0; i < message.transform_values.length; i++)
-			CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue.internalBinaryWrite(
-				message.transform_values[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.EHandleContext ehandle_values = 4; */
-		for (let i = 0; i < message.ehandle_values.length; i++)
-			CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext.internalBinaryWrite(
-				message.ehandle_values[i],
-				writer.tag(4, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.SetParticleNamedValueContext", [
+      {
+        no: 1,
+        name: "float_values",
+        kind: "message",
+        localName: "float_values",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue,
+      },
+      {
+        no: 2,
+        name: "vector_values",
+        kind: "message",
+        localName: "vector_values",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue,
+      },
+      {
+        no: 3,
+        name: "transform_values",
+        kind: "message",
+        localName: "transform_values",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue,
+      },
+      {
+        no: 4,
+        name: "ehandle_values",
+        kind: "message",
+        localName: "ehandle_values",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_SetParticleNamedValueContext>,
+  ): CUserMsg_ParticleManager_SetParticleNamedValueContext {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.float_values = [];
+    message.vector_values = [];
+    message.transform_values = [];
+    message.ehandle_values = [];
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_SetParticleNamedValueContext>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_SetParticleNamedValueContext,
+  ): CUserMsg_ParticleManager_SetParticleNamedValueContext {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.FloatContextValue float_values */ 1:
+          message.float_values.push(
+            CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+            ),
+          );
+          break;
+        case /* repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.VectorContextValue vector_values */ 2:
+          message.vector_values.push(
+            CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+            ),
+          );
+          break;
+        case /* repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.TransformContextValue transform_values */ 3:
+          message.transform_values.push(
+            CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+            ),
+          );
+          break;
+        case /* repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.EHandleContext ehandle_values */ 4:
+          message.ehandle_values.push(
+            CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+            ),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_SetParticleNamedValueContext,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.FloatContextValue float_values = 1; */
+    for (let i = 0; i < message.float_values.length; i++)
+      CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue.internalBinaryWrite(
+        message.float_values[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.VectorContextValue vector_values = 2; */
+    for (let i = 0; i < message.vector_values.length; i++)
+      CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue.internalBinaryWrite(
+        message.vector_values[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.TransformContextValue transform_values = 3; */
+    for (let i = 0; i < message.transform_values.length; i++)
+      CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue.internalBinaryWrite(
+        message.transform_values[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CUserMsg_ParticleManager.SetParticleNamedValueContext.EHandleContext ehandle_values = 4; */
+    for (let i = 0; i < message.ehandle_values.length; i++)
+      CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext.internalBinaryWrite(
+        message.ehandle_values[i],
+        writer.tag(4, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.SetParticleNamedValueContext
  */
 export const CUserMsg_ParticleManager_SetParticleNamedValueContext =
-	new CUserMsg_ParticleManager_SetParticleNamedValueContext$Type();
+  new CUserMsg_ParticleManager_SetParticleNamedValueContext$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue$Type extends MessageType<CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue> {
-	constructor() {
-		super("CUserMsg_ParticleManager.SetParticleNamedValueContext.FloatContextValue", [
-			{
-				no: 1,
-				name: "value_name_hash",
-				kind: "scalar",
-				localName: "value_name_hash",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "value",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue>,
-	): CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue>(
-				this,
-				message,
-				value,
-			);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue,
-	): CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 value_name_hash */ 1:
-					message.value_name_hash = reader.uint32();
-					break;
-				case /* optional float value */ 2:
-					message.value = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 value_name_hash = 1; */
-		if (message.value_name_hash !== undefined) writer.tag(1, WireType.Varint).uint32(message.value_name_hash);
-		/* optional float value = 2; */
-		if (message.value !== undefined) writer.tag(2, WireType.Bit32).float(message.value);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.SetParticleNamedValueContext.FloatContextValue", [
+      {
+        no: 1,
+        name: "value_name_hash",
+        kind: "scalar",
+        localName: "value_name_hash",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "value",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue>,
+  ): CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue>(
+        this,
+        message,
+        value,
+      );
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue,
+  ): CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 value_name_hash */ 1:
+          message.value_name_hash = reader.uint32();
+          break;
+        case /* optional float value */ 2:
+          message.value = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 value_name_hash = 1; */
+    if (message.value_name_hash !== undefined) writer.tag(1, WireType.Varint).uint32(message.value_name_hash);
+    /* optional float value = 2; */
+    if (message.value !== undefined) writer.tag(2, WireType.Bit32).float(message.value);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.SetParticleNamedValueContext.FloatContextValue
  */
 export const CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue =
-	new CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue$Type();
+  new CUserMsg_ParticleManager_SetParticleNamedValueContext_FloatContextValue$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue$Type extends MessageType<CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue> {
-	constructor() {
-		super("CUserMsg_ParticleManager.SetParticleNamedValueContext.VectorContextValue", [
-			{
-				no: 1,
-				name: "value_name_hash",
-				kind: "scalar",
-				localName: "value_name_hash",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{ no: 2, name: "value", kind: "message", T: () => CMsgVector },
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue>,
-	): CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue>(
-				this,
-				message,
-				value,
-			);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue,
-	): CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 value_name_hash */ 1:
-					message.value_name_hash = reader.uint32();
-					break;
-				case /* optional CMsgVector value */ 2:
-					message.value = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.value);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 value_name_hash = 1; */
-		if (message.value_name_hash !== undefined) writer.tag(1, WireType.Varint).uint32(message.value_name_hash);
-		/* optional CMsgVector value = 2; */
-		if (message.value)
-			CMsgVector.internalBinaryWrite(message.value, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.SetParticleNamedValueContext.VectorContextValue", [
+      {
+        no: 1,
+        name: "value_name_hash",
+        kind: "scalar",
+        localName: "value_name_hash",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      { no: 2, name: "value", kind: "message", T: () => CMsgVector },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue>,
+  ): CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue>(
+        this,
+        message,
+        value,
+      );
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue,
+  ): CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 value_name_hash */ 1:
+          message.value_name_hash = reader.uint32();
+          break;
+        case /* optional CMsgVector value */ 2:
+          message.value = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.value);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 value_name_hash = 1; */
+    if (message.value_name_hash !== undefined) writer.tag(1, WireType.Varint).uint32(message.value_name_hash);
+    /* optional CMsgVector value = 2; */
+    if (message.value)
+      CMsgVector.internalBinaryWrite(message.value, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.SetParticleNamedValueContext.VectorContextValue
  */
 export const CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue =
-	new CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue$Type();
+  new CUserMsg_ParticleManager_SetParticleNamedValueContext_VectorContextValue$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue$Type extends MessageType<CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue> {
-	constructor() {
-		super("CUserMsg_ParticleManager.SetParticleNamedValueContext.TransformContextValue", [
-			{
-				no: 1,
-				name: "value_name_hash",
-				kind: "scalar",
-				localName: "value_name_hash",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{ no: 2, name: "angles", kind: "message", T: () => CMsgQAngle },
-			{ no: 3, name: "translation", kind: "message", T: () => CMsgVector },
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue>,
-	): CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue>(
-				this,
-				message,
-				value,
-			);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue,
-	): CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 value_name_hash */ 1:
-					message.value_name_hash = reader.uint32();
-					break;
-				case /* optional CMsgQAngle angles */ 2:
-					message.angles = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angles);
-					break;
-				case /* optional CMsgVector translation */ 3:
-					message.translation = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.translation);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 value_name_hash = 1; */
-		if (message.value_name_hash !== undefined) writer.tag(1, WireType.Varint).uint32(message.value_name_hash);
-		/* optional CMsgQAngle angles = 2; */
-		if (message.angles)
-			CMsgQAngle.internalBinaryWrite(message.angles, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector translation = 3; */
-		if (message.translation)
-			CMsgVector.internalBinaryWrite(
-				message.translation,
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.SetParticleNamedValueContext.TransformContextValue", [
+      {
+        no: 1,
+        name: "value_name_hash",
+        kind: "scalar",
+        localName: "value_name_hash",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      { no: 2, name: "angles", kind: "message", T: () => CMsgQAngle },
+      { no: 3, name: "translation", kind: "message", T: () => CMsgVector },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue>,
+  ): CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue>(
+        this,
+        message,
+        value,
+      );
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue,
+  ): CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 value_name_hash */ 1:
+          message.value_name_hash = reader.uint32();
+          break;
+        case /* optional CMsgQAngle angles */ 2:
+          message.angles = CMsgQAngle.internalBinaryRead(reader, reader.uint32(), options, message.angles);
+          break;
+        case /* optional CMsgVector translation */ 3:
+          message.translation = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.translation);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 value_name_hash = 1; */
+    if (message.value_name_hash !== undefined) writer.tag(1, WireType.Varint).uint32(message.value_name_hash);
+    /* optional CMsgQAngle angles = 2; */
+    if (message.angles)
+      CMsgQAngle.internalBinaryWrite(message.angles, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector translation = 3; */
+    if (message.translation)
+      CMsgVector.internalBinaryWrite(
+        message.translation,
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.SetParticleNamedValueContext.TransformContextValue
  */
 export const CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue =
-	new CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue$Type();
+  new CUserMsg_ParticleManager_SetParticleNamedValueContext_TransformContextValue$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext$Type extends MessageType<CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext> {
-	constructor() {
-		super("CUserMsg_ParticleManager.SetParticleNamedValueContext.EHandleContext", [
-			{
-				no: 1,
-				name: "value_name_hash",
-				kind: "scalar",
-				localName: "value_name_hash",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "ent_index",
-				kind: "scalar",
-				localName: "ent_index",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext>,
-	): CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext>(
-				this,
-				message,
-				value,
-			);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext,
-	): CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 value_name_hash */ 1:
-					message.value_name_hash = reader.uint32();
-					break;
-				case /* optional uint32 ent_index */ 2:
-					message.ent_index = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 value_name_hash = 1; */
-		if (message.value_name_hash !== undefined) writer.tag(1, WireType.Varint).uint32(message.value_name_hash);
-		/* optional uint32 ent_index = 2; */
-		if (message.ent_index !== undefined) writer.tag(2, WireType.Varint).uint32(message.ent_index);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.SetParticleNamedValueContext.EHandleContext", [
+      {
+        no: 1,
+        name: "value_name_hash",
+        kind: "scalar",
+        localName: "value_name_hash",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "ent_index",
+        kind: "scalar",
+        localName: "ent_index",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext>,
+  ): CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext>(
+        this,
+        message,
+        value,
+      );
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext,
+  ): CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 value_name_hash */ 1:
+          message.value_name_hash = reader.uint32();
+          break;
+        case /* optional uint32 ent_index */ 2:
+          message.ent_index = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 value_name_hash = 1; */
+    if (message.value_name_hash !== undefined) writer.tag(1, WireType.Varint).uint32(message.value_name_hash);
+    /* optional uint32 ent_index = 2; */
+    if (message.ent_index !== undefined) writer.tag(2, WireType.Varint).uint32(message.ent_index);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.SetParticleNamedValueContext.EHandleContext
  */
 export const CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext =
-	new CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext$Type();
+  new CUserMsg_ParticleManager_SetParticleNamedValueContext_EHandleContext$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_CreatePhysicsSim$Type extends MessageType<CUserMsg_ParticleManager_CreatePhysicsSim> {
-	constructor() {
-		super("CUserMsg_ParticleManager.CreatePhysicsSim", [
-			{
-				no: 1,
-				name: "prop_group_name",
-				kind: "scalar",
-				localName: "prop_group_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "use_high_quality_simulation",
-				kind: "scalar",
-				localName: "use_high_quality_simulation",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 3,
-				name: "max_particle_count",
-				kind: "scalar",
-				localName: "max_particle_count",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMsg_ParticleManager_CreatePhysicsSim>): CUserMsg_ParticleManager_CreatePhysicsSim {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_CreatePhysicsSim>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_CreatePhysicsSim,
-	): CUserMsg_ParticleManager_CreatePhysicsSim {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string prop_group_name */ 1:
-					message.prop_group_name = reader.string();
-					break;
-				case /* optional bool use_high_quality_simulation */ 2:
-					message.use_high_quality_simulation = reader.bool();
-					break;
-				case /* optional uint32 max_particle_count */ 3:
-					message.max_particle_count = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_CreatePhysicsSim,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string prop_group_name = 1; */
-		if (message.prop_group_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.prop_group_name);
-		/* optional bool use_high_quality_simulation = 2; */
-		if (message.use_high_quality_simulation !== undefined)
-			writer.tag(2, WireType.Varint).bool(message.use_high_quality_simulation);
-		/* optional uint32 max_particle_count = 3; */
-		if (message.max_particle_count !== undefined) writer.tag(3, WireType.Varint).uint32(message.max_particle_count);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.CreatePhysicsSim", [
+      {
+        no: 1,
+        name: "prop_group_name",
+        kind: "scalar",
+        localName: "prop_group_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "use_high_quality_simulation",
+        kind: "scalar",
+        localName: "use_high_quality_simulation",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 3,
+        name: "max_particle_count",
+        kind: "scalar",
+        localName: "max_particle_count",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMsg_ParticleManager_CreatePhysicsSim>): CUserMsg_ParticleManager_CreatePhysicsSim {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_CreatePhysicsSim>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_CreatePhysicsSim,
+  ): CUserMsg_ParticleManager_CreatePhysicsSim {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string prop_group_name */ 1:
+          message.prop_group_name = reader.string();
+          break;
+        case /* optional bool use_high_quality_simulation */ 2:
+          message.use_high_quality_simulation = reader.bool();
+          break;
+        case /* optional uint32 max_particle_count */ 3:
+          message.max_particle_count = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_CreatePhysicsSim,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string prop_group_name = 1; */
+    if (message.prop_group_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.prop_group_name);
+    /* optional bool use_high_quality_simulation = 2; */
+    if (message.use_high_quality_simulation !== undefined)
+      writer.tag(2, WireType.Varint).bool(message.use_high_quality_simulation);
+    /* optional uint32 max_particle_count = 3; */
+    if (message.max_particle_count !== undefined) writer.tag(3, WireType.Varint).uint32(message.max_particle_count);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.CreatePhysicsSim
@@ -9341,33 +9341,33 @@ class CUserMsg_ParticleManager_CreatePhysicsSim$Type extends MessageType<CUserMs
 export const CUserMsg_ParticleManager_CreatePhysicsSim = new CUserMsg_ParticleManager_CreatePhysicsSim$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_DestroyPhysicsSim$Type extends MessageType<CUserMsg_ParticleManager_DestroyPhysicsSim> {
-	constructor() {
-		super("CUserMsg_ParticleManager.DestroyPhysicsSim", []);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_DestroyPhysicsSim>,
-	): CUserMsg_ParticleManager_DestroyPhysicsSim {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_DestroyPhysicsSim>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_DestroyPhysicsSim,
-	): CUserMsg_ParticleManager_DestroyPhysicsSim {
-		return target ?? this.create();
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_DestroyPhysicsSim,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.DestroyPhysicsSim", []);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_DestroyPhysicsSim>,
+  ): CUserMsg_ParticleManager_DestroyPhysicsSim {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_DestroyPhysicsSim>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_DestroyPhysicsSim,
+  ): CUserMsg_ParticleManager_DestroyPhysicsSim {
+    return target ?? this.create();
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_DestroyPhysicsSim,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.DestroyPhysicsSim
@@ -9375,58 +9375,58 @@ class CUserMsg_ParticleManager_DestroyPhysicsSim$Type extends MessageType<CUserM
 export const CUserMsg_ParticleManager_DestroyPhysicsSim = new CUserMsg_ParticleManager_DestroyPhysicsSim$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_SetVData$Type extends MessageType<CUserMsg_ParticleManager_SetVData> {
-	constructor() {
-		super("CUserMsg_ParticleManager.SetVData", [
-			{
-				no: 1,
-				name: "vdata_name",
-				kind: "scalar",
-				localName: "vdata_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMsg_ParticleManager_SetVData>): CUserMsg_ParticleManager_SetVData {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_SetVData>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_SetVData,
-	): CUserMsg_ParticleManager_SetVData {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string vdata_name */ 1:
-					message.vdata_name = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_SetVData,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string vdata_name = 1; */
-		if (message.vdata_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.vdata_name);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.SetVData", [
+      {
+        no: 1,
+        name: "vdata_name",
+        kind: "scalar",
+        localName: "vdata_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMsg_ParticleManager_SetVData>): CUserMsg_ParticleManager_SetVData {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_SetVData>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_SetVData,
+  ): CUserMsg_ParticleManager_SetVData {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string vdata_name */ 1:
+          message.vdata_name = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_SetVData,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string vdata_name = 1; */
+    if (message.vdata_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.vdata_name);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.SetVData
@@ -9434,73 +9434,73 @@ class CUserMsg_ParticleManager_SetVData$Type extends MessageType<CUserMsg_Partic
 export const CUserMsg_ParticleManager_SetVData = new CUserMsg_ParticleManager_SetVData$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_ParticleManager_SetMaterialOverride$Type extends MessageType<CUserMsg_ParticleManager_SetMaterialOverride> {
-	constructor() {
-		super("CUserMsg_ParticleManager.SetMaterialOverride", [
-			{
-				no: 1,
-				name: "material_name",
-				kind: "scalar",
-				localName: "material_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "include_children",
-				kind: "scalar",
-				localName: "include_children",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMsg_ParticleManager_SetMaterialOverride>,
-	): CUserMsg_ParticleManager_SetMaterialOverride {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_SetMaterialOverride>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_ParticleManager_SetMaterialOverride,
-	): CUserMsg_ParticleManager_SetMaterialOverride {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string material_name */ 1:
-					message.material_name = reader.string();
-					break;
-				case /* optional bool include_children */ 2:
-					message.include_children = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_ParticleManager_SetMaterialOverride,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string material_name = 1; */
-		if (message.material_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.material_name);
-		/* optional bool include_children = 2; */
-		if (message.include_children !== undefined) writer.tag(2, WireType.Varint).bool(message.include_children);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_ParticleManager.SetMaterialOverride", [
+      {
+        no: 1,
+        name: "material_name",
+        kind: "scalar",
+        localName: "material_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "include_children",
+        kind: "scalar",
+        localName: "include_children",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMsg_ParticleManager_SetMaterialOverride>,
+  ): CUserMsg_ParticleManager_SetMaterialOverride {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMsg_ParticleManager_SetMaterialOverride>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_ParticleManager_SetMaterialOverride,
+  ): CUserMsg_ParticleManager_SetMaterialOverride {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string material_name */ 1:
+          message.material_name = reader.string();
+          break;
+        case /* optional bool include_children */ 2:
+          message.include_children = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_ParticleManager_SetMaterialOverride,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string material_name = 1; */
+    if (message.material_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.material_name);
+    /* optional bool include_children = 2; */
+    if (message.include_children !== undefined) writer.tag(2, WireType.Varint).bool(message.include_children);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_ParticleManager.SetMaterialOverride
@@ -9508,54 +9508,54 @@ class CUserMsg_ParticleManager_SetMaterialOverride$Type extends MessageType<CUse
 export const CUserMsg_ParticleManager_SetMaterialOverride = new CUserMsg_ParticleManager_SetMaterialOverride$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_HudError$Type extends MessageType<CUserMsg_HudError> {
-	constructor() {
-		super("CUserMsg_HudError", [
-			{
-				no: 1,
-				name: "order_id",
-				kind: "scalar",
-				localName: "order_id",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMsg_HudError>): CUserMsg_HudError {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMsg_HudError>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_HudError,
-	): CUserMsg_HudError {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 order_id */ 1:
-					message.order_id = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CUserMsg_HudError, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional int32 order_id = 1; */
-		if (message.order_id !== undefined) writer.tag(1, WireType.Varint).int32(message.order_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_HudError", [
+      {
+        no: 1,
+        name: "order_id",
+        kind: "scalar",
+        localName: "order_id",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMsg_HudError>): CUserMsg_HudError {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMsg_HudError>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_HudError,
+  ): CUserMsg_HudError {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 order_id */ 1:
+          message.order_id = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CUserMsg_HudError, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional int32 order_id = 1; */
+    if (message.order_id !== undefined) writer.tag(1, WireType.Varint).int32(message.order_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_HudError
@@ -9563,70 +9563,70 @@ class CUserMsg_HudError$Type extends MessageType<CUserMsg_HudError> {
 export const CUserMsg_HudError = new CUserMsg_HudError$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMsg_CustomGameEvent$Type extends MessageType<CUserMsg_CustomGameEvent> {
-	constructor() {
-		super("CUserMsg_CustomGameEvent", [
-			{
-				no: 1,
-				name: "event_name",
-				kind: "scalar",
-				localName: "event_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "data",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMsg_CustomGameEvent>): CUserMsg_CustomGameEvent {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMsg_CustomGameEvent>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMsg_CustomGameEvent,
-	): CUserMsg_CustomGameEvent {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string event_name */ 1:
-					message.event_name = reader.string();
-					break;
-				case /* optional bytes data */ 2:
-					message.data = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMsg_CustomGameEvent,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string event_name = 1; */
-		if (message.event_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.event_name);
-		/* optional bytes data = 2; */
-		if (message.data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.data);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMsg_CustomGameEvent", [
+      {
+        no: 1,
+        name: "event_name",
+        kind: "scalar",
+        localName: "event_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "data",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMsg_CustomGameEvent>): CUserMsg_CustomGameEvent {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMsg_CustomGameEvent>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMsg_CustomGameEvent,
+  ): CUserMsg_CustomGameEvent {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string event_name */ 1:
+          message.event_name = reader.string();
+          break;
+        case /* optional bytes data */ 2:
+          message.data = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMsg_CustomGameEvent,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string event_name = 1; */
+    if (message.event_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.event_name);
+    /* optional bytes data = 2; */
+    if (message.data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.data);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMsg_CustomGameEvent
@@ -9634,97 +9634,97 @@ class CUserMsg_CustomGameEvent$Type extends MessageType<CUserMsg_CustomGameEvent
 export const CUserMsg_CustomGameEvent = new CUserMsg_CustomGameEvent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageHapticsManagerPulse$Type extends MessageType<CUserMessageHapticsManagerPulse> {
-	constructor() {
-		super("CUserMessageHapticsManagerPulse", [
-			{
-				no: 1,
-				name: "hand_id",
-				kind: "scalar",
-				localName: "hand_id",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "effect_amplitude",
-				kind: "scalar",
-				localName: "effect_amplitude",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "effect_frequency",
-				kind: "scalar",
-				localName: "effect_frequency",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "effect_duration",
-				kind: "scalar",
-				localName: "effect_duration",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageHapticsManagerPulse>): CUserMessageHapticsManagerPulse {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageHapticsManagerPulse>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageHapticsManagerPulse,
-	): CUserMessageHapticsManagerPulse {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 hand_id */ 1:
-					message.hand_id = reader.int32();
-					break;
-				case /* optional float effect_amplitude */ 2:
-					message.effect_amplitude = reader.float();
-					break;
-				case /* optional float effect_frequency */ 3:
-					message.effect_frequency = reader.float();
-					break;
-				case /* optional float effect_duration */ 4:
-					message.effect_duration = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageHapticsManagerPulse,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 hand_id = 1; */
-		if (message.hand_id !== undefined) writer.tag(1, WireType.Varint).int32(message.hand_id);
-		/* optional float effect_amplitude = 2; */
-		if (message.effect_amplitude !== undefined) writer.tag(2, WireType.Bit32).float(message.effect_amplitude);
-		/* optional float effect_frequency = 3; */
-		if (message.effect_frequency !== undefined) writer.tag(3, WireType.Bit32).float(message.effect_frequency);
-		/* optional float effect_duration = 4; */
-		if (message.effect_duration !== undefined) writer.tag(4, WireType.Bit32).float(message.effect_duration);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageHapticsManagerPulse", [
+      {
+        no: 1,
+        name: "hand_id",
+        kind: "scalar",
+        localName: "hand_id",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "effect_amplitude",
+        kind: "scalar",
+        localName: "effect_amplitude",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "effect_frequency",
+        kind: "scalar",
+        localName: "effect_frequency",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "effect_duration",
+        kind: "scalar",
+        localName: "effect_duration",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageHapticsManagerPulse>): CUserMessageHapticsManagerPulse {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageHapticsManagerPulse>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageHapticsManagerPulse,
+  ): CUserMessageHapticsManagerPulse {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 hand_id */ 1:
+          message.hand_id = reader.int32();
+          break;
+        case /* optional float effect_amplitude */ 2:
+          message.effect_amplitude = reader.float();
+          break;
+        case /* optional float effect_frequency */ 3:
+          message.effect_frequency = reader.float();
+          break;
+        case /* optional float effect_duration */ 4:
+          message.effect_duration = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageHapticsManagerPulse,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 hand_id = 1; */
+    if (message.hand_id !== undefined) writer.tag(1, WireType.Varint).int32(message.hand_id);
+    /* optional float effect_amplitude = 2; */
+    if (message.effect_amplitude !== undefined) writer.tag(2, WireType.Bit32).float(message.effect_amplitude);
+    /* optional float effect_frequency = 3; */
+    if (message.effect_frequency !== undefined) writer.tag(3, WireType.Bit32).float(message.effect_frequency);
+    /* optional float effect_duration = 4; */
+    if (message.effect_duration !== undefined) writer.tag(4, WireType.Bit32).float(message.effect_duration);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageHapticsManagerPulse
@@ -9732,85 +9732,85 @@ class CUserMessageHapticsManagerPulse$Type extends MessageType<CUserMessageHapti
 export const CUserMessageHapticsManagerPulse = new CUserMessageHapticsManagerPulse$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageHapticsManagerEffect$Type extends MessageType<CUserMessageHapticsManagerEffect> {
-	constructor() {
-		super("CUserMessageHapticsManagerEffect", [
-			{
-				no: 1,
-				name: "hand_id",
-				kind: "scalar",
-				localName: "hand_id",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "effect_name_hash_code",
-				kind: "scalar",
-				localName: "effect_name_hash_code",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "effect_scale",
-				kind: "scalar",
-				localName: "effect_scale",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageHapticsManagerEffect>): CUserMessageHapticsManagerEffect {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageHapticsManagerEffect>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageHapticsManagerEffect,
-	): CUserMessageHapticsManagerEffect {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 hand_id */ 1:
-					message.hand_id = reader.int32();
-					break;
-				case /* optional uint32 effect_name_hash_code */ 2:
-					message.effect_name_hash_code = reader.uint32();
-					break;
-				case /* optional float effect_scale */ 3:
-					message.effect_scale = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageHapticsManagerEffect,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 hand_id = 1; */
-		if (message.hand_id !== undefined) writer.tag(1, WireType.Varint).int32(message.hand_id);
-		/* optional uint32 effect_name_hash_code = 2; */
-		if (message.effect_name_hash_code !== undefined)
-			writer.tag(2, WireType.Varint).uint32(message.effect_name_hash_code);
-		/* optional float effect_scale = 3; */
-		if (message.effect_scale !== undefined) writer.tag(3, WireType.Bit32).float(message.effect_scale);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageHapticsManagerEffect", [
+      {
+        no: 1,
+        name: "hand_id",
+        kind: "scalar",
+        localName: "hand_id",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "effect_name_hash_code",
+        kind: "scalar",
+        localName: "effect_name_hash_code",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "effect_scale",
+        kind: "scalar",
+        localName: "effect_scale",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageHapticsManagerEffect>): CUserMessageHapticsManagerEffect {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageHapticsManagerEffect>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageHapticsManagerEffect,
+  ): CUserMessageHapticsManagerEffect {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 hand_id */ 1:
+          message.hand_id = reader.int32();
+          break;
+        case /* optional uint32 effect_name_hash_code */ 2:
+          message.effect_name_hash_code = reader.uint32();
+          break;
+        case /* optional float effect_scale */ 3:
+          message.effect_scale = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageHapticsManagerEffect,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 hand_id = 1; */
+    if (message.hand_id !== undefined) writer.tag(1, WireType.Varint).int32(message.hand_id);
+    /* optional uint32 effect_name_hash_code = 2; */
+    if (message.effect_name_hash_code !== undefined)
+      writer.tag(2, WireType.Varint).uint32(message.effect_name_hash_code);
+    /* optional float effect_scale = 3; */
+    if (message.effect_scale !== undefined) writer.tag(3, WireType.Bit32).float(message.effect_scale);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageHapticsManagerEffect
@@ -9818,70 +9818,70 @@ class CUserMessageHapticsManagerEffect$Type extends MessageType<CUserMessageHapt
 export const CUserMessageHapticsManagerEffect = new CUserMessageHapticsManagerEffect$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageAnimStateGraphState$Type extends MessageType<CUserMessageAnimStateGraphState> {
-	constructor() {
-		super("CUserMessageAnimStateGraphState", [
-			{
-				no: 1,
-				name: "entity_index",
-				kind: "scalar",
-				localName: "entity_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "data",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageAnimStateGraphState>): CUserMessageAnimStateGraphState {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageAnimStateGraphState>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageAnimStateGraphState,
-	): CUserMessageAnimStateGraphState {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 entity_index */ 1:
-					message.entity_index = reader.int32();
-					break;
-				case /* optional bytes data */ 2:
-					message.data = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageAnimStateGraphState,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 entity_index = 1; */
-		if (message.entity_index !== undefined) writer.tag(1, WireType.Varint).int32(message.entity_index);
-		/* optional bytes data = 2; */
-		if (message.data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.data);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageAnimStateGraphState", [
+      {
+        no: 1,
+        name: "entity_index",
+        kind: "scalar",
+        localName: "entity_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "data",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageAnimStateGraphState>): CUserMessageAnimStateGraphState {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageAnimStateGraphState>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageAnimStateGraphState,
+  ): CUserMessageAnimStateGraphState {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 entity_index */ 1:
+          message.entity_index = reader.int32();
+          break;
+        case /* optional bytes data */ 2:
+          message.data = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageAnimStateGraphState,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 entity_index = 1; */
+    if (message.entity_index !== undefined) writer.tag(1, WireType.Varint).int32(message.entity_index);
+    /* optional bytes data = 2; */
+    if (message.data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.data);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageAnimStateGraphState
@@ -9889,84 +9889,84 @@ class CUserMessageAnimStateGraphState$Type extends MessageType<CUserMessageAnimS
 export const CUserMessageAnimStateGraphState = new CUserMessageAnimStateGraphState$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageUpdateCssClasses$Type extends MessageType<CUserMessageUpdateCssClasses> {
-	constructor() {
-		super("CUserMessageUpdateCssClasses", [
-			{
-				no: 1,
-				name: "target_world_panel",
-				kind: "scalar",
-				localName: "target_world_panel",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "css_classes",
-				kind: "scalar",
-				localName: "css_classes",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "is_add",
-				kind: "scalar",
-				localName: "is_add",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageUpdateCssClasses>): CUserMessageUpdateCssClasses {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageUpdateCssClasses>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageUpdateCssClasses,
-	): CUserMessageUpdateCssClasses {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 target_world_panel */ 1:
-					message.target_world_panel = reader.int32();
-					break;
-				case /* optional string css_classes */ 2:
-					message.css_classes = reader.string();
-					break;
-				case /* optional bool is_add */ 3:
-					message.is_add = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageUpdateCssClasses,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 target_world_panel = 1; */
-		if (message.target_world_panel !== undefined) writer.tag(1, WireType.Varint).int32(message.target_world_panel);
-		/* optional string css_classes = 2; */
-		if (message.css_classes !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.css_classes);
-		/* optional bool is_add = 3; */
-		if (message.is_add !== undefined) writer.tag(3, WireType.Varint).bool(message.is_add);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageUpdateCssClasses", [
+      {
+        no: 1,
+        name: "target_world_panel",
+        kind: "scalar",
+        localName: "target_world_panel",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "css_classes",
+        kind: "scalar",
+        localName: "css_classes",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "is_add",
+        kind: "scalar",
+        localName: "is_add",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageUpdateCssClasses>): CUserMessageUpdateCssClasses {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageUpdateCssClasses>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageUpdateCssClasses,
+  ): CUserMessageUpdateCssClasses {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 target_world_panel */ 1:
+          message.target_world_panel = reader.int32();
+          break;
+        case /* optional string css_classes */ 2:
+          message.css_classes = reader.string();
+          break;
+        case /* optional bool is_add */ 3:
+          message.is_add = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageUpdateCssClasses,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 target_world_panel = 1; */
+    if (message.target_world_panel !== undefined) writer.tag(1, WireType.Varint).int32(message.target_world_panel);
+    /* optional string css_classes = 2; */
+    if (message.css_classes !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.css_classes);
+    /* optional bool is_add = 3; */
+    if (message.is_add !== undefined) writer.tag(3, WireType.Varint).bool(message.is_add);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageUpdateCssClasses
@@ -9974,58 +9974,58 @@ class CUserMessageUpdateCssClasses$Type extends MessageType<CUserMessageUpdateCs
 export const CUserMessageUpdateCssClasses = new CUserMessageUpdateCssClasses$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageServerFrameTime$Type extends MessageType<CUserMessageServerFrameTime> {
-	constructor() {
-		super("CUserMessageServerFrameTime", [
-			{
-				no: 1,
-				name: "frame_time",
-				kind: "scalar",
-				localName: "frame_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageServerFrameTime>): CUserMessageServerFrameTime {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageServerFrameTime>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageServerFrameTime,
-	): CUserMessageServerFrameTime {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float frame_time */ 1:
-					message.frame_time = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageServerFrameTime,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional float frame_time = 1; */
-		if (message.frame_time !== undefined) writer.tag(1, WireType.Bit32).float(message.frame_time);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageServerFrameTime", [
+      {
+        no: 1,
+        name: "frame_time",
+        kind: "scalar",
+        localName: "frame_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageServerFrameTime>): CUserMessageServerFrameTime {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageServerFrameTime>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageServerFrameTime,
+  ): CUserMessageServerFrameTime {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float frame_time */ 1:
+          message.frame_time = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageServerFrameTime,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional float frame_time = 1; */
+    if (message.frame_time !== undefined) writer.tag(1, WireType.Bit32).float(message.frame_time);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageServerFrameTime
@@ -10033,57 +10033,57 @@ class CUserMessageServerFrameTime$Type extends MessageType<CUserMessageServerFra
 export const CUserMessageServerFrameTime = new CUserMessageServerFrameTime$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageLagCompensationError$Type extends MessageType<CUserMessageLagCompensationError> {
-	constructor() {
-		super("CUserMessageLagCompensationError", [
-			{
-				no: 1,
-				name: "distance",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageLagCompensationError>): CUserMessageLagCompensationError {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageLagCompensationError>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageLagCompensationError,
-	): CUserMessageLagCompensationError {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float distance */ 1:
-					message.distance = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageLagCompensationError,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional float distance = 1; */
-		if (message.distance !== undefined) writer.tag(1, WireType.Bit32).float(message.distance);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageLagCompensationError", [
+      {
+        no: 1,
+        name: "distance",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageLagCompensationError>): CUserMessageLagCompensationError {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageLagCompensationError>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageLagCompensationError,
+  ): CUserMessageLagCompensationError {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float distance */ 1:
+          message.distance = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageLagCompensationError,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional float distance = 1; */
+    if (message.distance !== undefined) writer.tag(1, WireType.Bit32).float(message.distance);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageLagCompensationError
@@ -10091,71 +10091,71 @@ class CUserMessageLagCompensationError$Type extends MessageType<CUserMessageLagC
 export const CUserMessageLagCompensationError = new CUserMessageLagCompensationError$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageRequestDllStatus$Type extends MessageType<CUserMessageRequestDllStatus> {
-	constructor() {
-		super("CUserMessageRequestDllStatus", [
-			{
-				no: 1,
-				name: "dll_action",
-				kind: "scalar",
-				localName: "dll_action",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "full_report",
-				kind: "scalar",
-				localName: "full_report",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageRequestDllStatus>): CUserMessageRequestDllStatus {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageRequestDllStatus>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageRequestDllStatus,
-	): CUserMessageRequestDllStatus {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string dll_action */ 1:
-					message.dll_action = reader.string();
-					break;
-				case /* optional bool full_report */ 2:
-					message.full_report = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageRequestDllStatus,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string dll_action = 1; */
-		if (message.dll_action !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.dll_action);
-		/* optional bool full_report = 2; */
-		if (message.full_report !== undefined) writer.tag(2, WireType.Varint).bool(message.full_report);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageRequestDllStatus", [
+      {
+        no: 1,
+        name: "dll_action",
+        kind: "scalar",
+        localName: "dll_action",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "full_report",
+        kind: "scalar",
+        localName: "full_report",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageRequestDllStatus>): CUserMessageRequestDllStatus {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageRequestDllStatus>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageRequestDllStatus,
+  ): CUserMessageRequestDllStatus {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string dll_action */ 1:
+          message.dll_action = reader.string();
+          break;
+        case /* optional bool full_report */ 2:
+          message.full_report = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageRequestDllStatus,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string dll_action = 1; */
+    if (message.dll_action !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.dll_action);
+    /* optional bool full_report = 2; */
+    if (message.full_report !== undefined) writer.tag(2, WireType.Varint).bool(message.full_report);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageRequestDllStatus
@@ -10163,105 +10163,105 @@ class CUserMessageRequestDllStatus$Type extends MessageType<CUserMessageRequestD
 export const CUserMessageRequestDllStatus = new CUserMessageRequestDllStatus$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageRequestUtilAction$Type extends MessageType<CUserMessageRequestUtilAction> {
-	constructor() {
-		super("CUserMessageRequestUtilAction", [
-			{
-				no: 2,
-				name: "util1",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "util2",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "util3",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "util4",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 6,
-				name: "util5",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageRequestUtilAction>): CUserMessageRequestUtilAction {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageRequestUtilAction>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageRequestUtilAction,
-	): CUserMessageRequestUtilAction {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 util1 */ 2:
-					message.util1 = reader.int32();
-					break;
-				case /* optional int32 util2 */ 3:
-					message.util2 = reader.int32();
-					break;
-				case /* optional int32 util3 */ 4:
-					message.util3 = reader.int32();
-					break;
-				case /* optional int32 util4 */ 5:
-					message.util4 = reader.int32();
-					break;
-				case /* optional int32 util5 */ 6:
-					message.util5 = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageRequestUtilAction,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 util1 = 2; */
-		if (message.util1 !== undefined) writer.tag(2, WireType.Varint).int32(message.util1);
-		/* optional int32 util2 = 3; */
-		if (message.util2 !== undefined) writer.tag(3, WireType.Varint).int32(message.util2);
-		/* optional int32 util3 = 4; */
-		if (message.util3 !== undefined) writer.tag(4, WireType.Varint).int32(message.util3);
-		/* optional int32 util4 = 5; */
-		if (message.util4 !== undefined) writer.tag(5, WireType.Varint).int32(message.util4);
-		/* optional int32 util5 = 6; */
-		if (message.util5 !== undefined) writer.tag(6, WireType.Varint).int32(message.util5);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageRequestUtilAction", [
+      {
+        no: 2,
+        name: "util1",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "util2",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "util3",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "util4",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 6,
+        name: "util5",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageRequestUtilAction>): CUserMessageRequestUtilAction {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageRequestUtilAction>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageRequestUtilAction,
+  ): CUserMessageRequestUtilAction {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 util1 */ 2:
+          message.util1 = reader.int32();
+          break;
+        case /* optional int32 util2 */ 3:
+          message.util2 = reader.int32();
+          break;
+        case /* optional int32 util3 */ 4:
+          message.util3 = reader.int32();
+          break;
+        case /* optional int32 util4 */ 5:
+          message.util4 = reader.int32();
+          break;
+        case /* optional int32 util5 */ 6:
+          message.util5 = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageRequestUtilAction,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 util1 = 2; */
+    if (message.util1 !== undefined) writer.tag(2, WireType.Varint).int32(message.util1);
+    /* optional int32 util2 = 3; */
+    if (message.util2 !== undefined) writer.tag(3, WireType.Varint).int32(message.util2);
+    /* optional int32 util3 = 4; */
+    if (message.util3 !== undefined) writer.tag(4, WireType.Varint).int32(message.util3);
+    /* optional int32 util4 = 5; */
+    if (message.util4 !== undefined) writer.tag(5, WireType.Varint).int32(message.util4);
+    /* optional int32 util5 = 6; */
+    if (message.util5 !== undefined) writer.tag(6, WireType.Varint).int32(message.util5);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageRequestUtilAction
@@ -10269,210 +10269,210 @@ class CUserMessageRequestUtilAction$Type extends MessageType<CUserMessageRequest
 export const CUserMessageRequestUtilAction = new CUserMessageRequestUtilAction$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessage_UtilMsg_Response$Type extends MessageType<CUserMessage_UtilMsg_Response> {
-	constructor() {
-		super("CUserMessage_UtilMsg_Response", [
-			{
-				no: 1,
-				name: "crc",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "item_count",
-				kind: "scalar",
-				localName: "item_count",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "crc2",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 4,
-				name: "item_count2",
-				kind: "scalar",
-				localName: "item_count2",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "crc_part",
-				kind: "scalar",
-				localName: "crc_part",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 6,
-				name: "crc_part2",
-				kind: "scalar",
-				localName: "crc_part2",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 7,
-				name: "client_timestamp",
-				kind: "scalar",
-				localName: "client_timestamp",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 8,
-				name: "platform",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 9,
-				name: "itemdetails",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CUserMessage_UtilMsg_Response_ItemDetail,
-			},
-			{
-				no: 10,
-				name: "itemgroup",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 11,
-				name: "total_count",
-				kind: "scalar",
-				localName: "total_count",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 12,
-				name: "total_count2",
-				kind: "scalar",
-				localName: "total_count2",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessage_UtilMsg_Response>): CUserMessage_UtilMsg_Response {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.crc_part = [];
-		message.crc_part2 = [];
-		message.itemdetails = [];
-		if (value !== undefined) reflectionMergePartial<CUserMessage_UtilMsg_Response>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessage_UtilMsg_Response,
-	): CUserMessage_UtilMsg_Response {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 crc */ 1:
-					message.crc = reader.fixed32();
-					break;
-				case /* optional int32 item_count */ 2:
-					message.item_count = reader.int32();
-					break;
-				case /* optional fixed32 crc2 */ 3:
-					message.crc2 = reader.fixed32();
-					break;
-				case /* optional int32 item_count2 */ 4:
-					message.item_count2 = reader.int32();
-					break;
-				case /* repeated int32 crc_part */ 5:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.crc_part.push(reader.int32());
-					else message.crc_part.push(reader.int32());
-					break;
-				case /* repeated int32 crc_part2 */ 6:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.crc_part2.push(reader.int32());
-					else message.crc_part2.push(reader.int32());
-					break;
-				case /* optional int32 client_timestamp */ 7:
-					message.client_timestamp = reader.int32();
-					break;
-				case /* optional int32 platform */ 8:
-					message.platform = reader.int32();
-					break;
-				case /* repeated CUserMessage_UtilMsg_Response.ItemDetail itemdetails */ 9:
-					message.itemdetails.push(
-						CUserMessage_UtilMsg_Response_ItemDetail.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* optional int32 itemgroup */ 10:
-					message.itemgroup = reader.int32();
-					break;
-				case /* optional int32 total_count */ 11:
-					message.total_count = reader.int32();
-					break;
-				case /* optional int32 total_count2 */ 12:
-					message.total_count2 = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessage_UtilMsg_Response,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 crc = 1; */
-		if (message.crc !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.crc);
-		/* optional int32 item_count = 2; */
-		if (message.item_count !== undefined) writer.tag(2, WireType.Varint).int32(message.item_count);
-		/* optional fixed32 crc2 = 3; */
-		if (message.crc2 !== undefined) writer.tag(3, WireType.Bit32).fixed32(message.crc2);
-		/* optional int32 item_count2 = 4; */
-		if (message.item_count2 !== undefined) writer.tag(4, WireType.Varint).int32(message.item_count2);
-		/* repeated int32 crc_part = 5; */
-		for (let i = 0; i < message.crc_part.length; i++) writer.tag(5, WireType.Varint).int32(message.crc_part[i]);
-		/* repeated int32 crc_part2 = 6; */
-		for (let i = 0; i < message.crc_part2.length; i++) writer.tag(6, WireType.Varint).int32(message.crc_part2[i]);
-		/* optional int32 client_timestamp = 7; */
-		if (message.client_timestamp !== undefined) writer.tag(7, WireType.Varint).int32(message.client_timestamp);
-		/* optional int32 platform = 8; */
-		if (message.platform !== undefined) writer.tag(8, WireType.Varint).int32(message.platform);
-		/* repeated CUserMessage_UtilMsg_Response.ItemDetail itemdetails = 9; */
-		for (let i = 0; i < message.itemdetails.length; i++)
-			CUserMessage_UtilMsg_Response_ItemDetail.internalBinaryWrite(
-				message.itemdetails[i],
-				writer.tag(9, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional int32 itemgroup = 10; */
-		if (message.itemgroup !== undefined) writer.tag(10, WireType.Varint).int32(message.itemgroup);
-		/* optional int32 total_count = 11; */
-		if (message.total_count !== undefined) writer.tag(11, WireType.Varint).int32(message.total_count);
-		/* optional int32 total_count2 = 12; */
-		if (message.total_count2 !== undefined) writer.tag(12, WireType.Varint).int32(message.total_count2);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessage_UtilMsg_Response", [
+      {
+        no: 1,
+        name: "crc",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "item_count",
+        kind: "scalar",
+        localName: "item_count",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "crc2",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 4,
+        name: "item_count2",
+        kind: "scalar",
+        localName: "item_count2",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "crc_part",
+        kind: "scalar",
+        localName: "crc_part",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 6,
+        name: "crc_part2",
+        kind: "scalar",
+        localName: "crc_part2",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 7,
+        name: "client_timestamp",
+        kind: "scalar",
+        localName: "client_timestamp",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 8,
+        name: "platform",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 9,
+        name: "itemdetails",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CUserMessage_UtilMsg_Response_ItemDetail,
+      },
+      {
+        no: 10,
+        name: "itemgroup",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 11,
+        name: "total_count",
+        kind: "scalar",
+        localName: "total_count",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 12,
+        name: "total_count2",
+        kind: "scalar",
+        localName: "total_count2",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessage_UtilMsg_Response>): CUserMessage_UtilMsg_Response {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.crc_part = [];
+    message.crc_part2 = [];
+    message.itemdetails = [];
+    if (value !== undefined) reflectionMergePartial<CUserMessage_UtilMsg_Response>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessage_UtilMsg_Response,
+  ): CUserMessage_UtilMsg_Response {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 crc */ 1:
+          message.crc = reader.fixed32();
+          break;
+        case /* optional int32 item_count */ 2:
+          message.item_count = reader.int32();
+          break;
+        case /* optional fixed32 crc2 */ 3:
+          message.crc2 = reader.fixed32();
+          break;
+        case /* optional int32 item_count2 */ 4:
+          message.item_count2 = reader.int32();
+          break;
+        case /* repeated int32 crc_part */ 5:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.crc_part.push(reader.int32());
+          else message.crc_part.push(reader.int32());
+          break;
+        case /* repeated int32 crc_part2 */ 6:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.crc_part2.push(reader.int32());
+          else message.crc_part2.push(reader.int32());
+          break;
+        case /* optional int32 client_timestamp */ 7:
+          message.client_timestamp = reader.int32();
+          break;
+        case /* optional int32 platform */ 8:
+          message.platform = reader.int32();
+          break;
+        case /* repeated CUserMessage_UtilMsg_Response.ItemDetail itemdetails */ 9:
+          message.itemdetails.push(
+            CUserMessage_UtilMsg_Response_ItemDetail.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* optional int32 itemgroup */ 10:
+          message.itemgroup = reader.int32();
+          break;
+        case /* optional int32 total_count */ 11:
+          message.total_count = reader.int32();
+          break;
+        case /* optional int32 total_count2 */ 12:
+          message.total_count2 = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessage_UtilMsg_Response,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 crc = 1; */
+    if (message.crc !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.crc);
+    /* optional int32 item_count = 2; */
+    if (message.item_count !== undefined) writer.tag(2, WireType.Varint).int32(message.item_count);
+    /* optional fixed32 crc2 = 3; */
+    if (message.crc2 !== undefined) writer.tag(3, WireType.Bit32).fixed32(message.crc2);
+    /* optional int32 item_count2 = 4; */
+    if (message.item_count2 !== undefined) writer.tag(4, WireType.Varint).int32(message.item_count2);
+    /* repeated int32 crc_part = 5; */
+    for (let i = 0; i < message.crc_part.length; i++) writer.tag(5, WireType.Varint).int32(message.crc_part[i]);
+    /* repeated int32 crc_part2 = 6; */
+    for (let i = 0; i < message.crc_part2.length; i++) writer.tag(6, WireType.Varint).int32(message.crc_part2[i]);
+    /* optional int32 client_timestamp = 7; */
+    if (message.client_timestamp !== undefined) writer.tag(7, WireType.Varint).int32(message.client_timestamp);
+    /* optional int32 platform = 8; */
+    if (message.platform !== undefined) writer.tag(8, WireType.Varint).int32(message.platform);
+    /* repeated CUserMessage_UtilMsg_Response.ItemDetail itemdetails = 9; */
+    for (let i = 0; i < message.itemdetails.length; i++)
+      CUserMessage_UtilMsg_Response_ItemDetail.internalBinaryWrite(
+        message.itemdetails[i],
+        writer.tag(9, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional int32 itemgroup = 10; */
+    if (message.itemgroup !== undefined) writer.tag(10, WireType.Varint).int32(message.itemgroup);
+    /* optional int32 total_count = 11; */
+    if (message.total_count !== undefined) writer.tag(11, WireType.Varint).int32(message.total_count);
+    /* optional int32 total_count2 = 12; */
+    if (message.total_count2 !== undefined) writer.tag(12, WireType.Varint).int32(message.total_count2);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessage_UtilMsg_Response
@@ -10480,93 +10480,93 @@ class CUserMessage_UtilMsg_Response$Type extends MessageType<CUserMessage_UtilMs
 export const CUserMessage_UtilMsg_Response = new CUserMessage_UtilMsg_Response$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessage_UtilMsg_Response_ItemDetail$Type extends MessageType<CUserMessage_UtilMsg_Response_ItemDetail> {
-	constructor() {
-		super("CUserMessage_UtilMsg_Response.ItemDetail", [
-			{
-				no: 1,
-				name: "index",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "hash",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "crc",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessage_UtilMsg_Response_ItemDetail>): CUserMessage_UtilMsg_Response_ItemDetail {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessage_UtilMsg_Response_ItemDetail>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessage_UtilMsg_Response_ItemDetail,
-	): CUserMessage_UtilMsg_Response_ItemDetail {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 index */ 1:
-					message.index = reader.int32();
-					break;
-				case /* optional int32 hash */ 2:
-					message.hash = reader.int32();
-					break;
-				case /* optional int32 crc */ 3:
-					message.crc = reader.int32();
-					break;
-				case /* optional string name */ 4:
-					message.name = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessage_UtilMsg_Response_ItemDetail,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 index = 1; */
-		if (message.index !== undefined) writer.tag(1, WireType.Varint).int32(message.index);
-		/* optional int32 hash = 2; */
-		if (message.hash !== undefined) writer.tag(2, WireType.Varint).int32(message.hash);
-		/* optional int32 crc = 3; */
-		if (message.crc !== undefined) writer.tag(3, WireType.Varint).int32(message.crc);
-		/* optional string name = 4; */
-		if (message.name !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.name);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessage_UtilMsg_Response.ItemDetail", [
+      {
+        no: 1,
+        name: "index",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "hash",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "crc",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessage_UtilMsg_Response_ItemDetail>): CUserMessage_UtilMsg_Response_ItemDetail {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessage_UtilMsg_Response_ItemDetail>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessage_UtilMsg_Response_ItemDetail,
+  ): CUserMessage_UtilMsg_Response_ItemDetail {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 index */ 1:
+          message.index = reader.int32();
+          break;
+        case /* optional int32 hash */ 2:
+          message.hash = reader.int32();
+          break;
+        case /* optional int32 crc */ 3:
+          message.crc = reader.int32();
+          break;
+        case /* optional string name */ 4:
+          message.name = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessage_UtilMsg_Response_ItemDetail,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 index = 1; */
+    if (message.index !== undefined) writer.tag(1, WireType.Varint).int32(message.index);
+    /* optional int32 hash = 2; */
+    if (message.hash !== undefined) writer.tag(2, WireType.Varint).int32(message.hash);
+    /* optional int32 crc = 3; */
+    if (message.crc !== undefined) writer.tag(3, WireType.Varint).int32(message.crc);
+    /* optional string name = 4; */
+    if (message.name !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.name);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessage_UtilMsg_Response.ItemDetail
@@ -10574,161 +10574,161 @@ class CUserMessage_UtilMsg_Response_ItemDetail$Type extends MessageType<CUserMes
 export const CUserMessage_UtilMsg_Response_ItemDetail = new CUserMessage_UtilMsg_Response_ItemDetail$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessage_DllStatus$Type extends MessageType<CUserMessage_DllStatus> {
-	constructor() {
-		super("CUserMessage_DllStatus", [
-			{
-				no: 1,
-				name: "file_report",
-				kind: "scalar",
-				localName: "file_report",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "command_line",
-				kind: "scalar",
-				localName: "command_line",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "total_files",
-				kind: "scalar",
-				localName: "total_files",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "process_id",
-				kind: "scalar",
-				localName: "process_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "osversion",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 6,
-				name: "client_time",
-				kind: "scalar",
-				localName: "client_time",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 7,
-				name: "diagnostics",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CUserMessage_DllStatus_CVDiagnostic,
-			},
-			{
-				no: 8,
-				name: "modules",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CUserMessage_DllStatus_CModule,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessage_DllStatus>): CUserMessage_DllStatus {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.diagnostics = [];
-		message.modules = [];
-		if (value !== undefined) reflectionMergePartial<CUserMessage_DllStatus>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessage_DllStatus,
-	): CUserMessage_DllStatus {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string file_report */ 1:
-					message.file_report = reader.string();
-					break;
-				case /* optional string command_line */ 2:
-					message.command_line = reader.string();
-					break;
-				case /* optional uint32 total_files */ 3:
-					message.total_files = reader.uint32();
-					break;
-				case /* optional uint32 process_id */ 4:
-					message.process_id = reader.uint32();
-					break;
-				case /* optional int32 osversion */ 5:
-					message.osversion = reader.int32();
-					break;
-				case /* optional uint64 client_time */ 6:
-					message.client_time = reader.uint64().toBigInt();
-					break;
-				case /* repeated CUserMessage_DllStatus.CVDiagnostic diagnostics */ 7:
-					message.diagnostics.push(
-						CUserMessage_DllStatus_CVDiagnostic.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CUserMessage_DllStatus.CModule modules */ 8:
-					message.modules.push(CUserMessage_DllStatus_CModule.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessage_DllStatus,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string file_report = 1; */
-		if (message.file_report !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.file_report);
-		/* optional string command_line = 2; */
-		if (message.command_line !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.command_line);
-		/* optional uint32 total_files = 3; */
-		if (message.total_files !== undefined) writer.tag(3, WireType.Varint).uint32(message.total_files);
-		/* optional uint32 process_id = 4; */
-		if (message.process_id !== undefined) writer.tag(4, WireType.Varint).uint32(message.process_id);
-		/* optional int32 osversion = 5; */
-		if (message.osversion !== undefined) writer.tag(5, WireType.Varint).int32(message.osversion);
-		/* optional uint64 client_time = 6; */
-		if (message.client_time !== undefined) writer.tag(6, WireType.Varint).uint64(message.client_time);
-		/* repeated CUserMessage_DllStatus.CVDiagnostic diagnostics = 7; */
-		for (let i = 0; i < message.diagnostics.length; i++)
-			CUserMessage_DllStatus_CVDiagnostic.internalBinaryWrite(
-				message.diagnostics[i],
-				writer.tag(7, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CUserMessage_DllStatus.CModule modules = 8; */
-		for (let i = 0; i < message.modules.length; i++)
-			CUserMessage_DllStatus_CModule.internalBinaryWrite(
-				message.modules[i],
-				writer.tag(8, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessage_DllStatus", [
+      {
+        no: 1,
+        name: "file_report",
+        kind: "scalar",
+        localName: "file_report",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "command_line",
+        kind: "scalar",
+        localName: "command_line",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "total_files",
+        kind: "scalar",
+        localName: "total_files",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "process_id",
+        kind: "scalar",
+        localName: "process_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "osversion",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 6,
+        name: "client_time",
+        kind: "scalar",
+        localName: "client_time",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 7,
+        name: "diagnostics",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CUserMessage_DllStatus_CVDiagnostic,
+      },
+      {
+        no: 8,
+        name: "modules",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CUserMessage_DllStatus_CModule,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessage_DllStatus>): CUserMessage_DllStatus {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.diagnostics = [];
+    message.modules = [];
+    if (value !== undefined) reflectionMergePartial<CUserMessage_DllStatus>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessage_DllStatus,
+  ): CUserMessage_DllStatus {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string file_report */ 1:
+          message.file_report = reader.string();
+          break;
+        case /* optional string command_line */ 2:
+          message.command_line = reader.string();
+          break;
+        case /* optional uint32 total_files */ 3:
+          message.total_files = reader.uint32();
+          break;
+        case /* optional uint32 process_id */ 4:
+          message.process_id = reader.uint32();
+          break;
+        case /* optional int32 osversion */ 5:
+          message.osversion = reader.int32();
+          break;
+        case /* optional uint64 client_time */ 6:
+          message.client_time = reader.uint64().toBigInt();
+          break;
+        case /* repeated CUserMessage_DllStatus.CVDiagnostic diagnostics */ 7:
+          message.diagnostics.push(
+            CUserMessage_DllStatus_CVDiagnostic.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CUserMessage_DllStatus.CModule modules */ 8:
+          message.modules.push(CUserMessage_DllStatus_CModule.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessage_DllStatus,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string file_report = 1; */
+    if (message.file_report !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.file_report);
+    /* optional string command_line = 2; */
+    if (message.command_line !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.command_line);
+    /* optional uint32 total_files = 3; */
+    if (message.total_files !== undefined) writer.tag(3, WireType.Varint).uint32(message.total_files);
+    /* optional uint32 process_id = 4; */
+    if (message.process_id !== undefined) writer.tag(4, WireType.Varint).uint32(message.process_id);
+    /* optional int32 osversion = 5; */
+    if (message.osversion !== undefined) writer.tag(5, WireType.Varint).int32(message.osversion);
+    /* optional uint64 client_time = 6; */
+    if (message.client_time !== undefined) writer.tag(6, WireType.Varint).uint64(message.client_time);
+    /* repeated CUserMessage_DllStatus.CVDiagnostic diagnostics = 7; */
+    for (let i = 0; i < message.diagnostics.length; i++)
+      CUserMessage_DllStatus_CVDiagnostic.internalBinaryWrite(
+        message.diagnostics[i],
+        writer.tag(7, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CUserMessage_DllStatus.CModule modules = 8; */
+    for (let i = 0; i < message.modules.length; i++)
+      CUserMessage_DllStatus_CModule.internalBinaryWrite(
+        message.modules[i],
+        writer.tag(8, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessage_DllStatus
@@ -10736,95 +10736,95 @@ class CUserMessage_DllStatus$Type extends MessageType<CUserMessage_DllStatus> {
 export const CUserMessage_DllStatus = new CUserMessage_DllStatus$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessage_DllStatus_CVDiagnostic$Type extends MessageType<CUserMessage_DllStatus_CVDiagnostic> {
-	constructor() {
-		super("CUserMessage_DllStatus.CVDiagnostic", [
-			{
-				no: 1,
-				name: "id",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "extended",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "value",
-				kind: "scalar",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 4,
-				name: "string_value",
-				kind: "scalar",
-				localName: "string_value",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessage_DllStatus_CVDiagnostic>): CUserMessage_DllStatus_CVDiagnostic {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessage_DllStatus_CVDiagnostic>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessage_DllStatus_CVDiagnostic,
-	): CUserMessage_DllStatus_CVDiagnostic {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 id */ 1:
-					message.id = reader.uint32();
-					break;
-				case /* optional uint32 extended */ 2:
-					message.extended = reader.uint32();
-					break;
-				case /* optional uint64 value */ 3:
-					message.value = reader.uint64().toBigInt();
-					break;
-				case /* optional string string_value */ 4:
-					message.string_value = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessage_DllStatus_CVDiagnostic,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 id = 1; */
-		if (message.id !== undefined) writer.tag(1, WireType.Varint).uint32(message.id);
-		/* optional uint32 extended = 2; */
-		if (message.extended !== undefined) writer.tag(2, WireType.Varint).uint32(message.extended);
-		/* optional uint64 value = 3; */
-		if (message.value !== undefined) writer.tag(3, WireType.Varint).uint64(message.value);
-		/* optional string string_value = 4; */
-		if (message.string_value !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.string_value);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessage_DllStatus.CVDiagnostic", [
+      {
+        no: 1,
+        name: "id",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "extended",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "value",
+        kind: "scalar",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 4,
+        name: "string_value",
+        kind: "scalar",
+        localName: "string_value",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessage_DllStatus_CVDiagnostic>): CUserMessage_DllStatus_CVDiagnostic {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessage_DllStatus_CVDiagnostic>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessage_DllStatus_CVDiagnostic,
+  ): CUserMessage_DllStatus_CVDiagnostic {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 id */ 1:
+          message.id = reader.uint32();
+          break;
+        case /* optional uint32 extended */ 2:
+          message.extended = reader.uint32();
+          break;
+        case /* optional uint64 value */ 3:
+          message.value = reader.uint64().toBigInt();
+          break;
+        case /* optional string string_value */ 4:
+          message.string_value = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessage_DllStatus_CVDiagnostic,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 id = 1; */
+    if (message.id !== undefined) writer.tag(1, WireType.Varint).uint32(message.id);
+    /* optional uint32 extended = 2; */
+    if (message.extended !== undefined) writer.tag(2, WireType.Varint).uint32(message.extended);
+    /* optional uint64 value = 3; */
+    if (message.value !== undefined) writer.tag(3, WireType.Varint).uint64(message.value);
+    /* optional string string_value = 4; */
+    if (message.string_value !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.string_value);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessage_DllStatus.CVDiagnostic
@@ -10832,95 +10832,95 @@ class CUserMessage_DllStatus_CVDiagnostic$Type extends MessageType<CUserMessage_
 export const CUserMessage_DllStatus_CVDiagnostic = new CUserMessage_DllStatus_CVDiagnostic$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessage_DllStatus_CModule$Type extends MessageType<CUserMessage_DllStatus_CModule> {
-	constructor() {
-		super("CUserMessage_DllStatus.CModule", [
-			{
-				no: 1,
-				name: "base_addr",
-				kind: "scalar",
-				localName: "base_addr",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "size",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "timestamp",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessage_DllStatus_CModule>): CUserMessage_DllStatus_CModule {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessage_DllStatus_CModule>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessage_DllStatus_CModule,
-	): CUserMessage_DllStatus_CModule {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint64 base_addr */ 1:
-					message.base_addr = reader.uint64().toBigInt();
-					break;
-				case /* optional string name */ 2:
-					message.name = reader.string();
-					break;
-				case /* optional uint32 size */ 3:
-					message.size = reader.uint32();
-					break;
-				case /* optional uint32 timestamp */ 4:
-					message.timestamp = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessage_DllStatus_CModule,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint64 base_addr = 1; */
-		if (message.base_addr !== undefined) writer.tag(1, WireType.Varint).uint64(message.base_addr);
-		/* optional string name = 2; */
-		if (message.name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.name);
-		/* optional uint32 size = 3; */
-		if (message.size !== undefined) writer.tag(3, WireType.Varint).uint32(message.size);
-		/* optional uint32 timestamp = 4; */
-		if (message.timestamp !== undefined) writer.tag(4, WireType.Varint).uint32(message.timestamp);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessage_DllStatus.CModule", [
+      {
+        no: 1,
+        name: "base_addr",
+        kind: "scalar",
+        localName: "base_addr",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "size",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "timestamp",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessage_DllStatus_CModule>): CUserMessage_DllStatus_CModule {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessage_DllStatus_CModule>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessage_DllStatus_CModule,
+  ): CUserMessage_DllStatus_CModule {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint64 base_addr */ 1:
+          message.base_addr = reader.uint64().toBigInt();
+          break;
+        case /* optional string name */ 2:
+          message.name = reader.string();
+          break;
+        case /* optional uint32 size */ 3:
+          message.size = reader.uint32();
+          break;
+        case /* optional uint32 timestamp */ 4:
+          message.timestamp = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessage_DllStatus_CModule,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint64 base_addr = 1; */
+    if (message.base_addr !== undefined) writer.tag(1, WireType.Varint).uint64(message.base_addr);
+    /* optional string name = 2; */
+    if (message.name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.name);
+    /* optional uint32 size = 3; */
+    if (message.size !== undefined) writer.tag(3, WireType.Varint).uint32(message.size);
+    /* optional uint32 timestamp = 4; */
+    if (message.timestamp !== undefined) writer.tag(4, WireType.Varint).uint32(message.timestamp);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessage_DllStatus.CModule
@@ -10928,81 +10928,81 @@ class CUserMessage_DllStatus_CModule$Type extends MessageType<CUserMessage_DllSt
 export const CUserMessage_DllStatus_CModule = new CUserMessage_DllStatus_CModule$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageRequestInventory$Type extends MessageType<CUserMessageRequestInventory> {
-	constructor() {
-		super("CUserMessageRequestInventory", [
-			{
-				no: 1,
-				name: "inventory",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "offset",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "options",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageRequestInventory>): CUserMessageRequestInventory {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageRequestInventory>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageRequestInventory,
-	): CUserMessageRequestInventory {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 inventory */ 1:
-					message.inventory = reader.int32();
-					break;
-				case /* optional int32 offset */ 2:
-					message.offset = reader.int32();
-					break;
-				case /* optional int32 options */ 3:
-					message.options = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageRequestInventory,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 inventory = 1; */
-		if (message.inventory !== undefined) writer.tag(1, WireType.Varint).int32(message.inventory);
-		/* optional int32 offset = 2; */
-		if (message.offset !== undefined) writer.tag(2, WireType.Varint).int32(message.offset);
-		/* optional int32 options = 3; */
-		if (message.options !== undefined) writer.tag(3, WireType.Varint).int32(message.options);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageRequestInventory", [
+      {
+        no: 1,
+        name: "inventory",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "offset",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "options",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageRequestInventory>): CUserMessageRequestInventory {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageRequestInventory>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageRequestInventory,
+  ): CUserMessageRequestInventory {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 inventory */ 1:
+          message.inventory = reader.int32();
+          break;
+        case /* optional int32 offset */ 2:
+          message.offset = reader.int32();
+          break;
+        case /* optional int32 options */ 3:
+          message.options = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageRequestInventory,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 inventory = 1; */
+    if (message.inventory !== undefined) writer.tag(1, WireType.Varint).int32(message.inventory);
+    /* optional int32 offset = 2; */
+    if (message.offset !== undefined) writer.tag(2, WireType.Varint).int32(message.offset);
+    /* optional int32 options = 3; */
+    if (message.options !== undefined) writer.tag(3, WireType.Varint).int32(message.options);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageRequestInventory
@@ -11010,232 +11010,232 @@ class CUserMessageRequestInventory$Type extends MessageType<CUserMessageRequestI
 export const CUserMessageRequestInventory = new CUserMessageRequestInventory$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessage_Inventory_Response$Type extends MessageType<CUserMessage_Inventory_Response> {
-	constructor() {
-		super("CUserMessage_Inventory_Response", [
-			{
-				no: 1,
-				name: "crc",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "item_count",
-				kind: "scalar",
-				localName: "item_count",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "osversion",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 6,
-				name: "perf_time",
-				kind: "scalar",
-				localName: "perf_time",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 7,
-				name: "client_timestamp",
-				kind: "scalar",
-				localName: "client_timestamp",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 8,
-				name: "platform",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 9,
-				name: "inventories",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CUserMessage_Inventory_Response_InventoryDetail,
-			},
-			{
-				no: 10,
-				name: "inventories2",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CUserMessage_Inventory_Response_InventoryDetail,
-			},
-			{
-				no: 14,
-				name: "inventories3",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CUserMessage_Inventory_Response_InventoryDetail,
-			},
-			{
-				no: 11,
-				name: "inv_type",
-				kind: "scalar",
-				localName: "inv_type",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 12,
-				name: "build_version",
-				kind: "scalar",
-				localName: "build_version",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 13,
-				name: "instance",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 15,
-				name: "start_time",
-				kind: "scalar",
-				localName: "start_time",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessage_Inventory_Response>): CUserMessage_Inventory_Response {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.inventories = [];
-		message.inventories2 = [];
-		message.inventories3 = [];
-		if (value !== undefined) reflectionMergePartial<CUserMessage_Inventory_Response>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessage_Inventory_Response,
-	): CUserMessage_Inventory_Response {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 crc */ 1:
-					message.crc = reader.fixed32();
-					break;
-				case /* optional int32 item_count */ 2:
-					message.item_count = reader.int32();
-					break;
-				case /* optional int32 osversion */ 5:
-					message.osversion = reader.int32();
-					break;
-				case /* optional int32 perf_time */ 6:
-					message.perf_time = reader.int32();
-					break;
-				case /* optional int32 client_timestamp */ 7:
-					message.client_timestamp = reader.int32();
-					break;
-				case /* optional int32 platform */ 8:
-					message.platform = reader.int32();
-					break;
-				case /* repeated CUserMessage_Inventory_Response.InventoryDetail inventories */ 9:
-					message.inventories.push(
-						CUserMessage_Inventory_Response_InventoryDetail.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CUserMessage_Inventory_Response.InventoryDetail inventories2 */ 10:
-					message.inventories2.push(
-						CUserMessage_Inventory_Response_InventoryDetail.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CUserMessage_Inventory_Response.InventoryDetail inventories3 */ 14:
-					message.inventories3.push(
-						CUserMessage_Inventory_Response_InventoryDetail.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* optional int32 inv_type */ 11:
-					message.inv_type = reader.int32();
-					break;
-				case /* optional int32 build_version */ 12:
-					message.build_version = reader.int32();
-					break;
-				case /* optional int32 instance */ 13:
-					message.instance = reader.int32();
-					break;
-				case /* optional int64 start_time */ 15:
-					message.start_time = reader.int64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessage_Inventory_Response,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 crc = 1; */
-		if (message.crc !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.crc);
-		/* optional int32 item_count = 2; */
-		if (message.item_count !== undefined) writer.tag(2, WireType.Varint).int32(message.item_count);
-		/* optional int32 osversion = 5; */
-		if (message.osversion !== undefined) writer.tag(5, WireType.Varint).int32(message.osversion);
-		/* optional int32 perf_time = 6; */
-		if (message.perf_time !== undefined) writer.tag(6, WireType.Varint).int32(message.perf_time);
-		/* optional int32 client_timestamp = 7; */
-		if (message.client_timestamp !== undefined) writer.tag(7, WireType.Varint).int32(message.client_timestamp);
-		/* optional int32 platform = 8; */
-		if (message.platform !== undefined) writer.tag(8, WireType.Varint).int32(message.platform);
-		/* repeated CUserMessage_Inventory_Response.InventoryDetail inventories = 9; */
-		for (let i = 0; i < message.inventories.length; i++)
-			CUserMessage_Inventory_Response_InventoryDetail.internalBinaryWrite(
-				message.inventories[i],
-				writer.tag(9, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CUserMessage_Inventory_Response.InventoryDetail inventories2 = 10; */
-		for (let i = 0; i < message.inventories2.length; i++)
-			CUserMessage_Inventory_Response_InventoryDetail.internalBinaryWrite(
-				message.inventories2[i],
-				writer.tag(10, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CUserMessage_Inventory_Response.InventoryDetail inventories3 = 14; */
-		for (let i = 0; i < message.inventories3.length; i++)
-			CUserMessage_Inventory_Response_InventoryDetail.internalBinaryWrite(
-				message.inventories3[i],
-				writer.tag(14, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional int32 inv_type = 11; */
-		if (message.inv_type !== undefined) writer.tag(11, WireType.Varint).int32(message.inv_type);
-		/* optional int32 build_version = 12; */
-		if (message.build_version !== undefined) writer.tag(12, WireType.Varint).int32(message.build_version);
-		/* optional int32 instance = 13; */
-		if (message.instance !== undefined) writer.tag(13, WireType.Varint).int32(message.instance);
-		/* optional int64 start_time = 15; */
-		if (message.start_time !== undefined) writer.tag(15, WireType.Varint).int64(message.start_time);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessage_Inventory_Response", [
+      {
+        no: 1,
+        name: "crc",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "item_count",
+        kind: "scalar",
+        localName: "item_count",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "osversion",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 6,
+        name: "perf_time",
+        kind: "scalar",
+        localName: "perf_time",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 7,
+        name: "client_timestamp",
+        kind: "scalar",
+        localName: "client_timestamp",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 8,
+        name: "platform",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 9,
+        name: "inventories",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CUserMessage_Inventory_Response_InventoryDetail,
+      },
+      {
+        no: 10,
+        name: "inventories2",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CUserMessage_Inventory_Response_InventoryDetail,
+      },
+      {
+        no: 14,
+        name: "inventories3",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CUserMessage_Inventory_Response_InventoryDetail,
+      },
+      {
+        no: 11,
+        name: "inv_type",
+        kind: "scalar",
+        localName: "inv_type",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 12,
+        name: "build_version",
+        kind: "scalar",
+        localName: "build_version",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 13,
+        name: "instance",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 15,
+        name: "start_time",
+        kind: "scalar",
+        localName: "start_time",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessage_Inventory_Response>): CUserMessage_Inventory_Response {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.inventories = [];
+    message.inventories2 = [];
+    message.inventories3 = [];
+    if (value !== undefined) reflectionMergePartial<CUserMessage_Inventory_Response>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessage_Inventory_Response,
+  ): CUserMessage_Inventory_Response {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 crc */ 1:
+          message.crc = reader.fixed32();
+          break;
+        case /* optional int32 item_count */ 2:
+          message.item_count = reader.int32();
+          break;
+        case /* optional int32 osversion */ 5:
+          message.osversion = reader.int32();
+          break;
+        case /* optional int32 perf_time */ 6:
+          message.perf_time = reader.int32();
+          break;
+        case /* optional int32 client_timestamp */ 7:
+          message.client_timestamp = reader.int32();
+          break;
+        case /* optional int32 platform */ 8:
+          message.platform = reader.int32();
+          break;
+        case /* repeated CUserMessage_Inventory_Response.InventoryDetail inventories */ 9:
+          message.inventories.push(
+            CUserMessage_Inventory_Response_InventoryDetail.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CUserMessage_Inventory_Response.InventoryDetail inventories2 */ 10:
+          message.inventories2.push(
+            CUserMessage_Inventory_Response_InventoryDetail.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CUserMessage_Inventory_Response.InventoryDetail inventories3 */ 14:
+          message.inventories3.push(
+            CUserMessage_Inventory_Response_InventoryDetail.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* optional int32 inv_type */ 11:
+          message.inv_type = reader.int32();
+          break;
+        case /* optional int32 build_version */ 12:
+          message.build_version = reader.int32();
+          break;
+        case /* optional int32 instance */ 13:
+          message.instance = reader.int32();
+          break;
+        case /* optional int64 start_time */ 15:
+          message.start_time = reader.int64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessage_Inventory_Response,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 crc = 1; */
+    if (message.crc !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.crc);
+    /* optional int32 item_count = 2; */
+    if (message.item_count !== undefined) writer.tag(2, WireType.Varint).int32(message.item_count);
+    /* optional int32 osversion = 5; */
+    if (message.osversion !== undefined) writer.tag(5, WireType.Varint).int32(message.osversion);
+    /* optional int32 perf_time = 6; */
+    if (message.perf_time !== undefined) writer.tag(6, WireType.Varint).int32(message.perf_time);
+    /* optional int32 client_timestamp = 7; */
+    if (message.client_timestamp !== undefined) writer.tag(7, WireType.Varint).int32(message.client_timestamp);
+    /* optional int32 platform = 8; */
+    if (message.platform !== undefined) writer.tag(8, WireType.Varint).int32(message.platform);
+    /* repeated CUserMessage_Inventory_Response.InventoryDetail inventories = 9; */
+    for (let i = 0; i < message.inventories.length; i++)
+      CUserMessage_Inventory_Response_InventoryDetail.internalBinaryWrite(
+        message.inventories[i],
+        writer.tag(9, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CUserMessage_Inventory_Response.InventoryDetail inventories2 = 10; */
+    for (let i = 0; i < message.inventories2.length; i++)
+      CUserMessage_Inventory_Response_InventoryDetail.internalBinaryWrite(
+        message.inventories2[i],
+        writer.tag(10, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CUserMessage_Inventory_Response.InventoryDetail inventories3 = 14; */
+    for (let i = 0; i < message.inventories3.length; i++)
+      CUserMessage_Inventory_Response_InventoryDetail.internalBinaryWrite(
+        message.inventories3[i],
+        writer.tag(14, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional int32 inv_type = 11; */
+    if (message.inv_type !== undefined) writer.tag(11, WireType.Varint).int32(message.inv_type);
+    /* optional int32 build_version = 12; */
+    if (message.build_version !== undefined) writer.tag(12, WireType.Varint).int32(message.build_version);
+    /* optional int32 instance = 13; */
+    if (message.instance !== undefined) writer.tag(13, WireType.Varint).int32(message.instance);
+    /* optional int64 start_time = 15; */
+    if (message.start_time !== undefined) writer.tag(15, WireType.Varint).int64(message.start_time);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessage_Inventory_Response
@@ -11243,243 +11243,243 @@ class CUserMessage_Inventory_Response$Type extends MessageType<CUserMessage_Inve
 export const CUserMessage_Inventory_Response = new CUserMessage_Inventory_Response$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessage_Inventory_Response_InventoryDetail$Type extends MessageType<CUserMessage_Inventory_Response_InventoryDetail> {
-	constructor() {
-		super("CUserMessage_Inventory_Response.InventoryDetail", [
-			{
-				no: 1,
-				name: "index",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "primary",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "offset",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 4,
-				name: "first",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 5,
-				name: "base",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 6,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 7,
-				name: "base_name",
-				kind: "scalar",
-				localName: "base_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 8,
-				name: "base_detail",
-				kind: "scalar",
-				localName: "base_detail",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 9,
-				name: "base_time",
-				kind: "scalar",
-				localName: "base_time",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 10,
-				name: "base_hash",
-				kind: "scalar",
-				localName: "base_hash",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMessage_Inventory_Response_InventoryDetail>,
-	): CUserMessage_Inventory_Response_InventoryDetail {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CUserMessage_Inventory_Response_InventoryDetail>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessage_Inventory_Response_InventoryDetail,
-	): CUserMessage_Inventory_Response_InventoryDetail {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 index */ 1:
-					message.index = reader.int32();
-					break;
-				case /* optional int64 primary */ 2:
-					message.primary = reader.int64().toBigInt();
-					break;
-				case /* optional int64 offset */ 3:
-					message.offset = reader.int64().toBigInt();
-					break;
-				case /* optional int64 first */ 4:
-					message.first = reader.int64().toBigInt();
-					break;
-				case /* optional int64 base */ 5:
-					message.base = reader.int64().toBigInt();
-					break;
-				case /* optional string name */ 6:
-					message.name = reader.string();
-					break;
-				case /* optional string base_name */ 7:
-					message.base_name = reader.string();
-					break;
-				case /* optional int32 base_detail */ 8:
-					message.base_detail = reader.int32();
-					break;
-				case /* optional int32 base_time */ 9:
-					message.base_time = reader.int32();
-					break;
-				case /* optional int32 base_hash */ 10:
-					message.base_hash = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessage_Inventory_Response_InventoryDetail,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 index = 1; */
-		if (message.index !== undefined) writer.tag(1, WireType.Varint).int32(message.index);
-		/* optional int64 primary = 2; */
-		if (message.primary !== undefined) writer.tag(2, WireType.Varint).int64(message.primary);
-		/* optional int64 offset = 3; */
-		if (message.offset !== undefined) writer.tag(3, WireType.Varint).int64(message.offset);
-		/* optional int64 first = 4; */
-		if (message.first !== undefined) writer.tag(4, WireType.Varint).int64(message.first);
-		/* optional int64 base = 5; */
-		if (message.base !== undefined) writer.tag(5, WireType.Varint).int64(message.base);
-		/* optional string name = 6; */
-		if (message.name !== undefined) writer.tag(6, WireType.LengthDelimited).string(message.name);
-		/* optional string base_name = 7; */
-		if (message.base_name !== undefined) writer.tag(7, WireType.LengthDelimited).string(message.base_name);
-		/* optional int32 base_detail = 8; */
-		if (message.base_detail !== undefined) writer.tag(8, WireType.Varint).int32(message.base_detail);
-		/* optional int32 base_time = 9; */
-		if (message.base_time !== undefined) writer.tag(9, WireType.Varint).int32(message.base_time);
-		/* optional int32 base_hash = 10; */
-		if (message.base_hash !== undefined) writer.tag(10, WireType.Varint).int32(message.base_hash);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessage_Inventory_Response.InventoryDetail", [
+      {
+        no: 1,
+        name: "index",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "primary",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "offset",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 4,
+        name: "first",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 5,
+        name: "base",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 6,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 7,
+        name: "base_name",
+        kind: "scalar",
+        localName: "base_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 8,
+        name: "base_detail",
+        kind: "scalar",
+        localName: "base_detail",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 9,
+        name: "base_time",
+        kind: "scalar",
+        localName: "base_time",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 10,
+        name: "base_hash",
+        kind: "scalar",
+        localName: "base_hash",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMessage_Inventory_Response_InventoryDetail>,
+  ): CUserMessage_Inventory_Response_InventoryDetail {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CUserMessage_Inventory_Response_InventoryDetail>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessage_Inventory_Response_InventoryDetail,
+  ): CUserMessage_Inventory_Response_InventoryDetail {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 index */ 1:
+          message.index = reader.int32();
+          break;
+        case /* optional int64 primary */ 2:
+          message.primary = reader.int64().toBigInt();
+          break;
+        case /* optional int64 offset */ 3:
+          message.offset = reader.int64().toBigInt();
+          break;
+        case /* optional int64 first */ 4:
+          message.first = reader.int64().toBigInt();
+          break;
+        case /* optional int64 base */ 5:
+          message.base = reader.int64().toBigInt();
+          break;
+        case /* optional string name */ 6:
+          message.name = reader.string();
+          break;
+        case /* optional string base_name */ 7:
+          message.base_name = reader.string();
+          break;
+        case /* optional int32 base_detail */ 8:
+          message.base_detail = reader.int32();
+          break;
+        case /* optional int32 base_time */ 9:
+          message.base_time = reader.int32();
+          break;
+        case /* optional int32 base_hash */ 10:
+          message.base_hash = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessage_Inventory_Response_InventoryDetail,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 index = 1; */
+    if (message.index !== undefined) writer.tag(1, WireType.Varint).int32(message.index);
+    /* optional int64 primary = 2; */
+    if (message.primary !== undefined) writer.tag(2, WireType.Varint).int64(message.primary);
+    /* optional int64 offset = 3; */
+    if (message.offset !== undefined) writer.tag(3, WireType.Varint).int64(message.offset);
+    /* optional int64 first = 4; */
+    if (message.first !== undefined) writer.tag(4, WireType.Varint).int64(message.first);
+    /* optional int64 base = 5; */
+    if (message.base !== undefined) writer.tag(5, WireType.Varint).int64(message.base);
+    /* optional string name = 6; */
+    if (message.name !== undefined) writer.tag(6, WireType.LengthDelimited).string(message.name);
+    /* optional string base_name = 7; */
+    if (message.base_name !== undefined) writer.tag(7, WireType.LengthDelimited).string(message.base_name);
+    /* optional int32 base_detail = 8; */
+    if (message.base_detail !== undefined) writer.tag(8, WireType.Varint).int32(message.base_detail);
+    /* optional int32 base_time = 9; */
+    if (message.base_time !== undefined) writer.tag(9, WireType.Varint).int32(message.base_time);
+    /* optional int32 base_hash = 10; */
+    if (message.base_hash !== undefined) writer.tag(10, WireType.Varint).int32(message.base_hash);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessage_Inventory_Response.InventoryDetail
  */
 export const CUserMessage_Inventory_Response_InventoryDetail =
-	new CUserMessage_Inventory_Response_InventoryDetail$Type();
+  new CUserMessage_Inventory_Response_InventoryDetail$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageRequestDiagnostic$Type extends MessageType<CUserMessageRequestDiagnostic> {
-	constructor() {
-		super("CUserMessageRequestDiagnostic", [
-			{
-				no: 1,
-				name: "diagnostics",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CUserMessageRequestDiagnostic_Diagnostic,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageRequestDiagnostic>): CUserMessageRequestDiagnostic {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.diagnostics = [];
-		if (value !== undefined) reflectionMergePartial<CUserMessageRequestDiagnostic>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageRequestDiagnostic,
-	): CUserMessageRequestDiagnostic {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CUserMessageRequestDiagnostic.Diagnostic diagnostics */ 1:
-					message.diagnostics.push(
-						CUserMessageRequestDiagnostic_Diagnostic.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageRequestDiagnostic,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CUserMessageRequestDiagnostic.Diagnostic diagnostics = 1; */
-		for (let i = 0; i < message.diagnostics.length; i++)
-			CUserMessageRequestDiagnostic_Diagnostic.internalBinaryWrite(
-				message.diagnostics[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageRequestDiagnostic", [
+      {
+        no: 1,
+        name: "diagnostics",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CUserMessageRequestDiagnostic_Diagnostic,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageRequestDiagnostic>): CUserMessageRequestDiagnostic {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.diagnostics = [];
+    if (value !== undefined) reflectionMergePartial<CUserMessageRequestDiagnostic>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageRequestDiagnostic,
+  ): CUserMessageRequestDiagnostic {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CUserMessageRequestDiagnostic.Diagnostic diagnostics */ 1:
+          message.diagnostics.push(
+            CUserMessageRequestDiagnostic_Diagnostic.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageRequestDiagnostic,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CUserMessageRequestDiagnostic.Diagnostic diagnostics = 1; */
+    for (let i = 0; i < message.diagnostics.length; i++)
+      CUserMessageRequestDiagnostic_Diagnostic.internalBinaryWrite(
+        message.diagnostics[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageRequestDiagnostic
@@ -11487,206 +11487,206 @@ class CUserMessageRequestDiagnostic$Type extends MessageType<CUserMessageRequest
 export const CUserMessageRequestDiagnostic = new CUserMessageRequestDiagnostic$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessageRequestDiagnostic_Diagnostic$Type extends MessageType<CUserMessageRequestDiagnostic_Diagnostic> {
-	constructor() {
-		super("CUserMessageRequestDiagnostic.Diagnostic", [
-			{
-				no: 1,
-				name: "index",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "offset",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "param",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "length",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "type",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 6,
-				name: "base",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 7,
-				name: "range",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 8,
-				name: "extent",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 9,
-				name: "detail",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 10,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 11,
-				name: "alias",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 12,
-				name: "vardetail",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 13,
-				name: "context",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessageRequestDiagnostic_Diagnostic>): CUserMessageRequestDiagnostic_Diagnostic {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessageRequestDiagnostic_Diagnostic>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessageRequestDiagnostic_Diagnostic,
-	): CUserMessageRequestDiagnostic_Diagnostic {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 index */ 1:
-					message.index = reader.int32();
-					break;
-				case /* optional int64 offset */ 2:
-					message.offset = reader.int64().toBigInt();
-					break;
-				case /* optional int32 param */ 3:
-					message.param = reader.int32();
-					break;
-				case /* optional int32 length */ 4:
-					message.length = reader.int32();
-					break;
-				case /* optional int32 type */ 5:
-					message.type = reader.int32();
-					break;
-				case /* optional int64 base */ 6:
-					message.base = reader.int64().toBigInt();
-					break;
-				case /* optional int64 range */ 7:
-					message.range = reader.int64().toBigInt();
-					break;
-				case /* optional int64 extent */ 8:
-					message.extent = reader.int64().toBigInt();
-					break;
-				case /* optional int64 detail */ 9:
-					message.detail = reader.int64().toBigInt();
-					break;
-				case /* optional string name */ 10:
-					message.name = reader.string();
-					break;
-				case /* optional string alias */ 11:
-					message.alias = reader.string();
-					break;
-				case /* optional bytes vardetail */ 12:
-					message.vardetail = reader.bytes();
-					break;
-				case /* optional int32 context */ 13:
-					message.context = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessageRequestDiagnostic_Diagnostic,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 index = 1; */
-		if (message.index !== undefined) writer.tag(1, WireType.Varint).int32(message.index);
-		/* optional int64 offset = 2; */
-		if (message.offset !== undefined) writer.tag(2, WireType.Varint).int64(message.offset);
-		/* optional int32 param = 3; */
-		if (message.param !== undefined) writer.tag(3, WireType.Varint).int32(message.param);
-		/* optional int32 length = 4; */
-		if (message.length !== undefined) writer.tag(4, WireType.Varint).int32(message.length);
-		/* optional int32 type = 5; */
-		if (message.type !== undefined) writer.tag(5, WireType.Varint).int32(message.type);
-		/* optional int64 base = 6; */
-		if (message.base !== undefined) writer.tag(6, WireType.Varint).int64(message.base);
-		/* optional int64 range = 7; */
-		if (message.range !== undefined) writer.tag(7, WireType.Varint).int64(message.range);
-		/* optional int64 extent = 8; */
-		if (message.extent !== undefined) writer.tag(8, WireType.Varint).int64(message.extent);
-		/* optional int64 detail = 9; */
-		if (message.detail !== undefined) writer.tag(9, WireType.Varint).int64(message.detail);
-		/* optional string name = 10; */
-		if (message.name !== undefined) writer.tag(10, WireType.LengthDelimited).string(message.name);
-		/* optional string alias = 11; */
-		if (message.alias !== undefined) writer.tag(11, WireType.LengthDelimited).string(message.alias);
-		/* optional bytes vardetail = 12; */
-		if (message.vardetail !== undefined) writer.tag(12, WireType.LengthDelimited).bytes(message.vardetail);
-		/* optional int32 context = 13; */
-		if (message.context !== undefined) writer.tag(13, WireType.Varint).int32(message.context);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessageRequestDiagnostic.Diagnostic", [
+      {
+        no: 1,
+        name: "index",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "offset",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "param",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "length",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "type",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 6,
+        name: "base",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 7,
+        name: "range",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 8,
+        name: "extent",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 9,
+        name: "detail",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 10,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 11,
+        name: "alias",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 12,
+        name: "vardetail",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 13,
+        name: "context",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessageRequestDiagnostic_Diagnostic>): CUserMessageRequestDiagnostic_Diagnostic {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessageRequestDiagnostic_Diagnostic>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessageRequestDiagnostic_Diagnostic,
+  ): CUserMessageRequestDiagnostic_Diagnostic {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 index */ 1:
+          message.index = reader.int32();
+          break;
+        case /* optional int64 offset */ 2:
+          message.offset = reader.int64().toBigInt();
+          break;
+        case /* optional int32 param */ 3:
+          message.param = reader.int32();
+          break;
+        case /* optional int32 length */ 4:
+          message.length = reader.int32();
+          break;
+        case /* optional int32 type */ 5:
+          message.type = reader.int32();
+          break;
+        case /* optional int64 base */ 6:
+          message.base = reader.int64().toBigInt();
+          break;
+        case /* optional int64 range */ 7:
+          message.range = reader.int64().toBigInt();
+          break;
+        case /* optional int64 extent */ 8:
+          message.extent = reader.int64().toBigInt();
+          break;
+        case /* optional int64 detail */ 9:
+          message.detail = reader.int64().toBigInt();
+          break;
+        case /* optional string name */ 10:
+          message.name = reader.string();
+          break;
+        case /* optional string alias */ 11:
+          message.alias = reader.string();
+          break;
+        case /* optional bytes vardetail */ 12:
+          message.vardetail = reader.bytes();
+          break;
+        case /* optional int32 context */ 13:
+          message.context = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessageRequestDiagnostic_Diagnostic,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 index = 1; */
+    if (message.index !== undefined) writer.tag(1, WireType.Varint).int32(message.index);
+    /* optional int64 offset = 2; */
+    if (message.offset !== undefined) writer.tag(2, WireType.Varint).int64(message.offset);
+    /* optional int32 param = 3; */
+    if (message.param !== undefined) writer.tag(3, WireType.Varint).int32(message.param);
+    /* optional int32 length = 4; */
+    if (message.length !== undefined) writer.tag(4, WireType.Varint).int32(message.length);
+    /* optional int32 type = 5; */
+    if (message.type !== undefined) writer.tag(5, WireType.Varint).int32(message.type);
+    /* optional int64 base = 6; */
+    if (message.base !== undefined) writer.tag(6, WireType.Varint).int64(message.base);
+    /* optional int64 range = 7; */
+    if (message.range !== undefined) writer.tag(7, WireType.Varint).int64(message.range);
+    /* optional int64 extent = 8; */
+    if (message.extent !== undefined) writer.tag(8, WireType.Varint).int64(message.extent);
+    /* optional int64 detail = 9; */
+    if (message.detail !== undefined) writer.tag(9, WireType.Varint).int64(message.detail);
+    /* optional string name = 10; */
+    if (message.name !== undefined) writer.tag(10, WireType.LengthDelimited).string(message.name);
+    /* optional string alias = 11; */
+    if (message.alias !== undefined) writer.tag(11, WireType.LengthDelimited).string(message.alias);
+    /* optional bytes vardetail = 12; */
+    if (message.vardetail !== undefined) writer.tag(12, WireType.LengthDelimited).bytes(message.vardetail);
+    /* optional int32 context = 13; */
+    if (message.context !== undefined) writer.tag(13, WireType.Varint).int32(message.context);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessageRequestDiagnostic.Diagnostic
@@ -11694,128 +11694,128 @@ class CUserMessageRequestDiagnostic_Diagnostic$Type extends MessageType<CUserMes
 export const CUserMessageRequestDiagnostic_Diagnostic = new CUserMessageRequestDiagnostic_Diagnostic$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessage_Diagnostic_Response$Type extends MessageType<CUserMessage_Diagnostic_Response> {
-	constructor() {
-		super("CUserMessage_Diagnostic_Response", [
-			{
-				no: 1,
-				name: "diagnostics",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CUserMessage_Diagnostic_Response_Diagnostic,
-			},
-			{
-				no: 2,
-				name: "build_version",
-				kind: "scalar",
-				localName: "build_version",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "instance",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "start_time",
-				kind: "scalar",
-				localName: "start_time",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 5,
-				name: "osversion",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 6,
-				name: "platform",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessage_Diagnostic_Response>): CUserMessage_Diagnostic_Response {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.diagnostics = [];
-		if (value !== undefined) reflectionMergePartial<CUserMessage_Diagnostic_Response>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessage_Diagnostic_Response,
-	): CUserMessage_Diagnostic_Response {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CUserMessage_Diagnostic_Response.Diagnostic diagnostics */ 1:
-					message.diagnostics.push(
-						CUserMessage_Diagnostic_Response_Diagnostic.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* optional int32 build_version */ 2:
-					message.build_version = reader.int32();
-					break;
-				case /* optional int32 instance */ 3:
-					message.instance = reader.int32();
-					break;
-				case /* optional int64 start_time */ 4:
-					message.start_time = reader.int64().toBigInt();
-					break;
-				case /* optional int32 osversion */ 5:
-					message.osversion = reader.int32();
-					break;
-				case /* optional int32 platform */ 6:
-					message.platform = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessage_Diagnostic_Response,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CUserMessage_Diagnostic_Response.Diagnostic diagnostics = 1; */
-		for (let i = 0; i < message.diagnostics.length; i++)
-			CUserMessage_Diagnostic_Response_Diagnostic.internalBinaryWrite(
-				message.diagnostics[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional int32 build_version = 2; */
-		if (message.build_version !== undefined) writer.tag(2, WireType.Varint).int32(message.build_version);
-		/* optional int32 instance = 3; */
-		if (message.instance !== undefined) writer.tag(3, WireType.Varint).int32(message.instance);
-		/* optional int64 start_time = 4; */
-		if (message.start_time !== undefined) writer.tag(4, WireType.Varint).int64(message.start_time);
-		/* optional int32 osversion = 5; */
-		if (message.osversion !== undefined) writer.tag(5, WireType.Varint).int32(message.osversion);
-		/* optional int32 platform = 6; */
-		if (message.platform !== undefined) writer.tag(6, WireType.Varint).int32(message.platform);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessage_Diagnostic_Response", [
+      {
+        no: 1,
+        name: "diagnostics",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CUserMessage_Diagnostic_Response_Diagnostic,
+      },
+      {
+        no: 2,
+        name: "build_version",
+        kind: "scalar",
+        localName: "build_version",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "instance",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "start_time",
+        kind: "scalar",
+        localName: "start_time",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 5,
+        name: "osversion",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 6,
+        name: "platform",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessage_Diagnostic_Response>): CUserMessage_Diagnostic_Response {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.diagnostics = [];
+    if (value !== undefined) reflectionMergePartial<CUserMessage_Diagnostic_Response>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessage_Diagnostic_Response,
+  ): CUserMessage_Diagnostic_Response {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CUserMessage_Diagnostic_Response.Diagnostic diagnostics */ 1:
+          message.diagnostics.push(
+            CUserMessage_Diagnostic_Response_Diagnostic.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* optional int32 build_version */ 2:
+          message.build_version = reader.int32();
+          break;
+        case /* optional int32 instance */ 3:
+          message.instance = reader.int32();
+          break;
+        case /* optional int64 start_time */ 4:
+          message.start_time = reader.int64().toBigInt();
+          break;
+        case /* optional int32 osversion */ 5:
+          message.osversion = reader.int32();
+          break;
+        case /* optional int32 platform */ 6:
+          message.platform = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessage_Diagnostic_Response,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CUserMessage_Diagnostic_Response.Diagnostic diagnostics = 1; */
+    for (let i = 0; i < message.diagnostics.length; i++)
+      CUserMessage_Diagnostic_Response_Diagnostic.internalBinaryWrite(
+        message.diagnostics[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional int32 build_version = 2; */
+    if (message.build_version !== undefined) writer.tag(2, WireType.Varint).int32(message.build_version);
+    /* optional int32 instance = 3; */
+    if (message.instance !== undefined) writer.tag(3, WireType.Varint).int32(message.instance);
+    /* optional int64 start_time = 4; */
+    if (message.start_time !== undefined) writer.tag(4, WireType.Varint).int64(message.start_time);
+    /* optional int32 osversion = 5; */
+    if (message.osversion !== undefined) writer.tag(5, WireType.Varint).int32(message.osversion);
+    /* optional int32 platform = 6; */
+    if (message.platform !== undefined) writer.tag(6, WireType.Varint).int32(message.platform);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessage_Diagnostic_Response
@@ -11823,233 +11823,233 @@ class CUserMessage_Diagnostic_Response$Type extends MessageType<CUserMessage_Dia
 export const CUserMessage_Diagnostic_Response = new CUserMessage_Diagnostic_Response$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessage_Diagnostic_Response_Diagnostic$Type extends MessageType<CUserMessage_Diagnostic_Response_Diagnostic> {
-	constructor() {
-		super("CUserMessage_Diagnostic_Response.Diagnostic", [
-			{
-				no: 1,
-				name: "index",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "offset",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "param",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "length",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "detail",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 6,
-				name: "base",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 7,
-				name: "range",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 8,
-				name: "type",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 10,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 11,
-				name: "alias",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 12,
-				name: "backup",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 13,
-				name: "context",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 14,
-				name: "control",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 15,
-				name: "augment",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 16,
-				name: "placebo",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUserMessage_Diagnostic_Response_Diagnostic>,
-	): CUserMessage_Diagnostic_Response_Diagnostic {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessage_Diagnostic_Response_Diagnostic>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessage_Diagnostic_Response_Diagnostic,
-	): CUserMessage_Diagnostic_Response_Diagnostic {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 index */ 1:
-					message.index = reader.int32();
-					break;
-				case /* optional int64 offset */ 2:
-					message.offset = reader.int64().toBigInt();
-					break;
-				case /* optional int32 param */ 3:
-					message.param = reader.int32();
-					break;
-				case /* optional int32 length */ 4:
-					message.length = reader.int32();
-					break;
-				case /* optional bytes detail */ 5:
-					message.detail = reader.bytes();
-					break;
-				case /* optional int64 base */ 6:
-					message.base = reader.int64().toBigInt();
-					break;
-				case /* optional int64 range */ 7:
-					message.range = reader.int64().toBigInt();
-					break;
-				case /* optional int32 type */ 8:
-					message.type = reader.int32();
-					break;
-				case /* optional string name */ 10:
-					message.name = reader.string();
-					break;
-				case /* optional string alias */ 11:
-					message.alias = reader.string();
-					break;
-				case /* optional bytes backup */ 12:
-					message.backup = reader.bytes();
-					break;
-				case /* optional int32 context */ 13:
-					message.context = reader.int32();
-					break;
-				case /* optional int64 control */ 14:
-					message.control = reader.int64().toBigInt();
-					break;
-				case /* optional int64 augment */ 15:
-					message.augment = reader.int64().toBigInt();
-					break;
-				case /* optional int64 placebo */ 16:
-					message.placebo = reader.int64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessage_Diagnostic_Response_Diagnostic,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 index = 1; */
-		if (message.index !== undefined) writer.tag(1, WireType.Varint).int32(message.index);
-		/* optional int64 offset = 2; */
-		if (message.offset !== undefined) writer.tag(2, WireType.Varint).int64(message.offset);
-		/* optional int32 param = 3; */
-		if (message.param !== undefined) writer.tag(3, WireType.Varint).int32(message.param);
-		/* optional int32 length = 4; */
-		if (message.length !== undefined) writer.tag(4, WireType.Varint).int32(message.length);
-		/* optional bytes detail = 5; */
-		if (message.detail !== undefined) writer.tag(5, WireType.LengthDelimited).bytes(message.detail);
-		/* optional int64 base = 6; */
-		if (message.base !== undefined) writer.tag(6, WireType.Varint).int64(message.base);
-		/* optional int64 range = 7; */
-		if (message.range !== undefined) writer.tag(7, WireType.Varint).int64(message.range);
-		/* optional int32 type = 8; */
-		if (message.type !== undefined) writer.tag(8, WireType.Varint).int32(message.type);
-		/* optional string name = 10; */
-		if (message.name !== undefined) writer.tag(10, WireType.LengthDelimited).string(message.name);
-		/* optional string alias = 11; */
-		if (message.alias !== undefined) writer.tag(11, WireType.LengthDelimited).string(message.alias);
-		/* optional bytes backup = 12; */
-		if (message.backup !== undefined) writer.tag(12, WireType.LengthDelimited).bytes(message.backup);
-		/* optional int32 context = 13; */
-		if (message.context !== undefined) writer.tag(13, WireType.Varint).int32(message.context);
-		/* optional int64 control = 14; */
-		if (message.control !== undefined) writer.tag(14, WireType.Varint).int64(message.control);
-		/* optional int64 augment = 15; */
-		if (message.augment !== undefined) writer.tag(15, WireType.Varint).int64(message.augment);
-		/* optional int64 placebo = 16; */
-		if (message.placebo !== undefined) writer.tag(16, WireType.Varint).int64(message.placebo);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessage_Diagnostic_Response.Diagnostic", [
+      {
+        no: 1,
+        name: "index",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "offset",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "param",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "length",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "detail",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 6,
+        name: "base",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 7,
+        name: "range",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 8,
+        name: "type",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 10,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 11,
+        name: "alias",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 12,
+        name: "backup",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 13,
+        name: "context",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 14,
+        name: "control",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 15,
+        name: "augment",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 16,
+        name: "placebo",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUserMessage_Diagnostic_Response_Diagnostic>,
+  ): CUserMessage_Diagnostic_Response_Diagnostic {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessage_Diagnostic_Response_Diagnostic>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessage_Diagnostic_Response_Diagnostic,
+  ): CUserMessage_Diagnostic_Response_Diagnostic {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 index */ 1:
+          message.index = reader.int32();
+          break;
+        case /* optional int64 offset */ 2:
+          message.offset = reader.int64().toBigInt();
+          break;
+        case /* optional int32 param */ 3:
+          message.param = reader.int32();
+          break;
+        case /* optional int32 length */ 4:
+          message.length = reader.int32();
+          break;
+        case /* optional bytes detail */ 5:
+          message.detail = reader.bytes();
+          break;
+        case /* optional int64 base */ 6:
+          message.base = reader.int64().toBigInt();
+          break;
+        case /* optional int64 range */ 7:
+          message.range = reader.int64().toBigInt();
+          break;
+        case /* optional int32 type */ 8:
+          message.type = reader.int32();
+          break;
+        case /* optional string name */ 10:
+          message.name = reader.string();
+          break;
+        case /* optional string alias */ 11:
+          message.alias = reader.string();
+          break;
+        case /* optional bytes backup */ 12:
+          message.backup = reader.bytes();
+          break;
+        case /* optional int32 context */ 13:
+          message.context = reader.int32();
+          break;
+        case /* optional int64 control */ 14:
+          message.control = reader.int64().toBigInt();
+          break;
+        case /* optional int64 augment */ 15:
+          message.augment = reader.int64().toBigInt();
+          break;
+        case /* optional int64 placebo */ 16:
+          message.placebo = reader.int64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessage_Diagnostic_Response_Diagnostic,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 index = 1; */
+    if (message.index !== undefined) writer.tag(1, WireType.Varint).int32(message.index);
+    /* optional int64 offset = 2; */
+    if (message.offset !== undefined) writer.tag(2, WireType.Varint).int64(message.offset);
+    /* optional int32 param = 3; */
+    if (message.param !== undefined) writer.tag(3, WireType.Varint).int32(message.param);
+    /* optional int32 length = 4; */
+    if (message.length !== undefined) writer.tag(4, WireType.Varint).int32(message.length);
+    /* optional bytes detail = 5; */
+    if (message.detail !== undefined) writer.tag(5, WireType.LengthDelimited).bytes(message.detail);
+    /* optional int64 base = 6; */
+    if (message.base !== undefined) writer.tag(6, WireType.Varint).int64(message.base);
+    /* optional int64 range = 7; */
+    if (message.range !== undefined) writer.tag(7, WireType.Varint).int64(message.range);
+    /* optional int32 type = 8; */
+    if (message.type !== undefined) writer.tag(8, WireType.Varint).int32(message.type);
+    /* optional string name = 10; */
+    if (message.name !== undefined) writer.tag(10, WireType.LengthDelimited).string(message.name);
+    /* optional string alias = 11; */
+    if (message.alias !== undefined) writer.tag(11, WireType.LengthDelimited).string(message.alias);
+    /* optional bytes backup = 12; */
+    if (message.backup !== undefined) writer.tag(12, WireType.LengthDelimited).bytes(message.backup);
+    /* optional int32 context = 13; */
+    if (message.context !== undefined) writer.tag(13, WireType.Varint).int32(message.context);
+    /* optional int64 control = 14; */
+    if (message.control !== undefined) writer.tag(14, WireType.Varint).int64(message.control);
+    /* optional int64 augment = 15; */
+    if (message.augment !== undefined) writer.tag(15, WireType.Varint).int64(message.augment);
+    /* optional int64 placebo = 16; */
+    if (message.placebo !== undefined) writer.tag(16, WireType.Varint).int64(message.placebo);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessage_Diagnostic_Response.Diagnostic
@@ -12057,109 +12057,109 @@ class CUserMessage_Diagnostic_Response_Diagnostic$Type extends MessageType<CUser
 export const CUserMessage_Diagnostic_Response_Diagnostic = new CUserMessage_Diagnostic_Response_Diagnostic$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessage_ExtraUserData$Type extends MessageType<CUserMessage_ExtraUserData> {
-	constructor() {
-		super("CUserMessage_ExtraUserData", [
-			{
-				no: 1,
-				name: "item",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "value1",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "value2",
-				kind: "scalar",
-				opt: true,
-				T: 3 /*ScalarType.INT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 4,
-				name: "detail1",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 5,
-				name: "detail2",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessage_ExtraUserData>): CUserMessage_ExtraUserData {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.detail1 = [];
-		message.detail2 = [];
-		if (value !== undefined) reflectionMergePartial<CUserMessage_ExtraUserData>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessage_ExtraUserData,
-	): CUserMessage_ExtraUserData {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 item */ 1:
-					message.item = reader.int32();
-					break;
-				case /* optional int64 value1 */ 2:
-					message.value1 = reader.int64().toBigInt();
-					break;
-				case /* optional int64 value2 */ 3:
-					message.value2 = reader.int64().toBigInt();
-					break;
-				case /* repeated bytes detail1 */ 4:
-					message.detail1.push(reader.bytes());
-					break;
-				case /* repeated bytes detail2 */ 5:
-					message.detail2.push(reader.bytes());
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessage_ExtraUserData,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 item = 1; */
-		if (message.item !== undefined) writer.tag(1, WireType.Varint).int32(message.item);
-		/* optional int64 value1 = 2; */
-		if (message.value1 !== undefined) writer.tag(2, WireType.Varint).int64(message.value1);
-		/* optional int64 value2 = 3; */
-		if (message.value2 !== undefined) writer.tag(3, WireType.Varint).int64(message.value2);
-		/* repeated bytes detail1 = 4; */
-		for (let i = 0; i < message.detail1.length; i++) writer.tag(4, WireType.LengthDelimited).bytes(message.detail1[i]);
-		/* repeated bytes detail2 = 5; */
-		for (let i = 0; i < message.detail2.length; i++) writer.tag(5, WireType.LengthDelimited).bytes(message.detail2[i]);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessage_ExtraUserData", [
+      {
+        no: 1,
+        name: "item",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "value1",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "value2",
+        kind: "scalar",
+        opt: true,
+        T: 3 /*ScalarType.INT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 4,
+        name: "detail1",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 5,
+        name: "detail2",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessage_ExtraUserData>): CUserMessage_ExtraUserData {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.detail1 = [];
+    message.detail2 = [];
+    if (value !== undefined) reflectionMergePartial<CUserMessage_ExtraUserData>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessage_ExtraUserData,
+  ): CUserMessage_ExtraUserData {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 item */ 1:
+          message.item = reader.int32();
+          break;
+        case /* optional int64 value1 */ 2:
+          message.value1 = reader.int64().toBigInt();
+          break;
+        case /* optional int64 value2 */ 3:
+          message.value2 = reader.int64().toBigInt();
+          break;
+        case /* repeated bytes detail1 */ 4:
+          message.detail1.push(reader.bytes());
+          break;
+        case /* repeated bytes detail2 */ 5:
+          message.detail2.push(reader.bytes());
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessage_ExtraUserData,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 item = 1; */
+    if (message.item !== undefined) writer.tag(1, WireType.Varint).int32(message.item);
+    /* optional int64 value1 = 2; */
+    if (message.value1 !== undefined) writer.tag(2, WireType.Varint).int64(message.value1);
+    /* optional int64 value2 = 3; */
+    if (message.value2 !== undefined) writer.tag(3, WireType.Varint).int64(message.value2);
+    /* repeated bytes detail1 = 4; */
+    for (let i = 0; i < message.detail1.length; i++) writer.tag(4, WireType.LengthDelimited).bytes(message.detail1[i]);
+    /* repeated bytes detail2 = 5; */
+    for (let i = 0; i < message.detail2.length; i++) writer.tag(5, WireType.LengthDelimited).bytes(message.detail2[i]);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessage_ExtraUserData
@@ -12167,254 +12167,254 @@ class CUserMessage_ExtraUserData$Type extends MessageType<CUserMessage_ExtraUser
 export const CUserMessage_ExtraUserData = new CUserMessage_ExtraUserData$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessage_NotifyResponseFound$Type extends MessageType<CUserMessage_NotifyResponseFound> {
-	constructor() {
-		super("CUserMessage_NotifyResponseFound", [
-			{
-				no: 1,
-				name: "ent_index",
-				kind: "scalar",
-				localName: "ent_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "rule_name",
-				kind: "scalar",
-				localName: "rule_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "response_value",
-				kind: "scalar",
-				localName: "response_value",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 4,
-				name: "response_concept",
-				kind: "scalar",
-				localName: "response_concept",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 5,
-				name: "criteria",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CUserMessage_NotifyResponseFound_Criteria,
-			},
-			{
-				no: 6,
-				name: "int_criteria_names",
-				kind: "scalar",
-				localName: "int_criteria_names",
-				repeat: 1 /*RepeatType.PACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "int_criteria_values",
-				kind: "scalar",
-				localName: "int_criteria_values",
-				repeat: 1 /*RepeatType.PACKED*/,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 8,
-				name: "float_criteria_names",
-				kind: "scalar",
-				localName: "float_criteria_names",
-				repeat: 1 /*RepeatType.PACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "float_criteria_values",
-				kind: "scalar",
-				localName: "float_criteria_values",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 10,
-				name: "symbol_criteria_names",
-				kind: "scalar",
-				localName: "symbol_criteria_names",
-				repeat: 1 /*RepeatType.PACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 11,
-				name: "symbol_criteria_values",
-				kind: "scalar",
-				localName: "symbol_criteria_values",
-				repeat: 1 /*RepeatType.PACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 12,
-				name: "speak_result",
-				kind: "scalar",
-				localName: "speak_result",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessage_NotifyResponseFound>): CUserMessage_NotifyResponseFound {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.criteria = [];
-		message.int_criteria_names = [];
-		message.int_criteria_values = [];
-		message.float_criteria_names = [];
-		message.float_criteria_values = [];
-		message.symbol_criteria_names = [];
-		message.symbol_criteria_values = [];
-		if (value !== undefined) reflectionMergePartial<CUserMessage_NotifyResponseFound>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessage_NotifyResponseFound,
-	): CUserMessage_NotifyResponseFound {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 ent_index */ 1:
-					message.ent_index = reader.int32();
-					break;
-				case /* optional string rule_name */ 2:
-					message.rule_name = reader.string();
-					break;
-				case /* optional string response_value */ 3:
-					message.response_value = reader.string();
-					break;
-				case /* optional string response_concept */ 4:
-					message.response_concept = reader.string();
-					break;
-				case /* repeated CUserMessage_NotifyResponseFound.Criteria criteria */ 5:
-					message.criteria.push(
-						CUserMessage_NotifyResponseFound_Criteria.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated uint32 int_criteria_names = 6 [packed = true];*/ 6:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.int_criteria_names.push(reader.uint32());
-					else message.int_criteria_names.push(reader.uint32());
-					break;
-				case /* repeated int32 int_criteria_values = 7 [packed = true];*/ 7:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.int_criteria_values.push(reader.int32());
-					else message.int_criteria_values.push(reader.int32());
-					break;
-				case /* repeated uint32 float_criteria_names = 8 [packed = true];*/ 8:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.float_criteria_names.push(reader.uint32());
-					else message.float_criteria_names.push(reader.uint32());
-					break;
-				case /* repeated float float_criteria_values */ 9:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.float_criteria_values.push(reader.float());
-					else message.float_criteria_values.push(reader.float());
-					break;
-				case /* repeated uint32 symbol_criteria_names = 10 [packed = true];*/ 10:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.symbol_criteria_names.push(reader.uint32());
-					else message.symbol_criteria_names.push(reader.uint32());
-					break;
-				case /* repeated uint32 symbol_criteria_values = 11 [packed = true];*/ 11:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.symbol_criteria_values.push(reader.uint32());
-					else message.symbol_criteria_values.push(reader.uint32());
-					break;
-				case /* optional int32 speak_result */ 12:
-					message.speak_result = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessage_NotifyResponseFound,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 ent_index = 1; */
-		if (message.ent_index !== undefined) writer.tag(1, WireType.Varint).int32(message.ent_index);
-		/* optional string rule_name = 2; */
-		if (message.rule_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.rule_name);
-		/* optional string response_value = 3; */
-		if (message.response_value !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.response_value);
-		/* optional string response_concept = 4; */
-		if (message.response_concept !== undefined)
-			writer.tag(4, WireType.LengthDelimited).string(message.response_concept);
-		/* repeated CUserMessage_NotifyResponseFound.Criteria criteria = 5; */
-		for (let i = 0; i < message.criteria.length; i++)
-			CUserMessage_NotifyResponseFound_Criteria.internalBinaryWrite(
-				message.criteria[i],
-				writer.tag(5, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated uint32 int_criteria_names = 6 [packed = true]; */
-		if (message.int_criteria_names.length) {
-			writer.tag(6, WireType.LengthDelimited).fork();
-			for (let i = 0; i < message.int_criteria_names.length; i++) writer.uint32(message.int_criteria_names[i]);
-			writer.join();
-		}
-		/* repeated int32 int_criteria_values = 7 [packed = true]; */
-		if (message.int_criteria_values.length) {
-			writer.tag(7, WireType.LengthDelimited).fork();
-			for (let i = 0; i < message.int_criteria_values.length; i++) writer.int32(message.int_criteria_values[i]);
-			writer.join();
-		}
-		/* repeated uint32 float_criteria_names = 8 [packed = true]; */
-		if (message.float_criteria_names.length) {
-			writer.tag(8, WireType.LengthDelimited).fork();
-			for (let i = 0; i < message.float_criteria_names.length; i++) writer.uint32(message.float_criteria_names[i]);
-			writer.join();
-		}
-		/* repeated float float_criteria_values = 9; */
-		for (let i = 0; i < message.float_criteria_values.length; i++)
-			writer.tag(9, WireType.Bit32).float(message.float_criteria_values[i]);
-		/* repeated uint32 symbol_criteria_names = 10 [packed = true]; */
-		if (message.symbol_criteria_names.length) {
-			writer.tag(10, WireType.LengthDelimited).fork();
-			for (let i = 0; i < message.symbol_criteria_names.length; i++) writer.uint32(message.symbol_criteria_names[i]);
-			writer.join();
-		}
-		/* repeated uint32 symbol_criteria_values = 11 [packed = true]; */
-		if (message.symbol_criteria_values.length) {
-			writer.tag(11, WireType.LengthDelimited).fork();
-			for (let i = 0; i < message.symbol_criteria_values.length; i++) writer.uint32(message.symbol_criteria_values[i]);
-			writer.join();
-		}
-		/* optional int32 speak_result = 12; */
-		if (message.speak_result !== undefined) writer.tag(12, WireType.Varint).int32(message.speak_result);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessage_NotifyResponseFound", [
+      {
+        no: 1,
+        name: "ent_index",
+        kind: "scalar",
+        localName: "ent_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "rule_name",
+        kind: "scalar",
+        localName: "rule_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "response_value",
+        kind: "scalar",
+        localName: "response_value",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 4,
+        name: "response_concept",
+        kind: "scalar",
+        localName: "response_concept",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 5,
+        name: "criteria",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CUserMessage_NotifyResponseFound_Criteria,
+      },
+      {
+        no: 6,
+        name: "int_criteria_names",
+        kind: "scalar",
+        localName: "int_criteria_names",
+        repeat: 1 /*RepeatType.PACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "int_criteria_values",
+        kind: "scalar",
+        localName: "int_criteria_values",
+        repeat: 1 /*RepeatType.PACKED*/,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 8,
+        name: "float_criteria_names",
+        kind: "scalar",
+        localName: "float_criteria_names",
+        repeat: 1 /*RepeatType.PACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "float_criteria_values",
+        kind: "scalar",
+        localName: "float_criteria_values",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 10,
+        name: "symbol_criteria_names",
+        kind: "scalar",
+        localName: "symbol_criteria_names",
+        repeat: 1 /*RepeatType.PACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 11,
+        name: "symbol_criteria_values",
+        kind: "scalar",
+        localName: "symbol_criteria_values",
+        repeat: 1 /*RepeatType.PACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 12,
+        name: "speak_result",
+        kind: "scalar",
+        localName: "speak_result",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessage_NotifyResponseFound>): CUserMessage_NotifyResponseFound {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.criteria = [];
+    message.int_criteria_names = [];
+    message.int_criteria_values = [];
+    message.float_criteria_names = [];
+    message.float_criteria_values = [];
+    message.symbol_criteria_names = [];
+    message.symbol_criteria_values = [];
+    if (value !== undefined) reflectionMergePartial<CUserMessage_NotifyResponseFound>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessage_NotifyResponseFound,
+  ): CUserMessage_NotifyResponseFound {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 ent_index */ 1:
+          message.ent_index = reader.int32();
+          break;
+        case /* optional string rule_name */ 2:
+          message.rule_name = reader.string();
+          break;
+        case /* optional string response_value */ 3:
+          message.response_value = reader.string();
+          break;
+        case /* optional string response_concept */ 4:
+          message.response_concept = reader.string();
+          break;
+        case /* repeated CUserMessage_NotifyResponseFound.Criteria criteria */ 5:
+          message.criteria.push(
+            CUserMessage_NotifyResponseFound_Criteria.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated uint32 int_criteria_names = 6 [packed = true];*/ 6:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.int_criteria_names.push(reader.uint32());
+          else message.int_criteria_names.push(reader.uint32());
+          break;
+        case /* repeated int32 int_criteria_values = 7 [packed = true];*/ 7:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.int_criteria_values.push(reader.int32());
+          else message.int_criteria_values.push(reader.int32());
+          break;
+        case /* repeated uint32 float_criteria_names = 8 [packed = true];*/ 8:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.float_criteria_names.push(reader.uint32());
+          else message.float_criteria_names.push(reader.uint32());
+          break;
+        case /* repeated float float_criteria_values */ 9:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.float_criteria_values.push(reader.float());
+          else message.float_criteria_values.push(reader.float());
+          break;
+        case /* repeated uint32 symbol_criteria_names = 10 [packed = true];*/ 10:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.symbol_criteria_names.push(reader.uint32());
+          else message.symbol_criteria_names.push(reader.uint32());
+          break;
+        case /* repeated uint32 symbol_criteria_values = 11 [packed = true];*/ 11:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.symbol_criteria_values.push(reader.uint32());
+          else message.symbol_criteria_values.push(reader.uint32());
+          break;
+        case /* optional int32 speak_result */ 12:
+          message.speak_result = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessage_NotifyResponseFound,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 ent_index = 1; */
+    if (message.ent_index !== undefined) writer.tag(1, WireType.Varint).int32(message.ent_index);
+    /* optional string rule_name = 2; */
+    if (message.rule_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.rule_name);
+    /* optional string response_value = 3; */
+    if (message.response_value !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.response_value);
+    /* optional string response_concept = 4; */
+    if (message.response_concept !== undefined)
+      writer.tag(4, WireType.LengthDelimited).string(message.response_concept);
+    /* repeated CUserMessage_NotifyResponseFound.Criteria criteria = 5; */
+    for (let i = 0; i < message.criteria.length; i++)
+      CUserMessage_NotifyResponseFound_Criteria.internalBinaryWrite(
+        message.criteria[i],
+        writer.tag(5, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated uint32 int_criteria_names = 6 [packed = true]; */
+    if (message.int_criteria_names.length) {
+      writer.tag(6, WireType.LengthDelimited).fork();
+      for (let i = 0; i < message.int_criteria_names.length; i++) writer.uint32(message.int_criteria_names[i]);
+      writer.join();
+    }
+    /* repeated int32 int_criteria_values = 7 [packed = true]; */
+    if (message.int_criteria_values.length) {
+      writer.tag(7, WireType.LengthDelimited).fork();
+      for (let i = 0; i < message.int_criteria_values.length; i++) writer.int32(message.int_criteria_values[i]);
+      writer.join();
+    }
+    /* repeated uint32 float_criteria_names = 8 [packed = true]; */
+    if (message.float_criteria_names.length) {
+      writer.tag(8, WireType.LengthDelimited).fork();
+      for (let i = 0; i < message.float_criteria_names.length; i++) writer.uint32(message.float_criteria_names[i]);
+      writer.join();
+    }
+    /* repeated float float_criteria_values = 9; */
+    for (let i = 0; i < message.float_criteria_values.length; i++)
+      writer.tag(9, WireType.Bit32).float(message.float_criteria_values[i]);
+    /* repeated uint32 symbol_criteria_names = 10 [packed = true]; */
+    if (message.symbol_criteria_names.length) {
+      writer.tag(10, WireType.LengthDelimited).fork();
+      for (let i = 0; i < message.symbol_criteria_names.length; i++) writer.uint32(message.symbol_criteria_names[i]);
+      writer.join();
+    }
+    /* repeated uint32 symbol_criteria_values = 11 [packed = true]; */
+    if (message.symbol_criteria_values.length) {
+      writer.tag(11, WireType.LengthDelimited).fork();
+      for (let i = 0; i < message.symbol_criteria_values.length; i++) writer.uint32(message.symbol_criteria_values[i]);
+      writer.join();
+    }
+    /* optional int32 speak_result = 12; */
+    if (message.speak_result !== undefined) writer.tag(12, WireType.Varint).int32(message.speak_result);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessage_NotifyResponseFound
@@ -12422,70 +12422,70 @@ class CUserMessage_NotifyResponseFound$Type extends MessageType<CUserMessage_Not
 export const CUserMessage_NotifyResponseFound = new CUserMessage_NotifyResponseFound$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessage_NotifyResponseFound_Criteria$Type extends MessageType<CUserMessage_NotifyResponseFound_Criteria> {
-	constructor() {
-		super("CUserMessage_NotifyResponseFound.Criteria", [
-			{
-				no: 1,
-				name: "name_symbol",
-				kind: "scalar",
-				localName: "name_symbol",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "value",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessage_NotifyResponseFound_Criteria>): CUserMessage_NotifyResponseFound_Criteria {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUserMessage_NotifyResponseFound_Criteria>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessage_NotifyResponseFound_Criteria,
-	): CUserMessage_NotifyResponseFound_Criteria {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 name_symbol */ 1:
-					message.name_symbol = reader.uint32();
-					break;
-				case /* optional string value */ 2:
-					message.value = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessage_NotifyResponseFound_Criteria,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 name_symbol = 1; */
-		if (message.name_symbol !== undefined) writer.tag(1, WireType.Varint).uint32(message.name_symbol);
-		/* optional string value = 2; */
-		if (message.value !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.value);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessage_NotifyResponseFound.Criteria", [
+      {
+        no: 1,
+        name: "name_symbol",
+        kind: "scalar",
+        localName: "name_symbol",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "value",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessage_NotifyResponseFound_Criteria>): CUserMessage_NotifyResponseFound_Criteria {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUserMessage_NotifyResponseFound_Criteria>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessage_NotifyResponseFound_Criteria,
+  ): CUserMessage_NotifyResponseFound_Criteria {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 name_symbol */ 1:
+          message.name_symbol = reader.uint32();
+          break;
+        case /* optional string value */ 2:
+          message.value = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessage_NotifyResponseFound_Criteria,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 name_symbol = 1; */
+    if (message.name_symbol !== undefined) writer.tag(1, WireType.Varint).uint32(message.name_symbol);
+    /* optional string value = 2; */
+    if (message.value !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.value);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessage_NotifyResponseFound.Criteria
@@ -12493,129 +12493,129 @@ class CUserMessage_NotifyResponseFound_Criteria$Type extends MessageType<CUserMe
 export const CUserMessage_NotifyResponseFound_Criteria = new CUserMessage_NotifyResponseFound_Criteria$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUserMessage_PlayResponseConditional$Type extends MessageType<CUserMessage_PlayResponseConditional> {
-	constructor() {
-		super("CUserMessage_PlayResponseConditional", [
-			{
-				no: 1,
-				name: "ent_index",
-				kind: "scalar",
-				localName: "ent_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "player_slots",
-				kind: "scalar",
-				localName: "player_slots",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "response",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 4,
-				name: "ent_origin",
-				kind: "message",
-				localName: "ent_origin",
-				T: () => CMsgVector,
-			},
-			{
-				no: 5,
-				name: "pre_delay",
-				kind: "scalar",
-				localName: "pre_delay",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 6,
-				name: "mix_priority",
-				kind: "scalar",
-				localName: "mix_priority",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUserMessage_PlayResponseConditional>): CUserMessage_PlayResponseConditional {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.player_slots = [];
-		if (value !== undefined) reflectionMergePartial<CUserMessage_PlayResponseConditional>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUserMessage_PlayResponseConditional,
-	): CUserMessage_PlayResponseConditional {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 ent_index */ 1:
-					message.ent_index = reader.int32();
-					break;
-				case /* repeated int32 player_slots */ 2:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.player_slots.push(reader.int32());
-					else message.player_slots.push(reader.int32());
-					break;
-				case /* optional string response */ 3:
-					message.response = reader.string();
-					break;
-				case /* optional CMsgVector ent_origin */ 4:
-					message.ent_origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.ent_origin);
-					break;
-				case /* optional float pre_delay */ 5:
-					message.pre_delay = reader.float();
-					break;
-				case /* optional int32 mix_priority */ 6:
-					message.mix_priority = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUserMessage_PlayResponseConditional,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 ent_index = 1; */
-		if (message.ent_index !== undefined) writer.tag(1, WireType.Varint).int32(message.ent_index);
-		/* repeated int32 player_slots = 2; */
-		for (let i = 0; i < message.player_slots.length; i++) writer.tag(2, WireType.Varint).int32(message.player_slots[i]);
-		/* optional string response = 3; */
-		if (message.response !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.response);
-		/* optional CMsgVector ent_origin = 4; */
-		if (message.ent_origin)
-			CMsgVector.internalBinaryWrite(
-				message.ent_origin,
-				writer.tag(4, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional float pre_delay = 5; */
-		if (message.pre_delay !== undefined) writer.tag(5, WireType.Bit32).float(message.pre_delay);
-		/* optional int32 mix_priority = 6; */
-		if (message.mix_priority !== undefined) writer.tag(6, WireType.Varint).int32(message.mix_priority);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUserMessage_PlayResponseConditional", [
+      {
+        no: 1,
+        name: "ent_index",
+        kind: "scalar",
+        localName: "ent_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "player_slots",
+        kind: "scalar",
+        localName: "player_slots",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "response",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 4,
+        name: "ent_origin",
+        kind: "message",
+        localName: "ent_origin",
+        T: () => CMsgVector,
+      },
+      {
+        no: 5,
+        name: "pre_delay",
+        kind: "scalar",
+        localName: "pre_delay",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 6,
+        name: "mix_priority",
+        kind: "scalar",
+        localName: "mix_priority",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUserMessage_PlayResponseConditional>): CUserMessage_PlayResponseConditional {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.player_slots = [];
+    if (value !== undefined) reflectionMergePartial<CUserMessage_PlayResponseConditional>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUserMessage_PlayResponseConditional,
+  ): CUserMessage_PlayResponseConditional {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 ent_index */ 1:
+          message.ent_index = reader.int32();
+          break;
+        case /* repeated int32 player_slots */ 2:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.player_slots.push(reader.int32());
+          else message.player_slots.push(reader.int32());
+          break;
+        case /* optional string response */ 3:
+          message.response = reader.string();
+          break;
+        case /* optional CMsgVector ent_origin */ 4:
+          message.ent_origin = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.ent_origin);
+          break;
+        case /* optional float pre_delay */ 5:
+          message.pre_delay = reader.float();
+          break;
+        case /* optional int32 mix_priority */ 6:
+          message.mix_priority = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUserMessage_PlayResponseConditional,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 ent_index = 1; */
+    if (message.ent_index !== undefined) writer.tag(1, WireType.Varint).int32(message.ent_index);
+    /* repeated int32 player_slots = 2; */
+    for (let i = 0; i < message.player_slots.length; i++) writer.tag(2, WireType.Varint).int32(message.player_slots[i]);
+    /* optional string response = 3; */
+    if (message.response !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.response);
+    /* optional CMsgVector ent_origin = 4; */
+    if (message.ent_origin)
+      CMsgVector.internalBinaryWrite(
+        message.ent_origin,
+        writer.tag(4, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional float pre_delay = 5; */
+    if (message.pre_delay !== undefined) writer.tag(5, WireType.Bit32).float(message.pre_delay);
+    /* optional int32 mix_priority = 6; */
+    if (message.mix_priority !== undefined) writer.tag(6, WireType.Varint).int32(message.mix_priority);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUserMessage_PlayResponseConditional

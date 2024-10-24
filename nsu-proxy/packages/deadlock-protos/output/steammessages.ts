@@ -14,482 +14,482 @@ import { MessageType } from "@protobuf-ts/runtime";
  * @generated from protobuf message CMsgProtoBufHeader
  */
 export interface CMsgProtoBufHeader {
-	/**
-	 * @generated from protobuf field: optional fixed64 client_steam_id = 1;
-	 */
-	client_steam_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional int32 client_session_id = 2;
-	 */
-	client_session_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 source_app_id = 3;
-	 */
-	source_app_id?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 job_id_source = 10;
-	 */
-	job_id_source?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed64 job_id_target = 11;
-	 */
-	job_id_target?: bigint;
-	/**
-	 * @generated from protobuf field: optional string target_job_name = 12;
-	 */
-	target_job_name?: string;
-	/**
-	 * @generated from protobuf field: optional int32 eresult = 13;
-	 */
-	eresult?: number;
-	/**
-	 * @generated from protobuf field: optional string error_message = 14;
-	 */
-	error_message?: string;
-	/**
-	 * @generated from protobuf field: optional GCProtoBufMsgSrc gc_msg_src = 200;
-	 */
-	gc_msg_src?: GCProtoBufMsgSrc;
-	/**
-	 * @generated from protobuf field: optional int32 gc_dir_index_source = 201;
-	 */
-	gc_dir_index_source?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 client_steam_id = 1;
+   */
+  client_steam_id?: bigint;
+  /**
+   * @generated from protobuf field: optional int32 client_session_id = 2;
+   */
+  client_session_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 source_app_id = 3;
+   */
+  source_app_id?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 job_id_source = 10;
+   */
+  job_id_source?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed64 job_id_target = 11;
+   */
+  job_id_target?: bigint;
+  /**
+   * @generated from protobuf field: optional string target_job_name = 12;
+   */
+  target_job_name?: string;
+  /**
+   * @generated from protobuf field: optional int32 eresult = 13;
+   */
+  eresult?: number;
+  /**
+   * @generated from protobuf field: optional string error_message = 14;
+   */
+  error_message?: string;
+  /**
+   * @generated from protobuf field: optional GCProtoBufMsgSrc gc_msg_src = 200;
+   */
+  gc_msg_src?: GCProtoBufMsgSrc;
+  /**
+   * @generated from protobuf field: optional int32 gc_dir_index_source = 201;
+   */
+  gc_dir_index_source?: number;
 }
 /**
  * @generated from protobuf message CGCSystemMsg_GetAccountDetails
  */
 export interface CGCSystemMsg_GetAccountDetails {
-	/**
-	 * @generated from protobuf field: optional fixed64 steamid = 1;
-	 */
-	steamid?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 appid = 2;
-	 */
-	appid?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 steamid = 1;
+   */
+  steamid?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 appid = 2;
+   */
+  appid?: number;
 }
 /**
  * @generated from protobuf message CGCSystemMsg_GetAccountDetails_Response
  */
 export interface CGCSystemMsg_GetAccountDetails_Response {
-	/**
-	 * @generated from protobuf field: optional uint32 eresult_deprecated = 1;
-	 */
-	eresult_deprecated?: number;
-	/**
-	 * @generated from protobuf field: optional string account_name = 2;
-	 */
-	account_name?: string;
-	/**
-	 * @generated from protobuf field: optional string persona_name = 3;
-	 */
-	persona_name?: string;
-	/**
-	 * @generated from protobuf field: optional bool is_profile_created = 26;
-	 */
-	is_profile_created?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_profile_public = 4;
-	 */
-	is_profile_public?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_inventory_public = 5;
-	 */
-	is_inventory_public?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_vac_banned = 7;
-	 */
-	is_vac_banned?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_cyber_cafe = 8;
-	 */
-	is_cyber_cafe?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_school_account = 9;
-	 */
-	is_school_account?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_limited = 10;
-	 */
-	is_limited?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_subscribed = 11;
-	 */
-	is_subscribed?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 package = 12;
-	 */
-	package?: number;
-	/**
-	 * @generated from protobuf field: optional bool is_free_trial_account = 13;
-	 */
-	is_free_trial_account?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 free_trial_expiration = 14;
-	 */
-	free_trial_expiration?: number;
-	/**
-	 * @generated from protobuf field: optional bool is_low_violence = 15;
-	 */
-	is_low_violence?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_account_locked_down = 16;
-	 */
-	is_account_locked_down?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_community_banned = 17;
-	 */
-	is_community_banned?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_trade_banned = 18;
-	 */
-	is_trade_banned?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 trade_ban_expiration = 19;
-	 */
-	trade_ban_expiration?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 accountid = 20;
-	 */
-	accountid?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 suspension_end_time = 21;
-	 */
-	suspension_end_time?: number;
-	/**
-	 * @generated from protobuf field: optional string currency = 22;
-	 */
-	currency?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 steam_level = 23;
-	 */
-	steam_level?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 friend_count = 24;
-	 */
-	friend_count?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 account_creation_time = 25;
-	 */
-	account_creation_time?: number;
-	/**
-	 * @generated from protobuf field: optional bool is_steamguard_enabled = 27;
-	 */
-	is_steamguard_enabled?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_phone_verified = 28;
-	 */
-	is_phone_verified?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_two_factor_auth_enabled = 29;
-	 */
-	is_two_factor_auth_enabled?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 two_factor_enabled_time = 30;
-	 */
-	two_factor_enabled_time?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 phone_verification_time = 31;
-	 */
-	phone_verification_time?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 phone_id = 33;
-	 */
-	phone_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional bool is_phone_identifying = 34;
-	 */
-	is_phone_identifying?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 rt_identity_linked = 35;
-	 */
-	rt_identity_linked?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 rt_birth_date = 36;
-	 */
-	rt_birth_date?: number;
-	/**
-	 * @generated from protobuf field: optional string txn_country_code = 37;
-	 */
-	txn_country_code?: string;
-	/**
-	 * @generated from protobuf field: optional bool has_accepted_china_ssa = 38;
-	 */
-	has_accepted_china_ssa?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_banned_steam_china = 39;
-	 */
-	is_banned_steam_china?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 eresult_deprecated = 1;
+   */
+  eresult_deprecated?: number;
+  /**
+   * @generated from protobuf field: optional string account_name = 2;
+   */
+  account_name?: string;
+  /**
+   * @generated from protobuf field: optional string persona_name = 3;
+   */
+  persona_name?: string;
+  /**
+   * @generated from protobuf field: optional bool is_profile_created = 26;
+   */
+  is_profile_created?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_profile_public = 4;
+   */
+  is_profile_public?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_inventory_public = 5;
+   */
+  is_inventory_public?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_vac_banned = 7;
+   */
+  is_vac_banned?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_cyber_cafe = 8;
+   */
+  is_cyber_cafe?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_school_account = 9;
+   */
+  is_school_account?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_limited = 10;
+   */
+  is_limited?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_subscribed = 11;
+   */
+  is_subscribed?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 package = 12;
+   */
+  package?: number;
+  /**
+   * @generated from protobuf field: optional bool is_free_trial_account = 13;
+   */
+  is_free_trial_account?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 free_trial_expiration = 14;
+   */
+  free_trial_expiration?: number;
+  /**
+   * @generated from protobuf field: optional bool is_low_violence = 15;
+   */
+  is_low_violence?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_account_locked_down = 16;
+   */
+  is_account_locked_down?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_community_banned = 17;
+   */
+  is_community_banned?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_trade_banned = 18;
+   */
+  is_trade_banned?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 trade_ban_expiration = 19;
+   */
+  trade_ban_expiration?: number;
+  /**
+   * @generated from protobuf field: optional uint32 accountid = 20;
+   */
+  accountid?: number;
+  /**
+   * @generated from protobuf field: optional uint32 suspension_end_time = 21;
+   */
+  suspension_end_time?: number;
+  /**
+   * @generated from protobuf field: optional string currency = 22;
+   */
+  currency?: string;
+  /**
+   * @generated from protobuf field: optional uint32 steam_level = 23;
+   */
+  steam_level?: number;
+  /**
+   * @generated from protobuf field: optional uint32 friend_count = 24;
+   */
+  friend_count?: number;
+  /**
+   * @generated from protobuf field: optional uint32 account_creation_time = 25;
+   */
+  account_creation_time?: number;
+  /**
+   * @generated from protobuf field: optional bool is_steamguard_enabled = 27;
+   */
+  is_steamguard_enabled?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_phone_verified = 28;
+   */
+  is_phone_verified?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_two_factor_auth_enabled = 29;
+   */
+  is_two_factor_auth_enabled?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 two_factor_enabled_time = 30;
+   */
+  two_factor_enabled_time?: number;
+  /**
+   * @generated from protobuf field: optional uint32 phone_verification_time = 31;
+   */
+  phone_verification_time?: number;
+  /**
+   * @generated from protobuf field: optional uint64 phone_id = 33;
+   */
+  phone_id?: bigint;
+  /**
+   * @generated from protobuf field: optional bool is_phone_identifying = 34;
+   */
+  is_phone_identifying?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 rt_identity_linked = 35;
+   */
+  rt_identity_linked?: number;
+  /**
+   * @generated from protobuf field: optional uint32 rt_birth_date = 36;
+   */
+  rt_birth_date?: number;
+  /**
+   * @generated from protobuf field: optional string txn_country_code = 37;
+   */
+  txn_country_code?: string;
+  /**
+   * @generated from protobuf field: optional bool has_accepted_china_ssa = 38;
+   */
+  has_accepted_china_ssa?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_banned_steam_china = 39;
+   */
+  is_banned_steam_china?: boolean;
 }
 /**
  * @generated from protobuf message CIPLocationInfo
  */
 export interface CIPLocationInfo {
-	/**
-	 * @generated from protobuf field: optional uint32 ip = 1;
-	 */
-	ip?: number;
-	/**
-	 * @generated from protobuf field: optional float latitude = 2;
-	 */
-	latitude?: number;
-	/**
-	 * @generated from protobuf field: optional float longitude = 3;
-	 */
-	longitude?: number;
-	/**
-	 * @generated from protobuf field: optional string country = 4;
-	 */
-	country?: string;
-	/**
-	 * @generated from protobuf field: optional string state = 5;
-	 */
-	state?: string;
-	/**
-	 * @generated from protobuf field: optional string city = 6;
-	 */
-	city?: string;
+  /**
+   * @generated from protobuf field: optional uint32 ip = 1;
+   */
+  ip?: number;
+  /**
+   * @generated from protobuf field: optional float latitude = 2;
+   */
+  latitude?: number;
+  /**
+   * @generated from protobuf field: optional float longitude = 3;
+   */
+  longitude?: number;
+  /**
+   * @generated from protobuf field: optional string country = 4;
+   */
+  country?: string;
+  /**
+   * @generated from protobuf field: optional string state = 5;
+   */
+  state?: string;
+  /**
+   * @generated from protobuf field: optional string city = 6;
+   */
+  city?: string;
 }
 /**
  * @generated from protobuf message CGCMsgGetIPLocationResponse
  */
 export interface CGCMsgGetIPLocationResponse {
-	/**
-	 * @generated from protobuf field: repeated CIPLocationInfo infos = 1;
-	 */
-	infos: CIPLocationInfo[];
+  /**
+   * @generated from protobuf field: repeated CIPLocationInfo infos = 1;
+   */
+  infos: CIPLocationInfo[];
 }
 /**
  * @generated from protobuf enum EGCPlatform
  */
 export enum EGCPlatform {
-	/**
-	 * @generated from protobuf enum value: k_eGCPlatform_None = 0;
-	 */
-	k_eGCPlatform_None = 0,
-	/**
-	 * @generated from protobuf enum value: k_eGCPlatform_PC = 1;
-	 */
-	k_eGCPlatform_PC = 1,
-	/**
-	 * @generated from protobuf enum value: k_eGCPlatform_Mac = 2;
-	 */
-	k_eGCPlatform_Mac = 2,
-	/**
-	 * @generated from protobuf enum value: k_eGCPlatform_Linux = 3;
-	 */
-	k_eGCPlatform_Linux = 3,
-	/**
-	 * @generated from protobuf enum value: k_eGCPlatform_Android = 4;
-	 */
-	k_eGCPlatform_Android = 4,
-	/**
-	 * @generated from protobuf enum value: k_eGCPlatform_iOS = 5;
-	 */
-	k_eGCPlatform_iOS = 5,
+  /**
+   * @generated from protobuf enum value: k_eGCPlatform_None = 0;
+   */
+  k_eGCPlatform_None = 0,
+  /**
+   * @generated from protobuf enum value: k_eGCPlatform_PC = 1;
+   */
+  k_eGCPlatform_PC = 1,
+  /**
+   * @generated from protobuf enum value: k_eGCPlatform_Mac = 2;
+   */
+  k_eGCPlatform_Mac = 2,
+  /**
+   * @generated from protobuf enum value: k_eGCPlatform_Linux = 3;
+   */
+  k_eGCPlatform_Linux = 3,
+  /**
+   * @generated from protobuf enum value: k_eGCPlatform_Android = 4;
+   */
+  k_eGCPlatform_Android = 4,
+  /**
+   * @generated from protobuf enum value: k_eGCPlatform_iOS = 5;
+   */
+  k_eGCPlatform_iOS = 5,
 }
 /**
  * @generated from protobuf enum GCProtoBufMsgSrc
  */
 export enum GCProtoBufMsgSrc {
-	/**
-	 * @generated from protobuf enum value: GCProtoBufMsgSrc_Unspecified = 0;
-	 */
-	GCProtoBufMsgSrc_Unspecified = 0,
-	/**
-	 * @generated from protobuf enum value: GCProtoBufMsgSrc_FromSystem = 1;
-	 */
-	GCProtoBufMsgSrc_FromSystem = 1,
-	/**
-	 * @generated from protobuf enum value: GCProtoBufMsgSrc_FromSteamID = 2;
-	 */
-	GCProtoBufMsgSrc_FromSteamID = 2,
-	/**
-	 * @generated from protobuf enum value: GCProtoBufMsgSrc_FromGC = 3;
-	 */
-	GCProtoBufMsgSrc_FromGC = 3,
-	/**
-	 * @generated from protobuf enum value: GCProtoBufMsgSrc_ReplySystem = 4;
-	 */
-	GCProtoBufMsgSrc_ReplySystem = 4,
-	/**
-	 * @generated from protobuf enum value: GCProtoBufMsgSrc_SpoofedSteamID = 5;
-	 */
-	GCProtoBufMsgSrc_SpoofedSteamID = 5,
+  /**
+   * @generated from protobuf enum value: GCProtoBufMsgSrc_Unspecified = 0;
+   */
+  GCProtoBufMsgSrc_Unspecified = 0,
+  /**
+   * @generated from protobuf enum value: GCProtoBufMsgSrc_FromSystem = 1;
+   */
+  GCProtoBufMsgSrc_FromSystem = 1,
+  /**
+   * @generated from protobuf enum value: GCProtoBufMsgSrc_FromSteamID = 2;
+   */
+  GCProtoBufMsgSrc_FromSteamID = 2,
+  /**
+   * @generated from protobuf enum value: GCProtoBufMsgSrc_FromGC = 3;
+   */
+  GCProtoBufMsgSrc_FromGC = 3,
+  /**
+   * @generated from protobuf enum value: GCProtoBufMsgSrc_ReplySystem = 4;
+   */
+  GCProtoBufMsgSrc_ReplySystem = 4,
+  /**
+   * @generated from protobuf enum value: GCProtoBufMsgSrc_SpoofedSteamID = 5;
+   */
+  GCProtoBufMsgSrc_SpoofedSteamID = 5,
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgProtoBufHeader$Type extends MessageType<CMsgProtoBufHeader> {
-	constructor() {
-		super(
-			"CMsgProtoBufHeader",
-			[
-				{
-					no: 1,
-					name: "client_steam_id",
-					kind: "scalar",
-					localName: "client_steam_id",
-					opt: true,
-					T: 6 /*ScalarType.FIXED64*/,
-					L: 0 /*LongType.BIGINT*/,
-				},
-				{
-					no: 2,
-					name: "client_session_id",
-					kind: "scalar",
-					localName: "client_session_id",
-					opt: true,
-					T: 5 /*ScalarType.INT32*/,
-				},
-				{
-					no: 3,
-					name: "source_app_id",
-					kind: "scalar",
-					localName: "source_app_id",
-					opt: true,
-					T: 13 /*ScalarType.UINT32*/,
-				},
-				{
-					no: 10,
-					name: "job_id_source",
-					kind: "scalar",
-					localName: "job_id_source",
-					opt: true,
-					T: 6 /*ScalarType.FIXED64*/,
-					L: 0 /*LongType.BIGINT*/,
-				},
-				{
-					no: 11,
-					name: "job_id_target",
-					kind: "scalar",
-					localName: "job_id_target",
-					opt: true,
-					T: 6 /*ScalarType.FIXED64*/,
-					L: 0 /*LongType.BIGINT*/,
-				},
-				{
-					no: 12,
-					name: "target_job_name",
-					kind: "scalar",
-					localName: "target_job_name",
-					opt: true,
-					T: 9 /*ScalarType.STRING*/,
-				},
-				{
-					no: 13,
-					name: "eresult",
-					kind: "scalar",
-					opt: true,
-					T: 5 /*ScalarType.INT32*/,
-				},
-				{
-					no: 14,
-					name: "error_message",
-					kind: "scalar",
-					localName: "error_message",
-					opt: true,
-					T: 9 /*ScalarType.STRING*/,
-				},
-				{
-					no: 200,
-					name: "gc_msg_src",
-					kind: "enum",
-					localName: "gc_msg_src",
-					opt: true,
-					T: () => ["GCProtoBufMsgSrc", GCProtoBufMsgSrc],
-				},
-				{
-					no: 201,
-					name: "gc_dir_index_source",
-					kind: "scalar",
-					localName: "gc_dir_index_source",
-					opt: true,
-					T: 5 /*ScalarType.INT32*/,
-				},
-			],
-			{ msgpool_soft_limit: 256, msgpool_hard_limit: 1024 },
-		);
-	}
-	create(value?: PartialMessage<CMsgProtoBufHeader>): CMsgProtoBufHeader {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgProtoBufHeader>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgProtoBufHeader,
-	): CMsgProtoBufHeader {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed64 client_steam_id */ 1:
-					message.client_steam_id = reader.fixed64().toBigInt();
-					break;
-				case /* optional int32 client_session_id */ 2:
-					message.client_session_id = reader.int32();
-					break;
-				case /* optional uint32 source_app_id */ 3:
-					message.source_app_id = reader.uint32();
-					break;
-				case /* optional fixed64 job_id_source */ 10:
-					message.job_id_source = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed64 job_id_target */ 11:
-					message.job_id_target = reader.fixed64().toBigInt();
-					break;
-				case /* optional string target_job_name */ 12:
-					message.target_job_name = reader.string();
-					break;
-				case /* optional int32 eresult */ 13:
-					message.eresult = reader.int32();
-					break;
-				case /* optional string error_message */ 14:
-					message.error_message = reader.string();
-					break;
-				case /* optional GCProtoBufMsgSrc gc_msg_src */ 200:
-					message.gc_msg_src = reader.int32();
-					break;
-				case /* optional int32 gc_dir_index_source */ 201:
-					message.gc_dir_index_source = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgProtoBufHeader, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional fixed64 client_steam_id = 1; */
-		if (message.client_steam_id !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.client_steam_id);
-		/* optional int32 client_session_id = 2; */
-		if (message.client_session_id !== undefined) writer.tag(2, WireType.Varint).int32(message.client_session_id);
-		/* optional uint32 source_app_id = 3; */
-		if (message.source_app_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.source_app_id);
-		/* optional fixed64 job_id_source = 10; */
-		if (message.job_id_source !== undefined) writer.tag(10, WireType.Bit64).fixed64(message.job_id_source);
-		/* optional fixed64 job_id_target = 11; */
-		if (message.job_id_target !== undefined) writer.tag(11, WireType.Bit64).fixed64(message.job_id_target);
-		/* optional string target_job_name = 12; */
-		if (message.target_job_name !== undefined) writer.tag(12, WireType.LengthDelimited).string(message.target_job_name);
-		/* optional int32 eresult = 13; */
-		if (message.eresult !== undefined) writer.tag(13, WireType.Varint).int32(message.eresult);
-		/* optional string error_message = 14; */
-		if (message.error_message !== undefined) writer.tag(14, WireType.LengthDelimited).string(message.error_message);
-		/* optional GCProtoBufMsgSrc gc_msg_src = 200; */
-		if (message.gc_msg_src !== undefined) writer.tag(200, WireType.Varint).int32(message.gc_msg_src);
-		/* optional int32 gc_dir_index_source = 201; */
-		if (message.gc_dir_index_source !== undefined) writer.tag(201, WireType.Varint).int32(message.gc_dir_index_source);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super(
+      "CMsgProtoBufHeader",
+      [
+        {
+          no: 1,
+          name: "client_steam_id",
+          kind: "scalar",
+          localName: "client_steam_id",
+          opt: true,
+          T: 6 /*ScalarType.FIXED64*/,
+          L: 0 /*LongType.BIGINT*/,
+        },
+        {
+          no: 2,
+          name: "client_session_id",
+          kind: "scalar",
+          localName: "client_session_id",
+          opt: true,
+          T: 5 /*ScalarType.INT32*/,
+        },
+        {
+          no: 3,
+          name: "source_app_id",
+          kind: "scalar",
+          localName: "source_app_id",
+          opt: true,
+          T: 13 /*ScalarType.UINT32*/,
+        },
+        {
+          no: 10,
+          name: "job_id_source",
+          kind: "scalar",
+          localName: "job_id_source",
+          opt: true,
+          T: 6 /*ScalarType.FIXED64*/,
+          L: 0 /*LongType.BIGINT*/,
+        },
+        {
+          no: 11,
+          name: "job_id_target",
+          kind: "scalar",
+          localName: "job_id_target",
+          opt: true,
+          T: 6 /*ScalarType.FIXED64*/,
+          L: 0 /*LongType.BIGINT*/,
+        },
+        {
+          no: 12,
+          name: "target_job_name",
+          kind: "scalar",
+          localName: "target_job_name",
+          opt: true,
+          T: 9 /*ScalarType.STRING*/,
+        },
+        {
+          no: 13,
+          name: "eresult",
+          kind: "scalar",
+          opt: true,
+          T: 5 /*ScalarType.INT32*/,
+        },
+        {
+          no: 14,
+          name: "error_message",
+          kind: "scalar",
+          localName: "error_message",
+          opt: true,
+          T: 9 /*ScalarType.STRING*/,
+        },
+        {
+          no: 200,
+          name: "gc_msg_src",
+          kind: "enum",
+          localName: "gc_msg_src",
+          opt: true,
+          T: () => ["GCProtoBufMsgSrc", GCProtoBufMsgSrc],
+        },
+        {
+          no: 201,
+          name: "gc_dir_index_source",
+          kind: "scalar",
+          localName: "gc_dir_index_source",
+          opt: true,
+          T: 5 /*ScalarType.INT32*/,
+        },
+      ],
+      { msgpool_soft_limit: 256, msgpool_hard_limit: 1024 },
+    );
+  }
+  create(value?: PartialMessage<CMsgProtoBufHeader>): CMsgProtoBufHeader {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgProtoBufHeader>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgProtoBufHeader,
+  ): CMsgProtoBufHeader {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed64 client_steam_id */ 1:
+          message.client_steam_id = reader.fixed64().toBigInt();
+          break;
+        case /* optional int32 client_session_id */ 2:
+          message.client_session_id = reader.int32();
+          break;
+        case /* optional uint32 source_app_id */ 3:
+          message.source_app_id = reader.uint32();
+          break;
+        case /* optional fixed64 job_id_source */ 10:
+          message.job_id_source = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed64 job_id_target */ 11:
+          message.job_id_target = reader.fixed64().toBigInt();
+          break;
+        case /* optional string target_job_name */ 12:
+          message.target_job_name = reader.string();
+          break;
+        case /* optional int32 eresult */ 13:
+          message.eresult = reader.int32();
+          break;
+        case /* optional string error_message */ 14:
+          message.error_message = reader.string();
+          break;
+        case /* optional GCProtoBufMsgSrc gc_msg_src */ 200:
+          message.gc_msg_src = reader.int32();
+          break;
+        case /* optional int32 gc_dir_index_source */ 201:
+          message.gc_dir_index_source = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgProtoBufHeader, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional fixed64 client_steam_id = 1; */
+    if (message.client_steam_id !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.client_steam_id);
+    /* optional int32 client_session_id = 2; */
+    if (message.client_session_id !== undefined) writer.tag(2, WireType.Varint).int32(message.client_session_id);
+    /* optional uint32 source_app_id = 3; */
+    if (message.source_app_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.source_app_id);
+    /* optional fixed64 job_id_source = 10; */
+    if (message.job_id_source !== undefined) writer.tag(10, WireType.Bit64).fixed64(message.job_id_source);
+    /* optional fixed64 job_id_target = 11; */
+    if (message.job_id_target !== undefined) writer.tag(11, WireType.Bit64).fixed64(message.job_id_target);
+    /* optional string target_job_name = 12; */
+    if (message.target_job_name !== undefined) writer.tag(12, WireType.LengthDelimited).string(message.target_job_name);
+    /* optional int32 eresult = 13; */
+    if (message.eresult !== undefined) writer.tag(13, WireType.Varint).int32(message.eresult);
+    /* optional string error_message = 14; */
+    if (message.error_message !== undefined) writer.tag(14, WireType.LengthDelimited).string(message.error_message);
+    /* optional GCProtoBufMsgSrc gc_msg_src = 200; */
+    if (message.gc_msg_src !== undefined) writer.tag(200, WireType.Varint).int32(message.gc_msg_src);
+    /* optional int32 gc_dir_index_source = 201; */
+    if (message.gc_dir_index_source !== undefined) writer.tag(201, WireType.Varint).int32(message.gc_dir_index_source);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgProtoBufHeader
@@ -497,74 +497,74 @@ class CMsgProtoBufHeader$Type extends MessageType<CMsgProtoBufHeader> {
 export const CMsgProtoBufHeader = new CMsgProtoBufHeader$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CGCSystemMsg_GetAccountDetails$Type extends MessageType<CGCSystemMsg_GetAccountDetails> {
-	constructor() {
-		super(
-			"CGCSystemMsg_GetAccountDetails",
-			[
-				{
-					no: 1,
-					name: "steamid",
-					kind: "scalar",
-					opt: true,
-					T: 6 /*ScalarType.FIXED64*/,
-					L: 0 /*LongType.BIGINT*/,
-				},
-				{
-					no: 2,
-					name: "appid",
-					kind: "scalar",
-					opt: true,
-					T: 13 /*ScalarType.UINT32*/,
-				},
-			],
-			{ msgpool_soft_limit: 128, msgpool_hard_limit: 512 },
-		);
-	}
-	create(value?: PartialMessage<CGCSystemMsg_GetAccountDetails>): CGCSystemMsg_GetAccountDetails {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CGCSystemMsg_GetAccountDetails>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CGCSystemMsg_GetAccountDetails,
-	): CGCSystemMsg_GetAccountDetails {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed64 steamid */ 1:
-					message.steamid = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 appid */ 2:
-					message.appid = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CGCSystemMsg_GetAccountDetails,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed64 steamid = 1; */
-		if (message.steamid !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.steamid);
-		/* optional uint32 appid = 2; */
-		if (message.appid !== undefined) writer.tag(2, WireType.Varint).uint32(message.appid);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super(
+      "CGCSystemMsg_GetAccountDetails",
+      [
+        {
+          no: 1,
+          name: "steamid",
+          kind: "scalar",
+          opt: true,
+          T: 6 /*ScalarType.FIXED64*/,
+          L: 0 /*LongType.BIGINT*/,
+        },
+        {
+          no: 2,
+          name: "appid",
+          kind: "scalar",
+          opt: true,
+          T: 13 /*ScalarType.UINT32*/,
+        },
+      ],
+      { msgpool_soft_limit: 128, msgpool_hard_limit: 512 },
+    );
+  }
+  create(value?: PartialMessage<CGCSystemMsg_GetAccountDetails>): CGCSystemMsg_GetAccountDetails {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CGCSystemMsg_GetAccountDetails>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CGCSystemMsg_GetAccountDetails,
+  ): CGCSystemMsg_GetAccountDetails {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed64 steamid */ 1:
+          message.steamid = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 appid */ 2:
+          message.appid = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CGCSystemMsg_GetAccountDetails,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed64 steamid = 1; */
+    if (message.steamid !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.steamid);
+    /* optional uint32 appid = 2; */
+    if (message.appid !== undefined) writer.tag(2, WireType.Varint).uint32(message.appid);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CGCSystemMsg_GetAccountDetails
@@ -572,540 +572,540 @@ class CGCSystemMsg_GetAccountDetails$Type extends MessageType<CGCSystemMsg_GetAc
 export const CGCSystemMsg_GetAccountDetails = new CGCSystemMsg_GetAccountDetails$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CGCSystemMsg_GetAccountDetails_Response$Type extends MessageType<CGCSystemMsg_GetAccountDetails_Response> {
-	constructor() {
-		super(
-			"CGCSystemMsg_GetAccountDetails_Response",
-			[
-				{
-					no: 1,
-					name: "eresult_deprecated",
-					kind: "scalar",
-					localName: "eresult_deprecated",
-					opt: true,
-					T: 13 /*ScalarType.UINT32*/,
-				},
-				{
-					no: 2,
-					name: "account_name",
-					kind: "scalar",
-					localName: "account_name",
-					opt: true,
-					T: 9 /*ScalarType.STRING*/,
-				},
-				{
-					no: 3,
-					name: "persona_name",
-					kind: "scalar",
-					localName: "persona_name",
-					opt: true,
-					T: 9 /*ScalarType.STRING*/,
-				},
-				{
-					no: 26,
-					name: "is_profile_created",
-					kind: "scalar",
-					localName: "is_profile_created",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 4,
-					name: "is_profile_public",
-					kind: "scalar",
-					localName: "is_profile_public",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 5,
-					name: "is_inventory_public",
-					kind: "scalar",
-					localName: "is_inventory_public",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 7,
-					name: "is_vac_banned",
-					kind: "scalar",
-					localName: "is_vac_banned",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 8,
-					name: "is_cyber_cafe",
-					kind: "scalar",
-					localName: "is_cyber_cafe",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 9,
-					name: "is_school_account",
-					kind: "scalar",
-					localName: "is_school_account",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 10,
-					name: "is_limited",
-					kind: "scalar",
-					localName: "is_limited",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 11,
-					name: "is_subscribed",
-					kind: "scalar",
-					localName: "is_subscribed",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 12,
-					name: "package",
-					kind: "scalar",
-					opt: true,
-					T: 13 /*ScalarType.UINT32*/,
-				},
-				{
-					no: 13,
-					name: "is_free_trial_account",
-					kind: "scalar",
-					localName: "is_free_trial_account",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 14,
-					name: "free_trial_expiration",
-					kind: "scalar",
-					localName: "free_trial_expiration",
-					opt: true,
-					T: 13 /*ScalarType.UINT32*/,
-				},
-				{
-					no: 15,
-					name: "is_low_violence",
-					kind: "scalar",
-					localName: "is_low_violence",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 16,
-					name: "is_account_locked_down",
-					kind: "scalar",
-					localName: "is_account_locked_down",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 17,
-					name: "is_community_banned",
-					kind: "scalar",
-					localName: "is_community_banned",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 18,
-					name: "is_trade_banned",
-					kind: "scalar",
-					localName: "is_trade_banned",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 19,
-					name: "trade_ban_expiration",
-					kind: "scalar",
-					localName: "trade_ban_expiration",
-					opt: true,
-					T: 13 /*ScalarType.UINT32*/,
-				},
-				{
-					no: 20,
-					name: "accountid",
-					kind: "scalar",
-					opt: true,
-					T: 13 /*ScalarType.UINT32*/,
-				},
-				{
-					no: 21,
-					name: "suspension_end_time",
-					kind: "scalar",
-					localName: "suspension_end_time",
-					opt: true,
-					T: 13 /*ScalarType.UINT32*/,
-				},
-				{
-					no: 22,
-					name: "currency",
-					kind: "scalar",
-					opt: true,
-					T: 9 /*ScalarType.STRING*/,
-				},
-				{
-					no: 23,
-					name: "steam_level",
-					kind: "scalar",
-					localName: "steam_level",
-					opt: true,
-					T: 13 /*ScalarType.UINT32*/,
-				},
-				{
-					no: 24,
-					name: "friend_count",
-					kind: "scalar",
-					localName: "friend_count",
-					opt: true,
-					T: 13 /*ScalarType.UINT32*/,
-				},
-				{
-					no: 25,
-					name: "account_creation_time",
-					kind: "scalar",
-					localName: "account_creation_time",
-					opt: true,
-					T: 13 /*ScalarType.UINT32*/,
-				},
-				{
-					no: 27,
-					name: "is_steamguard_enabled",
-					kind: "scalar",
-					localName: "is_steamguard_enabled",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 28,
-					name: "is_phone_verified",
-					kind: "scalar",
-					localName: "is_phone_verified",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 29,
-					name: "is_two_factor_auth_enabled",
-					kind: "scalar",
-					localName: "is_two_factor_auth_enabled",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 30,
-					name: "two_factor_enabled_time",
-					kind: "scalar",
-					localName: "two_factor_enabled_time",
-					opt: true,
-					T: 13 /*ScalarType.UINT32*/,
-				},
-				{
-					no: 31,
-					name: "phone_verification_time",
-					kind: "scalar",
-					localName: "phone_verification_time",
-					opt: true,
-					T: 13 /*ScalarType.UINT32*/,
-				},
-				{
-					no: 33,
-					name: "phone_id",
-					kind: "scalar",
-					localName: "phone_id",
-					opt: true,
-					T: 4 /*ScalarType.UINT64*/,
-					L: 0 /*LongType.BIGINT*/,
-				},
-				{
-					no: 34,
-					name: "is_phone_identifying",
-					kind: "scalar",
-					localName: "is_phone_identifying",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 35,
-					name: "rt_identity_linked",
-					kind: "scalar",
-					localName: "rt_identity_linked",
-					opt: true,
-					T: 13 /*ScalarType.UINT32*/,
-				},
-				{
-					no: 36,
-					name: "rt_birth_date",
-					kind: "scalar",
-					localName: "rt_birth_date",
-					opt: true,
-					T: 13 /*ScalarType.UINT32*/,
-				},
-				{
-					no: 37,
-					name: "txn_country_code",
-					kind: "scalar",
-					localName: "txn_country_code",
-					opt: true,
-					T: 9 /*ScalarType.STRING*/,
-				},
-				{
-					no: 38,
-					name: "has_accepted_china_ssa",
-					kind: "scalar",
-					localName: "has_accepted_china_ssa",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-				{
-					no: 39,
-					name: "is_banned_steam_china",
-					kind: "scalar",
-					localName: "is_banned_steam_china",
-					opt: true,
-					T: 8 /*ScalarType.BOOL*/,
-				},
-			],
-			{ msgpool_soft_limit: 128, msgpool_hard_limit: 512 },
-		);
-	}
-	create(value?: PartialMessage<CGCSystemMsg_GetAccountDetails_Response>): CGCSystemMsg_GetAccountDetails_Response {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CGCSystemMsg_GetAccountDetails_Response>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CGCSystemMsg_GetAccountDetails_Response,
-	): CGCSystemMsg_GetAccountDetails_Response {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 eresult_deprecated */ 1:
-					message.eresult_deprecated = reader.uint32();
-					break;
-				case /* optional string account_name */ 2:
-					message.account_name = reader.string();
-					break;
-				case /* optional string persona_name */ 3:
-					message.persona_name = reader.string();
-					break;
-				case /* optional bool is_profile_created */ 26:
-					message.is_profile_created = reader.bool();
-					break;
-				case /* optional bool is_profile_public */ 4:
-					message.is_profile_public = reader.bool();
-					break;
-				case /* optional bool is_inventory_public */ 5:
-					message.is_inventory_public = reader.bool();
-					break;
-				case /* optional bool is_vac_banned */ 7:
-					message.is_vac_banned = reader.bool();
-					break;
-				case /* optional bool is_cyber_cafe */ 8:
-					message.is_cyber_cafe = reader.bool();
-					break;
-				case /* optional bool is_school_account */ 9:
-					message.is_school_account = reader.bool();
-					break;
-				case /* optional bool is_limited */ 10:
-					message.is_limited = reader.bool();
-					break;
-				case /* optional bool is_subscribed */ 11:
-					message.is_subscribed = reader.bool();
-					break;
-				case /* optional uint32 package */ 12:
-					message.package = reader.uint32();
-					break;
-				case /* optional bool is_free_trial_account */ 13:
-					message.is_free_trial_account = reader.bool();
-					break;
-				case /* optional uint32 free_trial_expiration */ 14:
-					message.free_trial_expiration = reader.uint32();
-					break;
-				case /* optional bool is_low_violence */ 15:
-					message.is_low_violence = reader.bool();
-					break;
-				case /* optional bool is_account_locked_down */ 16:
-					message.is_account_locked_down = reader.bool();
-					break;
-				case /* optional bool is_community_banned */ 17:
-					message.is_community_banned = reader.bool();
-					break;
-				case /* optional bool is_trade_banned */ 18:
-					message.is_trade_banned = reader.bool();
-					break;
-				case /* optional uint32 trade_ban_expiration */ 19:
-					message.trade_ban_expiration = reader.uint32();
-					break;
-				case /* optional uint32 accountid */ 20:
-					message.accountid = reader.uint32();
-					break;
-				case /* optional uint32 suspension_end_time */ 21:
-					message.suspension_end_time = reader.uint32();
-					break;
-				case /* optional string currency */ 22:
-					message.currency = reader.string();
-					break;
-				case /* optional uint32 steam_level */ 23:
-					message.steam_level = reader.uint32();
-					break;
-				case /* optional uint32 friend_count */ 24:
-					message.friend_count = reader.uint32();
-					break;
-				case /* optional uint32 account_creation_time */ 25:
-					message.account_creation_time = reader.uint32();
-					break;
-				case /* optional bool is_steamguard_enabled */ 27:
-					message.is_steamguard_enabled = reader.bool();
-					break;
-				case /* optional bool is_phone_verified */ 28:
-					message.is_phone_verified = reader.bool();
-					break;
-				case /* optional bool is_two_factor_auth_enabled */ 29:
-					message.is_two_factor_auth_enabled = reader.bool();
-					break;
-				case /* optional uint32 two_factor_enabled_time */ 30:
-					message.two_factor_enabled_time = reader.uint32();
-					break;
-				case /* optional uint32 phone_verification_time */ 31:
-					message.phone_verification_time = reader.uint32();
-					break;
-				case /* optional uint64 phone_id */ 33:
-					message.phone_id = reader.uint64().toBigInt();
-					break;
-				case /* optional bool is_phone_identifying */ 34:
-					message.is_phone_identifying = reader.bool();
-					break;
-				case /* optional uint32 rt_identity_linked */ 35:
-					message.rt_identity_linked = reader.uint32();
-					break;
-				case /* optional uint32 rt_birth_date */ 36:
-					message.rt_birth_date = reader.uint32();
-					break;
-				case /* optional string txn_country_code */ 37:
-					message.txn_country_code = reader.string();
-					break;
-				case /* optional bool has_accepted_china_ssa */ 38:
-					message.has_accepted_china_ssa = reader.bool();
-					break;
-				case /* optional bool is_banned_steam_china */ 39:
-					message.is_banned_steam_china = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CGCSystemMsg_GetAccountDetails_Response,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 eresult_deprecated = 1; */
-		if (message.eresult_deprecated !== undefined) writer.tag(1, WireType.Varint).uint32(message.eresult_deprecated);
-		/* optional string account_name = 2; */
-		if (message.account_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.account_name);
-		/* optional string persona_name = 3; */
-		if (message.persona_name !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.persona_name);
-		/* optional bool is_profile_created = 26; */
-		if (message.is_profile_created !== undefined) writer.tag(26, WireType.Varint).bool(message.is_profile_created);
-		/* optional bool is_profile_public = 4; */
-		if (message.is_profile_public !== undefined) writer.tag(4, WireType.Varint).bool(message.is_profile_public);
-		/* optional bool is_inventory_public = 5; */
-		if (message.is_inventory_public !== undefined) writer.tag(5, WireType.Varint).bool(message.is_inventory_public);
-		/* optional bool is_vac_banned = 7; */
-		if (message.is_vac_banned !== undefined) writer.tag(7, WireType.Varint).bool(message.is_vac_banned);
-		/* optional bool is_cyber_cafe = 8; */
-		if (message.is_cyber_cafe !== undefined) writer.tag(8, WireType.Varint).bool(message.is_cyber_cafe);
-		/* optional bool is_school_account = 9; */
-		if (message.is_school_account !== undefined) writer.tag(9, WireType.Varint).bool(message.is_school_account);
-		/* optional bool is_limited = 10; */
-		if (message.is_limited !== undefined) writer.tag(10, WireType.Varint).bool(message.is_limited);
-		/* optional bool is_subscribed = 11; */
-		if (message.is_subscribed !== undefined) writer.tag(11, WireType.Varint).bool(message.is_subscribed);
-		/* optional uint32 package = 12; */
-		if (message.package !== undefined) writer.tag(12, WireType.Varint).uint32(message.package);
-		/* optional bool is_free_trial_account = 13; */
-		if (message.is_free_trial_account !== undefined)
-			writer.tag(13, WireType.Varint).bool(message.is_free_trial_account);
-		/* optional uint32 free_trial_expiration = 14; */
-		if (message.free_trial_expiration !== undefined)
-			writer.tag(14, WireType.Varint).uint32(message.free_trial_expiration);
-		/* optional bool is_low_violence = 15; */
-		if (message.is_low_violence !== undefined) writer.tag(15, WireType.Varint).bool(message.is_low_violence);
-		/* optional bool is_account_locked_down = 16; */
-		if (message.is_account_locked_down !== undefined)
-			writer.tag(16, WireType.Varint).bool(message.is_account_locked_down);
-		/* optional bool is_community_banned = 17; */
-		if (message.is_community_banned !== undefined) writer.tag(17, WireType.Varint).bool(message.is_community_banned);
-		/* optional bool is_trade_banned = 18; */
-		if (message.is_trade_banned !== undefined) writer.tag(18, WireType.Varint).bool(message.is_trade_banned);
-		/* optional uint32 trade_ban_expiration = 19; */
-		if (message.trade_ban_expiration !== undefined)
-			writer.tag(19, WireType.Varint).uint32(message.trade_ban_expiration);
-		/* optional uint32 accountid = 20; */
-		if (message.accountid !== undefined) writer.tag(20, WireType.Varint).uint32(message.accountid);
-		/* optional uint32 suspension_end_time = 21; */
-		if (message.suspension_end_time !== undefined) writer.tag(21, WireType.Varint).uint32(message.suspension_end_time);
-		/* optional string currency = 22; */
-		if (message.currency !== undefined) writer.tag(22, WireType.LengthDelimited).string(message.currency);
-		/* optional uint32 steam_level = 23; */
-		if (message.steam_level !== undefined) writer.tag(23, WireType.Varint).uint32(message.steam_level);
-		/* optional uint32 friend_count = 24; */
-		if (message.friend_count !== undefined) writer.tag(24, WireType.Varint).uint32(message.friend_count);
-		/* optional uint32 account_creation_time = 25; */
-		if (message.account_creation_time !== undefined)
-			writer.tag(25, WireType.Varint).uint32(message.account_creation_time);
-		/* optional bool is_steamguard_enabled = 27; */
-		if (message.is_steamguard_enabled !== undefined)
-			writer.tag(27, WireType.Varint).bool(message.is_steamguard_enabled);
-		/* optional bool is_phone_verified = 28; */
-		if (message.is_phone_verified !== undefined) writer.tag(28, WireType.Varint).bool(message.is_phone_verified);
-		/* optional bool is_two_factor_auth_enabled = 29; */
-		if (message.is_two_factor_auth_enabled !== undefined)
-			writer.tag(29, WireType.Varint).bool(message.is_two_factor_auth_enabled);
-		/* optional uint32 two_factor_enabled_time = 30; */
-		if (message.two_factor_enabled_time !== undefined)
-			writer.tag(30, WireType.Varint).uint32(message.two_factor_enabled_time);
-		/* optional uint32 phone_verification_time = 31; */
-		if (message.phone_verification_time !== undefined)
-			writer.tag(31, WireType.Varint).uint32(message.phone_verification_time);
-		/* optional uint64 phone_id = 33; */
-		if (message.phone_id !== undefined) writer.tag(33, WireType.Varint).uint64(message.phone_id);
-		/* optional bool is_phone_identifying = 34; */
-		if (message.is_phone_identifying !== undefined) writer.tag(34, WireType.Varint).bool(message.is_phone_identifying);
-		/* optional uint32 rt_identity_linked = 35; */
-		if (message.rt_identity_linked !== undefined) writer.tag(35, WireType.Varint).uint32(message.rt_identity_linked);
-		/* optional uint32 rt_birth_date = 36; */
-		if (message.rt_birth_date !== undefined) writer.tag(36, WireType.Varint).uint32(message.rt_birth_date);
-		/* optional string txn_country_code = 37; */
-		if (message.txn_country_code !== undefined)
-			writer.tag(37, WireType.LengthDelimited).string(message.txn_country_code);
-		/* optional bool has_accepted_china_ssa = 38; */
-		if (message.has_accepted_china_ssa !== undefined)
-			writer.tag(38, WireType.Varint).bool(message.has_accepted_china_ssa);
-		/* optional bool is_banned_steam_china = 39; */
-		if (message.is_banned_steam_china !== undefined)
-			writer.tag(39, WireType.Varint).bool(message.is_banned_steam_china);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super(
+      "CGCSystemMsg_GetAccountDetails_Response",
+      [
+        {
+          no: 1,
+          name: "eresult_deprecated",
+          kind: "scalar",
+          localName: "eresult_deprecated",
+          opt: true,
+          T: 13 /*ScalarType.UINT32*/,
+        },
+        {
+          no: 2,
+          name: "account_name",
+          kind: "scalar",
+          localName: "account_name",
+          opt: true,
+          T: 9 /*ScalarType.STRING*/,
+        },
+        {
+          no: 3,
+          name: "persona_name",
+          kind: "scalar",
+          localName: "persona_name",
+          opt: true,
+          T: 9 /*ScalarType.STRING*/,
+        },
+        {
+          no: 26,
+          name: "is_profile_created",
+          kind: "scalar",
+          localName: "is_profile_created",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 4,
+          name: "is_profile_public",
+          kind: "scalar",
+          localName: "is_profile_public",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 5,
+          name: "is_inventory_public",
+          kind: "scalar",
+          localName: "is_inventory_public",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 7,
+          name: "is_vac_banned",
+          kind: "scalar",
+          localName: "is_vac_banned",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 8,
+          name: "is_cyber_cafe",
+          kind: "scalar",
+          localName: "is_cyber_cafe",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 9,
+          name: "is_school_account",
+          kind: "scalar",
+          localName: "is_school_account",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 10,
+          name: "is_limited",
+          kind: "scalar",
+          localName: "is_limited",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 11,
+          name: "is_subscribed",
+          kind: "scalar",
+          localName: "is_subscribed",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 12,
+          name: "package",
+          kind: "scalar",
+          opt: true,
+          T: 13 /*ScalarType.UINT32*/,
+        },
+        {
+          no: 13,
+          name: "is_free_trial_account",
+          kind: "scalar",
+          localName: "is_free_trial_account",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 14,
+          name: "free_trial_expiration",
+          kind: "scalar",
+          localName: "free_trial_expiration",
+          opt: true,
+          T: 13 /*ScalarType.UINT32*/,
+        },
+        {
+          no: 15,
+          name: "is_low_violence",
+          kind: "scalar",
+          localName: "is_low_violence",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 16,
+          name: "is_account_locked_down",
+          kind: "scalar",
+          localName: "is_account_locked_down",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 17,
+          name: "is_community_banned",
+          kind: "scalar",
+          localName: "is_community_banned",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 18,
+          name: "is_trade_banned",
+          kind: "scalar",
+          localName: "is_trade_banned",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 19,
+          name: "trade_ban_expiration",
+          kind: "scalar",
+          localName: "trade_ban_expiration",
+          opt: true,
+          T: 13 /*ScalarType.UINT32*/,
+        },
+        {
+          no: 20,
+          name: "accountid",
+          kind: "scalar",
+          opt: true,
+          T: 13 /*ScalarType.UINT32*/,
+        },
+        {
+          no: 21,
+          name: "suspension_end_time",
+          kind: "scalar",
+          localName: "suspension_end_time",
+          opt: true,
+          T: 13 /*ScalarType.UINT32*/,
+        },
+        {
+          no: 22,
+          name: "currency",
+          kind: "scalar",
+          opt: true,
+          T: 9 /*ScalarType.STRING*/,
+        },
+        {
+          no: 23,
+          name: "steam_level",
+          kind: "scalar",
+          localName: "steam_level",
+          opt: true,
+          T: 13 /*ScalarType.UINT32*/,
+        },
+        {
+          no: 24,
+          name: "friend_count",
+          kind: "scalar",
+          localName: "friend_count",
+          opt: true,
+          T: 13 /*ScalarType.UINT32*/,
+        },
+        {
+          no: 25,
+          name: "account_creation_time",
+          kind: "scalar",
+          localName: "account_creation_time",
+          opt: true,
+          T: 13 /*ScalarType.UINT32*/,
+        },
+        {
+          no: 27,
+          name: "is_steamguard_enabled",
+          kind: "scalar",
+          localName: "is_steamguard_enabled",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 28,
+          name: "is_phone_verified",
+          kind: "scalar",
+          localName: "is_phone_verified",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 29,
+          name: "is_two_factor_auth_enabled",
+          kind: "scalar",
+          localName: "is_two_factor_auth_enabled",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 30,
+          name: "two_factor_enabled_time",
+          kind: "scalar",
+          localName: "two_factor_enabled_time",
+          opt: true,
+          T: 13 /*ScalarType.UINT32*/,
+        },
+        {
+          no: 31,
+          name: "phone_verification_time",
+          kind: "scalar",
+          localName: "phone_verification_time",
+          opt: true,
+          T: 13 /*ScalarType.UINT32*/,
+        },
+        {
+          no: 33,
+          name: "phone_id",
+          kind: "scalar",
+          localName: "phone_id",
+          opt: true,
+          T: 4 /*ScalarType.UINT64*/,
+          L: 0 /*LongType.BIGINT*/,
+        },
+        {
+          no: 34,
+          name: "is_phone_identifying",
+          kind: "scalar",
+          localName: "is_phone_identifying",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 35,
+          name: "rt_identity_linked",
+          kind: "scalar",
+          localName: "rt_identity_linked",
+          opt: true,
+          T: 13 /*ScalarType.UINT32*/,
+        },
+        {
+          no: 36,
+          name: "rt_birth_date",
+          kind: "scalar",
+          localName: "rt_birth_date",
+          opt: true,
+          T: 13 /*ScalarType.UINT32*/,
+        },
+        {
+          no: 37,
+          name: "txn_country_code",
+          kind: "scalar",
+          localName: "txn_country_code",
+          opt: true,
+          T: 9 /*ScalarType.STRING*/,
+        },
+        {
+          no: 38,
+          name: "has_accepted_china_ssa",
+          kind: "scalar",
+          localName: "has_accepted_china_ssa",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+        {
+          no: 39,
+          name: "is_banned_steam_china",
+          kind: "scalar",
+          localName: "is_banned_steam_china",
+          opt: true,
+          T: 8 /*ScalarType.BOOL*/,
+        },
+      ],
+      { msgpool_soft_limit: 128, msgpool_hard_limit: 512 },
+    );
+  }
+  create(value?: PartialMessage<CGCSystemMsg_GetAccountDetails_Response>): CGCSystemMsg_GetAccountDetails_Response {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CGCSystemMsg_GetAccountDetails_Response>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CGCSystemMsg_GetAccountDetails_Response,
+  ): CGCSystemMsg_GetAccountDetails_Response {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 eresult_deprecated */ 1:
+          message.eresult_deprecated = reader.uint32();
+          break;
+        case /* optional string account_name */ 2:
+          message.account_name = reader.string();
+          break;
+        case /* optional string persona_name */ 3:
+          message.persona_name = reader.string();
+          break;
+        case /* optional bool is_profile_created */ 26:
+          message.is_profile_created = reader.bool();
+          break;
+        case /* optional bool is_profile_public */ 4:
+          message.is_profile_public = reader.bool();
+          break;
+        case /* optional bool is_inventory_public */ 5:
+          message.is_inventory_public = reader.bool();
+          break;
+        case /* optional bool is_vac_banned */ 7:
+          message.is_vac_banned = reader.bool();
+          break;
+        case /* optional bool is_cyber_cafe */ 8:
+          message.is_cyber_cafe = reader.bool();
+          break;
+        case /* optional bool is_school_account */ 9:
+          message.is_school_account = reader.bool();
+          break;
+        case /* optional bool is_limited */ 10:
+          message.is_limited = reader.bool();
+          break;
+        case /* optional bool is_subscribed */ 11:
+          message.is_subscribed = reader.bool();
+          break;
+        case /* optional uint32 package */ 12:
+          message.package = reader.uint32();
+          break;
+        case /* optional bool is_free_trial_account */ 13:
+          message.is_free_trial_account = reader.bool();
+          break;
+        case /* optional uint32 free_trial_expiration */ 14:
+          message.free_trial_expiration = reader.uint32();
+          break;
+        case /* optional bool is_low_violence */ 15:
+          message.is_low_violence = reader.bool();
+          break;
+        case /* optional bool is_account_locked_down */ 16:
+          message.is_account_locked_down = reader.bool();
+          break;
+        case /* optional bool is_community_banned */ 17:
+          message.is_community_banned = reader.bool();
+          break;
+        case /* optional bool is_trade_banned */ 18:
+          message.is_trade_banned = reader.bool();
+          break;
+        case /* optional uint32 trade_ban_expiration */ 19:
+          message.trade_ban_expiration = reader.uint32();
+          break;
+        case /* optional uint32 accountid */ 20:
+          message.accountid = reader.uint32();
+          break;
+        case /* optional uint32 suspension_end_time */ 21:
+          message.suspension_end_time = reader.uint32();
+          break;
+        case /* optional string currency */ 22:
+          message.currency = reader.string();
+          break;
+        case /* optional uint32 steam_level */ 23:
+          message.steam_level = reader.uint32();
+          break;
+        case /* optional uint32 friend_count */ 24:
+          message.friend_count = reader.uint32();
+          break;
+        case /* optional uint32 account_creation_time */ 25:
+          message.account_creation_time = reader.uint32();
+          break;
+        case /* optional bool is_steamguard_enabled */ 27:
+          message.is_steamguard_enabled = reader.bool();
+          break;
+        case /* optional bool is_phone_verified */ 28:
+          message.is_phone_verified = reader.bool();
+          break;
+        case /* optional bool is_two_factor_auth_enabled */ 29:
+          message.is_two_factor_auth_enabled = reader.bool();
+          break;
+        case /* optional uint32 two_factor_enabled_time */ 30:
+          message.two_factor_enabled_time = reader.uint32();
+          break;
+        case /* optional uint32 phone_verification_time */ 31:
+          message.phone_verification_time = reader.uint32();
+          break;
+        case /* optional uint64 phone_id */ 33:
+          message.phone_id = reader.uint64().toBigInt();
+          break;
+        case /* optional bool is_phone_identifying */ 34:
+          message.is_phone_identifying = reader.bool();
+          break;
+        case /* optional uint32 rt_identity_linked */ 35:
+          message.rt_identity_linked = reader.uint32();
+          break;
+        case /* optional uint32 rt_birth_date */ 36:
+          message.rt_birth_date = reader.uint32();
+          break;
+        case /* optional string txn_country_code */ 37:
+          message.txn_country_code = reader.string();
+          break;
+        case /* optional bool has_accepted_china_ssa */ 38:
+          message.has_accepted_china_ssa = reader.bool();
+          break;
+        case /* optional bool is_banned_steam_china */ 39:
+          message.is_banned_steam_china = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CGCSystemMsg_GetAccountDetails_Response,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 eresult_deprecated = 1; */
+    if (message.eresult_deprecated !== undefined) writer.tag(1, WireType.Varint).uint32(message.eresult_deprecated);
+    /* optional string account_name = 2; */
+    if (message.account_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.account_name);
+    /* optional string persona_name = 3; */
+    if (message.persona_name !== undefined) writer.tag(3, WireType.LengthDelimited).string(message.persona_name);
+    /* optional bool is_profile_created = 26; */
+    if (message.is_profile_created !== undefined) writer.tag(26, WireType.Varint).bool(message.is_profile_created);
+    /* optional bool is_profile_public = 4; */
+    if (message.is_profile_public !== undefined) writer.tag(4, WireType.Varint).bool(message.is_profile_public);
+    /* optional bool is_inventory_public = 5; */
+    if (message.is_inventory_public !== undefined) writer.tag(5, WireType.Varint).bool(message.is_inventory_public);
+    /* optional bool is_vac_banned = 7; */
+    if (message.is_vac_banned !== undefined) writer.tag(7, WireType.Varint).bool(message.is_vac_banned);
+    /* optional bool is_cyber_cafe = 8; */
+    if (message.is_cyber_cafe !== undefined) writer.tag(8, WireType.Varint).bool(message.is_cyber_cafe);
+    /* optional bool is_school_account = 9; */
+    if (message.is_school_account !== undefined) writer.tag(9, WireType.Varint).bool(message.is_school_account);
+    /* optional bool is_limited = 10; */
+    if (message.is_limited !== undefined) writer.tag(10, WireType.Varint).bool(message.is_limited);
+    /* optional bool is_subscribed = 11; */
+    if (message.is_subscribed !== undefined) writer.tag(11, WireType.Varint).bool(message.is_subscribed);
+    /* optional uint32 package = 12; */
+    if (message.package !== undefined) writer.tag(12, WireType.Varint).uint32(message.package);
+    /* optional bool is_free_trial_account = 13; */
+    if (message.is_free_trial_account !== undefined)
+      writer.tag(13, WireType.Varint).bool(message.is_free_trial_account);
+    /* optional uint32 free_trial_expiration = 14; */
+    if (message.free_trial_expiration !== undefined)
+      writer.tag(14, WireType.Varint).uint32(message.free_trial_expiration);
+    /* optional bool is_low_violence = 15; */
+    if (message.is_low_violence !== undefined) writer.tag(15, WireType.Varint).bool(message.is_low_violence);
+    /* optional bool is_account_locked_down = 16; */
+    if (message.is_account_locked_down !== undefined)
+      writer.tag(16, WireType.Varint).bool(message.is_account_locked_down);
+    /* optional bool is_community_banned = 17; */
+    if (message.is_community_banned !== undefined) writer.tag(17, WireType.Varint).bool(message.is_community_banned);
+    /* optional bool is_trade_banned = 18; */
+    if (message.is_trade_banned !== undefined) writer.tag(18, WireType.Varint).bool(message.is_trade_banned);
+    /* optional uint32 trade_ban_expiration = 19; */
+    if (message.trade_ban_expiration !== undefined)
+      writer.tag(19, WireType.Varint).uint32(message.trade_ban_expiration);
+    /* optional uint32 accountid = 20; */
+    if (message.accountid !== undefined) writer.tag(20, WireType.Varint).uint32(message.accountid);
+    /* optional uint32 suspension_end_time = 21; */
+    if (message.suspension_end_time !== undefined) writer.tag(21, WireType.Varint).uint32(message.suspension_end_time);
+    /* optional string currency = 22; */
+    if (message.currency !== undefined) writer.tag(22, WireType.LengthDelimited).string(message.currency);
+    /* optional uint32 steam_level = 23; */
+    if (message.steam_level !== undefined) writer.tag(23, WireType.Varint).uint32(message.steam_level);
+    /* optional uint32 friend_count = 24; */
+    if (message.friend_count !== undefined) writer.tag(24, WireType.Varint).uint32(message.friend_count);
+    /* optional uint32 account_creation_time = 25; */
+    if (message.account_creation_time !== undefined)
+      writer.tag(25, WireType.Varint).uint32(message.account_creation_time);
+    /* optional bool is_steamguard_enabled = 27; */
+    if (message.is_steamguard_enabled !== undefined)
+      writer.tag(27, WireType.Varint).bool(message.is_steamguard_enabled);
+    /* optional bool is_phone_verified = 28; */
+    if (message.is_phone_verified !== undefined) writer.tag(28, WireType.Varint).bool(message.is_phone_verified);
+    /* optional bool is_two_factor_auth_enabled = 29; */
+    if (message.is_two_factor_auth_enabled !== undefined)
+      writer.tag(29, WireType.Varint).bool(message.is_two_factor_auth_enabled);
+    /* optional uint32 two_factor_enabled_time = 30; */
+    if (message.two_factor_enabled_time !== undefined)
+      writer.tag(30, WireType.Varint).uint32(message.two_factor_enabled_time);
+    /* optional uint32 phone_verification_time = 31; */
+    if (message.phone_verification_time !== undefined)
+      writer.tag(31, WireType.Varint).uint32(message.phone_verification_time);
+    /* optional uint64 phone_id = 33; */
+    if (message.phone_id !== undefined) writer.tag(33, WireType.Varint).uint64(message.phone_id);
+    /* optional bool is_phone_identifying = 34; */
+    if (message.is_phone_identifying !== undefined) writer.tag(34, WireType.Varint).bool(message.is_phone_identifying);
+    /* optional uint32 rt_identity_linked = 35; */
+    if (message.rt_identity_linked !== undefined) writer.tag(35, WireType.Varint).uint32(message.rt_identity_linked);
+    /* optional uint32 rt_birth_date = 36; */
+    if (message.rt_birth_date !== undefined) writer.tag(36, WireType.Varint).uint32(message.rt_birth_date);
+    /* optional string txn_country_code = 37; */
+    if (message.txn_country_code !== undefined)
+      writer.tag(37, WireType.LengthDelimited).string(message.txn_country_code);
+    /* optional bool has_accepted_china_ssa = 38; */
+    if (message.has_accepted_china_ssa !== undefined)
+      writer.tag(38, WireType.Varint).bool(message.has_accepted_china_ssa);
+    /* optional bool is_banned_steam_china = 39; */
+    if (message.is_banned_steam_china !== undefined)
+      writer.tag(39, WireType.Varint).bool(message.is_banned_steam_china);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CGCSystemMsg_GetAccountDetails_Response
@@ -1113,113 +1113,113 @@ class CGCSystemMsg_GetAccountDetails_Response$Type extends MessageType<CGCSystem
 export const CGCSystemMsg_GetAccountDetails_Response = new CGCSystemMsg_GetAccountDetails_Response$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CIPLocationInfo$Type extends MessageType<CIPLocationInfo> {
-	constructor() {
-		super("CIPLocationInfo", [
-			{
-				no: 1,
-				name: "ip",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "latitude",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "longitude",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "country",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 5,
-				name: "state",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 6,
-				name: "city",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CIPLocationInfo>): CIPLocationInfo {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CIPLocationInfo>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CIPLocationInfo,
-	): CIPLocationInfo {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 ip */ 1:
-					message.ip = reader.uint32();
-					break;
-				case /* optional float latitude */ 2:
-					message.latitude = reader.float();
-					break;
-				case /* optional float longitude */ 3:
-					message.longitude = reader.float();
-					break;
-				case /* optional string country */ 4:
-					message.country = reader.string();
-					break;
-				case /* optional string state */ 5:
-					message.state = reader.string();
-					break;
-				case /* optional string city */ 6:
-					message.city = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CIPLocationInfo, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional uint32 ip = 1; */
-		if (message.ip !== undefined) writer.tag(1, WireType.Varint).uint32(message.ip);
-		/* optional float latitude = 2; */
-		if (message.latitude !== undefined) writer.tag(2, WireType.Bit32).float(message.latitude);
-		/* optional float longitude = 3; */
-		if (message.longitude !== undefined) writer.tag(3, WireType.Bit32).float(message.longitude);
-		/* optional string country = 4; */
-		if (message.country !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.country);
-		/* optional string state = 5; */
-		if (message.state !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.state);
-		/* optional string city = 6; */
-		if (message.city !== undefined) writer.tag(6, WireType.LengthDelimited).string(message.city);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CIPLocationInfo", [
+      {
+        no: 1,
+        name: "ip",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "latitude",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "longitude",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "country",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 5,
+        name: "state",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 6,
+        name: "city",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CIPLocationInfo>): CIPLocationInfo {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CIPLocationInfo>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CIPLocationInfo,
+  ): CIPLocationInfo {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 ip */ 1:
+          message.ip = reader.uint32();
+          break;
+        case /* optional float latitude */ 2:
+          message.latitude = reader.float();
+          break;
+        case /* optional float longitude */ 3:
+          message.longitude = reader.float();
+          break;
+        case /* optional string country */ 4:
+          message.country = reader.string();
+          break;
+        case /* optional string state */ 5:
+          message.state = reader.string();
+          break;
+        case /* optional string city */ 6:
+          message.city = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CIPLocationInfo, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional uint32 ip = 1; */
+    if (message.ip !== undefined) writer.tag(1, WireType.Varint).uint32(message.ip);
+    /* optional float latitude = 2; */
+    if (message.latitude !== undefined) writer.tag(2, WireType.Bit32).float(message.latitude);
+    /* optional float longitude = 3; */
+    if (message.longitude !== undefined) writer.tag(3, WireType.Bit32).float(message.longitude);
+    /* optional string country = 4; */
+    if (message.country !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.country);
+    /* optional string state = 5; */
+    if (message.state !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.state);
+    /* optional string city = 6; */
+    if (message.city !== undefined) writer.tag(6, WireType.LengthDelimited).string(message.city);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CIPLocationInfo
@@ -1227,63 +1227,63 @@ class CIPLocationInfo$Type extends MessageType<CIPLocationInfo> {
 export const CIPLocationInfo = new CIPLocationInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CGCMsgGetIPLocationResponse$Type extends MessageType<CGCMsgGetIPLocationResponse> {
-	constructor() {
-		super("CGCMsgGetIPLocationResponse", [
-			{
-				no: 1,
-				name: "infos",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CIPLocationInfo,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CGCMsgGetIPLocationResponse>): CGCMsgGetIPLocationResponse {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.infos = [];
-		if (value !== undefined) reflectionMergePartial<CGCMsgGetIPLocationResponse>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CGCMsgGetIPLocationResponse,
-	): CGCMsgGetIPLocationResponse {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CIPLocationInfo infos */ 1:
-					message.infos.push(CIPLocationInfo.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CGCMsgGetIPLocationResponse,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CIPLocationInfo infos = 1; */
-		for (let i = 0; i < message.infos.length; i++)
-			CIPLocationInfo.internalBinaryWrite(
-				message.infos[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CGCMsgGetIPLocationResponse", [
+      {
+        no: 1,
+        name: "infos",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CIPLocationInfo,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CGCMsgGetIPLocationResponse>): CGCMsgGetIPLocationResponse {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.infos = [];
+    if (value !== undefined) reflectionMergePartial<CGCMsgGetIPLocationResponse>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CGCMsgGetIPLocationResponse,
+  ): CGCMsgGetIPLocationResponse {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CIPLocationInfo infos */ 1:
+          message.infos.push(CIPLocationInfo.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CGCMsgGetIPLocationResponse,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CIPLocationInfo infos = 1; */
+    for (let i = 0; i < message.infos.length; i++)
+      CIPLocationInfo.internalBinaryWrite(
+        message.infos[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CGCMsgGetIPLocationResponse

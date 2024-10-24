@@ -14,225 +14,225 @@ import { MessageType } from "@protobuf-ts/runtime";
  * @generated from protobuf message CClientMsg_CustomGameEvent
  */
 export interface CClientMsg_CustomGameEvent {
-	/**
-	 * @generated from protobuf field: optional string event_name = 1;
-	 */
-	event_name?: string;
-	/**
-	 * @generated from protobuf field: optional bytes data = 2;
-	 */
-	data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional string event_name = 1;
+   */
+  event_name?: string;
+  /**
+   * @generated from protobuf field: optional bytes data = 2;
+   */
+  data?: Uint8Array;
 }
 /**
  * @generated from protobuf message CClientMsg_CustomGameEventBounce
  */
 export interface CClientMsg_CustomGameEventBounce {
-	/**
-	 * @generated from protobuf field: optional string event_name = 1;
-	 */
-	event_name?: string;
-	/**
-	 * @generated from protobuf field: optional bytes data = 2;
-	 */
-	data?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional int32 player_slot = 3;
-	 */
-	player_slot?: number;
+  /**
+   * @generated from protobuf field: optional string event_name = 1;
+   */
+  event_name?: string;
+  /**
+   * @generated from protobuf field: optional bytes data = 2;
+   */
+  data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional int32 player_slot = 3;
+   */
+  player_slot?: number;
 }
 /**
  * @generated from protobuf message CClientMsg_ClientUIEvent
  */
 export interface CClientMsg_ClientUIEvent {
-	/**
-	 * @generated from protobuf field: optional EClientUIEvent event = 1;
-	 */
-	event?: EClientUIEvent;
-	/**
-	 * @generated from protobuf field: optional uint32 ent_ehandle = 2;
-	 */
-	ent_ehandle?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 client_ehandle = 3;
-	 */
-	client_ehandle?: number;
-	/**
-	 * @generated from protobuf field: optional string data1 = 4;
-	 */
-	data1?: string;
-	/**
-	 * @generated from protobuf field: optional string data2 = 5;
-	 */
-	data2?: string;
+  /**
+   * @generated from protobuf field: optional EClientUIEvent event = 1;
+   */
+  event?: EClientUIEvent;
+  /**
+   * @generated from protobuf field: optional uint32 ent_ehandle = 2;
+   */
+  ent_ehandle?: number;
+  /**
+   * @generated from protobuf field: optional uint32 client_ehandle = 3;
+   */
+  client_ehandle?: number;
+  /**
+   * @generated from protobuf field: optional string data1 = 4;
+   */
+  data1?: string;
+  /**
+   * @generated from protobuf field: optional string data2 = 5;
+   */
+  data2?: string;
 }
 /**
  * @generated from protobuf message CClientMsg_DevPaletteVisibilityChangedEvent
  */
 export interface CClientMsg_DevPaletteVisibilityChangedEvent {
-	/**
-	 * @generated from protobuf field: optional bool visible = 1;
-	 */
-	visible?: boolean;
+  /**
+   * @generated from protobuf field: optional bool visible = 1;
+   */
+  visible?: boolean;
 }
 /**
  * @generated from protobuf message CClientMsg_WorldUIControllerHasPanelChangedEvent
  */
 export interface CClientMsg_WorldUIControllerHasPanelChangedEvent {
-	/**
-	 * @generated from protobuf field: optional bool has_panel = 1;
-	 */
-	has_panel?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 client_ehandle = 2;
-	 */
-	client_ehandle?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 literal_hand_type = 3;
-	 */
-	literal_hand_type?: number;
+  /**
+   * @generated from protobuf field: optional bool has_panel = 1;
+   */
+  has_panel?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 client_ehandle = 2;
+   */
+  client_ehandle?: number;
+  /**
+   * @generated from protobuf field: optional uint32 literal_hand_type = 3;
+   */
+  literal_hand_type?: number;
 }
 /**
  * @generated from protobuf message CClientMsg_RotateAnchor
  */
 export interface CClientMsg_RotateAnchor {
-	/**
-	 * @generated from protobuf field: optional float angle = 1;
-	 */
-	angle?: number;
+  /**
+   * @generated from protobuf field: optional float angle = 1;
+   */
+  angle?: number;
 }
 /**
  * @generated from protobuf message CClientMsg_ListenForResponseFound
  */
 export interface CClientMsg_ListenForResponseFound {
-	/**
-	 * @generated from protobuf field: optional int32 player_slot = 1;
-	 */
-	player_slot?: number;
+  /**
+   * @generated from protobuf field: optional int32 player_slot = 1;
+   */
+  player_slot?: number;
 }
 /**
  * @generated from protobuf enum EBaseClientMessages
  */
 export enum EBaseClientMessages {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: CM_CustomGameEvent = 280;
-	 */
-	CM_CustomGameEvent = 280,
-	/**
-	 * @generated from protobuf enum value: CM_CustomGameEventBounce = 281;
-	 */
-	CM_CustomGameEventBounce = 281,
-	/**
-	 * @generated from protobuf enum value: CM_ClientUIEvent = 282;
-	 */
-	CM_ClientUIEvent = 282,
-	/**
-	 * @generated from protobuf enum value: CM_DevPaletteVisibilityChanged = 283;
-	 */
-	CM_DevPaletteVisibilityChanged = 283,
-	/**
-	 * @generated from protobuf enum value: CM_WorldUIControllerHasPanelChanged = 284;
-	 */
-	CM_WorldUIControllerHasPanelChanged = 284,
-	/**
-	 * @generated from protobuf enum value: CM_RotateAnchor = 285;
-	 */
-	CM_RotateAnchor = 285,
-	/**
-	 * @generated from protobuf enum value: CM_ListenForResponseFound = 286;
-	 */
-	CM_ListenForResponseFound = 286,
-	/**
-	 * @generated from protobuf enum value: CM_MAX_BASE = 300;
-	 */
-	CM_MAX_BASE = 300,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: CM_CustomGameEvent = 280;
+   */
+  CM_CustomGameEvent = 280,
+  /**
+   * @generated from protobuf enum value: CM_CustomGameEventBounce = 281;
+   */
+  CM_CustomGameEventBounce = 281,
+  /**
+   * @generated from protobuf enum value: CM_ClientUIEvent = 282;
+   */
+  CM_ClientUIEvent = 282,
+  /**
+   * @generated from protobuf enum value: CM_DevPaletteVisibilityChanged = 283;
+   */
+  CM_DevPaletteVisibilityChanged = 283,
+  /**
+   * @generated from protobuf enum value: CM_WorldUIControllerHasPanelChanged = 284;
+   */
+  CM_WorldUIControllerHasPanelChanged = 284,
+  /**
+   * @generated from protobuf enum value: CM_RotateAnchor = 285;
+   */
+  CM_RotateAnchor = 285,
+  /**
+   * @generated from protobuf enum value: CM_ListenForResponseFound = 286;
+   */
+  CM_ListenForResponseFound = 286,
+  /**
+   * @generated from protobuf enum value: CM_MAX_BASE = 300;
+   */
+  CM_MAX_BASE = 300,
 }
 /**
  * @generated from protobuf enum EClientUIEvent
  */
 export enum EClientUIEvent {
-	/**
-	 * @generated from protobuf enum value: EClientUIEvent_Invalid = 0;
-	 */
-	EClientUIEvent_Invalid = 0,
-	/**
-	 * @generated from protobuf enum value: EClientUIEvent_DialogFinished = 1;
-	 */
-	EClientUIEvent_DialogFinished = 1,
-	/**
-	 * @generated from protobuf enum value: EClientUIEvent_FireOutput = 2;
-	 */
-	EClientUIEvent_FireOutput = 2,
+  /**
+   * @generated from protobuf enum value: EClientUIEvent_Invalid = 0;
+   */
+  EClientUIEvent_Invalid = 0,
+  /**
+   * @generated from protobuf enum value: EClientUIEvent_DialogFinished = 1;
+   */
+  EClientUIEvent_DialogFinished = 1,
+  /**
+   * @generated from protobuf enum value: EClientUIEvent_FireOutput = 2;
+   */
+  EClientUIEvent_FireOutput = 2,
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CClientMsg_CustomGameEvent$Type extends MessageType<CClientMsg_CustomGameEvent> {
-	constructor() {
-		super("CClientMsg_CustomGameEvent", [
-			{
-				no: 1,
-				name: "event_name",
-				kind: "scalar",
-				localName: "event_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "data",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CClientMsg_CustomGameEvent>): CClientMsg_CustomGameEvent {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CClientMsg_CustomGameEvent>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CClientMsg_CustomGameEvent,
-	): CClientMsg_CustomGameEvent {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string event_name */ 1:
-					message.event_name = reader.string();
-					break;
-				case /* optional bytes data */ 2:
-					message.data = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CClientMsg_CustomGameEvent,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string event_name = 1; */
-		if (message.event_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.event_name);
-		/* optional bytes data = 2; */
-		if (message.data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.data);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CClientMsg_CustomGameEvent", [
+      {
+        no: 1,
+        name: "event_name",
+        kind: "scalar",
+        localName: "event_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "data",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CClientMsg_CustomGameEvent>): CClientMsg_CustomGameEvent {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CClientMsg_CustomGameEvent>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CClientMsg_CustomGameEvent,
+  ): CClientMsg_CustomGameEvent {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string event_name */ 1:
+          message.event_name = reader.string();
+          break;
+        case /* optional bytes data */ 2:
+          message.data = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CClientMsg_CustomGameEvent,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string event_name = 1; */
+    if (message.event_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.event_name);
+    /* optional bytes data = 2; */
+    if (message.data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.data);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CClientMsg_CustomGameEvent
@@ -240,83 +240,83 @@ class CClientMsg_CustomGameEvent$Type extends MessageType<CClientMsg_CustomGameE
 export const CClientMsg_CustomGameEvent = new CClientMsg_CustomGameEvent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CClientMsg_CustomGameEventBounce$Type extends MessageType<CClientMsg_CustomGameEventBounce> {
-	constructor() {
-		super("CClientMsg_CustomGameEventBounce", [
-			{
-				no: 1,
-				name: "event_name",
-				kind: "scalar",
-				localName: "event_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "data",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 3,
-				name: "player_slot",
-				kind: "scalar",
-				localName: "player_slot",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CClientMsg_CustomGameEventBounce>): CClientMsg_CustomGameEventBounce {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CClientMsg_CustomGameEventBounce>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CClientMsg_CustomGameEventBounce,
-	): CClientMsg_CustomGameEventBounce {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string event_name */ 1:
-					message.event_name = reader.string();
-					break;
-				case /* optional bytes data */ 2:
-					message.data = reader.bytes();
-					break;
-				case /* optional int32 player_slot */ 3:
-					message.player_slot = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CClientMsg_CustomGameEventBounce,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string event_name = 1; */
-		if (message.event_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.event_name);
-		/* optional bytes data = 2; */
-		if (message.data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.data);
-		/* optional int32 player_slot = 3; */
-		if (message.player_slot !== undefined) writer.tag(3, WireType.Varint).int32(message.player_slot);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CClientMsg_CustomGameEventBounce", [
+      {
+        no: 1,
+        name: "event_name",
+        kind: "scalar",
+        localName: "event_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "data",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 3,
+        name: "player_slot",
+        kind: "scalar",
+        localName: "player_slot",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CClientMsg_CustomGameEventBounce>): CClientMsg_CustomGameEventBounce {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CClientMsg_CustomGameEventBounce>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CClientMsg_CustomGameEventBounce,
+  ): CClientMsg_CustomGameEventBounce {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string event_name */ 1:
+          message.event_name = reader.string();
+          break;
+        case /* optional bytes data */ 2:
+          message.data = reader.bytes();
+          break;
+        case /* optional int32 player_slot */ 3:
+          message.player_slot = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CClientMsg_CustomGameEventBounce,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string event_name = 1; */
+    if (message.event_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.event_name);
+    /* optional bytes data = 2; */
+    if (message.data !== undefined) writer.tag(2, WireType.LengthDelimited).bytes(message.data);
+    /* optional int32 player_slot = 3; */
+    if (message.player_slot !== undefined) writer.tag(3, WireType.Varint).int32(message.player_slot);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CClientMsg_CustomGameEventBounce
@@ -324,107 +324,107 @@ class CClientMsg_CustomGameEventBounce$Type extends MessageType<CClientMsg_Custo
 export const CClientMsg_CustomGameEventBounce = new CClientMsg_CustomGameEventBounce$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CClientMsg_ClientUIEvent$Type extends MessageType<CClientMsg_ClientUIEvent> {
-	constructor() {
-		super("CClientMsg_ClientUIEvent", [
-			{
-				no: 1,
-				name: "event",
-				kind: "enum",
-				opt: true,
-				T: () => ["EClientUIEvent", EClientUIEvent],
-			},
-			{
-				no: 2,
-				name: "ent_ehandle",
-				kind: "scalar",
-				localName: "ent_ehandle",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "client_ehandle",
-				kind: "scalar",
-				localName: "client_ehandle",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "data1",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 5,
-				name: "data2",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CClientMsg_ClientUIEvent>): CClientMsg_ClientUIEvent {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CClientMsg_ClientUIEvent>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CClientMsg_ClientUIEvent,
-	): CClientMsg_ClientUIEvent {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional EClientUIEvent event */ 1:
-					message.event = reader.int32();
-					break;
-				case /* optional uint32 ent_ehandle */ 2:
-					message.ent_ehandle = reader.uint32();
-					break;
-				case /* optional uint32 client_ehandle */ 3:
-					message.client_ehandle = reader.uint32();
-					break;
-				case /* optional string data1 */ 4:
-					message.data1 = reader.string();
-					break;
-				case /* optional string data2 */ 5:
-					message.data2 = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CClientMsg_ClientUIEvent,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional EClientUIEvent event = 1; */
-		if (message.event !== undefined) writer.tag(1, WireType.Varint).int32(message.event);
-		/* optional uint32 ent_ehandle = 2; */
-		if (message.ent_ehandle !== undefined) writer.tag(2, WireType.Varint).uint32(message.ent_ehandle);
-		/* optional uint32 client_ehandle = 3; */
-		if (message.client_ehandle !== undefined) writer.tag(3, WireType.Varint).uint32(message.client_ehandle);
-		/* optional string data1 = 4; */
-		if (message.data1 !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.data1);
-		/* optional string data2 = 5; */
-		if (message.data2 !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.data2);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CClientMsg_ClientUIEvent", [
+      {
+        no: 1,
+        name: "event",
+        kind: "enum",
+        opt: true,
+        T: () => ["EClientUIEvent", EClientUIEvent],
+      },
+      {
+        no: 2,
+        name: "ent_ehandle",
+        kind: "scalar",
+        localName: "ent_ehandle",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "client_ehandle",
+        kind: "scalar",
+        localName: "client_ehandle",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "data1",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 5,
+        name: "data2",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CClientMsg_ClientUIEvent>): CClientMsg_ClientUIEvent {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CClientMsg_ClientUIEvent>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CClientMsg_ClientUIEvent,
+  ): CClientMsg_ClientUIEvent {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional EClientUIEvent event */ 1:
+          message.event = reader.int32();
+          break;
+        case /* optional uint32 ent_ehandle */ 2:
+          message.ent_ehandle = reader.uint32();
+          break;
+        case /* optional uint32 client_ehandle */ 3:
+          message.client_ehandle = reader.uint32();
+          break;
+        case /* optional string data1 */ 4:
+          message.data1 = reader.string();
+          break;
+        case /* optional string data2 */ 5:
+          message.data2 = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CClientMsg_ClientUIEvent,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional EClientUIEvent event = 1; */
+    if (message.event !== undefined) writer.tag(1, WireType.Varint).int32(message.event);
+    /* optional uint32 ent_ehandle = 2; */
+    if (message.ent_ehandle !== undefined) writer.tag(2, WireType.Varint).uint32(message.ent_ehandle);
+    /* optional uint32 client_ehandle = 3; */
+    if (message.client_ehandle !== undefined) writer.tag(3, WireType.Varint).uint32(message.client_ehandle);
+    /* optional string data1 = 4; */
+    if (message.data1 !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.data1);
+    /* optional string data2 = 5; */
+    if (message.data2 !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.data2);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CClientMsg_ClientUIEvent
@@ -432,59 +432,59 @@ class CClientMsg_ClientUIEvent$Type extends MessageType<CClientMsg_ClientUIEvent
 export const CClientMsg_ClientUIEvent = new CClientMsg_ClientUIEvent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CClientMsg_DevPaletteVisibilityChangedEvent$Type extends MessageType<CClientMsg_DevPaletteVisibilityChangedEvent> {
-	constructor() {
-		super("CClientMsg_DevPaletteVisibilityChangedEvent", [
-			{
-				no: 1,
-				name: "visible",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CClientMsg_DevPaletteVisibilityChangedEvent>,
-	): CClientMsg_DevPaletteVisibilityChangedEvent {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CClientMsg_DevPaletteVisibilityChangedEvent>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CClientMsg_DevPaletteVisibilityChangedEvent,
-	): CClientMsg_DevPaletteVisibilityChangedEvent {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool visible */ 1:
-					message.visible = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CClientMsg_DevPaletteVisibilityChangedEvent,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool visible = 1; */
-		if (message.visible !== undefined) writer.tag(1, WireType.Varint).bool(message.visible);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CClientMsg_DevPaletteVisibilityChangedEvent", [
+      {
+        no: 1,
+        name: "visible",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CClientMsg_DevPaletteVisibilityChangedEvent>,
+  ): CClientMsg_DevPaletteVisibilityChangedEvent {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CClientMsg_DevPaletteVisibilityChangedEvent>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CClientMsg_DevPaletteVisibilityChangedEvent,
+  ): CClientMsg_DevPaletteVisibilityChangedEvent {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool visible */ 1:
+          message.visible = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CClientMsg_DevPaletteVisibilityChangedEvent,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool visible = 1; */
+    if (message.visible !== undefined) writer.tag(1, WireType.Varint).bool(message.visible);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CClientMsg_DevPaletteVisibilityChangedEvent
@@ -492,146 +492,146 @@ class CClientMsg_DevPaletteVisibilityChangedEvent$Type extends MessageType<CClie
 export const CClientMsg_DevPaletteVisibilityChangedEvent = new CClientMsg_DevPaletteVisibilityChangedEvent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CClientMsg_WorldUIControllerHasPanelChangedEvent$Type extends MessageType<CClientMsg_WorldUIControllerHasPanelChangedEvent> {
-	constructor() {
-		super("CClientMsg_WorldUIControllerHasPanelChangedEvent", [
-			{
-				no: 1,
-				name: "has_panel",
-				kind: "scalar",
-				localName: "has_panel",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 2,
-				name: "client_ehandle",
-				kind: "scalar",
-				localName: "client_ehandle",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "literal_hand_type",
-				kind: "scalar",
-				localName: "literal_hand_type",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CClientMsg_WorldUIControllerHasPanelChangedEvent>,
-	): CClientMsg_WorldUIControllerHasPanelChangedEvent {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CClientMsg_WorldUIControllerHasPanelChangedEvent>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CClientMsg_WorldUIControllerHasPanelChangedEvent,
-	): CClientMsg_WorldUIControllerHasPanelChangedEvent {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool has_panel */ 1:
-					message.has_panel = reader.bool();
-					break;
-				case /* optional uint32 client_ehandle */ 2:
-					message.client_ehandle = reader.uint32();
-					break;
-				case /* optional uint32 literal_hand_type */ 3:
-					message.literal_hand_type = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CClientMsg_WorldUIControllerHasPanelChangedEvent,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool has_panel = 1; */
-		if (message.has_panel !== undefined) writer.tag(1, WireType.Varint).bool(message.has_panel);
-		/* optional uint32 client_ehandle = 2; */
-		if (message.client_ehandle !== undefined) writer.tag(2, WireType.Varint).uint32(message.client_ehandle);
-		/* optional uint32 literal_hand_type = 3; */
-		if (message.literal_hand_type !== undefined) writer.tag(3, WireType.Varint).uint32(message.literal_hand_type);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CClientMsg_WorldUIControllerHasPanelChangedEvent", [
+      {
+        no: 1,
+        name: "has_panel",
+        kind: "scalar",
+        localName: "has_panel",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 2,
+        name: "client_ehandle",
+        kind: "scalar",
+        localName: "client_ehandle",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "literal_hand_type",
+        kind: "scalar",
+        localName: "literal_hand_type",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CClientMsg_WorldUIControllerHasPanelChangedEvent>,
+  ): CClientMsg_WorldUIControllerHasPanelChangedEvent {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CClientMsg_WorldUIControllerHasPanelChangedEvent>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CClientMsg_WorldUIControllerHasPanelChangedEvent,
+  ): CClientMsg_WorldUIControllerHasPanelChangedEvent {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool has_panel */ 1:
+          message.has_panel = reader.bool();
+          break;
+        case /* optional uint32 client_ehandle */ 2:
+          message.client_ehandle = reader.uint32();
+          break;
+        case /* optional uint32 literal_hand_type */ 3:
+          message.literal_hand_type = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CClientMsg_WorldUIControllerHasPanelChangedEvent,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool has_panel = 1; */
+    if (message.has_panel !== undefined) writer.tag(1, WireType.Varint).bool(message.has_panel);
+    /* optional uint32 client_ehandle = 2; */
+    if (message.client_ehandle !== undefined) writer.tag(2, WireType.Varint).uint32(message.client_ehandle);
+    /* optional uint32 literal_hand_type = 3; */
+    if (message.literal_hand_type !== undefined) writer.tag(3, WireType.Varint).uint32(message.literal_hand_type);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CClientMsg_WorldUIControllerHasPanelChangedEvent
  */
 export const CClientMsg_WorldUIControllerHasPanelChangedEvent =
-	new CClientMsg_WorldUIControllerHasPanelChangedEvent$Type();
+  new CClientMsg_WorldUIControllerHasPanelChangedEvent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CClientMsg_RotateAnchor$Type extends MessageType<CClientMsg_RotateAnchor> {
-	constructor() {
-		super("CClientMsg_RotateAnchor", [
-			{
-				no: 1,
-				name: "angle",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CClientMsg_RotateAnchor>): CClientMsg_RotateAnchor {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CClientMsg_RotateAnchor>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CClientMsg_RotateAnchor,
-	): CClientMsg_RotateAnchor {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float angle */ 1:
-					message.angle = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CClientMsg_RotateAnchor,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional float angle = 1; */
-		if (message.angle !== undefined) writer.tag(1, WireType.Bit32).float(message.angle);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CClientMsg_RotateAnchor", [
+      {
+        no: 1,
+        name: "angle",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CClientMsg_RotateAnchor>): CClientMsg_RotateAnchor {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CClientMsg_RotateAnchor>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CClientMsg_RotateAnchor,
+  ): CClientMsg_RotateAnchor {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float angle */ 1:
+          message.angle = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CClientMsg_RotateAnchor,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional float angle = 1; */
+    if (message.angle !== undefined) writer.tag(1, WireType.Bit32).float(message.angle);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CClientMsg_RotateAnchor
@@ -639,58 +639,58 @@ class CClientMsg_RotateAnchor$Type extends MessageType<CClientMsg_RotateAnchor> 
 export const CClientMsg_RotateAnchor = new CClientMsg_RotateAnchor$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CClientMsg_ListenForResponseFound$Type extends MessageType<CClientMsg_ListenForResponseFound> {
-	constructor() {
-		super("CClientMsg_ListenForResponseFound", [
-			{
-				no: 1,
-				name: "player_slot",
-				kind: "scalar",
-				localName: "player_slot",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CClientMsg_ListenForResponseFound>): CClientMsg_ListenForResponseFound {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CClientMsg_ListenForResponseFound>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CClientMsg_ListenForResponseFound,
-	): CClientMsg_ListenForResponseFound {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 player_slot */ 1:
-					message.player_slot = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CClientMsg_ListenForResponseFound,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 player_slot = 1; */
-		if (message.player_slot !== undefined) writer.tag(1, WireType.Varint).int32(message.player_slot);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CClientMsg_ListenForResponseFound", [
+      {
+        no: 1,
+        name: "player_slot",
+        kind: "scalar",
+        localName: "player_slot",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CClientMsg_ListenForResponseFound>): CClientMsg_ListenForResponseFound {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CClientMsg_ListenForResponseFound>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CClientMsg_ListenForResponseFound,
+  ): CClientMsg_ListenForResponseFound {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 player_slot */ 1:
+          message.player_slot = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CClientMsg_ListenForResponseFound,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 player_slot = 1; */
+    if (message.player_slot !== undefined) writer.tag(1, WireType.Varint).int32(message.player_slot);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CClientMsg_ListenForResponseFound

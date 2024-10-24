@@ -15,428 +15,428 @@ import { CMsgVector } from "./networkbasetypes.js";
  * @generated from protobuf message CMsgVDebugGameSessionIDEvent
  */
 export interface CMsgVDebugGameSessionIDEvent {
-	/**
-	 * @generated from protobuf field: optional int32 clientid = 1;
-	 */
-	clientid?: number;
-	/**
-	 * @generated from protobuf field: optional string gamesessionid = 2;
-	 */
-	gamesessionid?: string;
+  /**
+   * @generated from protobuf field: optional int32 clientid = 1;
+   */
+  clientid?: number;
+  /**
+   * @generated from protobuf field: optional string gamesessionid = 2;
+   */
+  gamesessionid?: string;
 }
 /**
  * @generated from protobuf message CMsgPlaceDecalEvent
  */
 export interface CMsgPlaceDecalEvent {
-	/**
-	 * @generated from protobuf field: optional CMsgVector position = 1;
-	 */
-	position?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector normal = 2;
-	 */
-	normal?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional CMsgVector saxis = 3;
-	 */
-	saxis?: CMsgVector;
-	/**
-	 * @generated from protobuf field: optional uint32 decalmaterialindex = 4;
-	 */
-	decalmaterialindex?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 5;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 color = 6;
-	 */
-	color?: number;
-	/**
-	 * @generated from protobuf field: optional float width = 7;
-	 */
-	width?: number;
-	/**
-	 * @generated from protobuf field: optional float height = 8;
-	 */
-	height?: number;
-	/**
-	 * @generated from protobuf field: optional float depth = 9;
-	 */
-	depth?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 entityhandleindex = 10;
-	 */
-	entityhandleindex?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 skeletoninstancehash = 11;
-	 */
-	skeletoninstancehash?: number;
-	/**
-	 * @generated from protobuf field: optional int32 boneindex = 12;
-	 */
-	boneindex?: number;
-	/**
-	 * @generated from protobuf field: optional bool translucenthit = 13;
-	 */
-	translucenthit?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_adjacent = 14;
-	 */
-	is_adjacent?: boolean;
+  /**
+   * @generated from protobuf field: optional CMsgVector position = 1;
+   */
+  position?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector normal = 2;
+   */
+  normal?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional CMsgVector saxis = 3;
+   */
+  saxis?: CMsgVector;
+  /**
+   * @generated from protobuf field: optional uint32 decalmaterialindex = 4;
+   */
+  decalmaterialindex?: number;
+  /**
+   * @generated from protobuf field: optional uint32 flags = 5;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 color = 6;
+   */
+  color?: number;
+  /**
+   * @generated from protobuf field: optional float width = 7;
+   */
+  width?: number;
+  /**
+   * @generated from protobuf field: optional float height = 8;
+   */
+  height?: number;
+  /**
+   * @generated from protobuf field: optional float depth = 9;
+   */
+  depth?: number;
+  /**
+   * @generated from protobuf field: optional uint32 entityhandleindex = 10;
+   */
+  entityhandleindex?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 skeletoninstancehash = 11;
+   */
+  skeletoninstancehash?: number;
+  /**
+   * @generated from protobuf field: optional int32 boneindex = 12;
+   */
+  boneindex?: number;
+  /**
+   * @generated from protobuf field: optional bool translucenthit = 13;
+   */
+  translucenthit?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_adjacent = 14;
+   */
+  is_adjacent?: boolean;
 }
 /**
  * @generated from protobuf message CMsgClearWorldDecalsEvent
  */
 export interface CMsgClearWorldDecalsEvent {
-	/**
-	 * @generated from protobuf field: optional uint32 flagstoclear = 1;
-	 */
-	flagstoclear?: number;
+  /**
+   * @generated from protobuf field: optional uint32 flagstoclear = 1;
+   */
+  flagstoclear?: number;
 }
 /**
  * @generated from protobuf message CMsgClearEntityDecalsEvent
  */
 export interface CMsgClearEntityDecalsEvent {
-	/**
-	 * @generated from protobuf field: optional uint32 flagstoclear = 1;
-	 */
-	flagstoclear?: number;
+  /**
+   * @generated from protobuf field: optional uint32 flagstoclear = 1;
+   */
+  flagstoclear?: number;
 }
 /**
  * @generated from protobuf message CMsgClearDecalsForSkeletonInstanceEvent
  */
 export interface CMsgClearDecalsForSkeletonInstanceEvent {
-	/**
-	 * @generated from protobuf field: optional uint32 flagstoclear = 1;
-	 */
-	flagstoclear?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 entityhandleindex = 2;
-	 */
-	entityhandleindex?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 skeletoninstancehash = 3;
-	 */
-	skeletoninstancehash?: number;
+  /**
+   * @generated from protobuf field: optional uint32 flagstoclear = 1;
+   */
+  flagstoclear?: number;
+  /**
+   * @generated from protobuf field: optional uint32 entityhandleindex = 2;
+   */
+  entityhandleindex?: number;
+  /**
+   * @generated from protobuf field: optional uint32 skeletoninstancehash = 3;
+   */
+  skeletoninstancehash?: number;
 }
 /**
  * @generated from protobuf message CMsgSource1LegacyGameEventList
  */
 export interface CMsgSource1LegacyGameEventList {
-	/**
-	 * @generated from protobuf field: repeated CMsgSource1LegacyGameEventList.descriptor_t descriptors = 1;
-	 */
-	descriptors: CMsgSource1LegacyGameEventList_descriptor_t[];
+  /**
+   * @generated from protobuf field: repeated CMsgSource1LegacyGameEventList.descriptor_t descriptors = 1;
+   */
+  descriptors: CMsgSource1LegacyGameEventList_descriptor_t[];
 }
 /**
  * @generated from protobuf message CMsgSource1LegacyGameEventList.key_t
  */
 export interface CMsgSource1LegacyGameEventList_key_t {
-	/**
-	 * @generated from protobuf field: optional int32 type = 1;
-	 */
-	type?: number;
-	/**
-	 * @generated from protobuf field: optional string name = 2;
-	 */
-	name?: string;
+  /**
+   * @generated from protobuf field: optional int32 type = 1;
+   */
+  type?: number;
+  /**
+   * @generated from protobuf field: optional string name = 2;
+   */
+  name?: string;
 }
 /**
  * @generated from protobuf message CMsgSource1LegacyGameEventList.descriptor_t
  */
 export interface CMsgSource1LegacyGameEventList_descriptor_t {
-	/**
-	 * @generated from protobuf field: optional int32 eventid = 1;
-	 */
-	eventid?: number;
-	/**
-	 * @generated from protobuf field: optional string name = 2;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: repeated CMsgSource1LegacyGameEventList.key_t keys = 3;
-	 */
-	keys: CMsgSource1LegacyGameEventList_key_t[];
+  /**
+   * @generated from protobuf field: optional int32 eventid = 1;
+   */
+  eventid?: number;
+  /**
+   * @generated from protobuf field: optional string name = 2;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: repeated CMsgSource1LegacyGameEventList.key_t keys = 3;
+   */
+  keys: CMsgSource1LegacyGameEventList_key_t[];
 }
 /**
  * @generated from protobuf message CMsgSource1LegacyListenEvents
  */
 export interface CMsgSource1LegacyListenEvents {
-	/**
-	 * @generated from protobuf field: optional int32 playerslot = 1;
-	 */
-	playerslot?: number;
-	/**
-	 * @generated from protobuf field: repeated uint32 eventarraybits = 2;
-	 */
-	eventarraybits: number[];
+  /**
+   * @generated from protobuf field: optional int32 playerslot = 1;
+   */
+  playerslot?: number;
+  /**
+   * @generated from protobuf field: repeated uint32 eventarraybits = 2;
+   */
+  eventarraybits: number[];
 }
 /**
  * @generated from protobuf message CMsgSource1LegacyGameEvent
  */
 export interface CMsgSource1LegacyGameEvent {
-	/**
-	 * @generated from protobuf field: optional string event_name = 1;
-	 */
-	event_name?: string;
-	/**
-	 * @generated from protobuf field: optional int32 eventid = 2;
-	 */
-	eventid?: number;
-	/**
-	 * @generated from protobuf field: repeated CMsgSource1LegacyGameEvent.key_t keys = 3;
-	 */
-	keys: CMsgSource1LegacyGameEvent_key_t[];
-	/**
-	 * @generated from protobuf field: optional int32 server_tick = 4;
-	 */
-	server_tick?: number;
-	/**
-	 * @generated from protobuf field: optional int32 passthrough = 5;
-	 */
-	passthrough?: number;
+  /**
+   * @generated from protobuf field: optional string event_name = 1;
+   */
+  event_name?: string;
+  /**
+   * @generated from protobuf field: optional int32 eventid = 2;
+   */
+  eventid?: number;
+  /**
+   * @generated from protobuf field: repeated CMsgSource1LegacyGameEvent.key_t keys = 3;
+   */
+  keys: CMsgSource1LegacyGameEvent_key_t[];
+  /**
+   * @generated from protobuf field: optional int32 server_tick = 4;
+   */
+  server_tick?: number;
+  /**
+   * @generated from protobuf field: optional int32 passthrough = 5;
+   */
+  passthrough?: number;
 }
 /**
  * @generated from protobuf message CMsgSource1LegacyGameEvent.key_t
  */
 export interface CMsgSource1LegacyGameEvent_key_t {
-	/**
-	 * @generated from protobuf field: optional int32 type = 1;
-	 */
-	type?: number;
-	/**
-	 * @generated from protobuf field: optional string val_string = 2;
-	 */
-	val_string?: string;
-	/**
-	 * @generated from protobuf field: optional float val_float = 3;
-	 */
-	val_float?: number;
-	/**
-	 * @generated from protobuf field: optional int32 val_long = 4;
-	 */
-	val_long?: number;
-	/**
-	 * @generated from protobuf field: optional int32 val_short = 5;
-	 */
-	val_short?: number;
-	/**
-	 * @generated from protobuf field: optional int32 val_byte = 6;
-	 */
-	val_byte?: number;
-	/**
-	 * @generated from protobuf field: optional bool val_bool = 7;
-	 */
-	val_bool?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint64 val_uint64 = 8;
-	 */
-	val_uint64?: bigint;
+  /**
+   * @generated from protobuf field: optional int32 type = 1;
+   */
+  type?: number;
+  /**
+   * @generated from protobuf field: optional string val_string = 2;
+   */
+  val_string?: string;
+  /**
+   * @generated from protobuf field: optional float val_float = 3;
+   */
+  val_float?: number;
+  /**
+   * @generated from protobuf field: optional int32 val_long = 4;
+   */
+  val_long?: number;
+  /**
+   * @generated from protobuf field: optional int32 val_short = 5;
+   */
+  val_short?: number;
+  /**
+   * @generated from protobuf field: optional int32 val_byte = 6;
+   */
+  val_byte?: number;
+  /**
+   * @generated from protobuf field: optional bool val_bool = 7;
+   */
+  val_bool?: boolean;
+  /**
+   * @generated from protobuf field: optional uint64 val_uint64 = 8;
+   */
+  val_uint64?: bigint;
 }
 /**
  * @generated from protobuf message CMsgSosStartSoundEvent
  */
 export interface CMsgSosStartSoundEvent {
-	/**
-	 * @generated from protobuf field: optional int32 soundevent_guid = 1;
-	 */
-	soundevent_guid?: number;
-	/**
-	 * @generated from protobuf field: optional fixed32 soundevent_hash = 2;
-	 */
-	soundevent_hash?: number;
-	/**
-	 * @generated from protobuf field: optional int32 source_entity_index = 3;
-	 */
-	source_entity_index?: number;
-	/**
-	 * @generated from protobuf field: optional int32 seed = 4;
-	 */
-	seed?: number;
-	/**
-	 * @generated from protobuf field: optional bytes packed_params = 5;
-	 */
-	packed_params?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional float start_time = 6;
-	 */
-	start_time?: number;
+  /**
+   * @generated from protobuf field: optional int32 soundevent_guid = 1;
+   */
+  soundevent_guid?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 soundevent_hash = 2;
+   */
+  soundevent_hash?: number;
+  /**
+   * @generated from protobuf field: optional int32 source_entity_index = 3;
+   */
+  source_entity_index?: number;
+  /**
+   * @generated from protobuf field: optional int32 seed = 4;
+   */
+  seed?: number;
+  /**
+   * @generated from protobuf field: optional bytes packed_params = 5;
+   */
+  packed_params?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional float start_time = 6;
+   */
+  start_time?: number;
 }
 /**
  * @generated from protobuf message CMsgSosStopSoundEvent
  */
 export interface CMsgSosStopSoundEvent {
-	/**
-	 * @generated from protobuf field: optional int32 soundevent_guid = 1;
-	 */
-	soundevent_guid?: number;
+  /**
+   * @generated from protobuf field: optional int32 soundevent_guid = 1;
+   */
+  soundevent_guid?: number;
 }
 /**
  * @generated from protobuf message CMsgSosStopSoundEventHash
  */
 export interface CMsgSosStopSoundEventHash {
-	/**
-	 * @generated from protobuf field: optional fixed32 soundevent_hash = 1;
-	 */
-	soundevent_hash?: number;
-	/**
-	 * @generated from protobuf field: optional int32 source_entity_index = 2;
-	 */
-	source_entity_index?: number;
+  /**
+   * @generated from protobuf field: optional fixed32 soundevent_hash = 1;
+   */
+  soundevent_hash?: number;
+  /**
+   * @generated from protobuf field: optional int32 source_entity_index = 2;
+   */
+  source_entity_index?: number;
 }
 /**
  * @generated from protobuf message CMsgSosSetSoundEventParams
  */
 export interface CMsgSosSetSoundEventParams {
-	/**
-	 * @generated from protobuf field: optional int32 soundevent_guid = 1;
-	 */
-	soundevent_guid?: number;
-	/**
-	 * @generated from protobuf field: optional bytes packed_params = 5;
-	 */
-	packed_params?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional int32 soundevent_guid = 1;
+   */
+  soundevent_guid?: number;
+  /**
+   * @generated from protobuf field: optional bytes packed_params = 5;
+   */
+  packed_params?: Uint8Array;
 }
 /**
  * @generated from protobuf message CMsgSosSetLibraryStackFields
  */
 export interface CMsgSosSetLibraryStackFields {
-	/**
-	 * @generated from protobuf field: optional fixed32 stack_hash = 1;
-	 */
-	stack_hash?: number;
-	/**
-	 * @generated from protobuf field: optional bytes packed_fields = 5;
-	 */
-	packed_fields?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional fixed32 stack_hash = 1;
+   */
+  stack_hash?: number;
+  /**
+   * @generated from protobuf field: optional bytes packed_fields = 5;
+   */
+  packed_fields?: Uint8Array;
 }
 /**
  * @generated from protobuf enum EBaseGameEvents
  */
 export enum EBaseGameEvents {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: GE_VDebugGameSessionIDEvent = 200;
-	 */
-	GE_VDebugGameSessionIDEvent = 200,
-	/**
-	 * @generated from protobuf enum value: GE_PlaceDecalEvent = 201;
-	 */
-	GE_PlaceDecalEvent = 201,
-	/**
-	 * @generated from protobuf enum value: GE_ClearWorldDecalsEvent = 202;
-	 */
-	GE_ClearWorldDecalsEvent = 202,
-	/**
-	 * @generated from protobuf enum value: GE_ClearEntityDecalsEvent = 203;
-	 */
-	GE_ClearEntityDecalsEvent = 203,
-	/**
-	 * @generated from protobuf enum value: GE_ClearDecalsForSkeletonInstanceEvent = 204;
-	 */
-	GE_ClearDecalsForSkeletonInstanceEvent = 204,
-	/**
-	 * @generated from protobuf enum value: GE_Source1LegacyGameEventList = 205;
-	 */
-	GE_Source1LegacyGameEventList = 205,
-	/**
-	 * @generated from protobuf enum value: GE_Source1LegacyListenEvents = 206;
-	 */
-	GE_Source1LegacyListenEvents = 206,
-	/**
-	 * @generated from protobuf enum value: GE_Source1LegacyGameEvent = 207;
-	 */
-	GE_Source1LegacyGameEvent = 207,
-	/**
-	 * @generated from protobuf enum value: GE_SosStartSoundEvent = 208;
-	 */
-	GE_SosStartSoundEvent = 208,
-	/**
-	 * @generated from protobuf enum value: GE_SosStopSoundEvent = 209;
-	 */
-	GE_SosStopSoundEvent = 209,
-	/**
-	 * @generated from protobuf enum value: GE_SosSetSoundEventParams = 210;
-	 */
-	GE_SosSetSoundEventParams = 210,
-	/**
-	 * @generated from protobuf enum value: GE_SosSetLibraryStackFields = 211;
-	 */
-	GE_SosSetLibraryStackFields = 211,
-	/**
-	 * @generated from protobuf enum value: GE_SosStopSoundEventHash = 212;
-	 */
-	GE_SosStopSoundEventHash = 212,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: GE_VDebugGameSessionIDEvent = 200;
+   */
+  GE_VDebugGameSessionIDEvent = 200,
+  /**
+   * @generated from protobuf enum value: GE_PlaceDecalEvent = 201;
+   */
+  GE_PlaceDecalEvent = 201,
+  /**
+   * @generated from protobuf enum value: GE_ClearWorldDecalsEvent = 202;
+   */
+  GE_ClearWorldDecalsEvent = 202,
+  /**
+   * @generated from protobuf enum value: GE_ClearEntityDecalsEvent = 203;
+   */
+  GE_ClearEntityDecalsEvent = 203,
+  /**
+   * @generated from protobuf enum value: GE_ClearDecalsForSkeletonInstanceEvent = 204;
+   */
+  GE_ClearDecalsForSkeletonInstanceEvent = 204,
+  /**
+   * @generated from protobuf enum value: GE_Source1LegacyGameEventList = 205;
+   */
+  GE_Source1LegacyGameEventList = 205,
+  /**
+   * @generated from protobuf enum value: GE_Source1LegacyListenEvents = 206;
+   */
+  GE_Source1LegacyListenEvents = 206,
+  /**
+   * @generated from protobuf enum value: GE_Source1LegacyGameEvent = 207;
+   */
+  GE_Source1LegacyGameEvent = 207,
+  /**
+   * @generated from protobuf enum value: GE_SosStartSoundEvent = 208;
+   */
+  GE_SosStartSoundEvent = 208,
+  /**
+   * @generated from protobuf enum value: GE_SosStopSoundEvent = 209;
+   */
+  GE_SosStopSoundEvent = 209,
+  /**
+   * @generated from protobuf enum value: GE_SosSetSoundEventParams = 210;
+   */
+  GE_SosSetSoundEventParams = 210,
+  /**
+   * @generated from protobuf enum value: GE_SosSetLibraryStackFields = 211;
+   */
+  GE_SosSetLibraryStackFields = 211,
+  /**
+   * @generated from protobuf enum value: GE_SosStopSoundEventHash = 212;
+   */
+  GE_SosStopSoundEventHash = 212,
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgVDebugGameSessionIDEvent$Type extends MessageType<CMsgVDebugGameSessionIDEvent> {
-	constructor() {
-		super("CMsgVDebugGameSessionIDEvent", [
-			{
-				no: 1,
-				name: "clientid",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "gamesessionid",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgVDebugGameSessionIDEvent>): CMsgVDebugGameSessionIDEvent {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgVDebugGameSessionIDEvent>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgVDebugGameSessionIDEvent,
-	): CMsgVDebugGameSessionIDEvent {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 clientid */ 1:
-					message.clientid = reader.int32();
-					break;
-				case /* optional string gamesessionid */ 2:
-					message.gamesessionid = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgVDebugGameSessionIDEvent,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 clientid = 1; */
-		if (message.clientid !== undefined) writer.tag(1, WireType.Varint).int32(message.clientid);
-		/* optional string gamesessionid = 2; */
-		if (message.gamesessionid !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.gamesessionid);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgVDebugGameSessionIDEvent", [
+      {
+        no: 1,
+        name: "clientid",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "gamesessionid",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgVDebugGameSessionIDEvent>): CMsgVDebugGameSessionIDEvent {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgVDebugGameSessionIDEvent>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgVDebugGameSessionIDEvent,
+  ): CMsgVDebugGameSessionIDEvent {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 clientid */ 1:
+          message.clientid = reader.int32();
+          break;
+        case /* optional string gamesessionid */ 2:
+          message.gamesessionid = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgVDebugGameSessionIDEvent,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 clientid = 1; */
+    if (message.clientid !== undefined) writer.tag(1, WireType.Varint).int32(message.clientid);
+    /* optional string gamesessionid = 2; */
+    if (message.gamesessionid !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.gamesessionid);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgVDebugGameSessionIDEvent
@@ -444,196 +444,196 @@ class CMsgVDebugGameSessionIDEvent$Type extends MessageType<CMsgVDebugGameSessio
 export const CMsgVDebugGameSessionIDEvent = new CMsgVDebugGameSessionIDEvent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgPlaceDecalEvent$Type extends MessageType<CMsgPlaceDecalEvent> {
-	constructor() {
-		super("CMsgPlaceDecalEvent", [
-			{ no: 1, name: "position", kind: "message", T: () => CMsgVector },
-			{ no: 2, name: "normal", kind: "message", T: () => CMsgVector },
-			{ no: 3, name: "saxis", kind: "message", T: () => CMsgVector },
-			{
-				no: 4,
-				name: "decalmaterialindex",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "color",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 7,
-				name: "width",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 8,
-				name: "height",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 9,
-				name: "depth",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 10,
-				name: "entityhandleindex",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 11,
-				name: "skeletoninstancehash",
-				kind: "scalar",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 12,
-				name: "boneindex",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 13,
-				name: "translucenthit",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 14,
-				name: "is_adjacent",
-				kind: "scalar",
-				localName: "is_adjacent",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgPlaceDecalEvent>): CMsgPlaceDecalEvent {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgPlaceDecalEvent>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgPlaceDecalEvent,
-	): CMsgPlaceDecalEvent {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgVector position */ 1:
-					message.position = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.position);
-					break;
-				case /* optional CMsgVector normal */ 2:
-					message.normal = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.normal);
-					break;
-				case /* optional CMsgVector saxis */ 3:
-					message.saxis = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.saxis);
-					break;
-				case /* optional uint32 decalmaterialindex */ 4:
-					message.decalmaterialindex = reader.uint32();
-					break;
-				case /* optional uint32 flags */ 5:
-					message.flags = reader.uint32();
-					break;
-				case /* optional fixed32 color */ 6:
-					message.color = reader.fixed32();
-					break;
-				case /* optional float width */ 7:
-					message.width = reader.float();
-					break;
-				case /* optional float height */ 8:
-					message.height = reader.float();
-					break;
-				case /* optional float depth */ 9:
-					message.depth = reader.float();
-					break;
-				case /* optional uint32 entityhandleindex */ 10:
-					message.entityhandleindex = reader.uint32();
-					break;
-				case /* optional fixed32 skeletoninstancehash */ 11:
-					message.skeletoninstancehash = reader.fixed32();
-					break;
-				case /* optional int32 boneindex */ 12:
-					message.boneindex = reader.int32();
-					break;
-				case /* optional bool translucenthit */ 13:
-					message.translucenthit = reader.bool();
-					break;
-				case /* optional bool is_adjacent */ 14:
-					message.is_adjacent = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgPlaceDecalEvent, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional CMsgVector position = 1; */
-		if (message.position)
-			CMsgVector.internalBinaryWrite(message.position, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector normal = 2; */
-		if (message.normal)
-			CMsgVector.internalBinaryWrite(message.normal, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-		/* optional CMsgVector saxis = 3; */
-		if (message.saxis)
-			CMsgVector.internalBinaryWrite(message.saxis, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
-		/* optional uint32 decalmaterialindex = 4; */
-		if (message.decalmaterialindex !== undefined) writer.tag(4, WireType.Varint).uint32(message.decalmaterialindex);
-		/* optional uint32 flags = 5; */
-		if (message.flags !== undefined) writer.tag(5, WireType.Varint).uint32(message.flags);
-		/* optional fixed32 color = 6; */
-		if (message.color !== undefined) writer.tag(6, WireType.Bit32).fixed32(message.color);
-		/* optional float width = 7; */
-		if (message.width !== undefined) writer.tag(7, WireType.Bit32).float(message.width);
-		/* optional float height = 8; */
-		if (message.height !== undefined) writer.tag(8, WireType.Bit32).float(message.height);
-		/* optional float depth = 9; */
-		if (message.depth !== undefined) writer.tag(9, WireType.Bit32).float(message.depth);
-		/* optional uint32 entityhandleindex = 10; */
-		if (message.entityhandleindex !== undefined) writer.tag(10, WireType.Varint).uint32(message.entityhandleindex);
-		/* optional fixed32 skeletoninstancehash = 11; */
-		if (message.skeletoninstancehash !== undefined)
-			writer.tag(11, WireType.Bit32).fixed32(message.skeletoninstancehash);
-		/* optional int32 boneindex = 12; */
-		if (message.boneindex !== undefined) writer.tag(12, WireType.Varint).int32(message.boneindex);
-		/* optional bool translucenthit = 13; */
-		if (message.translucenthit !== undefined) writer.tag(13, WireType.Varint).bool(message.translucenthit);
-		/* optional bool is_adjacent = 14; */
-		if (message.is_adjacent !== undefined) writer.tag(14, WireType.Varint).bool(message.is_adjacent);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgPlaceDecalEvent", [
+      { no: 1, name: "position", kind: "message", T: () => CMsgVector },
+      { no: 2, name: "normal", kind: "message", T: () => CMsgVector },
+      { no: 3, name: "saxis", kind: "message", T: () => CMsgVector },
+      {
+        no: 4,
+        name: "decalmaterialindex",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "color",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 7,
+        name: "width",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 8,
+        name: "height",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 9,
+        name: "depth",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 10,
+        name: "entityhandleindex",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 11,
+        name: "skeletoninstancehash",
+        kind: "scalar",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 12,
+        name: "boneindex",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 13,
+        name: "translucenthit",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 14,
+        name: "is_adjacent",
+        kind: "scalar",
+        localName: "is_adjacent",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgPlaceDecalEvent>): CMsgPlaceDecalEvent {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgPlaceDecalEvent>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgPlaceDecalEvent,
+  ): CMsgPlaceDecalEvent {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgVector position */ 1:
+          message.position = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.position);
+          break;
+        case /* optional CMsgVector normal */ 2:
+          message.normal = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.normal);
+          break;
+        case /* optional CMsgVector saxis */ 3:
+          message.saxis = CMsgVector.internalBinaryRead(reader, reader.uint32(), options, message.saxis);
+          break;
+        case /* optional uint32 decalmaterialindex */ 4:
+          message.decalmaterialindex = reader.uint32();
+          break;
+        case /* optional uint32 flags */ 5:
+          message.flags = reader.uint32();
+          break;
+        case /* optional fixed32 color */ 6:
+          message.color = reader.fixed32();
+          break;
+        case /* optional float width */ 7:
+          message.width = reader.float();
+          break;
+        case /* optional float height */ 8:
+          message.height = reader.float();
+          break;
+        case /* optional float depth */ 9:
+          message.depth = reader.float();
+          break;
+        case /* optional uint32 entityhandleindex */ 10:
+          message.entityhandleindex = reader.uint32();
+          break;
+        case /* optional fixed32 skeletoninstancehash */ 11:
+          message.skeletoninstancehash = reader.fixed32();
+          break;
+        case /* optional int32 boneindex */ 12:
+          message.boneindex = reader.int32();
+          break;
+        case /* optional bool translucenthit */ 13:
+          message.translucenthit = reader.bool();
+          break;
+        case /* optional bool is_adjacent */ 14:
+          message.is_adjacent = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgPlaceDecalEvent, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional CMsgVector position = 1; */
+    if (message.position)
+      CMsgVector.internalBinaryWrite(message.position, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector normal = 2; */
+    if (message.normal)
+      CMsgVector.internalBinaryWrite(message.normal, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+    /* optional CMsgVector saxis = 3; */
+    if (message.saxis)
+      CMsgVector.internalBinaryWrite(message.saxis, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
+    /* optional uint32 decalmaterialindex = 4; */
+    if (message.decalmaterialindex !== undefined) writer.tag(4, WireType.Varint).uint32(message.decalmaterialindex);
+    /* optional uint32 flags = 5; */
+    if (message.flags !== undefined) writer.tag(5, WireType.Varint).uint32(message.flags);
+    /* optional fixed32 color = 6; */
+    if (message.color !== undefined) writer.tag(6, WireType.Bit32).fixed32(message.color);
+    /* optional float width = 7; */
+    if (message.width !== undefined) writer.tag(7, WireType.Bit32).float(message.width);
+    /* optional float height = 8; */
+    if (message.height !== undefined) writer.tag(8, WireType.Bit32).float(message.height);
+    /* optional float depth = 9; */
+    if (message.depth !== undefined) writer.tag(9, WireType.Bit32).float(message.depth);
+    /* optional uint32 entityhandleindex = 10; */
+    if (message.entityhandleindex !== undefined) writer.tag(10, WireType.Varint).uint32(message.entityhandleindex);
+    /* optional fixed32 skeletoninstancehash = 11; */
+    if (message.skeletoninstancehash !== undefined)
+      writer.tag(11, WireType.Bit32).fixed32(message.skeletoninstancehash);
+    /* optional int32 boneindex = 12; */
+    if (message.boneindex !== undefined) writer.tag(12, WireType.Varint).int32(message.boneindex);
+    /* optional bool translucenthit = 13; */
+    if (message.translucenthit !== undefined) writer.tag(13, WireType.Varint).bool(message.translucenthit);
+    /* optional bool is_adjacent = 14; */
+    if (message.is_adjacent !== undefined) writer.tag(14, WireType.Varint).bool(message.is_adjacent);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgPlaceDecalEvent
@@ -641,57 +641,57 @@ class CMsgPlaceDecalEvent$Type extends MessageType<CMsgPlaceDecalEvent> {
 export const CMsgPlaceDecalEvent = new CMsgPlaceDecalEvent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgClearWorldDecalsEvent$Type extends MessageType<CMsgClearWorldDecalsEvent> {
-	constructor() {
-		super("CMsgClearWorldDecalsEvent", [
-			{
-				no: 1,
-				name: "flagstoclear",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgClearWorldDecalsEvent>): CMsgClearWorldDecalsEvent {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgClearWorldDecalsEvent>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgClearWorldDecalsEvent,
-	): CMsgClearWorldDecalsEvent {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 flagstoclear */ 1:
-					message.flagstoclear = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgClearWorldDecalsEvent,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 flagstoclear = 1; */
-		if (message.flagstoclear !== undefined) writer.tag(1, WireType.Varint).uint32(message.flagstoclear);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgClearWorldDecalsEvent", [
+      {
+        no: 1,
+        name: "flagstoclear",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgClearWorldDecalsEvent>): CMsgClearWorldDecalsEvent {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgClearWorldDecalsEvent>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgClearWorldDecalsEvent,
+  ): CMsgClearWorldDecalsEvent {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 flagstoclear */ 1:
+          message.flagstoclear = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgClearWorldDecalsEvent,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 flagstoclear = 1; */
+    if (message.flagstoclear !== undefined) writer.tag(1, WireType.Varint).uint32(message.flagstoclear);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgClearWorldDecalsEvent
@@ -699,57 +699,57 @@ class CMsgClearWorldDecalsEvent$Type extends MessageType<CMsgClearWorldDecalsEve
 export const CMsgClearWorldDecalsEvent = new CMsgClearWorldDecalsEvent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgClearEntityDecalsEvent$Type extends MessageType<CMsgClearEntityDecalsEvent> {
-	constructor() {
-		super("CMsgClearEntityDecalsEvent", [
-			{
-				no: 1,
-				name: "flagstoclear",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgClearEntityDecalsEvent>): CMsgClearEntityDecalsEvent {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgClearEntityDecalsEvent>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgClearEntityDecalsEvent,
-	): CMsgClearEntityDecalsEvent {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 flagstoclear */ 1:
-					message.flagstoclear = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgClearEntityDecalsEvent,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 flagstoclear = 1; */
-		if (message.flagstoclear !== undefined) writer.tag(1, WireType.Varint).uint32(message.flagstoclear);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgClearEntityDecalsEvent", [
+      {
+        no: 1,
+        name: "flagstoclear",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgClearEntityDecalsEvent>): CMsgClearEntityDecalsEvent {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgClearEntityDecalsEvent>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgClearEntityDecalsEvent,
+  ): CMsgClearEntityDecalsEvent {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 flagstoclear */ 1:
+          message.flagstoclear = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgClearEntityDecalsEvent,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 flagstoclear = 1; */
+    if (message.flagstoclear !== undefined) writer.tag(1, WireType.Varint).uint32(message.flagstoclear);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgClearEntityDecalsEvent
@@ -757,81 +757,81 @@ class CMsgClearEntityDecalsEvent$Type extends MessageType<CMsgClearEntityDecalsE
 export const CMsgClearEntityDecalsEvent = new CMsgClearEntityDecalsEvent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgClearDecalsForSkeletonInstanceEvent$Type extends MessageType<CMsgClearDecalsForSkeletonInstanceEvent> {
-	constructor() {
-		super("CMsgClearDecalsForSkeletonInstanceEvent", [
-			{
-				no: 1,
-				name: "flagstoclear",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "entityhandleindex",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "skeletoninstancehash",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgClearDecalsForSkeletonInstanceEvent>): CMsgClearDecalsForSkeletonInstanceEvent {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgClearDecalsForSkeletonInstanceEvent>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgClearDecalsForSkeletonInstanceEvent,
-	): CMsgClearDecalsForSkeletonInstanceEvent {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 flagstoclear */ 1:
-					message.flagstoclear = reader.uint32();
-					break;
-				case /* optional uint32 entityhandleindex */ 2:
-					message.entityhandleindex = reader.uint32();
-					break;
-				case /* optional uint32 skeletoninstancehash */ 3:
-					message.skeletoninstancehash = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgClearDecalsForSkeletonInstanceEvent,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 flagstoclear = 1; */
-		if (message.flagstoclear !== undefined) writer.tag(1, WireType.Varint).uint32(message.flagstoclear);
-		/* optional uint32 entityhandleindex = 2; */
-		if (message.entityhandleindex !== undefined) writer.tag(2, WireType.Varint).uint32(message.entityhandleindex);
-		/* optional uint32 skeletoninstancehash = 3; */
-		if (message.skeletoninstancehash !== undefined) writer.tag(3, WireType.Varint).uint32(message.skeletoninstancehash);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgClearDecalsForSkeletonInstanceEvent", [
+      {
+        no: 1,
+        name: "flagstoclear",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "entityhandleindex",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "skeletoninstancehash",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgClearDecalsForSkeletonInstanceEvent>): CMsgClearDecalsForSkeletonInstanceEvent {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgClearDecalsForSkeletonInstanceEvent>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgClearDecalsForSkeletonInstanceEvent,
+  ): CMsgClearDecalsForSkeletonInstanceEvent {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 flagstoclear */ 1:
+          message.flagstoclear = reader.uint32();
+          break;
+        case /* optional uint32 entityhandleindex */ 2:
+          message.entityhandleindex = reader.uint32();
+          break;
+        case /* optional uint32 skeletoninstancehash */ 3:
+          message.skeletoninstancehash = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgClearDecalsForSkeletonInstanceEvent,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 flagstoclear = 1; */
+    if (message.flagstoclear !== undefined) writer.tag(1, WireType.Varint).uint32(message.flagstoclear);
+    /* optional uint32 entityhandleindex = 2; */
+    if (message.entityhandleindex !== undefined) writer.tag(2, WireType.Varint).uint32(message.entityhandleindex);
+    /* optional uint32 skeletoninstancehash = 3; */
+    if (message.skeletoninstancehash !== undefined) writer.tag(3, WireType.Varint).uint32(message.skeletoninstancehash);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgClearDecalsForSkeletonInstanceEvent
@@ -839,65 +839,65 @@ class CMsgClearDecalsForSkeletonInstanceEvent$Type extends MessageType<CMsgClear
 export const CMsgClearDecalsForSkeletonInstanceEvent = new CMsgClearDecalsForSkeletonInstanceEvent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSource1LegacyGameEventList$Type extends MessageType<CMsgSource1LegacyGameEventList> {
-	constructor() {
-		super("CMsgSource1LegacyGameEventList", [
-			{
-				no: 1,
-				name: "descriptors",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSource1LegacyGameEventList_descriptor_t,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSource1LegacyGameEventList>): CMsgSource1LegacyGameEventList {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.descriptors = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSource1LegacyGameEventList>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSource1LegacyGameEventList,
-	): CMsgSource1LegacyGameEventList {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgSource1LegacyGameEventList.descriptor_t descriptors */ 1:
-					message.descriptors.push(
-						CMsgSource1LegacyGameEventList_descriptor_t.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSource1LegacyGameEventList,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CMsgSource1LegacyGameEventList.descriptor_t descriptors = 1; */
-		for (let i = 0; i < message.descriptors.length; i++)
-			CMsgSource1LegacyGameEventList_descriptor_t.internalBinaryWrite(
-				message.descriptors[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSource1LegacyGameEventList", [
+      {
+        no: 1,
+        name: "descriptors",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSource1LegacyGameEventList_descriptor_t,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSource1LegacyGameEventList>): CMsgSource1LegacyGameEventList {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.descriptors = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSource1LegacyGameEventList>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSource1LegacyGameEventList,
+  ): CMsgSource1LegacyGameEventList {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgSource1LegacyGameEventList.descriptor_t descriptors */ 1:
+          message.descriptors.push(
+            CMsgSource1LegacyGameEventList_descriptor_t.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSource1LegacyGameEventList,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CMsgSource1LegacyGameEventList.descriptor_t descriptors = 1; */
+    for (let i = 0; i < message.descriptors.length; i++)
+      CMsgSource1LegacyGameEventList_descriptor_t.internalBinaryWrite(
+        message.descriptors[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSource1LegacyGameEventList
@@ -905,69 +905,69 @@ class CMsgSource1LegacyGameEventList$Type extends MessageType<CMsgSource1LegacyG
 export const CMsgSource1LegacyGameEventList = new CMsgSource1LegacyGameEventList$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSource1LegacyGameEventList_key_t$Type extends MessageType<CMsgSource1LegacyGameEventList_key_t> {
-	constructor() {
-		super("CMsgSource1LegacyGameEventList.key_t", [
-			{
-				no: 1,
-				name: "type",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSource1LegacyGameEventList_key_t>): CMsgSource1LegacyGameEventList_key_t {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSource1LegacyGameEventList_key_t>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSource1LegacyGameEventList_key_t,
-	): CMsgSource1LegacyGameEventList_key_t {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 type */ 1:
-					message.type = reader.int32();
-					break;
-				case /* optional string name */ 2:
-					message.name = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSource1LegacyGameEventList_key_t,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 type = 1; */
-		if (message.type !== undefined) writer.tag(1, WireType.Varint).int32(message.type);
-		/* optional string name = 2; */
-		if (message.name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.name);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSource1LegacyGameEventList.key_t", [
+      {
+        no: 1,
+        name: "type",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSource1LegacyGameEventList_key_t>): CMsgSource1LegacyGameEventList_key_t {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSource1LegacyGameEventList_key_t>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSource1LegacyGameEventList_key_t,
+  ): CMsgSource1LegacyGameEventList_key_t {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 type */ 1:
+          message.type = reader.int32();
+          break;
+        case /* optional string name */ 2:
+          message.name = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSource1LegacyGameEventList_key_t,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 type = 1; */
+    if (message.type !== undefined) writer.tag(1, WireType.Varint).int32(message.type);
+    /* optional string name = 2; */
+    if (message.name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.name);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSource1LegacyGameEventList.key_t
@@ -975,89 +975,89 @@ class CMsgSource1LegacyGameEventList_key_t$Type extends MessageType<CMsgSource1L
 export const CMsgSource1LegacyGameEventList_key_t = new CMsgSource1LegacyGameEventList_key_t$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSource1LegacyGameEventList_descriptor_t$Type extends MessageType<CMsgSource1LegacyGameEventList_descriptor_t> {
-	constructor() {
-		super("CMsgSource1LegacyGameEventList.descriptor_t", [
-			{
-				no: 1,
-				name: "eventid",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "keys",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSource1LegacyGameEventList_key_t,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSource1LegacyGameEventList_descriptor_t>,
-	): CMsgSource1LegacyGameEventList_descriptor_t {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.keys = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSource1LegacyGameEventList_descriptor_t>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSource1LegacyGameEventList_descriptor_t,
-	): CMsgSource1LegacyGameEventList_descriptor_t {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 eventid */ 1:
-					message.eventid = reader.int32();
-					break;
-				case /* optional string name */ 2:
-					message.name = reader.string();
-					break;
-				case /* repeated CMsgSource1LegacyGameEventList.key_t keys */ 3:
-					message.keys.push(CMsgSource1LegacyGameEventList_key_t.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSource1LegacyGameEventList_descriptor_t,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 eventid = 1; */
-		if (message.eventid !== undefined) writer.tag(1, WireType.Varint).int32(message.eventid);
-		/* optional string name = 2; */
-		if (message.name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.name);
-		/* repeated CMsgSource1LegacyGameEventList.key_t keys = 3; */
-		for (let i = 0; i < message.keys.length; i++)
-			CMsgSource1LegacyGameEventList_key_t.internalBinaryWrite(
-				message.keys[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSource1LegacyGameEventList.descriptor_t", [
+      {
+        no: 1,
+        name: "eventid",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "keys",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSource1LegacyGameEventList_key_t,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSource1LegacyGameEventList_descriptor_t>,
+  ): CMsgSource1LegacyGameEventList_descriptor_t {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.keys = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSource1LegacyGameEventList_descriptor_t>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSource1LegacyGameEventList_descriptor_t,
+  ): CMsgSource1LegacyGameEventList_descriptor_t {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 eventid */ 1:
+          message.eventid = reader.int32();
+          break;
+        case /* optional string name */ 2:
+          message.name = reader.string();
+          break;
+        case /* repeated CMsgSource1LegacyGameEventList.key_t keys */ 3:
+          message.keys.push(CMsgSource1LegacyGameEventList_key_t.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSource1LegacyGameEventList_descriptor_t,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 eventid = 1; */
+    if (message.eventid !== undefined) writer.tag(1, WireType.Varint).int32(message.eventid);
+    /* optional string name = 2; */
+    if (message.name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.name);
+    /* repeated CMsgSource1LegacyGameEventList.key_t keys = 3; */
+    for (let i = 0; i < message.keys.length; i++)
+      CMsgSource1LegacyGameEventList_key_t.internalBinaryWrite(
+        message.keys[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSource1LegacyGameEventList.descriptor_t
@@ -1065,73 +1065,73 @@ class CMsgSource1LegacyGameEventList_descriptor_t$Type extends MessageType<CMsgS
 export const CMsgSource1LegacyGameEventList_descriptor_t = new CMsgSource1LegacyGameEventList_descriptor_t$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSource1LegacyListenEvents$Type extends MessageType<CMsgSource1LegacyListenEvents> {
-	constructor() {
-		super("CMsgSource1LegacyListenEvents", [
-			{
-				no: 1,
-				name: "playerslot",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "eventarraybits",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSource1LegacyListenEvents>): CMsgSource1LegacyListenEvents {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.eventarraybits = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSource1LegacyListenEvents>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSource1LegacyListenEvents,
-	): CMsgSource1LegacyListenEvents {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 playerslot */ 1:
-					message.playerslot = reader.int32();
-					break;
-				case /* repeated uint32 eventarraybits */ 2:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.eventarraybits.push(reader.uint32());
-					else message.eventarraybits.push(reader.uint32());
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSource1LegacyListenEvents,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 playerslot = 1; */
-		if (message.playerslot !== undefined) writer.tag(1, WireType.Varint).int32(message.playerslot);
-		/* repeated uint32 eventarraybits = 2; */
-		for (let i = 0; i < message.eventarraybits.length; i++)
-			writer.tag(2, WireType.Varint).uint32(message.eventarraybits[i]);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSource1LegacyListenEvents", [
+      {
+        no: 1,
+        name: "playerslot",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "eventarraybits",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSource1LegacyListenEvents>): CMsgSource1LegacyListenEvents {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.eventarraybits = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSource1LegacyListenEvents>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSource1LegacyListenEvents,
+  ): CMsgSource1LegacyListenEvents {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 playerslot */ 1:
+          message.playerslot = reader.int32();
+          break;
+        case /* repeated uint32 eventarraybits */ 2:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.eventarraybits.push(reader.uint32());
+          else message.eventarraybits.push(reader.uint32());
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSource1LegacyListenEvents,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 playerslot = 1; */
+    if (message.playerslot !== undefined) writer.tag(1, WireType.Varint).int32(message.playerslot);
+    /* repeated uint32 eventarraybits = 2; */
+    for (let i = 0; i < message.eventarraybits.length; i++)
+      writer.tag(2, WireType.Varint).uint32(message.eventarraybits[i]);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSource1LegacyListenEvents
@@ -1139,113 +1139,113 @@ class CMsgSource1LegacyListenEvents$Type extends MessageType<CMsgSource1LegacyLi
 export const CMsgSource1LegacyListenEvents = new CMsgSource1LegacyListenEvents$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSource1LegacyGameEvent$Type extends MessageType<CMsgSource1LegacyGameEvent> {
-	constructor() {
-		super("CMsgSource1LegacyGameEvent", [
-			{
-				no: 1,
-				name: "event_name",
-				kind: "scalar",
-				localName: "event_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "eventid",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 3,
-				name: "keys",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSource1LegacyGameEvent_key_t,
-			},
-			{
-				no: 4,
-				name: "server_tick",
-				kind: "scalar",
-				localName: "server_tick",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "passthrough",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSource1LegacyGameEvent>): CMsgSource1LegacyGameEvent {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.keys = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSource1LegacyGameEvent>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSource1LegacyGameEvent,
-	): CMsgSource1LegacyGameEvent {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string event_name */ 1:
-					message.event_name = reader.string();
-					break;
-				case /* optional int32 eventid */ 2:
-					message.eventid = reader.int32();
-					break;
-				case /* repeated CMsgSource1LegacyGameEvent.key_t keys */ 3:
-					message.keys.push(CMsgSource1LegacyGameEvent_key_t.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* optional int32 server_tick */ 4:
-					message.server_tick = reader.int32();
-					break;
-				case /* optional int32 passthrough */ 5:
-					message.passthrough = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSource1LegacyGameEvent,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string event_name = 1; */
-		if (message.event_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.event_name);
-		/* optional int32 eventid = 2; */
-		if (message.eventid !== undefined) writer.tag(2, WireType.Varint).int32(message.eventid);
-		/* repeated CMsgSource1LegacyGameEvent.key_t keys = 3; */
-		for (let i = 0; i < message.keys.length; i++)
-			CMsgSource1LegacyGameEvent_key_t.internalBinaryWrite(
-				message.keys[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional int32 server_tick = 4; */
-		if (message.server_tick !== undefined) writer.tag(4, WireType.Varint).int32(message.server_tick);
-		/* optional int32 passthrough = 5; */
-		if (message.passthrough !== undefined) writer.tag(5, WireType.Varint).int32(message.passthrough);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSource1LegacyGameEvent", [
+      {
+        no: 1,
+        name: "event_name",
+        kind: "scalar",
+        localName: "event_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "eventid",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 3,
+        name: "keys",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSource1LegacyGameEvent_key_t,
+      },
+      {
+        no: 4,
+        name: "server_tick",
+        kind: "scalar",
+        localName: "server_tick",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "passthrough",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSource1LegacyGameEvent>): CMsgSource1LegacyGameEvent {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.keys = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSource1LegacyGameEvent>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSource1LegacyGameEvent,
+  ): CMsgSource1LegacyGameEvent {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string event_name */ 1:
+          message.event_name = reader.string();
+          break;
+        case /* optional int32 eventid */ 2:
+          message.eventid = reader.int32();
+          break;
+        case /* repeated CMsgSource1LegacyGameEvent.key_t keys */ 3:
+          message.keys.push(CMsgSource1LegacyGameEvent_key_t.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* optional int32 server_tick */ 4:
+          message.server_tick = reader.int32();
+          break;
+        case /* optional int32 passthrough */ 5:
+          message.passthrough = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSource1LegacyGameEvent,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string event_name = 1; */
+    if (message.event_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.event_name);
+    /* optional int32 eventid = 2; */
+    if (message.eventid !== undefined) writer.tag(2, WireType.Varint).int32(message.eventid);
+    /* repeated CMsgSource1LegacyGameEvent.key_t keys = 3; */
+    for (let i = 0; i < message.keys.length; i++)
+      CMsgSource1LegacyGameEvent_key_t.internalBinaryWrite(
+        message.keys[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional int32 server_tick = 4; */
+    if (message.server_tick !== undefined) writer.tag(4, WireType.Varint).int32(message.server_tick);
+    /* optional int32 passthrough = 5; */
+    if (message.passthrough !== undefined) writer.tag(5, WireType.Varint).int32(message.passthrough);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSource1LegacyGameEvent
@@ -1253,149 +1253,149 @@ class CMsgSource1LegacyGameEvent$Type extends MessageType<CMsgSource1LegacyGameE
 export const CMsgSource1LegacyGameEvent = new CMsgSource1LegacyGameEvent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSource1LegacyGameEvent_key_t$Type extends MessageType<CMsgSource1LegacyGameEvent_key_t> {
-	constructor() {
-		super("CMsgSource1LegacyGameEvent.key_t", [
-			{
-				no: 1,
-				name: "type",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "val_string",
-				kind: "scalar",
-				localName: "val_string",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "val_float",
-				kind: "scalar",
-				localName: "val_float",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "val_long",
-				kind: "scalar",
-				localName: "val_long",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "val_short",
-				kind: "scalar",
-				localName: "val_short",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 6,
-				name: "val_byte",
-				kind: "scalar",
-				localName: "val_byte",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 7,
-				name: "val_bool",
-				kind: "scalar",
-				localName: "val_bool",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 8,
-				name: "val_uint64",
-				kind: "scalar",
-				localName: "val_uint64",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSource1LegacyGameEvent_key_t>): CMsgSource1LegacyGameEvent_key_t {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSource1LegacyGameEvent_key_t>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSource1LegacyGameEvent_key_t,
-	): CMsgSource1LegacyGameEvent_key_t {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 type */ 1:
-					message.type = reader.int32();
-					break;
-				case /* optional string val_string */ 2:
-					message.val_string = reader.string();
-					break;
-				case /* optional float val_float */ 3:
-					message.val_float = reader.float();
-					break;
-				case /* optional int32 val_long */ 4:
-					message.val_long = reader.int32();
-					break;
-				case /* optional int32 val_short */ 5:
-					message.val_short = reader.int32();
-					break;
-				case /* optional int32 val_byte */ 6:
-					message.val_byte = reader.int32();
-					break;
-				case /* optional bool val_bool */ 7:
-					message.val_bool = reader.bool();
-					break;
-				case /* optional uint64 val_uint64 */ 8:
-					message.val_uint64 = reader.uint64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSource1LegacyGameEvent_key_t,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 type = 1; */
-		if (message.type !== undefined) writer.tag(1, WireType.Varint).int32(message.type);
-		/* optional string val_string = 2; */
-		if (message.val_string !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.val_string);
-		/* optional float val_float = 3; */
-		if (message.val_float !== undefined) writer.tag(3, WireType.Bit32).float(message.val_float);
-		/* optional int32 val_long = 4; */
-		if (message.val_long !== undefined) writer.tag(4, WireType.Varint).int32(message.val_long);
-		/* optional int32 val_short = 5; */
-		if (message.val_short !== undefined) writer.tag(5, WireType.Varint).int32(message.val_short);
-		/* optional int32 val_byte = 6; */
-		if (message.val_byte !== undefined) writer.tag(6, WireType.Varint).int32(message.val_byte);
-		/* optional bool val_bool = 7; */
-		if (message.val_bool !== undefined) writer.tag(7, WireType.Varint).bool(message.val_bool);
-		/* optional uint64 val_uint64 = 8; */
-		if (message.val_uint64 !== undefined) writer.tag(8, WireType.Varint).uint64(message.val_uint64);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSource1LegacyGameEvent.key_t", [
+      {
+        no: 1,
+        name: "type",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "val_string",
+        kind: "scalar",
+        localName: "val_string",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "val_float",
+        kind: "scalar",
+        localName: "val_float",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "val_long",
+        kind: "scalar",
+        localName: "val_long",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "val_short",
+        kind: "scalar",
+        localName: "val_short",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 6,
+        name: "val_byte",
+        kind: "scalar",
+        localName: "val_byte",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 7,
+        name: "val_bool",
+        kind: "scalar",
+        localName: "val_bool",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 8,
+        name: "val_uint64",
+        kind: "scalar",
+        localName: "val_uint64",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSource1LegacyGameEvent_key_t>): CMsgSource1LegacyGameEvent_key_t {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSource1LegacyGameEvent_key_t>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSource1LegacyGameEvent_key_t,
+  ): CMsgSource1LegacyGameEvent_key_t {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 type */ 1:
+          message.type = reader.int32();
+          break;
+        case /* optional string val_string */ 2:
+          message.val_string = reader.string();
+          break;
+        case /* optional float val_float */ 3:
+          message.val_float = reader.float();
+          break;
+        case /* optional int32 val_long */ 4:
+          message.val_long = reader.int32();
+          break;
+        case /* optional int32 val_short */ 5:
+          message.val_short = reader.int32();
+          break;
+        case /* optional int32 val_byte */ 6:
+          message.val_byte = reader.int32();
+          break;
+        case /* optional bool val_bool */ 7:
+          message.val_bool = reader.bool();
+          break;
+        case /* optional uint64 val_uint64 */ 8:
+          message.val_uint64 = reader.uint64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSource1LegacyGameEvent_key_t,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 type = 1; */
+    if (message.type !== undefined) writer.tag(1, WireType.Varint).int32(message.type);
+    /* optional string val_string = 2; */
+    if (message.val_string !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.val_string);
+    /* optional float val_float = 3; */
+    if (message.val_float !== undefined) writer.tag(3, WireType.Bit32).float(message.val_float);
+    /* optional int32 val_long = 4; */
+    if (message.val_long !== undefined) writer.tag(4, WireType.Varint).int32(message.val_long);
+    /* optional int32 val_short = 5; */
+    if (message.val_short !== undefined) writer.tag(5, WireType.Varint).int32(message.val_short);
+    /* optional int32 val_byte = 6; */
+    if (message.val_byte !== undefined) writer.tag(6, WireType.Varint).int32(message.val_byte);
+    /* optional bool val_bool = 7; */
+    if (message.val_bool !== undefined) writer.tag(7, WireType.Varint).bool(message.val_bool);
+    /* optional uint64 val_uint64 = 8; */
+    if (message.val_uint64 !== undefined) writer.tag(8, WireType.Varint).uint64(message.val_uint64);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSource1LegacyGameEvent.key_t
@@ -1403,122 +1403,122 @@ class CMsgSource1LegacyGameEvent_key_t$Type extends MessageType<CMsgSource1Legac
 export const CMsgSource1LegacyGameEvent_key_t = new CMsgSource1LegacyGameEvent_key_t$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSosStartSoundEvent$Type extends MessageType<CMsgSosStartSoundEvent> {
-	constructor() {
-		super("CMsgSosStartSoundEvent", [
-			{
-				no: 1,
-				name: "soundevent_guid",
-				kind: "scalar",
-				localName: "soundevent_guid",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "soundevent_hash",
-				kind: "scalar",
-				localName: "soundevent_hash",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 3,
-				name: "source_entity_index",
-				kind: "scalar",
-				localName: "source_entity_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 4,
-				name: "seed",
-				kind: "scalar",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "packed_params",
-				kind: "scalar",
-				localName: "packed_params",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 6,
-				name: "start_time",
-				kind: "scalar",
-				localName: "start_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSosStartSoundEvent>): CMsgSosStartSoundEvent {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSosStartSoundEvent>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSosStartSoundEvent,
-	): CMsgSosStartSoundEvent {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 soundevent_guid */ 1:
-					message.soundevent_guid = reader.int32();
-					break;
-				case /* optional fixed32 soundevent_hash */ 2:
-					message.soundevent_hash = reader.fixed32();
-					break;
-				case /* optional int32 source_entity_index */ 3:
-					message.source_entity_index = reader.int32();
-					break;
-				case /* optional int32 seed */ 4:
-					message.seed = reader.int32();
-					break;
-				case /* optional bytes packed_params */ 5:
-					message.packed_params = reader.bytes();
-					break;
-				case /* optional float start_time */ 6:
-					message.start_time = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSosStartSoundEvent,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 soundevent_guid = 1; */
-		if (message.soundevent_guid !== undefined) writer.tag(1, WireType.Varint).int32(message.soundevent_guid);
-		/* optional fixed32 soundevent_hash = 2; */
-		if (message.soundevent_hash !== undefined) writer.tag(2, WireType.Bit32).fixed32(message.soundevent_hash);
-		/* optional int32 source_entity_index = 3; */
-		if (message.source_entity_index !== undefined) writer.tag(3, WireType.Varint).int32(message.source_entity_index);
-		/* optional int32 seed = 4; */
-		if (message.seed !== undefined) writer.tag(4, WireType.Varint).int32(message.seed);
-		/* optional bytes packed_params = 5; */
-		if (message.packed_params !== undefined) writer.tag(5, WireType.LengthDelimited).bytes(message.packed_params);
-		/* optional float start_time = 6; */
-		if (message.start_time !== undefined) writer.tag(6, WireType.Bit32).float(message.start_time);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSosStartSoundEvent", [
+      {
+        no: 1,
+        name: "soundevent_guid",
+        kind: "scalar",
+        localName: "soundevent_guid",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "soundevent_hash",
+        kind: "scalar",
+        localName: "soundevent_hash",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 3,
+        name: "source_entity_index",
+        kind: "scalar",
+        localName: "source_entity_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 4,
+        name: "seed",
+        kind: "scalar",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "packed_params",
+        kind: "scalar",
+        localName: "packed_params",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 6,
+        name: "start_time",
+        kind: "scalar",
+        localName: "start_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSosStartSoundEvent>): CMsgSosStartSoundEvent {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSosStartSoundEvent>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSosStartSoundEvent,
+  ): CMsgSosStartSoundEvent {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 soundevent_guid */ 1:
+          message.soundevent_guid = reader.int32();
+          break;
+        case /* optional fixed32 soundevent_hash */ 2:
+          message.soundevent_hash = reader.fixed32();
+          break;
+        case /* optional int32 source_entity_index */ 3:
+          message.source_entity_index = reader.int32();
+          break;
+        case /* optional int32 seed */ 4:
+          message.seed = reader.int32();
+          break;
+        case /* optional bytes packed_params */ 5:
+          message.packed_params = reader.bytes();
+          break;
+        case /* optional float start_time */ 6:
+          message.start_time = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSosStartSoundEvent,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 soundevent_guid = 1; */
+    if (message.soundevent_guid !== undefined) writer.tag(1, WireType.Varint).int32(message.soundevent_guid);
+    /* optional fixed32 soundevent_hash = 2; */
+    if (message.soundevent_hash !== undefined) writer.tag(2, WireType.Bit32).fixed32(message.soundevent_hash);
+    /* optional int32 source_entity_index = 3; */
+    if (message.source_entity_index !== undefined) writer.tag(3, WireType.Varint).int32(message.source_entity_index);
+    /* optional int32 seed = 4; */
+    if (message.seed !== undefined) writer.tag(4, WireType.Varint).int32(message.seed);
+    /* optional bytes packed_params = 5; */
+    if (message.packed_params !== undefined) writer.tag(5, WireType.LengthDelimited).bytes(message.packed_params);
+    /* optional float start_time = 6; */
+    if (message.start_time !== undefined) writer.tag(6, WireType.Bit32).float(message.start_time);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSosStartSoundEvent
@@ -1526,58 +1526,58 @@ class CMsgSosStartSoundEvent$Type extends MessageType<CMsgSosStartSoundEvent> {
 export const CMsgSosStartSoundEvent = new CMsgSosStartSoundEvent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSosStopSoundEvent$Type extends MessageType<CMsgSosStopSoundEvent> {
-	constructor() {
-		super("CMsgSosStopSoundEvent", [
-			{
-				no: 1,
-				name: "soundevent_guid",
-				kind: "scalar",
-				localName: "soundevent_guid",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSosStopSoundEvent>): CMsgSosStopSoundEvent {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSosStopSoundEvent>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSosStopSoundEvent,
-	): CMsgSosStopSoundEvent {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 soundevent_guid */ 1:
-					message.soundevent_guid = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSosStopSoundEvent,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 soundevent_guid = 1; */
-		if (message.soundevent_guid !== undefined) writer.tag(1, WireType.Varint).int32(message.soundevent_guid);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSosStopSoundEvent", [
+      {
+        no: 1,
+        name: "soundevent_guid",
+        kind: "scalar",
+        localName: "soundevent_guid",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSosStopSoundEvent>): CMsgSosStopSoundEvent {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSosStopSoundEvent>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSosStopSoundEvent,
+  ): CMsgSosStopSoundEvent {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 soundevent_guid */ 1:
+          message.soundevent_guid = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSosStopSoundEvent,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 soundevent_guid = 1; */
+    if (message.soundevent_guid !== undefined) writer.tag(1, WireType.Varint).int32(message.soundevent_guid);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSosStopSoundEvent
@@ -1585,71 +1585,71 @@ class CMsgSosStopSoundEvent$Type extends MessageType<CMsgSosStopSoundEvent> {
 export const CMsgSosStopSoundEvent = new CMsgSosStopSoundEvent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSosStopSoundEventHash$Type extends MessageType<CMsgSosStopSoundEventHash> {
-	constructor() {
-		super("CMsgSosStopSoundEventHash", [
-			{
-				no: 1,
-				name: "soundevent_hash",
-				kind: "scalar",
-				localName: "soundevent_hash",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 2,
-				name: "source_entity_index",
-				kind: "scalar",
-				localName: "source_entity_index",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSosStopSoundEventHash>): CMsgSosStopSoundEventHash {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSosStopSoundEventHash>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSosStopSoundEventHash,
-	): CMsgSosStopSoundEventHash {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 soundevent_hash */ 1:
-					message.soundevent_hash = reader.fixed32();
-					break;
-				case /* optional int32 source_entity_index */ 2:
-					message.source_entity_index = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSosStopSoundEventHash,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 soundevent_hash = 1; */
-		if (message.soundevent_hash !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.soundevent_hash);
-		/* optional int32 source_entity_index = 2; */
-		if (message.source_entity_index !== undefined) writer.tag(2, WireType.Varint).int32(message.source_entity_index);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSosStopSoundEventHash", [
+      {
+        no: 1,
+        name: "soundevent_hash",
+        kind: "scalar",
+        localName: "soundevent_hash",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 2,
+        name: "source_entity_index",
+        kind: "scalar",
+        localName: "source_entity_index",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSosStopSoundEventHash>): CMsgSosStopSoundEventHash {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSosStopSoundEventHash>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSosStopSoundEventHash,
+  ): CMsgSosStopSoundEventHash {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 soundevent_hash */ 1:
+          message.soundevent_hash = reader.fixed32();
+          break;
+        case /* optional int32 source_entity_index */ 2:
+          message.source_entity_index = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSosStopSoundEventHash,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 soundevent_hash = 1; */
+    if (message.soundevent_hash !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.soundevent_hash);
+    /* optional int32 source_entity_index = 2; */
+    if (message.source_entity_index !== undefined) writer.tag(2, WireType.Varint).int32(message.source_entity_index);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSosStopSoundEventHash
@@ -1657,71 +1657,71 @@ class CMsgSosStopSoundEventHash$Type extends MessageType<CMsgSosStopSoundEventHa
 export const CMsgSosStopSoundEventHash = new CMsgSosStopSoundEventHash$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSosSetSoundEventParams$Type extends MessageType<CMsgSosSetSoundEventParams> {
-	constructor() {
-		super("CMsgSosSetSoundEventParams", [
-			{
-				no: 1,
-				name: "soundevent_guid",
-				kind: "scalar",
-				localName: "soundevent_guid",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 5,
-				name: "packed_params",
-				kind: "scalar",
-				localName: "packed_params",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSosSetSoundEventParams>): CMsgSosSetSoundEventParams {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSosSetSoundEventParams>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSosSetSoundEventParams,
-	): CMsgSosSetSoundEventParams {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 soundevent_guid */ 1:
-					message.soundevent_guid = reader.int32();
-					break;
-				case /* optional bytes packed_params */ 5:
-					message.packed_params = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSosSetSoundEventParams,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 soundevent_guid = 1; */
-		if (message.soundevent_guid !== undefined) writer.tag(1, WireType.Varint).int32(message.soundevent_guid);
-		/* optional bytes packed_params = 5; */
-		if (message.packed_params !== undefined) writer.tag(5, WireType.LengthDelimited).bytes(message.packed_params);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSosSetSoundEventParams", [
+      {
+        no: 1,
+        name: "soundevent_guid",
+        kind: "scalar",
+        localName: "soundevent_guid",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 5,
+        name: "packed_params",
+        kind: "scalar",
+        localName: "packed_params",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSosSetSoundEventParams>): CMsgSosSetSoundEventParams {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSosSetSoundEventParams>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSosSetSoundEventParams,
+  ): CMsgSosSetSoundEventParams {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 soundevent_guid */ 1:
+          message.soundevent_guid = reader.int32();
+          break;
+        case /* optional bytes packed_params */ 5:
+          message.packed_params = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSosSetSoundEventParams,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 soundevent_guid = 1; */
+    if (message.soundevent_guid !== undefined) writer.tag(1, WireType.Varint).int32(message.soundevent_guid);
+    /* optional bytes packed_params = 5; */
+    if (message.packed_params !== undefined) writer.tag(5, WireType.LengthDelimited).bytes(message.packed_params);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSosSetSoundEventParams
@@ -1729,71 +1729,71 @@ class CMsgSosSetSoundEventParams$Type extends MessageType<CMsgSosSetSoundEventPa
 export const CMsgSosSetSoundEventParams = new CMsgSosSetSoundEventParams$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSosSetLibraryStackFields$Type extends MessageType<CMsgSosSetLibraryStackFields> {
-	constructor() {
-		super("CMsgSosSetLibraryStackFields", [
-			{
-				no: 1,
-				name: "stack_hash",
-				kind: "scalar",
-				localName: "stack_hash",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 5,
-				name: "packed_fields",
-				kind: "scalar",
-				localName: "packed_fields",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSosSetLibraryStackFields>): CMsgSosSetLibraryStackFields {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSosSetLibraryStackFields>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSosSetLibraryStackFields,
-	): CMsgSosSetLibraryStackFields {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed32 stack_hash */ 1:
-					message.stack_hash = reader.fixed32();
-					break;
-				case /* optional bytes packed_fields */ 5:
-					message.packed_fields = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSosSetLibraryStackFields,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed32 stack_hash = 1; */
-		if (message.stack_hash !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.stack_hash);
-		/* optional bytes packed_fields = 5; */
-		if (message.packed_fields !== undefined) writer.tag(5, WireType.LengthDelimited).bytes(message.packed_fields);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSosSetLibraryStackFields", [
+      {
+        no: 1,
+        name: "stack_hash",
+        kind: "scalar",
+        localName: "stack_hash",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 5,
+        name: "packed_fields",
+        kind: "scalar",
+        localName: "packed_fields",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSosSetLibraryStackFields>): CMsgSosSetLibraryStackFields {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSosSetLibraryStackFields>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSosSetLibraryStackFields,
+  ): CMsgSosSetLibraryStackFields {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed32 stack_hash */ 1:
+          message.stack_hash = reader.fixed32();
+          break;
+        case /* optional bytes packed_fields */ 5:
+          message.packed_fields = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSosSetLibraryStackFields,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed32 stack_hash = 1; */
+    if (message.stack_hash !== undefined) writer.tag(1, WireType.Bit32).fixed32(message.stack_hash);
+    /* optional bytes packed_fields = 5; */
+    if (message.packed_fields !== undefined) writer.tag(5, WireType.LengthDelimited).bytes(message.packed_fields);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSosSetLibraryStackFields

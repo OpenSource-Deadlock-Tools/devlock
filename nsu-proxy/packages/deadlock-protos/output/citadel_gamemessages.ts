@@ -14,22 +14,22 @@ import { MessageType } from "@protobuf-ts/runtime";
  * @generated from protobuf message CMsgClientServerHeader
  */
 export interface CMsgClientServerHeader {
-	/**
-	 * @generated from protobuf field: optional uint64 game_instance_id = 1;
-	 */
-	game_instance_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 local_player_index = 2;
-	 */
-	local_player_index?: number;
-	/**
-	 * @generated from protobuf field: optional bytes payload = 3;
-	 */
-	payload?: Uint8Array;
-	/**
-	 * @generated from protobuf field: optional ECitadelGameMessages msg_id = 4;
-	 */
-	msg_id?: ECitadelGameMessages;
+  /**
+   * @generated from protobuf field: optional uint64 game_instance_id = 1;
+   */
+  game_instance_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 local_player_index = 2;
+   */
+  local_player_index?: number;
+  /**
+   * @generated from protobuf field: optional bytes payload = 3;
+   */
+  payload?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional ECitadelGameMessages msg_id = 4;
+   */
+  msg_id?: ECitadelGameMessages;
 }
 /**
  * @generated from protobuf message CMsgGameServerToClientGameCompleted
@@ -43,262 +43,262 @@ export interface CMsgGameServerToClientGoodbye {}
  * @generated from protobuf message CMsgGameServerToClientConnectionStatus
  */
 export interface CMsgGameServerToClientConnectionStatus {
-	/**
-	 * @generated from protobuf field: repeated CMsgGameServerToClientConnectionStatus.Player players = 1;
-	 */
-	players: CMsgGameServerToClientConnectionStatus_Player[];
+  /**
+   * @generated from protobuf field: repeated CMsgGameServerToClientConnectionStatus.Player players = 1;
+   */
+  players: CMsgGameServerToClientConnectionStatus_Player[];
 }
 /**
  * @generated from protobuf message CMsgGameServerToClientConnectionStatus.Player
  */
 export interface CMsgGameServerToClientConnectionStatus_Player {
-	/**
-	 * @generated from protobuf field: optional int32 player_slot = 1;
-	 */
-	player_slot?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgGameServerToClientConnectionStatus.EStatus status = 2;
-	 */
-	status?: CMsgGameServerToClientConnectionStatus_EStatus;
-	/**
-	 * @generated from protobuf field: optional bool inactivity_ticking = 3;
-	 */
-	inactivity_ticking?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 inactivity_ms_remaining = 4;
-	 */
-	inactivity_ms_remaining?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 inactivity_anim_ms_remaining = 5;
-	 */
-	inactivity_anim_ms_remaining?: number;
+  /**
+   * @generated from protobuf field: optional int32 player_slot = 1;
+   */
+  player_slot?: number;
+  /**
+   * @generated from protobuf field: optional CMsgGameServerToClientConnectionStatus.EStatus status = 2;
+   */
+  status?: CMsgGameServerToClientConnectionStatus_EStatus;
+  /**
+   * @generated from protobuf field: optional bool inactivity_ticking = 3;
+   */
+  inactivity_ticking?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 inactivity_ms_remaining = 4;
+   */
+  inactivity_ms_remaining?: number;
+  /**
+   * @generated from protobuf field: optional uint32 inactivity_anim_ms_remaining = 5;
+   */
+  inactivity_anim_ms_remaining?: number;
 }
 /**
  * @generated from protobuf enum CMsgGameServerToClientConnectionStatus.EStatus
  */
 export enum CMsgGameServerToClientConnectionStatus_EStatus {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: k_EConnected = 1;
-	 */
-	k_EConnected = 1,
-	/**
-	 * @generated from protobuf enum value: k_EDisconnected = 2;
-	 */
-	k_EDisconnected = 2,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: k_EConnected = 1;
+   */
+  k_EConnected = 1,
+  /**
+   * @generated from protobuf enum value: k_EDisconnected = 2;
+   */
+  k_EDisconnected = 2,
 }
 /**
  * @generated from protobuf message CClientReconnectInfo
  */
 export interface CClientReconnectInfo {
-	/**
-	 * @generated from protobuf field: optional fixed64 server_steam_id = 1;
-	 */
-	server_steam_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 lobby_id = 2;
-	 */
-	lobby_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 time_updated = 3;
-	 */
-	time_updated?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 udp_connect_ip = 4;
-	 */
-	udp_connect_ip?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 udp_connect_port = 5;
-	 */
-	udp_connect_port?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 compatibility_version = 6;
-	 */
-	compatibility_version?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 server_steam_id = 1;
+   */
+  server_steam_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 lobby_id = 2;
+   */
+  lobby_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 time_updated = 3;
+   */
+  time_updated?: number;
+  /**
+   * @generated from protobuf field: optional uint32 udp_connect_ip = 4;
+   */
+  udp_connect_ip?: number;
+  /**
+   * @generated from protobuf field: optional uint32 udp_connect_port = 5;
+   */
+  udp_connect_port?: number;
+  /**
+   * @generated from protobuf field: optional uint32 compatibility_version = 6;
+   */
+  compatibility_version?: number;
 }
 /**
  * @generated from protobuf message CMsgClientAccountSyncStorageFile
  */
 export interface CMsgClientAccountSyncStorageFile {
-	/**
-	 * @generated from protobuf field: optional uint32 version = 1;
-	 */
-	version?: number;
-	/**
-	 * @generated from protobuf field: repeated uint32 ids = 2;
-	 */
-	ids: number[];
-	/**
-	 * @generated from protobuf field: repeated uint32 values = 3;
-	 */
-	values: number[];
+  /**
+   * @generated from protobuf field: optional uint32 version = 1;
+   */
+  version?: number;
+  /**
+   * @generated from protobuf field: repeated uint32 ids = 2;
+   */
+  ids: number[];
+  /**
+   * @generated from protobuf field: repeated uint32 values = 3;
+   */
+  values: number[];
 }
 /**
  * @generated from protobuf enum ECitadelGameMessages
  */
 export enum ECitadelGameMessages {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGameServerToClientConnectionStatus = 10;
-	 */
-	k_EMsgGameServerToClientConnectionStatus = 10,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGameServerToClientInitialGameState = 12;
-	 */
-	k_EMsgGameServerToClientInitialGameState = 12,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGameServerToClientGameCompleted = 13;
-	 */
-	k_EMsgGameServerToClientGameCompleted = 13,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGameServerToClientGoodbye = 15;
-	 */
-	k_EMsgGameServerToClientGoodbye = 15,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: k_EMsgGameServerToClientConnectionStatus = 10;
+   */
+  k_EMsgGameServerToClientConnectionStatus = 10,
+  /**
+   * @generated from protobuf enum value: k_EMsgGameServerToClientInitialGameState = 12;
+   */
+  k_EMsgGameServerToClientInitialGameState = 12,
+  /**
+   * @generated from protobuf enum value: k_EMsgGameServerToClientGameCompleted = 13;
+   */
+  k_EMsgGameServerToClientGameCompleted = 13,
+  /**
+   * @generated from protobuf enum value: k_EMsgGameServerToClientGoodbye = 15;
+   */
+  k_EMsgGameServerToClientGoodbye = 15,
 }
 /**
  * @generated from protobuf enum ECitadelDisconnectReason
  */
 export enum ECitadelDisconnectReason {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: k_ECitadelDisconnectReason_UserLeaveMatch = 1001;
-	 */
-	k_ECitadelDisconnectReason_UserLeaveMatch = 1001,
-	/**
-	 * @generated from protobuf enum value: k_ECitadelDisconnectReason_UserQuitApp = 1002;
-	 */
-	k_ECitadelDisconnectReason_UserQuitApp = 1002,
-	/**
-	 * @generated from protobuf enum value: k_ECitadelDisconnectReason_UserCancel = 1003;
-	 */
-	k_ECitadelDisconnectReason_UserCancel = 1003,
-	/**
-	 * @generated from protobuf enum value: k_ECitadelDisconnectReason_Goodbye = 1004;
-	 */
-	k_ECitadelDisconnectReason_Goodbye = 1004,
-	/**
-	 * @generated from protobuf enum value: k_ECitadelDisconnectReason_BadMessage = 2001;
-	 */
-	k_ECitadelDisconnectReason_BadMessage = 2001,
-	/**
-	 * @generated from protobuf enum value: k_ECitadelDisconnectReason_GameDestroyedUnexpectedly = 2002;
-	 */
-	k_ECitadelDisconnectReason_GameDestroyedUnexpectedly = 2002,
-	/**
-	 * @generated from protobuf enum value: k_ECitadelDisconnectReason_ChangingServer = 2003;
-	 */
-	k_ECitadelDisconnectReason_ChangingServer = 2003,
-	/**
-	 * @generated from protobuf enum value: k_ECitadelDisconnectReason_OldConnection = 2004;
-	 */
-	k_ECitadelDisconnectReason_OldConnection = 2004,
-	/**
-	 * @generated from protobuf enum value: k_ECitadelDisconnectReason_GoodbyeUnrecognizedGame = 2005;
-	 */
-	k_ECitadelDisconnectReason_GoodbyeUnrecognizedGame = 2005,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: k_ECitadelDisconnectReason_UserLeaveMatch = 1001;
+   */
+  k_ECitadelDisconnectReason_UserLeaveMatch = 1001,
+  /**
+   * @generated from protobuf enum value: k_ECitadelDisconnectReason_UserQuitApp = 1002;
+   */
+  k_ECitadelDisconnectReason_UserQuitApp = 1002,
+  /**
+   * @generated from protobuf enum value: k_ECitadelDisconnectReason_UserCancel = 1003;
+   */
+  k_ECitadelDisconnectReason_UserCancel = 1003,
+  /**
+   * @generated from protobuf enum value: k_ECitadelDisconnectReason_Goodbye = 1004;
+   */
+  k_ECitadelDisconnectReason_Goodbye = 1004,
+  /**
+   * @generated from protobuf enum value: k_ECitadelDisconnectReason_BadMessage = 2001;
+   */
+  k_ECitadelDisconnectReason_BadMessage = 2001,
+  /**
+   * @generated from protobuf enum value: k_ECitadelDisconnectReason_GameDestroyedUnexpectedly = 2002;
+   */
+  k_ECitadelDisconnectReason_GameDestroyedUnexpectedly = 2002,
+  /**
+   * @generated from protobuf enum value: k_ECitadelDisconnectReason_ChangingServer = 2003;
+   */
+  k_ECitadelDisconnectReason_ChangingServer = 2003,
+  /**
+   * @generated from protobuf enum value: k_ECitadelDisconnectReason_OldConnection = 2004;
+   */
+  k_ECitadelDisconnectReason_OldConnection = 2004,
+  /**
+   * @generated from protobuf enum value: k_ECitadelDisconnectReason_GoodbyeUnrecognizedGame = 2005;
+   */
+  k_ECitadelDisconnectReason_GoodbyeUnrecognizedGame = 2005,
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgClientServerHeader$Type extends MessageType<CMsgClientServerHeader> {
-	constructor() {
-		super("CMsgClientServerHeader", [
-			{
-				no: 1,
-				name: "game_instance_id",
-				kind: "scalar",
-				localName: "game_instance_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "local_player_index",
-				kind: "scalar",
-				localName: "local_player_index",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "payload",
-				kind: "scalar",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-			{
-				no: 4,
-				name: "msg_id",
-				kind: "enum",
-				localName: "msg_id",
-				opt: true,
-				T: () => ["ECitadelGameMessages", ECitadelGameMessages],
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgClientServerHeader>): CMsgClientServerHeader {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgClientServerHeader>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgClientServerHeader,
-	): CMsgClientServerHeader {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint64 game_instance_id */ 1:
-					message.game_instance_id = reader.uint64().toBigInt();
-					break;
-				case /* optional uint32 local_player_index */ 2:
-					message.local_player_index = reader.uint32();
-					break;
-				case /* optional bytes payload */ 3:
-					message.payload = reader.bytes();
-					break;
-				case /* optional ECitadelGameMessages msg_id */ 4:
-					message.msg_id = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgClientServerHeader,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint64 game_instance_id = 1; */
-		if (message.game_instance_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.game_instance_id);
-		/* optional uint32 local_player_index = 2; */
-		if (message.local_player_index !== undefined) writer.tag(2, WireType.Varint).uint32(message.local_player_index);
-		/* optional bytes payload = 3; */
-		if (message.payload !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.payload);
-		/* optional ECitadelGameMessages msg_id = 4; */
-		if (message.msg_id !== undefined) writer.tag(4, WireType.Varint).int32(message.msg_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgClientServerHeader", [
+      {
+        no: 1,
+        name: "game_instance_id",
+        kind: "scalar",
+        localName: "game_instance_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "local_player_index",
+        kind: "scalar",
+        localName: "local_player_index",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "payload",
+        kind: "scalar",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+      {
+        no: 4,
+        name: "msg_id",
+        kind: "enum",
+        localName: "msg_id",
+        opt: true,
+        T: () => ["ECitadelGameMessages", ECitadelGameMessages],
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgClientServerHeader>): CMsgClientServerHeader {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgClientServerHeader>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgClientServerHeader,
+  ): CMsgClientServerHeader {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint64 game_instance_id */ 1:
+          message.game_instance_id = reader.uint64().toBigInt();
+          break;
+        case /* optional uint32 local_player_index */ 2:
+          message.local_player_index = reader.uint32();
+          break;
+        case /* optional bytes payload */ 3:
+          message.payload = reader.bytes();
+          break;
+        case /* optional ECitadelGameMessages msg_id */ 4:
+          message.msg_id = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgClientServerHeader,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint64 game_instance_id = 1; */
+    if (message.game_instance_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.game_instance_id);
+    /* optional uint32 local_player_index = 2; */
+    if (message.local_player_index !== undefined) writer.tag(2, WireType.Varint).uint32(message.local_player_index);
+    /* optional bytes payload = 3; */
+    if (message.payload !== undefined) writer.tag(3, WireType.LengthDelimited).bytes(message.payload);
+    /* optional ECitadelGameMessages msg_id = 4; */
+    if (message.msg_id !== undefined) writer.tag(4, WireType.Varint).int32(message.msg_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgClientServerHeader
@@ -306,31 +306,31 @@ class CMsgClientServerHeader$Type extends MessageType<CMsgClientServerHeader> {
 export const CMsgClientServerHeader = new CMsgClientServerHeader$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgGameServerToClientGameCompleted$Type extends MessageType<CMsgGameServerToClientGameCompleted> {
-	constructor() {
-		super("CMsgGameServerToClientGameCompleted", []);
-	}
-	create(value?: PartialMessage<CMsgGameServerToClientGameCompleted>): CMsgGameServerToClientGameCompleted {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgGameServerToClientGameCompleted>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgGameServerToClientGameCompleted,
-	): CMsgGameServerToClientGameCompleted {
-		return target ?? this.create();
-	}
-	internalBinaryWrite(
-		message: CMsgGameServerToClientGameCompleted,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgGameServerToClientGameCompleted", []);
+  }
+  create(value?: PartialMessage<CMsgGameServerToClientGameCompleted>): CMsgGameServerToClientGameCompleted {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgGameServerToClientGameCompleted>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgGameServerToClientGameCompleted,
+  ): CMsgGameServerToClientGameCompleted {
+    return target ?? this.create();
+  }
+  internalBinaryWrite(
+    message: CMsgGameServerToClientGameCompleted,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgGameServerToClientGameCompleted
@@ -338,31 +338,31 @@ class CMsgGameServerToClientGameCompleted$Type extends MessageType<CMsgGameServe
 export const CMsgGameServerToClientGameCompleted = new CMsgGameServerToClientGameCompleted$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgGameServerToClientGoodbye$Type extends MessageType<CMsgGameServerToClientGoodbye> {
-	constructor() {
-		super("CMsgGameServerToClientGoodbye", []);
-	}
-	create(value?: PartialMessage<CMsgGameServerToClientGoodbye>): CMsgGameServerToClientGoodbye {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgGameServerToClientGoodbye>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgGameServerToClientGoodbye,
-	): CMsgGameServerToClientGoodbye {
-		return target ?? this.create();
-	}
-	internalBinaryWrite(
-		message: CMsgGameServerToClientGoodbye,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgGameServerToClientGoodbye", []);
+  }
+  create(value?: PartialMessage<CMsgGameServerToClientGoodbye>): CMsgGameServerToClientGoodbye {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgGameServerToClientGoodbye>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgGameServerToClientGoodbye,
+  ): CMsgGameServerToClientGoodbye {
+    return target ?? this.create();
+  }
+  internalBinaryWrite(
+    message: CMsgGameServerToClientGoodbye,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgGameServerToClientGoodbye
@@ -370,65 +370,65 @@ class CMsgGameServerToClientGoodbye$Type extends MessageType<CMsgGameServerToCli
 export const CMsgGameServerToClientGoodbye = new CMsgGameServerToClientGoodbye$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgGameServerToClientConnectionStatus$Type extends MessageType<CMsgGameServerToClientConnectionStatus> {
-	constructor() {
-		super("CMsgGameServerToClientConnectionStatus", [
-			{
-				no: 1,
-				name: "players",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgGameServerToClientConnectionStatus_Player,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgGameServerToClientConnectionStatus>): CMsgGameServerToClientConnectionStatus {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.players = [];
-		if (value !== undefined) reflectionMergePartial<CMsgGameServerToClientConnectionStatus>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgGameServerToClientConnectionStatus,
-	): CMsgGameServerToClientConnectionStatus {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgGameServerToClientConnectionStatus.Player players */ 1:
-					message.players.push(
-						CMsgGameServerToClientConnectionStatus_Player.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgGameServerToClientConnectionStatus,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CMsgGameServerToClientConnectionStatus.Player players = 1; */
-		for (let i = 0; i < message.players.length; i++)
-			CMsgGameServerToClientConnectionStatus_Player.internalBinaryWrite(
-				message.players[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgGameServerToClientConnectionStatus", [
+      {
+        no: 1,
+        name: "players",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgGameServerToClientConnectionStatus_Player,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgGameServerToClientConnectionStatus>): CMsgGameServerToClientConnectionStatus {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.players = [];
+    if (value !== undefined) reflectionMergePartial<CMsgGameServerToClientConnectionStatus>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgGameServerToClientConnectionStatus,
+  ): CMsgGameServerToClientConnectionStatus {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgGameServerToClientConnectionStatus.Player players */ 1:
+          message.players.push(
+            CMsgGameServerToClientConnectionStatus_Player.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgGameServerToClientConnectionStatus,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CMsgGameServerToClientConnectionStatus.Player players = 1; */
+    for (let i = 0; i < message.players.length; i++)
+      CMsgGameServerToClientConnectionStatus_Player.internalBinaryWrite(
+        message.players[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgGameServerToClientConnectionStatus
@@ -436,114 +436,114 @@ class CMsgGameServerToClientConnectionStatus$Type extends MessageType<CMsgGameSe
 export const CMsgGameServerToClientConnectionStatus = new CMsgGameServerToClientConnectionStatus$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgGameServerToClientConnectionStatus_Player$Type extends MessageType<CMsgGameServerToClientConnectionStatus_Player> {
-	constructor() {
-		super("CMsgGameServerToClientConnectionStatus.Player", [
-			{
-				no: 1,
-				name: "player_slot",
-				kind: "scalar",
-				localName: "player_slot",
-				opt: true,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 2,
-				name: "status",
-				kind: "enum",
-				opt: true,
-				T: () => ["CMsgGameServerToClientConnectionStatus.EStatus", CMsgGameServerToClientConnectionStatus_EStatus],
-			},
-			{
-				no: 3,
-				name: "inactivity_ticking",
-				kind: "scalar",
-				localName: "inactivity_ticking",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "inactivity_ms_remaining",
-				kind: "scalar",
-				localName: "inactivity_ms_remaining",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "inactivity_anim_ms_remaining",
-				kind: "scalar",
-				localName: "inactivity_anim_ms_remaining",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgGameServerToClientConnectionStatus_Player>,
-	): CMsgGameServerToClientConnectionStatus_Player {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgGameServerToClientConnectionStatus_Player>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgGameServerToClientConnectionStatus_Player,
-	): CMsgGameServerToClientConnectionStatus_Player {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional int32 player_slot */ 1:
-					message.player_slot = reader.int32();
-					break;
-				case /* optional CMsgGameServerToClientConnectionStatus.EStatus status */ 2:
-					message.status = reader.int32();
-					break;
-				case /* optional bool inactivity_ticking */ 3:
-					message.inactivity_ticking = reader.bool();
-					break;
-				case /* optional uint32 inactivity_ms_remaining */ 4:
-					message.inactivity_ms_remaining = reader.uint32();
-					break;
-				case /* optional uint32 inactivity_anim_ms_remaining */ 5:
-					message.inactivity_anim_ms_remaining = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgGameServerToClientConnectionStatus_Player,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional int32 player_slot = 1; */
-		if (message.player_slot !== undefined) writer.tag(1, WireType.Varint).int32(message.player_slot);
-		/* optional CMsgGameServerToClientConnectionStatus.EStatus status = 2; */
-		if (message.status !== undefined) writer.tag(2, WireType.Varint).int32(message.status);
-		/* optional bool inactivity_ticking = 3; */
-		if (message.inactivity_ticking !== undefined) writer.tag(3, WireType.Varint).bool(message.inactivity_ticking);
-		/* optional uint32 inactivity_ms_remaining = 4; */
-		if (message.inactivity_ms_remaining !== undefined)
-			writer.tag(4, WireType.Varint).uint32(message.inactivity_ms_remaining);
-		/* optional uint32 inactivity_anim_ms_remaining = 5; */
-		if (message.inactivity_anim_ms_remaining !== undefined)
-			writer.tag(5, WireType.Varint).uint32(message.inactivity_anim_ms_remaining);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgGameServerToClientConnectionStatus.Player", [
+      {
+        no: 1,
+        name: "player_slot",
+        kind: "scalar",
+        localName: "player_slot",
+        opt: true,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 2,
+        name: "status",
+        kind: "enum",
+        opt: true,
+        T: () => ["CMsgGameServerToClientConnectionStatus.EStatus", CMsgGameServerToClientConnectionStatus_EStatus],
+      },
+      {
+        no: 3,
+        name: "inactivity_ticking",
+        kind: "scalar",
+        localName: "inactivity_ticking",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "inactivity_ms_remaining",
+        kind: "scalar",
+        localName: "inactivity_ms_remaining",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "inactivity_anim_ms_remaining",
+        kind: "scalar",
+        localName: "inactivity_anim_ms_remaining",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgGameServerToClientConnectionStatus_Player>,
+  ): CMsgGameServerToClientConnectionStatus_Player {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgGameServerToClientConnectionStatus_Player>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgGameServerToClientConnectionStatus_Player,
+  ): CMsgGameServerToClientConnectionStatus_Player {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional int32 player_slot */ 1:
+          message.player_slot = reader.int32();
+          break;
+        case /* optional CMsgGameServerToClientConnectionStatus.EStatus status */ 2:
+          message.status = reader.int32();
+          break;
+        case /* optional bool inactivity_ticking */ 3:
+          message.inactivity_ticking = reader.bool();
+          break;
+        case /* optional uint32 inactivity_ms_remaining */ 4:
+          message.inactivity_ms_remaining = reader.uint32();
+          break;
+        case /* optional uint32 inactivity_anim_ms_remaining */ 5:
+          message.inactivity_anim_ms_remaining = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgGameServerToClientConnectionStatus_Player,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional int32 player_slot = 1; */
+    if (message.player_slot !== undefined) writer.tag(1, WireType.Varint).int32(message.player_slot);
+    /* optional CMsgGameServerToClientConnectionStatus.EStatus status = 2; */
+    if (message.status !== undefined) writer.tag(2, WireType.Varint).int32(message.status);
+    /* optional bool inactivity_ticking = 3; */
+    if (message.inactivity_ticking !== undefined) writer.tag(3, WireType.Varint).bool(message.inactivity_ticking);
+    /* optional uint32 inactivity_ms_remaining = 4; */
+    if (message.inactivity_ms_remaining !== undefined)
+      writer.tag(4, WireType.Varint).uint32(message.inactivity_ms_remaining);
+    /* optional uint32 inactivity_anim_ms_remaining = 5; */
+    if (message.inactivity_anim_ms_remaining !== undefined)
+      writer.tag(5, WireType.Varint).uint32(message.inactivity_anim_ms_remaining);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgGameServerToClientConnectionStatus.Player
@@ -551,126 +551,126 @@ class CMsgGameServerToClientConnectionStatus_Player$Type extends MessageType<CMs
 export const CMsgGameServerToClientConnectionStatus_Player = new CMsgGameServerToClientConnectionStatus_Player$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CClientReconnectInfo$Type extends MessageType<CClientReconnectInfo> {
-	constructor() {
-		super("CClientReconnectInfo", [
-			{
-				no: 1,
-				name: "server_steam_id",
-				kind: "scalar",
-				localName: "server_steam_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "lobby_id",
-				kind: "scalar",
-				localName: "lobby_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "time_updated",
-				kind: "scalar",
-				localName: "time_updated",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "udp_connect_ip",
-				kind: "scalar",
-				localName: "udp_connect_ip",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "udp_connect_port",
-				kind: "scalar",
-				localName: "udp_connect_port",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "compatibility_version",
-				kind: "scalar",
-				localName: "compatibility_version",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CClientReconnectInfo>): CClientReconnectInfo {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CClientReconnectInfo>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CClientReconnectInfo,
-	): CClientReconnectInfo {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed64 server_steam_id */ 1:
-					message.server_steam_id = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint64 lobby_id */ 2:
-					message.lobby_id = reader.uint64().toBigInt();
-					break;
-				case /* optional uint32 time_updated */ 3:
-					message.time_updated = reader.uint32();
-					break;
-				case /* optional uint32 udp_connect_ip */ 4:
-					message.udp_connect_ip = reader.uint32();
-					break;
-				case /* optional uint32 udp_connect_port */ 5:
-					message.udp_connect_port = reader.uint32();
-					break;
-				case /* optional uint32 compatibility_version */ 6:
-					message.compatibility_version = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CClientReconnectInfo,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed64 server_steam_id = 1; */
-		if (message.server_steam_id !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.server_steam_id);
-		/* optional uint64 lobby_id = 2; */
-		if (message.lobby_id !== undefined) writer.tag(2, WireType.Varint).uint64(message.lobby_id);
-		/* optional uint32 time_updated = 3; */
-		if (message.time_updated !== undefined) writer.tag(3, WireType.Varint).uint32(message.time_updated);
-		/* optional uint32 udp_connect_ip = 4; */
-		if (message.udp_connect_ip !== undefined) writer.tag(4, WireType.Varint).uint32(message.udp_connect_ip);
-		/* optional uint32 udp_connect_port = 5; */
-		if (message.udp_connect_port !== undefined) writer.tag(5, WireType.Varint).uint32(message.udp_connect_port);
-		/* optional uint32 compatibility_version = 6; */
-		if (message.compatibility_version !== undefined)
-			writer.tag(6, WireType.Varint).uint32(message.compatibility_version);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CClientReconnectInfo", [
+      {
+        no: 1,
+        name: "server_steam_id",
+        kind: "scalar",
+        localName: "server_steam_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "lobby_id",
+        kind: "scalar",
+        localName: "lobby_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "time_updated",
+        kind: "scalar",
+        localName: "time_updated",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "udp_connect_ip",
+        kind: "scalar",
+        localName: "udp_connect_ip",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "udp_connect_port",
+        kind: "scalar",
+        localName: "udp_connect_port",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "compatibility_version",
+        kind: "scalar",
+        localName: "compatibility_version",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CClientReconnectInfo>): CClientReconnectInfo {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CClientReconnectInfo>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CClientReconnectInfo,
+  ): CClientReconnectInfo {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed64 server_steam_id */ 1:
+          message.server_steam_id = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint64 lobby_id */ 2:
+          message.lobby_id = reader.uint64().toBigInt();
+          break;
+        case /* optional uint32 time_updated */ 3:
+          message.time_updated = reader.uint32();
+          break;
+        case /* optional uint32 udp_connect_ip */ 4:
+          message.udp_connect_ip = reader.uint32();
+          break;
+        case /* optional uint32 udp_connect_port */ 5:
+          message.udp_connect_port = reader.uint32();
+          break;
+        case /* optional uint32 compatibility_version */ 6:
+          message.compatibility_version = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CClientReconnectInfo,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed64 server_steam_id = 1; */
+    if (message.server_steam_id !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.server_steam_id);
+    /* optional uint64 lobby_id = 2; */
+    if (message.lobby_id !== undefined) writer.tag(2, WireType.Varint).uint64(message.lobby_id);
+    /* optional uint32 time_updated = 3; */
+    if (message.time_updated !== undefined) writer.tag(3, WireType.Varint).uint32(message.time_updated);
+    /* optional uint32 udp_connect_ip = 4; */
+    if (message.udp_connect_ip !== undefined) writer.tag(4, WireType.Varint).uint32(message.udp_connect_ip);
+    /* optional uint32 udp_connect_port = 5; */
+    if (message.udp_connect_port !== undefined) writer.tag(5, WireType.Varint).uint32(message.udp_connect_port);
+    /* optional uint32 compatibility_version = 6; */
+    if (message.compatibility_version !== undefined)
+      writer.tag(6, WireType.Varint).uint32(message.compatibility_version);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CClientReconnectInfo
@@ -678,87 +678,87 @@ class CClientReconnectInfo$Type extends MessageType<CClientReconnectInfo> {
 export const CClientReconnectInfo = new CClientReconnectInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgClientAccountSyncStorageFile$Type extends MessageType<CMsgClientAccountSyncStorageFile> {
-	constructor() {
-		super("CMsgClientAccountSyncStorageFile", [
-			{
-				no: 1,
-				name: "version",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "ids",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "values",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgClientAccountSyncStorageFile>): CMsgClientAccountSyncStorageFile {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.ids = [];
-		message.values = [];
-		if (value !== undefined) reflectionMergePartial<CMsgClientAccountSyncStorageFile>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgClientAccountSyncStorageFile,
-	): CMsgClientAccountSyncStorageFile {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 version */ 1:
-					message.version = reader.uint32();
-					break;
-				case /* repeated uint32 ids */ 2:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.ids.push(reader.uint32());
-					else message.ids.push(reader.uint32());
-					break;
-				case /* repeated uint32 values */ 3:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.values.push(reader.uint32());
-					else message.values.push(reader.uint32());
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgClientAccountSyncStorageFile,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 version = 1; */
-		if (message.version !== undefined) writer.tag(1, WireType.Varint).uint32(message.version);
-		/* repeated uint32 ids = 2; */
-		for (let i = 0; i < message.ids.length; i++) writer.tag(2, WireType.Varint).uint32(message.ids[i]);
-		/* repeated uint32 values = 3; */
-		for (let i = 0; i < message.values.length; i++) writer.tag(3, WireType.Varint).uint32(message.values[i]);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgClientAccountSyncStorageFile", [
+      {
+        no: 1,
+        name: "version",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "ids",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "values",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgClientAccountSyncStorageFile>): CMsgClientAccountSyncStorageFile {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.ids = [];
+    message.values = [];
+    if (value !== undefined) reflectionMergePartial<CMsgClientAccountSyncStorageFile>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgClientAccountSyncStorageFile,
+  ): CMsgClientAccountSyncStorageFile {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 version */ 1:
+          message.version = reader.uint32();
+          break;
+        case /* repeated uint32 ids */ 2:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.ids.push(reader.uint32());
+          else message.ids.push(reader.uint32());
+          break;
+        case /* repeated uint32 values */ 3:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.values.push(reader.uint32());
+          else message.values.push(reader.uint32());
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgClientAccountSyncStorageFile,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 version = 1; */
+    if (message.version !== undefined) writer.tag(1, WireType.Varint).uint32(message.version);
+    /* repeated uint32 ids = 2; */
+    for (let i = 0; i < message.ids.length; i++) writer.tag(2, WireType.Varint).uint32(message.ids[i]);
+    /* repeated uint32 values = 3; */
+    for (let i = 0; i < message.values.length; i++) writer.tag(3, WireType.Varint).uint32(message.values[i]);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgClientAccountSyncStorageFile

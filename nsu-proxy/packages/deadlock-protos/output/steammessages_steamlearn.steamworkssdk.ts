@@ -15,1170 +15,1170 @@ import { MessageType } from "@protobuf-ts/runtime";
  * @generated from protobuf message CMsgSteamLearnDataSourceDescObject
  */
 export interface CMsgSteamLearnDataSourceDescObject {
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearnDataSourceDescElement elements = 1;
-	 */
-	elements: CMsgSteamLearnDataSourceDescElement[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearnDataSourceDescElement elements = 1;
+   */
+  elements: CMsgSteamLearnDataSourceDescElement[];
 }
 /**
  * @generated from protobuf message CMsgSteamLearnDataSourceDescElement
  */
 export interface CMsgSteamLearnDataSourceDescElement {
-	/**
-	 * @generated from protobuf field: optional string name = 1;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: optional ESteamLearnDataType data_type = 2;
-	 */
-	data_type?: ESteamLearnDataType;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamLearnDataSourceDescObject object = 3;
-	 */
-	object?: CMsgSteamLearnDataSourceDescObject;
-	/**
-	 * @generated from protobuf field: optional uint32 count = 4;
-	 */
-	count?: number;
+  /**
+   * @generated from protobuf field: optional string name = 1;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: optional ESteamLearnDataType data_type = 2;
+   */
+  data_type?: ESteamLearnDataType;
+  /**
+   * @generated from protobuf field: optional CMsgSteamLearnDataSourceDescObject object = 3;
+   */
+  object?: CMsgSteamLearnDataSourceDescObject;
+  /**
+   * @generated from protobuf field: optional uint32 count = 4;
+   */
+  count?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamLearnDataSource
  */
 export interface CMsgSteamLearnDataSource {
-	/**
-	 * @generated from protobuf field: optional uint32 id = 1;
-	 */
-	id?: number;
-	/**
-	 * @generated from protobuf field: optional string name = 2;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 version = 3;
-	 */
-	version?: number;
-	/**
-	 * @generated from protobuf field: optional string source_description = 4;
-	 */
-	source_description?: string;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamLearnDataSourceDescObject structure = 5;
-	 */
-	structure?: CMsgSteamLearnDataSourceDescObject;
-	/**
-	 * @generated from protobuf field: optional uint32 structure_crc = 6;
-	 */
-	structure_crc?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 cache_duration_seconds = 7;
-	 */
-	cache_duration_seconds?: number;
+  /**
+   * @generated from protobuf field: optional uint32 id = 1;
+   */
+  id?: number;
+  /**
+   * @generated from protobuf field: optional string name = 2;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: optional uint32 version = 3;
+   */
+  version?: number;
+  /**
+   * @generated from protobuf field: optional string source_description = 4;
+   */
+  source_description?: string;
+  /**
+   * @generated from protobuf field: optional CMsgSteamLearnDataSourceDescObject structure = 5;
+   */
+  structure?: CMsgSteamLearnDataSourceDescObject;
+  /**
+   * @generated from protobuf field: optional uint32 structure_crc = 6;
+   */
+  structure_crc?: number;
+  /**
+   * @generated from protobuf field: optional uint32 cache_duration_seconds = 7;
+   */
+  cache_duration_seconds?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamLearnDataObject
  */
 export interface CMsgSteamLearnDataObject {
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearnDataElement elements = 1;
-	 */
-	elements: CMsgSteamLearnDataElement[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearnDataElement elements = 1;
+   */
+  elements: CMsgSteamLearnDataElement[];
 }
 /**
  * @generated from protobuf message CMsgSteamLearnDataElement
  */
 export interface CMsgSteamLearnDataElement {
-	/**
-	 * @generated from protobuf field: optional string name = 1;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: repeated int32 data_int32s = 20 [json_name = "dataInt32s"];
-	 */
-	data_int32s: number[];
-	/**
-	 * @generated from protobuf field: repeated float data_floats = 21;
-	 */
-	data_floats: number[];
-	/**
-	 * @generated from protobuf field: repeated bool data_bools = 22;
-	 */
-	data_bools: boolean[];
-	/**
-	 * @generated from protobuf field: repeated string data_strings = 23;
-	 */
-	data_strings: string[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearnDataObject data_objects = 24;
-	 */
-	data_objects: CMsgSteamLearnDataObject[];
+  /**
+   * @generated from protobuf field: optional string name = 1;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: repeated int32 data_int32s = 20 [json_name = "dataInt32s"];
+   */
+  data_int32s: number[];
+  /**
+   * @generated from protobuf field: repeated float data_floats = 21;
+   */
+  data_floats: number[];
+  /**
+   * @generated from protobuf field: repeated bool data_bools = 22;
+   */
+  data_bools: boolean[];
+  /**
+   * @generated from protobuf field: repeated string data_strings = 23;
+   */
+  data_strings: string[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearnDataObject data_objects = 24;
+   */
+  data_objects: CMsgSteamLearnDataObject[];
 }
 /**
  * @generated from protobuf message CMsgSteamLearnData
  */
 export interface CMsgSteamLearnData {
-	/**
-	 * @generated from protobuf field: optional uint32 data_source_id = 1;
-	 */
-	data_source_id?: number;
-	/**
-	 * @generated from protobuf field: repeated uint64 keys = 2;
-	 */
-	keys: bigint[];
-	/**
-	 * @generated from protobuf field: optional CMsgSteamLearnDataObject data_object = 3;
-	 */
-	data_object?: CMsgSteamLearnDataObject;
+  /**
+   * @generated from protobuf field: optional uint32 data_source_id = 1;
+   */
+  data_source_id?: number;
+  /**
+   * @generated from protobuf field: repeated uint64 keys = 2;
+   */
+  keys: bigint[];
+  /**
+   * @generated from protobuf field: optional CMsgSteamLearnDataObject data_object = 3;
+   */
+  data_object?: CMsgSteamLearnDataObject;
 }
 /**
  * @generated from protobuf message CMsgSteamLearnDataList
  */
 export interface CMsgSteamLearnDataList {
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearnData data = 1;
-	 */
-	data: CMsgSteamLearnData[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearnData data = 1;
+   */
+  data: CMsgSteamLearnData[];
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_RegisterDataSource_Request
  */
 export interface CMsgSteamLearn_RegisterDataSource_Request {
-	/**
-	 * @generated from protobuf field: optional string access_token = 1;
-	 */
-	access_token?: string;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamLearnDataSource data_source = 3;
-	 */
-	data_source?: CMsgSteamLearnDataSource;
+  /**
+   * @generated from protobuf field: optional string access_token = 1;
+   */
+  access_token?: string;
+  /**
+   * @generated from protobuf field: optional CMsgSteamLearnDataSource data_source = 3;
+   */
+  data_source?: CMsgSteamLearnDataSource;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_RegisterDataSource_Response
  */
 export interface CMsgSteamLearn_RegisterDataSource_Response {
-	/**
-	 * @generated from protobuf field: optional ESteammLearnRegisterDataSourceResult result = 1;
-	 */
-	result?: ESteammLearnRegisterDataSourceResult;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamLearnDataSource data_source = 2;
-	 */
-	data_source?: CMsgSteamLearnDataSource;
+  /**
+   * @generated from protobuf field: optional ESteammLearnRegisterDataSourceResult result = 1;
+   */
+  result?: ESteammLearnRegisterDataSourceResult;
+  /**
+   * @generated from protobuf field: optional CMsgSteamLearnDataSource data_source = 2;
+   */
+  data_source?: CMsgSteamLearnDataSource;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_CacheData_Request
  */
 export interface CMsgSteamLearn_CacheData_Request {
-	/**
-	 * @generated from protobuf field: optional string access_token = 1;
-	 */
-	access_token?: string;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamLearnData data = 3;
-	 */
-	data?: CMsgSteamLearnData;
+  /**
+   * @generated from protobuf field: optional string access_token = 1;
+   */
+  access_token?: string;
+  /**
+   * @generated from protobuf field: optional CMsgSteamLearnData data = 3;
+   */
+  data?: CMsgSteamLearnData;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_CacheData_Response
  */
 export interface CMsgSteamLearn_CacheData_Response {
-	/**
-	 * @generated from protobuf field: optional ESteamLearnCacheDataResult cache_data_result = 1;
-	 */
-	cache_data_result?: ESteamLearnCacheDataResult;
+  /**
+   * @generated from protobuf field: optional ESteamLearnCacheDataResult cache_data_result = 1;
+   */
+  cache_data_result?: ESteamLearnCacheDataResult;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_SnapshotProject_Request
  */
 export interface CMsgSteamLearn_SnapshotProject_Request {
-	/**
-	 * @generated from protobuf field: optional string access_token = 1;
-	 */
-	access_token?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 project_id = 3;
-	 */
-	project_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 published_version = 7;
-	 */
-	published_version?: number;
-	/**
-	 * @generated from protobuf field: repeated uint64 keys = 4;
-	 */
-	keys: bigint[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearnData data = 5;
-	 */
-	data: CMsgSteamLearnData[];
-	/**
-	 * @generated from protobuf field: optional uint32 pending_data_limit_seconds = 6;
-	 */
-	pending_data_limit_seconds?: number;
+  /**
+   * @generated from protobuf field: optional string access_token = 1;
+   */
+  access_token?: string;
+  /**
+   * @generated from protobuf field: optional uint32 project_id = 3;
+   */
+  project_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 published_version = 7;
+   */
+  published_version?: number;
+  /**
+   * @generated from protobuf field: repeated uint64 keys = 4;
+   */
+  keys: bigint[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearnData data = 5;
+   */
+  data: CMsgSteamLearnData[];
+  /**
+   * @generated from protobuf field: optional uint32 pending_data_limit_seconds = 6;
+   */
+  pending_data_limit_seconds?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_SnapshotProject_Response
  */
 export interface CMsgSteamLearn_SnapshotProject_Response {
-	/**
-	 * @generated from protobuf field: optional ESteamLearnSnapshotProjectResult snapshot_result = 1;
-	 */
-	snapshot_result?: ESteamLearnSnapshotProjectResult;
+  /**
+   * @generated from protobuf field: optional ESteamLearnSnapshotProjectResult snapshot_result = 1;
+   */
+  snapshot_result?: ESteamLearnSnapshotProjectResult;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_BatchOperation_Request
  */
 export interface CMsgSteamLearn_BatchOperation_Request {
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_CacheData_Request cache_data_requests = 1;
-	 */
-	cache_data_requests: CMsgSteamLearn_CacheData_Request[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_SnapshotProject_Request snapshot_requests = 2;
-	 */
-	snapshot_requests: CMsgSteamLearn_SnapshotProject_Request[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_Inference_Request inference_requests = 3;
-	 */
-	inference_requests: CMsgSteamLearn_Inference_Request[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_CacheData_Request cache_data_requests = 1;
+   */
+  cache_data_requests: CMsgSteamLearn_CacheData_Request[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_SnapshotProject_Request snapshot_requests = 2;
+   */
+  snapshot_requests: CMsgSteamLearn_SnapshotProject_Request[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_Inference_Request inference_requests = 3;
+   */
+  inference_requests: CMsgSteamLearn_Inference_Request[];
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_BatchOperation_Response
  */
 export interface CMsgSteamLearn_BatchOperation_Response {
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_CacheData_Response cache_data_responses = 1;
-	 */
-	cache_data_responses: CMsgSteamLearn_CacheData_Response[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_SnapshotProject_Response snapshot_responses = 2;
-	 */
-	snapshot_responses: CMsgSteamLearn_SnapshotProject_Response[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_Inference_Response inference_responses = 3;
-	 */
-	inference_responses: CMsgSteamLearn_Inference_Response[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_CacheData_Response cache_data_responses = 1;
+   */
+  cache_data_responses: CMsgSteamLearn_CacheData_Response[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_SnapshotProject_Response snapshot_responses = 2;
+   */
+  snapshot_responses: CMsgSteamLearn_SnapshotProject_Response[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_Inference_Response inference_responses = 3;
+   */
+  inference_responses: CMsgSteamLearn_Inference_Response[];
 }
 /**
  * @generated from protobuf message CMsgSteamLearnAccessTokens
  */
 export interface CMsgSteamLearnAccessTokens {
-	/**
-	 * @generated from protobuf field: optional string register_data_source_access_token = 1;
-	 */
-	register_data_source_access_token?: string;
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearnAccessTokens.CacheDataAccessToken cache_data_access_tokens = 2;
-	 */
-	cache_data_access_tokens: CMsgSteamLearnAccessTokens_CacheDataAccessToken[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearnAccessTokens.SnapshotProjectAccessToken snapshot_project_access_tokens = 3;
-	 */
-	snapshot_project_access_tokens: CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearnAccessTokens.InferenceAccessToken inference_access_tokens = 4;
-	 */
-	inference_access_tokens: CMsgSteamLearnAccessTokens_InferenceAccessToken[];
+  /**
+   * @generated from protobuf field: optional string register_data_source_access_token = 1;
+   */
+  register_data_source_access_token?: string;
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearnAccessTokens.CacheDataAccessToken cache_data_access_tokens = 2;
+   */
+  cache_data_access_tokens: CMsgSteamLearnAccessTokens_CacheDataAccessToken[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearnAccessTokens.SnapshotProjectAccessToken snapshot_project_access_tokens = 3;
+   */
+  snapshot_project_access_tokens: CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearnAccessTokens.InferenceAccessToken inference_access_tokens = 4;
+   */
+  inference_access_tokens: CMsgSteamLearnAccessTokens_InferenceAccessToken[];
 }
 /**
  * @generated from protobuf message CMsgSteamLearnAccessTokens.CacheDataAccessToken
  */
 export interface CMsgSteamLearnAccessTokens_CacheDataAccessToken {
-	/**
-	 * @generated from protobuf field: optional uint32 data_source_id = 1;
-	 */
-	data_source_id?: number;
-	/**
-	 * @generated from protobuf field: optional string access_token = 2;
-	 */
-	access_token?: string;
+  /**
+   * @generated from protobuf field: optional uint32 data_source_id = 1;
+   */
+  data_source_id?: number;
+  /**
+   * @generated from protobuf field: optional string access_token = 2;
+   */
+  access_token?: string;
 }
 /**
  * @generated from protobuf message CMsgSteamLearnAccessTokens.SnapshotProjectAccessToken
  */
 export interface CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken {
-	/**
-	 * @generated from protobuf field: optional uint32 project_id = 1;
-	 */
-	project_id?: number;
-	/**
-	 * @generated from protobuf field: optional string access_token = 2;
-	 */
-	access_token?: string;
+  /**
+   * @generated from protobuf field: optional uint32 project_id = 1;
+   */
+  project_id?: number;
+  /**
+   * @generated from protobuf field: optional string access_token = 2;
+   */
+  access_token?: string;
 }
 /**
  * @generated from protobuf message CMsgSteamLearnAccessTokens.InferenceAccessToken
  */
 export interface CMsgSteamLearnAccessTokens_InferenceAccessToken {
-	/**
-	 * @generated from protobuf field: optional uint32 project_id = 1;
-	 */
-	project_id?: number;
-	/**
-	 * @generated from protobuf field: optional string access_token = 2;
-	 */
-	access_token?: string;
+  /**
+   * @generated from protobuf field: optional uint32 project_id = 1;
+   */
+  project_id?: number;
+  /**
+   * @generated from protobuf field: optional string access_token = 2;
+   */
+  access_token?: string;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_GetAccessTokens_Request
  */
 export interface CMsgSteamLearn_GetAccessTokens_Request {
-	/**
-	 * @generated from protobuf field: optional uint32 appid = 1;
-	 */
-	appid?: number;
+  /**
+   * @generated from protobuf field: optional uint32 appid = 1;
+   */
+  appid?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_GetAccessTokens_Response
  */
 export interface CMsgSteamLearn_GetAccessTokens_Response {
-	/**
-	 * @generated from protobuf field: optional ESteamLearnGetAccessTokensResult result = 1;
-	 */
-	result?: ESteamLearnGetAccessTokensResult;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamLearnAccessTokens access_tokens = 2;
-	 */
-	access_tokens?: CMsgSteamLearnAccessTokens;
+  /**
+   * @generated from protobuf field: optional ESteamLearnGetAccessTokensResult result = 1;
+   */
+  result?: ESteamLearnGetAccessTokensResult;
+  /**
+   * @generated from protobuf field: optional CMsgSteamLearnAccessTokens access_tokens = 2;
+   */
+  access_tokens?: CMsgSteamLearnAccessTokens;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_Inference_Request
  */
 export interface CMsgSteamLearn_Inference_Request {
-	/**
-	 * @generated from protobuf field: optional string access_token = 1;
-	 */
-	access_token?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 project_id = 3;
-	 */
-	project_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 published_version = 4;
-	 */
-	published_version?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 override_train_id = 5;
-	 */
-	override_train_id?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamLearnDataList data = 6;
-	 */
-	data?: CMsgSteamLearnDataList;
-	/**
-	 * @generated from protobuf field: repeated float additional_data = 7;
-	 */
-	additional_data: number[];
+  /**
+   * @generated from protobuf field: optional string access_token = 1;
+   */
+  access_token?: string;
+  /**
+   * @generated from protobuf field: optional uint32 project_id = 3;
+   */
+  project_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 published_version = 4;
+   */
+  published_version?: number;
+  /**
+   * @generated from protobuf field: optional uint32 override_train_id = 5;
+   */
+  override_train_id?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSteamLearnDataList data = 6;
+   */
+  data?: CMsgSteamLearnDataList;
+  /**
+   * @generated from protobuf field: repeated float additional_data = 7;
+   */
+  additional_data: number[];
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Request
  */
 export interface CMsgSteamLearn_InferenceMetadata_Request {
-	/**
-	 * @generated from protobuf field: optional string access_token = 1;
-	 */
-	access_token?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 project_id = 3;
-	 */
-	project_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 published_version = 4;
-	 */
-	published_version?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 override_train_id = 5;
-	 */
-	override_train_id?: number;
+  /**
+   * @generated from protobuf field: optional string access_token = 1;
+   */
+  access_token?: string;
+  /**
+   * @generated from protobuf field: optional uint32 project_id = 3;
+   */
+  project_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 published_version = 4;
+   */
+  published_version?: number;
+  /**
+   * @generated from protobuf field: optional uint32 override_train_id = 5;
+   */
+  override_train_id?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadataBackend_Request
  */
 export interface CMsgSteamLearn_InferenceMetadataBackend_Request {
-	/**
-	 * @generated from protobuf field: optional uint32 project_id = 1;
-	 */
-	project_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 fetch_id = 2;
-	 */
-	fetch_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 project_id = 1;
+   */
+  project_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 fetch_id = 2;
+   */
+  fetch_id?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response {
-	/**
-	 * @generated from protobuf field: optional ESteamLearnInferenceMetadataResult inference_metadata_result = 1;
-	 */
-	inference_metadata_result?: ESteamLearnInferenceMetadataResult;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamLearn_InferenceMetadata_Response.RowRange row_range = 2;
-	 */
-	row_range?: CMsgSteamLearn_InferenceMetadata_Response_RowRange;
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.Range ranges = 3;
-	 */
-	ranges: CMsgSteamLearn_InferenceMetadata_Response_Range[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.StdDev std_devs = 4;
-	 */
-	std_devs: CMsgSteamLearn_InferenceMetadata_Response_StdDev[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable compact_tables = 5;
-	 */
-	compact_tables: CMsgSteamLearn_InferenceMetadata_Response_CompactTable[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable sequence_tables = 9;
-	 */
-	sequence_tables: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.KMeans kmeans = 6;
-	 */
-	kmeans: CMsgSteamLearn_InferenceMetadata_Response_KMeans[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.AppInfoEntry app_info = 8;
-	 */
-	app_info: CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry[];
-	/**
-	 * @generated from protobuf field: optional CMsgSteamLearn_InferenceMetadata_Response.SnapshotHistogram snapshot_histogram = 7;
-	 */
-	snapshot_histogram?: CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram;
+  /**
+   * @generated from protobuf field: optional ESteamLearnInferenceMetadataResult inference_metadata_result = 1;
+   */
+  inference_metadata_result?: ESteamLearnInferenceMetadataResult;
+  /**
+   * @generated from protobuf field: optional CMsgSteamLearn_InferenceMetadata_Response.RowRange row_range = 2;
+   */
+  row_range?: CMsgSteamLearn_InferenceMetadata_Response_RowRange;
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.Range ranges = 3;
+   */
+  ranges: CMsgSteamLearn_InferenceMetadata_Response_Range[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.StdDev std_devs = 4;
+   */
+  std_devs: CMsgSteamLearn_InferenceMetadata_Response_StdDev[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable compact_tables = 5;
+   */
+  compact_tables: CMsgSteamLearn_InferenceMetadata_Response_CompactTable[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable sequence_tables = 9;
+   */
+  sequence_tables: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.KMeans kmeans = 6;
+   */
+  kmeans: CMsgSteamLearn_InferenceMetadata_Response_KMeans[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.AppInfoEntry app_info = 8;
+   */
+  app_info: CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry[];
+  /**
+   * @generated from protobuf field: optional CMsgSteamLearn_InferenceMetadata_Response.SnapshotHistogram snapshot_histogram = 7;
+   */
+  snapshot_histogram?: CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response.RowRange
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response_RowRange {
-	/**
-	 * @generated from protobuf field: optional uint64 min_row = 1;
-	 */
-	min_row?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 max_row = 2;
-	 */
-	max_row?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 min_row = 1;
+   */
+  min_row?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 max_row = 2;
+   */
+  max_row?: bigint;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response.Range
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response_Range {
-	/**
-	 * @generated from protobuf field: optional string data_element_path = 1;
-	 */
-	data_element_path?: string;
-	/**
-	 * @generated from protobuf field: optional float min_value = 2;
-	 */
-	min_value?: number;
-	/**
-	 * @generated from protobuf field: optional float max_value = 3;
-	 */
-	max_value?: number;
+  /**
+   * @generated from protobuf field: optional string data_element_path = 1;
+   */
+  data_element_path?: string;
+  /**
+   * @generated from protobuf field: optional float min_value = 2;
+   */
+  min_value?: number;
+  /**
+   * @generated from protobuf field: optional float max_value = 3;
+   */
+  max_value?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response.StdDev
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response_StdDev {
-	/**
-	 * @generated from protobuf field: optional string data_element_path = 1;
-	 */
-	data_element_path?: string;
-	/**
-	 * @generated from protobuf field: optional float mean = 2;
-	 */
-	mean?: number;
-	/**
-	 * @generated from protobuf field: optional float std_dev = 3;
-	 */
-	std_dev?: number;
+  /**
+   * @generated from protobuf field: optional string data_element_path = 1;
+   */
+  data_element_path?: string;
+  /**
+   * @generated from protobuf field: optional float mean = 2;
+   */
+  mean?: number;
+  /**
+   * @generated from protobuf field: optional float std_dev = 3;
+   */
+  std_dev?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response.CompactTable
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response_CompactTable {
-	/**
-	 * @generated from protobuf field: optional string name = 1;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapValuesEntry map_values = 2;
-	 */
-	map_values: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapMappingsEntry map_mappings = 3;
-	 */
-	map_mappings: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry[];
+  /**
+   * @generated from protobuf field: optional string name = 1;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapValuesEntry map_values = 2;
+   */
+  map_values: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapMappingsEntry map_mappings = 3;
+   */
+  map_mappings: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry[];
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response.CompactTable.Entry
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry {
-	/**
-	 * @generated from protobuf field: optional uint32 value = 1;
-	 */
-	value?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 mapping = 2;
-	 */
-	mapping?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 count = 3;
-	 */
-	count?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 value = 1;
+   */
+  value?: number;
+  /**
+   * @generated from protobuf field: optional uint32 mapping = 2;
+   */
+  mapping?: number;
+  /**
+   * @generated from protobuf field: optional uint64 count = 3;
+   */
+  count?: bigint;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapValuesEntry
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry {
-	/**
-	 * @generated from protobuf field: optional uint32 key = 1;
-	 */
-	key?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamLearn_InferenceMetadata_Response.CompactTable.Entry value = 2;
-	 */
-	value?: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry;
+  /**
+   * @generated from protobuf field: optional uint32 key = 1;
+   */
+  key?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSteamLearn_InferenceMetadata_Response.CompactTable.Entry value = 2;
+   */
+  value?: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapMappingsEntry
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry {
-	/**
-	 * @generated from protobuf field: optional uint32 key = 1;
-	 */
-	key?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamLearn_InferenceMetadata_Response.CompactTable.Entry value = 2;
-	 */
-	value?: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry;
+  /**
+   * @generated from protobuf field: optional uint32 key = 1;
+   */
+  key?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSteamLearn_InferenceMetadata_Response.CompactTable.Entry value = 2;
+   */
+  value?: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response.SequenceTable
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response_SequenceTable {
-	/**
-	 * @generated from protobuf field: optional string name = 1;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapValuesEntry map_values = 2;
-	 */
-	map_values: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapMappingsEntry map_mappings = 3;
-	 */
-	map_mappings: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry[];
-	/**
-	 * @generated from protobuf field: optional uint64 total_count = 4;
-	 */
-	total_count?: bigint;
+  /**
+   * @generated from protobuf field: optional string name = 1;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapValuesEntry map_values = 2;
+   */
+  map_values: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapMappingsEntry map_mappings = 3;
+   */
+  map_mappings: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry[];
+  /**
+   * @generated from protobuf field: optional uint64 total_count = 4;
+   */
+  total_count?: bigint;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.Entry
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry {
-	/**
-	 * @generated from protobuf field: repeated uint32 values = 1;
-	 */
-	values: number[];
-	/**
-	 * @generated from protobuf field: optional uint32 crc = 2;
-	 */
-	crc?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 count = 3;
-	 */
-	count?: number;
+  /**
+   * @generated from protobuf field: repeated uint32 values = 1;
+   */
+  values: number[];
+  /**
+   * @generated from protobuf field: optional uint32 crc = 2;
+   */
+  crc?: number;
+  /**
+   * @generated from protobuf field: optional uint32 count = 3;
+   */
+  count?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapValuesEntry
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry {
-	/**
-	 * @generated from protobuf field: optional uint32 key = 1;
-	 */
-	key?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.Entry value = 2;
-	 */
-	value?: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry;
+  /**
+   * @generated from protobuf field: optional uint32 key = 1;
+   */
+  key?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.Entry value = 2;
+   */
+  value?: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapMappingsEntry
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry {
-	/**
-	 * @generated from protobuf field: optional string key = 1;
-	 */
-	key?: string;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.Entry value = 2;
-	 */
-	value?: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry;
+  /**
+   * @generated from protobuf field: optional string key = 1;
+   */
+  key?: string;
+  /**
+   * @generated from protobuf field: optional CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.Entry value = 2;
+   */
+  value?: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response.KMeans
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response_KMeans {
-	/**
-	 * @generated from protobuf field: optional string name = 1;
-	 */
-	name?: string;
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.KMeans.Cluster clusters = 2;
-	 */
-	clusters: CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster[];
+  /**
+   * @generated from protobuf field: optional string name = 1;
+   */
+  name?: string;
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_InferenceMetadata_Response.KMeans.Cluster clusters = 2;
+   */
+  clusters: CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster[];
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response.KMeans.Cluster
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster {
-	/**
-	 * @generated from protobuf field: optional float x = 1;
-	 */
-	x?: number;
-	/**
-	 * @generated from protobuf field: optional float y = 2;
-	 */
-	y?: number;
-	/**
-	 * @generated from protobuf field: optional float radius = 3;
-	 */
-	radius?: number;
-	/**
-	 * @generated from protobuf field: optional float radius_75pct = 4 [json_name = "radius75pct"];
-	 */
-	radius_75pct?: number;
-	/**
-	 * @generated from protobuf field: optional float radius_50pct = 5 [json_name = "radius50pct"];
-	 */
-	radius_50pct?: number;
-	/**
-	 * @generated from protobuf field: optional float radius_25pct = 6 [json_name = "radius25pct"];
-	 */
-	radius_25pct?: number;
+  /**
+   * @generated from protobuf field: optional float x = 1;
+   */
+  x?: number;
+  /**
+   * @generated from protobuf field: optional float y = 2;
+   */
+  y?: number;
+  /**
+   * @generated from protobuf field: optional float radius = 3;
+   */
+  radius?: number;
+  /**
+   * @generated from protobuf field: optional float radius_75pct = 4 [json_name = "radius75pct"];
+   */
+  radius_75pct?: number;
+  /**
+   * @generated from protobuf field: optional float radius_50pct = 5 [json_name = "radius50pct"];
+   */
+  radius_50pct?: number;
+  /**
+   * @generated from protobuf field: optional float radius_25pct = 6 [json_name = "radius25pct"];
+   */
+  radius_25pct?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response.SnapshotHistogram
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram {
-	/**
-	 * @generated from protobuf field: optional float min_value = 1;
-	 */
-	min_value?: number;
-	/**
-	 * @generated from protobuf field: optional float max_value = 2;
-	 */
-	max_value?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 num_buckets = 3;
-	 */
-	num_buckets?: number;
-	/**
-	 * @generated from protobuf field: repeated uint32 bucket_counts = 4;
-	 */
-	bucket_counts: number[];
+  /**
+   * @generated from protobuf field: optional float min_value = 1;
+   */
+  min_value?: number;
+  /**
+   * @generated from protobuf field: optional float max_value = 2;
+   */
+  max_value?: number;
+  /**
+   * @generated from protobuf field: optional uint32 num_buckets = 3;
+   */
+  num_buckets?: number;
+  /**
+   * @generated from protobuf field: repeated uint32 bucket_counts = 4;
+   */
+  bucket_counts: number[];
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response.AppInfo
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response_AppInfo {
-	/**
-	 * @generated from protobuf field: optional string country_allow = 1;
-	 */
-	country_allow?: string;
-	/**
-	 * @generated from protobuf field: optional string country_deny = 2;
-	 */
-	country_deny?: string;
-	/**
-	 * @generated from protobuf field: optional bool platform_win = 3;
-	 */
-	platform_win?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool platform_mac = 4;
-	 */
-	platform_mac?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool platform_linux = 5;
-	 */
-	platform_linux?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool adult_violence = 6;
-	 */
-	adult_violence?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool adult_sex = 7;
-	 */
-	adult_sex?: boolean;
+  /**
+   * @generated from protobuf field: optional string country_allow = 1;
+   */
+  country_allow?: string;
+  /**
+   * @generated from protobuf field: optional string country_deny = 2;
+   */
+  country_deny?: string;
+  /**
+   * @generated from protobuf field: optional bool platform_win = 3;
+   */
+  platform_win?: boolean;
+  /**
+   * @generated from protobuf field: optional bool platform_mac = 4;
+   */
+  platform_mac?: boolean;
+  /**
+   * @generated from protobuf field: optional bool platform_linux = 5;
+   */
+  platform_linux?: boolean;
+  /**
+   * @generated from protobuf field: optional bool adult_violence = 6;
+   */
+  adult_violence?: boolean;
+  /**
+   * @generated from protobuf field: optional bool adult_sex = 7;
+   */
+  adult_sex?: boolean;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceMetadata_Response.AppInfoEntry
  */
 export interface CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry {
-	/**
-	 * @generated from protobuf field: optional uint32 key = 1;
-	 */
-	key?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamLearn_InferenceMetadata_Response.AppInfo value = 2;
-	 */
-	value?: CMsgSteamLearn_InferenceMetadata_Response_AppInfo;
+  /**
+   * @generated from protobuf field: optional uint32 key = 1;
+   */
+  key?: number;
+  /**
+   * @generated from protobuf field: optional CMsgSteamLearn_InferenceMetadata_Response.AppInfo value = 2;
+   */
+  value?: CMsgSteamLearn_InferenceMetadata_Response_AppInfo;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceBackend_Response
  */
 export interface CMsgSteamLearn_InferenceBackend_Response {
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_InferenceBackend_Response.Output outputs = 1;
-	 */
-	outputs: CMsgSteamLearn_InferenceBackend_Response_Output[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_InferenceBackend_Response.Output outputs = 1;
+   */
+  outputs: CMsgSteamLearn_InferenceBackend_Response_Output[];
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceBackend_Response.Sequence
  */
 export interface CMsgSteamLearn_InferenceBackend_Response_Sequence {
-	/**
-	 * @generated from protobuf field: repeated float value = 1;
-	 */
-	value: number[];
+  /**
+   * @generated from protobuf field: repeated float value = 1;
+   */
+  value: number[];
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceBackend_Response.RegressionOutput
  */
 export interface CMsgSteamLearn_InferenceBackend_Response_RegressionOutput {
-	/**
-	 * @generated from protobuf field: optional float value = 1;
-	 */
-	value?: number;
+  /**
+   * @generated from protobuf field: optional float value = 1;
+   */
+  value?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceBackend_Response.BinaryCrossEntropyOutput
  */
 export interface CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput {
-	/**
-	 * @generated from protobuf field: optional float value = 1;
-	 */
-	value?: number;
+  /**
+   * @generated from protobuf field: optional float value = 1;
+   */
+  value?: number;
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceBackend_Response.MutliBinaryCrossEntropyOutput
  */
 export interface CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput {
-	/**
-	 * @generated from protobuf field: repeated float weight = 1;
-	 */
-	weight: number[];
-	/**
-	 * @generated from protobuf field: repeated float value = 2;
-	 */
-	value: number[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_InferenceBackend_Response.Sequence value_sequence = 3;
-	 */
-	value_sequence: CMsgSteamLearn_InferenceBackend_Response_Sequence[];
+  /**
+   * @generated from protobuf field: repeated float weight = 1;
+   */
+  weight: number[];
+  /**
+   * @generated from protobuf field: repeated float value = 2;
+   */
+  value: number[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_InferenceBackend_Response.Sequence value_sequence = 3;
+   */
+  value_sequence: CMsgSteamLearn_InferenceBackend_Response_Sequence[];
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceBackend_Response.CategoricalCrossEntropyOutput
  */
 export interface CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput {
-	/**
-	 * @generated from protobuf field: repeated float weight = 1;
-	 */
-	weight: number[];
-	/**
-	 * @generated from protobuf field: repeated float value = 2;
-	 */
-	value: number[];
-	/**
-	 * @generated from protobuf field: repeated CMsgSteamLearn_InferenceBackend_Response.Sequence value_sequence = 3;
-	 */
-	value_sequence: CMsgSteamLearn_InferenceBackend_Response_Sequence[];
+  /**
+   * @generated from protobuf field: repeated float weight = 1;
+   */
+  weight: number[];
+  /**
+   * @generated from protobuf field: repeated float value = 2;
+   */
+  value: number[];
+  /**
+   * @generated from protobuf field: repeated CMsgSteamLearn_InferenceBackend_Response.Sequence value_sequence = 3;
+   */
+  value_sequence: CMsgSteamLearn_InferenceBackend_Response_Sequence[];
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_InferenceBackend_Response.Output
  */
 export interface CMsgSteamLearn_InferenceBackend_Response_Output {
-	/**
-	 * @generated from protobuf oneof: ResponseType
-	 */
-	ResponseType:
-		| {
-				oneofKind: "binary_crossentropy";
-				/**
-				 * @generated from protobuf field: CMsgSteamLearn_InferenceBackend_Response.BinaryCrossEntropyOutput binary_crossentropy = 1;
-				 */
-				binary_crossentropy: CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput;
-		  }
-		| {
-				oneofKind: "categorical_crossentropy";
-				/**
-				 * @generated from protobuf field: CMsgSteamLearn_InferenceBackend_Response.CategoricalCrossEntropyOutput categorical_crossentropy = 2;
-				 */
-				categorical_crossentropy: CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput;
-		  }
-		| {
-				oneofKind: "multi_binary_crossentropy";
-				/**
-				 * @generated from protobuf field: CMsgSteamLearn_InferenceBackend_Response.MutliBinaryCrossEntropyOutput multi_binary_crossentropy = 3;
-				 */
-				multi_binary_crossentropy: CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput;
-		  }
-		| {
-				oneofKind: "regression";
-				/**
-				 * @generated from protobuf field: CMsgSteamLearn_InferenceBackend_Response.RegressionOutput regression = 4;
-				 */
-				regression: CMsgSteamLearn_InferenceBackend_Response_RegressionOutput;
-		  }
-		| {
-				oneofKind: undefined;
-		  };
+  /**
+   * @generated from protobuf oneof: ResponseType
+   */
+  ResponseType:
+    | {
+        oneofKind: "binary_crossentropy";
+        /**
+         * @generated from protobuf field: CMsgSteamLearn_InferenceBackend_Response.BinaryCrossEntropyOutput binary_crossentropy = 1;
+         */
+        binary_crossentropy: CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput;
+      }
+    | {
+        oneofKind: "categorical_crossentropy";
+        /**
+         * @generated from protobuf field: CMsgSteamLearn_InferenceBackend_Response.CategoricalCrossEntropyOutput categorical_crossentropy = 2;
+         */
+        categorical_crossentropy: CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput;
+      }
+    | {
+        oneofKind: "multi_binary_crossentropy";
+        /**
+         * @generated from protobuf field: CMsgSteamLearn_InferenceBackend_Response.MutliBinaryCrossEntropyOutput multi_binary_crossentropy = 3;
+         */
+        multi_binary_crossentropy: CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput;
+      }
+    | {
+        oneofKind: "regression";
+        /**
+         * @generated from protobuf field: CMsgSteamLearn_InferenceBackend_Response.RegressionOutput regression = 4;
+         */
+        regression: CMsgSteamLearn_InferenceBackend_Response_RegressionOutput;
+      }
+    | {
+        oneofKind: undefined;
+      };
 }
 /**
  * @generated from protobuf message CMsgSteamLearn_Inference_Response
  */
 export interface CMsgSteamLearn_Inference_Response {
-	/**
-	 * @generated from protobuf field: optional ESteamLearnInferenceResult inference_result = 1;
-	 */
-	inference_result?: ESteamLearnInferenceResult;
-	/**
-	 * @generated from protobuf field: optional CMsgSteamLearn_InferenceBackend_Response backend_response = 2;
-	 */
-	backend_response?: CMsgSteamLearn_InferenceBackend_Response;
-	/**
-	 * @generated from protobuf field: repeated uint64 keys = 3;
-	 */
-	keys: bigint[];
+  /**
+   * @generated from protobuf field: optional ESteamLearnInferenceResult inference_result = 1;
+   */
+  inference_result?: ESteamLearnInferenceResult;
+  /**
+   * @generated from protobuf field: optional CMsgSteamLearn_InferenceBackend_Response backend_response = 2;
+   */
+  backend_response?: CMsgSteamLearn_InferenceBackend_Response;
+  /**
+   * @generated from protobuf field: repeated uint64 keys = 3;
+   */
+  keys: bigint[];
 }
 /**
  * @generated from protobuf enum ESteamLearnDataType
  */
 export enum ESteamLearnDataType {
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_DATATYPE_INVALID = 0;
-	 */
-	STEAMLEARN_DATATYPE_INVALID = 0,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_DATATYPE_INT32 = 1;
-	 */
-	STEAMLEARN_DATATYPE_INT32 = 1,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_DATATYPE_FLOAT32 = 2;
-	 */
-	STEAMLEARN_DATATYPE_FLOAT32 = 2,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_DATATYPE_BOOL = 3;
-	 */
-	STEAMLEARN_DATATYPE_BOOL = 3,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_DATATYPE_STRING = 4;
-	 */
-	STEAMLEARN_DATATYPE_STRING = 4,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_DATATYPE_OBJECT = 5;
-	 */
-	STEAMLEARN_DATATYPE_OBJECT = 5,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_DATATYPE_INVALID = 0;
+   */
+  STEAMLEARN_DATATYPE_INVALID = 0,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_DATATYPE_INT32 = 1;
+   */
+  STEAMLEARN_DATATYPE_INT32 = 1,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_DATATYPE_FLOAT32 = 2;
+   */
+  STEAMLEARN_DATATYPE_FLOAT32 = 2,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_DATATYPE_BOOL = 3;
+   */
+  STEAMLEARN_DATATYPE_BOOL = 3,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_DATATYPE_STRING = 4;
+   */
+  STEAMLEARN_DATATYPE_STRING = 4,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_DATATYPE_OBJECT = 5;
+   */
+  STEAMLEARN_DATATYPE_OBJECT = 5,
 }
 /**
  * @generated from protobuf enum ESteammLearnRegisterDataSourceResult
  */
 export enum ESteammLearnRegisterDataSourceResult {
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR = 0;
-	 */
-	STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR = 0,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_SUCCESS_CREATED = 1;
-	 */
-	STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_SUCCESS_CREATED = 1,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_SUCCESS_FOUND = 2;
-	 */
-	STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_SUCCESS_FOUND = 2,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_GENERIC = 3;
-	 */
-	STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_GENERIC = 3,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_INVALID_NAME = 4;
-	 */
-	STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_INVALID_NAME = 4,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_INVALID_VERSION = 5;
-	 */
-	STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_INVALID_VERSION = 5,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_DATA_CHANGED = 6;
-	 */
-	STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_DATA_CHANGED = 6,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_DATA_INVALID = 7;
-	 */
-	STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_DATA_INVALID = 7,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_FORBIDDEN = 8;
-	 */
-	STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_FORBIDDEN = 8,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_INVALID_TIMESTAMP = 9;
-	 */
-	STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_INVALID_TIMESTAMP = 9,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_DISABLED = 10;
-	 */
-	STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_DISABLED = 10,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR = 0;
+   */
+  STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR = 0,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_SUCCESS_CREATED = 1;
+   */
+  STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_SUCCESS_CREATED = 1,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_SUCCESS_FOUND = 2;
+   */
+  STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_SUCCESS_FOUND = 2,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_GENERIC = 3;
+   */
+  STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_GENERIC = 3,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_INVALID_NAME = 4;
+   */
+  STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_INVALID_NAME = 4,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_INVALID_VERSION = 5;
+   */
+  STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_INVALID_VERSION = 5,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_DATA_CHANGED = 6;
+   */
+  STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_DATA_CHANGED = 6,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_DATA_INVALID = 7;
+   */
+  STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_DATA_INVALID = 7,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_FORBIDDEN = 8;
+   */
+  STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_FORBIDDEN = 8,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_INVALID_TIMESTAMP = 9;
+   */
+  STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_ERROR_INVALID_TIMESTAMP = 9,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_DISABLED = 10;
+   */
+  STEAMLEARN_REGISTER_DATA_SOURCE_RESULT_DISABLED = 10,
 }
 /**
  * @generated from protobuf enum ESteamLearnCacheDataResult
  */
 export enum ESteamLearnCacheDataResult {
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_CACHE_DATA_ERROR = 0;
-	 */
-	STEAMLEARN_CACHE_DATA_ERROR = 0,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_CACHE_DATA_SUCCESS = 1;
-	 */
-	STEAMLEARN_CACHE_DATA_SUCCESS = 1,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_CACHE_DATA_ERROR_UNKNOWN_DATA_SOURCE = 2;
-	 */
-	STEAMLEARN_CACHE_DATA_ERROR_UNKNOWN_DATA_SOURCE = 2,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_CACHE_DATA_ERROR_UNCACHED_DATA_SOURCE = 3;
-	 */
-	STEAMLEARN_CACHE_DATA_ERROR_UNCACHED_DATA_SOURCE = 3,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_CACHE_DATA_ERROR_INVALID_KEYS = 4;
-	 */
-	STEAMLEARN_CACHE_DATA_ERROR_INVALID_KEYS = 4,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_CACHE_DATA_ERROR_FORBIDDEN = 5;
-	 */
-	STEAMLEARN_CACHE_DATA_ERROR_FORBIDDEN = 5,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_CACHE_DATA_ERROR_INVALID_TIMESTAMP = 6;
-	 */
-	STEAMLEARN_CACHE_DATA_ERROR_INVALID_TIMESTAMP = 6,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_CACHE_DATA_DISABLED = 7;
-	 */
-	STEAMLEARN_CACHE_DATA_DISABLED = 7,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_CACHE_DATA_ERROR = 0;
+   */
+  STEAMLEARN_CACHE_DATA_ERROR = 0,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_CACHE_DATA_SUCCESS = 1;
+   */
+  STEAMLEARN_CACHE_DATA_SUCCESS = 1,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_CACHE_DATA_ERROR_UNKNOWN_DATA_SOURCE = 2;
+   */
+  STEAMLEARN_CACHE_DATA_ERROR_UNKNOWN_DATA_SOURCE = 2,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_CACHE_DATA_ERROR_UNCACHED_DATA_SOURCE = 3;
+   */
+  STEAMLEARN_CACHE_DATA_ERROR_UNCACHED_DATA_SOURCE = 3,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_CACHE_DATA_ERROR_INVALID_KEYS = 4;
+   */
+  STEAMLEARN_CACHE_DATA_ERROR_INVALID_KEYS = 4,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_CACHE_DATA_ERROR_FORBIDDEN = 5;
+   */
+  STEAMLEARN_CACHE_DATA_ERROR_FORBIDDEN = 5,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_CACHE_DATA_ERROR_INVALID_TIMESTAMP = 6;
+   */
+  STEAMLEARN_CACHE_DATA_ERROR_INVALID_TIMESTAMP = 6,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_CACHE_DATA_DISABLED = 7;
+   */
+  STEAMLEARN_CACHE_DATA_DISABLED = 7,
 }
 /**
  * @generated from protobuf enum ESteamLearnSnapshotProjectResult
  */
 export enum ESteamLearnSnapshotProjectResult {
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR = 0;
-	 */
-	STEAMLEARN_SNAPSHOT_PROJECT_ERROR = 0,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_SUCCESS_STORED = 1;
-	 */
-	STEAMLEARN_SNAPSHOT_PROJECT_SUCCESS_STORED = 1,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_SUCCESS_QUEUED = 2;
-	 */
-	STEAMLEARN_SNAPSHOT_PROJECT_SUCCESS_QUEUED = 2,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_PROJECT_ID = 3;
-	 */
-	STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_PROJECT_ID = 3,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_UNKNOWN_DATA_SOURCE = 4;
-	 */
-	STEAMLEARN_SNAPSHOT_PROJECT_ERROR_UNKNOWN_DATA_SOURCE = 4,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_DATA_SOURCE_KEY = 5;
-	 */
-	STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_DATA_SOURCE_KEY = 5,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_MISSING_CACHE_DURATION = 6;
-	 */
-	STEAMLEARN_SNAPSHOT_PROJECT_ERROR_MISSING_CACHE_DURATION = 6,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_NO_PUBLISHED_CONFIG = 7;
-	 */
-	STEAMLEARN_SNAPSHOT_PROJECT_ERROR_NO_PUBLISHED_CONFIG = 7,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_FORBIDDEN = 8;
-	 */
-	STEAMLEARN_SNAPSHOT_PROJECT_ERROR_FORBIDDEN = 8,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_TIMESTAMP = 9;
-	 */
-	STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_TIMESTAMP = 9,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INTERNAL_DATA_SOURCE_ERROR = 10;
-	 */
-	STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INTERNAL_DATA_SOURCE_ERROR = 10,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_DISABLED = 11;
-	 */
-	STEAMLEARN_SNAPSHOT_PROJECT_DISABLED = 11,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_PUBLISHED_VERSION = 12;
-	 */
-	STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_PUBLISHED_VERSION = 12,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR = 0;
+   */
+  STEAMLEARN_SNAPSHOT_PROJECT_ERROR = 0,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_SUCCESS_STORED = 1;
+   */
+  STEAMLEARN_SNAPSHOT_PROJECT_SUCCESS_STORED = 1,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_SUCCESS_QUEUED = 2;
+   */
+  STEAMLEARN_SNAPSHOT_PROJECT_SUCCESS_QUEUED = 2,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_PROJECT_ID = 3;
+   */
+  STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_PROJECT_ID = 3,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_UNKNOWN_DATA_SOURCE = 4;
+   */
+  STEAMLEARN_SNAPSHOT_PROJECT_ERROR_UNKNOWN_DATA_SOURCE = 4,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_DATA_SOURCE_KEY = 5;
+   */
+  STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_DATA_SOURCE_KEY = 5,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_MISSING_CACHE_DURATION = 6;
+   */
+  STEAMLEARN_SNAPSHOT_PROJECT_ERROR_MISSING_CACHE_DURATION = 6,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_NO_PUBLISHED_CONFIG = 7;
+   */
+  STEAMLEARN_SNAPSHOT_PROJECT_ERROR_NO_PUBLISHED_CONFIG = 7,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_FORBIDDEN = 8;
+   */
+  STEAMLEARN_SNAPSHOT_PROJECT_ERROR_FORBIDDEN = 8,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_TIMESTAMP = 9;
+   */
+  STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_TIMESTAMP = 9,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INTERNAL_DATA_SOURCE_ERROR = 10;
+   */
+  STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INTERNAL_DATA_SOURCE_ERROR = 10,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_DISABLED = 11;
+   */
+  STEAMLEARN_SNAPSHOT_PROJECT_DISABLED = 11,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_PUBLISHED_VERSION = 12;
+   */
+  STEAMLEARN_SNAPSHOT_PROJECT_ERROR_INVALID_PUBLISHED_VERSION = 12,
 }
 /**
  * @generated from protobuf enum ESteamLearnGetAccessTokensResult
  */
 export enum ESteamLearnGetAccessTokensResult {
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_GET_ACCESS_TOKENS_ERROR = 0;
-	 */
-	STEAMLEARN_GET_ACCESS_TOKENS_ERROR = 0,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_GET_ACCESS_TOKENS_SUCCESS = 1;
-	 */
-	STEAMLEARN_GET_ACCESS_TOKENS_SUCCESS = 1,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_GET_ACCESS_TOKENS_ERROR = 0;
+   */
+  STEAMLEARN_GET_ACCESS_TOKENS_ERROR = 0,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_GET_ACCESS_TOKENS_SUCCESS = 1;
+   */
+  STEAMLEARN_GET_ACCESS_TOKENS_SUCCESS = 1,
 }
 /**
  * @generated from protobuf enum ESteamLearnInferenceResult
  */
 export enum ESteamLearnInferenceResult {
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR = 0;
-	 */
-	STEAMLEARN_INFERENCE_ERROR = 0,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_SUCCESS = 1;
-	 */
-	STEAMLEARN_INFERENCE_SUCCESS = 1,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR_INVALID_PROJECT_ID = 2;
-	 */
-	STEAMLEARN_INFERENCE_ERROR_INVALID_PROJECT_ID = 2,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR_MISSING_CACHED_SCHEMA_DATA = 3;
-	 */
-	STEAMLEARN_INFERENCE_ERROR_MISSING_CACHED_SCHEMA_DATA = 3,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR_NO_PUBLISHED_CONFIG = 4;
-	 */
-	STEAMLEARN_INFERENCE_ERROR_NO_PUBLISHED_CONFIG = 4,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR_FORBIDDEN = 5;
-	 */
-	STEAMLEARN_INFERENCE_ERROR_FORBIDDEN = 5,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR_INVALID_TIMESTAMP = 6;
-	 */
-	STEAMLEARN_INFERENCE_ERROR_INVALID_TIMESTAMP = 6,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR_INVALID_PUBLISHED_VERSION = 7;
-	 */
-	STEAMLEARN_INFERENCE_ERROR_INVALID_PUBLISHED_VERSION = 7,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR_NO_FETCH_ID_FOUND = 8;
-	 */
-	STEAMLEARN_INFERENCE_ERROR_NO_FETCH_ID_FOUND = 8,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR_TOO_BUSY = 9;
-	 */
-	STEAMLEARN_INFERENCE_ERROR_TOO_BUSY = 9,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR = 0;
+   */
+  STEAMLEARN_INFERENCE_ERROR = 0,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_SUCCESS = 1;
+   */
+  STEAMLEARN_INFERENCE_SUCCESS = 1,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR_INVALID_PROJECT_ID = 2;
+   */
+  STEAMLEARN_INFERENCE_ERROR_INVALID_PROJECT_ID = 2,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR_MISSING_CACHED_SCHEMA_DATA = 3;
+   */
+  STEAMLEARN_INFERENCE_ERROR_MISSING_CACHED_SCHEMA_DATA = 3,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR_NO_PUBLISHED_CONFIG = 4;
+   */
+  STEAMLEARN_INFERENCE_ERROR_NO_PUBLISHED_CONFIG = 4,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR_FORBIDDEN = 5;
+   */
+  STEAMLEARN_INFERENCE_ERROR_FORBIDDEN = 5,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR_INVALID_TIMESTAMP = 6;
+   */
+  STEAMLEARN_INFERENCE_ERROR_INVALID_TIMESTAMP = 6,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR_INVALID_PUBLISHED_VERSION = 7;
+   */
+  STEAMLEARN_INFERENCE_ERROR_INVALID_PUBLISHED_VERSION = 7,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR_NO_FETCH_ID_FOUND = 8;
+   */
+  STEAMLEARN_INFERENCE_ERROR_NO_FETCH_ID_FOUND = 8,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_ERROR_TOO_BUSY = 9;
+   */
+  STEAMLEARN_INFERENCE_ERROR_TOO_BUSY = 9,
 }
 /**
  * @generated from protobuf enum ESteamLearnInferenceMetadataResult
  */
 export enum ESteamLearnInferenceMetadataResult {
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_METADATA_ERROR = 0;
-	 */
-	STEAMLEARN_INFERENCE_METADATA_ERROR = 0,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_METADATA_SUCCESS = 1;
-	 */
-	STEAMLEARN_INFERENCE_METADATA_SUCCESS = 1,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_METADATA_ERROR_INVALID_PROJECT_ID = 2;
-	 */
-	STEAMLEARN_INFERENCE_METADATA_ERROR_INVALID_PROJECT_ID = 2,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_METADATA_ERROR_NO_PUBLISHED_CONFIG = 3;
-	 */
-	STEAMLEARN_INFERENCE_METADATA_ERROR_NO_PUBLISHED_CONFIG = 3,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_METADATA_ERROR_FORBIDDEN = 4;
-	 */
-	STEAMLEARN_INFERENCE_METADATA_ERROR_FORBIDDEN = 4,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_METADATA_ERROR_INVALID_TIMESTAMP = 5;
-	 */
-	STEAMLEARN_INFERENCE_METADATA_ERROR_INVALID_TIMESTAMP = 5,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_METADATA_ERROR_INVALID_PUBLISHED_VERSION = 6;
-	 */
-	STEAMLEARN_INFERENCE_METADATA_ERROR_INVALID_PUBLISHED_VERSION = 6,
-	/**
-	 * @generated from protobuf enum value: STEAMLEARN_INFERENCE_METADATA_ERROR_NO_FETCH_ID_FOUND = 7;
-	 */
-	STEAMLEARN_INFERENCE_METADATA_ERROR_NO_FETCH_ID_FOUND = 7,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_METADATA_ERROR = 0;
+   */
+  STEAMLEARN_INFERENCE_METADATA_ERROR = 0,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_METADATA_SUCCESS = 1;
+   */
+  STEAMLEARN_INFERENCE_METADATA_SUCCESS = 1,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_METADATA_ERROR_INVALID_PROJECT_ID = 2;
+   */
+  STEAMLEARN_INFERENCE_METADATA_ERROR_INVALID_PROJECT_ID = 2,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_METADATA_ERROR_NO_PUBLISHED_CONFIG = 3;
+   */
+  STEAMLEARN_INFERENCE_METADATA_ERROR_NO_PUBLISHED_CONFIG = 3,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_METADATA_ERROR_FORBIDDEN = 4;
+   */
+  STEAMLEARN_INFERENCE_METADATA_ERROR_FORBIDDEN = 4,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_METADATA_ERROR_INVALID_TIMESTAMP = 5;
+   */
+  STEAMLEARN_INFERENCE_METADATA_ERROR_INVALID_TIMESTAMP = 5,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_METADATA_ERROR_INVALID_PUBLISHED_VERSION = 6;
+   */
+  STEAMLEARN_INFERENCE_METADATA_ERROR_INVALID_PUBLISHED_VERSION = 6,
+  /**
+   * @generated from protobuf enum value: STEAMLEARN_INFERENCE_METADATA_ERROR_NO_FETCH_ID_FOUND = 7;
+   */
+  STEAMLEARN_INFERENCE_METADATA_ERROR_NO_FETCH_ID_FOUND = 7,
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearnDataSourceDescObject$Type extends MessageType<CMsgSteamLearnDataSourceDescObject> {
-	constructor() {
-		super("CMsgSteamLearnDataSourceDescObject", [
-			{
-				no: 1,
-				name: "elements",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearnDataSourceDescElement,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearnDataSourceDescObject>): CMsgSteamLearnDataSourceDescObject {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.elements = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearnDataSourceDescObject>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearnDataSourceDescObject,
-	): CMsgSteamLearnDataSourceDescObject {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgSteamLearnDataSourceDescElement elements */ 1:
-					message.elements.push(
-						CMsgSteamLearnDataSourceDescElement.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearnDataSourceDescObject,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CMsgSteamLearnDataSourceDescElement elements = 1; */
-		for (let i = 0; i < message.elements.length; i++)
-			CMsgSteamLearnDataSourceDescElement.internalBinaryWrite(
-				message.elements[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearnDataSourceDescObject", [
+      {
+        no: 1,
+        name: "elements",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearnDataSourceDescElement,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearnDataSourceDescObject>): CMsgSteamLearnDataSourceDescObject {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.elements = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearnDataSourceDescObject>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearnDataSourceDescObject,
+  ): CMsgSteamLearnDataSourceDescObject {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgSteamLearnDataSourceDescElement elements */ 1:
+          message.elements.push(
+            CMsgSteamLearnDataSourceDescElement.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearnDataSourceDescObject,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CMsgSteamLearnDataSourceDescElement elements = 1; */
+    for (let i = 0; i < message.elements.length; i++)
+      CMsgSteamLearnDataSourceDescElement.internalBinaryWrite(
+        message.elements[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearnDataSourceDescObject
@@ -1186,103 +1186,103 @@ class CMsgSteamLearnDataSourceDescObject$Type extends MessageType<CMsgSteamLearn
 export const CMsgSteamLearnDataSourceDescObject = new CMsgSteamLearnDataSourceDescObject$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearnDataSourceDescElement$Type extends MessageType<CMsgSteamLearnDataSourceDescElement> {
-	constructor() {
-		super("CMsgSteamLearnDataSourceDescElement", [
-			{
-				no: 1,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "data_type",
-				kind: "enum",
-				localName: "data_type",
-				opt: true,
-				T: () => ["ESteamLearnDataType", ESteamLearnDataType],
-			},
-			{
-				no: 3,
-				name: "object",
-				kind: "message",
-				T: () => CMsgSteamLearnDataSourceDescObject,
-			},
-			{
-				no: 4,
-				name: "count",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearnDataSourceDescElement>): CMsgSteamLearnDataSourceDescElement {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearnDataSourceDescElement>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearnDataSourceDescElement,
-	): CMsgSteamLearnDataSourceDescElement {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string name */ 1:
-					message.name = reader.string();
-					break;
-				case /* optional ESteamLearnDataType data_type */ 2:
-					message.data_type = reader.int32();
-					break;
-				case /* optional CMsgSteamLearnDataSourceDescObject object */ 3:
-					message.object = CMsgSteamLearnDataSourceDescObject.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.object,
-					);
-					break;
-				case /* optional uint32 count */ 4:
-					message.count = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearnDataSourceDescElement,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string name = 1; */
-		if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
-		/* optional ESteamLearnDataType data_type = 2; */
-		if (message.data_type !== undefined) writer.tag(2, WireType.Varint).int32(message.data_type);
-		/* optional CMsgSteamLearnDataSourceDescObject object = 3; */
-		if (message.object)
-			CMsgSteamLearnDataSourceDescObject.internalBinaryWrite(
-				message.object,
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 count = 4; */
-		if (message.count !== undefined) writer.tag(4, WireType.Varint).uint32(message.count);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearnDataSourceDescElement", [
+      {
+        no: 1,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "data_type",
+        kind: "enum",
+        localName: "data_type",
+        opt: true,
+        T: () => ["ESteamLearnDataType", ESteamLearnDataType],
+      },
+      {
+        no: 3,
+        name: "object",
+        kind: "message",
+        T: () => CMsgSteamLearnDataSourceDescObject,
+      },
+      {
+        no: 4,
+        name: "count",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearnDataSourceDescElement>): CMsgSteamLearnDataSourceDescElement {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearnDataSourceDescElement>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearnDataSourceDescElement,
+  ): CMsgSteamLearnDataSourceDescElement {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string name */ 1:
+          message.name = reader.string();
+          break;
+        case /* optional ESteamLearnDataType data_type */ 2:
+          message.data_type = reader.int32();
+          break;
+        case /* optional CMsgSteamLearnDataSourceDescObject object */ 3:
+          message.object = CMsgSteamLearnDataSourceDescObject.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.object,
+          );
+          break;
+        case /* optional uint32 count */ 4:
+          message.count = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearnDataSourceDescElement,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string name = 1; */
+    if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
+    /* optional ESteamLearnDataType data_type = 2; */
+    if (message.data_type !== undefined) writer.tag(2, WireType.Varint).int32(message.data_type);
+    /* optional CMsgSteamLearnDataSourceDescObject object = 3; */
+    if (message.object)
+      CMsgSteamLearnDataSourceDescObject.internalBinaryWrite(
+        message.object,
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 count = 4; */
+    if (message.count !== undefined) writer.tag(4, WireType.Varint).uint32(message.count);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearnDataSourceDescElement
@@ -1290,143 +1290,143 @@ class CMsgSteamLearnDataSourceDescElement$Type extends MessageType<CMsgSteamLear
 export const CMsgSteamLearnDataSourceDescElement = new CMsgSteamLearnDataSourceDescElement$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearnDataSource$Type extends MessageType<CMsgSteamLearnDataSource> {
-	constructor() {
-		super("CMsgSteamLearnDataSource", [
-			{
-				no: 1,
-				name: "id",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "version",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "source_description",
-				kind: "scalar",
-				localName: "source_description",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 5,
-				name: "structure",
-				kind: "message",
-				T: () => CMsgSteamLearnDataSourceDescObject,
-			},
-			{
-				no: 6,
-				name: "structure_crc",
-				kind: "scalar",
-				localName: "structure_crc",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "cache_duration_seconds",
-				kind: "scalar",
-				localName: "cache_duration_seconds",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearnDataSource>): CMsgSteamLearnDataSource {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearnDataSource>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearnDataSource,
-	): CMsgSteamLearnDataSource {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 id */ 1:
-					message.id = reader.uint32();
-					break;
-				case /* optional string name */ 2:
-					message.name = reader.string();
-					break;
-				case /* optional uint32 version */ 3:
-					message.version = reader.uint32();
-					break;
-				case /* optional string source_description */ 4:
-					message.source_description = reader.string();
-					break;
-				case /* optional CMsgSteamLearnDataSourceDescObject structure */ 5:
-					message.structure = CMsgSteamLearnDataSourceDescObject.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.structure,
-					);
-					break;
-				case /* optional uint32 structure_crc */ 6:
-					message.structure_crc = reader.uint32();
-					break;
-				case /* optional uint32 cache_duration_seconds */ 7:
-					message.cache_duration_seconds = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearnDataSource,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 id = 1; */
-		if (message.id !== undefined) writer.tag(1, WireType.Varint).uint32(message.id);
-		/* optional string name = 2; */
-		if (message.name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.name);
-		/* optional uint32 version = 3; */
-		if (message.version !== undefined) writer.tag(3, WireType.Varint).uint32(message.version);
-		/* optional string source_description = 4; */
-		if (message.source_description !== undefined)
-			writer.tag(4, WireType.LengthDelimited).string(message.source_description);
-		/* optional CMsgSteamLearnDataSourceDescObject structure = 5; */
-		if (message.structure)
-			CMsgSteamLearnDataSourceDescObject.internalBinaryWrite(
-				message.structure,
-				writer.tag(5, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 structure_crc = 6; */
-		if (message.structure_crc !== undefined) writer.tag(6, WireType.Varint).uint32(message.structure_crc);
-		/* optional uint32 cache_duration_seconds = 7; */
-		if (message.cache_duration_seconds !== undefined)
-			writer.tag(7, WireType.Varint).uint32(message.cache_duration_seconds);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearnDataSource", [
+      {
+        no: 1,
+        name: "id",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "version",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "source_description",
+        kind: "scalar",
+        localName: "source_description",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 5,
+        name: "structure",
+        kind: "message",
+        T: () => CMsgSteamLearnDataSourceDescObject,
+      },
+      {
+        no: 6,
+        name: "structure_crc",
+        kind: "scalar",
+        localName: "structure_crc",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "cache_duration_seconds",
+        kind: "scalar",
+        localName: "cache_duration_seconds",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearnDataSource>): CMsgSteamLearnDataSource {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearnDataSource>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearnDataSource,
+  ): CMsgSteamLearnDataSource {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 id */ 1:
+          message.id = reader.uint32();
+          break;
+        case /* optional string name */ 2:
+          message.name = reader.string();
+          break;
+        case /* optional uint32 version */ 3:
+          message.version = reader.uint32();
+          break;
+        case /* optional string source_description */ 4:
+          message.source_description = reader.string();
+          break;
+        case /* optional CMsgSteamLearnDataSourceDescObject structure */ 5:
+          message.structure = CMsgSteamLearnDataSourceDescObject.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.structure,
+          );
+          break;
+        case /* optional uint32 structure_crc */ 6:
+          message.structure_crc = reader.uint32();
+          break;
+        case /* optional uint32 cache_duration_seconds */ 7:
+          message.cache_duration_seconds = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearnDataSource,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 id = 1; */
+    if (message.id !== undefined) writer.tag(1, WireType.Varint).uint32(message.id);
+    /* optional string name = 2; */
+    if (message.name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.name);
+    /* optional uint32 version = 3; */
+    if (message.version !== undefined) writer.tag(3, WireType.Varint).uint32(message.version);
+    /* optional string source_description = 4; */
+    if (message.source_description !== undefined)
+      writer.tag(4, WireType.LengthDelimited).string(message.source_description);
+    /* optional CMsgSteamLearnDataSourceDescObject structure = 5; */
+    if (message.structure)
+      CMsgSteamLearnDataSourceDescObject.internalBinaryWrite(
+        message.structure,
+        writer.tag(5, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 structure_crc = 6; */
+    if (message.structure_crc !== undefined) writer.tag(6, WireType.Varint).uint32(message.structure_crc);
+    /* optional uint32 cache_duration_seconds = 7; */
+    if (message.cache_duration_seconds !== undefined)
+      writer.tag(7, WireType.Varint).uint32(message.cache_duration_seconds);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearnDataSource
@@ -1434,63 +1434,63 @@ class CMsgSteamLearnDataSource$Type extends MessageType<CMsgSteamLearnDataSource
 export const CMsgSteamLearnDataSource = new CMsgSteamLearnDataSource$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearnDataObject$Type extends MessageType<CMsgSteamLearnDataObject> {
-	constructor() {
-		super("CMsgSteamLearnDataObject", [
-			{
-				no: 1,
-				name: "elements",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearnDataElement,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearnDataObject>): CMsgSteamLearnDataObject {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.elements = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearnDataObject>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearnDataObject,
-	): CMsgSteamLearnDataObject {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgSteamLearnDataElement elements */ 1:
-					message.elements.push(CMsgSteamLearnDataElement.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearnDataObject,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CMsgSteamLearnDataElement elements = 1; */
-		for (let i = 0; i < message.elements.length; i++)
-			CMsgSteamLearnDataElement.internalBinaryWrite(
-				message.elements[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearnDataObject", [
+      {
+        no: 1,
+        name: "elements",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearnDataElement,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearnDataObject>): CMsgSteamLearnDataObject {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.elements = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearnDataObject>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearnDataObject,
+  ): CMsgSteamLearnDataObject {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgSteamLearnDataElement elements */ 1:
+          message.elements.push(CMsgSteamLearnDataElement.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearnDataObject,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CMsgSteamLearnDataElement elements = 1; */
+    for (let i = 0; i < message.elements.length; i++)
+      CMsgSteamLearnDataElement.internalBinaryWrite(
+        message.elements[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearnDataObject
@@ -1498,140 +1498,140 @@ class CMsgSteamLearnDataObject$Type extends MessageType<CMsgSteamLearnDataObject
 export const CMsgSteamLearnDataObject = new CMsgSteamLearnDataObject$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearnDataElement$Type extends MessageType<CMsgSteamLearnDataElement> {
-	constructor() {
-		super("CMsgSteamLearnDataElement", [
-			{
-				no: 1,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 20,
-				name: "data_int32s",
-				kind: "scalar",
-				localName: "data_int32s",
-				jsonName: "dataInt32s",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 5 /*ScalarType.INT32*/,
-			},
-			{
-				no: 21,
-				name: "data_floats",
-				kind: "scalar",
-				localName: "data_floats",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 22,
-				name: "data_bools",
-				kind: "scalar",
-				localName: "data_bools",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 23,
-				name: "data_strings",
-				kind: "scalar",
-				localName: "data_strings",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 24,
-				name: "data_objects",
-				kind: "message",
-				localName: "data_objects",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearnDataObject,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearnDataElement>): CMsgSteamLearnDataElement {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.data_int32s = [];
-		message.data_floats = [];
-		message.data_bools = [];
-		message.data_strings = [];
-		message.data_objects = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearnDataElement>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearnDataElement,
-	): CMsgSteamLearnDataElement {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string name */ 1:
-					message.name = reader.string();
-					break;
-				case /* repeated int32 data_int32s = 20 [json_name = "dataInt32s"];*/ 20:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.data_int32s.push(reader.int32());
-					else message.data_int32s.push(reader.int32());
-					break;
-				case /* repeated float data_floats */ 21:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.data_floats.push(reader.float());
-					else message.data_floats.push(reader.float());
-					break;
-				case /* repeated bool data_bools */ 22:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.data_bools.push(reader.bool());
-					else message.data_bools.push(reader.bool());
-					break;
-				case /* repeated string data_strings */ 23:
-					message.data_strings.push(reader.string());
-					break;
-				case /* repeated CMsgSteamLearnDataObject data_objects */ 24:
-					message.data_objects.push(CMsgSteamLearnDataObject.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearnDataElement,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string name = 1; */
-		if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
-		/* repeated int32 data_int32s = 20 [json_name = "dataInt32s"]; */
-		for (let i = 0; i < message.data_int32s.length; i++) writer.tag(20, WireType.Varint).int32(message.data_int32s[i]);
-		/* repeated float data_floats = 21; */
-		for (let i = 0; i < message.data_floats.length; i++) writer.tag(21, WireType.Bit32).float(message.data_floats[i]);
-		/* repeated bool data_bools = 22; */
-		for (let i = 0; i < message.data_bools.length; i++) writer.tag(22, WireType.Varint).bool(message.data_bools[i]);
-		/* repeated string data_strings = 23; */
-		for (let i = 0; i < message.data_strings.length; i++)
-			writer.tag(23, WireType.LengthDelimited).string(message.data_strings[i]);
-		/* repeated CMsgSteamLearnDataObject data_objects = 24; */
-		for (let i = 0; i < message.data_objects.length; i++)
-			CMsgSteamLearnDataObject.internalBinaryWrite(
-				message.data_objects[i],
-				writer.tag(24, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearnDataElement", [
+      {
+        no: 1,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 20,
+        name: "data_int32s",
+        kind: "scalar",
+        localName: "data_int32s",
+        jsonName: "dataInt32s",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 5 /*ScalarType.INT32*/,
+      },
+      {
+        no: 21,
+        name: "data_floats",
+        kind: "scalar",
+        localName: "data_floats",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 22,
+        name: "data_bools",
+        kind: "scalar",
+        localName: "data_bools",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 23,
+        name: "data_strings",
+        kind: "scalar",
+        localName: "data_strings",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 24,
+        name: "data_objects",
+        kind: "message",
+        localName: "data_objects",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearnDataObject,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearnDataElement>): CMsgSteamLearnDataElement {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.data_int32s = [];
+    message.data_floats = [];
+    message.data_bools = [];
+    message.data_strings = [];
+    message.data_objects = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearnDataElement>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearnDataElement,
+  ): CMsgSteamLearnDataElement {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string name */ 1:
+          message.name = reader.string();
+          break;
+        case /* repeated int32 data_int32s = 20 [json_name = "dataInt32s"];*/ 20:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.data_int32s.push(reader.int32());
+          else message.data_int32s.push(reader.int32());
+          break;
+        case /* repeated float data_floats */ 21:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.data_floats.push(reader.float());
+          else message.data_floats.push(reader.float());
+          break;
+        case /* repeated bool data_bools */ 22:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.data_bools.push(reader.bool());
+          else message.data_bools.push(reader.bool());
+          break;
+        case /* repeated string data_strings */ 23:
+          message.data_strings.push(reader.string());
+          break;
+        case /* repeated CMsgSteamLearnDataObject data_objects */ 24:
+          message.data_objects.push(CMsgSteamLearnDataObject.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearnDataElement,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string name = 1; */
+    if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
+    /* repeated int32 data_int32s = 20 [json_name = "dataInt32s"]; */
+    for (let i = 0; i < message.data_int32s.length; i++) writer.tag(20, WireType.Varint).int32(message.data_int32s[i]);
+    /* repeated float data_floats = 21; */
+    for (let i = 0; i < message.data_floats.length; i++) writer.tag(21, WireType.Bit32).float(message.data_floats[i]);
+    /* repeated bool data_bools = 22; */
+    for (let i = 0; i < message.data_bools.length; i++) writer.tag(22, WireType.Varint).bool(message.data_bools[i]);
+    /* repeated string data_strings = 23; */
+    for (let i = 0; i < message.data_strings.length; i++)
+      writer.tag(23, WireType.LengthDelimited).string(message.data_strings[i]);
+    /* repeated CMsgSteamLearnDataObject data_objects = 24; */
+    for (let i = 0; i < message.data_objects.length; i++)
+      CMsgSteamLearnDataObject.internalBinaryWrite(
+        message.data_objects[i],
+        writer.tag(24, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearnDataElement
@@ -1639,92 +1639,92 @@ class CMsgSteamLearnDataElement$Type extends MessageType<CMsgSteamLearnDataEleme
 export const CMsgSteamLearnDataElement = new CMsgSteamLearnDataElement$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearnData$Type extends MessageType<CMsgSteamLearnData> {
-	constructor() {
-		super("CMsgSteamLearnData", [
-			{
-				no: 1,
-				name: "data_source_id",
-				kind: "scalar",
-				localName: "data_source_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "keys",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "data_object",
-				kind: "message",
-				localName: "data_object",
-				T: () => CMsgSteamLearnDataObject,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearnData>): CMsgSteamLearnData {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.keys = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearnData>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearnData,
-	): CMsgSteamLearnData {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 data_source_id */ 1:
-					message.data_source_id = reader.uint32();
-					break;
-				case /* repeated uint64 keys */ 2:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.keys.push(reader.uint64().toBigInt());
-					else message.keys.push(reader.uint64().toBigInt());
-					break;
-				case /* optional CMsgSteamLearnDataObject data_object */ 3:
-					message.data_object = CMsgSteamLearnDataObject.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.data_object,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgSteamLearnData, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional uint32 data_source_id = 1; */
-		if (message.data_source_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.data_source_id);
-		/* repeated uint64 keys = 2; */
-		for (let i = 0; i < message.keys.length; i++) writer.tag(2, WireType.Varint).uint64(message.keys[i]);
-		/* optional CMsgSteamLearnDataObject data_object = 3; */
-		if (message.data_object)
-			CMsgSteamLearnDataObject.internalBinaryWrite(
-				message.data_object,
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearnData", [
+      {
+        no: 1,
+        name: "data_source_id",
+        kind: "scalar",
+        localName: "data_source_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "keys",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "data_object",
+        kind: "message",
+        localName: "data_object",
+        T: () => CMsgSteamLearnDataObject,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearnData>): CMsgSteamLearnData {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.keys = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearnData>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearnData,
+  ): CMsgSteamLearnData {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 data_source_id */ 1:
+          message.data_source_id = reader.uint32();
+          break;
+        case /* repeated uint64 keys */ 2:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.keys.push(reader.uint64().toBigInt());
+          else message.keys.push(reader.uint64().toBigInt());
+          break;
+        case /* optional CMsgSteamLearnDataObject data_object */ 3:
+          message.data_object = CMsgSteamLearnDataObject.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.data_object,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgSteamLearnData, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional uint32 data_source_id = 1; */
+    if (message.data_source_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.data_source_id);
+    /* repeated uint64 keys = 2; */
+    for (let i = 0; i < message.keys.length; i++) writer.tag(2, WireType.Varint).uint64(message.keys[i]);
+    /* optional CMsgSteamLearnDataObject data_object = 3; */
+    if (message.data_object)
+      CMsgSteamLearnDataObject.internalBinaryWrite(
+        message.data_object,
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearnData
@@ -1732,63 +1732,63 @@ class CMsgSteamLearnData$Type extends MessageType<CMsgSteamLearnData> {
 export const CMsgSteamLearnData = new CMsgSteamLearnData$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearnDataList$Type extends MessageType<CMsgSteamLearnDataList> {
-	constructor() {
-		super("CMsgSteamLearnDataList", [
-			{
-				no: 1,
-				name: "data",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearnData,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearnDataList>): CMsgSteamLearnDataList {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.data = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearnDataList>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearnDataList,
-	): CMsgSteamLearnDataList {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgSteamLearnData data */ 1:
-					message.data.push(CMsgSteamLearnData.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearnDataList,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CMsgSteamLearnData data = 1; */
-		for (let i = 0; i < message.data.length; i++)
-			CMsgSteamLearnData.internalBinaryWrite(
-				message.data[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearnDataList", [
+      {
+        no: 1,
+        name: "data",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearnData,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearnDataList>): CMsgSteamLearnDataList {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.data = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearnDataList>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearnDataList,
+  ): CMsgSteamLearnDataList {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgSteamLearnData data */ 1:
+          message.data.push(CMsgSteamLearnData.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearnDataList,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CMsgSteamLearnData data = 1; */
+    for (let i = 0; i < message.data.length; i++)
+      CMsgSteamLearnData.internalBinaryWrite(
+        message.data[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearnDataList
@@ -1796,80 +1796,80 @@ class CMsgSteamLearnDataList$Type extends MessageType<CMsgSteamLearnDataList> {
 export const CMsgSteamLearnDataList = new CMsgSteamLearnDataList$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_RegisterDataSource_Request$Type extends MessageType<CMsgSteamLearn_RegisterDataSource_Request> {
-	constructor() {
-		super("CMsgSteamLearn_RegisterDataSource_Request", [
-			{
-				no: 1,
-				name: "access_token",
-				kind: "scalar",
-				localName: "access_token",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "data_source",
-				kind: "message",
-				localName: "data_source",
-				T: () => CMsgSteamLearnDataSource,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearn_RegisterDataSource_Request>): CMsgSteamLearn_RegisterDataSource_Request {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_RegisterDataSource_Request>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_RegisterDataSource_Request,
-	): CMsgSteamLearn_RegisterDataSource_Request {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string access_token */ 1:
-					message.access_token = reader.string();
-					break;
-				case /* optional CMsgSteamLearnDataSource data_source */ 3:
-					message.data_source = CMsgSteamLearnDataSource.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.data_source,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_RegisterDataSource_Request,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string access_token = 1; */
-		if (message.access_token !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.access_token);
-		/* optional CMsgSteamLearnDataSource data_source = 3; */
-		if (message.data_source)
-			CMsgSteamLearnDataSource.internalBinaryWrite(
-				message.data_source,
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_RegisterDataSource_Request", [
+      {
+        no: 1,
+        name: "access_token",
+        kind: "scalar",
+        localName: "access_token",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "data_source",
+        kind: "message",
+        localName: "data_source",
+        T: () => CMsgSteamLearnDataSource,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearn_RegisterDataSource_Request>): CMsgSteamLearn_RegisterDataSource_Request {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_RegisterDataSource_Request>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_RegisterDataSource_Request,
+  ): CMsgSteamLearn_RegisterDataSource_Request {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string access_token */ 1:
+          message.access_token = reader.string();
+          break;
+        case /* optional CMsgSteamLearnDataSource data_source */ 3:
+          message.data_source = CMsgSteamLearnDataSource.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.data_source,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_RegisterDataSource_Request,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string access_token = 1; */
+    if (message.access_token !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.access_token);
+    /* optional CMsgSteamLearnDataSource data_source = 3; */
+    if (message.data_source)
+      CMsgSteamLearnDataSource.internalBinaryWrite(
+        message.data_source,
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_RegisterDataSource_Request
@@ -1877,81 +1877,81 @@ class CMsgSteamLearn_RegisterDataSource_Request$Type extends MessageType<CMsgSte
 export const CMsgSteamLearn_RegisterDataSource_Request = new CMsgSteamLearn_RegisterDataSource_Request$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_RegisterDataSource_Response$Type extends MessageType<CMsgSteamLearn_RegisterDataSource_Response> {
-	constructor() {
-		super("CMsgSteamLearn_RegisterDataSource_Response", [
-			{
-				no: 1,
-				name: "result",
-				kind: "enum",
-				opt: true,
-				T: () => ["ESteammLearnRegisterDataSourceResult", ESteammLearnRegisterDataSourceResult],
-			},
-			{
-				no: 2,
-				name: "data_source",
-				kind: "message",
-				localName: "data_source",
-				T: () => CMsgSteamLearnDataSource,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_RegisterDataSource_Response>,
-	): CMsgSteamLearn_RegisterDataSource_Response {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_RegisterDataSource_Response>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_RegisterDataSource_Response,
-	): CMsgSteamLearn_RegisterDataSource_Response {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional ESteammLearnRegisterDataSourceResult result */ 1:
-					message.result = reader.int32();
-					break;
-				case /* optional CMsgSteamLearnDataSource data_source */ 2:
-					message.data_source = CMsgSteamLearnDataSource.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.data_source,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_RegisterDataSource_Response,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional ESteammLearnRegisterDataSourceResult result = 1; */
-		if (message.result !== undefined) writer.tag(1, WireType.Varint).int32(message.result);
-		/* optional CMsgSteamLearnDataSource data_source = 2; */
-		if (message.data_source)
-			CMsgSteamLearnDataSource.internalBinaryWrite(
-				message.data_source,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_RegisterDataSource_Response", [
+      {
+        no: 1,
+        name: "result",
+        kind: "enum",
+        opt: true,
+        T: () => ["ESteammLearnRegisterDataSourceResult", ESteammLearnRegisterDataSourceResult],
+      },
+      {
+        no: 2,
+        name: "data_source",
+        kind: "message",
+        localName: "data_source",
+        T: () => CMsgSteamLearnDataSource,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_RegisterDataSource_Response>,
+  ): CMsgSteamLearn_RegisterDataSource_Response {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_RegisterDataSource_Response>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_RegisterDataSource_Response,
+  ): CMsgSteamLearn_RegisterDataSource_Response {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional ESteammLearnRegisterDataSourceResult result */ 1:
+          message.result = reader.int32();
+          break;
+        case /* optional CMsgSteamLearnDataSource data_source */ 2:
+          message.data_source = CMsgSteamLearnDataSource.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.data_source,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_RegisterDataSource_Response,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional ESteammLearnRegisterDataSourceResult result = 1; */
+    if (message.result !== undefined) writer.tag(1, WireType.Varint).int32(message.result);
+    /* optional CMsgSteamLearnDataSource data_source = 2; */
+    if (message.data_source)
+      CMsgSteamLearnDataSource.internalBinaryWrite(
+        message.data_source,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_RegisterDataSource_Response
@@ -1959,69 +1959,69 @@ class CMsgSteamLearn_RegisterDataSource_Response$Type extends MessageType<CMsgSt
 export const CMsgSteamLearn_RegisterDataSource_Response = new CMsgSteamLearn_RegisterDataSource_Response$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_CacheData_Request$Type extends MessageType<CMsgSteamLearn_CacheData_Request> {
-	constructor() {
-		super("CMsgSteamLearn_CacheData_Request", [
-			{
-				no: 1,
-				name: "access_token",
-				kind: "scalar",
-				localName: "access_token",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{ no: 3, name: "data", kind: "message", T: () => CMsgSteamLearnData },
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearn_CacheData_Request>): CMsgSteamLearn_CacheData_Request {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_CacheData_Request>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_CacheData_Request,
-	): CMsgSteamLearn_CacheData_Request {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string access_token */ 1:
-					message.access_token = reader.string();
-					break;
-				case /* optional CMsgSteamLearnData data */ 3:
-					message.data = CMsgSteamLearnData.internalBinaryRead(reader, reader.uint32(), options, message.data);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_CacheData_Request,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string access_token = 1; */
-		if (message.access_token !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.access_token);
-		/* optional CMsgSteamLearnData data = 3; */
-		if (message.data)
-			CMsgSteamLearnData.internalBinaryWrite(
-				message.data,
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_CacheData_Request", [
+      {
+        no: 1,
+        name: "access_token",
+        kind: "scalar",
+        localName: "access_token",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      { no: 3, name: "data", kind: "message", T: () => CMsgSteamLearnData },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearn_CacheData_Request>): CMsgSteamLearn_CacheData_Request {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_CacheData_Request>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_CacheData_Request,
+  ): CMsgSteamLearn_CacheData_Request {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string access_token */ 1:
+          message.access_token = reader.string();
+          break;
+        case /* optional CMsgSteamLearnData data */ 3:
+          message.data = CMsgSteamLearnData.internalBinaryRead(reader, reader.uint32(), options, message.data);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_CacheData_Request,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string access_token = 1; */
+    if (message.access_token !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.access_token);
+    /* optional CMsgSteamLearnData data = 3; */
+    if (message.data)
+      CMsgSteamLearnData.internalBinaryWrite(
+        message.data,
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_CacheData_Request
@@ -2029,58 +2029,58 @@ class CMsgSteamLearn_CacheData_Request$Type extends MessageType<CMsgSteamLearn_C
 export const CMsgSteamLearn_CacheData_Request = new CMsgSteamLearn_CacheData_Request$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_CacheData_Response$Type extends MessageType<CMsgSteamLearn_CacheData_Response> {
-	constructor() {
-		super("CMsgSteamLearn_CacheData_Response", [
-			{
-				no: 1,
-				name: "cache_data_result",
-				kind: "enum",
-				localName: "cache_data_result",
-				opt: true,
-				T: () => ["ESteamLearnCacheDataResult", ESteamLearnCacheDataResult],
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearn_CacheData_Response>): CMsgSteamLearn_CacheData_Response {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_CacheData_Response>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_CacheData_Response,
-	): CMsgSteamLearn_CacheData_Response {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional ESteamLearnCacheDataResult cache_data_result */ 1:
-					message.cache_data_result = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_CacheData_Response,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional ESteamLearnCacheDataResult cache_data_result = 1; */
-		if (message.cache_data_result !== undefined) writer.tag(1, WireType.Varint).int32(message.cache_data_result);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_CacheData_Response", [
+      {
+        no: 1,
+        name: "cache_data_result",
+        kind: "enum",
+        localName: "cache_data_result",
+        opt: true,
+        T: () => ["ESteamLearnCacheDataResult", ESteamLearnCacheDataResult],
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearn_CacheData_Response>): CMsgSteamLearn_CacheData_Response {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_CacheData_Response>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_CacheData_Response,
+  ): CMsgSteamLearn_CacheData_Response {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional ESteamLearnCacheDataResult cache_data_result */ 1:
+          message.cache_data_result = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_CacheData_Response,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional ESteamLearnCacheDataResult cache_data_result = 1; */
+    if (message.cache_data_result !== undefined) writer.tag(1, WireType.Varint).int32(message.cache_data_result);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_CacheData_Response
@@ -2088,132 +2088,132 @@ class CMsgSteamLearn_CacheData_Response$Type extends MessageType<CMsgSteamLearn_
 export const CMsgSteamLearn_CacheData_Response = new CMsgSteamLearn_CacheData_Response$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_SnapshotProject_Request$Type extends MessageType<CMsgSteamLearn_SnapshotProject_Request> {
-	constructor() {
-		super("CMsgSteamLearn_SnapshotProject_Request", [
-			{
-				no: 1,
-				name: "access_token",
-				kind: "scalar",
-				localName: "access_token",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "project_id",
-				kind: "scalar",
-				localName: "project_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "published_version",
-				kind: "scalar",
-				localName: "published_version",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "keys",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 5,
-				name: "data",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearnData,
-			},
-			{
-				no: 6,
-				name: "pending_data_limit_seconds",
-				kind: "scalar",
-				localName: "pending_data_limit_seconds",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearn_SnapshotProject_Request>): CMsgSteamLearn_SnapshotProject_Request {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.keys = [];
-		message.data = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_SnapshotProject_Request>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_SnapshotProject_Request,
-	): CMsgSteamLearn_SnapshotProject_Request {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string access_token */ 1:
-					message.access_token = reader.string();
-					break;
-				case /* optional uint32 project_id */ 3:
-					message.project_id = reader.uint32();
-					break;
-				case /* optional uint32 published_version */ 7:
-					message.published_version = reader.uint32();
-					break;
-				case /* repeated uint64 keys */ 4:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.keys.push(reader.uint64().toBigInt());
-					else message.keys.push(reader.uint64().toBigInt());
-					break;
-				case /* repeated CMsgSteamLearnData data */ 5:
-					message.data.push(CMsgSteamLearnData.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* optional uint32 pending_data_limit_seconds */ 6:
-					message.pending_data_limit_seconds = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_SnapshotProject_Request,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string access_token = 1; */
-		if (message.access_token !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.access_token);
-		/* optional uint32 project_id = 3; */
-		if (message.project_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.project_id);
-		/* optional uint32 published_version = 7; */
-		if (message.published_version !== undefined) writer.tag(7, WireType.Varint).uint32(message.published_version);
-		/* repeated uint64 keys = 4; */
-		for (let i = 0; i < message.keys.length; i++) writer.tag(4, WireType.Varint).uint64(message.keys[i]);
-		/* repeated CMsgSteamLearnData data = 5; */
-		for (let i = 0; i < message.data.length; i++)
-			CMsgSteamLearnData.internalBinaryWrite(
-				message.data[i],
-				writer.tag(5, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 pending_data_limit_seconds = 6; */
-		if (message.pending_data_limit_seconds !== undefined)
-			writer.tag(6, WireType.Varint).uint32(message.pending_data_limit_seconds);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_SnapshotProject_Request", [
+      {
+        no: 1,
+        name: "access_token",
+        kind: "scalar",
+        localName: "access_token",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "project_id",
+        kind: "scalar",
+        localName: "project_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "published_version",
+        kind: "scalar",
+        localName: "published_version",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "keys",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 5,
+        name: "data",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearnData,
+      },
+      {
+        no: 6,
+        name: "pending_data_limit_seconds",
+        kind: "scalar",
+        localName: "pending_data_limit_seconds",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearn_SnapshotProject_Request>): CMsgSteamLearn_SnapshotProject_Request {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.keys = [];
+    message.data = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_SnapshotProject_Request>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_SnapshotProject_Request,
+  ): CMsgSteamLearn_SnapshotProject_Request {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string access_token */ 1:
+          message.access_token = reader.string();
+          break;
+        case /* optional uint32 project_id */ 3:
+          message.project_id = reader.uint32();
+          break;
+        case /* optional uint32 published_version */ 7:
+          message.published_version = reader.uint32();
+          break;
+        case /* repeated uint64 keys */ 4:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.keys.push(reader.uint64().toBigInt());
+          else message.keys.push(reader.uint64().toBigInt());
+          break;
+        case /* repeated CMsgSteamLearnData data */ 5:
+          message.data.push(CMsgSteamLearnData.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* optional uint32 pending_data_limit_seconds */ 6:
+          message.pending_data_limit_seconds = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_SnapshotProject_Request,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string access_token = 1; */
+    if (message.access_token !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.access_token);
+    /* optional uint32 project_id = 3; */
+    if (message.project_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.project_id);
+    /* optional uint32 published_version = 7; */
+    if (message.published_version !== undefined) writer.tag(7, WireType.Varint).uint32(message.published_version);
+    /* repeated uint64 keys = 4; */
+    for (let i = 0; i < message.keys.length; i++) writer.tag(4, WireType.Varint).uint64(message.keys[i]);
+    /* repeated CMsgSteamLearnData data = 5; */
+    for (let i = 0; i < message.data.length; i++)
+      CMsgSteamLearnData.internalBinaryWrite(
+        message.data[i],
+        writer.tag(5, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 pending_data_limit_seconds = 6; */
+    if (message.pending_data_limit_seconds !== undefined)
+      writer.tag(6, WireType.Varint).uint32(message.pending_data_limit_seconds);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_SnapshotProject_Request
@@ -2221,58 +2221,58 @@ class CMsgSteamLearn_SnapshotProject_Request$Type extends MessageType<CMsgSteamL
 export const CMsgSteamLearn_SnapshotProject_Request = new CMsgSteamLearn_SnapshotProject_Request$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_SnapshotProject_Response$Type extends MessageType<CMsgSteamLearn_SnapshotProject_Response> {
-	constructor() {
-		super("CMsgSteamLearn_SnapshotProject_Response", [
-			{
-				no: 1,
-				name: "snapshot_result",
-				kind: "enum",
-				localName: "snapshot_result",
-				opt: true,
-				T: () => ["ESteamLearnSnapshotProjectResult", ESteamLearnSnapshotProjectResult],
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearn_SnapshotProject_Response>): CMsgSteamLearn_SnapshotProject_Response {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_SnapshotProject_Response>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_SnapshotProject_Response,
-	): CMsgSteamLearn_SnapshotProject_Response {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional ESteamLearnSnapshotProjectResult snapshot_result */ 1:
-					message.snapshot_result = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_SnapshotProject_Response,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional ESteamLearnSnapshotProjectResult snapshot_result = 1; */
-		if (message.snapshot_result !== undefined) writer.tag(1, WireType.Varint).int32(message.snapshot_result);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_SnapshotProject_Response", [
+      {
+        no: 1,
+        name: "snapshot_result",
+        kind: "enum",
+        localName: "snapshot_result",
+        opt: true,
+        T: () => ["ESteamLearnSnapshotProjectResult", ESteamLearnSnapshotProjectResult],
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearn_SnapshotProject_Response>): CMsgSteamLearn_SnapshotProject_Response {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_SnapshotProject_Response>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_SnapshotProject_Response,
+  ): CMsgSteamLearn_SnapshotProject_Response {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional ESteamLearnSnapshotProjectResult snapshot_result */ 1:
+          message.snapshot_result = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_SnapshotProject_Response,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional ESteamLearnSnapshotProjectResult snapshot_result = 1; */
+    if (message.snapshot_result !== undefined) writer.tag(1, WireType.Varint).int32(message.snapshot_result);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_SnapshotProject_Response
@@ -2280,108 +2280,108 @@ class CMsgSteamLearn_SnapshotProject_Response$Type extends MessageType<CMsgSteam
 export const CMsgSteamLearn_SnapshotProject_Response = new CMsgSteamLearn_SnapshotProject_Response$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_BatchOperation_Request$Type extends MessageType<CMsgSteamLearn_BatchOperation_Request> {
-	constructor() {
-		super("CMsgSteamLearn_BatchOperation_Request", [
-			{
-				no: 1,
-				name: "cache_data_requests",
-				kind: "message",
-				localName: "cache_data_requests",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_CacheData_Request,
-			},
-			{
-				no: 2,
-				name: "snapshot_requests",
-				kind: "message",
-				localName: "snapshot_requests",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_SnapshotProject_Request,
-			},
-			{
-				no: 3,
-				name: "inference_requests",
-				kind: "message",
-				localName: "inference_requests",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_Inference_Request,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearn_BatchOperation_Request>): CMsgSteamLearn_BatchOperation_Request {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.cache_data_requests = [];
-		message.snapshot_requests = [];
-		message.inference_requests = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_BatchOperation_Request>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_BatchOperation_Request,
-	): CMsgSteamLearn_BatchOperation_Request {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgSteamLearn_CacheData_Request cache_data_requests */ 1:
-					message.cache_data_requests.push(
-						CMsgSteamLearn_CacheData_Request.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CMsgSteamLearn_SnapshotProject_Request snapshot_requests */ 2:
-					message.snapshot_requests.push(
-						CMsgSteamLearn_SnapshotProject_Request.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CMsgSteamLearn_Inference_Request inference_requests */ 3:
-					message.inference_requests.push(
-						CMsgSteamLearn_Inference_Request.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_BatchOperation_Request,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CMsgSteamLearn_CacheData_Request cache_data_requests = 1; */
-		for (let i = 0; i < message.cache_data_requests.length; i++)
-			CMsgSteamLearn_CacheData_Request.internalBinaryWrite(
-				message.cache_data_requests[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamLearn_SnapshotProject_Request snapshot_requests = 2; */
-		for (let i = 0; i < message.snapshot_requests.length; i++)
-			CMsgSteamLearn_SnapshotProject_Request.internalBinaryWrite(
-				message.snapshot_requests[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamLearn_Inference_Request inference_requests = 3; */
-		for (let i = 0; i < message.inference_requests.length; i++)
-			CMsgSteamLearn_Inference_Request.internalBinaryWrite(
-				message.inference_requests[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_BatchOperation_Request", [
+      {
+        no: 1,
+        name: "cache_data_requests",
+        kind: "message",
+        localName: "cache_data_requests",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_CacheData_Request,
+      },
+      {
+        no: 2,
+        name: "snapshot_requests",
+        kind: "message",
+        localName: "snapshot_requests",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_SnapshotProject_Request,
+      },
+      {
+        no: 3,
+        name: "inference_requests",
+        kind: "message",
+        localName: "inference_requests",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_Inference_Request,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearn_BatchOperation_Request>): CMsgSteamLearn_BatchOperation_Request {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.cache_data_requests = [];
+    message.snapshot_requests = [];
+    message.inference_requests = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_BatchOperation_Request>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_BatchOperation_Request,
+  ): CMsgSteamLearn_BatchOperation_Request {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgSteamLearn_CacheData_Request cache_data_requests */ 1:
+          message.cache_data_requests.push(
+            CMsgSteamLearn_CacheData_Request.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CMsgSteamLearn_SnapshotProject_Request snapshot_requests */ 2:
+          message.snapshot_requests.push(
+            CMsgSteamLearn_SnapshotProject_Request.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CMsgSteamLearn_Inference_Request inference_requests */ 3:
+          message.inference_requests.push(
+            CMsgSteamLearn_Inference_Request.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_BatchOperation_Request,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CMsgSteamLearn_CacheData_Request cache_data_requests = 1; */
+    for (let i = 0; i < message.cache_data_requests.length; i++)
+      CMsgSteamLearn_CacheData_Request.internalBinaryWrite(
+        message.cache_data_requests[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamLearn_SnapshotProject_Request snapshot_requests = 2; */
+    for (let i = 0; i < message.snapshot_requests.length; i++)
+      CMsgSteamLearn_SnapshotProject_Request.internalBinaryWrite(
+        message.snapshot_requests[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamLearn_Inference_Request inference_requests = 3; */
+    for (let i = 0; i < message.inference_requests.length; i++)
+      CMsgSteamLearn_Inference_Request.internalBinaryWrite(
+        message.inference_requests[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_BatchOperation_Request
@@ -2389,108 +2389,108 @@ class CMsgSteamLearn_BatchOperation_Request$Type extends MessageType<CMsgSteamLe
 export const CMsgSteamLearn_BatchOperation_Request = new CMsgSteamLearn_BatchOperation_Request$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_BatchOperation_Response$Type extends MessageType<CMsgSteamLearn_BatchOperation_Response> {
-	constructor() {
-		super("CMsgSteamLearn_BatchOperation_Response", [
-			{
-				no: 1,
-				name: "cache_data_responses",
-				kind: "message",
-				localName: "cache_data_responses",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_CacheData_Response,
-			},
-			{
-				no: 2,
-				name: "snapshot_responses",
-				kind: "message",
-				localName: "snapshot_responses",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_SnapshotProject_Response,
-			},
-			{
-				no: 3,
-				name: "inference_responses",
-				kind: "message",
-				localName: "inference_responses",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_Inference_Response,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearn_BatchOperation_Response>): CMsgSteamLearn_BatchOperation_Response {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.cache_data_responses = [];
-		message.snapshot_responses = [];
-		message.inference_responses = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_BatchOperation_Response>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_BatchOperation_Response,
-	): CMsgSteamLearn_BatchOperation_Response {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgSteamLearn_CacheData_Response cache_data_responses */ 1:
-					message.cache_data_responses.push(
-						CMsgSteamLearn_CacheData_Response.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CMsgSteamLearn_SnapshotProject_Response snapshot_responses */ 2:
-					message.snapshot_responses.push(
-						CMsgSteamLearn_SnapshotProject_Response.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CMsgSteamLearn_Inference_Response inference_responses */ 3:
-					message.inference_responses.push(
-						CMsgSteamLearn_Inference_Response.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_BatchOperation_Response,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CMsgSteamLearn_CacheData_Response cache_data_responses = 1; */
-		for (let i = 0; i < message.cache_data_responses.length; i++)
-			CMsgSteamLearn_CacheData_Response.internalBinaryWrite(
-				message.cache_data_responses[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamLearn_SnapshotProject_Response snapshot_responses = 2; */
-		for (let i = 0; i < message.snapshot_responses.length; i++)
-			CMsgSteamLearn_SnapshotProject_Response.internalBinaryWrite(
-				message.snapshot_responses[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamLearn_Inference_Response inference_responses = 3; */
-		for (let i = 0; i < message.inference_responses.length; i++)
-			CMsgSteamLearn_Inference_Response.internalBinaryWrite(
-				message.inference_responses[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_BatchOperation_Response", [
+      {
+        no: 1,
+        name: "cache_data_responses",
+        kind: "message",
+        localName: "cache_data_responses",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_CacheData_Response,
+      },
+      {
+        no: 2,
+        name: "snapshot_responses",
+        kind: "message",
+        localName: "snapshot_responses",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_SnapshotProject_Response,
+      },
+      {
+        no: 3,
+        name: "inference_responses",
+        kind: "message",
+        localName: "inference_responses",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_Inference_Response,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearn_BatchOperation_Response>): CMsgSteamLearn_BatchOperation_Response {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.cache_data_responses = [];
+    message.snapshot_responses = [];
+    message.inference_responses = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_BatchOperation_Response>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_BatchOperation_Response,
+  ): CMsgSteamLearn_BatchOperation_Response {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgSteamLearn_CacheData_Response cache_data_responses */ 1:
+          message.cache_data_responses.push(
+            CMsgSteamLearn_CacheData_Response.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CMsgSteamLearn_SnapshotProject_Response snapshot_responses */ 2:
+          message.snapshot_responses.push(
+            CMsgSteamLearn_SnapshotProject_Response.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CMsgSteamLearn_Inference_Response inference_responses */ 3:
+          message.inference_responses.push(
+            CMsgSteamLearn_Inference_Response.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_BatchOperation_Response,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CMsgSteamLearn_CacheData_Response cache_data_responses = 1; */
+    for (let i = 0; i < message.cache_data_responses.length; i++)
+      CMsgSteamLearn_CacheData_Response.internalBinaryWrite(
+        message.cache_data_responses[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamLearn_SnapshotProject_Response snapshot_responses = 2; */
+    for (let i = 0; i < message.snapshot_responses.length; i++)
+      CMsgSteamLearn_SnapshotProject_Response.internalBinaryWrite(
+        message.snapshot_responses[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamLearn_Inference_Response inference_responses = 3; */
+    for (let i = 0; i < message.inference_responses.length; i++)
+      CMsgSteamLearn_Inference_Response.internalBinaryWrite(
+        message.inference_responses[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_BatchOperation_Response
@@ -2498,122 +2498,122 @@ class CMsgSteamLearn_BatchOperation_Response$Type extends MessageType<CMsgSteamL
 export const CMsgSteamLearn_BatchOperation_Response = new CMsgSteamLearn_BatchOperation_Response$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearnAccessTokens$Type extends MessageType<CMsgSteamLearnAccessTokens> {
-	constructor() {
-		super("CMsgSteamLearnAccessTokens", [
-			{
-				no: 1,
-				name: "register_data_source_access_token",
-				kind: "scalar",
-				localName: "register_data_source_access_token",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "cache_data_access_tokens",
-				kind: "message",
-				localName: "cache_data_access_tokens",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearnAccessTokens_CacheDataAccessToken,
-			},
-			{
-				no: 3,
-				name: "snapshot_project_access_tokens",
-				kind: "message",
-				localName: "snapshot_project_access_tokens",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken,
-			},
-			{
-				no: 4,
-				name: "inference_access_tokens",
-				kind: "message",
-				localName: "inference_access_tokens",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearnAccessTokens_InferenceAccessToken,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearnAccessTokens>): CMsgSteamLearnAccessTokens {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.cache_data_access_tokens = [];
-		message.snapshot_project_access_tokens = [];
-		message.inference_access_tokens = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearnAccessTokens>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearnAccessTokens,
-	): CMsgSteamLearnAccessTokens {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string register_data_source_access_token */ 1:
-					message.register_data_source_access_token = reader.string();
-					break;
-				case /* repeated CMsgSteamLearnAccessTokens.CacheDataAccessToken cache_data_access_tokens */ 2:
-					message.cache_data_access_tokens.push(
-						CMsgSteamLearnAccessTokens_CacheDataAccessToken.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CMsgSteamLearnAccessTokens.SnapshotProjectAccessToken snapshot_project_access_tokens */ 3:
-					message.snapshot_project_access_tokens.push(
-						CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CMsgSteamLearnAccessTokens.InferenceAccessToken inference_access_tokens */ 4:
-					message.inference_access_tokens.push(
-						CMsgSteamLearnAccessTokens_InferenceAccessToken.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearnAccessTokens,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string register_data_source_access_token = 1; */
-		if (message.register_data_source_access_token !== undefined)
-			writer.tag(1, WireType.LengthDelimited).string(message.register_data_source_access_token);
-		/* repeated CMsgSteamLearnAccessTokens.CacheDataAccessToken cache_data_access_tokens = 2; */
-		for (let i = 0; i < message.cache_data_access_tokens.length; i++)
-			CMsgSteamLearnAccessTokens_CacheDataAccessToken.internalBinaryWrite(
-				message.cache_data_access_tokens[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamLearnAccessTokens.SnapshotProjectAccessToken snapshot_project_access_tokens = 3; */
-		for (let i = 0; i < message.snapshot_project_access_tokens.length; i++)
-			CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken.internalBinaryWrite(
-				message.snapshot_project_access_tokens[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamLearnAccessTokens.InferenceAccessToken inference_access_tokens = 4; */
-		for (let i = 0; i < message.inference_access_tokens.length; i++)
-			CMsgSteamLearnAccessTokens_InferenceAccessToken.internalBinaryWrite(
-				message.inference_access_tokens[i],
-				writer.tag(4, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearnAccessTokens", [
+      {
+        no: 1,
+        name: "register_data_source_access_token",
+        kind: "scalar",
+        localName: "register_data_source_access_token",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "cache_data_access_tokens",
+        kind: "message",
+        localName: "cache_data_access_tokens",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearnAccessTokens_CacheDataAccessToken,
+      },
+      {
+        no: 3,
+        name: "snapshot_project_access_tokens",
+        kind: "message",
+        localName: "snapshot_project_access_tokens",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken,
+      },
+      {
+        no: 4,
+        name: "inference_access_tokens",
+        kind: "message",
+        localName: "inference_access_tokens",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearnAccessTokens_InferenceAccessToken,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearnAccessTokens>): CMsgSteamLearnAccessTokens {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.cache_data_access_tokens = [];
+    message.snapshot_project_access_tokens = [];
+    message.inference_access_tokens = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearnAccessTokens>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearnAccessTokens,
+  ): CMsgSteamLearnAccessTokens {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string register_data_source_access_token */ 1:
+          message.register_data_source_access_token = reader.string();
+          break;
+        case /* repeated CMsgSteamLearnAccessTokens.CacheDataAccessToken cache_data_access_tokens */ 2:
+          message.cache_data_access_tokens.push(
+            CMsgSteamLearnAccessTokens_CacheDataAccessToken.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CMsgSteamLearnAccessTokens.SnapshotProjectAccessToken snapshot_project_access_tokens */ 3:
+          message.snapshot_project_access_tokens.push(
+            CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CMsgSteamLearnAccessTokens.InferenceAccessToken inference_access_tokens */ 4:
+          message.inference_access_tokens.push(
+            CMsgSteamLearnAccessTokens_InferenceAccessToken.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearnAccessTokens,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string register_data_source_access_token = 1; */
+    if (message.register_data_source_access_token !== undefined)
+      writer.tag(1, WireType.LengthDelimited).string(message.register_data_source_access_token);
+    /* repeated CMsgSteamLearnAccessTokens.CacheDataAccessToken cache_data_access_tokens = 2; */
+    for (let i = 0; i < message.cache_data_access_tokens.length; i++)
+      CMsgSteamLearnAccessTokens_CacheDataAccessToken.internalBinaryWrite(
+        message.cache_data_access_tokens[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamLearnAccessTokens.SnapshotProjectAccessToken snapshot_project_access_tokens = 3; */
+    for (let i = 0; i < message.snapshot_project_access_tokens.length; i++)
+      CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken.internalBinaryWrite(
+        message.snapshot_project_access_tokens[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamLearnAccessTokens.InferenceAccessToken inference_access_tokens = 4; */
+    for (let i = 0; i < message.inference_access_tokens.length; i++)
+      CMsgSteamLearnAccessTokens_InferenceAccessToken.internalBinaryWrite(
+        message.inference_access_tokens[i],
+        writer.tag(4, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearnAccessTokens
@@ -2621,285 +2621,285 @@ class CMsgSteamLearnAccessTokens$Type extends MessageType<CMsgSteamLearnAccessTo
 export const CMsgSteamLearnAccessTokens = new CMsgSteamLearnAccessTokens$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearnAccessTokens_CacheDataAccessToken$Type extends MessageType<CMsgSteamLearnAccessTokens_CacheDataAccessToken> {
-	constructor() {
-		super("CMsgSteamLearnAccessTokens.CacheDataAccessToken", [
-			{
-				no: 1,
-				name: "data_source_id",
-				kind: "scalar",
-				localName: "data_source_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "access_token",
-				kind: "scalar",
-				localName: "access_token",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearnAccessTokens_CacheDataAccessToken>,
-	): CMsgSteamLearnAccessTokens_CacheDataAccessToken {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearnAccessTokens_CacheDataAccessToken>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearnAccessTokens_CacheDataAccessToken,
-	): CMsgSteamLearnAccessTokens_CacheDataAccessToken {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 data_source_id */ 1:
-					message.data_source_id = reader.uint32();
-					break;
-				case /* optional string access_token */ 2:
-					message.access_token = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearnAccessTokens_CacheDataAccessToken,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 data_source_id = 1; */
-		if (message.data_source_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.data_source_id);
-		/* optional string access_token = 2; */
-		if (message.access_token !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.access_token);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearnAccessTokens.CacheDataAccessToken", [
+      {
+        no: 1,
+        name: "data_source_id",
+        kind: "scalar",
+        localName: "data_source_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "access_token",
+        kind: "scalar",
+        localName: "access_token",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearnAccessTokens_CacheDataAccessToken>,
+  ): CMsgSteamLearnAccessTokens_CacheDataAccessToken {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearnAccessTokens_CacheDataAccessToken>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearnAccessTokens_CacheDataAccessToken,
+  ): CMsgSteamLearnAccessTokens_CacheDataAccessToken {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 data_source_id */ 1:
+          message.data_source_id = reader.uint32();
+          break;
+        case /* optional string access_token */ 2:
+          message.access_token = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearnAccessTokens_CacheDataAccessToken,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 data_source_id = 1; */
+    if (message.data_source_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.data_source_id);
+    /* optional string access_token = 2; */
+    if (message.access_token !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.access_token);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearnAccessTokens.CacheDataAccessToken
  */
 export const CMsgSteamLearnAccessTokens_CacheDataAccessToken =
-	new CMsgSteamLearnAccessTokens_CacheDataAccessToken$Type();
+  new CMsgSteamLearnAccessTokens_CacheDataAccessToken$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken$Type extends MessageType<CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken> {
-	constructor() {
-		super("CMsgSteamLearnAccessTokens.SnapshotProjectAccessToken", [
-			{
-				no: 1,
-				name: "project_id",
-				kind: "scalar",
-				localName: "project_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "access_token",
-				kind: "scalar",
-				localName: "access_token",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken>,
-	): CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken,
-	): CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 project_id */ 1:
-					message.project_id = reader.uint32();
-					break;
-				case /* optional string access_token */ 2:
-					message.access_token = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 project_id = 1; */
-		if (message.project_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.project_id);
-		/* optional string access_token = 2; */
-		if (message.access_token !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.access_token);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearnAccessTokens.SnapshotProjectAccessToken", [
+      {
+        no: 1,
+        name: "project_id",
+        kind: "scalar",
+        localName: "project_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "access_token",
+        kind: "scalar",
+        localName: "access_token",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken>,
+  ): CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken,
+  ): CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 project_id */ 1:
+          message.project_id = reader.uint32();
+          break;
+        case /* optional string access_token */ 2:
+          message.access_token = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 project_id = 1; */
+    if (message.project_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.project_id);
+    /* optional string access_token = 2; */
+    if (message.access_token !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.access_token);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearnAccessTokens.SnapshotProjectAccessToken
  */
 export const CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken =
-	new CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken$Type();
+  new CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearnAccessTokens_InferenceAccessToken$Type extends MessageType<CMsgSteamLearnAccessTokens_InferenceAccessToken> {
-	constructor() {
-		super("CMsgSteamLearnAccessTokens.InferenceAccessToken", [
-			{
-				no: 1,
-				name: "project_id",
-				kind: "scalar",
-				localName: "project_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "access_token",
-				kind: "scalar",
-				localName: "access_token",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearnAccessTokens_InferenceAccessToken>,
-	): CMsgSteamLearnAccessTokens_InferenceAccessToken {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearnAccessTokens_InferenceAccessToken>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearnAccessTokens_InferenceAccessToken,
-	): CMsgSteamLearnAccessTokens_InferenceAccessToken {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 project_id */ 1:
-					message.project_id = reader.uint32();
-					break;
-				case /* optional string access_token */ 2:
-					message.access_token = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearnAccessTokens_InferenceAccessToken,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 project_id = 1; */
-		if (message.project_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.project_id);
-		/* optional string access_token = 2; */
-		if (message.access_token !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.access_token);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearnAccessTokens.InferenceAccessToken", [
+      {
+        no: 1,
+        name: "project_id",
+        kind: "scalar",
+        localName: "project_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "access_token",
+        kind: "scalar",
+        localName: "access_token",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearnAccessTokens_InferenceAccessToken>,
+  ): CMsgSteamLearnAccessTokens_InferenceAccessToken {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearnAccessTokens_InferenceAccessToken>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearnAccessTokens_InferenceAccessToken,
+  ): CMsgSteamLearnAccessTokens_InferenceAccessToken {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 project_id */ 1:
+          message.project_id = reader.uint32();
+          break;
+        case /* optional string access_token */ 2:
+          message.access_token = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearnAccessTokens_InferenceAccessToken,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 project_id = 1; */
+    if (message.project_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.project_id);
+    /* optional string access_token = 2; */
+    if (message.access_token !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.access_token);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearnAccessTokens.InferenceAccessToken
  */
 export const CMsgSteamLearnAccessTokens_InferenceAccessToken =
-	new CMsgSteamLearnAccessTokens_InferenceAccessToken$Type();
+  new CMsgSteamLearnAccessTokens_InferenceAccessToken$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_GetAccessTokens_Request$Type extends MessageType<CMsgSteamLearn_GetAccessTokens_Request> {
-	constructor() {
-		super("CMsgSteamLearn_GetAccessTokens_Request", [
-			{
-				no: 1,
-				name: "appid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearn_GetAccessTokens_Request>): CMsgSteamLearn_GetAccessTokens_Request {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_GetAccessTokens_Request>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_GetAccessTokens_Request,
-	): CMsgSteamLearn_GetAccessTokens_Request {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 appid */ 1:
-					message.appid = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_GetAccessTokens_Request,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 appid = 1; */
-		if (message.appid !== undefined) writer.tag(1, WireType.Varint).uint32(message.appid);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_GetAccessTokens_Request", [
+      {
+        no: 1,
+        name: "appid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearn_GetAccessTokens_Request>): CMsgSteamLearn_GetAccessTokens_Request {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_GetAccessTokens_Request>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_GetAccessTokens_Request,
+  ): CMsgSteamLearn_GetAccessTokens_Request {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 appid */ 1:
+          message.appid = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_GetAccessTokens_Request,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 appid = 1; */
+    if (message.appid !== undefined) writer.tag(1, WireType.Varint).uint32(message.appid);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_GetAccessTokens_Request
@@ -2907,79 +2907,79 @@ class CMsgSteamLearn_GetAccessTokens_Request$Type extends MessageType<CMsgSteamL
 export const CMsgSteamLearn_GetAccessTokens_Request = new CMsgSteamLearn_GetAccessTokens_Request$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_GetAccessTokens_Response$Type extends MessageType<CMsgSteamLearn_GetAccessTokens_Response> {
-	constructor() {
-		super("CMsgSteamLearn_GetAccessTokens_Response", [
-			{
-				no: 1,
-				name: "result",
-				kind: "enum",
-				opt: true,
-				T: () => ["ESteamLearnGetAccessTokensResult", ESteamLearnGetAccessTokensResult],
-			},
-			{
-				no: 2,
-				name: "access_tokens",
-				kind: "message",
-				localName: "access_tokens",
-				T: () => CMsgSteamLearnAccessTokens,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearn_GetAccessTokens_Response>): CMsgSteamLearn_GetAccessTokens_Response {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_GetAccessTokens_Response>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_GetAccessTokens_Response,
-	): CMsgSteamLearn_GetAccessTokens_Response {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional ESteamLearnGetAccessTokensResult result */ 1:
-					message.result = reader.int32();
-					break;
-				case /* optional CMsgSteamLearnAccessTokens access_tokens */ 2:
-					message.access_tokens = CMsgSteamLearnAccessTokens.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.access_tokens,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_GetAccessTokens_Response,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional ESteamLearnGetAccessTokensResult result = 1; */
-		if (message.result !== undefined) writer.tag(1, WireType.Varint).int32(message.result);
-		/* optional CMsgSteamLearnAccessTokens access_tokens = 2; */
-		if (message.access_tokens)
-			CMsgSteamLearnAccessTokens.internalBinaryWrite(
-				message.access_tokens,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_GetAccessTokens_Response", [
+      {
+        no: 1,
+        name: "result",
+        kind: "enum",
+        opt: true,
+        T: () => ["ESteamLearnGetAccessTokensResult", ESteamLearnGetAccessTokensResult],
+      },
+      {
+        no: 2,
+        name: "access_tokens",
+        kind: "message",
+        localName: "access_tokens",
+        T: () => CMsgSteamLearnAccessTokens,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearn_GetAccessTokens_Response>): CMsgSteamLearn_GetAccessTokens_Response {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_GetAccessTokens_Response>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_GetAccessTokens_Response,
+  ): CMsgSteamLearn_GetAccessTokens_Response {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional ESteamLearnGetAccessTokensResult result */ 1:
+          message.result = reader.int32();
+          break;
+        case /* optional CMsgSteamLearnAccessTokens access_tokens */ 2:
+          message.access_tokens = CMsgSteamLearnAccessTokens.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.access_tokens,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_GetAccessTokens_Response,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional ESteamLearnGetAccessTokensResult result = 1; */
+    if (message.result !== undefined) writer.tag(1, WireType.Varint).int32(message.result);
+    /* optional CMsgSteamLearnAccessTokens access_tokens = 2; */
+    if (message.access_tokens)
+      CMsgSteamLearnAccessTokens.internalBinaryWrite(
+        message.access_tokens,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_GetAccessTokens_Response
@@ -2987,125 +2987,125 @@ class CMsgSteamLearn_GetAccessTokens_Response$Type extends MessageType<CMsgSteam
 export const CMsgSteamLearn_GetAccessTokens_Response = new CMsgSteamLearn_GetAccessTokens_Response$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_Inference_Request$Type extends MessageType<CMsgSteamLearn_Inference_Request> {
-	constructor() {
-		super("CMsgSteamLearn_Inference_Request", [
-			{
-				no: 1,
-				name: "access_token",
-				kind: "scalar",
-				localName: "access_token",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "project_id",
-				kind: "scalar",
-				localName: "project_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "published_version",
-				kind: "scalar",
-				localName: "published_version",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "override_train_id",
-				kind: "scalar",
-				localName: "override_train_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{ no: 6, name: "data", kind: "message", T: () => CMsgSteamLearnDataList },
-			{
-				no: 7,
-				name: "additional_data",
-				kind: "scalar",
-				localName: "additional_data",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearn_Inference_Request>): CMsgSteamLearn_Inference_Request {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.additional_data = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_Inference_Request>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_Inference_Request,
-	): CMsgSteamLearn_Inference_Request {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string access_token */ 1:
-					message.access_token = reader.string();
-					break;
-				case /* optional uint32 project_id */ 3:
-					message.project_id = reader.uint32();
-					break;
-				case /* optional uint32 published_version */ 4:
-					message.published_version = reader.uint32();
-					break;
-				case /* optional uint32 override_train_id */ 5:
-					message.override_train_id = reader.uint32();
-					break;
-				case /* optional CMsgSteamLearnDataList data */ 6:
-					message.data = CMsgSteamLearnDataList.internalBinaryRead(reader, reader.uint32(), options, message.data);
-					break;
-				case /* repeated float additional_data */ 7:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.additional_data.push(reader.float());
-					else message.additional_data.push(reader.float());
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_Inference_Request,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string access_token = 1; */
-		if (message.access_token !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.access_token);
-		/* optional uint32 project_id = 3; */
-		if (message.project_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.project_id);
-		/* optional uint32 published_version = 4; */
-		if (message.published_version !== undefined) writer.tag(4, WireType.Varint).uint32(message.published_version);
-		/* optional uint32 override_train_id = 5; */
-		if (message.override_train_id !== undefined) writer.tag(5, WireType.Varint).uint32(message.override_train_id);
-		/* optional CMsgSteamLearnDataList data = 6; */
-		if (message.data)
-			CMsgSteamLearnDataList.internalBinaryWrite(
-				message.data,
-				writer.tag(6, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated float additional_data = 7; */
-		for (let i = 0; i < message.additional_data.length; i++)
-			writer.tag(7, WireType.Bit32).float(message.additional_data[i]);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_Inference_Request", [
+      {
+        no: 1,
+        name: "access_token",
+        kind: "scalar",
+        localName: "access_token",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "project_id",
+        kind: "scalar",
+        localName: "project_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "published_version",
+        kind: "scalar",
+        localName: "published_version",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "override_train_id",
+        kind: "scalar",
+        localName: "override_train_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      { no: 6, name: "data", kind: "message", T: () => CMsgSteamLearnDataList },
+      {
+        no: 7,
+        name: "additional_data",
+        kind: "scalar",
+        localName: "additional_data",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearn_Inference_Request>): CMsgSteamLearn_Inference_Request {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.additional_data = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_Inference_Request>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_Inference_Request,
+  ): CMsgSteamLearn_Inference_Request {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string access_token */ 1:
+          message.access_token = reader.string();
+          break;
+        case /* optional uint32 project_id */ 3:
+          message.project_id = reader.uint32();
+          break;
+        case /* optional uint32 published_version */ 4:
+          message.published_version = reader.uint32();
+          break;
+        case /* optional uint32 override_train_id */ 5:
+          message.override_train_id = reader.uint32();
+          break;
+        case /* optional CMsgSteamLearnDataList data */ 6:
+          message.data = CMsgSteamLearnDataList.internalBinaryRead(reader, reader.uint32(), options, message.data);
+          break;
+        case /* repeated float additional_data */ 7:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.additional_data.push(reader.float());
+          else message.additional_data.push(reader.float());
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_Inference_Request,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string access_token = 1; */
+    if (message.access_token !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.access_token);
+    /* optional uint32 project_id = 3; */
+    if (message.project_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.project_id);
+    /* optional uint32 published_version = 4; */
+    if (message.published_version !== undefined) writer.tag(4, WireType.Varint).uint32(message.published_version);
+    /* optional uint32 override_train_id = 5; */
+    if (message.override_train_id !== undefined) writer.tag(5, WireType.Varint).uint32(message.override_train_id);
+    /* optional CMsgSteamLearnDataList data = 6; */
+    if (message.data)
+      CMsgSteamLearnDataList.internalBinaryWrite(
+        message.data,
+        writer.tag(6, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated float additional_data = 7; */
+    for (let i = 0; i < message.additional_data.length; i++)
+      writer.tag(7, WireType.Bit32).float(message.additional_data[i]);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_Inference_Request
@@ -3113,97 +3113,97 @@ class CMsgSteamLearn_Inference_Request$Type extends MessageType<CMsgSteamLearn_I
 export const CMsgSteamLearn_Inference_Request = new CMsgSteamLearn_Inference_Request$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Request$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Request> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Request", [
-			{
-				no: 1,
-				name: "access_token",
-				kind: "scalar",
-				localName: "access_token",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "project_id",
-				kind: "scalar",
-				localName: "project_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "published_version",
-				kind: "scalar",
-				localName: "published_version",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "override_train_id",
-				kind: "scalar",
-				localName: "override_train_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Request>): CMsgSteamLearn_InferenceMetadata_Request {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Request>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Request,
-	): CMsgSteamLearn_InferenceMetadata_Request {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string access_token */ 1:
-					message.access_token = reader.string();
-					break;
-				case /* optional uint32 project_id */ 3:
-					message.project_id = reader.uint32();
-					break;
-				case /* optional uint32 published_version */ 4:
-					message.published_version = reader.uint32();
-					break;
-				case /* optional uint32 override_train_id */ 5:
-					message.override_train_id = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Request,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string access_token = 1; */
-		if (message.access_token !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.access_token);
-		/* optional uint32 project_id = 3; */
-		if (message.project_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.project_id);
-		/* optional uint32 published_version = 4; */
-		if (message.published_version !== undefined) writer.tag(4, WireType.Varint).uint32(message.published_version);
-		/* optional uint32 override_train_id = 5; */
-		if (message.override_train_id !== undefined) writer.tag(5, WireType.Varint).uint32(message.override_train_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Request", [
+      {
+        no: 1,
+        name: "access_token",
+        kind: "scalar",
+        localName: "access_token",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "project_id",
+        kind: "scalar",
+        localName: "project_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "published_version",
+        kind: "scalar",
+        localName: "published_version",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "override_train_id",
+        kind: "scalar",
+        localName: "override_train_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Request>): CMsgSteamLearn_InferenceMetadata_Request {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Request>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Request,
+  ): CMsgSteamLearn_InferenceMetadata_Request {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string access_token */ 1:
+          message.access_token = reader.string();
+          break;
+        case /* optional uint32 project_id */ 3:
+          message.project_id = reader.uint32();
+          break;
+        case /* optional uint32 published_version */ 4:
+          message.published_version = reader.uint32();
+          break;
+        case /* optional uint32 override_train_id */ 5:
+          message.override_train_id = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Request,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string access_token = 1; */
+    if (message.access_token !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.access_token);
+    /* optional uint32 project_id = 3; */
+    if (message.project_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.project_id);
+    /* optional uint32 published_version = 4; */
+    if (message.published_version !== undefined) writer.tag(4, WireType.Varint).uint32(message.published_version);
+    /* optional uint32 override_train_id = 5; */
+    if (message.override_train_id !== undefined) writer.tag(5, WireType.Varint).uint32(message.override_train_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Request
@@ -3211,307 +3211,307 @@ class CMsgSteamLearn_InferenceMetadata_Request$Type extends MessageType<CMsgStea
 export const CMsgSteamLearn_InferenceMetadata_Request = new CMsgSteamLearn_InferenceMetadata_Request$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadataBackend_Request$Type extends MessageType<CMsgSteamLearn_InferenceMetadataBackend_Request> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadataBackend_Request", [
-			{
-				no: 1,
-				name: "project_id",
-				kind: "scalar",
-				localName: "project_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "fetch_id",
-				kind: "scalar",
-				localName: "fetch_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadataBackend_Request>,
-	): CMsgSteamLearn_InferenceMetadataBackend_Request {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadataBackend_Request>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadataBackend_Request,
-	): CMsgSteamLearn_InferenceMetadataBackend_Request {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 project_id */ 1:
-					message.project_id = reader.uint32();
-					break;
-				case /* optional uint32 fetch_id */ 2:
-					message.fetch_id = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadataBackend_Request,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 project_id = 1; */
-		if (message.project_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.project_id);
-		/* optional uint32 fetch_id = 2; */
-		if (message.fetch_id !== undefined) writer.tag(2, WireType.Varint).uint32(message.fetch_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadataBackend_Request", [
+      {
+        no: 1,
+        name: "project_id",
+        kind: "scalar",
+        localName: "project_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "fetch_id",
+        kind: "scalar",
+        localName: "fetch_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadataBackend_Request>,
+  ): CMsgSteamLearn_InferenceMetadataBackend_Request {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadataBackend_Request>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadataBackend_Request,
+  ): CMsgSteamLearn_InferenceMetadataBackend_Request {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 project_id */ 1:
+          message.project_id = reader.uint32();
+          break;
+        case /* optional uint32 fetch_id */ 2:
+          message.fetch_id = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadataBackend_Request,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 project_id = 1; */
+    if (message.project_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.project_id);
+    /* optional uint32 fetch_id = 2; */
+    if (message.fetch_id !== undefined) writer.tag(2, WireType.Varint).uint32(message.fetch_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadataBackend_Request
  */
 export const CMsgSteamLearn_InferenceMetadataBackend_Request =
-	new CMsgSteamLearn_InferenceMetadataBackend_Request$Type();
+  new CMsgSteamLearn_InferenceMetadataBackend_Request$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response", [
-			{
-				no: 1,
-				name: "inference_metadata_result",
-				kind: "enum",
-				localName: "inference_metadata_result",
-				opt: true,
-				T: () => ["ESteamLearnInferenceMetadataResult", ESteamLearnInferenceMetadataResult],
-			},
-			{
-				no: 2,
-				name: "row_range",
-				kind: "message",
-				localName: "row_range",
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_RowRange,
-			},
-			{
-				no: 3,
-				name: "ranges",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_Range,
-			},
-			{
-				no: 4,
-				name: "std_devs",
-				kind: "message",
-				localName: "std_devs",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_StdDev,
-			},
-			{
-				no: 5,
-				name: "compact_tables",
-				kind: "message",
-				localName: "compact_tables",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_CompactTable,
-			},
-			{
-				no: 9,
-				name: "sequence_tables",
-				kind: "message",
-				localName: "sequence_tables",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_SequenceTable,
-			},
-			{
-				no: 6,
-				name: "kmeans",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_KMeans,
-			},
-			{
-				no: 8,
-				name: "app_info",
-				kind: "message",
-				localName: "app_info",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry,
-			},
-			{
-				no: 7,
-				name: "snapshot_histogram",
-				kind: "message",
-				localName: "snapshot_histogram",
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response>): CMsgSteamLearn_InferenceMetadata_Response {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.ranges = [];
-		message.std_devs = [];
-		message.compact_tables = [];
-		message.sequence_tables = [];
-		message.kmeans = [];
-		message.app_info = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response,
-	): CMsgSteamLearn_InferenceMetadata_Response {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional ESteamLearnInferenceMetadataResult inference_metadata_result */ 1:
-					message.inference_metadata_result = reader.int32();
-					break;
-				case /* optional CMsgSteamLearn_InferenceMetadata_Response.RowRange row_range */ 2:
-					message.row_range = CMsgSteamLearn_InferenceMetadata_Response_RowRange.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.row_range,
-					);
-					break;
-				case /* repeated CMsgSteamLearn_InferenceMetadata_Response.Range ranges */ 3:
-					message.ranges.push(
-						CMsgSteamLearn_InferenceMetadata_Response_Range.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CMsgSteamLearn_InferenceMetadata_Response.StdDev std_devs */ 4:
-					message.std_devs.push(
-						CMsgSteamLearn_InferenceMetadata_Response_StdDev.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable compact_tables */ 5:
-					message.compact_tables.push(
-						CMsgSteamLearn_InferenceMetadata_Response_CompactTable.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable sequence_tables */ 9:
-					message.sequence_tables.push(
-						CMsgSteamLearn_InferenceMetadata_Response_SequenceTable.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-						),
-					);
-					break;
-				case /* repeated CMsgSteamLearn_InferenceMetadata_Response.KMeans kmeans */ 6:
-					message.kmeans.push(
-						CMsgSteamLearn_InferenceMetadata_Response_KMeans.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CMsgSteamLearn_InferenceMetadata_Response.AppInfoEntry app_info */ 8:
-					message.app_info.push(
-						CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* optional CMsgSteamLearn_InferenceMetadata_Response.SnapshotHistogram snapshot_histogram */ 7:
-					message.snapshot_histogram = CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.snapshot_histogram,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional ESteamLearnInferenceMetadataResult inference_metadata_result = 1; */
-		if (message.inference_metadata_result !== undefined)
-			writer.tag(1, WireType.Varint).int32(message.inference_metadata_result);
-		/* optional CMsgSteamLearn_InferenceMetadata_Response.RowRange row_range = 2; */
-		if (message.row_range)
-			CMsgSteamLearn_InferenceMetadata_Response_RowRange.internalBinaryWrite(
-				message.row_range,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamLearn_InferenceMetadata_Response.Range ranges = 3; */
-		for (let i = 0; i < message.ranges.length; i++)
-			CMsgSteamLearn_InferenceMetadata_Response_Range.internalBinaryWrite(
-				message.ranges[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamLearn_InferenceMetadata_Response.StdDev std_devs = 4; */
-		for (let i = 0; i < message.std_devs.length; i++)
-			CMsgSteamLearn_InferenceMetadata_Response_StdDev.internalBinaryWrite(
-				message.std_devs[i],
-				writer.tag(4, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable compact_tables = 5; */
-		for (let i = 0; i < message.compact_tables.length; i++)
-			CMsgSteamLearn_InferenceMetadata_Response_CompactTable.internalBinaryWrite(
-				message.compact_tables[i],
-				writer.tag(5, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable sequence_tables = 9; */
-		for (let i = 0; i < message.sequence_tables.length; i++)
-			CMsgSteamLearn_InferenceMetadata_Response_SequenceTable.internalBinaryWrite(
-				message.sequence_tables[i],
-				writer.tag(9, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamLearn_InferenceMetadata_Response.KMeans kmeans = 6; */
-		for (let i = 0; i < message.kmeans.length; i++)
-			CMsgSteamLearn_InferenceMetadata_Response_KMeans.internalBinaryWrite(
-				message.kmeans[i],
-				writer.tag(6, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamLearn_InferenceMetadata_Response.AppInfoEntry app_info = 8; */
-		for (let i = 0; i < message.app_info.length; i++)
-			CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry.internalBinaryWrite(
-				message.app_info[i],
-				writer.tag(8, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgSteamLearn_InferenceMetadata_Response.SnapshotHistogram snapshot_histogram = 7; */
-		if (message.snapshot_histogram)
-			CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram.internalBinaryWrite(
-				message.snapshot_histogram,
-				writer.tag(7, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response", [
+      {
+        no: 1,
+        name: "inference_metadata_result",
+        kind: "enum",
+        localName: "inference_metadata_result",
+        opt: true,
+        T: () => ["ESteamLearnInferenceMetadataResult", ESteamLearnInferenceMetadataResult],
+      },
+      {
+        no: 2,
+        name: "row_range",
+        kind: "message",
+        localName: "row_range",
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_RowRange,
+      },
+      {
+        no: 3,
+        name: "ranges",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_Range,
+      },
+      {
+        no: 4,
+        name: "std_devs",
+        kind: "message",
+        localName: "std_devs",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_StdDev,
+      },
+      {
+        no: 5,
+        name: "compact_tables",
+        kind: "message",
+        localName: "compact_tables",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_CompactTable,
+      },
+      {
+        no: 9,
+        name: "sequence_tables",
+        kind: "message",
+        localName: "sequence_tables",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_SequenceTable,
+      },
+      {
+        no: 6,
+        name: "kmeans",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_KMeans,
+      },
+      {
+        no: 8,
+        name: "app_info",
+        kind: "message",
+        localName: "app_info",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry,
+      },
+      {
+        no: 7,
+        name: "snapshot_histogram",
+        kind: "message",
+        localName: "snapshot_histogram",
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response>): CMsgSteamLearn_InferenceMetadata_Response {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.ranges = [];
+    message.std_devs = [];
+    message.compact_tables = [];
+    message.sequence_tables = [];
+    message.kmeans = [];
+    message.app_info = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response,
+  ): CMsgSteamLearn_InferenceMetadata_Response {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional ESteamLearnInferenceMetadataResult inference_metadata_result */ 1:
+          message.inference_metadata_result = reader.int32();
+          break;
+        case /* optional CMsgSteamLearn_InferenceMetadata_Response.RowRange row_range */ 2:
+          message.row_range = CMsgSteamLearn_InferenceMetadata_Response_RowRange.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.row_range,
+          );
+          break;
+        case /* repeated CMsgSteamLearn_InferenceMetadata_Response.Range ranges */ 3:
+          message.ranges.push(
+            CMsgSteamLearn_InferenceMetadata_Response_Range.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CMsgSteamLearn_InferenceMetadata_Response.StdDev std_devs */ 4:
+          message.std_devs.push(
+            CMsgSteamLearn_InferenceMetadata_Response_StdDev.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable compact_tables */ 5:
+          message.compact_tables.push(
+            CMsgSteamLearn_InferenceMetadata_Response_CompactTable.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable sequence_tables */ 9:
+          message.sequence_tables.push(
+            CMsgSteamLearn_InferenceMetadata_Response_SequenceTable.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+            ),
+          );
+          break;
+        case /* repeated CMsgSteamLearn_InferenceMetadata_Response.KMeans kmeans */ 6:
+          message.kmeans.push(
+            CMsgSteamLearn_InferenceMetadata_Response_KMeans.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CMsgSteamLearn_InferenceMetadata_Response.AppInfoEntry app_info */ 8:
+          message.app_info.push(
+            CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* optional CMsgSteamLearn_InferenceMetadata_Response.SnapshotHistogram snapshot_histogram */ 7:
+          message.snapshot_histogram = CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.snapshot_histogram,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional ESteamLearnInferenceMetadataResult inference_metadata_result = 1; */
+    if (message.inference_metadata_result !== undefined)
+      writer.tag(1, WireType.Varint).int32(message.inference_metadata_result);
+    /* optional CMsgSteamLearn_InferenceMetadata_Response.RowRange row_range = 2; */
+    if (message.row_range)
+      CMsgSteamLearn_InferenceMetadata_Response_RowRange.internalBinaryWrite(
+        message.row_range,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamLearn_InferenceMetadata_Response.Range ranges = 3; */
+    for (let i = 0; i < message.ranges.length; i++)
+      CMsgSteamLearn_InferenceMetadata_Response_Range.internalBinaryWrite(
+        message.ranges[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamLearn_InferenceMetadata_Response.StdDev std_devs = 4; */
+    for (let i = 0; i < message.std_devs.length; i++)
+      CMsgSteamLearn_InferenceMetadata_Response_StdDev.internalBinaryWrite(
+        message.std_devs[i],
+        writer.tag(4, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable compact_tables = 5; */
+    for (let i = 0; i < message.compact_tables.length; i++)
+      CMsgSteamLearn_InferenceMetadata_Response_CompactTable.internalBinaryWrite(
+        message.compact_tables[i],
+        writer.tag(5, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable sequence_tables = 9; */
+    for (let i = 0; i < message.sequence_tables.length; i++)
+      CMsgSteamLearn_InferenceMetadata_Response_SequenceTable.internalBinaryWrite(
+        message.sequence_tables[i],
+        writer.tag(9, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamLearn_InferenceMetadata_Response.KMeans kmeans = 6; */
+    for (let i = 0; i < message.kmeans.length; i++)
+      CMsgSteamLearn_InferenceMetadata_Response_KMeans.internalBinaryWrite(
+        message.kmeans[i],
+        writer.tag(6, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamLearn_InferenceMetadata_Response.AppInfoEntry app_info = 8; */
+    for (let i = 0; i < message.app_info.length; i++)
+      CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry.internalBinaryWrite(
+        message.app_info[i],
+        writer.tag(8, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgSteamLearn_InferenceMetadata_Response.SnapshotHistogram snapshot_histogram = 7; */
+    if (message.snapshot_histogram)
+      CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram.internalBinaryWrite(
+        message.snapshot_histogram,
+        writer.tag(7, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response
@@ -3519,1628 +3519,1628 @@ class CMsgSteamLearn_InferenceMetadata_Response$Type extends MessageType<CMsgSte
 export const CMsgSteamLearn_InferenceMetadata_Response = new CMsgSteamLearn_InferenceMetadata_Response$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response_RowRange$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response_RowRange> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response.RowRange", [
-			{
-				no: 1,
-				name: "min_row",
-				kind: "scalar",
-				localName: "min_row",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "max_row",
-				kind: "scalar",
-				localName: "max_row",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_RowRange>,
-	): CMsgSteamLearn_InferenceMetadata_Response_RowRange {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_RowRange>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response_RowRange,
-	): CMsgSteamLearn_InferenceMetadata_Response_RowRange {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint64 min_row */ 1:
-					message.min_row = reader.uint64().toBigInt();
-					break;
-				case /* optional uint64 max_row */ 2:
-					message.max_row = reader.uint64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response_RowRange,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint64 min_row = 1; */
-		if (message.min_row !== undefined) writer.tag(1, WireType.Varint).uint64(message.min_row);
-		/* optional uint64 max_row = 2; */
-		if (message.max_row !== undefined) writer.tag(2, WireType.Varint).uint64(message.max_row);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response.RowRange", [
+      {
+        no: 1,
+        name: "min_row",
+        kind: "scalar",
+        localName: "min_row",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "max_row",
+        kind: "scalar",
+        localName: "max_row",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_RowRange>,
+  ): CMsgSteamLearn_InferenceMetadata_Response_RowRange {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_RowRange>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response_RowRange,
+  ): CMsgSteamLearn_InferenceMetadata_Response_RowRange {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint64 min_row */ 1:
+          message.min_row = reader.uint64().toBigInt();
+          break;
+        case /* optional uint64 max_row */ 2:
+          message.max_row = reader.uint64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response_RowRange,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint64 min_row = 1; */
+    if (message.min_row !== undefined) writer.tag(1, WireType.Varint).uint64(message.min_row);
+    /* optional uint64 max_row = 2; */
+    if (message.max_row !== undefined) writer.tag(2, WireType.Varint).uint64(message.max_row);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response.RowRange
  */
 export const CMsgSteamLearn_InferenceMetadata_Response_RowRange =
-	new CMsgSteamLearn_InferenceMetadata_Response_RowRange$Type();
+  new CMsgSteamLearn_InferenceMetadata_Response_RowRange$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response_Range$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response_Range> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response.Range", [
-			{
-				no: 1,
-				name: "data_element_path",
-				kind: "scalar",
-				localName: "data_element_path",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "min_value",
-				kind: "scalar",
-				localName: "min_value",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "max_value",
-				kind: "scalar",
-				localName: "max_value",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_Range>,
-	): CMsgSteamLearn_InferenceMetadata_Response_Range {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_Range>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response_Range,
-	): CMsgSteamLearn_InferenceMetadata_Response_Range {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string data_element_path */ 1:
-					message.data_element_path = reader.string();
-					break;
-				case /* optional float min_value */ 2:
-					message.min_value = reader.float();
-					break;
-				case /* optional float max_value */ 3:
-					message.max_value = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response_Range,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string data_element_path = 1; */
-		if (message.data_element_path !== undefined)
-			writer.tag(1, WireType.LengthDelimited).string(message.data_element_path);
-		/* optional float min_value = 2; */
-		if (message.min_value !== undefined) writer.tag(2, WireType.Bit32).float(message.min_value);
-		/* optional float max_value = 3; */
-		if (message.max_value !== undefined) writer.tag(3, WireType.Bit32).float(message.max_value);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response.Range", [
+      {
+        no: 1,
+        name: "data_element_path",
+        kind: "scalar",
+        localName: "data_element_path",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "min_value",
+        kind: "scalar",
+        localName: "min_value",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "max_value",
+        kind: "scalar",
+        localName: "max_value",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_Range>,
+  ): CMsgSteamLearn_InferenceMetadata_Response_Range {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_Range>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response_Range,
+  ): CMsgSteamLearn_InferenceMetadata_Response_Range {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string data_element_path */ 1:
+          message.data_element_path = reader.string();
+          break;
+        case /* optional float min_value */ 2:
+          message.min_value = reader.float();
+          break;
+        case /* optional float max_value */ 3:
+          message.max_value = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response_Range,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string data_element_path = 1; */
+    if (message.data_element_path !== undefined)
+      writer.tag(1, WireType.LengthDelimited).string(message.data_element_path);
+    /* optional float min_value = 2; */
+    if (message.min_value !== undefined) writer.tag(2, WireType.Bit32).float(message.min_value);
+    /* optional float max_value = 3; */
+    if (message.max_value !== undefined) writer.tag(3, WireType.Bit32).float(message.max_value);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response.Range
  */
 export const CMsgSteamLearn_InferenceMetadata_Response_Range =
-	new CMsgSteamLearn_InferenceMetadata_Response_Range$Type();
+  new CMsgSteamLearn_InferenceMetadata_Response_Range$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response_StdDev$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response_StdDev> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response.StdDev", [
-			{
-				no: 1,
-				name: "data_element_path",
-				kind: "scalar",
-				localName: "data_element_path",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "mean",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "std_dev",
-				kind: "scalar",
-				localName: "std_dev",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_StdDev>,
-	): CMsgSteamLearn_InferenceMetadata_Response_StdDev {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_StdDev>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response_StdDev,
-	): CMsgSteamLearn_InferenceMetadata_Response_StdDev {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string data_element_path */ 1:
-					message.data_element_path = reader.string();
-					break;
-				case /* optional float mean */ 2:
-					message.mean = reader.float();
-					break;
-				case /* optional float std_dev */ 3:
-					message.std_dev = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response_StdDev,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string data_element_path = 1; */
-		if (message.data_element_path !== undefined)
-			writer.tag(1, WireType.LengthDelimited).string(message.data_element_path);
-		/* optional float mean = 2; */
-		if (message.mean !== undefined) writer.tag(2, WireType.Bit32).float(message.mean);
-		/* optional float std_dev = 3; */
-		if (message.std_dev !== undefined) writer.tag(3, WireType.Bit32).float(message.std_dev);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response.StdDev", [
+      {
+        no: 1,
+        name: "data_element_path",
+        kind: "scalar",
+        localName: "data_element_path",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "mean",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "std_dev",
+        kind: "scalar",
+        localName: "std_dev",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_StdDev>,
+  ): CMsgSteamLearn_InferenceMetadata_Response_StdDev {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_StdDev>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response_StdDev,
+  ): CMsgSteamLearn_InferenceMetadata_Response_StdDev {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string data_element_path */ 1:
+          message.data_element_path = reader.string();
+          break;
+        case /* optional float mean */ 2:
+          message.mean = reader.float();
+          break;
+        case /* optional float std_dev */ 3:
+          message.std_dev = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response_StdDev,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string data_element_path = 1; */
+    if (message.data_element_path !== undefined)
+      writer.tag(1, WireType.LengthDelimited).string(message.data_element_path);
+    /* optional float mean = 2; */
+    if (message.mean !== undefined) writer.tag(2, WireType.Bit32).float(message.mean);
+    /* optional float std_dev = 3; */
+    if (message.std_dev !== undefined) writer.tag(3, WireType.Bit32).float(message.std_dev);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response.StdDev
  */
 export const CMsgSteamLearn_InferenceMetadata_Response_StdDev =
-	new CMsgSteamLearn_InferenceMetadata_Response_StdDev$Type();
+  new CMsgSteamLearn_InferenceMetadata_Response_StdDev$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response_CompactTable$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response_CompactTable> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response.CompactTable", [
-			{
-				no: 1,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "map_values",
-				kind: "message",
-				localName: "map_values",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry,
-			},
-			{
-				no: 3,
-				name: "map_mappings",
-				kind: "message",
-				localName: "map_mappings",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_CompactTable>,
-	): CMsgSteamLearn_InferenceMetadata_Response_CompactTable {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.map_values = [];
-		message.map_mappings = [];
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_CompactTable>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response_CompactTable,
-	): CMsgSteamLearn_InferenceMetadata_Response_CompactTable {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string name */ 1:
-					message.name = reader.string();
-					break;
-				case /* repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapValuesEntry map_values */ 2:
-					message.map_values.push(
-						CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-						),
-					);
-					break;
-				case /* repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapMappingsEntry map_mappings */ 3:
-					message.map_mappings.push(
-						CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-						),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response_CompactTable,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string name = 1; */
-		if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
-		/* repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapValuesEntry map_values = 2; */
-		for (let i = 0; i < message.map_values.length; i++)
-			CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry.internalBinaryWrite(
-				message.map_values[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapMappingsEntry map_mappings = 3; */
-		for (let i = 0; i < message.map_mappings.length; i++)
-			CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry.internalBinaryWrite(
-				message.map_mappings[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response.CompactTable", [
+      {
+        no: 1,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "map_values",
+        kind: "message",
+        localName: "map_values",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry,
+      },
+      {
+        no: 3,
+        name: "map_mappings",
+        kind: "message",
+        localName: "map_mappings",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_CompactTable>,
+  ): CMsgSteamLearn_InferenceMetadata_Response_CompactTable {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.map_values = [];
+    message.map_mappings = [];
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_CompactTable>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response_CompactTable,
+  ): CMsgSteamLearn_InferenceMetadata_Response_CompactTable {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string name */ 1:
+          message.name = reader.string();
+          break;
+        case /* repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapValuesEntry map_values */ 2:
+          message.map_values.push(
+            CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+            ),
+          );
+          break;
+        case /* repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapMappingsEntry map_mappings */ 3:
+          message.map_mappings.push(
+            CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+            ),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response_CompactTable,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string name = 1; */
+    if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
+    /* repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapValuesEntry map_values = 2; */
+    for (let i = 0; i < message.map_values.length; i++)
+      CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry.internalBinaryWrite(
+        message.map_values[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapMappingsEntry map_mappings = 3; */
+    for (let i = 0; i < message.map_mappings.length; i++)
+      CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry.internalBinaryWrite(
+        message.map_mappings[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response.CompactTable
  */
 export const CMsgSteamLearn_InferenceMetadata_Response_CompactTable =
-	new CMsgSteamLearn_InferenceMetadata_Response_CompactTable$Type();
+  new CMsgSteamLearn_InferenceMetadata_Response_CompactTable$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response.CompactTable.Entry", [
-			{
-				no: 1,
-				name: "value",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "mapping",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "count",
-				kind: "scalar",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry>,
-	): CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry,
-	): CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 value */ 1:
-					message.value = reader.uint32();
-					break;
-				case /* optional uint32 mapping */ 2:
-					message.mapping = reader.uint32();
-					break;
-				case /* optional uint64 count */ 3:
-					message.count = reader.uint64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 value = 1; */
-		if (message.value !== undefined) writer.tag(1, WireType.Varint).uint32(message.value);
-		/* optional uint32 mapping = 2; */
-		if (message.mapping !== undefined) writer.tag(2, WireType.Varint).uint32(message.mapping);
-		/* optional uint64 count = 3; */
-		if (message.count !== undefined) writer.tag(3, WireType.Varint).uint64(message.count);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response.CompactTable.Entry", [
+      {
+        no: 1,
+        name: "value",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "mapping",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "count",
+        kind: "scalar",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry>,
+  ): CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry,
+  ): CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 value */ 1:
+          message.value = reader.uint32();
+          break;
+        case /* optional uint32 mapping */ 2:
+          message.mapping = reader.uint32();
+          break;
+        case /* optional uint64 count */ 3:
+          message.count = reader.uint64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 value = 1; */
+    if (message.value !== undefined) writer.tag(1, WireType.Varint).uint32(message.value);
+    /* optional uint32 mapping = 2; */
+    if (message.mapping !== undefined) writer.tag(2, WireType.Varint).uint32(message.mapping);
+    /* optional uint64 count = 3; */
+    if (message.count !== undefined) writer.tag(3, WireType.Varint).uint64(message.count);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response.CompactTable.Entry
  */
 export const CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry =
-	new CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry$Type();
+  new CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapValuesEntry", [
-			{
-				no: 1,
-				name: "key",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "value",
-				kind: "message",
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry>,
-	): CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry>(
-				this,
-				message,
-				value,
-			);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry,
-	): CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 key */ 1:
-					message.key = reader.uint32();
-					break;
-				case /* optional CMsgSteamLearn_InferenceMetadata_Response.CompactTable.Entry value */ 2:
-					message.value = CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.value,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 key = 1; */
-		if (message.key !== undefined) writer.tag(1, WireType.Varint).uint32(message.key);
-		/* optional CMsgSteamLearn_InferenceMetadata_Response.CompactTable.Entry value = 2; */
-		if (message.value)
-			CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry.internalBinaryWrite(
-				message.value,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapValuesEntry", [
+      {
+        no: 1,
+        name: "key",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "value",
+        kind: "message",
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry>,
+  ): CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry>(
+        this,
+        message,
+        value,
+      );
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry,
+  ): CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 key */ 1:
+          message.key = reader.uint32();
+          break;
+        case /* optional CMsgSteamLearn_InferenceMetadata_Response.CompactTable.Entry value */ 2:
+          message.value = CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.value,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 key = 1; */
+    if (message.key !== undefined) writer.tag(1, WireType.Varint).uint32(message.key);
+    /* optional CMsgSteamLearn_InferenceMetadata_Response.CompactTable.Entry value = 2; */
+    if (message.value)
+      CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry.internalBinaryWrite(
+        message.value,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapValuesEntry
  */
 export const CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry =
-	new CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry$Type();
+  new CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapValuesEntry$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapMappingsEntry", [
-			{
-				no: 1,
-				name: "key",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "value",
-				kind: "message",
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry>,
-	): CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry>(
-				this,
-				message,
-				value,
-			);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry,
-	): CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 key */ 1:
-					message.key = reader.uint32();
-					break;
-				case /* optional CMsgSteamLearn_InferenceMetadata_Response.CompactTable.Entry value */ 2:
-					message.value = CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.value,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 key = 1; */
-		if (message.key !== undefined) writer.tag(1, WireType.Varint).uint32(message.key);
-		/* optional CMsgSteamLearn_InferenceMetadata_Response.CompactTable.Entry value = 2; */
-		if (message.value)
-			CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry.internalBinaryWrite(
-				message.value,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapMappingsEntry", [
+      {
+        no: 1,
+        name: "key",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "value",
+        kind: "message",
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry>,
+  ): CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry>(
+        this,
+        message,
+        value,
+      );
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry,
+  ): CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 key */ 1:
+          message.key = reader.uint32();
+          break;
+        case /* optional CMsgSteamLearn_InferenceMetadata_Response.CompactTable.Entry value */ 2:
+          message.value = CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.value,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 key = 1; */
+    if (message.key !== undefined) writer.tag(1, WireType.Varint).uint32(message.key);
+    /* optional CMsgSteamLearn_InferenceMetadata_Response.CompactTable.Entry value = 2; */
+    if (message.value)
+      CMsgSteamLearn_InferenceMetadata_Response_CompactTable_Entry.internalBinaryWrite(
+        message.value,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response.CompactTable.MapMappingsEntry
  */
 export const CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry =
-	new CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry$Type();
+  new CMsgSteamLearn_InferenceMetadata_Response_CompactTable_MapMappingsEntry$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response_SequenceTable$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response.SequenceTable", [
-			{
-				no: 1,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "map_values",
-				kind: "message",
-				localName: "map_values",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry,
-			},
-			{
-				no: 3,
-				name: "map_mappings",
-				kind: "message",
-				localName: "map_mappings",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry,
-			},
-			{
-				no: 4,
-				name: "total_count",
-				kind: "scalar",
-				localName: "total_count",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable>,
-	): CMsgSteamLearn_InferenceMetadata_Response_SequenceTable {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.map_values = [];
-		message.map_mappings = [];
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable,
-	): CMsgSteamLearn_InferenceMetadata_Response_SequenceTable {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string name */ 1:
-					message.name = reader.string();
-					break;
-				case /* repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapValuesEntry map_values */ 2:
-					message.map_values.push(
-						CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-						),
-					);
-					break;
-				case /* repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapMappingsEntry map_mappings */ 3:
-					message.map_mappings.push(
-						CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-						),
-					);
-					break;
-				case /* optional uint64 total_count */ 4:
-					message.total_count = reader.uint64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string name = 1; */
-		if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
-		/* repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapValuesEntry map_values = 2; */
-		for (let i = 0; i < message.map_values.length; i++)
-			CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry.internalBinaryWrite(
-				message.map_values[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapMappingsEntry map_mappings = 3; */
-		for (let i = 0; i < message.map_mappings.length; i++)
-			CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry.internalBinaryWrite(
-				message.map_mappings[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint64 total_count = 4; */
-		if (message.total_count !== undefined) writer.tag(4, WireType.Varint).uint64(message.total_count);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response.SequenceTable", [
+      {
+        no: 1,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "map_values",
+        kind: "message",
+        localName: "map_values",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry,
+      },
+      {
+        no: 3,
+        name: "map_mappings",
+        kind: "message",
+        localName: "map_mappings",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry,
+      },
+      {
+        no: 4,
+        name: "total_count",
+        kind: "scalar",
+        localName: "total_count",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable>,
+  ): CMsgSteamLearn_InferenceMetadata_Response_SequenceTable {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.map_values = [];
+    message.map_mappings = [];
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable,
+  ): CMsgSteamLearn_InferenceMetadata_Response_SequenceTable {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string name */ 1:
+          message.name = reader.string();
+          break;
+        case /* repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapValuesEntry map_values */ 2:
+          message.map_values.push(
+            CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+            ),
+          );
+          break;
+        case /* repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapMappingsEntry map_mappings */ 3:
+          message.map_mappings.push(
+            CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+            ),
+          );
+          break;
+        case /* optional uint64 total_count */ 4:
+          message.total_count = reader.uint64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string name = 1; */
+    if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
+    /* repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapValuesEntry map_values = 2; */
+    for (let i = 0; i < message.map_values.length; i++)
+      CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry.internalBinaryWrite(
+        message.map_values[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapMappingsEntry map_mappings = 3; */
+    for (let i = 0; i < message.map_mappings.length; i++)
+      CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry.internalBinaryWrite(
+        message.map_mappings[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint64 total_count = 4; */
+    if (message.total_count !== undefined) writer.tag(4, WireType.Varint).uint64(message.total_count);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response.SequenceTable
  */
 export const CMsgSteamLearn_InferenceMetadata_Response_SequenceTable =
-	new CMsgSteamLearn_InferenceMetadata_Response_SequenceTable$Type();
+  new CMsgSteamLearn_InferenceMetadata_Response_SequenceTable$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.Entry", [
-			{
-				no: 1,
-				name: "values",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "crc",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "count",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry>,
-	): CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.values = [];
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry,
-	): CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated uint32 values */ 1:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.values.push(reader.uint32());
-					else message.values.push(reader.uint32());
-					break;
-				case /* optional uint32 crc */ 2:
-					message.crc = reader.uint32();
-					break;
-				case /* optional uint32 count */ 3:
-					message.count = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated uint32 values = 1; */
-		for (let i = 0; i < message.values.length; i++) writer.tag(1, WireType.Varint).uint32(message.values[i]);
-		/* optional uint32 crc = 2; */
-		if (message.crc !== undefined) writer.tag(2, WireType.Varint).uint32(message.crc);
-		/* optional uint32 count = 3; */
-		if (message.count !== undefined) writer.tag(3, WireType.Varint).uint32(message.count);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.Entry", [
+      {
+        no: 1,
+        name: "values",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "crc",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "count",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry>,
+  ): CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.values = [];
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry,
+  ): CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated uint32 values */ 1:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.values.push(reader.uint32());
+          else message.values.push(reader.uint32());
+          break;
+        case /* optional uint32 crc */ 2:
+          message.crc = reader.uint32();
+          break;
+        case /* optional uint32 count */ 3:
+          message.count = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated uint32 values = 1; */
+    for (let i = 0; i < message.values.length; i++) writer.tag(1, WireType.Varint).uint32(message.values[i]);
+    /* optional uint32 crc = 2; */
+    if (message.crc !== undefined) writer.tag(2, WireType.Varint).uint32(message.crc);
+    /* optional uint32 count = 3; */
+    if (message.count !== undefined) writer.tag(3, WireType.Varint).uint32(message.count);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.Entry
  */
 export const CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry =
-	new CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry$Type();
+  new CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapValuesEntry", [
-			{
-				no: 1,
-				name: "key",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "value",
-				kind: "message",
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry>,
-	): CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry>(
-				this,
-				message,
-				value,
-			);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry,
-	): CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 key */ 1:
-					message.key = reader.uint32();
-					break;
-				case /* optional CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.Entry value */ 2:
-					message.value = CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.value,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 key = 1; */
-		if (message.key !== undefined) writer.tag(1, WireType.Varint).uint32(message.key);
-		/* optional CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.Entry value = 2; */
-		if (message.value)
-			CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry.internalBinaryWrite(
-				message.value,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapValuesEntry", [
+      {
+        no: 1,
+        name: "key",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "value",
+        kind: "message",
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry>,
+  ): CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry>(
+        this,
+        message,
+        value,
+      );
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry,
+  ): CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 key */ 1:
+          message.key = reader.uint32();
+          break;
+        case /* optional CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.Entry value */ 2:
+          message.value = CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.value,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 key = 1; */
+    if (message.key !== undefined) writer.tag(1, WireType.Varint).uint32(message.key);
+    /* optional CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.Entry value = 2; */
+    if (message.value)
+      CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry.internalBinaryWrite(
+        message.value,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapValuesEntry
  */
 export const CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry =
-	new CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry$Type();
+  new CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapValuesEntry$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapMappingsEntry", [
-			{
-				no: 1,
-				name: "key",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "value",
-				kind: "message",
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry>,
-	): CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry>(
-				this,
-				message,
-				value,
-			);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry,
-	): CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string key */ 1:
-					message.key = reader.string();
-					break;
-				case /* optional CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.Entry value */ 2:
-					message.value = CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.value,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string key = 1; */
-		if (message.key !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.key);
-		/* optional CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.Entry value = 2; */
-		if (message.value)
-			CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry.internalBinaryWrite(
-				message.value,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapMappingsEntry", [
+      {
+        no: 1,
+        name: "key",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "value",
+        kind: "message",
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry>,
+  ): CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry>(
+        this,
+        message,
+        value,
+      );
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry,
+  ): CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string key */ 1:
+          message.key = reader.string();
+          break;
+        case /* optional CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.Entry value */ 2:
+          message.value = CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.value,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string key = 1; */
+    if (message.key !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.key);
+    /* optional CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.Entry value = 2; */
+    if (message.value)
+      CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_Entry.internalBinaryWrite(
+        message.value,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response.SequenceTable.MapMappingsEntry
  */
 export const CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry =
-	new CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry$Type();
+  new CMsgSteamLearn_InferenceMetadata_Response_SequenceTable_MapMappingsEntry$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response_KMeans$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response_KMeans> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response.KMeans", [
-			{
-				no: 1,
-				name: "name",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "clusters",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_KMeans>,
-	): CMsgSteamLearn_InferenceMetadata_Response_KMeans {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.clusters = [];
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_KMeans>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response_KMeans,
-	): CMsgSteamLearn_InferenceMetadata_Response_KMeans {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string name */ 1:
-					message.name = reader.string();
-					break;
-				case /* repeated CMsgSteamLearn_InferenceMetadata_Response.KMeans.Cluster clusters */ 2:
-					message.clusters.push(
-						CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-						),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response_KMeans,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string name = 1; */
-		if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
-		/* repeated CMsgSteamLearn_InferenceMetadata_Response.KMeans.Cluster clusters = 2; */
-		for (let i = 0; i < message.clusters.length; i++)
-			CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster.internalBinaryWrite(
-				message.clusters[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response.KMeans", [
+      {
+        no: 1,
+        name: "name",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "clusters",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_KMeans>,
+  ): CMsgSteamLearn_InferenceMetadata_Response_KMeans {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.clusters = [];
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_KMeans>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response_KMeans,
+  ): CMsgSteamLearn_InferenceMetadata_Response_KMeans {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string name */ 1:
+          message.name = reader.string();
+          break;
+        case /* repeated CMsgSteamLearn_InferenceMetadata_Response.KMeans.Cluster clusters */ 2:
+          message.clusters.push(
+            CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+            ),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response_KMeans,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string name = 1; */
+    if (message.name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.name);
+    /* repeated CMsgSteamLearn_InferenceMetadata_Response.KMeans.Cluster clusters = 2; */
+    for (let i = 0; i < message.clusters.length; i++)
+      CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster.internalBinaryWrite(
+        message.clusters[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response.KMeans
  */
 export const CMsgSteamLearn_InferenceMetadata_Response_KMeans =
-	new CMsgSteamLearn_InferenceMetadata_Response_KMeans$Type();
+  new CMsgSteamLearn_InferenceMetadata_Response_KMeans$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response.KMeans.Cluster", [
-			{
-				no: 1,
-				name: "x",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 2,
-				name: "y",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "radius",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "radius_75pct",
-				kind: "scalar",
-				localName: "radius_75pct",
-				jsonName: "radius75pct",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 5,
-				name: "radius_50pct",
-				kind: "scalar",
-				localName: "radius_50pct",
-				jsonName: "radius50pct",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 6,
-				name: "radius_25pct",
-				kind: "scalar",
-				localName: "radius_25pct",
-				jsonName: "radius25pct",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster>,
-	): CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster,
-	): CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float x */ 1:
-					message.x = reader.float();
-					break;
-				case /* optional float y */ 2:
-					message.y = reader.float();
-					break;
-				case /* optional float radius */ 3:
-					message.radius = reader.float();
-					break;
-				case /* optional float radius_75pct = 4 [json_name = "radius75pct"];*/ 4:
-					message.radius_75pct = reader.float();
-					break;
-				case /* optional float radius_50pct = 5 [json_name = "radius50pct"];*/ 5:
-					message.radius_50pct = reader.float();
-					break;
-				case /* optional float radius_25pct = 6 [json_name = "radius25pct"];*/ 6:
-					message.radius_25pct = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional float x = 1; */
-		if (message.x !== undefined) writer.tag(1, WireType.Bit32).float(message.x);
-		/* optional float y = 2; */
-		if (message.y !== undefined) writer.tag(2, WireType.Bit32).float(message.y);
-		/* optional float radius = 3; */
-		if (message.radius !== undefined) writer.tag(3, WireType.Bit32).float(message.radius);
-		/* optional float radius_75pct = 4 [json_name = "radius75pct"]; */
-		if (message.radius_75pct !== undefined) writer.tag(4, WireType.Bit32).float(message.radius_75pct);
-		/* optional float radius_50pct = 5 [json_name = "radius50pct"]; */
-		if (message.radius_50pct !== undefined) writer.tag(5, WireType.Bit32).float(message.radius_50pct);
-		/* optional float radius_25pct = 6 [json_name = "radius25pct"]; */
-		if (message.radius_25pct !== undefined) writer.tag(6, WireType.Bit32).float(message.radius_25pct);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response.KMeans.Cluster", [
+      {
+        no: 1,
+        name: "x",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 2,
+        name: "y",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "radius",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "radius_75pct",
+        kind: "scalar",
+        localName: "radius_75pct",
+        jsonName: "radius75pct",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 5,
+        name: "radius_50pct",
+        kind: "scalar",
+        localName: "radius_50pct",
+        jsonName: "radius50pct",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 6,
+        name: "radius_25pct",
+        kind: "scalar",
+        localName: "radius_25pct",
+        jsonName: "radius25pct",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster>,
+  ): CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster,
+  ): CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float x */ 1:
+          message.x = reader.float();
+          break;
+        case /* optional float y */ 2:
+          message.y = reader.float();
+          break;
+        case /* optional float radius */ 3:
+          message.radius = reader.float();
+          break;
+        case /* optional float radius_75pct = 4 [json_name = "radius75pct"];*/ 4:
+          message.radius_75pct = reader.float();
+          break;
+        case /* optional float radius_50pct = 5 [json_name = "radius50pct"];*/ 5:
+          message.radius_50pct = reader.float();
+          break;
+        case /* optional float radius_25pct = 6 [json_name = "radius25pct"];*/ 6:
+          message.radius_25pct = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional float x = 1; */
+    if (message.x !== undefined) writer.tag(1, WireType.Bit32).float(message.x);
+    /* optional float y = 2; */
+    if (message.y !== undefined) writer.tag(2, WireType.Bit32).float(message.y);
+    /* optional float radius = 3; */
+    if (message.radius !== undefined) writer.tag(3, WireType.Bit32).float(message.radius);
+    /* optional float radius_75pct = 4 [json_name = "radius75pct"]; */
+    if (message.radius_75pct !== undefined) writer.tag(4, WireType.Bit32).float(message.radius_75pct);
+    /* optional float radius_50pct = 5 [json_name = "radius50pct"]; */
+    if (message.radius_50pct !== undefined) writer.tag(5, WireType.Bit32).float(message.radius_50pct);
+    /* optional float radius_25pct = 6 [json_name = "radius25pct"]; */
+    if (message.radius_25pct !== undefined) writer.tag(6, WireType.Bit32).float(message.radius_25pct);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response.KMeans.Cluster
  */
 export const CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster =
-	new CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster$Type();
+  new CMsgSteamLearn_InferenceMetadata_Response_KMeans_Cluster$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response.SnapshotHistogram", [
-			{
-				no: 1,
-				name: "min_value",
-				kind: "scalar",
-				localName: "min_value",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 2,
-				name: "max_value",
-				kind: "scalar",
-				localName: "max_value",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "num_buckets",
-				kind: "scalar",
-				localName: "num_buckets",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "bucket_counts",
-				kind: "scalar",
-				localName: "bucket_counts",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram>,
-	): CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.bucket_counts = [];
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram,
-	): CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float min_value */ 1:
-					message.min_value = reader.float();
-					break;
-				case /* optional float max_value */ 2:
-					message.max_value = reader.float();
-					break;
-				case /* optional uint32 num_buckets */ 3:
-					message.num_buckets = reader.uint32();
-					break;
-				case /* repeated uint32 bucket_counts */ 4:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.bucket_counts.push(reader.uint32());
-					else message.bucket_counts.push(reader.uint32());
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional float min_value = 1; */
-		if (message.min_value !== undefined) writer.tag(1, WireType.Bit32).float(message.min_value);
-		/* optional float max_value = 2; */
-		if (message.max_value !== undefined) writer.tag(2, WireType.Bit32).float(message.max_value);
-		/* optional uint32 num_buckets = 3; */
-		if (message.num_buckets !== undefined) writer.tag(3, WireType.Varint).uint32(message.num_buckets);
-		/* repeated uint32 bucket_counts = 4; */
-		for (let i = 0; i < message.bucket_counts.length; i++)
-			writer.tag(4, WireType.Varint).uint32(message.bucket_counts[i]);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response.SnapshotHistogram", [
+      {
+        no: 1,
+        name: "min_value",
+        kind: "scalar",
+        localName: "min_value",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 2,
+        name: "max_value",
+        kind: "scalar",
+        localName: "max_value",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "num_buckets",
+        kind: "scalar",
+        localName: "num_buckets",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "bucket_counts",
+        kind: "scalar",
+        localName: "bucket_counts",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram>,
+  ): CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.bucket_counts = [];
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram,
+  ): CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float min_value */ 1:
+          message.min_value = reader.float();
+          break;
+        case /* optional float max_value */ 2:
+          message.max_value = reader.float();
+          break;
+        case /* optional uint32 num_buckets */ 3:
+          message.num_buckets = reader.uint32();
+          break;
+        case /* repeated uint32 bucket_counts */ 4:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.bucket_counts.push(reader.uint32());
+          else message.bucket_counts.push(reader.uint32());
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional float min_value = 1; */
+    if (message.min_value !== undefined) writer.tag(1, WireType.Bit32).float(message.min_value);
+    /* optional float max_value = 2; */
+    if (message.max_value !== undefined) writer.tag(2, WireType.Bit32).float(message.max_value);
+    /* optional uint32 num_buckets = 3; */
+    if (message.num_buckets !== undefined) writer.tag(3, WireType.Varint).uint32(message.num_buckets);
+    /* repeated uint32 bucket_counts = 4; */
+    for (let i = 0; i < message.bucket_counts.length; i++)
+      writer.tag(4, WireType.Varint).uint32(message.bucket_counts[i]);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response.SnapshotHistogram
  */
 export const CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram =
-	new CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram$Type();
+  new CMsgSteamLearn_InferenceMetadata_Response_SnapshotHistogram$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response_AppInfo$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response_AppInfo> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response.AppInfo", [
-			{
-				no: 1,
-				name: "country_allow",
-				kind: "scalar",
-				localName: "country_allow",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "country_deny",
-				kind: "scalar",
-				localName: "country_deny",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "platform_win",
-				kind: "scalar",
-				localName: "platform_win",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "platform_mac",
-				kind: "scalar",
-				localName: "platform_mac",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 5,
-				name: "platform_linux",
-				kind: "scalar",
-				localName: "platform_linux",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 6,
-				name: "adult_violence",
-				kind: "scalar",
-				localName: "adult_violence",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 7,
-				name: "adult_sex",
-				kind: "scalar",
-				localName: "adult_sex",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_AppInfo>,
-	): CMsgSteamLearn_InferenceMetadata_Response_AppInfo {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_AppInfo>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response_AppInfo,
-	): CMsgSteamLearn_InferenceMetadata_Response_AppInfo {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string country_allow */ 1:
-					message.country_allow = reader.string();
-					break;
-				case /* optional string country_deny */ 2:
-					message.country_deny = reader.string();
-					break;
-				case /* optional bool platform_win */ 3:
-					message.platform_win = reader.bool();
-					break;
-				case /* optional bool platform_mac */ 4:
-					message.platform_mac = reader.bool();
-					break;
-				case /* optional bool platform_linux */ 5:
-					message.platform_linux = reader.bool();
-					break;
-				case /* optional bool adult_violence */ 6:
-					message.adult_violence = reader.bool();
-					break;
-				case /* optional bool adult_sex */ 7:
-					message.adult_sex = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response_AppInfo,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string country_allow = 1; */
-		if (message.country_allow !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.country_allow);
-		/* optional string country_deny = 2; */
-		if (message.country_deny !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.country_deny);
-		/* optional bool platform_win = 3; */
-		if (message.platform_win !== undefined) writer.tag(3, WireType.Varint).bool(message.platform_win);
-		/* optional bool platform_mac = 4; */
-		if (message.platform_mac !== undefined) writer.tag(4, WireType.Varint).bool(message.platform_mac);
-		/* optional bool platform_linux = 5; */
-		if (message.platform_linux !== undefined) writer.tag(5, WireType.Varint).bool(message.platform_linux);
-		/* optional bool adult_violence = 6; */
-		if (message.adult_violence !== undefined) writer.tag(6, WireType.Varint).bool(message.adult_violence);
-		/* optional bool adult_sex = 7; */
-		if (message.adult_sex !== undefined) writer.tag(7, WireType.Varint).bool(message.adult_sex);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response.AppInfo", [
+      {
+        no: 1,
+        name: "country_allow",
+        kind: "scalar",
+        localName: "country_allow",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "country_deny",
+        kind: "scalar",
+        localName: "country_deny",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "platform_win",
+        kind: "scalar",
+        localName: "platform_win",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "platform_mac",
+        kind: "scalar",
+        localName: "platform_mac",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 5,
+        name: "platform_linux",
+        kind: "scalar",
+        localName: "platform_linux",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 6,
+        name: "adult_violence",
+        kind: "scalar",
+        localName: "adult_violence",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 7,
+        name: "adult_sex",
+        kind: "scalar",
+        localName: "adult_sex",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_AppInfo>,
+  ): CMsgSteamLearn_InferenceMetadata_Response_AppInfo {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_AppInfo>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response_AppInfo,
+  ): CMsgSteamLearn_InferenceMetadata_Response_AppInfo {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string country_allow */ 1:
+          message.country_allow = reader.string();
+          break;
+        case /* optional string country_deny */ 2:
+          message.country_deny = reader.string();
+          break;
+        case /* optional bool platform_win */ 3:
+          message.platform_win = reader.bool();
+          break;
+        case /* optional bool platform_mac */ 4:
+          message.platform_mac = reader.bool();
+          break;
+        case /* optional bool platform_linux */ 5:
+          message.platform_linux = reader.bool();
+          break;
+        case /* optional bool adult_violence */ 6:
+          message.adult_violence = reader.bool();
+          break;
+        case /* optional bool adult_sex */ 7:
+          message.adult_sex = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response_AppInfo,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string country_allow = 1; */
+    if (message.country_allow !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.country_allow);
+    /* optional string country_deny = 2; */
+    if (message.country_deny !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.country_deny);
+    /* optional bool platform_win = 3; */
+    if (message.platform_win !== undefined) writer.tag(3, WireType.Varint).bool(message.platform_win);
+    /* optional bool platform_mac = 4; */
+    if (message.platform_mac !== undefined) writer.tag(4, WireType.Varint).bool(message.platform_mac);
+    /* optional bool platform_linux = 5; */
+    if (message.platform_linux !== undefined) writer.tag(5, WireType.Varint).bool(message.platform_linux);
+    /* optional bool adult_violence = 6; */
+    if (message.adult_violence !== undefined) writer.tag(6, WireType.Varint).bool(message.adult_violence);
+    /* optional bool adult_sex = 7; */
+    if (message.adult_sex !== undefined) writer.tag(7, WireType.Varint).bool(message.adult_sex);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response.AppInfo
  */
 export const CMsgSteamLearn_InferenceMetadata_Response_AppInfo =
-	new CMsgSteamLearn_InferenceMetadata_Response_AppInfo$Type();
+  new CMsgSteamLearn_InferenceMetadata_Response_AppInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry$Type extends MessageType<CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceMetadata_Response.AppInfoEntry", [
-			{
-				no: 1,
-				name: "key",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "value",
-				kind: "message",
-				T: () => CMsgSteamLearn_InferenceMetadata_Response_AppInfo,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry>,
-	): CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry,
-	): CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 key */ 1:
-					message.key = reader.uint32();
-					break;
-				case /* optional CMsgSteamLearn_InferenceMetadata_Response.AppInfo value */ 2:
-					message.value = CMsgSteamLearn_InferenceMetadata_Response_AppInfo.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.value,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 key = 1; */
-		if (message.key !== undefined) writer.tag(1, WireType.Varint).uint32(message.key);
-		/* optional CMsgSteamLearn_InferenceMetadata_Response.AppInfo value = 2; */
-		if (message.value)
-			CMsgSteamLearn_InferenceMetadata_Response_AppInfo.internalBinaryWrite(
-				message.value,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceMetadata_Response.AppInfoEntry", [
+      {
+        no: 1,
+        name: "key",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "value",
+        kind: "message",
+        T: () => CMsgSteamLearn_InferenceMetadata_Response_AppInfo,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry>,
+  ): CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry,
+  ): CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 key */ 1:
+          message.key = reader.uint32();
+          break;
+        case /* optional CMsgSteamLearn_InferenceMetadata_Response.AppInfo value */ 2:
+          message.value = CMsgSteamLearn_InferenceMetadata_Response_AppInfo.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.value,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 key = 1; */
+    if (message.key !== undefined) writer.tag(1, WireType.Varint).uint32(message.key);
+    /* optional CMsgSteamLearn_InferenceMetadata_Response.AppInfo value = 2; */
+    if (message.value)
+      CMsgSteamLearn_InferenceMetadata_Response_AppInfo.internalBinaryWrite(
+        message.value,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceMetadata_Response.AppInfoEntry
  */
 export const CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry =
-	new CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry$Type();
+  new CMsgSteamLearn_InferenceMetadata_Response_AppInfoEntry$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceBackend_Response$Type extends MessageType<CMsgSteamLearn_InferenceBackend_Response> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceBackend_Response", [
-			{
-				no: 1,
-				name: "outputs",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_InferenceBackend_Response_Output,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearn_InferenceBackend_Response>): CMsgSteamLearn_InferenceBackend_Response {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.outputs = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_InferenceBackend_Response>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceBackend_Response,
-	): CMsgSteamLearn_InferenceBackend_Response {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgSteamLearn_InferenceBackend_Response.Output outputs */ 1:
-					message.outputs.push(
-						CMsgSteamLearn_InferenceBackend_Response_Output.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceBackend_Response,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CMsgSteamLearn_InferenceBackend_Response.Output outputs = 1; */
-		for (let i = 0; i < message.outputs.length; i++)
-			CMsgSteamLearn_InferenceBackend_Response_Output.internalBinaryWrite(
-				message.outputs[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceBackend_Response", [
+      {
+        no: 1,
+        name: "outputs",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_InferenceBackend_Response_Output,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearn_InferenceBackend_Response>): CMsgSteamLearn_InferenceBackend_Response {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.outputs = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_InferenceBackend_Response>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceBackend_Response,
+  ): CMsgSteamLearn_InferenceBackend_Response {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgSteamLearn_InferenceBackend_Response.Output outputs */ 1:
+          message.outputs.push(
+            CMsgSteamLearn_InferenceBackend_Response_Output.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceBackend_Response,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CMsgSteamLearn_InferenceBackend_Response.Output outputs = 1; */
+    for (let i = 0; i < message.outputs.length; i++)
+      CMsgSteamLearn_InferenceBackend_Response_Output.internalBinaryWrite(
+        message.outputs[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceBackend_Response
@@ -5148,651 +5148,651 @@ class CMsgSteamLearn_InferenceBackend_Response$Type extends MessageType<CMsgStea
 export const CMsgSteamLearn_InferenceBackend_Response = new CMsgSteamLearn_InferenceBackend_Response$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceBackend_Response_Sequence$Type extends MessageType<CMsgSteamLearn_InferenceBackend_Response_Sequence> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceBackend_Response.Sequence", [
-			{
-				no: 1,
-				name: "value",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceBackend_Response_Sequence>,
-	): CMsgSteamLearn_InferenceBackend_Response_Sequence {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.value = [];
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceBackend_Response_Sequence>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceBackend_Response_Sequence,
-	): CMsgSteamLearn_InferenceBackend_Response_Sequence {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated float value */ 1:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.value.push(reader.float());
-					else message.value.push(reader.float());
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceBackend_Response_Sequence,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated float value = 1; */
-		for (let i = 0; i < message.value.length; i++) writer.tag(1, WireType.Bit32).float(message.value[i]);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceBackend_Response.Sequence", [
+      {
+        no: 1,
+        name: "value",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceBackend_Response_Sequence>,
+  ): CMsgSteamLearn_InferenceBackend_Response_Sequence {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.value = [];
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceBackend_Response_Sequence>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceBackend_Response_Sequence,
+  ): CMsgSteamLearn_InferenceBackend_Response_Sequence {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated float value */ 1:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.value.push(reader.float());
+          else message.value.push(reader.float());
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceBackend_Response_Sequence,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated float value = 1; */
+    for (let i = 0; i < message.value.length; i++) writer.tag(1, WireType.Bit32).float(message.value[i]);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceBackend_Response.Sequence
  */
 export const CMsgSteamLearn_InferenceBackend_Response_Sequence =
-	new CMsgSteamLearn_InferenceBackend_Response_Sequence$Type();
+  new CMsgSteamLearn_InferenceBackend_Response_Sequence$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceBackend_Response_RegressionOutput$Type extends MessageType<CMsgSteamLearn_InferenceBackend_Response_RegressionOutput> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceBackend_Response.RegressionOutput", [
-			{
-				no: 1,
-				name: "value",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceBackend_Response_RegressionOutput>,
-	): CMsgSteamLearn_InferenceBackend_Response_RegressionOutput {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceBackend_Response_RegressionOutput>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceBackend_Response_RegressionOutput,
-	): CMsgSteamLearn_InferenceBackend_Response_RegressionOutput {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float value */ 1:
-					message.value = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceBackend_Response_RegressionOutput,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional float value = 1; */
-		if (message.value !== undefined) writer.tag(1, WireType.Bit32).float(message.value);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceBackend_Response.RegressionOutput", [
+      {
+        no: 1,
+        name: "value",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceBackend_Response_RegressionOutput>,
+  ): CMsgSteamLearn_InferenceBackend_Response_RegressionOutput {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceBackend_Response_RegressionOutput>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceBackend_Response_RegressionOutput,
+  ): CMsgSteamLearn_InferenceBackend_Response_RegressionOutput {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float value */ 1:
+          message.value = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceBackend_Response_RegressionOutput,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional float value = 1; */
+    if (message.value !== undefined) writer.tag(1, WireType.Bit32).float(message.value);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceBackend_Response.RegressionOutput
  */
 export const CMsgSteamLearn_InferenceBackend_Response_RegressionOutput =
-	new CMsgSteamLearn_InferenceBackend_Response_RegressionOutput$Type();
+  new CMsgSteamLearn_InferenceBackend_Response_RegressionOutput$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput$Type extends MessageType<CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceBackend_Response.BinaryCrossEntropyOutput", [
-			{
-				no: 1,
-				name: "value",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput>,
-	): CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput,
-	): CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float value */ 1:
-					message.value = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional float value = 1; */
-		if (message.value !== undefined) writer.tag(1, WireType.Bit32).float(message.value);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceBackend_Response.BinaryCrossEntropyOutput", [
+      {
+        no: 1,
+        name: "value",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput>,
+  ): CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput,
+  ): CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float value */ 1:
+          message.value = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional float value = 1; */
+    if (message.value !== undefined) writer.tag(1, WireType.Bit32).float(message.value);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceBackend_Response.BinaryCrossEntropyOutput
  */
 export const CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput =
-	new CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput$Type();
+  new CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput$Type extends MessageType<CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceBackend_Response.MutliBinaryCrossEntropyOutput", [
-			{
-				no: 1,
-				name: "weight",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 2,
-				name: "value",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "value_sequence",
-				kind: "message",
-				localName: "value_sequence",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_InferenceBackend_Response_Sequence,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput>,
-	): CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.weight = [];
-		message.value = [];
-		message.value_sequence = [];
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput>(
-				this,
-				message,
-				value,
-			);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput,
-	): CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated float weight */ 1:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.weight.push(reader.float());
-					else message.weight.push(reader.float());
-					break;
-				case /* repeated float value */ 2:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.value.push(reader.float());
-					else message.value.push(reader.float());
-					break;
-				case /* repeated CMsgSteamLearn_InferenceBackend_Response.Sequence value_sequence */ 3:
-					message.value_sequence.push(
-						CMsgSteamLearn_InferenceBackend_Response_Sequence.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated float weight = 1; */
-		for (let i = 0; i < message.weight.length; i++) writer.tag(1, WireType.Bit32).float(message.weight[i]);
-		/* repeated float value = 2; */
-		for (let i = 0; i < message.value.length; i++) writer.tag(2, WireType.Bit32).float(message.value[i]);
-		/* repeated CMsgSteamLearn_InferenceBackend_Response.Sequence value_sequence = 3; */
-		for (let i = 0; i < message.value_sequence.length; i++)
-			CMsgSteamLearn_InferenceBackend_Response_Sequence.internalBinaryWrite(
-				message.value_sequence[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceBackend_Response.MutliBinaryCrossEntropyOutput", [
+      {
+        no: 1,
+        name: "weight",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 2,
+        name: "value",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "value_sequence",
+        kind: "message",
+        localName: "value_sequence",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_InferenceBackend_Response_Sequence,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput>,
+  ): CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.weight = [];
+    message.value = [];
+    message.value_sequence = [];
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput>(
+        this,
+        message,
+        value,
+      );
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput,
+  ): CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated float weight */ 1:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.weight.push(reader.float());
+          else message.weight.push(reader.float());
+          break;
+        case /* repeated float value */ 2:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.value.push(reader.float());
+          else message.value.push(reader.float());
+          break;
+        case /* repeated CMsgSteamLearn_InferenceBackend_Response.Sequence value_sequence */ 3:
+          message.value_sequence.push(
+            CMsgSteamLearn_InferenceBackend_Response_Sequence.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated float weight = 1; */
+    for (let i = 0; i < message.weight.length; i++) writer.tag(1, WireType.Bit32).float(message.weight[i]);
+    /* repeated float value = 2; */
+    for (let i = 0; i < message.value.length; i++) writer.tag(2, WireType.Bit32).float(message.value[i]);
+    /* repeated CMsgSteamLearn_InferenceBackend_Response.Sequence value_sequence = 3; */
+    for (let i = 0; i < message.value_sequence.length; i++)
+      CMsgSteamLearn_InferenceBackend_Response_Sequence.internalBinaryWrite(
+        message.value_sequence[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceBackend_Response.MutliBinaryCrossEntropyOutput
  */
 export const CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput =
-	new CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput$Type();
+  new CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput$Type extends MessageType<CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceBackend_Response.CategoricalCrossEntropyOutput", [
-			{
-				no: 1,
-				name: "weight",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 2,
-				name: "value",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "value_sequence",
-				kind: "message",
-				localName: "value_sequence",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgSteamLearn_InferenceBackend_Response_Sequence,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput>,
-	): CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.weight = [];
-		message.value = [];
-		message.value_sequence = [];
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput>(
-				this,
-				message,
-				value,
-			);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput,
-	): CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated float weight */ 1:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.weight.push(reader.float());
-					else message.weight.push(reader.float());
-					break;
-				case /* repeated float value */ 2:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.value.push(reader.float());
-					else message.value.push(reader.float());
-					break;
-				case /* repeated CMsgSteamLearn_InferenceBackend_Response.Sequence value_sequence */ 3:
-					message.value_sequence.push(
-						CMsgSteamLearn_InferenceBackend_Response_Sequence.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated float weight = 1; */
-		for (let i = 0; i < message.weight.length; i++) writer.tag(1, WireType.Bit32).float(message.weight[i]);
-		/* repeated float value = 2; */
-		for (let i = 0; i < message.value.length; i++) writer.tag(2, WireType.Bit32).float(message.value[i]);
-		/* repeated CMsgSteamLearn_InferenceBackend_Response.Sequence value_sequence = 3; */
-		for (let i = 0; i < message.value_sequence.length; i++)
-			CMsgSteamLearn_InferenceBackend_Response_Sequence.internalBinaryWrite(
-				message.value_sequence[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceBackend_Response.CategoricalCrossEntropyOutput", [
+      {
+        no: 1,
+        name: "weight",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 2,
+        name: "value",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "value_sequence",
+        kind: "message",
+        localName: "value_sequence",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgSteamLearn_InferenceBackend_Response_Sequence,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput>,
+  ): CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.weight = [];
+    message.value = [];
+    message.value_sequence = [];
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput>(
+        this,
+        message,
+        value,
+      );
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput,
+  ): CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated float weight */ 1:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.weight.push(reader.float());
+          else message.weight.push(reader.float());
+          break;
+        case /* repeated float value */ 2:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.value.push(reader.float());
+          else message.value.push(reader.float());
+          break;
+        case /* repeated CMsgSteamLearn_InferenceBackend_Response.Sequence value_sequence */ 3:
+          message.value_sequence.push(
+            CMsgSteamLearn_InferenceBackend_Response_Sequence.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated float weight = 1; */
+    for (let i = 0; i < message.weight.length; i++) writer.tag(1, WireType.Bit32).float(message.weight[i]);
+    /* repeated float value = 2; */
+    for (let i = 0; i < message.value.length; i++) writer.tag(2, WireType.Bit32).float(message.value[i]);
+    /* repeated CMsgSteamLearn_InferenceBackend_Response.Sequence value_sequence = 3; */
+    for (let i = 0; i < message.value_sequence.length; i++)
+      CMsgSteamLearn_InferenceBackend_Response_Sequence.internalBinaryWrite(
+        message.value_sequence[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceBackend_Response.CategoricalCrossEntropyOutput
  */
 export const CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput =
-	new CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput$Type();
+  new CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_InferenceBackend_Response_Output$Type extends MessageType<CMsgSteamLearn_InferenceBackend_Response_Output> {
-	constructor() {
-		super("CMsgSteamLearn_InferenceBackend_Response.Output", [
-			{
-				no: 1,
-				name: "binary_crossentropy",
-				kind: "message",
-				localName: "binary_crossentropy",
-				oneof: "ResponseType",
-				T: () => CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput,
-			},
-			{
-				no: 2,
-				name: "categorical_crossentropy",
-				kind: "message",
-				localName: "categorical_crossentropy",
-				oneof: "ResponseType",
-				T: () => CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput,
-			},
-			{
-				no: 3,
-				name: "multi_binary_crossentropy",
-				kind: "message",
-				localName: "multi_binary_crossentropy",
-				oneof: "ResponseType",
-				T: () => CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput,
-			},
-			{
-				no: 4,
-				name: "regression",
-				kind: "message",
-				oneof: "ResponseType",
-				T: () => CMsgSteamLearn_InferenceBackend_Response_RegressionOutput,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgSteamLearn_InferenceBackend_Response_Output>,
-	): CMsgSteamLearn_InferenceBackend_Response_Output {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.ResponseType = { oneofKind: undefined };
-		if (value !== undefined)
-			reflectionMergePartial<CMsgSteamLearn_InferenceBackend_Response_Output>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_InferenceBackend_Response_Output,
-	): CMsgSteamLearn_InferenceBackend_Response_Output {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* CMsgSteamLearn_InferenceBackend_Response.BinaryCrossEntropyOutput binary_crossentropy */ 1:
-					message.ResponseType = {
-						oneofKind: "binary_crossentropy",
-						binary_crossentropy: CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-							(message.ResponseType as any).binary_crossentropy,
-						),
-					};
-					break;
-				case /* CMsgSteamLearn_InferenceBackend_Response.CategoricalCrossEntropyOutput categorical_crossentropy */ 2:
-					message.ResponseType = {
-						oneofKind: "categorical_crossentropy",
-						categorical_crossentropy:
-							CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput.internalBinaryRead(
-								reader,
-								reader.uint32(),
-								options,
-								(message.ResponseType as any).categorical_crossentropy,
-							),
-					};
-					break;
-				case /* CMsgSteamLearn_InferenceBackend_Response.MutliBinaryCrossEntropyOutput multi_binary_crossentropy */ 3:
-					message.ResponseType = {
-						oneofKind: "multi_binary_crossentropy",
-						multi_binary_crossentropy:
-							CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput.internalBinaryRead(
-								reader,
-								reader.uint32(),
-								options,
-								(message.ResponseType as any).multi_binary_crossentropy,
-							),
-					};
-					break;
-				case /* CMsgSteamLearn_InferenceBackend_Response.RegressionOutput regression */ 4:
-					message.ResponseType = {
-						oneofKind: "regression",
-						regression: CMsgSteamLearn_InferenceBackend_Response_RegressionOutput.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-							(message.ResponseType as any).regression,
-						),
-					};
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_InferenceBackend_Response_Output,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* CMsgSteamLearn_InferenceBackend_Response.BinaryCrossEntropyOutput binary_crossentropy = 1; */
-		if (message.ResponseType.oneofKind === "binary_crossentropy")
-			CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput.internalBinaryWrite(
-				message.ResponseType.binary_crossentropy,
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* CMsgSteamLearn_InferenceBackend_Response.CategoricalCrossEntropyOutput categorical_crossentropy = 2; */
-		if (message.ResponseType.oneofKind === "categorical_crossentropy")
-			CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput.internalBinaryWrite(
-				message.ResponseType.categorical_crossentropy,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* CMsgSteamLearn_InferenceBackend_Response.MutliBinaryCrossEntropyOutput multi_binary_crossentropy = 3; */
-		if (message.ResponseType.oneofKind === "multi_binary_crossentropy")
-			CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput.internalBinaryWrite(
-				message.ResponseType.multi_binary_crossentropy,
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* CMsgSteamLearn_InferenceBackend_Response.RegressionOutput regression = 4; */
-		if (message.ResponseType.oneofKind === "regression")
-			CMsgSteamLearn_InferenceBackend_Response_RegressionOutput.internalBinaryWrite(
-				message.ResponseType.regression,
-				writer.tag(4, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_InferenceBackend_Response.Output", [
+      {
+        no: 1,
+        name: "binary_crossentropy",
+        kind: "message",
+        localName: "binary_crossentropy",
+        oneof: "ResponseType",
+        T: () => CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput,
+      },
+      {
+        no: 2,
+        name: "categorical_crossentropy",
+        kind: "message",
+        localName: "categorical_crossentropy",
+        oneof: "ResponseType",
+        T: () => CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput,
+      },
+      {
+        no: 3,
+        name: "multi_binary_crossentropy",
+        kind: "message",
+        localName: "multi_binary_crossentropy",
+        oneof: "ResponseType",
+        T: () => CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput,
+      },
+      {
+        no: 4,
+        name: "regression",
+        kind: "message",
+        oneof: "ResponseType",
+        T: () => CMsgSteamLearn_InferenceBackend_Response_RegressionOutput,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgSteamLearn_InferenceBackend_Response_Output>,
+  ): CMsgSteamLearn_InferenceBackend_Response_Output {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.ResponseType = { oneofKind: undefined };
+    if (value !== undefined)
+      reflectionMergePartial<CMsgSteamLearn_InferenceBackend_Response_Output>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_InferenceBackend_Response_Output,
+  ): CMsgSteamLearn_InferenceBackend_Response_Output {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* CMsgSteamLearn_InferenceBackend_Response.BinaryCrossEntropyOutput binary_crossentropy */ 1:
+          message.ResponseType = {
+            oneofKind: "binary_crossentropy",
+            binary_crossentropy: CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+              (message.ResponseType as any).binary_crossentropy,
+            ),
+          };
+          break;
+        case /* CMsgSteamLearn_InferenceBackend_Response.CategoricalCrossEntropyOutput categorical_crossentropy */ 2:
+          message.ResponseType = {
+            oneofKind: "categorical_crossentropy",
+            categorical_crossentropy:
+              CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput.internalBinaryRead(
+                reader,
+                reader.uint32(),
+                options,
+                (message.ResponseType as any).categorical_crossentropy,
+              ),
+          };
+          break;
+        case /* CMsgSteamLearn_InferenceBackend_Response.MutliBinaryCrossEntropyOutput multi_binary_crossentropy */ 3:
+          message.ResponseType = {
+            oneofKind: "multi_binary_crossentropy",
+            multi_binary_crossentropy:
+              CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput.internalBinaryRead(
+                reader,
+                reader.uint32(),
+                options,
+                (message.ResponseType as any).multi_binary_crossentropy,
+              ),
+          };
+          break;
+        case /* CMsgSteamLearn_InferenceBackend_Response.RegressionOutput regression */ 4:
+          message.ResponseType = {
+            oneofKind: "regression",
+            regression: CMsgSteamLearn_InferenceBackend_Response_RegressionOutput.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+              (message.ResponseType as any).regression,
+            ),
+          };
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_InferenceBackend_Response_Output,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* CMsgSteamLearn_InferenceBackend_Response.BinaryCrossEntropyOutput binary_crossentropy = 1; */
+    if (message.ResponseType.oneofKind === "binary_crossentropy")
+      CMsgSteamLearn_InferenceBackend_Response_BinaryCrossEntropyOutput.internalBinaryWrite(
+        message.ResponseType.binary_crossentropy,
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* CMsgSteamLearn_InferenceBackend_Response.CategoricalCrossEntropyOutput categorical_crossentropy = 2; */
+    if (message.ResponseType.oneofKind === "categorical_crossentropy")
+      CMsgSteamLearn_InferenceBackend_Response_CategoricalCrossEntropyOutput.internalBinaryWrite(
+        message.ResponseType.categorical_crossentropy,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* CMsgSteamLearn_InferenceBackend_Response.MutliBinaryCrossEntropyOutput multi_binary_crossentropy = 3; */
+    if (message.ResponseType.oneofKind === "multi_binary_crossentropy")
+      CMsgSteamLearn_InferenceBackend_Response_MutliBinaryCrossEntropyOutput.internalBinaryWrite(
+        message.ResponseType.multi_binary_crossentropy,
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* CMsgSteamLearn_InferenceBackend_Response.RegressionOutput regression = 4; */
+    if (message.ResponseType.oneofKind === "regression")
+      CMsgSteamLearn_InferenceBackend_Response_RegressionOutput.internalBinaryWrite(
+        message.ResponseType.regression,
+        writer.tag(4, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_InferenceBackend_Response.Output
  */
 export const CMsgSteamLearn_InferenceBackend_Response_Output =
-	new CMsgSteamLearn_InferenceBackend_Response_Output$Type();
+  new CMsgSteamLearn_InferenceBackend_Response_Output$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgSteamLearn_Inference_Response$Type extends MessageType<CMsgSteamLearn_Inference_Response> {
-	constructor() {
-		super("CMsgSteamLearn_Inference_Response", [
-			{
-				no: 1,
-				name: "inference_result",
-				kind: "enum",
-				localName: "inference_result",
-				opt: true,
-				T: () => ["ESteamLearnInferenceResult", ESteamLearnInferenceResult],
-			},
-			{
-				no: 2,
-				name: "backend_response",
-				kind: "message",
-				localName: "backend_response",
-				T: () => CMsgSteamLearn_InferenceBackend_Response,
-			},
-			{
-				no: 3,
-				name: "keys",
-				kind: "scalar",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgSteamLearn_Inference_Response>): CMsgSteamLearn_Inference_Response {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.keys = [];
-		if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_Inference_Response>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgSteamLearn_Inference_Response,
-	): CMsgSteamLearn_Inference_Response {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional ESteamLearnInferenceResult inference_result */ 1:
-					message.inference_result = reader.int32();
-					break;
-				case /* optional CMsgSteamLearn_InferenceBackend_Response backend_response */ 2:
-					message.backend_response = CMsgSteamLearn_InferenceBackend_Response.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.backend_response,
-					);
-					break;
-				case /* repeated uint64 keys */ 3:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.keys.push(reader.uint64().toBigInt());
-					else message.keys.push(reader.uint64().toBigInt());
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgSteamLearn_Inference_Response,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional ESteamLearnInferenceResult inference_result = 1; */
-		if (message.inference_result !== undefined) writer.tag(1, WireType.Varint).int32(message.inference_result);
-		/* optional CMsgSteamLearn_InferenceBackend_Response backend_response = 2; */
-		if (message.backend_response)
-			CMsgSteamLearn_InferenceBackend_Response.internalBinaryWrite(
-				message.backend_response,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated uint64 keys = 3; */
-		for (let i = 0; i < message.keys.length; i++) writer.tag(3, WireType.Varint).uint64(message.keys[i]);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgSteamLearn_Inference_Response", [
+      {
+        no: 1,
+        name: "inference_result",
+        kind: "enum",
+        localName: "inference_result",
+        opt: true,
+        T: () => ["ESteamLearnInferenceResult", ESteamLearnInferenceResult],
+      },
+      {
+        no: 2,
+        name: "backend_response",
+        kind: "message",
+        localName: "backend_response",
+        T: () => CMsgSteamLearn_InferenceBackend_Response,
+      },
+      {
+        no: 3,
+        name: "keys",
+        kind: "scalar",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgSteamLearn_Inference_Response>): CMsgSteamLearn_Inference_Response {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.keys = [];
+    if (value !== undefined) reflectionMergePartial<CMsgSteamLearn_Inference_Response>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgSteamLearn_Inference_Response,
+  ): CMsgSteamLearn_Inference_Response {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional ESteamLearnInferenceResult inference_result */ 1:
+          message.inference_result = reader.int32();
+          break;
+        case /* optional CMsgSteamLearn_InferenceBackend_Response backend_response */ 2:
+          message.backend_response = CMsgSteamLearn_InferenceBackend_Response.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.backend_response,
+          );
+          break;
+        case /* repeated uint64 keys */ 3:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.keys.push(reader.uint64().toBigInt());
+          else message.keys.push(reader.uint64().toBigInt());
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgSteamLearn_Inference_Response,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional ESteamLearnInferenceResult inference_result = 1; */
+    if (message.inference_result !== undefined) writer.tag(1, WireType.Varint).int32(message.inference_result);
+    /* optional CMsgSteamLearn_InferenceBackend_Response backend_response = 2; */
+    if (message.backend_response)
+      CMsgSteamLearn_InferenceBackend_Response.internalBinaryWrite(
+        message.backend_response,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated uint64 keys = 3; */
+    for (let i = 0; i < message.keys.length; i++) writer.tag(3, WireType.Varint).uint64(message.keys[i]);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgSteamLearn_Inference_Response
@@ -5802,65 +5802,65 @@ export const CMsgSteamLearn_Inference_Response = new CMsgSteamLearn_Inference_Re
  * @generated ServiceType for protobuf service SteamLearn
  */
 export const SteamLearn = new ServiceType(
-	"SteamLearn",
-	[
-		{
-			name: "RegisterDataSource",
-			options: {
-				method_description: "Registers a data desc (or finds a data desc if it's already registered).",
-			},
-			I: CMsgSteamLearn_RegisterDataSource_Request,
-			O: CMsgSteamLearn_RegisterDataSource_Response,
-		},
-		{
-			name: "CacheData",
-			options: { method_description: "Updates a cached data entry." },
-			I: CMsgSteamLearn_CacheData_Request,
-			O: CMsgSteamLearn_CacheData_Response,
-		},
-		{
-			name: "SnapshotProject",
-			options: {
-				method_description: "Snapshots the current data for a project.",
-			},
-			I: CMsgSteamLearn_SnapshotProject_Request,
-			O: CMsgSteamLearn_SnapshotProject_Response,
-		},
-		{
-			name: "BatchOperation",
-			options: {
-				method_description: "Batches multiple data updates, snapshots, and inference requests into a single call",
-			},
-			I: CMsgSteamLearn_BatchOperation_Request,
-			O: CMsgSteamLearn_BatchOperation_Response,
-		},
-		{
-			name: "GetAccessTokens",
-			options: {
-				method_description:
-					"Gets the access tokens needed for registering data sources, submitting data to them, and snapshotting projects",
-			},
-			I: CMsgSteamLearn_GetAccessTokens_Request,
-			O: CMsgSteamLearn_GetAccessTokens_Response,
-		},
-		{
-			name: "Inference",
-			options: {
-				method_description: "Inferences using supplied data, or data associated with the specified key.",
-			},
-			I: CMsgSteamLearn_Inference_Request,
-			O: CMsgSteamLearn_Inference_Response,
-		},
-		{
-			name: "InferenceMetadata",
-			options: {
-				method_description: "Requests the metadata that was generated from a specified fetch.",
-			},
-			I: CMsgSteamLearn_InferenceMetadata_Request,
-			O: CMsgSteamLearn_InferenceMetadata_Response,
-		},
-	],
-	{
-		service_description: "Service for submitting data, training, and inferencing with SteamLearn.",
-	},
+  "SteamLearn",
+  [
+    {
+      name: "RegisterDataSource",
+      options: {
+        method_description: "Registers a data desc (or finds a data desc if it's already registered).",
+      },
+      I: CMsgSteamLearn_RegisterDataSource_Request,
+      O: CMsgSteamLearn_RegisterDataSource_Response,
+    },
+    {
+      name: "CacheData",
+      options: { method_description: "Updates a cached data entry." },
+      I: CMsgSteamLearn_CacheData_Request,
+      O: CMsgSteamLearn_CacheData_Response,
+    },
+    {
+      name: "SnapshotProject",
+      options: {
+        method_description: "Snapshots the current data for a project.",
+      },
+      I: CMsgSteamLearn_SnapshotProject_Request,
+      O: CMsgSteamLearn_SnapshotProject_Response,
+    },
+    {
+      name: "BatchOperation",
+      options: {
+        method_description: "Batches multiple data updates, snapshots, and inference requests into a single call",
+      },
+      I: CMsgSteamLearn_BatchOperation_Request,
+      O: CMsgSteamLearn_BatchOperation_Response,
+    },
+    {
+      name: "GetAccessTokens",
+      options: {
+        method_description:
+          "Gets the access tokens needed for registering data sources, submitting data to them, and snapshotting projects",
+      },
+      I: CMsgSteamLearn_GetAccessTokens_Request,
+      O: CMsgSteamLearn_GetAccessTokens_Response,
+    },
+    {
+      name: "Inference",
+      options: {
+        method_description: "Inferences using supplied data, or data associated with the specified key.",
+      },
+      I: CMsgSteamLearn_Inference_Request,
+      O: CMsgSteamLearn_Inference_Response,
+    },
+    {
+      name: "InferenceMetadata",
+      options: {
+        method_description: "Requests the metadata that was generated from a specified fetch.",
+      },
+      I: CMsgSteamLearn_InferenceMetadata_Request,
+      O: CMsgSteamLearn_InferenceMetadata_Response,
+    },
+  ],
+  {
+    service_description: "Service for submitting data, training, and inferencing with SteamLearn.",
+  },
 );

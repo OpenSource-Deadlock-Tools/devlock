@@ -14,101 +14,101 @@ import { MessageType } from "@protobuf-ts/runtime";
  * @generated from protobuf message CUIFontFilePB
  */
 export interface CUIFontFilePB {
-	/**
-	 * @generated from protobuf field: optional string font_file_name = 1;
-	 */
-	font_file_name?: string;
-	/**
-	 * @generated from protobuf field: optional bytes opentype_font_data = 2;
-	 */
-	opentype_font_data?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional string font_file_name = 1;
+   */
+  font_file_name?: string;
+  /**
+   * @generated from protobuf field: optional bytes opentype_font_data = 2;
+   */
+  opentype_font_data?: Uint8Array;
 }
 /**
  * @generated from protobuf message CUIFontFilePackagePB
  */
 export interface CUIFontFilePackagePB {
-	/**
-	 * @generated from protobuf field: uint32 package_version = 1;
-	 */
-	package_version: number;
-	/**
-	 * @generated from protobuf field: repeated CUIFontFilePackagePB.CUIEncryptedFontFilePB encrypted_font_files = 2;
-	 */
-	encrypted_font_files: CUIFontFilePackagePB_CUIEncryptedFontFilePB[];
+  /**
+   * @generated from protobuf field: uint32 package_version = 1;
+   */
+  package_version: number;
+  /**
+   * @generated from protobuf field: repeated CUIFontFilePackagePB.CUIEncryptedFontFilePB encrypted_font_files = 2;
+   */
+  encrypted_font_files: CUIFontFilePackagePB_CUIEncryptedFontFilePB[];
 }
 /**
  * @generated from protobuf message CUIFontFilePackagePB.CUIEncryptedFontFilePB
  */
 export interface CUIFontFilePackagePB_CUIEncryptedFontFilePB {
-	/**
-	 * @generated from protobuf field: optional bytes encrypted_contents = 1;
-	 */
-	encrypted_contents?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional bytes encrypted_contents = 1;
+   */
+  encrypted_contents?: Uint8Array;
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CUIFontFilePB$Type extends MessageType<CUIFontFilePB> {
-	constructor() {
-		super("CUIFontFilePB", [
-			{
-				no: 1,
-				name: "font_file_name",
-				kind: "scalar",
-				localName: "font_file_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "opentype_font_data",
-				kind: "scalar",
-				localName: "opentype_font_data",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUIFontFilePB>): CUIFontFilePB {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUIFontFilePB>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUIFontFilePB,
-	): CUIFontFilePB {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string font_file_name */ 1:
-					message.font_file_name = reader.string();
-					break;
-				case /* optional bytes opentype_font_data */ 2:
-					message.opentype_font_data = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CUIFontFilePB, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional string font_file_name = 1; */
-		if (message.font_file_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.font_file_name);
-		/* optional bytes opentype_font_data = 2; */
-		if (message.opentype_font_data !== undefined)
-			writer.tag(2, WireType.LengthDelimited).bytes(message.opentype_font_data);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUIFontFilePB", [
+      {
+        no: 1,
+        name: "font_file_name",
+        kind: "scalar",
+        localName: "font_file_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "opentype_font_data",
+        kind: "scalar",
+        localName: "opentype_font_data",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUIFontFilePB>): CUIFontFilePB {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUIFontFilePB>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUIFontFilePB,
+  ): CUIFontFilePB {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string font_file_name */ 1:
+          message.font_file_name = reader.string();
+          break;
+        case /* optional bytes opentype_font_data */ 2:
+          message.opentype_font_data = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CUIFontFilePB, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional string font_file_name = 1; */
+    if (message.font_file_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.font_file_name);
+    /* optional bytes opentype_font_data = 2; */
+    if (message.opentype_font_data !== undefined)
+      writer.tag(2, WireType.LengthDelimited).bytes(message.opentype_font_data);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUIFontFilePB
@@ -116,79 +116,79 @@ class CUIFontFilePB$Type extends MessageType<CUIFontFilePB> {
 export const CUIFontFilePB = new CUIFontFilePB$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUIFontFilePackagePB$Type extends MessageType<CUIFontFilePackagePB> {
-	constructor() {
-		super("CUIFontFilePackagePB", [
-			{
-				no: 1,
-				name: "package_version",
-				kind: "scalar",
-				localName: "package_version",
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "encrypted_font_files",
-				kind: "message",
-				localName: "encrypted_font_files",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CUIFontFilePackagePB_CUIEncryptedFontFilePB,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CUIFontFilePackagePB>): CUIFontFilePackagePB {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.package_version = 0;
-		message.encrypted_font_files = [];
-		if (value !== undefined) reflectionMergePartial<CUIFontFilePackagePB>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUIFontFilePackagePB,
-	): CUIFontFilePackagePB {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* uint32 package_version */ 1:
-					message.package_version = reader.uint32();
-					break;
-				case /* repeated CUIFontFilePackagePB.CUIEncryptedFontFilePB encrypted_font_files */ 2:
-					message.encrypted_font_files.push(
-						CUIFontFilePackagePB_CUIEncryptedFontFilePB.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUIFontFilePackagePB,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* uint32 package_version = 1; */
-		if (message.package_version !== 0) writer.tag(1, WireType.Varint).uint32(message.package_version);
-		/* repeated CUIFontFilePackagePB.CUIEncryptedFontFilePB encrypted_font_files = 2; */
-		for (let i = 0; i < message.encrypted_font_files.length; i++)
-			CUIFontFilePackagePB_CUIEncryptedFontFilePB.internalBinaryWrite(
-				message.encrypted_font_files[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUIFontFilePackagePB", [
+      {
+        no: 1,
+        name: "package_version",
+        kind: "scalar",
+        localName: "package_version",
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "encrypted_font_files",
+        kind: "message",
+        localName: "encrypted_font_files",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CUIFontFilePackagePB_CUIEncryptedFontFilePB,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CUIFontFilePackagePB>): CUIFontFilePackagePB {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.package_version = 0;
+    message.encrypted_font_files = [];
+    if (value !== undefined) reflectionMergePartial<CUIFontFilePackagePB>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUIFontFilePackagePB,
+  ): CUIFontFilePackagePB {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* uint32 package_version */ 1:
+          message.package_version = reader.uint32();
+          break;
+        case /* repeated CUIFontFilePackagePB.CUIEncryptedFontFilePB encrypted_font_files */ 2:
+          message.encrypted_font_files.push(
+            CUIFontFilePackagePB_CUIEncryptedFontFilePB.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUIFontFilePackagePB,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* uint32 package_version = 1; */
+    if (message.package_version !== 0) writer.tag(1, WireType.Varint).uint32(message.package_version);
+    /* repeated CUIFontFilePackagePB.CUIEncryptedFontFilePB encrypted_font_files = 2; */
+    for (let i = 0; i < message.encrypted_font_files.length; i++)
+      CUIFontFilePackagePB_CUIEncryptedFontFilePB.internalBinaryWrite(
+        message.encrypted_font_files[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUIFontFilePackagePB
@@ -196,61 +196,61 @@ class CUIFontFilePackagePB$Type extends MessageType<CUIFontFilePackagePB> {
 export const CUIFontFilePackagePB = new CUIFontFilePackagePB$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CUIFontFilePackagePB_CUIEncryptedFontFilePB$Type extends MessageType<CUIFontFilePackagePB_CUIEncryptedFontFilePB> {
-	constructor() {
-		super("CUIFontFilePackagePB.CUIEncryptedFontFilePB", [
-			{
-				no: 1,
-				name: "encrypted_contents",
-				kind: "scalar",
-				localName: "encrypted_contents",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CUIFontFilePackagePB_CUIEncryptedFontFilePB>,
-	): CUIFontFilePackagePB_CUIEncryptedFontFilePB {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CUIFontFilePackagePB_CUIEncryptedFontFilePB>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CUIFontFilePackagePB_CUIEncryptedFontFilePB,
-	): CUIFontFilePackagePB_CUIEncryptedFontFilePB {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bytes encrypted_contents */ 1:
-					message.encrypted_contents = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CUIFontFilePackagePB_CUIEncryptedFontFilePB,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bytes encrypted_contents = 1; */
-		if (message.encrypted_contents !== undefined)
-			writer.tag(1, WireType.LengthDelimited).bytes(message.encrypted_contents);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CUIFontFilePackagePB.CUIEncryptedFontFilePB", [
+      {
+        no: 1,
+        name: "encrypted_contents",
+        kind: "scalar",
+        localName: "encrypted_contents",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CUIFontFilePackagePB_CUIEncryptedFontFilePB>,
+  ): CUIFontFilePackagePB_CUIEncryptedFontFilePB {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CUIFontFilePackagePB_CUIEncryptedFontFilePB>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CUIFontFilePackagePB_CUIEncryptedFontFilePB,
+  ): CUIFontFilePackagePB_CUIEncryptedFontFilePB {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bytes encrypted_contents */ 1:
+          message.encrypted_contents = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CUIFontFilePackagePB_CUIEncryptedFontFilePB,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bytes encrypted_contents = 1; */
+    if (message.encrypted_contents !== undefined)
+      writer.tag(1, WireType.LengthDelimited).bytes(message.encrypted_contents);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CUIFontFilePackagePB.CUIEncryptedFontFilePB

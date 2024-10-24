@@ -26,1487 +26,1487 @@ import { ECitadelMatchMode } from "./citadel_gcmessages_common.js";
  * @generated from protobuf message CMsgServerCrashSentinelFile
  */
 export interface CMsgServerCrashSentinelFile {
-	/**
-	 * @generated from protobuf field: optional uint32 version = 1;
-	 */
-	version?: number;
-	/**
-	 * @generated from protobuf field: optional fixed64 server_steam_id = 2;
-	 */
-	server_steam_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed32 server_public_ip_addr = 3;
-	 */
-	server_public_ip_addr?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 server_port = 4;
-	 */
-	server_port?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 server_cluster = 5;
-	 */
-	server_cluster?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 pid = 6;
-	 */
-	pid?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 saved_time = 7;
-	 */
-	saved_time?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 server_version = 8;
-	 */
-	server_version?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgServerCrashSentinelFile.GameInfo game_info = 9;
-	 */
-	game_info?: CMsgServerCrashSentinelFile_GameInfo;
-	/**
-	 * @generated from protobuf field: optional uint32 server_private_ip_addr = 10;
-	 */
-	server_private_ip_addr?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 instance_id = 11;
-	 */
-	instance_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 version = 1;
+   */
+  version?: number;
+  /**
+   * @generated from protobuf field: optional fixed64 server_steam_id = 2;
+   */
+  server_steam_id?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed32 server_public_ip_addr = 3;
+   */
+  server_public_ip_addr?: number;
+  /**
+   * @generated from protobuf field: optional uint32 server_port = 4;
+   */
+  server_port?: number;
+  /**
+   * @generated from protobuf field: optional uint32 server_cluster = 5;
+   */
+  server_cluster?: number;
+  /**
+   * @generated from protobuf field: optional uint32 pid = 6;
+   */
+  pid?: number;
+  /**
+   * @generated from protobuf field: optional uint32 saved_time = 7;
+   */
+  saved_time?: number;
+  /**
+   * @generated from protobuf field: optional uint32 server_version = 8;
+   */
+  server_version?: number;
+  /**
+   * @generated from protobuf field: optional CMsgServerCrashSentinelFile.GameInfo game_info = 9;
+   */
+  game_info?: CMsgServerCrashSentinelFile_GameInfo;
+  /**
+   * @generated from protobuf field: optional uint32 server_private_ip_addr = 10;
+   */
+  server_private_ip_addr?: number;
+  /**
+   * @generated from protobuf field: optional uint32 instance_id = 11;
+   */
+  instance_id?: number;
 }
 /**
  * @generated from protobuf message CMsgServerCrashSentinelFile.Player
  */
 export interface CMsgServerCrashSentinelFile_Player {
-	/**
-	 * @generated from protobuf field: optional uint32 account_id = 1;
-	 */
-	account_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hero_id = 2;
-	 */
-	hero_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 account_id = 1;
+   */
+  account_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hero_id = 2;
+   */
+  hero_id?: number;
 }
 /**
  * @generated from protobuf message CMsgServerCrashSentinelFile.GameInfo
  */
 export interface CMsgServerCrashSentinelFile_GameInfo {
-	/**
-	 * @generated from protobuf field: optional uint64 match_id = 1;
-	 */
-	match_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed64 lobby_id = 2;
-	 */
-	lobby_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 server_state = 3;
-	 */
-	server_state?: number;
-	/**
-	 * @generated from protobuf field: repeated CMsgServerCrashSentinelFile.Player players = 5;
-	 */
-	players: CMsgServerCrashSentinelFile_Player[];
-	/**
-	 * @generated from protobuf field: optional ECitadelMatchMode match_mode = 6;
-	 */
-	match_mode?: ECitadelMatchMode;
-	/**
-	 * @generated from protobuf field: optional ECitadelGameMode game_mode = 7;
-	 */
-	game_mode?: ECitadelGameMode;
-	/**
-	 * @generated from protobuf field: optional bool was_server_shutdown = 8;
-	 */
-	was_server_shutdown?: boolean;
+  /**
+   * @generated from protobuf field: optional uint64 match_id = 1;
+   */
+  match_id?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed64 lobby_id = 2;
+   */
+  lobby_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 server_state = 3;
+   */
+  server_state?: number;
+  /**
+   * @generated from protobuf field: repeated CMsgServerCrashSentinelFile.Player players = 5;
+   */
+  players: CMsgServerCrashSentinelFile_Player[];
+  /**
+   * @generated from protobuf field: optional ECitadelMatchMode match_mode = 6;
+   */
+  match_mode?: ECitadelMatchMode;
+  /**
+   * @generated from protobuf field: optional ECitadelGameMode game_mode = 7;
+   */
+  game_mode?: ECitadelGameMode;
+  /**
+   * @generated from protobuf field: optional bool was_server_shutdown = 8;
+   */
+  was_server_shutdown?: boolean;
 }
 /**
  * @generated from protobuf message CServerLobbyData_PlayerMMR
  */
 export interface CServerLobbyData_PlayerMMR {
-	/**
-	 * @generated from protobuf field: repeated CServerLobbyData_PlayerMMR.Player players = 1;
-	 */
-	players: CServerLobbyData_PlayerMMR_Player[];
+  /**
+   * @generated from protobuf field: repeated CServerLobbyData_PlayerMMR.Player players = 1;
+   */
+  players: CServerLobbyData_PlayerMMR_Player[];
 }
 /**
  * @generated from protobuf message CServerLobbyData_PlayerMMR.Player
  */
 export interface CServerLobbyData_PlayerMMR_Player {
-	/**
-	 * @generated from protobuf field: optional uint32 account_id = 1;
-	 */
-	account_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 player_mmr = 2;
-	 */
-	player_mmr?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 player_uncertainty = 3;
-	 */
-	player_uncertainty?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hero_mmr = 4;
-	 */
-	hero_mmr?: number;
+  /**
+   * @generated from protobuf field: optional uint32 account_id = 1;
+   */
+  account_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 player_mmr = 2;
+   */
+  player_mmr?: number;
+  /**
+   * @generated from protobuf field: optional uint32 player_uncertainty = 3;
+   */
+  player_uncertainty?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hero_mmr = 4;
+   */
+  hero_mmr?: number;
 }
 /**
  * @generated from protobuf message CServerLobbyData_PlayerInfo
  */
 export interface CServerLobbyData_PlayerInfo {
-	/**
-	 * @generated from protobuf field: optional uint32 account_id = 1;
-	 */
-	account_id?: number;
-	/**
-	 * @generated from protobuf field: repeated CMsgAccountHeroStats account_stats = 2;
-	 */
-	account_stats: CMsgAccountHeroStats[];
-	/**
-	 * @generated from protobuf field: optional uint32 mmr_level = 4;
-	 */
-	mmr_level?: number;
-	/**
-	 * @generated from protobuf field: repeated CMsgAccountBookStats book_info = 5;
-	 */
-	book_info: CMsgAccountBookStats[];
+  /**
+   * @generated from protobuf field: optional uint32 account_id = 1;
+   */
+  account_id?: number;
+  /**
+   * @generated from protobuf field: repeated CMsgAccountHeroStats account_stats = 2;
+   */
+  account_stats: CMsgAccountHeroStats[];
+  /**
+   * @generated from protobuf field: optional uint32 mmr_level = 4;
+   */
+  mmr_level?: number;
+  /**
+   * @generated from protobuf field: repeated CMsgAccountBookStats book_info = 5;
+   */
+  book_info: CMsgAccountBookStats[];
 }
 /**
  * @generated from protobuf message CServerLobbyData_PostMatchSurvey
  */
 export interface CServerLobbyData_PostMatchSurvey {
-	/**
-	 * @generated from protobuf field: repeated CServerLobbyData_PostMatchSurvey.PlayerSurvey surveys = 1;
-	 */
-	surveys: CServerLobbyData_PostMatchSurvey_PlayerSurvey[];
+  /**
+   * @generated from protobuf field: repeated CServerLobbyData_PostMatchSurvey.PlayerSurvey surveys = 1;
+   */
+  surveys: CServerLobbyData_PostMatchSurvey_PlayerSurvey[];
 }
 /**
  * @generated from protobuf message CServerLobbyData_PostMatchSurvey.PlayerSurvey
  */
 export interface CServerLobbyData_PostMatchSurvey_PlayerSurvey {
-	/**
-	 * @generated from protobuf field: optional uint32 account_id = 1;
-	 */
-	account_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 question_id = 2;
-	 */
-	question_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 account_id = 1;
+   */
+  account_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 question_id = 2;
+   */
+  question_id?: number;
 }
 /**
  * @generated from protobuf message CServerLobbyData_AutoTest
  */
 export interface CServerLobbyData_AutoTest {
-	/**
-	 * @generated from protobuf field: optional uint32 max_duration_s = 2;
-	 */
-	max_duration_s?: number;
+  /**
+   * @generated from protobuf field: optional uint32 max_duration_s = 2;
+   */
+  max_duration_s?: number;
 }
 /**
  * @generated from protobuf message CSOCitadelServerDynamicLobby
  */
 export interface CSOCitadelServerDynamicLobby {
-	/**
-	 * @generated from protobuf field: optional uint64 lobby_id = 1;
-	 */
-	lobby_id?: bigint;
-	/**
-	 * @generated from protobuf field: repeated uint32 left_account_ids = 2 [packed = true];
-	 */
-	left_account_ids: number[];
-	/**
-	 * @generated from protobuf field: optional bool broadcast_active = 3;
-	 */
-	broadcast_active?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 spectator_count = 4;
-	 */
-	spectator_count?: number;
+  /**
+   * @generated from protobuf field: optional uint64 lobby_id = 1;
+   */
+  lobby_id?: bigint;
+  /**
+   * @generated from protobuf field: repeated uint32 left_account_ids = 2 [packed = true];
+   */
+  left_account_ids: number[];
+  /**
+   * @generated from protobuf field: optional bool broadcast_active = 3;
+   */
+  broadcast_active?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 spectator_count = 4;
+   */
+  spectator_count?: number;
 }
 /**
  * @generated from protobuf message CSOCitadelServerStaticLobby
  */
 export interface CSOCitadelServerStaticLobby {
-	/**
-	 * @generated from protobuf field: repeated CExtraMsgBlock extra_messages = 1;
-	 */
-	extra_messages: CExtraMsgBlock[];
-	/**
-	 * @generated from protobuf field: optional fixed64 server_steam_id = 2;
-	 */
-	server_steam_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 lobby_id = 3;
-	 */
-	lobby_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed32 replay_salt = 4;
-	 */
-	replay_salt?: number;
-	/**
-	 * @generated from protobuf field: optional string level_name = 5;
-	 */
-	level_name?: string;
-	/**
-	 * @generated from protobuf field: repeated CSOCitadelServerStaticLobby.Member members = 6;
-	 */
-	members: CSOCitadelServerStaticLobby_Member[];
-	/**
-	 * @generated from protobuf field: optional CSOCitadelServerStaticLobby.DevSettings dev_settings = 7;
-	 */
-	dev_settings?: CSOCitadelServerStaticLobby_DevSettings;
-	/**
-	 * @generated from protobuf field: optional bool gc_provided_heroes = 8;
-	 */
-	gc_provided_heroes?: boolean;
-	/**
-	 * @generated from protobuf field: optional ECitadelBotDifficulty bot_difficulty = 9;
-	 */
-	bot_difficulty?: ECitadelBotDifficulty;
-	/**
-	 * @generated from protobuf field: optional fixed32 metadata_salt = 10;
-	 */
-	metadata_salt?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 match_start_time = 11;
-	 */
-	match_start_time?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 experimental_gameplay_state = 15;
-	 */
-	experimental_gameplay_state?: number;
-	/**
-	 * @generated from protobuf field: optional ECitadelRegionMode region_mode = 16;
-	 */
-	region_mode?: ECitadelRegionMode;
-	/**
-	 * @generated from protobuf field: optional string broadcast_url = 17;
-	 */
-	broadcast_url?: string;
-	/**
-	 * @generated from protobuf field: optional bool new_player_pool = 18;
-	 */
-	new_player_pool?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool low_pri_pool = 19;
-	 */
-	low_pri_pool?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool is_restricted_access = 20;
-	 */
-	is_restricted_access?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool cheats_enabled = 21;
-	 */
-	cheats_enabled?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool duplicate_heroes_enabled = 22;
-	 */
-	duplicate_heroes_enabled?: boolean;
+  /**
+   * @generated from protobuf field: repeated CExtraMsgBlock extra_messages = 1;
+   */
+  extra_messages: CExtraMsgBlock[];
+  /**
+   * @generated from protobuf field: optional fixed64 server_steam_id = 2;
+   */
+  server_steam_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 lobby_id = 3;
+   */
+  lobby_id?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed32 replay_salt = 4;
+   */
+  replay_salt?: number;
+  /**
+   * @generated from protobuf field: optional string level_name = 5;
+   */
+  level_name?: string;
+  /**
+   * @generated from protobuf field: repeated CSOCitadelServerStaticLobby.Member members = 6;
+   */
+  members: CSOCitadelServerStaticLobby_Member[];
+  /**
+   * @generated from protobuf field: optional CSOCitadelServerStaticLobby.DevSettings dev_settings = 7;
+   */
+  dev_settings?: CSOCitadelServerStaticLobby_DevSettings;
+  /**
+   * @generated from protobuf field: optional bool gc_provided_heroes = 8;
+   */
+  gc_provided_heroes?: boolean;
+  /**
+   * @generated from protobuf field: optional ECitadelBotDifficulty bot_difficulty = 9;
+   */
+  bot_difficulty?: ECitadelBotDifficulty;
+  /**
+   * @generated from protobuf field: optional fixed32 metadata_salt = 10;
+   */
+  metadata_salt?: number;
+  /**
+   * @generated from protobuf field: optional uint32 match_start_time = 11;
+   */
+  match_start_time?: number;
+  /**
+   * @generated from protobuf field: optional uint32 experimental_gameplay_state = 15;
+   */
+  experimental_gameplay_state?: number;
+  /**
+   * @generated from protobuf field: optional ECitadelRegionMode region_mode = 16;
+   */
+  region_mode?: ECitadelRegionMode;
+  /**
+   * @generated from protobuf field: optional string broadcast_url = 17;
+   */
+  broadcast_url?: string;
+  /**
+   * @generated from protobuf field: optional bool new_player_pool = 18;
+   */
+  new_player_pool?: boolean;
+  /**
+   * @generated from protobuf field: optional bool low_pri_pool = 19;
+   */
+  low_pri_pool?: boolean;
+  /**
+   * @generated from protobuf field: optional bool is_restricted_access = 20;
+   */
+  is_restricted_access?: boolean;
+  /**
+   * @generated from protobuf field: optional bool cheats_enabled = 21;
+   */
+  cheats_enabled?: boolean;
+  /**
+   * @generated from protobuf field: optional bool duplicate_heroes_enabled = 22;
+   */
+  duplicate_heroes_enabled?: boolean;
 }
 /**
  * @generated from protobuf message CSOCitadelServerStaticLobby.Member
  */
 export interface CSOCitadelServerStaticLobby_Member {
-	/**
-	 * @generated from protobuf field: optional uint32 account_id = 1;
-	 */
-	account_id?: number;
-	/**
-	 * @generated from protobuf field: optional string persona_name = 2;
-	 */
-	persona_name?: string;
-	/**
-	 * @generated from protobuf field: optional ECitadelLobbyTeam team = 3;
-	 */
-	team?: ECitadelLobbyTeam;
-	/**
-	 * @generated from protobuf field: optional uint32 player_slot = 4;
-	 */
-	player_slot?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hero_id = 5;
-	 */
-	hero_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 party_index = 6;
-	 */
-	party_index?: number;
-	/**
-	 * @generated from protobuf field: optional EGCPlatform platform = 7;
-	 */
-	platform?: EGCPlatform;
-	/**
-	 * @generated from protobuf field: repeated CSOCitadelServerStaticLobby.EAwardIDs award_ids = 8;
-	 */
-	award_ids: CSOCitadelServerStaticLobby_EAwardIDs[];
-	/**
-	 * @generated from protobuf field: optional bool is_comms_restricted = 9;
-	 */
-	is_comms_restricted?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 lane_id = 10;
-	 */
-	lane_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 ranked_badge_level = 11;
-	 */
-	ranked_badge_level?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 ranked_badge_detail = 12;
-	 */
-	ranked_badge_detail?: number;
+  /**
+   * @generated from protobuf field: optional uint32 account_id = 1;
+   */
+  account_id?: number;
+  /**
+   * @generated from protobuf field: optional string persona_name = 2;
+   */
+  persona_name?: string;
+  /**
+   * @generated from protobuf field: optional ECitadelLobbyTeam team = 3;
+   */
+  team?: ECitadelLobbyTeam;
+  /**
+   * @generated from protobuf field: optional uint32 player_slot = 4;
+   */
+  player_slot?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hero_id = 5;
+   */
+  hero_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 party_index = 6;
+   */
+  party_index?: number;
+  /**
+   * @generated from protobuf field: optional EGCPlatform platform = 7;
+   */
+  platform?: EGCPlatform;
+  /**
+   * @generated from protobuf field: repeated CSOCitadelServerStaticLobby.EAwardIDs award_ids = 8;
+   */
+  award_ids: CSOCitadelServerStaticLobby_EAwardIDs[];
+  /**
+   * @generated from protobuf field: optional bool is_comms_restricted = 9;
+   */
+  is_comms_restricted?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 lane_id = 10;
+   */
+  lane_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 ranked_badge_level = 11;
+   */
+  ranked_badge_level?: number;
+  /**
+   * @generated from protobuf field: optional uint32 ranked_badge_detail = 12;
+   */
+  ranked_badge_detail?: number;
 }
 /**
  * @generated from protobuf message CSOCitadelServerStaticLobby.DevSettings
  */
 export interface CSOCitadelServerStaticLobby_DevSettings {
-	/**
-	 * @generated from protobuf field: optional string console_string = 1;
-	 */
-	console_string?: string;
+  /**
+   * @generated from protobuf field: optional string console_string = 1;
+   */
+  console_string?: string;
 }
 /**
  * @generated from protobuf enum CSOCitadelServerStaticLobby.EAwardIDs
  */
 export enum CSOCitadelServerStaticLobby_EAwardIDs {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: k_eAward_KingPanda = 1;
-	 */
-	k_eAward_KingPanda = 1,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: k_eAward_KingPanda = 1;
+   */
+  k_eAward_KingPanda = 1,
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_ServerPerfStats
  */
 export interface CMsgServerSignoutData_ServerPerfStats {
-	/**
-	 * @generated from protobuf field: optional uint64 peak_memory_bytes = 1;
-	 */
-	peak_memory_bytes?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 end_memory_bytes = 2;
-	 */
-	end_memory_bytes?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 frame_time_max_micro_s = 3;
-	 */
-	frame_time_max_micro_s?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 frame_time_95_micro_s = 4;
-	 */
-	frame_time_95_micro_s?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 frame_time_avg_micro_s = 5;
-	 */
-	frame_time_avg_micro_s?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 frame_idle_time_95_micro_s = 6;
-	 */
-	frame_idle_time_95_micro_s?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 frame_idle_time_avg_micro_s = 7;
-	 */
-	frame_idle_time_avg_micro_s?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 frame_time_80_micro_s = 8;
-	 */
-	frame_time_80_micro_s?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 frame_time_99_micro_s = 9;
-	 */
-	frame_time_99_micro_s?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgServerSignoutData_ServerPerfStats.MatchPerfSamples perf_samples = 10;
-	 */
-	perf_samples?: CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples;
+  /**
+   * @generated from protobuf field: optional uint64 peak_memory_bytes = 1;
+   */
+  peak_memory_bytes?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 end_memory_bytes = 2;
+   */
+  end_memory_bytes?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 frame_time_max_micro_s = 3;
+   */
+  frame_time_max_micro_s?: number;
+  /**
+   * @generated from protobuf field: optional uint32 frame_time_95_micro_s = 4;
+   */
+  frame_time_95_micro_s?: number;
+  /**
+   * @generated from protobuf field: optional uint32 frame_time_avg_micro_s = 5;
+   */
+  frame_time_avg_micro_s?: number;
+  /**
+   * @generated from protobuf field: optional uint32 frame_idle_time_95_micro_s = 6;
+   */
+  frame_idle_time_95_micro_s?: number;
+  /**
+   * @generated from protobuf field: optional uint32 frame_idle_time_avg_micro_s = 7;
+   */
+  frame_idle_time_avg_micro_s?: number;
+  /**
+   * @generated from protobuf field: optional uint32 frame_time_80_micro_s = 8;
+   */
+  frame_time_80_micro_s?: number;
+  /**
+   * @generated from protobuf field: optional uint32 frame_time_99_micro_s = 9;
+   */
+  frame_time_99_micro_s?: number;
+  /**
+   * @generated from protobuf field: optional CMsgServerSignoutData_ServerPerfStats.MatchPerfSamples perf_samples = 10;
+   */
+  perf_samples?: CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples;
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_ServerPerfStats.FrameCounts
  */
 export interface CMsgServerSignoutData_ServerPerfStats_FrameCounts {
-	/**
-	 * @generated from protobuf field: optional uint32 num_frames = 1;
-	 */
-	num_frames?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 longest_run = 2;
-	 */
-	longest_run?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 num_runs = 3;
-	 */
-	num_runs?: number;
+  /**
+   * @generated from protobuf field: optional uint32 num_frames = 1;
+   */
+  num_frames?: number;
+  /**
+   * @generated from protobuf field: optional uint32 longest_run = 2;
+   */
+  longest_run?: number;
+  /**
+   * @generated from protobuf field: optional uint32 num_runs = 3;
+   */
+  num_runs?: number;
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_ServerPerfStats.PerfSample
  */
 export interface CMsgServerSignoutData_ServerPerfStats_PerfSample {
-	/**
-	 * @generated from protobuf field: optional uint32 game_time_s = 1;
-	 */
-	game_time_s?: number;
-	/**
-	 * @generated from protobuf field: optional float avg_frame = 2;
-	 */
-	avg_frame?: number;
-	/**
-	 * @generated from protobuf field: optional float avg_idle = 3;
-	 */
-	avg_idle?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 total_frames = 4;
-	 */
-	total_frames?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgServerSignoutData_ServerPerfStats.FrameCounts performant_frames = 5;
-	 */
-	performant_frames?: CMsgServerSignoutData_ServerPerfStats_FrameCounts;
-	/**
-	 * @generated from protobuf field: optional CMsgServerSignoutData_ServerPerfStats.FrameCounts long_frames = 6;
-	 */
-	long_frames?: CMsgServerSignoutData_ServerPerfStats_FrameCounts;
-	/**
-	 * @generated from protobuf field: optional CMsgServerSignoutData_ServerPerfStats.FrameCounts low_idle_frames = 7;
-	 */
-	low_idle_frames?: CMsgServerSignoutData_ServerPerfStats_FrameCounts;
-	/**
-	 * @generated from protobuf field: optional uint64 memory_bytes = 8;
-	 */
-	memory_bytes?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 peak_memory_bytes = 9;
-	 */
-	peak_memory_bytes?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 game_time_s = 1;
+   */
+  game_time_s?: number;
+  /**
+   * @generated from protobuf field: optional float avg_frame = 2;
+   */
+  avg_frame?: number;
+  /**
+   * @generated from protobuf field: optional float avg_idle = 3;
+   */
+  avg_idle?: number;
+  /**
+   * @generated from protobuf field: optional uint32 total_frames = 4;
+   */
+  total_frames?: number;
+  /**
+   * @generated from protobuf field: optional CMsgServerSignoutData_ServerPerfStats.FrameCounts performant_frames = 5;
+   */
+  performant_frames?: CMsgServerSignoutData_ServerPerfStats_FrameCounts;
+  /**
+   * @generated from protobuf field: optional CMsgServerSignoutData_ServerPerfStats.FrameCounts long_frames = 6;
+   */
+  long_frames?: CMsgServerSignoutData_ServerPerfStats_FrameCounts;
+  /**
+   * @generated from protobuf field: optional CMsgServerSignoutData_ServerPerfStats.FrameCounts low_idle_frames = 7;
+   */
+  low_idle_frames?: CMsgServerSignoutData_ServerPerfStats_FrameCounts;
+  /**
+   * @generated from protobuf field: optional uint64 memory_bytes = 8;
+   */
+  memory_bytes?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 peak_memory_bytes = 9;
+   */
+  peak_memory_bytes?: bigint;
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_ServerPerfStats.MatchPerfSamples
  */
 export interface CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples {
-	/**
-	 * @generated from protobuf field: optional float long_frame_threshold = 1;
-	 */
-	long_frame_threshold?: number;
-	/**
-	 * @generated from protobuf field: optional float low_idle_threshold = 2;
-	 */
-	low_idle_threshold?: number;
-	/**
-	 * @generated from protobuf field: repeated CMsgServerSignoutData_ServerPerfStats.PerfSample samples = 3;
-	 */
-	samples: CMsgServerSignoutData_ServerPerfStats_PerfSample[];
+  /**
+   * @generated from protobuf field: optional float long_frame_threshold = 1;
+   */
+  long_frame_threshold?: number;
+  /**
+   * @generated from protobuf field: optional float low_idle_threshold = 2;
+   */
+  low_idle_threshold?: number;
+  /**
+   * @generated from protobuf field: repeated CMsgServerSignoutData_ServerPerfStats.PerfSample samples = 3;
+   */
+  samples: CMsgServerSignoutData_ServerPerfStats_PerfSample[];
 }
 /**
  * @generated from protobuf message CMsgServerToGCUpdateMatchInfo
  */
 export interface CMsgServerToGCUpdateMatchInfo {
-	/**
-	 * @generated from protobuf field: optional uint64 lobby_id = 1;
-	 */
-	lobby_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 kills_team_0 = 3;
-	 */
-	kills_team_0?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 kills_team_1 = 4;
-	 */
-	kills_team_1?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 net_worth_team_0 = 5;
-	 */
-	net_worth_team_0?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 net_worth_team_1 = 6;
-	 */
-	net_worth_team_1?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 spectators = 7;
-	 */
-	spectators?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 open_spectator_slots = 8;
-	 */
-	open_spectator_slots?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 objectives_mask_team0 = 9;
-	 */
-	objectives_mask_team0?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 objectives_mask_team1 = 10;
-	 */
-	objectives_mask_team1?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 lobby_id = 1;
+   */
+  lobby_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 kills_team_0 = 3;
+   */
+  kills_team_0?: number;
+  /**
+   * @generated from protobuf field: optional uint32 kills_team_1 = 4;
+   */
+  kills_team_1?: number;
+  /**
+   * @generated from protobuf field: optional uint32 net_worth_team_0 = 5;
+   */
+  net_worth_team_0?: number;
+  /**
+   * @generated from protobuf field: optional uint32 net_worth_team_1 = 6;
+   */
+  net_worth_team_1?: number;
+  /**
+   * @generated from protobuf field: optional uint32 spectators = 7;
+   */
+  spectators?: number;
+  /**
+   * @generated from protobuf field: optional uint32 open_spectator_slots = 8;
+   */
+  open_spectator_slots?: number;
+  /**
+   * @generated from protobuf field: optional uint64 objectives_mask_team0 = 9;
+   */
+  objectives_mask_team0?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 objectives_mask_team1 = 10;
+   */
+  objectives_mask_team1?: bigint;
 }
 /**
  * @generated from protobuf message CMsgServerToGCMatchSignoutPermission
  */
 export interface CMsgServerToGCMatchSignoutPermission {
-	/**
-	 * @generated from protobuf field: optional uint32 signout_start = 1;
-	 */
-	signout_start?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 permission_request = 2;
-	 */
-	permission_request?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 match_id = 3;
-	 */
-	match_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional ECitadelMatchMode match_mode = 4;
-	 */
-	match_mode?: ECitadelMatchMode;
+  /**
+   * @generated from protobuf field: optional uint32 signout_start = 1;
+   */
+  signout_start?: number;
+  /**
+   * @generated from protobuf field: optional uint32 permission_request = 2;
+   */
+  permission_request?: number;
+  /**
+   * @generated from protobuf field: optional uint64 match_id = 3;
+   */
+  match_id?: bigint;
+  /**
+   * @generated from protobuf field: optional ECitadelMatchMode match_mode = 4;
+   */
+  match_mode?: ECitadelMatchMode;
 }
 /**
  * @generated from protobuf message CMsgServerToGCMatchSignoutPermissionResponse
  */
 export interface CMsgServerToGCMatchSignoutPermissionResponse {
-	/**
-	 * @generated from protobuf field: optional bool can_sign_out = 1;
-	 */
-	can_sign_out?: boolean;
-	/**
-	 * @generated from protobuf field: optional uint32 retry_time_s = 2;
-	 */
-	retry_time_s?: number;
-	/**
-	 * @generated from protobuf field: repeated EGCServerSignoutData requested_data = 3;
-	 */
-	requested_data: EGCServerSignoutData[];
+  /**
+   * @generated from protobuf field: optional bool can_sign_out = 1;
+   */
+  can_sign_out?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 retry_time_s = 2;
+   */
+  retry_time_s?: number;
+  /**
+   * @generated from protobuf field: repeated EGCServerSignoutData requested_data = 3;
+   */
+  requested_data: EGCServerSignoutData[];
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_Disconnections
  */
 export interface CMsgServerSignoutData_Disconnections {
-	/**
-	 * @generated from protobuf field: repeated CMsgServerSignoutData_Disconnections.CMsgMatchDisconnection disconnections = 1;
-	 */
-	disconnections: CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection[];
+  /**
+   * @generated from protobuf field: repeated CMsgServerSignoutData_Disconnections.CMsgMatchDisconnection disconnections = 1;
+   */
+  disconnections: CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection[];
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_Disconnections.CMsgMatchDisconnection
  */
 export interface CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection {
-	/**
-	 * @generated from protobuf field: optional uint32 account_id = 1;
-	 */
-	account_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 disconnect_time = 2;
-	 */
-	disconnect_time?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 connection_state = 3;
-	 */
-	connection_state?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 reason_code = 4;
-	 */
-	reason_code?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 reconnect_delay = 5;
-	 */
-	reconnect_delay?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 match_disconnect_time = 6;
-	 */
-	match_disconnect_time?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 match_reconnect_delay = 7;
-	 */
-	match_reconnect_delay?: number;
+  /**
+   * @generated from protobuf field: optional uint32 account_id = 1;
+   */
+  account_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 disconnect_time = 2;
+   */
+  disconnect_time?: number;
+  /**
+   * @generated from protobuf field: optional uint32 connection_state = 3;
+   */
+  connection_state?: number;
+  /**
+   * @generated from protobuf field: optional uint32 reason_code = 4;
+   */
+  reason_code?: number;
+  /**
+   * @generated from protobuf field: optional uint32 reconnect_delay = 5;
+   */
+  reconnect_delay?: number;
+  /**
+   * @generated from protobuf field: optional uint32 match_disconnect_time = 6;
+   */
+  match_disconnect_time?: number;
+  /**
+   * @generated from protobuf field: optional uint32 match_reconnect_delay = 7;
+   */
+  match_reconnect_delay?: number;
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_DetailedStats
  */
 export interface CMsgServerSignoutData_DetailedStats {
-	/**
-	 * @generated from protobuf field: repeated CMsgServerSignoutData_DetailedStats.Player player_stats = 1;
-	 */
-	player_stats: CMsgServerSignoutData_DetailedStats_Player[];
-	/**
-	 * @generated from protobuf field: repeated CMsgServerSignoutData_DetailedStats.Objective objectives = 2;
-	 */
-	objectives: CMsgServerSignoutData_DetailedStats_Objective[];
-	/**
-	 * @generated from protobuf field: repeated CMsgServerSignoutData_DetailedStats.MidBoss mid_boss = 3;
-	 */
-	mid_boss: CMsgServerSignoutData_DetailedStats_MidBoss[];
+  /**
+   * @generated from protobuf field: repeated CMsgServerSignoutData_DetailedStats.Player player_stats = 1;
+   */
+  player_stats: CMsgServerSignoutData_DetailedStats_Player[];
+  /**
+   * @generated from protobuf field: repeated CMsgServerSignoutData_DetailedStats.Objective objectives = 2;
+   */
+  objectives: CMsgServerSignoutData_DetailedStats_Objective[];
+  /**
+   * @generated from protobuf field: repeated CMsgServerSignoutData_DetailedStats.MidBoss mid_boss = 3;
+   */
+  mid_boss: CMsgServerSignoutData_DetailedStats_MidBoss[];
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_DetailedStats.Position
  */
 export interface CMsgServerSignoutData_DetailedStats_Position {
-	/**
-	 * @generated from protobuf field: optional float x = 1;
-	 */
-	x?: number;
-	/**
-	 * @generated from protobuf field: optional float y = 2;
-	 */
-	y?: number;
-	/**
-	 * @generated from protobuf field: optional float z = 3;
-	 */
-	z?: number;
+  /**
+   * @generated from protobuf field: optional float x = 1;
+   */
+  x?: number;
+  /**
+   * @generated from protobuf field: optional float y = 2;
+   */
+  y?: number;
+  /**
+   * @generated from protobuf field: optional float z = 3;
+   */
+  z?: number;
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_DetailedStats.TimeSample
  */
 export interface CMsgServerSignoutData_DetailedStats_TimeSample {
-	/**
-	 * @generated from protobuf field: optional uint32 match_time_s = 1;
-	 */
-	match_time_s?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgServerSignoutData_DetailedStats.TimeSample.Stats stats = 2;
-	 */
-	stats?: CMsgServerSignoutData_DetailedStats_TimeSample_Stats;
-	/**
-	 * @generated from protobuf field: optional CMsgServerSignoutData_DetailedStats.TimeSample.GoldStats gold_stats = 4;
-	 */
-	gold_stats?: CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats;
+  /**
+   * @generated from protobuf field: optional uint32 match_time_s = 1;
+   */
+  match_time_s?: number;
+  /**
+   * @generated from protobuf field: optional CMsgServerSignoutData_DetailedStats.TimeSample.Stats stats = 2;
+   */
+  stats?: CMsgServerSignoutData_DetailedStats_TimeSample_Stats;
+  /**
+   * @generated from protobuf field: optional CMsgServerSignoutData_DetailedStats.TimeSample.GoldStats gold_stats = 4;
+   */
+  gold_stats?: CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats;
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_DetailedStats.TimeSample.Stats
  */
 export interface CMsgServerSignoutData_DetailedStats_TimeSample_Stats {
-	/**
-	 * @generated from protobuf field: optional uint32 net_worth = 1;
-	 */
-	net_worth?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 kills = 2;
-	 */
-	kills?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 deaths = 3;
-	 */
-	deaths?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 assists = 4;
-	 */
-	assists?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 possible_creeps = 5;
-	 */
-	possible_creeps?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 creep_kills = 6;
-	 */
-	creep_kills?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 neutral_kills = 7;
-	 */
-	neutral_kills?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 creep_damage = 8;
-	 */
-	creep_damage?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 neutral_damage = 9;
-	 */
-	neutral_damage?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 boss_damage = 10;
-	 */
-	boss_damage?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 player_damage = 11;
-	 */
-	player_damage?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 denies = 12;
-	 */
-	denies?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 player_healing = 13;
-	 */
-	player_healing?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 ability_points = 14;
-	 */
-	ability_points?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 self_healing = 15;
-	 */
-	self_healing?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 player_damage_taken = 16;
-	 */
-	player_damage_taken?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 max_health = 17;
-	 */
-	max_health?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 weapon_power = 18;
-	 */
-	weapon_power?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 tech_power = 19;
-	 */
-	tech_power?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 shots_hit = 20;
-	 */
-	shots_hit?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 shots_missed = 21;
-	 */
-	shots_missed?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 damage_absorbed = 22;
-	 */
-	damage_absorbed?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 absorption_provided = 23;
-	 */
-	absorption_provided?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 heal_prevented = 26;
-	 */
-	heal_prevented?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 heal_lost = 27;
-	 */
-	heal_lost?: number;
+  /**
+   * @generated from protobuf field: optional uint32 net_worth = 1;
+   */
+  net_worth?: number;
+  /**
+   * @generated from protobuf field: optional uint32 kills = 2;
+   */
+  kills?: number;
+  /**
+   * @generated from protobuf field: optional uint32 deaths = 3;
+   */
+  deaths?: number;
+  /**
+   * @generated from protobuf field: optional uint32 assists = 4;
+   */
+  assists?: number;
+  /**
+   * @generated from protobuf field: optional uint32 possible_creeps = 5;
+   */
+  possible_creeps?: number;
+  /**
+   * @generated from protobuf field: optional uint32 creep_kills = 6;
+   */
+  creep_kills?: number;
+  /**
+   * @generated from protobuf field: optional uint32 neutral_kills = 7;
+   */
+  neutral_kills?: number;
+  /**
+   * @generated from protobuf field: optional uint32 creep_damage = 8;
+   */
+  creep_damage?: number;
+  /**
+   * @generated from protobuf field: optional uint32 neutral_damage = 9;
+   */
+  neutral_damage?: number;
+  /**
+   * @generated from protobuf field: optional uint32 boss_damage = 10;
+   */
+  boss_damage?: number;
+  /**
+   * @generated from protobuf field: optional uint32 player_damage = 11;
+   */
+  player_damage?: number;
+  /**
+   * @generated from protobuf field: optional uint32 denies = 12;
+   */
+  denies?: number;
+  /**
+   * @generated from protobuf field: optional uint32 player_healing = 13;
+   */
+  player_healing?: number;
+  /**
+   * @generated from protobuf field: optional uint32 ability_points = 14;
+   */
+  ability_points?: number;
+  /**
+   * @generated from protobuf field: optional uint32 self_healing = 15;
+   */
+  self_healing?: number;
+  /**
+   * @generated from protobuf field: optional uint32 player_damage_taken = 16;
+   */
+  player_damage_taken?: number;
+  /**
+   * @generated from protobuf field: optional uint32 max_health = 17;
+   */
+  max_health?: number;
+  /**
+   * @generated from protobuf field: optional uint32 weapon_power = 18;
+   */
+  weapon_power?: number;
+  /**
+   * @generated from protobuf field: optional uint32 tech_power = 19;
+   */
+  tech_power?: number;
+  /**
+   * @generated from protobuf field: optional uint32 shots_hit = 20;
+   */
+  shots_hit?: number;
+  /**
+   * @generated from protobuf field: optional uint32 shots_missed = 21;
+   */
+  shots_missed?: number;
+  /**
+   * @generated from protobuf field: optional uint32 damage_absorbed = 22;
+   */
+  damage_absorbed?: number;
+  /**
+   * @generated from protobuf field: optional uint32 absorption_provided = 23;
+   */
+  absorption_provided?: number;
+  /**
+   * @generated from protobuf field: optional uint32 heal_prevented = 26;
+   */
+  heal_prevented?: number;
+  /**
+   * @generated from protobuf field: optional uint32 heal_lost = 27;
+   */
+  heal_lost?: number;
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_DetailedStats.TimeSample.GoldStats
  */
 export interface CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats {
-	/**
-	 * @generated from protobuf field: optional uint32 player = 1;
-	 */
-	player?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 player_orb = 2;
-	 */
-	player_orb?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 lane_creep_orb = 3;
-	 */
-	lane_creep_orb?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 neutral_creep_orb = 4;
-	 */
-	neutral_creep_orb?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 boss = 5;
-	 */
-	boss?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 boss_orb = 6;
-	 */
-	boss_orb?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 treasure = 7;
-	 */
-	treasure?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 denied = 8;
-	 */
-	denied?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 death_loss = 9;
-	 */
-	death_loss?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 lane_creep = 10;
-	 */
-	lane_creep?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 neutral_creep = 11;
-	 */
-	neutral_creep?: number;
+  /**
+   * @generated from protobuf field: optional uint32 player = 1;
+   */
+  player?: number;
+  /**
+   * @generated from protobuf field: optional uint32 player_orb = 2;
+   */
+  player_orb?: number;
+  /**
+   * @generated from protobuf field: optional uint32 lane_creep_orb = 3;
+   */
+  lane_creep_orb?: number;
+  /**
+   * @generated from protobuf field: optional uint32 neutral_creep_orb = 4;
+   */
+  neutral_creep_orb?: number;
+  /**
+   * @generated from protobuf field: optional uint32 boss = 5;
+   */
+  boss?: number;
+  /**
+   * @generated from protobuf field: optional uint32 boss_orb = 6;
+   */
+  boss_orb?: number;
+  /**
+   * @generated from protobuf field: optional uint32 treasure = 7;
+   */
+  treasure?: number;
+  /**
+   * @generated from protobuf field: optional uint32 denied = 8;
+   */
+  denied?: number;
+  /**
+   * @generated from protobuf field: optional uint32 death_loss = 9;
+   */
+  death_loss?: number;
+  /**
+   * @generated from protobuf field: optional uint32 lane_creep = 10;
+   */
+  lane_creep?: number;
+  /**
+   * @generated from protobuf field: optional uint32 neutral_creep = 11;
+   */
+  neutral_creep?: number;
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_DetailedStats.Objective
  */
 export interface CMsgServerSignoutData_DetailedStats_Objective {
-	/**
-	 * @generated from protobuf field: optional uint32 destroyed_time_s = 2;
-	 */
-	destroyed_time_s?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 creep_damage = 4;
-	 */
-	creep_damage?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 creep_damage_mitigated = 5;
-	 */
-	creep_damage_mitigated?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 player_damage = 6;
-	 */
-	player_damage?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 player_damage_mitigated = 7;
-	 */
-	player_damage_mitigated?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 first_damage_time_s = 8;
-	 */
-	first_damage_time_s?: number;
-	/**
-	 * @generated from protobuf field: optional ECitadelTeamObjective team_objective_id = 9;
-	 */
-	team_objective_id?: ECitadelTeamObjective;
-	/**
-	 * @generated from protobuf field: optional ECitadelLobbyTeam team = 10;
-	 */
-	team?: ECitadelLobbyTeam;
+  /**
+   * @generated from protobuf field: optional uint32 destroyed_time_s = 2;
+   */
+  destroyed_time_s?: number;
+  /**
+   * @generated from protobuf field: optional uint32 creep_damage = 4;
+   */
+  creep_damage?: number;
+  /**
+   * @generated from protobuf field: optional uint32 creep_damage_mitigated = 5;
+   */
+  creep_damage_mitigated?: number;
+  /**
+   * @generated from protobuf field: optional uint32 player_damage = 6;
+   */
+  player_damage?: number;
+  /**
+   * @generated from protobuf field: optional uint32 player_damage_mitigated = 7;
+   */
+  player_damage_mitigated?: number;
+  /**
+   * @generated from protobuf field: optional uint32 first_damage_time_s = 8;
+   */
+  first_damage_time_s?: number;
+  /**
+   * @generated from protobuf field: optional ECitadelTeamObjective team_objective_id = 9;
+   */
+  team_objective_id?: ECitadelTeamObjective;
+  /**
+   * @generated from protobuf field: optional ECitadelLobbyTeam team = 10;
+   */
+  team?: ECitadelLobbyTeam;
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_DetailedStats.MidBoss
  */
 export interface CMsgServerSignoutData_DetailedStats_MidBoss {
-	/**
-	 * @generated from protobuf field: optional ECitadelLobbyTeam team_killed = 1;
-	 */
-	team_killed?: ECitadelLobbyTeam;
-	/**
-	 * @generated from protobuf field: optional ECitadelLobbyTeam team_claimed = 2;
-	 */
-	team_claimed?: ECitadelLobbyTeam;
-	/**
-	 * @generated from protobuf field: optional uint32 destroyed_time_s = 3;
-	 */
-	destroyed_time_s?: number;
+  /**
+   * @generated from protobuf field: optional ECitadelLobbyTeam team_killed = 1;
+   */
+  team_killed?: ECitadelLobbyTeam;
+  /**
+   * @generated from protobuf field: optional ECitadelLobbyTeam team_claimed = 2;
+   */
+  team_claimed?: ECitadelLobbyTeam;
+  /**
+   * @generated from protobuf field: optional uint32 destroyed_time_s = 3;
+   */
+  destroyed_time_s?: number;
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_DetailedStats.Player
  */
 export interface CMsgServerSignoutData_DetailedStats_Player {
-	/**
-	 * @generated from protobuf field: optional uint32 player_slot = 1;
-	 */
-	player_slot?: number;
-	/**
-	 * @generated from protobuf field: repeated CMsgServerSignoutData_DetailedStats.TimeSample time_samples = 3;
-	 */
-	time_samples: CMsgServerSignoutData_DetailedStats_TimeSample[];
+  /**
+   * @generated from protobuf field: optional uint32 player_slot = 1;
+   */
+  player_slot?: number;
+  /**
+   * @generated from protobuf field: repeated CMsgServerSignoutData_DetailedStats.TimeSample time_samples = 3;
+   */
+  time_samples: CMsgServerSignoutData_DetailedStats_TimeSample[];
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_PerfData
  */
 export interface CMsgServerSignoutData_PerfData {
-	/**
-	 * @generated from protobuf field: repeated float average_frame_time = 1;
-	 */
-	average_frame_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float max_frame_time = 2;
-	 */
-	max_frame_time: number[];
-	/**
-	 * @generated from protobuf field: optional float server_average_frame_time = 3;
-	 */
-	server_average_frame_time?: number;
-	/**
-	 * @generated from protobuf field: optional float server_max_frame_time = 4;
-	 */
-	server_max_frame_time?: number;
-	/**
-	 * @generated from protobuf field: repeated float average_compute_time = 5;
-	 */
-	average_compute_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float max_compute_time = 6;
-	 */
-	max_compute_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float average_client_tick_time = 7;
-	 */
-	average_client_tick_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float max_client_tick_time = 8;
-	 */
-	max_client_tick_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float average_client_simulate_time = 9;
-	 */
-	average_client_simulate_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float max_client_simulate_time = 10;
-	 */
-	max_client_simulate_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float average_output_time = 11;
-	 */
-	average_output_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float max_output_time = 12;
-	 */
-	max_output_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float average_wait_for_rendering_to_complete_time = 13;
-	 */
-	average_wait_for_rendering_to_complete_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float max_wait_for_rendering_to_complete_time = 14;
-	 */
-	max_wait_for_rendering_to_complete_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float average_swap_time = 15;
-	 */
-	average_swap_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float max_swap_time = 16;
-	 */
-	max_swap_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float average_frame_update_time = 17;
-	 */
-	average_frame_update_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float max_frame_update_time = 18;
-	 */
-	max_frame_update_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float average_idle_time = 19;
-	 */
-	average_idle_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float max_idle_time = 20;
-	 */
-	max_idle_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float average_input_processing_time = 21;
-	 */
-	average_input_processing_time: number[];
-	/**
-	 * @generated from protobuf field: repeated float max_input_processing_time = 22;
-	 */
-	max_input_processing_time: number[];
+  /**
+   * @generated from protobuf field: repeated float average_frame_time = 1;
+   */
+  average_frame_time: number[];
+  /**
+   * @generated from protobuf field: repeated float max_frame_time = 2;
+   */
+  max_frame_time: number[];
+  /**
+   * @generated from protobuf field: optional float server_average_frame_time = 3;
+   */
+  server_average_frame_time?: number;
+  /**
+   * @generated from protobuf field: optional float server_max_frame_time = 4;
+   */
+  server_max_frame_time?: number;
+  /**
+   * @generated from protobuf field: repeated float average_compute_time = 5;
+   */
+  average_compute_time: number[];
+  /**
+   * @generated from protobuf field: repeated float max_compute_time = 6;
+   */
+  max_compute_time: number[];
+  /**
+   * @generated from protobuf field: repeated float average_client_tick_time = 7;
+   */
+  average_client_tick_time: number[];
+  /**
+   * @generated from protobuf field: repeated float max_client_tick_time = 8;
+   */
+  max_client_tick_time: number[];
+  /**
+   * @generated from protobuf field: repeated float average_client_simulate_time = 9;
+   */
+  average_client_simulate_time: number[];
+  /**
+   * @generated from protobuf field: repeated float max_client_simulate_time = 10;
+   */
+  max_client_simulate_time: number[];
+  /**
+   * @generated from protobuf field: repeated float average_output_time = 11;
+   */
+  average_output_time: number[];
+  /**
+   * @generated from protobuf field: repeated float max_output_time = 12;
+   */
+  max_output_time: number[];
+  /**
+   * @generated from protobuf field: repeated float average_wait_for_rendering_to_complete_time = 13;
+   */
+  average_wait_for_rendering_to_complete_time: number[];
+  /**
+   * @generated from protobuf field: repeated float max_wait_for_rendering_to_complete_time = 14;
+   */
+  max_wait_for_rendering_to_complete_time: number[];
+  /**
+   * @generated from protobuf field: repeated float average_swap_time = 15;
+   */
+  average_swap_time: number[];
+  /**
+   * @generated from protobuf field: repeated float max_swap_time = 16;
+   */
+  max_swap_time: number[];
+  /**
+   * @generated from protobuf field: repeated float average_frame_update_time = 17;
+   */
+  average_frame_update_time: number[];
+  /**
+   * @generated from protobuf field: repeated float max_frame_update_time = 18;
+   */
+  max_frame_update_time: number[];
+  /**
+   * @generated from protobuf field: repeated float average_idle_time = 19;
+   */
+  average_idle_time: number[];
+  /**
+   * @generated from protobuf field: repeated float max_idle_time = 20;
+   */
+  max_idle_time: number[];
+  /**
+   * @generated from protobuf field: repeated float average_input_processing_time = 21;
+   */
+  average_input_processing_time: number[];
+  /**
+   * @generated from protobuf field: repeated float max_input_processing_time = 22;
+   */
+  max_input_processing_time: number[];
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_BookRewards
  */
 export interface CMsgServerSignoutData_BookRewards {
-	/**
-	 * @generated from protobuf field: repeated CMsgServerSignoutData_BookRewards.AccountRewards account_rewards = 1;
-	 */
-	account_rewards: CMsgServerSignoutData_BookRewards_AccountRewards[];
+  /**
+   * @generated from protobuf field: repeated CMsgServerSignoutData_BookRewards.AccountRewards account_rewards = 1;
+   */
+  account_rewards: CMsgServerSignoutData_BookRewards_AccountRewards[];
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_BookRewards.BookReward
  */
 export interface CMsgServerSignoutData_BookRewards_BookReward {
-	/**
-	 * @generated from protobuf field: optional uint32 book_id = 1;
-	 */
-	book_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 xp_reward = 2;
-	 */
-	xp_reward?: number;
+  /**
+   * @generated from protobuf field: optional uint32 book_id = 1;
+   */
+  book_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 xp_reward = 2;
+   */
+  xp_reward?: number;
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_BookRewards.AccountRewards
  */
 export interface CMsgServerSignoutData_BookRewards_AccountRewards {
-	/**
-	 * @generated from protobuf field: optional uint32 account_id = 1;
-	 */
-	account_id?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgServerSignoutData_BookRewards.BookReward book_reward = 2;
-	 */
-	book_reward?: CMsgServerSignoutData_BookRewards_BookReward;
+  /**
+   * @generated from protobuf field: optional uint32 account_id = 1;
+   */
+  account_id?: number;
+  /**
+   * @generated from protobuf field: optional CMsgServerSignoutData_BookRewards.BookReward book_reward = 2;
+   */
+  book_reward?: CMsgServerSignoutData_BookRewards_BookReward;
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_AccountStatChanges
  */
 export interface CMsgServerSignoutData_AccountStatChanges {
-	/**
-	 * @generated from protobuf field: repeated CMsgServerSignoutData_AccountStatChanges.AccountStats account_stats = 1;
-	 */
-	account_stats: CMsgServerSignoutData_AccountStatChanges_AccountStats[];
+  /**
+   * @generated from protobuf field: repeated CMsgServerSignoutData_AccountStatChanges.AccountStats account_stats = 1;
+   */
+  account_stats: CMsgServerSignoutData_AccountStatChanges_AccountStats[];
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_AccountStatChanges.Stat
  */
 export interface CMsgServerSignoutData_AccountStatChanges_Stat {
-	/**
-	 * @generated from protobuf field: optional uint32 hero_id = 1;
-	 */
-	hero_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 stat_id = 2;
-	 */
-	stat_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 value = 3;
-	 */
-	value?: number;
-	/**
-	 * @generated from protobuf field: optional ECitadelAccountStatMedal medal = 4;
-	 */
-	medal?: ECitadelAccountStatMedal;
+  /**
+   * @generated from protobuf field: optional uint32 hero_id = 1;
+   */
+  hero_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 stat_id = 2;
+   */
+  stat_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 value = 3;
+   */
+  value?: number;
+  /**
+   * @generated from protobuf field: optional ECitadelAccountStatMedal medal = 4;
+   */
+  medal?: ECitadelAccountStatMedal;
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_AccountStatChanges.AccountStats
  */
 export interface CMsgServerSignoutData_AccountStatChanges_AccountStats {
-	/**
-	 * @generated from protobuf field: optional uint32 account_id = 1;
-	 */
-	account_id?: number;
-	/**
-	 * @generated from protobuf field: repeated CMsgServerSignoutData_AccountStatChanges.Stat stats = 2;
-	 */
-	stats: CMsgServerSignoutData_AccountStatChanges_Stat[];
+  /**
+   * @generated from protobuf field: optional uint32 account_id = 1;
+   */
+  account_id?: number;
+  /**
+   * @generated from protobuf field: repeated CMsgServerSignoutData_AccountStatChanges.Stat stats = 2;
+   */
+  stats: CMsgServerSignoutData_AccountStatChanges_Stat[];
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_PlayerChat
  */
 export interface CMsgServerSignoutData_PlayerChat {
-	/**
-	 * @generated from protobuf field: repeated CMsgServerSignoutData_PlayerChat.ChatLine chat_lines = 1;
-	 */
-	chat_lines: CMsgServerSignoutData_PlayerChat_ChatLine[];
+  /**
+   * @generated from protobuf field: repeated CMsgServerSignoutData_PlayerChat.ChatLine chat_lines = 1;
+   */
+  chat_lines: CMsgServerSignoutData_PlayerChat_ChatLine[];
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_PlayerChat.ChatLine
  */
 export interface CMsgServerSignoutData_PlayerChat_ChatLine {
-	/**
-	 * @generated from protobuf field: optional uint32 player_slot = 1;
-	 */
-	player_slot?: number;
-	/**
-	 * @generated from protobuf field: optional float game_time = 2;
-	 */
-	game_time?: number;
-	/**
-	 * @generated from protobuf field: optional bool team_only = 3;
-	 */
-	team_only?: boolean;
-	/**
-	 * @generated from protobuf field: optional string chat_line = 4;
-	 */
-	chat_line?: string;
+  /**
+   * @generated from protobuf field: optional uint32 player_slot = 1;
+   */
+  player_slot?: number;
+  /**
+   * @generated from protobuf field: optional float game_time = 2;
+   */
+  game_time?: number;
+  /**
+   * @generated from protobuf field: optional bool team_only = 3;
+   */
+  team_only?: boolean;
+  /**
+   * @generated from protobuf field: optional string chat_line = 4;
+   */
+  chat_line?: string;
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_PenalizedPlayers
  */
 export interface CMsgServerSignoutData_PenalizedPlayers {
-	/**
-	 * @generated from protobuf field: repeated CMsgServerSignoutData_PenalizedPlayers.Penalty penalized_players = 1;
-	 */
-	penalized_players: CMsgServerSignoutData_PenalizedPlayers_Penalty[];
+  /**
+   * @generated from protobuf field: repeated CMsgServerSignoutData_PenalizedPlayers.Penalty penalized_players = 1;
+   */
+  penalized_players: CMsgServerSignoutData_PenalizedPlayers_Penalty[];
 }
 /**
  * @generated from protobuf message CMsgServerSignoutData_PenalizedPlayers.Penalty
  */
 export interface CMsgServerSignoutData_PenalizedPlayers_Penalty {
-	/**
-	 * @generated from protobuf field: optional uint32 account_id = 1;
-	 */
-	account_id?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgServerSignoutData_PenalizedPlayers.EPenaltyReason reason = 2;
-	 */
-	reason?: CMsgServerSignoutData_PenalizedPlayers_EPenaltyReason;
-	/**
-	 * @generated from protobuf field: optional uint32 match_time_s = 3;
-	 */
-	match_time_s?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 time_stamp = 4;
-	 */
-	time_stamp?: number;
+  /**
+   * @generated from protobuf field: optional uint32 account_id = 1;
+   */
+  account_id?: number;
+  /**
+   * @generated from protobuf field: optional CMsgServerSignoutData_PenalizedPlayers.EPenaltyReason reason = 2;
+   */
+  reason?: CMsgServerSignoutData_PenalizedPlayers_EPenaltyReason;
+  /**
+   * @generated from protobuf field: optional uint32 match_time_s = 3;
+   */
+  match_time_s?: number;
+  /**
+   * @generated from protobuf field: optional uint32 time_stamp = 4;
+   */
+  time_stamp?: number;
 }
 /**
  * @generated from protobuf enum CMsgServerSignoutData_PenalizedPlayers.EPenaltyReason
  */
 export enum CMsgServerSignoutData_PenalizedPlayers_EPenaltyReason {
-	/**
-	 * @generated from protobuf enum value: k_EPenaltyReason_Abandon = 0;
-	 */
-	k_EPenaltyReason_Abandon = 0,
-	/**
-	 * @generated from protobuf enum value: k_EPenaltyReason_DisconnectedTooLong = 1;
-	 */
-	k_EPenaltyReason_DisconnectedTooLong = 1,
-	/**
-	 * @generated from protobuf enum value: k_EPenaltyReason_AFK = 2;
-	 */
-	k_EPenaltyReason_AFK = 2,
+  /**
+   * @generated from protobuf enum value: k_EPenaltyReason_Abandon = 0;
+   */
+  k_EPenaltyReason_Abandon = 0,
+  /**
+   * @generated from protobuf enum value: k_EPenaltyReason_DisconnectedTooLong = 1;
+   */
+  k_EPenaltyReason_DisconnectedTooLong = 1,
+  /**
+   * @generated from protobuf enum value: k_EPenaltyReason_AFK = 2;
+   */
+  k_EPenaltyReason_AFK = 2,
 }
 /**
  * @generated from protobuf message CMsgMatchData
  */
 export interface CMsgMatchData {
-	/**
-	 * @generated from protobuf field: optional uint32 match_duration_s = 1;
-	 */
-	match_duration_s?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgMatchData.EEndReason end_reason = 2;
-	 */
-	end_reason?: CMsgMatchData_EEndReason;
-	/**
-	 * @generated from protobuf field: optional ECitadelLobbyTeam winning_team = 3;
-	 */
-	winning_team?: ECitadelLobbyTeam;
-	/**
-	 * @generated from protobuf field: repeated CMsgMatchData.PlayerInfo players = 4;
-	 */
-	players: CMsgMatchData_PlayerInfo[];
-	/**
-	 * @generated from protobuf field: optional uint32 objectives_mask_legacy = 5;
-	 */
-	objectives_mask_legacy?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 server_version = 6;
-	 */
-	server_version?: number;
-	/**
-	 * @generated from protobuf field: optional ECitadelGameMode game_mode = 7;
-	 */
-	game_mode?: ECitadelGameMode;
-	/**
-	 * @generated from protobuf field: optional ECitadelMatchMode match_mode = 8;
-	 */
-	match_mode?: ECitadelMatchMode;
-	/**
-	 * @generated from protobuf field: optional uint64 objectives_mask_team0 = 9;
-	 */
-	objectives_mask_team0?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 objectives_mask_team1 = 10;
-	 */
-	objectives_mask_team1?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 match_end_time = 11;
-	 */
-	match_end_time?: number;
-	/**
-	 * @generated from protobuf field: optional float stomp_score = 12;
-	 */
-	stomp_score?: number;
-	/**
-	 * @generated from protobuf field: optional bool safe_to_abandon = 13;
-	 */
-	safe_to_abandon?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool team_abandon = 14;
-	 */
-	team_abandon?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool new_player_pool = 15;
-	 */
-	new_player_pool?: boolean;
-	/**
-	 * @generated from protobuf field: optional bool low_pri_pool = 16;
-	 */
-	low_pri_pool?: boolean;
+  /**
+   * @generated from protobuf field: optional uint32 match_duration_s = 1;
+   */
+  match_duration_s?: number;
+  /**
+   * @generated from protobuf field: optional CMsgMatchData.EEndReason end_reason = 2;
+   */
+  end_reason?: CMsgMatchData_EEndReason;
+  /**
+   * @generated from protobuf field: optional ECitadelLobbyTeam winning_team = 3;
+   */
+  winning_team?: ECitadelLobbyTeam;
+  /**
+   * @generated from protobuf field: repeated CMsgMatchData.PlayerInfo players = 4;
+   */
+  players: CMsgMatchData_PlayerInfo[];
+  /**
+   * @generated from protobuf field: optional uint32 objectives_mask_legacy = 5;
+   */
+  objectives_mask_legacy?: number;
+  /**
+   * @generated from protobuf field: optional uint32 server_version = 6;
+   */
+  server_version?: number;
+  /**
+   * @generated from protobuf field: optional ECitadelGameMode game_mode = 7;
+   */
+  game_mode?: ECitadelGameMode;
+  /**
+   * @generated from protobuf field: optional ECitadelMatchMode match_mode = 8;
+   */
+  match_mode?: ECitadelMatchMode;
+  /**
+   * @generated from protobuf field: optional uint64 objectives_mask_team0 = 9;
+   */
+  objectives_mask_team0?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 objectives_mask_team1 = 10;
+   */
+  objectives_mask_team1?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 match_end_time = 11;
+   */
+  match_end_time?: number;
+  /**
+   * @generated from protobuf field: optional float stomp_score = 12;
+   */
+  stomp_score?: number;
+  /**
+   * @generated from protobuf field: optional bool safe_to_abandon = 13;
+   */
+  safe_to_abandon?: boolean;
+  /**
+   * @generated from protobuf field: optional bool team_abandon = 14;
+   */
+  team_abandon?: boolean;
+  /**
+   * @generated from protobuf field: optional bool new_player_pool = 15;
+   */
+  new_player_pool?: boolean;
+  /**
+   * @generated from protobuf field: optional bool low_pri_pool = 16;
+   */
+  low_pri_pool?: boolean;
 }
 /**
  * @generated from protobuf message CMsgMatchData.PlayerItem
  */
 export interface CMsgMatchData_PlayerItem {
-	/**
-	 * @generated from protobuf field: optional uint32 item_id = 1;
-	 */
-	item_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 game_time_s = 2;
-	 */
-	game_time_s?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 upgrade_id = 3;
-	 */
-	upgrade_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 sold_time_s = 4;
-	 */
-	sold_time_s?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 flags = 5;
-	 */
-	flags?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 imbued_ability_id = 6;
-	 */
-	imbued_ability_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 item_id = 1;
+   */
+  item_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 game_time_s = 2;
+   */
+  game_time_s?: number;
+  /**
+   * @generated from protobuf field: optional uint32 upgrade_id = 3;
+   */
+  upgrade_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 sold_time_s = 4;
+   */
+  sold_time_s?: number;
+  /**
+   * @generated from protobuf field: optional uint32 flags = 5;
+   */
+  flags?: number;
+  /**
+   * @generated from protobuf field: optional uint32 imbued_ability_id = 6;
+   */
+  imbued_ability_id?: number;
 }
 /**
  * @generated from protobuf message CMsgMatchData.PlayerInfo
  */
 export interface CMsgMatchData_PlayerInfo {
-	/**
-	 * @generated from protobuf field: optional uint32 account_id = 1;
-	 */
-	account_id?: number;
-	/**
-	 * @generated from protobuf field: optional ECitadelLobbyTeam team = 2;
-	 */
-	team?: ECitadelLobbyTeam;
-	/**
-	 * @generated from protobuf field: optional uint32 player_slot = 3;
-	 */
-	player_slot?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 player_mmr = 5;
-	 */
-	player_mmr?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 player_uncertainty = 6;
-	 */
-	player_uncertainty?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hero_id = 7;
-	 */
-	hero_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 kills = 8;
-	 */
-	kills?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 deaths = 9;
-	 */
-	deaths?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 net_worth = 10;
-	 */
-	net_worth?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 assists = 11;
-	 */
-	assists?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hero_mmr = 12;
-	 */
-	hero_mmr?: number;
-	/**
-	 * @generated from protobuf field: repeated CMsgMatchData.PlayerItem items = 13;
-	 */
-	items: CMsgMatchData_PlayerItem[];
-	/**
-	 * @generated from protobuf field: optional uint32 gpm_10min = 14 [json_name = "gpm10min"];
-	 */
-	gpm_10min?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 gpm_15min = 15 [json_name = "gpm15min"];
-	 */
-	gpm_15min?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 gpm_20min = 16 [json_name = "gpm20min"];
-	 */
-	gpm_20min?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 gpm_25min = 17 [json_name = "gpm25min"];
-	 */
-	gpm_25min?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 gpm_30min = 18 [json_name = "gpm30min"];
-	 */
-	gpm_30min?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 gpm_35min = 19 [json_name = "gpm35min"];
-	 */
-	gpm_35min?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 gpm_end = 20;
-	 */
-	gpm_end?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 last_hits = 21;
-	 */
-	last_hits?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 denies = 22;
-	 */
-	denies?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 ability_points = 23;
-	 */
-	ability_points?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 level = 24;
-	 */
-	level?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 assigned_lane = 25;
-	 */
-	assigned_lane?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 party_index = 26;
-	 */
-	party_index?: number;
-	/**
-	 * @generated from protobuf field: optional EGCPlatform platform = 27;
-	 */
-	platform?: EGCPlatform;
-	/**
-	 * @generated from protobuf field: optional uint32 ability_damage = 28;
-	 */
-	ability_damage?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 bullet_damage = 29;
-	 */
-	bullet_damage?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hero_bullets_hit = 30;
-	 */
-	hero_bullets_hit?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hero_bullets_hit_crit = 31;
-	 */
-	hero_bullets_hit_crit?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 player_healing = 32;
-	 */
-	player_healing?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hero_bullets_fired = 33;
-	 */
-	hero_bullets_fired?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hero_incoming_bullets_fired = 34;
-	 */
-	hero_incoming_bullets_fired?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hero_incoming_bullets_hit = 35;
-	 */
-	hero_incoming_bullets_hit?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hero_incoming_bullets_crit = 36;
-	 */
-	hero_incoming_bullets_crit?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 time_dead_s = 37;
-	 */
-	time_dead_s?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 player_bullet_damage = 38;
-	 */
-	player_bullet_damage?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 player_ability_damage = 39;
-	 */
-	player_ability_damage?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 player_melee_damage = 40;
-	 */
-	player_melee_damage?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 abandon_match_time_s = 41;
-	 */
-	abandon_match_time_s?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 abandon_time_stamp = 42;
-	 */
-	abandon_time_stamp?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 trooper_kill_excluded = 43;
-	 */
-	trooper_kill_excluded?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hero_bullets_lucky_shots = 44;
-	 */
-	hero_bullets_lucky_shots?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 hero_build_id = 45;
-	 */
-	hero_build_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 account_id = 1;
+   */
+  account_id?: number;
+  /**
+   * @generated from protobuf field: optional ECitadelLobbyTeam team = 2;
+   */
+  team?: ECitadelLobbyTeam;
+  /**
+   * @generated from protobuf field: optional uint32 player_slot = 3;
+   */
+  player_slot?: number;
+  /**
+   * @generated from protobuf field: optional uint32 player_mmr = 5;
+   */
+  player_mmr?: number;
+  /**
+   * @generated from protobuf field: optional uint32 player_uncertainty = 6;
+   */
+  player_uncertainty?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hero_id = 7;
+   */
+  hero_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 kills = 8;
+   */
+  kills?: number;
+  /**
+   * @generated from protobuf field: optional uint32 deaths = 9;
+   */
+  deaths?: number;
+  /**
+   * @generated from protobuf field: optional uint32 net_worth = 10;
+   */
+  net_worth?: number;
+  /**
+   * @generated from protobuf field: optional uint32 assists = 11;
+   */
+  assists?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hero_mmr = 12;
+   */
+  hero_mmr?: number;
+  /**
+   * @generated from protobuf field: repeated CMsgMatchData.PlayerItem items = 13;
+   */
+  items: CMsgMatchData_PlayerItem[];
+  /**
+   * @generated from protobuf field: optional uint32 gpm_10min = 14 [json_name = "gpm10min"];
+   */
+  gpm_10min?: number;
+  /**
+   * @generated from protobuf field: optional uint32 gpm_15min = 15 [json_name = "gpm15min"];
+   */
+  gpm_15min?: number;
+  /**
+   * @generated from protobuf field: optional uint32 gpm_20min = 16 [json_name = "gpm20min"];
+   */
+  gpm_20min?: number;
+  /**
+   * @generated from protobuf field: optional uint32 gpm_25min = 17 [json_name = "gpm25min"];
+   */
+  gpm_25min?: number;
+  /**
+   * @generated from protobuf field: optional uint32 gpm_30min = 18 [json_name = "gpm30min"];
+   */
+  gpm_30min?: number;
+  /**
+   * @generated from protobuf field: optional uint32 gpm_35min = 19 [json_name = "gpm35min"];
+   */
+  gpm_35min?: number;
+  /**
+   * @generated from protobuf field: optional uint32 gpm_end = 20;
+   */
+  gpm_end?: number;
+  /**
+   * @generated from protobuf field: optional uint32 last_hits = 21;
+   */
+  last_hits?: number;
+  /**
+   * @generated from protobuf field: optional uint32 denies = 22;
+   */
+  denies?: number;
+  /**
+   * @generated from protobuf field: optional uint32 ability_points = 23;
+   */
+  ability_points?: number;
+  /**
+   * @generated from protobuf field: optional uint32 level = 24;
+   */
+  level?: number;
+  /**
+   * @generated from protobuf field: optional uint32 assigned_lane = 25;
+   */
+  assigned_lane?: number;
+  /**
+   * @generated from protobuf field: optional uint32 party_index = 26;
+   */
+  party_index?: number;
+  /**
+   * @generated from protobuf field: optional EGCPlatform platform = 27;
+   */
+  platform?: EGCPlatform;
+  /**
+   * @generated from protobuf field: optional uint32 ability_damage = 28;
+   */
+  ability_damage?: number;
+  /**
+   * @generated from protobuf field: optional uint32 bullet_damage = 29;
+   */
+  bullet_damage?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hero_bullets_hit = 30;
+   */
+  hero_bullets_hit?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hero_bullets_hit_crit = 31;
+   */
+  hero_bullets_hit_crit?: number;
+  /**
+   * @generated from protobuf field: optional uint32 player_healing = 32;
+   */
+  player_healing?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hero_bullets_fired = 33;
+   */
+  hero_bullets_fired?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hero_incoming_bullets_fired = 34;
+   */
+  hero_incoming_bullets_fired?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hero_incoming_bullets_hit = 35;
+   */
+  hero_incoming_bullets_hit?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hero_incoming_bullets_crit = 36;
+   */
+  hero_incoming_bullets_crit?: number;
+  /**
+   * @generated from protobuf field: optional uint32 time_dead_s = 37;
+   */
+  time_dead_s?: number;
+  /**
+   * @generated from protobuf field: optional uint32 player_bullet_damage = 38;
+   */
+  player_bullet_damage?: number;
+  /**
+   * @generated from protobuf field: optional uint32 player_ability_damage = 39;
+   */
+  player_ability_damage?: number;
+  /**
+   * @generated from protobuf field: optional uint32 player_melee_damage = 40;
+   */
+  player_melee_damage?: number;
+  /**
+   * @generated from protobuf field: optional uint32 abandon_match_time_s = 41;
+   */
+  abandon_match_time_s?: number;
+  /**
+   * @generated from protobuf field: optional uint32 abandon_time_stamp = 42;
+   */
+  abandon_time_stamp?: number;
+  /**
+   * @generated from protobuf field: optional uint32 trooper_kill_excluded = 43;
+   */
+  trooper_kill_excluded?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hero_bullets_lucky_shots = 44;
+   */
+  hero_bullets_lucky_shots?: number;
+  /**
+   * @generated from protobuf field: optional uint32 hero_build_id = 45;
+   */
+  hero_build_id?: number;
 }
 /**
  * @generated from protobuf enum CMsgMatchData.EEndReason
  */
 export enum CMsgMatchData_EEndReason {
-	/**
-	 * @generated from protobuf enum value: k_EEndReason_TeamWin = 0;
-	 */
-	k_EEndReason_TeamWin = 0,
-	/**
-	 * @generated from protobuf enum value: k_EEndReason_AllAbandoned = 2;
-	 */
-	k_EEndReason_AllAbandoned = 2,
-	/**
-	 * @generated from protobuf enum value: k_EEndReason_NetworkIssues = 3;
-	 */
-	k_EEndReason_NetworkIssues = 3,
-	/**
-	 * @generated from protobuf enum value: k_EEndReason_MatchLength = 4;
-	 */
-	k_EEndReason_MatchLength = 4,
-	/**
-	 * @generated from protobuf enum value: k_EEndReason_PlayerNeverConnected = 5;
-	 */
-	k_EEndReason_PlayerNeverConnected = 5,
+  /**
+   * @generated from protobuf enum value: k_EEndReason_TeamWin = 0;
+   */
+  k_EEndReason_TeamWin = 0,
+  /**
+   * @generated from protobuf enum value: k_EEndReason_AllAbandoned = 2;
+   */
+  k_EEndReason_AllAbandoned = 2,
+  /**
+   * @generated from protobuf enum value: k_EEndReason_NetworkIssues = 3;
+   */
+  k_EEndReason_NetworkIssues = 3,
+  /**
+   * @generated from protobuf enum value: k_EEndReason_MatchLength = 4;
+   */
+  k_EEndReason_MatchLength = 4,
+  /**
+   * @generated from protobuf enum value: k_EEndReason_PlayerNeverConnected = 5;
+   */
+  k_EEndReason_PlayerNeverConnected = 5,
 }
 /**
  * @generated from protobuf message CMsgServerToGCMatchSignout
  */
 export interface CMsgServerToGCMatchSignout {
-	/**
-	 * @generated from protobuf field: repeated CExtraMsgBlock additional_data = 1;
-	 */
-	additional_data: CExtraMsgBlock[];
-	/**
-	 * @generated from protobuf field: optional uint32 signout_attempt = 2;
-	 */
-	signout_attempt?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 lobby_id = 3;
-	 */
-	lobby_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 match_id = 4;
-	 */
-	match_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 cluster_id = 9;
-	 */
-	cluster_id?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgMatchData match_data = 10;
-	 */
-	match_data?: CMsgMatchData;
+  /**
+   * @generated from protobuf field: repeated CExtraMsgBlock additional_data = 1;
+   */
+  additional_data: CExtraMsgBlock[];
+  /**
+   * @generated from protobuf field: optional uint32 signout_attempt = 2;
+   */
+  signout_attempt?: number;
+  /**
+   * @generated from protobuf field: optional uint64 lobby_id = 3;
+   */
+  lobby_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 match_id = 4;
+   */
+  match_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 cluster_id = 9;
+   */
+  cluster_id?: number;
+  /**
+   * @generated from protobuf field: optional CMsgMatchData match_data = 10;
+   */
+  match_data?: CMsgMatchData;
 }
 /**
  * @generated from protobuf message CMsgServerToGCMatchSignoutResponse
  */
 export interface CMsgServerToGCMatchSignoutResponse {
-	/**
-	 * @generated from protobuf field: optional CMsgServerToGCMatchSignoutResponse.ESignoutResult result = 1;
-	 */
-	result?: CMsgServerToGCMatchSignoutResponse_ESignoutResult;
+  /**
+   * @generated from protobuf field: optional CMsgServerToGCMatchSignoutResponse.ESignoutResult result = 1;
+   */
+  result?: CMsgServerToGCMatchSignoutResponse_ESignoutResult;
 }
 /**
  * @generated from protobuf enum CMsgServerToGCMatchSignoutResponse.ESignoutResult
  */
 export enum CMsgServerToGCMatchSignoutResponse_ESignoutResult {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: k_ESignout_Failed_Retry = 1;
-	 */
-	k_ESignout_Failed_Retry = 1,
-	/**
-	 * @generated from protobuf enum value: k_ESignout_Failed_NoRetry = 2;
-	 */
-	k_ESignout_Failed_NoRetry = 2,
-	/**
-	 * @generated from protobuf enum value: k_ESignout_Failed_InFlight = 3;
-	 */
-	k_ESignout_Failed_InFlight = 3,
-	/**
-	 * @generated from protobuf enum value: k_ESignout_Success = 4;
-	 */
-	k_ESignout_Success = 4,
-	/**
-	 * @generated from protobuf enum value: k_ESignout_Success_AlreadySignedOut = 5;
-	 */
-	k_ESignout_Success_AlreadySignedOut = 5,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: k_ESignout_Failed_Retry = 1;
+   */
+  k_ESignout_Failed_Retry = 1,
+  /**
+   * @generated from protobuf enum value: k_ESignout_Failed_NoRetry = 2;
+   */
+  k_ESignout_Failed_NoRetry = 2,
+  /**
+   * @generated from protobuf enum value: k_ESignout_Failed_InFlight = 3;
+   */
+  k_ESignout_Failed_InFlight = 3,
+  /**
+   * @generated from protobuf enum value: k_ESignout_Success = 4;
+   */
+  k_ESignout_Success = 4,
+  /**
+   * @generated from protobuf enum value: k_ESignout_Success_AlreadySignedOut = 5;
+   */
+  k_ESignout_Success_AlreadySignedOut = 5,
 }
 /**
  * @generated from protobuf message CMsgServerWelcomeCitadel
@@ -1516,10 +1516,10 @@ export interface CMsgServerWelcomeCitadel {}
  * @generated from protobuf message CMsgServerToGCIdlePing
  */
 export interface CMsgServerToGCIdlePing {
-	/**
-	 * @generated from protobuf field: optional uint32 server_version = 1;
-	 */
-	server_version?: number;
+  /**
+   * @generated from protobuf field: optional uint32 server_version = 1;
+   */
+  server_version?: number;
 }
 /**
  * @generated from protobuf message CMsgGCToServerRequestPing
@@ -1529,185 +1529,185 @@ export interface CMsgGCToServerRequestPing {}
  * @generated from protobuf message CMsgGCToServerAllocateForMatch
  */
 export interface CMsgGCToServerAllocateForMatch {
-	/**
-	 * @generated from protobuf field: optional uint64 match_id = 1;
-	 */
-	match_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 match_id = 1;
+   */
+  match_id?: bigint;
 }
 /**
  * @generated from protobuf message CMsgGCToServerAllocateForMatchResponse
  */
 export interface CMsgGCToServerAllocateForMatchResponse {
-	/**
-	 * @generated from protobuf field: optional bool success = 1;
-	 */
-	success?: boolean;
+  /**
+   * @generated from protobuf field: optional bool success = 1;
+   */
+  success?: boolean;
 }
 /**
  * @generated from protobuf message CMsgServerToGCEnterMatchmaking
  */
 export interface CMsgServerToGCEnterMatchmaking {
-	/**
-	 * @generated from protobuf field: optional uint32 server_version = 1;
-	 */
-	server_version?: number;
-	/**
-	 * @generated from protobuf field: optional string search_key = 2;
-	 */
-	search_key?: string;
-	/**
-	 * @generated from protobuf field: optional uint32 region_id = 3;
-	 */
-	region_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 cluster_id = 4;
-	 */
-	cluster_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 server_public_ip = 5;
-	 */
-	server_public_ip?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 server_private_ip = 6;
-	 */
-	server_private_ip?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 server_port = 7;
-	 */
-	server_port?: number;
-	/**
-	 * @generated from protobuf field: optional bytes sdr_address = 9;
-	 */
-	sdr_address?: Uint8Array;
+  /**
+   * @generated from protobuf field: optional uint32 server_version = 1;
+   */
+  server_version?: number;
+  /**
+   * @generated from protobuf field: optional string search_key = 2;
+   */
+  search_key?: string;
+  /**
+   * @generated from protobuf field: optional uint32 region_id = 3;
+   */
+  region_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 cluster_id = 4;
+   */
+  cluster_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 server_public_ip = 5;
+   */
+  server_public_ip?: number;
+  /**
+   * @generated from protobuf field: optional uint32 server_private_ip = 6;
+   */
+  server_private_ip?: number;
+  /**
+   * @generated from protobuf field: optional uint32 server_port = 7;
+   */
+  server_port?: number;
+  /**
+   * @generated from protobuf field: optional bytes sdr_address = 9;
+   */
+  sdr_address?: Uint8Array;
 }
 /**
  * @generated from protobuf message CMsgGCToServerCancelAllocateForMatch
  */
 export interface CMsgGCToServerCancelAllocateForMatch {
-	/**
-	 * @generated from protobuf field: optional uint64 match_id = 1;
-	 */
-	match_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 match_id = 1;
+   */
+  match_id?: bigint;
 }
 /**
  * @generated from protobuf message CMsgServerToGCUpdateLobbyServerState
  */
 export interface CMsgServerToGCUpdateLobbyServerState {
-	/**
-	 * @generated from protobuf field: optional uint64 lobby_id = 1;
-	 */
-	lobby_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional ELobbyServerState server_state = 2;
-	 */
-	server_state?: ELobbyServerState;
-	/**
-	 * @generated from protobuf field: optional bool safe_to_abandon = 3;
-	 */
-	safe_to_abandon?: boolean;
+  /**
+   * @generated from protobuf field: optional uint64 lobby_id = 1;
+   */
+  lobby_id?: bigint;
+  /**
+   * @generated from protobuf field: optional ELobbyServerState server_state = 2;
+   */
+  server_state?: ELobbyServerState;
+  /**
+   * @generated from protobuf field: optional bool safe_to_abandon = 3;
+   */
+  safe_to_abandon?: boolean;
 }
 /**
  * @generated from protobuf message CMsgServerToGCAbandonMatch
  */
 export interface CMsgServerToGCAbandonMatch {
-	/**
-	 * @generated from protobuf field: optional fixed64 server_steam_id = 1;
-	 */
-	server_steam_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed64 lobby_id = 2;
-	 */
-	lobby_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 cluster_id = 3;
-	 */
-	cluster_id?: number;
-	/**
-	 * @generated from protobuf field: optional CMsgServerToGCAbandonMatch.EReason reason_code = 4;
-	 */
-	reason_code?: CMsgServerToGCAbandonMatch_EReason;
-	/**
-	 * @generated from protobuf field: optional uint64 additional_data = 5;
-	 */
-	additional_data?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint64 match_id = 6;
-	 */
-	match_id?: bigint;
-	/**
-	 * @generated from protobuf field: repeated CMsgServerToGCAbandonMatch.Player players = 8;
-	 */
-	players: CMsgServerToGCAbandonMatch_Player[];
-	/**
-	 * @generated from protobuf field: optional fixed32 public_ip_address = 9;
-	 */
-	public_ip_address?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 port = 10;
-	 */
-	port?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 server_version = 11;
-	 */
-	server_version?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 pid = 12;
-	 */
-	pid?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 instance_id = 13;
-	 */
-	instance_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 private_ip_address = 14;
-	 */
-	private_ip_address?: number;
-	/**
-	 * @generated from protobuf field: optional ECitadelMatchMode match_mode = 15;
-	 */
-	match_mode?: ECitadelMatchMode;
-	/**
-	 * @generated from protobuf field: optional ECitadelGameMode game_mode = 16;
-	 */
-	game_mode?: ECitadelGameMode;
-	/**
-	 * @generated from protobuf field: optional bool was_server_shutdown = 17;
-	 */
-	was_server_shutdown?: boolean;
+  /**
+   * @generated from protobuf field: optional fixed64 server_steam_id = 1;
+   */
+  server_steam_id?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed64 lobby_id = 2;
+   */
+  lobby_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 cluster_id = 3;
+   */
+  cluster_id?: number;
+  /**
+   * @generated from protobuf field: optional CMsgServerToGCAbandonMatch.EReason reason_code = 4;
+   */
+  reason_code?: CMsgServerToGCAbandonMatch_EReason;
+  /**
+   * @generated from protobuf field: optional uint64 additional_data = 5;
+   */
+  additional_data?: bigint;
+  /**
+   * @generated from protobuf field: optional uint64 match_id = 6;
+   */
+  match_id?: bigint;
+  /**
+   * @generated from protobuf field: repeated CMsgServerToGCAbandonMatch.Player players = 8;
+   */
+  players: CMsgServerToGCAbandonMatch_Player[];
+  /**
+   * @generated from protobuf field: optional fixed32 public_ip_address = 9;
+   */
+  public_ip_address?: number;
+  /**
+   * @generated from protobuf field: optional uint32 port = 10;
+   */
+  port?: number;
+  /**
+   * @generated from protobuf field: optional uint32 server_version = 11;
+   */
+  server_version?: number;
+  /**
+   * @generated from protobuf field: optional uint32 pid = 12;
+   */
+  pid?: number;
+  /**
+   * @generated from protobuf field: optional uint32 instance_id = 13;
+   */
+  instance_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 private_ip_address = 14;
+   */
+  private_ip_address?: number;
+  /**
+   * @generated from protobuf field: optional ECitadelMatchMode match_mode = 15;
+   */
+  match_mode?: ECitadelMatchMode;
+  /**
+   * @generated from protobuf field: optional ECitadelGameMode game_mode = 16;
+   */
+  game_mode?: ECitadelGameMode;
+  /**
+   * @generated from protobuf field: optional bool was_server_shutdown = 17;
+   */
+  was_server_shutdown?: boolean;
 }
 /**
  * @generated from protobuf message CMsgServerToGCAbandonMatch.Player
  */
 export interface CMsgServerToGCAbandonMatch_Player {
-	/**
-	 * @generated from protobuf field: optional uint32 account_id = 1;
-	 */
-	account_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 additional_data = 2;
-	 */
-	additional_data?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 hero_id = 3;
-	 */
-	hero_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 account_id = 1;
+   */
+  account_id?: number;
+  /**
+   * @generated from protobuf field: optional uint64 additional_data = 2;
+   */
+  additional_data?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 hero_id = 3;
+   */
+  hero_id?: number;
 }
 /**
  * @generated from protobuf enum CMsgServerToGCAbandonMatch.EReason
  */
 export enum CMsgServerToGCAbandonMatch_EReason {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: eReason_ServerCrash = 1;
-	 */
-	eReason_ServerCrash = 1,
-	/**
-	 * @generated from protobuf enum value: eReason_ClientsFailedToConnect = 2;
-	 */
-	eReason_ClientsFailedToConnect = 2,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: eReason_ServerCrash = 1;
+   */
+  eReason_ServerCrash = 1,
+  /**
+   * @generated from protobuf enum value: eReason_ClientsFailedToConnect = 2;
+   */
+  eReason_ClientsFailedToConnect = 2,
 }
 /**
  * @generated from protobuf message CMsgServerToGCAbandonMatchResponse
@@ -1721,475 +1721,475 @@ export interface CMsgServerToGCTestConnection {}
  * @generated from protobuf message CMsgServerToGCTestConnectionResponse
  */
 export interface CMsgServerToGCTestConnectionResponse {
-	/**
-	 * @generated from protobuf field: optional uint32 state = 1;
-	 */
-	state?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 lobby_id = 2;
-	 */
-	lobby_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 state = 1;
+   */
+  state?: number;
+  /**
+   * @generated from protobuf field: optional uint64 lobby_id = 2;
+   */
+  lobby_id?: bigint;
 }
 /**
  * @generated from protobuf message CMsgGCToServerSetServerConVar
  */
 export interface CMsgGCToServerSetServerConVar {
-	/**
-	 * @generated from protobuf field: optional string convar_name = 1;
-	 */
-	convar_name?: string;
-	/**
-	 * @generated from protobuf field: optional string convar_value = 2;
-	 */
-	convar_value?: string;
+  /**
+   * @generated from protobuf field: optional string convar_name = 1;
+   */
+  convar_name?: string;
+  /**
+   * @generated from protobuf field: optional string convar_value = 2;
+   */
+  convar_value?: string;
 }
 /**
  * @generated from protobuf message CMsgGCToServerSetServerConVarResponse
  */
 export interface CMsgGCToServerSetServerConVarResponse {
-	/**
-	 * @generated from protobuf field: optional bool success = 1;
-	 */
-	success?: boolean;
+  /**
+   * @generated from protobuf field: optional bool success = 1;
+   */
+  success?: boolean;
 }
 /**
  * @generated from protobuf message CMsgGCToServerAddSpectator
  */
 export interface CMsgGCToServerAddSpectator {
-	/**
-	 * @generated from protobuf field: optional uint64 lobby_id = 1;
-	 */
-	lobby_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional uint32 account_id = 2;
-	 */
-	account_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint32 account_to_spectate = 3;
-	 */
-	account_to_spectate?: number;
+  /**
+   * @generated from protobuf field: optional uint64 lobby_id = 1;
+   */
+  lobby_id?: bigint;
+  /**
+   * @generated from protobuf field: optional uint32 account_id = 2;
+   */
+  account_id?: number;
+  /**
+   * @generated from protobuf field: optional uint32 account_to_spectate = 3;
+   */
+  account_to_spectate?: number;
 }
 /**
  * @generated from protobuf message CMsgGCToServerAddSpectatorResponse
  */
 export interface CMsgGCToServerAddSpectatorResponse {
-	/**
-	 * @generated from protobuf field: optional CMsgGCToServerAddSpectatorResponse.EResponse result = 1;
-	 */
-	result?: CMsgGCToServerAddSpectatorResponse_EResponse;
-	/**
-	 * @generated from protobuf field: optional uint32 requesting_account_id = 2;
-	 */
-	requesting_account_id?: number;
+  /**
+   * @generated from protobuf field: optional CMsgGCToServerAddSpectatorResponse.EResponse result = 1;
+   */
+  result?: CMsgGCToServerAddSpectatorResponse_EResponse;
+  /**
+   * @generated from protobuf field: optional uint32 requesting_account_id = 2;
+   */
+  requesting_account_id?: number;
 }
 /**
  * @generated from protobuf enum CMsgGCToServerAddSpectatorResponse.EResponse
  */
 export enum CMsgGCToServerAddSpectatorResponse_EResponse {
-	/**
-	 * @generated from protobuf enum value: k_eInternalError = 0;
-	 */
-	k_eInternalError = 0,
-	/**
-	 * @generated from protobuf enum value: k_eSuccess = 1;
-	 */
-	k_eSuccess = 1,
-	/**
-	 * @generated from protobuf enum value: k_eServerFull = 2;
-	 */
-	k_eServerFull = 2,
+  /**
+   * @generated from protobuf enum value: k_eInternalError = 0;
+   */
+  k_eInternalError = 0,
+  /**
+   * @generated from protobuf enum value: k_eSuccess = 1;
+   */
+  k_eSuccess = 1,
+  /**
+   * @generated from protobuf enum value: k_eServerFull = 2;
+   */
+  k_eServerFull = 2,
 }
 /**
  * @generated from protobuf message CMsgServerToGCReportCheater
  */
 export interface CMsgServerToGCReportCheater {
-	/**
-	 * @generated from protobuf field: optional uint32 account_id = 1;
-	 */
-	account_id?: number;
-	/**
-	 * @generated from protobuf field: optional uint64 match_id = 2;
-	 */
-	match_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional fixed64 lobby_id = 3;
-	 */
-	lobby_id?: bigint;
-	/**
-	 * @generated from protobuf field: optional string reason = 4;
-	 */
-	reason?: string;
+  /**
+   * @generated from protobuf field: optional uint32 account_id = 1;
+   */
+  account_id?: number;
+  /**
+   * @generated from protobuf field: optional uint64 match_id = 2;
+   */
+  match_id?: bigint;
+  /**
+   * @generated from protobuf field: optional fixed64 lobby_id = 3;
+   */
+  lobby_id?: bigint;
+  /**
+   * @generated from protobuf field: optional string reason = 4;
+   */
+  reason?: string;
 }
 /**
  * @generated from protobuf message CMsgServerToGCReportCheaterResponse
  */
 export interface CMsgServerToGCReportCheaterResponse {
-	/**
-	 * @generated from protobuf field: optional bool success = 1;
-	 */
-	success?: boolean;
+  /**
+   * @generated from protobuf field: optional bool success = 1;
+   */
+  success?: boolean;
 }
 /**
  * @generated from protobuf enum EGCCitadelServerMessages
  */
 export enum EGCCitadelServerMessages {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServerToGCMatchSignoutPermission = 10012;
-	 */
-	k_EMsgServerToGCMatchSignoutPermission = 10012,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServerToGCMatchSignoutPermissionResponse = 10013;
-	 */
-	k_EMsgServerToGCMatchSignoutPermissionResponse = 10013,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServerToGCMatchSignout = 10014;
-	 */
-	k_EMsgServerToGCMatchSignout = 10014,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServerToGCMatchSignoutResponse = 10015;
-	 */
-	k_EMsgServerToGCMatchSignoutResponse = 10015,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCToServerAddSpectator = 10016;
-	 */
-	k_EMsgGCToServerAddSpectator = 10016,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCToServerAddSpectatorResponse = 10017;
-	 */
-	k_EMsgGCToServerAddSpectatorResponse = 10017,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServerToGCIdlePing = 10018;
-	 */
-	k_EMsgServerToGCIdlePing = 10018,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCToServerRequestPing = 10019;
-	 */
-	k_EMsgGCToServerRequestPing = 10019,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCToServerAllocateForMatch = 10021;
-	 */
-	k_EMsgGCToServerAllocateForMatch = 10021,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCToServerAllocateForMatchResponse = 10022;
-	 */
-	k_EMsgGCToServerAllocateForMatchResponse = 10022,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServerToGCEnterMatchmaking = 10023;
-	 */
-	k_EMsgServerToGCEnterMatchmaking = 10023,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCToServerCancelAllocateForMatch = 10024;
-	 */
-	k_EMsgGCToServerCancelAllocateForMatch = 10024,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServerToGCUpdateLobbyServerState = 10025;
-	 */
-	k_EMsgServerToGCUpdateLobbyServerState = 10025,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServerToGCAbandonMatch = 10026;
-	 */
-	k_EMsgServerToGCAbandonMatch = 10026,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServerToGCAbandonMatchResponse = 10027;
-	 */
-	k_EMsgServerToGCAbandonMatchResponse = 10027,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServerToGCTestConnection = 10028;
-	 */
-	k_EMsgServerToGCTestConnection = 10028,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServerToGCTestConnectionResponse = 10029;
-	 */
-	k_EMsgServerToGCTestConnectionResponse = 10029,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCToServerSetServerConVar = 10039;
-	 */
-	k_EMsgGCToServerSetServerConVar = 10039,
-	/**
-	 * @generated from protobuf enum value: k_EMsgGCToServerSetServerConVarResponse = 10040;
-	 */
-	k_EMsgGCToServerSetServerConVarResponse = 10040,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServerToGCUpdateMatchInfo = 10041;
-	 */
-	k_EMsgServerToGCUpdateMatchInfo = 10041,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServerToGCReportCheater = 10042;
-	 */
-	k_EMsgServerToGCReportCheater = 10042,
-	/**
-	 * @generated from protobuf enum value: k_EMsgServerToGCReportCheaterResponse = 10043;
-	 */
-	k_EMsgServerToGCReportCheaterResponse = 10043,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: k_EMsgServerToGCMatchSignoutPermission = 10012;
+   */
+  k_EMsgServerToGCMatchSignoutPermission = 10012,
+  /**
+   * @generated from protobuf enum value: k_EMsgServerToGCMatchSignoutPermissionResponse = 10013;
+   */
+  k_EMsgServerToGCMatchSignoutPermissionResponse = 10013,
+  /**
+   * @generated from protobuf enum value: k_EMsgServerToGCMatchSignout = 10014;
+   */
+  k_EMsgServerToGCMatchSignout = 10014,
+  /**
+   * @generated from protobuf enum value: k_EMsgServerToGCMatchSignoutResponse = 10015;
+   */
+  k_EMsgServerToGCMatchSignoutResponse = 10015,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCToServerAddSpectator = 10016;
+   */
+  k_EMsgGCToServerAddSpectator = 10016,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCToServerAddSpectatorResponse = 10017;
+   */
+  k_EMsgGCToServerAddSpectatorResponse = 10017,
+  /**
+   * @generated from protobuf enum value: k_EMsgServerToGCIdlePing = 10018;
+   */
+  k_EMsgServerToGCIdlePing = 10018,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCToServerRequestPing = 10019;
+   */
+  k_EMsgGCToServerRequestPing = 10019,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCToServerAllocateForMatch = 10021;
+   */
+  k_EMsgGCToServerAllocateForMatch = 10021,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCToServerAllocateForMatchResponse = 10022;
+   */
+  k_EMsgGCToServerAllocateForMatchResponse = 10022,
+  /**
+   * @generated from protobuf enum value: k_EMsgServerToGCEnterMatchmaking = 10023;
+   */
+  k_EMsgServerToGCEnterMatchmaking = 10023,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCToServerCancelAllocateForMatch = 10024;
+   */
+  k_EMsgGCToServerCancelAllocateForMatch = 10024,
+  /**
+   * @generated from protobuf enum value: k_EMsgServerToGCUpdateLobbyServerState = 10025;
+   */
+  k_EMsgServerToGCUpdateLobbyServerState = 10025,
+  /**
+   * @generated from protobuf enum value: k_EMsgServerToGCAbandonMatch = 10026;
+   */
+  k_EMsgServerToGCAbandonMatch = 10026,
+  /**
+   * @generated from protobuf enum value: k_EMsgServerToGCAbandonMatchResponse = 10027;
+   */
+  k_EMsgServerToGCAbandonMatchResponse = 10027,
+  /**
+   * @generated from protobuf enum value: k_EMsgServerToGCTestConnection = 10028;
+   */
+  k_EMsgServerToGCTestConnection = 10028,
+  /**
+   * @generated from protobuf enum value: k_EMsgServerToGCTestConnectionResponse = 10029;
+   */
+  k_EMsgServerToGCTestConnectionResponse = 10029,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCToServerSetServerConVar = 10039;
+   */
+  k_EMsgGCToServerSetServerConVar = 10039,
+  /**
+   * @generated from protobuf enum value: k_EMsgGCToServerSetServerConVarResponse = 10040;
+   */
+  k_EMsgGCToServerSetServerConVarResponse = 10040,
+  /**
+   * @generated from protobuf enum value: k_EMsgServerToGCUpdateMatchInfo = 10041;
+   */
+  k_EMsgServerToGCUpdateMatchInfo = 10041,
+  /**
+   * @generated from protobuf enum value: k_EMsgServerToGCReportCheater = 10042;
+   */
+  k_EMsgServerToGCReportCheater = 10042,
+  /**
+   * @generated from protobuf enum value: k_EMsgServerToGCReportCheaterResponse = 10043;
+   */
+  k_EMsgServerToGCReportCheaterResponse = 10043,
 }
 /**
  * @generated from protobuf enum EGCServerLobbyData
  */
 export enum EGCServerLobbyData {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: k_EServerLobbyData_PlayerMMR = 1;
-	 */
-	k_EServerLobbyData_PlayerMMR = 1,
-	/**
-	 * @generated from protobuf enum value: k_EServerLobbyData_PlayerInfo = 2;
-	 */
-	k_EServerLobbyData_PlayerInfo = 2,
-	/**
-	 * @generated from protobuf enum value: k_EServerLobbyData_PostMatchSurvey = 3;
-	 */
-	k_EServerLobbyData_PostMatchSurvey = 3,
-	/**
-	 * @generated from protobuf enum value: k_EServerLobbyData_AutoTest = 4;
-	 */
-	k_EServerLobbyData_AutoTest = 4,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: k_EServerLobbyData_PlayerMMR = 1;
+   */
+  k_EServerLobbyData_PlayerMMR = 1,
+  /**
+   * @generated from protobuf enum value: k_EServerLobbyData_PlayerInfo = 2;
+   */
+  k_EServerLobbyData_PlayerInfo = 2,
+  /**
+   * @generated from protobuf enum value: k_EServerLobbyData_PostMatchSurvey = 3;
+   */
+  k_EServerLobbyData_PostMatchSurvey = 3,
+  /**
+   * @generated from protobuf enum value: k_EServerLobbyData_AutoTest = 4;
+   */
+  k_EServerLobbyData_AutoTest = 4,
 }
 /**
  * @generated from protobuf enum EGCServerSignoutData
  */
 export enum EGCServerSignoutData {
-	/**
-	 * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
-	 */
-	UNSPECIFIED$ = 0,
-	/**
-	 * @generated from protobuf enum value: k_EServerSignoutData_Disconnections = 2;
-	 */
-	k_EServerSignoutData_Disconnections = 2,
-	/**
-	 * @generated from protobuf enum value: k_EServerSignoutData_AccountStatChanges = 3;
-	 */
-	k_EServerSignoutData_AccountStatChanges = 3,
-	/**
-	 * @generated from protobuf enum value: k_EServerSignoutData_DetailedStats = 4;
-	 */
-	k_EServerSignoutData_DetailedStats = 4,
-	/**
-	 * @generated from protobuf enum value: k_EServerSignoutData_ServerPerfStats = 5;
-	 */
-	k_EServerSignoutData_ServerPerfStats = 5,
-	/**
-	 * @generated from protobuf enum value: k_EServerSignoutData_PerfData = 6;
-	 */
-	k_EServerSignoutData_PerfData = 6,
-	/**
-	 * @generated from protobuf enum value: k_EServerSignoutData_PlayerChat = 7;
-	 */
-	k_EServerSignoutData_PlayerChat = 7,
-	/**
-	 * @generated from protobuf enum value: k_EServerSignoutData_BookRewards = 8;
-	 */
-	k_EServerSignoutData_BookRewards = 8,
-	/**
-	 * @generated from protobuf enum value: k_EServerSignoutData_PenalizedPlayers = 9;
-	 */
-	k_EServerSignoutData_PenalizedPlayers = 9,
-	/**
-	 * @generated from protobuf enum value: k_EServerSignoutData_ReportCheaters = 10;
-	 */
-	k_EServerSignoutData_ReportCheaters = 10,
+  /**
+   * @generated synthetic value - protobuf-ts requires all enums to have a 0 value
+   */
+  UNSPECIFIED$ = 0,
+  /**
+   * @generated from protobuf enum value: k_EServerSignoutData_Disconnections = 2;
+   */
+  k_EServerSignoutData_Disconnections = 2,
+  /**
+   * @generated from protobuf enum value: k_EServerSignoutData_AccountStatChanges = 3;
+   */
+  k_EServerSignoutData_AccountStatChanges = 3,
+  /**
+   * @generated from protobuf enum value: k_EServerSignoutData_DetailedStats = 4;
+   */
+  k_EServerSignoutData_DetailedStats = 4,
+  /**
+   * @generated from protobuf enum value: k_EServerSignoutData_ServerPerfStats = 5;
+   */
+  k_EServerSignoutData_ServerPerfStats = 5,
+  /**
+   * @generated from protobuf enum value: k_EServerSignoutData_PerfData = 6;
+   */
+  k_EServerSignoutData_PerfData = 6,
+  /**
+   * @generated from protobuf enum value: k_EServerSignoutData_PlayerChat = 7;
+   */
+  k_EServerSignoutData_PlayerChat = 7,
+  /**
+   * @generated from protobuf enum value: k_EServerSignoutData_BookRewards = 8;
+   */
+  k_EServerSignoutData_BookRewards = 8,
+  /**
+   * @generated from protobuf enum value: k_EServerSignoutData_PenalizedPlayers = 9;
+   */
+  k_EServerSignoutData_PenalizedPlayers = 9,
+  /**
+   * @generated from protobuf enum value: k_EServerSignoutData_ReportCheaters = 10;
+   */
+  k_EServerSignoutData_ReportCheaters = 10,
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerCrashSentinelFile$Type extends MessageType<CMsgServerCrashSentinelFile> {
-	constructor() {
-		super("CMsgServerCrashSentinelFile", [
-			{
-				no: 1,
-				name: "version",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "server_steam_id",
-				kind: "scalar",
-				localName: "server_steam_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "server_public_ip_addr",
-				kind: "scalar",
-				localName: "server_public_ip_addr",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 4,
-				name: "server_port",
-				kind: "scalar",
-				localName: "server_port",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "server_cluster",
-				kind: "scalar",
-				localName: "server_cluster",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "pid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "saved_time",
-				kind: "scalar",
-				localName: "saved_time",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "server_version",
-				kind: "scalar",
-				localName: "server_version",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "game_info",
-				kind: "message",
-				localName: "game_info",
-				T: () => CMsgServerCrashSentinelFile_GameInfo,
-			},
-			{
-				no: 10,
-				name: "server_private_ip_addr",
-				kind: "scalar",
-				localName: "server_private_ip_addr",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 11,
-				name: "instance_id",
-				kind: "scalar",
-				localName: "instance_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerCrashSentinelFile>): CMsgServerCrashSentinelFile {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerCrashSentinelFile>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerCrashSentinelFile,
-	): CMsgServerCrashSentinelFile {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 version */ 1:
-					message.version = reader.uint32();
-					break;
-				case /* optional fixed64 server_steam_id */ 2:
-					message.server_steam_id = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed32 server_public_ip_addr */ 3:
-					message.server_public_ip_addr = reader.fixed32();
-					break;
-				case /* optional uint32 server_port */ 4:
-					message.server_port = reader.uint32();
-					break;
-				case /* optional uint32 server_cluster */ 5:
-					message.server_cluster = reader.uint32();
-					break;
-				case /* optional uint32 pid */ 6:
-					message.pid = reader.uint32();
-					break;
-				case /* optional uint32 saved_time */ 7:
-					message.saved_time = reader.uint32();
-					break;
-				case /* optional uint32 server_version */ 8:
-					message.server_version = reader.uint32();
-					break;
-				case /* optional CMsgServerCrashSentinelFile.GameInfo game_info */ 9:
-					message.game_info = CMsgServerCrashSentinelFile_GameInfo.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.game_info,
-					);
-					break;
-				case /* optional uint32 server_private_ip_addr */ 10:
-					message.server_private_ip_addr = reader.uint32();
-					break;
-				case /* optional uint32 instance_id */ 11:
-					message.instance_id = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerCrashSentinelFile,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 version = 1; */
-		if (message.version !== undefined) writer.tag(1, WireType.Varint).uint32(message.version);
-		/* optional fixed64 server_steam_id = 2; */
-		if (message.server_steam_id !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.server_steam_id);
-		/* optional fixed32 server_public_ip_addr = 3; */
-		if (message.server_public_ip_addr !== undefined)
-			writer.tag(3, WireType.Bit32).fixed32(message.server_public_ip_addr);
-		/* optional uint32 server_port = 4; */
-		if (message.server_port !== undefined) writer.tag(4, WireType.Varint).uint32(message.server_port);
-		/* optional uint32 server_cluster = 5; */
-		if (message.server_cluster !== undefined) writer.tag(5, WireType.Varint).uint32(message.server_cluster);
-		/* optional uint32 pid = 6; */
-		if (message.pid !== undefined) writer.tag(6, WireType.Varint).uint32(message.pid);
-		/* optional uint32 saved_time = 7; */
-		if (message.saved_time !== undefined) writer.tag(7, WireType.Varint).uint32(message.saved_time);
-		/* optional uint32 server_version = 8; */
-		if (message.server_version !== undefined) writer.tag(8, WireType.Varint).uint32(message.server_version);
-		/* optional CMsgServerCrashSentinelFile.GameInfo game_info = 9; */
-		if (message.game_info)
-			CMsgServerCrashSentinelFile_GameInfo.internalBinaryWrite(
-				message.game_info,
-				writer.tag(9, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 server_private_ip_addr = 10; */
-		if (message.server_private_ip_addr !== undefined)
-			writer.tag(10, WireType.Varint).uint32(message.server_private_ip_addr);
-		/* optional uint32 instance_id = 11; */
-		if (message.instance_id !== undefined) writer.tag(11, WireType.Varint).uint32(message.instance_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerCrashSentinelFile", [
+      {
+        no: 1,
+        name: "version",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "server_steam_id",
+        kind: "scalar",
+        localName: "server_steam_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "server_public_ip_addr",
+        kind: "scalar",
+        localName: "server_public_ip_addr",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 4,
+        name: "server_port",
+        kind: "scalar",
+        localName: "server_port",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "server_cluster",
+        kind: "scalar",
+        localName: "server_cluster",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "pid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "saved_time",
+        kind: "scalar",
+        localName: "saved_time",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "server_version",
+        kind: "scalar",
+        localName: "server_version",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "game_info",
+        kind: "message",
+        localName: "game_info",
+        T: () => CMsgServerCrashSentinelFile_GameInfo,
+      },
+      {
+        no: 10,
+        name: "server_private_ip_addr",
+        kind: "scalar",
+        localName: "server_private_ip_addr",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 11,
+        name: "instance_id",
+        kind: "scalar",
+        localName: "instance_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerCrashSentinelFile>): CMsgServerCrashSentinelFile {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerCrashSentinelFile>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerCrashSentinelFile,
+  ): CMsgServerCrashSentinelFile {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 version */ 1:
+          message.version = reader.uint32();
+          break;
+        case /* optional fixed64 server_steam_id */ 2:
+          message.server_steam_id = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed32 server_public_ip_addr */ 3:
+          message.server_public_ip_addr = reader.fixed32();
+          break;
+        case /* optional uint32 server_port */ 4:
+          message.server_port = reader.uint32();
+          break;
+        case /* optional uint32 server_cluster */ 5:
+          message.server_cluster = reader.uint32();
+          break;
+        case /* optional uint32 pid */ 6:
+          message.pid = reader.uint32();
+          break;
+        case /* optional uint32 saved_time */ 7:
+          message.saved_time = reader.uint32();
+          break;
+        case /* optional uint32 server_version */ 8:
+          message.server_version = reader.uint32();
+          break;
+        case /* optional CMsgServerCrashSentinelFile.GameInfo game_info */ 9:
+          message.game_info = CMsgServerCrashSentinelFile_GameInfo.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.game_info,
+          );
+          break;
+        case /* optional uint32 server_private_ip_addr */ 10:
+          message.server_private_ip_addr = reader.uint32();
+          break;
+        case /* optional uint32 instance_id */ 11:
+          message.instance_id = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerCrashSentinelFile,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 version = 1; */
+    if (message.version !== undefined) writer.tag(1, WireType.Varint).uint32(message.version);
+    /* optional fixed64 server_steam_id = 2; */
+    if (message.server_steam_id !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.server_steam_id);
+    /* optional fixed32 server_public_ip_addr = 3; */
+    if (message.server_public_ip_addr !== undefined)
+      writer.tag(3, WireType.Bit32).fixed32(message.server_public_ip_addr);
+    /* optional uint32 server_port = 4; */
+    if (message.server_port !== undefined) writer.tag(4, WireType.Varint).uint32(message.server_port);
+    /* optional uint32 server_cluster = 5; */
+    if (message.server_cluster !== undefined) writer.tag(5, WireType.Varint).uint32(message.server_cluster);
+    /* optional uint32 pid = 6; */
+    if (message.pid !== undefined) writer.tag(6, WireType.Varint).uint32(message.pid);
+    /* optional uint32 saved_time = 7; */
+    if (message.saved_time !== undefined) writer.tag(7, WireType.Varint).uint32(message.saved_time);
+    /* optional uint32 server_version = 8; */
+    if (message.server_version !== undefined) writer.tag(8, WireType.Varint).uint32(message.server_version);
+    /* optional CMsgServerCrashSentinelFile.GameInfo game_info = 9; */
+    if (message.game_info)
+      CMsgServerCrashSentinelFile_GameInfo.internalBinaryWrite(
+        message.game_info,
+        writer.tag(9, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 server_private_ip_addr = 10; */
+    if (message.server_private_ip_addr !== undefined)
+      writer.tag(10, WireType.Varint).uint32(message.server_private_ip_addr);
+    /* optional uint32 instance_id = 11; */
+    if (message.instance_id !== undefined) writer.tag(11, WireType.Varint).uint32(message.instance_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerCrashSentinelFile
@@ -2197,71 +2197,71 @@ class CMsgServerCrashSentinelFile$Type extends MessageType<CMsgServerCrashSentin
 export const CMsgServerCrashSentinelFile = new CMsgServerCrashSentinelFile$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerCrashSentinelFile_Player$Type extends MessageType<CMsgServerCrashSentinelFile_Player> {
-	constructor() {
-		super("CMsgServerCrashSentinelFile.Player", [
-			{
-				no: 1,
-				name: "account_id",
-				kind: "scalar",
-				localName: "account_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "hero_id",
-				kind: "scalar",
-				localName: "hero_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerCrashSentinelFile_Player>): CMsgServerCrashSentinelFile_Player {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerCrashSentinelFile_Player>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerCrashSentinelFile_Player,
-	): CMsgServerCrashSentinelFile_Player {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 account_id */ 1:
-					message.account_id = reader.uint32();
-					break;
-				case /* optional uint32 hero_id */ 2:
-					message.hero_id = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerCrashSentinelFile_Player,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 account_id = 1; */
-		if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
-		/* optional uint32 hero_id = 2; */
-		if (message.hero_id !== undefined) writer.tag(2, WireType.Varint).uint32(message.hero_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerCrashSentinelFile.Player", [
+      {
+        no: 1,
+        name: "account_id",
+        kind: "scalar",
+        localName: "account_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "hero_id",
+        kind: "scalar",
+        localName: "hero_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerCrashSentinelFile_Player>): CMsgServerCrashSentinelFile_Player {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerCrashSentinelFile_Player>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerCrashSentinelFile_Player,
+  ): CMsgServerCrashSentinelFile_Player {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 account_id */ 1:
+          message.account_id = reader.uint32();
+          break;
+        case /* optional uint32 hero_id */ 2:
+          message.hero_id = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerCrashSentinelFile_Player,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 account_id = 1; */
+    if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
+    /* optional uint32 hero_id = 2; */
+    if (message.hero_id !== undefined) writer.tag(2, WireType.Varint).uint32(message.hero_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerCrashSentinelFile.Player
@@ -2269,143 +2269,143 @@ class CMsgServerCrashSentinelFile_Player$Type extends MessageType<CMsgServerCras
 export const CMsgServerCrashSentinelFile_Player = new CMsgServerCrashSentinelFile_Player$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerCrashSentinelFile_GameInfo$Type extends MessageType<CMsgServerCrashSentinelFile_GameInfo> {
-	constructor() {
-		super("CMsgServerCrashSentinelFile.GameInfo", [
-			{
-				no: 1,
-				name: "match_id",
-				kind: "scalar",
-				localName: "match_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "lobby_id",
-				kind: "scalar",
-				localName: "lobby_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "server_state",
-				kind: "scalar",
-				localName: "server_state",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "players",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerCrashSentinelFile_Player,
-			},
-			{
-				no: 6,
-				name: "match_mode",
-				kind: "enum",
-				localName: "match_mode",
-				opt: true,
-				T: () => ["ECitadelMatchMode", ECitadelMatchMode],
-			},
-			{
-				no: 7,
-				name: "game_mode",
-				kind: "enum",
-				localName: "game_mode",
-				opt: true,
-				T: () => ["ECitadelGameMode", ECitadelGameMode],
-			},
-			{
-				no: 8,
-				name: "was_server_shutdown",
-				kind: "scalar",
-				localName: "was_server_shutdown",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerCrashSentinelFile_GameInfo>): CMsgServerCrashSentinelFile_GameInfo {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.players = [];
-		if (value !== undefined) reflectionMergePartial<CMsgServerCrashSentinelFile_GameInfo>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerCrashSentinelFile_GameInfo,
-	): CMsgServerCrashSentinelFile_GameInfo {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint64 match_id */ 1:
-					message.match_id = reader.uint64().toBigInt();
-					break;
-				case /* optional fixed64 lobby_id */ 2:
-					message.lobby_id = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 server_state */ 3:
-					message.server_state = reader.uint32();
-					break;
-				case /* repeated CMsgServerCrashSentinelFile.Player players */ 5:
-					message.players.push(CMsgServerCrashSentinelFile_Player.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* optional ECitadelMatchMode match_mode */ 6:
-					message.match_mode = reader.int32();
-					break;
-				case /* optional ECitadelGameMode game_mode */ 7:
-					message.game_mode = reader.int32();
-					break;
-				case /* optional bool was_server_shutdown */ 8:
-					message.was_server_shutdown = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerCrashSentinelFile_GameInfo,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint64 match_id = 1; */
-		if (message.match_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.match_id);
-		/* optional fixed64 lobby_id = 2; */
-		if (message.lobby_id !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.lobby_id);
-		/* optional uint32 server_state = 3; */
-		if (message.server_state !== undefined) writer.tag(3, WireType.Varint).uint32(message.server_state);
-		/* repeated CMsgServerCrashSentinelFile.Player players = 5; */
-		for (let i = 0; i < message.players.length; i++)
-			CMsgServerCrashSentinelFile_Player.internalBinaryWrite(
-				message.players[i],
-				writer.tag(5, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional ECitadelMatchMode match_mode = 6; */
-		if (message.match_mode !== undefined) writer.tag(6, WireType.Varint).int32(message.match_mode);
-		/* optional ECitadelGameMode game_mode = 7; */
-		if (message.game_mode !== undefined) writer.tag(7, WireType.Varint).int32(message.game_mode);
-		/* optional bool was_server_shutdown = 8; */
-		if (message.was_server_shutdown !== undefined) writer.tag(8, WireType.Varint).bool(message.was_server_shutdown);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerCrashSentinelFile.GameInfo", [
+      {
+        no: 1,
+        name: "match_id",
+        kind: "scalar",
+        localName: "match_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "lobby_id",
+        kind: "scalar",
+        localName: "lobby_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "server_state",
+        kind: "scalar",
+        localName: "server_state",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "players",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerCrashSentinelFile_Player,
+      },
+      {
+        no: 6,
+        name: "match_mode",
+        kind: "enum",
+        localName: "match_mode",
+        opt: true,
+        T: () => ["ECitadelMatchMode", ECitadelMatchMode],
+      },
+      {
+        no: 7,
+        name: "game_mode",
+        kind: "enum",
+        localName: "game_mode",
+        opt: true,
+        T: () => ["ECitadelGameMode", ECitadelGameMode],
+      },
+      {
+        no: 8,
+        name: "was_server_shutdown",
+        kind: "scalar",
+        localName: "was_server_shutdown",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerCrashSentinelFile_GameInfo>): CMsgServerCrashSentinelFile_GameInfo {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.players = [];
+    if (value !== undefined) reflectionMergePartial<CMsgServerCrashSentinelFile_GameInfo>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerCrashSentinelFile_GameInfo,
+  ): CMsgServerCrashSentinelFile_GameInfo {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint64 match_id */ 1:
+          message.match_id = reader.uint64().toBigInt();
+          break;
+        case /* optional fixed64 lobby_id */ 2:
+          message.lobby_id = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 server_state */ 3:
+          message.server_state = reader.uint32();
+          break;
+        case /* repeated CMsgServerCrashSentinelFile.Player players */ 5:
+          message.players.push(CMsgServerCrashSentinelFile_Player.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* optional ECitadelMatchMode match_mode */ 6:
+          message.match_mode = reader.int32();
+          break;
+        case /* optional ECitadelGameMode game_mode */ 7:
+          message.game_mode = reader.int32();
+          break;
+        case /* optional bool was_server_shutdown */ 8:
+          message.was_server_shutdown = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerCrashSentinelFile_GameInfo,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint64 match_id = 1; */
+    if (message.match_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.match_id);
+    /* optional fixed64 lobby_id = 2; */
+    if (message.lobby_id !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.lobby_id);
+    /* optional uint32 server_state = 3; */
+    if (message.server_state !== undefined) writer.tag(3, WireType.Varint).uint32(message.server_state);
+    /* repeated CMsgServerCrashSentinelFile.Player players = 5; */
+    for (let i = 0; i < message.players.length; i++)
+      CMsgServerCrashSentinelFile_Player.internalBinaryWrite(
+        message.players[i],
+        writer.tag(5, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional ECitadelMatchMode match_mode = 6; */
+    if (message.match_mode !== undefined) writer.tag(6, WireType.Varint).int32(message.match_mode);
+    /* optional ECitadelGameMode game_mode = 7; */
+    if (message.game_mode !== undefined) writer.tag(7, WireType.Varint).int32(message.game_mode);
+    /* optional bool was_server_shutdown = 8; */
+    if (message.was_server_shutdown !== undefined) writer.tag(8, WireType.Varint).bool(message.was_server_shutdown);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerCrashSentinelFile.GameInfo
@@ -2413,63 +2413,63 @@ class CMsgServerCrashSentinelFile_GameInfo$Type extends MessageType<CMsgServerCr
 export const CMsgServerCrashSentinelFile_GameInfo = new CMsgServerCrashSentinelFile_GameInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CServerLobbyData_PlayerMMR$Type extends MessageType<CServerLobbyData_PlayerMMR> {
-	constructor() {
-		super("CServerLobbyData_PlayerMMR", [
-			{
-				no: 1,
-				name: "players",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CServerLobbyData_PlayerMMR_Player,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CServerLobbyData_PlayerMMR>): CServerLobbyData_PlayerMMR {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.players = [];
-		if (value !== undefined) reflectionMergePartial<CServerLobbyData_PlayerMMR>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CServerLobbyData_PlayerMMR,
-	): CServerLobbyData_PlayerMMR {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CServerLobbyData_PlayerMMR.Player players */ 1:
-					message.players.push(CServerLobbyData_PlayerMMR_Player.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CServerLobbyData_PlayerMMR,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CServerLobbyData_PlayerMMR.Player players = 1; */
-		for (let i = 0; i < message.players.length; i++)
-			CServerLobbyData_PlayerMMR_Player.internalBinaryWrite(
-				message.players[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CServerLobbyData_PlayerMMR", [
+      {
+        no: 1,
+        name: "players",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CServerLobbyData_PlayerMMR_Player,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CServerLobbyData_PlayerMMR>): CServerLobbyData_PlayerMMR {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.players = [];
+    if (value !== undefined) reflectionMergePartial<CServerLobbyData_PlayerMMR>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CServerLobbyData_PlayerMMR,
+  ): CServerLobbyData_PlayerMMR {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CServerLobbyData_PlayerMMR.Player players */ 1:
+          message.players.push(CServerLobbyData_PlayerMMR_Player.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CServerLobbyData_PlayerMMR,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CServerLobbyData_PlayerMMR.Player players = 1; */
+    for (let i = 0; i < message.players.length; i++)
+      CServerLobbyData_PlayerMMR_Player.internalBinaryWrite(
+        message.players[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CServerLobbyData_PlayerMMR
@@ -2477,97 +2477,97 @@ class CServerLobbyData_PlayerMMR$Type extends MessageType<CServerLobbyData_Playe
 export const CServerLobbyData_PlayerMMR = new CServerLobbyData_PlayerMMR$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CServerLobbyData_PlayerMMR_Player$Type extends MessageType<CServerLobbyData_PlayerMMR_Player> {
-	constructor() {
-		super("CServerLobbyData_PlayerMMR.Player", [
-			{
-				no: 1,
-				name: "account_id",
-				kind: "scalar",
-				localName: "account_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "player_mmr",
-				kind: "scalar",
-				localName: "player_mmr",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "player_uncertainty",
-				kind: "scalar",
-				localName: "player_uncertainty",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "hero_mmr",
-				kind: "scalar",
-				localName: "hero_mmr",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CServerLobbyData_PlayerMMR_Player>): CServerLobbyData_PlayerMMR_Player {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CServerLobbyData_PlayerMMR_Player>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CServerLobbyData_PlayerMMR_Player,
-	): CServerLobbyData_PlayerMMR_Player {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 account_id */ 1:
-					message.account_id = reader.uint32();
-					break;
-				case /* optional uint32 player_mmr */ 2:
-					message.player_mmr = reader.uint32();
-					break;
-				case /* optional uint32 player_uncertainty */ 3:
-					message.player_uncertainty = reader.uint32();
-					break;
-				case /* optional uint32 hero_mmr */ 4:
-					message.hero_mmr = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CServerLobbyData_PlayerMMR_Player,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 account_id = 1; */
-		if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
-		/* optional uint32 player_mmr = 2; */
-		if (message.player_mmr !== undefined) writer.tag(2, WireType.Varint).uint32(message.player_mmr);
-		/* optional uint32 player_uncertainty = 3; */
-		if (message.player_uncertainty !== undefined) writer.tag(3, WireType.Varint).uint32(message.player_uncertainty);
-		/* optional uint32 hero_mmr = 4; */
-		if (message.hero_mmr !== undefined) writer.tag(4, WireType.Varint).uint32(message.hero_mmr);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CServerLobbyData_PlayerMMR.Player", [
+      {
+        no: 1,
+        name: "account_id",
+        kind: "scalar",
+        localName: "account_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "player_mmr",
+        kind: "scalar",
+        localName: "player_mmr",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "player_uncertainty",
+        kind: "scalar",
+        localName: "player_uncertainty",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "hero_mmr",
+        kind: "scalar",
+        localName: "hero_mmr",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CServerLobbyData_PlayerMMR_Player>): CServerLobbyData_PlayerMMR_Player {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CServerLobbyData_PlayerMMR_Player>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CServerLobbyData_PlayerMMR_Player,
+  ): CServerLobbyData_PlayerMMR_Player {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 account_id */ 1:
+          message.account_id = reader.uint32();
+          break;
+        case /* optional uint32 player_mmr */ 2:
+          message.player_mmr = reader.uint32();
+          break;
+        case /* optional uint32 player_uncertainty */ 3:
+          message.player_uncertainty = reader.uint32();
+          break;
+        case /* optional uint32 hero_mmr */ 4:
+          message.hero_mmr = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CServerLobbyData_PlayerMMR_Player,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 account_id = 1; */
+    if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
+    /* optional uint32 player_mmr = 2; */
+    if (message.player_mmr !== undefined) writer.tag(2, WireType.Varint).uint32(message.player_mmr);
+    /* optional uint32 player_uncertainty = 3; */
+    if (message.player_uncertainty !== undefined) writer.tag(3, WireType.Varint).uint32(message.player_uncertainty);
+    /* optional uint32 hero_mmr = 4; */
+    if (message.hero_mmr !== undefined) writer.tag(4, WireType.Varint).uint32(message.hero_mmr);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CServerLobbyData_PlayerMMR.Player
@@ -2575,109 +2575,109 @@ class CServerLobbyData_PlayerMMR_Player$Type extends MessageType<CServerLobbyDat
 export const CServerLobbyData_PlayerMMR_Player = new CServerLobbyData_PlayerMMR_Player$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CServerLobbyData_PlayerInfo$Type extends MessageType<CServerLobbyData_PlayerInfo> {
-	constructor() {
-		super("CServerLobbyData_PlayerInfo", [
-			{
-				no: 1,
-				name: "account_id",
-				kind: "scalar",
-				localName: "account_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "account_stats",
-				kind: "message",
-				localName: "account_stats",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgAccountHeroStats,
-			},
-			{
-				no: 4,
-				name: "mmr_level",
-				kind: "scalar",
-				localName: "mmr_level",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "book_info",
-				kind: "message",
-				localName: "book_info",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgAccountBookStats,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CServerLobbyData_PlayerInfo>): CServerLobbyData_PlayerInfo {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.account_stats = [];
-		message.book_info = [];
-		if (value !== undefined) reflectionMergePartial<CServerLobbyData_PlayerInfo>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CServerLobbyData_PlayerInfo,
-	): CServerLobbyData_PlayerInfo {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 account_id */ 1:
-					message.account_id = reader.uint32();
-					break;
-				case /* repeated CMsgAccountHeroStats account_stats */ 2:
-					message.account_stats.push(CMsgAccountHeroStats.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* optional uint32 mmr_level */ 4:
-					message.mmr_level = reader.uint32();
-					break;
-				case /* repeated CMsgAccountBookStats book_info */ 5:
-					message.book_info.push(CMsgAccountBookStats.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CServerLobbyData_PlayerInfo,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 account_id = 1; */
-		if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
-		/* repeated CMsgAccountHeroStats account_stats = 2; */
-		for (let i = 0; i < message.account_stats.length; i++)
-			CMsgAccountHeroStats.internalBinaryWrite(
-				message.account_stats[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 mmr_level = 4; */
-		if (message.mmr_level !== undefined) writer.tag(4, WireType.Varint).uint32(message.mmr_level);
-		/* repeated CMsgAccountBookStats book_info = 5; */
-		for (let i = 0; i < message.book_info.length; i++)
-			CMsgAccountBookStats.internalBinaryWrite(
-				message.book_info[i],
-				writer.tag(5, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CServerLobbyData_PlayerInfo", [
+      {
+        no: 1,
+        name: "account_id",
+        kind: "scalar",
+        localName: "account_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "account_stats",
+        kind: "message",
+        localName: "account_stats",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgAccountHeroStats,
+      },
+      {
+        no: 4,
+        name: "mmr_level",
+        kind: "scalar",
+        localName: "mmr_level",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "book_info",
+        kind: "message",
+        localName: "book_info",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgAccountBookStats,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CServerLobbyData_PlayerInfo>): CServerLobbyData_PlayerInfo {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.account_stats = [];
+    message.book_info = [];
+    if (value !== undefined) reflectionMergePartial<CServerLobbyData_PlayerInfo>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CServerLobbyData_PlayerInfo,
+  ): CServerLobbyData_PlayerInfo {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 account_id */ 1:
+          message.account_id = reader.uint32();
+          break;
+        case /* repeated CMsgAccountHeroStats account_stats */ 2:
+          message.account_stats.push(CMsgAccountHeroStats.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* optional uint32 mmr_level */ 4:
+          message.mmr_level = reader.uint32();
+          break;
+        case /* repeated CMsgAccountBookStats book_info */ 5:
+          message.book_info.push(CMsgAccountBookStats.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CServerLobbyData_PlayerInfo,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 account_id = 1; */
+    if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
+    /* repeated CMsgAccountHeroStats account_stats = 2; */
+    for (let i = 0; i < message.account_stats.length; i++)
+      CMsgAccountHeroStats.internalBinaryWrite(
+        message.account_stats[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 mmr_level = 4; */
+    if (message.mmr_level !== undefined) writer.tag(4, WireType.Varint).uint32(message.mmr_level);
+    /* repeated CMsgAccountBookStats book_info = 5; */
+    for (let i = 0; i < message.book_info.length; i++)
+      CMsgAccountBookStats.internalBinaryWrite(
+        message.book_info[i],
+        writer.tag(5, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CServerLobbyData_PlayerInfo
@@ -2685,65 +2685,65 @@ class CServerLobbyData_PlayerInfo$Type extends MessageType<CServerLobbyData_Play
 export const CServerLobbyData_PlayerInfo = new CServerLobbyData_PlayerInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CServerLobbyData_PostMatchSurvey$Type extends MessageType<CServerLobbyData_PostMatchSurvey> {
-	constructor() {
-		super("CServerLobbyData_PostMatchSurvey", [
-			{
-				no: 1,
-				name: "surveys",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CServerLobbyData_PostMatchSurvey_PlayerSurvey,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CServerLobbyData_PostMatchSurvey>): CServerLobbyData_PostMatchSurvey {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.surveys = [];
-		if (value !== undefined) reflectionMergePartial<CServerLobbyData_PostMatchSurvey>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CServerLobbyData_PostMatchSurvey,
-	): CServerLobbyData_PostMatchSurvey {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CServerLobbyData_PostMatchSurvey.PlayerSurvey surveys */ 1:
-					message.surveys.push(
-						CServerLobbyData_PostMatchSurvey_PlayerSurvey.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CServerLobbyData_PostMatchSurvey,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CServerLobbyData_PostMatchSurvey.PlayerSurvey surveys = 1; */
-		for (let i = 0; i < message.surveys.length; i++)
-			CServerLobbyData_PostMatchSurvey_PlayerSurvey.internalBinaryWrite(
-				message.surveys[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CServerLobbyData_PostMatchSurvey", [
+      {
+        no: 1,
+        name: "surveys",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CServerLobbyData_PostMatchSurvey_PlayerSurvey,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CServerLobbyData_PostMatchSurvey>): CServerLobbyData_PostMatchSurvey {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.surveys = [];
+    if (value !== undefined) reflectionMergePartial<CServerLobbyData_PostMatchSurvey>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CServerLobbyData_PostMatchSurvey,
+  ): CServerLobbyData_PostMatchSurvey {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CServerLobbyData_PostMatchSurvey.PlayerSurvey surveys */ 1:
+          message.surveys.push(
+            CServerLobbyData_PostMatchSurvey_PlayerSurvey.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CServerLobbyData_PostMatchSurvey,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CServerLobbyData_PostMatchSurvey.PlayerSurvey surveys = 1; */
+    for (let i = 0; i < message.surveys.length; i++)
+      CServerLobbyData_PostMatchSurvey_PlayerSurvey.internalBinaryWrite(
+        message.surveys[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CServerLobbyData_PostMatchSurvey
@@ -2751,74 +2751,74 @@ class CServerLobbyData_PostMatchSurvey$Type extends MessageType<CServerLobbyData
 export const CServerLobbyData_PostMatchSurvey = new CServerLobbyData_PostMatchSurvey$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CServerLobbyData_PostMatchSurvey_PlayerSurvey$Type extends MessageType<CServerLobbyData_PostMatchSurvey_PlayerSurvey> {
-	constructor() {
-		super("CServerLobbyData_PostMatchSurvey.PlayerSurvey", [
-			{
-				no: 1,
-				name: "account_id",
-				kind: "scalar",
-				localName: "account_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "question_id",
-				kind: "scalar",
-				localName: "question_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CServerLobbyData_PostMatchSurvey_PlayerSurvey>,
-	): CServerLobbyData_PostMatchSurvey_PlayerSurvey {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CServerLobbyData_PostMatchSurvey_PlayerSurvey>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CServerLobbyData_PostMatchSurvey_PlayerSurvey,
-	): CServerLobbyData_PostMatchSurvey_PlayerSurvey {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 account_id */ 1:
-					message.account_id = reader.uint32();
-					break;
-				case /* optional uint32 question_id */ 2:
-					message.question_id = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CServerLobbyData_PostMatchSurvey_PlayerSurvey,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 account_id = 1; */
-		if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
-		/* optional uint32 question_id = 2; */
-		if (message.question_id !== undefined) writer.tag(2, WireType.Varint).uint32(message.question_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CServerLobbyData_PostMatchSurvey.PlayerSurvey", [
+      {
+        no: 1,
+        name: "account_id",
+        kind: "scalar",
+        localName: "account_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "question_id",
+        kind: "scalar",
+        localName: "question_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CServerLobbyData_PostMatchSurvey_PlayerSurvey>,
+  ): CServerLobbyData_PostMatchSurvey_PlayerSurvey {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CServerLobbyData_PostMatchSurvey_PlayerSurvey>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CServerLobbyData_PostMatchSurvey_PlayerSurvey,
+  ): CServerLobbyData_PostMatchSurvey_PlayerSurvey {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 account_id */ 1:
+          message.account_id = reader.uint32();
+          break;
+        case /* optional uint32 question_id */ 2:
+          message.question_id = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CServerLobbyData_PostMatchSurvey_PlayerSurvey,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 account_id = 1; */
+    if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
+    /* optional uint32 question_id = 2; */
+    if (message.question_id !== undefined) writer.tag(2, WireType.Varint).uint32(message.question_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CServerLobbyData_PostMatchSurvey.PlayerSurvey
@@ -2826,58 +2826,58 @@ class CServerLobbyData_PostMatchSurvey_PlayerSurvey$Type extends MessageType<CSe
 export const CServerLobbyData_PostMatchSurvey_PlayerSurvey = new CServerLobbyData_PostMatchSurvey_PlayerSurvey$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CServerLobbyData_AutoTest$Type extends MessageType<CServerLobbyData_AutoTest> {
-	constructor() {
-		super("CServerLobbyData_AutoTest", [
-			{
-				no: 2,
-				name: "max_duration_s",
-				kind: "scalar",
-				localName: "max_duration_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CServerLobbyData_AutoTest>): CServerLobbyData_AutoTest {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CServerLobbyData_AutoTest>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CServerLobbyData_AutoTest,
-	): CServerLobbyData_AutoTest {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 max_duration_s */ 2:
-					message.max_duration_s = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CServerLobbyData_AutoTest,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 max_duration_s = 2; */
-		if (message.max_duration_s !== undefined) writer.tag(2, WireType.Varint).uint32(message.max_duration_s);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CServerLobbyData_AutoTest", [
+      {
+        no: 2,
+        name: "max_duration_s",
+        kind: "scalar",
+        localName: "max_duration_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CServerLobbyData_AutoTest>): CServerLobbyData_AutoTest {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CServerLobbyData_AutoTest>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CServerLobbyData_AutoTest,
+  ): CServerLobbyData_AutoTest {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 max_duration_s */ 2:
+          message.max_duration_s = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CServerLobbyData_AutoTest,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 max_duration_s = 2; */
+    if (message.max_duration_s !== undefined) writer.tag(2, WireType.Varint).uint32(message.max_duration_s);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CServerLobbyData_AutoTest
@@ -2885,105 +2885,105 @@ class CServerLobbyData_AutoTest$Type extends MessageType<CServerLobbyData_AutoTe
 export const CServerLobbyData_AutoTest = new CServerLobbyData_AutoTest$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSOCitadelServerDynamicLobby$Type extends MessageType<CSOCitadelServerDynamicLobby> {
-	constructor() {
-		super("CSOCitadelServerDynamicLobby", [
-			{
-				no: 1,
-				name: "lobby_id",
-				kind: "scalar",
-				localName: "lobby_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "left_account_ids",
-				kind: "scalar",
-				localName: "left_account_ids",
-				repeat: 1 /*RepeatType.PACKED*/,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "broadcast_active",
-				kind: "scalar",
-				localName: "broadcast_active",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "spectator_count",
-				kind: "scalar",
-				localName: "spectator_count",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSOCitadelServerDynamicLobby>): CSOCitadelServerDynamicLobby {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.left_account_ids = [];
-		if (value !== undefined) reflectionMergePartial<CSOCitadelServerDynamicLobby>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSOCitadelServerDynamicLobby,
-	): CSOCitadelServerDynamicLobby {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint64 lobby_id */ 1:
-					message.lobby_id = reader.uint64().toBigInt();
-					break;
-				case /* repeated uint32 left_account_ids = 2 [packed = true];*/ 2:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.left_account_ids.push(reader.uint32());
-					else message.left_account_ids.push(reader.uint32());
-					break;
-				case /* optional bool broadcast_active */ 3:
-					message.broadcast_active = reader.bool();
-					break;
-				case /* optional uint32 spectator_count */ 4:
-					message.spectator_count = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSOCitadelServerDynamicLobby,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint64 lobby_id = 1; */
-		if (message.lobby_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.lobby_id);
-		/* repeated uint32 left_account_ids = 2 [packed = true]; */
-		if (message.left_account_ids.length) {
-			writer.tag(2, WireType.LengthDelimited).fork();
-			for (let i = 0; i < message.left_account_ids.length; i++) writer.uint32(message.left_account_ids[i]);
-			writer.join();
-		}
-		/* optional bool broadcast_active = 3; */
-		if (message.broadcast_active !== undefined) writer.tag(3, WireType.Varint).bool(message.broadcast_active);
-		/* optional uint32 spectator_count = 4; */
-		if (message.spectator_count !== undefined) writer.tag(4, WireType.Varint).uint32(message.spectator_count);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSOCitadelServerDynamicLobby", [
+      {
+        no: 1,
+        name: "lobby_id",
+        kind: "scalar",
+        localName: "lobby_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "left_account_ids",
+        kind: "scalar",
+        localName: "left_account_ids",
+        repeat: 1 /*RepeatType.PACKED*/,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "broadcast_active",
+        kind: "scalar",
+        localName: "broadcast_active",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "spectator_count",
+        kind: "scalar",
+        localName: "spectator_count",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSOCitadelServerDynamicLobby>): CSOCitadelServerDynamicLobby {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.left_account_ids = [];
+    if (value !== undefined) reflectionMergePartial<CSOCitadelServerDynamicLobby>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSOCitadelServerDynamicLobby,
+  ): CSOCitadelServerDynamicLobby {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint64 lobby_id */ 1:
+          message.lobby_id = reader.uint64().toBigInt();
+          break;
+        case /* repeated uint32 left_account_ids = 2 [packed = true];*/ 2:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.left_account_ids.push(reader.uint32());
+          else message.left_account_ids.push(reader.uint32());
+          break;
+        case /* optional bool broadcast_active */ 3:
+          message.broadcast_active = reader.bool();
+          break;
+        case /* optional uint32 spectator_count */ 4:
+          message.spectator_count = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSOCitadelServerDynamicLobby,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint64 lobby_id = 1; */
+    if (message.lobby_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.lobby_id);
+    /* repeated uint32 left_account_ids = 2 [packed = true]; */
+    if (message.left_account_ids.length) {
+      writer.tag(2, WireType.LengthDelimited).fork();
+      for (let i = 0; i < message.left_account_ids.length; i++) writer.uint32(message.left_account_ids[i]);
+      writer.join();
+    }
+    /* optional bool broadcast_active = 3; */
+    if (message.broadcast_active !== undefined) writer.tag(3, WireType.Varint).bool(message.broadcast_active);
+    /* optional uint32 spectator_count = 4; */
+    if (message.spectator_count !== undefined) writer.tag(4, WireType.Varint).uint32(message.spectator_count);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSOCitadelServerDynamicLobby
@@ -2991,316 +2991,316 @@ class CSOCitadelServerDynamicLobby$Type extends MessageType<CSOCitadelServerDyna
 export const CSOCitadelServerDynamicLobby = new CSOCitadelServerDynamicLobby$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSOCitadelServerStaticLobby$Type extends MessageType<CSOCitadelServerStaticLobby> {
-	constructor() {
-		super("CSOCitadelServerStaticLobby", [
-			{
-				no: 1,
-				name: "extra_messages",
-				kind: "message",
-				localName: "extra_messages",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CExtraMsgBlock,
-			},
-			{
-				no: 2,
-				name: "server_steam_id",
-				kind: "scalar",
-				localName: "server_steam_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "lobby_id",
-				kind: "scalar",
-				localName: "lobby_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 4,
-				name: "replay_salt",
-				kind: "scalar",
-				localName: "replay_salt",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 5,
-				name: "level_name",
-				kind: "scalar",
-				localName: "level_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 6,
-				name: "members",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CSOCitadelServerStaticLobby_Member,
-			},
-			{
-				no: 7,
-				name: "dev_settings",
-				kind: "message",
-				localName: "dev_settings",
-				T: () => CSOCitadelServerStaticLobby_DevSettings,
-			},
-			{
-				no: 8,
-				name: "gc_provided_heroes",
-				kind: "scalar",
-				localName: "gc_provided_heroes",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 9,
-				name: "bot_difficulty",
-				kind: "enum",
-				localName: "bot_difficulty",
-				opt: true,
-				T: () => ["ECitadelBotDifficulty", ECitadelBotDifficulty],
-			},
-			{
-				no: 10,
-				name: "metadata_salt",
-				kind: "scalar",
-				localName: "metadata_salt",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 11,
-				name: "match_start_time",
-				kind: "scalar",
-				localName: "match_start_time",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 15,
-				name: "experimental_gameplay_state",
-				kind: "scalar",
-				localName: "experimental_gameplay_state",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 16,
-				name: "region_mode",
-				kind: "enum",
-				localName: "region_mode",
-				opt: true,
-				T: () => ["ECitadelRegionMode", ECitadelRegionMode],
-			},
-			{
-				no: 17,
-				name: "broadcast_url",
-				kind: "scalar",
-				localName: "broadcast_url",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 18,
-				name: "new_player_pool",
-				kind: "scalar",
-				localName: "new_player_pool",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 19,
-				name: "low_pri_pool",
-				kind: "scalar",
-				localName: "low_pri_pool",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 20,
-				name: "is_restricted_access",
-				kind: "scalar",
-				localName: "is_restricted_access",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 21,
-				name: "cheats_enabled",
-				kind: "scalar",
-				localName: "cheats_enabled",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 22,
-				name: "duplicate_heroes_enabled",
-				kind: "scalar",
-				localName: "duplicate_heroes_enabled",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSOCitadelServerStaticLobby>): CSOCitadelServerStaticLobby {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.extra_messages = [];
-		message.members = [];
-		if (value !== undefined) reflectionMergePartial<CSOCitadelServerStaticLobby>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSOCitadelServerStaticLobby,
-	): CSOCitadelServerStaticLobby {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CExtraMsgBlock extra_messages */ 1:
-					message.extra_messages.push(CExtraMsgBlock.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* optional fixed64 server_steam_id */ 2:
-					message.server_steam_id = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint64 lobby_id */ 3:
-					message.lobby_id = reader.uint64().toBigInt();
-					break;
-				case /* optional fixed32 replay_salt */ 4:
-					message.replay_salt = reader.fixed32();
-					break;
-				case /* optional string level_name */ 5:
-					message.level_name = reader.string();
-					break;
-				case /* repeated CSOCitadelServerStaticLobby.Member members */ 6:
-					message.members.push(CSOCitadelServerStaticLobby_Member.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* optional CSOCitadelServerStaticLobby.DevSettings dev_settings */ 7:
-					message.dev_settings = CSOCitadelServerStaticLobby_DevSettings.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.dev_settings,
-					);
-					break;
-				case /* optional bool gc_provided_heroes */ 8:
-					message.gc_provided_heroes = reader.bool();
-					break;
-				case /* optional ECitadelBotDifficulty bot_difficulty */ 9:
-					message.bot_difficulty = reader.int32();
-					break;
-				case /* optional fixed32 metadata_salt */ 10:
-					message.metadata_salt = reader.fixed32();
-					break;
-				case /* optional uint32 match_start_time */ 11:
-					message.match_start_time = reader.uint32();
-					break;
-				case /* optional uint32 experimental_gameplay_state */ 15:
-					message.experimental_gameplay_state = reader.uint32();
-					break;
-				case /* optional ECitadelRegionMode region_mode */ 16:
-					message.region_mode = reader.int32();
-					break;
-				case /* optional string broadcast_url */ 17:
-					message.broadcast_url = reader.string();
-					break;
-				case /* optional bool new_player_pool */ 18:
-					message.new_player_pool = reader.bool();
-					break;
-				case /* optional bool low_pri_pool */ 19:
-					message.low_pri_pool = reader.bool();
-					break;
-				case /* optional bool is_restricted_access */ 20:
-					message.is_restricted_access = reader.bool();
-					break;
-				case /* optional bool cheats_enabled */ 21:
-					message.cheats_enabled = reader.bool();
-					break;
-				case /* optional bool duplicate_heroes_enabled */ 22:
-					message.duplicate_heroes_enabled = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSOCitadelServerStaticLobby,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CExtraMsgBlock extra_messages = 1; */
-		for (let i = 0; i < message.extra_messages.length; i++)
-			CExtraMsgBlock.internalBinaryWrite(
-				message.extra_messages[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional fixed64 server_steam_id = 2; */
-		if (message.server_steam_id !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.server_steam_id);
-		/* optional uint64 lobby_id = 3; */
-		if (message.lobby_id !== undefined) writer.tag(3, WireType.Varint).uint64(message.lobby_id);
-		/* optional fixed32 replay_salt = 4; */
-		if (message.replay_salt !== undefined) writer.tag(4, WireType.Bit32).fixed32(message.replay_salt);
-		/* optional string level_name = 5; */
-		if (message.level_name !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.level_name);
-		/* repeated CSOCitadelServerStaticLobby.Member members = 6; */
-		for (let i = 0; i < message.members.length; i++)
-			CSOCitadelServerStaticLobby_Member.internalBinaryWrite(
-				message.members[i],
-				writer.tag(6, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CSOCitadelServerStaticLobby.DevSettings dev_settings = 7; */
-		if (message.dev_settings)
-			CSOCitadelServerStaticLobby_DevSettings.internalBinaryWrite(
-				message.dev_settings,
-				writer.tag(7, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional bool gc_provided_heroes = 8; */
-		if (message.gc_provided_heroes !== undefined) writer.tag(8, WireType.Varint).bool(message.gc_provided_heroes);
-		/* optional ECitadelBotDifficulty bot_difficulty = 9; */
-		if (message.bot_difficulty !== undefined) writer.tag(9, WireType.Varint).int32(message.bot_difficulty);
-		/* optional fixed32 metadata_salt = 10; */
-		if (message.metadata_salt !== undefined) writer.tag(10, WireType.Bit32).fixed32(message.metadata_salt);
-		/* optional uint32 match_start_time = 11; */
-		if (message.match_start_time !== undefined) writer.tag(11, WireType.Varint).uint32(message.match_start_time);
-		/* optional uint32 experimental_gameplay_state = 15; */
-		if (message.experimental_gameplay_state !== undefined)
-			writer.tag(15, WireType.Varint).uint32(message.experimental_gameplay_state);
-		/* optional ECitadelRegionMode region_mode = 16; */
-		if (message.region_mode !== undefined) writer.tag(16, WireType.Varint).int32(message.region_mode);
-		/* optional string broadcast_url = 17; */
-		if (message.broadcast_url !== undefined) writer.tag(17, WireType.LengthDelimited).string(message.broadcast_url);
-		/* optional bool new_player_pool = 18; */
-		if (message.new_player_pool !== undefined) writer.tag(18, WireType.Varint).bool(message.new_player_pool);
-		/* optional bool low_pri_pool = 19; */
-		if (message.low_pri_pool !== undefined) writer.tag(19, WireType.Varint).bool(message.low_pri_pool);
-		/* optional bool is_restricted_access = 20; */
-		if (message.is_restricted_access !== undefined) writer.tag(20, WireType.Varint).bool(message.is_restricted_access);
-		/* optional bool cheats_enabled = 21; */
-		if (message.cheats_enabled !== undefined) writer.tag(21, WireType.Varint).bool(message.cheats_enabled);
-		/* optional bool duplicate_heroes_enabled = 22; */
-		if (message.duplicate_heroes_enabled !== undefined)
-			writer.tag(22, WireType.Varint).bool(message.duplicate_heroes_enabled);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSOCitadelServerStaticLobby", [
+      {
+        no: 1,
+        name: "extra_messages",
+        kind: "message",
+        localName: "extra_messages",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CExtraMsgBlock,
+      },
+      {
+        no: 2,
+        name: "server_steam_id",
+        kind: "scalar",
+        localName: "server_steam_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "lobby_id",
+        kind: "scalar",
+        localName: "lobby_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 4,
+        name: "replay_salt",
+        kind: "scalar",
+        localName: "replay_salt",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 5,
+        name: "level_name",
+        kind: "scalar",
+        localName: "level_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 6,
+        name: "members",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CSOCitadelServerStaticLobby_Member,
+      },
+      {
+        no: 7,
+        name: "dev_settings",
+        kind: "message",
+        localName: "dev_settings",
+        T: () => CSOCitadelServerStaticLobby_DevSettings,
+      },
+      {
+        no: 8,
+        name: "gc_provided_heroes",
+        kind: "scalar",
+        localName: "gc_provided_heroes",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 9,
+        name: "bot_difficulty",
+        kind: "enum",
+        localName: "bot_difficulty",
+        opt: true,
+        T: () => ["ECitadelBotDifficulty", ECitadelBotDifficulty],
+      },
+      {
+        no: 10,
+        name: "metadata_salt",
+        kind: "scalar",
+        localName: "metadata_salt",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 11,
+        name: "match_start_time",
+        kind: "scalar",
+        localName: "match_start_time",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 15,
+        name: "experimental_gameplay_state",
+        kind: "scalar",
+        localName: "experimental_gameplay_state",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 16,
+        name: "region_mode",
+        kind: "enum",
+        localName: "region_mode",
+        opt: true,
+        T: () => ["ECitadelRegionMode", ECitadelRegionMode],
+      },
+      {
+        no: 17,
+        name: "broadcast_url",
+        kind: "scalar",
+        localName: "broadcast_url",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 18,
+        name: "new_player_pool",
+        kind: "scalar",
+        localName: "new_player_pool",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 19,
+        name: "low_pri_pool",
+        kind: "scalar",
+        localName: "low_pri_pool",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 20,
+        name: "is_restricted_access",
+        kind: "scalar",
+        localName: "is_restricted_access",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 21,
+        name: "cheats_enabled",
+        kind: "scalar",
+        localName: "cheats_enabled",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 22,
+        name: "duplicate_heroes_enabled",
+        kind: "scalar",
+        localName: "duplicate_heroes_enabled",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSOCitadelServerStaticLobby>): CSOCitadelServerStaticLobby {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.extra_messages = [];
+    message.members = [];
+    if (value !== undefined) reflectionMergePartial<CSOCitadelServerStaticLobby>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSOCitadelServerStaticLobby,
+  ): CSOCitadelServerStaticLobby {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CExtraMsgBlock extra_messages */ 1:
+          message.extra_messages.push(CExtraMsgBlock.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* optional fixed64 server_steam_id */ 2:
+          message.server_steam_id = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint64 lobby_id */ 3:
+          message.lobby_id = reader.uint64().toBigInt();
+          break;
+        case /* optional fixed32 replay_salt */ 4:
+          message.replay_salt = reader.fixed32();
+          break;
+        case /* optional string level_name */ 5:
+          message.level_name = reader.string();
+          break;
+        case /* repeated CSOCitadelServerStaticLobby.Member members */ 6:
+          message.members.push(CSOCitadelServerStaticLobby_Member.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* optional CSOCitadelServerStaticLobby.DevSettings dev_settings */ 7:
+          message.dev_settings = CSOCitadelServerStaticLobby_DevSettings.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.dev_settings,
+          );
+          break;
+        case /* optional bool gc_provided_heroes */ 8:
+          message.gc_provided_heroes = reader.bool();
+          break;
+        case /* optional ECitadelBotDifficulty bot_difficulty */ 9:
+          message.bot_difficulty = reader.int32();
+          break;
+        case /* optional fixed32 metadata_salt */ 10:
+          message.metadata_salt = reader.fixed32();
+          break;
+        case /* optional uint32 match_start_time */ 11:
+          message.match_start_time = reader.uint32();
+          break;
+        case /* optional uint32 experimental_gameplay_state */ 15:
+          message.experimental_gameplay_state = reader.uint32();
+          break;
+        case /* optional ECitadelRegionMode region_mode */ 16:
+          message.region_mode = reader.int32();
+          break;
+        case /* optional string broadcast_url */ 17:
+          message.broadcast_url = reader.string();
+          break;
+        case /* optional bool new_player_pool */ 18:
+          message.new_player_pool = reader.bool();
+          break;
+        case /* optional bool low_pri_pool */ 19:
+          message.low_pri_pool = reader.bool();
+          break;
+        case /* optional bool is_restricted_access */ 20:
+          message.is_restricted_access = reader.bool();
+          break;
+        case /* optional bool cheats_enabled */ 21:
+          message.cheats_enabled = reader.bool();
+          break;
+        case /* optional bool duplicate_heroes_enabled */ 22:
+          message.duplicate_heroes_enabled = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSOCitadelServerStaticLobby,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CExtraMsgBlock extra_messages = 1; */
+    for (let i = 0; i < message.extra_messages.length; i++)
+      CExtraMsgBlock.internalBinaryWrite(
+        message.extra_messages[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional fixed64 server_steam_id = 2; */
+    if (message.server_steam_id !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.server_steam_id);
+    /* optional uint64 lobby_id = 3; */
+    if (message.lobby_id !== undefined) writer.tag(3, WireType.Varint).uint64(message.lobby_id);
+    /* optional fixed32 replay_salt = 4; */
+    if (message.replay_salt !== undefined) writer.tag(4, WireType.Bit32).fixed32(message.replay_salt);
+    /* optional string level_name = 5; */
+    if (message.level_name !== undefined) writer.tag(5, WireType.LengthDelimited).string(message.level_name);
+    /* repeated CSOCitadelServerStaticLobby.Member members = 6; */
+    for (let i = 0; i < message.members.length; i++)
+      CSOCitadelServerStaticLobby_Member.internalBinaryWrite(
+        message.members[i],
+        writer.tag(6, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CSOCitadelServerStaticLobby.DevSettings dev_settings = 7; */
+    if (message.dev_settings)
+      CSOCitadelServerStaticLobby_DevSettings.internalBinaryWrite(
+        message.dev_settings,
+        writer.tag(7, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional bool gc_provided_heroes = 8; */
+    if (message.gc_provided_heroes !== undefined) writer.tag(8, WireType.Varint).bool(message.gc_provided_heroes);
+    /* optional ECitadelBotDifficulty bot_difficulty = 9; */
+    if (message.bot_difficulty !== undefined) writer.tag(9, WireType.Varint).int32(message.bot_difficulty);
+    /* optional fixed32 metadata_salt = 10; */
+    if (message.metadata_salt !== undefined) writer.tag(10, WireType.Bit32).fixed32(message.metadata_salt);
+    /* optional uint32 match_start_time = 11; */
+    if (message.match_start_time !== undefined) writer.tag(11, WireType.Varint).uint32(message.match_start_time);
+    /* optional uint32 experimental_gameplay_state = 15; */
+    if (message.experimental_gameplay_state !== undefined)
+      writer.tag(15, WireType.Varint).uint32(message.experimental_gameplay_state);
+    /* optional ECitadelRegionMode region_mode = 16; */
+    if (message.region_mode !== undefined) writer.tag(16, WireType.Varint).int32(message.region_mode);
+    /* optional string broadcast_url = 17; */
+    if (message.broadcast_url !== undefined) writer.tag(17, WireType.LengthDelimited).string(message.broadcast_url);
+    /* optional bool new_player_pool = 18; */
+    if (message.new_player_pool !== undefined) writer.tag(18, WireType.Varint).bool(message.new_player_pool);
+    /* optional bool low_pri_pool = 19; */
+    if (message.low_pri_pool !== undefined) writer.tag(19, WireType.Varint).bool(message.low_pri_pool);
+    /* optional bool is_restricted_access = 20; */
+    if (message.is_restricted_access !== undefined) writer.tag(20, WireType.Varint).bool(message.is_restricted_access);
+    /* optional bool cheats_enabled = 21; */
+    if (message.cheats_enabled !== undefined) writer.tag(21, WireType.Varint).bool(message.cheats_enabled);
+    /* optional bool duplicate_heroes_enabled = 22; */
+    if (message.duplicate_heroes_enabled !== undefined)
+      writer.tag(22, WireType.Varint).bool(message.duplicate_heroes_enabled);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSOCitadelServerStaticLobby
@@ -3308,202 +3308,202 @@ class CSOCitadelServerStaticLobby$Type extends MessageType<CSOCitadelServerStati
 export const CSOCitadelServerStaticLobby = new CSOCitadelServerStaticLobby$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSOCitadelServerStaticLobby_Member$Type extends MessageType<CSOCitadelServerStaticLobby_Member> {
-	constructor() {
-		super("CSOCitadelServerStaticLobby.Member", [
-			{
-				no: 1,
-				name: "account_id",
-				kind: "scalar",
-				localName: "account_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "persona_name",
-				kind: "scalar",
-				localName: "persona_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "team",
-				kind: "enum",
-				opt: true,
-				T: () => ["ECitadelLobbyTeam", ECitadelLobbyTeam],
-			},
-			{
-				no: 4,
-				name: "player_slot",
-				kind: "scalar",
-				localName: "player_slot",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "hero_id",
-				kind: "scalar",
-				localName: "hero_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "party_index",
-				kind: "scalar",
-				localName: "party_index",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "platform",
-				kind: "enum",
-				opt: true,
-				T: () => ["EGCPlatform", EGCPlatform],
-			},
-			{
-				no: 8,
-				name: "award_ids",
-				kind: "enum",
-				localName: "award_ids",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => ["CSOCitadelServerStaticLobby.EAwardIDs", CSOCitadelServerStaticLobby_EAwardIDs],
-			},
-			{
-				no: 9,
-				name: "is_comms_restricted",
-				kind: "scalar",
-				localName: "is_comms_restricted",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 10,
-				name: "lane_id",
-				kind: "scalar",
-				localName: "lane_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 11,
-				name: "ranked_badge_level",
-				kind: "scalar",
-				localName: "ranked_badge_level",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 12,
-				name: "ranked_badge_detail",
-				kind: "scalar",
-				localName: "ranked_badge_detail",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSOCitadelServerStaticLobby_Member>): CSOCitadelServerStaticLobby_Member {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.award_ids = [];
-		if (value !== undefined) reflectionMergePartial<CSOCitadelServerStaticLobby_Member>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSOCitadelServerStaticLobby_Member,
-	): CSOCitadelServerStaticLobby_Member {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 account_id */ 1:
-					message.account_id = reader.uint32();
-					break;
-				case /* optional string persona_name */ 2:
-					message.persona_name = reader.string();
-					break;
-				case /* optional ECitadelLobbyTeam team */ 3:
-					message.team = reader.int32();
-					break;
-				case /* optional uint32 player_slot */ 4:
-					message.player_slot = reader.uint32();
-					break;
-				case /* optional uint32 hero_id */ 5:
-					message.hero_id = reader.uint32();
-					break;
-				case /* optional uint32 party_index */ 6:
-					message.party_index = reader.uint32();
-					break;
-				case /* optional EGCPlatform platform */ 7:
-					message.platform = reader.int32();
-					break;
-				case /* repeated CSOCitadelServerStaticLobby.EAwardIDs award_ids */ 8:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.award_ids.push(reader.int32());
-					else message.award_ids.push(reader.int32());
-					break;
-				case /* optional bool is_comms_restricted */ 9:
-					message.is_comms_restricted = reader.bool();
-					break;
-				case /* optional uint32 lane_id */ 10:
-					message.lane_id = reader.uint32();
-					break;
-				case /* optional uint32 ranked_badge_level */ 11:
-					message.ranked_badge_level = reader.uint32();
-					break;
-				case /* optional uint32 ranked_badge_detail */ 12:
-					message.ranked_badge_detail = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSOCitadelServerStaticLobby_Member,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 account_id = 1; */
-		if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
-		/* optional string persona_name = 2; */
-		if (message.persona_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.persona_name);
-		/* optional ECitadelLobbyTeam team = 3; */
-		if (message.team !== undefined) writer.tag(3, WireType.Varint).int32(message.team);
-		/* optional uint32 player_slot = 4; */
-		if (message.player_slot !== undefined) writer.tag(4, WireType.Varint).uint32(message.player_slot);
-		/* optional uint32 hero_id = 5; */
-		if (message.hero_id !== undefined) writer.tag(5, WireType.Varint).uint32(message.hero_id);
-		/* optional uint32 party_index = 6; */
-		if (message.party_index !== undefined) writer.tag(6, WireType.Varint).uint32(message.party_index);
-		/* optional EGCPlatform platform = 7; */
-		if (message.platform !== undefined) writer.tag(7, WireType.Varint).int32(message.platform);
-		/* repeated CSOCitadelServerStaticLobby.EAwardIDs award_ids = 8; */
-		for (let i = 0; i < message.award_ids.length; i++) writer.tag(8, WireType.Varint).int32(message.award_ids[i]);
-		/* optional bool is_comms_restricted = 9; */
-		if (message.is_comms_restricted !== undefined) writer.tag(9, WireType.Varint).bool(message.is_comms_restricted);
-		/* optional uint32 lane_id = 10; */
-		if (message.lane_id !== undefined) writer.tag(10, WireType.Varint).uint32(message.lane_id);
-		/* optional uint32 ranked_badge_level = 11; */
-		if (message.ranked_badge_level !== undefined) writer.tag(11, WireType.Varint).uint32(message.ranked_badge_level);
-		/* optional uint32 ranked_badge_detail = 12; */
-		if (message.ranked_badge_detail !== undefined) writer.tag(12, WireType.Varint).uint32(message.ranked_badge_detail);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSOCitadelServerStaticLobby.Member", [
+      {
+        no: 1,
+        name: "account_id",
+        kind: "scalar",
+        localName: "account_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "persona_name",
+        kind: "scalar",
+        localName: "persona_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "team",
+        kind: "enum",
+        opt: true,
+        T: () => ["ECitadelLobbyTeam", ECitadelLobbyTeam],
+      },
+      {
+        no: 4,
+        name: "player_slot",
+        kind: "scalar",
+        localName: "player_slot",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "hero_id",
+        kind: "scalar",
+        localName: "hero_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "party_index",
+        kind: "scalar",
+        localName: "party_index",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "platform",
+        kind: "enum",
+        opt: true,
+        T: () => ["EGCPlatform", EGCPlatform],
+      },
+      {
+        no: 8,
+        name: "award_ids",
+        kind: "enum",
+        localName: "award_ids",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => ["CSOCitadelServerStaticLobby.EAwardIDs", CSOCitadelServerStaticLobby_EAwardIDs],
+      },
+      {
+        no: 9,
+        name: "is_comms_restricted",
+        kind: "scalar",
+        localName: "is_comms_restricted",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 10,
+        name: "lane_id",
+        kind: "scalar",
+        localName: "lane_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 11,
+        name: "ranked_badge_level",
+        kind: "scalar",
+        localName: "ranked_badge_level",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 12,
+        name: "ranked_badge_detail",
+        kind: "scalar",
+        localName: "ranked_badge_detail",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSOCitadelServerStaticLobby_Member>): CSOCitadelServerStaticLobby_Member {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.award_ids = [];
+    if (value !== undefined) reflectionMergePartial<CSOCitadelServerStaticLobby_Member>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSOCitadelServerStaticLobby_Member,
+  ): CSOCitadelServerStaticLobby_Member {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 account_id */ 1:
+          message.account_id = reader.uint32();
+          break;
+        case /* optional string persona_name */ 2:
+          message.persona_name = reader.string();
+          break;
+        case /* optional ECitadelLobbyTeam team */ 3:
+          message.team = reader.int32();
+          break;
+        case /* optional uint32 player_slot */ 4:
+          message.player_slot = reader.uint32();
+          break;
+        case /* optional uint32 hero_id */ 5:
+          message.hero_id = reader.uint32();
+          break;
+        case /* optional uint32 party_index */ 6:
+          message.party_index = reader.uint32();
+          break;
+        case /* optional EGCPlatform platform */ 7:
+          message.platform = reader.int32();
+          break;
+        case /* repeated CSOCitadelServerStaticLobby.EAwardIDs award_ids */ 8:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.award_ids.push(reader.int32());
+          else message.award_ids.push(reader.int32());
+          break;
+        case /* optional bool is_comms_restricted */ 9:
+          message.is_comms_restricted = reader.bool();
+          break;
+        case /* optional uint32 lane_id */ 10:
+          message.lane_id = reader.uint32();
+          break;
+        case /* optional uint32 ranked_badge_level */ 11:
+          message.ranked_badge_level = reader.uint32();
+          break;
+        case /* optional uint32 ranked_badge_detail */ 12:
+          message.ranked_badge_detail = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSOCitadelServerStaticLobby_Member,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 account_id = 1; */
+    if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
+    /* optional string persona_name = 2; */
+    if (message.persona_name !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.persona_name);
+    /* optional ECitadelLobbyTeam team = 3; */
+    if (message.team !== undefined) writer.tag(3, WireType.Varint).int32(message.team);
+    /* optional uint32 player_slot = 4; */
+    if (message.player_slot !== undefined) writer.tag(4, WireType.Varint).uint32(message.player_slot);
+    /* optional uint32 hero_id = 5; */
+    if (message.hero_id !== undefined) writer.tag(5, WireType.Varint).uint32(message.hero_id);
+    /* optional uint32 party_index = 6; */
+    if (message.party_index !== undefined) writer.tag(6, WireType.Varint).uint32(message.party_index);
+    /* optional EGCPlatform platform = 7; */
+    if (message.platform !== undefined) writer.tag(7, WireType.Varint).int32(message.platform);
+    /* repeated CSOCitadelServerStaticLobby.EAwardIDs award_ids = 8; */
+    for (let i = 0; i < message.award_ids.length; i++) writer.tag(8, WireType.Varint).int32(message.award_ids[i]);
+    /* optional bool is_comms_restricted = 9; */
+    if (message.is_comms_restricted !== undefined) writer.tag(9, WireType.Varint).bool(message.is_comms_restricted);
+    /* optional uint32 lane_id = 10; */
+    if (message.lane_id !== undefined) writer.tag(10, WireType.Varint).uint32(message.lane_id);
+    /* optional uint32 ranked_badge_level = 11; */
+    if (message.ranked_badge_level !== undefined) writer.tag(11, WireType.Varint).uint32(message.ranked_badge_level);
+    /* optional uint32 ranked_badge_detail = 12; */
+    if (message.ranked_badge_detail !== undefined) writer.tag(12, WireType.Varint).uint32(message.ranked_badge_detail);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSOCitadelServerStaticLobby.Member
@@ -3511,58 +3511,58 @@ class CSOCitadelServerStaticLobby_Member$Type extends MessageType<CSOCitadelServ
 export const CSOCitadelServerStaticLobby_Member = new CSOCitadelServerStaticLobby_Member$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CSOCitadelServerStaticLobby_DevSettings$Type extends MessageType<CSOCitadelServerStaticLobby_DevSettings> {
-	constructor() {
-		super("CSOCitadelServerStaticLobby.DevSettings", [
-			{
-				no: 1,
-				name: "console_string",
-				kind: "scalar",
-				localName: "console_string",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CSOCitadelServerStaticLobby_DevSettings>): CSOCitadelServerStaticLobby_DevSettings {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CSOCitadelServerStaticLobby_DevSettings>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CSOCitadelServerStaticLobby_DevSettings,
-	): CSOCitadelServerStaticLobby_DevSettings {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string console_string */ 1:
-					message.console_string = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CSOCitadelServerStaticLobby_DevSettings,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string console_string = 1; */
-		if (message.console_string !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.console_string);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CSOCitadelServerStaticLobby.DevSettings", [
+      {
+        no: 1,
+        name: "console_string",
+        kind: "scalar",
+        localName: "console_string",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CSOCitadelServerStaticLobby_DevSettings>): CSOCitadelServerStaticLobby_DevSettings {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CSOCitadelServerStaticLobby_DevSettings>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CSOCitadelServerStaticLobby_DevSettings,
+  ): CSOCitadelServerStaticLobby_DevSettings {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string console_string */ 1:
+          message.console_string = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CSOCitadelServerStaticLobby_DevSettings,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string console_string = 1; */
+    if (message.console_string !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.console_string);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CSOCitadelServerStaticLobby.DevSettings
@@ -3570,193 +3570,193 @@ class CSOCitadelServerStaticLobby_DevSettings$Type extends MessageType<CSOCitade
 export const CSOCitadelServerStaticLobby_DevSettings = new CSOCitadelServerStaticLobby_DevSettings$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_ServerPerfStats$Type extends MessageType<CMsgServerSignoutData_ServerPerfStats> {
-	constructor() {
-		super("CMsgServerSignoutData_ServerPerfStats", [
-			{
-				no: 1,
-				name: "peak_memory_bytes",
-				kind: "scalar",
-				localName: "peak_memory_bytes",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "end_memory_bytes",
-				kind: "scalar",
-				localName: "end_memory_bytes",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "frame_time_max_micro_s",
-				kind: "scalar",
-				localName: "frame_time_max_micro_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "frame_time_95_micro_s",
-				kind: "scalar",
-				localName: "frame_time_95_micro_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "frame_time_avg_micro_s",
-				kind: "scalar",
-				localName: "frame_time_avg_micro_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "frame_idle_time_95_micro_s",
-				kind: "scalar",
-				localName: "frame_idle_time_95_micro_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "frame_idle_time_avg_micro_s",
-				kind: "scalar",
-				localName: "frame_idle_time_avg_micro_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "frame_time_80_micro_s",
-				kind: "scalar",
-				localName: "frame_time_80_micro_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "frame_time_99_micro_s",
-				kind: "scalar",
-				localName: "frame_time_99_micro_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "perf_samples",
-				kind: "message",
-				localName: "perf_samples",
-				T: () => CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerSignoutData_ServerPerfStats>): CMsgServerSignoutData_ServerPerfStats {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_ServerPerfStats>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_ServerPerfStats,
-	): CMsgServerSignoutData_ServerPerfStats {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint64 peak_memory_bytes */ 1:
-					message.peak_memory_bytes = reader.uint64().toBigInt();
-					break;
-				case /* optional uint64 end_memory_bytes */ 2:
-					message.end_memory_bytes = reader.uint64().toBigInt();
-					break;
-				case /* optional uint32 frame_time_max_micro_s */ 3:
-					message.frame_time_max_micro_s = reader.uint32();
-					break;
-				case /* optional uint32 frame_time_95_micro_s */ 4:
-					message.frame_time_95_micro_s = reader.uint32();
-					break;
-				case /* optional uint32 frame_time_avg_micro_s */ 5:
-					message.frame_time_avg_micro_s = reader.uint32();
-					break;
-				case /* optional uint32 frame_idle_time_95_micro_s */ 6:
-					message.frame_idle_time_95_micro_s = reader.uint32();
-					break;
-				case /* optional uint32 frame_idle_time_avg_micro_s */ 7:
-					message.frame_idle_time_avg_micro_s = reader.uint32();
-					break;
-				case /* optional uint32 frame_time_80_micro_s */ 8:
-					message.frame_time_80_micro_s = reader.uint32();
-					break;
-				case /* optional uint32 frame_time_99_micro_s */ 9:
-					message.frame_time_99_micro_s = reader.uint32();
-					break;
-				case /* optional CMsgServerSignoutData_ServerPerfStats.MatchPerfSamples perf_samples */ 10:
-					message.perf_samples = CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.perf_samples,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_ServerPerfStats,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint64 peak_memory_bytes = 1; */
-		if (message.peak_memory_bytes !== undefined) writer.tag(1, WireType.Varint).uint64(message.peak_memory_bytes);
-		/* optional uint64 end_memory_bytes = 2; */
-		if (message.end_memory_bytes !== undefined) writer.tag(2, WireType.Varint).uint64(message.end_memory_bytes);
-		/* optional uint32 frame_time_max_micro_s = 3; */
-		if (message.frame_time_max_micro_s !== undefined)
-			writer.tag(3, WireType.Varint).uint32(message.frame_time_max_micro_s);
-		/* optional uint32 frame_time_95_micro_s = 4; */
-		if (message.frame_time_95_micro_s !== undefined)
-			writer.tag(4, WireType.Varint).uint32(message.frame_time_95_micro_s);
-		/* optional uint32 frame_time_avg_micro_s = 5; */
-		if (message.frame_time_avg_micro_s !== undefined)
-			writer.tag(5, WireType.Varint).uint32(message.frame_time_avg_micro_s);
-		/* optional uint32 frame_idle_time_95_micro_s = 6; */
-		if (message.frame_idle_time_95_micro_s !== undefined)
-			writer.tag(6, WireType.Varint).uint32(message.frame_idle_time_95_micro_s);
-		/* optional uint32 frame_idle_time_avg_micro_s = 7; */
-		if (message.frame_idle_time_avg_micro_s !== undefined)
-			writer.tag(7, WireType.Varint).uint32(message.frame_idle_time_avg_micro_s);
-		/* optional uint32 frame_time_80_micro_s = 8; */
-		if (message.frame_time_80_micro_s !== undefined)
-			writer.tag(8, WireType.Varint).uint32(message.frame_time_80_micro_s);
-		/* optional uint32 frame_time_99_micro_s = 9; */
-		if (message.frame_time_99_micro_s !== undefined)
-			writer.tag(9, WireType.Varint).uint32(message.frame_time_99_micro_s);
-		/* optional CMsgServerSignoutData_ServerPerfStats.MatchPerfSamples perf_samples = 10; */
-		if (message.perf_samples)
-			CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples.internalBinaryWrite(
-				message.perf_samples,
-				writer.tag(10, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_ServerPerfStats", [
+      {
+        no: 1,
+        name: "peak_memory_bytes",
+        kind: "scalar",
+        localName: "peak_memory_bytes",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "end_memory_bytes",
+        kind: "scalar",
+        localName: "end_memory_bytes",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "frame_time_max_micro_s",
+        kind: "scalar",
+        localName: "frame_time_max_micro_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "frame_time_95_micro_s",
+        kind: "scalar",
+        localName: "frame_time_95_micro_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "frame_time_avg_micro_s",
+        kind: "scalar",
+        localName: "frame_time_avg_micro_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "frame_idle_time_95_micro_s",
+        kind: "scalar",
+        localName: "frame_idle_time_95_micro_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "frame_idle_time_avg_micro_s",
+        kind: "scalar",
+        localName: "frame_idle_time_avg_micro_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "frame_time_80_micro_s",
+        kind: "scalar",
+        localName: "frame_time_80_micro_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "frame_time_99_micro_s",
+        kind: "scalar",
+        localName: "frame_time_99_micro_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "perf_samples",
+        kind: "message",
+        localName: "perf_samples",
+        T: () => CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerSignoutData_ServerPerfStats>): CMsgServerSignoutData_ServerPerfStats {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_ServerPerfStats>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_ServerPerfStats,
+  ): CMsgServerSignoutData_ServerPerfStats {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint64 peak_memory_bytes */ 1:
+          message.peak_memory_bytes = reader.uint64().toBigInt();
+          break;
+        case /* optional uint64 end_memory_bytes */ 2:
+          message.end_memory_bytes = reader.uint64().toBigInt();
+          break;
+        case /* optional uint32 frame_time_max_micro_s */ 3:
+          message.frame_time_max_micro_s = reader.uint32();
+          break;
+        case /* optional uint32 frame_time_95_micro_s */ 4:
+          message.frame_time_95_micro_s = reader.uint32();
+          break;
+        case /* optional uint32 frame_time_avg_micro_s */ 5:
+          message.frame_time_avg_micro_s = reader.uint32();
+          break;
+        case /* optional uint32 frame_idle_time_95_micro_s */ 6:
+          message.frame_idle_time_95_micro_s = reader.uint32();
+          break;
+        case /* optional uint32 frame_idle_time_avg_micro_s */ 7:
+          message.frame_idle_time_avg_micro_s = reader.uint32();
+          break;
+        case /* optional uint32 frame_time_80_micro_s */ 8:
+          message.frame_time_80_micro_s = reader.uint32();
+          break;
+        case /* optional uint32 frame_time_99_micro_s */ 9:
+          message.frame_time_99_micro_s = reader.uint32();
+          break;
+        case /* optional CMsgServerSignoutData_ServerPerfStats.MatchPerfSamples perf_samples */ 10:
+          message.perf_samples = CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.perf_samples,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_ServerPerfStats,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint64 peak_memory_bytes = 1; */
+    if (message.peak_memory_bytes !== undefined) writer.tag(1, WireType.Varint).uint64(message.peak_memory_bytes);
+    /* optional uint64 end_memory_bytes = 2; */
+    if (message.end_memory_bytes !== undefined) writer.tag(2, WireType.Varint).uint64(message.end_memory_bytes);
+    /* optional uint32 frame_time_max_micro_s = 3; */
+    if (message.frame_time_max_micro_s !== undefined)
+      writer.tag(3, WireType.Varint).uint32(message.frame_time_max_micro_s);
+    /* optional uint32 frame_time_95_micro_s = 4; */
+    if (message.frame_time_95_micro_s !== undefined)
+      writer.tag(4, WireType.Varint).uint32(message.frame_time_95_micro_s);
+    /* optional uint32 frame_time_avg_micro_s = 5; */
+    if (message.frame_time_avg_micro_s !== undefined)
+      writer.tag(5, WireType.Varint).uint32(message.frame_time_avg_micro_s);
+    /* optional uint32 frame_idle_time_95_micro_s = 6; */
+    if (message.frame_idle_time_95_micro_s !== undefined)
+      writer.tag(6, WireType.Varint).uint32(message.frame_idle_time_95_micro_s);
+    /* optional uint32 frame_idle_time_avg_micro_s = 7; */
+    if (message.frame_idle_time_avg_micro_s !== undefined)
+      writer.tag(7, WireType.Varint).uint32(message.frame_idle_time_avg_micro_s);
+    /* optional uint32 frame_time_80_micro_s = 8; */
+    if (message.frame_time_80_micro_s !== undefined)
+      writer.tag(8, WireType.Varint).uint32(message.frame_time_80_micro_s);
+    /* optional uint32 frame_time_99_micro_s = 9; */
+    if (message.frame_time_99_micro_s !== undefined)
+      writer.tag(9, WireType.Varint).uint32(message.frame_time_99_micro_s);
+    /* optional CMsgServerSignoutData_ServerPerfStats.MatchPerfSamples perf_samples = 10; */
+    if (message.perf_samples)
+      CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples.internalBinaryWrite(
+        message.perf_samples,
+        writer.tag(10, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_ServerPerfStats
@@ -3764,547 +3764,547 @@ class CMsgServerSignoutData_ServerPerfStats$Type extends MessageType<CMsgServerS
 export const CMsgServerSignoutData_ServerPerfStats = new CMsgServerSignoutData_ServerPerfStats$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_ServerPerfStats_FrameCounts$Type extends MessageType<CMsgServerSignoutData_ServerPerfStats_FrameCounts> {
-	constructor() {
-		super("CMsgServerSignoutData_ServerPerfStats.FrameCounts", [
-			{
-				no: 1,
-				name: "num_frames",
-				kind: "scalar",
-				localName: "num_frames",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "longest_run",
-				kind: "scalar",
-				localName: "longest_run",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "num_runs",
-				kind: "scalar",
-				localName: "num_runs",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerSignoutData_ServerPerfStats_FrameCounts>,
-	): CMsgServerSignoutData_ServerPerfStats_FrameCounts {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgServerSignoutData_ServerPerfStats_FrameCounts>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_ServerPerfStats_FrameCounts,
-	): CMsgServerSignoutData_ServerPerfStats_FrameCounts {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 num_frames */ 1:
-					message.num_frames = reader.uint32();
-					break;
-				case /* optional uint32 longest_run */ 2:
-					message.longest_run = reader.uint32();
-					break;
-				case /* optional uint32 num_runs */ 3:
-					message.num_runs = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_ServerPerfStats_FrameCounts,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 num_frames = 1; */
-		if (message.num_frames !== undefined) writer.tag(1, WireType.Varint).uint32(message.num_frames);
-		/* optional uint32 longest_run = 2; */
-		if (message.longest_run !== undefined) writer.tag(2, WireType.Varint).uint32(message.longest_run);
-		/* optional uint32 num_runs = 3; */
-		if (message.num_runs !== undefined) writer.tag(3, WireType.Varint).uint32(message.num_runs);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_ServerPerfStats.FrameCounts", [
+      {
+        no: 1,
+        name: "num_frames",
+        kind: "scalar",
+        localName: "num_frames",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "longest_run",
+        kind: "scalar",
+        localName: "longest_run",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "num_runs",
+        kind: "scalar",
+        localName: "num_runs",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerSignoutData_ServerPerfStats_FrameCounts>,
+  ): CMsgServerSignoutData_ServerPerfStats_FrameCounts {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgServerSignoutData_ServerPerfStats_FrameCounts>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_ServerPerfStats_FrameCounts,
+  ): CMsgServerSignoutData_ServerPerfStats_FrameCounts {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 num_frames */ 1:
+          message.num_frames = reader.uint32();
+          break;
+        case /* optional uint32 longest_run */ 2:
+          message.longest_run = reader.uint32();
+          break;
+        case /* optional uint32 num_runs */ 3:
+          message.num_runs = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_ServerPerfStats_FrameCounts,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 num_frames = 1; */
+    if (message.num_frames !== undefined) writer.tag(1, WireType.Varint).uint32(message.num_frames);
+    /* optional uint32 longest_run = 2; */
+    if (message.longest_run !== undefined) writer.tag(2, WireType.Varint).uint32(message.longest_run);
+    /* optional uint32 num_runs = 3; */
+    if (message.num_runs !== undefined) writer.tag(3, WireType.Varint).uint32(message.num_runs);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_ServerPerfStats.FrameCounts
  */
 export const CMsgServerSignoutData_ServerPerfStats_FrameCounts =
-	new CMsgServerSignoutData_ServerPerfStats_FrameCounts$Type();
+  new CMsgServerSignoutData_ServerPerfStats_FrameCounts$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_ServerPerfStats_PerfSample$Type extends MessageType<CMsgServerSignoutData_ServerPerfStats_PerfSample> {
-	constructor() {
-		super("CMsgServerSignoutData_ServerPerfStats.PerfSample", [
-			{
-				no: 1,
-				name: "game_time_s",
-				kind: "scalar",
-				localName: "game_time_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "avg_frame",
-				kind: "scalar",
-				localName: "avg_frame",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "avg_idle",
-				kind: "scalar",
-				localName: "avg_idle",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "total_frames",
-				kind: "scalar",
-				localName: "total_frames",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "performant_frames",
-				kind: "message",
-				localName: "performant_frames",
-				T: () => CMsgServerSignoutData_ServerPerfStats_FrameCounts,
-			},
-			{
-				no: 6,
-				name: "long_frames",
-				kind: "message",
-				localName: "long_frames",
-				T: () => CMsgServerSignoutData_ServerPerfStats_FrameCounts,
-			},
-			{
-				no: 7,
-				name: "low_idle_frames",
-				kind: "message",
-				localName: "low_idle_frames",
-				T: () => CMsgServerSignoutData_ServerPerfStats_FrameCounts,
-			},
-			{
-				no: 8,
-				name: "memory_bytes",
-				kind: "scalar",
-				localName: "memory_bytes",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 9,
-				name: "peak_memory_bytes",
-				kind: "scalar",
-				localName: "peak_memory_bytes",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerSignoutData_ServerPerfStats_PerfSample>,
-	): CMsgServerSignoutData_ServerPerfStats_PerfSample {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgServerSignoutData_ServerPerfStats_PerfSample>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_ServerPerfStats_PerfSample,
-	): CMsgServerSignoutData_ServerPerfStats_PerfSample {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 game_time_s */ 1:
-					message.game_time_s = reader.uint32();
-					break;
-				case /* optional float avg_frame */ 2:
-					message.avg_frame = reader.float();
-					break;
-				case /* optional float avg_idle */ 3:
-					message.avg_idle = reader.float();
-					break;
-				case /* optional uint32 total_frames */ 4:
-					message.total_frames = reader.uint32();
-					break;
-				case /* optional CMsgServerSignoutData_ServerPerfStats.FrameCounts performant_frames */ 5:
-					message.performant_frames = CMsgServerSignoutData_ServerPerfStats_FrameCounts.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.performant_frames,
-					);
-					break;
-				case /* optional CMsgServerSignoutData_ServerPerfStats.FrameCounts long_frames */ 6:
-					message.long_frames = CMsgServerSignoutData_ServerPerfStats_FrameCounts.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.long_frames,
-					);
-					break;
-				case /* optional CMsgServerSignoutData_ServerPerfStats.FrameCounts low_idle_frames */ 7:
-					message.low_idle_frames = CMsgServerSignoutData_ServerPerfStats_FrameCounts.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.low_idle_frames,
-					);
-					break;
-				case /* optional uint64 memory_bytes */ 8:
-					message.memory_bytes = reader.uint64().toBigInt();
-					break;
-				case /* optional uint64 peak_memory_bytes */ 9:
-					message.peak_memory_bytes = reader.uint64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_ServerPerfStats_PerfSample,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 game_time_s = 1; */
-		if (message.game_time_s !== undefined) writer.tag(1, WireType.Varint).uint32(message.game_time_s);
-		/* optional float avg_frame = 2; */
-		if (message.avg_frame !== undefined) writer.tag(2, WireType.Bit32).float(message.avg_frame);
-		/* optional float avg_idle = 3; */
-		if (message.avg_idle !== undefined) writer.tag(3, WireType.Bit32).float(message.avg_idle);
-		/* optional uint32 total_frames = 4; */
-		if (message.total_frames !== undefined) writer.tag(4, WireType.Varint).uint32(message.total_frames);
-		/* optional CMsgServerSignoutData_ServerPerfStats.FrameCounts performant_frames = 5; */
-		if (message.performant_frames)
-			CMsgServerSignoutData_ServerPerfStats_FrameCounts.internalBinaryWrite(
-				message.performant_frames,
-				writer.tag(5, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgServerSignoutData_ServerPerfStats.FrameCounts long_frames = 6; */
-		if (message.long_frames)
-			CMsgServerSignoutData_ServerPerfStats_FrameCounts.internalBinaryWrite(
-				message.long_frames,
-				writer.tag(6, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgServerSignoutData_ServerPerfStats.FrameCounts low_idle_frames = 7; */
-		if (message.low_idle_frames)
-			CMsgServerSignoutData_ServerPerfStats_FrameCounts.internalBinaryWrite(
-				message.low_idle_frames,
-				writer.tag(7, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint64 memory_bytes = 8; */
-		if (message.memory_bytes !== undefined) writer.tag(8, WireType.Varint).uint64(message.memory_bytes);
-		/* optional uint64 peak_memory_bytes = 9; */
-		if (message.peak_memory_bytes !== undefined) writer.tag(9, WireType.Varint).uint64(message.peak_memory_bytes);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_ServerPerfStats.PerfSample", [
+      {
+        no: 1,
+        name: "game_time_s",
+        kind: "scalar",
+        localName: "game_time_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "avg_frame",
+        kind: "scalar",
+        localName: "avg_frame",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "avg_idle",
+        kind: "scalar",
+        localName: "avg_idle",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "total_frames",
+        kind: "scalar",
+        localName: "total_frames",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "performant_frames",
+        kind: "message",
+        localName: "performant_frames",
+        T: () => CMsgServerSignoutData_ServerPerfStats_FrameCounts,
+      },
+      {
+        no: 6,
+        name: "long_frames",
+        kind: "message",
+        localName: "long_frames",
+        T: () => CMsgServerSignoutData_ServerPerfStats_FrameCounts,
+      },
+      {
+        no: 7,
+        name: "low_idle_frames",
+        kind: "message",
+        localName: "low_idle_frames",
+        T: () => CMsgServerSignoutData_ServerPerfStats_FrameCounts,
+      },
+      {
+        no: 8,
+        name: "memory_bytes",
+        kind: "scalar",
+        localName: "memory_bytes",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 9,
+        name: "peak_memory_bytes",
+        kind: "scalar",
+        localName: "peak_memory_bytes",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerSignoutData_ServerPerfStats_PerfSample>,
+  ): CMsgServerSignoutData_ServerPerfStats_PerfSample {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgServerSignoutData_ServerPerfStats_PerfSample>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_ServerPerfStats_PerfSample,
+  ): CMsgServerSignoutData_ServerPerfStats_PerfSample {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 game_time_s */ 1:
+          message.game_time_s = reader.uint32();
+          break;
+        case /* optional float avg_frame */ 2:
+          message.avg_frame = reader.float();
+          break;
+        case /* optional float avg_idle */ 3:
+          message.avg_idle = reader.float();
+          break;
+        case /* optional uint32 total_frames */ 4:
+          message.total_frames = reader.uint32();
+          break;
+        case /* optional CMsgServerSignoutData_ServerPerfStats.FrameCounts performant_frames */ 5:
+          message.performant_frames = CMsgServerSignoutData_ServerPerfStats_FrameCounts.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.performant_frames,
+          );
+          break;
+        case /* optional CMsgServerSignoutData_ServerPerfStats.FrameCounts long_frames */ 6:
+          message.long_frames = CMsgServerSignoutData_ServerPerfStats_FrameCounts.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.long_frames,
+          );
+          break;
+        case /* optional CMsgServerSignoutData_ServerPerfStats.FrameCounts low_idle_frames */ 7:
+          message.low_idle_frames = CMsgServerSignoutData_ServerPerfStats_FrameCounts.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.low_idle_frames,
+          );
+          break;
+        case /* optional uint64 memory_bytes */ 8:
+          message.memory_bytes = reader.uint64().toBigInt();
+          break;
+        case /* optional uint64 peak_memory_bytes */ 9:
+          message.peak_memory_bytes = reader.uint64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_ServerPerfStats_PerfSample,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 game_time_s = 1; */
+    if (message.game_time_s !== undefined) writer.tag(1, WireType.Varint).uint32(message.game_time_s);
+    /* optional float avg_frame = 2; */
+    if (message.avg_frame !== undefined) writer.tag(2, WireType.Bit32).float(message.avg_frame);
+    /* optional float avg_idle = 3; */
+    if (message.avg_idle !== undefined) writer.tag(3, WireType.Bit32).float(message.avg_idle);
+    /* optional uint32 total_frames = 4; */
+    if (message.total_frames !== undefined) writer.tag(4, WireType.Varint).uint32(message.total_frames);
+    /* optional CMsgServerSignoutData_ServerPerfStats.FrameCounts performant_frames = 5; */
+    if (message.performant_frames)
+      CMsgServerSignoutData_ServerPerfStats_FrameCounts.internalBinaryWrite(
+        message.performant_frames,
+        writer.tag(5, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgServerSignoutData_ServerPerfStats.FrameCounts long_frames = 6; */
+    if (message.long_frames)
+      CMsgServerSignoutData_ServerPerfStats_FrameCounts.internalBinaryWrite(
+        message.long_frames,
+        writer.tag(6, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgServerSignoutData_ServerPerfStats.FrameCounts low_idle_frames = 7; */
+    if (message.low_idle_frames)
+      CMsgServerSignoutData_ServerPerfStats_FrameCounts.internalBinaryWrite(
+        message.low_idle_frames,
+        writer.tag(7, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint64 memory_bytes = 8; */
+    if (message.memory_bytes !== undefined) writer.tag(8, WireType.Varint).uint64(message.memory_bytes);
+    /* optional uint64 peak_memory_bytes = 9; */
+    if (message.peak_memory_bytes !== undefined) writer.tag(9, WireType.Varint).uint64(message.peak_memory_bytes);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_ServerPerfStats.PerfSample
  */
 export const CMsgServerSignoutData_ServerPerfStats_PerfSample =
-	new CMsgServerSignoutData_ServerPerfStats_PerfSample$Type();
+  new CMsgServerSignoutData_ServerPerfStats_PerfSample$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples$Type extends MessageType<CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples> {
-	constructor() {
-		super("CMsgServerSignoutData_ServerPerfStats.MatchPerfSamples", [
-			{
-				no: 1,
-				name: "long_frame_threshold",
-				kind: "scalar",
-				localName: "long_frame_threshold",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 2,
-				name: "low_idle_threshold",
-				kind: "scalar",
-				localName: "low_idle_threshold",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "samples",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerSignoutData_ServerPerfStats_PerfSample,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples>,
-	): CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.samples = [];
-		if (value !== undefined)
-			reflectionMergePartial<CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples,
-	): CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float long_frame_threshold */ 1:
-					message.long_frame_threshold = reader.float();
-					break;
-				case /* optional float low_idle_threshold */ 2:
-					message.low_idle_threshold = reader.float();
-					break;
-				case /* repeated CMsgServerSignoutData_ServerPerfStats.PerfSample samples */ 3:
-					message.samples.push(
-						CMsgServerSignoutData_ServerPerfStats_PerfSample.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional float long_frame_threshold = 1; */
-		if (message.long_frame_threshold !== undefined) writer.tag(1, WireType.Bit32).float(message.long_frame_threshold);
-		/* optional float low_idle_threshold = 2; */
-		if (message.low_idle_threshold !== undefined) writer.tag(2, WireType.Bit32).float(message.low_idle_threshold);
-		/* repeated CMsgServerSignoutData_ServerPerfStats.PerfSample samples = 3; */
-		for (let i = 0; i < message.samples.length; i++)
-			CMsgServerSignoutData_ServerPerfStats_PerfSample.internalBinaryWrite(
-				message.samples[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_ServerPerfStats.MatchPerfSamples", [
+      {
+        no: 1,
+        name: "long_frame_threshold",
+        kind: "scalar",
+        localName: "long_frame_threshold",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 2,
+        name: "low_idle_threshold",
+        kind: "scalar",
+        localName: "low_idle_threshold",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "samples",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerSignoutData_ServerPerfStats_PerfSample,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples>,
+  ): CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.samples = [];
+    if (value !== undefined)
+      reflectionMergePartial<CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples,
+  ): CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float long_frame_threshold */ 1:
+          message.long_frame_threshold = reader.float();
+          break;
+        case /* optional float low_idle_threshold */ 2:
+          message.low_idle_threshold = reader.float();
+          break;
+        case /* repeated CMsgServerSignoutData_ServerPerfStats.PerfSample samples */ 3:
+          message.samples.push(
+            CMsgServerSignoutData_ServerPerfStats_PerfSample.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional float long_frame_threshold = 1; */
+    if (message.long_frame_threshold !== undefined) writer.tag(1, WireType.Bit32).float(message.long_frame_threshold);
+    /* optional float low_idle_threshold = 2; */
+    if (message.low_idle_threshold !== undefined) writer.tag(2, WireType.Bit32).float(message.low_idle_threshold);
+    /* repeated CMsgServerSignoutData_ServerPerfStats.PerfSample samples = 3; */
+    for (let i = 0; i < message.samples.length; i++)
+      CMsgServerSignoutData_ServerPerfStats_PerfSample.internalBinaryWrite(
+        message.samples[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_ServerPerfStats.MatchPerfSamples
  */
 export const CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples =
-	new CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples$Type();
+  new CMsgServerSignoutData_ServerPerfStats_MatchPerfSamples$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerToGCUpdateMatchInfo$Type extends MessageType<CMsgServerToGCUpdateMatchInfo> {
-	constructor() {
-		super("CMsgServerToGCUpdateMatchInfo", [
-			{
-				no: 1,
-				name: "lobby_id",
-				kind: "scalar",
-				localName: "lobby_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "kills_team_0",
-				kind: "scalar",
-				localName: "kills_team_0",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "kills_team_1",
-				kind: "scalar",
-				localName: "kills_team_1",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "net_worth_team_0",
-				kind: "scalar",
-				localName: "net_worth_team_0",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "net_worth_team_1",
-				kind: "scalar",
-				localName: "net_worth_team_1",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "spectators",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "open_spectator_slots",
-				kind: "scalar",
-				localName: "open_spectator_slots",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "objectives_mask_team0",
-				kind: "scalar",
-				localName: "objectives_mask_team0",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 10,
-				name: "objectives_mask_team1",
-				kind: "scalar",
-				localName: "objectives_mask_team1",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerToGCUpdateMatchInfo>): CMsgServerToGCUpdateMatchInfo {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerToGCUpdateMatchInfo>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerToGCUpdateMatchInfo,
-	): CMsgServerToGCUpdateMatchInfo {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint64 lobby_id */ 1:
-					message.lobby_id = reader.uint64().toBigInt();
-					break;
-				case /* optional uint32 kills_team_0 */ 3:
-					message.kills_team_0 = reader.uint32();
-					break;
-				case /* optional uint32 kills_team_1 */ 4:
-					message.kills_team_1 = reader.uint32();
-					break;
-				case /* optional uint32 net_worth_team_0 */ 5:
-					message.net_worth_team_0 = reader.uint32();
-					break;
-				case /* optional uint32 net_worth_team_1 */ 6:
-					message.net_worth_team_1 = reader.uint32();
-					break;
-				case /* optional uint32 spectators */ 7:
-					message.spectators = reader.uint32();
-					break;
-				case /* optional uint32 open_spectator_slots */ 8:
-					message.open_spectator_slots = reader.uint32();
-					break;
-				case /* optional uint64 objectives_mask_team0 */ 9:
-					message.objectives_mask_team0 = reader.uint64().toBigInt();
-					break;
-				case /* optional uint64 objectives_mask_team1 */ 10:
-					message.objectives_mask_team1 = reader.uint64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerToGCUpdateMatchInfo,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint64 lobby_id = 1; */
-		if (message.lobby_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.lobby_id);
-		/* optional uint32 kills_team_0 = 3; */
-		if (message.kills_team_0 !== undefined) writer.tag(3, WireType.Varint).uint32(message.kills_team_0);
-		/* optional uint32 kills_team_1 = 4; */
-		if (message.kills_team_1 !== undefined) writer.tag(4, WireType.Varint).uint32(message.kills_team_1);
-		/* optional uint32 net_worth_team_0 = 5; */
-		if (message.net_worth_team_0 !== undefined) writer.tag(5, WireType.Varint).uint32(message.net_worth_team_0);
-		/* optional uint32 net_worth_team_1 = 6; */
-		if (message.net_worth_team_1 !== undefined) writer.tag(6, WireType.Varint).uint32(message.net_worth_team_1);
-		/* optional uint32 spectators = 7; */
-		if (message.spectators !== undefined) writer.tag(7, WireType.Varint).uint32(message.spectators);
-		/* optional uint32 open_spectator_slots = 8; */
-		if (message.open_spectator_slots !== undefined) writer.tag(8, WireType.Varint).uint32(message.open_spectator_slots);
-		/* optional uint64 objectives_mask_team0 = 9; */
-		if (message.objectives_mask_team0 !== undefined)
-			writer.tag(9, WireType.Varint).uint64(message.objectives_mask_team0);
-		/* optional uint64 objectives_mask_team1 = 10; */
-		if (message.objectives_mask_team1 !== undefined)
-			writer.tag(10, WireType.Varint).uint64(message.objectives_mask_team1);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerToGCUpdateMatchInfo", [
+      {
+        no: 1,
+        name: "lobby_id",
+        kind: "scalar",
+        localName: "lobby_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "kills_team_0",
+        kind: "scalar",
+        localName: "kills_team_0",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "kills_team_1",
+        kind: "scalar",
+        localName: "kills_team_1",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "net_worth_team_0",
+        kind: "scalar",
+        localName: "net_worth_team_0",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "net_worth_team_1",
+        kind: "scalar",
+        localName: "net_worth_team_1",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "spectators",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "open_spectator_slots",
+        kind: "scalar",
+        localName: "open_spectator_slots",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "objectives_mask_team0",
+        kind: "scalar",
+        localName: "objectives_mask_team0",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 10,
+        name: "objectives_mask_team1",
+        kind: "scalar",
+        localName: "objectives_mask_team1",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerToGCUpdateMatchInfo>): CMsgServerToGCUpdateMatchInfo {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerToGCUpdateMatchInfo>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerToGCUpdateMatchInfo,
+  ): CMsgServerToGCUpdateMatchInfo {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint64 lobby_id */ 1:
+          message.lobby_id = reader.uint64().toBigInt();
+          break;
+        case /* optional uint32 kills_team_0 */ 3:
+          message.kills_team_0 = reader.uint32();
+          break;
+        case /* optional uint32 kills_team_1 */ 4:
+          message.kills_team_1 = reader.uint32();
+          break;
+        case /* optional uint32 net_worth_team_0 */ 5:
+          message.net_worth_team_0 = reader.uint32();
+          break;
+        case /* optional uint32 net_worth_team_1 */ 6:
+          message.net_worth_team_1 = reader.uint32();
+          break;
+        case /* optional uint32 spectators */ 7:
+          message.spectators = reader.uint32();
+          break;
+        case /* optional uint32 open_spectator_slots */ 8:
+          message.open_spectator_slots = reader.uint32();
+          break;
+        case /* optional uint64 objectives_mask_team0 */ 9:
+          message.objectives_mask_team0 = reader.uint64().toBigInt();
+          break;
+        case /* optional uint64 objectives_mask_team1 */ 10:
+          message.objectives_mask_team1 = reader.uint64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerToGCUpdateMatchInfo,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint64 lobby_id = 1; */
+    if (message.lobby_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.lobby_id);
+    /* optional uint32 kills_team_0 = 3; */
+    if (message.kills_team_0 !== undefined) writer.tag(3, WireType.Varint).uint32(message.kills_team_0);
+    /* optional uint32 kills_team_1 = 4; */
+    if (message.kills_team_1 !== undefined) writer.tag(4, WireType.Varint).uint32(message.kills_team_1);
+    /* optional uint32 net_worth_team_0 = 5; */
+    if (message.net_worth_team_0 !== undefined) writer.tag(5, WireType.Varint).uint32(message.net_worth_team_0);
+    /* optional uint32 net_worth_team_1 = 6; */
+    if (message.net_worth_team_1 !== undefined) writer.tag(6, WireType.Varint).uint32(message.net_worth_team_1);
+    /* optional uint32 spectators = 7; */
+    if (message.spectators !== undefined) writer.tag(7, WireType.Varint).uint32(message.spectators);
+    /* optional uint32 open_spectator_slots = 8; */
+    if (message.open_spectator_slots !== undefined) writer.tag(8, WireType.Varint).uint32(message.open_spectator_slots);
+    /* optional uint64 objectives_mask_team0 = 9; */
+    if (message.objectives_mask_team0 !== undefined)
+      writer.tag(9, WireType.Varint).uint64(message.objectives_mask_team0);
+    /* optional uint64 objectives_mask_team1 = 10; */
+    if (message.objectives_mask_team1 !== undefined)
+      writer.tag(10, WireType.Varint).uint64(message.objectives_mask_team1);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerToGCUpdateMatchInfo
@@ -4312,98 +4312,98 @@ class CMsgServerToGCUpdateMatchInfo$Type extends MessageType<CMsgServerToGCUpdat
 export const CMsgServerToGCUpdateMatchInfo = new CMsgServerToGCUpdateMatchInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerToGCMatchSignoutPermission$Type extends MessageType<CMsgServerToGCMatchSignoutPermission> {
-	constructor() {
-		super("CMsgServerToGCMatchSignoutPermission", [
-			{
-				no: 1,
-				name: "signout_start",
-				kind: "scalar",
-				localName: "signout_start",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "permission_request",
-				kind: "scalar",
-				localName: "permission_request",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "match_id",
-				kind: "scalar",
-				localName: "match_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 4,
-				name: "match_mode",
-				kind: "enum",
-				localName: "match_mode",
-				opt: true,
-				T: () => ["ECitadelMatchMode", ECitadelMatchMode],
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerToGCMatchSignoutPermission>): CMsgServerToGCMatchSignoutPermission {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerToGCMatchSignoutPermission>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerToGCMatchSignoutPermission,
-	): CMsgServerToGCMatchSignoutPermission {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 signout_start */ 1:
-					message.signout_start = reader.uint32();
-					break;
-				case /* optional uint32 permission_request */ 2:
-					message.permission_request = reader.uint32();
-					break;
-				case /* optional uint64 match_id */ 3:
-					message.match_id = reader.uint64().toBigInt();
-					break;
-				case /* optional ECitadelMatchMode match_mode */ 4:
-					message.match_mode = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerToGCMatchSignoutPermission,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 signout_start = 1; */
-		if (message.signout_start !== undefined) writer.tag(1, WireType.Varint).uint32(message.signout_start);
-		/* optional uint32 permission_request = 2; */
-		if (message.permission_request !== undefined) writer.tag(2, WireType.Varint).uint32(message.permission_request);
-		/* optional uint64 match_id = 3; */
-		if (message.match_id !== undefined) writer.tag(3, WireType.Varint).uint64(message.match_id);
-		/* optional ECitadelMatchMode match_mode = 4; */
-		if (message.match_mode !== undefined) writer.tag(4, WireType.Varint).int32(message.match_mode);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerToGCMatchSignoutPermission", [
+      {
+        no: 1,
+        name: "signout_start",
+        kind: "scalar",
+        localName: "signout_start",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "permission_request",
+        kind: "scalar",
+        localName: "permission_request",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "match_id",
+        kind: "scalar",
+        localName: "match_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 4,
+        name: "match_mode",
+        kind: "enum",
+        localName: "match_mode",
+        opt: true,
+        T: () => ["ECitadelMatchMode", ECitadelMatchMode],
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerToGCMatchSignoutPermission>): CMsgServerToGCMatchSignoutPermission {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerToGCMatchSignoutPermission>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerToGCMatchSignoutPermission,
+  ): CMsgServerToGCMatchSignoutPermission {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 signout_start */ 1:
+          message.signout_start = reader.uint32();
+          break;
+        case /* optional uint32 permission_request */ 2:
+          message.permission_request = reader.uint32();
+          break;
+        case /* optional uint64 match_id */ 3:
+          message.match_id = reader.uint64().toBigInt();
+          break;
+        case /* optional ECitadelMatchMode match_mode */ 4:
+          message.match_mode = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerToGCMatchSignoutPermission,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 signout_start = 1; */
+    if (message.signout_start !== undefined) writer.tag(1, WireType.Varint).uint32(message.signout_start);
+    /* optional uint32 permission_request = 2; */
+    if (message.permission_request !== undefined) writer.tag(2, WireType.Varint).uint32(message.permission_request);
+    /* optional uint64 match_id = 3; */
+    if (message.match_id !== undefined) writer.tag(3, WireType.Varint).uint64(message.match_id);
+    /* optional ECitadelMatchMode match_mode = 4; */
+    if (message.match_mode !== undefined) writer.tag(4, WireType.Varint).int32(message.match_mode);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerToGCMatchSignoutPermission
@@ -4411,90 +4411,90 @@ class CMsgServerToGCMatchSignoutPermission$Type extends MessageType<CMsgServerTo
 export const CMsgServerToGCMatchSignoutPermission = new CMsgServerToGCMatchSignoutPermission$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerToGCMatchSignoutPermissionResponse$Type extends MessageType<CMsgServerToGCMatchSignoutPermissionResponse> {
-	constructor() {
-		super("CMsgServerToGCMatchSignoutPermissionResponse", [
-			{
-				no: 1,
-				name: "can_sign_out",
-				kind: "scalar",
-				localName: "can_sign_out",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 2,
-				name: "retry_time_s",
-				kind: "scalar",
-				localName: "retry_time_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "requested_data",
-				kind: "enum",
-				localName: "requested_data",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => ["EGCServerSignoutData", EGCServerSignoutData],
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerToGCMatchSignoutPermissionResponse>,
-	): CMsgServerToGCMatchSignoutPermissionResponse {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.requested_data = [];
-		if (value !== undefined) reflectionMergePartial<CMsgServerToGCMatchSignoutPermissionResponse>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerToGCMatchSignoutPermissionResponse,
-	): CMsgServerToGCMatchSignoutPermissionResponse {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool can_sign_out */ 1:
-					message.can_sign_out = reader.bool();
-					break;
-				case /* optional uint32 retry_time_s */ 2:
-					message.retry_time_s = reader.uint32();
-					break;
-				case /* repeated EGCServerSignoutData requested_data */ 3:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.requested_data.push(reader.int32());
-					else message.requested_data.push(reader.int32());
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerToGCMatchSignoutPermissionResponse,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool can_sign_out = 1; */
-		if (message.can_sign_out !== undefined) writer.tag(1, WireType.Varint).bool(message.can_sign_out);
-		/* optional uint32 retry_time_s = 2; */
-		if (message.retry_time_s !== undefined) writer.tag(2, WireType.Varint).uint32(message.retry_time_s);
-		/* repeated EGCServerSignoutData requested_data = 3; */
-		for (let i = 0; i < message.requested_data.length; i++)
-			writer.tag(3, WireType.Varint).int32(message.requested_data[i]);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerToGCMatchSignoutPermissionResponse", [
+      {
+        no: 1,
+        name: "can_sign_out",
+        kind: "scalar",
+        localName: "can_sign_out",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 2,
+        name: "retry_time_s",
+        kind: "scalar",
+        localName: "retry_time_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "requested_data",
+        kind: "enum",
+        localName: "requested_data",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => ["EGCServerSignoutData", EGCServerSignoutData],
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerToGCMatchSignoutPermissionResponse>,
+  ): CMsgServerToGCMatchSignoutPermissionResponse {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.requested_data = [];
+    if (value !== undefined) reflectionMergePartial<CMsgServerToGCMatchSignoutPermissionResponse>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerToGCMatchSignoutPermissionResponse,
+  ): CMsgServerToGCMatchSignoutPermissionResponse {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool can_sign_out */ 1:
+          message.can_sign_out = reader.bool();
+          break;
+        case /* optional uint32 retry_time_s */ 2:
+          message.retry_time_s = reader.uint32();
+          break;
+        case /* repeated EGCServerSignoutData requested_data */ 3:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.requested_data.push(reader.int32());
+          else message.requested_data.push(reader.int32());
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerToGCMatchSignoutPermissionResponse,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool can_sign_out = 1; */
+    if (message.can_sign_out !== undefined) writer.tag(1, WireType.Varint).bool(message.can_sign_out);
+    /* optional uint32 retry_time_s = 2; */
+    if (message.retry_time_s !== undefined) writer.tag(2, WireType.Varint).uint32(message.retry_time_s);
+    /* repeated EGCServerSignoutData requested_data = 3; */
+    for (let i = 0; i < message.requested_data.length; i++)
+      writer.tag(3, WireType.Varint).int32(message.requested_data[i]);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerToGCMatchSignoutPermissionResponse
@@ -4502,69 +4502,69 @@ class CMsgServerToGCMatchSignoutPermissionResponse$Type extends MessageType<CMsg
 export const CMsgServerToGCMatchSignoutPermissionResponse = new CMsgServerToGCMatchSignoutPermissionResponse$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_Disconnections$Type extends MessageType<CMsgServerSignoutData_Disconnections> {
-	constructor() {
-		super("CMsgServerSignoutData_Disconnections", [
-			{
-				no: 1,
-				name: "disconnections",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerSignoutData_Disconnections>): CMsgServerSignoutData_Disconnections {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.disconnections = [];
-		if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_Disconnections>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_Disconnections,
-	): CMsgServerSignoutData_Disconnections {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgServerSignoutData_Disconnections.CMsgMatchDisconnection disconnections */ 1:
-					message.disconnections.push(
-						CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection.internalBinaryRead(
-							reader,
-							reader.uint32(),
-							options,
-						),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_Disconnections,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CMsgServerSignoutData_Disconnections.CMsgMatchDisconnection disconnections = 1; */
-		for (let i = 0; i < message.disconnections.length; i++)
-			CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection.internalBinaryWrite(
-				message.disconnections[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_Disconnections", [
+      {
+        no: 1,
+        name: "disconnections",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerSignoutData_Disconnections>): CMsgServerSignoutData_Disconnections {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.disconnections = [];
+    if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_Disconnections>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_Disconnections,
+  ): CMsgServerSignoutData_Disconnections {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgServerSignoutData_Disconnections.CMsgMatchDisconnection disconnections */ 1:
+          message.disconnections.push(
+            CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection.internalBinaryRead(
+              reader,
+              reader.uint32(),
+              options,
+            ),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_Disconnections,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CMsgServerSignoutData_Disconnections.CMsgMatchDisconnection disconnections = 1; */
+    for (let i = 0; i < message.disconnections.length; i++)
+      CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection.internalBinaryWrite(
+        message.disconnections[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_Disconnections
@@ -4572,250 +4572,250 @@ class CMsgServerSignoutData_Disconnections$Type extends MessageType<CMsgServerSi
 export const CMsgServerSignoutData_Disconnections = new CMsgServerSignoutData_Disconnections$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection$Type extends MessageType<CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection> {
-	constructor() {
-		super("CMsgServerSignoutData_Disconnections.CMsgMatchDisconnection", [
-			{
-				no: 1,
-				name: "account_id",
-				kind: "scalar",
-				localName: "account_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "disconnect_time",
-				kind: "scalar",
-				localName: "disconnect_time",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "connection_state",
-				kind: "scalar",
-				localName: "connection_state",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "reason_code",
-				kind: "scalar",
-				localName: "reason_code",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "reconnect_delay",
-				kind: "scalar",
-				localName: "reconnect_delay",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "match_disconnect_time",
-				kind: "scalar",
-				localName: "match_disconnect_time",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "match_reconnect_delay",
-				kind: "scalar",
-				localName: "match_reconnect_delay",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection>,
-	): CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection,
-	): CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 account_id */ 1:
-					message.account_id = reader.uint32();
-					break;
-				case /* optional uint32 disconnect_time */ 2:
-					message.disconnect_time = reader.uint32();
-					break;
-				case /* optional uint32 connection_state */ 3:
-					message.connection_state = reader.uint32();
-					break;
-				case /* optional uint32 reason_code */ 4:
-					message.reason_code = reader.uint32();
-					break;
-				case /* optional uint32 reconnect_delay */ 5:
-					message.reconnect_delay = reader.uint32();
-					break;
-				case /* optional uint32 match_disconnect_time */ 6:
-					message.match_disconnect_time = reader.uint32();
-					break;
-				case /* optional uint32 match_reconnect_delay */ 7:
-					message.match_reconnect_delay = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 account_id = 1; */
-		if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
-		/* optional uint32 disconnect_time = 2; */
-		if (message.disconnect_time !== undefined) writer.tag(2, WireType.Varint).uint32(message.disconnect_time);
-		/* optional uint32 connection_state = 3; */
-		if (message.connection_state !== undefined) writer.tag(3, WireType.Varint).uint32(message.connection_state);
-		/* optional uint32 reason_code = 4; */
-		if (message.reason_code !== undefined) writer.tag(4, WireType.Varint).uint32(message.reason_code);
-		/* optional uint32 reconnect_delay = 5; */
-		if (message.reconnect_delay !== undefined) writer.tag(5, WireType.Varint).uint32(message.reconnect_delay);
-		/* optional uint32 match_disconnect_time = 6; */
-		if (message.match_disconnect_time !== undefined)
-			writer.tag(6, WireType.Varint).uint32(message.match_disconnect_time);
-		/* optional uint32 match_reconnect_delay = 7; */
-		if (message.match_reconnect_delay !== undefined)
-			writer.tag(7, WireType.Varint).uint32(message.match_reconnect_delay);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_Disconnections.CMsgMatchDisconnection", [
+      {
+        no: 1,
+        name: "account_id",
+        kind: "scalar",
+        localName: "account_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "disconnect_time",
+        kind: "scalar",
+        localName: "disconnect_time",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "connection_state",
+        kind: "scalar",
+        localName: "connection_state",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "reason_code",
+        kind: "scalar",
+        localName: "reason_code",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "reconnect_delay",
+        kind: "scalar",
+        localName: "reconnect_delay",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "match_disconnect_time",
+        kind: "scalar",
+        localName: "match_disconnect_time",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "match_reconnect_delay",
+        kind: "scalar",
+        localName: "match_reconnect_delay",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection>,
+  ): CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection,
+  ): CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 account_id */ 1:
+          message.account_id = reader.uint32();
+          break;
+        case /* optional uint32 disconnect_time */ 2:
+          message.disconnect_time = reader.uint32();
+          break;
+        case /* optional uint32 connection_state */ 3:
+          message.connection_state = reader.uint32();
+          break;
+        case /* optional uint32 reason_code */ 4:
+          message.reason_code = reader.uint32();
+          break;
+        case /* optional uint32 reconnect_delay */ 5:
+          message.reconnect_delay = reader.uint32();
+          break;
+        case /* optional uint32 match_disconnect_time */ 6:
+          message.match_disconnect_time = reader.uint32();
+          break;
+        case /* optional uint32 match_reconnect_delay */ 7:
+          message.match_reconnect_delay = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 account_id = 1; */
+    if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
+    /* optional uint32 disconnect_time = 2; */
+    if (message.disconnect_time !== undefined) writer.tag(2, WireType.Varint).uint32(message.disconnect_time);
+    /* optional uint32 connection_state = 3; */
+    if (message.connection_state !== undefined) writer.tag(3, WireType.Varint).uint32(message.connection_state);
+    /* optional uint32 reason_code = 4; */
+    if (message.reason_code !== undefined) writer.tag(4, WireType.Varint).uint32(message.reason_code);
+    /* optional uint32 reconnect_delay = 5; */
+    if (message.reconnect_delay !== undefined) writer.tag(5, WireType.Varint).uint32(message.reconnect_delay);
+    /* optional uint32 match_disconnect_time = 6; */
+    if (message.match_disconnect_time !== undefined)
+      writer.tag(6, WireType.Varint).uint32(message.match_disconnect_time);
+    /* optional uint32 match_reconnect_delay = 7; */
+    if (message.match_reconnect_delay !== undefined)
+      writer.tag(7, WireType.Varint).uint32(message.match_reconnect_delay);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_Disconnections.CMsgMatchDisconnection
  */
 export const CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection =
-	new CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection$Type();
+  new CMsgServerSignoutData_Disconnections_CMsgMatchDisconnection$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_DetailedStats$Type extends MessageType<CMsgServerSignoutData_DetailedStats> {
-	constructor() {
-		super("CMsgServerSignoutData_DetailedStats", [
-			{
-				no: 1,
-				name: "player_stats",
-				kind: "message",
-				localName: "player_stats",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerSignoutData_DetailedStats_Player,
-			},
-			{
-				no: 2,
-				name: "objectives",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerSignoutData_DetailedStats_Objective,
-			},
-			{
-				no: 3,
-				name: "mid_boss",
-				kind: "message",
-				localName: "mid_boss",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerSignoutData_DetailedStats_MidBoss,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerSignoutData_DetailedStats>): CMsgServerSignoutData_DetailedStats {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.player_stats = [];
-		message.objectives = [];
-		message.mid_boss = [];
-		if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_DetailedStats>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_DetailedStats,
-	): CMsgServerSignoutData_DetailedStats {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgServerSignoutData_DetailedStats.Player player_stats */ 1:
-					message.player_stats.push(
-						CMsgServerSignoutData_DetailedStats_Player.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CMsgServerSignoutData_DetailedStats.Objective objectives */ 2:
-					message.objectives.push(
-						CMsgServerSignoutData_DetailedStats_Objective.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				case /* repeated CMsgServerSignoutData_DetailedStats.MidBoss mid_boss */ 3:
-					message.mid_boss.push(
-						CMsgServerSignoutData_DetailedStats_MidBoss.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_DetailedStats,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CMsgServerSignoutData_DetailedStats.Player player_stats = 1; */
-		for (let i = 0; i < message.player_stats.length; i++)
-			CMsgServerSignoutData_DetailedStats_Player.internalBinaryWrite(
-				message.player_stats[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgServerSignoutData_DetailedStats.Objective objectives = 2; */
-		for (let i = 0; i < message.objectives.length; i++)
-			CMsgServerSignoutData_DetailedStats_Objective.internalBinaryWrite(
-				message.objectives[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* repeated CMsgServerSignoutData_DetailedStats.MidBoss mid_boss = 3; */
-		for (let i = 0; i < message.mid_boss.length; i++)
-			CMsgServerSignoutData_DetailedStats_MidBoss.internalBinaryWrite(
-				message.mid_boss[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_DetailedStats", [
+      {
+        no: 1,
+        name: "player_stats",
+        kind: "message",
+        localName: "player_stats",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerSignoutData_DetailedStats_Player,
+      },
+      {
+        no: 2,
+        name: "objectives",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerSignoutData_DetailedStats_Objective,
+      },
+      {
+        no: 3,
+        name: "mid_boss",
+        kind: "message",
+        localName: "mid_boss",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerSignoutData_DetailedStats_MidBoss,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerSignoutData_DetailedStats>): CMsgServerSignoutData_DetailedStats {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.player_stats = [];
+    message.objectives = [];
+    message.mid_boss = [];
+    if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_DetailedStats>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_DetailedStats,
+  ): CMsgServerSignoutData_DetailedStats {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgServerSignoutData_DetailedStats.Player player_stats */ 1:
+          message.player_stats.push(
+            CMsgServerSignoutData_DetailedStats_Player.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CMsgServerSignoutData_DetailedStats.Objective objectives */ 2:
+          message.objectives.push(
+            CMsgServerSignoutData_DetailedStats_Objective.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        case /* repeated CMsgServerSignoutData_DetailedStats.MidBoss mid_boss */ 3:
+          message.mid_boss.push(
+            CMsgServerSignoutData_DetailedStats_MidBoss.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_DetailedStats,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CMsgServerSignoutData_DetailedStats.Player player_stats = 1; */
+    for (let i = 0; i < message.player_stats.length; i++)
+      CMsgServerSignoutData_DetailedStats_Player.internalBinaryWrite(
+        message.player_stats[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgServerSignoutData_DetailedStats.Objective objectives = 2; */
+    for (let i = 0; i < message.objectives.length; i++)
+      CMsgServerSignoutData_DetailedStats_Objective.internalBinaryWrite(
+        message.objectives[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* repeated CMsgServerSignoutData_DetailedStats.MidBoss mid_boss = 3; */
+    for (let i = 0; i < message.mid_boss.length; i++)
+      CMsgServerSignoutData_DetailedStats_MidBoss.internalBinaryWrite(
+        message.mid_boss[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_DetailedStats
@@ -4823,83 +4823,83 @@ class CMsgServerSignoutData_DetailedStats$Type extends MessageType<CMsgServerSig
 export const CMsgServerSignoutData_DetailedStats = new CMsgServerSignoutData_DetailedStats$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_DetailedStats_Position$Type extends MessageType<CMsgServerSignoutData_DetailedStats_Position> {
-	constructor() {
-		super("CMsgServerSignoutData_DetailedStats.Position", [
-			{
-				no: 1,
-				name: "x",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 2,
-				name: "y",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "z",
-				kind: "scalar",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerSignoutData_DetailedStats_Position>,
-	): CMsgServerSignoutData_DetailedStats_Position {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_DetailedStats_Position>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_DetailedStats_Position,
-	): CMsgServerSignoutData_DetailedStats_Position {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional float x */ 1:
-					message.x = reader.float();
-					break;
-				case /* optional float y */ 2:
-					message.y = reader.float();
-					break;
-				case /* optional float z */ 3:
-					message.z = reader.float();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_DetailedStats_Position,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional float x = 1; */
-		if (message.x !== undefined) writer.tag(1, WireType.Bit32).float(message.x);
-		/* optional float y = 2; */
-		if (message.y !== undefined) writer.tag(2, WireType.Bit32).float(message.y);
-		/* optional float z = 3; */
-		if (message.z !== undefined) writer.tag(3, WireType.Bit32).float(message.z);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_DetailedStats.Position", [
+      {
+        no: 1,
+        name: "x",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 2,
+        name: "y",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "z",
+        kind: "scalar",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerSignoutData_DetailedStats_Position>,
+  ): CMsgServerSignoutData_DetailedStats_Position {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_DetailedStats_Position>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_DetailedStats_Position,
+  ): CMsgServerSignoutData_DetailedStats_Position {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional float x */ 1:
+          message.x = reader.float();
+          break;
+        case /* optional float y */ 2:
+          message.y = reader.float();
+          break;
+        case /* optional float z */ 3:
+          message.z = reader.float();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_DetailedStats_Position,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional float x = 1; */
+    if (message.x !== undefined) writer.tag(1, WireType.Bit32).float(message.x);
+    /* optional float y = 2; */
+    if (message.y !== undefined) writer.tag(2, WireType.Bit32).float(message.y);
+    /* optional float z = 3; */
+    if (message.z !== undefined) writer.tag(3, WireType.Bit32).float(message.z);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_DetailedStats.Position
@@ -4907,104 +4907,104 @@ class CMsgServerSignoutData_DetailedStats_Position$Type extends MessageType<CMsg
 export const CMsgServerSignoutData_DetailedStats_Position = new CMsgServerSignoutData_DetailedStats_Position$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_DetailedStats_TimeSample$Type extends MessageType<CMsgServerSignoutData_DetailedStats_TimeSample> {
-	constructor() {
-		super("CMsgServerSignoutData_DetailedStats.TimeSample", [
-			{
-				no: 1,
-				name: "match_time_s",
-				kind: "scalar",
-				localName: "match_time_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "stats",
-				kind: "message",
-				T: () => CMsgServerSignoutData_DetailedStats_TimeSample_Stats,
-			},
-			{
-				no: 4,
-				name: "gold_stats",
-				kind: "message",
-				localName: "gold_stats",
-				T: () => CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerSignoutData_DetailedStats_TimeSample>,
-	): CMsgServerSignoutData_DetailedStats_TimeSample {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgServerSignoutData_DetailedStats_TimeSample>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_DetailedStats_TimeSample,
-	): CMsgServerSignoutData_DetailedStats_TimeSample {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 match_time_s */ 1:
-					message.match_time_s = reader.uint32();
-					break;
-				case /* optional CMsgServerSignoutData_DetailedStats.TimeSample.Stats stats */ 2:
-					message.stats = CMsgServerSignoutData_DetailedStats_TimeSample_Stats.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.stats,
-					);
-					break;
-				case /* optional CMsgServerSignoutData_DetailedStats.TimeSample.GoldStats gold_stats */ 4:
-					message.gold_stats = CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.gold_stats,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_DetailedStats_TimeSample,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 match_time_s = 1; */
-		if (message.match_time_s !== undefined) writer.tag(1, WireType.Varint).uint32(message.match_time_s);
-		/* optional CMsgServerSignoutData_DetailedStats.TimeSample.Stats stats = 2; */
-		if (message.stats)
-			CMsgServerSignoutData_DetailedStats_TimeSample_Stats.internalBinaryWrite(
-				message.stats,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional CMsgServerSignoutData_DetailedStats.TimeSample.GoldStats gold_stats = 4; */
-		if (message.gold_stats)
-			CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats.internalBinaryWrite(
-				message.gold_stats,
-				writer.tag(4, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_DetailedStats.TimeSample", [
+      {
+        no: 1,
+        name: "match_time_s",
+        kind: "scalar",
+        localName: "match_time_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "stats",
+        kind: "message",
+        T: () => CMsgServerSignoutData_DetailedStats_TimeSample_Stats,
+      },
+      {
+        no: 4,
+        name: "gold_stats",
+        kind: "message",
+        localName: "gold_stats",
+        T: () => CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerSignoutData_DetailedStats_TimeSample>,
+  ): CMsgServerSignoutData_DetailedStats_TimeSample {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgServerSignoutData_DetailedStats_TimeSample>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_DetailedStats_TimeSample,
+  ): CMsgServerSignoutData_DetailedStats_TimeSample {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 match_time_s */ 1:
+          message.match_time_s = reader.uint32();
+          break;
+        case /* optional CMsgServerSignoutData_DetailedStats.TimeSample.Stats stats */ 2:
+          message.stats = CMsgServerSignoutData_DetailedStats_TimeSample_Stats.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.stats,
+          );
+          break;
+        case /* optional CMsgServerSignoutData_DetailedStats.TimeSample.GoldStats gold_stats */ 4:
+          message.gold_stats = CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.gold_stats,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_DetailedStats_TimeSample,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 match_time_s = 1; */
+    if (message.match_time_s !== undefined) writer.tag(1, WireType.Varint).uint32(message.match_time_s);
+    /* optional CMsgServerSignoutData_DetailedStats.TimeSample.Stats stats = 2; */
+    if (message.stats)
+      CMsgServerSignoutData_DetailedStats_TimeSample_Stats.internalBinaryWrite(
+        message.stats,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional CMsgServerSignoutData_DetailedStats.TimeSample.GoldStats gold_stats = 4; */
+    if (message.gold_stats)
+      CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats.internalBinaryWrite(
+        message.gold_stats,
+        writer.tag(4, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_DetailedStats.TimeSample
@@ -5012,713 +5012,713 @@ class CMsgServerSignoutData_DetailedStats_TimeSample$Type extends MessageType<CM
 export const CMsgServerSignoutData_DetailedStats_TimeSample = new CMsgServerSignoutData_DetailedStats_TimeSample$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_DetailedStats_TimeSample_Stats$Type extends MessageType<CMsgServerSignoutData_DetailedStats_TimeSample_Stats> {
-	constructor() {
-		super("CMsgServerSignoutData_DetailedStats.TimeSample.Stats", [
-			{
-				no: 1,
-				name: "net_worth",
-				kind: "scalar",
-				localName: "net_worth",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "kills",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "deaths",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "assists",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "possible_creeps",
-				kind: "scalar",
-				localName: "possible_creeps",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "creep_kills",
-				kind: "scalar",
-				localName: "creep_kills",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "neutral_kills",
-				kind: "scalar",
-				localName: "neutral_kills",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "creep_damage",
-				kind: "scalar",
-				localName: "creep_damage",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "neutral_damage",
-				kind: "scalar",
-				localName: "neutral_damage",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "boss_damage",
-				kind: "scalar",
-				localName: "boss_damage",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 11,
-				name: "player_damage",
-				kind: "scalar",
-				localName: "player_damage",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 12,
-				name: "denies",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 13,
-				name: "player_healing",
-				kind: "scalar",
-				localName: "player_healing",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 14,
-				name: "ability_points",
-				kind: "scalar",
-				localName: "ability_points",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 15,
-				name: "self_healing",
-				kind: "scalar",
-				localName: "self_healing",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 16,
-				name: "player_damage_taken",
-				kind: "scalar",
-				localName: "player_damage_taken",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 17,
-				name: "max_health",
-				kind: "scalar",
-				localName: "max_health",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 18,
-				name: "weapon_power",
-				kind: "scalar",
-				localName: "weapon_power",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 19,
-				name: "tech_power",
-				kind: "scalar",
-				localName: "tech_power",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 20,
-				name: "shots_hit",
-				kind: "scalar",
-				localName: "shots_hit",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 21,
-				name: "shots_missed",
-				kind: "scalar",
-				localName: "shots_missed",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 22,
-				name: "damage_absorbed",
-				kind: "scalar",
-				localName: "damage_absorbed",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 23,
-				name: "absorption_provided",
-				kind: "scalar",
-				localName: "absorption_provided",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 26,
-				name: "heal_prevented",
-				kind: "scalar",
-				localName: "heal_prevented",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 27,
-				name: "heal_lost",
-				kind: "scalar",
-				localName: "heal_lost",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerSignoutData_DetailedStats_TimeSample_Stats>,
-	): CMsgServerSignoutData_DetailedStats_TimeSample_Stats {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgServerSignoutData_DetailedStats_TimeSample_Stats>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_DetailedStats_TimeSample_Stats,
-	): CMsgServerSignoutData_DetailedStats_TimeSample_Stats {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 net_worth */ 1:
-					message.net_worth = reader.uint32();
-					break;
-				case /* optional uint32 kills */ 2:
-					message.kills = reader.uint32();
-					break;
-				case /* optional uint32 deaths */ 3:
-					message.deaths = reader.uint32();
-					break;
-				case /* optional uint32 assists */ 4:
-					message.assists = reader.uint32();
-					break;
-				case /* optional uint32 possible_creeps */ 5:
-					message.possible_creeps = reader.uint32();
-					break;
-				case /* optional uint32 creep_kills */ 6:
-					message.creep_kills = reader.uint32();
-					break;
-				case /* optional uint32 neutral_kills */ 7:
-					message.neutral_kills = reader.uint32();
-					break;
-				case /* optional uint32 creep_damage */ 8:
-					message.creep_damage = reader.uint32();
-					break;
-				case /* optional uint32 neutral_damage */ 9:
-					message.neutral_damage = reader.uint32();
-					break;
-				case /* optional uint32 boss_damage */ 10:
-					message.boss_damage = reader.uint32();
-					break;
-				case /* optional uint32 player_damage */ 11:
-					message.player_damage = reader.uint32();
-					break;
-				case /* optional uint32 denies */ 12:
-					message.denies = reader.uint32();
-					break;
-				case /* optional uint32 player_healing */ 13:
-					message.player_healing = reader.uint32();
-					break;
-				case /* optional uint32 ability_points */ 14:
-					message.ability_points = reader.uint32();
-					break;
-				case /* optional uint32 self_healing */ 15:
-					message.self_healing = reader.uint32();
-					break;
-				case /* optional uint32 player_damage_taken */ 16:
-					message.player_damage_taken = reader.uint32();
-					break;
-				case /* optional uint32 max_health */ 17:
-					message.max_health = reader.uint32();
-					break;
-				case /* optional uint32 weapon_power */ 18:
-					message.weapon_power = reader.uint32();
-					break;
-				case /* optional uint32 tech_power */ 19:
-					message.tech_power = reader.uint32();
-					break;
-				case /* optional uint32 shots_hit */ 20:
-					message.shots_hit = reader.uint32();
-					break;
-				case /* optional uint32 shots_missed */ 21:
-					message.shots_missed = reader.uint32();
-					break;
-				case /* optional uint32 damage_absorbed */ 22:
-					message.damage_absorbed = reader.uint32();
-					break;
-				case /* optional uint32 absorption_provided */ 23:
-					message.absorption_provided = reader.uint32();
-					break;
-				case /* optional uint32 heal_prevented */ 26:
-					message.heal_prevented = reader.uint32();
-					break;
-				case /* optional uint32 heal_lost */ 27:
-					message.heal_lost = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_DetailedStats_TimeSample_Stats,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 net_worth = 1; */
-		if (message.net_worth !== undefined) writer.tag(1, WireType.Varint).uint32(message.net_worth);
-		/* optional uint32 kills = 2; */
-		if (message.kills !== undefined) writer.tag(2, WireType.Varint).uint32(message.kills);
-		/* optional uint32 deaths = 3; */
-		if (message.deaths !== undefined) writer.tag(3, WireType.Varint).uint32(message.deaths);
-		/* optional uint32 assists = 4; */
-		if (message.assists !== undefined) writer.tag(4, WireType.Varint).uint32(message.assists);
-		/* optional uint32 possible_creeps = 5; */
-		if (message.possible_creeps !== undefined) writer.tag(5, WireType.Varint).uint32(message.possible_creeps);
-		/* optional uint32 creep_kills = 6; */
-		if (message.creep_kills !== undefined) writer.tag(6, WireType.Varint).uint32(message.creep_kills);
-		/* optional uint32 neutral_kills = 7; */
-		if (message.neutral_kills !== undefined) writer.tag(7, WireType.Varint).uint32(message.neutral_kills);
-		/* optional uint32 creep_damage = 8; */
-		if (message.creep_damage !== undefined) writer.tag(8, WireType.Varint).uint32(message.creep_damage);
-		/* optional uint32 neutral_damage = 9; */
-		if (message.neutral_damage !== undefined) writer.tag(9, WireType.Varint).uint32(message.neutral_damage);
-		/* optional uint32 boss_damage = 10; */
-		if (message.boss_damage !== undefined) writer.tag(10, WireType.Varint).uint32(message.boss_damage);
-		/* optional uint32 player_damage = 11; */
-		if (message.player_damage !== undefined) writer.tag(11, WireType.Varint).uint32(message.player_damage);
-		/* optional uint32 denies = 12; */
-		if (message.denies !== undefined) writer.tag(12, WireType.Varint).uint32(message.denies);
-		/* optional uint32 player_healing = 13; */
-		if (message.player_healing !== undefined) writer.tag(13, WireType.Varint).uint32(message.player_healing);
-		/* optional uint32 ability_points = 14; */
-		if (message.ability_points !== undefined) writer.tag(14, WireType.Varint).uint32(message.ability_points);
-		/* optional uint32 self_healing = 15; */
-		if (message.self_healing !== undefined) writer.tag(15, WireType.Varint).uint32(message.self_healing);
-		/* optional uint32 player_damage_taken = 16; */
-		if (message.player_damage_taken !== undefined) writer.tag(16, WireType.Varint).uint32(message.player_damage_taken);
-		/* optional uint32 max_health = 17; */
-		if (message.max_health !== undefined) writer.tag(17, WireType.Varint).uint32(message.max_health);
-		/* optional uint32 weapon_power = 18; */
-		if (message.weapon_power !== undefined) writer.tag(18, WireType.Varint).uint32(message.weapon_power);
-		/* optional uint32 tech_power = 19; */
-		if (message.tech_power !== undefined) writer.tag(19, WireType.Varint).uint32(message.tech_power);
-		/* optional uint32 shots_hit = 20; */
-		if (message.shots_hit !== undefined) writer.tag(20, WireType.Varint).uint32(message.shots_hit);
-		/* optional uint32 shots_missed = 21; */
-		if (message.shots_missed !== undefined) writer.tag(21, WireType.Varint).uint32(message.shots_missed);
-		/* optional uint32 damage_absorbed = 22; */
-		if (message.damage_absorbed !== undefined) writer.tag(22, WireType.Varint).uint32(message.damage_absorbed);
-		/* optional uint32 absorption_provided = 23; */
-		if (message.absorption_provided !== undefined) writer.tag(23, WireType.Varint).uint32(message.absorption_provided);
-		/* optional uint32 heal_prevented = 26; */
-		if (message.heal_prevented !== undefined) writer.tag(26, WireType.Varint).uint32(message.heal_prevented);
-		/* optional uint32 heal_lost = 27; */
-		if (message.heal_lost !== undefined) writer.tag(27, WireType.Varint).uint32(message.heal_lost);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_DetailedStats.TimeSample.Stats", [
+      {
+        no: 1,
+        name: "net_worth",
+        kind: "scalar",
+        localName: "net_worth",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "kills",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "deaths",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "assists",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "possible_creeps",
+        kind: "scalar",
+        localName: "possible_creeps",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "creep_kills",
+        kind: "scalar",
+        localName: "creep_kills",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "neutral_kills",
+        kind: "scalar",
+        localName: "neutral_kills",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "creep_damage",
+        kind: "scalar",
+        localName: "creep_damage",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "neutral_damage",
+        kind: "scalar",
+        localName: "neutral_damage",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "boss_damage",
+        kind: "scalar",
+        localName: "boss_damage",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 11,
+        name: "player_damage",
+        kind: "scalar",
+        localName: "player_damage",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 12,
+        name: "denies",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 13,
+        name: "player_healing",
+        kind: "scalar",
+        localName: "player_healing",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 14,
+        name: "ability_points",
+        kind: "scalar",
+        localName: "ability_points",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 15,
+        name: "self_healing",
+        kind: "scalar",
+        localName: "self_healing",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 16,
+        name: "player_damage_taken",
+        kind: "scalar",
+        localName: "player_damage_taken",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 17,
+        name: "max_health",
+        kind: "scalar",
+        localName: "max_health",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 18,
+        name: "weapon_power",
+        kind: "scalar",
+        localName: "weapon_power",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 19,
+        name: "tech_power",
+        kind: "scalar",
+        localName: "tech_power",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 20,
+        name: "shots_hit",
+        kind: "scalar",
+        localName: "shots_hit",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 21,
+        name: "shots_missed",
+        kind: "scalar",
+        localName: "shots_missed",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 22,
+        name: "damage_absorbed",
+        kind: "scalar",
+        localName: "damage_absorbed",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 23,
+        name: "absorption_provided",
+        kind: "scalar",
+        localName: "absorption_provided",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 26,
+        name: "heal_prevented",
+        kind: "scalar",
+        localName: "heal_prevented",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 27,
+        name: "heal_lost",
+        kind: "scalar",
+        localName: "heal_lost",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerSignoutData_DetailedStats_TimeSample_Stats>,
+  ): CMsgServerSignoutData_DetailedStats_TimeSample_Stats {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgServerSignoutData_DetailedStats_TimeSample_Stats>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_DetailedStats_TimeSample_Stats,
+  ): CMsgServerSignoutData_DetailedStats_TimeSample_Stats {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 net_worth */ 1:
+          message.net_worth = reader.uint32();
+          break;
+        case /* optional uint32 kills */ 2:
+          message.kills = reader.uint32();
+          break;
+        case /* optional uint32 deaths */ 3:
+          message.deaths = reader.uint32();
+          break;
+        case /* optional uint32 assists */ 4:
+          message.assists = reader.uint32();
+          break;
+        case /* optional uint32 possible_creeps */ 5:
+          message.possible_creeps = reader.uint32();
+          break;
+        case /* optional uint32 creep_kills */ 6:
+          message.creep_kills = reader.uint32();
+          break;
+        case /* optional uint32 neutral_kills */ 7:
+          message.neutral_kills = reader.uint32();
+          break;
+        case /* optional uint32 creep_damage */ 8:
+          message.creep_damage = reader.uint32();
+          break;
+        case /* optional uint32 neutral_damage */ 9:
+          message.neutral_damage = reader.uint32();
+          break;
+        case /* optional uint32 boss_damage */ 10:
+          message.boss_damage = reader.uint32();
+          break;
+        case /* optional uint32 player_damage */ 11:
+          message.player_damage = reader.uint32();
+          break;
+        case /* optional uint32 denies */ 12:
+          message.denies = reader.uint32();
+          break;
+        case /* optional uint32 player_healing */ 13:
+          message.player_healing = reader.uint32();
+          break;
+        case /* optional uint32 ability_points */ 14:
+          message.ability_points = reader.uint32();
+          break;
+        case /* optional uint32 self_healing */ 15:
+          message.self_healing = reader.uint32();
+          break;
+        case /* optional uint32 player_damage_taken */ 16:
+          message.player_damage_taken = reader.uint32();
+          break;
+        case /* optional uint32 max_health */ 17:
+          message.max_health = reader.uint32();
+          break;
+        case /* optional uint32 weapon_power */ 18:
+          message.weapon_power = reader.uint32();
+          break;
+        case /* optional uint32 tech_power */ 19:
+          message.tech_power = reader.uint32();
+          break;
+        case /* optional uint32 shots_hit */ 20:
+          message.shots_hit = reader.uint32();
+          break;
+        case /* optional uint32 shots_missed */ 21:
+          message.shots_missed = reader.uint32();
+          break;
+        case /* optional uint32 damage_absorbed */ 22:
+          message.damage_absorbed = reader.uint32();
+          break;
+        case /* optional uint32 absorption_provided */ 23:
+          message.absorption_provided = reader.uint32();
+          break;
+        case /* optional uint32 heal_prevented */ 26:
+          message.heal_prevented = reader.uint32();
+          break;
+        case /* optional uint32 heal_lost */ 27:
+          message.heal_lost = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_DetailedStats_TimeSample_Stats,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 net_worth = 1; */
+    if (message.net_worth !== undefined) writer.tag(1, WireType.Varint).uint32(message.net_worth);
+    /* optional uint32 kills = 2; */
+    if (message.kills !== undefined) writer.tag(2, WireType.Varint).uint32(message.kills);
+    /* optional uint32 deaths = 3; */
+    if (message.deaths !== undefined) writer.tag(3, WireType.Varint).uint32(message.deaths);
+    /* optional uint32 assists = 4; */
+    if (message.assists !== undefined) writer.tag(4, WireType.Varint).uint32(message.assists);
+    /* optional uint32 possible_creeps = 5; */
+    if (message.possible_creeps !== undefined) writer.tag(5, WireType.Varint).uint32(message.possible_creeps);
+    /* optional uint32 creep_kills = 6; */
+    if (message.creep_kills !== undefined) writer.tag(6, WireType.Varint).uint32(message.creep_kills);
+    /* optional uint32 neutral_kills = 7; */
+    if (message.neutral_kills !== undefined) writer.tag(7, WireType.Varint).uint32(message.neutral_kills);
+    /* optional uint32 creep_damage = 8; */
+    if (message.creep_damage !== undefined) writer.tag(8, WireType.Varint).uint32(message.creep_damage);
+    /* optional uint32 neutral_damage = 9; */
+    if (message.neutral_damage !== undefined) writer.tag(9, WireType.Varint).uint32(message.neutral_damage);
+    /* optional uint32 boss_damage = 10; */
+    if (message.boss_damage !== undefined) writer.tag(10, WireType.Varint).uint32(message.boss_damage);
+    /* optional uint32 player_damage = 11; */
+    if (message.player_damage !== undefined) writer.tag(11, WireType.Varint).uint32(message.player_damage);
+    /* optional uint32 denies = 12; */
+    if (message.denies !== undefined) writer.tag(12, WireType.Varint).uint32(message.denies);
+    /* optional uint32 player_healing = 13; */
+    if (message.player_healing !== undefined) writer.tag(13, WireType.Varint).uint32(message.player_healing);
+    /* optional uint32 ability_points = 14; */
+    if (message.ability_points !== undefined) writer.tag(14, WireType.Varint).uint32(message.ability_points);
+    /* optional uint32 self_healing = 15; */
+    if (message.self_healing !== undefined) writer.tag(15, WireType.Varint).uint32(message.self_healing);
+    /* optional uint32 player_damage_taken = 16; */
+    if (message.player_damage_taken !== undefined) writer.tag(16, WireType.Varint).uint32(message.player_damage_taken);
+    /* optional uint32 max_health = 17; */
+    if (message.max_health !== undefined) writer.tag(17, WireType.Varint).uint32(message.max_health);
+    /* optional uint32 weapon_power = 18; */
+    if (message.weapon_power !== undefined) writer.tag(18, WireType.Varint).uint32(message.weapon_power);
+    /* optional uint32 tech_power = 19; */
+    if (message.tech_power !== undefined) writer.tag(19, WireType.Varint).uint32(message.tech_power);
+    /* optional uint32 shots_hit = 20; */
+    if (message.shots_hit !== undefined) writer.tag(20, WireType.Varint).uint32(message.shots_hit);
+    /* optional uint32 shots_missed = 21; */
+    if (message.shots_missed !== undefined) writer.tag(21, WireType.Varint).uint32(message.shots_missed);
+    /* optional uint32 damage_absorbed = 22; */
+    if (message.damage_absorbed !== undefined) writer.tag(22, WireType.Varint).uint32(message.damage_absorbed);
+    /* optional uint32 absorption_provided = 23; */
+    if (message.absorption_provided !== undefined) writer.tag(23, WireType.Varint).uint32(message.absorption_provided);
+    /* optional uint32 heal_prevented = 26; */
+    if (message.heal_prevented !== undefined) writer.tag(26, WireType.Varint).uint32(message.heal_prevented);
+    /* optional uint32 heal_lost = 27; */
+    if (message.heal_lost !== undefined) writer.tag(27, WireType.Varint).uint32(message.heal_lost);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_DetailedStats.TimeSample.Stats
  */
 export const CMsgServerSignoutData_DetailedStats_TimeSample_Stats =
-	new CMsgServerSignoutData_DetailedStats_TimeSample_Stats$Type();
+  new CMsgServerSignoutData_DetailedStats_TimeSample_Stats$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats$Type extends MessageType<CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats> {
-	constructor() {
-		super("CMsgServerSignoutData_DetailedStats.TimeSample.GoldStats", [
-			{
-				no: 1,
-				name: "player",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "player_orb",
-				kind: "scalar",
-				localName: "player_orb",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "lane_creep_orb",
-				kind: "scalar",
-				localName: "lane_creep_orb",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "neutral_creep_orb",
-				kind: "scalar",
-				localName: "neutral_creep_orb",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "boss",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "boss_orb",
-				kind: "scalar",
-				localName: "boss_orb",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "treasure",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "denied",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "death_loss",
-				kind: "scalar",
-				localName: "death_loss",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "lane_creep",
-				kind: "scalar",
-				localName: "lane_creep",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 11,
-				name: "neutral_creep",
-				kind: "scalar",
-				localName: "neutral_creep",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats>,
-	): CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats,
-	): CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 player */ 1:
-					message.player = reader.uint32();
-					break;
-				case /* optional uint32 player_orb */ 2:
-					message.player_orb = reader.uint32();
-					break;
-				case /* optional uint32 lane_creep_orb */ 3:
-					message.lane_creep_orb = reader.uint32();
-					break;
-				case /* optional uint32 neutral_creep_orb */ 4:
-					message.neutral_creep_orb = reader.uint32();
-					break;
-				case /* optional uint32 boss */ 5:
-					message.boss = reader.uint32();
-					break;
-				case /* optional uint32 boss_orb */ 6:
-					message.boss_orb = reader.uint32();
-					break;
-				case /* optional uint32 treasure */ 7:
-					message.treasure = reader.uint32();
-					break;
-				case /* optional uint32 denied */ 8:
-					message.denied = reader.uint32();
-					break;
-				case /* optional uint32 death_loss */ 9:
-					message.death_loss = reader.uint32();
-					break;
-				case /* optional uint32 lane_creep */ 10:
-					message.lane_creep = reader.uint32();
-					break;
-				case /* optional uint32 neutral_creep */ 11:
-					message.neutral_creep = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 player = 1; */
-		if (message.player !== undefined) writer.tag(1, WireType.Varint).uint32(message.player);
-		/* optional uint32 player_orb = 2; */
-		if (message.player_orb !== undefined) writer.tag(2, WireType.Varint).uint32(message.player_orb);
-		/* optional uint32 lane_creep_orb = 3; */
-		if (message.lane_creep_orb !== undefined) writer.tag(3, WireType.Varint).uint32(message.lane_creep_orb);
-		/* optional uint32 neutral_creep_orb = 4; */
-		if (message.neutral_creep_orb !== undefined) writer.tag(4, WireType.Varint).uint32(message.neutral_creep_orb);
-		/* optional uint32 boss = 5; */
-		if (message.boss !== undefined) writer.tag(5, WireType.Varint).uint32(message.boss);
-		/* optional uint32 boss_orb = 6; */
-		if (message.boss_orb !== undefined) writer.tag(6, WireType.Varint).uint32(message.boss_orb);
-		/* optional uint32 treasure = 7; */
-		if (message.treasure !== undefined) writer.tag(7, WireType.Varint).uint32(message.treasure);
-		/* optional uint32 denied = 8; */
-		if (message.denied !== undefined) writer.tag(8, WireType.Varint).uint32(message.denied);
-		/* optional uint32 death_loss = 9; */
-		if (message.death_loss !== undefined) writer.tag(9, WireType.Varint).uint32(message.death_loss);
-		/* optional uint32 lane_creep = 10; */
-		if (message.lane_creep !== undefined) writer.tag(10, WireType.Varint).uint32(message.lane_creep);
-		/* optional uint32 neutral_creep = 11; */
-		if (message.neutral_creep !== undefined) writer.tag(11, WireType.Varint).uint32(message.neutral_creep);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_DetailedStats.TimeSample.GoldStats", [
+      {
+        no: 1,
+        name: "player",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "player_orb",
+        kind: "scalar",
+        localName: "player_orb",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "lane_creep_orb",
+        kind: "scalar",
+        localName: "lane_creep_orb",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "neutral_creep_orb",
+        kind: "scalar",
+        localName: "neutral_creep_orb",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "boss",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "boss_orb",
+        kind: "scalar",
+        localName: "boss_orb",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "treasure",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "denied",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "death_loss",
+        kind: "scalar",
+        localName: "death_loss",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "lane_creep",
+        kind: "scalar",
+        localName: "lane_creep",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 11,
+        name: "neutral_creep",
+        kind: "scalar",
+        localName: "neutral_creep",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats>,
+  ): CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats,
+  ): CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 player */ 1:
+          message.player = reader.uint32();
+          break;
+        case /* optional uint32 player_orb */ 2:
+          message.player_orb = reader.uint32();
+          break;
+        case /* optional uint32 lane_creep_orb */ 3:
+          message.lane_creep_orb = reader.uint32();
+          break;
+        case /* optional uint32 neutral_creep_orb */ 4:
+          message.neutral_creep_orb = reader.uint32();
+          break;
+        case /* optional uint32 boss */ 5:
+          message.boss = reader.uint32();
+          break;
+        case /* optional uint32 boss_orb */ 6:
+          message.boss_orb = reader.uint32();
+          break;
+        case /* optional uint32 treasure */ 7:
+          message.treasure = reader.uint32();
+          break;
+        case /* optional uint32 denied */ 8:
+          message.denied = reader.uint32();
+          break;
+        case /* optional uint32 death_loss */ 9:
+          message.death_loss = reader.uint32();
+          break;
+        case /* optional uint32 lane_creep */ 10:
+          message.lane_creep = reader.uint32();
+          break;
+        case /* optional uint32 neutral_creep */ 11:
+          message.neutral_creep = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 player = 1; */
+    if (message.player !== undefined) writer.tag(1, WireType.Varint).uint32(message.player);
+    /* optional uint32 player_orb = 2; */
+    if (message.player_orb !== undefined) writer.tag(2, WireType.Varint).uint32(message.player_orb);
+    /* optional uint32 lane_creep_orb = 3; */
+    if (message.lane_creep_orb !== undefined) writer.tag(3, WireType.Varint).uint32(message.lane_creep_orb);
+    /* optional uint32 neutral_creep_orb = 4; */
+    if (message.neutral_creep_orb !== undefined) writer.tag(4, WireType.Varint).uint32(message.neutral_creep_orb);
+    /* optional uint32 boss = 5; */
+    if (message.boss !== undefined) writer.tag(5, WireType.Varint).uint32(message.boss);
+    /* optional uint32 boss_orb = 6; */
+    if (message.boss_orb !== undefined) writer.tag(6, WireType.Varint).uint32(message.boss_orb);
+    /* optional uint32 treasure = 7; */
+    if (message.treasure !== undefined) writer.tag(7, WireType.Varint).uint32(message.treasure);
+    /* optional uint32 denied = 8; */
+    if (message.denied !== undefined) writer.tag(8, WireType.Varint).uint32(message.denied);
+    /* optional uint32 death_loss = 9; */
+    if (message.death_loss !== undefined) writer.tag(9, WireType.Varint).uint32(message.death_loss);
+    /* optional uint32 lane_creep = 10; */
+    if (message.lane_creep !== undefined) writer.tag(10, WireType.Varint).uint32(message.lane_creep);
+    /* optional uint32 neutral_creep = 11; */
+    if (message.neutral_creep !== undefined) writer.tag(11, WireType.Varint).uint32(message.neutral_creep);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_DetailedStats.TimeSample.GoldStats
  */
 export const CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats =
-	new CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats$Type();
+  new CMsgServerSignoutData_DetailedStats_TimeSample_GoldStats$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_DetailedStats_Objective$Type extends MessageType<CMsgServerSignoutData_DetailedStats_Objective> {
-	constructor() {
-		super("CMsgServerSignoutData_DetailedStats.Objective", [
-			{
-				no: 2,
-				name: "destroyed_time_s",
-				kind: "scalar",
-				localName: "destroyed_time_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "creep_damage",
-				kind: "scalar",
-				localName: "creep_damage",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "creep_damage_mitigated",
-				kind: "scalar",
-				localName: "creep_damage_mitigated",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "player_damage",
-				kind: "scalar",
-				localName: "player_damage",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "player_damage_mitigated",
-				kind: "scalar",
-				localName: "player_damage_mitigated",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "first_damage_time_s",
-				kind: "scalar",
-				localName: "first_damage_time_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "team_objective_id",
-				kind: "enum",
-				localName: "team_objective_id",
-				opt: true,
-				T: () => ["ECitadelTeamObjective", ECitadelTeamObjective],
-			},
-			{
-				no: 10,
-				name: "team",
-				kind: "enum",
-				opt: true,
-				T: () => ["ECitadelLobbyTeam", ECitadelLobbyTeam],
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerSignoutData_DetailedStats_Objective>,
-	): CMsgServerSignoutData_DetailedStats_Objective {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgServerSignoutData_DetailedStats_Objective>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_DetailedStats_Objective,
-	): CMsgServerSignoutData_DetailedStats_Objective {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 destroyed_time_s */ 2:
-					message.destroyed_time_s = reader.uint32();
-					break;
-				case /* optional uint32 creep_damage */ 4:
-					message.creep_damage = reader.uint32();
-					break;
-				case /* optional uint32 creep_damage_mitigated */ 5:
-					message.creep_damage_mitigated = reader.uint32();
-					break;
-				case /* optional uint32 player_damage */ 6:
-					message.player_damage = reader.uint32();
-					break;
-				case /* optional uint32 player_damage_mitigated */ 7:
-					message.player_damage_mitigated = reader.uint32();
-					break;
-				case /* optional uint32 first_damage_time_s */ 8:
-					message.first_damage_time_s = reader.uint32();
-					break;
-				case /* optional ECitadelTeamObjective team_objective_id */ 9:
-					message.team_objective_id = reader.int32();
-					break;
-				case /* optional ECitadelLobbyTeam team */ 10:
-					message.team = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_DetailedStats_Objective,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 destroyed_time_s = 2; */
-		if (message.destroyed_time_s !== undefined) writer.tag(2, WireType.Varint).uint32(message.destroyed_time_s);
-		/* optional uint32 creep_damage = 4; */
-		if (message.creep_damage !== undefined) writer.tag(4, WireType.Varint).uint32(message.creep_damage);
-		/* optional uint32 creep_damage_mitigated = 5; */
-		if (message.creep_damage_mitigated !== undefined)
-			writer.tag(5, WireType.Varint).uint32(message.creep_damage_mitigated);
-		/* optional uint32 player_damage = 6; */
-		if (message.player_damage !== undefined) writer.tag(6, WireType.Varint).uint32(message.player_damage);
-		/* optional uint32 player_damage_mitigated = 7; */
-		if (message.player_damage_mitigated !== undefined)
-			writer.tag(7, WireType.Varint).uint32(message.player_damage_mitigated);
-		/* optional uint32 first_damage_time_s = 8; */
-		if (message.first_damage_time_s !== undefined) writer.tag(8, WireType.Varint).uint32(message.first_damage_time_s);
-		/* optional ECitadelTeamObjective team_objective_id = 9; */
-		if (message.team_objective_id !== undefined) writer.tag(9, WireType.Varint).int32(message.team_objective_id);
-		/* optional ECitadelLobbyTeam team = 10; */
-		if (message.team !== undefined) writer.tag(10, WireType.Varint).int32(message.team);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_DetailedStats.Objective", [
+      {
+        no: 2,
+        name: "destroyed_time_s",
+        kind: "scalar",
+        localName: "destroyed_time_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "creep_damage",
+        kind: "scalar",
+        localName: "creep_damage",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "creep_damage_mitigated",
+        kind: "scalar",
+        localName: "creep_damage_mitigated",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "player_damage",
+        kind: "scalar",
+        localName: "player_damage",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "player_damage_mitigated",
+        kind: "scalar",
+        localName: "player_damage_mitigated",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "first_damage_time_s",
+        kind: "scalar",
+        localName: "first_damage_time_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "team_objective_id",
+        kind: "enum",
+        localName: "team_objective_id",
+        opt: true,
+        T: () => ["ECitadelTeamObjective", ECitadelTeamObjective],
+      },
+      {
+        no: 10,
+        name: "team",
+        kind: "enum",
+        opt: true,
+        T: () => ["ECitadelLobbyTeam", ECitadelLobbyTeam],
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerSignoutData_DetailedStats_Objective>,
+  ): CMsgServerSignoutData_DetailedStats_Objective {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgServerSignoutData_DetailedStats_Objective>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_DetailedStats_Objective,
+  ): CMsgServerSignoutData_DetailedStats_Objective {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 destroyed_time_s */ 2:
+          message.destroyed_time_s = reader.uint32();
+          break;
+        case /* optional uint32 creep_damage */ 4:
+          message.creep_damage = reader.uint32();
+          break;
+        case /* optional uint32 creep_damage_mitigated */ 5:
+          message.creep_damage_mitigated = reader.uint32();
+          break;
+        case /* optional uint32 player_damage */ 6:
+          message.player_damage = reader.uint32();
+          break;
+        case /* optional uint32 player_damage_mitigated */ 7:
+          message.player_damage_mitigated = reader.uint32();
+          break;
+        case /* optional uint32 first_damage_time_s */ 8:
+          message.first_damage_time_s = reader.uint32();
+          break;
+        case /* optional ECitadelTeamObjective team_objective_id */ 9:
+          message.team_objective_id = reader.int32();
+          break;
+        case /* optional ECitadelLobbyTeam team */ 10:
+          message.team = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_DetailedStats_Objective,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 destroyed_time_s = 2; */
+    if (message.destroyed_time_s !== undefined) writer.tag(2, WireType.Varint).uint32(message.destroyed_time_s);
+    /* optional uint32 creep_damage = 4; */
+    if (message.creep_damage !== undefined) writer.tag(4, WireType.Varint).uint32(message.creep_damage);
+    /* optional uint32 creep_damage_mitigated = 5; */
+    if (message.creep_damage_mitigated !== undefined)
+      writer.tag(5, WireType.Varint).uint32(message.creep_damage_mitigated);
+    /* optional uint32 player_damage = 6; */
+    if (message.player_damage !== undefined) writer.tag(6, WireType.Varint).uint32(message.player_damage);
+    /* optional uint32 player_damage_mitigated = 7; */
+    if (message.player_damage_mitigated !== undefined)
+      writer.tag(7, WireType.Varint).uint32(message.player_damage_mitigated);
+    /* optional uint32 first_damage_time_s = 8; */
+    if (message.first_damage_time_s !== undefined) writer.tag(8, WireType.Varint).uint32(message.first_damage_time_s);
+    /* optional ECitadelTeamObjective team_objective_id = 9; */
+    if (message.team_objective_id !== undefined) writer.tag(9, WireType.Varint).int32(message.team_objective_id);
+    /* optional ECitadelLobbyTeam team = 10; */
+    if (message.team !== undefined) writer.tag(10, WireType.Varint).int32(message.team);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_DetailedStats.Objective
@@ -5726,86 +5726,86 @@ class CMsgServerSignoutData_DetailedStats_Objective$Type extends MessageType<CMs
 export const CMsgServerSignoutData_DetailedStats_Objective = new CMsgServerSignoutData_DetailedStats_Objective$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_DetailedStats_MidBoss$Type extends MessageType<CMsgServerSignoutData_DetailedStats_MidBoss> {
-	constructor() {
-		super("CMsgServerSignoutData_DetailedStats.MidBoss", [
-			{
-				no: 1,
-				name: "team_killed",
-				kind: "enum",
-				localName: "team_killed",
-				opt: true,
-				T: () => ["ECitadelLobbyTeam", ECitadelLobbyTeam],
-			},
-			{
-				no: 2,
-				name: "team_claimed",
-				kind: "enum",
-				localName: "team_claimed",
-				opt: true,
-				T: () => ["ECitadelLobbyTeam", ECitadelLobbyTeam],
-			},
-			{
-				no: 3,
-				name: "destroyed_time_s",
-				kind: "scalar",
-				localName: "destroyed_time_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerSignoutData_DetailedStats_MidBoss>,
-	): CMsgServerSignoutData_DetailedStats_MidBoss {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_DetailedStats_MidBoss>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_DetailedStats_MidBoss,
-	): CMsgServerSignoutData_DetailedStats_MidBoss {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional ECitadelLobbyTeam team_killed */ 1:
-					message.team_killed = reader.int32();
-					break;
-				case /* optional ECitadelLobbyTeam team_claimed */ 2:
-					message.team_claimed = reader.int32();
-					break;
-				case /* optional uint32 destroyed_time_s */ 3:
-					message.destroyed_time_s = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_DetailedStats_MidBoss,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional ECitadelLobbyTeam team_killed = 1; */
-		if (message.team_killed !== undefined) writer.tag(1, WireType.Varint).int32(message.team_killed);
-		/* optional ECitadelLobbyTeam team_claimed = 2; */
-		if (message.team_claimed !== undefined) writer.tag(2, WireType.Varint).int32(message.team_claimed);
-		/* optional uint32 destroyed_time_s = 3; */
-		if (message.destroyed_time_s !== undefined) writer.tag(3, WireType.Varint).uint32(message.destroyed_time_s);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_DetailedStats.MidBoss", [
+      {
+        no: 1,
+        name: "team_killed",
+        kind: "enum",
+        localName: "team_killed",
+        opt: true,
+        T: () => ["ECitadelLobbyTeam", ECitadelLobbyTeam],
+      },
+      {
+        no: 2,
+        name: "team_claimed",
+        kind: "enum",
+        localName: "team_claimed",
+        opt: true,
+        T: () => ["ECitadelLobbyTeam", ECitadelLobbyTeam],
+      },
+      {
+        no: 3,
+        name: "destroyed_time_s",
+        kind: "scalar",
+        localName: "destroyed_time_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerSignoutData_DetailedStats_MidBoss>,
+  ): CMsgServerSignoutData_DetailedStats_MidBoss {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_DetailedStats_MidBoss>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_DetailedStats_MidBoss,
+  ): CMsgServerSignoutData_DetailedStats_MidBoss {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional ECitadelLobbyTeam team_killed */ 1:
+          message.team_killed = reader.int32();
+          break;
+        case /* optional ECitadelLobbyTeam team_claimed */ 2:
+          message.team_claimed = reader.int32();
+          break;
+        case /* optional uint32 destroyed_time_s */ 3:
+          message.destroyed_time_s = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_DetailedStats_MidBoss,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional ECitadelLobbyTeam team_killed = 1; */
+    if (message.team_killed !== undefined) writer.tag(1, WireType.Varint).int32(message.team_killed);
+    /* optional ECitadelLobbyTeam team_claimed = 2; */
+    if (message.team_claimed !== undefined) writer.tag(2, WireType.Varint).int32(message.team_claimed);
+    /* optional uint32 destroyed_time_s = 3; */
+    if (message.destroyed_time_s !== undefined) writer.tag(3, WireType.Varint).uint32(message.destroyed_time_s);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_DetailedStats.MidBoss
@@ -5813,81 +5813,81 @@ class CMsgServerSignoutData_DetailedStats_MidBoss$Type extends MessageType<CMsgS
 export const CMsgServerSignoutData_DetailedStats_MidBoss = new CMsgServerSignoutData_DetailedStats_MidBoss$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_DetailedStats_Player$Type extends MessageType<CMsgServerSignoutData_DetailedStats_Player> {
-	constructor() {
-		super("CMsgServerSignoutData_DetailedStats.Player", [
-			{
-				no: 1,
-				name: "player_slot",
-				kind: "scalar",
-				localName: "player_slot",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "time_samples",
-				kind: "message",
-				localName: "time_samples",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerSignoutData_DetailedStats_TimeSample,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerSignoutData_DetailedStats_Player>,
-	): CMsgServerSignoutData_DetailedStats_Player {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.time_samples = [];
-		if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_DetailedStats_Player>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_DetailedStats_Player,
-	): CMsgServerSignoutData_DetailedStats_Player {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 player_slot */ 1:
-					message.player_slot = reader.uint32();
-					break;
-				case /* repeated CMsgServerSignoutData_DetailedStats.TimeSample time_samples */ 3:
-					message.time_samples.push(
-						CMsgServerSignoutData_DetailedStats_TimeSample.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_DetailedStats_Player,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 player_slot = 1; */
-		if (message.player_slot !== undefined) writer.tag(1, WireType.Varint).uint32(message.player_slot);
-		/* repeated CMsgServerSignoutData_DetailedStats.TimeSample time_samples = 3; */
-		for (let i = 0; i < message.time_samples.length; i++)
-			CMsgServerSignoutData_DetailedStats_TimeSample.internalBinaryWrite(
-				message.time_samples[i],
-				writer.tag(3, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_DetailedStats.Player", [
+      {
+        no: 1,
+        name: "player_slot",
+        kind: "scalar",
+        localName: "player_slot",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "time_samples",
+        kind: "message",
+        localName: "time_samples",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerSignoutData_DetailedStats_TimeSample,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerSignoutData_DetailedStats_Player>,
+  ): CMsgServerSignoutData_DetailedStats_Player {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.time_samples = [];
+    if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_DetailedStats_Player>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_DetailedStats_Player,
+  ): CMsgServerSignoutData_DetailedStats_Player {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 player_slot */ 1:
+          message.player_slot = reader.uint32();
+          break;
+        case /* repeated CMsgServerSignoutData_DetailedStats.TimeSample time_samples */ 3:
+          message.time_samples.push(
+            CMsgServerSignoutData_DetailedStats_TimeSample.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_DetailedStats_Player,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 player_slot = 1; */
+    if (message.player_slot !== undefined) writer.tag(1, WireType.Varint).uint32(message.player_slot);
+    /* repeated CMsgServerSignoutData_DetailedStats.TimeSample time_samples = 3; */
+    for (let i = 0; i < message.time_samples.length; i++)
+      CMsgServerSignoutData_DetailedStats_TimeSample.internalBinaryWrite(
+        message.time_samples[i],
+        writer.tag(3, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_DetailedStats.Player
@@ -5895,424 +5895,424 @@ class CMsgServerSignoutData_DetailedStats_Player$Type extends MessageType<CMsgSe
 export const CMsgServerSignoutData_DetailedStats_Player = new CMsgServerSignoutData_DetailedStats_Player$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_PerfData$Type extends MessageType<CMsgServerSignoutData_PerfData> {
-	constructor() {
-		super("CMsgServerSignoutData_PerfData", [
-			{
-				no: 1,
-				name: "average_frame_time",
-				kind: "scalar",
-				localName: "average_frame_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 2,
-				name: "max_frame_time",
-				kind: "scalar",
-				localName: "max_frame_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "server_average_frame_time",
-				kind: "scalar",
-				localName: "server_average_frame_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 4,
-				name: "server_max_frame_time",
-				kind: "scalar",
-				localName: "server_max_frame_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 5,
-				name: "average_compute_time",
-				kind: "scalar",
-				localName: "average_compute_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 6,
-				name: "max_compute_time",
-				kind: "scalar",
-				localName: "max_compute_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 7,
-				name: "average_client_tick_time",
-				kind: "scalar",
-				localName: "average_client_tick_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 8,
-				name: "max_client_tick_time",
-				kind: "scalar",
-				localName: "max_client_tick_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 9,
-				name: "average_client_simulate_time",
-				kind: "scalar",
-				localName: "average_client_simulate_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 10,
-				name: "max_client_simulate_time",
-				kind: "scalar",
-				localName: "max_client_simulate_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 11,
-				name: "average_output_time",
-				kind: "scalar",
-				localName: "average_output_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 12,
-				name: "max_output_time",
-				kind: "scalar",
-				localName: "max_output_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 13,
-				name: "average_wait_for_rendering_to_complete_time",
-				kind: "scalar",
-				localName: "average_wait_for_rendering_to_complete_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 14,
-				name: "max_wait_for_rendering_to_complete_time",
-				kind: "scalar",
-				localName: "max_wait_for_rendering_to_complete_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 15,
-				name: "average_swap_time",
-				kind: "scalar",
-				localName: "average_swap_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 16,
-				name: "max_swap_time",
-				kind: "scalar",
-				localName: "max_swap_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 17,
-				name: "average_frame_update_time",
-				kind: "scalar",
-				localName: "average_frame_update_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 18,
-				name: "max_frame_update_time",
-				kind: "scalar",
-				localName: "max_frame_update_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 19,
-				name: "average_idle_time",
-				kind: "scalar",
-				localName: "average_idle_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 20,
-				name: "max_idle_time",
-				kind: "scalar",
-				localName: "max_idle_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 21,
-				name: "average_input_processing_time",
-				kind: "scalar",
-				localName: "average_input_processing_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 22,
-				name: "max_input_processing_time",
-				kind: "scalar",
-				localName: "max_input_processing_time",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerSignoutData_PerfData>): CMsgServerSignoutData_PerfData {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.average_frame_time = [];
-		message.max_frame_time = [];
-		message.average_compute_time = [];
-		message.max_compute_time = [];
-		message.average_client_tick_time = [];
-		message.max_client_tick_time = [];
-		message.average_client_simulate_time = [];
-		message.max_client_simulate_time = [];
-		message.average_output_time = [];
-		message.max_output_time = [];
-		message.average_wait_for_rendering_to_complete_time = [];
-		message.max_wait_for_rendering_to_complete_time = [];
-		message.average_swap_time = [];
-		message.max_swap_time = [];
-		message.average_frame_update_time = [];
-		message.max_frame_update_time = [];
-		message.average_idle_time = [];
-		message.max_idle_time = [];
-		message.average_input_processing_time = [];
-		message.max_input_processing_time = [];
-		if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_PerfData>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_PerfData,
-	): CMsgServerSignoutData_PerfData {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated float average_frame_time */ 1:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.average_frame_time.push(reader.float());
-					else message.average_frame_time.push(reader.float());
-					break;
-				case /* repeated float max_frame_time */ 2:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.max_frame_time.push(reader.float());
-					else message.max_frame_time.push(reader.float());
-					break;
-				case /* optional float server_average_frame_time */ 3:
-					message.server_average_frame_time = reader.float();
-					break;
-				case /* optional float server_max_frame_time */ 4:
-					message.server_max_frame_time = reader.float();
-					break;
-				case /* repeated float average_compute_time */ 5:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.average_compute_time.push(reader.float());
-					else message.average_compute_time.push(reader.float());
-					break;
-				case /* repeated float max_compute_time */ 6:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.max_compute_time.push(reader.float());
-					else message.max_compute_time.push(reader.float());
-					break;
-				case /* repeated float average_client_tick_time */ 7:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.average_client_tick_time.push(reader.float());
-					else message.average_client_tick_time.push(reader.float());
-					break;
-				case /* repeated float max_client_tick_time */ 8:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.max_client_tick_time.push(reader.float());
-					else message.max_client_tick_time.push(reader.float());
-					break;
-				case /* repeated float average_client_simulate_time */ 9:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.average_client_simulate_time.push(reader.float());
-					else message.average_client_simulate_time.push(reader.float());
-					break;
-				case /* repeated float max_client_simulate_time */ 10:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.max_client_simulate_time.push(reader.float());
-					else message.max_client_simulate_time.push(reader.float());
-					break;
-				case /* repeated float average_output_time */ 11:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.average_output_time.push(reader.float());
-					else message.average_output_time.push(reader.float());
-					break;
-				case /* repeated float max_output_time */ 12:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.max_output_time.push(reader.float());
-					else message.max_output_time.push(reader.float());
-					break;
-				case /* repeated float average_wait_for_rendering_to_complete_time */ 13:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.average_wait_for_rendering_to_complete_time.push(reader.float());
-					else message.average_wait_for_rendering_to_complete_time.push(reader.float());
-					break;
-				case /* repeated float max_wait_for_rendering_to_complete_time */ 14:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.max_wait_for_rendering_to_complete_time.push(reader.float());
-					else message.max_wait_for_rendering_to_complete_time.push(reader.float());
-					break;
-				case /* repeated float average_swap_time */ 15:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.average_swap_time.push(reader.float());
-					else message.average_swap_time.push(reader.float());
-					break;
-				case /* repeated float max_swap_time */ 16:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.max_swap_time.push(reader.float());
-					else message.max_swap_time.push(reader.float());
-					break;
-				case /* repeated float average_frame_update_time */ 17:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.average_frame_update_time.push(reader.float());
-					else message.average_frame_update_time.push(reader.float());
-					break;
-				case /* repeated float max_frame_update_time */ 18:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.max_frame_update_time.push(reader.float());
-					else message.max_frame_update_time.push(reader.float());
-					break;
-				case /* repeated float average_idle_time */ 19:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.average_idle_time.push(reader.float());
-					else message.average_idle_time.push(reader.float());
-					break;
-				case /* repeated float max_idle_time */ 20:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.max_idle_time.push(reader.float());
-					else message.max_idle_time.push(reader.float());
-					break;
-				case /* repeated float average_input_processing_time */ 21:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.average_input_processing_time.push(reader.float());
-					else message.average_input_processing_time.push(reader.float());
-					break;
-				case /* repeated float max_input_processing_time */ 22:
-					if (wireType === WireType.LengthDelimited)
-						for (let e = reader.int32() + reader.pos; reader.pos < e; )
-							message.max_input_processing_time.push(reader.float());
-					else message.max_input_processing_time.push(reader.float());
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_PerfData,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated float average_frame_time = 1; */
-		for (let i = 0; i < message.average_frame_time.length; i++)
-			writer.tag(1, WireType.Bit32).float(message.average_frame_time[i]);
-		/* repeated float max_frame_time = 2; */
-		for (let i = 0; i < message.max_frame_time.length; i++)
-			writer.tag(2, WireType.Bit32).float(message.max_frame_time[i]);
-		/* optional float server_average_frame_time = 3; */
-		if (message.server_average_frame_time !== undefined)
-			writer.tag(3, WireType.Bit32).float(message.server_average_frame_time);
-		/* optional float server_max_frame_time = 4; */
-		if (message.server_max_frame_time !== undefined) writer.tag(4, WireType.Bit32).float(message.server_max_frame_time);
-		/* repeated float average_compute_time = 5; */
-		for (let i = 0; i < message.average_compute_time.length; i++)
-			writer.tag(5, WireType.Bit32).float(message.average_compute_time[i]);
-		/* repeated float max_compute_time = 6; */
-		for (let i = 0; i < message.max_compute_time.length; i++)
-			writer.tag(6, WireType.Bit32).float(message.max_compute_time[i]);
-		/* repeated float average_client_tick_time = 7; */
-		for (let i = 0; i < message.average_client_tick_time.length; i++)
-			writer.tag(7, WireType.Bit32).float(message.average_client_tick_time[i]);
-		/* repeated float max_client_tick_time = 8; */
-		for (let i = 0; i < message.max_client_tick_time.length; i++)
-			writer.tag(8, WireType.Bit32).float(message.max_client_tick_time[i]);
-		/* repeated float average_client_simulate_time = 9; */
-		for (let i = 0; i < message.average_client_simulate_time.length; i++)
-			writer.tag(9, WireType.Bit32).float(message.average_client_simulate_time[i]);
-		/* repeated float max_client_simulate_time = 10; */
-		for (let i = 0; i < message.max_client_simulate_time.length; i++)
-			writer.tag(10, WireType.Bit32).float(message.max_client_simulate_time[i]);
-		/* repeated float average_output_time = 11; */
-		for (let i = 0; i < message.average_output_time.length; i++)
-			writer.tag(11, WireType.Bit32).float(message.average_output_time[i]);
-		/* repeated float max_output_time = 12; */
-		for (let i = 0; i < message.max_output_time.length; i++)
-			writer.tag(12, WireType.Bit32).float(message.max_output_time[i]);
-		/* repeated float average_wait_for_rendering_to_complete_time = 13; */
-		for (let i = 0; i < message.average_wait_for_rendering_to_complete_time.length; i++)
-			writer.tag(13, WireType.Bit32).float(message.average_wait_for_rendering_to_complete_time[i]);
-		/* repeated float max_wait_for_rendering_to_complete_time = 14; */
-		for (let i = 0; i < message.max_wait_for_rendering_to_complete_time.length; i++)
-			writer.tag(14, WireType.Bit32).float(message.max_wait_for_rendering_to_complete_time[i]);
-		/* repeated float average_swap_time = 15; */
-		for (let i = 0; i < message.average_swap_time.length; i++)
-			writer.tag(15, WireType.Bit32).float(message.average_swap_time[i]);
-		/* repeated float max_swap_time = 16; */
-		for (let i = 0; i < message.max_swap_time.length; i++)
-			writer.tag(16, WireType.Bit32).float(message.max_swap_time[i]);
-		/* repeated float average_frame_update_time = 17; */
-		for (let i = 0; i < message.average_frame_update_time.length; i++)
-			writer.tag(17, WireType.Bit32).float(message.average_frame_update_time[i]);
-		/* repeated float max_frame_update_time = 18; */
-		for (let i = 0; i < message.max_frame_update_time.length; i++)
-			writer.tag(18, WireType.Bit32).float(message.max_frame_update_time[i]);
-		/* repeated float average_idle_time = 19; */
-		for (let i = 0; i < message.average_idle_time.length; i++)
-			writer.tag(19, WireType.Bit32).float(message.average_idle_time[i]);
-		/* repeated float max_idle_time = 20; */
-		for (let i = 0; i < message.max_idle_time.length; i++)
-			writer.tag(20, WireType.Bit32).float(message.max_idle_time[i]);
-		/* repeated float average_input_processing_time = 21; */
-		for (let i = 0; i < message.average_input_processing_time.length; i++)
-			writer.tag(21, WireType.Bit32).float(message.average_input_processing_time[i]);
-		/* repeated float max_input_processing_time = 22; */
-		for (let i = 0; i < message.max_input_processing_time.length; i++)
-			writer.tag(22, WireType.Bit32).float(message.max_input_processing_time[i]);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_PerfData", [
+      {
+        no: 1,
+        name: "average_frame_time",
+        kind: "scalar",
+        localName: "average_frame_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 2,
+        name: "max_frame_time",
+        kind: "scalar",
+        localName: "max_frame_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "server_average_frame_time",
+        kind: "scalar",
+        localName: "server_average_frame_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 4,
+        name: "server_max_frame_time",
+        kind: "scalar",
+        localName: "server_max_frame_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 5,
+        name: "average_compute_time",
+        kind: "scalar",
+        localName: "average_compute_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 6,
+        name: "max_compute_time",
+        kind: "scalar",
+        localName: "max_compute_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 7,
+        name: "average_client_tick_time",
+        kind: "scalar",
+        localName: "average_client_tick_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 8,
+        name: "max_client_tick_time",
+        kind: "scalar",
+        localName: "max_client_tick_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 9,
+        name: "average_client_simulate_time",
+        kind: "scalar",
+        localName: "average_client_simulate_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 10,
+        name: "max_client_simulate_time",
+        kind: "scalar",
+        localName: "max_client_simulate_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 11,
+        name: "average_output_time",
+        kind: "scalar",
+        localName: "average_output_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 12,
+        name: "max_output_time",
+        kind: "scalar",
+        localName: "max_output_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 13,
+        name: "average_wait_for_rendering_to_complete_time",
+        kind: "scalar",
+        localName: "average_wait_for_rendering_to_complete_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 14,
+        name: "max_wait_for_rendering_to_complete_time",
+        kind: "scalar",
+        localName: "max_wait_for_rendering_to_complete_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 15,
+        name: "average_swap_time",
+        kind: "scalar",
+        localName: "average_swap_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 16,
+        name: "max_swap_time",
+        kind: "scalar",
+        localName: "max_swap_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 17,
+        name: "average_frame_update_time",
+        kind: "scalar",
+        localName: "average_frame_update_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 18,
+        name: "max_frame_update_time",
+        kind: "scalar",
+        localName: "max_frame_update_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 19,
+        name: "average_idle_time",
+        kind: "scalar",
+        localName: "average_idle_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 20,
+        name: "max_idle_time",
+        kind: "scalar",
+        localName: "max_idle_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 21,
+        name: "average_input_processing_time",
+        kind: "scalar",
+        localName: "average_input_processing_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 22,
+        name: "max_input_processing_time",
+        kind: "scalar",
+        localName: "max_input_processing_time",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerSignoutData_PerfData>): CMsgServerSignoutData_PerfData {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.average_frame_time = [];
+    message.max_frame_time = [];
+    message.average_compute_time = [];
+    message.max_compute_time = [];
+    message.average_client_tick_time = [];
+    message.max_client_tick_time = [];
+    message.average_client_simulate_time = [];
+    message.max_client_simulate_time = [];
+    message.average_output_time = [];
+    message.max_output_time = [];
+    message.average_wait_for_rendering_to_complete_time = [];
+    message.max_wait_for_rendering_to_complete_time = [];
+    message.average_swap_time = [];
+    message.max_swap_time = [];
+    message.average_frame_update_time = [];
+    message.max_frame_update_time = [];
+    message.average_idle_time = [];
+    message.max_idle_time = [];
+    message.average_input_processing_time = [];
+    message.max_input_processing_time = [];
+    if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_PerfData>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_PerfData,
+  ): CMsgServerSignoutData_PerfData {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated float average_frame_time */ 1:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.average_frame_time.push(reader.float());
+          else message.average_frame_time.push(reader.float());
+          break;
+        case /* repeated float max_frame_time */ 2:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.max_frame_time.push(reader.float());
+          else message.max_frame_time.push(reader.float());
+          break;
+        case /* optional float server_average_frame_time */ 3:
+          message.server_average_frame_time = reader.float();
+          break;
+        case /* optional float server_max_frame_time */ 4:
+          message.server_max_frame_time = reader.float();
+          break;
+        case /* repeated float average_compute_time */ 5:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.average_compute_time.push(reader.float());
+          else message.average_compute_time.push(reader.float());
+          break;
+        case /* repeated float max_compute_time */ 6:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.max_compute_time.push(reader.float());
+          else message.max_compute_time.push(reader.float());
+          break;
+        case /* repeated float average_client_tick_time */ 7:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.average_client_tick_time.push(reader.float());
+          else message.average_client_tick_time.push(reader.float());
+          break;
+        case /* repeated float max_client_tick_time */ 8:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.max_client_tick_time.push(reader.float());
+          else message.max_client_tick_time.push(reader.float());
+          break;
+        case /* repeated float average_client_simulate_time */ 9:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.average_client_simulate_time.push(reader.float());
+          else message.average_client_simulate_time.push(reader.float());
+          break;
+        case /* repeated float max_client_simulate_time */ 10:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.max_client_simulate_time.push(reader.float());
+          else message.max_client_simulate_time.push(reader.float());
+          break;
+        case /* repeated float average_output_time */ 11:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.average_output_time.push(reader.float());
+          else message.average_output_time.push(reader.float());
+          break;
+        case /* repeated float max_output_time */ 12:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.max_output_time.push(reader.float());
+          else message.max_output_time.push(reader.float());
+          break;
+        case /* repeated float average_wait_for_rendering_to_complete_time */ 13:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.average_wait_for_rendering_to_complete_time.push(reader.float());
+          else message.average_wait_for_rendering_to_complete_time.push(reader.float());
+          break;
+        case /* repeated float max_wait_for_rendering_to_complete_time */ 14:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.max_wait_for_rendering_to_complete_time.push(reader.float());
+          else message.max_wait_for_rendering_to_complete_time.push(reader.float());
+          break;
+        case /* repeated float average_swap_time */ 15:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.average_swap_time.push(reader.float());
+          else message.average_swap_time.push(reader.float());
+          break;
+        case /* repeated float max_swap_time */ 16:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.max_swap_time.push(reader.float());
+          else message.max_swap_time.push(reader.float());
+          break;
+        case /* repeated float average_frame_update_time */ 17:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.average_frame_update_time.push(reader.float());
+          else message.average_frame_update_time.push(reader.float());
+          break;
+        case /* repeated float max_frame_update_time */ 18:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.max_frame_update_time.push(reader.float());
+          else message.max_frame_update_time.push(reader.float());
+          break;
+        case /* repeated float average_idle_time */ 19:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.average_idle_time.push(reader.float());
+          else message.average_idle_time.push(reader.float());
+          break;
+        case /* repeated float max_idle_time */ 20:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; ) message.max_idle_time.push(reader.float());
+          else message.max_idle_time.push(reader.float());
+          break;
+        case /* repeated float average_input_processing_time */ 21:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.average_input_processing_time.push(reader.float());
+          else message.average_input_processing_time.push(reader.float());
+          break;
+        case /* repeated float max_input_processing_time */ 22:
+          if (wireType === WireType.LengthDelimited)
+            for (let e = reader.int32() + reader.pos; reader.pos < e; )
+              message.max_input_processing_time.push(reader.float());
+          else message.max_input_processing_time.push(reader.float());
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_PerfData,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated float average_frame_time = 1; */
+    for (let i = 0; i < message.average_frame_time.length; i++)
+      writer.tag(1, WireType.Bit32).float(message.average_frame_time[i]);
+    /* repeated float max_frame_time = 2; */
+    for (let i = 0; i < message.max_frame_time.length; i++)
+      writer.tag(2, WireType.Bit32).float(message.max_frame_time[i]);
+    /* optional float server_average_frame_time = 3; */
+    if (message.server_average_frame_time !== undefined)
+      writer.tag(3, WireType.Bit32).float(message.server_average_frame_time);
+    /* optional float server_max_frame_time = 4; */
+    if (message.server_max_frame_time !== undefined) writer.tag(4, WireType.Bit32).float(message.server_max_frame_time);
+    /* repeated float average_compute_time = 5; */
+    for (let i = 0; i < message.average_compute_time.length; i++)
+      writer.tag(5, WireType.Bit32).float(message.average_compute_time[i]);
+    /* repeated float max_compute_time = 6; */
+    for (let i = 0; i < message.max_compute_time.length; i++)
+      writer.tag(6, WireType.Bit32).float(message.max_compute_time[i]);
+    /* repeated float average_client_tick_time = 7; */
+    for (let i = 0; i < message.average_client_tick_time.length; i++)
+      writer.tag(7, WireType.Bit32).float(message.average_client_tick_time[i]);
+    /* repeated float max_client_tick_time = 8; */
+    for (let i = 0; i < message.max_client_tick_time.length; i++)
+      writer.tag(8, WireType.Bit32).float(message.max_client_tick_time[i]);
+    /* repeated float average_client_simulate_time = 9; */
+    for (let i = 0; i < message.average_client_simulate_time.length; i++)
+      writer.tag(9, WireType.Bit32).float(message.average_client_simulate_time[i]);
+    /* repeated float max_client_simulate_time = 10; */
+    for (let i = 0; i < message.max_client_simulate_time.length; i++)
+      writer.tag(10, WireType.Bit32).float(message.max_client_simulate_time[i]);
+    /* repeated float average_output_time = 11; */
+    for (let i = 0; i < message.average_output_time.length; i++)
+      writer.tag(11, WireType.Bit32).float(message.average_output_time[i]);
+    /* repeated float max_output_time = 12; */
+    for (let i = 0; i < message.max_output_time.length; i++)
+      writer.tag(12, WireType.Bit32).float(message.max_output_time[i]);
+    /* repeated float average_wait_for_rendering_to_complete_time = 13; */
+    for (let i = 0; i < message.average_wait_for_rendering_to_complete_time.length; i++)
+      writer.tag(13, WireType.Bit32).float(message.average_wait_for_rendering_to_complete_time[i]);
+    /* repeated float max_wait_for_rendering_to_complete_time = 14; */
+    for (let i = 0; i < message.max_wait_for_rendering_to_complete_time.length; i++)
+      writer.tag(14, WireType.Bit32).float(message.max_wait_for_rendering_to_complete_time[i]);
+    /* repeated float average_swap_time = 15; */
+    for (let i = 0; i < message.average_swap_time.length; i++)
+      writer.tag(15, WireType.Bit32).float(message.average_swap_time[i]);
+    /* repeated float max_swap_time = 16; */
+    for (let i = 0; i < message.max_swap_time.length; i++)
+      writer.tag(16, WireType.Bit32).float(message.max_swap_time[i]);
+    /* repeated float average_frame_update_time = 17; */
+    for (let i = 0; i < message.average_frame_update_time.length; i++)
+      writer.tag(17, WireType.Bit32).float(message.average_frame_update_time[i]);
+    /* repeated float max_frame_update_time = 18; */
+    for (let i = 0; i < message.max_frame_update_time.length; i++)
+      writer.tag(18, WireType.Bit32).float(message.max_frame_update_time[i]);
+    /* repeated float average_idle_time = 19; */
+    for (let i = 0; i < message.average_idle_time.length; i++)
+      writer.tag(19, WireType.Bit32).float(message.average_idle_time[i]);
+    /* repeated float max_idle_time = 20; */
+    for (let i = 0; i < message.max_idle_time.length; i++)
+      writer.tag(20, WireType.Bit32).float(message.max_idle_time[i]);
+    /* repeated float average_input_processing_time = 21; */
+    for (let i = 0; i < message.average_input_processing_time.length; i++)
+      writer.tag(21, WireType.Bit32).float(message.average_input_processing_time[i]);
+    /* repeated float max_input_processing_time = 22; */
+    for (let i = 0; i < message.max_input_processing_time.length; i++)
+      writer.tag(22, WireType.Bit32).float(message.max_input_processing_time[i]);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_PerfData
@@ -6320,66 +6320,66 @@ class CMsgServerSignoutData_PerfData$Type extends MessageType<CMsgServerSignoutD
 export const CMsgServerSignoutData_PerfData = new CMsgServerSignoutData_PerfData$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_BookRewards$Type extends MessageType<CMsgServerSignoutData_BookRewards> {
-	constructor() {
-		super("CMsgServerSignoutData_BookRewards", [
-			{
-				no: 1,
-				name: "account_rewards",
-				kind: "message",
-				localName: "account_rewards",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerSignoutData_BookRewards_AccountRewards,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerSignoutData_BookRewards>): CMsgServerSignoutData_BookRewards {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.account_rewards = [];
-		if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_BookRewards>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_BookRewards,
-	): CMsgServerSignoutData_BookRewards {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgServerSignoutData_BookRewards.AccountRewards account_rewards */ 1:
-					message.account_rewards.push(
-						CMsgServerSignoutData_BookRewards_AccountRewards.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_BookRewards,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CMsgServerSignoutData_BookRewards.AccountRewards account_rewards = 1; */
-		for (let i = 0; i < message.account_rewards.length; i++)
-			CMsgServerSignoutData_BookRewards_AccountRewards.internalBinaryWrite(
-				message.account_rewards[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_BookRewards", [
+      {
+        no: 1,
+        name: "account_rewards",
+        kind: "message",
+        localName: "account_rewards",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerSignoutData_BookRewards_AccountRewards,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerSignoutData_BookRewards>): CMsgServerSignoutData_BookRewards {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.account_rewards = [];
+    if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_BookRewards>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_BookRewards,
+  ): CMsgServerSignoutData_BookRewards {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgServerSignoutData_BookRewards.AccountRewards account_rewards */ 1:
+          message.account_rewards.push(
+            CMsgServerSignoutData_BookRewards_AccountRewards.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_BookRewards,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CMsgServerSignoutData_BookRewards.AccountRewards account_rewards = 1; */
+    for (let i = 0; i < message.account_rewards.length; i++)
+      CMsgServerSignoutData_BookRewards_AccountRewards.internalBinaryWrite(
+        message.account_rewards[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_BookRewards
@@ -6387,73 +6387,73 @@ class CMsgServerSignoutData_BookRewards$Type extends MessageType<CMsgServerSigno
 export const CMsgServerSignoutData_BookRewards = new CMsgServerSignoutData_BookRewards$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_BookRewards_BookReward$Type extends MessageType<CMsgServerSignoutData_BookRewards_BookReward> {
-	constructor() {
-		super("CMsgServerSignoutData_BookRewards.BookReward", [
-			{
-				no: 1,
-				name: "book_id",
-				kind: "scalar",
-				localName: "book_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "xp_reward",
-				kind: "scalar",
-				localName: "xp_reward",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerSignoutData_BookRewards_BookReward>,
-	): CMsgServerSignoutData_BookRewards_BookReward {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_BookRewards_BookReward>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_BookRewards_BookReward,
-	): CMsgServerSignoutData_BookRewards_BookReward {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 book_id */ 1:
-					message.book_id = reader.uint32();
-					break;
-				case /* optional uint32 xp_reward */ 2:
-					message.xp_reward = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_BookRewards_BookReward,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 book_id = 1; */
-		if (message.book_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.book_id);
-		/* optional uint32 xp_reward = 2; */
-		if (message.xp_reward !== undefined) writer.tag(2, WireType.Varint).uint32(message.xp_reward);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_BookRewards.BookReward", [
+      {
+        no: 1,
+        name: "book_id",
+        kind: "scalar",
+        localName: "book_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "xp_reward",
+        kind: "scalar",
+        localName: "xp_reward",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerSignoutData_BookRewards_BookReward>,
+  ): CMsgServerSignoutData_BookRewards_BookReward {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_BookRewards_BookReward>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_BookRewards_BookReward,
+  ): CMsgServerSignoutData_BookRewards_BookReward {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 book_id */ 1:
+          message.book_id = reader.uint32();
+          break;
+        case /* optional uint32 xp_reward */ 2:
+          message.xp_reward = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_BookRewards_BookReward,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 book_id = 1; */
+    if (message.book_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.book_id);
+    /* optional uint32 xp_reward = 2; */
+    if (message.xp_reward !== undefined) writer.tag(2, WireType.Varint).uint32(message.xp_reward);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_BookRewards.BookReward
@@ -6461,151 +6461,151 @@ class CMsgServerSignoutData_BookRewards_BookReward$Type extends MessageType<CMsg
 export const CMsgServerSignoutData_BookRewards_BookReward = new CMsgServerSignoutData_BookRewards_BookReward$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_BookRewards_AccountRewards$Type extends MessageType<CMsgServerSignoutData_BookRewards_AccountRewards> {
-	constructor() {
-		super("CMsgServerSignoutData_BookRewards.AccountRewards", [
-			{
-				no: 1,
-				name: "account_id",
-				kind: "scalar",
-				localName: "account_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "book_reward",
-				kind: "message",
-				localName: "book_reward",
-				T: () => CMsgServerSignoutData_BookRewards_BookReward,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerSignoutData_BookRewards_AccountRewards>,
-	): CMsgServerSignoutData_BookRewards_AccountRewards {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgServerSignoutData_BookRewards_AccountRewards>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_BookRewards_AccountRewards,
-	): CMsgServerSignoutData_BookRewards_AccountRewards {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 account_id */ 1:
-					message.account_id = reader.uint32();
-					break;
-				case /* optional CMsgServerSignoutData_BookRewards.BookReward book_reward */ 2:
-					message.book_reward = CMsgServerSignoutData_BookRewards_BookReward.internalBinaryRead(
-						reader,
-						reader.uint32(),
-						options,
-						message.book_reward,
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_BookRewards_AccountRewards,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 account_id = 1; */
-		if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
-		/* optional CMsgServerSignoutData_BookRewards.BookReward book_reward = 2; */
-		if (message.book_reward)
-			CMsgServerSignoutData_BookRewards_BookReward.internalBinaryWrite(
-				message.book_reward,
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_BookRewards.AccountRewards", [
+      {
+        no: 1,
+        name: "account_id",
+        kind: "scalar",
+        localName: "account_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "book_reward",
+        kind: "message",
+        localName: "book_reward",
+        T: () => CMsgServerSignoutData_BookRewards_BookReward,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerSignoutData_BookRewards_AccountRewards>,
+  ): CMsgServerSignoutData_BookRewards_AccountRewards {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgServerSignoutData_BookRewards_AccountRewards>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_BookRewards_AccountRewards,
+  ): CMsgServerSignoutData_BookRewards_AccountRewards {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 account_id */ 1:
+          message.account_id = reader.uint32();
+          break;
+        case /* optional CMsgServerSignoutData_BookRewards.BookReward book_reward */ 2:
+          message.book_reward = CMsgServerSignoutData_BookRewards_BookReward.internalBinaryRead(
+            reader,
+            reader.uint32(),
+            options,
+            message.book_reward,
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_BookRewards_AccountRewards,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 account_id = 1; */
+    if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
+    /* optional CMsgServerSignoutData_BookRewards.BookReward book_reward = 2; */
+    if (message.book_reward)
+      CMsgServerSignoutData_BookRewards_BookReward.internalBinaryWrite(
+        message.book_reward,
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_BookRewards.AccountRewards
  */
 export const CMsgServerSignoutData_BookRewards_AccountRewards =
-	new CMsgServerSignoutData_BookRewards_AccountRewards$Type();
+  new CMsgServerSignoutData_BookRewards_AccountRewards$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_AccountStatChanges$Type extends MessageType<CMsgServerSignoutData_AccountStatChanges> {
-	constructor() {
-		super("CMsgServerSignoutData_AccountStatChanges", [
-			{
-				no: 1,
-				name: "account_stats",
-				kind: "message",
-				localName: "account_stats",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerSignoutData_AccountStatChanges_AccountStats,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerSignoutData_AccountStatChanges>): CMsgServerSignoutData_AccountStatChanges {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.account_stats = [];
-		if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_AccountStatChanges>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_AccountStatChanges,
-	): CMsgServerSignoutData_AccountStatChanges {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgServerSignoutData_AccountStatChanges.AccountStats account_stats */ 1:
-					message.account_stats.push(
-						CMsgServerSignoutData_AccountStatChanges_AccountStats.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_AccountStatChanges,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CMsgServerSignoutData_AccountStatChanges.AccountStats account_stats = 1; */
-		for (let i = 0; i < message.account_stats.length; i++)
-			CMsgServerSignoutData_AccountStatChanges_AccountStats.internalBinaryWrite(
-				message.account_stats[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_AccountStatChanges", [
+      {
+        no: 1,
+        name: "account_stats",
+        kind: "message",
+        localName: "account_stats",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerSignoutData_AccountStatChanges_AccountStats,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerSignoutData_AccountStatChanges>): CMsgServerSignoutData_AccountStatChanges {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.account_stats = [];
+    if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_AccountStatChanges>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_AccountStatChanges,
+  ): CMsgServerSignoutData_AccountStatChanges {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgServerSignoutData_AccountStatChanges.AccountStats account_stats */ 1:
+          message.account_stats.push(
+            CMsgServerSignoutData_AccountStatChanges_AccountStats.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_AccountStatChanges,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CMsgServerSignoutData_AccountStatChanges.AccountStats account_stats = 1; */
+    for (let i = 0; i < message.account_stats.length; i++)
+      CMsgServerSignoutData_AccountStatChanges_AccountStats.internalBinaryWrite(
+        message.account_stats[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_AccountStatChanges
@@ -6613,98 +6613,98 @@ class CMsgServerSignoutData_AccountStatChanges$Type extends MessageType<CMsgServ
 export const CMsgServerSignoutData_AccountStatChanges = new CMsgServerSignoutData_AccountStatChanges$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_AccountStatChanges_Stat$Type extends MessageType<CMsgServerSignoutData_AccountStatChanges_Stat> {
-	constructor() {
-		super("CMsgServerSignoutData_AccountStatChanges.Stat", [
-			{
-				no: 1,
-				name: "hero_id",
-				kind: "scalar",
-				localName: "hero_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "stat_id",
-				kind: "scalar",
-				localName: "stat_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "value",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "medal",
-				kind: "enum",
-				opt: true,
-				T: () => ["ECitadelAccountStatMedal", ECitadelAccountStatMedal],
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerSignoutData_AccountStatChanges_Stat>,
-	): CMsgServerSignoutData_AccountStatChanges_Stat {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgServerSignoutData_AccountStatChanges_Stat>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_AccountStatChanges_Stat,
-	): CMsgServerSignoutData_AccountStatChanges_Stat {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 hero_id */ 1:
-					message.hero_id = reader.uint32();
-					break;
-				case /* optional uint32 stat_id */ 2:
-					message.stat_id = reader.uint32();
-					break;
-				case /* optional uint32 value */ 3:
-					message.value = reader.uint32();
-					break;
-				case /* optional ECitadelAccountStatMedal medal */ 4:
-					message.medal = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_AccountStatChanges_Stat,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 hero_id = 1; */
-		if (message.hero_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.hero_id);
-		/* optional uint32 stat_id = 2; */
-		if (message.stat_id !== undefined) writer.tag(2, WireType.Varint).uint32(message.stat_id);
-		/* optional uint32 value = 3; */
-		if (message.value !== undefined) writer.tag(3, WireType.Varint).uint32(message.value);
-		/* optional ECitadelAccountStatMedal medal = 4; */
-		if (message.medal !== undefined) writer.tag(4, WireType.Varint).int32(message.medal);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_AccountStatChanges.Stat", [
+      {
+        no: 1,
+        name: "hero_id",
+        kind: "scalar",
+        localName: "hero_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "stat_id",
+        kind: "scalar",
+        localName: "stat_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "value",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "medal",
+        kind: "enum",
+        opt: true,
+        T: () => ["ECitadelAccountStatMedal", ECitadelAccountStatMedal],
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerSignoutData_AccountStatChanges_Stat>,
+  ): CMsgServerSignoutData_AccountStatChanges_Stat {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgServerSignoutData_AccountStatChanges_Stat>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_AccountStatChanges_Stat,
+  ): CMsgServerSignoutData_AccountStatChanges_Stat {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 hero_id */ 1:
+          message.hero_id = reader.uint32();
+          break;
+        case /* optional uint32 stat_id */ 2:
+          message.stat_id = reader.uint32();
+          break;
+        case /* optional uint32 value */ 3:
+          message.value = reader.uint32();
+          break;
+        case /* optional ECitadelAccountStatMedal medal */ 4:
+          message.medal = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_AccountStatChanges_Stat,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 hero_id = 1; */
+    if (message.hero_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.hero_id);
+    /* optional uint32 stat_id = 2; */
+    if (message.stat_id !== undefined) writer.tag(2, WireType.Varint).uint32(message.stat_id);
+    /* optional uint32 value = 3; */
+    if (message.value !== undefined) writer.tag(3, WireType.Varint).uint32(message.value);
+    /* optional ECitadelAccountStatMedal medal = 4; */
+    if (message.medal !== undefined) writer.tag(4, WireType.Varint).int32(message.medal);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_AccountStatChanges.Stat
@@ -6712,149 +6712,149 @@ class CMsgServerSignoutData_AccountStatChanges_Stat$Type extends MessageType<CMs
 export const CMsgServerSignoutData_AccountStatChanges_Stat = new CMsgServerSignoutData_AccountStatChanges_Stat$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_AccountStatChanges_AccountStats$Type extends MessageType<CMsgServerSignoutData_AccountStatChanges_AccountStats> {
-	constructor() {
-		super("CMsgServerSignoutData_AccountStatChanges.AccountStats", [
-			{
-				no: 1,
-				name: "account_id",
-				kind: "scalar",
-				localName: "account_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "stats",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerSignoutData_AccountStatChanges_Stat,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerSignoutData_AccountStatChanges_AccountStats>,
-	): CMsgServerSignoutData_AccountStatChanges_AccountStats {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.stats = [];
-		if (value !== undefined)
-			reflectionMergePartial<CMsgServerSignoutData_AccountStatChanges_AccountStats>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_AccountStatChanges_AccountStats,
-	): CMsgServerSignoutData_AccountStatChanges_AccountStats {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 account_id */ 1:
-					message.account_id = reader.uint32();
-					break;
-				case /* repeated CMsgServerSignoutData_AccountStatChanges.Stat stats */ 2:
-					message.stats.push(
-						CMsgServerSignoutData_AccountStatChanges_Stat.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_AccountStatChanges_AccountStats,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 account_id = 1; */
-		if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
-		/* repeated CMsgServerSignoutData_AccountStatChanges.Stat stats = 2; */
-		for (let i = 0; i < message.stats.length; i++)
-			CMsgServerSignoutData_AccountStatChanges_Stat.internalBinaryWrite(
-				message.stats[i],
-				writer.tag(2, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_AccountStatChanges.AccountStats", [
+      {
+        no: 1,
+        name: "account_id",
+        kind: "scalar",
+        localName: "account_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "stats",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerSignoutData_AccountStatChanges_Stat,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerSignoutData_AccountStatChanges_AccountStats>,
+  ): CMsgServerSignoutData_AccountStatChanges_AccountStats {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.stats = [];
+    if (value !== undefined)
+      reflectionMergePartial<CMsgServerSignoutData_AccountStatChanges_AccountStats>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_AccountStatChanges_AccountStats,
+  ): CMsgServerSignoutData_AccountStatChanges_AccountStats {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 account_id */ 1:
+          message.account_id = reader.uint32();
+          break;
+        case /* repeated CMsgServerSignoutData_AccountStatChanges.Stat stats */ 2:
+          message.stats.push(
+            CMsgServerSignoutData_AccountStatChanges_Stat.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_AccountStatChanges_AccountStats,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 account_id = 1; */
+    if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
+    /* repeated CMsgServerSignoutData_AccountStatChanges.Stat stats = 2; */
+    for (let i = 0; i < message.stats.length; i++)
+      CMsgServerSignoutData_AccountStatChanges_Stat.internalBinaryWrite(
+        message.stats[i],
+        writer.tag(2, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_AccountStatChanges.AccountStats
  */
 export const CMsgServerSignoutData_AccountStatChanges_AccountStats =
-	new CMsgServerSignoutData_AccountStatChanges_AccountStats$Type();
+  new CMsgServerSignoutData_AccountStatChanges_AccountStats$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_PlayerChat$Type extends MessageType<CMsgServerSignoutData_PlayerChat> {
-	constructor() {
-		super("CMsgServerSignoutData_PlayerChat", [
-			{
-				no: 1,
-				name: "chat_lines",
-				kind: "message",
-				localName: "chat_lines",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerSignoutData_PlayerChat_ChatLine,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerSignoutData_PlayerChat>): CMsgServerSignoutData_PlayerChat {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.chat_lines = [];
-		if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_PlayerChat>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_PlayerChat,
-	): CMsgServerSignoutData_PlayerChat {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgServerSignoutData_PlayerChat.ChatLine chat_lines */ 1:
-					message.chat_lines.push(
-						CMsgServerSignoutData_PlayerChat_ChatLine.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_PlayerChat,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CMsgServerSignoutData_PlayerChat.ChatLine chat_lines = 1; */
-		for (let i = 0; i < message.chat_lines.length; i++)
-			CMsgServerSignoutData_PlayerChat_ChatLine.internalBinaryWrite(
-				message.chat_lines[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_PlayerChat", [
+      {
+        no: 1,
+        name: "chat_lines",
+        kind: "message",
+        localName: "chat_lines",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerSignoutData_PlayerChat_ChatLine,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerSignoutData_PlayerChat>): CMsgServerSignoutData_PlayerChat {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.chat_lines = [];
+    if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_PlayerChat>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_PlayerChat,
+  ): CMsgServerSignoutData_PlayerChat {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgServerSignoutData_PlayerChat.ChatLine chat_lines */ 1:
+          message.chat_lines.push(
+            CMsgServerSignoutData_PlayerChat_ChatLine.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_PlayerChat,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CMsgServerSignoutData_PlayerChat.ChatLine chat_lines = 1; */
+    for (let i = 0; i < message.chat_lines.length; i++)
+      CMsgServerSignoutData_PlayerChat_ChatLine.internalBinaryWrite(
+        message.chat_lines[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_PlayerChat
@@ -6862,97 +6862,97 @@ class CMsgServerSignoutData_PlayerChat$Type extends MessageType<CMsgServerSignou
 export const CMsgServerSignoutData_PlayerChat = new CMsgServerSignoutData_PlayerChat$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_PlayerChat_ChatLine$Type extends MessageType<CMsgServerSignoutData_PlayerChat_ChatLine> {
-	constructor() {
-		super("CMsgServerSignoutData_PlayerChat.ChatLine", [
-			{
-				no: 1,
-				name: "player_slot",
-				kind: "scalar",
-				localName: "player_slot",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "game_time",
-				kind: "scalar",
-				localName: "game_time",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 3,
-				name: "team_only",
-				kind: "scalar",
-				localName: "team_only",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 4,
-				name: "chat_line",
-				kind: "scalar",
-				localName: "chat_line",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerSignoutData_PlayerChat_ChatLine>): CMsgServerSignoutData_PlayerChat_ChatLine {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_PlayerChat_ChatLine>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_PlayerChat_ChatLine,
-	): CMsgServerSignoutData_PlayerChat_ChatLine {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 player_slot */ 1:
-					message.player_slot = reader.uint32();
-					break;
-				case /* optional float game_time */ 2:
-					message.game_time = reader.float();
-					break;
-				case /* optional bool team_only */ 3:
-					message.team_only = reader.bool();
-					break;
-				case /* optional string chat_line */ 4:
-					message.chat_line = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_PlayerChat_ChatLine,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 player_slot = 1; */
-		if (message.player_slot !== undefined) writer.tag(1, WireType.Varint).uint32(message.player_slot);
-		/* optional float game_time = 2; */
-		if (message.game_time !== undefined) writer.tag(2, WireType.Bit32).float(message.game_time);
-		/* optional bool team_only = 3; */
-		if (message.team_only !== undefined) writer.tag(3, WireType.Varint).bool(message.team_only);
-		/* optional string chat_line = 4; */
-		if (message.chat_line !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.chat_line);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_PlayerChat.ChatLine", [
+      {
+        no: 1,
+        name: "player_slot",
+        kind: "scalar",
+        localName: "player_slot",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "game_time",
+        kind: "scalar",
+        localName: "game_time",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 3,
+        name: "team_only",
+        kind: "scalar",
+        localName: "team_only",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 4,
+        name: "chat_line",
+        kind: "scalar",
+        localName: "chat_line",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerSignoutData_PlayerChat_ChatLine>): CMsgServerSignoutData_PlayerChat_ChatLine {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_PlayerChat_ChatLine>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_PlayerChat_ChatLine,
+  ): CMsgServerSignoutData_PlayerChat_ChatLine {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 player_slot */ 1:
+          message.player_slot = reader.uint32();
+          break;
+        case /* optional float game_time */ 2:
+          message.game_time = reader.float();
+          break;
+        case /* optional bool team_only */ 3:
+          message.team_only = reader.bool();
+          break;
+        case /* optional string chat_line */ 4:
+          message.chat_line = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_PlayerChat_ChatLine,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 player_slot = 1; */
+    if (message.player_slot !== undefined) writer.tag(1, WireType.Varint).uint32(message.player_slot);
+    /* optional float game_time = 2; */
+    if (message.game_time !== undefined) writer.tag(2, WireType.Bit32).float(message.game_time);
+    /* optional bool team_only = 3; */
+    if (message.team_only !== undefined) writer.tag(3, WireType.Varint).bool(message.team_only);
+    /* optional string chat_line = 4; */
+    if (message.chat_line !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.chat_line);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_PlayerChat.ChatLine
@@ -6960,66 +6960,66 @@ class CMsgServerSignoutData_PlayerChat_ChatLine$Type extends MessageType<CMsgSer
 export const CMsgServerSignoutData_PlayerChat_ChatLine = new CMsgServerSignoutData_PlayerChat_ChatLine$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_PenalizedPlayers$Type extends MessageType<CMsgServerSignoutData_PenalizedPlayers> {
-	constructor() {
-		super("CMsgServerSignoutData_PenalizedPlayers", [
-			{
-				no: 1,
-				name: "penalized_players",
-				kind: "message",
-				localName: "penalized_players",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerSignoutData_PenalizedPlayers_Penalty,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerSignoutData_PenalizedPlayers>): CMsgServerSignoutData_PenalizedPlayers {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.penalized_players = [];
-		if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_PenalizedPlayers>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_PenalizedPlayers,
-	): CMsgServerSignoutData_PenalizedPlayers {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CMsgServerSignoutData_PenalizedPlayers.Penalty penalized_players */ 1:
-					message.penalized_players.push(
-						CMsgServerSignoutData_PenalizedPlayers_Penalty.internalBinaryRead(reader, reader.uint32(), options),
-					);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_PenalizedPlayers,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CMsgServerSignoutData_PenalizedPlayers.Penalty penalized_players = 1; */
-		for (let i = 0; i < message.penalized_players.length; i++)
-			CMsgServerSignoutData_PenalizedPlayers_Penalty.internalBinaryWrite(
-				message.penalized_players[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_PenalizedPlayers", [
+      {
+        no: 1,
+        name: "penalized_players",
+        kind: "message",
+        localName: "penalized_players",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerSignoutData_PenalizedPlayers_Penalty,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerSignoutData_PenalizedPlayers>): CMsgServerSignoutData_PenalizedPlayers {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.penalized_players = [];
+    if (value !== undefined) reflectionMergePartial<CMsgServerSignoutData_PenalizedPlayers>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_PenalizedPlayers,
+  ): CMsgServerSignoutData_PenalizedPlayers {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CMsgServerSignoutData_PenalizedPlayers.Penalty penalized_players */ 1:
+          message.penalized_players.push(
+            CMsgServerSignoutData_PenalizedPlayers_Penalty.internalBinaryRead(reader, reader.uint32(), options),
+          );
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_PenalizedPlayers,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CMsgServerSignoutData_PenalizedPlayers.Penalty penalized_players = 1; */
+    for (let i = 0; i < message.penalized_players.length; i++)
+      CMsgServerSignoutData_PenalizedPlayers_Penalty.internalBinaryWrite(
+        message.penalized_players[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_PenalizedPlayers
@@ -7027,102 +7027,102 @@ class CMsgServerSignoutData_PenalizedPlayers$Type extends MessageType<CMsgServer
 export const CMsgServerSignoutData_PenalizedPlayers = new CMsgServerSignoutData_PenalizedPlayers$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerSignoutData_PenalizedPlayers_Penalty$Type extends MessageType<CMsgServerSignoutData_PenalizedPlayers_Penalty> {
-	constructor() {
-		super("CMsgServerSignoutData_PenalizedPlayers.Penalty", [
-			{
-				no: 1,
-				name: "account_id",
-				kind: "scalar",
-				localName: "account_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "reason",
-				kind: "enum",
-				opt: true,
-				T: () => [
-					"CMsgServerSignoutData_PenalizedPlayers.EPenaltyReason",
-					CMsgServerSignoutData_PenalizedPlayers_EPenaltyReason,
-				],
-			},
-			{
-				no: 3,
-				name: "match_time_s",
-				kind: "scalar",
-				localName: "match_time_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "time_stamp",
-				kind: "scalar",
-				localName: "time_stamp",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(
-		value?: PartialMessage<CMsgServerSignoutData_PenalizedPlayers_Penalty>,
-	): CMsgServerSignoutData_PenalizedPlayers_Penalty {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined)
-			reflectionMergePartial<CMsgServerSignoutData_PenalizedPlayers_Penalty>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerSignoutData_PenalizedPlayers_Penalty,
-	): CMsgServerSignoutData_PenalizedPlayers_Penalty {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 account_id */ 1:
-					message.account_id = reader.uint32();
-					break;
-				case /* optional CMsgServerSignoutData_PenalizedPlayers.EPenaltyReason reason */ 2:
-					message.reason = reader.int32();
-					break;
-				case /* optional uint32 match_time_s */ 3:
-					message.match_time_s = reader.uint32();
-					break;
-				case /* optional uint32 time_stamp */ 4:
-					message.time_stamp = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerSignoutData_PenalizedPlayers_Penalty,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 account_id = 1; */
-		if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
-		/* optional CMsgServerSignoutData_PenalizedPlayers.EPenaltyReason reason = 2; */
-		if (message.reason !== undefined) writer.tag(2, WireType.Varint).int32(message.reason);
-		/* optional uint32 match_time_s = 3; */
-		if (message.match_time_s !== undefined) writer.tag(3, WireType.Varint).uint32(message.match_time_s);
-		/* optional uint32 time_stamp = 4; */
-		if (message.time_stamp !== undefined) writer.tag(4, WireType.Varint).uint32(message.time_stamp);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerSignoutData_PenalizedPlayers.Penalty", [
+      {
+        no: 1,
+        name: "account_id",
+        kind: "scalar",
+        localName: "account_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "reason",
+        kind: "enum",
+        opt: true,
+        T: () => [
+          "CMsgServerSignoutData_PenalizedPlayers.EPenaltyReason",
+          CMsgServerSignoutData_PenalizedPlayers_EPenaltyReason,
+        ],
+      },
+      {
+        no: 3,
+        name: "match_time_s",
+        kind: "scalar",
+        localName: "match_time_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "time_stamp",
+        kind: "scalar",
+        localName: "time_stamp",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(
+    value?: PartialMessage<CMsgServerSignoutData_PenalizedPlayers_Penalty>,
+  ): CMsgServerSignoutData_PenalizedPlayers_Penalty {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined)
+      reflectionMergePartial<CMsgServerSignoutData_PenalizedPlayers_Penalty>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerSignoutData_PenalizedPlayers_Penalty,
+  ): CMsgServerSignoutData_PenalizedPlayers_Penalty {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 account_id */ 1:
+          message.account_id = reader.uint32();
+          break;
+        case /* optional CMsgServerSignoutData_PenalizedPlayers.EPenaltyReason reason */ 2:
+          message.reason = reader.int32();
+          break;
+        case /* optional uint32 match_time_s */ 3:
+          message.match_time_s = reader.uint32();
+          break;
+        case /* optional uint32 time_stamp */ 4:
+          message.time_stamp = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerSignoutData_PenalizedPlayers_Penalty,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 account_id = 1; */
+    if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
+    /* optional CMsgServerSignoutData_PenalizedPlayers.EPenaltyReason reason = 2; */
+    if (message.reason !== undefined) writer.tag(2, WireType.Varint).int32(message.reason);
+    /* optional uint32 match_time_s = 3; */
+    if (message.match_time_s !== undefined) writer.tag(3, WireType.Varint).uint32(message.match_time_s);
+    /* optional uint32 time_stamp = 4; */
+    if (message.time_stamp !== undefined) writer.tag(4, WireType.Varint).uint32(message.time_stamp);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerSignoutData_PenalizedPlayers.Penalty
@@ -7130,259 +7130,259 @@ class CMsgServerSignoutData_PenalizedPlayers_Penalty$Type extends MessageType<CM
 export const CMsgServerSignoutData_PenalizedPlayers_Penalty = new CMsgServerSignoutData_PenalizedPlayers_Penalty$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgMatchData$Type extends MessageType<CMsgMatchData> {
-	constructor() {
-		super("CMsgMatchData", [
-			{
-				no: 1,
-				name: "match_duration_s",
-				kind: "scalar",
-				localName: "match_duration_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "end_reason",
-				kind: "enum",
-				localName: "end_reason",
-				opt: true,
-				T: () => ["CMsgMatchData.EEndReason", CMsgMatchData_EEndReason],
-			},
-			{
-				no: 3,
-				name: "winning_team",
-				kind: "enum",
-				localName: "winning_team",
-				opt: true,
-				T: () => ["ECitadelLobbyTeam", ECitadelLobbyTeam],
-			},
-			{
-				no: 4,
-				name: "players",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgMatchData_PlayerInfo,
-			},
-			{
-				no: 5,
-				name: "objectives_mask_legacy",
-				kind: "scalar",
-				localName: "objectives_mask_legacy",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "server_version",
-				kind: "scalar",
-				localName: "server_version",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "game_mode",
-				kind: "enum",
-				localName: "game_mode",
-				opt: true,
-				T: () => ["ECitadelGameMode", ECitadelGameMode],
-			},
-			{
-				no: 8,
-				name: "match_mode",
-				kind: "enum",
-				localName: "match_mode",
-				opt: true,
-				T: () => ["ECitadelMatchMode", ECitadelMatchMode],
-			},
-			{
-				no: 9,
-				name: "objectives_mask_team0",
-				kind: "scalar",
-				localName: "objectives_mask_team0",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 10,
-				name: "objectives_mask_team1",
-				kind: "scalar",
-				localName: "objectives_mask_team1",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 11,
-				name: "match_end_time",
-				kind: "scalar",
-				localName: "match_end_time",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 12,
-				name: "stomp_score",
-				kind: "scalar",
-				localName: "stomp_score",
-				opt: true,
-				T: 2 /*ScalarType.FLOAT*/,
-			},
-			{
-				no: 13,
-				name: "safe_to_abandon",
-				kind: "scalar",
-				localName: "safe_to_abandon",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 14,
-				name: "team_abandon",
-				kind: "scalar",
-				localName: "team_abandon",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 15,
-				name: "new_player_pool",
-				kind: "scalar",
-				localName: "new_player_pool",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-			{
-				no: 16,
-				name: "low_pri_pool",
-				kind: "scalar",
-				localName: "low_pri_pool",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgMatchData>): CMsgMatchData {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.players = [];
-		if (value !== undefined) reflectionMergePartial<CMsgMatchData>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgMatchData,
-	): CMsgMatchData {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 match_duration_s */ 1:
-					message.match_duration_s = reader.uint32();
-					break;
-				case /* optional CMsgMatchData.EEndReason end_reason */ 2:
-					message.end_reason = reader.int32();
-					break;
-				case /* optional ECitadelLobbyTeam winning_team */ 3:
-					message.winning_team = reader.int32();
-					break;
-				case /* repeated CMsgMatchData.PlayerInfo players */ 4:
-					message.players.push(CMsgMatchData_PlayerInfo.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* optional uint32 objectives_mask_legacy */ 5:
-					message.objectives_mask_legacy = reader.uint32();
-					break;
-				case /* optional uint32 server_version */ 6:
-					message.server_version = reader.uint32();
-					break;
-				case /* optional ECitadelGameMode game_mode */ 7:
-					message.game_mode = reader.int32();
-					break;
-				case /* optional ECitadelMatchMode match_mode */ 8:
-					message.match_mode = reader.int32();
-					break;
-				case /* optional uint64 objectives_mask_team0 */ 9:
-					message.objectives_mask_team0 = reader.uint64().toBigInt();
-					break;
-				case /* optional uint64 objectives_mask_team1 */ 10:
-					message.objectives_mask_team1 = reader.uint64().toBigInt();
-					break;
-				case /* optional uint32 match_end_time */ 11:
-					message.match_end_time = reader.uint32();
-					break;
-				case /* optional float stomp_score */ 12:
-					message.stomp_score = reader.float();
-					break;
-				case /* optional bool safe_to_abandon */ 13:
-					message.safe_to_abandon = reader.bool();
-					break;
-				case /* optional bool team_abandon */ 14:
-					message.team_abandon = reader.bool();
-					break;
-				case /* optional bool new_player_pool */ 15:
-					message.new_player_pool = reader.bool();
-					break;
-				case /* optional bool low_pri_pool */ 16:
-					message.low_pri_pool = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(message: CMsgMatchData, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
-		/* optional uint32 match_duration_s = 1; */
-		if (message.match_duration_s !== undefined) writer.tag(1, WireType.Varint).uint32(message.match_duration_s);
-		/* optional CMsgMatchData.EEndReason end_reason = 2; */
-		if (message.end_reason !== undefined) writer.tag(2, WireType.Varint).int32(message.end_reason);
-		/* optional ECitadelLobbyTeam winning_team = 3; */
-		if (message.winning_team !== undefined) writer.tag(3, WireType.Varint).int32(message.winning_team);
-		/* repeated CMsgMatchData.PlayerInfo players = 4; */
-		for (let i = 0; i < message.players.length; i++)
-			CMsgMatchData_PlayerInfo.internalBinaryWrite(
-				message.players[i],
-				writer.tag(4, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 objectives_mask_legacy = 5; */
-		if (message.objectives_mask_legacy !== undefined)
-			writer.tag(5, WireType.Varint).uint32(message.objectives_mask_legacy);
-		/* optional uint32 server_version = 6; */
-		if (message.server_version !== undefined) writer.tag(6, WireType.Varint).uint32(message.server_version);
-		/* optional ECitadelGameMode game_mode = 7; */
-		if (message.game_mode !== undefined) writer.tag(7, WireType.Varint).int32(message.game_mode);
-		/* optional ECitadelMatchMode match_mode = 8; */
-		if (message.match_mode !== undefined) writer.tag(8, WireType.Varint).int32(message.match_mode);
-		/* optional uint64 objectives_mask_team0 = 9; */
-		if (message.objectives_mask_team0 !== undefined)
-			writer.tag(9, WireType.Varint).uint64(message.objectives_mask_team0);
-		/* optional uint64 objectives_mask_team1 = 10; */
-		if (message.objectives_mask_team1 !== undefined)
-			writer.tag(10, WireType.Varint).uint64(message.objectives_mask_team1);
-		/* optional uint32 match_end_time = 11; */
-		if (message.match_end_time !== undefined) writer.tag(11, WireType.Varint).uint32(message.match_end_time);
-		/* optional float stomp_score = 12; */
-		if (message.stomp_score !== undefined) writer.tag(12, WireType.Bit32).float(message.stomp_score);
-		/* optional bool safe_to_abandon = 13; */
-		if (message.safe_to_abandon !== undefined) writer.tag(13, WireType.Varint).bool(message.safe_to_abandon);
-		/* optional bool team_abandon = 14; */
-		if (message.team_abandon !== undefined) writer.tag(14, WireType.Varint).bool(message.team_abandon);
-		/* optional bool new_player_pool = 15; */
-		if (message.new_player_pool !== undefined) writer.tag(15, WireType.Varint).bool(message.new_player_pool);
-		/* optional bool low_pri_pool = 16; */
-		if (message.low_pri_pool !== undefined) writer.tag(16, WireType.Varint).bool(message.low_pri_pool);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgMatchData", [
+      {
+        no: 1,
+        name: "match_duration_s",
+        kind: "scalar",
+        localName: "match_duration_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "end_reason",
+        kind: "enum",
+        localName: "end_reason",
+        opt: true,
+        T: () => ["CMsgMatchData.EEndReason", CMsgMatchData_EEndReason],
+      },
+      {
+        no: 3,
+        name: "winning_team",
+        kind: "enum",
+        localName: "winning_team",
+        opt: true,
+        T: () => ["ECitadelLobbyTeam", ECitadelLobbyTeam],
+      },
+      {
+        no: 4,
+        name: "players",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgMatchData_PlayerInfo,
+      },
+      {
+        no: 5,
+        name: "objectives_mask_legacy",
+        kind: "scalar",
+        localName: "objectives_mask_legacy",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "server_version",
+        kind: "scalar",
+        localName: "server_version",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "game_mode",
+        kind: "enum",
+        localName: "game_mode",
+        opt: true,
+        T: () => ["ECitadelGameMode", ECitadelGameMode],
+      },
+      {
+        no: 8,
+        name: "match_mode",
+        kind: "enum",
+        localName: "match_mode",
+        opt: true,
+        T: () => ["ECitadelMatchMode", ECitadelMatchMode],
+      },
+      {
+        no: 9,
+        name: "objectives_mask_team0",
+        kind: "scalar",
+        localName: "objectives_mask_team0",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 10,
+        name: "objectives_mask_team1",
+        kind: "scalar",
+        localName: "objectives_mask_team1",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 11,
+        name: "match_end_time",
+        kind: "scalar",
+        localName: "match_end_time",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 12,
+        name: "stomp_score",
+        kind: "scalar",
+        localName: "stomp_score",
+        opt: true,
+        T: 2 /*ScalarType.FLOAT*/,
+      },
+      {
+        no: 13,
+        name: "safe_to_abandon",
+        kind: "scalar",
+        localName: "safe_to_abandon",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 14,
+        name: "team_abandon",
+        kind: "scalar",
+        localName: "team_abandon",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 15,
+        name: "new_player_pool",
+        kind: "scalar",
+        localName: "new_player_pool",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+      {
+        no: 16,
+        name: "low_pri_pool",
+        kind: "scalar",
+        localName: "low_pri_pool",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgMatchData>): CMsgMatchData {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.players = [];
+    if (value !== undefined) reflectionMergePartial<CMsgMatchData>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgMatchData,
+  ): CMsgMatchData {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 match_duration_s */ 1:
+          message.match_duration_s = reader.uint32();
+          break;
+        case /* optional CMsgMatchData.EEndReason end_reason */ 2:
+          message.end_reason = reader.int32();
+          break;
+        case /* optional ECitadelLobbyTeam winning_team */ 3:
+          message.winning_team = reader.int32();
+          break;
+        case /* repeated CMsgMatchData.PlayerInfo players */ 4:
+          message.players.push(CMsgMatchData_PlayerInfo.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* optional uint32 objectives_mask_legacy */ 5:
+          message.objectives_mask_legacy = reader.uint32();
+          break;
+        case /* optional uint32 server_version */ 6:
+          message.server_version = reader.uint32();
+          break;
+        case /* optional ECitadelGameMode game_mode */ 7:
+          message.game_mode = reader.int32();
+          break;
+        case /* optional ECitadelMatchMode match_mode */ 8:
+          message.match_mode = reader.int32();
+          break;
+        case /* optional uint64 objectives_mask_team0 */ 9:
+          message.objectives_mask_team0 = reader.uint64().toBigInt();
+          break;
+        case /* optional uint64 objectives_mask_team1 */ 10:
+          message.objectives_mask_team1 = reader.uint64().toBigInt();
+          break;
+        case /* optional uint32 match_end_time */ 11:
+          message.match_end_time = reader.uint32();
+          break;
+        case /* optional float stomp_score */ 12:
+          message.stomp_score = reader.float();
+          break;
+        case /* optional bool safe_to_abandon */ 13:
+          message.safe_to_abandon = reader.bool();
+          break;
+        case /* optional bool team_abandon */ 14:
+          message.team_abandon = reader.bool();
+          break;
+        case /* optional bool new_player_pool */ 15:
+          message.new_player_pool = reader.bool();
+          break;
+        case /* optional bool low_pri_pool */ 16:
+          message.low_pri_pool = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(message: CMsgMatchData, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter {
+    /* optional uint32 match_duration_s = 1; */
+    if (message.match_duration_s !== undefined) writer.tag(1, WireType.Varint).uint32(message.match_duration_s);
+    /* optional CMsgMatchData.EEndReason end_reason = 2; */
+    if (message.end_reason !== undefined) writer.tag(2, WireType.Varint).int32(message.end_reason);
+    /* optional ECitadelLobbyTeam winning_team = 3; */
+    if (message.winning_team !== undefined) writer.tag(3, WireType.Varint).int32(message.winning_team);
+    /* repeated CMsgMatchData.PlayerInfo players = 4; */
+    for (let i = 0; i < message.players.length; i++)
+      CMsgMatchData_PlayerInfo.internalBinaryWrite(
+        message.players[i],
+        writer.tag(4, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 objectives_mask_legacy = 5; */
+    if (message.objectives_mask_legacy !== undefined)
+      writer.tag(5, WireType.Varint).uint32(message.objectives_mask_legacy);
+    /* optional uint32 server_version = 6; */
+    if (message.server_version !== undefined) writer.tag(6, WireType.Varint).uint32(message.server_version);
+    /* optional ECitadelGameMode game_mode = 7; */
+    if (message.game_mode !== undefined) writer.tag(7, WireType.Varint).int32(message.game_mode);
+    /* optional ECitadelMatchMode match_mode = 8; */
+    if (message.match_mode !== undefined) writer.tag(8, WireType.Varint).int32(message.match_mode);
+    /* optional uint64 objectives_mask_team0 = 9; */
+    if (message.objectives_mask_team0 !== undefined)
+      writer.tag(9, WireType.Varint).uint64(message.objectives_mask_team0);
+    /* optional uint64 objectives_mask_team1 = 10; */
+    if (message.objectives_mask_team1 !== undefined)
+      writer.tag(10, WireType.Varint).uint64(message.objectives_mask_team1);
+    /* optional uint32 match_end_time = 11; */
+    if (message.match_end_time !== undefined) writer.tag(11, WireType.Varint).uint32(message.match_end_time);
+    /* optional float stomp_score = 12; */
+    if (message.stomp_score !== undefined) writer.tag(12, WireType.Bit32).float(message.stomp_score);
+    /* optional bool safe_to_abandon = 13; */
+    if (message.safe_to_abandon !== undefined) writer.tag(13, WireType.Varint).bool(message.safe_to_abandon);
+    /* optional bool team_abandon = 14; */
+    if (message.team_abandon !== undefined) writer.tag(14, WireType.Varint).bool(message.team_abandon);
+    /* optional bool new_player_pool = 15; */
+    if (message.new_player_pool !== undefined) writer.tag(15, WireType.Varint).bool(message.new_player_pool);
+    /* optional bool low_pri_pool = 16; */
+    if (message.low_pri_pool !== undefined) writer.tag(16, WireType.Varint).bool(message.low_pri_pool);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgMatchData
@@ -7390,122 +7390,122 @@ class CMsgMatchData$Type extends MessageType<CMsgMatchData> {
 export const CMsgMatchData = new CMsgMatchData$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgMatchData_PlayerItem$Type extends MessageType<CMsgMatchData_PlayerItem> {
-	constructor() {
-		super("CMsgMatchData.PlayerItem", [
-			{
-				no: 1,
-				name: "item_id",
-				kind: "scalar",
-				localName: "item_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "game_time_s",
-				kind: "scalar",
-				localName: "game_time_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "upgrade_id",
-				kind: "scalar",
-				localName: "upgrade_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "sold_time_s",
-				kind: "scalar",
-				localName: "sold_time_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "flags",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "imbued_ability_id",
-				kind: "scalar",
-				localName: "imbued_ability_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgMatchData_PlayerItem>): CMsgMatchData_PlayerItem {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgMatchData_PlayerItem>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgMatchData_PlayerItem,
-	): CMsgMatchData_PlayerItem {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 item_id */ 1:
-					message.item_id = reader.uint32();
-					break;
-				case /* optional uint32 game_time_s */ 2:
-					message.game_time_s = reader.uint32();
-					break;
-				case /* optional uint32 upgrade_id */ 3:
-					message.upgrade_id = reader.uint32();
-					break;
-				case /* optional uint32 sold_time_s */ 4:
-					message.sold_time_s = reader.uint32();
-					break;
-				case /* optional uint32 flags */ 5:
-					message.flags = reader.uint32();
-					break;
-				case /* optional uint32 imbued_ability_id */ 6:
-					message.imbued_ability_id = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgMatchData_PlayerItem,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 item_id = 1; */
-		if (message.item_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.item_id);
-		/* optional uint32 game_time_s = 2; */
-		if (message.game_time_s !== undefined) writer.tag(2, WireType.Varint).uint32(message.game_time_s);
-		/* optional uint32 upgrade_id = 3; */
-		if (message.upgrade_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.upgrade_id);
-		/* optional uint32 sold_time_s = 4; */
-		if (message.sold_time_s !== undefined) writer.tag(4, WireType.Varint).uint32(message.sold_time_s);
-		/* optional uint32 flags = 5; */
-		if (message.flags !== undefined) writer.tag(5, WireType.Varint).uint32(message.flags);
-		/* optional uint32 imbued_ability_id = 6; */
-		if (message.imbued_ability_id !== undefined) writer.tag(6, WireType.Varint).uint32(message.imbued_ability_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgMatchData.PlayerItem", [
+      {
+        no: 1,
+        name: "item_id",
+        kind: "scalar",
+        localName: "item_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "game_time_s",
+        kind: "scalar",
+        localName: "game_time_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "upgrade_id",
+        kind: "scalar",
+        localName: "upgrade_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "sold_time_s",
+        kind: "scalar",
+        localName: "sold_time_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "flags",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "imbued_ability_id",
+        kind: "scalar",
+        localName: "imbued_ability_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgMatchData_PlayerItem>): CMsgMatchData_PlayerItem {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgMatchData_PlayerItem>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgMatchData_PlayerItem,
+  ): CMsgMatchData_PlayerItem {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 item_id */ 1:
+          message.item_id = reader.uint32();
+          break;
+        case /* optional uint32 game_time_s */ 2:
+          message.game_time_s = reader.uint32();
+          break;
+        case /* optional uint32 upgrade_id */ 3:
+          message.upgrade_id = reader.uint32();
+          break;
+        case /* optional uint32 sold_time_s */ 4:
+          message.sold_time_s = reader.uint32();
+          break;
+        case /* optional uint32 flags */ 5:
+          message.flags = reader.uint32();
+          break;
+        case /* optional uint32 imbued_ability_id */ 6:
+          message.imbued_ability_id = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgMatchData_PlayerItem,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 item_id = 1; */
+    if (message.item_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.item_id);
+    /* optional uint32 game_time_s = 2; */
+    if (message.game_time_s !== undefined) writer.tag(2, WireType.Varint).uint32(message.game_time_s);
+    /* optional uint32 upgrade_id = 3; */
+    if (message.upgrade_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.upgrade_id);
+    /* optional uint32 sold_time_s = 4; */
+    if (message.sold_time_s !== undefined) writer.tag(4, WireType.Varint).uint32(message.sold_time_s);
+    /* optional uint32 flags = 5; */
+    if (message.flags !== undefined) writer.tag(5, WireType.Varint).uint32(message.flags);
+    /* optional uint32 imbued_ability_id = 6; */
+    if (message.imbued_ability_id !== undefined) writer.tag(6, WireType.Varint).uint32(message.imbued_ability_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgMatchData.PlayerItem
@@ -7513,630 +7513,630 @@ class CMsgMatchData_PlayerItem$Type extends MessageType<CMsgMatchData_PlayerItem
 export const CMsgMatchData_PlayerItem = new CMsgMatchData_PlayerItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgMatchData_PlayerInfo$Type extends MessageType<CMsgMatchData_PlayerInfo> {
-	constructor() {
-		super("CMsgMatchData.PlayerInfo", [
-			{
-				no: 1,
-				name: "account_id",
-				kind: "scalar",
-				localName: "account_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "team",
-				kind: "enum",
-				opt: true,
-				T: () => ["ECitadelLobbyTeam", ECitadelLobbyTeam],
-			},
-			{
-				no: 3,
-				name: "player_slot",
-				kind: "scalar",
-				localName: "player_slot",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "player_mmr",
-				kind: "scalar",
-				localName: "player_mmr",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "player_uncertainty",
-				kind: "scalar",
-				localName: "player_uncertainty",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "hero_id",
-				kind: "scalar",
-				localName: "hero_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 8,
-				name: "kills",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "deaths",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "net_worth",
-				kind: "scalar",
-				localName: "net_worth",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 11,
-				name: "assists",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 12,
-				name: "hero_mmr",
-				kind: "scalar",
-				localName: "hero_mmr",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 13,
-				name: "items",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgMatchData_PlayerItem,
-			},
-			{
-				no: 14,
-				name: "gpm_10min",
-				kind: "scalar",
-				localName: "gpm_10min",
-				jsonName: "gpm10min",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 15,
-				name: "gpm_15min",
-				kind: "scalar",
-				localName: "gpm_15min",
-				jsonName: "gpm15min",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 16,
-				name: "gpm_20min",
-				kind: "scalar",
-				localName: "gpm_20min",
-				jsonName: "gpm20min",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 17,
-				name: "gpm_25min",
-				kind: "scalar",
-				localName: "gpm_25min",
-				jsonName: "gpm25min",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 18,
-				name: "gpm_30min",
-				kind: "scalar",
-				localName: "gpm_30min",
-				jsonName: "gpm30min",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 19,
-				name: "gpm_35min",
-				kind: "scalar",
-				localName: "gpm_35min",
-				jsonName: "gpm35min",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 20,
-				name: "gpm_end",
-				kind: "scalar",
-				localName: "gpm_end",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 21,
-				name: "last_hits",
-				kind: "scalar",
-				localName: "last_hits",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 22,
-				name: "denies",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 23,
-				name: "ability_points",
-				kind: "scalar",
-				localName: "ability_points",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 24,
-				name: "level",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 25,
-				name: "assigned_lane",
-				kind: "scalar",
-				localName: "assigned_lane",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 26,
-				name: "party_index",
-				kind: "scalar",
-				localName: "party_index",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 27,
-				name: "platform",
-				kind: "enum",
-				opt: true,
-				T: () => ["EGCPlatform", EGCPlatform],
-			},
-			{
-				no: 28,
-				name: "ability_damage",
-				kind: "scalar",
-				localName: "ability_damage",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 29,
-				name: "bullet_damage",
-				kind: "scalar",
-				localName: "bullet_damage",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 30,
-				name: "hero_bullets_hit",
-				kind: "scalar",
-				localName: "hero_bullets_hit",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 31,
-				name: "hero_bullets_hit_crit",
-				kind: "scalar",
-				localName: "hero_bullets_hit_crit",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 32,
-				name: "player_healing",
-				kind: "scalar",
-				localName: "player_healing",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 33,
-				name: "hero_bullets_fired",
-				kind: "scalar",
-				localName: "hero_bullets_fired",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 34,
-				name: "hero_incoming_bullets_fired",
-				kind: "scalar",
-				localName: "hero_incoming_bullets_fired",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 35,
-				name: "hero_incoming_bullets_hit",
-				kind: "scalar",
-				localName: "hero_incoming_bullets_hit",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 36,
-				name: "hero_incoming_bullets_crit",
-				kind: "scalar",
-				localName: "hero_incoming_bullets_crit",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 37,
-				name: "time_dead_s",
-				kind: "scalar",
-				localName: "time_dead_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 38,
-				name: "player_bullet_damage",
-				kind: "scalar",
-				localName: "player_bullet_damage",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 39,
-				name: "player_ability_damage",
-				kind: "scalar",
-				localName: "player_ability_damage",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 40,
-				name: "player_melee_damage",
-				kind: "scalar",
-				localName: "player_melee_damage",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 41,
-				name: "abandon_match_time_s",
-				kind: "scalar",
-				localName: "abandon_match_time_s",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 42,
-				name: "abandon_time_stamp",
-				kind: "scalar",
-				localName: "abandon_time_stamp",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 43,
-				name: "trooper_kill_excluded",
-				kind: "scalar",
-				localName: "trooper_kill_excluded",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 44,
-				name: "hero_bullets_lucky_shots",
-				kind: "scalar",
-				localName: "hero_bullets_lucky_shots",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 45,
-				name: "hero_build_id",
-				kind: "scalar",
-				localName: "hero_build_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgMatchData_PlayerInfo>): CMsgMatchData_PlayerInfo {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.items = [];
-		if (value !== undefined) reflectionMergePartial<CMsgMatchData_PlayerInfo>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgMatchData_PlayerInfo,
-	): CMsgMatchData_PlayerInfo {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 account_id */ 1:
-					message.account_id = reader.uint32();
-					break;
-				case /* optional ECitadelLobbyTeam team */ 2:
-					message.team = reader.int32();
-					break;
-				case /* optional uint32 player_slot */ 3:
-					message.player_slot = reader.uint32();
-					break;
-				case /* optional uint32 player_mmr */ 5:
-					message.player_mmr = reader.uint32();
-					break;
-				case /* optional uint32 player_uncertainty */ 6:
-					message.player_uncertainty = reader.uint32();
-					break;
-				case /* optional uint32 hero_id */ 7:
-					message.hero_id = reader.uint32();
-					break;
-				case /* optional uint32 kills */ 8:
-					message.kills = reader.uint32();
-					break;
-				case /* optional uint32 deaths */ 9:
-					message.deaths = reader.uint32();
-					break;
-				case /* optional uint32 net_worth */ 10:
-					message.net_worth = reader.uint32();
-					break;
-				case /* optional uint32 assists */ 11:
-					message.assists = reader.uint32();
-					break;
-				case /* optional uint32 hero_mmr */ 12:
-					message.hero_mmr = reader.uint32();
-					break;
-				case /* repeated CMsgMatchData.PlayerItem items */ 13:
-					message.items.push(CMsgMatchData_PlayerItem.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* optional uint32 gpm_10min = 14 [json_name = "gpm10min"];*/ 14:
-					message.gpm_10min = reader.uint32();
-					break;
-				case /* optional uint32 gpm_15min = 15 [json_name = "gpm15min"];*/ 15:
-					message.gpm_15min = reader.uint32();
-					break;
-				case /* optional uint32 gpm_20min = 16 [json_name = "gpm20min"];*/ 16:
-					message.gpm_20min = reader.uint32();
-					break;
-				case /* optional uint32 gpm_25min = 17 [json_name = "gpm25min"];*/ 17:
-					message.gpm_25min = reader.uint32();
-					break;
-				case /* optional uint32 gpm_30min = 18 [json_name = "gpm30min"];*/ 18:
-					message.gpm_30min = reader.uint32();
-					break;
-				case /* optional uint32 gpm_35min = 19 [json_name = "gpm35min"];*/ 19:
-					message.gpm_35min = reader.uint32();
-					break;
-				case /* optional uint32 gpm_end */ 20:
-					message.gpm_end = reader.uint32();
-					break;
-				case /* optional uint32 last_hits */ 21:
-					message.last_hits = reader.uint32();
-					break;
-				case /* optional uint32 denies */ 22:
-					message.denies = reader.uint32();
-					break;
-				case /* optional uint32 ability_points */ 23:
-					message.ability_points = reader.uint32();
-					break;
-				case /* optional uint32 level */ 24:
-					message.level = reader.uint32();
-					break;
-				case /* optional uint32 assigned_lane */ 25:
-					message.assigned_lane = reader.uint32();
-					break;
-				case /* optional uint32 party_index */ 26:
-					message.party_index = reader.uint32();
-					break;
-				case /* optional EGCPlatform platform */ 27:
-					message.platform = reader.int32();
-					break;
-				case /* optional uint32 ability_damage */ 28:
-					message.ability_damage = reader.uint32();
-					break;
-				case /* optional uint32 bullet_damage */ 29:
-					message.bullet_damage = reader.uint32();
-					break;
-				case /* optional uint32 hero_bullets_hit */ 30:
-					message.hero_bullets_hit = reader.uint32();
-					break;
-				case /* optional uint32 hero_bullets_hit_crit */ 31:
-					message.hero_bullets_hit_crit = reader.uint32();
-					break;
-				case /* optional uint32 player_healing */ 32:
-					message.player_healing = reader.uint32();
-					break;
-				case /* optional uint32 hero_bullets_fired */ 33:
-					message.hero_bullets_fired = reader.uint32();
-					break;
-				case /* optional uint32 hero_incoming_bullets_fired */ 34:
-					message.hero_incoming_bullets_fired = reader.uint32();
-					break;
-				case /* optional uint32 hero_incoming_bullets_hit */ 35:
-					message.hero_incoming_bullets_hit = reader.uint32();
-					break;
-				case /* optional uint32 hero_incoming_bullets_crit */ 36:
-					message.hero_incoming_bullets_crit = reader.uint32();
-					break;
-				case /* optional uint32 time_dead_s */ 37:
-					message.time_dead_s = reader.uint32();
-					break;
-				case /* optional uint32 player_bullet_damage */ 38:
-					message.player_bullet_damage = reader.uint32();
-					break;
-				case /* optional uint32 player_ability_damage */ 39:
-					message.player_ability_damage = reader.uint32();
-					break;
-				case /* optional uint32 player_melee_damage */ 40:
-					message.player_melee_damage = reader.uint32();
-					break;
-				case /* optional uint32 abandon_match_time_s */ 41:
-					message.abandon_match_time_s = reader.uint32();
-					break;
-				case /* optional uint32 abandon_time_stamp */ 42:
-					message.abandon_time_stamp = reader.uint32();
-					break;
-				case /* optional uint32 trooper_kill_excluded */ 43:
-					message.trooper_kill_excluded = reader.uint32();
-					break;
-				case /* optional uint32 hero_bullets_lucky_shots */ 44:
-					message.hero_bullets_lucky_shots = reader.uint32();
-					break;
-				case /* optional uint32 hero_build_id */ 45:
-					message.hero_build_id = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgMatchData_PlayerInfo,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 account_id = 1; */
-		if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
-		/* optional ECitadelLobbyTeam team = 2; */
-		if (message.team !== undefined) writer.tag(2, WireType.Varint).int32(message.team);
-		/* optional uint32 player_slot = 3; */
-		if (message.player_slot !== undefined) writer.tag(3, WireType.Varint).uint32(message.player_slot);
-		/* optional uint32 player_mmr = 5; */
-		if (message.player_mmr !== undefined) writer.tag(5, WireType.Varint).uint32(message.player_mmr);
-		/* optional uint32 player_uncertainty = 6; */
-		if (message.player_uncertainty !== undefined) writer.tag(6, WireType.Varint).uint32(message.player_uncertainty);
-		/* optional uint32 hero_id = 7; */
-		if (message.hero_id !== undefined) writer.tag(7, WireType.Varint).uint32(message.hero_id);
-		/* optional uint32 kills = 8; */
-		if (message.kills !== undefined) writer.tag(8, WireType.Varint).uint32(message.kills);
-		/* optional uint32 deaths = 9; */
-		if (message.deaths !== undefined) writer.tag(9, WireType.Varint).uint32(message.deaths);
-		/* optional uint32 net_worth = 10; */
-		if (message.net_worth !== undefined) writer.tag(10, WireType.Varint).uint32(message.net_worth);
-		/* optional uint32 assists = 11; */
-		if (message.assists !== undefined) writer.tag(11, WireType.Varint).uint32(message.assists);
-		/* optional uint32 hero_mmr = 12; */
-		if (message.hero_mmr !== undefined) writer.tag(12, WireType.Varint).uint32(message.hero_mmr);
-		/* repeated CMsgMatchData.PlayerItem items = 13; */
-		for (let i = 0; i < message.items.length; i++)
-			CMsgMatchData_PlayerItem.internalBinaryWrite(
-				message.items[i],
-				writer.tag(13, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 gpm_10min = 14 [json_name = "gpm10min"]; */
-		if (message.gpm_10min !== undefined) writer.tag(14, WireType.Varint).uint32(message.gpm_10min);
-		/* optional uint32 gpm_15min = 15 [json_name = "gpm15min"]; */
-		if (message.gpm_15min !== undefined) writer.tag(15, WireType.Varint).uint32(message.gpm_15min);
-		/* optional uint32 gpm_20min = 16 [json_name = "gpm20min"]; */
-		if (message.gpm_20min !== undefined) writer.tag(16, WireType.Varint).uint32(message.gpm_20min);
-		/* optional uint32 gpm_25min = 17 [json_name = "gpm25min"]; */
-		if (message.gpm_25min !== undefined) writer.tag(17, WireType.Varint).uint32(message.gpm_25min);
-		/* optional uint32 gpm_30min = 18 [json_name = "gpm30min"]; */
-		if (message.gpm_30min !== undefined) writer.tag(18, WireType.Varint).uint32(message.gpm_30min);
-		/* optional uint32 gpm_35min = 19 [json_name = "gpm35min"]; */
-		if (message.gpm_35min !== undefined) writer.tag(19, WireType.Varint).uint32(message.gpm_35min);
-		/* optional uint32 gpm_end = 20; */
-		if (message.gpm_end !== undefined) writer.tag(20, WireType.Varint).uint32(message.gpm_end);
-		/* optional uint32 last_hits = 21; */
-		if (message.last_hits !== undefined) writer.tag(21, WireType.Varint).uint32(message.last_hits);
-		/* optional uint32 denies = 22; */
-		if (message.denies !== undefined) writer.tag(22, WireType.Varint).uint32(message.denies);
-		/* optional uint32 ability_points = 23; */
-		if (message.ability_points !== undefined) writer.tag(23, WireType.Varint).uint32(message.ability_points);
-		/* optional uint32 level = 24; */
-		if (message.level !== undefined) writer.tag(24, WireType.Varint).uint32(message.level);
-		/* optional uint32 assigned_lane = 25; */
-		if (message.assigned_lane !== undefined) writer.tag(25, WireType.Varint).uint32(message.assigned_lane);
-		/* optional uint32 party_index = 26; */
-		if (message.party_index !== undefined) writer.tag(26, WireType.Varint).uint32(message.party_index);
-		/* optional EGCPlatform platform = 27; */
-		if (message.platform !== undefined) writer.tag(27, WireType.Varint).int32(message.platform);
-		/* optional uint32 ability_damage = 28; */
-		if (message.ability_damage !== undefined) writer.tag(28, WireType.Varint).uint32(message.ability_damage);
-		/* optional uint32 bullet_damage = 29; */
-		if (message.bullet_damage !== undefined) writer.tag(29, WireType.Varint).uint32(message.bullet_damage);
-		/* optional uint32 hero_bullets_hit = 30; */
-		if (message.hero_bullets_hit !== undefined) writer.tag(30, WireType.Varint).uint32(message.hero_bullets_hit);
-		/* optional uint32 hero_bullets_hit_crit = 31; */
-		if (message.hero_bullets_hit_crit !== undefined)
-			writer.tag(31, WireType.Varint).uint32(message.hero_bullets_hit_crit);
-		/* optional uint32 player_healing = 32; */
-		if (message.player_healing !== undefined) writer.tag(32, WireType.Varint).uint32(message.player_healing);
-		/* optional uint32 hero_bullets_fired = 33; */
-		if (message.hero_bullets_fired !== undefined) writer.tag(33, WireType.Varint).uint32(message.hero_bullets_fired);
-		/* optional uint32 hero_incoming_bullets_fired = 34; */
-		if (message.hero_incoming_bullets_fired !== undefined)
-			writer.tag(34, WireType.Varint).uint32(message.hero_incoming_bullets_fired);
-		/* optional uint32 hero_incoming_bullets_hit = 35; */
-		if (message.hero_incoming_bullets_hit !== undefined)
-			writer.tag(35, WireType.Varint).uint32(message.hero_incoming_bullets_hit);
-		/* optional uint32 hero_incoming_bullets_crit = 36; */
-		if (message.hero_incoming_bullets_crit !== undefined)
-			writer.tag(36, WireType.Varint).uint32(message.hero_incoming_bullets_crit);
-		/* optional uint32 time_dead_s = 37; */
-		if (message.time_dead_s !== undefined) writer.tag(37, WireType.Varint).uint32(message.time_dead_s);
-		/* optional uint32 player_bullet_damage = 38; */
-		if (message.player_bullet_damage !== undefined)
-			writer.tag(38, WireType.Varint).uint32(message.player_bullet_damage);
-		/* optional uint32 player_ability_damage = 39; */
-		if (message.player_ability_damage !== undefined)
-			writer.tag(39, WireType.Varint).uint32(message.player_ability_damage);
-		/* optional uint32 player_melee_damage = 40; */
-		if (message.player_melee_damage !== undefined) writer.tag(40, WireType.Varint).uint32(message.player_melee_damage);
-		/* optional uint32 abandon_match_time_s = 41; */
-		if (message.abandon_match_time_s !== undefined)
-			writer.tag(41, WireType.Varint).uint32(message.abandon_match_time_s);
-		/* optional uint32 abandon_time_stamp = 42; */
-		if (message.abandon_time_stamp !== undefined) writer.tag(42, WireType.Varint).uint32(message.abandon_time_stamp);
-		/* optional uint32 trooper_kill_excluded = 43; */
-		if (message.trooper_kill_excluded !== undefined)
-			writer.tag(43, WireType.Varint).uint32(message.trooper_kill_excluded);
-		/* optional uint32 hero_bullets_lucky_shots = 44; */
-		if (message.hero_bullets_lucky_shots !== undefined)
-			writer.tag(44, WireType.Varint).uint32(message.hero_bullets_lucky_shots);
-		/* optional uint32 hero_build_id = 45; */
-		if (message.hero_build_id !== undefined) writer.tag(45, WireType.Varint).uint32(message.hero_build_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgMatchData.PlayerInfo", [
+      {
+        no: 1,
+        name: "account_id",
+        kind: "scalar",
+        localName: "account_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "team",
+        kind: "enum",
+        opt: true,
+        T: () => ["ECitadelLobbyTeam", ECitadelLobbyTeam],
+      },
+      {
+        no: 3,
+        name: "player_slot",
+        kind: "scalar",
+        localName: "player_slot",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "player_mmr",
+        kind: "scalar",
+        localName: "player_mmr",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "player_uncertainty",
+        kind: "scalar",
+        localName: "player_uncertainty",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "hero_id",
+        kind: "scalar",
+        localName: "hero_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 8,
+        name: "kills",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "deaths",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "net_worth",
+        kind: "scalar",
+        localName: "net_worth",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 11,
+        name: "assists",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 12,
+        name: "hero_mmr",
+        kind: "scalar",
+        localName: "hero_mmr",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 13,
+        name: "items",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgMatchData_PlayerItem,
+      },
+      {
+        no: 14,
+        name: "gpm_10min",
+        kind: "scalar",
+        localName: "gpm_10min",
+        jsonName: "gpm10min",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 15,
+        name: "gpm_15min",
+        kind: "scalar",
+        localName: "gpm_15min",
+        jsonName: "gpm15min",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 16,
+        name: "gpm_20min",
+        kind: "scalar",
+        localName: "gpm_20min",
+        jsonName: "gpm20min",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 17,
+        name: "gpm_25min",
+        kind: "scalar",
+        localName: "gpm_25min",
+        jsonName: "gpm25min",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 18,
+        name: "gpm_30min",
+        kind: "scalar",
+        localName: "gpm_30min",
+        jsonName: "gpm30min",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 19,
+        name: "gpm_35min",
+        kind: "scalar",
+        localName: "gpm_35min",
+        jsonName: "gpm35min",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 20,
+        name: "gpm_end",
+        kind: "scalar",
+        localName: "gpm_end",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 21,
+        name: "last_hits",
+        kind: "scalar",
+        localName: "last_hits",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 22,
+        name: "denies",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 23,
+        name: "ability_points",
+        kind: "scalar",
+        localName: "ability_points",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 24,
+        name: "level",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 25,
+        name: "assigned_lane",
+        kind: "scalar",
+        localName: "assigned_lane",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 26,
+        name: "party_index",
+        kind: "scalar",
+        localName: "party_index",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 27,
+        name: "platform",
+        kind: "enum",
+        opt: true,
+        T: () => ["EGCPlatform", EGCPlatform],
+      },
+      {
+        no: 28,
+        name: "ability_damage",
+        kind: "scalar",
+        localName: "ability_damage",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 29,
+        name: "bullet_damage",
+        kind: "scalar",
+        localName: "bullet_damage",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 30,
+        name: "hero_bullets_hit",
+        kind: "scalar",
+        localName: "hero_bullets_hit",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 31,
+        name: "hero_bullets_hit_crit",
+        kind: "scalar",
+        localName: "hero_bullets_hit_crit",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 32,
+        name: "player_healing",
+        kind: "scalar",
+        localName: "player_healing",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 33,
+        name: "hero_bullets_fired",
+        kind: "scalar",
+        localName: "hero_bullets_fired",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 34,
+        name: "hero_incoming_bullets_fired",
+        kind: "scalar",
+        localName: "hero_incoming_bullets_fired",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 35,
+        name: "hero_incoming_bullets_hit",
+        kind: "scalar",
+        localName: "hero_incoming_bullets_hit",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 36,
+        name: "hero_incoming_bullets_crit",
+        kind: "scalar",
+        localName: "hero_incoming_bullets_crit",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 37,
+        name: "time_dead_s",
+        kind: "scalar",
+        localName: "time_dead_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 38,
+        name: "player_bullet_damage",
+        kind: "scalar",
+        localName: "player_bullet_damage",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 39,
+        name: "player_ability_damage",
+        kind: "scalar",
+        localName: "player_ability_damage",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 40,
+        name: "player_melee_damage",
+        kind: "scalar",
+        localName: "player_melee_damage",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 41,
+        name: "abandon_match_time_s",
+        kind: "scalar",
+        localName: "abandon_match_time_s",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 42,
+        name: "abandon_time_stamp",
+        kind: "scalar",
+        localName: "abandon_time_stamp",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 43,
+        name: "trooper_kill_excluded",
+        kind: "scalar",
+        localName: "trooper_kill_excluded",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 44,
+        name: "hero_bullets_lucky_shots",
+        kind: "scalar",
+        localName: "hero_bullets_lucky_shots",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 45,
+        name: "hero_build_id",
+        kind: "scalar",
+        localName: "hero_build_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgMatchData_PlayerInfo>): CMsgMatchData_PlayerInfo {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.items = [];
+    if (value !== undefined) reflectionMergePartial<CMsgMatchData_PlayerInfo>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgMatchData_PlayerInfo,
+  ): CMsgMatchData_PlayerInfo {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 account_id */ 1:
+          message.account_id = reader.uint32();
+          break;
+        case /* optional ECitadelLobbyTeam team */ 2:
+          message.team = reader.int32();
+          break;
+        case /* optional uint32 player_slot */ 3:
+          message.player_slot = reader.uint32();
+          break;
+        case /* optional uint32 player_mmr */ 5:
+          message.player_mmr = reader.uint32();
+          break;
+        case /* optional uint32 player_uncertainty */ 6:
+          message.player_uncertainty = reader.uint32();
+          break;
+        case /* optional uint32 hero_id */ 7:
+          message.hero_id = reader.uint32();
+          break;
+        case /* optional uint32 kills */ 8:
+          message.kills = reader.uint32();
+          break;
+        case /* optional uint32 deaths */ 9:
+          message.deaths = reader.uint32();
+          break;
+        case /* optional uint32 net_worth */ 10:
+          message.net_worth = reader.uint32();
+          break;
+        case /* optional uint32 assists */ 11:
+          message.assists = reader.uint32();
+          break;
+        case /* optional uint32 hero_mmr */ 12:
+          message.hero_mmr = reader.uint32();
+          break;
+        case /* repeated CMsgMatchData.PlayerItem items */ 13:
+          message.items.push(CMsgMatchData_PlayerItem.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* optional uint32 gpm_10min = 14 [json_name = "gpm10min"];*/ 14:
+          message.gpm_10min = reader.uint32();
+          break;
+        case /* optional uint32 gpm_15min = 15 [json_name = "gpm15min"];*/ 15:
+          message.gpm_15min = reader.uint32();
+          break;
+        case /* optional uint32 gpm_20min = 16 [json_name = "gpm20min"];*/ 16:
+          message.gpm_20min = reader.uint32();
+          break;
+        case /* optional uint32 gpm_25min = 17 [json_name = "gpm25min"];*/ 17:
+          message.gpm_25min = reader.uint32();
+          break;
+        case /* optional uint32 gpm_30min = 18 [json_name = "gpm30min"];*/ 18:
+          message.gpm_30min = reader.uint32();
+          break;
+        case /* optional uint32 gpm_35min = 19 [json_name = "gpm35min"];*/ 19:
+          message.gpm_35min = reader.uint32();
+          break;
+        case /* optional uint32 gpm_end */ 20:
+          message.gpm_end = reader.uint32();
+          break;
+        case /* optional uint32 last_hits */ 21:
+          message.last_hits = reader.uint32();
+          break;
+        case /* optional uint32 denies */ 22:
+          message.denies = reader.uint32();
+          break;
+        case /* optional uint32 ability_points */ 23:
+          message.ability_points = reader.uint32();
+          break;
+        case /* optional uint32 level */ 24:
+          message.level = reader.uint32();
+          break;
+        case /* optional uint32 assigned_lane */ 25:
+          message.assigned_lane = reader.uint32();
+          break;
+        case /* optional uint32 party_index */ 26:
+          message.party_index = reader.uint32();
+          break;
+        case /* optional EGCPlatform platform */ 27:
+          message.platform = reader.int32();
+          break;
+        case /* optional uint32 ability_damage */ 28:
+          message.ability_damage = reader.uint32();
+          break;
+        case /* optional uint32 bullet_damage */ 29:
+          message.bullet_damage = reader.uint32();
+          break;
+        case /* optional uint32 hero_bullets_hit */ 30:
+          message.hero_bullets_hit = reader.uint32();
+          break;
+        case /* optional uint32 hero_bullets_hit_crit */ 31:
+          message.hero_bullets_hit_crit = reader.uint32();
+          break;
+        case /* optional uint32 player_healing */ 32:
+          message.player_healing = reader.uint32();
+          break;
+        case /* optional uint32 hero_bullets_fired */ 33:
+          message.hero_bullets_fired = reader.uint32();
+          break;
+        case /* optional uint32 hero_incoming_bullets_fired */ 34:
+          message.hero_incoming_bullets_fired = reader.uint32();
+          break;
+        case /* optional uint32 hero_incoming_bullets_hit */ 35:
+          message.hero_incoming_bullets_hit = reader.uint32();
+          break;
+        case /* optional uint32 hero_incoming_bullets_crit */ 36:
+          message.hero_incoming_bullets_crit = reader.uint32();
+          break;
+        case /* optional uint32 time_dead_s */ 37:
+          message.time_dead_s = reader.uint32();
+          break;
+        case /* optional uint32 player_bullet_damage */ 38:
+          message.player_bullet_damage = reader.uint32();
+          break;
+        case /* optional uint32 player_ability_damage */ 39:
+          message.player_ability_damage = reader.uint32();
+          break;
+        case /* optional uint32 player_melee_damage */ 40:
+          message.player_melee_damage = reader.uint32();
+          break;
+        case /* optional uint32 abandon_match_time_s */ 41:
+          message.abandon_match_time_s = reader.uint32();
+          break;
+        case /* optional uint32 abandon_time_stamp */ 42:
+          message.abandon_time_stamp = reader.uint32();
+          break;
+        case /* optional uint32 trooper_kill_excluded */ 43:
+          message.trooper_kill_excluded = reader.uint32();
+          break;
+        case /* optional uint32 hero_bullets_lucky_shots */ 44:
+          message.hero_bullets_lucky_shots = reader.uint32();
+          break;
+        case /* optional uint32 hero_build_id */ 45:
+          message.hero_build_id = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgMatchData_PlayerInfo,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 account_id = 1; */
+    if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
+    /* optional ECitadelLobbyTeam team = 2; */
+    if (message.team !== undefined) writer.tag(2, WireType.Varint).int32(message.team);
+    /* optional uint32 player_slot = 3; */
+    if (message.player_slot !== undefined) writer.tag(3, WireType.Varint).uint32(message.player_slot);
+    /* optional uint32 player_mmr = 5; */
+    if (message.player_mmr !== undefined) writer.tag(5, WireType.Varint).uint32(message.player_mmr);
+    /* optional uint32 player_uncertainty = 6; */
+    if (message.player_uncertainty !== undefined) writer.tag(6, WireType.Varint).uint32(message.player_uncertainty);
+    /* optional uint32 hero_id = 7; */
+    if (message.hero_id !== undefined) writer.tag(7, WireType.Varint).uint32(message.hero_id);
+    /* optional uint32 kills = 8; */
+    if (message.kills !== undefined) writer.tag(8, WireType.Varint).uint32(message.kills);
+    /* optional uint32 deaths = 9; */
+    if (message.deaths !== undefined) writer.tag(9, WireType.Varint).uint32(message.deaths);
+    /* optional uint32 net_worth = 10; */
+    if (message.net_worth !== undefined) writer.tag(10, WireType.Varint).uint32(message.net_worth);
+    /* optional uint32 assists = 11; */
+    if (message.assists !== undefined) writer.tag(11, WireType.Varint).uint32(message.assists);
+    /* optional uint32 hero_mmr = 12; */
+    if (message.hero_mmr !== undefined) writer.tag(12, WireType.Varint).uint32(message.hero_mmr);
+    /* repeated CMsgMatchData.PlayerItem items = 13; */
+    for (let i = 0; i < message.items.length; i++)
+      CMsgMatchData_PlayerItem.internalBinaryWrite(
+        message.items[i],
+        writer.tag(13, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 gpm_10min = 14 [json_name = "gpm10min"]; */
+    if (message.gpm_10min !== undefined) writer.tag(14, WireType.Varint).uint32(message.gpm_10min);
+    /* optional uint32 gpm_15min = 15 [json_name = "gpm15min"]; */
+    if (message.gpm_15min !== undefined) writer.tag(15, WireType.Varint).uint32(message.gpm_15min);
+    /* optional uint32 gpm_20min = 16 [json_name = "gpm20min"]; */
+    if (message.gpm_20min !== undefined) writer.tag(16, WireType.Varint).uint32(message.gpm_20min);
+    /* optional uint32 gpm_25min = 17 [json_name = "gpm25min"]; */
+    if (message.gpm_25min !== undefined) writer.tag(17, WireType.Varint).uint32(message.gpm_25min);
+    /* optional uint32 gpm_30min = 18 [json_name = "gpm30min"]; */
+    if (message.gpm_30min !== undefined) writer.tag(18, WireType.Varint).uint32(message.gpm_30min);
+    /* optional uint32 gpm_35min = 19 [json_name = "gpm35min"]; */
+    if (message.gpm_35min !== undefined) writer.tag(19, WireType.Varint).uint32(message.gpm_35min);
+    /* optional uint32 gpm_end = 20; */
+    if (message.gpm_end !== undefined) writer.tag(20, WireType.Varint).uint32(message.gpm_end);
+    /* optional uint32 last_hits = 21; */
+    if (message.last_hits !== undefined) writer.tag(21, WireType.Varint).uint32(message.last_hits);
+    /* optional uint32 denies = 22; */
+    if (message.denies !== undefined) writer.tag(22, WireType.Varint).uint32(message.denies);
+    /* optional uint32 ability_points = 23; */
+    if (message.ability_points !== undefined) writer.tag(23, WireType.Varint).uint32(message.ability_points);
+    /* optional uint32 level = 24; */
+    if (message.level !== undefined) writer.tag(24, WireType.Varint).uint32(message.level);
+    /* optional uint32 assigned_lane = 25; */
+    if (message.assigned_lane !== undefined) writer.tag(25, WireType.Varint).uint32(message.assigned_lane);
+    /* optional uint32 party_index = 26; */
+    if (message.party_index !== undefined) writer.tag(26, WireType.Varint).uint32(message.party_index);
+    /* optional EGCPlatform platform = 27; */
+    if (message.platform !== undefined) writer.tag(27, WireType.Varint).int32(message.platform);
+    /* optional uint32 ability_damage = 28; */
+    if (message.ability_damage !== undefined) writer.tag(28, WireType.Varint).uint32(message.ability_damage);
+    /* optional uint32 bullet_damage = 29; */
+    if (message.bullet_damage !== undefined) writer.tag(29, WireType.Varint).uint32(message.bullet_damage);
+    /* optional uint32 hero_bullets_hit = 30; */
+    if (message.hero_bullets_hit !== undefined) writer.tag(30, WireType.Varint).uint32(message.hero_bullets_hit);
+    /* optional uint32 hero_bullets_hit_crit = 31; */
+    if (message.hero_bullets_hit_crit !== undefined)
+      writer.tag(31, WireType.Varint).uint32(message.hero_bullets_hit_crit);
+    /* optional uint32 player_healing = 32; */
+    if (message.player_healing !== undefined) writer.tag(32, WireType.Varint).uint32(message.player_healing);
+    /* optional uint32 hero_bullets_fired = 33; */
+    if (message.hero_bullets_fired !== undefined) writer.tag(33, WireType.Varint).uint32(message.hero_bullets_fired);
+    /* optional uint32 hero_incoming_bullets_fired = 34; */
+    if (message.hero_incoming_bullets_fired !== undefined)
+      writer.tag(34, WireType.Varint).uint32(message.hero_incoming_bullets_fired);
+    /* optional uint32 hero_incoming_bullets_hit = 35; */
+    if (message.hero_incoming_bullets_hit !== undefined)
+      writer.tag(35, WireType.Varint).uint32(message.hero_incoming_bullets_hit);
+    /* optional uint32 hero_incoming_bullets_crit = 36; */
+    if (message.hero_incoming_bullets_crit !== undefined)
+      writer.tag(36, WireType.Varint).uint32(message.hero_incoming_bullets_crit);
+    /* optional uint32 time_dead_s = 37; */
+    if (message.time_dead_s !== undefined) writer.tag(37, WireType.Varint).uint32(message.time_dead_s);
+    /* optional uint32 player_bullet_damage = 38; */
+    if (message.player_bullet_damage !== undefined)
+      writer.tag(38, WireType.Varint).uint32(message.player_bullet_damage);
+    /* optional uint32 player_ability_damage = 39; */
+    if (message.player_ability_damage !== undefined)
+      writer.tag(39, WireType.Varint).uint32(message.player_ability_damage);
+    /* optional uint32 player_melee_damage = 40; */
+    if (message.player_melee_damage !== undefined) writer.tag(40, WireType.Varint).uint32(message.player_melee_damage);
+    /* optional uint32 abandon_match_time_s = 41; */
+    if (message.abandon_match_time_s !== undefined)
+      writer.tag(41, WireType.Varint).uint32(message.abandon_match_time_s);
+    /* optional uint32 abandon_time_stamp = 42; */
+    if (message.abandon_time_stamp !== undefined) writer.tag(42, WireType.Varint).uint32(message.abandon_time_stamp);
+    /* optional uint32 trooper_kill_excluded = 43; */
+    if (message.trooper_kill_excluded !== undefined)
+      writer.tag(43, WireType.Varint).uint32(message.trooper_kill_excluded);
+    /* optional uint32 hero_bullets_lucky_shots = 44; */
+    if (message.hero_bullets_lucky_shots !== undefined)
+      writer.tag(44, WireType.Varint).uint32(message.hero_bullets_lucky_shots);
+    /* optional uint32 hero_build_id = 45; */
+    if (message.hero_build_id !== undefined) writer.tag(45, WireType.Varint).uint32(message.hero_build_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgMatchData.PlayerInfo
@@ -8144,135 +8144,135 @@ class CMsgMatchData_PlayerInfo$Type extends MessageType<CMsgMatchData_PlayerInfo
 export const CMsgMatchData_PlayerInfo = new CMsgMatchData_PlayerInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerToGCMatchSignout$Type extends MessageType<CMsgServerToGCMatchSignout> {
-	constructor() {
-		super("CMsgServerToGCMatchSignout", [
-			{
-				no: 1,
-				name: "additional_data",
-				kind: "message",
-				localName: "additional_data",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CExtraMsgBlock,
-			},
-			{
-				no: 2,
-				name: "signout_attempt",
-				kind: "scalar",
-				localName: "signout_attempt",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "lobby_id",
-				kind: "scalar",
-				localName: "lobby_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 4,
-				name: "match_id",
-				kind: "scalar",
-				localName: "match_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 9,
-				name: "cluster_id",
-				kind: "scalar",
-				localName: "cluster_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 10,
-				name: "match_data",
-				kind: "message",
-				localName: "match_data",
-				T: () => CMsgMatchData,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerToGCMatchSignout>): CMsgServerToGCMatchSignout {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.additional_data = [];
-		if (value !== undefined) reflectionMergePartial<CMsgServerToGCMatchSignout>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerToGCMatchSignout,
-	): CMsgServerToGCMatchSignout {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* repeated CExtraMsgBlock additional_data */ 1:
-					message.additional_data.push(CExtraMsgBlock.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* optional uint32 signout_attempt */ 2:
-					message.signout_attempt = reader.uint32();
-					break;
-				case /* optional uint64 lobby_id */ 3:
-					message.lobby_id = reader.uint64().toBigInt();
-					break;
-				case /* optional uint64 match_id */ 4:
-					message.match_id = reader.uint64().toBigInt();
-					break;
-				case /* optional uint32 cluster_id */ 9:
-					message.cluster_id = reader.uint32();
-					break;
-				case /* optional CMsgMatchData match_data */ 10:
-					message.match_data = CMsgMatchData.internalBinaryRead(reader, reader.uint32(), options, message.match_data);
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerToGCMatchSignout,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* repeated CExtraMsgBlock additional_data = 1; */
-		for (let i = 0; i < message.additional_data.length; i++)
-			CExtraMsgBlock.internalBinaryWrite(
-				message.additional_data[i],
-				writer.tag(1, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional uint32 signout_attempt = 2; */
-		if (message.signout_attempt !== undefined) writer.tag(2, WireType.Varint).uint32(message.signout_attempt);
-		/* optional uint64 lobby_id = 3; */
-		if (message.lobby_id !== undefined) writer.tag(3, WireType.Varint).uint64(message.lobby_id);
-		/* optional uint64 match_id = 4; */
-		if (message.match_id !== undefined) writer.tag(4, WireType.Varint).uint64(message.match_id);
-		/* optional uint32 cluster_id = 9; */
-		if (message.cluster_id !== undefined) writer.tag(9, WireType.Varint).uint32(message.cluster_id);
-		/* optional CMsgMatchData match_data = 10; */
-		if (message.match_data)
-			CMsgMatchData.internalBinaryWrite(
-				message.match_data,
-				writer.tag(10, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerToGCMatchSignout", [
+      {
+        no: 1,
+        name: "additional_data",
+        kind: "message",
+        localName: "additional_data",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CExtraMsgBlock,
+      },
+      {
+        no: 2,
+        name: "signout_attempt",
+        kind: "scalar",
+        localName: "signout_attempt",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "lobby_id",
+        kind: "scalar",
+        localName: "lobby_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 4,
+        name: "match_id",
+        kind: "scalar",
+        localName: "match_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 9,
+        name: "cluster_id",
+        kind: "scalar",
+        localName: "cluster_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 10,
+        name: "match_data",
+        kind: "message",
+        localName: "match_data",
+        T: () => CMsgMatchData,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerToGCMatchSignout>): CMsgServerToGCMatchSignout {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.additional_data = [];
+    if (value !== undefined) reflectionMergePartial<CMsgServerToGCMatchSignout>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerToGCMatchSignout,
+  ): CMsgServerToGCMatchSignout {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* repeated CExtraMsgBlock additional_data */ 1:
+          message.additional_data.push(CExtraMsgBlock.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* optional uint32 signout_attempt */ 2:
+          message.signout_attempt = reader.uint32();
+          break;
+        case /* optional uint64 lobby_id */ 3:
+          message.lobby_id = reader.uint64().toBigInt();
+          break;
+        case /* optional uint64 match_id */ 4:
+          message.match_id = reader.uint64().toBigInt();
+          break;
+        case /* optional uint32 cluster_id */ 9:
+          message.cluster_id = reader.uint32();
+          break;
+        case /* optional CMsgMatchData match_data */ 10:
+          message.match_data = CMsgMatchData.internalBinaryRead(reader, reader.uint32(), options, message.match_data);
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerToGCMatchSignout,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* repeated CExtraMsgBlock additional_data = 1; */
+    for (let i = 0; i < message.additional_data.length; i++)
+      CExtraMsgBlock.internalBinaryWrite(
+        message.additional_data[i],
+        writer.tag(1, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional uint32 signout_attempt = 2; */
+    if (message.signout_attempt !== undefined) writer.tag(2, WireType.Varint).uint32(message.signout_attempt);
+    /* optional uint64 lobby_id = 3; */
+    if (message.lobby_id !== undefined) writer.tag(3, WireType.Varint).uint64(message.lobby_id);
+    /* optional uint64 match_id = 4; */
+    if (message.match_id !== undefined) writer.tag(4, WireType.Varint).uint64(message.match_id);
+    /* optional uint32 cluster_id = 9; */
+    if (message.cluster_id !== undefined) writer.tag(9, WireType.Varint).uint32(message.cluster_id);
+    /* optional CMsgMatchData match_data = 10; */
+    if (message.match_data)
+      CMsgMatchData.internalBinaryWrite(
+        message.match_data,
+        writer.tag(10, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerToGCMatchSignout
@@ -8280,60 +8280,60 @@ class CMsgServerToGCMatchSignout$Type extends MessageType<CMsgServerToGCMatchSig
 export const CMsgServerToGCMatchSignout = new CMsgServerToGCMatchSignout$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerToGCMatchSignoutResponse$Type extends MessageType<CMsgServerToGCMatchSignoutResponse> {
-	constructor() {
-		super("CMsgServerToGCMatchSignoutResponse", [
-			{
-				no: 1,
-				name: "result",
-				kind: "enum",
-				opt: true,
-				T: () => [
-					"CMsgServerToGCMatchSignoutResponse.ESignoutResult",
-					CMsgServerToGCMatchSignoutResponse_ESignoutResult,
-				],
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerToGCMatchSignoutResponse>): CMsgServerToGCMatchSignoutResponse {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerToGCMatchSignoutResponse>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerToGCMatchSignoutResponse,
-	): CMsgServerToGCMatchSignoutResponse {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgServerToGCMatchSignoutResponse.ESignoutResult result */ 1:
-					message.result = reader.int32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerToGCMatchSignoutResponse,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgServerToGCMatchSignoutResponse.ESignoutResult result = 1; */
-		if (message.result !== undefined) writer.tag(1, WireType.Varint).int32(message.result);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerToGCMatchSignoutResponse", [
+      {
+        no: 1,
+        name: "result",
+        kind: "enum",
+        opt: true,
+        T: () => [
+          "CMsgServerToGCMatchSignoutResponse.ESignoutResult",
+          CMsgServerToGCMatchSignoutResponse_ESignoutResult,
+        ],
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerToGCMatchSignoutResponse>): CMsgServerToGCMatchSignoutResponse {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerToGCMatchSignoutResponse>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerToGCMatchSignoutResponse,
+  ): CMsgServerToGCMatchSignoutResponse {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgServerToGCMatchSignoutResponse.ESignoutResult result */ 1:
+          message.result = reader.int32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerToGCMatchSignoutResponse,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgServerToGCMatchSignoutResponse.ESignoutResult result = 1; */
+    if (message.result !== undefined) writer.tag(1, WireType.Varint).int32(message.result);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerToGCMatchSignoutResponse
@@ -8341,31 +8341,31 @@ class CMsgServerToGCMatchSignoutResponse$Type extends MessageType<CMsgServerToGC
 export const CMsgServerToGCMatchSignoutResponse = new CMsgServerToGCMatchSignoutResponse$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerWelcomeCitadel$Type extends MessageType<CMsgServerWelcomeCitadel> {
-	constructor() {
-		super("CMsgServerWelcomeCitadel", []);
-	}
-	create(value?: PartialMessage<CMsgServerWelcomeCitadel>): CMsgServerWelcomeCitadel {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerWelcomeCitadel>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerWelcomeCitadel,
-	): CMsgServerWelcomeCitadel {
-		return target ?? this.create();
-	}
-	internalBinaryWrite(
-		message: CMsgServerWelcomeCitadel,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerWelcomeCitadel", []);
+  }
+  create(value?: PartialMessage<CMsgServerWelcomeCitadel>): CMsgServerWelcomeCitadel {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerWelcomeCitadel>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerWelcomeCitadel,
+  ): CMsgServerWelcomeCitadel {
+    return target ?? this.create();
+  }
+  internalBinaryWrite(
+    message: CMsgServerWelcomeCitadel,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerWelcomeCitadel
@@ -8373,58 +8373,58 @@ class CMsgServerWelcomeCitadel$Type extends MessageType<CMsgServerWelcomeCitadel
 export const CMsgServerWelcomeCitadel = new CMsgServerWelcomeCitadel$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerToGCIdlePing$Type extends MessageType<CMsgServerToGCIdlePing> {
-	constructor() {
-		super("CMsgServerToGCIdlePing", [
-			{
-				no: 1,
-				name: "server_version",
-				kind: "scalar",
-				localName: "server_version",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerToGCIdlePing>): CMsgServerToGCIdlePing {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerToGCIdlePing>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerToGCIdlePing,
-	): CMsgServerToGCIdlePing {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 server_version */ 1:
-					message.server_version = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerToGCIdlePing,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 server_version = 1; */
-		if (message.server_version !== undefined) writer.tag(1, WireType.Varint).uint32(message.server_version);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerToGCIdlePing", [
+      {
+        no: 1,
+        name: "server_version",
+        kind: "scalar",
+        localName: "server_version",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerToGCIdlePing>): CMsgServerToGCIdlePing {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerToGCIdlePing>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerToGCIdlePing,
+  ): CMsgServerToGCIdlePing {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 server_version */ 1:
+          message.server_version = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerToGCIdlePing,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 server_version = 1; */
+    if (message.server_version !== undefined) writer.tag(1, WireType.Varint).uint32(message.server_version);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerToGCIdlePing
@@ -8432,31 +8432,31 @@ class CMsgServerToGCIdlePing$Type extends MessageType<CMsgServerToGCIdlePing> {
 export const CMsgServerToGCIdlePing = new CMsgServerToGCIdlePing$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgGCToServerRequestPing$Type extends MessageType<CMsgGCToServerRequestPing> {
-	constructor() {
-		super("CMsgGCToServerRequestPing", []);
-	}
-	create(value?: PartialMessage<CMsgGCToServerRequestPing>): CMsgGCToServerRequestPing {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgGCToServerRequestPing>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgGCToServerRequestPing,
-	): CMsgGCToServerRequestPing {
-		return target ?? this.create();
-	}
-	internalBinaryWrite(
-		message: CMsgGCToServerRequestPing,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgGCToServerRequestPing", []);
+  }
+  create(value?: PartialMessage<CMsgGCToServerRequestPing>): CMsgGCToServerRequestPing {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgGCToServerRequestPing>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgGCToServerRequestPing,
+  ): CMsgGCToServerRequestPing {
+    return target ?? this.create();
+  }
+  internalBinaryWrite(
+    message: CMsgGCToServerRequestPing,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgGCToServerRequestPing
@@ -8464,59 +8464,59 @@ class CMsgGCToServerRequestPing$Type extends MessageType<CMsgGCToServerRequestPi
 export const CMsgGCToServerRequestPing = new CMsgGCToServerRequestPing$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgGCToServerAllocateForMatch$Type extends MessageType<CMsgGCToServerAllocateForMatch> {
-	constructor() {
-		super("CMsgGCToServerAllocateForMatch", [
-			{
-				no: 1,
-				name: "match_id",
-				kind: "scalar",
-				localName: "match_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgGCToServerAllocateForMatch>): CMsgGCToServerAllocateForMatch {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgGCToServerAllocateForMatch>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgGCToServerAllocateForMatch,
-	): CMsgGCToServerAllocateForMatch {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint64 match_id */ 1:
-					message.match_id = reader.uint64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgGCToServerAllocateForMatch,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint64 match_id = 1; */
-		if (message.match_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.match_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgGCToServerAllocateForMatch", [
+      {
+        no: 1,
+        name: "match_id",
+        kind: "scalar",
+        localName: "match_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgGCToServerAllocateForMatch>): CMsgGCToServerAllocateForMatch {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgGCToServerAllocateForMatch>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgGCToServerAllocateForMatch,
+  ): CMsgGCToServerAllocateForMatch {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint64 match_id */ 1:
+          message.match_id = reader.uint64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgGCToServerAllocateForMatch,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint64 match_id = 1; */
+    if (message.match_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.match_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgGCToServerAllocateForMatch
@@ -8524,57 +8524,57 @@ class CMsgGCToServerAllocateForMatch$Type extends MessageType<CMsgGCToServerAllo
 export const CMsgGCToServerAllocateForMatch = new CMsgGCToServerAllocateForMatch$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgGCToServerAllocateForMatchResponse$Type extends MessageType<CMsgGCToServerAllocateForMatchResponse> {
-	constructor() {
-		super("CMsgGCToServerAllocateForMatchResponse", [
-			{
-				no: 1,
-				name: "success",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgGCToServerAllocateForMatchResponse>): CMsgGCToServerAllocateForMatchResponse {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgGCToServerAllocateForMatchResponse>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgGCToServerAllocateForMatchResponse,
-	): CMsgGCToServerAllocateForMatchResponse {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool success */ 1:
-					message.success = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgGCToServerAllocateForMatchResponse,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool success = 1; */
-		if (message.success !== undefined) writer.tag(1, WireType.Varint).bool(message.success);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgGCToServerAllocateForMatchResponse", [
+      {
+        no: 1,
+        name: "success",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgGCToServerAllocateForMatchResponse>): CMsgGCToServerAllocateForMatchResponse {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgGCToServerAllocateForMatchResponse>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgGCToServerAllocateForMatchResponse,
+  ): CMsgGCToServerAllocateForMatchResponse {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool success */ 1:
+          message.success = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgGCToServerAllocateForMatchResponse,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool success = 1; */
+    if (message.success !== undefined) writer.tag(1, WireType.Varint).bool(message.success);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgGCToServerAllocateForMatchResponse
@@ -8582,149 +8582,149 @@ class CMsgGCToServerAllocateForMatchResponse$Type extends MessageType<CMsgGCToSe
 export const CMsgGCToServerAllocateForMatchResponse = new CMsgGCToServerAllocateForMatchResponse$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerToGCEnterMatchmaking$Type extends MessageType<CMsgServerToGCEnterMatchmaking> {
-	constructor() {
-		super("CMsgServerToGCEnterMatchmaking", [
-			{
-				no: 1,
-				name: "server_version",
-				kind: "scalar",
-				localName: "server_version",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "search_key",
-				kind: "scalar",
-				localName: "search_key",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 3,
-				name: "region_id",
-				kind: "scalar",
-				localName: "region_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "cluster_id",
-				kind: "scalar",
-				localName: "cluster_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 5,
-				name: "server_public_ip",
-				kind: "scalar",
-				localName: "server_public_ip",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 6,
-				name: "server_private_ip",
-				kind: "scalar",
-				localName: "server_private_ip",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 7,
-				name: "server_port",
-				kind: "scalar",
-				localName: "server_port",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 9,
-				name: "sdr_address",
-				kind: "scalar",
-				localName: "sdr_address",
-				opt: true,
-				T: 12 /*ScalarType.BYTES*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerToGCEnterMatchmaking>): CMsgServerToGCEnterMatchmaking {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerToGCEnterMatchmaking>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerToGCEnterMatchmaking,
-	): CMsgServerToGCEnterMatchmaking {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 server_version */ 1:
-					message.server_version = reader.uint32();
-					break;
-				case /* optional string search_key */ 2:
-					message.search_key = reader.string();
-					break;
-				case /* optional uint32 region_id */ 3:
-					message.region_id = reader.uint32();
-					break;
-				case /* optional uint32 cluster_id */ 4:
-					message.cluster_id = reader.uint32();
-					break;
-				case /* optional uint32 server_public_ip */ 5:
-					message.server_public_ip = reader.uint32();
-					break;
-				case /* optional uint32 server_private_ip */ 6:
-					message.server_private_ip = reader.uint32();
-					break;
-				case /* optional uint32 server_port */ 7:
-					message.server_port = reader.uint32();
-					break;
-				case /* optional bytes sdr_address */ 9:
-					message.sdr_address = reader.bytes();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerToGCEnterMatchmaking,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 server_version = 1; */
-		if (message.server_version !== undefined) writer.tag(1, WireType.Varint).uint32(message.server_version);
-		/* optional string search_key = 2; */
-		if (message.search_key !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.search_key);
-		/* optional uint32 region_id = 3; */
-		if (message.region_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.region_id);
-		/* optional uint32 cluster_id = 4; */
-		if (message.cluster_id !== undefined) writer.tag(4, WireType.Varint).uint32(message.cluster_id);
-		/* optional uint32 server_public_ip = 5; */
-		if (message.server_public_ip !== undefined) writer.tag(5, WireType.Varint).uint32(message.server_public_ip);
-		/* optional uint32 server_private_ip = 6; */
-		if (message.server_private_ip !== undefined) writer.tag(6, WireType.Varint).uint32(message.server_private_ip);
-		/* optional uint32 server_port = 7; */
-		if (message.server_port !== undefined) writer.tag(7, WireType.Varint).uint32(message.server_port);
-		/* optional bytes sdr_address = 9; */
-		if (message.sdr_address !== undefined) writer.tag(9, WireType.LengthDelimited).bytes(message.sdr_address);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerToGCEnterMatchmaking", [
+      {
+        no: 1,
+        name: "server_version",
+        kind: "scalar",
+        localName: "server_version",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "search_key",
+        kind: "scalar",
+        localName: "search_key",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 3,
+        name: "region_id",
+        kind: "scalar",
+        localName: "region_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "cluster_id",
+        kind: "scalar",
+        localName: "cluster_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 5,
+        name: "server_public_ip",
+        kind: "scalar",
+        localName: "server_public_ip",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 6,
+        name: "server_private_ip",
+        kind: "scalar",
+        localName: "server_private_ip",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 7,
+        name: "server_port",
+        kind: "scalar",
+        localName: "server_port",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 9,
+        name: "sdr_address",
+        kind: "scalar",
+        localName: "sdr_address",
+        opt: true,
+        T: 12 /*ScalarType.BYTES*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerToGCEnterMatchmaking>): CMsgServerToGCEnterMatchmaking {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerToGCEnterMatchmaking>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerToGCEnterMatchmaking,
+  ): CMsgServerToGCEnterMatchmaking {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 server_version */ 1:
+          message.server_version = reader.uint32();
+          break;
+        case /* optional string search_key */ 2:
+          message.search_key = reader.string();
+          break;
+        case /* optional uint32 region_id */ 3:
+          message.region_id = reader.uint32();
+          break;
+        case /* optional uint32 cluster_id */ 4:
+          message.cluster_id = reader.uint32();
+          break;
+        case /* optional uint32 server_public_ip */ 5:
+          message.server_public_ip = reader.uint32();
+          break;
+        case /* optional uint32 server_private_ip */ 6:
+          message.server_private_ip = reader.uint32();
+          break;
+        case /* optional uint32 server_port */ 7:
+          message.server_port = reader.uint32();
+          break;
+        case /* optional bytes sdr_address */ 9:
+          message.sdr_address = reader.bytes();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerToGCEnterMatchmaking,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 server_version = 1; */
+    if (message.server_version !== undefined) writer.tag(1, WireType.Varint).uint32(message.server_version);
+    /* optional string search_key = 2; */
+    if (message.search_key !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.search_key);
+    /* optional uint32 region_id = 3; */
+    if (message.region_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.region_id);
+    /* optional uint32 cluster_id = 4; */
+    if (message.cluster_id !== undefined) writer.tag(4, WireType.Varint).uint32(message.cluster_id);
+    /* optional uint32 server_public_ip = 5; */
+    if (message.server_public_ip !== undefined) writer.tag(5, WireType.Varint).uint32(message.server_public_ip);
+    /* optional uint32 server_private_ip = 6; */
+    if (message.server_private_ip !== undefined) writer.tag(6, WireType.Varint).uint32(message.server_private_ip);
+    /* optional uint32 server_port = 7; */
+    if (message.server_port !== undefined) writer.tag(7, WireType.Varint).uint32(message.server_port);
+    /* optional bytes sdr_address = 9; */
+    if (message.sdr_address !== undefined) writer.tag(9, WireType.LengthDelimited).bytes(message.sdr_address);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerToGCEnterMatchmaking
@@ -8732,59 +8732,59 @@ class CMsgServerToGCEnterMatchmaking$Type extends MessageType<CMsgServerToGCEnte
 export const CMsgServerToGCEnterMatchmaking = new CMsgServerToGCEnterMatchmaking$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgGCToServerCancelAllocateForMatch$Type extends MessageType<CMsgGCToServerCancelAllocateForMatch> {
-	constructor() {
-		super("CMsgGCToServerCancelAllocateForMatch", [
-			{
-				no: 1,
-				name: "match_id",
-				kind: "scalar",
-				localName: "match_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgGCToServerCancelAllocateForMatch>): CMsgGCToServerCancelAllocateForMatch {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgGCToServerCancelAllocateForMatch>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgGCToServerCancelAllocateForMatch,
-	): CMsgGCToServerCancelAllocateForMatch {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint64 match_id */ 1:
-					message.match_id = reader.uint64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgGCToServerCancelAllocateForMatch,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint64 match_id = 1; */
-		if (message.match_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.match_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgGCToServerCancelAllocateForMatch", [
+      {
+        no: 1,
+        name: "match_id",
+        kind: "scalar",
+        localName: "match_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgGCToServerCancelAllocateForMatch>): CMsgGCToServerCancelAllocateForMatch {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgGCToServerCancelAllocateForMatch>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgGCToServerCancelAllocateForMatch,
+  ): CMsgGCToServerCancelAllocateForMatch {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint64 match_id */ 1:
+          message.match_id = reader.uint64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgGCToServerCancelAllocateForMatch,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint64 match_id = 1; */
+    if (message.match_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.match_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgGCToServerCancelAllocateForMatch
@@ -8792,85 +8792,85 @@ class CMsgGCToServerCancelAllocateForMatch$Type extends MessageType<CMsgGCToServ
 export const CMsgGCToServerCancelAllocateForMatch = new CMsgGCToServerCancelAllocateForMatch$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerToGCUpdateLobbyServerState$Type extends MessageType<CMsgServerToGCUpdateLobbyServerState> {
-	constructor() {
-		super("CMsgServerToGCUpdateLobbyServerState", [
-			{
-				no: 1,
-				name: "lobby_id",
-				kind: "scalar",
-				localName: "lobby_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "server_state",
-				kind: "enum",
-				localName: "server_state",
-				opt: true,
-				T: () => ["ELobbyServerState", ELobbyServerState],
-			},
-			{
-				no: 3,
-				name: "safe_to_abandon",
-				kind: "scalar",
-				localName: "safe_to_abandon",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerToGCUpdateLobbyServerState>): CMsgServerToGCUpdateLobbyServerState {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerToGCUpdateLobbyServerState>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerToGCUpdateLobbyServerState,
-	): CMsgServerToGCUpdateLobbyServerState {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint64 lobby_id */ 1:
-					message.lobby_id = reader.uint64().toBigInt();
-					break;
-				case /* optional ELobbyServerState server_state */ 2:
-					message.server_state = reader.int32();
-					break;
-				case /* optional bool safe_to_abandon */ 3:
-					message.safe_to_abandon = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerToGCUpdateLobbyServerState,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint64 lobby_id = 1; */
-		if (message.lobby_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.lobby_id);
-		/* optional ELobbyServerState server_state = 2; */
-		if (message.server_state !== undefined) writer.tag(2, WireType.Varint).int32(message.server_state);
-		/* optional bool safe_to_abandon = 3; */
-		if (message.safe_to_abandon !== undefined) writer.tag(3, WireType.Varint).bool(message.safe_to_abandon);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerToGCUpdateLobbyServerState", [
+      {
+        no: 1,
+        name: "lobby_id",
+        kind: "scalar",
+        localName: "lobby_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "server_state",
+        kind: "enum",
+        localName: "server_state",
+        opt: true,
+        T: () => ["ELobbyServerState", ELobbyServerState],
+      },
+      {
+        no: 3,
+        name: "safe_to_abandon",
+        kind: "scalar",
+        localName: "safe_to_abandon",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerToGCUpdateLobbyServerState>): CMsgServerToGCUpdateLobbyServerState {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerToGCUpdateLobbyServerState>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerToGCUpdateLobbyServerState,
+  ): CMsgServerToGCUpdateLobbyServerState {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint64 lobby_id */ 1:
+          message.lobby_id = reader.uint64().toBigInt();
+          break;
+        case /* optional ELobbyServerState server_state */ 2:
+          message.server_state = reader.int32();
+          break;
+        case /* optional bool safe_to_abandon */ 3:
+          message.safe_to_abandon = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerToGCUpdateLobbyServerState,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint64 lobby_id = 1; */
+    if (message.lobby_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.lobby_id);
+    /* optional ELobbyServerState server_state = 2; */
+    if (message.server_state !== undefined) writer.tag(2, WireType.Varint).int32(message.server_state);
+    /* optional bool safe_to_abandon = 3; */
+    if (message.safe_to_abandon !== undefined) writer.tag(3, WireType.Varint).bool(message.safe_to_abandon);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerToGCUpdateLobbyServerState
@@ -8878,260 +8878,260 @@ class CMsgServerToGCUpdateLobbyServerState$Type extends MessageType<CMsgServerTo
 export const CMsgServerToGCUpdateLobbyServerState = new CMsgServerToGCUpdateLobbyServerState$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerToGCAbandonMatch$Type extends MessageType<CMsgServerToGCAbandonMatch> {
-	constructor() {
-		super("CMsgServerToGCAbandonMatch", [
-			{
-				no: 1,
-				name: "server_steam_id",
-				kind: "scalar",
-				localName: "server_steam_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "lobby_id",
-				kind: "scalar",
-				localName: "lobby_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "cluster_id",
-				kind: "scalar",
-				localName: "cluster_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 4,
-				name: "reason_code",
-				kind: "enum",
-				localName: "reason_code",
-				opt: true,
-				T: () => ["CMsgServerToGCAbandonMatch.EReason", CMsgServerToGCAbandonMatch_EReason],
-			},
-			{
-				no: 5,
-				name: "additional_data",
-				kind: "scalar",
-				localName: "additional_data",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 6,
-				name: "match_id",
-				kind: "scalar",
-				localName: "match_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 8,
-				name: "players",
-				kind: "message",
-				repeat: 2 /*RepeatType.UNPACKED*/,
-				T: () => CMsgServerToGCAbandonMatch_Player,
-			},
-			{
-				no: 9,
-				name: "public_ip_address",
-				kind: "scalar",
-				localName: "public_ip_address",
-				opt: true,
-				T: 7 /*ScalarType.FIXED32*/,
-			},
-			{
-				no: 10,
-				name: "port",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 11,
-				name: "server_version",
-				kind: "scalar",
-				localName: "server_version",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 12,
-				name: "pid",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 13,
-				name: "instance_id",
-				kind: "scalar",
-				localName: "instance_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 14,
-				name: "private_ip_address",
-				kind: "scalar",
-				localName: "private_ip_address",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 15,
-				name: "match_mode",
-				kind: "enum",
-				localName: "match_mode",
-				opt: true,
-				T: () => ["ECitadelMatchMode", ECitadelMatchMode],
-			},
-			{
-				no: 16,
-				name: "game_mode",
-				kind: "enum",
-				localName: "game_mode",
-				opt: true,
-				T: () => ["ECitadelGameMode", ECitadelGameMode],
-			},
-			{
-				no: 17,
-				name: "was_server_shutdown",
-				kind: "scalar",
-				localName: "was_server_shutdown",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerToGCAbandonMatch>): CMsgServerToGCAbandonMatch {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		message.players = [];
-		if (value !== undefined) reflectionMergePartial<CMsgServerToGCAbandonMatch>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerToGCAbandonMatch,
-	): CMsgServerToGCAbandonMatch {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional fixed64 server_steam_id */ 1:
-					message.server_steam_id = reader.fixed64().toBigInt();
-					break;
-				case /* optional fixed64 lobby_id */ 2:
-					message.lobby_id = reader.fixed64().toBigInt();
-					break;
-				case /* optional uint32 cluster_id */ 3:
-					message.cluster_id = reader.uint32();
-					break;
-				case /* optional CMsgServerToGCAbandonMatch.EReason reason_code */ 4:
-					message.reason_code = reader.int32();
-					break;
-				case /* optional uint64 additional_data */ 5:
-					message.additional_data = reader.uint64().toBigInt();
-					break;
-				case /* optional uint64 match_id */ 6:
-					message.match_id = reader.uint64().toBigInt();
-					break;
-				case /* repeated CMsgServerToGCAbandonMatch.Player players */ 8:
-					message.players.push(CMsgServerToGCAbandonMatch_Player.internalBinaryRead(reader, reader.uint32(), options));
-					break;
-				case /* optional fixed32 public_ip_address */ 9:
-					message.public_ip_address = reader.fixed32();
-					break;
-				case /* optional uint32 port */ 10:
-					message.port = reader.uint32();
-					break;
-				case /* optional uint32 server_version */ 11:
-					message.server_version = reader.uint32();
-					break;
-				case /* optional uint32 pid */ 12:
-					message.pid = reader.uint32();
-					break;
-				case /* optional uint32 instance_id */ 13:
-					message.instance_id = reader.uint32();
-					break;
-				case /* optional uint32 private_ip_address */ 14:
-					message.private_ip_address = reader.uint32();
-					break;
-				case /* optional ECitadelMatchMode match_mode */ 15:
-					message.match_mode = reader.int32();
-					break;
-				case /* optional ECitadelGameMode game_mode */ 16:
-					message.game_mode = reader.int32();
-					break;
-				case /* optional bool was_server_shutdown */ 17:
-					message.was_server_shutdown = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerToGCAbandonMatch,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional fixed64 server_steam_id = 1; */
-		if (message.server_steam_id !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.server_steam_id);
-		/* optional fixed64 lobby_id = 2; */
-		if (message.lobby_id !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.lobby_id);
-		/* optional uint32 cluster_id = 3; */
-		if (message.cluster_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.cluster_id);
-		/* optional CMsgServerToGCAbandonMatch.EReason reason_code = 4; */
-		if (message.reason_code !== undefined) writer.tag(4, WireType.Varint).int32(message.reason_code);
-		/* optional uint64 additional_data = 5; */
-		if (message.additional_data !== undefined) writer.tag(5, WireType.Varint).uint64(message.additional_data);
-		/* optional uint64 match_id = 6; */
-		if (message.match_id !== undefined) writer.tag(6, WireType.Varint).uint64(message.match_id);
-		/* repeated CMsgServerToGCAbandonMatch.Player players = 8; */
-		for (let i = 0; i < message.players.length; i++)
-			CMsgServerToGCAbandonMatch_Player.internalBinaryWrite(
-				message.players[i],
-				writer.tag(8, WireType.LengthDelimited).fork(),
-				options,
-			).join();
-		/* optional fixed32 public_ip_address = 9; */
-		if (message.public_ip_address !== undefined) writer.tag(9, WireType.Bit32).fixed32(message.public_ip_address);
-		/* optional uint32 port = 10; */
-		if (message.port !== undefined) writer.tag(10, WireType.Varint).uint32(message.port);
-		/* optional uint32 server_version = 11; */
-		if (message.server_version !== undefined) writer.tag(11, WireType.Varint).uint32(message.server_version);
-		/* optional uint32 pid = 12; */
-		if (message.pid !== undefined) writer.tag(12, WireType.Varint).uint32(message.pid);
-		/* optional uint32 instance_id = 13; */
-		if (message.instance_id !== undefined) writer.tag(13, WireType.Varint).uint32(message.instance_id);
-		/* optional uint32 private_ip_address = 14; */
-		if (message.private_ip_address !== undefined) writer.tag(14, WireType.Varint).uint32(message.private_ip_address);
-		/* optional ECitadelMatchMode match_mode = 15; */
-		if (message.match_mode !== undefined) writer.tag(15, WireType.Varint).int32(message.match_mode);
-		/* optional ECitadelGameMode game_mode = 16; */
-		if (message.game_mode !== undefined) writer.tag(16, WireType.Varint).int32(message.game_mode);
-		/* optional bool was_server_shutdown = 17; */
-		if (message.was_server_shutdown !== undefined) writer.tag(17, WireType.Varint).bool(message.was_server_shutdown);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerToGCAbandonMatch", [
+      {
+        no: 1,
+        name: "server_steam_id",
+        kind: "scalar",
+        localName: "server_steam_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "lobby_id",
+        kind: "scalar",
+        localName: "lobby_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "cluster_id",
+        kind: "scalar",
+        localName: "cluster_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 4,
+        name: "reason_code",
+        kind: "enum",
+        localName: "reason_code",
+        opt: true,
+        T: () => ["CMsgServerToGCAbandonMatch.EReason", CMsgServerToGCAbandonMatch_EReason],
+      },
+      {
+        no: 5,
+        name: "additional_data",
+        kind: "scalar",
+        localName: "additional_data",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 6,
+        name: "match_id",
+        kind: "scalar",
+        localName: "match_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 8,
+        name: "players",
+        kind: "message",
+        repeat: 2 /*RepeatType.UNPACKED*/,
+        T: () => CMsgServerToGCAbandonMatch_Player,
+      },
+      {
+        no: 9,
+        name: "public_ip_address",
+        kind: "scalar",
+        localName: "public_ip_address",
+        opt: true,
+        T: 7 /*ScalarType.FIXED32*/,
+      },
+      {
+        no: 10,
+        name: "port",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 11,
+        name: "server_version",
+        kind: "scalar",
+        localName: "server_version",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 12,
+        name: "pid",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 13,
+        name: "instance_id",
+        kind: "scalar",
+        localName: "instance_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 14,
+        name: "private_ip_address",
+        kind: "scalar",
+        localName: "private_ip_address",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 15,
+        name: "match_mode",
+        kind: "enum",
+        localName: "match_mode",
+        opt: true,
+        T: () => ["ECitadelMatchMode", ECitadelMatchMode],
+      },
+      {
+        no: 16,
+        name: "game_mode",
+        kind: "enum",
+        localName: "game_mode",
+        opt: true,
+        T: () => ["ECitadelGameMode", ECitadelGameMode],
+      },
+      {
+        no: 17,
+        name: "was_server_shutdown",
+        kind: "scalar",
+        localName: "was_server_shutdown",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerToGCAbandonMatch>): CMsgServerToGCAbandonMatch {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    message.players = [];
+    if (value !== undefined) reflectionMergePartial<CMsgServerToGCAbandonMatch>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerToGCAbandonMatch,
+  ): CMsgServerToGCAbandonMatch {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional fixed64 server_steam_id */ 1:
+          message.server_steam_id = reader.fixed64().toBigInt();
+          break;
+        case /* optional fixed64 lobby_id */ 2:
+          message.lobby_id = reader.fixed64().toBigInt();
+          break;
+        case /* optional uint32 cluster_id */ 3:
+          message.cluster_id = reader.uint32();
+          break;
+        case /* optional CMsgServerToGCAbandonMatch.EReason reason_code */ 4:
+          message.reason_code = reader.int32();
+          break;
+        case /* optional uint64 additional_data */ 5:
+          message.additional_data = reader.uint64().toBigInt();
+          break;
+        case /* optional uint64 match_id */ 6:
+          message.match_id = reader.uint64().toBigInt();
+          break;
+        case /* repeated CMsgServerToGCAbandonMatch.Player players */ 8:
+          message.players.push(CMsgServerToGCAbandonMatch_Player.internalBinaryRead(reader, reader.uint32(), options));
+          break;
+        case /* optional fixed32 public_ip_address */ 9:
+          message.public_ip_address = reader.fixed32();
+          break;
+        case /* optional uint32 port */ 10:
+          message.port = reader.uint32();
+          break;
+        case /* optional uint32 server_version */ 11:
+          message.server_version = reader.uint32();
+          break;
+        case /* optional uint32 pid */ 12:
+          message.pid = reader.uint32();
+          break;
+        case /* optional uint32 instance_id */ 13:
+          message.instance_id = reader.uint32();
+          break;
+        case /* optional uint32 private_ip_address */ 14:
+          message.private_ip_address = reader.uint32();
+          break;
+        case /* optional ECitadelMatchMode match_mode */ 15:
+          message.match_mode = reader.int32();
+          break;
+        case /* optional ECitadelGameMode game_mode */ 16:
+          message.game_mode = reader.int32();
+          break;
+        case /* optional bool was_server_shutdown */ 17:
+          message.was_server_shutdown = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerToGCAbandonMatch,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional fixed64 server_steam_id = 1; */
+    if (message.server_steam_id !== undefined) writer.tag(1, WireType.Bit64).fixed64(message.server_steam_id);
+    /* optional fixed64 lobby_id = 2; */
+    if (message.lobby_id !== undefined) writer.tag(2, WireType.Bit64).fixed64(message.lobby_id);
+    /* optional uint32 cluster_id = 3; */
+    if (message.cluster_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.cluster_id);
+    /* optional CMsgServerToGCAbandonMatch.EReason reason_code = 4; */
+    if (message.reason_code !== undefined) writer.tag(4, WireType.Varint).int32(message.reason_code);
+    /* optional uint64 additional_data = 5; */
+    if (message.additional_data !== undefined) writer.tag(5, WireType.Varint).uint64(message.additional_data);
+    /* optional uint64 match_id = 6; */
+    if (message.match_id !== undefined) writer.tag(6, WireType.Varint).uint64(message.match_id);
+    /* repeated CMsgServerToGCAbandonMatch.Player players = 8; */
+    for (let i = 0; i < message.players.length; i++)
+      CMsgServerToGCAbandonMatch_Player.internalBinaryWrite(
+        message.players[i],
+        writer.tag(8, WireType.LengthDelimited).fork(),
+        options,
+      ).join();
+    /* optional fixed32 public_ip_address = 9; */
+    if (message.public_ip_address !== undefined) writer.tag(9, WireType.Bit32).fixed32(message.public_ip_address);
+    /* optional uint32 port = 10; */
+    if (message.port !== undefined) writer.tag(10, WireType.Varint).uint32(message.port);
+    /* optional uint32 server_version = 11; */
+    if (message.server_version !== undefined) writer.tag(11, WireType.Varint).uint32(message.server_version);
+    /* optional uint32 pid = 12; */
+    if (message.pid !== undefined) writer.tag(12, WireType.Varint).uint32(message.pid);
+    /* optional uint32 instance_id = 13; */
+    if (message.instance_id !== undefined) writer.tag(13, WireType.Varint).uint32(message.instance_id);
+    /* optional uint32 private_ip_address = 14; */
+    if (message.private_ip_address !== undefined) writer.tag(14, WireType.Varint).uint32(message.private_ip_address);
+    /* optional ECitadelMatchMode match_mode = 15; */
+    if (message.match_mode !== undefined) writer.tag(15, WireType.Varint).int32(message.match_mode);
+    /* optional ECitadelGameMode game_mode = 16; */
+    if (message.game_mode !== undefined) writer.tag(16, WireType.Varint).int32(message.game_mode);
+    /* optional bool was_server_shutdown = 17; */
+    if (message.was_server_shutdown !== undefined) writer.tag(17, WireType.Varint).bool(message.was_server_shutdown);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerToGCAbandonMatch
@@ -9139,85 +9139,85 @@ class CMsgServerToGCAbandonMatch$Type extends MessageType<CMsgServerToGCAbandonM
 export const CMsgServerToGCAbandonMatch = new CMsgServerToGCAbandonMatch$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerToGCAbandonMatch_Player$Type extends MessageType<CMsgServerToGCAbandonMatch_Player> {
-	constructor() {
-		super("CMsgServerToGCAbandonMatch.Player", [
-			{
-				no: 1,
-				name: "account_id",
-				kind: "scalar",
-				localName: "account_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "additional_data",
-				kind: "scalar",
-				localName: "additional_data",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "hero_id",
-				kind: "scalar",
-				localName: "hero_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerToGCAbandonMatch_Player>): CMsgServerToGCAbandonMatch_Player {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerToGCAbandonMatch_Player>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerToGCAbandonMatch_Player,
-	): CMsgServerToGCAbandonMatch_Player {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 account_id */ 1:
-					message.account_id = reader.uint32();
-					break;
-				case /* optional uint64 additional_data */ 2:
-					message.additional_data = reader.uint64().toBigInt();
-					break;
-				case /* optional uint32 hero_id */ 3:
-					message.hero_id = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerToGCAbandonMatch_Player,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 account_id = 1; */
-		if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
-		/* optional uint64 additional_data = 2; */
-		if (message.additional_data !== undefined) writer.tag(2, WireType.Varint).uint64(message.additional_data);
-		/* optional uint32 hero_id = 3; */
-		if (message.hero_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.hero_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerToGCAbandonMatch.Player", [
+      {
+        no: 1,
+        name: "account_id",
+        kind: "scalar",
+        localName: "account_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "additional_data",
+        kind: "scalar",
+        localName: "additional_data",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "hero_id",
+        kind: "scalar",
+        localName: "hero_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerToGCAbandonMatch_Player>): CMsgServerToGCAbandonMatch_Player {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerToGCAbandonMatch_Player>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerToGCAbandonMatch_Player,
+  ): CMsgServerToGCAbandonMatch_Player {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 account_id */ 1:
+          message.account_id = reader.uint32();
+          break;
+        case /* optional uint64 additional_data */ 2:
+          message.additional_data = reader.uint64().toBigInt();
+          break;
+        case /* optional uint32 hero_id */ 3:
+          message.hero_id = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerToGCAbandonMatch_Player,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 account_id = 1; */
+    if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
+    /* optional uint64 additional_data = 2; */
+    if (message.additional_data !== undefined) writer.tag(2, WireType.Varint).uint64(message.additional_data);
+    /* optional uint32 hero_id = 3; */
+    if (message.hero_id !== undefined) writer.tag(3, WireType.Varint).uint32(message.hero_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerToGCAbandonMatch.Player
@@ -9225,31 +9225,31 @@ class CMsgServerToGCAbandonMatch_Player$Type extends MessageType<CMsgServerToGCA
 export const CMsgServerToGCAbandonMatch_Player = new CMsgServerToGCAbandonMatch_Player$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerToGCAbandonMatchResponse$Type extends MessageType<CMsgServerToGCAbandonMatchResponse> {
-	constructor() {
-		super("CMsgServerToGCAbandonMatchResponse", []);
-	}
-	create(value?: PartialMessage<CMsgServerToGCAbandonMatchResponse>): CMsgServerToGCAbandonMatchResponse {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerToGCAbandonMatchResponse>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerToGCAbandonMatchResponse,
-	): CMsgServerToGCAbandonMatchResponse {
-		return target ?? this.create();
-	}
-	internalBinaryWrite(
-		message: CMsgServerToGCAbandonMatchResponse,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerToGCAbandonMatchResponse", []);
+  }
+  create(value?: PartialMessage<CMsgServerToGCAbandonMatchResponse>): CMsgServerToGCAbandonMatchResponse {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerToGCAbandonMatchResponse>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerToGCAbandonMatchResponse,
+  ): CMsgServerToGCAbandonMatchResponse {
+    return target ?? this.create();
+  }
+  internalBinaryWrite(
+    message: CMsgServerToGCAbandonMatchResponse,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerToGCAbandonMatchResponse
@@ -9257,31 +9257,31 @@ class CMsgServerToGCAbandonMatchResponse$Type extends MessageType<CMsgServerToGC
 export const CMsgServerToGCAbandonMatchResponse = new CMsgServerToGCAbandonMatchResponse$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerToGCTestConnection$Type extends MessageType<CMsgServerToGCTestConnection> {
-	constructor() {
-		super("CMsgServerToGCTestConnection", []);
-	}
-	create(value?: PartialMessage<CMsgServerToGCTestConnection>): CMsgServerToGCTestConnection {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerToGCTestConnection>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerToGCTestConnection,
-	): CMsgServerToGCTestConnection {
-		return target ?? this.create();
-	}
-	internalBinaryWrite(
-		message: CMsgServerToGCTestConnection,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerToGCTestConnection", []);
+  }
+  create(value?: PartialMessage<CMsgServerToGCTestConnection>): CMsgServerToGCTestConnection {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerToGCTestConnection>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerToGCTestConnection,
+  ): CMsgServerToGCTestConnection {
+    return target ?? this.create();
+  }
+  internalBinaryWrite(
+    message: CMsgServerToGCTestConnection,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerToGCTestConnection
@@ -9289,71 +9289,71 @@ class CMsgServerToGCTestConnection$Type extends MessageType<CMsgServerToGCTestCo
 export const CMsgServerToGCTestConnection = new CMsgServerToGCTestConnection$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerToGCTestConnectionResponse$Type extends MessageType<CMsgServerToGCTestConnectionResponse> {
-	constructor() {
-		super("CMsgServerToGCTestConnectionResponse", [
-			{
-				no: 1,
-				name: "state",
-				kind: "scalar",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "lobby_id",
-				kind: "scalar",
-				localName: "lobby_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerToGCTestConnectionResponse>): CMsgServerToGCTestConnectionResponse {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerToGCTestConnectionResponse>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerToGCTestConnectionResponse,
-	): CMsgServerToGCTestConnectionResponse {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 state */ 1:
-					message.state = reader.uint32();
-					break;
-				case /* optional uint64 lobby_id */ 2:
-					message.lobby_id = reader.uint64().toBigInt();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerToGCTestConnectionResponse,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 state = 1; */
-		if (message.state !== undefined) writer.tag(1, WireType.Varint).uint32(message.state);
-		/* optional uint64 lobby_id = 2; */
-		if (message.lobby_id !== undefined) writer.tag(2, WireType.Varint).uint64(message.lobby_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerToGCTestConnectionResponse", [
+      {
+        no: 1,
+        name: "state",
+        kind: "scalar",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "lobby_id",
+        kind: "scalar",
+        localName: "lobby_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerToGCTestConnectionResponse>): CMsgServerToGCTestConnectionResponse {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerToGCTestConnectionResponse>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerToGCTestConnectionResponse,
+  ): CMsgServerToGCTestConnectionResponse {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 state */ 1:
+          message.state = reader.uint32();
+          break;
+        case /* optional uint64 lobby_id */ 2:
+          message.lobby_id = reader.uint64().toBigInt();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerToGCTestConnectionResponse,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 state = 1; */
+    if (message.state !== undefined) writer.tag(1, WireType.Varint).uint32(message.state);
+    /* optional uint64 lobby_id = 2; */
+    if (message.lobby_id !== undefined) writer.tag(2, WireType.Varint).uint64(message.lobby_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerToGCTestConnectionResponse
@@ -9361,71 +9361,71 @@ class CMsgServerToGCTestConnectionResponse$Type extends MessageType<CMsgServerTo
 export const CMsgServerToGCTestConnectionResponse = new CMsgServerToGCTestConnectionResponse$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgGCToServerSetServerConVar$Type extends MessageType<CMsgGCToServerSetServerConVar> {
-	constructor() {
-		super("CMsgGCToServerSetServerConVar", [
-			{
-				no: 1,
-				name: "convar_name",
-				kind: "scalar",
-				localName: "convar_name",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-			{
-				no: 2,
-				name: "convar_value",
-				kind: "scalar",
-				localName: "convar_value",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgGCToServerSetServerConVar>): CMsgGCToServerSetServerConVar {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgGCToServerSetServerConVar>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgGCToServerSetServerConVar,
-	): CMsgGCToServerSetServerConVar {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional string convar_name */ 1:
-					message.convar_name = reader.string();
-					break;
-				case /* optional string convar_value */ 2:
-					message.convar_value = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgGCToServerSetServerConVar,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional string convar_name = 1; */
-		if (message.convar_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.convar_name);
-		/* optional string convar_value = 2; */
-		if (message.convar_value !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.convar_value);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgGCToServerSetServerConVar", [
+      {
+        no: 1,
+        name: "convar_name",
+        kind: "scalar",
+        localName: "convar_name",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+      {
+        no: 2,
+        name: "convar_value",
+        kind: "scalar",
+        localName: "convar_value",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgGCToServerSetServerConVar>): CMsgGCToServerSetServerConVar {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgGCToServerSetServerConVar>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgGCToServerSetServerConVar,
+  ): CMsgGCToServerSetServerConVar {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional string convar_name */ 1:
+          message.convar_name = reader.string();
+          break;
+        case /* optional string convar_value */ 2:
+          message.convar_value = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgGCToServerSetServerConVar,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional string convar_name = 1; */
+    if (message.convar_name !== undefined) writer.tag(1, WireType.LengthDelimited).string(message.convar_name);
+    /* optional string convar_value = 2; */
+    if (message.convar_value !== undefined) writer.tag(2, WireType.LengthDelimited).string(message.convar_value);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgGCToServerSetServerConVar
@@ -9433,57 +9433,57 @@ class CMsgGCToServerSetServerConVar$Type extends MessageType<CMsgGCToServerSetSe
 export const CMsgGCToServerSetServerConVar = new CMsgGCToServerSetServerConVar$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgGCToServerSetServerConVarResponse$Type extends MessageType<CMsgGCToServerSetServerConVarResponse> {
-	constructor() {
-		super("CMsgGCToServerSetServerConVarResponse", [
-			{
-				no: 1,
-				name: "success",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgGCToServerSetServerConVarResponse>): CMsgGCToServerSetServerConVarResponse {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgGCToServerSetServerConVarResponse>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgGCToServerSetServerConVarResponse,
-	): CMsgGCToServerSetServerConVarResponse {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool success */ 1:
-					message.success = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgGCToServerSetServerConVarResponse,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool success = 1; */
-		if (message.success !== undefined) writer.tag(1, WireType.Varint).bool(message.success);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgGCToServerSetServerConVarResponse", [
+      {
+        no: 1,
+        name: "success",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgGCToServerSetServerConVarResponse>): CMsgGCToServerSetServerConVarResponse {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgGCToServerSetServerConVarResponse>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgGCToServerSetServerConVarResponse,
+  ): CMsgGCToServerSetServerConVarResponse {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool success */ 1:
+          message.success = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgGCToServerSetServerConVarResponse,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool success = 1; */
+    if (message.success !== undefined) writer.tag(1, WireType.Varint).bool(message.success);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgGCToServerSetServerConVarResponse
@@ -9491,85 +9491,85 @@ class CMsgGCToServerSetServerConVarResponse$Type extends MessageType<CMsgGCToSer
 export const CMsgGCToServerSetServerConVarResponse = new CMsgGCToServerSetServerConVarResponse$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgGCToServerAddSpectator$Type extends MessageType<CMsgGCToServerAddSpectator> {
-	constructor() {
-		super("CMsgGCToServerAddSpectator", [
-			{
-				no: 1,
-				name: "lobby_id",
-				kind: "scalar",
-				localName: "lobby_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 2,
-				name: "account_id",
-				kind: "scalar",
-				localName: "account_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 3,
-				name: "account_to_spectate",
-				kind: "scalar",
-				localName: "account_to_spectate",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgGCToServerAddSpectator>): CMsgGCToServerAddSpectator {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgGCToServerAddSpectator>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgGCToServerAddSpectator,
-	): CMsgGCToServerAddSpectator {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint64 lobby_id */ 1:
-					message.lobby_id = reader.uint64().toBigInt();
-					break;
-				case /* optional uint32 account_id */ 2:
-					message.account_id = reader.uint32();
-					break;
-				case /* optional uint32 account_to_spectate */ 3:
-					message.account_to_spectate = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgGCToServerAddSpectator,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint64 lobby_id = 1; */
-		if (message.lobby_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.lobby_id);
-		/* optional uint32 account_id = 2; */
-		if (message.account_id !== undefined) writer.tag(2, WireType.Varint).uint32(message.account_id);
-		/* optional uint32 account_to_spectate = 3; */
-		if (message.account_to_spectate !== undefined) writer.tag(3, WireType.Varint).uint32(message.account_to_spectate);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgGCToServerAddSpectator", [
+      {
+        no: 1,
+        name: "lobby_id",
+        kind: "scalar",
+        localName: "lobby_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 2,
+        name: "account_id",
+        kind: "scalar",
+        localName: "account_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 3,
+        name: "account_to_spectate",
+        kind: "scalar",
+        localName: "account_to_spectate",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgGCToServerAddSpectator>): CMsgGCToServerAddSpectator {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgGCToServerAddSpectator>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgGCToServerAddSpectator,
+  ): CMsgGCToServerAddSpectator {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint64 lobby_id */ 1:
+          message.lobby_id = reader.uint64().toBigInt();
+          break;
+        case /* optional uint32 account_id */ 2:
+          message.account_id = reader.uint32();
+          break;
+        case /* optional uint32 account_to_spectate */ 3:
+          message.account_to_spectate = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgGCToServerAddSpectator,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint64 lobby_id = 1; */
+    if (message.lobby_id !== undefined) writer.tag(1, WireType.Varint).uint64(message.lobby_id);
+    /* optional uint32 account_id = 2; */
+    if (message.account_id !== undefined) writer.tag(2, WireType.Varint).uint32(message.account_id);
+    /* optional uint32 account_to_spectate = 3; */
+    if (message.account_to_spectate !== undefined) writer.tag(3, WireType.Varint).uint32(message.account_to_spectate);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgGCToServerAddSpectator
@@ -9577,71 +9577,71 @@ class CMsgGCToServerAddSpectator$Type extends MessageType<CMsgGCToServerAddSpect
 export const CMsgGCToServerAddSpectator = new CMsgGCToServerAddSpectator$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgGCToServerAddSpectatorResponse$Type extends MessageType<CMsgGCToServerAddSpectatorResponse> {
-	constructor() {
-		super("CMsgGCToServerAddSpectatorResponse", [
-			{
-				no: 1,
-				name: "result",
-				kind: "enum",
-				opt: true,
-				T: () => ["CMsgGCToServerAddSpectatorResponse.EResponse", CMsgGCToServerAddSpectatorResponse_EResponse],
-			},
-			{
-				no: 2,
-				name: "requesting_account_id",
-				kind: "scalar",
-				localName: "requesting_account_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgGCToServerAddSpectatorResponse>): CMsgGCToServerAddSpectatorResponse {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgGCToServerAddSpectatorResponse>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgGCToServerAddSpectatorResponse,
-	): CMsgGCToServerAddSpectatorResponse {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional CMsgGCToServerAddSpectatorResponse.EResponse result */ 1:
-					message.result = reader.int32();
-					break;
-				case /* optional uint32 requesting_account_id */ 2:
-					message.requesting_account_id = reader.uint32();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgGCToServerAddSpectatorResponse,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional CMsgGCToServerAddSpectatorResponse.EResponse result = 1; */
-		if (message.result !== undefined) writer.tag(1, WireType.Varint).int32(message.result);
-		/* optional uint32 requesting_account_id = 2; */
-		if (message.requesting_account_id !== undefined)
-			writer.tag(2, WireType.Varint).uint32(message.requesting_account_id);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgGCToServerAddSpectatorResponse", [
+      {
+        no: 1,
+        name: "result",
+        kind: "enum",
+        opt: true,
+        T: () => ["CMsgGCToServerAddSpectatorResponse.EResponse", CMsgGCToServerAddSpectatorResponse_EResponse],
+      },
+      {
+        no: 2,
+        name: "requesting_account_id",
+        kind: "scalar",
+        localName: "requesting_account_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgGCToServerAddSpectatorResponse>): CMsgGCToServerAddSpectatorResponse {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgGCToServerAddSpectatorResponse>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgGCToServerAddSpectatorResponse,
+  ): CMsgGCToServerAddSpectatorResponse {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional CMsgGCToServerAddSpectatorResponse.EResponse result */ 1:
+          message.result = reader.int32();
+          break;
+        case /* optional uint32 requesting_account_id */ 2:
+          message.requesting_account_id = reader.uint32();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgGCToServerAddSpectatorResponse,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional CMsgGCToServerAddSpectatorResponse.EResponse result = 1; */
+    if (message.result !== undefined) writer.tag(1, WireType.Varint).int32(message.result);
+    /* optional uint32 requesting_account_id = 2; */
+    if (message.requesting_account_id !== undefined)
+      writer.tag(2, WireType.Varint).uint32(message.requesting_account_id);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgGCToServerAddSpectatorResponse
@@ -9649,98 +9649,98 @@ class CMsgGCToServerAddSpectatorResponse$Type extends MessageType<CMsgGCToServer
 export const CMsgGCToServerAddSpectatorResponse = new CMsgGCToServerAddSpectatorResponse$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerToGCReportCheater$Type extends MessageType<CMsgServerToGCReportCheater> {
-	constructor() {
-		super("CMsgServerToGCReportCheater", [
-			{
-				no: 1,
-				name: "account_id",
-				kind: "scalar",
-				localName: "account_id",
-				opt: true,
-				T: 13 /*ScalarType.UINT32*/,
-			},
-			{
-				no: 2,
-				name: "match_id",
-				kind: "scalar",
-				localName: "match_id",
-				opt: true,
-				T: 4 /*ScalarType.UINT64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 3,
-				name: "lobby_id",
-				kind: "scalar",
-				localName: "lobby_id",
-				opt: true,
-				T: 6 /*ScalarType.FIXED64*/,
-				L: 0 /*LongType.BIGINT*/,
-			},
-			{
-				no: 4,
-				name: "reason",
-				kind: "scalar",
-				opt: true,
-				T: 9 /*ScalarType.STRING*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerToGCReportCheater>): CMsgServerToGCReportCheater {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerToGCReportCheater>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerToGCReportCheater,
-	): CMsgServerToGCReportCheater {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional uint32 account_id */ 1:
-					message.account_id = reader.uint32();
-					break;
-				case /* optional uint64 match_id */ 2:
-					message.match_id = reader.uint64().toBigInt();
-					break;
-				case /* optional fixed64 lobby_id */ 3:
-					message.lobby_id = reader.fixed64().toBigInt();
-					break;
-				case /* optional string reason */ 4:
-					message.reason = reader.string();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerToGCReportCheater,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional uint32 account_id = 1; */
-		if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
-		/* optional uint64 match_id = 2; */
-		if (message.match_id !== undefined) writer.tag(2, WireType.Varint).uint64(message.match_id);
-		/* optional fixed64 lobby_id = 3; */
-		if (message.lobby_id !== undefined) writer.tag(3, WireType.Bit64).fixed64(message.lobby_id);
-		/* optional string reason = 4; */
-		if (message.reason !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.reason);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerToGCReportCheater", [
+      {
+        no: 1,
+        name: "account_id",
+        kind: "scalar",
+        localName: "account_id",
+        opt: true,
+        T: 13 /*ScalarType.UINT32*/,
+      },
+      {
+        no: 2,
+        name: "match_id",
+        kind: "scalar",
+        localName: "match_id",
+        opt: true,
+        T: 4 /*ScalarType.UINT64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 3,
+        name: "lobby_id",
+        kind: "scalar",
+        localName: "lobby_id",
+        opt: true,
+        T: 6 /*ScalarType.FIXED64*/,
+        L: 0 /*LongType.BIGINT*/,
+      },
+      {
+        no: 4,
+        name: "reason",
+        kind: "scalar",
+        opt: true,
+        T: 9 /*ScalarType.STRING*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerToGCReportCheater>): CMsgServerToGCReportCheater {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerToGCReportCheater>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerToGCReportCheater,
+  ): CMsgServerToGCReportCheater {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional uint32 account_id */ 1:
+          message.account_id = reader.uint32();
+          break;
+        case /* optional uint64 match_id */ 2:
+          message.match_id = reader.uint64().toBigInt();
+          break;
+        case /* optional fixed64 lobby_id */ 3:
+          message.lobby_id = reader.fixed64().toBigInt();
+          break;
+        case /* optional string reason */ 4:
+          message.reason = reader.string();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerToGCReportCheater,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional uint32 account_id = 1; */
+    if (message.account_id !== undefined) writer.tag(1, WireType.Varint).uint32(message.account_id);
+    /* optional uint64 match_id = 2; */
+    if (message.match_id !== undefined) writer.tag(2, WireType.Varint).uint64(message.match_id);
+    /* optional fixed64 lobby_id = 3; */
+    if (message.lobby_id !== undefined) writer.tag(3, WireType.Bit64).fixed64(message.lobby_id);
+    /* optional string reason = 4; */
+    if (message.reason !== undefined) writer.tag(4, WireType.LengthDelimited).string(message.reason);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerToGCReportCheater
@@ -9748,57 +9748,57 @@ class CMsgServerToGCReportCheater$Type extends MessageType<CMsgServerToGCReportC
 export const CMsgServerToGCReportCheater = new CMsgServerToGCReportCheater$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMsgServerToGCReportCheaterResponse$Type extends MessageType<CMsgServerToGCReportCheaterResponse> {
-	constructor() {
-		super("CMsgServerToGCReportCheaterResponse", [
-			{
-				no: 1,
-				name: "success",
-				kind: "scalar",
-				opt: true,
-				T: 8 /*ScalarType.BOOL*/,
-			},
-		]);
-	}
-	create(value?: PartialMessage<CMsgServerToGCReportCheaterResponse>): CMsgServerToGCReportCheaterResponse {
-		const message = globalThis.Object.create(this.messagePrototype!);
-		if (value !== undefined) reflectionMergePartial<CMsgServerToGCReportCheaterResponse>(this, message, value);
-		return message;
-	}
-	internalBinaryRead(
-		reader: IBinaryReader,
-		length: number,
-		options: BinaryReadOptions,
-		target?: CMsgServerToGCReportCheaterResponse,
-	): CMsgServerToGCReportCheaterResponse {
-		let message = target ?? this.create(),
-			end = reader.pos + length;
-		while (reader.pos < end) {
-			let [fieldNo, wireType] = reader.tag();
-			switch (fieldNo) {
-				case /* optional bool success */ 1:
-					message.success = reader.bool();
-					break;
-				default:
-					let u = options.readUnknownField;
-					if (u === "throw")
-						throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
-					let d = reader.skip(wireType);
-					if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
-			}
-		}
-		return message;
-	}
-	internalBinaryWrite(
-		message: CMsgServerToGCReportCheaterResponse,
-		writer: IBinaryWriter,
-		options: BinaryWriteOptions,
-	): IBinaryWriter {
-		/* optional bool success = 1; */
-		if (message.success !== undefined) writer.tag(1, WireType.Varint).bool(message.success);
-		let u = options.writeUnknownFields;
-		if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
-		return writer;
-	}
+  constructor() {
+    super("CMsgServerToGCReportCheaterResponse", [
+      {
+        no: 1,
+        name: "success",
+        kind: "scalar",
+        opt: true,
+        T: 8 /*ScalarType.BOOL*/,
+      },
+    ]);
+  }
+  create(value?: PartialMessage<CMsgServerToGCReportCheaterResponse>): CMsgServerToGCReportCheaterResponse {
+    const message = globalThis.Object.create(this.messagePrototype!);
+    if (value !== undefined) reflectionMergePartial<CMsgServerToGCReportCheaterResponse>(this, message, value);
+    return message;
+  }
+  internalBinaryRead(
+    reader: IBinaryReader,
+    length: number,
+    options: BinaryReadOptions,
+    target?: CMsgServerToGCReportCheaterResponse,
+  ): CMsgServerToGCReportCheaterResponse {
+    let message = target ?? this.create(),
+      end = reader.pos + length;
+    while (reader.pos < end) {
+      let [fieldNo, wireType] = reader.tag();
+      switch (fieldNo) {
+        case /* optional bool success */ 1:
+          message.success = reader.bool();
+          break;
+        default:
+          let u = options.readUnknownField;
+          if (u === "throw")
+            throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+          let d = reader.skip(wireType);
+          if (u !== false) (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+      }
+    }
+    return message;
+  }
+  internalBinaryWrite(
+    message: CMsgServerToGCReportCheaterResponse,
+    writer: IBinaryWriter,
+    options: BinaryWriteOptions,
+  ): IBinaryWriter {
+    /* optional bool success = 1; */
+    if (message.success !== undefined) writer.tag(1, WireType.Varint).bool(message.success);
+    let u = options.writeUnknownFields;
+    if (u !== false) (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+    return writer;
+  }
 }
 /**
  * @generated MessageType for protobuf message CMsgServerToGCReportCheaterResponse
