@@ -8,9 +8,9 @@ services:
       CONFIG_STORE_DIR: "/data/config/"
       TOKENS_CACHE_DIR: "/data/tokens/"
 
-      VIRTUAL_HOST: nsu-proxy.devbs1.hw.devlock.net
+      VIRTUAL_HOST: nsu-proxy.devlock.plants.sh
       VIRTUAL_PORT: 4245
-      LETSENCRYPT_HOST: nsu-proxy.devbs1.hw.devlock.net
+      LETSENCRYPT_HOST: nsu-proxy.devlock.plants.sh
     volumes:
       - nsudata:/data
     # Use tsx to start the server
