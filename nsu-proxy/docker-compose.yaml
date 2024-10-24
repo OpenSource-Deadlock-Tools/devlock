@@ -2,13 +2,15 @@ services:
   nsu-proxy:
     image: ghcr.io/opensource-deadlock-tools/devlock/nsu-proxy
     build: .
-    ports:
-      - "4245:4245"  # Adjust the port as needed
     environment:
       NODE_ENV: production
       ADMIN_KEY: ${ADMIN_KEY}
       CONFIG_STORE_DIR: "/data/config/"
       TOKENS_CACHE_DIR: "/data/tokens/"
+
+      VIRTUAL_HOST: nsu-proxy.devbs1.hw.devlock.net
+      VIRTUAL_PORT: 4245
+      LETSENCRYPT_HOST: nsu-proxy.devbs1.hw.devlock.net
     volumes:
       - nsudata:/data
     # Use tsx to start the server
