@@ -17,9 +17,12 @@ services:
     networks:
     - rabbitmq
     - webserver
+    - clickhouse
 
 networks:
   rabbitmq:
     external: true
   webserver:
+    external: true
+  clickhouse:
     external: true

@@ -1,3 +1,4 @@
+use clickhouse::Row;
 use serde::{Deserialize, Serialize};
 use std::fmt::Display;
 use std::io;
@@ -10,7 +11,7 @@ pub enum ProcessError {
     RmqError(lapin::Error),
 }
 
-#[derive(Serialize, Deserialize, Debug, Clone)]
+#[derive(Serialize, Deserialize, Debug, Clone, Row)]
 pub struct Salts {
     pub cluster_id: u32,
     pub match_id: u64,

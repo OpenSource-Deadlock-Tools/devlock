@@ -4,6 +4,7 @@ use axum::extract::State;
 use axum::http::StatusCode;
 use axum::routing::{get, head, post};
 use axum::{Json, Router};
+use clickhouse::Client;
 use futures::future::join_all;
 use futures::FutureExt;
 use log::{debug, error};
@@ -11,6 +12,7 @@ use models::Salts;
 use serde::Serialize;
 use std::future::IntoFuture;
 use std::net::Ipv4Addr;
+use std::sync::LazyLock;
 use tokio::io;
 use tokio::net::TcpListener;
 use tokio::sync::mpsc;
@@ -22,6 +24,15 @@ mod s3;
 mod utils;
 
 const PROCESS_DEMO: bool = false;
+
+static CLICKHOUSE_URL: LazyLock<String> = LazyLock::new(|| {
+    std::env::var("CLICKHOUSE_URL").unwrap_or("http://127.0.0.1:8123".to_string())
+});
+static CLICKHOUSE_USER: LazyLock<String> =
+    LazyLock::new(|| std::env::var("CLICKHOUSE_USER").unwrap());
+static CLICKHOUSE_PASSWORD: LazyLock<String> =
+    LazyLock::new(|| std::env::var("CLICKHOUSE_PASSWORD").unwrap());
+static CLICKHOUSE_DB: LazyLock<String> = LazyLock::new(|| std::env::var("CLICKHOUSE_DB").unwrap());
 
 #[derive(Debug, Clone)]
 pub struct AppState {
@@ -45,7 +56,18 @@ async fn main() -> Result<(), io::Error> {
     let listener = TcpListener::bind((Ipv4Addr::UNSPECIFIED, 8080)).await?;
 
     let downloader = tokio::spawn(async move {
+        let ch_client = Client::default()
+            .with_url(CLICKHOUSE_URL.clone())
+            .with_user(CLICKHOUSE_USER.clone())
+            .with_password(CLICKHOUSE_PASSWORD.clone())
+            .with_database(CLICKHOUSE_DB.clone())
+            .with_compression(clickhouse::Compression::None);
         while let Some(salts) = salts_channel_receiver.recv().await {
+            match insert_to_clickhouse(&ch_client, &salts).await {
+                Ok(_) => debug!("Inserted salts to clickhouse"),
+                Err(e) => error!("Failed to insert salts to clickhouse: {:?}", e),
+            };
+
             let serialized_salts = serde_json::to_string(&salts);
             if let Ok(serialized_salts) = serialized_salts {
                 match rmq::add_to_public_queue("matchdata_salts", &serialized_salts).await {
@@ -80,6 +102,12 @@ async fn main() -> Result<(), io::Error> {
     let webserver = tokio::spawn(webserver);
     join_all(vec![downloader, webserver]).await;
     Ok(())
+}
+
+async fn insert_to_clickhouse(ch_client: &Client, salts: &Salts) -> clickhouse::error::Result<()> {
+    let mut insert = ch_client.insert("match_salts")?;
+    insert.write(salts).await?;
+    insert.end().await
 }
 
 pub async fn health() -> StatusCode {
