@@ -1,5 +1,5 @@
 services:
-  nsu-service:
+  nsu-proxy:
     build: .
     ports:
       - "4245:4245"  # Adjust the port as needed
@@ -16,3 +16,8 @@ services:
 
 volumes:
   nsudata:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${DATA_ROOT}/nsu-proxy/data
