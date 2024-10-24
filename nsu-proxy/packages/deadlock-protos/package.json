@@ -1,0 +1,23 @@
+{
+	"name": "@nsu-proxy/deadlock-protos",
+	"private": true,
+	"type": "module",
+	"files": ["./output"],
+	"exports": {
+		"./*": "./output/*.ts"
+	},
+	"dependencies": {
+		"@protobuf-ts/plugin": "^2.9.4",
+		"@protobuf-ts/runtime": "^2.9.4"
+	},
+	"devDependencies": {
+		"@types/node": "^22.7.5"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"trustedDependencies": ["esbuild", "node-steam", "protobufjs"],
+	"patchedDependencies": {
+		"@types/steam-user@5.0.3": "patches/@types%2Fsteam-user@5.0.3.patch"
+	}
+}

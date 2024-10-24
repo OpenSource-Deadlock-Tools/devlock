@@ -1,0 +1,60 @@
+{
+  "name": "nsu-proxy",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start-server": "tsx ./src/bot-server/run-server.ts"
+  },
+  "workspaces": ["packages/*"],
+  "dependencies": {
+    "@hono/node-server": "^1.13.2",
+    "@hono/zod-openapi": "^0.16.4",
+    "@nsu-proxy/deadlock-protos": "workspace:*",
+    "@protobuf-ts/plugin": "^2.9.4",
+    "@protobuf-ts/runtime": "^2.9.4",
+    "@scalar/hono-api-reference": "^0.5.153",
+    "@std/assert": "npm:@jsr/std__assert",
+    "@std/collections": "npm:@jsr/std__collections",
+    "@std/encoding": "npm:@jsr/std__encoding",
+    "@std/log": "npm:@jsr/std__log",
+    "@std/yaml": "npm:@jsr/std__yaml",
+    "better-sqlite3": "^11.3.0",
+    "colorette": "^2.0.20",
+    "croner": "^8.1.2",
+    "disposablestack": "^1.1.6",
+    "hono": "^4.6.4",
+    "kysely": "^0.27.4",
+    "log-node": "^8.0.3",
+    "ofetch": "^1.4.1",
+    "pino": "^9.4.0",
+    "pino-pretty": "^11.2.2",
+    "rate-limiter-flexible": "^5.0.3",
+    "replace-in-files-cli": "^3.0.0",
+    "snappy": "^7.2.2",
+    "snappyjs": "^0.7.0",
+    "steam-user": "^5.2.0",
+    "steamid": "^2.1.0",
+    "stoker": "^1.0.9",
+    "temporal-polyfill": "^0.2.5",
+    "tiny-invariant": "^1.3.3",
+    "tsx": "^4.19.1",
+    "winston": "^3.15.0",
+    "winston-console-format": "^1.0.8",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/log": "^6.3.3",
+    "@types/node": "^22.7.5",
+    "@types/snappyjs": "^0.7.1",
+    "@types/steam-user": "^5.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "trustedDependencies": ["@biomejs/biome", "better-sqlite3", "esbuild", "node-steam", "protobufjs"],
+  "patchedDependencies": {
+    "@types/steam-user@5.0.3": "patches/@types%2Fsteam-user@5.0.3.patch"
+  }
+}

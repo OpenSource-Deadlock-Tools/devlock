@@ -1,0 +1,18 @@
+services:
+  nsu-service:
+    build: .
+    ports:
+      - "4245:4245"  # Adjust the port as needed
+    environment:
+      NODE_ENV: production
+      ADMIN_KEY: ${ADMIN_KEY}
+      CONFIG_STORE_DIR: "/data/config/"
+      TOKENS_CACHE_DIR: "/data/tokens/"
+    volumes:
+      - nsudata:/data
+    # Use tsx to start the server
+    # IF NOT USED directly, SIGTERM signal doesn't seem to get forwarded correctly for graceful shutdown
+    command: ["./node_modules/.bin/tsx", "./src/bot-server/run-server.ts"]
+
+volumes:
+  nsudata:
