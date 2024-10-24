@@ -1,0 +1,11 @@
+*
+
+!/src
+!/package.json
+!/bun.lockb
+!/tsconfig.json
+!/patches
+!/packages/**/src
+!/packages/**/output
+!/packages/**/proto
+!/packages/**/package.json

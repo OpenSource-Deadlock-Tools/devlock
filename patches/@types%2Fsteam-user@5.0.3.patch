@@ -1,0 +1,47 @@
+diff --git a/index.d.ts b/index.d.ts
+index b330ca89f20e6f7b375946e37fcd695ad15f789a..4d7ba04729b85ff294dbab5795fcda99ed6da701 100644
+--- a/index.d.ts
++++ b/index.d.ts
+@@ -975,7 +975,7 @@ declare class SteamUser extends EventEmitter {
+ }
+ 
+ // #region "Events"
+-interface Events {
++export interface Events {
+     debug: [message: string];
+     appLaunched: [appid: number];
+     appQuit: [appid: number];
+@@ -1145,13 +1145,13 @@ interface Package {
+     access_token: string;
+ }
+ 
+-interface AppInfo {
++export interface AppInfo {
+     changenumber: number;
+     missingToken: boolean;
+     appinfo: any; // too complex to describe
+ }
+ 
+-interface PackageInfo {
++export interface PackageInfo {
+     changenumber: number;
+     missingToken: boolean;
+     packageinfo: any; // too complex to describe
+@@ -1242,7 +1242,7 @@ interface AccountLimitations {
+     canInviteFriends: boolean;
+ }
+ 
+-interface Gift {
++export interface Gift {
+     gid: string;
+     packageid: number;
+     TimeCreated: Date;
+@@ -1267,7 +1267,7 @@ interface Chat {
+     };
+ }
+ 
+-interface TradeRestrictions {
++export interface TradeRestrictions {
+     steamguardRequiredDays?: number;
+     newDeviceCooldownDays?: number;
+     defaultPasswordResetProbationDays?: number;
