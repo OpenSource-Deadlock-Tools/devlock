@@ -62,7 +62,7 @@ async fn get_rmq_channel() -> Result<&'static Channel, ProcessError> {
                 ),
                 ConnectionProperties::default(),
             )
-                .await
+            .await
         })
         .await
         .map_err(ProcessError::RmqError)?;
@@ -83,7 +83,7 @@ async fn get_rmq_public_channel() -> Result<&'static Channel, ProcessError> {
                 ),
                 ConnectionProperties::default(),
             )
-                .await
+            .await
         })
         .await
         .map_err(ProcessError::RmqError)?;

@@ -52,7 +52,7 @@ fn get_file_name(salts: &&Salts, data_type: DataType) -> Option<String> {
         salt = salt,
         data_type = data_type
     )
-        .into()
+    .into()
 }
 
 async fn download_to_file(
