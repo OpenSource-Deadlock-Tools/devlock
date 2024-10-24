@@ -1,5 +1,6 @@
 services:
   nsu-proxy:
+    image: ghcr.io/opensource-deadlock-tools/devlock/nsu-proxy
     build: .
     ports:
       - "4245:4245"  # Adjust the port as needed
