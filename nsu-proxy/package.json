@@ -23,6 +23,7 @@
     "croner": "^8.1.2",
     "disposablestack": "^1.1.6",
     "hono": "^4.6.4",
+    "js-yaml": "^4.1.0",
     "kysely": "^0.27.4",
     "log-node": "^8.0.3",
     "ofetch": "^1.4.1",
@@ -45,6 +46,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@types/better-sqlite3": "^7.6.11",
+    "@types/js-yaml": "^4.0.9",
     "@types/log": "^6.3.3",
     "@types/node": "^22.7.5",
     "@types/snappyjs": "^0.7.1",

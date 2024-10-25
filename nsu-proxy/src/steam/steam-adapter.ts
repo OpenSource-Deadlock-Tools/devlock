@@ -51,7 +51,7 @@ export class SteamAdapter {
     const loggedIn = this.pclient.waitFor({
       event: "loggedOn",
       opts: {
-        signal: AbortSignal.timeout(TEN_MINUETS),
+        signal: AbortSignal.timeout(STARTUP_TIMEOUT),
       },
     });
 

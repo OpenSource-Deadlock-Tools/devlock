@@ -88,6 +88,7 @@ export class BotManager {
       this.logger.info(`Sync: Adding ${toAdd.length} accounts, removing ${toDelete.length} accounts`);
 
       for (const acc of toAdd) {
+        this.logger.info(`Sync: Adding account - ${acc.username}`);
         await this.addBot(acc);
       }
 
@@ -171,7 +172,7 @@ export class BotManager {
           try {
             await bot.resetInitializeWithRetry({
               baseSleepTime: 10_000,
-              maxRetries: 5,
+              maxRetries: 3,
             });
 
             // If successful, set status to READY
