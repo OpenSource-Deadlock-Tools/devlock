@@ -478,7 +478,11 @@ class BMDatabase {
     status,
     notStatus,
   }: { status?: AccountStatus; notStatus?: AccountStatus } = {}): Promise<AccountTable[]> {
-    let query = this.db.selectFrom("accounts").selectAll().orderBy("statusUpdatedAtMillis", "desc");
+    let query = this.db
+      .selectFrom("accounts")
+      .selectAll()
+      .orderBy("statusUpdatedAtMillis", "desc")
+      .where("status", "!=", "DEAD");
 
     if (status) {
       query = query.where("status", "=", status);
@@ -585,6 +589,7 @@ class BMDatabase {
         statusUpdatedAtMillis: Date.now(),
       })
       .where("username", "=", username)
+      .where("status", "!=", "DEAD")
       .execute();
   }
 
