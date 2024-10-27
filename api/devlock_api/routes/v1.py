@@ -23,6 +23,21 @@ async def match_meta(request: Request, match_id: str):
     return query_result.first_item
 
 
+@router.get("/salts")
+@limiter.limit("60/minute")
+async def salt_list(request: Request):
+    query_result = repo.query(
+        """
+        SELECT *
+        FROM match_salts
+        ORDER BY match_id DESC
+        LIMIT 10000
+        """
+    )
+
+    return query_result.named_results()
+
+
 @router.get("/active-matches")
 @limiter.limit("100/minute")
 async def active_matches(request: Request, skip: int = 0):
