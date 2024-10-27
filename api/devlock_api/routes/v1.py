@@ -1,6 +1,8 @@
 from devlock_api.datarepo import repo
 from devlock_api.limiter import limiter
-from fastapi import APIRouter, Request
+from fastapi import APIRouter, Request, Query
+from typing import Optional
+from datetime import datetime
 
 router = APIRouter(prefix="/v1", tags=["V1"])
 
@@ -25,16 +27,21 @@ async def match_meta(request: Request, match_id: str):
 
 @router.get("/salts")
 @limiter.limit("100/minute")
-async def salt_list(request: Request, skip: int = 0):
-    query_result = repo.query(
-        """
+async def salt_list(request: Request, skip: int = 0, created_after: Optional[datetime] = Query(None)):
+    # Modify the SQL query to include an optional filter for created_at
+    query = """
         SELECT *
         FROM match_salts
+        WHERE (%(created_after)s IS NULL OR created_at > %(created_after)s)
         ORDER BY match_id DESC
         LIMIT 1000
         OFFSET %(offset)s
-        """,
-        {"offset": skip}
+    """
+
+    # Execute the query with parameters
+    query_result = repo.query(
+        query,
+        {"offset": skip, "created_after": created_after}
     )
 
     return query_result.named_results()
