@@ -122,21 +122,20 @@ pub struct SaltsResponse {
 
 pub async fn post_salts(
     State(state): State<AppState>,
-    Json(salts): Json<Salts>,
-) -> Result<Json<SaltsResponse>, StatusCode> {
+    Json(salts): Json<Vec<Salts>>,
+) -> Result<(), StatusCode> {
     debug!("Received Salts: {:?}", salts);
-    let salts = match download::check_salts(salts.clone()).await {
-        Ok(salts) => salts,
-        Err(e) => {
-            error!("Failed to validate salts: {:?}", e);
+    for salt in salts {
+        let salts = match download::check_salts(salt.clone()).await {
+            Ok(salts) => salts,
+            Err(e) => {
+                error!("Failed to validate salts: {:?}", e);
+                return Err(StatusCode::INTERNAL_SERVER_ERROR);
+            }
+        };
+        if state.salts_channel.send(salts.clone()).await.is_err() {
             return Err(StatusCode::INTERNAL_SERVER_ERROR);
         }
-    };
-    if state.salts_channel.send(salts.clone()).await.is_err() {
-        return Err(StatusCode::INTERNAL_SERVER_ERROR);
     }
-    Ok(Json(SaltsResponse {
-        meta: salts.metadata_salt.is_some(),
-        replay: salts.replay_salt.is_some(),
-    }))
+    Ok(())
 }
