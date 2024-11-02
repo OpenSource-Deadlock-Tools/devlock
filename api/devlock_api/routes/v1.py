@@ -62,7 +62,7 @@ async def active_matches(request: Request, skip: int = 0):
 # this is for proof of concept only, in reality it would be more realistic if a webpage button were to redirect to the /processlogin/ endpoint
 @router.get('/login/landing')
 @limiter.limit("100/minute")
-async def loginlanding(request: Request, login: bool = None, logout: bool = None):
+async def login_landing(request: Request, login: bool = None, logout: bool = None):
     if logout:
         request.session.clear()
     steam_id = request.session.get('steam_id')
