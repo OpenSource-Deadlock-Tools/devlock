@@ -1,10 +1,13 @@
 # Define the list of all directories containing the compose files
-ALL_DIRS=webserver monitoring clickhouse authentik rabbitmq db-ingest user-ingest spectator/server
+COMMON_DIRS=monitoring clickhouse authentik rabbitmq db-ingest user-ingest spectator/server
+DEV_DIRS=webserver-local
+PROD_DIRS=webserver
 
 # If specific directories are passed as arguments, use them; otherwise, use ALL_DIRS
-DIRS=$(if $(filter $(ALL_DIRS), $(MAKECMDGOALS)), $(filter $(ALL_DIRS), $(MAKECMDGOALS)), $(ALL_DIRS))
+USER_DIRS=$(if $(filter $(COMMON_DIRS), $(MAKECMDGOALS)), $(filter $(COMMON_DIRS), $(MAKECMDGOALS)), $(COMMON_DIRS))
+DIRS=$(if $(filter $(COMMON_DIRS), "prod"), $(PROD_DIRS) $(USER_DIRS), $(DEV_DIRS) $(USER_DIRS))
 
-.PHONY: pull build up down $(ALL_DIRS)
+.PHONY: pull build up down $(COMMON_DIRS) $(DEV_DIRS) $(PROD_DIRS)
 
 pull: $(DIRS)
 	@echo "Pulling images for: $(DIRS)..."
@@ -27,7 +30,11 @@ down: $(DIRS)
 		(cd $(dir) && docker compose down) || continue;)
 
 # Prevent Make from treating the directory names as commands
-$(ALL_DIRS):
+$(COMMON_DIRS):
+	@:
+$(PROD_DIRS):
+	@:
+$(DEV_DIRS):
 	@:
 
 format:
